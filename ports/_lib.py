@@ -61,6 +61,7 @@ CATEGORIES = [
     "Shell & prompt",
     "CLI & TUI",
     "Apps",
+    "Desktop",
     "Palettes",
 ]
 
