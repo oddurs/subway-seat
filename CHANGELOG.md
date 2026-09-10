@@ -15,6 +15,13 @@ All notable changes to Subway Seat. The format follows [Keep a Changelog](https:
 
 ### Added
 
+- **One-command setup.** `install.sh` (POSIX sh, also `curl … | sh`) detects your apps, shows a plan, asks once, links the files and adds the enable lines inside removable blocks. `switch <flavor>` re-points everything at once; `status`, `uninstall` and `list` round it out. Choices live in `~/.config/subway-seat/config`. `install.fish` is now a thin wrapper, and the site has a configurator at `/install`.
+- **25 new ports (117 in all):** wallpapers (stripes and bucket seats, three flavors, desktop and phone), Ptyxis, KDE Plasma, GTK 4/libadwaita, Hyprland, waybar, rofi, fuzzel, dunst, mako, PowerShell, lsd, Midnight Commander, Sublime Merge, Godot, Mattermost, Element, television, broot, zathura, newsboat, fastfetch, matplotlib, a macOS color list, and git's own colors.
+- **Diffs everywhere:** delta, git, lazygit (with a delta pager config), kitty's diff kitten, VS Code, Neovim, Vim, Zed, JetBrains, Helix, Emacs (magit, ediff, smerge), Sublime Text and Merge, Claude Code, Pygments, highlight.js, Prism, Chroma, Obsidian and Discord all use the same diff grounds; web formats export them as tokens.
+- **Follow light and dark** wherever the app can: kitty, iTerm2, WezTerm, VS Code, Zed, JetBrains, Sublime, Neovim, Emacs, fish, bat, tmux, yazi, Firefox/Thunderbird (an auto add-on), highlight.js, Prism, Tailwind, GTK and more.
+- **Claude Code:** the setup skill asks once and dry-runs before writing (a bundled `setup.sh`); a SessionStart hook makes the subagent rows work from the plugin; ten more theme tokens; status line v2 (width-aware, detached HEAD, worktrees, vim mode, rate-limit meter, comma-decimal locales) and new tips.
+- **Neovim:** flavors follow `background`, `setup{ background = { dark, light } }`, standalone colors files and ~2,000 groups across ~70 plugins. VS Code covers the full 1.133 color registry, GitLens and Error Lens; JetBrains gains Islands variants.
+- **The site:** port search, palette formats and downloads, a flavor comparison, share images for every port, per-port "report a problem" links, "Download all", a styled 404, and a rebuilt Claude Code mock taken line for line from a real session.
 - A Desktop category.
 - The port contract gains `how` (install steps that aren't a path), `auto` (follow the OS light/dark setting), `requires`, `detect`, `enable.sh` and `enable.file`. Appended blocks are wrapped in `# >>> subway-seat >>>` markers so removing them is one step.
 - A generated README in every `dist/<id>/`: the files, where they go, how to turn it on and how to uninstall.
@@ -23,6 +30,11 @@ All notable changes to Subway Seat. The format follows [Keep a Changelog](https:
 
 ### Fixed
 
+- Install steps that pointed at unpublished channels (Marketplace, Zed extensions, MELPA, a `.nvim` repo) now use the files in this repo.
+- Pasting an enable snippet no longer breaks the app: Windows Terminal's duplicate `profiles`, Starship's `palette` placement, fzf replacing `FZF_DEFAULT_OPTS`, tmux above TPM's `run`, lazygit without a config file, fish's auto theme without `[unknown]`.
+- Enamel's bracket match, current parameter hint and several popovers were nearly invisible.
+- Claude Code setup wrote a theme name that doesn't exist, and pointed at the removed `/output-style`.
+- The site's share image 404'd, narrow screens scrolled sideways, and the editor mock lost its highlights in Tunnel and Enamel; port pages are a fraction of their old weight.
 - `./build.py --only <id>` no longer cuts `dist/manifest.json` down to one port.
 - CI's "dist/ is current" check missed files that were never committed and Telegram's text themes.
 - The build writes UTF-8 with LF line endings on every OS.
