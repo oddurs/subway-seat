@@ -1,13 +1,22 @@
-from ports._lib import HEADER, Out
+from ports._cli import marked
+from ports._lib import ANSI_NAMES, HEADER, Out, ink
 
 META = {
     "id": "starship",
     "name": "Starship",
     "category": "Shell & prompt",
     "homepage": "https://starship.rs",
-    "enable": {"where": "~/.config/starship.toml", "code": "palette = '{snake}'", "lang": "toml"},
+    "enable": {
+        "where": "the top of ~/.config/starship.toml, above every [section] (below a table it would "
+        "be read as part of that table and ignored), after adding the palette block to the end",
+        "code": "palette = '{snake}'",
+        "lang": "toml",
+    },
+    "detect": ["starship"],
     "notes": "Palettes use the slot names of Starship's Gruvbox Rainbow preset, so its segments turn "
-    "into a red → orange → gold → avocado stripe. `subway-seat.toml` is a complete prompt built on it.",
+    "into a red → orange → gold → avocado stripe; they also redefine the standard color names, so "
+    "other prompts pick up the flavor. `subway-seat.toml` is a complete prompt built on it: point "
+    "STARSHIP_CONFIG at it or copy it over your config.",
 }
 
 # Gruvbox Rainbow layout; the Nerd Font glyphs are written as escapes.
@@ -106,7 +115,7 @@ vimcmd_visual_symbol = "[\\uf104](bold fg:color_yellow)"
 
 def palette(f):
     slots = {
-        "color_fg0": f.crust if f.dark else f.base,
+        "color_fg0": ink(f),
         "color_fg_dark": f.subtext1,
         "color_bg1": f.surface1,
         "color_bg3": f.surface2,
@@ -118,19 +127,25 @@ def palette(f):
         "color_red": f.red_hi,
         "color_purple": f.orange_hi,
     }
-    body = "\n".join(f"{k:<13} = '{v}'" for k, v in slots.items())
+    # Starship's own color names, so prompts that say `red` or `bright-black` get the flavor too
+    for i, color in enumerate(f.ansi):
+        name = ANSI_NAMES[i % 8].replace("magenta", "purple")
+        slots[("bright-" if i >= 8 else "") + name] = color
+    body = "\n".join(f"{k:<14} = '{v}'" for k, v in slots.items())
     return f"[palettes.{f.snake}]\n{body}\n"
 
 
 def build(flavors):
     outs = [
-        Out(f"palettes/{f.slug}.toml", f"# {HEADER}\n{palette(f)}", flavor=f.id,
+        Out(f"palettes/{f.slug}.toml", marked(f"# {HEADER}\n{palette(f)}"), flavor=f.id,
             dest="~/.config/starship.toml", append=True, lang="toml")
         for f in flavors
     ]
     all_palettes = "\n".join(palette(f) for f in flavors)
     outs.append(
         Out("subway-seat.toml", f"# {HEADER}\n{PRESET.replace('{snake}', flavors[0].snake)}\n{all_palettes}",
-            dest="~/.config/starship.toml", lang="toml")
+            dest="~/.config/starship/subway-seat.toml", lang="toml",
+            how="use it with STARSHIP_CONFIG=~/.config/starship/subway-seat.toml, or copy it over "
+            "~/.config/starship.toml; change `palette` to pick the flavor")
     )
     return outs

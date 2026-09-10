@@ -1,11 +1,26 @@
-from ports._lib import HEADER, Out, h
+from ports._cli import row
+from ports._lib import HEADER, Out, h, ink, selection
 
 META = {
     "id": "fish",
     "name": "fish",
     "category": "Shell & prompt",
     "homepage": "https://fishshell.com",
-    "enable": {"where": "config.fish (fish 4.3+)", "code": "fish_config theme choose {slug}", "lang": "fish"},
+    "enable": {
+        "where": "config.fish",
+        "code": "fish_config theme choose {slug}",
+        "lang": "fish",
+        "sh": "echo 'fish_config theme choose {slug}' >> ~/.config/fish/config.fish",
+        "file": "~/.config/fish/config.fish",
+    },
+    "auto": {
+        "where": "config.fish (fish 4.3+; terminals that don't report their background get Walnut)",
+        "code": "fish_config theme choose subway-seat-auto",
+        "lang": "fish",
+        "file": "~/.config/fish/config.fish",
+    },
+    "requires": "fish 3.4+ (the auto theme: 4.3+)",
+    "detect": ["fish"],
     "notes": "Command-line syntax colors and the completion pager. `subway-seat-auto` carries both "
     "Walnut and Enamel and follows your terminal's background.",
 }
@@ -26,10 +41,10 @@ def colors(f):
         "fish_color_comment": f"{h(f.overlay1)} --italics",
         "fish_color_error": h(f.red_hi),
         "fish_color_cancel": h(f.red),
-        "fish_color_autosuggestion": h(f.overlay0),
+        "fish_color_autosuggestion": h(f.overlay1),
         "fish_color_gray": h(f.overlay0),
         "fish_color_valid_path": "--underline",
-        "fish_color_selection": f"{h(f.text_hi)} --bold --background={h(f.surface2)}",
+        "fish_color_selection": f"{h(f.text_hi)} --bold --background={h(selection(f))}",
         "fish_color_search_match": f"--bold --background={h(f.surface1)}",
         "fish_color_history_current": "--bold",
         "fish_color_cwd": h(f.yellow),
@@ -38,11 +53,14 @@ def colors(f):
         "fish_color_host": h(f.subtext1),
         "fish_color_host_remote": h(f.green),
         "fish_color_status": h(f.red_hi),
-        "fish_pager_color_progress": f"{h(f.crust if f.dark else f.base)} --background={h(f.orange)}",
+        "fish_pager_color_progress": f"{h(ink(f))} --background={h(f.orange)}",
         "fish_pager_color_prefix": f"{h(f.yellow)} --bold",
         "fish_pager_color_completion": h(f.text),
         "fish_pager_color_description": f"{h(f.overlay1)} --italics",
-        "fish_pager_color_selected_background": f"--background={h(f.surface1)}",
+        "fish_pager_color_selected_background": f"--background={h(row(f))}",
+        "fish_pager_color_selected_prefix": f"{h(f.yellow if f.dark else f.orange)} --bold",
+        "fish_pager_color_selected_completion": h(f.text_hi),
+        "fish_pager_color_selected_description": f"{h(f.subtext1)} --italics",
     }
 
 
@@ -68,7 +86,9 @@ def build(flavors):
             "themes/subway-seat-auto.theme",
             f"# name: 'Subway Seat (auto)'\n# {HEADER}\n\n"
             f"[light]\n# preferred_background: {h(light.base)}\n{body(light)}\n\n"
-            f"[dark]\n# preferred_background: {h(dark.base)}\n{body(dark)}\n",
+            f"[dark]\n# preferred_background: {h(dark.base)}\n{body(dark)}\n\n"
+            # terminals that don't answer the background query
+            f"[unknown]\n{body(dark)}\n",
             dest="~/.config/fish/themes/subway-seat-auto.theme",
             lang="conf",
         )
