@@ -17,7 +17,7 @@ jobs:
       OVSX_PAT: ${{ secrets.OVSX_PAT }}
     steps:
       - uses: actions/checkout@v4
-      - uses: astral-sh/setup-uv@v6
+      - uses: astral-sh/setup-uv@v7
       - run: uv python install 3.14
       - run: uv run --python 3.14 --with pyyaml ./build.py
       - name: dist/ matches the tag
