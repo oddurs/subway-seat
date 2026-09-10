@@ -1,0 +1,30 @@
+---
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+name: 'Subway Seat Tunnel'
+author: 'oddurs (https://github.com/oddurs/subway-seat)'
+author_name: 'oddurs'
+author_url: 'https://github.com/oddurs/subway-seat'
+variant: 'dark'
+
+color_01: '#3D2C1D'    # Black (Host)
+color_02: '#D2503A'    # Red (Syntax string)
+color_03: '#A3AE4B'    # Green (Command)
+color_04: '#F3BF45'    # Yellow (Command second)
+color_05: '#7F9BAE'    # Blue (Path)
+color_06: '#EC7F31'    # Magenta (Syntax var)
+color_07: '#86AD95'    # Cyan (Prompt)
+color_08: '#D6C3A0'    # White
+
+color_09: '#6A523C'    # Bright Black
+color_10: '#EC6A50'    # Bright Red (Command error)
+color_11: '#BFCB63'    # Bright Green (Exec)
+color_12: '#FFD36B'    # Bright Yellow
+color_13: '#9DB6C6'    # Bright Blue (Folder)
+color_14: '#FF9D55'    # Bright Magenta
+color_15: '#A5C9B0'    # Bright Cyan
+color_16: '#F6EAD1'    # Bright White
+
+background: '#24180E'  # Background
+foreground: '#E9D8B6'  # Foreground (Text)
+
+cursor: '#F3BF45'      # Cursor

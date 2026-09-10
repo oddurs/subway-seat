@@ -1,0 +1,15 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+[Scheme]
+Name=Subway Seat
+ColorForeground=#EDDCBC
+ColorBackground=#362619
+ColorCursor=#F3BF45
+ColorCursorForeground=#362619
+ColorCursorUseDefault=FALSE
+ColorBold=#F8ECD4
+ColorBoldUseDefault=FALSE
+ColorSelection=#F8ECD4
+ColorSelectionBackground=#634932
+ColorSelectionUseDefault=FALSE
+TabActivityColor=#EC7F31
+ColorPalette=#513B27;#D2503A;#A3AE4B;#F3BF45;#7F9BAE;#EC7F31;#86AD95;#D9C6A3;#7B6047;#EC6A50;#BFCB63;#FFD36B;#9DB6C6;#FF9D55;#A5C9B0;#F8ECD4

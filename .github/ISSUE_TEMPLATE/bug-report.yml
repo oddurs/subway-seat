@@ -1,0 +1,23 @@
+name: Something looks wrong
+description: A colour that's off, a key that doesn't apply, a file that won't load.
+labels: ["bug"]
+body:
+  - type: input
+    id: port
+    attributes:
+      label: Port and flavor
+      placeholder: "VS Code, Subway Seat Enamel"
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: App version
+      placeholder: "VS Code 1.104.0"
+  - type: textarea
+    id: what
+    attributes:
+      label: What you see, and what you expected
+      description: A screenshot is worth a thousand hex codes.
+    validations:
+      required: true

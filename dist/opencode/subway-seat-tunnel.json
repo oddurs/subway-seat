@@ -1,0 +1,263 @@
+{
+  "$schema": "https://opencode.ai/theme.json",
+  "defs": {
+    "tunnelCrust": "#140D07",
+    "tunnelMantle": "#1B120A",
+    "tunnelBase": "#24180E",
+    "tunnelSurface0": "#302115",
+    "tunnelSurface1": "#3D2C1D",
+    "tunnelSurface2": "#4F3927",
+    "tunnelOverlay0": "#6A523C",
+    "tunnelOverlay1": "#8A7053",
+    "tunnelOverlay2": "#A48B6C",
+    "tunnelSubtext0": "#C0AA88",
+    "tunnelSubtext1": "#D6C3A0",
+    "tunnelText": "#E9D8B6",
+    "tunnelTextHi": "#F6EAD1",
+    "tunnelYellow": "#F3BF45",
+    "tunnelYellowHi": "#FFD36B",
+    "tunnelOrange": "#EC7F31",
+    "tunnelOrangeHi": "#FF9D55",
+    "tunnelRed": "#D2503A",
+    "tunnelRedHi": "#EC6A50",
+    "tunnelGreen": "#A3AE4B",
+    "tunnelGreenHi": "#BFCB63",
+    "tunnelSage": "#86AD95",
+    "tunnelSageHi": "#A5C9B0",
+    "tunnelDenim": "#7F9BAE",
+    "tunnelDenimHi": "#9DB6C6",
+    "tunnelClay": "#E0956C",
+    "enamelCrust": "#E2D3B6",
+    "enamelMantle": "#EBDEC6",
+    "enamelBase": "#F4E9D4",
+    "enamelSurface0": "#D9C8A7",
+    "enamelSurface1": "#CAB48E",
+    "enamelSurface2": "#BAA07A",
+    "enamelOverlay0": "#A58C6A",
+    "enamelOverlay1": "#8C7254",
+    "enamelOverlay2": "#735C44",
+    "enamelSubtext0": "#654F3B",
+    "enamelSubtext1": "#54402F",
+    "enamelText": "#3E2C1E",
+    "enamelTextHi": "#2A1D13",
+    "enamelYellow": "#A56E00",
+    "enamelYellowHi": "#BA8210",
+    "enamelOrange": "#C4561A",
+    "enamelOrangeHi": "#D66A27",
+    "enamelRed": "#B43B27",
+    "enamelRedHi": "#C44A33",
+    "enamelGreen": "#697813",
+    "enamelGreenHi": "#7B8B22",
+    "enamelSage": "#3E7157",
+    "enamelSageHi": "#4C8367",
+    "enamelDenim": "#3F6480",
+    "enamelDenimHi": "#517791",
+    "enamelClay": "#AE5F3A"
+  },
+  "theme": {
+    "primary": {
+      "dark": "tunnelOrange",
+      "light": "enamelOrange"
+    },
+    "secondary": {
+      "dark": "tunnelYellow",
+      "light": "enamelYellow"
+    },
+    "accent": {
+      "dark": "tunnelSage",
+      "light": "enamelSage"
+    },
+    "error": {
+      "dark": "tunnelRedHi",
+      "light": "enamelRedHi"
+    },
+    "warning": {
+      "dark": "tunnelYellow",
+      "light": "enamelYellow"
+    },
+    "success": {
+      "dark": "tunnelGreen",
+      "light": "enamelGreen"
+    },
+    "info": {
+      "dark": "tunnelDenim",
+      "light": "enamelDenim"
+    },
+    "text": {
+      "dark": "tunnelText",
+      "light": "enamelText"
+    },
+    "textMuted": {
+      "dark": "tunnelOverlay2",
+      "light": "enamelOverlay2"
+    },
+    "selectedListItemText": {
+      "dark": "tunnelCrust",
+      "light": "enamelBase"
+    },
+    "background": {
+      "dark": "tunnelBase",
+      "light": "enamelBase"
+    },
+    "backgroundPanel": {
+      "dark": "tunnelSurface0",
+      "light": "enamelMantle"
+    },
+    "backgroundElement": {
+      "dark": "tunnelSurface1",
+      "light": "enamelCrust"
+    },
+    "border": {
+      "dark": "tunnelSurface2",
+      "light": "enamelSurface2"
+    },
+    "borderActive": {
+      "dark": "tunnelOverlay0",
+      "light": "enamelOverlay0"
+    },
+    "borderSubtle": {
+      "dark": "tunnelSurface1",
+      "light": "enamelSurface1"
+    },
+    "diffAdded": {
+      "dark": "tunnelGreen",
+      "light": "enamelGreen"
+    },
+    "diffRemoved": {
+      "dark": "tunnelRedHi",
+      "light": "enamelRedHi"
+    },
+    "diffContext": {
+      "dark": "tunnelOverlay1",
+      "light": "enamelOverlay1"
+    },
+    "diffHunkHeader": {
+      "dark": "tunnelDenim",
+      "light": "enamelDenim"
+    },
+    "diffHighlightAdded": {
+      "dark": "tunnelGreenHi",
+      "light": "enamelGreen"
+    },
+    "diffHighlightRemoved": {
+      "dark": "tunnelRedHi",
+      "light": "enamelRed"
+    },
+    "diffAddedBg": {
+      "dark": "#3D361A",
+      "light": "#DCD6B3"
+    },
+    "diffRemovedBg": {
+      "dark": "#4A2418",
+      "light": "#E8C8B4"
+    },
+    "diffContextBg": {
+      "dark": "tunnelBase",
+      "light": "enamelBase"
+    },
+    "diffLineNumber": {
+      "dark": "tunnelOverlay0",
+      "light": "enamelOverlay0"
+    },
+    "diffAddedLineNumberBg": {
+      "dark": "#312714",
+      "light": "#E6DEC1"
+    },
+    "diffRemovedLineNumberBg": {
+      "dark": "#371E13",
+      "light": "#EDD6C1"
+    },
+    "markdownText": {
+      "dark": "tunnelText",
+      "light": "enamelText"
+    },
+    "markdownHeading": {
+      "dark": "tunnelYellow",
+      "light": "enamelYellow"
+    },
+    "markdownLink": {
+      "dark": "tunnelDenim",
+      "light": "enamelDenim"
+    },
+    "markdownLinkText": {
+      "dark": "tunnelDenimHi",
+      "light": "enamelDenimHi"
+    },
+    "markdownCode": {
+      "dark": "tunnelGreen",
+      "light": "enamelGreen"
+    },
+    "markdownBlockQuote": {
+      "dark": "tunnelSubtext0",
+      "light": "enamelSubtext0"
+    },
+    "markdownEmph": {
+      "dark": "tunnelText",
+      "light": "enamelText"
+    },
+    "markdownStrong": {
+      "dark": "tunnelTextHi",
+      "light": "enamelTextHi"
+    },
+    "markdownHorizontalRule": {
+      "dark": "tunnelOverlay0",
+      "light": "enamelOverlay0"
+    },
+    "markdownListItem": {
+      "dark": "tunnelOrange",
+      "light": "enamelOrange"
+    },
+    "markdownListEnumeration": {
+      "dark": "tunnelOrange",
+      "light": "enamelOrange"
+    },
+    "markdownImage": {
+      "dark": "tunnelDenim",
+      "light": "enamelDenim"
+    },
+    "markdownImageText": {
+      "dark": "tunnelDenimHi",
+      "light": "enamelDenimHi"
+    },
+    "markdownCodeBlock": {
+      "dark": "tunnelText",
+      "light": "enamelText"
+    },
+    "syntaxComment": {
+      "dark": "tunnelOverlay1",
+      "light": "enamelOverlay1"
+    },
+    "syntaxKeyword": {
+      "dark": "tunnelOrange",
+      "light": "enamelOrange"
+    },
+    "syntaxFunction": {
+      "dark": "tunnelYellow",
+      "light": "enamelYellow"
+    },
+    "syntaxVariable": {
+      "dark": "tunnelText",
+      "light": "enamelText"
+    },
+    "syntaxString": {
+      "dark": "tunnelGreen",
+      "light": "enamelGreen"
+    },
+    "syntaxNumber": {
+      "dark": "tunnelRedHi",
+      "light": "enamelRedHi"
+    },
+    "syntaxType": {
+      "dark": "tunnelSage",
+      "light": "enamelSage"
+    },
+    "syntaxOperator": {
+      "dark": "tunnelOverlay2",
+      "light": "enamelOverlay2"
+    },
+    "syntaxPunctuation": {
+      "dark": "tunnelOverlay2",
+      "light": "enamelOverlay2"
+    }
+  }
+}

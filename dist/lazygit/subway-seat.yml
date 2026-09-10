@@ -1,0 +1,32 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# Subway Seat for lazygit.
+gui:
+  theme:
+    activeBorderColor:
+      - '#EC7F31'
+      - 'bold'
+    inactiveBorderColor:
+      - '#7B6047'
+    searchingActiveBorderColor:
+      - '#F3BF45'
+      - 'bold'
+    optionsTextColor:
+      - '#F3BF45'
+    selectedLineBgColor:
+      - '#513B27'
+    inactiveViewSelectedLineBgColor:
+      - '#43301F'
+    cherryPickedCommitFgColor:
+      - '#E0956C'
+    cherryPickedCommitBgColor:
+      - '#513B27'
+    markedBaseCommitFgColor:
+      - '#20160E'
+    markedBaseCommitBgColor:
+      - '#F3BF45'
+    unstagedChangesColor:
+      - '#EC6A50'
+    defaultFgColor:
+      - '#EDDCBC'
+  authorColors:
+    '*': '#86AD95'

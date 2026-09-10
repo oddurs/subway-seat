@@ -1,0 +1,26 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# Subway Seat Tunnel for gh-dash.
+theme:
+  colors:
+    text:
+      primary: "#E9D8B6"
+      secondary: "#EC7F31"
+      inverted: "#140D07"
+      faint: "#8A7053"
+      warning: "#F3BF45"
+      success: "#A3AE4B"
+      error: "#EC6A50"
+      actor: "#D6C3A0"
+    background:
+      selected: "#302115"
+    border:
+      primary: "#EC7F31"
+      secondary: "#4F3927"
+      faint: "#302115"
+    icon:
+      newcontributor: "#A3AE4B"
+      contributor: "#86AD95"
+      collaborator: "#F3BF45"
+      member: "#F3BF45"
+      owner: "#EC7F31"
+      unknownrole: "#8A7053"

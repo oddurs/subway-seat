@@ -1,0 +1,86 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# Subway Seat for btop.
+
+# Main background, empty for terminal default
+theme[main_bg]="#362619"
+
+# Main text colour
+theme[main_fg]="#EDDCBC"
+
+# Title colour for boxes
+theme[title]="#F8ECD4"
+
+# Highlight colour for keyboard shortcuts
+theme[hi_fg]="#EC7F31"
+
+# Background of the selected item in the processes box
+theme[selected_bg]="#513B27"
+
+# Foreground of the selected item in the processes box
+theme[selected_fg]="#FFD36B"
+
+# Inactive or disabled text
+theme[inactive_fg]="#7B6047"
+
+# Text drawn over graphs: uptime, network graph scale
+theme[graph_text]="#C4AE8C"
+
+# Background of the percentage meters
+theme[meter_bg]="#513B27"
+
+# Mini cpu graphs, detailed memory graph and status text in the processes box
+theme[proc_misc]="#86AD95"
+
+# Box outlines
+theme[cpu_box]="#EC7F31"
+theme[mem_box]="#F3BF45"
+theme[net_box]="#A3AE4B"
+theme[proc_box]="#E0956C"
+
+# Box dividers and small box outlines
+theme[div_line]="#634932"
+
+# Temperature graph
+theme[temp_start]="#A3AE4B"
+theme[temp_mid]="#F09F3B"
+theme[temp_end]="#D2503A"
+
+# CPU graph
+theme[cpu_start]="#A3AE4B"
+theme[cpu_mid]="#F09F3B"
+theme[cpu_end]="#D2503A"
+
+# Mem/disk free meter
+theme[free_start]="#727134"
+theme[free_mid]="#A3AE4B"
+theme[free_end]="#BFCB63"
+
+# Mem/disk cached meter
+theme[cached_start]="#5E666B"
+theme[cached_mid]="#7F9BAE"
+theme[cached_end]="#9DB6C6"
+
+# Mem/disk available meter
+theme[available_start]="#9E7A31"
+theme[available_mid]="#F3BF45"
+theme[available_end]="#FFD36B"
+
+# Mem/disk used meter
+theme[used_start]="#EC7F31"
+theme[used_mid]="#D2503A"
+theme[used_end]="#EC6A50"
+
+# Download graph
+theme[download_start]="#727134"
+theme[download_mid]="#A3AE4B"
+theme[download_end]="#F3BF45"
+
+# Upload graph
+theme[upload_start]="#9A5726"
+theme[upload_mid]="#EC7F31"
+theme[upload_end]="#EC6A50"
+
+# Process box gradient for threads, memory and cpu usage
+theme[process_start]="#A3AE4B"
+theme[process_mid]="#F09F3B"
+theme[process_end]="#D2503A"

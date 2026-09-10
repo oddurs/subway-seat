@@ -1,0 +1,61 @@
+{
+  "manifest_version": 2,
+  "name": "Subway Seat Enamel",
+  "version": "0.2.0",
+  "description": "A walnut-brown 1970s NYC subway theme: harvest gold, burnt orange and avocado on warm wood. Cream enamel panels in the morning sun. The light one. (Subway Seat \u2014 generated from palette.py by build.py. Edit the palette, not this file.)",
+  "author": "Oddur Sigurdsson",
+  "homepage_url": "https://github.com/oddurs/subway-seat",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "subway-seat-enamel@oddurs.github.io",
+      "strict_min_version": "106.0"
+    }
+  },
+  "theme": {
+    "colors": {
+      "frame": "#E2D3B6",
+      "frame_inactive": "#EBDEC6",
+      "tab_background_text": "#735C44",
+      "tab_background_separator": "#CAB48E",
+      "tab_selected": "#F4E9D4",
+      "tab_text": "#3E2C1E",
+      "tab_line": "#C4561A",
+      "tab_loading": "#C4561A",
+      "toolbar": "#F4E9D4",
+      "toolbar_text": "#3E2C1E",
+      "toolbar_top_separator": "#E2D3B6",
+      "toolbar_bottom_separator": "#CAB48E",
+      "toolbar_vertical_separator": "#CAB48E",
+      "icons": "#54402F",
+      "icons_attention": "#C4561A",
+      "button_background_hover": "#D9C8A7",
+      "button_background_active": "#CAB48E",
+      "toolbar_field": "#EBDEC6",
+      "toolbar_field_text": "#3E2C1E",
+      "toolbar_field_border": "#CAB48E",
+      "toolbar_field_focus": "#F4E9D4",
+      "toolbar_field_text_focus": "#2A1D13",
+      "toolbar_field_border_focus": "#C4561A",
+      "toolbar_field_highlight": "#CAB48E",
+      "toolbar_field_highlight_text": "#2A1D13",
+      "toolbar_field_separator": "#CAB48E",
+      "popup": "#F4E9D4",
+      "popup_text": "#3E2C1E",
+      "popup_border": "#CAB48E",
+      "popup_highlight": "#CAB48E",
+      "popup_highlight_text": "#2A1D13",
+      "sidebar": "#EBDEC6",
+      "sidebar_text": "#3E2C1E",
+      "sidebar_border": "#CAB48E",
+      "sidebar_highlight": "#CAB48E",
+      "sidebar_highlight_text": "#2A1D13",
+      "ntp_background": "#F4E9D4",
+      "ntp_card_background": "#EBDEC6",
+      "ntp_text": "#3E2C1E"
+    },
+    "properties": {
+      "color_scheme": "light",
+      "content_color_scheme": "light"
+    }
+  }
+}

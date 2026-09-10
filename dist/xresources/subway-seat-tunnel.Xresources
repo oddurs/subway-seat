@@ -1,0 +1,40 @@
+! Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+! Subway Seat Tunnel
+
+*.foreground: #E9D8B6
+*.background: #24180E
+*.cursorColor: #F3BF45
+*.highlightColor: #4F3927
+*.highlightTextColor: #F6EAD1
+
+! black
+*.color0: #3D2C1D
+*.color8: #6A523C
+
+! red
+*.color1: #D2503A
+*.color9: #EC6A50
+
+! green
+*.color2: #A3AE4B
+*.color10: #BFCB63
+
+! yellow
+*.color3: #F3BF45
+*.color11: #FFD36B
+
+! blue
+*.color4: #7F9BAE
+*.color12: #9DB6C6
+
+! magenta
+*.color5: #EC7F31
+*.color13: #FF9D55
+
+! cyan
+*.color6: #86AD95
+*.color14: #A5C9B0
+
+! white
+*.color7: #D6C3A0
+*.color15: #F6EAD1

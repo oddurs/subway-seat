@@ -1,0 +1,92 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+
+[colors]
+foreground = "#E9D8B6"
+background = "#24180E"
+cursor_bg = "#F3BF45"
+cursor_border = "#F3BF45"
+cursor_fg = "#24180E"
+compose_cursor = "#E0956C"
+selection_bg = "#4F3927"
+selection_fg = "#F6EAD1"
+scrollbar_thumb = "#4F3927"
+split = "#302115"
+visual_bell = "#302115"
+ansi = [
+  "#3D2C1D",
+  "#D2503A",
+  "#A3AE4B",
+  "#F3BF45",
+  "#7F9BAE",
+  "#EC7F31",
+  "#86AD95",
+  "#D6C3A0",
+]
+brights = [
+  "#6A523C",
+  "#EC6A50",
+  "#BFCB63",
+  "#FFD36B",
+  "#9DB6C6",
+  "#FF9D55",
+  "#A5C9B0",
+  "#F6EAD1",
+]
+copy_mode_active_highlight_bg = { Color = "#884C20" }
+copy_mode_active_highlight_fg = { Color = "#F6EAD1" }
+copy_mode_inactive_highlight_bg = { Color = "#624A1E" }
+copy_mode_inactive_highlight_fg = { Color = "#E9D8B6" }
+quick_select_label_bg = { Color = "#EC7F31" }
+quick_select_label_fg = { Color = "#24180E" }
+quick_select_match_bg = { Color = "#624A1E" }
+quick_select_match_fg = { Color = "#F6EAD1" }
+
+[colors.tab_bar]
+background = "#140D07"
+inactive_tab_edge = "#302115"
+
+[colors.tab_bar.active_tab]
+bg_color = "#24180E"
+fg_color = "#F3BF45"
+intensity = "Bold"
+italic = false
+strikethrough = false
+underline = "None"
+
+[colors.tab_bar.inactive_tab]
+bg_color = "#1B120A"
+fg_color = "#8A7053"
+intensity = "Normal"
+italic = false
+strikethrough = false
+underline = "None"
+
+[colors.tab_bar.inactive_tab_hover]
+bg_color = "#302115"
+fg_color = "#E9D8B6"
+intensity = "Normal"
+italic = false
+strikethrough = false
+underline = "None"
+
+[colors.tab_bar.new_tab]
+bg_color = "#140D07"
+fg_color = "#8A7053"
+intensity = "Normal"
+italic = false
+strikethrough = false
+underline = "None"
+
+[colors.tab_bar.new_tab_hover]
+bg_color = "#302115"
+fg_color = "#F3BF45"
+intensity = "Normal"
+italic = false
+strikethrough = false
+underline = "None"
+
+[metadata]
+name = "Subway Seat Tunnel"
+author = "oddurs"
+origin_url = "https://github.com/oddurs/subway-seat"
+aliases = []

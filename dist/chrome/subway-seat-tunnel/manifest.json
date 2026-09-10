@@ -1,0 +1,133 @@
+{
+  "manifest_version": 3,
+  "name": "Subway Seat Tunnel",
+  "version": "0.2.0",
+  "description": "A walnut-brown 1970s NYC subway theme: harvest gold, burnt orange and avocado on warm wood. The late local after midnight: espresso-deep, same warm lights.",
+  "theme": {
+    "colors": {
+      "frame": [
+        20,
+        13,
+        7
+      ],
+      "frame_inactive": [
+        20,
+        13,
+        7
+      ],
+      "frame_incognito": [
+        53,
+        35,
+        23
+      ],
+      "frame_incognito_inactive": [
+        53,
+        35,
+        23
+      ],
+      "background_tab": [
+        20,
+        13,
+        7
+      ],
+      "background_tab_inactive": [
+        20,
+        13,
+        7
+      ],
+      "background_tab_incognito": [
+        53,
+        35,
+        23
+      ],
+      "background_tab_incognito_inactive": [
+        53,
+        35,
+        23
+      ],
+      "toolbar": [
+        36,
+        24,
+        14
+      ],
+      "tab_text": [
+        233,
+        216,
+        182
+      ],
+      "tab_background_text": [
+        164,
+        139,
+        108
+      ],
+      "tab_background_text_inactive": [
+        138,
+        112,
+        83
+      ],
+      "tab_background_text_incognito": [
+        192,
+        170,
+        136
+      ],
+      "tab_background_text_incognito_inactive": [
+        164,
+        139,
+        108
+      ],
+      "bookmark_text": [
+        214,
+        195,
+        160
+      ],
+      "toolbar_button_icon": [
+        214,
+        195,
+        160
+      ],
+      "toolbar_text": [
+        233,
+        216,
+        182
+      ],
+      "omnibox_background": [
+        27,
+        18,
+        10
+      ],
+      "omnibox_text": [
+        233,
+        216,
+        182
+      ],
+      "ntp_background": [
+        36,
+        24,
+        14
+      ],
+      "ntp_text": [
+        233,
+        216,
+        182
+      ],
+      "ntp_link": [
+        127,
+        155,
+        174
+      ],
+      "ntp_header": [
+        236,
+        127,
+        49
+      ],
+      "button_background": [
+        20,
+        13,
+        7
+      ]
+    },
+    "properties": {
+      "ntp_logo_alternate": 1
+    }
+  }
+}

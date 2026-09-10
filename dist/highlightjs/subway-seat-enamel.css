@@ -1,0 +1,38 @@
+/* Subway Seat — generated from palette.py by build.py. Edit the palette, not this file. */
+/* Subway Seat Enamel for highlight.js */
+
+pre code.hljs { display: block; overflow-x: auto; padding: 1em; }
+code.hljs { padding: 3px 5px; }
+
+.hljs { color: #3E2C1E; background: #F4E9D4; }
+.hljs::selection, .hljs ::selection { color: #2A1D13; background: #CAB48E; }
+
+.hljs-comment { color: #8C7254; font-style: italic; }
+.hljs-quote { color: #654F3B; font-style: italic; }
+.hljs-doctag, .hljs-meta, .hljs-meta .hljs-keyword { color: #AE5F3A; font-style: italic; }
+.hljs-meta .hljs-string { color: #697813; }
+.hljs-keyword, .hljs-template-tag { color: #C4561A; }
+.hljs-operator { color: #735C44; }
+.hljs-punctuation, .hljs-tag { color: #735C44; }
+.hljs-title, .hljs-title.function_, .hljs-title.function_.invoke__, .hljs-attr { color: #A56E00; }
+.hljs-built_in { color: #A56E00; font-style: italic; }
+.hljs-string, .hljs-code { color: #697813; }
+.hljs-char.escape_ { color: #AE5F3A; }
+.hljs-regexp { color: #AE5F3A; }
+.hljs-number { color: #C44A33; }
+.hljs-literal, .hljs-symbol, .hljs-variable.constant_, .hljs-formula { color: #C44A33; }
+.hljs-title.class_, .hljs-title.class_.inherited__ { color: #3E7157; }
+.hljs-type { color: #3E7157; font-style: italic; }
+.hljs-variable, .hljs-template-variable, .hljs-subst { color: #3E2C1E; }
+.hljs-variable.language_ { color: #C44A33; font-style: italic; }
+.hljs-params { color: #54402F; font-style: italic; }
+.hljs-property, .hljs-attribute { color: #54402F; }
+.hljs-name, .hljs-selector-tag { color: #C4561A; }
+.hljs-selector-id, .hljs-selector-class, .hljs-selector-attr, .hljs-selector-pseudo { color: #A56E00; font-style: italic; }
+.hljs-section { color: #A56E00; font-weight: bold; }
+.hljs-bullet { color: #C4561A; }
+.hljs-emphasis { color: #3E2C1E; font-style: italic; }
+.hljs-strong { color: #2A1D13; font-weight: bold; }
+.hljs-link { color: #3F6480; text-decoration: underline; }
+.hljs-addition { color: #697813; background: #DCD6B3; }
+.hljs-deletion { color: #C44A33; background: #E8C8B4; }

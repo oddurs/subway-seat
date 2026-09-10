@@ -1,0 +1,66 @@
+/* Subway Seat — generated from palette.py by build.py. Edit the palette, not this file. */
+/* Subway Seat Tunnel: The late local after midnight: espresso-deep, same warm lights. */
+
+:root {
+  color-scheme: dark;
+
+  /* Ground */
+  --ss-crust: #140D07; /* Tunnel */
+  --ss-mantle: #1B120A; /* Espresso */
+  --ss-base: #24180E; /* Walnut */
+  --ss-surface0: #302115; /* Coppertone */
+  --ss-surface1: #3D2C1D; /* Saddle */
+  --ss-surface2: #4F3927; /* Corduroy */
+  --ss-overlay0: #6A523C; /* Pecan */
+  --ss-overlay1: #8A7053; /* Cardboard */
+  --ss-overlay2: #A48B6C; /* Burlap */
+
+  /* Text */
+  --ss-subtext0: #C0AA88; /* Khaki */
+  --ss-subtext1: #D6C3A0; /* Almond */
+  --ss-text: #E9D8B6; /* Parchment */
+  --ss-text-hi: #F6EAD1; /* Ivory */
+
+  /* Accents */
+  --ss-yellow: #F3BF45; /* Harvest gold */
+  --ss-yellow-hi: #FFD36B; /* Broadway yellow */
+  --ss-orange: #EC7F31; /* Burnt orange */
+  --ss-orange-hi: #FF9D55; /* Sixth Avenue */
+  --ss-red: #D2503A; /* Redbird */
+  --ss-red-hi: #EC6A50; /* Redbird bright */
+  --ss-green: #A3AE4B; /* Avocado */
+  --ss-green-hi: #BFCB63; /* Avocado bright */
+  --ss-sage: #86AD95; /* Seafoam tile */
+  --ss-sage-hi: #A5C9B0; /* Seafoam bright */
+  --ss-denim: #7F9BAE; /* Faded denim */
+  --ss-denim-hi: #9DB6C6; /* Denim bright */
+  --ss-clay: #E0956C; /* Terracotta */
+
+  /* RGB triplets, for rgb(var(--ss-base-rgb) / 0.5) */
+  --ss-crust-rgb: 20 13 7;
+  --ss-mantle-rgb: 27 18 10;
+  --ss-base-rgb: 36 24 14;
+  --ss-surface0-rgb: 48 33 21;
+  --ss-surface1-rgb: 61 44 29;
+  --ss-surface2-rgb: 79 57 39;
+  --ss-overlay0-rgb: 106 82 60;
+  --ss-overlay1-rgb: 138 112 83;
+  --ss-overlay2-rgb: 164 139 108;
+  --ss-subtext0-rgb: 192 170 136;
+  --ss-subtext1-rgb: 214 195 160;
+  --ss-text-rgb: 233 216 182;
+  --ss-text-hi-rgb: 246 234 209;
+  --ss-yellow-rgb: 243 191 69;
+  --ss-yellow-hi-rgb: 255 211 107;
+  --ss-orange-rgb: 236 127 49;
+  --ss-orange-hi-rgb: 255 157 85;
+  --ss-red-rgb: 210 80 58;
+  --ss-red-hi-rgb: 236 106 80;
+  --ss-green-rgb: 163 174 75;
+  --ss-green-hi-rgb: 191 203 99;
+  --ss-sage-rgb: 134 173 149;
+  --ss-sage-hi-rgb: 165 201 176;
+  --ss-denim-rgb: 127 155 174;
+  --ss-denim-hi-rgb: 157 182 198;
+  --ss-clay-rgb: 224 149 108;
+}

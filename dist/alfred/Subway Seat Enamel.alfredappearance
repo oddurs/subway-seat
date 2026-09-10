@@ -1,0 +1,64 @@
+{
+  "alfredtheme": {
+    "result": {
+      "textSpacing": 6,
+      "subtext": {
+        "size": 12,
+        "colorSelected": "#54402FFF",
+        "font": "System",
+        "color": "#735C44FF"
+      },
+      "shortcut": {
+        "size": 16,
+        "colorSelected": "#C4561AFF",
+        "font": "System",
+        "color": "#8C7254FF"
+      },
+      "backgroundSelected": "#ECD1B6FF",
+      "text": {
+        "size": 18,
+        "colorSelected": "#2A1D13FF",
+        "font": "System",
+        "color": "#3E2C1EFF"
+      },
+      "iconPaddingHorizontal": 6,
+      "roundness": 8,
+      "paddingVertical": 4,
+      "iconSize": 38
+    },
+    "search": {
+      "backgroundSelected": "#CAB48EFF",
+      "paddingHorizontal": 10,
+      "spacing": 10,
+      "text": {
+        "size": 30,
+        "colorSelected": "#2A1D13FF",
+        "font": "System Light",
+        "color": "#3E2C1EFF"
+      },
+      "background": "#E2D3B6FF",
+      "roundness": 8,
+      "paddingVertical": 6
+    },
+    "window": {
+      "color": "#F4E9D4F7",
+      "paddingHorizontal": 10,
+      "width": 620,
+      "borderPadding": 0,
+      "borderColor": "#CAB48EFF",
+      "blur": 12,
+      "roundness": 14,
+      "paddingVertical": 10
+    },
+    "separator": {
+      "color": "#E2D3B6FF",
+      "thickness": 1
+    },
+    "scrollbar": {
+      "color": "#CAB48EFF",
+      "thickness": 3
+    },
+    "name": "Subway Seat Enamel",
+    "credit": "Oddur Sigurdsson"
+  }
+}

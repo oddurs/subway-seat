@@ -1,0 +1,12 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# Subway Seat Enamel for cava: gradient from the bottom of the screen to the top.
+[color]
+gradient = 1
+gradient_color_1 = '#697813'
+gradient_color_2 = '#83740B'
+gradient_color_3 = '#9C6F03'
+gradient_color_4 = '#AE6707'
+gradient_color_5 = '#BB5D13'
+gradient_color_6 = '#C2521C'
+gradient_color_7 = '#BB4721'
+gradient_color_8 = '#B43B27'

@@ -1,0 +1,45 @@
+name: Release
+
+# Push a tag like v0.3.0. CI rebuilds, attaches the downloadable artifacts to a
+# GitHub release, and publishes VS Code + Open VSX when their tokens are set.
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    env:
+      VSCE_PAT: ${{ secrets.VSCE_PAT }}
+      OVSX_PAT: ${{ secrets.OVSX_PAT }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - run: uv python install 3.14
+      - run: uv run --python 3.14 --with pyyaml ./build.py
+      - name: dist/ matches the tag
+        run: git diff --exit-code --stat -- dist ':!dist/**/*.vsix' ':!dist/**/*.jar' ':!dist/**/*.xpi' ':!dist/**/*.zip' ':!dist/**/*.swatches' ':!dist/**/*.tdesktop-theme'
+
+      - name: Bundle
+        run: |
+          zip -qr subway-seat-dist.zip dist
+          cp dist/vscode/*.vsix dist/jetbrains/*.jar .
+
+      - name: GitHub release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          notes=$(awk "/^## \[${GITHUB_REF_NAME#v}\]/{f=1;next} /^## \[/{f=0} f" CHANGELOG.md)
+          gh release create "$GITHUB_REF_NAME" --title "Subway Seat ${GITHUB_REF_NAME}" \
+            --notes "${notes:-See CHANGELOG.md}" subway-seat-dist.zip ./*.vsix ./*.jar
+
+      - name: VS Code Marketplace
+        if: env.VSCE_PAT != ''
+        run: npx --yes @vscode/vsce publish --packagePath dist/vscode/*.vsix
+
+      - name: Open VSX
+        if: env.OVSX_PAT != ''
+        run: npx --yes ovsx publish dist/vscode/*.vsix -p "$OVSX_PAT"

@@ -1,0 +1,26 @@
+// Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+// Subway Seat Tunnel for gitui.
+(
+    selected_tab: Some("#EC7F31"),
+    command_fg: Some("#E9D8B6"),
+    selection_bg: Some("#3D2C1D"),
+    selection_fg: Some("#F6EAD1"),
+    cmdbar_bg: Some("#1B120A"),
+    disabled_fg: Some("#6A523C"),
+    diff_line_add: Some("#A3AE4B"),
+    diff_line_delete: Some("#EC6A50"),
+    diff_file_added: Some("#A3AE4B"),
+    diff_file_removed: Some("#EC6A50"),
+    diff_file_moved: Some("#86AD95"),
+    diff_file_modified: Some("#F3BF45"),
+    commit_hash: Some("#F3BF45"),
+    commit_time: Some("#C0AA88"),
+    commit_author: Some("#86AD95"),
+    danger_fg: Some("#EC6A50"),
+    push_gauge_bg: Some("#EC7F31"),
+    push_gauge_fg: Some("#140D07"),
+    tag_fg: Some("#E0956C"),
+    branch_fg: Some("#A3AE4B"),
+    block_title_focused: Some("#EC7F31"),
+    syntax: Some("subway-seat-tunnel"),
+)

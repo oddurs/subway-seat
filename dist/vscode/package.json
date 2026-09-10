@@ -1,0 +1,57 @@
+{
+  "name": "subway-seat",
+  "displayName": "Subway Seat",
+  "description": "Walnut-brown 1970s NYC subway theme: parchment text, harvest gold, burnt orange, avocado. Dark, deep dark and light.",
+  "version": "0.2.0",
+  "publisher": "oddurs",
+  "license": "MIT",
+  "icon": "icon.png",
+  "galleryBanner": {
+    "color": "#362619",
+    "theme": "dark"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oddurs/subway-seat"
+  },
+  "homepage": "https://github.com/oddurs/subway-seat",
+  "bugs": {
+    "url": "https://github.com/oddurs/subway-seat/issues"
+  },
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "dark",
+    "light",
+    "brown",
+    "retro",
+    "70s",
+    "warm",
+    "vintage",
+    "subway seat"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Subway Seat",
+        "uiTheme": "vs-dark",
+        "path": "./themes/subway-seat-color-theme.json"
+      },
+      {
+        "label": "Subway Seat Tunnel",
+        "uiTheme": "vs-dark",
+        "path": "./themes/subway-seat-tunnel-color-theme.json"
+      },
+      {
+        "label": "Subway Seat Enamel",
+        "uiTheme": "vs",
+        "path": "./themes/subway-seat-enamel-color-theme.json"
+      }
+    ]
+  }
+}

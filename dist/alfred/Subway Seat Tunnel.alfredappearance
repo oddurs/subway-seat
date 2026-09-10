@@ -1,0 +1,64 @@
+{
+  "alfredtheme": {
+    "result": {
+      "textSpacing": 6,
+      "subtext": {
+        "size": 12,
+        "colorSelected": "#D6C3A0FF",
+        "font": "System",
+        "color": "#A48B6CFF"
+      },
+      "shortcut": {
+        "size": 16,
+        "colorSelected": "#FF9D55FF",
+        "font": "System",
+        "color": "#8A7053FF"
+      },
+      "backgroundSelected": "#502F16FF",
+      "text": {
+        "size": 18,
+        "colorSelected": "#F6EAD1FF",
+        "font": "System",
+        "color": "#E9D8B6FF"
+      },
+      "iconPaddingHorizontal": 6,
+      "roundness": 8,
+      "paddingVertical": 4,
+      "iconSize": 38
+    },
+    "search": {
+      "backgroundSelected": "#4F3927FF",
+      "paddingHorizontal": 10,
+      "spacing": 10,
+      "text": {
+        "size": 30,
+        "colorSelected": "#F6EAD1FF",
+        "font": "System Light",
+        "color": "#E9D8B6FF"
+      },
+      "background": "#1B120AFF",
+      "roundness": 8,
+      "paddingVertical": 6
+    },
+    "window": {
+      "color": "#24180EF7",
+      "paddingHorizontal": 10,
+      "width": 620,
+      "borderPadding": 0,
+      "borderColor": "#302115FF",
+      "blur": 12,
+      "roundness": 14,
+      "paddingVertical": 10
+    },
+    "separator": {
+      "color": "#302115FF",
+      "thickness": 1
+    },
+    "scrollbar": {
+      "color": "#4F3927FF",
+      "thickness": 3
+    },
+    "name": "Subway Seat Tunnel",
+    "credit": "Oddur Sigurdsson"
+  }
+}

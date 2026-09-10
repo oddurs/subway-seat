@@ -1,0 +1,31 @@
+name: Port request
+description: Ask for Subway Seat in an app that doesn't have it yet.
+title: "Port: "
+labels: ["port request"]
+body:
+  - type: input
+    id: app
+    attributes:
+      label: App
+      description: Name and homepage.
+      placeholder: "Lapce — https://lap.dev"
+    validations:
+      required: true
+  - type: textarea
+    id: format
+    attributes:
+      label: How does it load themes?
+      description: File format, where the file goes, and how you switch it on. Links to the app's theme docs help a lot.
+    validations:
+      required: true
+  - type: input
+    id: reference
+    attributes:
+      label: A good existing theme for it
+      description: Catppuccin, Dracula or Rosé Pine's port for this app, if there is one.
+  - type: checkboxes
+    id: help
+    attributes:
+      label: Would you like to build it?
+      options:
+        - label: I'd like to send the port myself (see CONTRIBUTING.md).

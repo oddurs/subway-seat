@@ -1,0 +1,59 @@
+@layer resets {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-size-adjust: none;
+  }
+
+  img,
+  svg,
+  canvas {
+    display: block;
+    max-width: 100%;
+  }
+}
+
+/* Flavor-specific content rendered for every flavor; only the active one shows. */
+@layer flavors {
+  :root {
+    --ss-shadow: rgba(8, 5, 2, 0.55);
+    --ss-shadow-soft: rgba(8, 5, 2, 0.28);
+  }
+  html[data-flavor="enamel"] {
+    --ss-shadow: rgba(62, 44, 30, 0.2);
+    --ss-shadow-soft: rgba(62, 44, 30, 0.12);
+  }
+
+  html:not([data-flavor="walnut"]) [data-only="walnut"],
+  html:not([data-flavor="tunnel"]) [data-only="tunnel"],
+  html:not([data-flavor="enamel"]) [data-only="enamel"] {
+    display: none !important;
+  }
+
+  /* Shiki renders Walnut by default and carries the other flavors as variables. */
+  html[data-flavor="tunnel"] .shiki,
+  html[data-flavor="tunnel"] .shiki span {
+    color: var(--shiki-tunnel) !important;
+    background-color: var(--shiki-tunnel-bg) !important;
+  }
+  html[data-flavor="enamel"] .shiki,
+  html[data-flavor="enamel"] .shiki span {
+    color: var(--shiki-enamel) !important;
+    background-color: var(--shiki-enamel-bg) !important;
+  }
+
+  ::selection {
+    background: color-mix(in srgb, currentColor 22%, transparent);
+  }
+}
+
+/* Replaced by @stylexjs/postcss-plugin with the compiled atomic CSS. */
+@stylex;

@@ -1,0 +1,38 @@
+/* Subway Seat — generated from palette.py by build.py. Edit the palette, not this file. */
+/* Subway Seat for highlight.js */
+
+pre code.hljs { display: block; overflow-x: auto; padding: 1em; }
+code.hljs { padding: 3px 5px; }
+
+.hljs { color: #EDDCBC; background: #362619; }
+.hljs::selection, .hljs ::selection { color: #F8ECD4; background: #634932; }
+
+.hljs-comment { color: #967B5C; font-style: italic; }
+.hljs-quote { color: #C4AE8C; font-style: italic; }
+.hljs-doctag, .hljs-meta, .hljs-meta .hljs-keyword { color: #E0956C; font-style: italic; }
+.hljs-meta .hljs-string { color: #A3AE4B; }
+.hljs-keyword, .hljs-template-tag { color: #EC7F31; }
+.hljs-operator { color: #AE9575; }
+.hljs-punctuation, .hljs-tag { color: #AE9575; }
+.hljs-title, .hljs-title.function_, .hljs-title.function_.invoke__, .hljs-attr { color: #F3BF45; }
+.hljs-built_in { color: #F3BF45; font-style: italic; }
+.hljs-string, .hljs-code { color: #A3AE4B; }
+.hljs-char.escape_ { color: #E0956C; }
+.hljs-regexp { color: #E0956C; }
+.hljs-number { color: #EC6A50; }
+.hljs-literal, .hljs-symbol, .hljs-variable.constant_, .hljs-formula { color: #EC6A50; }
+.hljs-title.class_, .hljs-title.class_.inherited__ { color: #86AD95; }
+.hljs-type { color: #86AD95; font-style: italic; }
+.hljs-variable, .hljs-template-variable, .hljs-subst { color: #EDDCBC; }
+.hljs-variable.language_ { color: #EC6A50; font-style: italic; }
+.hljs-params { color: #D9C6A3; font-style: italic; }
+.hljs-property, .hljs-attribute { color: #D9C6A3; }
+.hljs-name, .hljs-selector-tag { color: #EC7F31; }
+.hljs-selector-id, .hljs-selector-class, .hljs-selector-attr, .hljs-selector-pseudo { color: #F3BF45; font-style: italic; }
+.hljs-section { color: #F3BF45; font-weight: bold; }
+.hljs-bullet { color: #EC7F31; }
+.hljs-emphasis { color: #EDDCBC; font-style: italic; }
+.hljs-strong { color: #F8ECD4; font-weight: bold; }
+.hljs-link { color: #7F9BAE; text-decoration: underline; }
+.hljs-addition { color: #A3AE4B; background: #4C4123; }
+.hljs-deletion { color: #EC6A50; background: #582F20; }

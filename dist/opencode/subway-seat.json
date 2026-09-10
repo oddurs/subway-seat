@@ -1,0 +1,263 @@
+{
+  "$schema": "https://opencode.ai/theme.json",
+  "defs": {
+    "walnutCrust": "#20160E",
+    "walnutMantle": "#2A1D13",
+    "walnutBase": "#362619",
+    "walnutSurface0": "#43301F",
+    "walnutSurface1": "#513B27",
+    "walnutSurface2": "#634932",
+    "walnutOverlay0": "#7B6047",
+    "walnutOverlay1": "#967B5C",
+    "walnutOverlay2": "#AE9575",
+    "walnutSubtext0": "#C4AE8C",
+    "walnutSubtext1": "#D9C6A3",
+    "walnutText": "#EDDCBC",
+    "walnutTextHi": "#F8ECD4",
+    "walnutYellow": "#F3BF45",
+    "walnutYellowHi": "#FFD36B",
+    "walnutOrange": "#EC7F31",
+    "walnutOrangeHi": "#FF9D55",
+    "walnutRed": "#D2503A",
+    "walnutRedHi": "#EC6A50",
+    "walnutGreen": "#A3AE4B",
+    "walnutGreenHi": "#BFCB63",
+    "walnutSage": "#86AD95",
+    "walnutSageHi": "#A5C9B0",
+    "walnutDenim": "#7F9BAE",
+    "walnutDenimHi": "#9DB6C6",
+    "walnutClay": "#E0956C",
+    "enamelCrust": "#E2D3B6",
+    "enamelMantle": "#EBDEC6",
+    "enamelBase": "#F4E9D4",
+    "enamelSurface0": "#D9C8A7",
+    "enamelSurface1": "#CAB48E",
+    "enamelSurface2": "#BAA07A",
+    "enamelOverlay0": "#A58C6A",
+    "enamelOverlay1": "#8C7254",
+    "enamelOverlay2": "#735C44",
+    "enamelSubtext0": "#654F3B",
+    "enamelSubtext1": "#54402F",
+    "enamelText": "#3E2C1E",
+    "enamelTextHi": "#2A1D13",
+    "enamelYellow": "#A56E00",
+    "enamelYellowHi": "#BA8210",
+    "enamelOrange": "#C4561A",
+    "enamelOrangeHi": "#D66A27",
+    "enamelRed": "#B43B27",
+    "enamelRedHi": "#C44A33",
+    "enamelGreen": "#697813",
+    "enamelGreenHi": "#7B8B22",
+    "enamelSage": "#3E7157",
+    "enamelSageHi": "#4C8367",
+    "enamelDenim": "#3F6480",
+    "enamelDenimHi": "#517791",
+    "enamelClay": "#AE5F3A"
+  },
+  "theme": {
+    "primary": {
+      "dark": "walnutOrange",
+      "light": "enamelOrange"
+    },
+    "secondary": {
+      "dark": "walnutYellow",
+      "light": "enamelYellow"
+    },
+    "accent": {
+      "dark": "walnutSage",
+      "light": "enamelSage"
+    },
+    "error": {
+      "dark": "walnutRedHi",
+      "light": "enamelRedHi"
+    },
+    "warning": {
+      "dark": "walnutYellow",
+      "light": "enamelYellow"
+    },
+    "success": {
+      "dark": "walnutGreen",
+      "light": "enamelGreen"
+    },
+    "info": {
+      "dark": "walnutDenim",
+      "light": "enamelDenim"
+    },
+    "text": {
+      "dark": "walnutText",
+      "light": "enamelText"
+    },
+    "textMuted": {
+      "dark": "walnutOverlay2",
+      "light": "enamelOverlay2"
+    },
+    "selectedListItemText": {
+      "dark": "walnutCrust",
+      "light": "enamelBase"
+    },
+    "background": {
+      "dark": "walnutBase",
+      "light": "enamelBase"
+    },
+    "backgroundPanel": {
+      "dark": "walnutSurface0",
+      "light": "enamelMantle"
+    },
+    "backgroundElement": {
+      "dark": "walnutSurface1",
+      "light": "enamelCrust"
+    },
+    "border": {
+      "dark": "walnutSurface2",
+      "light": "enamelSurface2"
+    },
+    "borderActive": {
+      "dark": "walnutOverlay0",
+      "light": "enamelOverlay0"
+    },
+    "borderSubtle": {
+      "dark": "walnutSurface1",
+      "light": "enamelSurface1"
+    },
+    "diffAdded": {
+      "dark": "walnutGreen",
+      "light": "enamelGreen"
+    },
+    "diffRemoved": {
+      "dark": "walnutRedHi",
+      "light": "enamelRedHi"
+    },
+    "diffContext": {
+      "dark": "walnutOverlay1",
+      "light": "enamelOverlay1"
+    },
+    "diffHunkHeader": {
+      "dark": "walnutDenim",
+      "light": "enamelDenim"
+    },
+    "diffHighlightAdded": {
+      "dark": "walnutGreenHi",
+      "light": "enamelGreen"
+    },
+    "diffHighlightRemoved": {
+      "dark": "walnutRedHi",
+      "light": "enamelRed"
+    },
+    "diffAddedBg": {
+      "dark": "#4C4123",
+      "light": "#DCD6B3"
+    },
+    "diffRemovedBg": {
+      "dark": "#582F20",
+      "light": "#E8C8B4"
+    },
+    "diffContextBg": {
+      "dark": "walnutBase",
+      "light": "enamelBase"
+    },
+    "diffLineNumber": {
+      "dark": "walnutOverlay0",
+      "light": "enamelOverlay0"
+    },
+    "diffAddedLineNumberBg": {
+      "dark": "#41341E",
+      "light": "#E6DEC1"
+    },
+    "diffRemovedLineNumberBg": {
+      "dark": "#472B1D",
+      "light": "#EDD6C1"
+    },
+    "markdownText": {
+      "dark": "walnutText",
+      "light": "enamelText"
+    },
+    "markdownHeading": {
+      "dark": "walnutYellow",
+      "light": "enamelYellow"
+    },
+    "markdownLink": {
+      "dark": "walnutDenim",
+      "light": "enamelDenim"
+    },
+    "markdownLinkText": {
+      "dark": "walnutDenimHi",
+      "light": "enamelDenimHi"
+    },
+    "markdownCode": {
+      "dark": "walnutGreen",
+      "light": "enamelGreen"
+    },
+    "markdownBlockQuote": {
+      "dark": "walnutSubtext0",
+      "light": "enamelSubtext0"
+    },
+    "markdownEmph": {
+      "dark": "walnutText",
+      "light": "enamelText"
+    },
+    "markdownStrong": {
+      "dark": "walnutTextHi",
+      "light": "enamelTextHi"
+    },
+    "markdownHorizontalRule": {
+      "dark": "walnutOverlay0",
+      "light": "enamelOverlay0"
+    },
+    "markdownListItem": {
+      "dark": "walnutOrange",
+      "light": "enamelOrange"
+    },
+    "markdownListEnumeration": {
+      "dark": "walnutOrange",
+      "light": "enamelOrange"
+    },
+    "markdownImage": {
+      "dark": "walnutDenim",
+      "light": "enamelDenim"
+    },
+    "markdownImageText": {
+      "dark": "walnutDenimHi",
+      "light": "enamelDenimHi"
+    },
+    "markdownCodeBlock": {
+      "dark": "walnutText",
+      "light": "enamelText"
+    },
+    "syntaxComment": {
+      "dark": "walnutOverlay1",
+      "light": "enamelOverlay1"
+    },
+    "syntaxKeyword": {
+      "dark": "walnutOrange",
+      "light": "enamelOrange"
+    },
+    "syntaxFunction": {
+      "dark": "walnutYellow",
+      "light": "enamelYellow"
+    },
+    "syntaxVariable": {
+      "dark": "walnutText",
+      "light": "enamelText"
+    },
+    "syntaxString": {
+      "dark": "walnutGreen",
+      "light": "enamelGreen"
+    },
+    "syntaxNumber": {
+      "dark": "walnutRedHi",
+      "light": "enamelRedHi"
+    },
+    "syntaxType": {
+      "dark": "walnutSage",
+      "light": "enamelSage"
+    },
+    "syntaxOperator": {
+      "dark": "walnutOverlay2",
+      "light": "enamelOverlay2"
+    },
+    "syntaxPunctuation": {
+      "dark": "walnutOverlay2",
+      "light": "enamelOverlay2"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+GIMP Palette
+Name: Subway Seat Enamel
+Columns: 13
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# Cream enamel panels in the morning sun. The light one.
+226 211 182	Tunnel (crust)
+235 222 198	Espresso (mantle)
+244 233 212	Walnut (base)
+217 200 167	Coppertone (surface0)
+202 180 142	Saddle (surface1)
+186 160 122	Corduroy (surface2)
+165 140 106	Pecan (overlay0)
+140 114  84	Cardboard (overlay1)
+115  92  68	Burlap (overlay2)
+101  79  59	Khaki (subtext0)
+ 84  64  47	Almond (subtext1)
+ 62  44  30	Parchment (text)
+ 42  29  19	Ivory (text_hi)
+165 110   0	Harvest gold (yellow)
+186 130  16	Broadway yellow (yellow_hi)
+196  86  26	Burnt orange (orange)
+214 106  39	Sixth Avenue (orange_hi)
+180  59  39	Redbird (red)
+196  74  51	Redbird bright (red_hi)
+105 120  19	Avocado (green)
+123 139  34	Avocado bright (green_hi)
+ 62 113  87	Seafoam tile (sage)
+ 76 131 103	Seafoam bright (sage_hi)
+ 63 100 128	Faded denim (denim)
+ 81 119 145	Denim bright (denim_hi)
+174  95  58	Terracotta (clay)

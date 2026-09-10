@@ -1,0 +1,48 @@
+/* Subway Seat — generated from palette.py by build.py. Edit the palette, not this file. */
+/* Subway Seat for Spicetify: the colour scheme does most of the work; this only
+   swaps Spotify's green accent for the scheme's button colour and tidies a few
+   details. Everything here reads --spice-* variables, so every flavor shares it. */
+
+.encore-dark-theme,
+.encore-light-theme,
+.encore-dark-theme .encore-base-set,
+.encore-light-theme .encore-base-set {
+  --text-bright-accent: var(--spice-button);
+  --essential-bright-accent: var(--spice-button);
+  --decorative-base: var(--spice-text);
+  --background-base: var(--spice-main);
+  --background-highlight: var(--spice-highlight);
+  --background-press: var(--spice-highlight-elevated);
+  --background-elevated-base: var(--spice-main-elevated);
+  --background-elevated-highlight: var(--spice-highlight);
+  --background-tinted-base: rgba(var(--spice-rgb-selected-row), 0.08);
+  --background-tinted-highlight: rgba(var(--spice-rgb-selected-row), 0.14);
+  --text-base: var(--spice-text);
+  --text-subdued: var(--spice-subtext);
+  --essential-base: var(--spice-text);
+  --essential-subdued: var(--spice-button-disabled);
+  --essential-announcement: var(--spice-denim);
+  --essential-negative: var(--spice-notification-error);
+  --essential-warning: var(--spice-yellow);
+  --essential-positive: var(--spice-green);
+}
+
+.encore-dark-theme .encore-bright-accent-set,
+.encore-light-theme .encore-bright-accent-set {
+  --background-base: var(--spice-button);
+  --background-highlight: var(--spice-button-active);
+  --background-press: var(--spice-button-active);
+  --background-elevated-base: var(--spice-button);
+  --background-elevated-highlight: var(--spice-button-active);
+  --text-base: var(--spice-ink);
+  --essential-base: var(--spice-ink);
+}
+
+::selection {
+  background-color: var(--spice-selection);
+  color: var(--spice-text-hi);
+}
+
+:focus-visible {
+  outline-color: var(--spice-button);
+}

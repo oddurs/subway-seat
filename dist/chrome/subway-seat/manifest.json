@@ -1,0 +1,133 @@
+{
+  "manifest_version": 3,
+  "name": "Subway Seat",
+  "version": "0.2.0",
+  "description": "A walnut-brown 1970s NYC subway theme: harvest gold, burnt orange and avocado on warm wood. Walnut paneling and orange bucket seats. The original.",
+  "theme": {
+    "colors": {
+      "frame": [
+        32,
+        22,
+        14
+      ],
+      "frame_inactive": [
+        32,
+        22,
+        14
+      ],
+      "frame_incognito": [
+        63,
+        42,
+        29
+      ],
+      "frame_incognito_inactive": [
+        63,
+        42,
+        29
+      ],
+      "background_tab": [
+        32,
+        22,
+        14
+      ],
+      "background_tab_inactive": [
+        32,
+        22,
+        14
+      ],
+      "background_tab_incognito": [
+        63,
+        42,
+        29
+      ],
+      "background_tab_incognito_inactive": [
+        63,
+        42,
+        29
+      ],
+      "toolbar": [
+        54,
+        38,
+        25
+      ],
+      "tab_text": [
+        237,
+        220,
+        188
+      ],
+      "tab_background_text": [
+        174,
+        149,
+        117
+      ],
+      "tab_background_text_inactive": [
+        150,
+        123,
+        92
+      ],
+      "tab_background_text_incognito": [
+        196,
+        174,
+        140
+      ],
+      "tab_background_text_incognito_inactive": [
+        174,
+        149,
+        117
+      ],
+      "bookmark_text": [
+        217,
+        198,
+        163
+      ],
+      "toolbar_button_icon": [
+        217,
+        198,
+        163
+      ],
+      "toolbar_text": [
+        237,
+        220,
+        188
+      ],
+      "omnibox_background": [
+        42,
+        29,
+        19
+      ],
+      "omnibox_text": [
+        237,
+        220,
+        188
+      ],
+      "ntp_background": [
+        54,
+        38,
+        25
+      ],
+      "ntp_text": [
+        237,
+        220,
+        188
+      ],
+      "ntp_link": [
+        127,
+        155,
+        174
+      ],
+      "ntp_header": [
+        236,
+        127,
+        49
+      ],
+      "button_background": [
+        32,
+        22,
+        14
+      ]
+    },
+    "properties": {
+      "ntp_logo_alternate": 1
+    }
+  }
+}

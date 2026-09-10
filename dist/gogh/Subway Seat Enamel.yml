@@ -1,0 +1,30 @@
+---
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+name: 'Subway Seat Enamel'
+author: 'oddurs (https://github.com/oddurs/subway-seat)'
+author_name: 'oddurs'
+author_url: 'https://github.com/oddurs/subway-seat'
+variant: 'light'
+
+color_01: '#54402F'    # Black (Host)
+color_02: '#B43B27'    # Red (Syntax string)
+color_03: '#697813'    # Green (Command)
+color_04: '#A56E00'    # Yellow (Command second)
+color_05: '#3F6480'    # Blue (Path)
+color_06: '#C4561A'    # Magenta (Syntax var)
+color_07: '#3E7157'    # Cyan (Prompt)
+color_08: '#BAA07A'    # White
+
+color_09: '#8C7254'    # Bright Black
+color_10: '#C44A33'    # Bright Red (Command error)
+color_11: '#7B8B22'    # Bright Green (Exec)
+color_12: '#BA8210'    # Bright Yellow
+color_13: '#517791'    # Bright Blue (Folder)
+color_14: '#D66A27'    # Bright Magenta
+color_15: '#4C8367'    # Bright Cyan
+color_16: '#CAB48E'    # Bright White
+
+background: '#F4E9D4'  # Background
+foreground: '#3E2C1E'  # Foreground (Text)
+
+cursor: '#C4561A'      # Cursor

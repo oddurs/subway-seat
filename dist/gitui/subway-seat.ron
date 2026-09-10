@@ -1,0 +1,26 @@
+// Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+// Subway Seat for gitui.
+(
+    selected_tab: Some("#EC7F31"),
+    command_fg: Some("#EDDCBC"),
+    selection_bg: Some("#513B27"),
+    selection_fg: Some("#F8ECD4"),
+    cmdbar_bg: Some("#2A1D13"),
+    disabled_fg: Some("#7B6047"),
+    diff_line_add: Some("#A3AE4B"),
+    diff_line_delete: Some("#EC6A50"),
+    diff_file_added: Some("#A3AE4B"),
+    diff_file_removed: Some("#EC6A50"),
+    diff_file_moved: Some("#86AD95"),
+    diff_file_modified: Some("#F3BF45"),
+    commit_hash: Some("#F3BF45"),
+    commit_time: Some("#C4AE8C"),
+    commit_author: Some("#86AD95"),
+    danger_fg: Some("#EC6A50"),
+    push_gauge_bg: Some("#EC7F31"),
+    push_gauge_fg: Some("#20160E"),
+    tag_fg: Some("#E0956C"),
+    branch_fg: Some("#A3AE4B"),
+    block_title_focused: Some("#EC7F31"),
+    syntax: Some("subway-seat"),
+)

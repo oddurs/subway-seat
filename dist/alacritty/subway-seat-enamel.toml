@@ -1,0 +1,74 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# Subway Seat Enamel
+
+[colors.primary]
+background = "#F4E9D4"
+foreground = "#3E2C1E"
+dim_foreground = "#735C44"
+bright_foreground = "#2A1D13"
+
+[colors.cursor]
+text = "#F4E9D4"
+cursor = "#C4561A"
+
+[colors.vi_mode_cursor]
+text = "#F4E9D4"
+cursor = "#3E7157"
+
+[colors.search.matches]
+foreground = "#3E2C1E"
+background = "#E0CA9E"
+
+[colors.search.focused_match]
+foreground = "#2A1D13"
+background = "#E0AB85"
+
+[colors.footer_bar]
+foreground = "#3E2C1E"
+background = "#CAB48E"
+
+[colors.hints.start]
+foreground = "#F4E9D4"
+background = "#C4561A"
+
+[colors.hints.end]
+foreground = "#F4E9D4"
+background = "#735C44"
+
+[colors.line_indicator]
+foreground = "#654F3B"
+background = "#D9C8A7"
+
+[colors.selection]
+text = "#2A1D13"
+background = "#CAB48E"
+
+[colors.normal]
+black = "#54402F"
+red = "#B43B27"
+green = "#697813"
+yellow = "#A56E00"
+blue = "#3F6480"
+magenta = "#C4561A"
+cyan = "#3E7157"
+white = "#BAA07A"
+
+[colors.bright]
+black = "#8C7254"
+red = "#C44A33"
+green = "#7B8B22"
+yellow = "#BA8210"
+blue = "#517791"
+magenta = "#D66A27"
+cyan = "#4C8367"
+white = "#CAB48E"
+
+[colors.dim]
+black = "#8A7967"
+red = "#CA7662"
+green = "#989E55"
+yellow = "#C09848"
+blue = "#7D919D"
+magenta = "#D48859"
+cyan = "#7C9A82"
+white = "#CEB999"

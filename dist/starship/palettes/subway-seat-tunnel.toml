@@ -1,0 +1,13 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+[palettes.subway_seat_tunnel]
+color_fg0     = '#140D07'
+color_fg_dark = '#D6C3A0'
+color_bg1     = '#3D2C1D'
+color_bg3     = '#4F3927'
+color_orange  = '#D2503A'
+color_yellow  = '#EC7F31'
+color_aqua    = '#F3BF45'
+color_blue    = '#A3AE4B'
+color_green   = '#BFCB63'
+color_red     = '#EC6A50'
+color_purple  = '#FF9D55'

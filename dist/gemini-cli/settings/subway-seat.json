@@ -1,0 +1,64 @@
+{
+  "ui": {
+    "customThemes": {
+      "Subway Seat": {
+        "name": "Subway Seat",
+        "type": "custom",
+        "Background": "#362619",
+        "Foreground": "#EDDCBC",
+        "LightBlue": "#D9C6A3",
+        "AccentBlue": "#EC7F31",
+        "AccentPurple": "#E0956C",
+        "AccentCyan": "#86AD95",
+        "AccentGreen": "#A3AE4B",
+        "AccentYellow": "#F3BF45",
+        "AccentRed": "#EC6A50",
+        "DiffAdded": "#4C4123",
+        "DiffRemoved": "#582F20",
+        "Comment": "#967B5C",
+        "Gray": "#AE9575",
+        "DarkGray": "#634932",
+        "GradientColors": [
+          "#D2503A",
+          "#EC7F31",
+          "#F3BF45",
+          "#A3AE4B"
+        ],
+        "text": {
+          "primary": "#EDDCBC",
+          "secondary": "#AE9575",
+          "accent": "#E0956C",
+          "response": "#EDDCBC"
+        },
+        "background": {
+          "primary": "#362619",
+          "diff": {
+            "added": "#4C4123",
+            "removed": "#582F20"
+          }
+        },
+        "border": {
+          "default": "#634932"
+        },
+        "ui": {
+          "comment": "#967B5C",
+          "symbol": "#F3BF45",
+          "active": "#EC7F31",
+          "focus": "#F3BF45",
+          "gradient": [
+            "#D2503A",
+            "#EC7F31",
+            "#F3BF45",
+            "#A3AE4B"
+          ]
+        },
+        "status": {
+          "success": "#A3AE4B",
+          "warning": "#F3BF45",
+          "error": "#EC6A50"
+        }
+      }
+    },
+    "theme": "Subway Seat"
+  }
+}

@@ -1,0 +1,25 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+[delta "subway-seat"]
+	dark = true
+	syntax-theme = Subway Seat
+	plus-style = syntax "#4C4123"
+	plus-emph-style = syntax "#645F2E"
+	minus-style = syntax "#582F20"
+	minus-emph-style = syntax "#7E3928"
+	map-styles = bold purple => syntax "#60422E", bold cyan => syntax "#4A4838"
+	line-numbers-plus-style = "#A3AE4B"
+	line-numbers-minus-style = "#EC6A50"
+	line-numbers-zero-style = "#7B6047"
+	line-numbers-left-style = "#634932"
+	line-numbers-right-style = "#634932"
+	file-style = "#F3BF45" bold
+	file-decoration-style = "#EC7F31" ul
+	hunk-header-style = file line-number syntax
+	hunk-header-decoration-style = "#634932" box
+	hunk-header-line-number-style = "#EC7F31"
+	commit-decoration-style = "#EC7F31" box
+	blame-palette = "#362619 #2A1D13 #43301F"
+	merge-conflict-begin-symbol = ~
+	merge-conflict-end-symbol = ~
+	merge-conflict-ours-diff-header-style = "#F3BF45" bold
+	merge-conflict-theirs-diff-header-style = "#86AD95" bold

@@ -1,0 +1,24 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+[project]
+name = "subway-seat-pygments"
+version = "0.2.0"
+description = "Subway Seat styles for Pygments, so Aider, Sphinx, MkDocs and IPython can use them by name."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.9"
+dependencies = ["pygments>=2.10"]
+
+[project.urls]
+Homepage = "https://github.com/oddurs/subway-seat"
+
+[project.entry-points."pygments.styles"]
+subway-seat = "subway_seat_pygments.subway_seat:SubwaySeatStyle"
+subway-seat-tunnel = "subway_seat_pygments.subway_seat_tunnel:SubwaySeatTunnelStyle"
+subway-seat-enamel = "subway_seat_pygments.subway_seat_enamel:SubwaySeatEnamelStyle"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["subway_seat_pygments"]

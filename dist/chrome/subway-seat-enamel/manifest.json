@@ -1,0 +1,130 @@
+{
+  "manifest_version": 3,
+  "name": "Subway Seat Enamel",
+  "version": "0.2.0",
+  "description": "A walnut-brown 1970s NYC subway theme: harvest gold, burnt orange and avocado on warm wood. Cream enamel panels in the morning sun. The light one.",
+  "theme": {
+    "colors": {
+      "frame": [
+        226,
+        211,
+        182
+      ],
+      "frame_inactive": [
+        235,
+        222,
+        198
+      ],
+      "frame_incognito": [
+        216,
+        188,
+        157
+      ],
+      "frame_incognito_inactive": [
+        216,
+        188,
+        157
+      ],
+      "background_tab": [
+        226,
+        211,
+        182
+      ],
+      "background_tab_inactive": [
+        235,
+        222,
+        198
+      ],
+      "background_tab_incognito": [
+        216,
+        188,
+        157
+      ],
+      "background_tab_incognito_inactive": [
+        216,
+        188,
+        157
+      ],
+      "toolbar": [
+        244,
+        233,
+        212
+      ],
+      "tab_text": [
+        62,
+        44,
+        30
+      ],
+      "tab_background_text": [
+        115,
+        92,
+        68
+      ],
+      "tab_background_text_inactive": [
+        140,
+        114,
+        84
+      ],
+      "tab_background_text_incognito": [
+        101,
+        79,
+        59
+      ],
+      "tab_background_text_incognito_inactive": [
+        115,
+        92,
+        68
+      ],
+      "bookmark_text": [
+        84,
+        64,
+        47
+      ],
+      "toolbar_button_icon": [
+        84,
+        64,
+        47
+      ],
+      "toolbar_text": [
+        62,
+        44,
+        30
+      ],
+      "omnibox_background": [
+        235,
+        222,
+        198
+      ],
+      "omnibox_text": [
+        62,
+        44,
+        30
+      ],
+      "ntp_background": [
+        244,
+        233,
+        212
+      ],
+      "ntp_text": [
+        62,
+        44,
+        30
+      ],
+      "ntp_link": [
+        63,
+        100,
+        128
+      ],
+      "ntp_header": [
+        196,
+        86,
+        26
+      ],
+      "button_background": [
+        226,
+        211,
+        182
+      ]
+    }
+  }
+}

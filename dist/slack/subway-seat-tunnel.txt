@@ -1,0 +1,8 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# Subway Seat Tunnel: set Slack's colour mode to dark.
+#
+# Current Slack: system navigation, selected items, presence, notifications
+#1B120A,#EC7F31,#A3AE4B,#EC6A50
+
+# Legacy ten-colour string (older clients and theme sites)
+#1B120A,#302115,#EC7F31,#140D07,#302115,#E9D8B6,#A3AE4B,#EC6A50,#140D07,#E9D8B6

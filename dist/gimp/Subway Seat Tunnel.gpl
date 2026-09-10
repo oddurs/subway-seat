@@ -1,0 +1,31 @@
+GIMP Palette
+Name: Subway Seat Tunnel
+Columns: 13
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# The late local after midnight: espresso-deep, same warm lights.
+ 20  13   7	Tunnel (crust)
+ 27  18  10	Espresso (mantle)
+ 36  24  14	Walnut (base)
+ 48  33  21	Coppertone (surface0)
+ 61  44  29	Saddle (surface1)
+ 79  57  39	Corduroy (surface2)
+106  82  60	Pecan (overlay0)
+138 112  83	Cardboard (overlay1)
+164 139 108	Burlap (overlay2)
+192 170 136	Khaki (subtext0)
+214 195 160	Almond (subtext1)
+233 216 182	Parchment (text)
+246 234 209	Ivory (text_hi)
+243 191  69	Harvest gold (yellow)
+255 211 107	Broadway yellow (yellow_hi)
+236 127  49	Burnt orange (orange)
+255 157  85	Sixth Avenue (orange_hi)
+210  80  58	Redbird (red)
+236 106  80	Redbird bright (red_hi)
+163 174  75	Avocado (green)
+191 203  99	Avocado bright (green_hi)
+134 173 149	Seafoam tile (sage)
+165 201 176	Seafoam bright (sage_hi)
+127 155 174	Faded denim (denim)
+157 182 198	Denim bright (denim_hi)
+224 149 108	Terracotta (clay)

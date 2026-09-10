@@ -1,0 +1,19 @@
+{
+  "name": "subway-seat",
+  "owner": {
+    "name": "Oddur Sigurdsson",
+    "url": "https://github.com/oddurs"
+  },
+  "metadata": {
+    "description": "Subway Seat for Claude Code: a walnut-brown 1970s subway theme, all the way down."
+  },
+  "plugins": [
+    {
+      "name": "subway-seat",
+      "source": "./dist/claude-code/plugin",
+      "description": "Three themes, a station-sign status line, subagent rows, 70s spinner verbs and tips, and a relaxed output style.",
+      "category": "themes",
+      "homepage": "https://oddurs.github.io/subway-seat/ports/claude-code"
+    }
+  ]
+}

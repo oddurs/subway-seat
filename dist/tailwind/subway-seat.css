@@ -1,0 +1,31 @@
+/* Subway Seat — generated from palette.py by build.py. Edit the palette, not this file. */
+/* Subway Seat for Tailwind v4: bg-ss-base, text-ss-text, … */
+
+@theme {
+  --color-ss-crust: #20160E;
+  --color-ss-mantle: #2A1D13;
+  --color-ss-base: #362619;
+  --color-ss-surface0: #43301F;
+  --color-ss-surface1: #513B27;
+  --color-ss-surface2: #634932;
+  --color-ss-overlay0: #7B6047;
+  --color-ss-overlay1: #967B5C;
+  --color-ss-overlay2: #AE9575;
+  --color-ss-subtext0: #C4AE8C;
+  --color-ss-subtext1: #D9C6A3;
+  --color-ss-text: #EDDCBC;
+  --color-ss-text-hi: #F8ECD4;
+  --color-ss-yellow: #F3BF45;
+  --color-ss-yellow-hi: #FFD36B;
+  --color-ss-orange: #EC7F31;
+  --color-ss-orange-hi: #FF9D55;
+  --color-ss-red: #D2503A;
+  --color-ss-red-hi: #EC6A50;
+  --color-ss-green: #A3AE4B;
+  --color-ss-green-hi: #BFCB63;
+  --color-ss-sage: #86AD95;
+  --color-ss-sage-hi: #A5C9B0;
+  --color-ss-denim: #7F9BAE;
+  --color-ss-denim-hi: #9DB6C6;
+  --color-ss-clay: #E0956C;
+}

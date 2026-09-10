@@ -1,0 +1,44 @@
+{
+    "schemes": [
+        {
+            "name": "Subway Seat Enamel",
+            "background": "#F4E9D4",
+            "foreground": "#3E2C1E",
+            "cursorColor": "#C4561A",
+            "selectionBackground": "#CAB48E",
+            "black": "#54402F",
+            "red": "#B43B27",
+            "green": "#697813",
+            "yellow": "#A56E00",
+            "blue": "#3F6480",
+            "purple": "#C4561A",
+            "cyan": "#3E7157",
+            "white": "#BAA07A",
+            "brightBlack": "#8C7254",
+            "brightRed": "#C44A33",
+            "brightGreen": "#7B8B22",
+            "brightYellow": "#BA8210",
+            "brightBlue": "#517791",
+            "brightPurple": "#D66A27",
+            "brightCyan": "#4C8367",
+            "brightWhite": "#CAB48E"
+        }
+    ],
+    "themes": [
+        {
+            "name": "Subway Seat Enamel",
+            "window": {
+                "applicationTheme": "light",
+                "useMica": false
+            },
+            "tabRow": {
+                "background": "#E2D3B6FF",
+                "unfocusedBackground": "#E2D3B6FF"
+            },
+            "tab": {
+                "background": "#F4E9D4FF",
+                "unfocusedBackground": "#EBDEC6FF"
+            }
+        }
+    ]
+}

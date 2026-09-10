@@ -1,0 +1,31 @@
+GIMP Palette
+Name: Subway Seat
+Columns: 13
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# Walnut paneling and orange bucket seats. The original.
+ 32  22  14	Tunnel (crust)
+ 42  29  19	Espresso (mantle)
+ 54  38  25	Walnut (base)
+ 67  48  31	Coppertone (surface0)
+ 81  59  39	Saddle (surface1)
+ 99  73  50	Corduroy (surface2)
+123  96  71	Pecan (overlay0)
+150 123  92	Cardboard (overlay1)
+174 149 117	Burlap (overlay2)
+196 174 140	Khaki (subtext0)
+217 198 163	Almond (subtext1)
+237 220 188	Parchment (text)
+248 236 212	Ivory (text_hi)
+243 191  69	Harvest gold (yellow)
+255 211 107	Broadway yellow (yellow_hi)
+236 127  49	Burnt orange (orange)
+255 157  85	Sixth Avenue (orange_hi)
+210  80  58	Redbird (red)
+236 106  80	Redbird bright (red_hi)
+163 174  75	Avocado (green)
+191 203  99	Avocado bright (green_hi)
+134 173 149	Seafoam tile (sage)
+165 201 176	Seafoam bright (sage_hi)
+127 155 174	Faded denim (denim)
+157 182 198	Denim bright (denim_hi)
+224 149 108	Terracotta (clay)

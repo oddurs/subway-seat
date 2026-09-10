@@ -1,0 +1,61 @@
+{
+  "manifest_version": 2,
+  "name": "Subway Seat Tunnel",
+  "version": "0.2.0",
+  "description": "A walnut-brown 1970s NYC subway theme: harvest gold, burnt orange and avocado on warm wood. The late local after midnight: espresso-deep, same warm lights. (Subway Seat \u2014 generated from palette.py by build.py. Edit the palette, not this file.)",
+  "author": "Oddur Sigurdsson",
+  "homepage_url": "https://github.com/oddurs/subway-seat",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "subway-seat-tunnel@oddurs.github.io",
+      "strict_min_version": "106.0"
+    }
+  },
+  "theme": {
+    "colors": {
+      "frame": "#140D07",
+      "frame_inactive": "#140D07",
+      "tab_background_text": "#A48B6C",
+      "tab_background_separator": "#302115",
+      "tab_selected": "#24180E",
+      "tab_text": "#E9D8B6",
+      "tab_line": "#EC7F31",
+      "tab_loading": "#EC7F31",
+      "toolbar": "#24180E",
+      "toolbar_text": "#E9D8B6",
+      "toolbar_top_separator": "#140D07",
+      "toolbar_bottom_separator": "#302115",
+      "toolbar_vertical_separator": "#302115",
+      "icons": "#D6C3A0",
+      "icons_attention": "#EC7F31",
+      "button_background_hover": "#302115",
+      "button_background_active": "#3D2C1D",
+      "toolbar_field": "#1B120A",
+      "toolbar_field_text": "#E9D8B6",
+      "toolbar_field_border": "#302115",
+      "toolbar_field_focus": "#1B120A",
+      "toolbar_field_text_focus": "#F6EAD1",
+      "toolbar_field_border_focus": "#EC7F31",
+      "toolbar_field_highlight": "#4F3927",
+      "toolbar_field_highlight_text": "#F6EAD1",
+      "toolbar_field_separator": "#302115",
+      "popup": "#1B120A",
+      "popup_text": "#E9D8B6",
+      "popup_border": "#302115",
+      "popup_highlight": "#4F3927",
+      "popup_highlight_text": "#F6EAD1",
+      "sidebar": "#1B120A",
+      "sidebar_text": "#E9D8B6",
+      "sidebar_border": "#302115",
+      "sidebar_highlight": "#4F3927",
+      "sidebar_highlight_text": "#F6EAD1",
+      "ntp_background": "#24180E",
+      "ntp_card_background": "#302115",
+      "ntp_text": "#E9D8B6"
+    },
+    "properties": {
+      "color_scheme": "dark",
+      "content_color_scheme": "dark"
+    }
+  }
+}

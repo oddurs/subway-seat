@@ -1,0 +1,57 @@
+{
+  "name": "Subway Seat Enamel",
+  "type": "custom",
+  "Background": "#F4E9D4",
+  "Foreground": "#3E2C1E",
+  "LightBlue": "#54402F",
+  "AccentBlue": "#C4561A",
+  "AccentPurple": "#AE5F3A",
+  "AccentCyan": "#3E7157",
+  "AccentGreen": "#697813",
+  "AccentYellow": "#A56E00",
+  "AccentRed": "#C44A33",
+  "DiffAdded": "#DCD6B3",
+  "DiffRemoved": "#E8C8B4",
+  "Comment": "#8C7254",
+  "Gray": "#735C44",
+  "DarkGray": "#BAA07A",
+  "GradientColors": [
+    "#B43B27",
+    "#C4561A",
+    "#A56E00",
+    "#697813"
+  ],
+  "text": {
+    "primary": "#3E2C1E",
+    "secondary": "#735C44",
+    "accent": "#AE5F3A",
+    "response": "#3E2C1E"
+  },
+  "background": {
+    "primary": "#F4E9D4",
+    "diff": {
+      "added": "#DCD6B3",
+      "removed": "#E8C8B4"
+    }
+  },
+  "border": {
+    "default": "#BAA07A"
+  },
+  "ui": {
+    "comment": "#8C7254",
+    "symbol": "#A56E00",
+    "active": "#C4561A",
+    "focus": "#A56E00",
+    "gradient": [
+      "#B43B27",
+      "#C4561A",
+      "#A56E00",
+      "#697813"
+    ]
+  },
+  "status": {
+    "success": "#697813",
+    "warning": "#A56E00",
+    "error": "#C44A33"
+  }
+}

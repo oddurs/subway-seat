@@ -1,0 +1,3 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# goose's ANSI markdown theme draws with your terminal's colours.
+GOOSE_CLI_THEME: ansi

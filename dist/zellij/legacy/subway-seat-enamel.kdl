@@ -1,0 +1,18 @@
+// Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+// Subway Seat Enamel: legacy colour-list theme for Zellij before 0.42.
+
+themes {
+    subway-seat-enamel {
+        fg "#3E2C1E"
+        bg "#CAB48E"
+        black "#EBDEC6"
+        red "#C44A33"
+        green "#C4561A" // active frame, selected tab
+        yellow "#A56E00"
+        blue "#3F6480"
+        magenta "#AE5F3A"
+        orange "#A56E00" // frame in other modes
+        cyan "#3E7157"
+        white "#2A1D13"
+    }
+}

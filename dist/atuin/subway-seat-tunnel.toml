@@ -1,0 +1,21 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# Subway Seat Tunnel for Atuin.
+[theme]
+name = "subway-seat-tunnel"
+
+[colors]
+AlertInfo = "#A3AE4B"
+AlertWarn = "#F3BF45"
+AlertError = "#EC6A50"
+Annotation = "#8A7053"
+Base = "#E9D8B6"
+Guidance = "#C0AA88"
+Important = "#EC7F31"
+Title = "#F3BF45"
+Muted = "#6A523C"
+SyntaxCommand = "#F3BF45"
+SyntaxFlag = "#86AD95"
+SyntaxString = "#A3AE4B"
+SyntaxVariable = "#E0956C"
+SyntaxOperator = "#EC7F31"
+SyntaxComment = "#8A7053"

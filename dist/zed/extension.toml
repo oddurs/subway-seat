@@ -1,0 +1,8 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+id = "subway-seat-theme"
+name = "Subway Seat"
+version = "0.2.0"
+schema_version = 1
+authors = ["Oddur Sigurdsson"]
+description = "A walnut-brown 1970s NYC subway theme: parchment text, harvest gold, burnt orange, avocado. Dark, deep dark and light."
+repository = "https://github.com/oddurs/subway-seat"

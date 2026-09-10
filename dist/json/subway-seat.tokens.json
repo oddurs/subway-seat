@@ -1,0 +1,398 @@
+{
+  "walnut": {
+    "crust": {
+      "$type": "color",
+      "$value": "#20160E",
+      "$description": "Tunnel"
+    },
+    "mantle": {
+      "$type": "color",
+      "$value": "#2A1D13",
+      "$description": "Espresso"
+    },
+    "base": {
+      "$type": "color",
+      "$value": "#362619",
+      "$description": "Walnut"
+    },
+    "surface0": {
+      "$type": "color",
+      "$value": "#43301F",
+      "$description": "Coppertone"
+    },
+    "surface1": {
+      "$type": "color",
+      "$value": "#513B27",
+      "$description": "Saddle"
+    },
+    "surface2": {
+      "$type": "color",
+      "$value": "#634932",
+      "$description": "Corduroy"
+    },
+    "overlay0": {
+      "$type": "color",
+      "$value": "#7B6047",
+      "$description": "Pecan"
+    },
+    "overlay1": {
+      "$type": "color",
+      "$value": "#967B5C",
+      "$description": "Cardboard"
+    },
+    "overlay2": {
+      "$type": "color",
+      "$value": "#AE9575",
+      "$description": "Burlap"
+    },
+    "subtext0": {
+      "$type": "color",
+      "$value": "#C4AE8C",
+      "$description": "Khaki"
+    },
+    "subtext1": {
+      "$type": "color",
+      "$value": "#D9C6A3",
+      "$description": "Almond"
+    },
+    "text": {
+      "$type": "color",
+      "$value": "#EDDCBC",
+      "$description": "Parchment"
+    },
+    "text-hi": {
+      "$type": "color",
+      "$value": "#F8ECD4",
+      "$description": "Ivory"
+    },
+    "yellow": {
+      "$type": "color",
+      "$value": "#F3BF45",
+      "$description": "Harvest gold"
+    },
+    "yellow-hi": {
+      "$type": "color",
+      "$value": "#FFD36B",
+      "$description": "Broadway yellow"
+    },
+    "orange": {
+      "$type": "color",
+      "$value": "#EC7F31",
+      "$description": "Burnt orange"
+    },
+    "orange-hi": {
+      "$type": "color",
+      "$value": "#FF9D55",
+      "$description": "Sixth Avenue"
+    },
+    "red": {
+      "$type": "color",
+      "$value": "#D2503A",
+      "$description": "Redbird"
+    },
+    "red-hi": {
+      "$type": "color",
+      "$value": "#EC6A50",
+      "$description": "Redbird bright"
+    },
+    "green": {
+      "$type": "color",
+      "$value": "#A3AE4B",
+      "$description": "Avocado"
+    },
+    "green-hi": {
+      "$type": "color",
+      "$value": "#BFCB63",
+      "$description": "Avocado bright"
+    },
+    "sage": {
+      "$type": "color",
+      "$value": "#86AD95",
+      "$description": "Seafoam tile"
+    },
+    "sage-hi": {
+      "$type": "color",
+      "$value": "#A5C9B0",
+      "$description": "Seafoam bright"
+    },
+    "denim": {
+      "$type": "color",
+      "$value": "#7F9BAE",
+      "$description": "Faded denim"
+    },
+    "denim-hi": {
+      "$type": "color",
+      "$value": "#9DB6C6",
+      "$description": "Denim bright"
+    },
+    "clay": {
+      "$type": "color",
+      "$value": "#E0956C",
+      "$description": "Terracotta"
+    }
+  },
+  "tunnel": {
+    "crust": {
+      "$type": "color",
+      "$value": "#140D07",
+      "$description": "Tunnel"
+    },
+    "mantle": {
+      "$type": "color",
+      "$value": "#1B120A",
+      "$description": "Espresso"
+    },
+    "base": {
+      "$type": "color",
+      "$value": "#24180E",
+      "$description": "Walnut"
+    },
+    "surface0": {
+      "$type": "color",
+      "$value": "#302115",
+      "$description": "Coppertone"
+    },
+    "surface1": {
+      "$type": "color",
+      "$value": "#3D2C1D",
+      "$description": "Saddle"
+    },
+    "surface2": {
+      "$type": "color",
+      "$value": "#4F3927",
+      "$description": "Corduroy"
+    },
+    "overlay0": {
+      "$type": "color",
+      "$value": "#6A523C",
+      "$description": "Pecan"
+    },
+    "overlay1": {
+      "$type": "color",
+      "$value": "#8A7053",
+      "$description": "Cardboard"
+    },
+    "overlay2": {
+      "$type": "color",
+      "$value": "#A48B6C",
+      "$description": "Burlap"
+    },
+    "subtext0": {
+      "$type": "color",
+      "$value": "#C0AA88",
+      "$description": "Khaki"
+    },
+    "subtext1": {
+      "$type": "color",
+      "$value": "#D6C3A0",
+      "$description": "Almond"
+    },
+    "text": {
+      "$type": "color",
+      "$value": "#E9D8B6",
+      "$description": "Parchment"
+    },
+    "text-hi": {
+      "$type": "color",
+      "$value": "#F6EAD1",
+      "$description": "Ivory"
+    },
+    "yellow": {
+      "$type": "color",
+      "$value": "#F3BF45",
+      "$description": "Harvest gold"
+    },
+    "yellow-hi": {
+      "$type": "color",
+      "$value": "#FFD36B",
+      "$description": "Broadway yellow"
+    },
+    "orange": {
+      "$type": "color",
+      "$value": "#EC7F31",
+      "$description": "Burnt orange"
+    },
+    "orange-hi": {
+      "$type": "color",
+      "$value": "#FF9D55",
+      "$description": "Sixth Avenue"
+    },
+    "red": {
+      "$type": "color",
+      "$value": "#D2503A",
+      "$description": "Redbird"
+    },
+    "red-hi": {
+      "$type": "color",
+      "$value": "#EC6A50",
+      "$description": "Redbird bright"
+    },
+    "green": {
+      "$type": "color",
+      "$value": "#A3AE4B",
+      "$description": "Avocado"
+    },
+    "green-hi": {
+      "$type": "color",
+      "$value": "#BFCB63",
+      "$description": "Avocado bright"
+    },
+    "sage": {
+      "$type": "color",
+      "$value": "#86AD95",
+      "$description": "Seafoam tile"
+    },
+    "sage-hi": {
+      "$type": "color",
+      "$value": "#A5C9B0",
+      "$description": "Seafoam bright"
+    },
+    "denim": {
+      "$type": "color",
+      "$value": "#7F9BAE",
+      "$description": "Faded denim"
+    },
+    "denim-hi": {
+      "$type": "color",
+      "$value": "#9DB6C6",
+      "$description": "Denim bright"
+    },
+    "clay": {
+      "$type": "color",
+      "$value": "#E0956C",
+      "$description": "Terracotta"
+    }
+  },
+  "enamel": {
+    "crust": {
+      "$type": "color",
+      "$value": "#E2D3B6",
+      "$description": "Tunnel"
+    },
+    "mantle": {
+      "$type": "color",
+      "$value": "#EBDEC6",
+      "$description": "Espresso"
+    },
+    "base": {
+      "$type": "color",
+      "$value": "#F4E9D4",
+      "$description": "Walnut"
+    },
+    "surface0": {
+      "$type": "color",
+      "$value": "#D9C8A7",
+      "$description": "Coppertone"
+    },
+    "surface1": {
+      "$type": "color",
+      "$value": "#CAB48E",
+      "$description": "Saddle"
+    },
+    "surface2": {
+      "$type": "color",
+      "$value": "#BAA07A",
+      "$description": "Corduroy"
+    },
+    "overlay0": {
+      "$type": "color",
+      "$value": "#A58C6A",
+      "$description": "Pecan"
+    },
+    "overlay1": {
+      "$type": "color",
+      "$value": "#8C7254",
+      "$description": "Cardboard"
+    },
+    "overlay2": {
+      "$type": "color",
+      "$value": "#735C44",
+      "$description": "Burlap"
+    },
+    "subtext0": {
+      "$type": "color",
+      "$value": "#654F3B",
+      "$description": "Khaki"
+    },
+    "subtext1": {
+      "$type": "color",
+      "$value": "#54402F",
+      "$description": "Almond"
+    },
+    "text": {
+      "$type": "color",
+      "$value": "#3E2C1E",
+      "$description": "Parchment"
+    },
+    "text-hi": {
+      "$type": "color",
+      "$value": "#2A1D13",
+      "$description": "Ivory"
+    },
+    "yellow": {
+      "$type": "color",
+      "$value": "#A56E00",
+      "$description": "Harvest gold"
+    },
+    "yellow-hi": {
+      "$type": "color",
+      "$value": "#BA8210",
+      "$description": "Broadway yellow"
+    },
+    "orange": {
+      "$type": "color",
+      "$value": "#C4561A",
+      "$description": "Burnt orange"
+    },
+    "orange-hi": {
+      "$type": "color",
+      "$value": "#D66A27",
+      "$description": "Sixth Avenue"
+    },
+    "red": {
+      "$type": "color",
+      "$value": "#B43B27",
+      "$description": "Redbird"
+    },
+    "red-hi": {
+      "$type": "color",
+      "$value": "#C44A33",
+      "$description": "Redbird bright"
+    },
+    "green": {
+      "$type": "color",
+      "$value": "#697813",
+      "$description": "Avocado"
+    },
+    "green-hi": {
+      "$type": "color",
+      "$value": "#7B8B22",
+      "$description": "Avocado bright"
+    },
+    "sage": {
+      "$type": "color",
+      "$value": "#3E7157",
+      "$description": "Seafoam tile"
+    },
+    "sage-hi": {
+      "$type": "color",
+      "$value": "#4C8367",
+      "$description": "Seafoam bright"
+    },
+    "denim": {
+      "$type": "color",
+      "$value": "#3F6480",
+      "$description": "Faded denim"
+    },
+    "denim-hi": {
+      "$type": "color",
+      "$value": "#517791",
+      "$description": "Denim bright"
+    },
+    "clay": {
+      "$type": "color",
+      "$value": "#AE5F3A",
+      "$description": "Terracotta"
+    }
+  }
+}

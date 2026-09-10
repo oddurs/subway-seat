@@ -1,0 +1,21 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# Subway Seat Enamel for Atuin.
+[theme]
+name = "subway-seat-enamel"
+
+[colors]
+AlertInfo = "#697813"
+AlertWarn = "#A56E00"
+AlertError = "#C44A33"
+Annotation = "#8C7254"
+Base = "#3E2C1E"
+Guidance = "#654F3B"
+Important = "#C4561A"
+Title = "#A56E00"
+Muted = "#A58C6A"
+SyntaxCommand = "#A56E00"
+SyntaxFlag = "#3E7157"
+SyntaxString = "#697813"
+SyntaxVariable = "#AE5F3A"
+SyntaxOperator = "#C4561A"
+SyntaxComment = "#8C7254"

@@ -1,0 +1,21 @@
+{
+  "author": "Oddur Sigurdsson",
+  "authorUsername": "oddurs",
+  "version": "1",
+  "name": "Subway Seat",
+  "appearance": "dark",
+  "colors": {
+    "background": "#362619",
+    "backgroundSecondary": "#2A1D13",
+    "text": "#EDDCBC",
+    "selection": "#EC7F31",
+    "loader": "#F3BF45",
+    "red": "#EC6A50",
+    "orange": "#EC7F31",
+    "yellow": "#F3BF45",
+    "green": "#A3AE4B",
+    "blue": "#7F9BAE",
+    "purple": "#86AD95",
+    "magenta": "#E0956C"
+  }
+}

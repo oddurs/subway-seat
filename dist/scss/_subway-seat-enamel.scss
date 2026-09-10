@@ -1,0 +1,58 @@
+// Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+// Subway Seat Enamel: Cream enamel panels in the morning sun. The light one.
+
+$ss-crust:     #E2D3B6; // Tunnel
+$ss-mantle:    #EBDEC6; // Espresso
+$ss-base:      #F4E9D4; // Walnut
+$ss-surface0:  #D9C8A7; // Coppertone
+$ss-surface1:  #CAB48E; // Saddle
+$ss-surface2:  #BAA07A; // Corduroy
+$ss-overlay0:  #A58C6A; // Pecan
+$ss-overlay1:  #8C7254; // Cardboard
+$ss-overlay2:  #735C44; // Burlap
+$ss-subtext0:  #654F3B; // Khaki
+$ss-subtext1:  #54402F; // Almond
+$ss-text:      #3E2C1E; // Parchment
+$ss-text-hi:   #2A1D13; // Ivory
+$ss-yellow:    #A56E00; // Harvest gold
+$ss-yellow-hi: #BA8210; // Broadway yellow
+$ss-orange:    #C4561A; // Burnt orange
+$ss-orange-hi: #D66A27; // Sixth Avenue
+$ss-red:       #B43B27; // Redbird
+$ss-red-hi:    #C44A33; // Redbird bright
+$ss-green:     #697813; // Avocado
+$ss-green-hi:  #7B8B22; // Avocado bright
+$ss-sage:      #3E7157; // Seafoam tile
+$ss-sage-hi:   #4C8367; // Seafoam bright
+$ss-denim:     #3F6480; // Faded denim
+$ss-denim-hi:  #517791; // Denim bright
+$ss-clay:      #AE5F3A; // Terracotta
+
+$subway-seat: (
+  "crust": $ss-crust,
+  "mantle": $ss-mantle,
+  "base": $ss-base,
+  "surface0": $ss-surface0,
+  "surface1": $ss-surface1,
+  "surface2": $ss-surface2,
+  "overlay0": $ss-overlay0,
+  "overlay1": $ss-overlay1,
+  "overlay2": $ss-overlay2,
+  "subtext0": $ss-subtext0,
+  "subtext1": $ss-subtext1,
+  "text": $ss-text,
+  "text-hi": $ss-text-hi,
+  "yellow": $ss-yellow,
+  "yellow-hi": $ss-yellow-hi,
+  "orange": $ss-orange,
+  "orange-hi": $ss-orange-hi,
+  "red": $ss-red,
+  "red-hi": $ss-red-hi,
+  "green": $ss-green,
+  "green-hi": $ss-green-hi,
+  "sage": $ss-sage,
+  "sage-hi": $ss-sage-hi,
+  "denim": $ss-denim,
+  "denim-hi": $ss-denim-hi,
+  "clay": $ss-clay,
+);

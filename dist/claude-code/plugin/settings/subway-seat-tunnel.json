@@ -1,0 +1,51 @@
+{
+  "theme": "custom:subway-seat-tunnel",
+  "statusLine": {
+    "type": "command",
+    "command": "~/.claude/subway-seat/subway-seat-statusline",
+    "padding": 1
+  },
+  "subagentStatusLine": {
+    "type": "command",
+    "command": "~/.claude/subway-seat/subway-seat-subagents"
+  },
+  "spinnerVerbs": {
+    "mode": "replace",
+    "verbs": [
+      "Standing clear",
+      "Riding the local",
+      "Running express",
+      "Transferring",
+      "Holding the doors",
+      "Watching the gap",
+      "Waiting on the platform",
+      "Rolling uptown",
+      "Rolling downtown",
+      "Changing at 14th Street",
+      "Dropping a token",
+      "Grabbing the pole",
+      "Finding a seat",
+      "Sinking into the shag",
+      "Flipping the record",
+      "Warming up the hi-fi",
+      "Tuning the 8-track",
+      "Adjusting the rabbit ears",
+      "Watering the spider plant",
+      "Percolating",
+      "Mellowing out",
+      "Keeping it groovy",
+      "Easing on down the road",
+      "Digging it",
+      "Grooving",
+      "Kicking back",
+      "Taking it easy",
+      "Spinning the lazy Susan",
+      "Knotting the macram\u00e9",
+      "Lava-lamping"
+    ]
+  },
+  "spinnerTipsOverride": {
+    "tipsFile": "~/.claude/subway-seat/tips.json",
+    "label": "Next stop"
+  }
+}

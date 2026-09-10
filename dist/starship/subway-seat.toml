@@ -1,0 +1,129 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format = """
+[\ue0b6](color_orange)\
+$os\
+$username\
+[\ue0b0](bg:color_yellow fg:color_orange)\
+$directory\
+[\ue0b0](fg:color_yellow bg:color_aqua)\
+$git_branch\
+$git_status\
+[\ue0b0](fg:color_aqua bg:color_blue)\
+$c\
+$rust\
+$golang\
+$nodejs\
+$python\
+[\ue0b0](fg:color_blue bg:color_bg3)\
+$docker_context\
+[\ue0b0](fg:color_bg3 bg:color_bg1)\
+$time\
+[\ue0b4 ](fg:color_bg1)\
+$line_break$character"""
+
+palette = 'subway_seat'
+
+[os]
+disabled = false
+style = "bg:color_orange fg:color_fg0"
+
+[os.symbols]
+Macos = "\U000f0035 "
+Linux = "\U000f033d "
+
+[username]
+show_always = true
+style_user = "bg:color_orange fg:color_fg0"
+style_root = "bg:color_orange fg:color_fg0"
+format = '[ $user ]($style)'
+
+[directory]
+style = "fg:color_fg0 bg:color_yellow"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[git_branch]
+symbol = "\uf418"
+style = "bg:color_aqua"
+format = '[[ $symbol $branch ](fg:color_fg0 bg:color_aqua)]($style)'
+
+[git_status]
+style = "bg:color_aqua"
+format = '[[($all_status$ahead_behind )](fg:color_fg0 bg:color_aqua)]($style)'
+
+[nodejs]
+symbol = "\ue718"
+format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_blue)]($style)'
+
+[c]
+symbol = "\ue61e "
+format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_blue)]($style)'
+
+[rust]
+symbol = "\ue7a8"
+format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_blue)]($style)'
+
+[golang]
+symbol = "\ue627"
+format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_blue)]($style)'
+
+[python]
+symbol = "\ue606"
+format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_blue)]($style)'
+
+[docker_context]
+symbol = "\uf308"
+format = '[[ $symbol( $context) ](fg:color_fg_dark bg:color_bg3)]($style)'
+
+[time]
+disabled = false
+time_format = "%R"
+format = "[[ \uf43a $time ](fg:color_fg_dark bg:color_bg1)]($style)"
+
+[character]
+success_symbol = "[\uf105](bold fg:color_green)"
+error_symbol = "[\uf105](bold fg:color_red)"
+vimcmd_symbol = "[\uf104](bold fg:color_green)"
+vimcmd_visual_symbol = "[\uf104](bold fg:color_yellow)"
+
+[palettes.subway_seat]
+color_fg0     = '#20160E'
+color_fg_dark = '#D9C6A3'
+color_bg1     = '#513B27'
+color_bg3     = '#634932'
+color_orange  = '#D2503A'
+color_yellow  = '#EC7F31'
+color_aqua    = '#F3BF45'
+color_blue    = '#A3AE4B'
+color_green   = '#BFCB63'
+color_red     = '#EC6A50'
+color_purple  = '#FF9D55'
+
+[palettes.subway_seat_tunnel]
+color_fg0     = '#140D07'
+color_fg_dark = '#D6C3A0'
+color_bg1     = '#3D2C1D'
+color_bg3     = '#4F3927'
+color_orange  = '#D2503A'
+color_yellow  = '#EC7F31'
+color_aqua    = '#F3BF45'
+color_blue    = '#A3AE4B'
+color_green   = '#BFCB63'
+color_red     = '#EC6A50'
+color_purple  = '#FF9D55'
+
+[palettes.subway_seat_enamel]
+color_fg0     = '#F4E9D4'
+color_fg_dark = '#54402F'
+color_bg1     = '#CAB48E'
+color_bg3     = '#BAA07A'
+color_orange  = '#B43B27'
+color_yellow  = '#C4561A'
+color_aqua    = '#A56E00'
+color_blue    = '#697813'
+color_green   = '#7B8B22'
+color_red     = '#C44A33'
+color_purple  = '#D66A27'

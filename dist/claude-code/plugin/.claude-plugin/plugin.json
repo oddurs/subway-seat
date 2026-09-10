@@ -1,0 +1,25 @@
+{
+  "name": "subway-seat",
+  "displayName": "Subway Seat",
+  "version": "0.2.0",
+  "description": "A walnut-brown 1970s NYC subway theme for Claude Code: three flavors, a station-sign status line, subagent rows, 70s spinner verbs and tips, and a relaxed output style.",
+  "author": {
+    "name": "Oddur Sigurdsson",
+    "url": "https://github.com/oddurs"
+  },
+  "homepage": "https://github.com/oddurs/subway-seat",
+  "repository": "https://github.com/oddurs/subway-seat",
+  "license": "MIT",
+  "keywords": [
+    "theme",
+    "color-scheme",
+    "statusline",
+    "70s",
+    "retro",
+    "subway-seat"
+  ],
+  "outputStyles": "./output-styles/",
+  "experimental": {
+    "themes": "./themes/"
+  }
+}

@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Subway Seat",
+    "description": "A walnut-brown 1970s NYC subway theme: harvest gold, burnt orange and avocado on warm wood.",
+    "preview": "preview.png",
+    "readme": "README.md",
+    "usercss": "subway-seat/user.css",
+    "schemes": "subway-seat/color.ini",
+    "authors": [
+      {
+        "name": "Oddur Sigurdsson",
+        "url": "https://github.com/oddurs"
+      }
+    ],
+    "tags": [
+      "dark",
+      "light",
+      "warm",
+      "retro",
+      "70s"
+    ]
+  }
+]

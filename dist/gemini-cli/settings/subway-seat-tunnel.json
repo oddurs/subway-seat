@@ -1,0 +1,64 @@
+{
+  "ui": {
+    "customThemes": {
+      "Subway Seat Tunnel": {
+        "name": "Subway Seat Tunnel",
+        "type": "custom",
+        "Background": "#24180E",
+        "Foreground": "#E9D8B6",
+        "LightBlue": "#D6C3A0",
+        "AccentBlue": "#EC7F31",
+        "AccentPurple": "#E0956C",
+        "AccentCyan": "#86AD95",
+        "AccentGreen": "#A3AE4B",
+        "AccentYellow": "#F3BF45",
+        "AccentRed": "#EC6A50",
+        "DiffAdded": "#3D361A",
+        "DiffRemoved": "#4A2418",
+        "Comment": "#8A7053",
+        "Gray": "#A48B6C",
+        "DarkGray": "#4F3927",
+        "GradientColors": [
+          "#D2503A",
+          "#EC7F31",
+          "#F3BF45",
+          "#A3AE4B"
+        ],
+        "text": {
+          "primary": "#E9D8B6",
+          "secondary": "#A48B6C",
+          "accent": "#E0956C",
+          "response": "#E9D8B6"
+        },
+        "background": {
+          "primary": "#24180E",
+          "diff": {
+            "added": "#3D361A",
+            "removed": "#4A2418"
+          }
+        },
+        "border": {
+          "default": "#4F3927"
+        },
+        "ui": {
+          "comment": "#8A7053",
+          "symbol": "#F3BF45",
+          "active": "#EC7F31",
+          "focus": "#F3BF45",
+          "gradient": [
+            "#D2503A",
+            "#EC7F31",
+            "#F3BF45",
+            "#A3AE4B"
+          ]
+        },
+        "status": {
+          "success": "#A3AE4B",
+          "warning": "#F3BF45",
+          "error": "#EC6A50"
+        }
+      }
+    },
+    "theme": "Subway Seat Tunnel"
+  }
+}

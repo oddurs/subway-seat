@@ -1,0 +1,70 @@
+/* Subway Seat — generated from palette.py by build.py. Edit the palette, not this file. */
+/* Subway Seat Tunnel for Prism */
+
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #E9D8B6;
+  background: none;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+  font-size: 1em;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+  tab-size: 4;
+  hyphens: none;
+}
+
+pre[class*="language-"] {
+  background: #24180E;
+  padding: 1em;
+  margin: 0.5em 0;
+  overflow: auto;
+  border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"] {
+  background: #302115;
+  padding: 0.1em 0.3em;
+  border-radius: 0.3em;
+  white-space: normal;
+}
+
+code[class*="language-"]::selection, code[class*="language-"] ::selection,
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection {
+  color: #F6EAD1;
+  background: #4F3927;
+}
+
+.token.comment, .token.prolog, .token.doctype, .token.cdata { color: #8A7053; font-style: italic; }
+.token.punctuation { color: #A48B6C; }
+.token.operator { color: #A48B6C; }
+.token.namespace { color: #C0AA88; }
+.token.keyword, .token.atrule, .token.rule, .token.list, .token.important { color: #EC7F31; }
+.token.function { color: #F3BF45; }
+.token.builtin { color: #F3BF45; font-style: italic; }
+.token.string, .token.char, .token.attr-value, .token.code { color: #A3AE4B; }
+.token.escape, .token.entity, .token.interpolation-punctuation { color: #E0956C; }
+.token.regex { color: #E0956C; }
+.token.number { color: #EC6A50; }
+.token.boolean { color: #EC6A50; }
+.token.constant, .token.symbol { color: #EC6A50; }
+.token.class-name { color: #86AD95; }
+.token.variable { color: #E9D8B6; }
+.token.parameter { color: #D6C3A0; font-style: italic; }
+.token.property { color: #D6C3A0; }
+.language-json .token.property { color: #F3BF45; }
+.token.tag { color: #EC7F31; }
+.token.attr-name, .token.selector { color: #F3BF45; font-style: italic; }
+.token.decorator, .token.annotation { color: #E0956C; font-style: italic; }
+.token.title { color: #F3BF45; font-weight: bold; }
+.token.blockquote { color: #C0AA88; font-style: italic; }
+.token.coord { color: #7F9BAE; }
+.token.url { color: #7F9BAE; text-decoration: underline; }
+.token.inserted { color: #A3AE4B; background: #3D361A; }
+.token.deleted { color: #EC6A50; background: #4A2418; }
+.token.important, .token.bold { font-weight: bold; }
+.token.italic { font-style: italic; }
+.token.entity { cursor: help; }

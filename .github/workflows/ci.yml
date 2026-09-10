@@ -1,0 +1,90 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Ports are built and current
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - run: uv python install 3.14
+      - name: Build every port
+        run: uv run --python 3.14 --with pyyaml ./build.py
+      - name: dist/ matches the palette
+        run: |
+          # Zipped outputs are skipped: zlib builds can compress identical input differently.
+          if ! git diff --exit-code --stat -- dist ':!dist/**/*.vsix' ':!dist/**/*.jar' ':!dist/**/*.xpi' ':!dist/**/*.zip' ':!dist/**/*.swatches' ':!dist/**/*.tdesktop-theme' site/src/theme README.md; then
+            echo "::error::dist/ is out of date. Run ./build.py and commit the result."
+            exit 1
+          fi
+
+  editors:
+    name: Colorschemes load in real editors
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: rhysd/action-setup-vim@v1
+        with:
+          neovim: true
+          version: stable
+      - name: Neovim
+        run: |
+          for f in subway-seat subway-seat-tunnel subway-seat-enamel; do
+            nvim --headless --clean --cmd "set rtp^=$PWD/dist/nvim" \
+              -c "colorscheme $f" -c 'if v:errmsg != "" | cquit | endif' -c 'qa!'
+          done
+      - name: Vim
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq vim
+          for f in subway-seat subway-seat-tunnel subway-seat-enamel; do
+            vim -Nu NONE -i NONE -es --cmd 'set rtp^=dist/vim' \
+              -c "colorscheme $f" -c 'if v:errmsg != "" | cquit | endif' -c 'qa!'
+          done
+      - uses: purcell/setup-emacs@master
+        with:
+          version: "29.4"
+      - name: Emacs
+        run: |
+          for t in subway-seat subway-seat-tunnel subway-seat-enamel; do
+            emacs --batch -L dist/emacs --eval "(progn (add-to-list 'custom-theme-load-path \"dist/emacs\") (load-theme '$t t))"
+          done
+
+  site:
+    name: Website builds
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: site
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - run: uv python install 3.14 && echo "$(uv python find 3.14 | xargs dirname)" >> "$GITHUB_PATH"
+      - uses: oven-sh/setup-bun@v2
+      - run: bun install --frozen-lockfile
+      - run: bun run check
+      - run: bun run build
+
+  claude-plugin:
+    name: Claude Code plugin validates
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm install -g @anthropic-ai/claude-code
+      - run: claude plugin validate dist/claude-code/plugin --strict
+      - run: claude plugin validate .
+      - name: Status line scripts
+        run: |
+          bash -n dist/claude-code/plugin/bin/subway-seat-statusline
+          echo '{"model":{"display_name":"Opus"},"context_window":{"used_percentage":42}}' \
+            | dist/claude-code/plugin/bin/subway-seat-statusline

@@ -1,0 +1,44 @@
+{
+    "schemes": [
+        {
+            "name": "Subway Seat",
+            "background": "#362619",
+            "foreground": "#EDDCBC",
+            "cursorColor": "#F3BF45",
+            "selectionBackground": "#634932",
+            "black": "#513B27",
+            "red": "#D2503A",
+            "green": "#A3AE4B",
+            "yellow": "#F3BF45",
+            "blue": "#7F9BAE",
+            "purple": "#EC7F31",
+            "cyan": "#86AD95",
+            "white": "#D9C6A3",
+            "brightBlack": "#7B6047",
+            "brightRed": "#EC6A50",
+            "brightGreen": "#BFCB63",
+            "brightYellow": "#FFD36B",
+            "brightBlue": "#9DB6C6",
+            "brightPurple": "#FF9D55",
+            "brightCyan": "#A5C9B0",
+            "brightWhite": "#F8ECD4"
+        }
+    ],
+    "themes": [
+        {
+            "name": "Subway Seat",
+            "window": {
+                "applicationTheme": "dark",
+                "useMica": false
+            },
+            "tabRow": {
+                "background": "#20160EFF",
+                "unfocusedBackground": "#20160EFF"
+            },
+            "tab": {
+                "background": "#362619FF",
+                "unfocusedBackground": "#2A1D13FF"
+            }
+        }
+    ]
+}

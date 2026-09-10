@@ -1,0 +1,26 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# One entry for terminal.customColorSchemes in Tabby's config.yaml.
+- name: Subway Seat
+  foreground: '#EDDCBC'
+  background: '#362619'
+  cursor: '#F3BF45'
+  cursorAccent: '#362619'
+  selection: '#634932'
+  selectionForeground: '#F8ECD4'
+  colors:
+    - '#513B27'
+    - '#D2503A'
+    - '#A3AE4B'
+    - '#F3BF45'
+    - '#7F9BAE'
+    - '#EC7F31'
+    - '#86AD95'
+    - '#D9C6A3'
+    - '#7B6047'
+    - '#EC6A50'
+    - '#BFCB63'
+    - '#FFD36B'
+    - '#9DB6C6'
+    - '#FF9D55'
+    - '#A5C9B0'
+    - '#F8ECD4'

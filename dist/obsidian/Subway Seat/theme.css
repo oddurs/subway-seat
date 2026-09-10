@@ -1,0 +1,736 @@
+/* Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+
+   Subway Seat for Obsidian 1.13.0+
+   Dark mode is Walnut, light mode is Enamel. Tunnel, the deeper dark, is opt-in: turn it on
+   with the Style Settings plugin, or add the `subway-seat-tunnel` class to <body> any other way.
+   Without Style Settings, the subway-seat-tunnel.css snippet does the same job. */
+
+/* @settings
+
+name: Subway Seat
+id: subway-seat
+settings:
+    -
+        id: subway-seat-tunnel
+        title: Tunnel (deeper dark)
+        description: Swap the walnut grounds for Tunnel's espresso-deep ones in dark mode. Accents stay the same.
+        type: class-toggle
+        default: false
+        addCommand: true
+
+*/
+
+.theme-dark {
+  /* Palette: the base ramp runs from the editor ground to parchment text */
+  --color-base-00: #362619;
+  --color-base-05: #3C2B1C;
+  --color-base-10: #43301F;
+  --color-base-20: #4A3623;
+  --color-base-25: #513B27;
+  --color-base-30: #58412B;
+  --color-base-35: #634932;
+  --color-base-40: #7B6047;
+  --color-base-50: #967B5C;
+  --color-base-60: #AE9575;
+  --color-base-70: #C4AE8C;
+  --color-base-100: #EDDCBC;
+  --color-red: #EC6A50;
+  --color-orange: #EC7F31;
+  --color-yellow: #F3BF45;
+  --color-green: #A3AE4B;
+  --color-cyan: #86AD95;
+  --color-blue: #7F9BAE;
+  --color-purple: #9DB6C6;
+  --color-pink: #E0956C;
+  --color-red-rgb: 236, 106, 80;
+  --color-orange-rgb: 236, 127, 49;
+  --color-yellow-rgb: 243, 191, 69;
+  --color-green-rgb: 163, 174, 75;
+  --color-cyan-rgb: 134, 173, 149;
+  --color-blue-rgb: 127, 155, 174;
+  --color-purple-rgb: 157, 182, 198;
+  --color-pink-rgb: 224, 149, 108;
+
+  /* Accent: burnt orange, still overridable under Settings → Appearance */
+  --accent-h: 25.0;
+  --accent-s: 83.1%;
+  --accent-l: 55.9%;
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-accent-1: hsl(calc(var(--accent-h) + 1), calc(var(--accent-s) * 1.1), calc(var(--accent-l) * 1.1));
+  --color-accent-2: hsl(calc(var(--accent-h) + 2), calc(var(--accent-s) * 1.15), calc(var(--accent-l) * 1.2));
+
+  /* Grounds: editor walnut, sidebars espresso, title bar and ribbon tunnel */
+  --background-primary: #362619;
+  --background-primary-alt: #302216;
+  --background-secondary: #2A1D13;
+  --background-secondary-alt: #362619;
+  --background-modifier-hover: rgba(150, 123, 92, 0.14);
+  --background-modifier-active-hover: color-mix(in srgb, var(--color-accent) 14%, transparent);
+  --background-modifier-border: #43301F;
+  --background-modifier-border-hover: #513B27;
+  --background-modifier-border-focus: #EC7F31;
+  --background-modifier-error: #EC6A50;
+  --background-modifier-error-hover: #D2503A;
+  --background-modifier-warning: #F3BF45;
+  --background-modifier-warning-hover: #FFD36B;
+  --background-modifier-success: #A3AE4B;
+  --background-modifier-form-field: #43301F;
+  --background-modifier-form-field-hover: #43301F;
+  --background-modifier-cover: rgba(32, 22, 14, 0.6);
+  --background-modifier-box-shadow: rgba(32, 22, 14, 0.5);
+  --background-modifier-message: rgba(32, 22, 14, 0.92);
+  --workspace-background-translucent: rgba(32, 22, 14, 0.6);
+
+  /* Text */
+  --text-normal: #EDDCBC;
+  --text-muted: #C4AE8C;
+  --text-faint: #967B5C;
+  --text-on-accent: #20160E;
+  --text-on-accent-inverted: #20160E;
+  --text-accent: var(--color-accent);
+  --text-accent-hover: var(--color-accent-1);
+  --text-error: #EC6A50;
+  --text-warning: #F3BF45;
+  --text-success: #A3AE4B;
+  --text-selection: color-mix(in srgb, var(--color-accent) 30%, transparent);
+  --text-highlight-bg: rgba(243, 191, 69, 0.3);
+  --text-highlight-bg-rgb: 243, 191, 69;
+  --caret-color: #F3BF45;
+  --bold-color: #F8ECD4;
+  --italic-color: inherit;
+
+  /* Interactive */
+  --interactive-normal: #43301F;
+  --interactive-hover: #513B27;
+  --interactive-accent: var(--color-accent);
+  --interactive-accent-hsl: var(--color-accent-hsl);
+  --interactive-accent-hover: var(--color-accent-1);
+  --dropdown-background: var(--interactive-normal);
+  --dropdown-background-hover: var(--interactive-hover);
+  --toggle-thumb-color: #F8ECD4;
+  --slider-thumb-background: #F8ECD4;
+  --slider-thumb-background-hover: #F8ECD4;
+  --slider-track-background: #513B27;
+  --input-placeholder-color: #967B5C;
+  --flair-background: #43301F;
+  --flair-color: #D9C6A3;
+  --pill-color: #C4AE8C;
+  --pill-color-hover: #EDDCBC;
+  --pill-color-remove: #967B5C;
+  --pill-color-remove-hover: #EC7F31;
+  --pill-border-color: #513B27;
+  --pill-border-color-hover: #634932;
+  --search-icon-color: #C4AE8C;
+  --search-clear-button-color: #C4AE8C;
+
+  /* Headings: the 70s stripe, burnt orange down to terracotta */
+  --h1-color: #EC7F31;
+  --h2-color: #F3BF45;
+  --h3-color: #A3AE4B;
+  --h4-color: #86AD95;
+  --h5-color: #7F9BAE;
+  --h6-color: #E0956C;
+  --heading-formatting: #7B6047;
+  --inline-title-color: #F8ECD4;
+
+  /* Links and tags: denim is the only cool colour, tags wear orange */
+  --link-color: #7F9BAE;
+  --link-color-hover: #9DB6C6;
+  --link-external-color: #7F9BAE;
+  --link-external-color-hover: #9DB6C6;
+  --link-unresolved-color: #7F9BAE;
+  --link-unresolved-opacity: 0.65;
+  --link-unresolved-decoration-style: dotted;
+  --link-unresolved-decoration-color: rgba(127, 155, 174, 0.5);
+  --tag-color: #EC7F31;
+  --tag-color-hover: #FF9D55;
+  --tag-background: rgba(236, 127, 49, 0.12);
+  --tag-background-hover: rgba(236, 127, 49, 0.2);
+  --tag-border-color: rgba(236, 127, 49, 0.18);
+  --tag-border-color-hover: rgba(236, 127, 49, 0.3);
+
+  /* Code: the same syntax roles as every editor port */
+  --code-background: #2A1D13;
+  --code-border-color: #43301F;
+  --code-bracket-background: rgba(150, 123, 92, 0.14);
+  --code-normal: #EDDCBC;
+  --code-comment: #967B5C;
+  --code-function: #F3BF45;
+  --code-important: #E0956C;
+  --code-keyword: #EC7F31;
+  --code-operator: #AE9575;
+  --code-property: #D9C6A3;
+  --code-punctuation: #AE9575;
+  --code-string: #A3AE4B;
+  --code-tag: #EC7F31;
+  --code-value: #EC6A50;
+
+  /* Callouts, by type */
+  --callout-default: #7F9BAE;
+  --callout-info: #7F9BAE;
+  --callout-todo: #7F9BAE;
+  --callout-summary: #86AD95;
+  --callout-tip: #86AD95;
+  --callout-important: #EC7F31;
+  --callout-success: #A3AE4B;
+  --callout-question: #E0956C;
+  --callout-warning: #F3BF45;
+  --callout-fail: #EC6A50;
+  --callout-error: #EC6A50;
+  --callout-bug: #EC6A50;
+  --callout-example: #9DB6C6;
+  --callout-quote: #967B5C;
+
+  /* Blocks: quotes, checklists, lists, rules, tables, properties */
+  --blockquote-border-color: #E0956C;
+  --blockquote-color: #D9C6A3;
+  --blockquote-background-color: transparent;
+  --checkbox-color: var(--color-accent);
+  --checkbox-color-hover: var(--color-accent-1);
+  --checkbox-border-color: #7B6047;
+  --checkbox-border-color-hover: #967B5C;
+  --checkbox-marker-color: #20160E;
+  --checklist-done-color: #967B5C;
+  --list-marker-color: #967B5C;
+  --list-marker-color-hover: #C4AE8C;
+  --list-marker-color-collapsed: #EC7F31;
+  --collapse-icon-color: #967B5C;
+  --collapse-icon-color-collapsed: #EC7F31;
+  --hr-color: #513B27;
+  --table-border-color: #513B27;
+  --table-header-background: #2A1D13;
+  --table-header-background-hover: #43301F;
+  --table-header-border-color: #513B27;
+  --table-header-color: #F8ECD4;
+  --table-row-alt-background: #312217;
+  --table-row-alt-background-hover: rgba(150, 123, 92, 0.14);
+  --table-row-background-hover: rgba(150, 123, 92, 0.14);
+  --table-selection: color-mix(in srgb, var(--color-accent) 12%, transparent);
+  --table-selection-border-color: var(--color-accent);
+  --table-drag-handle-color: #967B5C;
+  --table-add-button-border-color: #513B27;
+  --metadata-border-color: #43301F;
+  --metadata-divider-color: #43301F;
+  --metadata-label-text-color: #C4AE8C;
+  --metadata-input-text-color: #EDDCBC;
+  --embed-border-start: 2px solid #634932;
+
+  /* Graph and canvas */
+  --graph-text: #EDDCBC;
+  --graph-line: #634932;
+  --graph-node: #C4AE8C;
+  --graph-node-unresolved: #7B6047;
+  --graph-node-focused: #EC7F31;
+  --graph-node-tag: #A3AE4B;
+  --graph-node-attachment: #F3BF45;
+  --canvas-background: #362619;
+  --canvas-dot-pattern: #513B27;
+  --canvas-card-label-color: #967B5C;
+  --canvas-color-1: #EC6A50;
+  --canvas-color-2: #EC7F31;
+  --canvas-color-3: #F3BF45;
+  --canvas-color-4: #A3AE4B;
+  --canvas-color-5: #86AD95;
+  --canvas-color-6: #7F9BAE;
+
+  /* Window: title bar, ribbon, tabs, status bar, dividers */
+  --titlebar-background: #20160E;
+  --titlebar-background-focused: #20160E;
+  --titlebar-border-color: #20160E;
+  --titlebar-text-color: #C4AE8C;
+  --titlebar-text-color-focused: #EDDCBC;
+  --ribbon-background: #20160E;
+  --ribbon-background-collapsed: #20160E;
+  --tab-container-background: #20160E;
+  --tab-background-active: #362619;
+  --tab-text-color: #967B5C;
+  --tab-text-color-active: #C4AE8C;
+  --tab-text-color-focused: #C4AE8C;
+  --tab-text-color-focused-active: #D9C6A3;
+  --tab-text-color-focused-active-current: #EDDCBC;
+  --tab-text-color-focused-highlighted: #EC7F31;
+  --tab-divider-color: #43301F;
+  --tab-outline-color: #20160E;
+  --status-bar-background: #2A1D13;
+  --status-bar-border-color: #20160E;
+  --status-bar-text-color: #C4AE8C;
+  --divider-color: #20160E;
+  --divider-color-hover: var(--color-accent);
+  --vault-profile-color: #EDDCBC;
+  --vault-profile-color-hover: #F8ECD4;
+
+  /* Navigation, icons, scrollbars */
+  --nav-item-color: #C4AE8C;
+  --nav-item-color-hover: #EDDCBC;
+  --nav-item-color-active: #EDDCBC;
+  --nav-item-color-selected: #EDDCBC;
+  --nav-item-color-highlighted: #EC7F31;
+  --nav-item-background-hover: rgba(150, 123, 92, 0.14);
+  --nav-item-background-active: #43301F;
+  --nav-item-background-selected: color-mix(in srgb, var(--color-accent) 16%, transparent);
+  --nav-heading-color: #EDDCBC;
+  --nav-heading-color-hover: #F8ECD4;
+  --nav-heading-color-collapsed: #967B5C;
+  --nav-heading-color-collapsed-hover: #C4AE8C;
+  --nav-tag-color: #967B5C;
+  --nav-tag-color-hover: #C4AE8C;
+  --nav-tag-color-active: #C4AE8C;
+  --icon-color: #C4AE8C;
+  --icon-color-hover: #EDDCBC;
+  --icon-color-active: #EC7F31;
+  --icon-color-focused: #EDDCBC;
+  --indentation-guide-color: #513B27;
+  --indentation-guide-color-active: #7B6047;
+  --scrollbar-bg: transparent;
+  --scrollbar-thumb-bg: rgba(150, 123, 92, 0.28);
+  --scrollbar-active-thumb-bg: rgba(150, 123, 92, 0.5);
+
+  /* Menus, modals, prompts, popovers, PDFs */
+  --menu-background: #43301F;
+  --menu-border-color: #513B27;
+  --modal-background: #362619;
+  --modal-border-color: #513B27;
+  --prompt-background: #362619;
+  --prompt-border-color: #513B27;
+  --suggestion-background: #362619;
+  --setting-items-background: #302216;
+  --setting-items-border-color: #43301F;
+  --drag-ghost-background: rgba(32, 22, 14, 0.9);
+  --drag-ghost-text-color: #EDDCBC;
+  --pdf-background: #2A1D13;
+  --pdf-sidebar-background: #2A1D13;
+  --pdf-page-background: #362619;
+}
+
+.theme-dark.subway-seat-tunnel {
+  /* Tunnel: deeper grounds, same warm lights */
+  --color-base-00: #24180E;
+  --color-base-05: #2A1C12;
+  --color-base-10: #302115;
+  --color-base-20: #362619;
+  --color-base-25: #3D2C1D;
+  --color-base-30: #443121;
+  --color-base-35: #4F3927;
+  --color-base-40: #6A523C;
+  --color-base-50: #8A7053;
+  --color-base-60: #A48B6C;
+  --color-base-70: #C0AA88;
+  --color-base-100: #E9D8B6;
+  --background-primary: #24180E;
+  --background-primary-alt: #20150C;
+  --background-secondary: #1B120A;
+  --background-secondary-alt: #24180E;
+  --background-modifier-hover: rgba(138, 112, 83, 0.14);
+  --background-modifier-border: #302115;
+  --background-modifier-border-hover: #3D2C1D;
+  --background-modifier-form-field: #302115;
+  --background-modifier-form-field-hover: #302115;
+  --background-modifier-cover: rgba(20, 13, 7, 0.6);
+  --background-modifier-box-shadow: rgba(20, 13, 7, 0.5);
+  --background-modifier-message: rgba(20, 13, 7, 0.92);
+  --workspace-background-translucent: rgba(20, 13, 7, 0.6);
+  --text-normal: #E9D8B6;
+  --text-muted: #C0AA88;
+  --text-faint: #8A7053;
+  --text-on-accent: #140D07;
+  --text-on-accent-inverted: #140D07;
+  --bold-color: #F6EAD1;
+  --interactive-normal: #302115;
+  --interactive-hover: #3D2C1D;
+  --toggle-thumb-color: #F6EAD1;
+  --slider-thumb-background: #F6EAD1;
+  --slider-thumb-background-hover: #F6EAD1;
+  --slider-track-background: #3D2C1D;
+  --input-placeholder-color: #8A7053;
+  --flair-background: #302115;
+  --flair-color: #D6C3A0;
+  --pill-color: #C0AA88;
+  --pill-color-hover: #E9D8B6;
+  --pill-color-remove: #8A7053;
+  --pill-border-color: #3D2C1D;
+  --pill-border-color-hover: #4F3927;
+  --search-icon-color: #C0AA88;
+  --search-clear-button-color: #C0AA88;
+  --heading-formatting: #6A523C;
+  --inline-title-color: #F6EAD1;
+  --code-background: #1B120A;
+  --code-border-color: #302115;
+  --code-bracket-background: rgba(138, 112, 83, 0.14);
+  --code-normal: #E9D8B6;
+  --code-comment: #8A7053;
+  --code-operator: #A48B6C;
+  --code-property: #D6C3A0;
+  --code-punctuation: #A48B6C;
+  --callout-quote: #8A7053;
+  --blockquote-color: #D6C3A0;
+  --checkbox-border-color: #6A523C;
+  --checkbox-border-color-hover: #8A7053;
+  --checkbox-marker-color: #140D07;
+  --checklist-done-color: #8A7053;
+  --list-marker-color: #8A7053;
+  --list-marker-color-hover: #C0AA88;
+  --collapse-icon-color: #8A7053;
+  --hr-color: #3D2C1D;
+  --table-border-color: #3D2C1D;
+  --table-header-background: #1B120A;
+  --table-header-background-hover: #302115;
+  --table-header-border-color: #3D2C1D;
+  --table-header-color: #F6EAD1;
+  --table-row-alt-background: #20160C;
+  --table-row-alt-background-hover: rgba(138, 112, 83, 0.14);
+  --table-row-background-hover: rgba(138, 112, 83, 0.14);
+  --table-drag-handle-color: #8A7053;
+  --table-add-button-border-color: #3D2C1D;
+  --metadata-border-color: #302115;
+  --metadata-divider-color: #302115;
+  --metadata-label-text-color: #C0AA88;
+  --metadata-input-text-color: #E9D8B6;
+  --embed-border-start: 2px solid #4F3927;
+  --graph-text: #E9D8B6;
+  --graph-line: #4F3927;
+  --graph-node: #C0AA88;
+  --graph-node-unresolved: #6A523C;
+  --canvas-background: #24180E;
+  --canvas-dot-pattern: #3D2C1D;
+  --canvas-card-label-color: #8A7053;
+  --titlebar-background: #140D07;
+  --titlebar-background-focused: #140D07;
+  --titlebar-border-color: #140D07;
+  --titlebar-text-color: #C0AA88;
+  --titlebar-text-color-focused: #E9D8B6;
+  --ribbon-background: #140D07;
+  --ribbon-background-collapsed: #140D07;
+  --tab-container-background: #140D07;
+  --tab-background-active: #24180E;
+  --tab-text-color: #8A7053;
+  --tab-text-color-active: #C0AA88;
+  --tab-text-color-focused: #C0AA88;
+  --tab-text-color-focused-active: #D6C3A0;
+  --tab-text-color-focused-active-current: #E9D8B6;
+  --tab-divider-color: #302115;
+  --tab-outline-color: #140D07;
+  --status-bar-background: #1B120A;
+  --status-bar-border-color: #140D07;
+  --status-bar-text-color: #C0AA88;
+  --divider-color: #140D07;
+  --vault-profile-color: #E9D8B6;
+  --vault-profile-color-hover: #F6EAD1;
+  --nav-item-color: #C0AA88;
+  --nav-item-color-hover: #E9D8B6;
+  --nav-item-color-active: #E9D8B6;
+  --nav-item-color-selected: #E9D8B6;
+  --nav-item-background-hover: rgba(138, 112, 83, 0.14);
+  --nav-item-background-active: #302115;
+  --nav-heading-color: #E9D8B6;
+  --nav-heading-color-hover: #F6EAD1;
+  --nav-heading-color-collapsed: #8A7053;
+  --nav-heading-color-collapsed-hover: #C0AA88;
+  --nav-tag-color: #8A7053;
+  --nav-tag-color-hover: #C0AA88;
+  --nav-tag-color-active: #C0AA88;
+  --icon-color: #C0AA88;
+  --icon-color-hover: #E9D8B6;
+  --icon-color-focused: #E9D8B6;
+  --indentation-guide-color: #3D2C1D;
+  --indentation-guide-color-active: #6A523C;
+  --scrollbar-thumb-bg: rgba(138, 112, 83, 0.28);
+  --scrollbar-active-thumb-bg: rgba(138, 112, 83, 0.5);
+  --menu-background: #302115;
+  --menu-border-color: #3D2C1D;
+  --modal-background: #24180E;
+  --modal-border-color: #3D2C1D;
+  --prompt-background: #24180E;
+  --prompt-border-color: #3D2C1D;
+  --suggestion-background: #24180E;
+  --setting-items-background: #20150C;
+  --setting-items-border-color: #302115;
+  --drag-ghost-background: rgba(20, 13, 7, 0.9);
+  --drag-ghost-text-color: #E9D8B6;
+  --pdf-background: #1B120A;
+  --pdf-sidebar-background: #1B120A;
+  --pdf-page-background: #24180E;
+}
+
+.theme-light {
+  /* Palette: the base ramp runs from the editor ground to parchment text */
+  --color-base-00: #F4E9D4;
+  --color-base-05: #F0E4CD;
+  --color-base-10: #EBDEC6;
+  --color-base-20: #E2D3B6;
+  --color-base-25: #D9C8A7;
+  --color-base-30: #D2BE9A;
+  --color-base-35: #CAB48E;
+  --color-base-40: #BAA07A;
+  --color-base-50: #A58C6A;
+  --color-base-60: #8C7254;
+  --color-base-70: #654F3B;
+  --color-base-100: #3E2C1E;
+  --color-red: #B43B27;
+  --color-orange: #C4561A;
+  --color-yellow: #A56E00;
+  --color-green: #697813;
+  --color-cyan: #3E7157;
+  --color-blue: #3F6480;
+  --color-purple: #517791;
+  --color-pink: #AE5F3A;
+  --color-red-rgb: 180, 59, 39;
+  --color-orange-rgb: 196, 86, 26;
+  --color-yellow-rgb: 165, 110, 0;
+  --color-green-rgb: 105, 120, 19;
+  --color-cyan-rgb: 62, 113, 87;
+  --color-blue-rgb: 63, 100, 128;
+  --color-purple-rgb: 81, 119, 145;
+  --color-pink-rgb: 174, 95, 58;
+
+  /* Accent: burnt orange, still overridable under Settings → Appearance */
+  --accent-h: 21.2;
+  --accent-s: 76.6%;
+  --accent-l: 43.5%;
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+  --color-accent-1: hsl(calc(var(--accent-h) + 1), calc(var(--accent-s) * 1.1), calc(var(--accent-l) * 1.08));
+  --color-accent-2: hsl(calc(var(--accent-h) + 2), calc(var(--accent-s) * 1.15), calc(var(--accent-l) * 1.16));
+
+  /* Grounds: editor walnut, sidebars espresso, title bar and ribbon tunnel */
+  --background-primary: #F4E9D4;
+  --background-primary-alt: #F0E4CD;
+  --background-secondary: #EBDEC6;
+  --background-secondary-alt: #F4E9D4;
+  --background-modifier-hover: rgba(140, 114, 84, 0.16);
+  --background-modifier-active-hover: color-mix(in srgb, var(--color-accent) 14%, transparent);
+  --background-modifier-border: #D9C8A7;
+  --background-modifier-border-hover: #CAB48E;
+  --background-modifier-border-focus: #C4561A;
+  --background-modifier-error: #B43B27;
+  --background-modifier-error-hover: #C44A33;
+  --background-modifier-warning: #A56E00;
+  --background-modifier-warning-hover: #BA8210;
+  --background-modifier-success: #697813;
+  --background-modifier-form-field: #F4E9D4;
+  --background-modifier-form-field-hover: #F4E9D4;
+  --background-modifier-cover: rgba(226, 211, 182, 0.5);
+  --background-modifier-box-shadow: rgba(115, 92, 68, 0.14);
+  --background-modifier-message: rgba(42, 29, 19, 0.92);
+  --workspace-background-translucent: rgba(244, 233, 212, 0.6);
+
+  /* Text */
+  --text-normal: #3E2C1E;
+  --text-muted: #654F3B;
+  --text-faint: #8C7254;
+  --text-on-accent: #F4E9D4;
+  --text-on-accent-inverted: #2A1D13;
+  --text-accent: var(--color-accent);
+  --text-accent-hover: var(--color-accent-1);
+  --text-error: #B43B27;
+  --text-warning: #A56E00;
+  --text-success: #697813;
+  --text-selection: color-mix(in srgb, var(--color-accent) 22%, transparent);
+  --text-highlight-bg: rgba(186, 130, 16, 0.32);
+  --text-highlight-bg-rgb: 186, 130, 16;
+  --caret-color: #C4561A;
+  --bold-color: #2A1D13;
+  --italic-color: inherit;
+
+  /* Interactive */
+  --interactive-normal: #F4E9D4;
+  --interactive-hover: #D9C8A7;
+  --interactive-accent: var(--color-accent);
+  --interactive-accent-hsl: var(--color-accent-hsl);
+  --interactive-accent-hover: var(--color-accent-1);
+  --dropdown-background: var(--interactive-normal);
+  --dropdown-background-hover: var(--interactive-hover);
+  --toggle-thumb-color: #F4E9D4;
+  --slider-thumb-background: #F4E9D4;
+  --slider-thumb-background-hover: #F4E9D4;
+  --slider-track-background: #CAB48E;
+  --input-placeholder-color: #8C7254;
+  --flair-background: #D9C8A7;
+  --flair-color: #54402F;
+  --pill-color: #654F3B;
+  --pill-color-hover: #3E2C1E;
+  --pill-color-remove: #8C7254;
+  --pill-color-remove-hover: #C4561A;
+  --pill-border-color: #CAB48E;
+  --pill-border-color-hover: #BAA07A;
+  --search-icon-color: #654F3B;
+  --search-clear-button-color: #654F3B;
+
+  /* Headings: the 70s stripe, burnt orange down to terracotta */
+  --h1-color: #C4561A;
+  --h2-color: #A56E00;
+  --h3-color: #697813;
+  --h4-color: #3E7157;
+  --h5-color: #3F6480;
+  --h6-color: #AE5F3A;
+  --heading-formatting: #A58C6A;
+  --inline-title-color: #2A1D13;
+
+  /* Links and tags: denim is the only cool colour, tags wear orange */
+  --link-color: #3F6480;
+  --link-color-hover: #517791;
+  --link-external-color: #3F6480;
+  --link-external-color-hover: #517791;
+  --link-unresolved-color: #3F6480;
+  --link-unresolved-opacity: 0.65;
+  --link-unresolved-decoration-style: dotted;
+  --link-unresolved-decoration-color: rgba(63, 100, 128, 0.5);
+  --tag-color: #C4561A;
+  --tag-color-hover: #C4561A;
+  --tag-background: rgba(196, 86, 26, 0.12);
+  --tag-background-hover: rgba(196, 86, 26, 0.2);
+  --tag-border-color: rgba(196, 86, 26, 0.18);
+  --tag-border-color-hover: rgba(196, 86, 26, 0.3);
+
+  /* Code: the same syntax roles as every editor port */
+  --code-background: #EBDEC6;
+  --code-border-color: #D9C8A7;
+  --code-bracket-background: rgba(140, 114, 84, 0.16);
+  --code-normal: #3E2C1E;
+  --code-comment: #8C7254;
+  --code-function: #A56E00;
+  --code-important: #AE5F3A;
+  --code-keyword: #C4561A;
+  --code-operator: #735C44;
+  --code-property: #54402F;
+  --code-punctuation: #735C44;
+  --code-string: #697813;
+  --code-tag: #C4561A;
+  --code-value: #C44A33;
+
+  /* Callouts, by type */
+  --callout-default: #3F6480;
+  --callout-info: #3F6480;
+  --callout-todo: #3F6480;
+  --callout-summary: #3E7157;
+  --callout-tip: #3E7157;
+  --callout-important: #C4561A;
+  --callout-success: #697813;
+  --callout-question: #AE5F3A;
+  --callout-warning: #A56E00;
+  --callout-fail: #B43B27;
+  --callout-error: #B43B27;
+  --callout-bug: #B43B27;
+  --callout-example: #517791;
+  --callout-quote: #8C7254;
+
+  /* Blocks: quotes, checklists, lists, rules, tables, properties */
+  --blockquote-border-color: #AE5F3A;
+  --blockquote-color: #54402F;
+  --blockquote-background-color: transparent;
+  --checkbox-color: var(--color-accent);
+  --checkbox-color-hover: var(--color-accent-1);
+  --checkbox-border-color: #A58C6A;
+  --checkbox-border-color-hover: #8C7254;
+  --checkbox-marker-color: #F4E9D4;
+  --checklist-done-color: #8C7254;
+  --list-marker-color: #8C7254;
+  --list-marker-color-hover: #654F3B;
+  --list-marker-color-collapsed: #C4561A;
+  --collapse-icon-color: #8C7254;
+  --collapse-icon-color-collapsed: #C4561A;
+  --hr-color: #CAB48E;
+  --table-border-color: #D9C8A7;
+  --table-header-background: #EBDEC6;
+  --table-header-background-hover: #D9C8A7;
+  --table-header-border-color: #D9C8A7;
+  --table-header-color: #2A1D13;
+  --table-row-alt-background: #F0E5CE;
+  --table-row-alt-background-hover: rgba(140, 114, 84, 0.16);
+  --table-row-background-hover: rgba(140, 114, 84, 0.16);
+  --table-selection: color-mix(in srgb, var(--color-accent) 12%, transparent);
+  --table-selection-border-color: var(--color-accent);
+  --table-drag-handle-color: #8C7254;
+  --table-add-button-border-color: #CAB48E;
+  --metadata-border-color: #D9C8A7;
+  --metadata-divider-color: #D9C8A7;
+  --metadata-label-text-color: #654F3B;
+  --metadata-input-text-color: #3E2C1E;
+  --embed-border-start: 2px solid #CAB48E;
+
+  /* Graph and canvas */
+  --graph-text: #3E2C1E;
+  --graph-line: #CAB48E;
+  --graph-node: #654F3B;
+  --graph-node-unresolved: #A58C6A;
+  --graph-node-focused: #C4561A;
+  --graph-node-tag: #697813;
+  --graph-node-attachment: #A56E00;
+  --canvas-background: #F4E9D4;
+  --canvas-dot-pattern: #D9C8A7;
+  --canvas-card-label-color: #8C7254;
+  --canvas-color-1: #B43B27;
+  --canvas-color-2: #C4561A;
+  --canvas-color-3: #A56E00;
+  --canvas-color-4: #697813;
+  --canvas-color-5: #3E7157;
+  --canvas-color-6: #3F6480;
+
+  /* Window: title bar, ribbon, tabs, status bar, dividers */
+  --titlebar-background: #E2D3B6;
+  --titlebar-background-focused: #E2D3B6;
+  --titlebar-border-color: #E2D3B6;
+  --titlebar-text-color: #654F3B;
+  --titlebar-text-color-focused: #3E2C1E;
+  --ribbon-background: #E2D3B6;
+  --ribbon-background-collapsed: #E2D3B6;
+  --tab-container-background: #E2D3B6;
+  --tab-background-active: #F4E9D4;
+  --tab-text-color: #8C7254;
+  --tab-text-color-active: #654F3B;
+  --tab-text-color-focused: #654F3B;
+  --tab-text-color-focused-active: #54402F;
+  --tab-text-color-focused-active-current: #3E2C1E;
+  --tab-text-color-focused-highlighted: #C4561A;
+  --tab-divider-color: #CAB48E;
+  --tab-outline-color: #E2D3B6;
+  --status-bar-background: #EBDEC6;
+  --status-bar-border-color: #E2D3B6;
+  --status-bar-text-color: #654F3B;
+  --divider-color: #E2D3B6;
+  --divider-color-hover: var(--color-accent);
+  --vault-profile-color: #3E2C1E;
+  --vault-profile-color-hover: #2A1D13;
+
+  /* Navigation, icons, scrollbars */
+  --nav-item-color: #654F3B;
+  --nav-item-color-hover: #3E2C1E;
+  --nav-item-color-active: #3E2C1E;
+  --nav-item-color-selected: #3E2C1E;
+  --nav-item-color-highlighted: #C4561A;
+  --nav-item-background-hover: rgba(140, 114, 84, 0.16);
+  --nav-item-background-active: #D9C8A7;
+  --nav-item-background-selected: color-mix(in srgb, var(--color-accent) 16%, transparent);
+  --nav-heading-color: #3E2C1E;
+  --nav-heading-color-hover: #2A1D13;
+  --nav-heading-color-collapsed: #8C7254;
+  --nav-heading-color-collapsed-hover: #654F3B;
+  --nav-tag-color: #8C7254;
+  --nav-tag-color-hover: #654F3B;
+  --nav-tag-color-active: #654F3B;
+  --icon-color: #654F3B;
+  --icon-color-hover: #3E2C1E;
+  --icon-color-active: #C4561A;
+  --icon-color-focused: #3E2C1E;
+  --indentation-guide-color: #D9C8A7;
+  --indentation-guide-color-active: #A58C6A;
+  --scrollbar-bg: transparent;
+  --scrollbar-thumb-bg: rgba(140, 114, 84, 0.28);
+  --scrollbar-active-thumb-bg: rgba(140, 114, 84, 0.5);
+
+  /* Menus, modals, prompts, popovers, PDFs */
+  --menu-background: #F4E9D4;
+  --menu-border-color: #CAB48E;
+  --modal-background: #F4E9D4;
+  --modal-border-color: #CAB48E;
+  --prompt-background: #F4E9D4;
+  --prompt-border-color: #CAB48E;
+  --suggestion-background: #F4E9D4;
+  --setting-items-background: #F0E4CD;
+  --setting-items-border-color: #D9C8A7;
+  --drag-ghost-background: rgba(42, 29, 19, 0.9);
+  --drag-ghost-text-color: #F4E9D4;
+  --pdf-background: #EBDEC6;
+  --pdf-sidebar-background: #EBDEC6;
+  --pdf-page-background: #F4E9D4;
+}

@@ -1,0 +1,30 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+system: "base24"
+name: "Subway Seat"
+author: "oddurs (https://github.com/oddurs/subway-seat)"
+variant: "dark"
+palette:
+  base00: "#362619" # base (Walnut)
+  base01: "#43301F" # surface0 (Coppertone)
+  base02: "#634932" # surface2 (Corduroy)
+  base03: "#967B5C" # overlay1 (Cardboard)
+  base04: "#C4AE8C" # subtext0 (Khaki)
+  base05: "#EDDCBC" # text (Parchment)
+  base06: "#F8ECD4" # text_hi (Ivory)
+  base07: "#F8ECD4" # text_hi (Ivory)
+  base08: "#D2503A" # red (Redbird)
+  base09: "#EC6A50" # red_hi (Redbird bright)
+  base0A: "#F3BF45" # yellow (Harvest gold)
+  base0B: "#A3AE4B" # green (Avocado)
+  base0C: "#86AD95" # sage (Seafoam tile)
+  base0D: "#7F9BAE" # denim (Faded denim)
+  base0E: "#EC7F31" # orange (Burnt orange)
+  base0F: "#E0956C" # clay (Terracotta)
+  base10: "#2A1D13" # mantle (Espresso)
+  base11: "#20160E" # crust (Tunnel)
+  base12: "#EC6A50" # red_hi (Redbird bright)
+  base13: "#FFD36B" # yellow_hi (Broadway yellow)
+  base14: "#BFCB63" # green_hi (Avocado bright)
+  base15: "#A5C9B0" # sage_hi (Seafoam bright)
+  base16: "#9DB6C6" # denim_hi (Denim bright)
+  base17: "#FF9D55" # orange_hi (Sixth Avenue)

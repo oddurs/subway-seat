@@ -1,0 +1,153 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# Subway Seat flavor for Yazi.
+
+[app]
+overall = { bg = "#362619" }
+
+[mgr]
+cwd             = { fg = "#F3BF45" }
+find_keyword    = { fg = "#F3BF45", bold = true, italic = true, underline = true }
+find_position   = { fg = "#EC7F31", bg = "reset", bold = true, italic = true }
+symlink_target  = { fg = "#86AD95", italic = true }
+marker_copied   = { fg = "#A3AE4B", bg = "#A3AE4B" }
+marker_cut      = { fg = "#EC6A50", bg = "#EC6A50" }
+marker_marked   = { fg = "#86AD95", bg = "#86AD95" }
+marker_selected = { fg = "#F3BF45", bg = "#F3BF45" }
+count_copied    = { fg = "#20160E", bg = "#A3AE4B" }
+count_cut       = { fg = "#20160E", bg = "#EC6A50" }
+count_selected  = { fg = "#20160E", bg = "#F3BF45" }
+border_style    = { fg = "#634932" }
+
+[tabs]
+active   = { fg = "#20160E", bg = "#EC7F31", bold = true }
+inactive = { fg = "#D9C6A3", bg = "#513B27" }
+
+[mode]
+normal_main = { fg = "#20160E", bg = "#EC7F31", bold = true }
+normal_alt  = { fg = "#EC7F31", bg = "#43301F" }
+select_main = { fg = "#20160E", bg = "#A3AE4B", bold = true }
+select_alt  = { fg = "#A3AE4B", bg = "#43301F" }
+unset_main  = { fg = "#20160E", bg = "#EC6A50", bold = true }
+unset_alt   = { fg = "#EC6A50", bg = "#43301F" }
+
+[indicator]
+parent  = { fg = "#F8ECD4", bg = "#513B27" }
+current = { fg = "#20160E", bg = "#F3BF45" }
+preview = { fg = "#F8ECD4", bg = "#513B27" }
+
+[status]
+perm_sep        = { fg = "#7B6047" }
+perm_type       = { fg = "#86AD95" }
+perm_read       = { fg = "#F3BF45" }
+perm_write      = { fg = "#EC7F31" }
+perm_exec       = { fg = "#A3AE4B" }
+progress_label  = { fg = "#F8ECD4", bold = true }
+progress_normal = { fg = "#A3AE4B", bg = "#513B27" }
+progress_error  = { fg = "#EC6A50", bg = "#513B27" }
+
+[which]
+border          = { fg = "#EC7F31" }
+mask            = { bg = "#2A1D13" }
+cand            = { fg = "#F3BF45" }
+rest            = { fg = "#967B5C" }
+desc            = { fg = "#D9C6A3" }
+separator_style = { fg = "#634932" }
+
+[confirm]
+border  = { fg = "#EC7F31" }
+title   = { fg = "#EC7F31", bold = true }
+body    = {}
+list    = {}
+btn_yes = { fg = "#20160E", bg = "#EC7F31", bold = true }
+btn_no  = { fg = "#D9C6A3" }
+
+[spot]
+border   = { fg = "#EC7F31" }
+title    = { fg = "#EC7F31" }
+tbl_col  = { fg = "#86AD95" }
+tbl_cell = { fg = "#20160E", bg = "#F3BF45" }
+
+[notify]
+title_info  = { fg = "#7F9BAE" }
+title_warn  = { fg = "#F3BF45" }
+title_error = { fg = "#EC6A50" }
+
+[pick]
+border   = { fg = "#EC7F31" }
+active   = { fg = "#EC7F31", bold = true }
+inactive = {}
+
+[input]
+border   = { fg = "#EC7F31" }
+title    = {}
+value    = {}
+selected = { fg = "#F8ECD4", bg = "#634932" }
+
+[cmp]
+border   = { fg = "#EC7F31" }
+active   = { fg = "#F8ECD4", bg = "#513B27" }
+inactive = {}
+
+[tasks]
+border  = { fg = "#EC7F31" }
+title   = {}
+hovered = { fg = "#EC7F31", bold = true }
+
+[help]
+border  = { fg = "#EC7F31" }
+chord   = { fg = "#F3BF45" }
+action  = { fg = "#D9C6A3" }
+hovered = { bg = "#513B27", bold = true }
+
+[filetype]
+rules = [
+	# Media
+	{ mime = "**/image/*", fg = "#E0956C" },
+	{ mime = "**/{audio,video}/*", fg = "#EC7F31" },
+	# Archives
+	{ mime = "**/application/{zip,rar,7z*,tar,gzip,xz,zstd,bzip*,lzma,compress,archive,cpio,arj,xar,ms-cab*}", fg = "#EC6A50" },
+	# Documents
+	{ mime = "**/application/{pdf,doc,rtf}", fg = "#7F9BAE" },
+	# Virtual file system
+	{ mime = "vfs/{absent,stale}", fg = "#7B6047" },
+	# Special files
+	{ url = "*", is = "orphan", bg = "#D2503A" },
+	{ url = "*", is = "exec", fg = "#A3AE4B" },
+	# Dummy files
+	{ url = "*", is = "dummy", bg = "#D2503A" },
+	{ url = "*/", is = "dummy", bg = "#D2503A" },
+	# Fallback
+	{ url = "*/", fg = "#F3BF45", bold = true },
+]
+
+[icon]
+dirs = [
+	{ name = ".config", text = "", fg = "#F3BF45" },
+	{ name = ".git", text = "", fg = "#F3BF45" },
+	{ name = ".github", text = "", fg = "#F3BF45" },
+	{ name = ".npm", text = "", fg = "#F3BF45" },
+	{ name = "Desktop", text = "", fg = "#F3BF45" },
+	{ name = "Development", text = "", fg = "#F3BF45" },
+	{ name = "Documents", text = "", fg = "#F3BF45" },
+	{ name = "Downloads", text = "", fg = "#F3BF45" },
+	{ name = "Library", text = "", fg = "#F3BF45" },
+	{ name = "Movies", text = "", fg = "#F3BF45" },
+	{ name = "Music", text = "", fg = "#F3BF45" },
+	{ name = "Pictures", text = "", fg = "#F3BF45" },
+	{ name = "Public", text = "", fg = "#F3BF45" },
+	{ name = "Videos", text = "", fg = "#F3BF45" },
+]
+conds = [
+	{ if = "orphan", text = "", fg = "#EC6A50" },
+	{ if = "link", text = "", fg = "#86AD95" },
+	{ if = "block", text = "", fg = "#E0956C" },
+	{ if = "char", text = "", fg = "#E0956C" },
+	{ if = "fifo", text = "", fg = "#E0956C" },
+	{ if = "sock", text = "", fg = "#E0956C" },
+	{ if = "sticky", text = "", fg = "#E0956C" },
+	{ if = "dummy", text = "", fg = "#EC6A50" },
+	{ if = "dir & hovered", text = "", fg = "#F3BF45" },
+	{ if = "dir", text = "", fg = "#F3BF45" },
+	{ if = "exec", text = "", fg = "#A3AE4B" },
+	{ if = "!dir", text = "", fg = "#D9C6A3" },
+]

@@ -1,0 +1,26 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# Subway Seat Enamel for gh-dash.
+theme:
+  colors:
+    text:
+      primary: "#3E2C1E"
+      secondary: "#C4561A"
+      inverted: "#F4E9D4"
+      faint: "#8C7254"
+      warning: "#A56E00"
+      success: "#697813"
+      error: "#C44A33"
+      actor: "#54402F"
+    background:
+      selected: "#D9C8A7"
+    border:
+      primary: "#C4561A"
+      secondary: "#BAA07A"
+      faint: "#D9C8A7"
+    icon:
+      newcontributor: "#697813"
+      contributor: "#3E7157"
+      collaborator: "#A56E00"
+      member: "#A56E00"
+      owner: "#C4561A"
+      unknownrole: "#8C7254"
