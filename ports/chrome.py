@@ -2,8 +2,8 @@
 
 import json
 
-from ports._apps import DESCRIPTION, VERSION, rgb_list, zip_bytes
-from ports._lib import HEADER, Out
+from ports._apps import rgb_list
+from ports._lib import HEADER, VERSION, Out, zip_bytes
 
 META = {
     "id": "chrome",
@@ -15,9 +15,23 @@ META = {
         "code": "Unzip {slug}.zip, then Load unpacked → pick the {slug} folder",
         "lang": "text",
     },
+    "detect": [
+        "/Applications/Google Chrome.app", "/Applications/Brave Browser.app", "/Applications/Microsoft Edge.app",
+        "google-chrome", "google-chrome-stable", "chromium", "chromium-browser", "brave-browser", "microsoft-edge",
+    ],
     "notes": "Colors the tab strip, toolbar, address bar and new-tab page; incognito windows get a faint "
     "terracotta frame so you can tell them apart. Works in Edge and Brave too.",
 }
+
+# The Chrome Web Store cuts descriptions off at 132 characters.
+DESCRIPTION_LIMIT = 132
+
+
+def description(f):
+    text = f"Harvest gold, burnt orange and avocado on walnut. {f.blurb}"
+    if len(text) > DESCRIPTION_LIMIT:
+        raise SystemExit(f"chrome: the {f.name} description is {len(text)} characters (limit {DESCRIPTION_LIMIT})")
+    return text
 
 
 def colors(f):
@@ -56,7 +70,7 @@ def manifest(f):
         "manifest_version": 3,
         "name": f.name,
         "version": VERSION,
-        "description": f"{DESCRIPTION} {f.blurb}",
+        "description": description(f),
         "theme": {"colors": colors(f)},
     }
     if f.dark:
@@ -68,9 +82,9 @@ def build(flavors):
     outs = []
     for f in flavors:
         m = manifest(f)
-        outs.append(Out(f"{f.slug}/manifest.json", m, flavor=f.id,
-                        dest=f"{f.slug}/manifest.json → chrome://extensions → Load unpacked", lang="json"))
-        outs.append(Out(f"{f.slug}.zip", zip_bytes({f"{f.slug}/manifest.json": m, f"{f.slug}/README.txt":
-                        f"{HEADER}\nUnzip, open chrome://extensions, turn on Developer mode, Load unpacked → this folder.\n"}),
-                        flavor=f.id, dest="unzip anywhere, then Load unpacked"))
+        readme = f"{HEADER}\nUnzip, open chrome://extensions, turn on Developer mode, then Load unpacked → this folder.\n"
+        outs.append(Out(f"{f.slug}/manifest.json", m, flavor=f.id, lang="json",
+                        how="the unpacked extension: chrome://extensions › Load unpacked › this folder"))
+        outs.append(Out(f"{f.slug}.zip", zip_bytes({f"{f.slug}/manifest.json": m, f"{f.slug}/README.txt": readme}),
+                        flavor=f.id, how="unzip anywhere, then chrome://extensions › Load unpacked"))
     return outs

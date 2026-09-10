@@ -1,7 +1,7 @@
 """Vimium: custom CSS for link hints, the Vomnibar, the find HUD and the help dialog."""
 
-from ports._apps import ink, rgba
-from ports._lib import HEADER, Out
+from ports._apps import rgba
+from ports._lib import HEADER, Out, ink, selection, solid, ui_colors
 
 META = {
     "id": "vimium",
@@ -9,24 +9,30 @@ META = {
     "category": "Apps",
     "homepage": "https://vimium.github.io",
     "enable": {
-        "where": "Vimium Options → Show advanced options → CSS for Vimium UI",
+        "where": "Vimium Options › Show advanced options › CSS for Vimium UI",
         "code": "Paste the contents of {slug}.css and click Save",
         "lang": "text",
     },
+    "auto": {
+        "where": "Vimium Options › Show advanced options › CSS for Vimium UI",
+        "code": "Paste the contents of subway-seat-auto.css and click Save\n"
+        "# Enamel while the system is light, Subway Seat (Walnut) while it's dark",
+        "lang": "text",
+    },
+    "requires": "Vimium 2.0+",
     "notes": "Harvest-gold link hints, a walnut Vomnibar with denim URLs and orange matches, and the find "
-    "bar and help dialog to match. Selectors follow Vimium 2.x.",
+    "bar and help dialog to match.",
 }
 
 
-def css(f):
+def rules(f):
     d = f.dark
     selected = f.mix("orange", "base", 0.20 if d else 0.14)
     line = f.surface0 if d else f.surface1
+    paper = ui_colors(f)["paper"]  # the Vomnibar and the find HUD float over the page
+    edge = solid("text@EDGE", f, "paper")  # a hairline that shows on paper
     hint_border = f.mix("yellow", "crust", 0.55) if d else f.mix("yellow", "text_hi", 0.7)
-    return f"""/* {HEADER} */
-/* {f.name} for Vimium — paste into Options → CSS for Vimium UI. */
-
-:root {{
+    return f""":root {{
   --vimium-background-color: {f.base};
   --vimium-background-text-color: {f.text};
   --vimium-foreground-color: {f.mantle};
@@ -77,21 +83,21 @@ body.vimium-find-mode ::selection {{
 
 /* Vomnibar */
 #vomnibar {{
-  background: {f.base};
+  background: {paper};
   color: {f.text};
-  border: 1px solid {line};
+  border: 1px solid {edge};
   border-radius: 8px;
   box-shadow: 0 12px 32px {rgba(f.crust if d else f.text_hi, 0.45 if d else 0.2)};
 }}
 
 #vomnibar #vomnibar-search-area {{
-  background: {f.base};
-  border-bottom: 1px solid {line};
+  background: {paper};
+  border-bottom: 1px solid {edge};
 }}
 
 #vomnibar input {{
   color: {f.text_hi};
-  background: {f.mantle};
+  background: {f.base};
   border: 1px solid {line};
   border-radius: 5px;
   box-shadow: none;
@@ -102,16 +108,16 @@ body.vimium-find-mode ::selection {{
 }}
 
 #vomnibar input::selection {{
-  background-color: {f.surface2 if d else f.surface1};
+  background-color: {selection(f)};
   color: {f.text_hi};
 }}
 
 #vomnibar ul {{
-  background: {f.base};
+  background: {paper};
 }}
 
 #vomnibar li {{
-  border-bottom: 1px solid {f.surface0 if d else f.mantle};
+  border-bottom: 1px solid {edge};
 }}
 
 #vomnibar li .source {{
@@ -143,15 +149,15 @@ body.vimium-find-mode ::selection {{
 
 /* Find HUD */
 #hud-container {{
-  background-color: {f.mantle};
+  background-color: {paper};
   color: {f.text};
-  border: 1px solid {line};
+  border: 1px solid {edge};
   box-shadow: none;
 }}
 
 #hud-container #search-area,
 #hud-container #hud {{
-  background-color: {f.mantle};
+  background-color: {paper};
   color: {f.text};
 }}
 
@@ -225,6 +231,21 @@ body.vimium-body div.example {{
 """
 
 
+def css(f):
+    return f"/* {HEADER} */\n/* {f.name} for Vimium: paste into Options › CSS for Vimium UI. */\n\n{rules(f)}"
+
+
+def auto_css(light, dark):
+    inner = "\n".join(f"  {line}" if line else "" for line in rules(dark).splitlines())
+    return (
+        f"/* {HEADER} */\n/* Subway Seat for Vimium, following the system: {light.name} when it's light, "
+        f"{dark.name} when it's dark. */\n\n{rules(light)}\n@media (prefers-color-scheme: dark) {{\n{inner}\n}}\n"
+    )
+
+
 def build(flavors):
-    return [Out(f"{f.slug}.css", css(f), flavor=f.id, dest="Vimium Options → CSS for Vimium UI", lang="css")
-            for f in flavors]
+    by = {f.id: f for f in flavors}
+    how = "paste into Vimium Options › CSS for Vimium UI"
+    outs = [Out(f"{f.slug}.css", css(f), flavor=f.id, lang="css", how=how) for f in flavors]
+    outs.append(Out("subway-seat-auto.css", auto_css(by["enamel"], by["walnut"]), lang="css", how=how))
+    return outs

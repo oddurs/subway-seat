@@ -3,8 +3,8 @@
 import json
 
 import palette as p
-from ports._apps import AUTHOR, AUTHOR_URL, DESCRIPTION, ink, select
-from ports._lib import HEADER, REPO, Out
+from ports._apps import AUTHOR, AUTHOR_URL, DESCRIPTION
+from ports._lib import HEADER, REPO, Out, ink, selection
 
 META = {
     "id": "spicetify",
@@ -12,13 +12,18 @@ META = {
     "category": "Apps",
     "homepage": "https://spicetify.app",
     "enable": {
-        "where": "~/.config/spicetify/Themes/subway-seat/",
+        "where": "a terminal, with the theme in Spicetify's Themes folder",
         "code": "spicetify config current_theme subway-seat color_scheme {id}\nspicetify apply",
         "lang": "sh",
     },
+    "detect": ["spicetify"],
     "notes": "Spicetify's color keys plus the whole palette as `--spice-*` variables, and a small user.css "
-    "that turns Spotify's green accent into burnt orange.",
+    "that turns Spotify's green accent into burnt orange and puts dark ink on its notification banners.",
 }
+
+# Spicetify's config folder is ~/.config/spicetify on macOS and Linux, %APPDATA%\spicetify on Windows.
+THEME_DIR = "~/.config/spicetify/Themes/subway-seat"
+WINDOWS = "on Windows, %APPDATA%\\spicetify\\Themes\\subway-seat\\"
 
 
 def scheme(f):
@@ -39,13 +44,13 @@ def scheme(f):
         "button-active": f.orange_hi,
         "button-disabled": f.overlay0,
         "tab-active": f.surface1,
-        "notification": f.denim,
+        "notification": f.denim,        # banner grounds; user.css puts ink on them
         "notification-error": f.red,
         "equalizer": f.orange,
         "misc": f.overlay1,
         # Extras for user.css (and your own snippets): the whole palette.
         "ink": ink(f),
-        "selection": select(f),
+        "selection": selection(f),
         **{role.replace("_", "-"): f.colors[role] for role in p.ROLES},
     }
 
@@ -102,6 +107,35 @@ USER_CSS = f"""/* {HEADER} */
   --essential-base: var(--spice-ink);
 }}
 
+/* Notification banners: ink on denim (info) and on red (errors), not light text. */
+.encore-dark-theme .encore-announcement-set,
+.encore-light-theme .encore-announcement-set,
+.encore-dark-theme .encore-negative-set,
+.encore-light-theme .encore-negative-set {{
+  --text-base: var(--spice-ink);
+  --text-subdued: var(--spice-ink);
+  --essential-base: var(--spice-ink);
+  --essential-subdued: var(--spice-ink);
+  --decorative-base: var(--spice-ink);
+}}
+
+.encore-dark-theme .encore-announcement-set,
+.encore-light-theme .encore-announcement-set {{
+  --background-base: var(--spice-notification);
+}}
+
+.encore-dark-theme .encore-negative-set,
+.encore-light-theme .encore-negative-set {{
+  --background-base: var(--spice-notification-error);
+}}
+
+.encore-dark-theme .encore-announcement-set > *,
+.encore-light-theme .encore-announcement-set > *,
+.encore-dark-theme .encore-negative-set > *,
+.encore-light-theme .encore-negative-set > * {{
+  --parents-essential-base: var(--spice-ink);
+}}
+
 ::selection {{
   background-color: var(--spice-selection);
   color: var(--spice-text-hi);
@@ -113,14 +147,19 @@ USER_CSS = f"""/* {HEADER} */
 """
 
 
+# The Spicetify Marketplace reads manifest.json from the root of a repository tagged
+# `spicetify-themes`, with every path relative to that root.
+HERE = "dist/spicetify"
+
+
 def marketplace_manifest():
     return json.dumps([{
         "name": "Subway Seat",
         "description": DESCRIPTION,
-        "preview": "preview.png",
-        "readme": "README.md",
-        "usercss": "subway-seat/user.css",
-        "schemes": "subway-seat/color.ini",
+        "preview": "assets/previews/spicetify.webp",  # the per-port preview image (not captured yet)
+        "readme": f"{HERE}/README.md",
+        "usercss": f"{HERE}/subway-seat/user.css",
+        "schemes": f"{HERE}/subway-seat/color.ini",
         "authors": [{"name": AUTHOR, "url": AUTHOR_URL}],
         "tags": ["dark", "light", "warm", "retro", "70s"],
     }], indent=2) + "\n"
@@ -128,9 +167,8 @@ def marketplace_manifest():
 
 def build(flavors):
     return [
-        Out("subway-seat/color.ini", color_ini(flavors), dest="~/.config/spicetify/Themes/subway-seat/color.ini",
-            lang="ini"),
-        Out("subway-seat/user.css", USER_CSS, dest="~/.config/spicetify/Themes/subway-seat/user.css", lang="css"),
-        Out("manifest.json", marketplace_manifest(),
-            dest="repo root, for the Spicetify Marketplace (paths are relative to it)", lang="json"),
+        Out("subway-seat/color.ini", color_ini(flavors), dest=f"{THEME_DIR}/color.ini", lang="ini", how=WINDOWS),
+        Out("subway-seat/user.css", USER_CSS, dest=f"{THEME_DIR}/user.css", lang="css", how=WINDOWS),
+        Out("manifest.json", marketplace_manifest(), lang="json",
+            how="for the Spicetify Marketplace: a copy belongs at the repository root, which its paths are relative to"),
     ]
