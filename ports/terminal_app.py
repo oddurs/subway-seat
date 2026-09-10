@@ -10,21 +10,23 @@ device RGB, which is unmanaged.
 
 import plistlib
 
-from ports._lib import HEADER, Out, rgb_floats
-from ports._terminals import lit, selection
+from ports._lib import HEADER, Out, rgb_floats, selection
+from ports._terminals import lit
 
 META = {
     "id": "terminal-app",
     "name": "Terminal.app",
     "category": "Terminals",
     "homepage": "https://support.apple.com/guide/terminal/welcome/mac",
+    "detect": ["/System/Applications/Utilities/Terminal.app"],
     "enable": {
         "where": "Terminal › Settings › Profiles (select it, then click Default)",
         "code": 'open "{name}.terminal"   # imports the profile and opens a window',
         "lang": "sh",
     },
     "notes": "The 16 ANSI colors plus background, text, bold text, selection and cursor. Terminal.app has "
-    "no setting for cursor text or tab colors.",
+    "no setting for cursor text or tab colors, and a profile doesn't switch with the macOS appearance, so "
+    "pick one flavor.",
 }
 
 ANSI_KEYS = ["Black", "Red", "Green", "Yellow", "Blue", "Magenta", "Cyan", "White"]
@@ -55,8 +57,8 @@ def nscolor(hex_):
 
 
 def profile(f):
-    colors = {f"ANSI{n}Color": c for n, c in zip(ANSI_KEYS, f.ansi[:8])}
-    colors |= {f"ANSIBright{n}Color": c for n, c in zip(ANSI_KEYS, f.ansi[8:])}
+    colors = {f"ANSI{n}Color": c for n, c in zip(ANSI_KEYS, f.ansi[:8], strict=True)}
+    colors |= {f"ANSIBright{n}Color": c for n, c in zip(ANSI_KEYS, f.ansi[8:], strict=True)}
     colors |= {
         "BackgroundColor": f.base,
         "TextColor": f.text,
@@ -76,8 +78,8 @@ def build(flavors):
             f"{f.name}.terminal",
             profile(f),
             flavor=f.id,
-            dest="Terminal.app (open the file to import it as a profile)",
             lang="xml",
+            how="Open the file to import it as a Terminal profile",
         )
         for f in flavors
     ]

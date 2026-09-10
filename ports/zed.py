@@ -3,15 +3,18 @@
 Style keys follow crates/settings_content/src/theme.rs (the v0.2.0 JSON schema
 is stale and misses newer keys). Layering, darkest to lightest in both flavors:
 crust chrome (title/status bars) → mantle panels and tab bar → base editor →
-elevated surfaces one step lifted. Hovers and selections are a warm veil
-(overlay1 at low alpha) so they compose over any ground: it lightens the dark
-grounds and darkens Enamel's cream ones.
+popovers on paper. Hovers are a warm veil (overlay1 at low alpha) so they
+compose over any ground: it lightens the dark grounds and darkens Enamel's
+cream ones. The selection, matches and diff rows are the shared editor recipes
+from `_editors`, glazed so they land on exactly the same colors as the other
+editors over the editor ground.
 """
 
 import json
 
 import palette as p
-from ports._lib import HEADER, REPO, VERSION, Out
+from ports._editors import glaze, ui
+from ports._lib import ANSI_NAMES, HEADER, REPO, VERSION, Out, tints
 
 a = p.alpha
 
@@ -21,23 +24,34 @@ META = {
     "category": "Editors",
     "homepage": "https://zed.dev",
     "enable": {
-        "where": "Zed's extensions page (or copy the theme to ~/.config/zed/themes/), then settings.json",
+        "where": "settings.json",
         "code": '"theme": "{name}"',
         "lang": "json",
     },
-    "notes": "All three flavors in one extension: crust title and status bars, espresso panels, a walnut "
-    "editor and lifted menus. The agent panel's diffs, borders and hovers are tuned too.",
+    "auto": {
+        "where": "settings.json",
+        "code": '"theme": {\n  "mode": "system",\n  "light": "Subway Seat Enamel",\n  "dark": "Subway Seat"\n}',
+        "lang": "json",
+    },
+    "detect": ["zed", "zeditor", "/Applications/Zed.app"],
+    "notes": "All three flavors in one theme family: copy the theme file, or install the dist/zed folder of a "
+    "clone with Zed › Extensions › Install Dev Extension. The title and status bars sit darkest, panels a step "
+    "lighter, the editor lighter again, and menus and popovers are raised above it. Selections, search "
+    "matches and diffs use the same colors as the other editor ports, and the agent panel's diffs follow them.",
 }
-
-ANSI = ["black", "red", "green", "yellow", "blue", "magenta", "cyan", "white"]
 
 # Zed syntax capture → SYNTAX role, or (color role, styles) where the palette has no role.
 CAPTURES = {
     "attribute": "attribute",
+    "attribute.builtin": "decorator",
     "boolean": "boolean",
+    "character": "string",
     "comment": "comment",
     "comment.doc": ("overlay2", {"italic"}),
+    "comment.documentation": ("overlay2", {"italic"}),
+    "concept": "type",
     "constant": "constant",
+    "constant.builtin": "constant",
     "constructor": "type",
     "diff.minus": ("red_hi", set()),
     "diff.plus": ("green", set()),
@@ -47,18 +61,25 @@ CAPTURES = {
     "enum": "type",
     "function": "function",
     "function.builtin": "function.builtin",
+    "function.decorator": "decorator",
+    "function.macro": "decorator",
     "hint": ("overlay1", set()),
     "keyword": "keyword",
+    "keyword.operator": "keyword",  # and, or, not, in: words, so they read as keywords (as in Neovim)
     "label": "decorator",
+    "lifetime": "decorator",
     "link_text": "link",
     "link_uri": ("denim", {"italic"}),
+    "module": "namespace",
     "namespace": "namespace",
     "number": "number",
     "operator": "operator",
+    "parameter": "parameter",
     "predictive": ("overlay1", {"italic"}),
     "preproc": "decorator",
     "primary": "variable",
     "property": "property",
+    "property.json_key": "function",  # JSON keys in gold, like the TextMate ports
     "punctuation": "punctuation",
     "punctuation.bracket": "punctuation",
     "punctuation.delimiter": "punctuation",
@@ -68,20 +89,32 @@ CAPTURES = {
     "selector": ("yellow", set()),
     "selector.pseudo": ("clay", set()),
     "string": "string",
+    "string.doc": ("green", {"italic"}),
     "string.escape": "string.escape",
     "string.regex": "regexp",
     "string.special": "string.escape",
+    "string.special.path": ("green", set()),
     "string.special.symbol": "constant",
+    "string.special.url": "link",
     "tag": "tag",
+    "tag.attribute": "attribute",
+    "tag.component": "type",
+    "tag.delimiter": "punctuation",
     "text.literal": "code",
     "title": "heading",
     "type": "type",
     "type.builtin": "type.builtin",
     "variable": "variable",
+    "variable.builtin": "variable.builtin",
+    "variable.member": "property",
     "variable.parameter": "parameter",
     "variable.special": "variable.builtin",
     "variant": "constant",
 }
+
+
+# Comment tags as small badges: ink on the accent, as in Neovim.
+BADGES = {"comment.todo": "yellow", "comment.note": "sage", "comment.warning": "yellow", "comment.error": "red_hi"}
 
 
 def syntax(f):
@@ -94,13 +127,16 @@ def syntax(f):
         if "bold" in styles:
             s["font_weight"] = 700
         out[capture] = s
-    return out
+    for capture, role in BADGES.items():
+        out[capture] = {"color": ui(f)["ink"], "background_color": f.colors[role], "font_weight": 700}
+    return dict(sorted(out.items()))
 
 
 def style(f):
     c = f
     dark = f.dark
-    ink = c.crust if dark else c.base  # text on an accent fill
+    u, t = ui(f), tints(f)
+    ink = u["ink"]
     k = 1.0 if dark else 1.2           # accent tints need a little more alpha on cream
 
     def veil(x):
@@ -109,13 +145,13 @@ def style(f):
     def tint(color, x):
         return a(color, min(1.0, x * k))
 
-    # One step lifted from the editor: surface0 in the dark flavors; on Enamel the
-    # surface ramp darkens, so lift toward the light instead (enamel catching the sun).
-    lifted = c.surface0 if dark else p.blend("#FFFFFF", c.base, 0.35)
+    # Popovers are raised onto paper: surface0 in the dark flavors; on Enamel the
+    # surface ramp darkens, so paper lifts toward white instead (enamel catching the sun).
+    lifted = u["paper"]
     border = c.crust if dark else f.mix("surface0", "surface1", 0.5)
     hairline = veil(0.22)
-    selection = veil(0.36 if dark else 0.30)
-    cursor = c.yellow if dark else c.orange
+    selection = glaze(f, u["selection"])
+    cursor = u["cursor"]
 
     s = {
         "background.appearance": "opaque",
@@ -174,8 +210,8 @@ def style(f):
         "link_text.hover": c.denim_hi if dark else c.denim,
         "debugger.accent": c.red_hi,
         # search
-        "search.match_background": tint(c.yellow, 0.25),
-        "search.active_match_background": tint(c.orange, 0.42),
+        "search.match_background": glaze(f, u["search"]),
+        "search.active_match_background": glaze(f, u["search_cur"]),
         # scrollbars and minimap
         "scrollbar.thumb.background": veil(0.25),
         "scrollbar.thumb.hover_background": veil(0.4),
@@ -194,9 +230,9 @@ def style(f):
         "editor.subheader.background": c.mantle,
         "editor.active_line.background": veil(0.1 if dark else 0.08),
         "editor.highlighted_line.background": veil(0.16),
-        "editor.debugger_active_line.background": tint(c.yellow, 0.14),
+        "editor.debugger_active_line.background": glaze(f, t["chg"]),
         "editor.line_number": c.overlay0,
-        "editor.active_line_number": c.yellow,
+        "editor.active_line_number": u["line_nr_cur"],
         "editor.hover_line_number": c.overlay2,
         "editor.invisible": c.surface2,
         "editor.wrap_guide": veil(0.1),
@@ -205,24 +241,25 @@ def style(f):
         "editor.indent_guide_active": veil(0.38),
         "editor.document_highlight.read_background": veil(0.2),
         "editor.document_highlight.write_background": tint(c.orange, 0.18),
-        "editor.document_highlight.bracket_background": tint(c.yellow, 0.2),
-        "editor.diff_hunk.added.background": tint(c.green, 0.16),
-        "editor.diff_hunk.added.hollow_background": tint(c.green, 0.06),
-        "editor.diff_hunk.added.hollow_border": tint(c.green, 0.4),
-        "editor.diff_hunk.deleted.background": tint(c.red, 0.18),
-        "editor.diff_hunk.deleted.hollow_background": tint(c.red, 0.06),
-        "editor.diff_hunk.deleted.hollow_border": tint(c.red, 0.4),
-        # version control
+        "editor.document_highlight.bracket_background": glaze(f, u["bracket_bg"]),
+        # diff rows use the shared line tints; hollow rows (staged hunks) the faded ones
+        "editor.diff_hunk.added.background": glaze(f, t["add"]),
+        "editor.diff_hunk.added.hollow_background": glaze(f, t["add_dim"]),
+        "editor.diff_hunk.added.hollow_border": a(c.green, 0.45),
+        "editor.diff_hunk.deleted.background": glaze(f, t["del"]),
+        "editor.diff_hunk.deleted.hollow_background": glaze(f, t["del_dim"]),
+        "editor.diff_hunk.deleted.hollow_border": a(c.red_hi, 0.45),
+        # version control: gutter marks and file status; changed words sit on the row tint
         "version_control.added": c.green,
         "version_control.deleted": c.red_hi,
         "version_control.modified": c.yellow,
         "version_control.renamed": c.sage,
         "version_control.conflict": c.orange,
         "version_control.ignored": c.overlay0,
-        "version_control.word_added": tint(c.green, 0.3),
-        "version_control.word_deleted": tint(c.red, 0.34),
-        "version_control.conflict_marker.ours": tint(c.green, 0.14),
-        "version_control.conflict_marker.theirs": tint(c.denim, 0.14),
+        "version_control.word_added": glaze(f, t["add_emph"], over=t["add"]),
+        "version_control.word_deleted": glaze(f, t["del_emph"], over=t["del"]),
+        "version_control.conflict_marker.ours": glaze(f, t["add"]),
+        "version_control.conflict_marker.theirs": glaze(f, t["info"]),
         # terminal
         "terminal.background": c.base,
         "terminal.ansi.background": c.base,
@@ -230,10 +267,11 @@ def style(f):
         "terminal.bright_foreground": c.text_hi,
         "terminal.dim_foreground": c.overlay1,
     }
-    for i, name in enumerate(ANSI):
+    for i, name in enumerate(ANSI_NAMES):
         s[f"terminal.ansi.{name}"] = f.ansi[i]
         s[f"terminal.ansi.bright_{name}"] = f.ansi[i + 8]
-        s[f"terminal.ansi.dim_{name}"] = p.blend(f.ansi[i], c.base, 0.65)
+        # dimmed toward the ground; less on cream, where dimming washes the darker inks out fast
+        s[f"terminal.ansi.dim_{name}"] = p.blend(f.ansi[i], c.base, 0.65 if dark else 0.8)
 
     # vim / helix mode chips: a route bullet per mode, ink letters
     modes = {"normal": c.sage, "insert": c.green, "replace": c.red_hi, "visual": c.orange,
@@ -311,9 +349,10 @@ SOFTWARE.
 
 
 def build(flavors):
+    dev = "part of the dev extension: Zed › Extensions › Install Dev Extension, then pick this folder"
     return [
         Out("themes/subway-seat.json", json.dumps(family(flavors), indent=2) + "\n",
-            dest="~/.config/zed/themes/subway-seat.json", lang="json"),
-        Out("extension.toml", EXTENSION, dest="packaged in the extension", lang="toml"),
-        Out("LICENSE", LICENSE, dest="packaged in the extension", lang="text"),
+            dest="~/.config/zed/themes/subway-seat.json", how="Windows: %APPDATA%\\Zed\\themes", lang="json"),
+        Out("extension.toml", EXTENSION, how=dev, lang="toml"),
+        Out("LICENSE", LICENSE, how=dev, lang="text"),
     ]

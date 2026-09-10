@@ -22,11 +22,13 @@
 
 ## Three flavors
 
+<!-- flavors:start -->
 | | | |
 |---|---|---|
-| **Subway Seat** | Walnut | Wood paneling and orange bucket seats. The original. |
-| **Subway Seat Tunnel** | Deep dark | The late local after midnight: espresso-deep, same warm lights. |
-| **Subway Seat Enamel** | Light | Cream enamel panels in the morning sun. |
+| **Subway Seat** | `walnut` · dark | Walnut paneling and orange bucket seats. The original. |
+| **Subway Seat Tunnel** | `tunnel` · dark | The late local after midnight: espresso-deep, same warm lights. |
+| **Subway Seat Enamel** | `enamel` · light | Cream enamel panels in the morning sun. The light one. |
+<!-- flavors:end -->
 
 <p align="center">
   <img src="assets/screenshots/vscode.png" alt="VS Code in Subway Seat: a walnut editor, darker sidebar and tabs, a raised suggestion popover, and a terminal panel." />
@@ -39,19 +41,21 @@
 
 The whole spectrum isn't invited. Blue is faded denim and only marks links; magenta got reassigned to burnt orange; cyan is seafoam tile. Everything stays in the same warm room.
 
+<!-- accents:start -->
 | Accent | Leads |
 |---|---|
-| Burnt orange | keywords, tags, the brand accent |
+| Burnt orange | keywords, tags, the Claude spinner |
 | Harvest gold | functions, commands, the cursor |
 | Avocado | strings, additions |
-| Seafoam tile | types, classes |
-| Redbird | numbers, constants, deletions |
+| Seafoam tile | types, classes, options |
+| Redbird bright | numbers, constants, deletions |
 | Terracotta | escapes, regex, decorators |
-| Faded denim | links and info |
+| Faded denim | links and info, the only cool color |
+<!-- accents:end -->
 
 ## Ports
 
-Every port is generated from [`palette.py`](palette.py) in all three flavors. Each folder in [`dist/`](dist) has the files; the [website](https://oddurs.github.io/subway-seat) has install steps and the full file for every one.
+Every port is generated from [`palette.py`](palette.py) in all three flavors. Each folder in [`dist/`](dist) has the files and a README with install steps; the [website](https://oddurs.github.io/subway-seat) has previews and the full file for every one. The easiest way in is the one-command `install.sh` described below.
 
 <!-- ports:start -->
 | | |
@@ -67,7 +71,7 @@ Every port is generated from [`palette.py`](palette.py) in all three flavors. Ea
 
 ### The deep ones
 
-- **VS Code** (and Cursor, Windsurf, VSCodium): a layered workbench with ~500 keys, including the AI panels of each fork. One chrome ground, grooves instead of lines, popovers on paper, translucent hovers and selections.
+- **VS Code** (and Cursor, Windsurf, VSCodium): a layered workbench with about 1,000 color keys, including the AI panels of each fork. One chrome ground, grooves instead of lines, popovers on paper, translucent hovers and selections.
 - **Claude Code**: themes for all three flavors, a station-sign status line, subagent rows, 70s spinner verbs, "Next stop" tips and a relaxed output style, bundled as a plugin:
 
   ```
@@ -78,7 +82,7 @@ Every port is generated from [`palette.py`](palette.py) in all three flavors. Ea
 
   <img src="assets/screenshots/claude.png" alt="A Claude Code session in Subway Seat with an orange route-bullet status line, subagent rows and a rotating spinner verb." />
 
-- **Neovim**: a plugin with `setup({ flavor, transparent, italics, overrides })`, `colorscheme subway-seat` following `background`, lualine themes, and ~700 highlight groups for the popular plugins.
+- **Neovim**: a plugin with `setup({ background = { dark = …, light = … }, transparent, italics, overrides })`, `colorscheme subway-seat` following `background` (flip it and Walnut becomes Enamel and back), lualine themes, and about 2,000 highlight groups covering Tree-sitter, LSP and about 70 plugins.
 - **Zed**: a full theme family covering every style key, including the agent panel.
 
 ## Install everything at once
@@ -95,17 +99,22 @@ It links theme files for the apps you have installed and prints the one line eac
 ## How it's built
 
 ```
-palette.py      flavors and roles: the only place colours live
+palette.py      flavors and roles: the only place colors live
 ports/*.py      one small module per app, written against roles
 build.py        runs every port for every flavor → dist/, checks the files parse
-site/           the website (Next.js + StyleX), coloured by the same palette
+site/           the website (Next.js + StyleX), colored by the same palette
 ```
 
+The build needs Python 3.12 or newer. [uv](https://docs.astral.sh/uv/) brings the right Python and PyYAML (used to check YAML output) for you:
+
 ```sh
-./build.py                 # everything
-./build.py --only vscode   # one port
-./build.py --list          # what's there
+uv run ./build.py                 # everything
+uv run ./build.py --only vscode   # one port; the manifest keeps the rest
+uv run ./build.py --check         # fail if anything differs from a fresh build
+uv run ./build.py --list          # what's there
 ```
+
+[CONTRIBUTING.md](CONTRIBUTING.md) covers adding a port and running the tests.
 
 ## License
 

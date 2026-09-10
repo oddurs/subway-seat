@@ -3,27 +3,30 @@
 import json
 
 import palette as p
-from ports._lib import HEADER, Out
-from ports._terminals import ANSI_NAMES, lit, split
+from ports._lib import ANSI_NAMES, HEADER, Out
+from ports._terminals import lit, split
 
 META = {
     "id": "hyper",
     "name": "Hyper",
     "category": "Terminals",
     "homepage": "https://hyper.is",
+    "detect": ["hyper", "/Applications/Hyper.app"],
     "enable": {
         "where": "~/.hyper.js",
         "code": "localPlugins: ['{slug}'],",
         "lang": "typescript",
     },
     "notes": "Colors, cursor, selection, borders and the tab strip. Hyper 3 loads local plugins from "
-    "`~/.hyper_plugins/local/`; the Hyper 4 canary uses `~/.config/Hyper/plugins/local/`.",
+    "`~/.hyper_plugins/local/` (`$XDG_CONFIG_HOME/hyper/.hyper_plugins/local/` when that's set, "
+    "`%APPDATA%\\Hyper\\.hyper_plugins\\local\\` on Windows). The Hyper 4 canary reads `hyper.json` and "
+    "`~/.config/Hyper/plugins/local/`. Hyper doesn't follow the system light/dark setting, so pick one flavor.",
 }
 
+
 def plugin(f):
-    colors = dict(zip(ANSI_NAMES, f.ansi[:8]))
-    colors |= {"light" + n.title(): c for n, c in zip(ANSI_NAMES, f.ansi[8:])}
-    # Hyper 3's xterm.js paints the selection over the text, so it must be translucent.
+    colors = dict(zip(ANSI_NAMES, f.ansi[:8], strict=True))
+    colors |= {"light" + n.title(): c for n, c in zip(ANSI_NAMES, f.ansi[8:], strict=True)}
     theme = {
         "backgroundColor": f.base,
         "foregroundColor": f.text,
@@ -41,6 +44,8 @@ def plugin(f):
 """
     return f"""// {HEADER}
 // {f.name}. Enable with localPlugins: ["{f.slug}"] in ~/.hyper.js.
+// selectionColor is a translucent wash of the text color, not the solid selection color the other
+// terminals use: Hyper's xterm.js draws the selection over the glyphs, so an opaque color would hide them.
 "use strict";
 
 const theme = {json.dumps(theme, indent=2)};

@@ -8,13 +8,14 @@ META = {
     "name": "Termux",
     "category": "Terminals",
     "homepage": "https://termux.dev",
+    "detect": ["termux-reload-settings"],
     "enable": {
         "where": "Termux, after copying the file to ~/.termux/colors.properties",
         "code": "termux-reload-settings",
         "lang": "sh",
     },
-    "notes": "Background, foreground, cursor and the 16 ANSI colors. Termux reads one color file, so "
-    "switching flavors means replacing it.",
+    "notes": "Background, foreground, cursor and the 16 ANSI colors. Termux reads one color file and doesn't "
+    "follow Android's dark theme, so switching flavors means replacing the file.",
 }
 
 
