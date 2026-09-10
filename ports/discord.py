@@ -7,8 +7,10 @@ classes, which come from the library, not Discord's hashed class names).
 """
 
 import palette as p
-from ports._apps import AUTHOR, VERSION, ink, rgba
-from ports._lib import HEADER, REPO, Out
+from ports._apps import AUTHOR, rgba
+from ports._lib import HEADER, REPO, VERSION, Out, ink, tints, ui_colors
+
+RAW = "https://raw.githubusercontent.com/oddurs/subway-seat/main/dist/discord"
 
 META = {
     "id": "discord",
@@ -16,13 +18,31 @@ META = {
     "category": "Apps",
     "homepage": "https://discord.com",
     "enable": {
-        "where": "Vencord/Vesktop: Settings → Themes → Open Themes Folder · BetterDiscord: Settings → Themes",
-        "code": "{slug}.theme.css",
+        "where": "Vencord or Vesktop: Settings › Themes › Open Themes Folder · BetterDiscord: Settings › Themes",
+        "code": "Copy {slug}.theme.css into the themes folder, then turn it on under Settings › Themes.\n"
+        "Discord's dark mode shows the dark flavor and its light mode shows Enamel.\n"
+        "Vencord can also load it by URL (Settings › Themes › Online Themes):\n"
+        f"{RAW}/{{slug}}.theme.css",
         "lang": "text",
     },
-    "notes": "Overrides Discord's color variables only, which survives client updates far better than "
-    "class-level themes. Each file covers both of Discord's modes and pairs a dark flavor with Enamel.",
+    "auto": {
+        "where": "Discord › User Settings › Appearance",
+        "code": "Theme: Sync with computer\n"
+        "(each file covers both of Discord's modes: dark shows Walnut or Tunnel, light shows Enamel)",
+        "lang": "text",
+    },
+    "requires": "Vencord, Vesktop or BetterDiscord",
+    "detect": ["~/Library/Application Support/Vencord"],
+    "notes": "Overrides Discord's color variables only, not its generated class names, which change between "
+    "client updates. Each file covers both of Discord's modes and pairs a dark flavor with Enamel.",
 }
+
+# Where each client keeps themes. The file's dest is Vencord on macOS; the rest go in `how`.
+FOLDERS = (
+    "Vencord: ~/Library/Application Support/Vencord/themes (macOS), ~/.config/Vencord/themes (Linux), "
+    "%APPDATA%\\Vencord\\themes (Windows). Vesktop: the same with vesktop in place of Vencord. "
+    "BetterDiscord: the same with BetterDiscord."
+)
 
 DARK_SEL = ".visual-refresh.theme-dark,\n.visual-refresh .theme-dark"
 LIGHT_SEL = ".visual-refresh.theme-light,\n.visual-refresh .theme-light"
@@ -51,7 +71,7 @@ def variables(f):
     # Grounds, darkest → lightest in dark flavors; light flavors step the other way.
     frame, side, chat = f.crust, f.mantle, f.base
     raised = f.surface0 if dark else f.base
-    floating = f.mantle if dark else f.base
+    floating = ui_colors(f)["paper"]  # popovers, menus and tooltips sit on paper
     input_bg = f.mix("surface0", "base", 0.6) if dark else f.mantle
     hover_a = 0.10 if dark else 0.14
     v = {}
@@ -206,10 +226,27 @@ def variables(f):
         "--control-connected-background-default": f.green,
         "--control-connected-background-hover": f.mix("green", "crust", 0.85),
         "--control-connected-background-active": f.mix("green", "crust", 0.75),
+        "--control-connected-border-default": f.green,
+        "--control-connected-border-hover": f.mix("green", "crust", 0.85),
+        "--control-connected-border-active": f.mix("green", "crust", 0.75),
+        "--control-critical-secondary-background-default": "transparent",
+        "--control-critical-secondary-background-hover": danger,
+        "--control-critical-secondary-background-active": f.red,
+        "--control-critical-secondary-border-default": danger,
+        "--control-critical-secondary-border-hover": danger,
+        "--control-critical-secondary-border-active": f.red,
+        "--control-critical-secondary-text-default": danger,
+        "--control-critical-secondary-text-hover": ink(f),
+        "--control-critical-secondary-text-active": ink(f),
+        "--control-critical-secondary-icon-default": danger,
+        "--control-critical-secondary-icon-hover": ink(f),
+        "--control-critical-secondary-icon-active": ink(f),
         "--button-secondary-background": f.surface1 if dark else f.surface0,
         "--button-secondary-background-hover": f.surface2 if dark else f.surface1,
         "--button-outline-primary-text": f.text,
         "--button-outline-brand-text": f.text,
+        "--button-outline-brand-background-hover": ramp(accent)[560],
+        "--button-outline-brand-border-active": ramp(accent)[560],
         "--button-danger-background": danger,
         "--button-positive-background": f.green,
 
@@ -229,7 +266,12 @@ def variables(f):
         "--message-automod-background-hover": rgba(f.clay, 0.1),
         "--background-code": f.mantle if dark else f.crust,
         "--spoiler-hidden-background": f.surface2,
+        "--spoiler-hidden-background-hover": f.overlay0,
         "--spoiler-revealed-background": f.surface0,
+
+        # Threads: the spines that join a thread to its channel
+        "--spine-default": f.surface2 if dark else f.surface1,
+        "--thread-channel-spine": f.surface2 if dark else f.surface1,
 
         # Feedback and status
         "--status-positive": f.green,
@@ -246,6 +288,7 @@ def variables(f):
         "--background-feedback-critical": rgba(danger, 0.14),
         "--background-feedback-info": rgba(f.denim, 0.14),
         "--background-feedback-notification": danger,
+        "--icon-feedback-notification": danger,
         "--badge-notification-background": danger,
         "--badge-text-brand": ink(f),
         "--icon-feedback-positive": f.green,
@@ -299,7 +342,62 @@ def variables(f):
         "--guild-boosting-pink": f.clay,
         "--guild-boosting-purple": f.clay,
         "--guild-boosting-blue": f.denim,
+        "--premium-tier-0-blue": f.denim,
+        "--premium-tier-0-blue-for-gradients": f.denim,
+        "--premium-tier-0-blue-for-gradients-2": f.denim_hi,
+        "--premium-tier-0-purple": f.clay,
+        "--premium-tier-0-purple-for-gradients": f.clay,
+        "--premium-tier-1-blue": f.denim,
+        "--premium-tier-1-blue-for-gradients": f.denim,
+        "--premium-tier-1-dark-blue-for-gradients": f.denim,
+        "--premium-tier-1-purple": f.clay,
+        "--premium-tier-2-pink": f.orange_hi,
+        "--premium-tier-2-pink-for-gradients": f.orange_hi,
+        "--premium-tier-2-pink-for-gradients-2": f.orange,
+        "--premium-tier-2-purple": f.clay,
+        "--premium-tier-2-purple-for-gradients": f.clay,
+        "--premium-tier-2-purple-for-gradients-2": f.orange,
         "--spotify": f.green,
+    }
+    v |= code_variables(f)
+    return v
+
+
+# Discord's code colors: highlight.js in chat, and its newer code renderer, both read these.
+CODE = {
+    "--text-code": "variable",
+    "--text-code-comment": "comment",
+    "--text-code-keyword": "keyword",
+    "--text-code-operator": "operator",
+    "--text-code-title": "function",
+    "--text-code-builtin": "function.builtin",
+    "--text-code-string": "string",
+    "--text-code-escape": "string.escape",
+    "--text-code-regexp": "regexp",
+    "--text-code-number": "number",
+    "--text-code-type": "type",
+    "--text-code-variable": "variable",
+    "--text-code-property": "property",
+    "--text-code-attribute": "attribute",
+    "--text-code-namespace": "namespace",
+    "--text-code-tag": "tag",
+    "--text-code-decorator": "decorator",
+    "--text-code-section": "heading",
+    "--text-code-bullet": "keyword",
+    "--text-code-link": "link",
+    "--text-code-error": "invalid",
+}
+
+
+def code_variables(f):
+    t = tints(f)
+    v = {var: f.syntax(role)[0] for var, role in CODE.items()}
+    # Diff blocks: the whole line is one token, so signs and text take green / red_hi on the line tint.
+    v |= {
+        "--text-code-addition": f.green,
+        "--text-code-deletion": f.red_hi,
+        "--background-code-addition": t["add"],
+        "--background-code-deletion": t["del"],
     }
     return v
 
@@ -337,7 +435,9 @@ IMPORTANT = {
 
 
 def rule(roots, classes, decls):
-    sel = ",\n".join(f"{r} {c.strip()}" for r in roots for c in classes.split(","))
+    """classes: a comma-separated string, or a list when a selector has commas of its own."""
+    parts = classes if isinstance(classes, list) else classes.split(",")
+    sel = ",\n".join(f"{r} {c.strip()}" for r in roots for c in parts)
     return f"{sel} {{\n" + "\n".join(f"  {d};" for d in decls) + "\n}"
 
 
@@ -354,8 +454,14 @@ def block(selector, f):
         if "bold" in styles:
             decls.append("font-weight: bold")
         lines.append(rule(roots, f".hljs-{cls}", decls))
-    lines.append(rule(roots, ".hljs-addition", [f"color: {f.green}", f"background-color: {rgba(f.green, 0.12)}"]))
-    lines.append(rule(roots, ".hljs-deletion", [f"color: {f.red_hi}", f"background-color: {rgba(f.red, 0.14)}"]))
+    t = tints(f)
+    lines.append(rule(roots, ".hljs-addition", [f"color: {f.green}", f"background-color: {t['add']}"]))
+    lines.append(rule(roots, ".hljs-deletion", [f"color: {f.red_hi}", f"background-color: {t['del']}"]))
+    # In a diff block, hunk headers (@@) are denim and file headers (---/+++) bold text.
+    diff = ".hljs:has(> .hljs-addition, > .hljs-deletion)"
+    lines.append(rule(roots, [f"{diff} > .hljs-meta"], [f"color: {f.denim}", "font-style: normal"]))
+    lines.append(rule(roots, [f"{diff} > .hljs-comment"],
+                      [f"color: {f.text_hi}", "font-style: normal", "font-weight: bold"]))
     return "\n".join(lines)
 
 
@@ -393,7 +499,7 @@ def build(flavors):
     pairs = {"walnut": ("walnut", "enamel"), "tunnel": ("tunnel", "enamel"), "enamel": ("walnut", "enamel")}
     outs = []
     for f in flavors:
-        d, l = pairs[f.id]
-        outs.append(Out(f"{f.slug}.theme.css", theme(f, by[d], by[l]), flavor=f.id,
-                        dest=f"Vencord/Vesktop or BetterDiscord themes folder/{f.slug}.theme.css", lang="css"))
+        dark_id, light_id = pairs[f.id]
+        outs.append(Out(f"{f.slug}.theme.css", theme(f, by[dark_id], by[light_id]), flavor=f.id, lang="css",
+                        dest=f"~/Library/Application Support/Vencord/themes/{f.slug}.theme.css", how=FOLDERS))
     return outs

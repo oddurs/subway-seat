@@ -6,8 +6,8 @@ import colorsys
 import json
 
 import palette as p
-from ports._apps import AUTHOR, AUTHOR_URL, VERSION, ink, rgba
-from ports._lib import HEADER, Out
+from ports._apps import AUTHOR, AUTHOR_URL, rgba
+from ports._lib import HEADER, VERSION, Out, ink, tints, ui_colors
 
 META = {
     "id": "obsidian",
@@ -15,15 +15,23 @@ META = {
     "category": "Apps",
     "homepage": "https://obsidian.md",
     "enable": {
-        "where": "<vault>/.obsidian/themes/Subway Seat/",
-        "code": "Settings → Appearance → Themes → Subway Seat\n"
-        "Settings → Appearance → Base color scheme → Dark (Walnut) or Light (Enamel)\n"
-        "# Tunnel: Style Settings → Subway Seat → Tunnel, or turn on the subway-seat-tunnel snippet",
+        "where": "Obsidian › Settings › Appearance",
+        "code": "Themes › Subway Seat\n"
+        "Base color scheme › Dark for Walnut and Tunnel, Light for Enamel\n"
+        "Tunnel: Style Settings › Subway Seat › Tunnel (deeper dark), or CSS snippets › subway-seat-tunnel",
         "lang": "text",
     },
+    "auto": {
+        "where": "Obsidian › Settings › Appearance",
+        "code": "Base color scheme › Adapt to system\n"
+        "# Enamel while the system is light, Walnut (or Tunnel, if it's on) while it's dark",
+        "lang": "text",
+    },
+    "requires": "Obsidian 1.13+",
+    "detect": ["/Applications/Obsidian.app", "obsidian"],
     "notes": "A full community theme: Walnut in dark mode, Enamel in light mode, and Tunnel as a "
     "Style Settings toggle or a CSS snippet. Headings run the 70s stripe from burnt orange to "
-    "terracotta, and callouts, code, graph and canvas stay in the same warm room.",
+    "terracotta, and callouts, code, diffs, graph and canvas stay in the same warm room.",
 }
 
 NAME = "Subway Seat"
@@ -37,13 +45,14 @@ def triplet(color):
 
 def hsl(color):
     r, g, b = (v / 255 for v in p.hex_to_rgb(color))
-    h, l, s = colorsys.rgb_to_hls(r, g, b)
-    return f"{h * 360:.1f}", f"{s * 100:.1f}%", f"{l * 100:.1f}%"
+    hue, light, sat = colorsys.rgb_to_hls(r, g, b)
+    return f"{hue * 360:.1f}", f"{sat * 100:.1f}%", f"{light * 100:.1f}%"
 
 
 def extended(f):
     """Obsidian's eight named colors, mapped into the palette (cyan→sage, blue→denim,
-    purple→denim bright, pink→terracotta). Red takes the bright step on dark grounds."""
+    purple→Sixth Avenue orange, pink→terracotta): denim stays the only cool color.
+    Red takes the bright step on dark grounds."""
     return {
         "red": f.red_hi if f.dark else f.red,
         "orange": f.orange,
@@ -51,7 +60,7 @@ def extended(f):
         "green": f.green,
         "cyan": f.sage,
         "blue": f.denim,
-        "purple": f.denim_hi,
+        "purple": f.orange_hi,
         "pink": f.clay,
     }
 
@@ -63,6 +72,8 @@ def groups(f):
     ah, as_, al = hsl(f.orange)
     hover = rgba(f.overlay1, 0.14 if d else 0.16)
     accent = "var(--color-accent)"
+    paper = ui_colors(f)["paper"]  # menus, prompts and suggestions are raised onto paper
+    t = tints(f)
 
     ramp = (
         {
@@ -86,7 +97,7 @@ def groups(f):
         **{f"--color-{k}": v for k, v in x.items()},
         **{f"--color-{k}-rgb": triplet(v) for k, v in x.items()},
     }))
-    out.append(("Accent: burnt orange, still overridable under Settings → Appearance", {
+    out.append(("Accent: burnt orange, still overridable under Settings › Appearance", {
         "--accent-h": ah,
         "--accent-s": as_,
         "--accent-l": al,
@@ -164,7 +175,7 @@ def groups(f):
         "--h2-color": f.yellow,
         "--h3-color": f.green,
         "--h4-color": f.sage,
-        "--h5-color": f.denim,
+        "--h5-color": x["red"],
         "--h6-color": f.clay,
         "--heading-formatting": f.overlay0,
         "--inline-title-color": f.text_hi,
@@ -201,6 +212,15 @@ def groups(f):
         "--code-tag": f.syntax("tag")[0],
         "--code-value": f.syntax("number")[0],
     }))
+    out.append(("Diffs in code blocks: line tints, green and red signs, denim hunk headers", {
+        "--ss-diff-add": t["add"],
+        "--ss-diff-del": t["del"],
+        "--ss-diff-chg": t["chg"],
+        "--ss-diff-add-fg": f.green,
+        "--ss-diff-del-fg": f.red_hi,
+        "--ss-diff-chg-fg": f.yellow,
+        "--ss-diff-header": f.denim,
+    }))
     out.append(("Callouts, by type", {
         "--callout-default": f.denim,
         "--callout-info": f.denim,
@@ -214,7 +234,7 @@ def groups(f):
         "--callout-fail": x["red"],
         "--callout-error": x["red"],
         "--callout-bug": x["red"],
-        "--callout-example": f.denim_hi,
+        "--callout-example": x["purple"],
         "--callout-quote": f.overlay1,
     }))
     out.append(("Blocks: quotes, checklists, lists, rules, tables, properties", {
@@ -262,6 +282,7 @@ def groups(f):
         "--canvas-background": f.base,
         "--canvas-dot-pattern": f.surface1 if d else f.surface0,
         "--canvas-card-label-color": f.overlay1,
+        "--canvas-color": f.overlay1 if d else f.surface2,  # cards and edges with no color picked
         "--canvas-color-1": x["red"],
         "--canvas-color-2": f.orange,
         "--canvas-color-3": f.yellow,
@@ -322,13 +343,13 @@ def groups(f):
         "--scrollbar-active-thumb-bg": rgba(f.overlay1, 0.5),
     }))
     out.append(("Menus, modals, prompts, popovers, PDFs", {
-        "--menu-background": f.surface0 if d else f.base,
+        "--menu-background": paper,
         "--menu-border-color": f.surface1,
         "--modal-background": f.base,
         "--modal-border-color": f.surface1,
-        "--prompt-background": f.base,
+        "--prompt-background": paper,
         "--prompt-border-color": f.surface1,
-        "--suggestion-background": f.base,
+        "--suggestion-background": paper,
         "--setting-items-background": f.mix("mantle", "base", 0.5),
         "--setting-items-border-color": f.surface0,
         "--drag-ghost-background": rgba(f.crust if d else f.text_hi, 0.9),
@@ -344,9 +365,16 @@ def flat(f):
     return {k: v for _, vars_ in groups(f) for k, v in vars_.items()}
 
 
+# Obsidian sets these on `body.theme-dark` / `body` rather than `.theme-dark`, so ours need
+# `body` in the selector to win.
+ON_BODY = {"--canvas-color"}
+
+
 def block(selector, grouped):
     lines = [f"{selector} {{"]
+    on_body = {}
     for i, (comment, vars_) in enumerate(grouped):
+        vars_ = {k: v for k, v in vars_.items() if k not in ON_BODY or on_body.update({k: v})}
         if not vars_:
             continue
         if i:
@@ -354,7 +382,30 @@ def block(selector, grouped):
         lines.append(f"  /* {comment} */")
         lines += [f"  {k}: {v};" for k, v in vars_.items()]
     lines.append("}")
+    if on_body:
+        lines += ["", f"body{selector} {{", *(f"  {k}: {v};" for k, v in on_body.items()), "}"]
     return "\n".join(lines)
+
+
+# Prism draws code blocks in reading view: tint diff lines, keep their text in the normal code
+# color with a green or red sign, and make hunk headers denim. The editor's diff tokens just
+# take the sign colors.
+DIFF_RULES = """/* Diffs in code blocks */
+.markdown-rendered .language-diff .token.inserted:not(.prefix),
+.markdown-rendered .language-diff .token.deleted:not(.prefix),
+.markdown-rendered .language-diff .token.diff:not(.prefix) {
+  display: block;
+  color: var(--code-normal);
+}
+.markdown-rendered .language-diff .token.inserted:not(.prefix) { background-color: var(--ss-diff-add); }
+.markdown-rendered .language-diff .token.deleted:not(.prefix) { background-color: var(--ss-diff-del); }
+.markdown-rendered .language-diff .token.diff:not(.prefix) { background-color: var(--ss-diff-chg); font-weight: inherit; }
+.markdown-rendered .language-diff .token.prefix.inserted { color: var(--ss-diff-add-fg); }
+.markdown-rendered .language-diff .token.prefix.deleted { color: var(--ss-diff-del-fg); }
+.markdown-rendered .language-diff .token.prefix.diff { color: var(--ss-diff-chg-fg); }
+.markdown-rendered .language-diff .token.coord { color: var(--ss-diff-header); }
+.cm-positive { color: var(--ss-diff-add-fg); }
+.cm-negative { color: var(--ss-diff-del-fg); }"""
 
 
 def tunnel_diff(base_f, tunnel_f):
@@ -393,6 +444,7 @@ def theme_css(walnut, tunnel, enamel):
         block(".theme-dark", groups(walnut)),
         block(f".theme-dark.{TUNNEL_CLASS}", [("Tunnel: deeper grounds, same warm lights", diff)]),
         block(".theme-light", groups(enamel)),
+        DIFF_RULES,
     ]
     return "\n\n".join(parts) + "\n"
 
@@ -402,7 +454,7 @@ def snippet_css(walnut, tunnel):
     head = (
         f"/* {HEADER}\n\n"
         "   Subway Seat Tunnel for Obsidian, as a CSS snippet: use it with the Subway Seat theme when\n"
-        "   you don't run Style Settings. Settings → Appearance → CSS snippets → subway-seat-tunnel. */"
+        "   you don't run Style Settings. Settings › Appearance › CSS snippets › subway-seat-tunnel. */"
     )
     return head + "\n\n" + block(".theme-dark", [("Tunnel: deeper grounds, same warm lights", diff)]) + "\n"
 
@@ -420,10 +472,13 @@ def manifest():
 def build(flavors):
     by_id = {f.id: f for f in flavors}
     walnut, tunnel, enamel = by_id["walnut"], by_id["tunnel"], by_id["enamel"]
-    dest = f"<vault>/.obsidian/themes/{NAME}"
+    # Paths are relative to the vault folder.
+    dest = f".obsidian/themes/{NAME}"
+    how = "inside your vault's folder"
     return [
-        Out(f"{NAME}/manifest.json", manifest(), dest=f"{dest}/manifest.json", lang="json"),
-        Out(f"{NAME}/theme.css", theme_css(walnut, tunnel, enamel), dest=f"{dest}/theme.css", lang="css"),
+        Out(f"{NAME}/manifest.json", manifest(), dest=f"{dest}/manifest.json", lang="json", how=how),
+        Out(f"{NAME}/theme.css", theme_css(walnut, tunnel, enamel), dest=f"{dest}/theme.css", lang="css", how=how),
         Out("snippets/subway-seat-tunnel.css", snippet_css(walnut, tunnel), flavor="tunnel",
-            dest="<vault>/.obsidian/snippets/subway-seat-tunnel.css", lang="css"),
+            dest=".obsidian/snippets/subway-seat-tunnel.css", lang="css",
+            how="inside your vault's folder; only needed without the Style Settings plugin"),
     ]
