@@ -379,7 +379,7 @@ def widget_scheme(f):
 
 
 def settings(**values):
-    return json.dumps(values, indent="\t") + "\n"
+    return f"// {HEADER}\n" + json.dumps(values, indent="\t") + "\n"
 
 
 def build(flavors):

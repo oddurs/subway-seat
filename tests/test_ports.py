@@ -59,7 +59,7 @@ def test_port_ids_unique(mods):
 
 
 # Ports whose "turn it on" step is legitimately the same for every flavor.
-SAME_ENABLE_FOR_ALL = {"termux", "terminal-agents", "herdr", "aichat", "obsidian"}
+SAME_ENABLE_FOR_ALL = {"termux", "terminal-agents", "herdr", "aichat", "obsidian", "lsd"}
 
 
 @pytest.mark.parametrize("pid", PORT_IDS)
@@ -262,6 +262,7 @@ APP_IDENTIFIERS = [
     "display-panes-active-colour",  # tmux
     "display-panes-colour",  # tmux
     "clock-mode-colour",  # tmux
+    "cursor-colour",  # tmux
     "colourful",  # eza
     "read_colours",  # bottom
     "write_colours",  # bottom
