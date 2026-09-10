@@ -1,0 +1,49 @@
+name: Palette change
+description: Propose a change to a color in palette.py. It affects every port, so it starts here.
+title: "Palette: "
+labels: ["palette"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Every port is built from the roles in [`palette.py`](https://github.com/oddurs/subway-seat/blob/main/palette.py), so one change moves ~90 apps at once. Screenshots before and after make the case best.
+  - type: dropdown
+    id: flavor
+    attributes:
+      label: Flavor
+      multiple: true
+      options:
+        - Subway Seat (Walnut)
+        - Subway Seat Tunnel
+        - Subway Seat Enamel
+    validations:
+      required: true
+  - type: input
+    id: roles
+    attributes:
+      label: Roles
+      description: Which roles change, e.g. `overlay1` or `green`. The palette page on the site lists them all.
+      placeholder: "overlay1"
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: What's wrong now, and what you'd change it to
+      description: Current and proposed hex, and where you saw the problem (app, file type, light or dark room).
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: Before and after, ideally in two or three apps. Paste or drag images here.
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I checked the contrast of the new color on `base` (text 7:1 or more, syntax 3.4:1 or more).
+        - label: I looked at a diff (added and removed lines) with the change, not just plain code.

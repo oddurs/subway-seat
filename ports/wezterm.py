@@ -1,21 +1,37 @@
 """WezTerm: a TOML color scheme per flavor for `~/.config/wezterm/colors`."""
 
-from ports._lib import HEADER, REPO, Out
-from ports._terminals import lit, search, search_cur, selection, split
+from ports._lib import HEADER, REPO, Out, selection
+from ports._terminals import lit, search, search_cur, split
+
+LOAD = "wezterm.color.load_scheme(wezterm.home_dir .. '/.config/wezterm/colors/"
 
 META = {
     "id": "wezterm",
     "name": "WezTerm",
     "category": "Terminals",
     "homepage": "https://wezterm.org",
+    "detect": ["wezterm", "/Applications/WezTerm.app"],
     "enable": {
         "where": "~/.config/wezterm/wezterm.lua",
-        "code": "config.color_scheme = '{name}'",
+        "code": "config.color_scheme = '{name}'\n"
+        "-- the fancy tab bar's strip comes from window_frame, which a scheme file can't set\n"
+        f"local colors = {LOAD}{{slug}}.toml')\n"
+        "config.window_frame = {{ active_titlebar_bg = colors.tab_bar.background, "
+        "inactive_titlebar_bg = colors.tab_bar.background }}",
         "lang": "lua",
     },
-    "notes": "Colors, cursor, selection, splits, copy mode, quick select and the tab bar. The tab bar "
-    "colors apply to the retro tab bar (`use_fancy_tab_bar = false`); the fancy one takes its frame from "
-    "`window_frame`.",
+    "auto": {
+        "where": "~/.config/wezterm/wezterm.lua (WezTerm reloads it when the appearance changes)",
+        "code": "local dark = not wezterm.gui or wezterm.gui.get_appearance():find('Dark')\n"
+        "local slug = dark and 'subway-seat' or 'subway-seat-enamel'\n"
+        f"local colors, meta = {LOAD}' .. slug .. '.toml')\n"
+        "config.color_scheme = meta.name\n"
+        "config.window_frame = { active_titlebar_bg = colors.tab_bar.background, "
+        "inactive_titlebar_bg = colors.tab_bar.background }",
+        "lang": "lua",
+    },
+    "notes": "Colors, cursor, selection, splits, copy mode, quick select and the tab bar. On Windows the "
+    "folder is `%USERPROFILE%\\.config\\wezterm\\colors`.",
 }
 
 
@@ -56,7 +72,7 @@ def theme(f):
         "quick_select_label_bg": f"{{ Color = {q(f.orange)} }}",
         "quick_select_label_fg": f"{{ Color = {q(f.base)} }}",
         "quick_select_match_bg": f"{{ Color = {q(search(f))} }}",
-        "quick_select_match_fg": f"{{ Color = {q(f.text_hi)} }}",
+        "quick_select_match_fg": f"{{ Color = {q(f.text)} }}",
     }
     return (
         f"# {HEADER}\n\n[colors]\n"
@@ -67,7 +83,7 @@ def theme(f):
         + f"\n[colors.tab_bar.inactive_tab_hover]\n{tab(f.surface0, f.text)}\n"
         + f"\n[colors.tab_bar.new_tab]\n{tab(f.crust, f.overlay1)}\n"
         + f"\n[colors.tab_bar.new_tab_hover]\n{tab(f.surface0, lit(f))}\n"
-        + f"\n[metadata]\nname = {q(f.name)}\nauthor = \"oddurs\"\norigin_url = {q(REPO)}\naliases = []\n"
+        + f'\n[metadata]\nname = {q(f.name)}\nauthor = "oddurs"\norigin_url = {q(REPO)}\naliases = []\n'
     )
 
 

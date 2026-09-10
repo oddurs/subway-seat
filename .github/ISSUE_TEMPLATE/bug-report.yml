@@ -1,12 +1,35 @@
 name: Something looks wrong
-description: A colour that's off, a key that doesn't apply, a file that won't load.
+description: A color that's off, a key that doesn't apply, a file that won't load.
 labels: ["bug"]
 body:
   - type: input
     id: port
     attributes:
-      label: Port and flavor
-      placeholder: "VS Code, Subway Seat Enamel"
+      label: Port
+      description: The app, as it's named on the site or in dist/.
+      placeholder: "VS Code"
+    validations:
+      required: true
+  - type: dropdown
+    id: flavor
+    attributes:
+      label: Flavor
+      multiple: true
+      options:
+        - Subway Seat (Walnut)
+        - Subway Seat Tunnel
+        - Subway Seat Enamel
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options:
+        - macOS
+        - Linux
+        - Windows
+        - Other (say which below)
     validations:
       required: true
   - type: input

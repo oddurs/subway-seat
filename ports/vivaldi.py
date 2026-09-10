@@ -2,8 +2,8 @@
 
 import json
 
-from ports._apps import stable_uuid, zip_bytes
-from ports._lib import Out
+from ports._apps import stable_uuid
+from ports._lib import Out, zip_bytes
 
 META = {
     "id": "vivaldi",
@@ -11,10 +11,17 @@ META = {
     "category": "Apps",
     "homepage": "https://vivaldi.com",
     "enable": {
-        "where": "Vivaldi → Settings → Themes → Library",
-        "code": "Import Theme → {slug}.zip",
+        "where": "Vivaldi › Settings › Themes › Library",
+        "code": "Import Theme › {slug}.zip",
         "lang": "text",
     },
+    "auto": {
+        "where": "Vivaldi › Settings › Themes › Theme Schedule",
+        "code": "Follow the operating system's schedule, with Subway Seat Enamel for light\n"
+        "and Subway Seat (or Subway Seat Tunnel) for dark",
+        "lang": "text",
+    },
+    "detect": ["/Applications/Vivaldi.app", "vivaldi", "vivaldi-stable"],
     "notes": "Toolbars and panels on the flavor's base, the window frame one step deeper, and burnt orange "
     "for the active tab and focus. Vivaldi works out readable text on the accent by itself.",
 }
@@ -54,7 +61,7 @@ def build(flavors):
     outs = []
     for f in flavors:
         s = json.dumps(settings(f), indent=3) + "\n"
-        outs.append(Out(f"{f.slug}/settings.json", s, flavor=f.id, dest="inside the theme zip", lang="json"))
+        outs.append(Out(f"{f.slug}/settings.json", s, flavor=f.id, lang="json", how=f"inside {f.slug}.zip"))
         outs.append(Out(f"{f.slug}.zip", zip_bytes({"settings.json": s}), flavor=f.id,
-                        dest="Settings → Themes → Library → Import Theme"))
+                        how="Vivaldi › Settings › Themes › Library › Import Theme"))
     return outs

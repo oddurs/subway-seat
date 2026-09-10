@@ -1,0 +1,28 @@
+name: Links
+
+# Weekly: every link in the docs and the generated per-port READMEs still resolves.
+on:
+  schedule:
+    - cron: "17 6 * * 1" # Mondays, 06:17 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  lychee:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8 # v2.9.0
+        with:
+          # Some upstream sites (gnu.org, gitlab.gnome.org) refuse bots with 403/406; that
+          # still means the page exists. claude.ai's directory form needs a login.
+          args: >-
+            --no-progress --max-retries 3 --timeout 30
+            --accept '100..=103,200..=299,403,406,429'
+            --exclude localhost --exclude 'claude\.ai/admin-settings'
+            './*.md' 'docs/**/*.md' 'site/README.md' '.github/**/*.md' 'dist/*/README.md'

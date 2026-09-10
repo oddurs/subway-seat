@@ -223,6 +223,8 @@ def hex_to_rgb(h):
 
 def blend(fg, bg, alpha):
     """Mix fg over bg at alpha (0..1) — for tints and in-between grounds."""
+    if not 0 <= alpha <= 1:
+        raise ValueError(f"blend alpha {alpha} is outside 0..1")
     f, b = hex_to_rgb(fg), hex_to_rgb(bg)
     r, g, b_ = (round(fi * alpha + bi * (1 - alpha)) for fi, bi in zip(f, b, strict=True))
     return f"#{r:02X}{g:02X}{b_:02X}"
@@ -230,4 +232,6 @@ def blend(fg, bg, alpha):
 
 def alpha(color, a):
     """#RRGGBB + alpha (0..1) → #RRGGBBAA."""
+    if len(color) != 7 or not 0 <= a <= 1:
+        raise ValueError(f"alpha() wants #RRGGBB and 0..1, got {color!r}, {a}")
     return f"{color}{round(a * 255):02X}"

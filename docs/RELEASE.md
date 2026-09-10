@@ -16,28 +16,29 @@ The short version: **one YAML file in iTerm2-Color-Schemes** reaches Ghostty, Wi
 ## 2. Repo shape
 
 - **Hub monorepo:** `oddurs/subway-seat` holds the generator, `dist/` (committed, so every file has a stable URL), the site and docs. Most ports are just files people copy, so they live here, like Flexoki and Tokyo Night's extras.
-- **Satellite repos, only where a registry needs the package at the repo root.** CI syncs each one from `dist/` on every release tag (`git subtree split` → push), so they never drift:
+- **Satellite repos (planned), only where a registry needs the package at the repo root.** None of these repos exist yet, and nothing syncs them. The plan: a `satellites` job in `release.yml` (`needs: release`) that runs `git subtree split --prefix=<src>` for each row and pushes the result and the tag with a per-repo deploy key, so they never drift:
 
-  | Satellite | Why | Source |
-  |---|---|---|
-  | `subway-seat.nvim` | lazy.nvim/packer install by `owner/repo`; awesome-neovim and vimcolorschemes index repos | `dist/nvim` + `dist/vim/colors` |
-  | `subway-seat-theme.el` | MELPA recipe points at a dedicated repo | `dist/emacs` |
-  | `subway-seat-sublime` | Package Control: one package per repo, semver tags | `dist/sublime-text` |
-  | `subway-seat-obsidian` | Obsidian needs `manifest.json` + `theme.css` at the root and a release per version | `dist/obsidian` |
+  | Satellite | Why | Source | Status |
+  |---|---|---|---|
+  | `subway-seat.nvim` | lazy.nvim/packer install by `owner/repo`; awesome-neovim and vimcolorschemes index repos | `dist/nvim` + `dist/vim/colors` (two folders, so staged through a copy, not one subtree split) | planned |
+  | `subway-seat-theme.el` | MELPA recipe points at a dedicated repo | `dist/emacs` | planned |
+  | `subway-seat-sublime` | Package Control: one package per repo, semver tags | `dist/sublime-text` | planned |
+  | `subway-seat-obsidian` | Obsidian needs `manifest.json` + `theme.css` at the root and a release per version (so the job also needs a token that can create releases there) | `dist/obsidian` | planned |
 
-- VS Code (vsce/ovsx), Zed (`path = "dist/zed"` in `extensions.toml`), JetBrains (upload) and the Claude Code plugin (marketplace in this repo) all publish straight from the monorepo.
+- VS Code (vsce/ovsx, planned), Zed (`path = "dist/zed"` in `extensions.toml`), JetBrains (upload) and the Claude Code plugin (marketplace in this repo, live) all publish straight from the monorepo.
 - **An org later, maybe.** A `subway-seat` GitHub org (Catppuccin/Rosé Pine model) is worth it once other people maintain ports. Orgs are created in the web UI; transfer the repos then and GitHub keeps redirects.
 
 ## 3. Start now: things with lead times
 
-| When | What | Why it can't wait |
-|---|---|---|
-| Today | Register a domain (e.g. `subwayseat.dev`) and point the site at it | The VS Code **verified publisher** badge needs a domain ≥ 6 months old plus 6 months of Marketplace history |
-| Today | Create the VS Code publisher (`oddurs`) and an Open VSX namespace; file the Open VSX [namespace ownership claim](https://github.com/eclipse-openvsx/openvsx/wiki/Namespace-Access) | Unclaimed namespaces show an "unverified" warning |
-| Today | Set up **Microsoft Entra ID** publishing for `vsce` in CI (vsce ≥ 2.26.1) | Azure DevOps global PATs retire **December 1, 2026**; the classic `vsce login` PAT flow stops working |
-| Today | JetBrains vendor profile; Obsidian community account linked to GitHub | Account review takes days |
-| Today | Make `subway-seat.nvim` and `subway-seat-theme.el` public, add topics `neovim-colorscheme`, `vim-colorscheme`, `nvim-theme`, `colorscheme` | MELPA wants the repo public ≥ 1 month; awesome-neovim wants ≥ 1 week; vimcolorschemes.com indexes by topic + ≥ 1 star |
-| T−2 weeks | Open the slow PRs (Zed, Package Control, Helix) so they land near launch | Reviews take weeks; Helix also has a release lag |
+| When | What | Why it can't wait | Status |
+|---|---|---|---|
+| Today | Register a domain (e.g. `subwayseat.dev`) and point the site at it | The VS Code **verified publisher** badge needs a domain ≥ 6 months old plus 6 months of Marketplace history | not started |
+| Today | Create the VS Code publisher (`oddurs`) and an Open VSX namespace; file the Open VSX [namespace ownership claim](https://github.com/eclipse-openvsx/openvsx/wiki/Namespace-Access) | Unclaimed namespaces show an "unverified" warning | not started |
+| Today | Set up **Microsoft Entra ID** publishing for `vsce` in CI (vsce ≥ 2.26.1); see §7 | Azure DevOps global PATs retire **December 1, 2026**; the classic `vsce login` PAT flow stops working | planned |
+| Today | JetBrains vendor profile; Obsidian community account linked to GitHub | Account review takes days | not started |
+| Today | Create `subway-seat.nvim` and `subway-seat-theme.el` (public), add topics `neovim-colorscheme`, `vim-colorscheme`, `nvim-theme`, `colorscheme` | MELPA wants the repo public ≥ 1 month; awesome-neovim wants ≥ 1 week; vimcolorschemes.com indexes by topic + ≥ 1 star | not started |
+| Today | Turn on private vulnerability reporting, Dependabot alerts, and rulesets for `main` and `v*` tags | SECURITY.md and CODE_OF_CONDUCT.md point at the private reporting form | not started |
+| T−2 weeks | Open the slow PRs (Zed, Package Control, Helix) so they land near launch | Reviews take weeks; Helix also has a release lag | not started |
 
 ## 4. Upstream submissions
 
@@ -52,12 +53,12 @@ In priority order. "AI disclosure" marks channels whose rules ask you to say an 
 | 5 | **[alacritty-theme](https://github.com/alacritty/alacritty-theme)** | `themes/subway_seat*.toml`, screenshot via `print_colors.sh`, README row | Merge time varies. |
 | 6 | **[btop](https://github.com/aristocratos/btop/tree/main/themes)** | `themes/subway-seat*.theme` incl. newer `proc_*`/`followed_*` keys | Actively taking themes. |
 | 7 | **[Zed extensions](https://github.com/zed-industries/extensions)** | Submodule + `extensions.toml` entry, id `subway-seat-theme`, `path = "dist/zed"`, MIT LICENSE at that path | Fork to a *personal* account. First feedback can take weeks. |
-| 8 | **VS Code Marketplace + Open VSX** | `vsce publish` / `ovsx publish` from CI on tag | Cursor, Windsurf and VSCodium pull from Open VSX. vscodethemes.com indexes automatically. |
+| 8 | **VS Code Marketplace + Open VSX** (planned) | `vsce publish` / `ovsx publish` from CI on tag, once the publisher, namespace and credentials exist | Cursor, Windsurf and VSCodium pull from Open VSX. vscodethemes.com indexes automatically. Until then, install `dist/vscode/subway-seat.vsix` by hand. |
 | 9 | **JetBrains Marketplace** | Upload `dist/jetbrains/subway-seat-jetbrains.jar`; 40×40 SVG logo; 1280×800 screenshots | Name ≤ 30 chars, no "Theme/Plugin/JetBrains". 3–4 working days. |
 | 10 | **Obsidian** | Submit on community.obsidian.md from `subway-seat-obsidian` (release tag = version, `manifest.json` + `theme.css` attached, 512×288 screenshot) | Theme name can't contain "Theme" and **can't change after submission**. |
 | 11 | **[Helix](https://github.com/helix-editor/helix/blob/master/runtime/themes/README.md)** | `runtime/themes/subway_seat*.toml` + author/license header | Weeks to review, then a release lag; the TOML ships here meanwhile. |
 | 12 | **Package Control** | Channel PR `Add Subway Seat` pointing at `subway-seat-sublime` (semver tags) | "A few weeks". Ship `.sublime-color-scheme` and `.tmTheme`. |
-| 13 | **MELPA** | `recipes/subway-seat-theme` after 1 month public; `package-lint` clean | **AI disclosure** (`Assisted-by:`). |
+| 13 | **MELPA** (planned) | `recipes/subway-seat-theme` after `subway-seat-theme.el` has been public for 1 month; `package-lint` clean | **AI disclosure** (`Assisted-by:`). |
 | 14 | **Claude Code plugins** | This repo already is a marketplace (`/plugin marketplace add oddurs/subway-seat`); also submit to the community directory via [claude.ai/admin-settings/directory/submissions/plugins/new](https://claude.ai/admin-settings/directory/submissions/plugins/new) | `claude plugin validate --strict` runs in CI. |
 | 15 | **yazi flavors** | `subway-seat.yazi` folder (flavor.toml, tmtheme.xml, preview.png, LICENSE) + link PR to [yazi-rs/flavors](https://github.com/yazi-rs/flavors) | Flavors are beta. |
 | 16 | **[ray.so themes](https://github.com/raycast/ray-so)** | `app/(navigation)/themes/themes/<user>/subway-seat.json` | |
@@ -70,7 +71,7 @@ In priority order. "AI disclosure" marks channels whose rules ask you to say an 
 
 Order matters less than being around to answer questions. Post from a real desktop, not a mockup.
 
-1. Tag `v1.0.0`; CI publishes VS Code + Open VSX, syncs satellites, attaches `dist.zip` and the VSIX/JAR to the GitHub release.
+1. Tag `v1.0.0` (see "Cutting a release" below). CI drafts the GitHub release with the dist zip, the VSIX, the JetBrains JAR and the Firefox add-ons, and publishes VS Code + Open VSX; the satellite sync joins once it exists. Publish the draft.
 2. Site live on the domain, with the flavor switcher and every port page.
 3. **Show HN** — link the site, stay in the thread for the day. Don't ask anyone to upvote.
 4. **r/unixporn** — read the sidebar and flair list first; a `[OC]`/WM-tagged title and a details comment have been required. One real screenshot: Ghostty + Neovim + herdr + Claude Code on Walnut.
@@ -121,9 +122,31 @@ Order matters less than being around to answer questions. Post from a real deskt
 ## 7. Versions and releases
 
 - **Semver across the board.** `0.x` until launch; `1.0.0` on launch day. A color change that alters how existing code looks is a minor bump; a fixed key or new port is a patch.
-- **One tag releases everything.** `vX.Y.Z` → CI builds, checks that `dist/` is current, publishes VS Code + Open VSX, syncs satellites (each gets the same tag), and drafts a GitHub release with the changelog, `dist.zip`, the VSIX and the JetBrains JAR.
+- **One tag releases everything.** Pushing `vX.Y.Z` runs `release.yml`: the full CI workflow first, then a check that the tag matches `version` in `pyproject.toml` and that CHANGELOG.md has a dated `## [X.Y.Z]` section, then `./build.py --check`. It drafts a GitHub release with that CHANGELOG section as notes and attaches `subway-seat-X.Y.Z-dist.zip`, `subway-seat-X.Y.Z.vsix`, the JetBrains JAR and the Firefox `.xpi` files. It publishes to the VS Code Marketplace and Open VSX only when `VSCE_PAT` / `OVSX_PAT` are set (neither is yet). The satellite sync is planned (§2). You review the draft and publish it.
+- **No tags exist yet.** The first tag is `v0.3.0`, cut after the current round of fixes lands. 0.1.0 and 0.2.0 were never tagged.
+- **Stable file URLs.** `dist/` is committed and file names don't carry the version (`dist/vscode/subway-seat.vsix`), so links from READMEs and upstream PRs keep working; only the release assets are versioned.
 - VS Code allows only `major.minor.patch`; if pre-releases are ever needed, use odd minor versions.
 - **CHANGELOG.md** in Keep a Changelog format; each release note leads with a screenshot when colors change.
+
+### Cutting a release
+
+1. Bump `version` in `pyproject.toml` (the only place it lives), then run `uv lock` so `uv.lock` matches.
+2. In CHANGELOG.md, turn `## [X.Y.Z] - Unreleased` into `## [X.Y.Z] - YYYY-MM-DD` and point its link at `compare/<previous tag>...vX.Y.Z` (the first release compares from `744219f`).
+3. Run `uv run ./build.py` and `uv run --with pytest --with pyyaml pytest -q`, then commit, with `dist/`, on `main`.
+4. `git tag -s vX.Y.Z -m "Subway Seat X.Y.Z"`, then `git push origin main vX.Y.Z`.
+5. Watch the Release workflow, read the draft release, and publish it.
+
+Protect `v*` tags with a ruleset (no deletion, no force-push, no update) so a published tag can't move.
+
+### VS Code publishing with Entra ID
+
+`release.yml` still publishes with a `VSCE_PAT` secret, and those PATs stop working when Azure DevOps retires global PATs on **December 1, 2026**. The replacement, following the [VS Code publishing docs](https://code.visualstudio.com/api/working-with-extensions/publishing-extension) (vsce ≥ 2.26.1):
+
+1. In Azure, create a user-assigned managed identity. Add a federated credential for GitHub Actions: issuer `https://token.actions.githubusercontent.com`, subject `repo:oddurs/subway-seat:environment:marketplace`.
+2. In the Visual Studio Marketplace, add that identity as a member of the `oddurs` publisher with the Contributor role.
+3. In the repo, create a `marketplace` environment (limited to `v*` tags) holding the identity's client ID and tenant ID as variables. No secret is stored.
+4. In `release.yml`, give the publishing job `environment: marketplace` and `id-token: write`, add a pinned `azure/login` step (`client-id`, `tenant-id`, `allow-no-subscriptions: true`), and run `npx --yes @vscode/vsce@<pinned> publish --azure-credential --packagePath dist/vscode/subway-seat.vsix`.
+5. Delete the `VSCE_PAT` secret and step. Open VSX is separate and keeps its `OVSX_PAT`.
 
 ## 8. After launch
 

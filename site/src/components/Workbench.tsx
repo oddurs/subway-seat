@@ -4,7 +4,7 @@ import { highlight, workbenchColors } from "@/lib/highlight";
 import type { FlavorId } from "@/lib/palette";
 import { font } from "@/theme/type.stylex";
 
-// A VS Code window painted with the generated VS Code theme itself: every colour
+// A VS Code window painted with the generated VS Code theme itself: every color
 // below is a workbench key from dist/vscode, swapped per flavor with CSS variables.
 
 const KEYS = [
@@ -173,7 +173,10 @@ export async function Workbench() {
   const html = await highlight(SAMPLE, "typescript", [transformer], decorations);
 
   return (
-    <figure className={`vsc ${cls(s.window)}`}>
+    <figure
+      className={`vsc ${cls(s.window)}`}
+      aria-label="VS Code with the Subway Seat theme: explorer, editor, suggestions and terminal"
+    >
       {/* biome-ignore lint/security/noDangerouslySetInnerHtml: generated CSS variables */}
       <style dangerouslySetInnerHTML={{ __html: variables() }} />
       <div {...stylex.props(s.title)}>
@@ -185,15 +188,15 @@ export async function Workbench() {
         <span {...stylex.props(s.command)}>subway-seat</span>
       </div>
       <div {...stylex.props(s.body)}>
-        <nav aria-hidden {...stylex.props(s.activity)}>
+        <div aria-hidden {...stylex.props(s.activity)}>
           {["files", "search", "git", "run"].map((icon, i) => (
             <span key={icon} {...stylex.props(s.actIcon, i === 0 && s.actActive)}>
               <i {...stylex.props(s.actGlyph)} />
               {icon === "git" && <b {...stylex.props(s.badge)}>3</b>}
             </span>
           ))}
-        </nav>
-        <aside {...stylex.props(s.sidebar)}>
+        </div>
+        <div {...stylex.props(s.sidebar)}>
           <div {...stylex.props(s.sideTitle)}>EXPLORER</div>
           <div {...stylex.props(s.section)}>▾ SUBWAY-SEAT</div>
           {TREE.map((row) => (
@@ -236,7 +239,7 @@ export async function Workbench() {
           ))}
           <div {...stylex.props(s.section, s.sectionLater)}>▸ OUTLINE</div>
           <div {...stylex.props(s.section)}>▸ TIMELINE</div>
-        </aside>
+        </div>
         <div {...stylex.props(s.main)}>
           <div {...stylex.props(s.tabs)}>
             <span {...stylex.props(s.tab, s.tabActive)}>board.ts</span>
@@ -251,6 +254,10 @@ export async function Workbench() {
           </div>
           <div {...stylex.props(s.editor)}>
             <div
+              // biome-ignore lint/a11y/noNoninteractiveTabindex: a scrolling region must take focus
+              tabIndex={0}
+              role="region"
+              aria-label="board.ts"
               {...stylex.props(s.codeScroll)}
               // biome-ignore lint/security/noDangerouslySetInnerHtml: build-time Shiki HTML
               dangerouslySetInnerHTML={{ __html: html }}
@@ -274,7 +281,7 @@ export async function Workbench() {
           <div {...stylex.props(s.panel)}>
             <div {...stylex.props(s.panelTabs)}>
               <span {...stylex.props(s.panelTab)}>PROBLEMS</span>
-              <span {...stylex.props(s.panelTab)}>OUTPUT</span>
+              <span {...stylex.props(s.panelTab, s.wideOnly)}>OUTPUT</span>
               <span {...stylex.props(s.panelTab, s.panelTabActive)}>TERMINAL</span>
             </div>
             <div {...stylex.props(s.term)}>
@@ -296,9 +303,9 @@ export async function Workbench() {
       <div {...stylex.props(s.status)}>
         <span {...stylex.props(s.remote)}>» subway</span>
         <span>⎇ main*</span>
-        <span {...stylex.props(s.statusWarn)}>⚠ 1</span>
-        <span {...stylex.props(s.statusRight)}>Ln {CURSOR_LINE}, Col 12</span>
-        <span>TypeScript</span>
+        <span {...stylex.props(s.statusWarn, s.wideOnly)}>⚠ 1</span>
+        <span {...stylex.props(s.statusRight, s.wideOnly)}>Ln {CURSOR_LINE}, Col 12</span>
+        <span {...stylex.props(s.statusEnd)}>TypeScript</span>
       </div>
     </figure>
   );
@@ -594,7 +601,16 @@ const s = stylex.create({
   },
   crumbFocus: { color: "var(--vsc-breadcrumb-focusForeground)" },
   editor: { position: "relative", flexGrow: 1 },
-  codeScroll: { overflowX: "auto" },
+  codeScroll: {
+    overflowX: "auto",
+    outlineWidth: 1,
+    outlineStyle: {
+      default: "none",
+      ":focus-visible": "solid",
+    },
+    outlineColor: "var(--vsc-list-focusOutline)",
+    outlineOffset: -1,
+  },
   suggest: {
     position: "absolute",
     top: 262,
@@ -653,6 +669,7 @@ const s = stylex.create({
   panelTab: {
     paddingBottom: 6,
     color: "var(--vsc-panelTitle-inactiveForeground)",
+    whiteSpace: "nowrap",
     borderBottomColor: "transparent",
     borderBottomStyle: "solid",
     borderBottomWidth: 1,
@@ -679,8 +696,10 @@ const s = stylex.create({
     alignItems: "center",
     height: 24,
     paddingRight: 12,
+    overflow: "hidden",
     fontSize: 12,
     color: "var(--vsc-statusBar-foreground)",
+    whiteSpace: "nowrap",
     backgroundColor: "var(--vsc-statusBar-background)",
     borderTopColor: "var(--vsc-statusBar-border)",
     borderTopStyle: "solid",
@@ -696,4 +715,16 @@ const s = stylex.create({
   },
   statusWarn: { color: "var(--vsc-statusBarItem-warningForeground)" },
   statusRight: { marginLeft: "auto" },
+  statusEnd: {
+    marginLeft: {
+      [NARROW]: "auto",
+      default: 0,
+    },
+  },
+  wideOnly: {
+    display: {
+      [NARROW]: "none",
+      default: "inline",
+    },
+  },
 });

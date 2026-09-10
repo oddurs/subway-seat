@@ -12,14 +12,20 @@ META = {
     "category": "Editors",
     "homepage": "https://gitlab.gnome.org/GNOME/gtksourceview",
     "enable": {
-        "where": "a shell (GNOME Text Editor), or Preferences → Font & Colors in gedit and Builder",
-        "code": "gsettings set org.gnome.TextEditor style-scheme '{slug}'",
+        "where": "a shell (one line per app), or the app's Preferences › Appearance (Font & Colors in gedit)",
+        "code": "gsettings set org.gnome.TextEditor style-scheme '{slug}'  # GNOME Text Editor\n"
+        "gsettings set org.gnome.gedit.preferences.editor scheme '{slug}'  # gedit\n"
+        "gsettings set org.gnome.builder.editor style-scheme-name '{slug}'  # Builder",
         "lang": "sh",
     },
-    "notes": "One style scheme for everything built on GtkSourceView: GNOME Text Editor and Builder read "
-    "`~/.local/share/gtksourceview-5/styles`, gedit reads `gtksourceview-4/styles` (or "
-    "`libgedit-gtksourceview-300/styles` from gedit 45). Walnut and Enamel are paired, so GNOME Text Editor "
-    "switches between them with the system style.",
+    "auto": {
+        "where": "a shell (GNOME Text Editor; pick Subway Seat or Enamel first)",
+        "code": "gsettings set org.gnome.TextEditor style-variant 'follow'",
+        "lang": "sh",
+    },
+    "detect": ["gnome-text-editor", "gedit", "gnome-builder", "meld"],
+    "notes": "One style scheme for everything built on GtkSourceView: GNOME Text Editor, Builder, gedit and "
+    "Meld. Walnut and Enamel are paired, so GNOME Text Editor switches between them with the system style.",
 }
 
 LIGHT = "subway-seat-enamel"
@@ -32,7 +38,10 @@ def styles(f):
     ink = "crust" if f.dark else "base"
     role = {v: k for k, v in reversed(list(f.colors.items()))}
     t_names = {v: f"tint_{k}" for k, v in tints(f).items()}
-    name = lambda hexc: role.get(hexc) or t_names[hexc]
+    derived = {u["selection_inactive"]: "selection_unfocused", u["bracket_bg"]: "bracket_bg"}
+
+    def name(hexc):
+        return role.get(hexc) or t_names.get(hexc) or derived[hexc]
 
     def S(syntax_role, **extra):
         hexc, st = f.syntax(syntax_role)
@@ -41,7 +50,9 @@ def styles(f):
         a.update(extra)
         return a
 
-    fg = lambda r, **kw: {"foreground": r, **kw}
+    def fg(r, **kw):
+        return {"foreground": r, **kw}
+
     headings = ["orange", "orange", "yellow", "green", "sage", "clay", "subtext1"]
     s = {
         # editor chrome
@@ -59,7 +70,7 @@ def styles(f):
         "right-margin": {"foreground": "surface1", "background": "mantle"},
         "draw-spaces": fg("surface2"),
         "background-pattern": {"background": "mantle"},
-        "search-match": {"foreground": "text_hi", "background": "tint_search"},
+        "search-match": {"background": name(u["search"])},  # syntax colors stay on the match
         "map-overlay": {"background": "surface1"},
         "snippet-focus": {"background": "tint_chg"},
         # defaults every language maps onto
@@ -96,7 +107,7 @@ def styles(f):
         "def:inline-code": S("code"),
         "def:insertion": fg("green", underline="single"),
         "def:deletion": fg("red_hi", strikethrough="true"),
-        "def:link-text": fg("sage"),
+        "def:link-text": S("link"),
         "def:link-symbol": fg("overlay2"),
         "def:link-destination": fg("denim", underline="single"),
         "def:heading": S("heading"),
@@ -128,7 +139,7 @@ def styles(f):
         "diff:removed-line": fg("red_hi"),
         "diff:changed-line": fg("yellow"),
         "diff:location": fg("denim"),
-        "diff:diff-file": fg("denim", bold="true"),
+        "diff:diff-file": S("strong"),
         "diff:special-case": fg("clay"),
         # JavaScript, JSON
         "js:built-in-constructor": S("type"),
@@ -138,7 +149,7 @@ def styles(f):
         "latex:include": S("keyword"),
         "latex:display-math": fg("clay"),
         "latex:inline-math": fg("clay"),
-        "latex:math-bound": fg("overlay2"),
+        "latex:math-boundary": fg("overlay2"),
         # Perl, Python
         "perl:pod": S("comment"),
         "python:builtin-function": S("function.builtin"),
@@ -152,7 +163,7 @@ def styles(f):
         # Rust
         "rust:attribute": S("decorator"),
         "rust:lifetime": S("decorator"),
-        "rust:macro": fg("clay"),
+        "rust:macro": S("decorator"),
         "rust:scope": S("namespace"),
         # shell
         "sh:variable": S("variable"),
@@ -174,7 +185,8 @@ def scheme(f):
     u = ui(f)
     colors = {r: f.colors[r] for r in p.ROLES}
     colors.update({f"tint_{k}": v for k, v in tints(f).items()})
-    colors["selection_unfocused"] = f.mix(u["selection"], "base", 0.55)
+    colors["selection_unfocused"] = u["selection_inactive"]
+    colors["bracket_bg"] = u["bracket_bg"]
     if f.dark:
         variants = [("variant", "dark"), ("light-variant", LIGHT)]
     else:
@@ -202,8 +214,9 @@ def scheme(f):
 
 
 def build(flavors):
+    how = "gedit reads ~/.local/share/gtksourceview-4/styles (libgedit-gtksourceview-300/styles from gedit 45)"
     return [
         Out(f"{f.slug}.xml", scheme(f), flavor=f.id,
-            dest=f"~/.local/share/gtksourceview-5/styles/{f.slug}.xml", lang="xml")
+            dest=f"~/.local/share/gtksourceview-5/styles/{f.slug}.xml", how=how, lang="xml")
         for f in flavors
     ]

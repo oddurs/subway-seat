@@ -4,22 +4,7 @@ import struct
 import zlib
 
 import palette as p
-from ports._apps import ink, zip_bytes
-from ports._lib import HEADER, Out
-
-META = {
-    "id": "telegram",
-    "name": "Telegram",
-    "category": "Apps",
-    "homepage": "https://desktop.telegram.org",
-    "enable": {
-        "where": "Telegram Desktop → Settings → Chat Settings → Choose from file",
-        "code": "{slug}.tdesktop-theme",
-        "lang": "text",
-    },
-    "notes": "Sets all 586 keys of the Telegram Desktop palette, with a plain walnut chat background "
-    "bundled in. Outgoing bubbles take a soft orange tint; media viewer and calls stay dark in every flavor.",
-}
+from ports._lib import HEADER, Out, ink, tints, ui_colors, zip_bytes
 
 # Every key of desktop-app/lib_ui ui/colors.palette, in file order.
 #   key        a literal color upstream: must be mapped in colors() below
@@ -213,6 +198,33 @@ dialogsPollIconFg|historyPeer5NameFg
 """
 
 
+KEY_COUNT = len(SPEC.split())
+
+META = {
+    "id": "telegram",
+    "name": "Telegram",
+    "category": "Apps",
+    "homepage": "https://desktop.telegram.org",
+    "enable": {
+        "where": "Telegram Desktop › Settings › Chat Settings",
+        "code": "Choose from file › {slug}.tdesktop-theme, then Keep changes\n"
+        "(opening the file with Telegram Desktop does the same)",
+        "lang": "text",
+    },
+    "auto": {
+        "where": "Telegram Desktop",
+        "code": "Telegram keeps one theme for day and one for Night Mode (main menu › Night Mode):\n"
+        "with Night Mode off, open subway-seat-enamel.tdesktop-theme;\n"
+        "with Night Mode on, open subway-seat.tdesktop-theme (or subway-seat-tunnel);\n"
+        "then click Settings › Chat Settings › Auto-night mode until it reads System.",
+        "lang": "text",
+    },
+    "detect": ["/Applications/Telegram Desktop.app", "telegram-desktop"],
+    "notes": f"Sets all {KEY_COUNT} keys of the Telegram Desktop palette, with a plain walnut chat background "
+    "bundled in. Outgoing bubbles take a soft orange tint; media viewer and calls stay dark in every flavor. "
+    "For Telegram Desktop only; the native macOS app doesn't take theme files.",
+}
+
 def _a(color, alpha):
     """#RRGGBB + alpha (0..1) → #RRGGBBAA."""
     return p.alpha(color, alpha)
@@ -236,6 +248,8 @@ def colors(f):
     def tint(color, t):
         return f.mix(color, "base", t)
 
+    paper = ui_colors(f)["paper"]  # menus and tooltips are raised onto paper
+    t = tints(f)
     out_bg = tint("orange", 0.18 if dark else 0.14)
     out_sel = tint("orange", 0.30 if dark else 0.24)
     peers = [c.red_hi, c.green, c.yellow, c.denim, c.clay, c.orange_hi, c.sage, c.orange]
@@ -257,6 +271,8 @@ def colors(f):
         "lightButtonBgOver": c.surface0, "lightButtonBgRipple": c.surface1,
         "attentionButtonFg": bad, "attentionButtonFgOver": bad,
         "attentionButtonBgOver": tint("red", 0.15), "attentionButtonBgRipple": tint("red", 0.28),
+        "menuBg": paper, "menuBgOver": c.surface1 if dark else c.surface0,
+        "menuBgRipple": c.surface2 if dark else c.surface1,
         "menuIconFg": c.overlay2, "menuIconFgOver": c.subtext1, "menuSubmenuArrowFg": c.overlay2,
         "menuFgDisabled": c.overlay0, "menuSeparatorFg": c.surface0,
         "scrollBarBg": _a(c.overlay0, 0.60), "scrollBarBgOver": _a(c.overlay1, 0.75),
@@ -269,7 +285,7 @@ def colors(f):
         "botKbSuccessBg": _a(c.green, 0.80), "botKbInlinePrimaryBg": _a(c.orange, 0.70),
         "botKbInlineDangerBg": _a(c.red, 0.70), "botKbInlineSuccessBg": _a(c.green, 0.70),
         "sliderBgInactive": c.surface1,
-        "tooltipBg": c.surface0, "tooltipFg": c.subtext1, "tooltipBorderFg": c.surface1,
+        "tooltipBg": paper, "tooltipFg": c.subtext1, "tooltipBorderFg": c.surface1,
         # title bar
         "titleShadow": _a(shade, 0.06), "titleBg": c.crust,
         "titleButtonFg": c.overlay1, "titleButtonBgOver": c.surface0, "titleButtonFgOver": c.subtext1,
@@ -307,8 +323,8 @@ def colors(f):
         "dialogsUnreadBgMutedActive": c.overlay1, "dialogsUnreadFgActive": on,
         "dialogsOnlineBadgeFgActive": c.green,
         "dialogsMentionIconFg": c.orange, "dialogsReactionIconFg": c.red_hi, "dialogsPollIconFg": c.clay,
-        "searchedTextMatchBg": c.yellow, "searchedTextMatchFg": on,
-        "searchedTextCurrentMatchBg": c.orange, "searchedTextCurrentMatchFg": on,
+        "searchedTextMatchBg": t["search"], "searchedTextMatchFg": c.text_hi,
+        "searchedTextCurrentMatchBg": t["search_cur"], "searchedTextCurrentMatchFg": c.text_hi,
         # emoji and stickers
         "emojiPanCategories": c.mantle, "emojiPanHeaderBg": _a(c.base, 0.95),
         "emojiIconFg": c.overlay1, "emojiSubIconFgActive": c.subtext1,
@@ -338,7 +354,7 @@ def colors(f):
         "msgOutServiceFg": c.orange, "msgOutServiceFgSelected": c.orange,
         "msgInShadow": _a(shade, 0.18), "msgInShadowSelected": _a(shade, 0.18),
         "msgOutShadow": _a(shade, 0.18), "msgOutShadowSelected": _a(shade, 0.18),
-        "msgInDateFg": c.overlay1, "msgInDateFgSelected": c.overlay2,
+        "msgInDateFg": c.overlay1 if dark else c.overlay2, "msgInDateFgSelected": c.overlay2 if dark else c.subtext0,
         "msgOutDateFg": f.mix("orange", "overlay1", 0.40),
         "msgOutDateFgSelected": f.mix("orange", "overlay2", 0.50),
         "msgServiceFg": c.text, "msgServiceBg": _a(c.surface1, 0.85),
@@ -518,8 +534,8 @@ def build(flavors):
     for f in flavors:
         text = theme_text(f)
         archive = zip_bytes({"colors.tdesktop-theme": text, "tiled.png": png(f.base)})
-        outs.append(Out(f"{f.slug}.tdesktop-theme", archive, flavor=f.id,
-                        dest=f"open {f.slug}.tdesktop-theme in Telegram Desktop", lang="text"))
-        outs.append(Out(f"{f.slug}/colors.tdesktop-theme", text, flavor=f.id,
-                        dest=f"inside {f.slug}.tdesktop-theme", lang="text"))
+        outs.append(Out(f"{f.slug}.tdesktop-theme", archive, flavor=f.id, lang="text",
+                        how="open it with Telegram Desktop, or Settings › Chat Settings › Choose from file"))
+        outs.append(Out(f"{f.slug}/colors.tdesktop-theme", text, flavor=f.id, lang="text",
+                        how=f"the palette inside {f.slug}.tdesktop-theme, for reading or editing"))
     return outs

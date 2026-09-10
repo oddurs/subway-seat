@@ -1,5 +1,5 @@
-from ports._cli import bar, ink
-from ports._lib import HEADER, Out
+from ports._cli import bar, row
+from ports._lib import HEADER, Out, ink
 from ports.bat import tmtheme
 
 META = {
@@ -12,8 +12,11 @@ META = {
         "code": "gitui -t {slug}.ron",
         "lang": "sh",
     },
-    "notes": "Orange titles on the focused panel, avocado and red diff lines, gold commit hashes. "
-    "Syntax highlighting uses the tmTheme that sits next to it (gitui 0.28+).",
+    "requires": "gitui 0.28+",
+    "detect": ["gitui"],
+    "notes": "Orange titles on the focused panel, avocado added and redbird removed lines that keep "
+    "their color when selected, gold commit hashes. The file viewer's syntax colors come from the "
+    "tmTheme next to it.",
 }
 
 
@@ -21,10 +24,11 @@ def theme(f):
     rows = {
         "selected_tab": f.orange,
         "command_fg": f.text,
-        "selection_bg": f.surface1,
+        "selection_bg": row(f),
         "selection_fg": f.text_hi,
         "cmdbar_bg": bar(f),
-        "disabled_fg": f.overlay0,
+        # also hunk headers and unfocused borders, so a step brighter than the gutter color
+        "disabled_fg": f.overlay1,
         "diff_line_add": f.green,
         "diff_line_delete": f.red_hi,
         "diff_file_added": f.green,
@@ -43,6 +47,8 @@ def theme(f):
         "syntax": f.slug,
     }
     body = ",\n".join(f'    {k}: Some("{v}")' for k, v in rows.items())
+    # keep the diff's avocado and redbird on the selected line instead of recoloring it
+    body += ",\n    use_selection_fg: Some(false)"
     return f"// {HEADER}\n// {f.name} for gitui.\n(\n{body},\n)\n"
 
 

@@ -11,14 +11,22 @@ META = {
     "category": "Editors",
     "homepage": "https://developer.apple.com/xcode/",
     "enable": {
-        "where": "Terminal, then Xcode → Settings… → Themes",
+        "where": "Terminal, then Xcode › Settings… › Themes",
         "code": "mkdir -p ~/Library/Developer/Xcode/UserData/FontAndColorThemes\n"
         'cp "{name}.xccolortheme" ~/Library/Developer/Xcode/UserData/FontAndColorThemes/\n'
-        "# restart Xcode, then pick {name} under Settings → Themes",
+        "# restart Xcode, then pick {name} under Settings › Themes",
         "lang": "sh",
     },
+    "auto": {
+        "where": "Terminal, with Xcode closed (Xcode keeps one theme for light mode and one for dark)",
+        "code": "defaults write com.apple.dt.Xcode XCFontAndColorCurrentTheme -string 'Subway Seat Enamel.xccolortheme'\n"
+        "defaults write com.apple.dt.Xcode XCFontAndColorCurrentDarkTheme -string 'Subway Seat.xccolortheme'",
+        "lang": "sh",
+    },
+    "detect": ["/Applications/Xcode.app", "/Applications/Xcode-beta.app"],
     "notes": "Source editor, console and rendered documentation colors in SF Mono, with comments in "
-    "italic. Change the font size in Xcode's Themes settings; the colors stay.",
+    "italic. Change the font size in Xcode's Themes settings; the colors stay. Xcode remembers the theme "
+    "you pick separately for light and dark mode, so it can follow the system.",
 }
 
 SIZE = "13.0"

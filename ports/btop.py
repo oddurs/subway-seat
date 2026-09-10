@@ -1,12 +1,13 @@
 from ports._cli import stripe
-from ports._lib import HEADER, Out
+from ports._lib import HEADER, Out, ink
 
 META = {
     "id": "btop",
     "name": "btop",
     "category": "CLI & TUI",
     "homepage": "https://github.com/aristocratos/btop",
-    "enable": {"where": "~/.config/btop/btop.conf", "code": 'color_theme = "{slug}"', "lang": "conf"},
+    "enable": {"where": "~/.config/btop/btop.conf, or Options › Color theme", "code": 'color_theme = "{slug}"', "lang": "conf"},
+    "detect": ["btop"],
     "notes": "Every graph runs the 70s stripe, avocado to gold to orange to red, and the four boxes "
     "are outlined in orange, gold, avocado and terracotta.",
 }
@@ -40,6 +41,9 @@ def theme(f):
         ("Download graph", {"download_start": fade("green"), "download_mid": f.green, "download_end": f.yellow}),
         ("Upload graph", {"upload_start": fade("orange"), "upload_mid": f.orange, "upload_end": f.red_hi}),
         ("Process box gradient for threads, memory and cpu usage", {"process_start": hot[0], "process_mid": hot[1], "process_end": hot[2]}),
+        ("Banners over the process list while it is paused or following a process",
+         {"proc_pause_bg": f.red, "proc_follow_bg": f.sage, "proc_banner_bg": f.orange, "proc_banner_fg": ink(f)}),
+        ("The process being followed", {"followed_bg": f.sage, "followed_fg": ink(f)}),
     ]
     out = [f"# {HEADER}", f"# {f.name} for btop.", ""]
     for comment, keys in sections:

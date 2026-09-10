@@ -1,4 +1,4 @@
-from ports._lib import HEADER, Out
+from ports._lib import HEADER, VERSION, Out
 from ports._palettes import token_styles
 
 META = {
@@ -55,8 +55,6 @@ PACKAGE_URL = "git+https://github.com/oddurs/subway-seat#subdirectory=dist/pygme
 
 
 def pyproject(flavors):
-    from ports.vscode import VERSION
-
     points = "\n".join(f'{f.slug} = "subway_seat_pygments.{f.snake}:{class_name(f)}"' for f in flavors)
     return f"""# {HEADER}
 [project]
@@ -85,11 +83,13 @@ packages = ["subway_seat_pygments"]
 
 def build(flavors):
     outs = [
-        Out(f"{f.snake}.py", module(f), flavor=f.id, dest=f"your PYTHONPATH, e.g. docs/_ext/{f.snake}.py", lang="python")
+        Out(f"{f.snake}.py", module(f), flavor=f.id, dest=f"docs/_ext/{f.snake}.py", lang="python",
+            how="in your project, anywhere on the Python path (a Sphinx docs/_ext folder, say)")
         for f in flavors
     ]
     # The same styles as an installable package, registered by name.
-    outs.append(Out("package/pyproject.toml", pyproject(flavors), dest=f"pip install '{PACKAGE_URL}'", lang="toml"))
+    outs.append(Out("package/pyproject.toml", pyproject(flavors), lang="toml",
+                    how=f"the package installs from the repository: pip install '{PACKAGE_URL}'"))
     outs.append(Out("package/README.md", "# subway-seat-pygments\n\nThe Subway Seat Pygments styles, registered as "
                     + ", ".join(f"`{f.slug}`" for f in flavors) + ".\n", lang="text"))
     outs.append(Out("package/subway_seat_pygments/__init__.py",

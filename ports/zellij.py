@@ -1,5 +1,5 @@
-from ports._cli import bar, ink
-from ports._lib import HEADER, Out
+from ports._cli import bar
+from ports._lib import HEADER, Out, ink
 
 META = {
     "id": "zellij",
@@ -11,9 +11,16 @@ META = {
         "code": 'theme "{slug}"',
         "lang": "kdl",
     },
-    "notes": "Themes in Zellij's component spec (0.42+): an orange frame on the focused pane, gold in "
-    "other modes, orange ribbons for the active tab. A legacy color-list version is included for "
-    "older releases; `theme_dark` and `theme_light` can pair Walnut with Enamel.",
+    "auto": {
+        "where": "~/.config/zellij/config.kdl (a recent Zellij, in a terminal that reports light and dark)",
+        "code": 'theme_dark "subway-seat"\ntheme_light "subway-seat-enamel"',
+        "lang": "kdl",
+    },
+    "requires": "Zellij 0.42+ (a legacy file covers older releases)",
+    "detect": ["zellij"],
+    "notes": "Themes in Zellij's component spec: an orange frame on the focused pane, gold in other "
+    "modes, orange ribbons for the active tab with their key hints in dark ink. A legacy color-list "
+    "version is included for Zellij before 0.42.",
 }
 
 
@@ -31,7 +38,8 @@ def spec(f):
         "text_unselected": (f.text, strip, *accents),
         "text_selected": (f.text_hi, f.surface1, *accents),
         "ribbon_unselected": (f.text, f.surface1, f.yellow, f.text_hi, f.sage, f.orange),
-        "ribbon_selected": (on, f.orange, f.text_hi, f.red, f.yellow_hi, f.sage),
+        # every emphasis in ink: accents on the orange ribbon would vanish
+        "ribbon_selected": (on, f.orange, on, on, on, on),
         "table_title": (f.orange, 0, f.yellow, f.sage, f.green, f.clay),
         "table_cell_selected": (f.text_hi, f.surface1, *accents),
         "table_cell_unselected": (f.text, strip, *accents),
@@ -71,5 +79,6 @@ def build(flavors):
     for f in flavors:
         dest = f"~/.config/zellij/themes/{f.slug}.kdl"
         outs.append(Out(f"themes/{f.slug}.kdl", spec(f), flavor=f.id, dest=dest, lang="kdl"))
-        outs.append(Out(f"legacy/{f.slug}.kdl", legacy(f), flavor=f.id, dest=dest, lang="kdl"))
+        outs.append(Out(f"legacy/{f.slug}.kdl", legacy(f), flavor=f.id, lang="kdl",
+                        how=f"for Zellij before 0.42, use this file as {dest} instead"))
     return outs

@@ -2,38 +2,41 @@
 
 import * as stylex from "@stylexjs/stylex";
 import { useSyncExternalStore } from "react";
-import { currentFlavor, FLAVOR_EVENT, setFlavor } from "@/lib/flavor";
-import type { FlavorId } from "@/lib/palette";
+import { currentFlavor, setFlavor, subscribeFlavor } from "@/lib/flavor";
+import { type FlavorId, flavorById, shortName } from "@/lib/palette";
 import { color } from "@/theme/tokens.stylex";
 import { font } from "@/theme/type.stylex";
 
-const OPTIONS: { id: FlavorId; letter: string; label: string; swatch: string; ink: string }[] = [
-  { id: "walnut", letter: "W", label: "Walnut", swatch: "#362619", ink: "#F3BF45" },
-  { id: "tunnel", letter: "T", label: "Tunnel", swatch: "#24180E", ink: "#EC7F31" },
-  { id: "enamel", letter: "E", label: "Enamel", swatch: "#F4E9D4", ink: "#C4561A" },
-];
-
-function subscribe(onChange: () => void) {
-  window.addEventListener(FLAVOR_EVENT, onChange);
-  return () => window.removeEventListener(FLAVOR_EVENT, onChange);
-}
+// Each bullet is painted in its own flavor: its ground, and one of its accents.
+const OPTIONS = (
+  [
+    ["walnut", "yellow"],
+    ["tunnel", "orange"],
+    ["enamel", "orange"],
+  ] as const
+).map(([id, accent]) => ({
+  id: id as FlavorId,
+  letter: shortName(id).charAt(0),
+  label: shortName(id),
+  swatch: flavorById[id].colors.base,
+  ink: flavorById[id].colors[accent],
+}));
 
 /** Three route bullets that change the flavor of the whole site. */
 export function FlavorSwitch() {
-  const active = useSyncExternalStore(subscribe, currentFlavor, () => null);
+  const active = useSyncExternalStore(subscribeFlavor, currentFlavor, () => null);
 
   return (
-    <div role="radiogroup" aria-label="Flavor" {...stylex.props(styles.group)}>
+    <div role="group" aria-label="Flavor" {...stylex.props(styles.group)}>
       {OPTIONS.map((o) => {
         const on = active === o.id;
         return (
-          // biome-ignore lint/a11y/useSemanticElements: a styled radio button
           <button
             key={o.id}
             type="button"
-            role="radio"
-            aria-checked={on}
-            title={`Subway Seat ${o.label}`}
+            aria-pressed={active === null ? undefined : on}
+            aria-label={o.label}
+            title={o.label}
             onClick={() => setFlavor(o.id)}
             {...stylex.props(styles.bullet, styles.fill(o.swatch, o.ink), on && styles.on)}
           >

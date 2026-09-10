@@ -4,87 +4,338 @@ on:
   push:
     branches: [main]
   pull_request:
+  workflow_call: # release.yml runs the same checks before publishing
 
 permissions:
   contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 jobs:
   build:
     name: Ports are built and current
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v4
-      - uses: astral-sh/setup-uv@v6
-      - run: uv python install 3.14
-      - name: Build every port
-        run: uv run --python 3.14 --with pyyaml ./build.py
-      - name: dist/ matches the palette
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: astral-sh/setup-uv@bec219d24cd3e171d82865faccec33120bb574f4 # v10.1.0
+        with:
+          python-version: "3.14"
+      # Builds every port in memory and fails if dist/, the site tokens or the README differ,
+      # including files that were never committed and files no port generates.
+      - run: uv run ./build.py --check
+
+  test:
+    name: Tests (Python ${{ matrix.python }})
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ["3.12", "3.14"]
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: astral-sh/setup-uv@bec219d24cd3e171d82865faccec33120bb574f4 # v10.1.0
+        with:
+          python-version: ${{ matrix.python }}
+      - name: A comma-decimal locale, for the status line test
+        run: sudo locale-gen de_DE.UTF-8
+      - run: uv run --locked --extra dev pytest -q
+
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: astral-sh/setup-uv@bec219d24cd3e171d82865faccec33120bb574f4 # v10.1.0
+        with:
+          python-version: "3.14"
+      - name: ruff check
+        run: uv run --locked --extra dev ruff check --output-format github .
+      - name: ruff format
+        # Most files predate the formatter. Delete continue-on-error after the one-time
+        # `ruff format .` commit (and list that commit in .git-blame-ignore-revs).
+        continue-on-error: true
+        run: uv run --locked --extra dev ruff format --check .
+      - name: shellcheck
         run: |
-          # Zipped outputs are skipped: zlib builds can compress identical input differently.
-          if ! git diff --exit-code --stat -- dist ':!dist/**/*.vsix' ':!dist/**/*.jar' ':!dist/**/*.xpi' ':!dist/**/*.zip' ':!dist/**/*.swatches' ':!dist/**/*.tdesktop-theme' site/src/theme README.md; then
-            echo "::error::dist/ is out of date. Run ./build.py and commit the result."
-            exit 1
-          fi
+          shopt -s globstar nullglob
+          scripts=() snippets=()
+          for f in dist/**/*; do
+            [ -f "$f" ] || continue
+            case $(head -c 128 "$f" | LC_ALL=C tr -d '\0' | head -n1) in
+              '#!'*fish* | '#!'*zsh* | '#!'*nu*) ;;
+              '#!'*sh*) scripts+=("$f") ;;
+              *) if [[ $f == *.sh ]]; then snippets+=("$f"); fi ;;
+            esac
+          done
+          if [ -f install.sh ]; then scripts+=(install.sh); fi
+          shellcheck "${scripts[@]}"
+          # Snippets without a shebang are sourced by bash or zsh; check them as POSIX sh.
+          if [ ${#snippets[@]} -gt 0 ]; then shellcheck --shell=sh "${snippets[@]}"; fi
+      - name: Install fish 4
+        run: |
+          sudo add-apt-repository -y ppa:fish-shell/release-4
+          sudo apt-get install -y -qq fish
+      - name: fish -n
+        run: |
+          shopt -s globstar nullglob
+          for f in install.fish dist/**/*.fish; do
+            [ -f "$f" ] || continue
+            fish --no-execute "$f"
+          done
+      - name: actionlint
+        run: |
+          docker run --rm -v "$PWD:/repo" --workdir /repo \
+            rhysd/actionlint:1.7.12@sha256:b1934ee5f1c509618f2508e6eb47ee0d3520686341fec936f3b79331f9315667 -color
+      - name: zizmor
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: uvx zizmor@1.30.1 --min-severity medium --format github .github/workflows
+      - name: codespell
+        run: |
+          # ports/ and tests/ are covered by tests/test_ports.py, which knows the app-defined names.
+          files=(README.md CONTRIBUTING.md CHANGELOG.md SECURITY.md CODE_OF_CONDUCT.md AGENTS.md docs site/README.md
+            build.py .github install.fish)
+          if [ -f install.sh ]; then files+=(install.sh); fi
+          # Inline `code` names app identifiers such as tmux's display-panes-colour.
+          # shellcheck disable=SC2016 # the backticks are a regex, not a command substitution
+          uvx codespell@2.4.3 --builtin clear,rare,en-GB_to_en-US -L iterm --ignore-regex '`[^`]*`' "${files[@]}"
 
   editors:
     name: Colorschemes load in real editors
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
-      - uses: actions/checkout@v4
-      - uses: rhysd/action-setup-vim@v1
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: rhysd/action-setup-vim@febef33995d6649302e9d88dda81e071b68f16a7 # v1.6.1
         with:
           neovim: true
           version: stable
       - name: Neovim
         run: |
-          for f in subway-seat subway-seat-tunnel subway-seat-enamel; do
-            nvim --headless --clean --cmd "set rtp^=$PWD/dist/nvim" \
-              -c "colorscheme $f" -c 'if v:errmsg != "" | cquit | endif' -c 'qa!'
+          nv() { nvim --headless --clean --cmd "set rtp^=$PWD/dist/nvim" "$@" -c 'if v:errmsg != "" | cquit | endif' -c 'qa!'; }
+          for f in dist/nvim/colors/*.lua; do
+            nv -c "colorscheme $(basename "$f" .lua)"
           done
+          # `subway-seat` follows 'background' (the name stays; the flavor and Normal change),
+          # both when it's set first and when it flips afterwards.
+          enamel='local ss = require("subway-seat")
+            assert(ss.current == "enamel", "flavor is " .. tostring(ss.current))
+            local bg = tonumber(require("subway-seat.palette").enamel.base:sub(2), 16)
+            assert(vim.api.nvim_get_hl(0, { name = "Normal" }).bg == bg, "Normal has the wrong background")'
+          nv -c 'set background=light' -c 'colorscheme subway-seat' -c "lua $enamel"
+          nv -c 'colorscheme subway-seat' -c 'set background=light' -c "lua $enamel"
+          nv -c "lua require('subway-seat').setup({ transparent = true })" -c 'colorscheme subway-seat'
+          nv -c 'lua for _, f in ipairs(vim.api.nvim_get_runtime_file("lua/lualine/themes/*.lua", true)) do require("lualine.themes." .. vim.fn.fnamemodify(f, ":t:r")) end'
+      - uses: rhysd/action-setup-vim@febef33995d6649302e9d88dda81e071b68f16a7 # v1.6.1
+        with:
+          version: stable
       - name: Vim
         run: |
-          sudo apt-get update -qq && sudo apt-get install -y -qq vim
-          for f in subway-seat subway-seat-tunnel subway-seat-enamel; do
+          for f in dist/vim/colors/*.vim; do
             vim -Nu NONE -i NONE -es --cmd 'set rtp^=dist/vim' \
-              -c "colorscheme $f" -c 'if v:errmsg != "" | cquit | endif' -c 'qa!'
+              -c "colorscheme $(basename "$f" .vim)" -c 'if v:errmsg != "" | cquit | endif' -c 'qa!'
           done
-      - uses: purcell/setup-emacs@master
+      - uses: purcell/setup-emacs@bdc64dc730ae1fcba200bfd52cb1b4cf6159cbe5 # v8.0
         with:
           version: "29.4"
       - name: Emacs
         run: |
-          for t in subway-seat subway-seat-tunnel subway-seat-enamel; do
+          for f in dist/emacs/*-theme.el; do
+            t=$(basename "$f" -theme.el)
             emacs --batch -L dist/emacs --eval "(progn (add-to-list 'custom-theme-load-path \"dist/emacs\") (load-theme '$t t))"
+          done
+
+  tools:
+    name: Themes load in real tools
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      STARSHIP_VERSION: "1.26.0"
+      STARSHIP_SHA256: b7c232b0e8249d8e55a40beb79c5c43a7d370f3f9408bd215deb0170daeaadf3
+      ZELLIJ_VERSION: "0.45.1"
+      ZELLIJ_SHA256: 40bcc2e03f5d5ae8e054e39f676081fe12ab70871506996ba595834c3718eefc
+      TERM: xterm-256color
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Install fish 4, tmux and bat
+        run: |
+          sudo add-apt-repository -y ppa:fish-shell/release-4
+          sudo apt-get install -y -qq fish tmux bat
+      - name: Install starship and zellij (pinned, checksummed)
+        run: |
+          mkdir -p "$RUNNER_TEMP/bin"
+          fetch() {
+            curl -fsSL --retry 3 -o "$RUNNER_TEMP/download.tar.gz" "$1"
+            echo "$2  $RUNNER_TEMP/download.tar.gz" | sha256sum -c -
+            tar -xzf "$RUNNER_TEMP/download.tar.gz" -C "$RUNNER_TEMP/bin"
+          }
+          fetch "https://github.com/starship/starship/releases/download/v$STARSHIP_VERSION/starship-x86_64-unknown-linux-musl.tar.gz" "$STARSHIP_SHA256"
+          fetch "https://github.com/zellij-org/zellij/releases/download/v$ZELLIJ_VERSION/zellij-x86_64-unknown-linux-musl.tar.gz" "$ZELLIJ_SHA256"
+          echo "$RUNNER_TEMP/bin" >> "$GITHUB_PATH"
+      - name: fish themes
+        run: |
+          cfg=$(mktemp -d)
+          mkdir -p "$cfg/fish/themes"
+          cp dist/fish/themes/*.theme "$cfg/fish/themes/"
+          for theme in "$cfg"/fish/themes/*.theme; do
+            name=$(basename "$theme" .theme)
+            modes=plain
+            if grep -q '^\[dark\]' "$theme"; then modes="dark light unknown"; fi
+            for mode in $modes; do
+              args=()
+              if [ "$mode" != plain ]; then args=(--color-theme="$mode"); fi
+              echo "fish_config theme choose $name ${args[*]}"
+              # shellcheck disable=SC2016 # $argv and $fish_color_command are fish's
+              XDG_CONFIG_HOME="$cfg" fish --no-config -c \
+                'fish_config theme choose $argv; and string match -rq -- "^[0-9A-Fa-f]{6}\$" $fish_color_command[1]' \
+                "$name" "${args[@]}"
+            done
+          done
+      - name: starship
+        run: |
+          check() {
+            local err
+            err=$(cd "$(mktemp -d)" && STARSHIP_CONFIG="$1" STARSHIP_CACHE="$(mktemp -d)" starship print-config 2>&1 >/dev/null)
+            err+=$(cd "$(mktemp -d)" && STARSHIP_CONFIG="$1" STARSHIP_CACHE="$(mktemp -d)" starship prompt 2>&1 >/dev/null)
+            if [ -n "$err" ]; then echo "$2: $err"; return 1; fi
+            echo "ok $2"
+          }
+          for cfg in dist/starship/*.toml; do
+            check "$PWD/$cfg" "$cfg"
+          done
+          # Palette files are appended to starship.toml: select each one and render a prompt.
+          for pal in dist/starship/palettes/*.toml; do
+            name=$(sed -n 's/^\[palettes\.\([A-Za-z0-9_]*\)\].*/\1/p' "$pal" | head -n1)
+            { printf "palette = '%s'\n" "$name"; cat "$pal"; } > "$RUNNER_TEMP/palette.toml"
+            check "$RUNNER_TEMP/palette.toml" "$pal"
+          done
+      - name: bat
+        run: |
+          cfg=$(mktemp -d) cache=$(mktemp -d)
+          mkdir -p "$cfg/themes"
+          cp dist/bat/*.tmTheme "$cfg/themes/"
+          out=$(BAT_CONFIG_DIR="$cfg" BAT_CACHE_PATH="$cache" batcat cache --build 2>&1)
+          echo "$out"
+          if grep -qi 'failed' <<<"$out"; then exit 1; fi
+          listed=$(BAT_CONFIG_DIR="$cfg" BAT_CACHE_PATH="$cache" batcat --list-themes --color=never)
+          for theme in "$cfg"/themes/*.tmTheme; do
+            name=$(basename "$theme" .tmTheme)
+            grep -qxF "$name" <<<"$listed" || { echo "::error::bat doesn't list $name"; exit 1; }
+          done
+      - name: tmux
+        run: |
+          for f in dist/tmux/*.conf; do
+            echo "$f"
+            tmux -L ci -f /dev/null new-session -d \; source-file "$f" \; kill-server
+          done
+      - name: zellij
+        run: |
+          for dir in dist/zellij/themes dist/zellij/legacy; do
+            [ -d "$dir" ] || continue
+            cfg=$(mktemp -d)
+            mkdir -p "$cfg/themes"
+            cp "$dir"/*.kdl "$cfg/themes/"
+            for theme in "$cfg"/themes/*.kdl; do
+              printf 'theme "%s"\n' "$(basename "$theme" .kdl)" > "$cfg/config.kdl"
+              zellij --config-dir "$cfg" --config "$cfg/config.kdl" setup --check
+            done
+          done
+      - name: Ghostty
+        timeout-minutes: 5
+        run: |
+          if ! sudo snap install ghostty --classic; then
+            echo "::notice::Ghostty isn't installable on this runner; skipped"
+            exit 0
+          fi
+          for f in dist/ghostty/*; do
+            if [ -f "$f" ] && [ "${f##*/}" != README.md ]; then
+              echo "$f"
+              /snap/bin/ghostty +validate-config --config-file="$f"
+            fi
           done
 
   site:
     name: Website builds
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     defaults:
       run:
         working-directory: site
     steps:
-      - uses: actions/checkout@v4
-      - uses: astral-sh/setup-uv@v6
-      - run: uv python install 3.14 && echo "$(uv python find 3.14 | xargs dirname)" >> "$GITHUB_PATH"
-      - uses: oven-sh/setup-bun@v2
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: astral-sh/setup-uv@bec219d24cd3e171d82865faccec33120bb574f4 # v10.1.0
+        with:
+          python-version: "3.14"
+          activate-environment: true # puts python3 on PATH for the site's prebuild (../build.py)
+      - run: uv pip install pyyaml
+      - uses: oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6 # v2.2.0
+        with:
+          bun-version-file: site/package.json
       - run: bun install --frozen-lockfile
       - run: bun run check
-      - run: bun run build
+      - name: Static export (what Pages deploys)
+        env:
+          STATIC_EXPORT: "1"
+          NEXT_PUBLIC_BASE_PATH: /subway-seat
+        run: bun run build
+      - name: Links in the export
+        run: |
+          if jq -e '.scripts["check:links"]' package.json >/dev/null; then
+            bun run check:links
+          else
+            echo "::notice::site/package.json has no check:links script yet; skipped"
+          fi
 
   claude-plugin:
     name: Claude Code plugin validates
     runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      CLAUDE_CODE_VERSION: "2.1.268"
+      DISABLE_AUTOUPDATER: "1"
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
           node-version: 22
-      - run: npm install -g @anthropic-ai/claude-code
-      - run: claude plugin validate dist/claude-code/plugin --strict
-      - run: claude plugin validate .
+      - name: claude plugin validate
+        run: |
+          npx --yes "@anthropic-ai/claude-code@$CLAUDE_CODE_VERSION" plugin validate dist/claude-code/plugin --strict
+          npx --yes "@anthropic-ai/claude-code@$CLAUDE_CODE_VERSION" plugin validate .
       - name: Status line scripts
         run: |
-          bash -n dist/claude-code/plugin/bin/subway-seat-statusline
-          echo '{"model":{"display_name":"Opus"},"context_window":{"used_percentage":42}}' \
-            | dist/claude-code/plugin/bin/subway-seat-statusline
+          shopt -s nullglob
+          # Wherever the port puts them (bin/ or scripts/).
+          statusline=(dist/claude-code/plugin/*/subway-seat-statusline)
+          subagents=(dist/claude-code/plugin/*/subway-seat-subagents)
+          if [ ${#statusline[@]} -ne 1 ] || [ ${#subagents[@]} -ne 1 ]; then
+            echo "::error::expected one subway-seat-statusline and one subway-seat-subagents in the plugin"
+            exit 1
+          fi
+          bash -n "${statusline[0]}"
+          bash -n "${subagents[0]}"
+          export CLAUDE_CONFIG_DIR="$RUNNER_TEMP" SUBWAY_SEAT_FLAVOR=walnut
+          echo '{"model":{"display_name":"Opus"},"context_window":{"used_percentage":42},"cost":{"total_cost_usd":0.84}}' \
+            | "${statusline[0]}" | tee "$RUNNER_TEMP/statusline.txt"
+          grep -q 'Opus' "$RUNNER_TEMP/statusline.txt"
+          echo '{"columns":80,"tasks":[{"id":"a","name":"explore","status":"running"}]}' \
+            | "${subagents[0]}" | jq -e .id

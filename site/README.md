@@ -4,19 +4,38 @@ Next.js 16 (App Router, Turbopack) styled with StyleX. Serves on port **8502**.
 
 ```fish
 bun install
-bun run dev      # http://localhost:8502 — regenerates the theme first
-bun run build    # static build; `bun run start` serves it on the same port
-bun run check    # eslint (incl. @stylexjs rules) + tsc + biome format check
+bun run dev          # http://localhost:8502 — regenerates the theme first
+bun run build        # production build; `bun run start` serves it on the same port
+bun run check        # eslint (incl. @stylexjs rules) + tsc + biome format check
+
+# the GitHub Pages site, as CI deploys it, into out/
+STATIC_EXPORT=1 NEXT_PUBLIC_BASE_PATH=/subway-seat bun run build
+bun run check:links  # every internal href/src/og:image in out/ resolves under the base path
 ```
 
 ## How it fits together
 
-- `../palette.py` is the only place colours live. `../build.py` writes every app theme into `../dist/`
-  **and** this site's `src/theme/tokens.stylex.ts` + `src/theme/palette.ts` (don't edit those two).
-  `predev` / `prebuild` run it for you.
-- The editor preview and every config block are highlighted by Shiki using the generated VS Code
-  theme from `../dist/`, so the site shows exactly what gets installed.
-- `/files/[id]` serves the dist files as downloads, prerendered at build time.
+- `../palette.py` is the only place colors live. `../build.py` writes every app theme into
+  `../dist/` (plus `dist/manifest.json`, which the site reads) **and** this site's
+  `src/theme/tokens.stylex.ts`, `src/theme/flavors.ts` and `src/theme/palette.json`. Don't edit
+  those three (`type.stylex.ts` is hand-written); `predev` / `prebuild` run the build for you with
+  `python3`, which must be 3.12 or newer.
+- The editor preview and every config block are highlighted by Shiki with the generated VS Code
+  themes from `../dist/`, so the site shows exactly what gets installed. The terminal and herdr
+  mocks read their colors from the generated eza and Claude Code themes the same way.
+- `src/theme/ink.stylex.ts` holds the few site-only text colors: the accents on the dark flavors,
+  and mixes toward text on Enamel so small text clears 4.5:1.
+- Routes that turn `dist/` into downloads, all prerendered at build time:
+  - `/files/[...path]` — each generated file.
+  - `/zip/<id>-<flavor>.zip` — "Download all" for ports with more than one file.
+  - `/code/[...path]` — the whole of a long file, highlighted, for a port page's "Show all" (pages
+    carry the first 150 lines).
+  - `/og/<name>.png` — share images (`src/og/card.tsx`, fonts in `src/og/`).
+  - `/install.sh` — the repo's `../install.sh` (a stub that says so when it's missing).
+- `/install` is the setup configurator: it writes the `install.sh` one-liner, the
+  `~/.config/subway-seat/config` file and the clone command from a flavor and a set of apps.
+- `/shot/[name]` renders one demo on a plain ground for README and store screenshots
+  (`?flavor=tunnel|enamel`).
 
 ## StyleX setup
 

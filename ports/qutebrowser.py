@@ -1,7 +1,6 @@
 """qutebrowser: a config.py color snippet per flavor (every c.colors.* setting)."""
 
-from ports._apps import ink, select
-from ports._lib import HEADER, Out
+from ports._lib import HEADER, Out, ink, selection, solid, ui_colors
 
 META = {
     "id": "qutebrowser",
@@ -13,6 +12,7 @@ META = {
         "code": "config.load_autoconfig()\nconfig.source(\"{snake}.py\")",
         "lang": "python",
     },
+    "detect": ["qutebrowser", "/Applications/qutebrowser.app"],
     "notes": "Sets every `c.colors.*` option: tabs, status bar modes, completion, hints, prompts, messages "
     "and downloads, plus the page background and preferred color scheme so new tabs don't flash white.",
 }
@@ -21,9 +21,10 @@ META = {
 def settings(f):
     d = f.dark
     danger = f.red_hi if d else f.red
-    sel = select(f)
+    sel = selection(f)
     line = f.surface0 if d else f.surface1
     on = ink(f)
+    paper = ui_colors(f)["paper"]  # context menus, prompts, key hints and tooltips float on paper
     return {
         # Completion (the : command menu)
         "completion.fg": f.text,
@@ -39,12 +40,12 @@ def settings(f):
         "completion.item.selected.border.bottom": sel,
         "completion.item.selected.match.fg": f.orange_hi if d else f.orange,
         "completion.match.fg": f.yellow,
-        "completion.scrollbar.fg": f.surface2 if d else f.surface1,
+        "completion.scrollbar.fg": sel,
         "completion.scrollbar.bg": f.mantle,
         # Context menus
-        "contextmenu.menu.bg": f.mantle,
+        "contextmenu.menu.bg": paper,
         "contextmenu.menu.fg": f.text,
-        "contextmenu.disabled.bg": f.mantle,
+        "contextmenu.disabled.bg": paper,
         "contextmenu.disabled.fg": f.overlay0,
         "contextmenu.selected.bg": sel,
         "contextmenu.selected.fg": f.text_hi,
@@ -65,7 +66,7 @@ def settings(f):
         # Key hints
         "keyhint.fg": f.text,
         "keyhint.suffix.fg": f.orange,
-        "keyhint.bg": f.mantle,
+        "keyhint.bg": paper,
         # Messages
         "messages.error.fg": on,
         "messages.error.bg": danger,
@@ -78,8 +79,8 @@ def settings(f):
         "messages.info.border": line,
         # Prompts
         "prompts.fg": f.text,
-        "prompts.border": f"1px solid {line}",
-        "prompts.bg": f.mantle,
+        "prompts.border": f"1px solid {solid('text@EDGE', f, 'paper')}",
+        "prompts.bg": paper,
         "prompts.selected.fg": f.text_hi,
         "prompts.selected.bg": sel,
         # Status bar: quiet in normal mode, a solid chip of color for the others
@@ -130,7 +131,7 @@ def settings(f):
         "tabs.selected.even.bg": f.base,
         # Tooltips and pages
         "tooltip.fg": f.text,
-        "tooltip.bg": f.surface0 if d else f.mantle,
+        "tooltip.bg": paper,
         "webpage.bg": f.base,
         "webpage.preferred_color_scheme": "dark" if d else "light",
     }
@@ -151,5 +152,6 @@ def snippet(f):
 
 
 def build(flavors):
-    return [Out(f"{f.snake}.py", snippet(f), flavor=f.id, dest=f"~/.config/qutebrowser/{f.snake}.py", lang="python")
+    return [Out(f"{f.snake}.py", snippet(f), flavor=f.id, dest=f"~/.config/qutebrowser/{f.snake}.py", lang="python",
+                how="next to config.py; on macOS that's ~/.qutebrowser/")
             for f in flavors]

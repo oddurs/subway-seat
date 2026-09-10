@@ -1,11 +1,9 @@
 """Procreate .swatches: a ZIP holding Swatches.json, colors in HSB (0..1)."""
 
-import io
 import json
-import zipfile
 
 import palette as p
-from ports._lib import Out
+from ports._lib import Out, zip_bytes
 from ports._palettes import hsv
 
 META = {
@@ -15,7 +13,7 @@ META = {
     "homepage": "https://procreate.com",
     "enable": {
         "where": "your iPad",
-        "code": "Open {name}.swatches from Files or AirDrop; it lands in Colors ▸ Palettes.",
+        "code": "Open {name}.swatches from Files or AirDrop; it lands in Colors › Palettes.",
         "lang": "text",
     },
     "notes": "A Procreate palette per flavor with all 26 colors in role order: grounds, text, then accents. "
@@ -31,15 +29,12 @@ def swatches(f):
             for h, s, v in (hsv(f.colors[r]) for r in p.ROLES)
         ],
     }]
-    buf = io.BytesIO()
-    with zipfile.ZipFile(buf, "w", zipfile.ZIP_DEFLATED) as z:
-        # Fixed timestamp so rebuilding an unchanged palette gives identical bytes.
-        z.writestr(zipfile.ZipInfo("Swatches.json", date_time=(1980, 1, 1, 0, 0, 0)), json.dumps(data, indent=2))
-    return buf.getvalue()
+    return zip_bytes({"Swatches.json": json.dumps(data, indent=2)}, compress=False)
 
 
 def build(flavors):
     return [
-        Out(f"{f.name}.swatches", swatches(f), flavor=f.id, dest="Procreate (open the file on your iPad)", lang="text")
+        Out(f"{f.name}.swatches", swatches(f), flavor=f.id, lang="text",
+            how="open it on your iPad (Files or AirDrop) and Procreate imports it")
         for f in flavors
     ]

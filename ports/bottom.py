@@ -1,5 +1,5 @@
-from ports._cli import ink
-from ports._lib import HEADER, Out
+from ports._cli import marked
+from ports._lib import HEADER, Out, ink
 
 META = {
     "id": "bottom",
@@ -7,12 +7,15 @@ META = {
     "category": "CLI & TUI",
     "homepage": "https://github.com/ClementTsang/bottom",
     "enable": {
-        "where": "bottom.toml (~/.config/bottom/ on Linux, ~/Library/Application Support/bottom/ on macOS)",
-        "code": "cat {slug}.toml >> bottom.toml",
-        "lang": "fish",
+        "where": "the end of bottom.toml: ~/.config/bottom/ (bottom uses it on macOS too once it exists; "
+        "otherwise ~/Library/Application Support/bottom/). Skip it if you already have [styles] tables",
+        "code": "cat {slug}.toml >> ~/.config/bottom/bottom.toml",
+        "lang": "sh",
     },
-    "notes": "A `[styles]` block for bottom 0.10+: cores and sensors in stripe colors, avocado "
-    "download, orange upload, orange table headers and borders.",
+    "requires": "bottom 0.10+",
+    "detect": ["btm"],
+    "notes": "A `[styles]` block: cores and sensors in stripe colors, avocado download, orange upload, "
+    "orange table headers and borders.",
 }
 
 
@@ -26,7 +29,7 @@ def arr(cs):
 
 def styles(f):
     many = [f.green, f.yellow, f.orange, f.red_hi, f.sage, f.clay, f.green_hi, f.yellow_hi]
-    return f"""# {HEADER}
+    return marked(f"""# {HEADER}
 # {f.name} for bottom. Key names use the 0.10 spelling, which later releases accept too.
 
 [styles.cpu]
@@ -75,7 +78,7 @@ temp_graph_color_styles = {arr(many)}
 [styles.disk_io_graph]
 read_colours = {arr([f.green, f.sage, f.green_hi, f.sage_hi])}
 write_colours = {arr([f.orange, f.clay, f.orange_hi, f.red_hi])}
-"""
+""")
 
 
 def build(flavors):

@@ -56,13 +56,16 @@ function lang(name: string) {
   return resolved in bundledLanguages ? resolved : "text";
 }
 
-/** Code as HTML carrying all three flavors: the default colour is Walnut, the
- * others ride along as --shiki-tunnel / --shiki-enamel for globals.css to swap in. */
+/** Code as HTML. By default it carries all three flavors: the default color is
+ * Walnut, the others ride along as --shiki-tunnel / --shiki-enamel for globals.css
+ * to swap in. With `flavor`, only that flavor's theme is used (for files that
+ * belong to one flavor, which only show while it's active). */
 export async function highlight(
   code: string,
   language: string,
   transformers: ShikiTransformer[] = [],
   decorations: DecorationItem[] = [],
+  flavor?: FlavorId,
 ) {
   highlighter ??= createHighlighter({ themes: Object.values(THEMES), langs: [conf] });
   const shiki = await highlighter;
@@ -70,20 +73,17 @@ export async function highlight(
   if (l !== "text" && l !== "conf" && !shiki.getLoadedLanguages().includes(l)) {
     await shiki.loadLanguage(l as keyof typeof bundledLanguages);
   }
-  return shiki.codeToHtml(code, {
-    lang: l,
-    themes: {
-      walnut: THEMES.walnut.name ?? "Subway Seat",
-      tunnel: THEMES.tunnel.name ?? "Subway Seat Tunnel",
-      enamel: THEMES.enamel.name ?? "Subway Seat Enamel",
-    },
-    defaultColor: "walnut",
-    transformers,
-    decorations,
-  });
+  const name = (id: FlavorId) => THEMES[id].name ?? id;
+  const themes = flavor
+    ? { theme: name(flavor) }
+    : {
+        themes: { walnut: name("walnut"), tunnel: name("tunnel"), enamel: name("enamel") },
+        defaultColor: "walnut" as const,
+      };
+  return shiki.codeToHtml(code, { lang: l, ...themes, transformers, decorations });
 }
 
-/** Workbench colours from the VS Code themes, for the editor mock. */
+/** Workbench colors from the VS Code themes, for the editor mock. */
 export function workbenchColors(id: FlavorId) {
   return (THEMES[id] as { colors: Record<string, string> }).colors;
 }
