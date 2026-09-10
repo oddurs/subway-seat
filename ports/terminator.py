@@ -8,13 +8,16 @@ META = {
     "name": "Terminator",
     "category": "Terminals",
     "homepage": "https://gnome-terminator.org",
+    "requires": "Terminator 2.1.2+",
+    "detect": ["terminator"],
     "enable": {
         "where": "right-click › Profiles, or from a shell",
         "code": 'terminator -p "{name}"',
         "lang": "sh",
     },
     "notes": "Palette, cursor and the title bar colors for the focused, broadcast-receiving and inactive "
-    "terminals. Paste the snippet under the existing `[profiles]` heading; the cursor keys need Terminator 2.1.2 or later.",
+    "terminals. Paste the snippet under the existing `[profiles]` heading. Terminator doesn't follow the "
+    "system light/dark setting, so pick one flavor.",
 }
 
 
@@ -35,11 +38,7 @@ def profile(f):
         "title_inactive_bg_color": f.crust,
     }
     body = "\n".join(f'    {k} = "{v}"' if v.startswith("#") else f"    {k} = {v}" for k, v in rows.items())
-    return (
-        f"# {HEADER}\n"
-        "# Paste under [profiles] in ~/.config/terminator/config.\n"
-        f"  [[{f.name}]]\n{body}\n"
-    )
+    return f"# {HEADER}\n# Paste under [profiles] in ~/.config/terminator/config.\n  [[{f.name}]]\n{body}\n"
 
 
 def build(flavors):
@@ -48,8 +47,8 @@ def build(flavors):
             f"{f.slug}.config",
             profile(f),
             flavor=f.id,
-            dest="~/.config/terminator/config, under [profiles]",
             lang="ini",
+            how="Paste under [profiles] in ~/.config/terminator/config",
         )
         for f in flavors
     ]

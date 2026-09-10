@@ -2,20 +2,22 @@
 
 import json
 
-from ports._lib import Out
-from ports._terminals import lit, selection
+from ports._lib import Out, selection
+from ports._terminals import lit
 
 META = {
     "id": "tilix",
     "name": "Tilix",
     "category": "Terminals",
     "homepage": "https://gnunn1.github.io/tilix-web/",
+    "detect": ["tilix"],
     "enable": {
         "where": "Preferences › Profiles › Color › Color scheme",
         "code": "{name}",
         "lang": "text",
     },
-    "notes": "Palette, cursor, selection highlight, bold and badge colors.",
+    "notes": "Palette, cursor, selection highlight, bold and badge colors. Tilix doesn't switch color "
+    "schemes with the system style, so pick one flavor.",
 }
 
 
@@ -33,7 +35,7 @@ def scheme(f):
         "use-highlight-color": True,
         "highlight-background-color": selection(f),
         "highlight-foreground-color": f.text_hi,
-        "use-bold-color": False,
+        "use-bold-color": True,
         "bold-color": f.text_hi,
         "use-badge-color": True,
         "badge-color": f.orange,

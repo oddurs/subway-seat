@@ -1,26 +1,31 @@
 """Rio: a TOML theme per flavor for `~/.config/rio/themes`."""
 
-from ports._lib import HEADER, Out
-from ports._terminals import ANSI_NAMES, dim, lit, search, search_cur, selection, split
+from ports._lib import ANSI_NAMES, HEADER, Out, selection
+from ports._terminals import dim, lit, search, search_cur, split
 
 META = {
     "id": "rio",
     "name": "Rio",
     "category": "Terminals",
     "homepage": "https://rioterm.com",
+    "detect": ["rio", "/Applications/Rio.app"],
     "enable": {
-        "where": "~/.config/rio/config.toml",
+        "where": "~/.config/rio/config.toml, at the top level (above any [section])",
         "code": 'theme = "{slug}"',
         "lang": "toml",
     },
-    "notes": "Normal, light and dim colors, both cursors, tabs, splits, selection, search and hints. For "
-    'light/dark following, use `[adaptive-theme]` with `light = "subway-seat-enamel"` and `dark = "subway-seat"`.',
+    "auto": {
+        "where": "~/.config/rio/config.toml",
+        "code": '[adaptive-theme]\nlight = "subway-seat-enamel"\ndark = "subway-seat"',
+        "lang": "toml",
+    },
+    "notes": "Normal, light and dim colors, both cursors, tabs, splits, selection, search and hints.",
 }
 
 
 def theme(f):
     rows = {"foreground": f.text, "background": f.base}
-    rows |= dict(zip(ANSI_NAMES, f.ansi[:8]))
+    rows |= dict(zip(ANSI_NAMES, f.ansi[:8], strict=True))
     rows |= {
         "cursor": lit(f),
         "vi-cursor": f.sage,
@@ -39,8 +44,8 @@ def theme(f):
         "dim-foreground": f.overlay2,
         "light-foreground": f.text_hi,
     }
-    rows |= {f"dim-{n}": dim(f, c) for n, c in zip(ANSI_NAMES, f.ansi[:8])}
-    rows |= {f"light-{n}": c for n, c in zip(ANSI_NAMES, f.ansi[8:])}
+    rows |= {f"dim-{n}": dim(f, c) for n, c in zip(ANSI_NAMES, f.ansi[:8], strict=True)}
+    rows |= {f"light-{n}": c for n, c in zip(ANSI_NAMES, f.ansi[8:], strict=True)}
     width = max(map(len, rows))
     return f"# {HEADER}\n[colors]\n" + "\n".join(f"{k:<{width}} = '{v}'" for k, v in rows.items()) + "\n"
 

@@ -1,20 +1,22 @@
 """X resources: colors for xterm, urxvt, st and anything else that reads *.colorN."""
 
-from ports._lib import HEADER, Out
-from ports._terminals import ANSI_NAMES, lit, selection
+from ports._lib import ANSI_NAMES, HEADER, Out, selection
+from ports._terminals import lit
 
 META = {
     "id": "xresources",
     "name": "Xresources",
     "category": "Terminals",
     "homepage": "https://wiki.archlinux.org/title/X_resources",
+    "detect": ["xrdb"],
     "enable": {
         "where": "~/.Xresources, then run `xrdb -merge ~/.Xresources`",
-        "code": '#include "{slug}.Xresources"',
+        "code": '#include ".config/X11/{slug}.Xresources"',
         "lang": "conf",
     },
     "notes": "Foreground, background, cursor, selection and the 16 ANSI colors as wildcard resources, "
-    "so xterm, urxvt and other X terminals all pick them up.",
+    "so xterm, urxvt and other X terminals all pick them up. X resources are read once, so there's no "
+    "light/dark following; pick one flavor.",
 }
 
 
@@ -33,6 +35,6 @@ def resources(f):
 
 def build(flavors):
     return [
-        Out(f"{f.slug}.Xresources", resources(f), flavor=f.id, dest=f"~/{f.slug}.Xresources", lang="conf")
+        Out(f"{f.slug}.Xresources", resources(f), flavor=f.id, dest=f"~/.config/X11/{f.slug}.Xresources", lang="conf")
         for f in flavors
     ]
