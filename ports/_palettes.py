@@ -3,6 +3,7 @@
 import colorsys
 
 import palette as p
+from ports._lib import tints
 
 
 def kebab(role):
@@ -10,9 +11,33 @@ def kebab(role):
     return role.replace("_", "-")
 
 
-def label(role):
-    """Swatch name for design apps: "Walnut (base)"."""
-    return f"{p.ROLE_NAMES[role]} ({role})"
+def role_name(f, role):
+    """What a role is called in flavor f. ROLE_NAMES is the dark reading (base is "Paneling",
+    text "Parchment"); a light flavor's grounds and text run the other way, so there they get a
+    plain name ("Enamel base"). Accents keep their names in every flavor."""
+    if f.dark or role in p.ACCENTS:
+        return p.ROLE_NAMES[role]
+    return f"{f.id.title()} {role.replace('_', ' ')}"
+
+
+def label(role, f):
+    """Swatch name for design apps: "Paneling (base)", or "Enamel base" in a light flavor."""
+    name = role_name(f, role)
+    return name if name != p.ROLE_NAMES[role] else f"{name} ({role})"
+
+
+# The diff tints from _lib.tints as named tokens, for the CSS, Sass, Tailwind and JSON ports.
+DIFF = [
+    ("diff-add", "add"), ("diff-add-emph", "add_emph"), ("diff-add-dim", "add_dim"),
+    ("diff-del", "del"), ("diff-del-emph", "del_emph"), ("diff-del-dim", "del_dim"),
+    ("diff-chg", "chg"), ("diff-chg-emph", "chg_emph"),
+]
+
+
+def diff_tokens(f):
+    """{"diff-add": hex, …}: line and word grounds for added, removed and changed text."""
+    t = tints(f)
+    return {name: t[key] for name, key in DIFF}
 
 
 def hsl(color):
@@ -41,10 +66,6 @@ def css_decls(f, key):
     if "bold" in st:
         out.append("font-weight: bold;")
     return " ".join(out)
-
-
-def selection(f):
-    return f.surface2 if f.dark else f.surface1
 
 
 # ── Pygments-style token tree (Pygments and chroma share it) ────────────────
@@ -90,13 +111,17 @@ TOKENS = [
     ("Generic.Subheading", "heading"),
     ("Generic.Emph", "emphasis"),
     ("Generic.Strong", "strong"),
-    ("Generic.Deleted", "red_hi"),
-    ("Generic.Inserted", "green"),
+    ("Generic.Deleted", "red_hi"),     # the whole line is one token: red_hi on the del tint
+    ("Generic.Inserted", "green"),     # green on the add tint
     ("Generic.Error", "invalid"),
     ("Generic.Output", "subtext0"),
     ("Generic.Prompt", "keyword"),
     ("Generic.Traceback", "invalid"),
 ]
+
+
+# Diff lines get a ground as well as a color.
+TOKEN_GROUNDS = {"Generic.Deleted": "del", "Generic.Inserted": "add"}
 
 
 def token_styles(f):
@@ -106,6 +131,7 @@ def token_styles(f):
     have them gets an explicit "noitalic"/"nobold".
     """
     resolved = {}
+    grounds = tints(f)
     for path, key in TOKENS:
         color, st = style(f, key)
         parent = path.rpartition(".")[0]
@@ -115,4 +141,6 @@ def token_styles(f):
         resolved[path] = st
         words = [s for s in ("bold", "italic") if s in st]
         words += [f"no{s}" for s in ("bold", "italic") if s in inherited and s not in st]
+        if path in TOKEN_GROUNDS:
+            words.append(f"bg:{grounds[TOKEN_GROUNDS[path]]}")
         yield path, " ".join([*words, color])
