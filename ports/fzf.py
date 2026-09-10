@@ -10,7 +10,7 @@ META = {
         "code": "source ~/.config/fzf/{slug}.fish",
         "lang": "fish",
         "sh": ". ~/.config/fzf/{slug}.sh",
-        "file": "~/.config/fish/config.fish",
+        "file": "~/.config/fish/conf.d/subway-seat.fish",
     },
     "detect": ["fzf"],
     "notes": "Colors for the finder, preview border, pointer and marker. The files add a `--color` "

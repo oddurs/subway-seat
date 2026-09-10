@@ -15,7 +15,7 @@ META = {
         "lang": "fish",
         "sh": "alias glow='glow -s ~/.config/glamour/{slug}.json'\n"
         'export GLAMOUR_STYLE="$HOME/.config/glamour/{slug}.json"   # gh and other Glamour apps',
-        "file": "~/.config/fish/config.fish",
+        "file": "~/.config/fish/conf.d/subway-seat.fish",
     },
     "detect": ["glow"],
     "notes": "A Glamour style: top-level headings as orange station signs, the rest stepping down the "

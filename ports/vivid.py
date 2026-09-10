@@ -12,7 +12,7 @@ META = {
         "code": "set -gx LS_COLORS (vivid generate {slug})",
         "lang": "fish",
         "sh": 'export LS_COLORS="$(vivid generate {slug})"',
-        "file": "~/.config/fish/config.fish",
+        "file": "~/.config/fish/conf.d/subway-seat.fish",
     },
     "detect": ["vivid"],
     "notes": "LS_COLORS for GNU ls (macOS's own ls ignores it), fd, eza and friends: gold directories "

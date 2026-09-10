@@ -13,13 +13,13 @@ META = {
         "code": 'set -gx BAT_THEME "{name}"',
         "lang": "fish",
         "sh": 'export BAT_THEME="{name}"',
-        "file": "~/.config/fish/config.fish",
+        "file": "~/.config/fish/conf.d/subway-seat.fish",
     },
     "auto": {
         "where": "config.fish, with BAT_THEME left unset (bat 0.25+ asks the terminal which to use)",
         "code": 'set -gx BAT_THEME_DARK "Subway Seat"\nset -gx BAT_THEME_LIGHT "Subway Seat Enamel"',
         "lang": "fish",
-        "file": "~/.config/fish/config.fish",
+        "file": "~/.config/fish/conf.d/subway-seat.fish",
     },
     "detect": ["bat", "batcat"],
     "notes": "TextMate themes for bat. delta (through the delta port), aichat and anything else built on "

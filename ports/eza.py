@@ -11,7 +11,7 @@ META = {
         "code": "set -gx EZA_CONFIG_DIR ~/.config/eza/{slug}",
         "lang": "fish",
         "sh": 'export EZA_CONFIG_DIR="$HOME/.config/eza/{slug}"',
-        "file": "~/.config/fish/config.fish",
+        "file": "~/.config/fish/conf.d/subway-seat.fish",
     },
     "requires": "eza 0.20+",
     "detect": ["eza"],
