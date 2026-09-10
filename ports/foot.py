@@ -5,22 +5,27 @@ with the opposite-brightness Subway Seat flavor: the dark flavors bring Enamel
 as their light side, and Enamel brings Walnut as its dark side.
 """
 
-from ports._lib import HEADER, Out, h
-from ports._terminals import dim, lit, selection
+from ports._lib import HEADER, Out, h, selection
+from ports._terminals import dark_light, dim, lit
 
 META = {
     "id": "foot",
     "name": "foot",
     "category": "Terminals",
     "homepage": "https://codeberg.org/dnkl/foot",
+    "requires": "foot 1.26+",
+    "detect": ["foot"],
     "enable": {
         "where": "~/.config/foot/foot.ini",
         "code": "[main]\ninclude=~/.config/foot/{slug}.ini",
         "lang": "ini",
+        "file": "~/.config/foot/foot.ini",
     },
-    "notes": "Colors, dim colors, cursor, selection, search box, jump labels, URLs and the bell flash, in "
-    "both a dark and a light section. Needs foot 1.26 or later, which replaced `[colors]` with "
-    "`[colors-dark]` and `[colors-light]`.",
+    "notes": "Colors, dim colors, cursor, selection, search box, jump labels, URLs and the bell flash. Each "
+    "file has a dark and a light section (Enamel is the light side of the dark flavors, Walnut the dark side "
+    "of Enamel). foot doesn't follow the desktop on its own: switch with the `color-theme-toggle` key "
+    "binding (unbound by default), or send foot `SIGUSR1` for dark and `SIGUSR2` for light, for example "
+    "from a darkman script.",
 }
 
 
@@ -46,16 +51,14 @@ def section(f, name):
     return f"# {f.name}\n[{name}]\n" + "\n".join(f"{k}={v}" for k, v in rows.items()) + "\n"
 
 
-def config(f, by_id):
-    partner = by_id["walnut"] if not f.dark else by_id["enamel"]
-    dark, light = (f, partner) if f.dark else (partner, f)
+def config(f, flavors):
+    dark, light = dark_light(f, flavors)
     main = "" if f.dark else "[main]\ninitial-color-theme=light\n\n"
     return f"# {HEADER}\n\n{main}{section(dark, 'colors-dark')}\n{section(light, 'colors-light')}"
 
 
 def build(flavors):
-    by_id = {f.id: f for f in flavors}
     return [
-        Out(f"{f.slug}.ini", config(f, by_id), flavor=f.id, dest=f"~/.config/foot/{f.slug}.ini", lang="ini")
+        Out(f"{f.slug}.ini", config(f, flavors), flavor=f.id, dest=f"~/.config/foot/{f.slug}.ini", lang="ini")
         for f in flavors
     ]

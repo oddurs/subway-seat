@@ -1,7 +1,7 @@
 """WezTerm: a TOML color scheme per flavor for `~/.config/wezterm/colors`."""
 
-from ports._lib import HEADER, REPO, Out
-from ports._terminals import lit, search, search_cur, selection, split
+from ports._lib import HEADER, REPO, Out, selection
+from ports._terminals import lit, search, search_cur, split
 
 META = {
     "id": "wezterm",

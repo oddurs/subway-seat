@@ -2,8 +2,8 @@
 
 import uuid
 
-from ports._lib import HEADER, REPO, Out
-from ports._terminals import lit, selection
+from ports._lib import HEADER, REPO, Out, selection
+from ports._terminals import lit
 
 META = {
     "id": "gnome-terminal",

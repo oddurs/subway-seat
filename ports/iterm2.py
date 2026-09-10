@@ -2,8 +2,8 @@
 
 import plistlib
 
-from ports._lib import HEADER, Out, rgb_floats
-from ports._terminals import lit, search, selection
+from ports._lib import HEADER, Out, rgb_floats, selection
+from ports._terminals import lit, search
 
 META = {
     "id": "iterm2",

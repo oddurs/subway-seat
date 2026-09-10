@@ -1,7 +1,7 @@
 """Tabby: a custom color scheme per flavor for `terminal.customColorSchemes`."""
 
-from ports._lib import HEADER, Out
-from ports._terminals import lit, selection
+from ports._lib import HEADER, Out, selection
+from ports._terminals import lit
 
 META = {
     "id": "tabby",

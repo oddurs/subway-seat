@@ -1,7 +1,7 @@
 """kitty: a theme file per flavor in the format `kitten themes` reads."""
 
-from ports._lib import HEADER, REPO, Out
-from ports._terminals import ANSI_NAMES, lit, selection
+from ports._lib import ANSI_NAMES, HEADER, REPO, Out, selection
+from ports._terminals import lit
 
 META = {
     "id": "kitty",

@@ -2,8 +2,8 @@
 
 import json
 
-from ports._lib import Out
-from ports._terminals import lit, selection
+from ports._lib import Out, selection
+from ports._terminals import lit
 
 META = {
     "id": "windows-terminal",

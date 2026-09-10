@@ -1,20 +1,23 @@
 """Alacritty: a TOML color file per flavor, pulled in with `general.import`."""
 
-from ports._lib import HEADER, Out
-from ports._terminals import ANSI_NAMES, dim, lit, search, search_cur, selection
+from ports._lib import ANSI_NAMES, HEADER, Out, selection
+from ports._terminals import dim, lit, search, search_cur
 
 META = {
     "id": "alacritty",
     "name": "Alacritty",
     "category": "Terminals",
     "homepage": "https://alacritty.org",
+    "requires": "Alacritty 0.14+",
+    "detect": ["alacritty", "/Applications/Alacritty.app"],
     "enable": {
         "where": "~/.config/alacritty/alacritty.toml",
         "code": '[general]\nimport = ["~/.config/alacritty/themes/{slug}.toml"]',
         "lang": "toml",
     },
-    "notes": "Normal, bright and dim colors, both cursors, selection, search, hints, footer bar and "
-    "line indicator. `general.import` needs Alacritty 0.14 or later; older versions use a top-level `import`.",
+    "notes": "Normal, bright and dim colors, both cursors, selection, search, hints, footer bar and line "
+    "indicator. If your alacritty.toml already has a `[general]` table, add the `import` line to it; a second "
+    "`[general]` is a TOML error. Alacritty doesn't follow the system light/dark setting, so pick one flavor.",
 }
 
 
@@ -27,7 +30,7 @@ def table(name, body):
 
 
 def palette(colors):
-    return "\n".join(f'{n} = "{c}"' for n, c in zip(ANSI_NAMES, colors))
+    return "\n".join(f'{n} = "{c}"' for n, c in zip(ANSI_NAMES, colors, strict=True))
 
 
 def theme(f):
