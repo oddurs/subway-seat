@@ -9,14 +9,16 @@ META = {
     "id": "gnome-terminal",
     "name": "GNOME Terminal",
     "category": "Terminals",
-    "homepage": "https://help.gnome.org/users/gnome-terminal/stable/",
+    "homepage": "https://help.gnome.org/gnome-terminal/",
+    "detect": ["gnome-terminal"],
     "enable": {
         "where": "any shell in your GNOME session",
         "code": "sh {slug}.sh   # adds the “{name}” profile; pick it in Preferences",
         "lang": "sh",
     },
     "notes": "Adds a profile with the palette, cursor, selection and bold colors. Re-running the script "
-    "updates the same profile in place. Ptyxis, GNOME's newer terminal, is not covered.",
+    "updates the same profile in place, and `sh <script> --uninstall` removes it. Profiles don't switch with "
+    "the system style, so pick one flavor. Ptyxis, GNOME's newer terminal, is not covered.",
 }
 
 
@@ -47,16 +49,26 @@ def script(f):
     return f"""#!/bin/sh
 # {HEADER}
 # Adds the "{f.name}" profile to GNOME Terminal. Safe to re-run: it updates the same profile.
+# `sh {f.slug}.sh --uninstall` removes it again (dconf reset on the profile, then drops it from the list).
 set -eu
 
 command -v gsettings >/dev/null 2>&1 || {{ echo "gsettings not found; run this inside a GNOME session." >&2; exit 1; }}
 
 UUID={uid}
 PROFILE="org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$UUID/"
+list=$(gsettings get org.gnome.Terminal.ProfilesList list)
+
+if [ "${{1-}}" = "--uninstall" ]; then
+  new=$(printf '%s' "$list" | sed "s/'$UUID'//; s/, ,/,/; s/\\[, /[/; s/, \\]/]/")
+  gsettings set org.gnome.Terminal.ProfilesList list "$new"
+  [ "$(gsettings get org.gnome.Terminal.ProfilesList default)" = "'$UUID'" ] && gsettings reset org.gnome.Terminal.ProfilesList default
+  dconf reset -f "/org/gnome/terminal/legacy/profiles:/:$UUID/"
+  echo "Removed the '{f.name}' profile."
+  exit 0
+fi
 
 {sets}
 
-list=$(gsettings get org.gnome.Terminal.ProfilesList list)
 case "$list" in
   *"$UUID"*) ;;
   "@as []" | "[]") gsettings set org.gnome.Terminal.ProfilesList list "['$UUID']" ;;
@@ -65,11 +77,19 @@ esac
 
 echo "Added the '{f.name}' profile. To make it the default:"
 echo "  gsettings set org.gnome.Terminal.ProfilesList default '$UUID'"
+echo "To remove it later:"
+echo "  sh {f.slug}.sh --uninstall"
 """
 
 
 def build(flavors):
     return [
-        Out(f"{f.slug}.sh", script(f), flavor=f.id, dest=f"anywhere; run once with `sh {f.slug}.sh`", lang="sh")
+        Out(
+            f"{f.slug}.sh",
+            script(f),
+            flavor=f.id,
+            lang="sh",
+            how=f"Run once with `sh {f.slug}.sh`; it adds the profile through gsettings",
+        )
         for f in flavors
     ]
