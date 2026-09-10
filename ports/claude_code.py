@@ -26,7 +26,7 @@ META = {
     "homepage": "https://claude.com/product/claude-code",
     "enable": {
         "where": "Claude Code, from the Subway Seat marketplace",
-        "code": "/plugin marketplace add oddurs/subway-seat\n/plugin install subway-seat@subway-seat\n/subway-seat:setup",
+        "code": "/plugin marketplace add oddurs/subway-seat\n/plugin install subway-seat@subway-seat\n/subway-seat:setup   # and pick {name}",
         "lang": "text",
     },
     "requires": "Claude Code 2.1.247+",
