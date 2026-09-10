@@ -34,5 +34,5 @@ code.hljs { padding: 3px 5px; }
 .hljs-emphasis { color: #E9D8B6; font-style: italic; }
 .hljs-strong { color: #F6EAD1; font-weight: bold; }
 .hljs-link { color: #7F9BAE; text-decoration: underline; }
-.hljs-addition { color: #ADB956; background: #484221; }
-.hljs-deletion { color: #F97160; background: #4D271A; }
+.hljs-addition { color: #ADB956; background: #363318; }
+.hljs-deletion { color: #F97160; background: #492217; }

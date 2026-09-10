@@ -2,10 +2,10 @@
 [delta "subway-seat"]
 	dark = true
 	syntax-theme = Subway Seat
-	plus-style = syntax "#554C29"
-	plus-emph-style = syntax "#686433"
-	minus-style = syntax "#5B3223"
-	minus-emph-style = syntax "#843F2D"
+	plus-style = syntax "#3F3A1E"
+	plus-emph-style = syntax "#504D26"
+	minus-style = syntax "#52281C"
+	minus-emph-style = syntax "#6D3224"
 	map-styles = bold purple => syntax "#60422E", bold cyan => syntax "#4A4838"
 	line-numbers-plus-style = "#ADB956"
 	line-numbers-minus-style = "#F97160"
@@ -27,10 +27,10 @@
 [delta "subway-seat-tunnel"]
 	dark = true
 	syntax-theme = Subway Seat Tunnel
-	plus-style = syntax "#484221"
-	plus-emph-style = syntax "#5E5C2C"
-	minus-style = syntax "#4D271A"
-	minus-emph-style = syntax "#7A3727"
+	plus-style = syntax "#363318"
+	plus-emph-style = syntax "#484722"
+	minus-style = syntax "#492217"
+	minus-emph-style = syntax "#662D20"
 	map-styles = bold purple => syntax "#533726", bold cyan => syntax "#3C3D30"
 	line-numbers-plus-style = "#ADB956"
 	line-numbers-minus-style = "#F97160"
@@ -52,10 +52,10 @@
 [delta "subway-seat-enamel"]
 	dark = false
 	syntax-theme = Subway Seat Enamel
-	plus-style = syntax "#CFCBA1"
-	plus-emph-style = syntax "#B8B881"
-	minus-style = syntax "#E0BEAB"
-	minus-emph-style = syntax "#CA8E7E"
+	plus-style = syntax "#D7DBC1"
+	plus-emph-style = syntax "#C2C79F"
+	minus-style = syntax "#EBD3D1"
+	minus-emph-style = syntax "#DEB9B5"
 	map-styles = bold purple => syntax "#E0C4AC", bold cyan => syntax "#C6CBB5"
 	line-numbers-plus-style = "#66740F"
 	line-numbers-minus-style = "#BC4031"

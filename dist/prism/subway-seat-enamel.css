@@ -63,8 +63,8 @@ pre[class*="language-"]::selection, pre[class*="language-"] ::selection {
 .token.blockquote { color: #654F3B; font-style: italic; }
 .token.coord { color: #3F6480; }
 .token.url { color: #3F6480; text-decoration: underline; }
-.token.inserted { color: #66740F; background: #CFCBA1; }
-.token.deleted { color: #BC4031; background: #E0BEAB; }
+.token.inserted { color: #66740F; background: #D7DBC1; }
+.token.deleted { color: #BC4031; background: #EBD3D1; }
 .token.important, .token.bold { font-weight: bold; }
 .token.italic { font-style: italic; }
 .token.entity { cursor: help; }

@@ -144,12 +144,12 @@
       "light": "enamelRed"
     },
     "diffAddedBg": {
-      "dark": "#484221",
-      "light": "#CFCBA1"
+      "dark": "#363318",
+      "light": "#D7DBC1"
     },
     "diffRemovedBg": {
-      "dark": "#4D271A",
-      "light": "#E0BEAB"
+      "dark": "#492217",
+      "light": "#EBD3D1"
     },
     "diffContextBg": {
       "dark": "tunnelBase",

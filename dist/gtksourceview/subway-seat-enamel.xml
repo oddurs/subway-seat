@@ -34,12 +34,14 @@
   <color name="denim" value="#3F6480"/>
   <color name="denim_hi" value="#517791"/>
   <color name="clay" value="#A65633"/>
-  <color name="tint_add" value="#CFCBA1"/>
-  <color name="tint_add_emph" value="#B8B881"/>
-  <color name="tint_del" value="#E0BEAB"/>
-  <color name="tint_del_emph" value="#CA8E7E"/>
-  <color name="tint_chg" value="#E6D6B6"/>
-  <color name="tint_chg_emph" value="#DFCBA5"/>
+  <color name="tint_add" value="#D7DBC1"/>
+  <color name="tint_add_emph" value="#C2C79F"/>
+  <color name="tint_add_dim" value="#E7E9D9"/>
+  <color name="tint_del" value="#EBD3D1"/>
+  <color name="tint_del_emph" value="#DEB9B5"/>
+  <color name="tint_del_dim" value="#F3E5E3"/>
+  <color name="tint_chg" value="#E9E0CC"/>
+  <color name="tint_chg_emph" value="#DCCDAD"/>
   <color name="tint_info" value="#DBD6C8"/>
   <color name="tint_hint" value="#DBD8C2"/>
   <color name="tint_search" value="#D7C094"/>

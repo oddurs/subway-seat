@@ -73,11 +73,11 @@ if &background ==# 'light'
   hi Debug guifg=#BC4031 guibg=NONE guisp=NONE gui=NONE ctermfg=131 ctermbg=NONE cterm=NONE
   hi Define guifg=#AD4E00 guibg=NONE guisp=NONE gui=NONE ctermfg=130 ctermbg=NONE cterm=NONE
   hi Delimiter guifg=#735C44 guibg=NONE guisp=NONE gui=NONE ctermfg=240 ctermbg=NONE cterm=NONE
-  hi DiffAdd guifg=NONE guibg=#CFCBA1 guisp=NONE gui=NONE ctermfg=NONE ctermbg=187 cterm=NONE
-  hi DiffChange guifg=NONE guibg=#E6D6B6 guisp=NONE gui=NONE ctermfg=NONE ctermbg=187 cterm=NONE
-  hi DiffDelete guifg=#992418 guibg=#E0BEAB guisp=NONE gui=NONE ctermfg=88 ctermbg=181 cterm=NONE
-  hi DiffText guifg=NONE guibg=#DFCBA5 guisp=NONE gui=NONE ctermfg=NONE ctermbg=187 cterm=NONE
-  hi DiffTextAdd guifg=NONE guibg=#B8B881 guisp=NONE gui=NONE ctermfg=NONE ctermbg=144 cterm=NONE
+  hi DiffAdd guifg=NONE guibg=#D7DBC1 guisp=NONE gui=NONE ctermfg=NONE ctermbg=187 cterm=NONE
+  hi DiffChange guifg=NONE guibg=#E9E0CC guisp=NONE gui=NONE ctermfg=NONE ctermbg=253 cterm=NONE
+  hi DiffDelete guifg=#992418 guibg=#EBD3D1 guisp=NONE gui=NONE ctermfg=88 ctermbg=253 cterm=NONE
+  hi DiffText guifg=NONE guibg=#DCCDAD guisp=NONE gui=NONE ctermfg=NONE ctermbg=187 cterm=NONE
+  hi DiffTextAdd guifg=NONE guibg=#C2C79F guisp=NONE gui=NONE ctermfg=NONE ctermbg=250 cterm=NONE
   hi Directory guifg=#936200 guibg=NONE guisp=NONE gui=NONE ctermfg=94 ctermbg=NONE cterm=NONE
   hi EasyMotionIncSearch guifg=#2A1D13 guibg=#BAA07A guisp=NONE gui=NONE ctermfg=234 ctermbg=144 cterm=NONE
   hi EasyMotionMoveHL guifg=#F4E9D4 guibg=#936200 guisp=NONE gui=NONE ctermfg=254 ctermbg=94 cterm=NONE
@@ -102,14 +102,14 @@ if &background ==# 'light'
   hi Folded guifg=#8C7254 guibg=#E7DCC7 guisp=NONE gui=NONE ctermfg=95 ctermbg=253 cterm=NONE
   hi Function guifg=#936200 guibg=NONE guisp=NONE gui=NONE ctermfg=94 ctermbg=NONE cterm=NONE
   hi GitGutterAdd guifg=#66740F guibg=NONE guisp=NONE gui=NONE ctermfg=64 ctermbg=NONE cterm=NONE
-  hi GitGutterAddIntraLine guifg=NONE guibg=#B8B881 guisp=NONE gui=NONE ctermfg=NONE ctermbg=144 cterm=NONE
-  hi GitGutterAddLine guifg=NONE guibg=#CFCBA1 guisp=NONE gui=NONE ctermfg=NONE ctermbg=187 cterm=NONE
+  hi GitGutterAddIntraLine guifg=NONE guibg=#C2C79F guisp=NONE gui=NONE ctermfg=NONE ctermbg=250 cterm=NONE
+  hi GitGutterAddLine guifg=NONE guibg=#D7DBC1 guisp=NONE gui=NONE ctermfg=NONE ctermbg=187 cterm=NONE
   hi GitGutterChange guifg=#936200 guibg=NONE guisp=NONE gui=NONE ctermfg=94 ctermbg=NONE cterm=NONE
   hi GitGutterChangeDelete guifg=#A65633 guibg=NONE guisp=NONE gui=NONE ctermfg=131 ctermbg=NONE cterm=NONE
-  hi GitGutterChangeLine guifg=NONE guibg=#E6D6B6 guisp=NONE gui=NONE ctermfg=NONE ctermbg=187 cterm=NONE
+  hi GitGutterChangeLine guifg=NONE guibg=#E9E0CC guisp=NONE gui=NONE ctermfg=NONE ctermbg=253 cterm=NONE
   hi GitGutterDelete guifg=#BC4031 guibg=NONE guisp=NONE gui=NONE ctermfg=131 ctermbg=NONE cterm=NONE
-  hi GitGutterDeleteIntraLine guifg=NONE guibg=#CA8E7E guisp=NONE gui=NONE ctermfg=NONE ctermbg=174 cterm=NONE
-  hi GitGutterDeleteLine guifg=NONE guibg=#E0BEAB guisp=NONE gui=NONE ctermfg=NONE ctermbg=181 cterm=NONE
+  hi GitGutterDeleteIntraLine guifg=NONE guibg=#DEB9B5 guisp=NONE gui=NONE ctermfg=NONE ctermbg=181 cterm=NONE
+  hi GitGutterDeleteLine guifg=NONE guibg=#EBD3D1 guisp=NONE gui=NONE ctermfg=NONE ctermbg=253 cterm=NONE
   hi Identifier guifg=#3E2C1E guibg=NONE guisp=NONE gui=NONE ctermfg=236 ctermbg=NONE cterm=NONE
   hi IncSearch guifg=#2A1D13 guibg=#D09C6A guisp=NONE gui=bold ctermfg=234 ctermbg=179 cterm=bold
   hi Include guifg=#AD4E00 guibg=NONE guisp=NONE gui=NONE ctermfg=130 ctermbg=NONE cterm=NONE
@@ -262,8 +262,8 @@ if &background ==# 'light'
   hi WhichKeySeparator guifg=#A58C6A guibg=NONE guisp=NONE gui=NONE ctermfg=137 ctermbg=NONE cterm=NONE
   hi WhichKeySeperator guifg=#A58C6A guibg=NONE guisp=NONE gui=NONE ctermfg=137 ctermbg=NONE cterm=NONE
   hi WildMenu guifg=NONE guibg=#CAB48E guisp=NONE gui=NONE ctermfg=NONE ctermbg=180 cterm=NONE
-  hi debugBreakpoint guifg=#BC4031 guibg=#E0BEAB guisp=NONE gui=NONE ctermfg=131 ctermbg=181 cterm=NONE
-  hi debugPC guifg=NONE guibg=#E6D6B6 guisp=NONE gui=NONE ctermfg=NONE ctermbg=187 cterm=NONE
+  hi debugBreakpoint guifg=#BC4031 guibg=#EBD3D1 guisp=NONE gui=NONE ctermfg=131 ctermbg=253 cterm=NONE
+  hi debugPC guifg=NONE guibg=#E9E0CC guisp=NONE gui=NONE ctermfg=NONE ctermbg=253 cterm=NONE
   hi diffAdded guifg=#66740F guibg=NONE guisp=NONE gui=NONE ctermfg=64 ctermbg=NONE cterm=NONE
   hi diffChanged guifg=#936200 guibg=NONE guisp=NONE gui=NONE ctermfg=94 ctermbg=NONE cterm=NONE
   hi diffFile guifg=#3F6480 guibg=NONE guisp=NONE gui=bold ctermfg=60 ctermbg=NONE cterm=bold
@@ -436,11 +436,11 @@ else
   hi Debug guifg=#F97160 guibg=NONE guisp=NONE gui=NONE ctermfg=203 ctermbg=NONE cterm=NONE
   hi Define guifg=#EC7F31 guibg=NONE guisp=NONE gui=NONE ctermfg=209 ctermbg=NONE cterm=NONE
   hi Delimiter guifg=#AE9575 guibg=NONE guisp=NONE gui=NONE ctermfg=138 ctermbg=NONE cterm=NONE
-  hi DiffAdd guifg=NONE guibg=#554C29 guisp=NONE gui=NONE ctermfg=NONE ctermbg=238 cterm=NONE
-  hi DiffChange guifg=NONE guibg=#503B1F guisp=NONE gui=NONE ctermfg=NONE ctermbg=237 cterm=NONE
-  hi DiffDelete guifg=#E05C45 guibg=#5B3223 guisp=NONE gui=NONE ctermfg=167 ctermbg=237 cterm=NONE
-  hi DiffText guifg=NONE guibg=#604823 guisp=NONE gui=NONE ctermfg=NONE ctermbg=238 cterm=NONE
-  hi DiffTextAdd guifg=NONE guibg=#686433 guisp=NONE gui=NONE ctermfg=NONE ctermbg=240 cterm=NONE
+  hi DiffAdd guifg=NONE guibg=#3F3A1E guisp=NONE gui=NONE ctermfg=NONE ctermbg=236 cterm=NONE
+  hi DiffChange guifg=NONE guibg=#423117 guisp=NONE gui=NONE ctermfg=NONE ctermbg=236 cterm=NONE
+  hi DiffDelete guifg=#E05C45 guibg=#52281C guisp=NONE gui=NONE ctermfg=167 ctermbg=236 cterm=NONE
+  hi DiffText guifg=NONE guibg=#57421C guisp=NONE gui=NONE ctermfg=NONE ctermbg=237 cterm=NONE
+  hi DiffTextAdd guifg=NONE guibg=#504D26 guisp=NONE gui=NONE ctermfg=NONE ctermbg=238 cterm=NONE
   hi Directory guifg=#F3BF45 guibg=NONE guisp=NONE gui=NONE ctermfg=215 ctermbg=NONE cterm=NONE
   hi EasyMotionIncSearch guifg=#F8ECD4 guibg=#634932 guisp=NONE gui=NONE ctermfg=230 ctermbg=238 cterm=NONE
   hi EasyMotionMoveHL guifg=#20160E guibg=#F3BF45 guisp=NONE gui=NONE ctermfg=233 ctermbg=215 cterm=NONE
@@ -465,14 +465,14 @@ else
   hi Folded guifg=#967B5C guibg=#443426 guisp=NONE gui=NONE ctermfg=101 ctermbg=236 cterm=NONE
   hi Function guifg=#F3BF45 guibg=NONE guisp=NONE gui=NONE ctermfg=215 ctermbg=NONE cterm=NONE
   hi GitGutterAdd guifg=#ADB956 guibg=NONE guisp=NONE gui=NONE ctermfg=143 ctermbg=NONE cterm=NONE
-  hi GitGutterAddIntraLine guifg=NONE guibg=#686433 guisp=NONE gui=NONE ctermfg=NONE ctermbg=240 cterm=NONE
-  hi GitGutterAddLine guifg=NONE guibg=#554C29 guisp=NONE gui=NONE ctermfg=NONE ctermbg=238 cterm=NONE
+  hi GitGutterAddIntraLine guifg=NONE guibg=#504D26 guisp=NONE gui=NONE ctermfg=NONE ctermbg=238 cterm=NONE
+  hi GitGutterAddLine guifg=NONE guibg=#3F3A1E guisp=NONE gui=NONE ctermfg=NONE ctermbg=236 cterm=NONE
   hi GitGutterChange guifg=#F3BF45 guibg=NONE guisp=NONE gui=NONE ctermfg=215 ctermbg=NONE cterm=NONE
   hi GitGutterChangeDelete guifg=#E0956C guibg=NONE guisp=NONE gui=NONE ctermfg=173 ctermbg=NONE cterm=NONE
-  hi GitGutterChangeLine guifg=NONE guibg=#503B1F guisp=NONE gui=NONE ctermfg=NONE ctermbg=237 cterm=NONE
+  hi GitGutterChangeLine guifg=NONE guibg=#423117 guisp=NONE gui=NONE ctermfg=NONE ctermbg=236 cterm=NONE
   hi GitGutterDelete guifg=#F97160 guibg=NONE guisp=NONE gui=NONE ctermfg=203 ctermbg=NONE cterm=NONE
-  hi GitGutterDeleteIntraLine guifg=NONE guibg=#843F2D guisp=NONE gui=NONE ctermfg=NONE ctermbg=94 cterm=NONE
-  hi GitGutterDeleteLine guifg=NONE guibg=#5B3223 guisp=NONE gui=NONE ctermfg=NONE ctermbg=237 cterm=NONE
+  hi GitGutterDeleteIntraLine guifg=NONE guibg=#6D3224 guisp=NONE gui=NONE ctermfg=NONE ctermbg=237 cterm=NONE
+  hi GitGutterDeleteLine guifg=NONE guibg=#52281C guisp=NONE gui=NONE ctermfg=NONE ctermbg=236 cterm=NONE
   hi Identifier guifg=#EDDCBC guibg=NONE guisp=NONE gui=NONE ctermfg=223 ctermbg=NONE cterm=NONE
   hi IncSearch guifg=#F8ECD4 guibg=#915225 guisp=NONE gui=bold ctermfg=230 ctermbg=94 cterm=bold
   hi Include guifg=#EC7F31 guibg=NONE guisp=NONE gui=NONE ctermfg=209 ctermbg=NONE cterm=NONE
@@ -625,8 +625,8 @@ else
   hi WhichKeySeparator guifg=#7B6047 guibg=NONE guisp=NONE gui=NONE ctermfg=95 ctermbg=NONE cterm=NONE
   hi WhichKeySeperator guifg=#7B6047 guibg=NONE guisp=NONE gui=NONE ctermfg=95 ctermbg=NONE cterm=NONE
   hi WildMenu guifg=NONE guibg=#513B27 guisp=NONE gui=NONE ctermfg=NONE ctermbg=237 cterm=NONE
-  hi debugBreakpoint guifg=#F97160 guibg=#5B3223 guisp=NONE gui=NONE ctermfg=203 ctermbg=237 cterm=NONE
-  hi debugPC guifg=NONE guibg=#503B1F guisp=NONE gui=NONE ctermfg=NONE ctermbg=237 cterm=NONE
+  hi debugBreakpoint guifg=#F97160 guibg=#52281C guisp=NONE gui=NONE ctermfg=203 ctermbg=236 cterm=NONE
+  hi debugPC guifg=NONE guibg=#423117 guisp=NONE gui=NONE ctermfg=NONE ctermbg=236 cterm=NONE
   hi diffAdded guifg=#ADB956 guibg=NONE guisp=NONE gui=NONE ctermfg=143 ctermbg=NONE cterm=NONE
   hi diffChanged guifg=#F3BF45 guibg=NONE guisp=NONE gui=NONE ctermfg=215 ctermbg=NONE cterm=NONE
   hi diffFile guifg=#7F9BAE guibg=NONE guisp=NONE gui=bold ctermfg=103 ctermbg=NONE cterm=bold

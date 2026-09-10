@@ -2,10 +2,10 @@
 [delta "subway-seat-tunnel"]
 	dark = true
 	syntax-theme = Subway Seat Tunnel
-	plus-style = syntax "#484221"
-	plus-emph-style = syntax "#5E5C2C"
-	minus-style = syntax "#4D271A"
-	minus-emph-style = syntax "#7A3727"
+	plus-style = syntax "#363318"
+	plus-emph-style = syntax "#484722"
+	minus-style = syntax "#492217"
+	minus-emph-style = syntax "#662D20"
 	map-styles = bold purple => syntax "#533726", bold cyan => syntax "#3C3D30"
 	line-numbers-plus-style = "#ADB956"
 	line-numbers-minus-style = "#F97160"

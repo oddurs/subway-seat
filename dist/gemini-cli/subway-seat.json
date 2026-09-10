@@ -10,8 +10,8 @@
   "AccentGreen": "#ADB956",
   "AccentYellow": "#F3BF45",
   "AccentRed": "#F97160",
-  "DiffAdded": "#554C29",
-  "DiffRemoved": "#5B3223",
+  "DiffAdded": "#3F3A1E",
+  "DiffRemoved": "#52281C",
   "Comment": "#967B5C",
   "Gray": "#AE9575",
   "DarkGray": "#634932",
@@ -30,8 +30,8 @@
   "background": {
     "primary": "#362619",
     "diff": {
-      "added": "#554C29",
-      "removed": "#5B3223"
+      "added": "#3F3A1E",
+      "removed": "#52281C"
     }
   },
   "border": {

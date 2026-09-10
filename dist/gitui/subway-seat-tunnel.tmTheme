@@ -45,8 +45,8 @@
     <dict><key>scope</key><string>markup.changed, punctuation.definition.changed</string><key>settings</key><dict><key>foreground</key><string>#F3BF45</string></dict></dict>
     <dict><key>scope</key><string>meta.diff.range, meta.diff.header</string><key>settings</key><dict><key>foreground</key><string>#7F9BAE</string></dict></dict>
     <dict><key>scope</key><string>markup.strikethrough</string><key>settings</key><dict><key>foreground</key><string>#917759</string></dict></dict>
-    <dict><key>scope</key><string>markup.inserted.diff</string><key>settings</key><dict><key>background</key><string>#484221</string><key>foreground</key><string>#ADB956</string></dict></dict>
-    <dict><key>scope</key><string>markup.deleted.diff</string><key>settings</key><dict><key>background</key><string>#4D271A</string><key>foreground</key><string>#F97160</string></dict></dict>
+    <dict><key>scope</key><string>markup.inserted.diff</string><key>settings</key><dict><key>background</key><string>#363318</string><key>foreground</key><string>#ADB956</string></dict></dict>
+    <dict><key>scope</key><string>markup.deleted.diff</string><key>settings</key><dict><key>background</key><string>#492217</string><key>foreground</key><string>#F97160</string></dict></dict>
   </array>
 </dict>
 </plist>

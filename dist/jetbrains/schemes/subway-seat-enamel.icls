@@ -335,7 +335,7 @@
     </option>
     <option name="BREAKPOINT_ATTRIBUTES">
       <value>
-        <option name="BACKGROUND" value="E0BEAB"/>
+        <option name="BACKGROUND" value="EBD3D1"/>
       </value>
     </option>
     <option name="CLASS_NAME_ATTRIBUTES" baseAttributes="DEFAULT_CLASS_NAME"/>
@@ -884,19 +884,19 @@
     </option>
     <option name="DIFF_DELETED">
       <value>
-        <option name="BACKGROUND" value="E0BEAB"/>
+        <option name="BACKGROUND" value="EBD3D1"/>
         <option name="ERROR_STRIPE_COLOR" value="BC4031"/>
       </value>
     </option>
     <option name="DIFF_INSERTED">
       <value>
-        <option name="BACKGROUND" value="CFCBA1"/>
+        <option name="BACKGROUND" value="D7DBC1"/>
         <option name="ERROR_STRIPE_COLOR" value="66740F"/>
       </value>
     </option>
     <option name="DIFF_MODIFIED">
       <value>
-        <option name="BACKGROUND" value="E6D6B6"/>
+        <option name="BACKGROUND" value="E9E0CC"/>
         <option name="ERROR_STRIPE_COLOR" value="936200"/>
       </value>
     </option>
@@ -925,7 +925,7 @@
     </option>
     <option name="EXECUTIONPOINT_ATTRIBUTES">
       <value>
-        <option name="BACKGROUND" value="DFCBA5"/>
+        <option name="BACKGROUND" value="DCCDAD"/>
       </value>
     </option>
     <option name="FOLDED_TEXT_ATTRIBUTES">
@@ -1869,7 +1869,7 @@
     <option name="UNMATCHED_BRACE_ATTRIBUTES">
       <value>
         <option name="FOREGROUND" value="BC4031"/>
-        <option name="BACKGROUND" value="E0BEAB"/>
+        <option name="BACKGROUND" value="EBD3D1"/>
         <option name="FONT_TYPE" value="1"/>
       </value>
     </option>

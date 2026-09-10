@@ -2,10 +2,10 @@
 [delta "subway-seat-enamel"]
 	dark = false
 	syntax-theme = Subway Seat Enamel
-	plus-style = syntax "#CFCBA1"
-	plus-emph-style = syntax "#B8B881"
-	minus-style = syntax "#E0BEAB"
-	minus-emph-style = syntax "#CA8E7E"
+	plus-style = syntax "#D7DBC1"
+	plus-emph-style = syntax "#C2C79F"
+	minus-style = syntax "#EBD3D1"
+	minus-emph-style = syntax "#DEB9B5"
 	map-styles = bold purple => syntax "#E0C4AC", bold cyan => syntax "#C6CBB5"
 	line-numbers-plus-style = "#66740F"
 	line-numbers-minus-style = "#BC4031"

@@ -22,7 +22,13 @@ Optional META keys:
     "auto": {"where", "code", "lang"}   # how to follow the OS light/dark setting
                                         # (code is shown as-is, not formatted)
     "requires": "Ghostty 1.3+"          # the oldest version the files work with
+    "detect": ["ghostty", "/Applications/Ghostty.app"]
+                                        # the app is installed if any command is on
+                                        # PATH or any path (~, /, $VAR) exists
     enable["sh"]                        # a POSIX-shell line when `code` is fish
+    enable["file"]                      # the config file `code` can be appended to
+                                        # (between MARK_START/MARK_END) by install.sh;
+                                        # leave it out when turning on needs a person
 
 `build` receives every Flavor and returns files. A file tied to one flavor sets
 `flavor=f.id`; a file covering all of them (a VS Code extension, an auto
@@ -79,12 +85,14 @@ class Enable(TypedDict):
     code: str  # formatted with the Flavor: {name} {slug} {snake} {id}
     lang: Lang
     sh: NotRequired[str]  # POSIX-shell equivalent of a fish `code`, formatted the same way
+    file: NotRequired[str]  # config file install.sh may append `code` to, e.g. "~/.config/ghostty/config"
 
 
 class Auto(TypedDict):
     where: str
     code: str  # shown as-is (it names every flavor itself)
     lang: Lang
+    file: NotRequired[str]
 
 
 class Meta(TypedDict):
@@ -96,6 +104,7 @@ class Meta(TypedDict):
     enable: NotRequired[Enable]
     auto: NotRequired[Auto]
     requires: NotRequired[str]
+    detect: NotRequired[list[str]]
 
 
 @dataclass(frozen=True, slots=True)
@@ -156,15 +165,24 @@ def rgb_floats(color):
 
 # ── Tinted backgrounds (diffs, search, diagnostics) ────────────────────────
 def tints(f):
-    """Semantic tinted grounds, computed against the flavor's base."""
+    """Semantic tinted grounds.
+
+    Diff grounds shift hue, not lightness: on dark flavors the accent is mixed
+    into crust (so a green line stays about as dark as base), on Enamel into
+    white. Every syntax color keeps at least ~3:1 on a line tint and comments
+    stay readable on word emphasis, so highlighted code on top of a diff still
+    reads. `*_dim` is for diffs shown faded (rejected or collapsed hunks)."""
+    g = "crust" if f.dark else "#FFFFFF"
     return {
-        "add": f.mix("green", "base", 0.26),
-        "add_emph": f.mix("green", "base", 0.42),
-        "del": f.mix("red", "base", 0.22),
-        "del_emph": f.mix("red", "base", 0.46),
-        "chg": f.mix("yellow", "base", 0.14),
-        # kept clearly apart from the search tint (0.30), so a match inside a diff reads as a match
-        "chg_emph": f.mix("yellow", "base", 0.22),
+        "add": f.mix("green", g, 0.22 if f.dark else 0.26),
+        "add_emph": f.mix("green", g, 0.34 if f.dark else 0.40),
+        "add_dim": f.mix("green", g, 0.14 if f.dark else 0.16),
+        "del": f.mix("red", g, 0.26 if f.dark else 0.20),
+        "del_emph": f.mix("red", g, 0.40 if f.dark else 0.32),
+        "del_dim": f.mix("red", g, 0.17 if f.dark else 0.12),
+        "chg": f.mix("yellow", g, 0.16 if f.dark else 0.20),
+        # kept clearly apart from the search tint, so a match inside a diff reads as a match
+        "chg_emph": f.mix("yellow", g, 0.26 if f.dark else 0.32),
         "info": f.mix("denim", "base", 0.14),
         "hint": f.mix("sage", "base", 0.14),
         "search": f.mix("yellow", "base", 0.30),
