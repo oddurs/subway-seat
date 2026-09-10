@@ -75,7 +75,7 @@ export function HerdrDemo() {
           className={`claude-pane ${stylex.props(styles.pane).className ?? ""}`}
         >
           <span {...stylex.props(styles.user)}>
-            <C k="overlay1">&gt;</C> make the ground read brown, not black
+            <C k="overlay1">❯</C> make the ground read brown, not black
           </span>
           {"\n\n"}
           <C k="green">⏺</C> <b>Update</b>(palette.py){"\n"}
@@ -90,10 +90,10 @@ export function HerdrDemo() {
           </DiffLine>
           {"\n\n"}⏺ Walnut now sits at 15% lightness, saturated enough{"\n"}
           {"  "}to read as wood paneling.{"\n\n"}
-          <C k="orange">✻ Percolating…</C> <C k="overlay1">(esc to interrupt)</C>
+          <C k="orange">✻ Percolating…</C> <C k="overlay1">(6s · ↓ 312 tokens)</C>
           {"\n"}
           <span {...stylex.props(styles.input)}>
-            <C k="overlay1">&gt;</C> <span {...stylex.props(styles.cursor)}> </span>
+            <C k="overlay1">❯</C> <span {...stylex.props(styles.cursor)}> </span>
           </span>
           {"\n"}
           {"  "}
