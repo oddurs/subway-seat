@@ -21,7 +21,8 @@ Optional META keys:
 
     "auto": {"where", "code", "lang"}   # how to follow the OS light/dark setting
                                         # (code is shown as-is, not formatted)
-    "requires": "Ghostty 1.3+"          # the oldest version the files work with
+    "requires": "Ghostty 1.3+"          # the oldest version the files work with, or
+                                        # a prerequisite ("Raycast Pro")
     "detect": ["ghostty", "/Applications/Ghostty.app"]
                                         # the app is installed if any command is on
                                         # PATH or any path (~, /, $VAR) exists

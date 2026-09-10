@@ -41,7 +41,7 @@ def clr(f):
     array_class = {"$classes": ["NSMutableArray", "NSArray", "NSObject"], "$classname": "NSMutableArray"}
     keys = {"NS.objects": []}
     keys_uid = add(keys)
-    keys["NS.objects"] = [add(label(role)) for role in p.ROLES]
+    keys["NS.objects"] = [add(label(role, f)) for role in p.ROLES]
     keys["$class"] = add(array_class)
     colors = {"$class": keys["$class"], "NS.objects": []}
     colors_uid = add(colors)

@@ -46,7 +46,7 @@ def test_meta_contract(pid, mods):
             assert block["lang"] in LANGS
             assert all(isinstance(v, str) and v.strip() for v in block.values())
     if "requires" in meta:
-        assert isinstance(meta["requires"], str) and re.search(r"\d", meta["requires"]), "requires names a version"
+        assert isinstance(meta["requires"], str) and meta["requires"].strip(), "requires names a version or a prerequisite"
     if "detect" in meta:
         assert isinstance(meta["detect"], list) and meta["detect"], "detect is a non-empty list"
         assert all(isinstance(d, str) and d.strip() and "\t" not in d for d in meta["detect"])
