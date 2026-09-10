@@ -39,9 +39,8 @@ META = {
 
 # Where each client keeps themes. The file's dest is Vencord on macOS; the rest go in `how`.
 FOLDERS = (
-    "Vencord: ~/Library/Application Support/Vencord/themes (macOS), ~/.config/Vencord/themes (Linux), "
-    "%APPDATA%\\Vencord\\themes (Windows). Vesktop: the same with vesktop in place of Vencord. "
-    "BetterDiscord: the same with BetterDiscord."
+    "that's Vencord on macOS; on Linux it's ~/.config/Vencord/themes, on Windows %APPDATA%\\Vencord\\themes. "
+    "Vesktop and BetterDiscord use the same folders with vesktop or BetterDiscord in place of Vencord."
 )
 
 DARK_SEL = ".visual-refresh.theme-dark,\n.visual-refresh .theme-dark"

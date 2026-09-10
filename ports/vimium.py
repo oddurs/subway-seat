@@ -19,8 +19,9 @@ META = {
         "# Enamel while the system is light, Subway Seat (Walnut) while it's dark",
         "lang": "text",
     },
+    "requires": "Vimium 2.0+",
     "notes": "Harvest-gold link hints, a walnut Vomnibar with denim URLs and orange matches, and the find "
-    "bar and help dialog to match. Selectors follow Vimium 2.x.",
+    "bar and help dialog to match.",
 }
 
 

@@ -20,7 +20,6 @@ META = {
         "/* The same ss-* classes, in Enamel while the system is light and Walnut while it's dark */",
         "lang": "css",
     },
-    "requires": "Tailwind CSS v4 (v3: the preset)",
     "notes": "Tailwind v4 theme files add ss-* colors (bg-ss-base, text-ss-orange, bg-ss-diff-add) for one flavor, "
     "and subway-seat-auto.css switches the same names between Enamel and Walnut with the system. "
     "For v3, subway-seat-preset.js has all three as ss-walnut-*, ss-tunnel-* and ss-enamel-*.",

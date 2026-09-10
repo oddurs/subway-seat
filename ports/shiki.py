@@ -24,8 +24,7 @@ META = {
         "lang": "typescript",
     },
     "notes": "The VS Code theme repackaged for Shiki: the same TextMate token colors as the editor. "
-    "Shiki doesn't run a language server, so the extra coloring VS Code gets from semantic tokens "
-    "(parameters, read-only variables, some types) isn't there.",
+    "Shiki doesn't run a language server, so the extra coloring VS Code adds from semantic tokens isn't there.",
 }
 
 
