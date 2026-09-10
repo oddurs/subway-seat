@@ -59,7 +59,7 @@ def test_port_ids_unique(mods):
 
 
 # Ports whose "turn it on" step is legitimately the same for every flavor.
-SAME_ENABLE_FOR_ALL = {"termux", "terminal-agents", "herdr", "aichat", "obsidian", "lsd"}
+SAME_ENABLE_FOR_ALL = {"termux", "terminal-agents", "herdr", "aichat", "obsidian", "lsd", "dunst"}
 
 
 @pytest.mark.parametrize("pid", PORT_IDS)
@@ -188,10 +188,6 @@ def test_committed_dist_is_current():
     assert result.returncode == 0, result.stdout[-3000:] + result.stderr[-2000:]
 
 
-@pytest.mark.xfail(
-    strict=False,
-    reason="Some ports still give prose as a dest. Flip to a plain test once every package has merged.",
-)
 def test_build_has_no_warnings(rendered):
     _, warnings = rendered
     assert not warnings, "\n".join(warnings)

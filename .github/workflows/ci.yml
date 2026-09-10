@@ -61,11 +61,6 @@ jobs:
           python-version: "3.14"
       - name: ruff check
         run: uv run --locked --extra dev ruff check --output-format github .
-      - name: ruff format
-        # Most files predate the formatter. Delete continue-on-error after the one-time
-        # `ruff format .` commit (and list that commit in .git-blame-ignore-revs).
-        continue-on-error: true
-        run: uv run --locked --extra dev ruff format --check .
       - name: shellcheck
         run: |
           shopt -s globstar nullglob

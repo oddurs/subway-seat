@@ -64,7 +64,6 @@ def test_statusline_renders(scripts, tmp_path):
 
 
 @pytest.mark.skipif(not has_locale("de_DE.UTF-8"), reason="the de_DE.UTF-8 locale isn't installed")
-@pytest.mark.xfail(strict=False, reason="printf reads the locale's decimal comma; fix pending in ports/claude_code.py")
 def test_statusline_ignores_comma_decimal_locale(scripts, tmp_path):
     result = run(scripts["subway-seat-statusline"], STATUS, tmp_path, LC_ALL="de_DE.UTF-8")
     assert result.returncode == 0, result.stderr

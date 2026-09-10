@@ -107,7 +107,7 @@ For every port that shows diffs:
 ```sh
 uv run --with pytest --with pyyaml pytest -q        # everything, in a few seconds
 uv run --with pytest --with pyyaml pytest -q -k ghostty   # the tests for one port
-uvx ruff check . && uvx ruff format --check .
+uvx ruff check .   # no ruff format: the ports keep their hand-aligned color tables
 uv run ./build.py --check                           # dist/, site tokens and README are current
 ```
 

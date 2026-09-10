@@ -172,9 +172,9 @@ def render_port(mod) -> tuple[dict[str, str | bytes], dict]:
         if out.dest is not None and (
             ("/" not in out.dest and "\\" not in out.dest) or any(w in out.dest for w in NOT_A_PATH)
         ):
-            warn(f"{meta['id']}: dest {out.dest!r} for {out.path!r} isn't a path; put directions in `how`")
+            raise SystemExit(f"✗ {meta['id']}: dest {out.dest!r} for {out.path!r} isn't a path; put directions in `how`")
         if out.append and isinstance(out.content, str) and MARK_START not in out.content:
-            warn(f"{meta['id']}: appended file {out.path!r} should be wrapped in MARK_START/MARK_END")
+            raise SystemExit(f"✗ {meta['id']}: appended file {out.path!r} should be wrapped in MARK_START/MARK_END")
         check(key, out.content)
         files[key] = out.content
         listed.append(

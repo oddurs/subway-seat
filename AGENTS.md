@@ -26,7 +26,7 @@ uv run ./build.py --only ghostty,bat       # some ports; keeps the rest of the m
 uv run ./build.py --only ghostty --no-manifest   # port files only; safe to run in parallel
 uv run ./build.py --check                  # fail if anything on disk differs from a fresh build
 uv run --with pytest --with pyyaml pytest -q
-uvx ruff check . && uvx ruff format --check .
+uvx ruff check .   # no ruff format: the ports keep their hand-aligned color tables
 cd site && bun install && bun run check    # the website: lint, types, format
 ```
 
