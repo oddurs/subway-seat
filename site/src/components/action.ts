@@ -1,4 +1,5 @@
 import * as stylex from "@stylexjs/stylex";
+import { ink } from "@/theme/ink.stylex";
 import { color } from "@/theme/tokens.stylex";
 import { font } from "@/theme/type.stylex";
 
@@ -7,7 +8,7 @@ export const action = stylex.create({
   base: {
     display: "inline-flex",
     alignItems: "center",
-    paddingBlock: 4,
+    paddingBlock: 6,
     paddingInline: 10,
     fontFamily: font.mono,
     fontSize: 12,
@@ -22,7 +23,7 @@ export const action = stylex.create({
       default: "none",
       ":focus-visible": "solid",
     },
-    outlineColor: color.orange,
+    outlineColor: ink.accent,
     outlineOffset: 2,
     backgroundColor: {
       default: color.surface0,
@@ -34,8 +35,8 @@ export const action = stylex.create({
     borderRadius: 4,
   },
   done: {
-    color: color.crust,
-    backgroundColor: color.green,
-    borderColor: color.green,
+    color: ink.onAccent,
+    backgroundColor: ink.okFill,
+    borderColor: ink.okFill,
   },
 });

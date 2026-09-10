@@ -1,21 +1,29 @@
 import * as stylex from "@stylexjs/stylex";
-import { type ColorName, flavors, ground, roleNames, textRoles } from "@/lib/palette";
+import {
+  bestInk,
+  type ColorName,
+  contrast,
+  flavors,
+  ground,
+  roleNames,
+  textRoles,
+} from "@/lib/palette";
+import { sign } from "@/theme/sign.stylex";
 import { color } from "@/theme/tokens.stylex";
 import { Swatch, type SwatchLabel } from "./Swatch";
 
-/** Relative luminance, to pick ink that reads on a chip. */
-function luminance(hex: string) {
-  const [r, g, b] = [1, 3, 5].map((i) => {
-    const v = Number.parseInt(hex.slice(i, i + 2), 16) / 255;
-    return v <= 0.03928 ? v / 12.92 : ((v + 0.055) / 1.055) ** 2.4;
-  });
-  return 0.2126 * r + 0.7152 * g + 0.0722 * b;
-}
-
+/**
+ * Per flavor, the chip's hex and whichever ink reads best on it: the flavor's
+ * darkest or lightest, or the station-sign black for the mid-tones in between.
+ */
 export function labelsFor(role: ColorName): SwatchLabel[] {
   return flavors.map((f) => {
     const hex = f.colors[role];
-    return { flavor: f.id, hex, ink: luminance(hex) > 0.3 ? "#2A1D13" : "#F8ECD4" };
+    const [dark, light] = f.dark
+      ? [f.colors.crust, f.colors.textHi]
+      : [f.colors.textHi, f.colors.base];
+    const deep = contrast(hex, dark) >= 4.5 ? dark : sign.bg;
+    return { flavor: f.id, hex, ink: bestInk(hex, deep, light) };
   });
 }
 
@@ -37,8 +45,8 @@ export function Palette() {
 const styles = stylex.create({
   stack: { display: "grid", gridTemplateColumns: "minmax(0, 1fr)", gap: 6 },
   strip: {
-    display: "grid",
-    gridTemplateColumns: "repeat(auto-fit, minmax(112px, 1fr))",
+    display: "flex",
+    flexWrap: "wrap",
     gap: 4,
     overflow: "hidden",
     borderRadius: 14,

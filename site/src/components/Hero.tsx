@@ -1,39 +1,44 @@
 import * as stylex from "@stylexjs/stylex";
 import Link from "next/link";
+import { ink } from "@/theme/ink.stylex";
 import { color } from "@/theme/tokens.stylex";
 import { font } from "@/theme/type.stylex";
 import { Supergraphic } from "./Supergraphic";
 
 export function Hero({ count }: { count: number }) {
   return (
-    <section {...stylex.props(styles.hero)}>
-      <div {...stylex.props(styles.art)} aria-hidden>
-        <Supergraphic />
-      </div>
-      <div {...stylex.props(styles.copy)}>
-        <p {...stylex.props(styles.eyebrow)}>A color scheme for the long ride</p>
-        <h1 {...stylex.props(styles.title)}>Sink into a warmer screen.</h1>
-        <p {...stylex.props(styles.lede)}>
-          Subway Seat is a walnut-brown theme from a 1970s subway car: orange bucket seats,
-          wood-grain paneling, cream enamel and a little avocado. Three flavors, {count} apps, one
-          palette.
-        </p>
-        <div {...stylex.props(styles.ctas)}>
-          <Link href="#ports" {...stylex.props(styles.cta, styles.primary)}>
-            Find your app
-          </Link>
-          <Link href="/palette" {...stylex.props(styles.cta, styles.secondary)}>
-            See the palette
-          </Link>
+    // The stripes run off the right edge; the page itself never scrolls sideways.
+    <div {...stylex.props(styles.clip)}>
+      <section {...stylex.props(styles.hero)}>
+        <div {...stylex.props(styles.art)} aria-hidden>
+          <Supergraphic />
         </div>
-      </div>
-    </section>
+        <div {...stylex.props(styles.copy)}>
+          <p {...stylex.props(styles.eyebrow)}>A color scheme for the long ride</p>
+          <h1 {...stylex.props(styles.title)}>Sink into a warmer screen.</h1>
+          <p {...stylex.props(styles.lede)}>
+            Subway Seat is a walnut-brown theme from a 1970s subway car: orange bucket seats,
+            wood-grain paneling, cream enamel and a little avocado. Three flavors, {count} ports,
+            one palette.
+          </p>
+          <div {...stylex.props(styles.ctas)}>
+            <Link href="/install" {...stylex.props(styles.cta, styles.primary)}>
+              Get on board
+            </Link>
+            <Link href="#ports" {...stylex.props(styles.cta, styles.secondary)}>
+              Find your app
+            </Link>
+          </div>
+        </div>
+      </section>
+    </div>
   );
 }
 
 const NARROW = "@media (max-width: 860px)";
 
 const styles = stylex.create({
+  clip: { overflowX: "clip" },
   hero: {
     position: "relative",
     display: "grid",
@@ -60,7 +65,10 @@ const styles = stylex.create({
       [NARROW]: "absolute",
       default: "absolute",
     },
-    top: -60,
+    top: {
+      [NARROW]: -120,
+      default: -60,
+    },
     right: {
       [NARROW]: -140,
       default: -40,
@@ -71,7 +79,7 @@ const styles = stylex.create({
     },
     pointerEvents: "none",
     opacity: {
-      [NARROW]: 0.35,
+      [NARROW]: 0.2,
       default: 1,
     },
   },
@@ -80,7 +88,7 @@ const styles = stylex.create({
     fontFamily: font.sans,
     fontSize: 13,
     fontWeight: 600,
-    color: color.orange,
+    color: ink.accent,
     textTransform: "uppercase",
     letterSpacing: "0.16em",
   },
@@ -104,17 +112,22 @@ const styles = stylex.create({
   },
   ctas: { display: "flex", flexWrap: "wrap", gap: 12 },
   cta: {
+    flexGrow: {
+      default: 0,
+      "@media (max-width: 480px)": 1,
+    },
     paddingBlock: 12,
     paddingInline: 24,
     fontSize: 16,
     fontWeight: 700,
+    textAlign: "center",
     textDecoration: "none",
     outlineWidth: 2,
     outlineStyle: {
       default: "none",
       ":focus-visible": "solid",
     },
-    outlineColor: color.yellow,
+    outlineColor: ink.accent,
     outlineOffset: 3,
     borderRadius: 999,
     transform: {
@@ -125,10 +138,10 @@ const styles = stylex.create({
     transitionProperty: "transform, background-color",
   },
   primary: {
-    color: color.crust,
+    color: ink.onAccent,
     backgroundColor: {
       default: color.orange,
-      ":hover": color.orangeHi,
+      ":hover": ink.fillHover,
     },
   },
   secondary: {

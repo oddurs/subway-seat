@@ -45,6 +45,6 @@ const styles = stylex.create({
   },
   route: { display: "flex", gap: 14, alignItems: "flex-start" },
   name: { fontWeight: 600, color: color.textHi },
-  hex: { fontFamily: font.mono, fontSize: 12, color: color.overlay1 },
-  role: { marginTop: 2, fontSize: 14, color: color.subtext0 },
+  hex: { fontFamily: font.mono, fontSize: 12, color: color.overlay2 },
+  role: { marginTop: 2, fontSize: 14, color: color.subtext0, textWrap: "pretty" },
 });

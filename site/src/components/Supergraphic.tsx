@@ -1,17 +1,17 @@
 import * as stylex from "@stylexjs/stylex";
 import { color } from "@/theme/tokens.stylex";
 
-// Five stripes that fall in from the top, bend around one shared centre and
-// run off to the right, like the painted supergraphics on 70s walls and vans.
+// Five stripes that fall in from the top, bend around one shared center and
+// run off to the right, past any screen width, like the painted supergraphics on 70s walls and vans.
 const STRIPES = [color.red, color.orange, color.yellow, color.green, color.text];
 const W = 30; // stripe width
-const CX = 420; // centre of the bend
+const CX = 420; // center of the bend
 const CY = 150;
 const R = 60; // innermost radius
 
 function path(i: number) {
   const r = R + i * W;
-  return `M ${CX - r} -20 L ${CX - r} ${CY} A ${r} ${r} 0 0 0 ${CX} ${CY + r} L 700 ${CY + r}`;
+  return `M ${CX - r} -20 L ${CX - r} ${CY} A ${r} ${r} 0 0 0 ${CX} ${CY + r} L 2600 ${CY + r}`;
 }
 
 export function Supergraphic() {
