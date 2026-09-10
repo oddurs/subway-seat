@@ -1,7 +1,7 @@
 """micro: a true-color colorscheme per flavor."""
 
 from ports._editors import ui
-from ports._lib import HEADER, Out, tints
+from ports._lib import HEADER, Out
 
 META = {
     "id": "micro",
@@ -13,14 +13,15 @@ META = {
         "code": '"colorscheme": "{slug}"',
         "lang": "json",
     },
-    "notes": "Copy the `.micro` files to `~/.config/micro/colorschemes/`, or run `set colorscheme subway-seat` "
-    "from micro's command bar. True-color hex; micro maps it to 256 colors when the terminal can't show it.",
+    "notes": "Copy the `.micro` files to `~/.config/micro/colorschemes/` (on Windows, `%USERPROFILE%\\.config\\micro\\colorschemes`), "
+    "then pick one with `set colorscheme <name>` from micro's command bar or in `settings.json`. "
+    "True-color hex; micro maps it to 256 colors when the terminal can't show it.",
+    "detect": ["micro"],
 }
 
 
 def links(f):
     u = ui(f)
-    t = tints(f)
 
     def c(fg=None, bg=None, *styles):
         spec = (fg or "") + (f",{bg}" if bg else "")
@@ -36,7 +37,7 @@ def links(f):
         "comment.bright": c(f.overlay2, None, "italic"),
         "identifier": S("function"),
         "identifier.class": S("function"),  # micro's syntax files also use it for functions
-        "identifier.macro": c(f.clay),
+        "identifier.macro": S("decorator"),
         "identifier.var": S("variable"),
         "constant": S("constant"),
         "constant.bool": S("boolean"),
@@ -53,6 +54,7 @@ def links(f):
         "preproc.shebang": S("comment"),
         "type": S("type"),
         "type.keyword": S("storage"),
+        "type.extended": S("type"),
         "special": c(f.clay),
         "underlined": c(f.denim, None, "underline"),
         "error": c(f.red_hi),
@@ -80,9 +82,9 @@ def links(f):
         "message": c(f.subtext1),
         "error-message": c(u["error"], None, "bold"),
         "match-brace": c(u["bracket_fg"], u["bracket_bg"], "bold"),
-        "hlsearch": c(f.text, u["search"]),
-        "tab-error": c(None, t["del"]),
-        "trailingws": c(None, t["del"]),
+        "hlsearch": c(f.text, u["search"]),  # micro has no separate current-match group
+        "tab-error": c(None, u["error_bg"]),
+        "trailingws": c(None, u["error_bg"]),
         "ignore": c(f.overlay0),
     }
 

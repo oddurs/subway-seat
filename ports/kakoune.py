@@ -9,15 +9,23 @@ META = {
     "name": "Kakoune",
     "category": "Editors",
     "homepage": "https://kakoune.org",
-    "enable": {"where": "~/.config/kak/kakrc", "code": "colorscheme {slug}", "lang": "conf"},
+    "enable": {
+        "where": "~/.config/kak/kakrc",
+        "code": "colorscheme {slug}",
+        "lang": "conf",
+        "file": "~/.config/kak/kakrc",  # the last colorscheme line wins, so appending is enough
+    },
     "notes": "Copy the `.kak` files to `~/.config/kak/colors/`. Covers the builtin, code and markup faces, "
     "plus kakoune-lsp's diagnostics, inlay hints and references.",
+    "detect": ["kak"],
 }
 
 
 def faces(f):
     u = ui(f)
-    k = lambda c: "rgb:" + h(f.colors.get(c, c))  # role or hex → rgb:RRGGBB
+
+    def k(c):  # role or hex → rgb:RRGGBB
+        return "rgb:" + h(f.colors.get(c, c))
 
     def face(fg="default", bg=None, attrs="", ul=None):
         v = k(fg) if fg != "default" else "default"
@@ -58,7 +66,7 @@ def faces(f):
         # builtin faces
         "Default": face("text", "base"),
         "PrimarySelection": face("default", u["selection"]),
-        "SecondarySelection": face("default", f.mix(u["selection"], "base", 0.6)),
+        "SecondarySelection": face("default", u["selection_inactive"]),
         "PrimaryCursor": face("base", u["cursor"], "fg"),
         "SecondaryCursor": face("base", f.mix(u["cursor"], "base", 0.55), "fg"),
         "PrimaryCursorEol": face("base", select_cur, "fg"),
@@ -66,11 +74,11 @@ def faces(f):
         "LineNumbers": face("overlay0", "base"),
         "LineNumberCursor": face(u["line_nr_cur"], "base", "b"),
         "LineNumbersWrapped": face("surface2", "base"),
-        "MenuForeground": face("text_hi", "surface1", "b"),
-        "MenuBackground": face("subtext1", "mantle"),
+        "MenuForeground": face("text_hi", u["row"], "b"),
+        "MenuBackground": face("subtext1", u["paper"]),
         "MenuInfo": face("overlay1"),
-        "Information": face("text", "mantle"),
-        "InlineInformation": face("text", "mantle"),
+        "Information": face("text", u["paper"]),
+        "InlineInformation": face("text", u["paper"]),
         "Error": face("red_hi", attrs="b"),
         "DiagnosticError": face(ul="red_hi", attrs="c"),
         "DiagnosticWarning": face(ul="yellow", attrs="c"),
@@ -86,20 +94,21 @@ def faces(f):
         "Prompt": face("orange", "mantle", "b"),
         "MatchingChar": face(u["bracket_fg"], u["bracket_bg"], "b"),
         "Whitespace": face("surface1", attrs="f"),
+        "WhitespaceIndent": "Whitespace",
         "WrapMarker": "Whitespace",
         "BufferPadding": face("surface1", "base"),
         # kakoune-lsp
-        "InlayDiagnosticError": face("red_hi", f.mix("red", "base", 0.12)),
-        "InlayDiagnosticWarning": face("yellow", f.mix("yellow", "base", 0.1)),
-        "InlayDiagnosticInfo": face("denim", f.mix("denim", "base", 0.1)),
-        "InlayDiagnosticHint": face("sage", f.mix("sage", "base", 0.1)),
+        "InlayDiagnosticError": face("red_hi", u["error_bg"]),
+        "InlayDiagnosticWarning": face("yellow", u["warning_bg"]),
+        "InlayDiagnosticInfo": face("denim", u["info_bg"]),
+        "InlayDiagnosticHint": face("sage", u["hint_bg"]),
         "LineFlagError": face("red_hi"),
         "LineFlagWarning": face("yellow"),
         "LineFlagInfo": face("denim"),
         "LineFlagHint": face("sage"),
-        "Reference": face("default", "surface1"),
-        "ReferenceBind": face("default", "surface1", "u"),
-        "InlayHint": face("overlay1", f.mix("surface0", "base", 0.6), "i"),
+        "Reference": face("default", u["bracket_bg"]),
+        "ReferenceBind": face("default", u["bracket_bg"], "u"),
+        "InlayHint": face("overlay1", u["inlay_bg"], "i"),
         "InlayCodeLens": face("overlay1", attrs="i"),
         "SnippetsNextPlaceholders": face("text", "surface1", "F"),
         "SnippetsOtherPlaceholders": face("subtext1", "surface0", "F"),
