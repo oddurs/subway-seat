@@ -9,7 +9,7 @@ plan in seafoam, as in Claude Code; shell mode lights the prompt burnt orange.
 import json
 
 import palette as p
-from ports._lib import Out, tints
+from ports._lib import Out, tints, ui_colors
 
 META = {
     "id": "opencode",
@@ -21,6 +21,12 @@ META = {
         "code": '{{\n  "$schema": "https://opencode.ai/tui.json",\n  "theme": "{slug}"\n}}',
         "lang": "json",
     },
+    "auto": {
+        "where": "~/.config/opencode/tui.json: Walnut and Tunnel carry Enamel as their light half",
+        "code": '{\n  "$schema": "https://opencode.ai/tui.json",\n  "theme": "subway-seat"\n}',
+        "lang": "json",
+    },
+    "detect": ["opencode", "~/.config/opencode"],
     "notes": "Walnut and Tunnel each pair with Enamel, and opencode switches halves with your terminal's "
     "background. `subway-seat-enamel` stays light whatever the terminal says.",
 }
@@ -50,6 +56,7 @@ def spec(f):
         "background": "base",
         "backgroundPanel": "surface0" if dark else "mantle",   # user messages, tool blocks, dialogs
         "backgroundElement": "surface1" if dark else "crust",  # the prompt box, hovers
+        "backgroundMenu": ui_colors(f)["paper"],                # autocomplete and dialog menus, raised
         "border": "surface2",
         "borderActive": "overlay0",
         "borderSubtle": "surface1",
@@ -120,7 +127,7 @@ def build(flavors):
                    dest=f"~/.config/opencode/themes/{name}.json", lang="json")
 
     return [
-        out(walnut.slug, theme(walnut, enamel)),
-        out(tunnel.slug, theme(tunnel, enamel)),
+        out(walnut.slug, theme(walnut, enamel), flavor=walnut.id),
+        out(tunnel.slug, theme(tunnel, enamel), flavor=tunnel.id),
         out(enamel.slug, theme(enamel, enamel), flavor=enamel.id),
     ]

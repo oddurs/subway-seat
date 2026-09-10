@@ -14,12 +14,16 @@ ones they share a slot with. That forces two trade-offs:
 
 The rest keeps the usual roles: keywords, literals and tag names burnt orange,
 built-ins and types sage, JSON keys and attributes almond (strings took gold),
-variables terracotta, comments cardboard.
+variables terracotta, comments cardboard. Borders always come from `DarkGray`
+(a nested `border.default` is ignored), so that's the key that sets them.
+
+`extension/` is the same three themes as a Gemini CLI extension, so
+`gemini extensions install` adds them to /theme without editing settings.
 """
 
 import json
 
-from ports._lib import Out, tints
+from ports._lib import VERSION, Out, tints
 
 META = {
     "id": "gemini-cli",
@@ -31,7 +35,10 @@ META = {
         "code": '{{\n  "ui": {{ "theme": "$HOME/.gemini/themes/{slug}.json" }}\n}}',
         "lang": "json",
     },
-    "notes": "A custom theme file per flavor, plus the same theme as a `ui.customThemes` settings block. "
+    "detect": ["gemini", "~/.gemini"],
+    "notes": "A custom theme file per flavor, the same theme as a `ui.customThemes` settings block, and an "
+    "extension with all three (`gemini extensions install <folder>`; they show up in /theme as "
+    "“Subway Seat (subway-seat)”). "
     "Gemini ties string color to its warning color, so strings are harvest gold here instead of avocado.",
 }
 
@@ -62,7 +69,6 @@ def theme(f):
         # nested keys: the UI's semantic colors (kept equal to the flat keys they override)
         "text": {"primary": f.text, "secondary": f.overlay2, "accent": f.clay, "response": f.text},
         "background": {"primary": f.base, "diff": {"added": t["add"], "removed": t["del"]}},
-        "border": {"default": border},
         "ui": {"comment": f.overlay1, "symbol": f.yellow, "active": f.orange, "focus": f.yellow,
                "gradient": gradient},
         "status": {"success": f.green, "warning": f.yellow, "error": f.red_hi},
@@ -77,5 +83,8 @@ def build(flavors):
                         dest=f"~/.gemini/themes/{f.slug}.json", lang="json"))
         settings = {"ui": {"customThemes": {f.name: th}, "theme": f.name}}
         outs.append(Out(f"settings/{f.slug}.json", json.dumps(settings, indent=2) + "\n", flavor=f.id,
-                        dest="merged into ~/.gemini/settings.json", lang="json"))
+                        how="merge into ~/.gemini/settings.json", lang="json"))
+    extension = {"name": "subway-seat", "version": VERSION, "themes": [theme(f) for f in flavors]}
+    outs.append(Out("extension/gemini-extension.json", json.dumps(extension, indent=2) + "\n", lang="json",
+                    how="gemini extensions install ./extension (from this folder), then pick a flavor with /theme"))
     return outs
