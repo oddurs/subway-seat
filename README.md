@@ -85,16 +85,28 @@ Every port is generated from [`palette.py`](palette.py) in all three flavors. Ea
 - **Neovim**: a plugin with `setup({ background = { dark = …, light = … }, transparent, italics, overrides })`, `colorscheme subway-seat` following `background` (flip it and Walnut becomes Enamel and back), lualine themes, and about 2,000 highlight groups covering Tree-sitter, LSP and about 70 plugins.
 - **Zed**: a full theme family covering every style key, including the agent panel.
 
-## Install everything at once
+## Install
 
-On macOS or Linux with fish:
+One command finds the apps on your Mac or Linux machine, links in their themes, and turns Subway Seat on:
 
-```fish
-git clone https://github.com/oddurs/subway-seat ~/Code/subway-seat
-~/Code/subway-seat/install.fish            # Walnut; or: install.fish enamel / tunnel
+```sh
+curl -fsSL https://oddurs.github.io/subway-seat/install.sh | sh
 ```
 
-It links theme files for the apps you have installed and prints the one line each app needs to switch over. It doesn't edit your configs.
+It shows the plan and asks once before changing anything. Theme files go where each app looks for them. The line that switches an app over is added to its config between `# >>> subway-seat >>>` markers, and only where appending is a safe, complete way to do it. Anything that needs a person (a settings screen, an import dialog) is listed at the end as a short step. Claude Code gets the plugin, and VS Code and its forks get the extension.
+
+```sh
+curl -fsSL https://oddurs.github.io/subway-seat/install.sh | sh -s -- --flavor tunnel  # or enamel, or auto
+curl -fsSL https://oddurs.github.io/subway-seat/install.sh | sh -s -- --dry-run         # the plan only
+
+sh ~/.local/share/subway-seat/install.sh switch enamel   # re-point every app at once
+sh ~/.local/share/subway-seat/install.sh status          # what's installed, and what drifted
+sh ~/.local/share/subway-seat/install.sh uninstall       # remove everything it did, and nothing else
+```
+
+`auto` follows the system's light or dark setting in the apps that can, and uses Walnut elsewhere.
+
+From a clone, run `./install.sh` (or `./install.fish`) instead. The files are linked rather than copied, so a `git pull` updates them in place. It needs only `sh`, `awk` and `curl`. [docs/INSTALL.md](docs/INSTALL.md) covers `--only`, `--skip`, `--copy`, `--no-enable`, the settings file and how to uninstall by hand.
 
 ## How it's built
 
