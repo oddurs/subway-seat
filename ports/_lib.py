@@ -180,7 +180,7 @@ def tints(f):
         "del": f.mix("red", g, 0.26 if f.dark else 0.20),
         "del_emph": f.mix("red", g, 0.40 if f.dark else 0.32),
         "del_dim": f.mix("red", g, 0.17 if f.dark else 0.12),
-        "chg": f.mix("yellow", g, 0.16 if f.dark else 0.20),
+        "chg": f.mix("yellow", g, 0.16 if f.dark else 0.26),
         # kept clearly apart from the search tint, so a match inside a diff reads as a match
         "chg_emph": f.mix("yellow", g, 0.26 if f.dark else 0.32),
         "info": f.mix("denim", "base", 0.14),
