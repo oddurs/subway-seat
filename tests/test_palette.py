@@ -134,7 +134,6 @@ def test_blend_output_is_always_rrggbb():
         assert HEX.match(p.blend("#F97160", "#20160E", t)), t
 
 
-@pytest.mark.xfail(strict=False, reason="palette.blend doesn't reject alpha outside 0..1 yet (audit A16)")
 def test_blend_rejects_out_of_range_alpha():
     with pytest.raises(ValueError):
         p.blend("#FFFFFF", "#000000", 1.2)
@@ -148,7 +147,6 @@ def test_alpha_suffix():
     assert p.alpha("#112233", 0.5) == "#11223380"
 
 
-@pytest.mark.xfail(strict=False, reason="palette.alpha accepts #RRGGBBAA and returns 11 characters (audit A16)")
 def test_alpha_rejects_colors_that_already_have_alpha():
     with pytest.raises((ValueError, AssertionError)):
         p.alpha("#11223344", 0.5)
