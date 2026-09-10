@@ -5,18 +5,25 @@ Next.js 16 (App Router, Turbopack) styled with StyleX. Serves on port **8502**.
 ```fish
 bun install
 bun run dev      # http://localhost:8502 — regenerates the theme first
-bun run build    # static build; `bun run start` serves it on the same port
+bun run build    # production build; `bun run start` serves it on the same port
 bun run check    # eslint (incl. @stylexjs rules) + tsc + biome format check
+```
+
+GitHub Pages gets a static export, built with the base path it's served under:
+
+```fish
+STATIC_EXPORT=1 NEXT_PUBLIC_BASE_PATH=/subway-seat bun run build   # writes out/; same line in bash and zsh
 ```
 
 ## How it fits together
 
-- `../palette.py` is the only place colours live. `../build.py` writes every app theme into `../dist/`
-  **and** this site's `src/theme/tokens.stylex.ts` + `src/theme/palette.ts` (don't edit those two).
-  `predev` / `prebuild` run it for you.
+- `../palette.py` is the only place colors live. `../build.py` writes every app theme into `../dist/`
+  **and** this site's `src/theme/tokens.stylex.ts`, `src/theme/flavors.ts` and `src/theme/palette.json`
+  (don't edit those three; `type.stylex.ts` is hand-written). `predev` / `prebuild` run it for you, with
+  `python3`, which must be 3.12 or newer.
 - The editor preview and every config block are highlighted by Shiki using the generated VS Code
   theme from `../dist/`, so the site shows exactly what gets installed.
-- `/files/[id]` serves the dist files as downloads, prerendered at build time.
+- `/files/[...path]` serves the dist files as downloads, prerendered at build time.
 
 ## StyleX setup
 

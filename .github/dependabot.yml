@@ -1,13 +1,24 @@
 version: 2
 updates:
-  - package-ecosystem: npm
+  # The site uses bun; the bun ecosystem updates bun.lock along with package.json.
+  - package-ecosystem: bun
     directory: /site
     schedule:
       interval: monthly
     groups:
       site:
         patterns: ["*"]
+        update-types: [minor, patch]
+    ignore:
+      # @types/node follows the Node version the site runs on, not the latest Node.
+      - dependency-name: "@types/node"
+        update-types: ["version-update:semver-major"]
+
+  # Workflows pin every action to a commit SHA with a version comment; Dependabot keeps both current.
   - package-ecosystem: github-actions
     directory: /
     schedule:
       interval: monthly
+    groups:
+      actions:
+        patterns: ["*"]
