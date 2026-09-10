@@ -28,7 +28,7 @@ def tmtheme(f):
             "background": f.base, "foreground": f.text, "caret": f.yellow if f.dark else f.orange,
             "lineHighlight": f.surface0 if f.dark else f.mantle, "selection": f.surface2 if f.dark else f.surface1,
             "gutter": f.base, "gutterForeground": f.overlay0, "invisibles": f.surface1,
-            "findHighlight": f.yellow, "findHighlightForeground": f.crust,
+            "findHighlight": t["search"], "findHighlightForeground": f.text_hi,
             "bracketsForeground": f.yellow_hi, "guide": f.surface0, "activeGuide": f.surface2,
         })
         + "</dict></dict>"
