@@ -1,7 +1,7 @@
 """Lite XL: a colors/ module per flavor, in the lite-xl-colors format."""
 
 from ports._editors import ui
-from ports._lib import HEADER, Out, rgb
+from ports._lib import HEADER, Out, rgb, ui_colors
 
 META = {
     "id": "lite-xl",
@@ -13,19 +13,27 @@ META = {
         "code": 'core.reload_module("colors.{slug}")',
         "lang": "lua",
     },
-    "notes": "Copy the files to `~/.config/lite-xl/colors/`, then pick one in the settings plugin or load it "
-    "from `init.lua`. Also colors the indentguide and bracketmatch plugins.",
+    "notes": "Copy the files to `~/.config/lite-xl/colors/` (on Windows, `%USERPROFILE%\\.config\\lite-xl\\colors`), "
+    "then pick one in the settings plugin or load it from `init.lua`. Also colors the indentguide and "
+    "bracketmatch plugins.",
+    "detect": ["lite-xl", "/Applications/Lite XL.app"],
 }
 
 
 def colors(f):
     u = ui(f)
-    rgba = lambda c, a: "rgba({}, {}, {}, {})".format(*rgb(c), a)
-    syn = lambda role: f.syntax(role)[0]
-    ui_colors = {
+
+    def rgba(c, a):
+        return "rgba({}, {}, {}, {})".format(*rgb(c), a)
+
+    def syn(role):
+        return f.syntax(role)[0]
+
+    shadow = ui_colors(f)["shadow"]
+    style = {
         "background": f.base,  # document
         "background2": f.mantle,  # tree view, status bar
-        "background3": f.surface0 if f.dark else f.crust,  # command view, popups
+        "background3": u["paper"],  # command view, autocomplete and other popups
         "text": f.subtext1,
         "caret": u["cursor"],
         "accent": u["line_nr_cur"],
@@ -40,7 +48,7 @@ def colors(f):
         "scrollbar_track": f.mantle,
         "nagbar": f.red,
         "nagbar_text": u["ink"],
-        "nagbar_dim": rgba("#000000", 0.45),
+        "nagbar_dim": rgba(shadow, 0.45),
         "drag_overlay": rgba(f.text, 0.1),
         "drag_overlay_tab": u["cursor"],
         "good": f.green,
@@ -67,12 +75,12 @@ def colors(f):
         "operator": syn("operator"),
         "function": syn("function"),
     }
-    return ui_colors, syntax
+    return style, syntax
 
 
 def render(f):
-    ui_colors, syntax = colors(f)
-    width = max(map(len, ui_colors))
+    style, syntax = colors(f)
+    width = max(map(len, style))
     lines = [
         f"-- {HEADER}",
         f"-- {f.name} — {f.blurb}",
@@ -81,9 +89,9 @@ def render(f):
         'local common = require "core.common"',
         "",
     ]
-    lines += [f'style.{k:<{width}} = {{ common.color "{v}" }}' for k, v in ui_colors.items()]
+    lines += [f'style.{k:<{width}} = {{ common.color "{v}" }}' for k, v in style.items()]
     lines.append("")
-    keys = {k: 'style.syntax["%s"]' % k for k in syntax}
+    keys = {k: f'style.syntax["{k}"]' for k in syntax}
     lines += [f'{keys[k]:<24} = {{ common.color "{v}" }}' for k, v in syntax.items()]
     lines += [
         "",

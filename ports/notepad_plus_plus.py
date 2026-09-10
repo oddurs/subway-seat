@@ -1,4 +1,4 @@
-"""Notepad++: an XML theme per flavor (every built-in lexer Catppuccin covers, plus a few)."""
+"""Notepad++: an XML theme per flavor, covering every lexer in Notepad++'s stylers.model.xml."""
 
 import re
 from xml.sax.saxutils import quoteattr
@@ -12,12 +12,12 @@ META = {
     "category": "Editors",
     "homepage": "https://notepad-plus-plus.org",
     "enable": {
-        "where": "Settings → Style Configurator, after copying the file to %AppData%\\Notepad++\\themes",
+        "where": "Settings › Style Configurator, after copying the file to %AppData%\\Notepad++\\themes "
+        "(a portable install uses the themes folder next to notepad++.exe) and restarting Notepad++",
         "code": "Select theme: {name}",
         "lang": "text",
     },
-    "notes": "Syntax colors for 56 lexers plus the editor chrome: margins, folding, tabs, smart and find "
-    "highlights. Pair the dark flavors with Settings → Preferences → Dark Mode so the menus match.",
+    "notes": "",  # set below, once the lexers are counted
 }
 
 # Lexer name|description, then "styleID NAME[=keywordClass]" entries (from Notepad++'s stylers.model.xml).
@@ -265,6 +265,210 @@ nsis|NSIS
     FUNCTION=instre1; 6 VARIABLE=instre2; 7 LABEL=type1; 8 USER DEFINED=type2; 9 SECTION; 10
     SUBSECTION; 11 IF DEFINE; 12 MACRO; 13 STRING VAR; 14 NUMBER; 15 SECTION GROUP; 16 PAGE EX; 17
     FUNCTION DEFINITIONS; 18 COMMENT
+actionscript|ActionScript
+    11 DEFAULT; 20 FUNCTION=type2; 9 PREPROCESSOR; 5 INSTRUCTION WORD=instre1; 16 TYPE WORD=type1; 4
+    NUMBER; 6 STRING; 7 CHARACTER; 10 OPERATOR; 13 VERBATIM; 14 REGEX; 1 COMMENT; 2 COMMENT LINE; 3
+    COMMENT DOC; 15 COMMENT LINE DOC; 17 COMMENT DOC KEYWORD; 18 COMMENT DOC KEYWORD ERROR; 23
+    PREPROCESSOR COMMENT; 24 PREPROCESSOR COMMENT DOC; *user
+ada|ADA
+    0 DEFAULT; 1 INSTRUCTION WORD=instre1; 2 IDENTIFIER; 3 NUMBER; 4 DELIMITER; 5 CHARACTER; 7
+    STRING; 9 LABEL; 10 COMMENT LINE; 11 ILLEGAL
+asn1|ASN.1
+    0 DEFAULT; 1 COMMENT; 2 IDENTIFIERS; 3 DOUBLE QUOTED STRING; 4 NUMERIC OID DEFINITION; 5 NON OID
+    NUMBERS; 6 KEYWORDS=instre1; 7 ATTRIBUTES=instre2; 8 DESCRIPTORS=type1; 9 TYPES=type2; 10
+    OPERATORS
+asp|ASP
+    81 DEFAULT; 82 COMMENT LINE; 83 NUMBER; 84 WORD=instre1; 85 STRING; 86 IDENTIFIER; 15 ASP
+    SYMBOL; 16 SCRIPT TYPE; 216 USER KEYWORDS 1=substyle1; 217 USER KEYWORDS 2=substyle2; 218 USER
+    KEYWORDS 3=substyle3; 219 USER KEYWORDS 4=substyle4; 220 USER KEYWORDS 5=substyle5; 221 USER
+    KEYWORDS 6=substyle6; 222 USER KEYWORDS 7=substyle7; 223 USER KEYWORDS 8=substyle8
+avs|AviSynth
+    32 DEFAULT; 0 WHITE SPACE; 1 COMMENT: /* */; 2 COMMENT: [* *]; 3 LINE COMMENT: #; 4 NUMBER; 5
+    OPERATORS; 6 IDENTIFIERS; 7 DOUBLE QUOTED STRING; 8 STRING WITH THREE DOUBLE QUOTES; 9
+    KEYWORD=instre1; 10 FILTER=instre2; 11 PLUGIN=type1; 12 FUNCTION=type2; 13 CLIP
+    PROPERTIES=type3; 14 USER DEFINED=type4
+baanc|BaanC
+    0 DEFAULT; 1 COMMENT; 2 COMMENT DOC; 3 NUMBER; 4 KEYWORDS=instre1; 5 STRING; 6 PREPROCESSOR; 7
+    OPERATOR; 8 IDENTIFIER; 9 STRING EOL NC; 10 FUNCTIONS=instre2; 11 FUNCTIONS ABRIDGED=type1; 12
+    SUB SECTIONS=type2; 13 MAIN SECTIONS=type3; 14 PREDEFINED VARIABLE=type4; 15 PREDEFINED
+    ATTRIBUTES=type5; 16 ENUM DOMAINS=type6; 17 USER DEFINED=type7; 18 TABLE DEFINITIONS; 19 TABLE
+    SQL; 20 DLL FUNCTIONS; 21 DOMAIN DEFINITIONS; 22 FUNCTION DEFINITIONS; 23 OBJECT DEFINITIONS; 24
+    PREPROC DEFINITIONS
+blitzbasic|BlitzBasic
+    0 DEFAULT; 1 COMMENT; 2 NUMBER; 3 KEYWORD1=instre1; 4 STRING; 6 OPERATOR; 7 IDENTIFIER; 10
+    KEYWORD2=instre2; 11 KEYWORD3=type1; 12 KEYWORD4=type2; 15 LABEL; 16 ERROR; 17 HEXNUMBER; 18
+    BINNUMBER
+caml|Caml
+    0 DEFAULT; 1 IDENTIFIER; 2 TAGNAME; 3 INSTRUCTION WORD=instre1; 4 BUILIN FUNC & TYPE=instre2; 5
+    TYPE=type1; 6 LINENUM; 7 OPERATOR; 8 NUMBER; 9 CHARACTER; 11 STRING; 12 COMMENT; 13 COMMENT
+    LINE; 14 COMMENT DOC; 15 COMMENT LINE DOC
+cobol|COBOL
+    9 PREPROCESSOR; 11 DEFAULT; 5 DECLARATION=instre1; 16 INSTRUCTION WORD=instre2; 8 KEYWORD=type1;
+    4 NUMBER; 6 STRING; 7 CHARACTER; 10 OPERATOR; 1 COMMENT; 2 COMMENT LINE; 3 COMMENT DOC; 15
+    COMMENT LINE DOC; 17 COMMENT DOC KEYWORD; 18 COMMENT DOC KEYWORD ERROR
+csound|Csound
+    0 DEFAULT; 1 COMMENT; 2 NUMBER; 3 OPERATOR; 4 INSTR; 5 IDENTIFIER; 6 OPCODE=instre1; 7 HEADER
+    STATEMENT=instre2; 8 USER KEYWORDS=type1; 9 COMMENT BLOCK; 10 PARAMETER; 11 A-RATE VARIABLE; 12
+    K-RATE VARIABLE; 13 I-RATE VARIABLE; 14 GLOBAL VARIABLE; 15 END OF LINE WHERE STRING IS NOT
+    CLOSED
+d|D
+    0 DEFAULT; 14 IDENTIFIER; 6 INSTRUCTION WORD=instre1; 7 KEYWORD1=instre2; 8 KEYWORD2=type1; 9
+    KEYWORD3=type2; 20 KEYWORD4=type3; 21 KEYWORD5=type4; 22 KEYWORD6=type5; 5 NUMBER; 10 STRING; 12
+    CHARACTER; 13 OPERATOR; 1 COMMENT; 2 COMMENT LINE; 3 COMMENT DOC; 4 COMMENT NESTED; 15 COMMENT
+    LINE DOC; 16 COMMENT DOC KEYWORD; 17 COMMENT DOC KEYWORD ERROR; 18 STRING B; 19 STRING R
+errorlist|ErrorList
+    0 DEFAULT STYLE; 1 PYTHON Error; 2 GCC Error; 3 MS Error; 4 CMD Error; 5 BORLAND Error; 6 PERL
+    Error; 7 NET Error; 8 LUA Error; 9 CTAG Error; 10 DIFF Changed; 11 DIFF Addition; 12 DIFF
+    Deletion; 13 DIFF Message; 14 PHP Error; 15 ELF Error; 16 IFC Error; 17 IFORT Error; 18 ABSF
+    Error; 19 TIDY Error; 20 JAVA Stack Error; 21 VALUE Error; 22 GCC Included-From Error; 23 Escape
+    Sequence; 24 Unknown Escape Sequence; 25 GCC Excerpt Error; 26 BASH Error; 40 ANSI COLOR BLACK;
+    41 ANSI COLOR RED; 42 ANSI COLOR GREEN; 43 ANSI COLOR BROWN; 44 ANSI COLOR BLUE; 45 ANSI COLOR
+    MAGENTA; 46 ANSI COLOR CYAN; 47 ANSI COLOR GRAY; 48 ANSI COLOR DARK GRAY; 49 ANSI COLOR BRIGHT
+    RED; 50 ANSI COLOR BRIGHT GREEN; 51 ANSI COLOR YELLOW; 52 ANSI COLOR BRIGHT BLUE; 53 ANSI COLOR
+    BRIGHT MAGENTA; 54 ANSI COLOR BRIGHT CYAN; 55 ANSI COLOR WHITE
+escseq|Escape Sequence (ANSI)
+    0 DEFAULT on DEFAULT; 1 BLACK on DEFAULT; 2 RED on DEFAULT; 3 GREEN on DEFAULT; 4 YELLOW on
+    DEFAULT; 5 BLUE on DEFAULT; 6 MAGENTA on DEFAULT; 7 CYAN on DEFAULT; 8 WHITE on DEFAULT; 9
+    DEFAULT on BLACK; 10 BLACK on BLACK; 11 RED on BLACK; 12 GREEN on BLACK; 13 YELLOW on BLACK; 14
+    BLUE on BLACK; 15 MAGENTA on BLACK; 16 CYAN on BLACK; 17 WHITE on BLACK; 18 DEFAULT on RED; 19
+    BLACK on RED; 20 RED on RED; 21 GREEN on RED; 22 YELLOW on RED; 23 BLUE on RED; 24 MAGENTA on
+    RED; 25 CYAN on RED; 26 WHITE on RED; 27 DEFAULT on GREEN; 28 BLACK on GREEN; 29 RED on GREEN;
+    30 GREEN on GREEN; 40 YELLOW on GREEN; 41 BLUE on GREEN; 42 MAGENTA on GREEN; 43 CYAN on GREEN;
+    44 WHITE on GREEN; 45 DEFAULT on YELLOW; 46 BLACK on YELLOW; 47 RED on YELLOW; 48 GREEN on
+    YELLOW; 49 YELLOW on YELLOW; 50 BLUE on YELLOW; 51 MAGENTA on YELLOW; 52 CYAN on YELLOW; 53
+    WHITE on YELLOW; 54 DEFAULT on BLUE; 55 BLACK on BLUE; 56 RED on BLUE; 57 GREEN on BLUE; 58
+    YELLOW on BLUE; 59 BLUE on BLUE; 60 MAGENTA on BLUE; 61 CYAN on BLUE; 62 WHITE on BLUE; 63
+    DEFAULT on MAGENTA; 64 BLACK on MAGENTA; 65 RED on MAGENTA; 66 GREEN on MAGENTA; 67 YELLOW on
+    MAGENTA; 68 BLUE on MAGENTA; 69 MAGENTA on MAGENTA; 70 CYAN on MAGENTA; 71 WHITE on MAGENTA; 72
+    DEFAULT on CYAN; 73 BLACK on CYAN; 74 RED on CYAN; 75 GREEN on CYAN; 76 YELLOW on CYAN; 77 BLUE
+    on CYAN; 78 MAGENTA on CYAN; 79 CYAN on CYAN; 80 WHITE on CYAN; 81 DEFAULT on WHITE; 82 BLACK on
+    WHITE; 83 RED on WHITE; 84 GREEN on WHITE; 85 YELLOW on WHITE; 86 BLUE on WHITE; 87 MAGENTA on
+    WHITE; 88 CYAN on WHITE; 89 WHITE on WHITE; 090 BOLD DEFAULT on DEFAULT; 091 BOLD BLACK on
+    DEFAULT; 092 BOLD RED on DEFAULT; 093 BOLD GREEN on DEFAULT; 094 BOLD YELLOW on DEFAULT; 095
+    BOLD BLUE on DEFAULT; 096 BOLD MAGENTA on DEFAULT; 097 BOLD CYAN on DEFAULT; 098 BOLD WHITE on
+    DEFAULT; 099 BOLD DEFAULT on BLACK; 100 BOLD BLACK on BLACK; 101 BOLD RED on BLACK; 102 BOLD
+    GREEN on BLACK; 103 BOLD YELLOW on BLACK; 104 BOLD BLUE on BLACK; 105 BOLD MAGENTA on BLACK; 106
+    BOLD CYAN on BLACK; 107 BOLD WHITE on BLACK; 108 BOLD DEFAULT on RED; 109 BOLD BLACK on RED; 110
+    BOLD RED on RED; 111 BOLD GREEN on RED; 112 BOLD YELLOW on RED; 113 BOLD BLUE on RED; 114 BOLD
+    MAGENTA on RED; 115 BOLD CYAN on RED; 116 BOLD WHITE on RED; 117 BOLD DEFAULT on GREEN; 118 BOLD
+    BLACK on GREEN; 119 BOLD RED on GREEN; 120 BOLD GREEN on GREEN; 121 BOLD YELLOW on GREEN; 122
+    BOLD BLUE on GREEN; 123 BOLD MAGENTA on GREEN; 124 BOLD CYAN on GREEN; 125 BOLD WHITE on GREEN;
+    126 BOLD DEFAULT on YELLOW; 127 BOLD BLACK on YELLOW; 128 BOLD RED on YELLOW; 129 BOLD GREEN on
+    YELLOW; 130 BOLD YELLOW on YELLOW; 131 BOLD BLUE on YELLOW; 132 BOLD MAGENTA on YELLOW; 133 BOLD
+    CYAN on YELLOW; 134 BOLD WHITE on YELLOW; 135 BOLD DEFAULT on BLUE; 136 BOLD BLACK on BLUE; 137
+    BOLD RED on BLUE; 138 BOLD GREEN on BLUE; 139 BOLD YELLOW on BLUE; 140 BOLD BLUE on BLUE; 141
+    BOLD MAGENTA on BLUE; 142 BOLD CYAN on BLUE; 143 BOLD WHITE on BLUE; 144 BOLD DEFAULT on
+    MAGENTA; 145 BOLD BLACK on MAGENTA; 146 BOLD RED on MAGENTA; 147 BOLD GREEN on MAGENTA; 148 BOLD
+    YELLOW on MAGENTA; 149 BOLD BLUE on MAGENTA; 150 BOLD MAGENTA on MAGENTA; 151 BOLD CYAN on
+    MAGENTA; 152 BOLD WHITE on MAGENTA; 153 BOLD DEFAULT on CYAN; 154 BOLD BLACK on CYAN; 155 BOLD
+    RED on CYAN; 156 BOLD GREEN on CYAN; 157 BOLD YELLOW on CYAN; 158 BOLD BLUE on CYAN; 159 BOLD
+    MAGENTA on CYAN; 160 BOLD CYAN on CYAN; 161 BOLD WHITE on CYAN; 162 BOLD DEFAULT on WHITE; 163
+    BOLD BLACK on WHITE; 164 BOLD RED on WHITE; 165 BOLD GREEN on WHITE; 166 BOLD YELLOW on WHITE;
+    167 BOLD BLUE on WHITE; 168 BOLD MAGENTA on WHITE; 169 BOLD CYAN on WHITE; 170 BOLD WHITE on
+    WHITE; 171 Sequence Identifier; 172 Sequence Unknown
+escript|eScript
+    0 DEFAULT; 1 COMMENT; 2 LINE COMMENT; 3 DOC COMMENT; 4 NUMBER; 5 KEYWORD=instre1; 6 DOUBLE
+    QUOTED STRING; 7 OPERATORS; 8 IDENTIFIERS; 9 BRACES; 10 KEYWORDS2=instre2; 11 KEYWORDS3=type1
+forth|Forth
+    0 WHITESPACE; 1 COMMENT; 2 ML COMMENT; 3 IDENTIFIER; 4 CONTROL=instre1; 5 KEYWORDS=instre2; 6
+    DEFWORDS=type1; 7 PREWORD1=type2; 8 PREWORD2=type3; 9 NUMBER; 10 DOUBLE QUOTED STRING=type4; 11
+    LOCALE
+fortran77|Fortran (fixed form)
+    0 DEFAULT; 1 COMMENT; 2 NUMBER; 3 STRING; 4 STRING2; 6 OPERATOR; 7 IDENTIFIER; 8 INSTRUCTION
+    WORD=instre1; 9 FUNCTION1=instre2; 10 FUNCTION2=type1; 11 PREPROCESSOR; 12 OPERATOR2; 13 LABEL;
+    14 CONTINUATION
+freebasic|FreeBASIC
+    0 DEFAULT; 1 COMMENT; 2 NUMBER; 3 KEYWORD1=instre1; 4 STRING; 5 PREPROCESSOR; 6 OPERATOR; 7
+    IDENTIFIER; 10 KEYWORD2=instre2; 11 KEYWORD3=type1; 12 KEYWORD4=type2; 15 LABEL; 16 ERROR; 17
+    HEXNUMBER; 18 BINNUMBER
+gdscript|GDScript
+    0 DEFAULT; 1 COMMENT LINE; 2 NUMBER; 3 STRING; 4 CHARACTER; 5 WORD=instre1; 6 TRIPLE; 7 TRIPLE
+    DOUBLE; 8 CLASS NAME; 9 FUNC NAME; 10 OPERATOR; 11 IDENTIFIER; 12 COMMENT BLOCK; 13 STRING EOL;
+    14 WORD2=instre2; 15 ANNOTATION; 16 NODEPATH; *user
+gui4cli|Gui4Cli
+    0 DEFAULT; 1 COMMENT LINE; 2 COMMENT; 3 GLOBAL=instre1; 4 EVENT=instre2; 5 ATTRIBUTE=type1; 6
+    CONTROL=type2; 7 COMMAND=type3; 8 STRING; 9 OPERATOR
+hollywood|Hollywood
+    0 DEFAULT; 1 COMMENT; 2 COMMENT BLOCK; 3 NUMBER; 4 KEYWORD=instre1; 5 CORE API=instre2; 6 PLUGIN
+    API=type1; 7 PLUGIN METHOD=type2; 8 STRING; 9 STRING BLOCK; 10 PREPROCESSOR; 11 OPERATOR; 12
+    IDENTIFIER; 13 CONSTANT; 14 HEXNUMBER
+mssql|MS T-SQL
+    9 STATEMENT=instre1; 10 DATA TYPE=instre2; 11 SYSTEM TABLE=type1; 12 GLOBAL=type2; 13
+    FUNCTION=type3; 14 SYSTEM STORED PROC=type4; 1 COMMENT; 2 COMMENT LINE; 3 NUMBER; 4 STRING; 5
+    OPERATOR; 6 IDENTIFIER; 7 VARIABLE; 8 COL NAME; 16 COL NAME IN []'s
+mmixal|MMIXAL
+    0 DIVSION OF LEADING WHITESPACE IN LINE; 1 COMMENT; 2 LABEL; 3 OPCODE; 4 DIVISION BETWEEN LABEL
+    AND OPCODE; 5 VALID OPCODE=instre1; 6 UNKNOWN OPCODE; 7 DIVISION BETWEEN OPCODE AND OPERANDS; 8
+    DIVISION OF OPERANDS; 9 NUMBER; 10 REFERENCE (TO A LABEL); 11 CHAR; 12 STRING; 13
+    REGISTER=instre2; 14 HEXADECIMAL NUMBER; 15 OPERATOR; 16 SYMBOL=type1; 17 COMMENT OTHERWISE
+nim|Nim
+    0 WHITE SPACE; 1 COMMENT; 2 NUMBER; 3 STRING; 4 SINGLE QUOTED STRING; 5 KEYWORD=instre1; 6
+    TRIPLE QUOTES; 7 TRIPLE DOUBLE QUOTES; 8 CLASS NAME DEFINITION; 9 FUNCTION OR METHOD NAME
+    DEFINITION; 10 OPERATORS; 11 IDENTIFIERS; 12 COMMENT-BLOCKS; 13 END OF LINE WHERE STRING IS NOT
+    CLOSED; 14 HIGHLIGHTED IDENTIFIERS; 15 DECORATORS
+oscript|OScript
+    0 DEFAULT TEXT STYLE; 1 SINGLE-LINE COMMENT; 2 MULTI-LINE COMMENT; 3 #IFDEF DOC AND #ENDIF; 4
+    PREPROCESSOR DIRECTIVE; 5 NUMBER; 6 STRING SINGLE QUOTES; 7 STRING DOUBLE QUOTES; 8 CONSTANT
+    LITERAL=instre2; 9 IDENTIFIER; 10 SERVER-GLOBAL VARIABLE (PREFIXED BY $); 11 LANGUAGE NATIVE
+    KEYWORD OR RESERVED WORD=instre1; 12 OPERATOR; EITHER SYMBOLIC OR LITERAL=type1; 13 LABEL TO
+    JUMP TO WITH THE GOTO STATEMENT; 14 TYPE=type2; 15 FUNCTION=type3; 16 STATIC BUILT-IN
+    OBJECT=type4; 17 OBJECT PROPERTY; 18 OBJECT METHOD
+postscript|Postscript
+    0 DEFAULT; 1 COMMENT; 2 DSC COMMENT; 3 DSC VALUE; 4 NUMBER; 5 Name; 6 INSTRUCTION=instre1; 7
+    LITERAL; 8 IMMEVAL; 9 PAREN ARRAY; 10 PAREN DICT; 11 PAREN PROC; 12 TEXT; 13 HEX STRING; 14
+    BASE85 STRING; 15 BAD STRING CHAR
+purebasic|PureBasic
+    0 DEFAULT; 1 COMMENT; 2 NUMBER; 3 KEYWORD1=instre1; 4 STRING; 6 OPERATOR; 7 IDENTIFIER; 10
+    KEYWORD2=instre2; 11 KEYWORD3=type1; 12 KEYWORD4=type2; 13 CONSTANT; 15 LABEL; 16 ERROR; 17
+    HEXNUMBER; 18 BINNUMBER
+raku|Raku
+    0 DEFAULT; 1 ERROR; 2 COMMENT LINE; 3 COMMENT EMBED; 4 POD; 5 CHARACTER; 6 HEREDOC Q; 7 HEREDOC
+    QQ; 8 STRING; 9 STRING Q; 10 STRING QQ; 11 STRING Q_LANG; 12 STRING VAR; 13 REGEX; 14 REGEX VAR;
+    15 ADVERB=type5; 16 NUMBER; 17 PREPROCESSOR; 18 OPERATOR; 19 INSTRUCTION WORD=instre1; 20
+    FUNCTION=instre2; 21 IDENTIFIER; 22 TYPEDEF=type1; 23 MU; 24 POSITIONAL; 25 ASSOCIATIVE; 26
+    CALLABLE; 27 GRAMMAR; 28 CLASS
+rc|Resource file
+    9 PREPROCESSOR; 11 DEFAULT; 5 INSTRUCTION WORD=instre1; 16 TYPE WORD; 4 NUMBER; 6 STRING; 7
+    CHARACTER; 10 OPERATOR; 13 VERBATIM; 14 REGEX; 1 COMMENT; 2 COMMENT LINE; 3 COMMENT DOC; 15
+    COMMENT LINE DOC; 17 COMMENT DOC KEYWORD; 18 COMMENT DOC KEYWORD ERROR; 23 PREPROCESSOR COMMENT;
+    24 PREPROCESSOR COMMENT DOC; *user
+rebol|REBOL
+    32 DEFAULT; 0 ANY OTHER TEXT; 1 LINE COMMENT; 2 BLOCK COMMENT; 3 PREFACE; 4 OPERATORS; 5
+    CHARACTERS; 6 STRING WITH QUOTES; 7 STRING WITH BRACES; 8 NUMBER; 9 PAIR ( 800X600 ); 10 TUPLE (
+    127.0.0.1 ); 11 BINARY ( 16#{1A803F59} ); 12 MONEY; 13 ISSUE { #123-CD-456 }; 14 TAG { <TITLE
+    HEIGHT=100> }; 15 FILE { %/C/WINNT/SOME.DLL }; 16 EMAIL { JOE@MAIL.DOM }; 17 URL {
+    FTP://THERE.DOM }; 18 DATE { 17-FEB-2004 1/3/99 }; 19 TIME { 12:30 11:22:59 01:59:59.123 }; 20
+    IDENTIFIERS; 21 KEYWORD (ALL)=instre1; 22 KEYWORD (TEST FUNCTIONS)=instre2; 23 KEYWORD
+    (DATATYPES)=type1; 24 KEYWORD 4=type2; 25 KEYWORD 5=type3; 26 KEYWORD 6=type4; 27 KEYWORD
+    7=type5
+sas|SAS
+    0 DEFAULT; 1 COMMENT; 2 COMMENT LINE; 3 COMMENT BLOCK; 4 NUMBER; 5 OPERATOR; 6 IDENTIFIER; 7
+    STRING; 11 MACRO; 12 MACRO KEYWORD=instre1; 14 MACRO FUNCTION=type1; 13 FUNCTION=instre2; 15
+    STATEMENT=type2
+scheme|Scheme
+    0 DEFAULT; 1 COMMENT LINE; 2 NUMBER; 3 FUNCTION WORD=instre1; 4 FUNCTION WORD2=instre2; 5
+    SYMBOL; 6 STRING; 9 IDENTIFIER; 10 OPERATOR=type1; 11 SPECIAL; 12 COMMENT
+smalltalk|Smalltalk
+    0 DEFAULT; 1 STRING; 2 NUMBER; 3 COMMENT; 4 SYMBOL; 5 BINARY; 6 BOOL; 7 SELF; 8 SUPER; 9 NIL; 10
+    GLOBAL; 11 RETURN; 12 SPECIAL; 13 KWS END; 14 ASSIGN; 15 CHARACTER; 16 SPECIAL SELECTOR
+spice|SPICE
+    0 DEFAULT; 1 IDENTIFIERS; 2 KEYWORD=instre1; 3 KEYWORD2=instre2; 4 KEYWORD3=type1; 5 NUMBER; 6
+    OPERATORS (DELIMITERS); 7 VALUE; 8 COMMENT
+tehex|Tektronix extended HEX
+    0 DEFAULT; 1 RECSTART; 2 RECTYPE; 3 RECTYPE_UNKNOWN; 4 BYTECOUNT; 5 BYTECOUNT_WRONG; 7
+    DATAADDRESS; 9 STARTADDRESS; 10 ADDRESSFIELD_UNKNOWN; 12 DATA_ODD; 13 DATA_EVEN; 16 CHECKSUM; 17
+    CHECKSUM_WRONG; 18 GARBAGE
+txt2tags|txt2tags
+    0 DEFAULT; 1 SPECIAL; 2 STRONG; 3 STRONG 2 (NOT USED); 4 EM1 (ITALIC); 5 EM2 (UNDERLINE); 6 H1;
+    7 H2; 8 H3; 9 H4; 10 H5; 11 H6; 12 PRECHAR (NOT USED); 13 ULIST; 14 OLIST; 15 BLOCKQUOTE; 16
+    STRIKEOUT; 17 HRULE; 18 LINK; 19 CODE; 20 CODE2; 21 CODEBLOCK; 22 COMMENT; 23 OPTION; 24
+    PREPROC; 25 POSTPROC
+visualprolog|Visual Prolog
+    0 DEFAULT; 1 MAJOR=instre1; 2 MINOR=instre2; 3 DIRECTIVE=type1; 4 COMMENT BLOCK; 5 COMMENT LINE;
+    6 COMMENT KEY=type2; 7 COMMENT KEY ERROR; 8 IDENTIFIER; 9 VARIABLE; 10 ANONYMOUS; 11 NUMBER; 12
+    OPERATOR; 13 CHARACTER; 14 CHARACTER TOO MANY; 15 CHARACTER ESCAPE ERROR; 16 STRING; 17 STRING
+    ESCAPE; 18 STRING ESCAPE ERROR; 19 STRING EOL OPEN; 20 STRING VERBATIM; 21 STRING VERBATIM
+    SPECIAL; 22 STRING VERBATIM EOL
 """
 
 USER_KEYWORDS = "; ".join(f"{128 + i} USER KEYWORDS {i + 1}=substyle{i + 1}" for i in range(8))
@@ -283,10 +487,12 @@ def lexers():
     parsed = []
     for name, desc, chunks in out:
         styles = []
-        for item in " ".join(chunks).replace("*user", USER_KEYWORDS).split("; "):
+        # "; " separates styles, except inside a name (OScript has one): split only before an id
+        for item in re.split(r"; (?=\d+ )", " ".join(chunks).replace("*user", USER_KEYWORDS)):
             sid, rest = item.split(" ", 1)
-            sname, _, kw = rest.partition("=")
-            styles.append((sid, sname, kw or None))
+            m = re.fullmatch(r"(.+)=((?:instre|type|substyle)\d)", rest)
+            sname, kw = m.groups() if m else (rest, None)
+            styles.append((sid, sname, kw))
         parsed.append((name, desc, styles))
     return parsed
 
@@ -397,6 +603,88 @@ OVERRIDES = {
     ("nsis", "SECTION GROUP"): "section", ("nsis", "IF DEFINE"): "preproc", ("nsis", "MACRO"): "preproc",
     ("nsis", "STRING VAR"): "string.escape", ("nsis", "PAGE EX"): "keyword", ("nsis", "FUNCTION DEFINITIONS"): "keyword",
     ("nsis", "STRING LEFT QUOTE"): "string", ("nsis", "STRING RIGHT QUOTE"): "string",
+    ("ada", "DELIMITER"): "punctuation", ("ada", "ILLEGAL"): "invalid",
+    ("asn1", "NUMERIC OID DEFINITION"): "number", ("asn1", "DESCRIPTORS"): "decorator", ("asn1", "TYPES"): "type",
+    ("asp", "ASP SYMBOL"): "preproc", ("asp", "SCRIPT TYPE"): "preproc",
+    ("avs", "FILTER"): "function.builtin", ("avs", "PLUGIN"): "function", ("avs", "CLIP PROPERTIES"): "property",
+    ("avs", "USER DEFINED"): "u1",
+    ("baanc", "FUNCTIONS"): "function.builtin", ("baanc", "FUNCTIONS ABRIDGED"): "function.builtin",
+    ("baanc", "SUB SECTIONS"): "keyword", ("baanc", "MAIN SECTIONS"): "section",
+    ("baanc", "PREDEFINED VARIABLE"): "variable.builtin", ("baanc", "PREDEFINED ATTRIBUTES"): "property",
+    ("baanc", "ENUM DOMAINS"): "constant", ("baanc", "USER DEFINED"): "u1", ("baanc", "TABLE DEFINITIONS"): "type",
+    ("baanc", "TABLE SQL"): "keyword", ("baanc", "DLL FUNCTIONS"): "function", ("baanc", "DOMAIN DEFINITIONS"): "type",
+    ("baanc", "FUNCTION DEFINITIONS"): "function", ("baanc", "OBJECT DEFINITIONS"): "type",
+    ("baanc", "PREPROC DEFINITIONS"): "preproc",
+    **{(b, k): r for b in ("blitzbasic", "freebasic", "purebasic")
+       for k, r in (("KEYWORD2", "function.builtin"), ("KEYWORD3", "type"), ("KEYWORD4", "constant"),
+                    ("CONSTANT", "constant"))},
+    ("caml", "BUILIN FUNC & TYPE"): "function.builtin", ("caml", "TAGNAME"): "constant", ("caml", "LINENUM"): "preproc",
+    ("cobol", "DECLARATION"): "storage",
+    ("csound", "INSTR"): "keyword", ("csound", "HEADER STATEMENT"): "keyword", ("csound", "USER KEYWORDS"): "u1",
+    ("csound", "A-RATE VARIABLE"): "variable", ("csound", "K-RATE VARIABLE"): "variable",
+    ("csound", "I-RATE VARIABLE"): "variable", ("csound", "GLOBAL VARIABLE"): "variable.builtin",
+    ("csound", "END OF LINE WHERE STRING IS NOT CLOSED"): "invalid",
+    ("d", "KEYWORD2"): "type", ("d", "KEYWORD3"): "function.builtin", ("d", "KEYWORD4"): "u1",
+    ("d", "KEYWORD5"): "u2", ("d", "KEYWORD6"): "u3",
+    ("escript", "BRACES"): "punctuation", ("escript", "KEYWORDS2"): "function.builtin", ("escript", "KEYWORDS3"): "type",
+    ("forth", "KEYWORDS"): "function.builtin", ("forth", "DEFWORDS"): "storage", ("forth", "PREWORD1"): "preproc",
+    ("forth", "PREWORD2"): "preproc", ("forth", "LOCALE"): "constant",
+    ("fortran77", "FUNCTION1"): "function.builtin", ("fortran77", "FUNCTION2"): "function",
+    ("fortran77", "OPERATOR2"): "keyword", ("fortran77", "LABEL"): "decorator", ("fortran77", "CONTINUATION"): "operator",
+    ("gdscript", "FUNC NAME"): "function", ("gdscript", "WORD2"): "type.builtin", ("gdscript", "ANNOTATION"): "decorator",
+    ("gdscript", "NODEPATH"): "constant", ("gdscript", "STRING EOL"): "invalid",
+    ("gui4cli", "EVENT"): "function", ("gui4cli", "CONTROL"): "keyword", ("gui4cli", "COMMAND"): "function.builtin",
+    ("hollywood", "CORE API"): "function.builtin", ("hollywood", "PLUGIN API"): "function",
+    ("hollywood", "PLUGIN METHOD"): "function", ("hollywood", "CONSTANT"): "constant",
+    ("mssql", "DATA TYPE"): "type.builtin", ("mssql", "SYSTEM TABLE"): "type", ("mssql", "GLOBAL"): "variable.builtin",
+    ("mssql", "SYSTEM STORED PROC"): "function.builtin", ("mssql", "COL NAME"): "property",
+    ("mssql", "COL NAME IN []'s"): "property",
+    ("mmixal", "OPCODE"): "keyword", ("mmixal", "UNKNOWN OPCODE"): "invalid", ("mmixal", "REFERENCE (TO A LABEL)"): "decorator",
+    ("mmixal", "CHAR"): "string", ("mmixal", "REGISTER"): "variable.builtin", ("mmixal", "SYMBOL"): "constant",
+    ("nim", "CLASS NAME DEFINITION"): "type", ("nim", "FUNCTION OR METHOD NAME DEFINITION"): "function",
+    ("nim", "HIGHLIGHTED IDENTIFIERS"): "variable.builtin", ("nim", "DECORATORS"): "decorator",
+    ("nim", "END OF LINE WHERE STRING IS NOT CLOSED"): "invalid",
+    ("oscript", "#IFDEF DOC AND #ENDIF"): "comment", ("oscript", "CONSTANT LITERAL"): "constant",
+    ("oscript", "SERVER-GLOBAL VARIABLE (PREFIXED BY $)"): "variable.builtin",
+    ("oscript", "OPERATOR; EITHER SYMBOLIC OR LITERAL"): "operator",
+    ("oscript", "LABEL TO JUMP TO WITH THE GOTO STATEMENT"): "decorator",
+    ("oscript", "OBJECT PROPERTY"): "property", ("oscript", "OBJECT METHOD"): "function",
+    ("postscript", "DSC VALUE"): "constant", ("postscript", "Name"): "variable", ("postscript", "LITERAL"): "constant",
+    ("postscript", "IMMEVAL"): "preproc", ("postscript", "PAREN ARRAY"): "punctuation",
+    ("postscript", "PAREN DICT"): "punctuation", ("postscript", "PAREN PROC"): "punctuation",
+    ("postscript", "TEXT"): "string", ("postscript", "BAD STRING CHAR"): "invalid",
+    ("raku", "ADVERB"): "decorator", ("raku", "MU"): "variable.builtin", ("raku", "POSITIONAL"): "variable",
+    ("raku", "ASSOCIATIVE"): "variable", ("raku", "CALLABLE"): "function", ("raku", "GRAMMAR"): "type",
+    ("raku", "CLASS"): "type", ("raku", "STRING VAR"): "string.escape", ("raku", "REGEX VAR"): "string.escape",
+    ("rebol", "PREFACE"): "comment", ("rebol", "PAIR ( 800X600 )"): "number", ("rebol", "TUPLE ( 127.0.0.1 )"): "number",
+    ("rebol", "BINARY ( 16#{1A803F59} )"): "number", ("rebol", "MONEY"): "number",
+    ("rebol", "ISSUE { #123-CD-456 }"): "constant", ("rebol", "TAG { <TITLE HEIGHT=100> }"): "tag",
+    ("rebol", "FILE { %/C/WINNT/SOME.DLL }"): "string", ("rebol", "EMAIL { JOE@MAIL.DOM }"): "link",
+    ("rebol", "URL { FTP://THERE.DOM }"): "link", ("rebol", "DATE { 17-FEB-2004 1/3/99 }"): "number",
+    ("rebol", "TIME { 12:30 11:22:59 01:59:59.123 }"): "number",
+    ("rebol", "KEYWORD (TEST FUNCTIONS)"): "function.builtin", ("rebol", "KEYWORD (DATATYPES)"): "type",
+    ("rebol", "KEYWORD 4"): "u1", ("rebol", "KEYWORD 5"): "u2", ("rebol", "KEYWORD 6"): "u3", ("rebol", "KEYWORD 7"): "u4",
+    ("sas", "MACRO FUNCTION"): "function.builtin", ("sas", "STATEMENT"): "keyword",
+    ("scheme", "FUNCTION WORD"): "keyword", ("scheme", "FUNCTION WORD2"): "function.builtin",
+    ("scheme", "SYMBOL"): "constant", ("scheme", "SPECIAL"): "decorator",
+    ("smalltalk", "SYMBOL"): "constant", ("smalltalk", "BINARY"): "operator", ("smalltalk", "BOOL"): "boolean",
+    ("smalltalk", "SELF"): "variable.builtin", ("smalltalk", "SUPER"): "variable.builtin", ("smalltalk", "NIL"): "constant",
+    ("smalltalk", "GLOBAL"): "type", ("smalltalk", "RETURN"): "keyword", ("smalltalk", "SPECIAL"): "punctuation",
+    ("smalltalk", "KWS END"): "function", ("smalltalk", "ASSIGN"): "operator", ("smalltalk", "SPECIAL SELECTOR"): "keyword",
+    ("spice", "KEYWORD2"): "function.builtin", ("spice", "KEYWORD3"): "type",
+    ("spice", "OPERATORS (DELIMITERS)"): "operator", ("spice", "VALUE"): "number",
+    ("txt2tags", "SPECIAL"): "punctuation", ("txt2tags", "STRONG"): "strong", ("txt2tags", "STRONG 2 (NOT USED)"): "strong",
+    ("txt2tags", "EM1 (ITALIC)"): "emphasis", ("txt2tags", "EM2 (UNDERLINE)"): "emphasis",
+    **{("txt2tags", f"H{i}"): "heading" for i in range(1, 7)},
+    ("txt2tags", "PRECHAR (NOT USED)"): "punctuation", ("txt2tags", "ULIST"): "keyword", ("txt2tags", "OLIST"): "keyword",
+    ("txt2tags", "BLOCKQUOTE"): "quote", ("txt2tags", "STRIKEOUT"): "comment", ("txt2tags", "HRULE"): "punctuation",
+    ("txt2tags", "LINK"): "link", ("txt2tags", "CODE"): "code", ("txt2tags", "CODE2"): "code",
+    ("txt2tags", "CODEBLOCK"): "code", ("txt2tags", "OPTION"): "decorator", ("txt2tags", "PREPROC"): "preproc",
+    ("txt2tags", "POSTPROC"): "preproc",
+    ("visualprolog", "MINOR"): "keyword", ("visualprolog", "COMMENT KEY"): "doc_keyword",
+    ("visualprolog", "COMMENT KEY ERROR"): "error_badge", ("visualprolog", "ANONYMOUS"): "variable.builtin",
+    ("visualprolog", "CHARACTER TOO MANY"): "invalid",
+    ("escseq", "Sequence Identifier"): "punctuation", ("escseq", "Sequence Unknown"): "invalid",
 }
 
 # Intel HEX and S-Record: tell the record fields apart.
@@ -442,7 +730,9 @@ RULES = [(re.compile(p), r) for p, r in RULES]
 def classify(lexer, name, kw):
     if (lexer, name) in OVERRIDES:
         return OVERRIDES[(lexer, name)]
-    if lexer in ("ihex", "srec") and name in HEX_FIELDS:
+    if lexer == "errorlist":
+        return ERRORLIST.get(name, "error_line")
+    if lexer in ("ihex", "srec", "tehex") and name in HEX_FIELDS:
         return HEX_FIELDS[name]
     for pat, role in RULES:
         if pat.search(name):
@@ -454,17 +744,50 @@ def classify(lexer, name, kw):
     return "default"
 
 
+def fs(styles):
+    """fontStyle bits: 1 bold, 2 italic, 4 underline."""
+    return (1 if "bold" in styles else 0) | (2 if "italic" in styles else 0) | (4 if "underline" in styles else 0)
+
+
+# The ANSI names two lexers use: ErrorList's "ANSI COLOR …" and the escape-sequence view's "RED on BLACK".
+ANSI_INDEX = {"BLACK": 0, "RED": 1, "GREEN": 2, "YELLOW": 3, "BROWN": 3, "BLUE": 4, "MAGENTA": 5, "CYAN": 6,
+              "GRAY": 7, "WHITE": 7, "DARK GRAY": 8, "BRIGHT RED": 9, "BRIGHT GREEN": 10, "BRIGHT BLUE": 12,
+              "BRIGHT MAGENTA": 13, "BRIGHT CYAN": 14}
+
+
+def ansi_style(f, lexer, name):
+    """(fg, bg, fontStyle) for the ANSI-colored styles of the ErrorList and escape-sequence lexers, else None."""
+    if lexer == "errorlist" and name.startswith("ANSI COLOR "):
+        color = name.removeprefix("ANSI COLOR ")
+        # ErrorList names the brights by their plain names: YELLOW is bright yellow, WHITE bright white
+        i = {"YELLOW": 11, "WHITE": 15}.get(color, ANSI_INDEX[color])
+        return f.ansi[i], f.base, 0
+    m = re.fullmatch(r"(BOLD )?(\w+) on (\w+)", name)
+    if lexer == "escseq" and m:
+        bold, fg, bg = m.groups()
+        fg_hex = f.text if fg == "DEFAULT" else f.ansi[ANSI_INDEX[fg] + (8 if bold else 0)]
+        bg_hex = f.base if bg == "DEFAULT" else f.ansi[ANSI_INDEX[bg]]
+        return fg_hex, bg_hex, 1 if bold else 0
+    return None
+
+
+# ErrorList (the output of Run and of plugins): error lines red, diff lines like a diff.
+ERRORLIST = {"DIFF Changed": "changed", "DIFF Addition": "added", "DIFF Deletion": "deleted",
+             "DIFF Message": "diff_position", "Escape Sequence": "punctuation", "Unknown Escape Sequence": "invalid",
+             "GCC Included-From Error": "comment", "GCC Excerpt Error": "default", "DEFAULT STYLE": "default"}
+
+
 def role_styles(f):
-    """role → (fg, bg, fontStyle). fontStyle bits: 1 bold, 2 italic, 4 underline."""
+    """role → (fg, bg, fontStyle)."""
     c = f
     u = ui(f)
-    ink = c.crust if f.dark else c.base
-    fs = lambda st: (1 if "bold" in st else 0) | (2 if "italic" in st else 0) | (4 if "underline" in st else 0)
+    ink = u["ink"]
     roles = {}
     for syntax_role in ("comment", "keyword", "storage", "operator", "punctuation", "function", "function.builtin",
                         "string", "string.escape", "regexp", "number", "constant", "boolean", "type",
                         "type.builtin", "variable", "variable.builtin", "parameter", "property", "namespace",
-                        "tag", "attribute", "decorator", "heading", "link", "code", "invalid"):
+                        "tag", "attribute", "decorator", "heading", "link", "code", "emphasis", "strong",
+                        "quote", "invalid"):
         color, st = f.syntax(syntax_role)
         roles[syntax_role] = (color, c.base, fs(st))
     roles.update({
@@ -476,7 +799,9 @@ def role_styles(f):
         "section": (c.orange, c.base, 1),
         "added": (c.green, c.base, 0),
         "deleted": (c.red_hi, c.base, 0),
-        "diff_header": (c.denim, c.base, 1),
+        "changed": (c.yellow, c.base, 0),
+        "error_line": (u["error"], c.base, 0),
+        "diff_header": (c.text_hi, c.base, 1),  # file headers bold; hunk positions in denim
         "diff_position": (c.denim, c.base, 0),
         "search_header": (c.orange, c.mantle, 1),
         "file_header": (c.yellow, c.base, 1),
@@ -493,8 +818,11 @@ def role_styles(f):
 def global_styles(f):
     c = f
     u = ui(f)
-    ink = c.crust if f.dark else c.base
-    fill = lambda col: {"fgColor": col, "bgColor": col}
+    ink = u["ink"]
+
+    def fill(col):
+        return {"fgColor": col, "bgColor": col}
+
     tabs = [c.orange, c.green, c.yellow, c.denim, c.red_hi]
     styles = [
         ("Default Style", 32, {"fgColor": c.text, "bgColor": c.base, "fontName": "Consolas", "fontStyle": "0", "fontSize": "10"}),
@@ -560,7 +888,7 @@ def theme(f):
             role = classify(lexer, name, kw)
             if role == "user":
                 role = f"u{int(name[-1])}"
-            fg, bg, style = roles[role]
+            fg, bg, style = ansi_style(f, lexer, name) or roles[role]
             d = {"name": name, "styleID": sid}
             if fg:
                 d["fgColor"] = fg
@@ -578,8 +906,17 @@ def theme(f):
     return "\n".join(lines) + "\n"
 
 
+META["notes"] = (
+    f"Syntax colors for all {len(lexers())} lexers Notepad++ ships, plus the editor chrome: margins, folding, "
+    "tabs, change history, and smart and find highlights. Pair the dark flavors with Settings › Preferences › "
+    "Dark Mode so the menus match."
+)
+
+
 def build(flavors):
+    how = "portable install: the themes folder next to notepad++.exe; restart Notepad++ afterwards"
     return [
-        Out(f"{f.name}.xml", theme(f), flavor=f.id, dest=f"%AppData%\\Notepad++\\themes\\{f.name}.xml", lang="xml")
+        Out(f"{f.name}.xml", theme(f), flavor=f.id, dest=f"%AppData%\\Notepad++\\themes\\{f.name}.xml",
+            how=how, lang="xml")
         for f in flavors
     ]
