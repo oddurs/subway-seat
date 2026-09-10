@@ -1,46 +1,68 @@
 name: Website
 
+# Deploys after CI passes on main, so a red build never reaches the site.
 on:
-  push:
+  workflow_run: # zizmor: ignore[dangerous-triggers] only pushes to main in this repo, checked below
+    workflows: [CI]
+    types: [completed]
     branches: [main]
   workflow_dispatch:
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
+permissions: {}
 
 concurrency:
   group: pages
-  cancel-in-progress: true
+  cancel-in-progress: false # never cut a deploy off half-way
 
 jobs:
   build:
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      (github.event.workflow_run.conclusion == 'success' &&
+       github.event.workflow_run.event == 'push' &&
+       github.event.workflow_run.head_repository.full_name == github.repository)
     runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
     defaults:
       run:
         working-directory: site
     steps:
-      - uses: actions/checkout@v4
-      - uses: astral-sh/setup-uv@v6
-      - run: uv python install 3.14 && echo "$(uv python find 3.14 | xargs dirname)" >> "$GITHUB_PATH"
-      - uses: oven-sh/setup-bun@v2
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.event.workflow_run.head_sha || github.sha }}
+          persist-credentials: false
+      - uses: astral-sh/setup-uv@bec219d24cd3e171d82865faccec33120bb574f4 # v10.1.0
+        with:
+          python-version: "3.14"
+          activate-environment: true # puts python3 on PATH for the site's prebuild (../build.py)
+          enable-cache: false
+      - run: uv pip install pyyaml
+      - uses: oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6 # v2.2.0
+        with:
+          bun-version-file: site/package.json
+          no-cache: true
       - run: bun install --frozen-lockfile
       - name: Static export
         env:
           STATIC_EXPORT: "1"
           NEXT_PUBLIC_BASE_PATH: /subway-seat
         run: bun run build
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
         with:
           path: site/out
 
   deploy:
     needs: build
     runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1
