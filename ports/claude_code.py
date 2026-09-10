@@ -393,12 +393,15 @@ jq -c --arg ink "$INK" --arg text "$TEXT" --arg dim "$DIM" --arg faint "$FAINT" 
      then ($tok * 5 / .contextWindowSize + 0.5 | floor | if . > 5 then 5 elif . < 0 then 0 else . end)
      else null end) as $cells
   | k($tok) as $toks
-  | (4 + (if $cells != null then 7 else 0 end) + 2 + ($toks | length)) as $fixed
-  | ($full | cut([28, $cols - $fixed] | min | if . < 4 then 4 else . end)) as $name
+  | ($cols - 4 - (if $cells != null then 7 else 0 end) - 2 - ($toks | length)) as $avail
+  | ((.label // .description // "") | clean | if . == $full then "" else . end) as $doing
+  # the name gets the whole row when there is nothing else to say, else up to 28 columns
+  | (if $doing == "" or ($full | length) + 2 + ($doing | length) <= $avail then $avail else [28, $avail] | min end
+     | if . < 4 then 4 else . end) as $fit
+  | ($full | cut($fit)) as $name
   | ($name | .[0:1] | ascii_upcase) as $letter
-  | ($cols - $fixed - ($name | length) - 2) as $room
-  | ((.label // .description // "") | clean | if . == $full then "" else . end
-     | if $room < 8 then "" else cut($room) end) as $what
+  | ($avail - ($name | length) - 2) as $room
+  | ($doing | if $room < 8 then "" else cut($room) end) as $what
   | {
       id,
       content: (
