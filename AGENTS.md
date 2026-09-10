@@ -13,7 +13,7 @@ build.py          runs every port → dist/<id>/, dist/manifest.json, dist/insta
 dist/             generated, committed (every file has a stable URL)
 tests/            pytest suite; builds everything in memory
 site/             Next.js 16 + StyleX website (bun); reads dist/manifest.json
-install.fish      installer (fish syntax); install.sh is the POSIX one
+install.sh        the installer (POSIX sh; reads dist/install.tsv); install.fish wraps it
 ```
 
 Flavors: Walnut (`subway-seat`, dark), Tunnel (`subway-seat-tunnel`, deeper dark), Enamel (`subway-seat-enamel`, light).
