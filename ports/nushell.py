@@ -1,5 +1,5 @@
-from ports._cli import bar, ink, selection
-from ports._lib import HEADER, Out
+from ports._cli import bar, row
+from ports._lib import HEADER, Out, ink, selection, tints
 
 META = {
     "id": "nushell",
@@ -9,11 +9,12 @@ META = {
     "enable": {
         "where": "config.nu (`$nu.config-path`)",
         "code": "source ~/.config/nushell/themes/{slug}.nu",
-        "lang": "text",
+        "lang": "nushell",
     },
+    "detect": ["nu"],
     "notes": "The fish port's command-line colors as a `color_config`, plus table output where file "
-    "sizes and ages run down the 70s stripe. It turns on `highlight_resolved_externals`, so unknown "
-    "commands show red as they do in fish.",
+    "sizes and ages run down the 70s stripe, and the `explore` pager. It turns on "
+    "`highlight_resolved_externals`, so unknown commands show red as they do in fish.",
 }
 
 
@@ -96,7 +97,7 @@ def theme(f):
         "row_index": q(f.overlay1),
         "empty": q(f.overlay0),
         "hints": q(f.overlay0),
-        "search_result": rec(on, f.yellow),
+        "search_result": rec(f.text_hi, tints(f)["search"]),
         "selection": rec(f.text_hi, selection(f)),
         "selection_cursor": rec(attr="n"),
         "bool": q(f.red_hi),
@@ -137,11 +138,23 @@ def theme(f):
         return "\n".join(lines)
 
     explore = {
+        "selected_cell": rec(on, f.orange),
+        "highlight": rec(f.text_hi, tints(f)["search"]),
+        "status_bar_text": rec(f.subtext1),
         "status_bar_background": rec(f.text, bar(f)),
         "command_bar_text": rec(f.text),
-        "highlight": rec(on, f.yellow),
-        "selected_cell": rec(on, f.orange),
+        "command_bar_background": rec(bg=bar(f)),
+        "title_bar_text": rec(f.text_hi, attr="b"),
+        "title_bar_background": rec(bg=row(f)),
+        "status": "{\n" + "\n".join(f"    {k}: {v}" for k, v in {
+            "info": rec(f.denim),
+            "success": rec(on, f.green),
+            "warn": rec(on, f.yellow),
+            "error": rec(on, f.red_hi),
+        }.items()) + "\n}",
     }
+    # one key at a time, so the rest of your explore settings stay
+    explore_lines = "\n".join(f"$env.config.explore.{k} = {v}" for k, v in explore.items())
     return f"""# {HEADER}
 # {f.name} for Nushell. Source it from config.nu.
 
@@ -153,20 +166,12 @@ $env.config.color_config = {{
 {block(values)}
 }}
 
-$env.config.explore = {{
-{block(explore)}
-    status: {{
-        info: "{f.denim}"
-        success: "{f.green}"
-        warn: "{f.yellow}"
-        error: "{f.red_hi}"
-    }}
-}}
+{explore_lines}
 """
 
 
 def build(flavors):
     return [
-        Out(f"{f.slug}.nu", theme(f), flavor=f.id, dest=f"~/.config/nushell/themes/{f.slug}.nu", lang="text")
+        Out(f"{f.slug}.nu", theme(f), flavor=f.id, dest=f"~/.config/nushell/themes/{f.slug}.nu", lang="nushell")
         for f in flavors
     ]

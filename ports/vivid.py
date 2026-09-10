@@ -1,6 +1,5 @@
 import palette as p
-from ports._cli import ink
-from ports._lib import HEADER, Out, h
+from ports._lib import HEADER, Out, h, ink
 
 META = {
     "id": "vivid",
@@ -8,12 +7,16 @@ META = {
     "category": "CLI & TUI",
     "homepage": "https://github.com/sharkdp/vivid",
     "enable": {
-        "where": "config.fish, after copying the theme to ~/.config/vivid/themes/",
+        "where": "config.fish (bash and zsh: ~/.bashrc or ~/.zshrc), after copying the theme to "
+        "~/.config/vivid/themes/",
         "code": "set -gx LS_COLORS (vivid generate {slug})",
         "lang": "fish",
+        "sh": 'export LS_COLORS="$(vivid generate {slug})"',
+        "file": "~/.config/fish/config.fish",
     },
-    "notes": "LS_COLORS for ls, fd, eza and friends: gold directories instead of blue, avocado "
-    "executables, sage symlinks, terracotta media and red archives.",
+    "detect": ["vivid"],
+    "notes": "LS_COLORS for GNU ls (macOS's own ls ignores it), fd, eza and friends: gold directories "
+    "instead of blue, avocado executables, sage symlinks, terracotta media and red archives.",
 }
 
 

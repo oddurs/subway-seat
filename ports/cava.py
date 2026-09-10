@@ -11,6 +11,7 @@ META = {
         "code": "[color]\ntheme = '{slug}'",
         "lang": "ini",
     },
+    "detect": ["cava"],
     "notes": "Bars rise through the 70s stripe: avocado at the floor, then harvest gold, burnt orange "
     "and redbird at the peaks. On cava without theme files, paste the `[color]` block into your config.",
 }

@@ -6,6 +6,8 @@ META = {
     "category": "CLI & TUI",
     "homepage": "https://atuin.sh",
     "enable": {"where": "~/.config/atuin/config.toml", "code": '[theme]\nname = "{slug}"', "lang": "toml"},
+    "requires": "Atuin 18.4+",
+    "detect": ["atuin"],
     "notes": "Colors for the history search: gold titles, orange highlights, calm annotations, and "
     "command-line colors that match the fish port.",
 }
@@ -13,7 +15,7 @@ META = {
 
 def theme(f):
     colors = {
-        "AlertInfo": f.green,
+        "AlertInfo": f.denim,
         "AlertWarn": f.yellow,
         "AlertError": f.red_hi,
         "Annotation": f.overlay1,

@@ -1,5 +1,5 @@
-from ports._cli import ink
-from ports._lib import HEADER, Out
+from ports._cli import row
+from ports._lib import HEADER, Out, ink
 
 META = {
     "id": "gh-dash",
@@ -7,12 +7,15 @@ META = {
     "category": "CLI & TUI",
     "homepage": "https://github.com/dlvhdr/gh-dash",
     "enable": {
-        "where": "~/.config/gh-dash/config.yml (gh-dash 4.25+; on older releases paste the theme block in)",
+        "where": "~/.config/gh-dash/config.yml (on releases before 4.25, paste the theme block in instead)",
         "code": "include:\n  - ~/.config/gh-dash/{slug}.yml",
         "lang": "yaml",
     },
+    "requires": "gh-dash 4.25+ for `include`",
+    "detect": ["gh-dash", "~/.local/share/gh/extensions/gh-dash"],
     "notes": "Parchment text, orange borders on the active section and a warm selected row, with "
-    "author-role icons in the palette's accents.",
+    "author-role icons in the palette's accents. gh-dash shows PR diffs through its pager, so set "
+    "`pager: {diff: delta}` in the same config to see them with the delta port.",
 }
 
 
@@ -31,7 +34,7 @@ theme:
       error: "{f.red_hi}"
       actor: "{f.subtext1}"
     background:
-      selected: "{f.surface0}"
+      selected: "{row(f)}"
     border:
       primary: "{f.orange}"
       secondary: "{f.surface2}"

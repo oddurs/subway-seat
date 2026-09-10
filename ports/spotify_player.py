@@ -1,4 +1,5 @@
-from ports._lib import HEADER, Out
+from ports._cli import marked, row
+from ports._lib import ANSI_NAMES, HEADER, Out
 
 META = {
     "id": "spotify-player",
@@ -6,16 +7,14 @@ META = {
     "category": "CLI & TUI",
     "homepage": "https://github.com/aome510/spotify-player",
     "enable": {
-        "where": "~/.config/spotify-player/app.toml, with the theme appended to theme.toml",
+        "where": "~/.config/spotify-player/app.toml, after adding the theme to the end of theme.toml",
         "code": 'theme = "{slug}"',
         "lang": "toml",
     },
+    "detect": ["spotify_player"],
     "notes": "A full palette plus component styles: gold track titles, orange progress bar, avocado for "
     "what's playing, and a visualizer that climbs the 70s stripe.",
 }
-
-ANSI_NAMES = ["black", "red", "green", "yellow", "blue", "magenta", "cyan", "white"]
-
 
 def s(fg=None, bg=None, *mods):
     parts = [f'fg = "{fg}"'] if fg else []
@@ -43,7 +42,7 @@ def entry(f):
         "page_desc": s(f.yellow, None, "Bold"),
         "playlist_desc": s(f.overlay1),
         "table_header": s(f.orange),
-        "selection": s(f.text_hi, f.surface1, "Bold"),
+        "selection": s(f.text_hi, row(f), "Bold"),
         "secondary_row": s(None, f.mantle),
         "like": s(f.red_hi),
         "lyrics_played": s(f.overlay1),
@@ -57,10 +56,10 @@ def entry(f):
 
 def build(flavors):
     outs = [
-        Out(f"themes/{f.slug}.toml", f"# {HEADER}\n{entry(f)}", flavor=f.id,
+        Out(f"themes/{f.slug}.toml", marked(f"# {HEADER}\n{entry(f)}"), flavor=f.id,
             dest="~/.config/spotify-player/theme.toml", append=True, lang="toml")
         for f in flavors
     ]
-    outs.append(Out("theme.toml", f"# {HEADER}\n" + "\n".join(entry(f) for f in flavors),
-                    dest="~/.config/spotify-player/theme.toml", lang="toml"))
+    outs.append(Out("theme.toml", f"# {HEADER}\n" + "\n".join(entry(f) for f in flavors), lang="toml",
+                    how="all three flavors: use it as ~/.config/spotify-player/theme.toml if you have no themes of your own"))
     return outs

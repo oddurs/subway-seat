@@ -6,12 +6,18 @@ META = {
     "category": "CLI & TUI",
     "homepage": "https://eza.rocks",
     "enable": {
-        "where": "your shell (without EZA_CONFIG_DIR, eza on macOS looks in ~/Library/Application Support/eza)",
-        "code": "set -Ux EZA_CONFIG_DIR ~/.config/eza\nln -sf ~/.config/eza/{slug}.yml ~/.config/eza/theme.yml",
+        "where": "config.fish (bash and zsh: export it from ~/.bashrc or ~/.zshrc). Linux reads "
+        "~/.config/eza without it; macOS otherwise looks in ~/Library/Application Support/eza",
+        "code": "set -gx EZA_CONFIG_DIR ~/.config/eza",
         "lang": "fish",
+        "sh": 'export EZA_CONFIG_DIR="$HOME/.config/eza"',
+        "file": "~/.config/fish/config.fish",
     },
+    "requires": "eza 0.20+",
+    "detect": ["eza"],
     "notes": "Gold directories, avocado executables, sage symlinks, and file sizes that warm up from "
-    "avocado to red as they grow. LS_COLORS and EZA_COLORS override it; the vivid port sets LS_COLORS to match.",
+    "avocado to red as they grow. Each flavor is a `theme.yml`; LS_COLORS and EZA_COLORS override it, "
+    "and the vivid port sets LS_COLORS to match.",
 }
 
 
@@ -24,8 +30,8 @@ def s(fg=None, bg=None, **attrs):
 
 
 def theme(f):
-    def dim(role):  # size units: the number's color, quieter
-        return f.mix(role, "base", 0.7)
+    def dim(role):  # size units: the number's color, quieter (less so on Enamel, where it would fade out)
+        return f.mix(role, "base", 0.7 if f.dark else 0.85)
 
     doc = {
         "colourful": "true",
@@ -157,6 +163,6 @@ def theme(f):
 
 def build(flavors):
     return [
-        Out(f"{f.slug}.yml", theme(f), flavor=f.id, dest=f"~/.config/eza/{f.slug}.yml", lang="yaml")
+        Out(f"{f.slug}.yml", theme(f), flavor=f.id, dest="~/.config/eza/theme.yml", lang="yaml")
         for f in flavors
     ]

@@ -1,5 +1,5 @@
-from ports._cli import bar, ink
-from ports._lib import HEADER, Out
+from ports._cli import bar, row
+from ports._lib import HEADER, Out, ink
 
 META = {
     "id": "k9s",
@@ -7,10 +7,12 @@ META = {
     "category": "CLI & TUI",
     "homepage": "https://k9scli.io",
     "enable": {
-        "where": "k9s config.yaml (`k9s info` shows where), with the skin in its skins/ folder",
+        "where": "k9s config.yaml, with the skin in the skins/ folder beside it (`k9s info` shows both: "
+        "~/Library/Application Support/k9s on macOS, ~/.config/k9s on Linux or with XDG_CONFIG_HOME set)",
         "code": "k9s:\n  ui:\n    skin: {slug}",
         "lang": "yaml",
     },
+    "detect": ["k9s"],
     "notes": "Gold breadcrumbs with the current view in orange, like a line of station signs, and "
     "resource states in avocado, gold, orange and red.",
 }
@@ -53,14 +55,14 @@ def skin(f):
         "views": {
             "table": {
                 "fgColor": f.text, "bgColor": f.base, "cursorFgColor": f.text_hi,
-                "cursorBgColor": f.surface1, "markColor": f.orange_hi,
+                "cursorBgColor": row(f), "markColor": f.orange_hi,
                 "header": {
                     "fgColor": f.subtext0, "bgColor": f.base, "sorterColor": f.orange,
                     "selectedSortColumnColor": f.orange,
                 },
             },
             "xray": {
-                "fgColor": f.text, "bgColor": f.base, "cursorColor": f.surface1,
+                "fgColor": f.text, "bgColor": f.base, "cursorColor": row(f),
                 "cursorTextColor": f.text_hi, "graphicColor": f.sage,
             },
             "charts": {
@@ -104,6 +106,7 @@ def skin(f):
 
 def build(flavors):
     return [
-        Out(f"{f.slug}.yaml", skin(f), flavor=f.id, dest=f"~/.config/k9s/skins/{f.slug}.yaml", lang="yaml")
+        Out(f"{f.slug}.yaml", skin(f), flavor=f.id, dest=f"~/Library/Application Support/k9s/skins/{f.slug}.yaml",
+            lang="yaml", how="on Linux the folder is ~/.config/k9s/skins")
         for f in flavors
     ]

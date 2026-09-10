@@ -1,11 +1,8 @@
-"""Small helpers shared by the CLI & TUI ports."""
+"""Small helpers shared by the CLI & TUI ports. The general ones (`ink`,
+`selection`, `tints`, the markers) live in _lib."""
 
 import palette as p
-
-
-def ink(f):
-    """Text that sits on a saturated accent background."""
-    return f.crust if f.dark else f.base
+from ports._lib import MARK_END, MARK_START
 
 
 def bar(f):
@@ -13,8 +10,9 @@ def bar(f):
     return f.mantle if f.dark else f.crust
 
 
-def selection(f):
-    return f.surface2 if f.dark else f.surface1
+def row(f):
+    """Ground for the highlighted row in a list or table (lighter than a text selection)."""
+    return f.surface1 if f.dark else f.surface0
 
 
 def stripe(f, n):
@@ -26,3 +24,25 @@ def stripe(f, n):
         seg = min(int(t), len(stops) - 2)
         out.append(p.blend(stops[seg + 1], stops[seg], t - seg))
     return out
+
+
+def marked(body):
+    """A block for appending to someone else's config, between the uninstall markers."""
+    return f"{MARK_START}\n{body.strip()}\n{MARK_END}\n"
+
+
+# Git's moved-code slots (diff.colorMoved), with git's own defaults. The git
+# port writes them in palette colors and the delta port maps both spellings, so
+# delta recognizes moved lines with or without the git port installed.
+MOVED = {
+    #  slot                   role     git's default
+    "oldMoved": ("orange", "bold purple"),
+    "oldMovedAlternative": ("denim", "bold blue"),
+    "newMoved": ("sage", "bold cyan"),
+    "newMovedAlternative": ("yellow", "bold yellow"),
+}
+
+
+def git_color(*parts):
+    """A git color value: colors (#hex), then attributes, quoted for gitconfig."""
+    return '"' + " ".join(x.lower() if x.startswith("#") else x for x in parts) + '"'

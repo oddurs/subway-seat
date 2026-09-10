@@ -1,7 +1,6 @@
 import json
 
-from ports._cli import ink
-from ports._lib import Out
+from ports._lib import Out, ink
 
 META = {
     "id": "glow",
@@ -9,10 +8,16 @@ META = {
     "category": "CLI & TUI",
     "homepage": "https://github.com/charmbracelet/glow",
     "enable": {
-        "where": "config.fish (GLAMOUR_STYLE also reaches gh and other Glamour apps)",
-        "code": "set -Ux GLAMOUR_STYLE ~/.config/glamour/{slug}.json\nset -Ux GLOW_STYLE $GLAMOUR_STYLE",
+        "where": "config.fish (bash and zsh: ~/.bashrc or ~/.zshrc). Glow ignores GLAMOUR_STYLE, hence the "
+        "alias; `style:` in glow.yml works too if you give it the full path, without `~`",
+        "code": "alias glow 'glow -s ~/.config/glamour/{slug}.json'\n"
+        "set -gx GLAMOUR_STYLE ~/.config/glamour/{slug}.json   # gh and other Glamour apps",
         "lang": "fish",
+        "sh": "alias glow='glow -s ~/.config/glamour/{slug}.json'\n"
+        'export GLAMOUR_STYLE="$HOME/.config/glamour/{slug}.json"   # gh and other Glamour apps',
+        "file": "~/.config/fish/config.fish",
     },
+    "detect": ["glow"],
     "notes": "A Glamour style: top-level headings as orange station signs, the rest stepping down the "
     "stripe from orange to sage, and code blocks colored like the editor ports.",
 }
@@ -27,7 +32,7 @@ def st(role, f):
 def style(f):
     chroma = {
         "text": {"color": f.text},
-        "error": {"color": f.text_hi, "background_color": f.red},
+        "error": {"color": ink(f), "background_color": f.red_hi},
         "comment": st("comment", f),
         "comment_preproc": st("decorator", f),
         "keyword": st("keyword", f),
@@ -82,9 +87,9 @@ def style(f):
         "link_text": {"color": f.denim_hi, "bold": True},
         "image": {"color": f.denim, "underline": True},
         "image_text": {"color": f.sage, "format": "Image: {{.text}} →"},
-        "code": {"prefix": " ", "suffix": " ", "color": f.green, "background_color": f.surface0},
-        "code_block": {"color": f.overlay1, "margin": 2, "chroma": chroma},
-        "table": {"color": f.overlay0, "center_separator": "┼", "column_separator": "│", "row_separator": "─"},
+        "code": {"prefix": " ", "suffix": " ", "color": f.green, "background_color": f.surface0 if f.dark else f.mantle},
+        "code_block": {"color": f.text, "margin": 2, "chroma": chroma},
+        "table": {"color": f.overlay2, "center_separator": "┼", "column_separator": "│", "row_separator": "─"},
         "definition_list": {},
         "definition_term": {"color": f.yellow},
         "definition_description": {"block_prefix": "\n🠶 "},
