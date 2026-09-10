@@ -28,8 +28,8 @@ def faces(f):
         return v + (f"+{attrs}" if attrs else "")
 
     def S(role):
-        colour_role, styles = p.SYNTAX[role]
-        return face(colour_role, attrs="".join(a[0] for a in ("bold", "italic") if a in styles))
+        color_role, styles = p.SYNTAX[role]
+        return face(color_role, attrs="".join(a[0] for a in ("bold", "italic") if a in styles))
 
     select_cur = f.orange if f.dark else f.yellow  # the two warm lights swap
     return {

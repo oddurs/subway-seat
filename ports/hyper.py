@@ -16,7 +16,7 @@ META = {
         "code": "localPlugins: ['{slug}'],",
         "lang": "typescript",
     },
-    "notes": "Colours, cursor, selection, borders and the tab strip. Hyper 3 loads local plugins from "
+    "notes": "Colors, cursor, selection, borders and the tab strip. Hyper 3 loads local plugins from "
     "`~/.hyper_plugins/local/`; the Hyper 4 canary uses `~/.config/Hyper/plugins/local/`.",
 }
 

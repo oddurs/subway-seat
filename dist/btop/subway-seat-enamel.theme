@@ -4,13 +4,13 @@
 # Main background, empty for terminal default
 theme[main_bg]="#F4E9D4"
 
-# Main text colour
+# Main text color
 theme[main_fg]="#3E2C1E"
 
-# Title colour for boxes
+# Title color for boxes
 theme[title]="#2A1D13"
 
-# Highlight colour for keyboard shortcuts
+# Highlight color for keyboard shortcuts
 theme[hi_fg]="#AD4E00"
 
 # Background of the selected item in the processes box

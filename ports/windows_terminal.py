@@ -1,4 +1,4 @@
-"""Windows Terminal: a colour scheme and a matching window theme per flavor."""
+"""Windows Terminal: a color scheme and a matching window theme per flavor."""
 
 import json
 
@@ -15,7 +15,7 @@ META = {
         "code": '"theme": "{name}",\n"profiles": {{ "defaults": {{ "colorScheme": "{name}" }} }}',
         "lang": "json",
     },
-    "notes": "Each flavor is a colour scheme plus a theme for the tab row and tabs. For light/dark "
+    "notes": "Each flavor is a color scheme plus a theme for the tab row and tabs. For light/dark "
     'following, use `"colorScheme": {"light": "Subway Seat Enamel", "dark": "Subway Seat"}` and the same '
     "shape for `theme`.",
 }

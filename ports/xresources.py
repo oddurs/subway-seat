@@ -1,4 +1,4 @@
-"""X resources: colours for xterm, urxvt, st and anything else that reads *.colorN."""
+"""X resources: colors for xterm, urxvt, st and anything else that reads *.colorN."""
 
 from ports._lib import HEADER, Out
 from ports._terminals import ANSI_NAMES, lit, selection
@@ -13,7 +13,7 @@ META = {
         "code": '#include "{slug}.Xresources"',
         "lang": "conf",
     },
-    "notes": "Foreground, background, cursor, selection and the 16 ANSI colours as wildcard resources, "
+    "notes": "Foreground, background, cursor, selection and the 16 ANSI colors as wildcard resources, "
     "so xterm, urxvt and other X terminals all pick them up.",
 }
 

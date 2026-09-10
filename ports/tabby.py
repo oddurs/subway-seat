@@ -1,4 +1,4 @@
-"""Tabby: a custom colour scheme per flavor for `terminal.customColorSchemes`."""
+"""Tabby: a custom color scheme per flavor for `terminal.customColorSchemes`."""
 
 from ports._lib import HEADER, Out
 from ports._terminals import lit, selection
@@ -13,8 +13,8 @@ META = {
         "code": "terminal:\n  customColorSchemes:\n    - name: {name}   # paste the whole entry from {slug}.yaml",
         "lang": "yaml",
     },
-    "notes": "Colours, cursor and selection. Tabby's default minimum contrast ratio of 4 nudges some "
-    "colours; set `terminal.minimumContrastRatio: 1` to see the palette as designed.",
+    "notes": "Colors, cursor and selection. Tabby's default minimum contrast ratio of 4 nudges some "
+    "colors; set `terminal.minimumContrastRatio: 1` to see the palette as designed.",
 }
 
 

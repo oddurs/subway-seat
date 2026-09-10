@@ -13,7 +13,7 @@ META = {
         "code": "cp {slug}.yaml ~/.warp/themes/   # then pick {name} in the theme picker",
         "lang": "sh",
     },
-    "notes": "Background, text, accent, cursor and the 16 ANSI colours. On Linux the themes folder is "
+    "notes": "Background, text, accent, cursor and the 16 ANSI colors. On Linux the themes folder is "
     "`~/.local/share/warp-terminal/themes/`; on Windows, `%APPDATA%\\warp\\Warp\\data\\themes\\`.",
 }
 

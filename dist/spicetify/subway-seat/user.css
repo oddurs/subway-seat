@@ -1,6 +1,6 @@
 /* Subway Seat — generated from palette.py by build.py. Edit the palette, not this file. */
-/* Subway Seat for Spicetify: the colour scheme does most of the work; this only
-   swaps Spotify's green accent for the scheme's button colour and tidies a few
+/* Subway Seat for Spicetify: the color scheme does most of the work; this only
+   swaps Spotify's green accent for the scheme's button color and tidies a few
    details. Everything here reads --spice-* variables, so every flavor shares it. */
 
 .encore-dark-theme,

@@ -1,4 +1,4 @@
-"""Slack: sidebar theme strings, in the current four-colour format and the legacy ten."""
+"""Slack: sidebar theme strings, in the current four-color format and the legacy ten."""
 
 from ports._apps import ink
 from ports._lib import HEADER, Out
@@ -11,10 +11,10 @@ META = {
     "enable": {
         "where": "Slack → Preferences → Appearance → Custom theme",
         "code": "Paste the {name} string from {slug}.txt into any message and click\n"
-        "“Switch sidebar theme”, or enter the four colours under Custom theme.",
+        "“Switch sidebar theme”, or enter the four colors under Custom theme.",
         "lang": "text",
     },
-    "notes": "Slack only lets themes colour the sidebar and a few highlights; the message pane follows "
+    "notes": "Slack only lets themes color the sidebar and a few highlights; the message pane follows "
     "Slack's own light or dark mode, so pick dark for Walnut and Tunnel and light for Enamel.",
 }
 
@@ -39,12 +39,12 @@ def build(flavors):
         mode = "dark" if f.dark else "light"
         body = "\n".join([
             f"# {HEADER}",
-            f"# {f.name}: set Slack's colour mode to {mode}.",
+            f"# {f.name}: set Slack's color mode to {mode}.",
             "#",
             "# Current Slack: system navigation, selected items, presence, notifications",
             ",".join(modern(f)),
             "",
-            "# Legacy ten-colour string (older clients and theme sites)",
+            "# Legacy ten-color string (older clients and theme sites)",
             ",".join(legacy(f)),
         ]) + "\n"
         outs.append(Out(f"{f.slug}.txt", body, flavor=f.id,

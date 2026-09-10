@@ -16,7 +16,7 @@ META = {
         "code": "Open the raycast://theme link in {slug}.link.txt — Raycast asks to add {name}.",
         "lang": "text",
     },
-    "notes": "Raycast themes are twelve colours: a walnut gradient, parchment text, a soft orange "
+    "notes": "Raycast themes are twelve colors: a walnut gradient, parchment text, a soft orange "
     "selection and the palette's accents for icons and tags. Custom themes need Raycast Pro.",
 }
 

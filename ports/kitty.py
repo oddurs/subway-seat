@@ -13,7 +13,7 @@ META = {
         "code": "include themes/{slug}.conf\n# or choose it interactively: kitten themes",
         "lang": "conf",
     },
-    "notes": "Colours, cursor, selection, borders, tab bar, title bar, scrollbar and marks. For light/dark "
+    "notes": "Colors, cursor, selection, borders, tab bar, title bar, scrollbar and marks. For light/dark "
     "following, copy the Enamel file to `light-theme.auto.conf` and a dark one to `dark-theme.auto.conf`.",
 }
 

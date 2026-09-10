@@ -15,7 +15,7 @@ META = {
         "code": "sh {slug}.sh   # adds the “{name}” profile; pick it in Preferences",
         "lang": "sh",
     },
-    "notes": "Adds a profile with the palette, cursor, selection and bold colours. Re-running the script "
+    "notes": "Adds a profile with the palette, cursor, selection and bold colors. Re-running the script "
     "updates the same profile in place. Ptyxis, GNOME's newer terminal, is not covered.",
 }
 

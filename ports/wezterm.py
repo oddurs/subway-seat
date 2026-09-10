@@ -1,4 +1,4 @@
-"""WezTerm: a TOML colour scheme per flavor for `~/.config/wezterm/colors`."""
+"""WezTerm: a TOML color scheme per flavor for `~/.config/wezterm/colors`."""
 
 from ports._lib import HEADER, REPO, Out
 from ports._terminals import lit, search, search_cur, selection, split
@@ -13,8 +13,8 @@ META = {
         "code": "config.color_scheme = '{name}'",
         "lang": "lua",
     },
-    "notes": "Colours, cursor, selection, splits, copy mode, quick select and the tab bar. The tab bar "
-    "colours apply to the retro tab bar (`use_fancy_tab_bar = false`); the fancy one takes its frame from "
+    "notes": "Colors, cursor, selection, splits, copy mode, quick select and the tab bar. The tab bar "
+    "colors apply to the retro tab bar (`use_fancy_tab_bar = false`); the fancy one takes its frame from "
     "`window_frame`.",
 }
 

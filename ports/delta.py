@@ -11,7 +11,7 @@ META = {
         "lang": "conf",
     },
     "notes": "Each flavor is a delta feature: diff tints, line numbers, file and hunk headers. "
-    "Syntax colours come from the bat theme, so install that too.",
+    "Syntax colors come from the bat theme, so install that too.",
 }
 
 

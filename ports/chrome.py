@@ -15,7 +15,7 @@ META = {
         "code": "Unzip {slug}.zip, then Load unpacked → pick the {slug} folder",
         "lang": "text",
     },
-    "notes": "Colours the tab strip, toolbar, address bar and new-tab page; incognito windows get a faint "
+    "notes": "Colors the tab strip, toolbar, address bar and new-tab page; incognito windows get a faint "
     "terracotta frame so you can tell them apart. Works in Edge and Brave too.",
 }
 

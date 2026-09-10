@@ -13,7 +13,7 @@ META = {
         "code": "# ~/.local/share/konsole/<your profile>.profile\n[Appearance]\nColorScheme={slug}",
         "lang": "ini",
     },
-    "notes": "Background, foreground and the eight colours, each with intense (bright) and faint variants.",
+    "notes": "Background, foreground and the eight colors, each with intense (bright) and faint variants.",
 }
 
 

@@ -22,7 +22,7 @@ META = {
 }
 
 # Every key of desktop-app/lib_ui ui/colors.palette, in file order.
-#   key        a literal colour upstream: must be mapped in colors() below
+#   key        a literal color upstream: must be mapped in colors() below
 #   key=ref    a copy of another key upstream: follows it unless mapped
 #   key|ref    a literal with a fallback upstream: follows the fallback unless mapped
 SPEC = """
@@ -446,7 +446,7 @@ def colors(f):
         "rankAdminFg": c.green, "rankOwnerFg": c.clay,
     }
     # Group member names and userpics, in Telegram's slot order (red, green, yellow, blue,
-    # purple, pink, sea, orange), each taken to its nearest Subway Seat colour.
+    # purple, pink, sea, orange), each taken to its nearest Subway Seat color.
     for i, color in enumerate(peers, 1):
         m[f"historyPeer{i}NameFg"] = color
         m[f"historyPeer{i}UserpicBg"] = color

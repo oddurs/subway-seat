@@ -118,7 +118,7 @@ def triplet(color):
 
 
 def palette_case(flavors):
-    """A bash `case` that sets colour triplets for the chosen flavor."""
+    """A bash `case` that sets color triplets for the chosen flavor."""
     arms = []
     for f in flavors:
         roles = {
@@ -165,7 +165,7 @@ B=$'\033[1m'
 nerd=1; [ "${SUBWAY_SEAT_GLYPHS:-}" = plain ] && nerd=0
 CAP_L=$'\xee\x82\xb6' CAP_R=$'\xee\x82\xb4' BRANCH=$'\xee\x82\xa0'  # Nerd Font U+E0B6 U+E0B4 U+E0A0
 
-# The model as a route bullet: a coloured circle with one bold letter.
+# The model as a route bullet: a colored circle with one bold letter.
 model=$(get '.model.display_name'); model=${model:-Claude}
 case $(printf '%s' "$model" | tr '[:upper:]' '[:lower:]') in
   *opus*) line=$ORANGE ;; *sonnet*) line=$YELLOW ;; *haiku*) line=$GREEN ;; *fable*) line=$SAGE ;; *) line=$CLAY ;;
@@ -219,7 +219,7 @@ printf '%s\n' "$out"
 SUBAGENTS = r"""#!/usr/bin/env bash
 # __HEADER__
 #
-# Subway Seat rows for Claude Code's subagent panel: a route bullet coloured by
+# Subway Seat rows for Claude Code's subagent panel: a route bullet colored by
 # state, the name, what it's doing, and how full its context is.
 # Reads {columns, tasks:[…]} on stdin and prints one {"id","content"} line per task. Needs jq.
 

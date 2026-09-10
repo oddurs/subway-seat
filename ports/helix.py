@@ -60,8 +60,8 @@ def theme(f):
     MODS = {"bold": "bold", "italic": "italic", "strikethrough": "crossed_out"}
 
     def S(role):
-        colour_role, styles = p.SYNTAX[role]
-        return st(colour_role, mods=[MODS[x] for x in ("bold", "italic") if x in styles])
+        color_role, styles = p.SYNTAX[role]
+        return st(color_role, mods=[MODS[x] for x in ("bold", "italic") if x in styles])
 
     s = {
         # ── syntax ─────────────────────────────────────────────────────────

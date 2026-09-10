@@ -1,5 +1,5 @@
 """Thunderbird: a theme per flavor (manifest + unsigned .xpi), Firefox's theme
-colours plus Thunderbird's own panes through a theme_experiment."""
+colors plus Thunderbird's own panes through a theme_experiment."""
 
 import json
 
@@ -21,7 +21,7 @@ META = {
     "space and primary buttons. Thunderbird installs the unsigned .xpi directly.",
 }
 
-# Thunderbird-only colour slots, exposed to themes as CSS variables.
+# Thunderbird-only color slots, exposed to themes as CSS variables.
 EXPERIMENT = {
     "spaces_bg": "--spaces-bg-color",
     "spaces_bg_active": "--spaces-button-active-bg-color",

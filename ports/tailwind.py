@@ -14,7 +14,7 @@ META = {
         "code": '@import "tailwindcss";\n@import "./{slug}.css";\n\n/* bg-ss-base text-ss-text border-ss-surface1 text-ss-orange */',
         "lang": "css",
     },
-    "notes": "Tailwind v4 theme files add ss-* colours (bg-ss-base, text-ss-orange) for one flavor. "
+    "notes": "Tailwind v4 theme files add ss-* colors (bg-ss-base, text-ss-orange) for one flavor. "
     "For v3, subway-seat-preset.js has all three as ss-walnut-*, ss-tunnel-* and ss-enamel-*.",
 }
 

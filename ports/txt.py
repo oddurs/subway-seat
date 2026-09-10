@@ -12,7 +12,7 @@ META = {
         "code": "cut -d' ' -f1 {slug}.txt | pbcopy",
         "lang": "sh",
     },
-    "notes": "Plain text, one colour per line as #hex and its name. Most palette tools will take a paste of it.",
+    "notes": "Plain text, one color per line as #hex and its name. Most palette tools will take a paste of it.",
 }
 
 

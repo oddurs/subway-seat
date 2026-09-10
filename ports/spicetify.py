@@ -1,4 +1,4 @@
-"""Spicetify (Spotify): one theme folder with every flavor as a colour scheme."""
+"""Spicetify (Spotify): one theme folder with every flavor as a color scheme."""
 
 import json
 
@@ -16,7 +16,7 @@ META = {
         "code": "spicetify config current_theme subway-seat color_scheme {id}\nspicetify apply",
         "lang": "sh",
     },
-    "notes": "Spicetify's colour keys plus the whole palette as `--spice-*` variables, and a small user.css "
+    "notes": "Spicetify's color keys plus the whole palette as `--spice-*` variables, and a small user.css "
     "that turns Spotify's green accent into burnt orange.",
 }
 
@@ -63,8 +63,8 @@ def color_ini(flavors):
 
 
 USER_CSS = f"""/* {HEADER} */
-/* Subway Seat for Spicetify: the colour scheme does most of the work; this only
-   swaps Spotify's green accent for the scheme's button colour and tidies a few
+/* Subway Seat for Spicetify: the color scheme does most of the work; this only
+   swaps Spotify's green accent for the scheme's button color and tidies a few
    details. Everything here reads --spice-* variables, so every flavor shares it. */
 
 .encore-dark-theme,

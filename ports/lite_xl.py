@@ -14,7 +14,7 @@ META = {
         "lang": "lua",
     },
     "notes": "Copy the files to `~/.config/lite-xl/colors/`, then pick one in the settings plugin or load it "
-    "from `init.lua`. Also colours the indentguide and bracketmatch plugins.",
+    "from `init.lua`. Also colors the indentguide and bracketmatch plugins.",
 }
 
 

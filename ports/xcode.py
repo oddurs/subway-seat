@@ -17,8 +17,8 @@ META = {
         "# restart Xcode, then pick {name} under Settings → Themes",
         "lang": "sh",
     },
-    "notes": "Source editor, console and rendered documentation colours in SF Mono, with comments in "
-    "italic. Change the font size in Xcode's Themes settings; the colours stay.",
+    "notes": "Source editor, console and rendered documentation colors in SF Mono, with comments in "
+    "italic. Change the font size in Xcode's Themes settings; the colors stay.",
 }
 
 SIZE = "13.0"
@@ -31,7 +31,7 @@ FONTS = {
     ("semibold", "italic"): "SFMono-SemiboldItalic",
 }
 
-# xcode.syntax.* → syntax role (or (colour role, styles))
+# xcode.syntax.* → syntax role (or (color role, styles))
 SYNTAX = {
     "attribute": "decorator",
     "character": "string",

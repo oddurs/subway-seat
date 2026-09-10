@@ -1,9 +1,9 @@
 """macOS Terminal.app: a .terminal profile per flavor.
 
-Terminal stores each colour as an NSKeyedArchiver-archived NSColor. We write the
+Terminal stores each color as an NSKeyedArchiver-archived NSColor. We write the
 archive by hand with plistlib, following mbadolato/iTerm2-Color-Schemes'
-iterm2terminal.py, but tag the colour as sRGB (NSCustomColorSpace, NSID 7) so the
-hex values survive colour management. The bare NSColorSpace 1 ("calibrated")
+iterm2terminal.py, but tag the color as sRGB (NSCustomColorSpace, NSID 7) so the
+hex values survive color management. The bare NSColorSpace 1 ("calibrated")
 form decodes as Generic RGB and shifts #362619 to #463221; NSColorSpace 2 is
 device RGB, which is unmanaged.
 """
@@ -23,8 +23,8 @@ META = {
         "code": 'open "{name}.terminal"   # imports the profile and opens a window',
         "lang": "sh",
     },
-    "notes": "The 16 ANSI colours plus background, text, bold text, selection and cursor. Terminal.app has "
-    "no setting for cursor text or tab colours.",
+    "notes": "The 16 ANSI colors plus background, text, bold text, selection and cursor. Terminal.app has "
+    "no setting for cursor text or tab colors.",
 }
 
 ANSI_KEYS = ["Black", "Red", "Green", "Yellow", "Blue", "Magenta", "Cyan", "White"]

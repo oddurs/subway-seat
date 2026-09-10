@@ -28,7 +28,7 @@ def el(role):
 
 
 def palette_alist(f):
-    """Every colour a face can name, as (key . "#hex") pairs."""
+    """Every color a face can name, as (key . "#hex") pairs."""
     t, u = tints(f), ui(f)
     pairs = [(el(r), f.colors[r]) for r in p.ROLES]
     pairs += [
@@ -48,9 +48,9 @@ def palette_alist(f):
 
 
 def syn(role):
-    """Face attributes for a palette.SYNTAX role, naming colours by key."""
-    colour, styles = p.SYNTAX[role]
-    s = f":foreground ,.{el(colour)}"
+    """Face attributes for a palette.SYNTAX role, naming colors by key."""
+    color, styles = p.SYNTAX[role]
+    s = f":foreground ,.{el(color)}"
     if "italic" in styles:
         s += " :slant italic"
     if "bold" in styles:
@@ -66,7 +66,7 @@ HEADINGS = ["orange", "yellow", "green", "sage", "clay", "subtext1", "orange", "
 RAINBOW = ["yellow", "orange", "sage", "clay", "green", "subtext1", "yellow", "orange", "sage"]
 ANSI = ["black", "red", "green", "yellow", "blue", "magenta", "cyan", "white"]
 
-# (face, attributes). Colours are alist keys bound by `subway-seat-theme-with-colors`.
+# (face, attributes). Colors are alist keys bound by `subway-seat-theme-with-colors`.
 FACES = [
     # ── basics ──
     ("default", ":foreground ,.text :background ,.base"),
@@ -472,7 +472,7 @@ FACES = [
     ("info-menu-star", ":foreground ,.clay"),
     ("info-node", ":foreground ,.yellow :weight bold"),
     ("Info-quoted", syn("code")),
-    # ── terminal colours: ansi-color (28+), term (27) ──
+    # ── terminal colors: ansi-color (28+), term (27) ──
     *((f"ansi-color-{n}", f":foreground ,.ansi{i} :background ,.ansi{i}") for i, n in enumerate(ANSI)),
     *((f"ansi-color-bright-{n}", f":foreground ,.ansi{i + 8} :background ,.ansi{i + 8}") for i, n in enumerate(ANSI)),
     *((f"term-color-{n}", f":foreground ,.ansi{i} :background ,.ansi{i}") for i, n in enumerate(ANSI)),
@@ -512,7 +512,7 @@ def main_file(flavors):
         f'(deftheme {f.slug}\n  "{doc(f)}")\n(subway-seat-theme-apply \'{f.slug})' for f in flavors
     )
     ansi = " ".join(f",.ansi{i}" for i in range(8))
-    return f""";;; subway-seat-theme.el --- A warm 1970s subway-car colour theme -*- lexical-binding: t; -*-
+    return f""";;; subway-seat-theme.el --- A warm 1970s subway-car color theme -*- lexical-binding: t; -*-
 
 ;; Copyright (C) {YEAR} {AUTHOR}
 
@@ -542,7 +542,7 @@ def main_file(flavors):
 ;;
 ;;   (load-theme 'subway-seat t)
 ;;
-;; To tweak a face with the theme's colours, bind them with
+;; To tweak a face with the theme's colors, bind them with
 ;; `subway-seat-theme-with-colors':
 ;;
 ;;   (subway-seat-theme-with-colors 'subway-seat
@@ -553,7 +553,7 @@ def main_file(flavors):
 ;;; Code:
 
 (defgroup subway-seat-theme nil
-  "The Subway Seat colour themes."
+  "The Subway Seat color themes."
   :group 'faces
   :prefix "subway-seat-theme-"
   :link '(url-link "{REPO}"))
@@ -561,13 +561,13 @@ def main_file(flavors):
 (defconst subway-seat-theme-palettes
   '(
 {palettes})
-  "Colours for each Subway Seat theme, keyed by theme name.
-Each entry maps a colour key (a palette role such as `base' or
+  "Colors for each Subway Seat theme, keyed by theme name.
+Each entry maps a color key (a palette role such as `base' or
 `orange', or a derived ground such as `hl-line' or `bg-add') to a
 hex string.")
 
 (defmacro subway-seat-theme-with-colors (theme &rest body)
-  "Evaluate BODY with the colours of THEME bound as `.KEY' symbols.
+  "Evaluate BODY with the colors of THEME bound as `.KEY' symbols.
 THEME is a symbol such as `subway-seat'; see
 `subway-seat-theme-palettes' for the keys, e.g. `.base' or `.orange'."
   (declare (indent 1))

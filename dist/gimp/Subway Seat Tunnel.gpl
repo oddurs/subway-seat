@@ -3,9 +3,9 @@ Name: Subway Seat Tunnel
 Columns: 13
 # Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
 # The late local after midnight: espresso-deep, same warm lights.
- 20  13   7	Tunnel (crust)
+ 20  13   7	Blackout (crust)
  27  18  10	Espresso (mantle)
- 36  24  14	Walnut (base)
+ 36  24  14	Paneling (base)
  48  33  21	Coppertone (surface0)
  61  44  29	Saddle (surface1)
  79  57  39	Corduroy (surface2)

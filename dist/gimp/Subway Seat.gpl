@@ -3,9 +3,9 @@ Name: Subway Seat
 Columns: 13
 # Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
 # Walnut paneling and orange bucket seats. The original.
- 32  22  14	Tunnel (crust)
+ 32  22  14	Blackout (crust)
  42  29  19	Espresso (mantle)
- 54  38  25	Walnut (base)
+ 54  38  25	Paneling (base)
  67  48  31	Coppertone (surface0)
  81  59  39	Saddle (surface1)
  99  73  50	Corduroy (surface2)

@@ -8,9 +8,9 @@
   color-scheme: dark;
 
   /* Ground */
-  --ss-crust: #20160E; /* Tunnel */
+  --ss-crust: #20160E; /* Blackout */
   --ss-mantle: #2A1D13; /* Espresso */
-  --ss-base: #362619; /* Walnut */
+  --ss-base: #362619; /* Paneling */
   --ss-surface0: #43301F; /* Coppertone */
   --ss-surface1: #513B27; /* Saddle */
   --ss-surface2: #634932; /* Corduroy */
@@ -73,9 +73,9 @@
     color-scheme: light;
 
     /* Ground */
-    --ss-crust: #E2D3B6; /* Tunnel */
+    --ss-crust: #E2D3B6; /* Blackout */
     --ss-mantle: #EBDEC6; /* Espresso */
-    --ss-base: #F4E9D4; /* Walnut */
+    --ss-base: #F4E9D4; /* Paneling */
     --ss-surface0: #D9C8A7; /* Coppertone */
     --ss-surface1: #CAB48E; /* Saddle */
     --ss-surface2: #BAA07A; /* Corduroy */
@@ -138,9 +138,9 @@
   color-scheme: dark;
 
   /* Ground */
-  --ss-crust: #140D07; /* Tunnel */
+  --ss-crust: #140D07; /* Blackout */
   --ss-mantle: #1B120A; /* Espresso */
-  --ss-base: #24180E; /* Walnut */
+  --ss-base: #24180E; /* Paneling */
   --ss-surface0: #302115; /* Coppertone */
   --ss-surface1: #3D2C1D; /* Saddle */
   --ss-surface2: #4F3927; /* Corduroy */
@@ -202,9 +202,9 @@
   color-scheme: light;
 
   /* Ground */
-  --ss-crust: #E2D3B6; /* Tunnel */
+  --ss-crust: #E2D3B6; /* Blackout */
   --ss-mantle: #EBDEC6; /* Espresso */
-  --ss-base: #F4E9D4; /* Walnut */
+  --ss-base: #F4E9D4; /* Paneling */
   --ss-surface0: #D9C8A7; /* Coppertone */
   --ss-surface1: #CAB48E; /* Saddle */
   --ss-surface2: #BAA07A; /* Corduroy */

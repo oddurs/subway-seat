@@ -1,4 +1,4 @@
-"""qutebrowser: a config.py colour snippet per flavor (every c.colors.* setting)."""
+"""qutebrowser: a config.py color snippet per flavor (every c.colors.* setting)."""
 
 from ports._apps import ink, select
 from ports._lib import HEADER, Out
@@ -14,7 +14,7 @@ META = {
         "lang": "python",
     },
     "notes": "Sets every `c.colors.*` option: tabs, status bar modes, completion, hints, prompts, messages "
-    "and downloads, plus the page background and preferred colour scheme so new tabs don't flash white.",
+    "and downloads, plus the page background and preferred color scheme so new tabs don't flash white.",
 }
 
 
@@ -82,7 +82,7 @@ def settings(f):
         "prompts.bg": f.mantle,
         "prompts.selected.fg": f.text_hi,
         "prompts.selected.bg": sel,
-        # Status bar: quiet in normal mode, a solid chip of colour for the others
+        # Status bar: quiet in normal mode, a solid chip of color for the others
         "statusbar.normal.fg": f.subtext1,
         "statusbar.normal.bg": f.crust,
         "statusbar.insert.fg": on,

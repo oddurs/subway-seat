@@ -1,6 +1,6 @@
 # Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
 # Subway Seat Tunnel for aider. Leave dark-mode and light-mode unset: aider applies them
-# after this file and they replace these colours and the code theme with its own.
+# after this file and they replace these colors and the code theme with its own.
 user-input-color: "#F3BF45"
 assistant-output-color: "#E9D8B6"
 tool-output-color: "#C0AA88"
@@ -14,5 +14,5 @@ completion-menu-current-color: "#EC7F31"
 completion-menu-current-bg-color: "#140D07"
 # needs the style in aider's environment:
 #   uv tool install aider-chat --with "subway-seat-pygments @ git+https://github.com/oddurs/subway-seat#subdirectory=dist/pygments/package"
-# (without it, use ansi_dark / ansi_light to take your terminal's colours)
+# (without it, use ansi_dark / ansi_light to take your terminal's colors)
 code-theme: subway-seat-tunnel

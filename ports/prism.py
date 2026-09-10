@@ -11,10 +11,10 @@ META = {
         "code": '<link rel="stylesheet" href="{slug}.css">',
         "lang": "xml",
     },
-    "notes": "A Prism stylesheet per flavor, using the same syntax colours as the editor themes.",
+    "notes": "A Prism stylesheet per flavor, using the same syntax colors as the editor themes.",
 }
 
-# (selectors, syntax or colour role)
+# (selectors, syntax or color role)
 RULES = [
     (".token.comment, .token.prolog, .token.doctype, .token.cdata", "comment"),
     (".token.punctuation", "punctuation"),
@@ -33,7 +33,7 @@ RULES = [
     (".token.variable", "variable"),
     (".token.parameter", "parameter"),
     (".token.property", "property"),
-    # JSON keys, coloured like the editor themes do.
+    # JSON keys, colored like the editor themes do.
     (".language-json .token.property", "function"),
     (".token.tag", "tag"),
     (".token.attr-name, .token.selector", "attribute"),

@@ -1,6 +1,6 @@
 """Obsidian: a community theme (manifest.json + theme.css). Walnut in dark mode, Enamel in
 light mode, Tunnel as a Style Settings toggle (or a CSS snippet). Written against the
-Obsidian 1.13 variable set, where callout and canvas colours are plain colours."""
+Obsidian 1.13 variable set, where callout and canvas colors are plain colors."""
 
 import colorsys
 import json
@@ -27,7 +27,7 @@ META = {
 }
 
 NAME = "Subway Seat"
-MIN_APP = "1.13.0"  # 1.13 moved callout/canvas colours from "r, g, b" triplets to plain colours
+MIN_APP = "1.13.0"  # 1.13 moved callout/canvas colors from "r, g, b" triplets to plain colors
 TUNNEL_CLASS = "subway-seat-tunnel"
 
 
@@ -42,7 +42,7 @@ def hsl(color):
 
 
 def extended(f):
-    """Obsidian's eight named colours, mapped into the palette (cyan→sage, blue→denim,
+    """Obsidian's eight named colors, mapped into the palette (cyan→sage, blue→denim,
     purple→denim bright, pink→terracotta). Red takes the bright step on dark grounds."""
     return {
         "red": f.red_hi if f.dark else f.red,
@@ -169,7 +169,7 @@ def groups(f):
         "--heading-formatting": f.overlay0,
         "--inline-title-color": f.text_hi,
     }))
-    out.append(("Links and tags: denim is the only cool colour, tags wear orange", {
+    out.append(("Links and tags: denim is the only cool color, tags wear orange", {
         "--link-color": f.denim,
         "--link-color-hover": f.denim_hi,
         "--link-external-color": f.denim,

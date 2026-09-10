@@ -24,7 +24,6 @@ import io
 import json
 import pkgutil
 import plistlib
-import re
 import shutil
 import sys
 import tomllib
@@ -39,7 +38,7 @@ except ImportError:
 
 import palette as p
 import ports
-from ports._lib import CATEGORIES, LANGS, SITE, Out
+from ports._lib import CATEGORIES, LANGS, MARK_END, MARK_START, SITE, VERSION, Out
 
 ROOT = Path(__file__).parent
 DIST = ROOT / "dist"
@@ -47,6 +46,9 @@ SITE_THEME = ROOT / "site" / "src" / "theme"
 README = ROOT / "README.md"
 START, END = "<!-- ports:start -->", "<!-- ports:end -->"
 REQUIRED_META = ("id", "name", "category", "homepage", "notes")
+KNOWN_META = {*REQUIRED_META, "enable", "auto", "requires"}
+# `dest` is a path; directions and prose belong in `how`.
+NOT_A_PATH = ("→", "›", " e.g.", " or ", "`", "; ", "double-click", "packaged", "merged", "wherever", "anywhere")
 
 
 # ── Discovery and validation ───────────────────────────────────────────────
@@ -65,8 +67,18 @@ def validate_meta(mod) -> None:
         raise SystemExit(f"✗ {where}: META id {meta['id']!r} should match the file name")
     if meta["category"] not in CATEGORIES:
         raise SystemExit(f"✗ {where}: category {meta['category']!r} is not one of {CATEGORIES}")
-    if (enable := meta.get("enable")) and enable.get("lang") not in LANGS:
-        raise SystemExit(f"✗ {where}: enable.lang {enable.get('lang')!r} is not one of LANGS")
+    if unknown := set(meta) - KNOWN_META:
+        raise SystemExit(f"✗ {where}: unknown META keys {sorted(unknown)} (see ports/_lib.py)")
+    for key in ("enable", "auto"):
+        block = meta.get(key)
+        if block is None:
+            continue
+        if missing := [k for k in ("where", "code", "lang") if not block.get(k)]:
+            raise SystemExit(f"✗ {where}: META {key} is missing {', '.join(missing)}")
+        if block["lang"] not in LANGS:
+            raise SystemExit(f"✗ {where}: {key}.lang {block['lang']!r} is not one of LANGS")
+    if "requires" in meta and not isinstance(meta["requires"], str):
+        raise SystemExit(f"✗ {where}: META requires should be a string like 'Ghostty 1.3+'")
 
 
 def sort_key(meta) -> tuple:
@@ -123,6 +135,13 @@ def check(rel: str, content: str | bytes) -> None:
         raise SystemExit(f"✗ dist/{rel} does not parse: {e}") from e
 
 
+WARNINGS: list[str] = []
+
+
+def warn(msg: str) -> None:
+    WARNINGS.append(msg)
+
+
 def vars_for(f) -> dict:
     return {"name": f.name, "slug": f.slug, "snake": f.snake, "id": f.id}
 
@@ -145,12 +164,17 @@ def render_port(mod) -> tuple[dict[str, str | bytes], dict]:
             raise SystemExit(f"✗ {meta['id']}: unknown flavor {out.flavor!r} for {out.path!r}")
         if out.lang not in LANGS:
             raise SystemExit(f"✗ {meta['id']}: lang {out.lang!r} for {out.path!r} is not one of LANGS")
+        if out.dest is not None and (("/" not in out.dest and "\\" not in out.dest) or any(w in out.dest for w in NOT_A_PATH)):
+            warn(f"{meta['id']}: dest {out.dest!r} for {out.path!r} isn't a path; put directions in `how`")
+        if out.append and isinstance(out.content, str) and MARK_START not in out.content:
+            warn(f"{meta['id']}: appended file {out.path!r} should be wrapped in MARK_START/MARK_END")
         check(key, out.content)
         files[key] = out.content
         listed.append({
             "path": key,
             "flavor": out.flavor,
             "dest": out.dest,
+            "how": out.how,
             "lang": out.lang,
             "append": out.append,
             "binary": isinstance(out.content, bytes),
@@ -158,7 +182,10 @@ def render_port(mod) -> tuple[dict[str, str | bytes], dict]:
     enable = meta.get("enable")
     entry = {
         **{k: v for k, v in meta.items() if k != "enable"},
-        "enable": {f.id: {**enable, "code": enable["code"].format(**vars_for(f))} for f in p.FLAVORS}
+        "enable": {
+            f.id: {k: v.format(**vars_for(f)) if k in ("code", "sh") else v for k, v in enable.items()}
+            for f in p.FLAVORS
+        }
         if enable
         else None,
         "files": listed,
@@ -177,7 +204,8 @@ def port_readme(entry: dict) -> str:
         "",
         entry["notes"],
         "",
-        f"[{entry['name']}]({entry['homepage']}) · [All ports and previews]({SITE}/ports/{entry['id']}/)",
+        f"[{entry['name']}]({entry['homepage']}) · [Previews and copy buttons]({SITE}/ports/{entry['id']}/)"
+        + (f" · Needs {entry['requires']}" if entry.get("requires") else ""),
         "",
         "## Files",
         "",
@@ -187,10 +215,12 @@ def port_readme(entry: dict) -> str:
     for file in entry["files"]:
         flavor = by_flavor[file["flavor"]].name if file["flavor"] else "All three"
         name = file["path"].split("/", 1)[1]
-        dest = (file["dest"] or "").replace("|", "\\|")
+        where = f"`{file['dest']}`" if file["dest"] else ""
         if file["append"]:
-            dest = f"append to {dest}"
-        lines.append(f"| {flavor} | [`{name}`]({name.replace(' ', '%20')}) | {dest} |")
+            where = f"add to the end of {where}"
+        if file["how"]:
+            where = f"{where}; {file['how']}" if where else file["how"]
+        lines.append(f"| {flavor} | [`{name}`]({name.replace(' ', '%20')}) | {where.replace('|', '\\|')} |")
     if entry["enable"]:
         lines += ["", "## Turn it on", ""]
         codes = {e["code"] for e in entry["enable"].values()}
@@ -201,9 +231,24 @@ def port_readme(entry: dict) -> str:
             else:
                 lines.append(f"In {enable['where']}:")
             lines += ["", f"```{enable['lang']}", enable["code"], "```", ""]
+            if enable.get("sh"):
+                lines += ["In bash or zsh:", "", "```sh", enable["sh"], "```", ""]
             if len(codes) == 1:
                 break
-    lines += ["", "Generated by `build.py` from `palette.py`. Edit the port in `ports/`, not these files.", ""]
+    if auto := entry.get("auto"):
+        lines += ["## Follow light and dark", "", f"In {auto['where']}:", "", f"```{auto['lang']}", auto["code"], "```", ""]
+    removals = []
+    for file in entry["files"]:
+        if file["append"] and file["dest"]:
+            removals.append(f"- Delete the block between `{MARK_START}` and `{MARK_END}` in `{file['dest']}`.")
+        elif file["dest"]:
+            removals.append(f"- Delete `{file['dest']}`.")
+    if removals:
+        lines += ["## Uninstall", "", *dict.fromkeys(removals)]
+        if entry["enable"]:
+            lines.append("- Remove the line you added to turn it on.")
+        lines.append("")
+    lines += [f"Generated by `build.py` from `palette.py` (v{VERSION}). Edit the port in `ports/`, not these files.", ""]
     return "\n".join(lines)
 
 
@@ -229,6 +274,7 @@ def site_tokens() -> dict[str, str]:
         "accents": [camel(r) for r in p.ACCENTS],
         "roleNames": {camel(k): v for k, v in p.ROLE_NAMES.items()},
         "accentRoles": {camel(k): v for k, v in p.ACCENT_ROLES.items()},
+        "roleUses": {camel(k): p.ROLE_USES[k] for k in p.ROLES},
         "flavors": [
             {
                 "id": f.id,
@@ -271,6 +317,7 @@ def manifest(entries: dict) -> str:
     return (
         json.dumps(
             {
+                "version": VERSION,
                 "flavors": [{"id": f.id, "name": f.name, "slug": f.slug, "dark": f.dark} for f in p.FLAVORS],
                 "categories": CATEGORIES,
                 "ports": sorted(entries.values(), key=sort_key),
@@ -354,6 +401,8 @@ def main() -> None:
             outputs[README] = readme
 
     port_dirs = {DIST / pid for pid in mods}
+    for msg in WARNINGS:
+        print(f"  ⚠ {msg}")
 
     if args.check:
         problems = [f"changed  {path.relative_to(ROOT)}" for path, body in outputs.items() if not same(path, body)]

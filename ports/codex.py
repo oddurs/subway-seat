@@ -8,7 +8,7 @@ specific `markup.inserted.diff`, which a bare lookup never reaches, so this adds
 rules that give both scopes a foreground and a tinted background. syntect lets a
 later rule of equal specificity win, so they go last.
 
-The status line borrows syntax colours by scope (status_line_style.rs): model
+The status line borrows syntax colors by scope (status_line_style.rs): model
 sage, path avocado, branch gold, state and mode burnt orange, usage redbird,
 thread gold.
 """
@@ -29,7 +29,7 @@ META = {
         "lang": "toml",
     },
     "notes": "TextMate themes tuned for Codex, whose diff backgrounds come from the theme's added and removed "
-    "scopes. The status line picks up the same warm syntax colours.",
+    "scopes. The status line picks up the same warm syntax colors.",
 }
 
 

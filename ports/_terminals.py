@@ -9,7 +9,7 @@ ANSI_NAMES = ["black", "red", "green", "yellow", "blue", "magenta", "cyan", "whi
 
 
 def lit(f):
-    """The "on" colour: cursor, active tab, focused split. Gold on dark, burnt orange on light."""
+    """The "on" color: cursor, active tab, focused split. Gold on dark, burnt orange on light."""
     return f.yellow if f.dark else f.orange
 
 
@@ -22,7 +22,7 @@ def split(f):
 
 
 def dim(f, color):
-    """Faint text: the colour pulled a third of the way into the ground."""
+    """Faint text: the color pulled a third of the way into the ground."""
     return f.mix(color, "base", 0.66)
 
 

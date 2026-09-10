@@ -31,7 +31,7 @@ META = {
 
 ANSI = ["black", "red", "green", "yellow", "blue", "magenta", "cyan", "white"]
 
-# Zed syntax capture → SYNTAX role, or (colour role, styles) where the palette has no role.
+# Zed syntax capture → SYNTAX role, or (color role, styles) where the palette has no role.
 CAPTURES = {
     "attribute": "attribute",
     "boolean": "boolean",
@@ -244,7 +244,7 @@ def style(f):
     s["vim.yank.background"] = tint(c.yellow, 0.3)
     s["vim.helix_jump_label.foreground"] = c.orange
 
-    # status colours: a hue, a wash behind it and a quiet opaque edge
+    # status colors: a hue, a wash behind it and a quiet opaque edge
     status = {
         "conflict": c.orange, "created": c.green, "deleted": c.red_hi, "error": c.red_hi,
         "hidden": c.overlay0, "hint": c.sage, "ignored": c.overlay0, "info": c.denim,

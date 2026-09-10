@@ -20,9 +20,9 @@ def theme(f):
 
     sections = [
         ("Main background, empty for terminal default", {"main_bg": f.base}),
-        ("Main text colour", {"main_fg": f.text}),
-        ("Title colour for boxes", {"title": f.text_hi}),
-        ("Highlight colour for keyboard shortcuts", {"hi_fg": f.orange}),
+        ("Main text color", {"main_fg": f.text}),
+        ("Title color for boxes", {"title": f.text_hi}),
+        ("Highlight color for keyboard shortcuts", {"hi_fg": f.orange}),
         ("Background of the selected item in the processes box", {"selected_bg": f.surface1}),
         ("Foreground of the selected item in the processes box", {"selected_fg": f.yellow_hi if f.dark else f.text_hi}),
         ("Inactive or disabled text", {"inactive_fg": f.overlay0}),

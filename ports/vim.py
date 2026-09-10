@@ -1,4 +1,4 @@
-"""Vim: a Vimscript colorscheme per flavor (true colour + nearest xterm-256), plus lightline and airline themes."""
+"""Vim: a Vimscript colorscheme per flavor (true color + nearest xterm-256), plus lightline and airline themes."""
 
 from ports import nvim
 from ports._editors import ui
@@ -10,14 +10,14 @@ META = {
     "category": "Editors",
     "homepage": "https://www.vim.org",
     "enable": {"where": "~/.vimrc", "code": "set termguicolors\ncolorscheme {slug}", "lang": "vim"},
-    "notes": "True-colour and 256-colour definitions in one file, with groups for ALE, coc, vim-lsp, GitGutter, "
+    "notes": "True-color and 256-color definitions in one file, with groups for ALE, coc, vim-lsp, GitGutter, "
     "NERDTree, fugitive and more, plus lightline and airline themes. `colorscheme subway-seat` follows "
     "`background`, so `set background=light` gives you Enamel.",
 }
 
 AUTHOR = "Oddur Sigurdsson"
 
-# ── Nearest xterm-256 colour (16–255; 0–15 belong to the terminal's own palette) ──
+# ── Nearest xterm-256 color (16–255; 0–15 belong to the terminal's own palette) ──
 _LEVELS = (0, 95, 135, 175, 215, 255)
 XTERM = {16 + i: (_LEVELS[i // 36], _LEVELS[i // 6 % 6], _LEVELS[i % 6]) for i in range(216)}
 XTERM.update({232 + i: (8 + 10 * i,) * 3 for i in range(24)})
@@ -108,7 +108,7 @@ def groups(f):
 
     # diagnostics: ALE, coc.nvim, vim-lsp, yegappan/lsp
     levels = [
-        # ALE, coc, vim-lsp, yegappan/lsp level names; colour; virtual-text ground
+        # ALE, coc, vim-lsp, yegappan/lsp level names; color; virtual-text ground
         ("Error", "Error", "Error", "Error", u["error"], f.mix("red", "base", 0.12)),
         ("Warning", "Warning", "Warning", "Warning", u["warning"], f.mix("yellow", "base", 0.1)),
         ("Info", "Info", "Information", "Info", u["info"], f.mix("denim", "base", 0.1)),

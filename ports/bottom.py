@@ -11,7 +11,7 @@ META = {
         "code": "cat {slug}.toml >> bottom.toml",
         "lang": "fish",
     },
-    "notes": "A `[styles]` block for bottom 0.10+: cores and sensors in stripe colours, avocado "
+    "notes": "A `[styles]` block for bottom 0.10+: cores and sensors in stripe colors, avocado "
     "download, orange upload, orange table headers and borders.",
 }
 

@@ -1,4 +1,4 @@
-"""Tilix: a JSON colour scheme per flavor."""
+"""Tilix: a JSON color scheme per flavor."""
 
 import json
 
@@ -15,7 +15,7 @@ META = {
         "code": "{name}",
         "lang": "text",
     },
-    "notes": "Palette, cursor, selection highlight, bold and badge colours.",
+    "notes": "Palette, cursor, selection highlight, bold and badge colors.",
 }
 
 

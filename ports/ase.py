@@ -16,12 +16,12 @@ META = {
         "code": "Swatches ▸ Open Swatch Library ▸ Other Library… ▸ {name}.ase",
         "lang": "text",
     },
-    "notes": "An .ase swatch library per flavor, one named group of all 26 colours. "
+    "notes": "An .ase swatch library per flavor, one named group of all 26 colors. "
     "Photoshop, Illustrator, InDesign and the Affinity apps all import it.",
 }
 
 GROUP_START, GROUP_END, COLOR = 0xC001, 0xC002, 0x0001
-NORMAL = 2  # colour type: 0 global, 1 spot, 2 normal
+NORMAL = 2  # color type: 0 global, 1 spot, 2 normal
 
 
 def name_bytes(name):

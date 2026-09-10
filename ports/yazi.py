@@ -13,7 +13,7 @@ META = {
         "lang": "toml",
     },
     "notes": "Yazi flavors with gold directories, an orange mode badge and a gold bar on the hovered "
-    "file; previews use the bundled tmTheme. File and extension icons keep Yazi's own colours.",
+    "file; previews use the bundled tmTheme. File and extension icons keep Yazi's own colors.",
 }
 
 

@@ -1,4 +1,5 @@
 {
+  "version": "0.3.0",
   "flavors": [
     {
       "id": "walnut",
@@ -34,7 +35,7 @@
       "name": "Alacritty",
       "category": "Terminals",
       "homepage": "https://alacritty.org",
-      "notes": "Normal, bright and dim colours, both cursors, selection, search, hints, footer bar and line indicator. `general.import` needs Alacritty 0.14 or later; older versions use a top-level `import`.",
+      "notes": "Normal, bright and dim colors, both cursors, selection, search, hints, footer bar and line indicator. `general.import` needs Alacritty 0.14 or later; older versions use a top-level `import`.",
       "enable": {
         "walnut": {
           "where": "~/.config/alacritty/alacritty.toml",
@@ -57,6 +58,7 @@
           "path": "alacritty/subway-seat.toml",
           "flavor": "walnut",
           "dest": "~/.config/alacritty/themes/subway-seat.toml",
+          "how": null,
           "lang": "toml",
           "append": false,
           "binary": false
@@ -65,6 +67,7 @@
           "path": "alacritty/subway-seat-tunnel.toml",
           "flavor": "tunnel",
           "dest": "~/.config/alacritty/themes/subway-seat-tunnel.toml",
+          "how": null,
           "lang": "toml",
           "append": false,
           "binary": false
@@ -73,6 +76,7 @@
           "path": "alacritty/subway-seat-enamel.toml",
           "flavor": "enamel",
           "dest": "~/.config/alacritty/themes/subway-seat-enamel.toml",
+          "how": null,
           "lang": "toml",
           "append": false,
           "binary": false
@@ -84,7 +88,7 @@
       "name": "foot",
       "category": "Terminals",
       "homepage": "https://codeberg.org/dnkl/foot",
-      "notes": "Colours, dim colours, cursor, selection, search box, jump labels, URLs and the bell flash, in both a dark and a light section. Needs foot 1.26 or later, which replaced `[colors]` with `[colors-dark]` and `[colors-light]`.",
+      "notes": "Colors, dim colors, cursor, selection, search box, jump labels, URLs and the bell flash, in both a dark and a light section. Needs foot 1.26 or later, which replaced `[colors]` with `[colors-dark]` and `[colors-light]`.",
       "enable": {
         "walnut": {
           "where": "~/.config/foot/foot.ini",
@@ -107,6 +111,7 @@
           "path": "foot/subway-seat.ini",
           "flavor": "walnut",
           "dest": "~/.config/foot/subway-seat.ini",
+          "how": null,
           "lang": "ini",
           "append": false,
           "binary": false
@@ -115,6 +120,7 @@
           "path": "foot/subway-seat-tunnel.ini",
           "flavor": "tunnel",
           "dest": "~/.config/foot/subway-seat-tunnel.ini",
+          "how": null,
           "lang": "ini",
           "append": false,
           "binary": false
@@ -123,6 +129,7 @@
           "path": "foot/subway-seat-enamel.ini",
           "flavor": "enamel",
           "dest": "~/.config/foot/subway-seat-enamel.ini",
+          "how": null,
           "lang": "ini",
           "append": false,
           "binary": false
@@ -134,7 +141,7 @@
       "name": "Ghostty",
       "category": "Terminals",
       "homepage": "https://ghostty.org",
-      "notes": "The 16 ANSI colours, cursor, selection and split fill. For light/dark following, use `theme = light:Subway Seat Enamel,dark:Subway Seat`.",
+      "notes": "The 16 ANSI colors, cursor, selection and split fill. For light/dark following, use `theme = light:Subway Seat Enamel,dark:Subway Seat`.",
       "enable": {
         "walnut": {
           "where": "~/.config/ghostty/config",
@@ -157,6 +164,7 @@
           "path": "ghostty/Subway Seat",
           "flavor": "walnut",
           "dest": "~/.config/ghostty/themes/Subway Seat",
+          "how": null,
           "lang": "conf",
           "append": false,
           "binary": false
@@ -165,6 +173,7 @@
           "path": "ghostty/Subway Seat Tunnel",
           "flavor": "tunnel",
           "dest": "~/.config/ghostty/themes/Subway Seat Tunnel",
+          "how": null,
           "lang": "conf",
           "append": false,
           "binary": false
@@ -173,6 +182,7 @@
           "path": "ghostty/Subway Seat Enamel",
           "flavor": "enamel",
           "dest": "~/.config/ghostty/themes/Subway Seat Enamel",
+          "how": null,
           "lang": "conf",
           "append": false,
           "binary": false
@@ -184,7 +194,7 @@
       "name": "GNOME Terminal",
       "category": "Terminals",
       "homepage": "https://help.gnome.org/users/gnome-terminal/stable/",
-      "notes": "Adds a profile with the palette, cursor, selection and bold colours. Re-running the script updates the same profile in place. Ptyxis, GNOME's newer terminal, is not covered.",
+      "notes": "Adds a profile with the palette, cursor, selection and bold colors. Re-running the script updates the same profile in place. Ptyxis, GNOME's newer terminal, is not covered.",
       "enable": {
         "walnut": {
           "where": "any shell in your GNOME session",
@@ -207,6 +217,7 @@
           "path": "gnome-terminal/subway-seat.sh",
           "flavor": "walnut",
           "dest": "anywhere; run once with `sh subway-seat.sh`",
+          "how": null,
           "lang": "sh",
           "append": false,
           "binary": false
@@ -215,6 +226,7 @@
           "path": "gnome-terminal/subway-seat-tunnel.sh",
           "flavor": "tunnel",
           "dest": "anywhere; run once with `sh subway-seat-tunnel.sh`",
+          "how": null,
           "lang": "sh",
           "append": false,
           "binary": false
@@ -223,6 +235,7 @@
           "path": "gnome-terminal/subway-seat-enamel.sh",
           "flavor": "enamel",
           "dest": "anywhere; run once with `sh subway-seat-enamel.sh`",
+          "how": null,
           "lang": "sh",
           "append": false,
           "binary": false
@@ -234,7 +247,7 @@
       "name": "Hyper",
       "category": "Terminals",
       "homepage": "https://hyper.is",
-      "notes": "Colours, cursor, selection, borders and the tab strip. Hyper 3 loads local plugins from `~/.hyper_plugins/local/`; the Hyper 4 canary uses `~/.config/Hyper/plugins/local/`.",
+      "notes": "Colors, cursor, selection, borders and the tab strip. Hyper 3 loads local plugins from `~/.hyper_plugins/local/`; the Hyper 4 canary uses `~/.config/Hyper/plugins/local/`.",
       "enable": {
         "walnut": {
           "where": "~/.hyper.js",
@@ -257,6 +270,7 @@
           "path": "hyper/subway-seat/index.js",
           "flavor": "walnut",
           "dest": "~/.hyper_plugins/local/subway-seat/index.js",
+          "how": null,
           "lang": "typescript",
           "append": false,
           "binary": false
@@ -265,6 +279,7 @@
           "path": "hyper/subway-seat-tunnel/index.js",
           "flavor": "tunnel",
           "dest": "~/.hyper_plugins/local/subway-seat-tunnel/index.js",
+          "how": null,
           "lang": "typescript",
           "append": false,
           "binary": false
@@ -273,6 +288,7 @@
           "path": "hyper/subway-seat-enamel/index.js",
           "flavor": "enamel",
           "dest": "~/.hyper_plugins/local/subway-seat-enamel/index.js",
+          "how": null,
           "lang": "typescript",
           "append": false,
           "binary": false
@@ -284,7 +300,7 @@
       "name": "iTerm2",
       "category": "Terminals",
       "homepage": "https://iterm2.com",
-      "notes": "ANSI colours plus cursor, cursor guide, selection, link, search match, badge and tab colour. Tab Color only shows once the profile's Tab Color box is ticked.",
+      "notes": "ANSI colors plus cursor, cursor guide, selection, link, search match, badge and tab color. Tab Color only shows once the profile's Tab Color box is ticked.",
       "enable": {
         "walnut": {
           "where": "iTerm2 \u203a Settings \u203a Profiles \u203a Colors \u203a Color Presets\u2026 \u203a Import\u2026",
@@ -307,6 +323,7 @@
           "path": "iterm2/Subway Seat.itermcolors",
           "flavor": "walnut",
           "dest": "iTerm2 (open the file to import it as a preset)",
+          "how": null,
           "lang": "xml",
           "append": false,
           "binary": false
@@ -315,6 +332,7 @@
           "path": "iterm2/Subway Seat Tunnel.itermcolors",
           "flavor": "tunnel",
           "dest": "iTerm2 (open the file to import it as a preset)",
+          "how": null,
           "lang": "xml",
           "append": false,
           "binary": false
@@ -323,6 +341,7 @@
           "path": "iterm2/Subway Seat Enamel.itermcolors",
           "flavor": "enamel",
           "dest": "iTerm2 (open the file to import it as a preset)",
+          "how": null,
           "lang": "xml",
           "append": false,
           "binary": false
@@ -334,7 +353,7 @@
       "name": "kitty",
       "category": "Terminals",
       "homepage": "https://sw.kovidgoyal.net/kitty/",
-      "notes": "Colours, cursor, selection, borders, tab bar, title bar, scrollbar and marks. For light/dark following, copy the Enamel file to `light-theme.auto.conf` and a dark one to `dark-theme.auto.conf`.",
+      "notes": "Colors, cursor, selection, borders, tab bar, title bar, scrollbar and marks. For light/dark following, copy the Enamel file to `light-theme.auto.conf` and a dark one to `dark-theme.auto.conf`.",
       "enable": {
         "walnut": {
           "where": "~/.config/kitty/kitty.conf",
@@ -357,6 +376,7 @@
           "path": "kitty/subway-seat.conf",
           "flavor": "walnut",
           "dest": "~/.config/kitty/themes/subway-seat.conf",
+          "how": null,
           "lang": "conf",
           "append": false,
           "binary": false
@@ -365,6 +385,7 @@
           "path": "kitty/subway-seat-tunnel.conf",
           "flavor": "tunnel",
           "dest": "~/.config/kitty/themes/subway-seat-tunnel.conf",
+          "how": null,
           "lang": "conf",
           "append": false,
           "binary": false
@@ -373,6 +394,7 @@
           "path": "kitty/subway-seat-enamel.conf",
           "flavor": "enamel",
           "dest": "~/.config/kitty/themes/subway-seat-enamel.conf",
+          "how": null,
           "lang": "conf",
           "append": false,
           "binary": false
@@ -384,7 +406,7 @@
       "name": "Konsole",
       "category": "Terminals",
       "homepage": "https://konsole.kde.org",
-      "notes": "Background, foreground and the eight colours, each with intense (bright) and faint variants.",
+      "notes": "Background, foreground and the eight colors, each with intense (bright) and faint variants.",
       "enable": {
         "walnut": {
           "where": "Settings \u203a Edit Current Profile \u203a Appearance, or the profile file",
@@ -407,6 +429,7 @@
           "path": "konsole/subway-seat.colorscheme",
           "flavor": "walnut",
           "dest": "~/.local/share/konsole/subway-seat.colorscheme",
+          "how": null,
           "lang": "ini",
           "append": false,
           "binary": false
@@ -415,6 +438,7 @@
           "path": "konsole/subway-seat-tunnel.colorscheme",
           "flavor": "tunnel",
           "dest": "~/.local/share/konsole/subway-seat-tunnel.colorscheme",
+          "how": null,
           "lang": "ini",
           "append": false,
           "binary": false
@@ -423,6 +447,7 @@
           "path": "konsole/subway-seat-enamel.colorscheme",
           "flavor": "enamel",
           "dest": "~/.local/share/konsole/subway-seat-enamel.colorscheme",
+          "how": null,
           "lang": "ini",
           "append": false,
           "binary": false
@@ -434,7 +459,7 @@
       "name": "Rio",
       "category": "Terminals",
       "homepage": "https://rioterm.com",
-      "notes": "Normal, light and dim colours, both cursors, tabs, splits, selection, search and hints. For light/dark following, use `[adaptive-theme]` with `light = \"subway-seat-enamel\"` and `dark = \"subway-seat\"`.",
+      "notes": "Normal, light and dim colors, both cursors, tabs, splits, selection, search and hints. For light/dark following, use `[adaptive-theme]` with `light = \"subway-seat-enamel\"` and `dark = \"subway-seat\"`.",
       "enable": {
         "walnut": {
           "where": "~/.config/rio/config.toml",
@@ -457,6 +482,7 @@
           "path": "rio/subway-seat.toml",
           "flavor": "walnut",
           "dest": "~/.config/rio/themes/subway-seat.toml",
+          "how": null,
           "lang": "toml",
           "append": false,
           "binary": false
@@ -465,6 +491,7 @@
           "path": "rio/subway-seat-tunnel.toml",
           "flavor": "tunnel",
           "dest": "~/.config/rio/themes/subway-seat-tunnel.toml",
+          "how": null,
           "lang": "toml",
           "append": false,
           "binary": false
@@ -473,6 +500,7 @@
           "path": "rio/subway-seat-enamel.toml",
           "flavor": "enamel",
           "dest": "~/.config/rio/themes/subway-seat-enamel.toml",
+          "how": null,
           "lang": "toml",
           "append": false,
           "binary": false
@@ -484,7 +512,7 @@
       "name": "Tabby",
       "category": "Terminals",
       "homepage": "https://tabby.sh",
-      "notes": "Colours, cursor and selection. Tabby's default minimum contrast ratio of 4 nudges some colours; set `terminal.minimumContrastRatio: 1` to see the palette as designed.",
+      "notes": "Colors, cursor and selection. Tabby's default minimum contrast ratio of 4 nudges some colors; set `terminal.minimumContrastRatio: 1` to see the palette as designed.",
       "enable": {
         "walnut": {
           "where": "Tabby's config.yaml (Settings \u203a Config file), then Settings \u203a Color scheme",
@@ -507,6 +535,7 @@
           "path": "tabby/subway-seat.yaml",
           "flavor": "walnut",
           "dest": "Tabby config.yaml, under terminal.customColorSchemes",
+          "how": null,
           "lang": "yaml",
           "append": false,
           "binary": false
@@ -515,6 +544,7 @@
           "path": "tabby/subway-seat-tunnel.yaml",
           "flavor": "tunnel",
           "dest": "Tabby config.yaml, under terminal.customColorSchemes",
+          "how": null,
           "lang": "yaml",
           "append": false,
           "binary": false
@@ -523,6 +553,7 @@
           "path": "tabby/subway-seat-enamel.yaml",
           "flavor": "enamel",
           "dest": "Tabby config.yaml, under terminal.customColorSchemes",
+          "how": null,
           "lang": "yaml",
           "append": false,
           "binary": false
@@ -534,7 +565,7 @@
       "name": "Terminal.app",
       "category": "Terminals",
       "homepage": "https://support.apple.com/guide/terminal/welcome/mac",
-      "notes": "The 16 ANSI colours plus background, text, bold text, selection and cursor. Terminal.app has no setting for cursor text or tab colours.",
+      "notes": "The 16 ANSI colors plus background, text, bold text, selection and cursor. Terminal.app has no setting for cursor text or tab colors.",
       "enable": {
         "walnut": {
           "where": "Terminal \u203a Settings \u203a Profiles (select it, then click Default)",
@@ -557,6 +588,7 @@
           "path": "terminal-app/Subway Seat.terminal",
           "flavor": "walnut",
           "dest": "Terminal.app (open the file to import it as a profile)",
+          "how": null,
           "lang": "xml",
           "append": false,
           "binary": true
@@ -565,6 +597,7 @@
           "path": "terminal-app/Subway Seat Tunnel.terminal",
           "flavor": "tunnel",
           "dest": "Terminal.app (open the file to import it as a profile)",
+          "how": null,
           "lang": "xml",
           "append": false,
           "binary": true
@@ -573,6 +606,7 @@
           "path": "terminal-app/Subway Seat Enamel.terminal",
           "flavor": "enamel",
           "dest": "Terminal.app (open the file to import it as a profile)",
+          "how": null,
           "lang": "xml",
           "append": false,
           "binary": true
@@ -584,7 +618,7 @@
       "name": "Terminator",
       "category": "Terminals",
       "homepage": "https://gnome-terminator.org",
-      "notes": "Palette, cursor and the title bar colours for the focused, broadcast-receiving and inactive terminals. Paste the snippet under the existing `[profiles]` heading; the cursor keys need Terminator 2.1.2 or later.",
+      "notes": "Palette, cursor and the title bar colors for the focused, broadcast-receiving and inactive terminals. Paste the snippet under the existing `[profiles]` heading; the cursor keys need Terminator 2.1.2 or later.",
       "enable": {
         "walnut": {
           "where": "right-click \u203a Profiles, or from a shell",
@@ -607,6 +641,7 @@
           "path": "terminator/subway-seat.config",
           "flavor": "walnut",
           "dest": "~/.config/terminator/config, under [profiles]",
+          "how": null,
           "lang": "ini",
           "append": false,
           "binary": false
@@ -615,6 +650,7 @@
           "path": "terminator/subway-seat-tunnel.config",
           "flavor": "tunnel",
           "dest": "~/.config/terminator/config, under [profiles]",
+          "how": null,
           "lang": "ini",
           "append": false,
           "binary": false
@@ -623,6 +659,7 @@
           "path": "terminator/subway-seat-enamel.config",
           "flavor": "enamel",
           "dest": "~/.config/terminator/config, under [profiles]",
+          "how": null,
           "lang": "ini",
           "append": false,
           "binary": false
@@ -634,7 +671,7 @@
       "name": "Termux",
       "category": "Terminals",
       "homepage": "https://termux.dev",
-      "notes": "Background, foreground, cursor and the 16 ANSI colours. Termux reads one colour file, so switching flavors means replacing it.",
+      "notes": "Background, foreground, cursor and the 16 ANSI colors. Termux reads one color file, so switching flavors means replacing it.",
       "enable": {
         "walnut": {
           "where": "Termux, after copying the file to ~/.termux/colors.properties",
@@ -657,6 +694,7 @@
           "path": "termux/subway-seat.properties",
           "flavor": "walnut",
           "dest": "~/.termux/colors.properties",
+          "how": null,
           "lang": "ini",
           "append": false,
           "binary": false
@@ -665,6 +703,7 @@
           "path": "termux/subway-seat-tunnel.properties",
           "flavor": "tunnel",
           "dest": "~/.termux/colors.properties",
+          "how": null,
           "lang": "ini",
           "append": false,
           "binary": false
@@ -673,6 +712,7 @@
           "path": "termux/subway-seat-enamel.properties",
           "flavor": "enamel",
           "dest": "~/.termux/colors.properties",
+          "how": null,
           "lang": "ini",
           "append": false,
           "binary": false
@@ -684,7 +724,7 @@
       "name": "Tilix",
       "category": "Terminals",
       "homepage": "https://gnunn1.github.io/tilix-web/",
-      "notes": "Palette, cursor, selection highlight, bold and badge colours.",
+      "notes": "Palette, cursor, selection highlight, bold and badge colors.",
       "enable": {
         "walnut": {
           "where": "Preferences \u203a Profiles \u203a Color \u203a Color scheme",
@@ -707,6 +747,7 @@
           "path": "tilix/subway-seat.json",
           "flavor": "walnut",
           "dest": "~/.config/tilix/schemes/subway-seat.json",
+          "how": null,
           "lang": "json",
           "append": false,
           "binary": false
@@ -715,6 +756,7 @@
           "path": "tilix/subway-seat-tunnel.json",
           "flavor": "tunnel",
           "dest": "~/.config/tilix/schemes/subway-seat-tunnel.json",
+          "how": null,
           "lang": "json",
           "append": false,
           "binary": false
@@ -723,6 +765,7 @@
           "path": "tilix/subway-seat-enamel.json",
           "flavor": "enamel",
           "dest": "~/.config/tilix/schemes/subway-seat-enamel.json",
+          "how": null,
           "lang": "json",
           "append": false,
           "binary": false
@@ -734,7 +777,7 @@
       "name": "Warp",
       "category": "Terminals",
       "homepage": "https://www.warp.dev",
-      "notes": "Background, text, accent, cursor and the 16 ANSI colours. On Linux the themes folder is `~/.local/share/warp-terminal/themes/`; on Windows, `%APPDATA%\\warp\\Warp\\data\\themes\\`.",
+      "notes": "Background, text, accent, cursor and the 16 ANSI colors. On Linux the themes folder is `~/.local/share/warp-terminal/themes/`; on Windows, `%APPDATA%\\warp\\Warp\\data\\themes\\`.",
       "enable": {
         "walnut": {
           "where": "Warp \u203a Settings \u203a Appearance \u203a Themes",
@@ -757,6 +800,7 @@
           "path": "warp/subway-seat.yaml",
           "flavor": "walnut",
           "dest": "~/.warp/themes/subway-seat.yaml",
+          "how": null,
           "lang": "yaml",
           "append": false,
           "binary": false
@@ -765,6 +809,7 @@
           "path": "warp/subway-seat-tunnel.yaml",
           "flavor": "tunnel",
           "dest": "~/.warp/themes/subway-seat-tunnel.yaml",
+          "how": null,
           "lang": "yaml",
           "append": false,
           "binary": false
@@ -773,6 +818,7 @@
           "path": "warp/subway-seat-enamel.yaml",
           "flavor": "enamel",
           "dest": "~/.warp/themes/subway-seat-enamel.yaml",
+          "how": null,
           "lang": "yaml",
           "append": false,
           "binary": false
@@ -784,7 +830,7 @@
       "name": "WezTerm",
       "category": "Terminals",
       "homepage": "https://wezterm.org",
-      "notes": "Colours, cursor, selection, splits, copy mode, quick select and the tab bar. The tab bar colours apply to the retro tab bar (`use_fancy_tab_bar = false`); the fancy one takes its frame from `window_frame`.",
+      "notes": "Colors, cursor, selection, splits, copy mode, quick select and the tab bar. The tab bar colors apply to the retro tab bar (`use_fancy_tab_bar = false`); the fancy one takes its frame from `window_frame`.",
       "enable": {
         "walnut": {
           "where": "~/.config/wezterm/wezterm.lua",
@@ -807,6 +853,7 @@
           "path": "wezterm/subway-seat.toml",
           "flavor": "walnut",
           "dest": "~/.config/wezterm/colors/subway-seat.toml",
+          "how": null,
           "lang": "toml",
           "append": false,
           "binary": false
@@ -815,6 +862,7 @@
           "path": "wezterm/subway-seat-tunnel.toml",
           "flavor": "tunnel",
           "dest": "~/.config/wezterm/colors/subway-seat-tunnel.toml",
+          "how": null,
           "lang": "toml",
           "append": false,
           "binary": false
@@ -823,6 +871,7 @@
           "path": "wezterm/subway-seat-enamel.toml",
           "flavor": "enamel",
           "dest": "~/.config/wezterm/colors/subway-seat-enamel.toml",
+          "how": null,
           "lang": "toml",
           "append": false,
           "binary": false
@@ -834,7 +883,7 @@
       "name": "Windows Terminal",
       "category": "Terminals",
       "homepage": "https://github.com/microsoft/terminal",
-      "notes": "Each flavor is a colour scheme plus a theme for the tab row and tabs. For light/dark following, use `\"colorScheme\": {\"light\": \"Subway Seat Enamel\", \"dark\": \"Subway Seat\"}` and the same shape for `theme`.",
+      "notes": "Each flavor is a color scheme plus a theme for the tab row and tabs. For light/dark following, use `\"colorScheme\": {\"light\": \"Subway Seat Enamel\", \"dark\": \"Subway Seat\"}` and the same shape for `theme`.",
       "enable": {
         "walnut": {
           "where": "settings.json (Settings \u203a Open JSON file), after merging the `schemes` and `themes` entries",
@@ -857,6 +906,7 @@
           "path": "windows-terminal/subway-seat.json",
           "flavor": "walnut",
           "dest": "settings.json \u2192 merge into the top-level `schemes` and `themes` arrays",
+          "how": null,
           "lang": "json",
           "append": false,
           "binary": false
@@ -865,6 +915,7 @@
           "path": "windows-terminal/subway-seat-tunnel.json",
           "flavor": "tunnel",
           "dest": "settings.json \u2192 merge into the top-level `schemes` and `themes` arrays",
+          "how": null,
           "lang": "json",
           "append": false,
           "binary": false
@@ -873,6 +924,7 @@
           "path": "windows-terminal/subway-seat-enamel.json",
           "flavor": "enamel",
           "dest": "settings.json \u2192 merge into the top-level `schemes` and `themes` arrays",
+          "how": null,
           "lang": "json",
           "append": false,
           "binary": false
@@ -881,6 +933,7 @@
           "path": "windows-terminal/subway-seat-all.json",
           "flavor": null,
           "dest": "settings.json \u2192 merge into the top-level `schemes` and `themes` arrays",
+          "how": null,
           "lang": "json",
           "append": false,
           "binary": false
@@ -892,7 +945,7 @@
       "name": "Xfce Terminal",
       "category": "Terminals",
       "homepage": "https://docs.xfce.org/apps/xfce4-terminal/start",
-      "notes": "Palette, cursor, bold, selection and the tab activity colour.",
+      "notes": "Palette, cursor, bold, selection and the tab activity color.",
       "enable": {
         "walnut": {
           "where": "Edit \u203a Preferences \u203a Colors \u203a Presets",
@@ -915,6 +968,7 @@
           "path": "xfce-terminal/subway-seat.theme",
           "flavor": "walnut",
           "dest": "~/.local/share/xfce4/terminal/colorschemes/subway-seat.theme",
+          "how": null,
           "lang": "ini",
           "append": false,
           "binary": false
@@ -923,6 +977,7 @@
           "path": "xfce-terminal/subway-seat-tunnel.theme",
           "flavor": "tunnel",
           "dest": "~/.local/share/xfce4/terminal/colorschemes/subway-seat-tunnel.theme",
+          "how": null,
           "lang": "ini",
           "append": false,
           "binary": false
@@ -931,6 +986,7 @@
           "path": "xfce-terminal/subway-seat-enamel.theme",
           "flavor": "enamel",
           "dest": "~/.local/share/xfce4/terminal/colorschemes/subway-seat-enamel.theme",
+          "how": null,
           "lang": "ini",
           "append": false,
           "binary": false
@@ -942,7 +998,7 @@
       "name": "Xresources",
       "category": "Terminals",
       "homepage": "https://wiki.archlinux.org/title/X_resources",
-      "notes": "Foreground, background, cursor, selection and the 16 ANSI colours as wildcard resources, so xterm, urxvt and other X terminals all pick them up.",
+      "notes": "Foreground, background, cursor, selection and the 16 ANSI colors as wildcard resources, so xterm, urxvt and other X terminals all pick them up.",
       "enable": {
         "walnut": {
           "where": "~/.Xresources, then run `xrdb -merge ~/.Xresources`",
@@ -965,6 +1021,7 @@
           "path": "xresources/subway-seat.Xresources",
           "flavor": "walnut",
           "dest": "~/subway-seat.Xresources",
+          "how": null,
           "lang": "conf",
           "append": false,
           "binary": false
@@ -973,6 +1030,7 @@
           "path": "xresources/subway-seat-tunnel.Xresources",
           "flavor": "tunnel",
           "dest": "~/subway-seat-tunnel.Xresources",
+          "how": null,
           "lang": "conf",
           "append": false,
           "binary": false
@@ -981,6 +1039,7 @@
           "path": "xresources/subway-seat-enamel.Xresources",
           "flavor": "enamel",
           "dest": "~/subway-seat-enamel.Xresources",
+          "how": null,
           "lang": "conf",
           "append": false,
           "binary": false
@@ -1015,6 +1074,7 @@
           "path": "emacs/subway-seat-theme.el",
           "flavor": "walnut",
           "dest": "a directory on `load-path` and `custom-theme-load-path` (or install the package)",
+          "how": null,
           "lang": "elisp",
           "append": false,
           "binary": false
@@ -1023,6 +1083,7 @@
           "path": "emacs/subway-seat-tunnel-theme.el",
           "flavor": "tunnel",
           "dest": "a directory on `load-path` and `custom-theme-load-path` (or install the package)",
+          "how": null,
           "lang": "elisp",
           "append": false,
           "binary": false
@@ -1031,6 +1092,7 @@
           "path": "emacs/subway-seat-enamel-theme.el",
           "flavor": "enamel",
           "dest": "a directory on `load-path` and `custom-theme-load-path` (or install the package)",
+          "how": null,
           "lang": "elisp",
           "append": false,
           "binary": false
@@ -1065,6 +1127,7 @@
           "path": "gtksourceview/subway-seat.xml",
           "flavor": "walnut",
           "dest": "~/.local/share/gtksourceview-5/styles/subway-seat.xml",
+          "how": null,
           "lang": "xml",
           "append": false,
           "binary": false
@@ -1073,6 +1136,7 @@
           "path": "gtksourceview/subway-seat-tunnel.xml",
           "flavor": "tunnel",
           "dest": "~/.local/share/gtksourceview-5/styles/subway-seat-tunnel.xml",
+          "how": null,
           "lang": "xml",
           "append": false,
           "binary": false
@@ -1081,6 +1145,7 @@
           "path": "gtksourceview/subway-seat-enamel.xml",
           "flavor": "enamel",
           "dest": "~/.local/share/gtksourceview-5/styles/subway-seat-enamel.xml",
+          "how": null,
           "lang": "xml",
           "append": false,
           "binary": false
@@ -1115,6 +1180,7 @@
           "path": "helix/subway_seat.toml",
           "flavor": "walnut",
           "dest": "~/.config/helix/themes/subway_seat.toml",
+          "how": null,
           "lang": "toml",
           "append": false,
           "binary": false
@@ -1123,6 +1189,7 @@
           "path": "helix/subway_seat_tunnel.toml",
           "flavor": "tunnel",
           "dest": "~/.config/helix/themes/subway_seat_tunnel.toml",
+          "how": null,
           "lang": "toml",
           "append": false,
           "binary": false
@@ -1131,6 +1198,7 @@
           "path": "helix/subway_seat_enamel.toml",
           "flavor": "enamel",
           "dest": "~/.config/helix/themes/subway_seat_enamel.toml",
+          "how": null,
           "lang": "toml",
           "append": false,
           "binary": false
@@ -1142,7 +1210,7 @@
       "name": "JetBrains IDEs",
       "category": "Editors",
       "homepage": "https://www.jetbrains.com",
-      "notes": "One plugin for IntelliJ IDEA, PyCharm, WebStorm, GoLand, Rider and the rest: a UI theme and a matching editor color scheme for each flavor. The .icls files import on their own if you only want the editor colours.",
+      "notes": "One plugin for IntelliJ IDEA, PyCharm, WebStorm, GoLand, Rider and the rest: a UI theme and a matching editor color scheme for each flavor. The .icls files import on their own if you only want the editor colors.",
       "enable": {
         "walnut": {
           "where": "Settings \u2192 Plugins \u2192 \u2699 \u2192 Install Plugin from Disk\u2026 (subway-seat-jetbrains.jar), then Settings \u2192 Appearance & Behavior \u2192 Appearance",
@@ -1164,7 +1232,8 @@
         {
           "path": "jetbrains/schemes/subway-seat.icls",
           "flavor": "walnut",
-          "dest": "Settings \u2192 Editor \u2192 Color Scheme \u2192 \u2699 \u2192 Import Scheme\u2026 (editor colours only)",
+          "dest": "Settings \u2192 Editor \u2192 Color Scheme \u2192 \u2699 \u2192 Import Scheme\u2026 (editor colors only)",
+          "how": null,
           "lang": "xml",
           "append": false,
           "binary": false
@@ -1173,6 +1242,7 @@
           "path": "jetbrains/themes/subway-seat.theme.json",
           "flavor": "walnut",
           "dest": "packaged in the plugin JAR",
+          "how": null,
           "lang": "json",
           "append": false,
           "binary": false
@@ -1180,7 +1250,8 @@
         {
           "path": "jetbrains/schemes/subway-seat-tunnel.icls",
           "flavor": "tunnel",
-          "dest": "Settings \u2192 Editor \u2192 Color Scheme \u2192 \u2699 \u2192 Import Scheme\u2026 (editor colours only)",
+          "dest": "Settings \u2192 Editor \u2192 Color Scheme \u2192 \u2699 \u2192 Import Scheme\u2026 (editor colors only)",
+          "how": null,
           "lang": "xml",
           "append": false,
           "binary": false
@@ -1189,6 +1260,7 @@
           "path": "jetbrains/themes/subway-seat-tunnel.theme.json",
           "flavor": "tunnel",
           "dest": "packaged in the plugin JAR",
+          "how": null,
           "lang": "json",
           "append": false,
           "binary": false
@@ -1196,7 +1268,8 @@
         {
           "path": "jetbrains/schemes/subway-seat-enamel.icls",
           "flavor": "enamel",
-          "dest": "Settings \u2192 Editor \u2192 Color Scheme \u2192 \u2699 \u2192 Import Scheme\u2026 (editor colours only)",
+          "dest": "Settings \u2192 Editor \u2192 Color Scheme \u2192 \u2699 \u2192 Import Scheme\u2026 (editor colors only)",
+          "how": null,
           "lang": "xml",
           "append": false,
           "binary": false
@@ -1205,6 +1278,7 @@
           "path": "jetbrains/themes/subway-seat-enamel.theme.json",
           "flavor": "enamel",
           "dest": "packaged in the plugin JAR",
+          "how": null,
           "lang": "json",
           "append": false,
           "binary": false
@@ -1213,6 +1287,7 @@
           "path": "jetbrains/META-INF/plugin.xml",
           "flavor": null,
           "dest": "packaged in the plugin JAR",
+          "how": null,
           "lang": "xml",
           "append": false,
           "binary": false
@@ -1221,6 +1296,7 @@
           "path": "jetbrains/subway-seat-jetbrains.jar",
           "flavor": null,
           "dest": "Settings \u2192 Plugins \u2192 \u2699 \u2192 Install Plugin from Disk\u2026",
+          "how": null,
           "lang": "text",
           "append": false,
           "binary": true
@@ -1255,6 +1331,7 @@
           "path": "kakoune/colors/subway-seat.kak",
           "flavor": "walnut",
           "dest": "~/.config/kak/colors/subway-seat.kak",
+          "how": null,
           "lang": "conf",
           "append": false,
           "binary": false
@@ -1263,6 +1340,7 @@
           "path": "kakoune/colors/subway-seat-tunnel.kak",
           "flavor": "tunnel",
           "dest": "~/.config/kak/colors/subway-seat-tunnel.kak",
+          "how": null,
           "lang": "conf",
           "append": false,
           "binary": false
@@ -1271,6 +1349,7 @@
           "path": "kakoune/colors/subway-seat-enamel.kak",
           "flavor": "enamel",
           "dest": "~/.config/kak/colors/subway-seat-enamel.kak",
+          "how": null,
           "lang": "conf",
           "append": false,
           "binary": false
@@ -1282,7 +1361,7 @@
       "name": "Lite XL",
       "category": "Editors",
       "homepage": "https://lite-xl.com",
-      "notes": "Copy the files to `~/.config/lite-xl/colors/`, then pick one in the settings plugin or load it from `init.lua`. Also colours the indentguide and bracketmatch plugins.",
+      "notes": "Copy the files to `~/.config/lite-xl/colors/`, then pick one in the settings plugin or load it from `init.lua`. Also colors the indentguide and bracketmatch plugins.",
       "enable": {
         "walnut": {
           "where": "~/.config/lite-xl/init.lua",
@@ -1305,6 +1384,7 @@
           "path": "lite-xl/colors/subway-seat.lua",
           "flavor": "walnut",
           "dest": "~/.config/lite-xl/colors/subway-seat.lua",
+          "how": null,
           "lang": "lua",
           "append": false,
           "binary": false
@@ -1313,6 +1393,7 @@
           "path": "lite-xl/colors/subway-seat-tunnel.lua",
           "flavor": "tunnel",
           "dest": "~/.config/lite-xl/colors/subway-seat-tunnel.lua",
+          "how": null,
           "lang": "lua",
           "append": false,
           "binary": false
@@ -1321,6 +1402,7 @@
           "path": "lite-xl/colors/subway-seat-enamel.lua",
           "flavor": "enamel",
           "dest": "~/.config/lite-xl/colors/subway-seat-enamel.lua",
+          "how": null,
           "lang": "lua",
           "append": false,
           "binary": false
@@ -1332,7 +1414,7 @@
       "name": "micro",
       "category": "Editors",
       "homepage": "https://micro-editor.github.io",
-      "notes": "Copy the `.micro` files to `~/.config/micro/colorschemes/`, or run `set colorscheme subway-seat` from micro's command bar. True-colour hex; micro maps it to 256 colours when the terminal can't show it.",
+      "notes": "Copy the `.micro` files to `~/.config/micro/colorschemes/`, or run `set colorscheme subway-seat` from micro's command bar. True-color hex; micro maps it to 256 colors when the terminal can't show it.",
       "enable": {
         "walnut": {
           "where": "~/.config/micro/settings.json",
@@ -1355,6 +1437,7 @@
           "path": "micro/colorschemes/subway-seat.micro",
           "flavor": "walnut",
           "dest": "~/.config/micro/colorschemes/subway-seat.micro",
+          "how": null,
           "lang": "conf",
           "append": false,
           "binary": false
@@ -1363,6 +1446,7 @@
           "path": "micro/colorschemes/subway-seat-tunnel.micro",
           "flavor": "tunnel",
           "dest": "~/.config/micro/colorschemes/subway-seat-tunnel.micro",
+          "how": null,
           "lang": "conf",
           "append": false,
           "binary": false
@@ -1371,6 +1455,7 @@
           "path": "micro/colorschemes/subway-seat-enamel.micro",
           "flavor": "enamel",
           "dest": "~/.config/micro/colorschemes/subway-seat-enamel.micro",
+          "how": null,
           "lang": "conf",
           "append": false,
           "binary": false
@@ -1405,6 +1490,7 @@
           "path": "nvim/lua/subway-seat/palette.lua",
           "flavor": null,
           "dest": null,
+          "how": null,
           "lang": "lua",
           "append": false,
           "binary": false
@@ -1413,6 +1499,7 @@
           "path": "nvim/lua/subway-seat/init.lua",
           "flavor": null,
           "dest": null,
+          "how": null,
           "lang": "lua",
           "append": false,
           "binary": false
@@ -1421,6 +1508,7 @@
           "path": "nvim/lua/subway-seat/groups/walnut.lua",
           "flavor": "walnut",
           "dest": null,
+          "how": null,
           "lang": "lua",
           "append": false,
           "binary": false
@@ -1429,6 +1517,7 @@
           "path": "nvim/lua/lualine/themes/subway_seat.lua",
           "flavor": "walnut",
           "dest": null,
+          "how": null,
           "lang": "lua",
           "append": false,
           "binary": false
@@ -1437,6 +1526,7 @@
           "path": "nvim/colors/subway-seat.lua",
           "flavor": "walnut",
           "dest": "~/.config/nvim/colors/subway-seat.lua (or install the plugin)",
+          "how": null,
           "lang": "lua",
           "append": false,
           "binary": false
@@ -1445,6 +1535,7 @@
           "path": "nvim/lua/subway-seat/groups/tunnel.lua",
           "flavor": "tunnel",
           "dest": null,
+          "how": null,
           "lang": "lua",
           "append": false,
           "binary": false
@@ -1453,6 +1544,7 @@
           "path": "nvim/lua/lualine/themes/subway_seat_tunnel.lua",
           "flavor": "tunnel",
           "dest": null,
+          "how": null,
           "lang": "lua",
           "append": false,
           "binary": false
@@ -1461,6 +1553,7 @@
           "path": "nvim/colors/subway-seat-tunnel.lua",
           "flavor": "tunnel",
           "dest": "~/.config/nvim/colors/subway-seat-tunnel.lua (or install the plugin)",
+          "how": null,
           "lang": "lua",
           "append": false,
           "binary": false
@@ -1469,6 +1562,7 @@
           "path": "nvim/lua/subway-seat/groups/enamel.lua",
           "flavor": "enamel",
           "dest": null,
+          "how": null,
           "lang": "lua",
           "append": false,
           "binary": false
@@ -1477,6 +1571,7 @@
           "path": "nvim/lua/lualine/themes/subway_seat_enamel.lua",
           "flavor": "enamel",
           "dest": null,
+          "how": null,
           "lang": "lua",
           "append": false,
           "binary": false
@@ -1485,6 +1580,7 @@
           "path": "nvim/colors/subway-seat-enamel.lua",
           "flavor": "enamel",
           "dest": "~/.config/nvim/colors/subway-seat-enamel.lua (or install the plugin)",
+          "how": null,
           "lang": "lua",
           "append": false,
           "binary": false
@@ -1496,7 +1592,7 @@
       "name": "Notepad++",
       "category": "Editors",
       "homepage": "https://notepad-plus-plus.org",
-      "notes": "Syntax colours for 56 lexers plus the editor chrome: margins, folding, tabs, smart and find highlights. Pair the dark flavors with Settings \u2192 Preferences \u2192 Dark Mode so the menus match.",
+      "notes": "Syntax colors for 56 lexers plus the editor chrome: margins, folding, tabs, smart and find highlights. Pair the dark flavors with Settings \u2192 Preferences \u2192 Dark Mode so the menus match.",
       "enable": {
         "walnut": {
           "where": "Settings \u2192 Style Configurator, after copying the file to %AppData%\\Notepad++\\themes",
@@ -1519,6 +1615,7 @@
           "path": "notepad-plus-plus/Subway Seat.xml",
           "flavor": "walnut",
           "dest": "%AppData%\\Notepad++\\themes\\Subway Seat.xml",
+          "how": null,
           "lang": "xml",
           "append": false,
           "binary": false
@@ -1527,6 +1624,7 @@
           "path": "notepad-plus-plus/Subway Seat Tunnel.xml",
           "flavor": "tunnel",
           "dest": "%AppData%\\Notepad++\\themes\\Subway Seat Tunnel.xml",
+          "how": null,
           "lang": "xml",
           "append": false,
           "binary": false
@@ -1535,6 +1633,7 @@
           "path": "notepad-plus-plus/Subway Seat Enamel.xml",
           "flavor": "enamel",
           "dest": "%AppData%\\Notepad++\\themes\\Subway Seat Enamel.xml",
+          "how": null,
           "lang": "xml",
           "append": false,
           "binary": false
@@ -1569,6 +1668,7 @@
           "path": "sublime-text/Subway Seat.sublime-color-scheme",
           "flavor": "walnut",
           "dest": "Packages/User/Subway Seat.sublime-color-scheme",
+          "how": null,
           "lang": "json",
           "append": false,
           "binary": false
@@ -1577,6 +1677,7 @@
           "path": "sublime-text/Subway Seat Tunnel.sublime-color-scheme",
           "flavor": "tunnel",
           "dest": "Packages/User/Subway Seat Tunnel.sublime-color-scheme",
+          "how": null,
           "lang": "json",
           "append": false,
           "binary": false
@@ -1585,6 +1686,7 @@
           "path": "sublime-text/Subway Seat Enamel.sublime-color-scheme",
           "flavor": "enamel",
           "dest": "Packages/User/Subway Seat Enamel.sublime-color-scheme",
+          "how": null,
           "lang": "json",
           "append": false,
           "binary": false
@@ -1596,7 +1698,7 @@
       "name": "Vim",
       "category": "Editors",
       "homepage": "https://www.vim.org",
-      "notes": "True-colour and 256-colour definitions in one file, with groups for ALE, coc, vim-lsp, GitGutter, NERDTree, fugitive and more, plus lightline and airline themes. `colorscheme subway-seat` follows `background`, so `set background=light` gives you Enamel.",
+      "notes": "True-color and 256-color definitions in one file, with groups for ALE, coc, vim-lsp, GitGutter, NERDTree, fugitive and more, plus lightline and airline themes. `colorscheme subway-seat` follows `background`, so `set background=light` gives you Enamel.",
       "enable": {
         "walnut": {
           "where": "~/.vimrc",
@@ -1619,6 +1721,7 @@
           "path": "vim/colors/subway-seat.vim",
           "flavor": "walnut",
           "dest": "~/.vim/colors/subway-seat.vim",
+          "how": null,
           "lang": "vim",
           "append": false,
           "binary": false
@@ -1627,6 +1730,7 @@
           "path": "vim/autoload/lightline/colorscheme/subway_seat.vim",
           "flavor": "walnut",
           "dest": "~/.vim/autoload/lightline/colorscheme/subway_seat.vim",
+          "how": null,
           "lang": "vim",
           "append": false,
           "binary": false
@@ -1635,6 +1739,7 @@
           "path": "vim/autoload/airline/themes/subway_seat.vim",
           "flavor": "walnut",
           "dest": "~/.vim/autoload/airline/themes/subway_seat.vim",
+          "how": null,
           "lang": "vim",
           "append": false,
           "binary": false
@@ -1643,6 +1748,7 @@
           "path": "vim/colors/subway-seat-tunnel.vim",
           "flavor": "tunnel",
           "dest": "~/.vim/colors/subway-seat-tunnel.vim",
+          "how": null,
           "lang": "vim",
           "append": false,
           "binary": false
@@ -1651,6 +1757,7 @@
           "path": "vim/autoload/lightline/colorscheme/subway_seat_tunnel.vim",
           "flavor": "tunnel",
           "dest": "~/.vim/autoload/lightline/colorscheme/subway_seat_tunnel.vim",
+          "how": null,
           "lang": "vim",
           "append": false,
           "binary": false
@@ -1659,6 +1766,7 @@
           "path": "vim/autoload/airline/themes/subway_seat_tunnel.vim",
           "flavor": "tunnel",
           "dest": "~/.vim/autoload/airline/themes/subway_seat_tunnel.vim",
+          "how": null,
           "lang": "vim",
           "append": false,
           "binary": false
@@ -1667,6 +1775,7 @@
           "path": "vim/colors/subway-seat-enamel.vim",
           "flavor": "enamel",
           "dest": "~/.vim/colors/subway-seat-enamel.vim",
+          "how": null,
           "lang": "vim",
           "append": false,
           "binary": false
@@ -1675,6 +1784,7 @@
           "path": "vim/autoload/lightline/colorscheme/subway_seat_enamel.vim",
           "flavor": "enamel",
           "dest": "~/.vim/autoload/lightline/colorscheme/subway_seat_enamel.vim",
+          "how": null,
           "lang": "vim",
           "append": false,
           "binary": false
@@ -1683,6 +1793,7 @@
           "path": "vim/autoload/airline/themes/subway_seat_enamel.vim",
           "flavor": "enamel",
           "dest": "~/.vim/autoload/airline/themes/subway_seat_enamel.vim",
+          "how": null,
           "lang": "vim",
           "append": false,
           "binary": false
@@ -1694,7 +1805,7 @@
       "name": "VS Code",
       "category": "Editors",
       "homepage": "https://code.visualstudio.com",
-      "notes": "All three flavors in one extension, with a fully layered workbench, TextMate and semantic token colours. Works in Cursor, Windsurf and VSCodium too.",
+      "notes": "All three flavors in one extension, with a fully layered workbench, TextMate and semantic token colors. Works in Cursor, Windsurf and VSCodium too.",
       "enable": {
         "walnut": {
           "where": "the Marketplace or Open VSX (Cursor, Windsurf, VSCodium), then Preferences: Color Theme",
@@ -1717,6 +1828,7 @@
           "path": "vscode/themes/subway-seat-color-theme.json",
           "flavor": "walnut",
           "dest": "packaged in the extension",
+          "how": null,
           "lang": "json",
           "append": false,
           "binary": false
@@ -1725,6 +1837,7 @@
           "path": "vscode/themes/subway-seat-tunnel-color-theme.json",
           "flavor": "tunnel",
           "dest": "packaged in the extension",
+          "how": null,
           "lang": "json",
           "append": false,
           "binary": false
@@ -1733,6 +1846,7 @@
           "path": "vscode/themes/subway-seat-enamel-color-theme.json",
           "flavor": "enamel",
           "dest": "packaged in the extension",
+          "how": null,
           "lang": "json",
           "append": false,
           "binary": false
@@ -1741,6 +1855,7 @@
           "path": "vscode/package.json",
           "flavor": null,
           "dest": null,
+          "how": null,
           "lang": "json",
           "append": false,
           "binary": false
@@ -1749,6 +1864,7 @@
           "path": "vscode/README.md",
           "flavor": null,
           "dest": null,
+          "how": null,
           "lang": "text",
           "append": false,
           "binary": false
@@ -1757,6 +1873,7 @@
           "path": "vscode/subway-seat-0.3.0.vsix",
           "flavor": null,
           "dest": "code --install-extension subway-seat-0.3.0.vsix",
+          "how": null,
           "lang": "text",
           "append": false,
           "binary": true
@@ -1768,7 +1885,7 @@
       "name": "Xcode",
       "category": "Editors",
       "homepage": "https://developer.apple.com/xcode/",
-      "notes": "Source editor, console and rendered documentation colours in SF Mono, with comments in italic. Change the font size in Xcode's Themes settings; the colours stay.",
+      "notes": "Source editor, console and rendered documentation colors in SF Mono, with comments in italic. Change the font size in Xcode's Themes settings; the colors stay.",
       "enable": {
         "walnut": {
           "where": "Terminal, then Xcode \u2192 Settings\u2026 \u2192 Themes",
@@ -1791,6 +1908,7 @@
           "path": "xcode/Subway Seat.xccolortheme",
           "flavor": "walnut",
           "dest": "~/Library/Developer/Xcode/UserData/FontAndColorThemes/Subway Seat.xccolortheme",
+          "how": null,
           "lang": "xml",
           "append": false,
           "binary": false
@@ -1799,6 +1917,7 @@
           "path": "xcode/Subway Seat Tunnel.xccolortheme",
           "flavor": "tunnel",
           "dest": "~/Library/Developer/Xcode/UserData/FontAndColorThemes/Subway Seat Tunnel.xccolortheme",
+          "how": null,
           "lang": "xml",
           "append": false,
           "binary": false
@@ -1807,6 +1926,7 @@
           "path": "xcode/Subway Seat Enamel.xccolortheme",
           "flavor": "enamel",
           "dest": "~/Library/Developer/Xcode/UserData/FontAndColorThemes/Subway Seat Enamel.xccolortheme",
+          "how": null,
           "lang": "xml",
           "append": false,
           "binary": false
@@ -1841,6 +1961,7 @@
           "path": "zed/themes/subway-seat.json",
           "flavor": null,
           "dest": "~/.config/zed/themes/subway-seat.json",
+          "how": null,
           "lang": "json",
           "append": false,
           "binary": false
@@ -1849,6 +1970,7 @@
           "path": "zed/extension.toml",
           "flavor": null,
           "dest": "packaged in the extension",
+          "how": null,
           "lang": "toml",
           "append": false,
           "binary": false
@@ -1857,6 +1979,7 @@
           "path": "zed/LICENSE",
           "flavor": null,
           "dest": "packaged in the extension",
+          "how": null,
           "lang": "text",
           "append": false,
           "binary": false
@@ -1868,7 +1991,7 @@
       "name": "Aider",
       "category": "Agents",
       "homepage": "https://aider.chat",
-      "notes": "Prompt, reply, tool and completion-menu colours for aider's config file. Code blocks use rich's ANSI theme, so they follow your Subway Seat terminal.",
+      "notes": "Prompt, reply, tool and completion-menu colors for aider's config file. Code blocks use rich's ANSI theme, so they follow your Subway Seat terminal.",
       "enable": {
         "walnut": {
           "where": "~/.aider.conf.yml (or .aider.conf.yml in a repo)",
@@ -1891,6 +2014,7 @@
           "path": "aider/subway-seat.aider.conf.yml",
           "flavor": "walnut",
           "dest": "~/.aider.conf.yml",
+          "how": null,
           "lang": "yaml",
           "append": true,
           "binary": false
@@ -1899,6 +2023,7 @@
           "path": "aider/subway-seat-tunnel.aider.conf.yml",
           "flavor": "tunnel",
           "dest": "~/.aider.conf.yml",
+          "how": null,
           "lang": "yaml",
           "append": true,
           "binary": false
@@ -1907,6 +2032,7 @@
           "path": "aider/subway-seat-enamel.aider.conf.yml",
           "flavor": "enamel",
           "dest": "~/.aider.conf.yml",
+          "how": null,
           "lang": "yaml",
           "append": true,
           "binary": false
@@ -1941,6 +2067,7 @@
           "path": "claude-code/themes/subway-seat.json",
           "flavor": "walnut",
           "dest": "~/.claude/themes/subway-seat.json",
+          "how": null,
           "lang": "json",
           "append": false,
           "binary": false
@@ -1949,6 +2076,7 @@
           "path": "claude-code/plugin/themes/subway-seat.json",
           "flavor": "walnut",
           "dest": null,
+          "how": null,
           "lang": "json",
           "append": false,
           "binary": false
@@ -1957,6 +2085,7 @@
           "path": "claude-code/plugin/settings/subway-seat.json",
           "flavor": "walnut",
           "dest": "merged into ~/.claude/settings.json by /subway-seat:setup",
+          "how": null,
           "lang": "json",
           "append": false,
           "binary": false
@@ -1965,6 +2094,7 @@
           "path": "claude-code/themes/subway-seat-tunnel.json",
           "flavor": "tunnel",
           "dest": "~/.claude/themes/subway-seat-tunnel.json",
+          "how": null,
           "lang": "json",
           "append": false,
           "binary": false
@@ -1973,6 +2103,7 @@
           "path": "claude-code/plugin/themes/subway-seat-tunnel.json",
           "flavor": "tunnel",
           "dest": null,
+          "how": null,
           "lang": "json",
           "append": false,
           "binary": false
@@ -1981,6 +2112,7 @@
           "path": "claude-code/plugin/settings/subway-seat-tunnel.json",
           "flavor": "tunnel",
           "dest": "merged into ~/.claude/settings.json by /subway-seat:setup",
+          "how": null,
           "lang": "json",
           "append": false,
           "binary": false
@@ -1989,6 +2121,7 @@
           "path": "claude-code/themes/subway-seat-enamel.json",
           "flavor": "enamel",
           "dest": "~/.claude/themes/subway-seat-enamel.json",
+          "how": null,
           "lang": "json",
           "append": false,
           "binary": false
@@ -1997,6 +2130,7 @@
           "path": "claude-code/plugin/themes/subway-seat-enamel.json",
           "flavor": "enamel",
           "dest": null,
+          "how": null,
           "lang": "json",
           "append": false,
           "binary": false
@@ -2005,6 +2139,7 @@
           "path": "claude-code/plugin/settings/subway-seat-enamel.json",
           "flavor": "enamel",
           "dest": "merged into ~/.claude/settings.json by /subway-seat:setup",
+          "how": null,
           "lang": "json",
           "append": false,
           "binary": false
@@ -2013,6 +2148,7 @@
           "path": "claude-code/plugin/.claude-plugin/plugin.json",
           "flavor": null,
           "dest": null,
+          "how": null,
           "lang": "json",
           "append": false,
           "binary": false
@@ -2021,6 +2157,7 @@
           "path": "claude-code/plugin/settings.json",
           "flavor": null,
           "dest": null,
+          "how": null,
           "lang": "json",
           "append": false,
           "binary": false
@@ -2029,6 +2166,7 @@
           "path": "claude-code/plugin/bin/subway-seat-statusline",
           "flavor": null,
           "dest": "~/.claude/subway-seat/subway-seat-statusline",
+          "how": null,
           "lang": "sh",
           "append": false,
           "binary": false
@@ -2037,6 +2175,7 @@
           "path": "claude-code/plugin/bin/subway-seat-subagents",
           "flavor": null,
           "dest": "~/.claude/subway-seat/subway-seat-subagents",
+          "how": null,
           "lang": "sh",
           "append": false,
           "binary": false
@@ -2045,6 +2184,7 @@
           "path": "claude-code/plugin/tips.json",
           "flavor": null,
           "dest": "~/.claude/subway-seat/tips.json",
+          "how": null,
           "lang": "json",
           "append": false,
           "binary": false
@@ -2053,6 +2193,7 @@
           "path": "claude-code/plugin/output-styles/subway-seat.md",
           "flavor": null,
           "dest": "~/.claude/output-styles/subway-seat.md",
+          "how": null,
           "lang": "text",
           "append": false,
           "binary": false
@@ -2061,6 +2202,7 @@
           "path": "claude-code/plugin/skills/setup/SKILL.md",
           "flavor": null,
           "dest": null,
+          "how": null,
           "lang": "text",
           "append": false,
           "binary": false
@@ -2072,7 +2214,7 @@
       "name": "Codex CLI",
       "category": "Agents",
       "homepage": "https://github.com/openai/codex",
-      "notes": "TextMate themes tuned for Codex, whose diff backgrounds come from the theme's added and removed scopes. The status line picks up the same warm syntax colours.",
+      "notes": "TextMate themes tuned for Codex, whose diff backgrounds come from the theme's added and removed scopes. The status line picks up the same warm syntax colors.",
       "enable": {
         "walnut": {
           "where": "~/.codex/config.toml, after copying the theme to ~/.codex/themes/ (or pick it with /theme)",
@@ -2095,6 +2237,7 @@
           "path": "codex/subway-seat.tmTheme",
           "flavor": "walnut",
           "dest": "~/.codex/themes/subway-seat.tmTheme",
+          "how": null,
           "lang": "xml",
           "append": false,
           "binary": false
@@ -2103,6 +2246,7 @@
           "path": "codex/subway-seat-tunnel.tmTheme",
           "flavor": "tunnel",
           "dest": "~/.codex/themes/subway-seat-tunnel.tmTheme",
+          "how": null,
           "lang": "xml",
           "append": false,
           "binary": false
@@ -2111,6 +2255,7 @@
           "path": "codex/subway-seat-enamel.tmTheme",
           "flavor": "enamel",
           "dest": "~/.codex/themes/subway-seat-enamel.tmTheme",
+          "how": null,
           "lang": "xml",
           "append": false,
           "binary": false
@@ -2122,21 +2267,21 @@
       "name": "Copilot CLI, Amp & Goose",
       "category": "Agents",
       "homepage": "https://github.com/github/copilot-cli",
-      "notes": "These agents have no theme files; they use your terminal's colours, so a Subway Seat terminal theme dresses them too. Copilot CLI needs its `default` theme and Goose its `ansi` theme; Amp needs nothing.",
+      "notes": "These agents have no theme files; they use your terminal's colors, so a Subway Seat terminal theme dresses them too. Copilot CLI needs its `default` theme and Goose its `ansi` theme; Amp needs nothing.",
       "enable": {
         "walnut": {
           "where": "each agent, inside a terminal running a Subway Seat theme",
-          "code": "/settings theme default   # GitHub Copilot CLI (Base-16 terminal colours)\n/t ansi                   # Goose (saved as GOOSE_CLI_THEME)\n# Amp: nothing to set",
+          "code": "/settings theme default   # GitHub Copilot CLI (Base-16 terminal colors)\n/t ansi                   # Goose (saved as GOOSE_CLI_THEME)\n# Amp: nothing to set",
           "lang": "text"
         },
         "tunnel": {
           "where": "each agent, inside a terminal running a Subway Seat theme",
-          "code": "/settings theme default   # GitHub Copilot CLI (Base-16 terminal colours)\n/t ansi                   # Goose (saved as GOOSE_CLI_THEME)\n# Amp: nothing to set",
+          "code": "/settings theme default   # GitHub Copilot CLI (Base-16 terminal colors)\n/t ansi                   # Goose (saved as GOOSE_CLI_THEME)\n# Amp: nothing to set",
           "lang": "text"
         },
         "enamel": {
           "where": "each agent, inside a terminal running a Subway Seat theme",
-          "code": "/settings theme default   # GitHub Copilot CLI (Base-16 terminal colours)\n/t ansi                   # Goose (saved as GOOSE_CLI_THEME)\n# Amp: nothing to set",
+          "code": "/settings theme default   # GitHub Copilot CLI (Base-16 terminal colors)\n/t ansi                   # Goose (saved as GOOSE_CLI_THEME)\n# Amp: nothing to set",
           "lang": "text"
         }
       },
@@ -2145,6 +2290,7 @@
           "path": "terminal-agents/copilot-settings.json",
           "flavor": null,
           "dest": "merged into ~/.copilot/settings.json",
+          "how": null,
           "lang": "json",
           "append": false,
           "binary": false
@@ -2153,6 +2299,7 @@
           "path": "terminal-agents/goose-config.yaml",
           "flavor": null,
           "dest": "~/.config/goose/config.yaml",
+          "how": null,
           "lang": "yaml",
           "append": true,
           "binary": false
@@ -2164,7 +2311,7 @@
       "name": "Gemini CLI",
       "category": "Agents",
       "homepage": "https://github.com/google-gemini/gemini-cli",
-      "notes": "A custom theme file per flavor, plus the same theme as a `ui.customThemes` settings block. Gemini ties string colour to its warning colour, so strings are harvest gold here instead of avocado.",
+      "notes": "A custom theme file per flavor, plus the same theme as a `ui.customThemes` settings block. Gemini ties string color to its warning color, so strings are harvest gold here instead of avocado.",
       "enable": {
         "walnut": {
           "where": "~/.gemini/settings.json, after copying the theme to ~/.gemini/themes/ (it must live under your home directory)",
@@ -2187,6 +2334,7 @@
           "path": "gemini-cli/subway-seat.json",
           "flavor": "walnut",
           "dest": "~/.gemini/themes/subway-seat.json",
+          "how": null,
           "lang": "json",
           "append": false,
           "binary": false
@@ -2195,6 +2343,7 @@
           "path": "gemini-cli/settings/subway-seat.json",
           "flavor": "walnut",
           "dest": "merged into ~/.gemini/settings.json",
+          "how": null,
           "lang": "json",
           "append": false,
           "binary": false
@@ -2203,6 +2352,7 @@
           "path": "gemini-cli/subway-seat-tunnel.json",
           "flavor": "tunnel",
           "dest": "~/.gemini/themes/subway-seat-tunnel.json",
+          "how": null,
           "lang": "json",
           "append": false,
           "binary": false
@@ -2211,6 +2361,7 @@
           "path": "gemini-cli/settings/subway-seat-tunnel.json",
           "flavor": "tunnel",
           "dest": "merged into ~/.gemini/settings.json",
+          "how": null,
           "lang": "json",
           "append": false,
           "binary": false
@@ -2219,6 +2370,7 @@
           "path": "gemini-cli/subway-seat-enamel.json",
           "flavor": "enamel",
           "dest": "~/.gemini/themes/subway-seat-enamel.json",
+          "how": null,
           "lang": "json",
           "append": false,
           "binary": false
@@ -2227,6 +2379,7 @@
           "path": "gemini-cli/settings/subway-seat-enamel.json",
           "flavor": "enamel",
           "dest": "merged into ~/.gemini/settings.json",
+          "how": null,
           "lang": "json",
           "append": false,
           "binary": false
@@ -2261,6 +2414,7 @@
           "path": "herdr/subway-seat.toml",
           "flavor": "walnut",
           "dest": "~/.config/herdr/config.toml",
+          "how": null,
           "lang": "toml",
           "append": true,
           "binary": false
@@ -2269,6 +2423,7 @@
           "path": "herdr/subway-seat-tunnel.toml",
           "flavor": "tunnel",
           "dest": "~/.config/herdr/config.toml",
+          "how": null,
           "lang": "toml",
           "append": true,
           "binary": false
@@ -2277,6 +2432,7 @@
           "path": "herdr/subway-seat-enamel.toml",
           "flavor": "enamel",
           "dest": "~/.config/herdr/config.toml",
+          "how": null,
           "lang": "toml",
           "append": true,
           "binary": false
@@ -2285,6 +2441,7 @@
           "path": "herdr/auto.toml",
           "flavor": null,
           "dest": "~/.config/herdr/config.toml",
+          "how": null,
           "lang": "toml",
           "append": true,
           "binary": false
@@ -2319,6 +2476,7 @@
           "path": "opencode/subway-seat.json",
           "flavor": null,
           "dest": "~/.config/opencode/themes/subway-seat.json",
+          "how": null,
           "lang": "json",
           "append": false,
           "binary": false
@@ -2327,6 +2485,7 @@
           "path": "opencode/subway-seat-tunnel.json",
           "flavor": null,
           "dest": "~/.config/opencode/themes/subway-seat-tunnel.json",
+          "how": null,
           "lang": "json",
           "append": false,
           "binary": false
@@ -2335,6 +2494,7 @@
           "path": "opencode/subway-seat-enamel.json",
           "flavor": "enamel",
           "dest": "~/.config/opencode/themes/subway-seat-enamel.json",
+          "how": null,
           "lang": "json",
           "append": false,
           "binary": false
@@ -2346,7 +2506,7 @@
       "name": "fish",
       "category": "Shell & prompt",
       "homepage": "https://fishshell.com",
-      "notes": "Command-line syntax colours and the completion pager. `subway-seat-auto` carries both Walnut and Enamel and follows your terminal's background.",
+      "notes": "Command-line syntax colors and the completion pager. `subway-seat-auto` carries both Walnut and Enamel and follows your terminal's background.",
       "enable": {
         "walnut": {
           "where": "config.fish (fish 4.3+)",
@@ -2369,6 +2529,7 @@
           "path": "fish/themes/subway-seat.theme",
           "flavor": "walnut",
           "dest": "~/.config/fish/themes/subway-seat.theme",
+          "how": null,
           "lang": "conf",
           "append": false,
           "binary": false
@@ -2377,6 +2538,7 @@
           "path": "fish/themes/subway-seat-tunnel.theme",
           "flavor": "tunnel",
           "dest": "~/.config/fish/themes/subway-seat-tunnel.theme",
+          "how": null,
           "lang": "conf",
           "append": false,
           "binary": false
@@ -2385,6 +2547,7 @@
           "path": "fish/themes/subway-seat-enamel.theme",
           "flavor": "enamel",
           "dest": "~/.config/fish/themes/subway-seat-enamel.theme",
+          "how": null,
           "lang": "conf",
           "append": false,
           "binary": false
@@ -2393,6 +2556,7 @@
           "path": "fish/themes/subway-seat-auto.theme",
           "flavor": null,
           "dest": "~/.config/fish/themes/subway-seat-auto.theme",
+          "how": null,
           "lang": "conf",
           "append": false,
           "binary": false
@@ -2404,7 +2568,7 @@
       "name": "Nushell",
       "category": "Shell & prompt",
       "homepage": "https://www.nushell.sh",
-      "notes": "The fish port's command-line colours as a `color_config`, plus table output where file sizes and ages run down the 70s stripe. It turns on `highlight_resolved_externals`, so unknown commands show red as they do in fish.",
+      "notes": "The fish port's command-line colors as a `color_config`, plus table output where file sizes and ages run down the 70s stripe. It turns on `highlight_resolved_externals`, so unknown commands show red as they do in fish.",
       "enable": {
         "walnut": {
           "where": "config.nu (`$nu.config-path`)",
@@ -2427,6 +2591,7 @@
           "path": "nushell/subway-seat.nu",
           "flavor": "walnut",
           "dest": "~/.config/nushell/themes/subway-seat.nu",
+          "how": null,
           "lang": "text",
           "append": false,
           "binary": false
@@ -2435,6 +2600,7 @@
           "path": "nushell/subway-seat-tunnel.nu",
           "flavor": "tunnel",
           "dest": "~/.config/nushell/themes/subway-seat-tunnel.nu",
+          "how": null,
           "lang": "text",
           "append": false,
           "binary": false
@@ -2443,6 +2609,7 @@
           "path": "nushell/subway-seat-enamel.nu",
           "flavor": "enamel",
           "dest": "~/.config/nushell/themes/subway-seat-enamel.nu",
+          "how": null,
           "lang": "text",
           "append": false,
           "binary": false
@@ -2477,6 +2644,7 @@
           "path": "starship/palettes/subway-seat.toml",
           "flavor": "walnut",
           "dest": "~/.config/starship.toml",
+          "how": null,
           "lang": "toml",
           "append": true,
           "binary": false
@@ -2485,6 +2653,7 @@
           "path": "starship/palettes/subway-seat-tunnel.toml",
           "flavor": "tunnel",
           "dest": "~/.config/starship.toml",
+          "how": null,
           "lang": "toml",
           "append": true,
           "binary": false
@@ -2493,6 +2662,7 @@
           "path": "starship/palettes/subway-seat-enamel.toml",
           "flavor": "enamel",
           "dest": "~/.config/starship.toml",
+          "how": null,
           "lang": "toml",
           "append": true,
           "binary": false
@@ -2501,6 +2671,7 @@
           "path": "starship/subway-seat.toml",
           "flavor": null,
           "dest": "~/.config/starship.toml",
+          "how": null,
           "lang": "toml",
           "append": false,
           "binary": false
@@ -2512,7 +2683,7 @@
       "name": "zsh-syntax-highlighting",
       "category": "Shell & prompt",
       "homepage": "https://github.com/zsh-users/zsh-syntax-highlighting",
-      "notes": "The same command-line colours as the fish port: gold commands, orange keywords and separators, sage options, avocado strings, terracotta expansions and redirections.",
+      "notes": "The same command-line colors as the fish port: gold commands, orange keywords and separators, sage options, avocado strings, terracotta expansions and redirections.",
       "enable": {
         "walnut": {
           "where": "~/.zshrc, next to where zsh-syntax-highlighting is loaded",
@@ -2535,6 +2706,7 @@
           "path": "zsh-syntax-highlighting/subway-seat.zsh",
           "flavor": "walnut",
           "dest": "~/.config/zsh/subway-seat.zsh",
+          "how": null,
           "lang": "sh",
           "append": false,
           "binary": false
@@ -2543,6 +2715,7 @@
           "path": "zsh-syntax-highlighting/subway-seat-tunnel.zsh",
           "flavor": "tunnel",
           "dest": "~/.config/zsh/subway-seat-tunnel.zsh",
+          "how": null,
           "lang": "sh",
           "append": false,
           "binary": false
@@ -2551,6 +2724,7 @@
           "path": "zsh-syntax-highlighting/subway-seat-enamel.zsh",
           "flavor": "enamel",
           "dest": "~/.config/zsh/subway-seat-enamel.zsh",
+          "how": null,
           "lang": "sh",
           "append": false,
           "binary": false
@@ -2585,6 +2759,7 @@
           "path": "aichat/subway-seat/dark.tmTheme",
           "flavor": "walnut",
           "dest": "~/.config/aichat/dark.tmTheme",
+          "how": null,
           "lang": "xml",
           "append": false,
           "binary": false
@@ -2593,6 +2768,7 @@
           "path": "aichat/subway-seat-tunnel/dark.tmTheme",
           "flavor": "tunnel",
           "dest": "~/.config/aichat/dark.tmTheme",
+          "how": null,
           "lang": "xml",
           "append": false,
           "binary": false
@@ -2601,6 +2777,7 @@
           "path": "aichat/subway-seat-enamel/light.tmTheme",
           "flavor": "enamel",
           "dest": "~/.config/aichat/light.tmTheme",
+          "how": null,
           "lang": "xml",
           "append": false,
           "binary": false
@@ -2612,7 +2789,7 @@
       "name": "Atuin",
       "category": "CLI & TUI",
       "homepage": "https://atuin.sh",
-      "notes": "Colours for the history search: gold titles, orange highlights, calm annotations, and command-line colours that match the fish port.",
+      "notes": "Colors for the history search: gold titles, orange highlights, calm annotations, and command-line colors that match the fish port.",
       "enable": {
         "walnut": {
           "where": "~/.config/atuin/config.toml",
@@ -2635,6 +2812,7 @@
           "path": "atuin/subway-seat.toml",
           "flavor": "walnut",
           "dest": "~/.config/atuin/themes/subway-seat.toml",
+          "how": null,
           "lang": "toml",
           "append": false,
           "binary": false
@@ -2643,6 +2821,7 @@
           "path": "atuin/subway-seat-tunnel.toml",
           "flavor": "tunnel",
           "dest": "~/.config/atuin/themes/subway-seat-tunnel.toml",
+          "how": null,
           "lang": "toml",
           "append": false,
           "binary": false
@@ -2651,6 +2830,7 @@
           "path": "atuin/subway-seat-enamel.toml",
           "flavor": "enamel",
           "dest": "~/.config/atuin/themes/subway-seat-enamel.toml",
+          "how": null,
           "lang": "toml",
           "append": false,
           "binary": false
@@ -2685,6 +2865,7 @@
           "path": "bat/Subway Seat.tmTheme",
           "flavor": "walnut",
           "dest": "$(bat --config-dir)/themes/Subway Seat.tmTheme",
+          "how": null,
           "lang": "xml",
           "append": false,
           "binary": false
@@ -2693,6 +2874,7 @@
           "path": "bat/Subway Seat Tunnel.tmTheme",
           "flavor": "tunnel",
           "dest": "$(bat --config-dir)/themes/Subway Seat Tunnel.tmTheme",
+          "how": null,
           "lang": "xml",
           "append": false,
           "binary": false
@@ -2701,6 +2883,7 @@
           "path": "bat/Subway Seat Enamel.tmTheme",
           "flavor": "enamel",
           "dest": "$(bat --config-dir)/themes/Subway Seat Enamel.tmTheme",
+          "how": null,
           "lang": "xml",
           "append": false,
           "binary": false
@@ -2712,7 +2895,7 @@
       "name": "bottom",
       "category": "CLI & TUI",
       "homepage": "https://github.com/ClementTsang/bottom",
-      "notes": "A `[styles]` block for bottom 0.10+: cores and sensors in stripe colours, avocado download, orange upload, orange table headers and borders.",
+      "notes": "A `[styles]` block for bottom 0.10+: cores and sensors in stripe colors, avocado download, orange upload, orange table headers and borders.",
       "enable": {
         "walnut": {
           "where": "bottom.toml (~/.config/bottom/ on Linux, ~/Library/Application Support/bottom/ on macOS)",
@@ -2735,6 +2918,7 @@
           "path": "bottom/subway-seat.toml",
           "flavor": "walnut",
           "dest": "~/.config/bottom/bottom.toml",
+          "how": null,
           "lang": "toml",
           "append": true,
           "binary": false
@@ -2743,6 +2927,7 @@
           "path": "bottom/subway-seat-tunnel.toml",
           "flavor": "tunnel",
           "dest": "~/.config/bottom/bottom.toml",
+          "how": null,
           "lang": "toml",
           "append": true,
           "binary": false
@@ -2751,6 +2936,7 @@
           "path": "bottom/subway-seat-enamel.toml",
           "flavor": "enamel",
           "dest": "~/.config/bottom/bottom.toml",
+          "how": null,
           "lang": "toml",
           "append": true,
           "binary": false
@@ -2785,6 +2971,7 @@
           "path": "btop/subway-seat.theme",
           "flavor": "walnut",
           "dest": "~/.config/btop/themes/subway-seat.theme",
+          "how": null,
           "lang": "conf",
           "append": false,
           "binary": false
@@ -2793,6 +2980,7 @@
           "path": "btop/subway-seat-tunnel.theme",
           "flavor": "tunnel",
           "dest": "~/.config/btop/themes/subway-seat-tunnel.theme",
+          "how": null,
           "lang": "conf",
           "append": false,
           "binary": false
@@ -2801,6 +2989,7 @@
           "path": "btop/subway-seat-enamel.theme",
           "flavor": "enamel",
           "dest": "~/.config/btop/themes/subway-seat-enamel.theme",
+          "how": null,
           "lang": "conf",
           "append": false,
           "binary": false
@@ -2835,6 +3024,7 @@
           "path": "cava/themes/subway-seat",
           "flavor": "walnut",
           "dest": "~/.config/cava/themes/subway-seat",
+          "how": null,
           "lang": "ini",
           "append": false,
           "binary": false
@@ -2843,6 +3033,7 @@
           "path": "cava/themes/subway-seat-tunnel",
           "flavor": "tunnel",
           "dest": "~/.config/cava/themes/subway-seat-tunnel",
+          "how": null,
           "lang": "ini",
           "append": false,
           "binary": false
@@ -2851,6 +3042,7 @@
           "path": "cava/themes/subway-seat-enamel",
           "flavor": "enamel",
           "dest": "~/.config/cava/themes/subway-seat-enamel",
+          "how": null,
           "lang": "ini",
           "append": false,
           "binary": false
@@ -2862,7 +3054,7 @@
       "name": "delta",
       "category": "CLI & TUI",
       "homepage": "https://github.com/dandavison/delta",
-      "notes": "Each flavor is a delta feature: diff tints, line numbers, file and hunk headers. Syntax colours come from the bat theme, so install that too.",
+      "notes": "Each flavor is a delta feature: diff tints, line numbers, file and hunk headers. Syntax colors come from the bat theme, so install that too.",
       "enable": {
         "walnut": {
           "where": "~/.gitconfig (include the file first)",
@@ -2885,6 +3077,7 @@
           "path": "delta/subway-seat.gitconfig",
           "flavor": "walnut",
           "dest": "~/.config/delta/subway-seat.gitconfig",
+          "how": null,
           "lang": "conf",
           "append": false,
           "binary": false
@@ -2893,6 +3086,7 @@
           "path": "delta/subway-seat-tunnel.gitconfig",
           "flavor": "tunnel",
           "dest": "~/.config/delta/subway-seat-tunnel.gitconfig",
+          "how": null,
           "lang": "conf",
           "append": false,
           "binary": false
@@ -2901,6 +3095,7 @@
           "path": "delta/subway-seat-enamel.gitconfig",
           "flavor": "enamel",
           "dest": "~/.config/delta/subway-seat-enamel.gitconfig",
+          "how": null,
           "lang": "conf",
           "append": false,
           "binary": false
@@ -2909,6 +3104,7 @@
           "path": "delta/themes.gitconfig",
           "flavor": null,
           "dest": "~/.config/delta/subway-seat.gitconfig",
+          "how": null,
           "lang": "conf",
           "append": false,
           "binary": false
@@ -2943,6 +3139,7 @@
           "path": "eza/subway-seat.yml",
           "flavor": "walnut",
           "dest": "~/.config/eza/subway-seat.yml",
+          "how": null,
           "lang": "yaml",
           "append": false,
           "binary": false
@@ -2951,6 +3148,7 @@
           "path": "eza/subway-seat-tunnel.yml",
           "flavor": "tunnel",
           "dest": "~/.config/eza/subway-seat-tunnel.yml",
+          "how": null,
           "lang": "yaml",
           "append": false,
           "binary": false
@@ -2959,6 +3157,7 @@
           "path": "eza/subway-seat-enamel.yml",
           "flavor": "enamel",
           "dest": "~/.config/eza/subway-seat-enamel.yml",
+          "how": null,
           "lang": "yaml",
           "append": false,
           "binary": false
@@ -2970,7 +3169,7 @@
       "name": "fzf",
       "category": "CLI & TUI",
       "homepage": "https://github.com/junegunn/fzf",
-      "notes": "Colours for the finder, preview border, pointer and marker.",
+      "notes": "Colors for the finder, preview border, pointer and marker.",
       "enable": {
         "walnut": {
           "where": "your shell config (fish shown; bash/zsh files use export)",
@@ -2993,6 +3192,7 @@
           "path": "fzf/subway-seat.fish",
           "flavor": "walnut",
           "dest": "~/.config/fzf/subway-seat.fish",
+          "how": null,
           "lang": "fish",
           "append": false,
           "binary": false
@@ -3001,6 +3201,7 @@
           "path": "fzf/subway-seat.sh",
           "flavor": "walnut",
           "dest": "~/.config/fzf/subway-seat.sh",
+          "how": null,
           "lang": "sh",
           "append": false,
           "binary": false
@@ -3009,6 +3210,7 @@
           "path": "fzf/subway-seat-tunnel.fish",
           "flavor": "tunnel",
           "dest": "~/.config/fzf/subway-seat-tunnel.fish",
+          "how": null,
           "lang": "fish",
           "append": false,
           "binary": false
@@ -3017,6 +3219,7 @@
           "path": "fzf/subway-seat-tunnel.sh",
           "flavor": "tunnel",
           "dest": "~/.config/fzf/subway-seat-tunnel.sh",
+          "how": null,
           "lang": "sh",
           "append": false,
           "binary": false
@@ -3025,6 +3228,7 @@
           "path": "fzf/subway-seat-enamel.fish",
           "flavor": "enamel",
           "dest": "~/.config/fzf/subway-seat-enamel.fish",
+          "how": null,
           "lang": "fish",
           "append": false,
           "binary": false
@@ -3033,6 +3237,7 @@
           "path": "fzf/subway-seat-enamel.sh",
           "flavor": "enamel",
           "dest": "~/.config/fzf/subway-seat-enamel.sh",
+          "how": null,
           "lang": "sh",
           "append": false,
           "binary": false
@@ -3067,6 +3272,7 @@
           "path": "gh-dash/subway-seat.yml",
           "flavor": "walnut",
           "dest": "~/.config/gh-dash/subway-seat.yml",
+          "how": null,
           "lang": "yaml",
           "append": false,
           "binary": false
@@ -3075,6 +3281,7 @@
           "path": "gh-dash/subway-seat-tunnel.yml",
           "flavor": "tunnel",
           "dest": "~/.config/gh-dash/subway-seat-tunnel.yml",
+          "how": null,
           "lang": "yaml",
           "append": false,
           "binary": false
@@ -3083,6 +3290,7 @@
           "path": "gh-dash/subway-seat-enamel.yml",
           "flavor": "enamel",
           "dest": "~/.config/gh-dash/subway-seat-enamel.yml",
+          "how": null,
           "lang": "yaml",
           "append": false,
           "binary": false
@@ -3117,6 +3325,7 @@
           "path": "gitui/subway-seat.ron",
           "flavor": "walnut",
           "dest": "~/.config/gitui/subway-seat.ron",
+          "how": null,
           "lang": "ron",
           "append": false,
           "binary": false
@@ -3125,6 +3334,7 @@
           "path": "gitui/subway-seat.tmTheme",
           "flavor": "walnut",
           "dest": "~/.config/gitui/subway-seat.tmTheme",
+          "how": null,
           "lang": "xml",
           "append": false,
           "binary": false
@@ -3133,6 +3343,7 @@
           "path": "gitui/subway-seat-tunnel.ron",
           "flavor": "tunnel",
           "dest": "~/.config/gitui/subway-seat-tunnel.ron",
+          "how": null,
           "lang": "ron",
           "append": false,
           "binary": false
@@ -3141,6 +3352,7 @@
           "path": "gitui/subway-seat-tunnel.tmTheme",
           "flavor": "tunnel",
           "dest": "~/.config/gitui/subway-seat-tunnel.tmTheme",
+          "how": null,
           "lang": "xml",
           "append": false,
           "binary": false
@@ -3149,6 +3361,7 @@
           "path": "gitui/subway-seat-enamel.ron",
           "flavor": "enamel",
           "dest": "~/.config/gitui/subway-seat-enamel.ron",
+          "how": null,
           "lang": "ron",
           "append": false,
           "binary": false
@@ -3157,6 +3370,7 @@
           "path": "gitui/subway-seat-enamel.tmTheme",
           "flavor": "enamel",
           "dest": "~/.config/gitui/subway-seat-enamel.tmTheme",
+          "how": null,
           "lang": "xml",
           "append": false,
           "binary": false
@@ -3168,7 +3382,7 @@
       "name": "Glow",
       "category": "CLI & TUI",
       "homepage": "https://github.com/charmbracelet/glow",
-      "notes": "A Glamour style: top-level headings as orange station signs, the rest stepping down the stripe from orange to sage, and code blocks coloured like the editor ports.",
+      "notes": "A Glamour style: top-level headings as orange station signs, the rest stepping down the stripe from orange to sage, and code blocks colored like the editor ports.",
       "enable": {
         "walnut": {
           "where": "config.fish (GLAMOUR_STYLE also reaches gh and other Glamour apps)",
@@ -3191,6 +3405,7 @@
           "path": "glow/subway-seat.json",
           "flavor": "walnut",
           "dest": "~/.config/glamour/subway-seat.json",
+          "how": null,
           "lang": "json",
           "append": false,
           "binary": false
@@ -3199,6 +3414,7 @@
           "path": "glow/subway-seat-tunnel.json",
           "flavor": "tunnel",
           "dest": "~/.config/glamour/subway-seat-tunnel.json",
+          "how": null,
           "lang": "json",
           "append": false,
           "binary": false
@@ -3207,6 +3423,7 @@
           "path": "glow/subway-seat-enamel.json",
           "flavor": "enamel",
           "dest": "~/.config/glamour/subway-seat-enamel.json",
+          "how": null,
           "lang": "json",
           "append": false,
           "binary": false
@@ -3241,6 +3458,7 @@
           "path": "k9s/subway-seat.yaml",
           "flavor": "walnut",
           "dest": "~/.config/k9s/skins/subway-seat.yaml",
+          "how": null,
           "lang": "yaml",
           "append": false,
           "binary": false
@@ -3249,6 +3467,7 @@
           "path": "k9s/subway-seat-tunnel.yaml",
           "flavor": "tunnel",
           "dest": "~/.config/k9s/skins/subway-seat-tunnel.yaml",
+          "how": null,
           "lang": "yaml",
           "append": false,
           "binary": false
@@ -3257,6 +3476,7 @@
           "path": "k9s/subway-seat-enamel.yaml",
           "flavor": "enamel",
           "dest": "~/.config/k9s/skins/subway-seat-enamel.yaml",
+          "how": null,
           "lang": "yaml",
           "append": false,
           "binary": false
@@ -3291,6 +3511,7 @@
           "path": "lazygit/subway-seat.yml",
           "flavor": "walnut",
           "dest": "~/.config/lazygit/subway-seat.yml",
+          "how": null,
           "lang": "yaml",
           "append": false,
           "binary": false
@@ -3299,6 +3520,7 @@
           "path": "lazygit/subway-seat-tunnel.yml",
           "flavor": "tunnel",
           "dest": "~/.config/lazygit/subway-seat-tunnel.yml",
+          "how": null,
           "lang": "yaml",
           "append": false,
           "binary": false
@@ -3307,6 +3529,7 @@
           "path": "lazygit/subway-seat-enamel.yml",
           "flavor": "enamel",
           "dest": "~/.config/lazygit/subway-seat-enamel.yml",
+          "how": null,
           "lang": "yaml",
           "append": false,
           "binary": false
@@ -3341,6 +3564,7 @@
           "path": "spotify-player/themes/subway-seat.toml",
           "flavor": "walnut",
           "dest": "~/.config/spotify-player/theme.toml",
+          "how": null,
           "lang": "toml",
           "append": true,
           "binary": false
@@ -3349,6 +3573,7 @@
           "path": "spotify-player/themes/subway-seat-tunnel.toml",
           "flavor": "tunnel",
           "dest": "~/.config/spotify-player/theme.toml",
+          "how": null,
           "lang": "toml",
           "append": true,
           "binary": false
@@ -3357,6 +3582,7 @@
           "path": "spotify-player/themes/subway-seat-enamel.toml",
           "flavor": "enamel",
           "dest": "~/.config/spotify-player/theme.toml",
+          "how": null,
           "lang": "toml",
           "append": true,
           "binary": false
@@ -3365,6 +3591,7 @@
           "path": "spotify-player/theme.toml",
           "flavor": null,
           "dest": "~/.config/spotify-player/theme.toml",
+          "how": null,
           "lang": "toml",
           "append": false,
           "binary": false
@@ -3376,7 +3603,7 @@
       "name": "tmux",
       "category": "CLI & TUI",
       "homepage": "https://github.com/tmux/tmux",
-      "notes": "A status bar like a station sign: the session as an orange route bullet (gold while the prefix is held), the active window lit in gold, a clock and a four-colour stripe. The rounded bullet ends need a Nerd Font; no plugins required.",
+      "notes": "A status bar like a station sign: the session as an orange route bullet (gold while the prefix is held), the active window lit in gold, a clock and a four-color stripe. The rounded bullet ends need a Nerd Font; no plugins required.",
       "enable": {
         "walnut": {
           "where": "~/.tmux.conf or ~/.config/tmux/tmux.conf (after TPM's `run` line, if you use TPM)",
@@ -3399,6 +3626,7 @@
           "path": "tmux/subway-seat.conf",
           "flavor": "walnut",
           "dest": "~/.config/tmux/subway-seat.conf",
+          "how": null,
           "lang": "conf",
           "append": false,
           "binary": false
@@ -3407,6 +3635,7 @@
           "path": "tmux/subway-seat-tunnel.conf",
           "flavor": "tunnel",
           "dest": "~/.config/tmux/subway-seat-tunnel.conf",
+          "how": null,
           "lang": "conf",
           "append": false,
           "binary": false
@@ -3415,6 +3644,7 @@
           "path": "tmux/subway-seat-enamel.conf",
           "flavor": "enamel",
           "dest": "~/.config/tmux/subway-seat-enamel.conf",
+          "how": null,
           "lang": "conf",
           "append": false,
           "binary": false
@@ -3449,6 +3679,7 @@
           "path": "vivid/subway-seat.yml",
           "flavor": "walnut",
           "dest": "~/.config/vivid/themes/subway-seat.yml",
+          "how": null,
           "lang": "yaml",
           "append": false,
           "binary": false
@@ -3457,6 +3688,7 @@
           "path": "vivid/subway-seat-tunnel.yml",
           "flavor": "tunnel",
           "dest": "~/.config/vivid/themes/subway-seat-tunnel.yml",
+          "how": null,
           "lang": "yaml",
           "append": false,
           "binary": false
@@ -3465,6 +3697,7 @@
           "path": "vivid/subway-seat-enamel.yml",
           "flavor": "enamel",
           "dest": "~/.config/vivid/themes/subway-seat-enamel.yml",
+          "how": null,
           "lang": "yaml",
           "append": false,
           "binary": false
@@ -3476,7 +3709,7 @@
       "name": "Yazi",
       "category": "CLI & TUI",
       "homepage": "https://yazi-rs.github.io",
-      "notes": "Yazi flavors with gold directories, an orange mode badge and a gold bar on the hovered file; previews use the bundled tmTheme. File and extension icons keep Yazi's own colours.",
+      "notes": "Yazi flavors with gold directories, an orange mode badge and a gold bar on the hovered file; previews use the bundled tmTheme. File and extension icons keep Yazi's own colors.",
       "enable": {
         "walnut": {
           "where": "~/.config/yazi/theme.toml",
@@ -3499,6 +3732,7 @@
           "path": "yazi/subway-seat.yazi/flavor.toml",
           "flavor": "walnut",
           "dest": "~/.config/yazi/flavors/subway-seat.yazi/flavor.toml",
+          "how": null,
           "lang": "toml",
           "append": false,
           "binary": false
@@ -3507,6 +3741,7 @@
           "path": "yazi/subway-seat.yazi/tmtheme.xml",
           "flavor": "walnut",
           "dest": "~/.config/yazi/flavors/subway-seat.yazi/tmtheme.xml",
+          "how": null,
           "lang": "xml",
           "append": false,
           "binary": false
@@ -3515,6 +3750,7 @@
           "path": "yazi/subway-seat-tunnel.yazi/flavor.toml",
           "flavor": "tunnel",
           "dest": "~/.config/yazi/flavors/subway-seat-tunnel.yazi/flavor.toml",
+          "how": null,
           "lang": "toml",
           "append": false,
           "binary": false
@@ -3523,6 +3759,7 @@
           "path": "yazi/subway-seat-tunnel.yazi/tmtheme.xml",
           "flavor": "tunnel",
           "dest": "~/.config/yazi/flavors/subway-seat-tunnel.yazi/tmtheme.xml",
+          "how": null,
           "lang": "xml",
           "append": false,
           "binary": false
@@ -3531,6 +3768,7 @@
           "path": "yazi/subway-seat-enamel.yazi/flavor.toml",
           "flavor": "enamel",
           "dest": "~/.config/yazi/flavors/subway-seat-enamel.yazi/flavor.toml",
+          "how": null,
           "lang": "toml",
           "append": false,
           "binary": false
@@ -3539,6 +3777,7 @@
           "path": "yazi/subway-seat-enamel.yazi/tmtheme.xml",
           "flavor": "enamel",
           "dest": "~/.config/yazi/flavors/subway-seat-enamel.yazi/tmtheme.xml",
+          "how": null,
           "lang": "xml",
           "append": false,
           "binary": false
@@ -3550,7 +3789,7 @@
       "name": "Zellij",
       "category": "CLI & TUI",
       "homepage": "https://zellij.dev",
-      "notes": "Themes in Zellij's component spec (0.42+): an orange frame on the focused pane, gold in other modes, orange ribbons for the active tab. A legacy colour-list version is included for older releases; `theme_dark` and `theme_light` can pair Walnut with Enamel.",
+      "notes": "Themes in Zellij's component spec (0.42+): an orange frame on the focused pane, gold in other modes, orange ribbons for the active tab. A legacy color-list version is included for older releases; `theme_dark` and `theme_light` can pair Walnut with Enamel.",
       "enable": {
         "walnut": {
           "where": "~/.config/zellij/config.kdl",
@@ -3573,6 +3812,7 @@
           "path": "zellij/themes/subway-seat.kdl",
           "flavor": "walnut",
           "dest": "~/.config/zellij/themes/subway-seat.kdl",
+          "how": null,
           "lang": "kdl",
           "append": false,
           "binary": false
@@ -3581,6 +3821,7 @@
           "path": "zellij/legacy/subway-seat.kdl",
           "flavor": "walnut",
           "dest": "~/.config/zellij/themes/subway-seat.kdl",
+          "how": null,
           "lang": "kdl",
           "append": false,
           "binary": false
@@ -3589,6 +3830,7 @@
           "path": "zellij/themes/subway-seat-tunnel.kdl",
           "flavor": "tunnel",
           "dest": "~/.config/zellij/themes/subway-seat-tunnel.kdl",
+          "how": null,
           "lang": "kdl",
           "append": false,
           "binary": false
@@ -3597,6 +3839,7 @@
           "path": "zellij/legacy/subway-seat-tunnel.kdl",
           "flavor": "tunnel",
           "dest": "~/.config/zellij/themes/subway-seat-tunnel.kdl",
+          "how": null,
           "lang": "kdl",
           "append": false,
           "binary": false
@@ -3605,6 +3848,7 @@
           "path": "zellij/themes/subway-seat-enamel.kdl",
           "flavor": "enamel",
           "dest": "~/.config/zellij/themes/subway-seat-enamel.kdl",
+          "how": null,
           "lang": "kdl",
           "append": false,
           "binary": false
@@ -3613,6 +3857,7 @@
           "path": "zellij/legacy/subway-seat-enamel.kdl",
           "flavor": "enamel",
           "dest": "~/.config/zellij/themes/subway-seat-enamel.kdl",
+          "how": null,
           "lang": "kdl",
           "append": false,
           "binary": false
@@ -3647,6 +3892,7 @@
           "path": "alfred/Subway Seat.alfredappearance",
           "flavor": "walnut",
           "dest": "double-click to import into Alfred",
+          "how": null,
           "lang": "json",
           "append": false,
           "binary": false
@@ -3655,6 +3901,7 @@
           "path": "alfred/Subway Seat Tunnel.alfredappearance",
           "flavor": "tunnel",
           "dest": "double-click to import into Alfred",
+          "how": null,
           "lang": "json",
           "append": false,
           "binary": false
@@ -3663,6 +3910,7 @@
           "path": "alfred/Subway Seat Enamel.alfredappearance",
           "flavor": "enamel",
           "dest": "double-click to import into Alfred",
+          "how": null,
           "lang": "json",
           "append": false,
           "binary": false
@@ -3674,7 +3922,7 @@
       "name": "Chrome",
       "category": "Apps",
       "homepage": "https://www.google.com/chrome/",
-      "notes": "Colours the tab strip, toolbar, address bar and new-tab page; incognito windows get a faint terracotta frame so you can tell them apart. Works in Edge and Brave too.",
+      "notes": "Colors the tab strip, toolbar, address bar and new-tab page; incognito windows get a faint terracotta frame so you can tell them apart. Works in Edge and Brave too.",
       "enable": {
         "walnut": {
           "where": "chrome://extensions (Developer mode on)",
@@ -3697,6 +3945,7 @@
           "path": "chrome/subway-seat/manifest.json",
           "flavor": "walnut",
           "dest": "subway-seat/manifest.json \u2192 chrome://extensions \u2192 Load unpacked",
+          "how": null,
           "lang": "json",
           "append": false,
           "binary": false
@@ -3705,6 +3954,7 @@
           "path": "chrome/subway-seat.zip",
           "flavor": "walnut",
           "dest": "unzip anywhere, then Load unpacked",
+          "how": null,
           "lang": "text",
           "append": false,
           "binary": true
@@ -3713,6 +3963,7 @@
           "path": "chrome/subway-seat-tunnel/manifest.json",
           "flavor": "tunnel",
           "dest": "subway-seat-tunnel/manifest.json \u2192 chrome://extensions \u2192 Load unpacked",
+          "how": null,
           "lang": "json",
           "append": false,
           "binary": false
@@ -3721,6 +3972,7 @@
           "path": "chrome/subway-seat-tunnel.zip",
           "flavor": "tunnel",
           "dest": "unzip anywhere, then Load unpacked",
+          "how": null,
           "lang": "text",
           "append": false,
           "binary": true
@@ -3729,6 +3981,7 @@
           "path": "chrome/subway-seat-enamel/manifest.json",
           "flavor": "enamel",
           "dest": "subway-seat-enamel/manifest.json \u2192 chrome://extensions \u2192 Load unpacked",
+          "how": null,
           "lang": "json",
           "append": false,
           "binary": false
@@ -3737,6 +3990,7 @@
           "path": "chrome/subway-seat-enamel.zip",
           "flavor": "enamel",
           "dest": "unzip anywhere, then Load unpacked",
+          "how": null,
           "lang": "text",
           "append": false,
           "binary": true
@@ -3748,7 +4002,7 @@
       "name": "Dark Reader",
       "category": "Apps",
       "homepage": "https://darkreader.org",
-      "notes": "Dark Reader takes only a background, a text colour and a selection colour, so this is just those, for both its dark and light schemes. Keys match Dark Reader's own setting names.",
+      "notes": "Dark Reader takes only a background, a text color and a selection color, so this is just those, for both its dark and light schemes. Keys match Dark Reader's own setting names.",
       "enable": {
         "walnut": {
           "where": "Dark Reader \u2192 See all options \u2192 Colors",
@@ -3771,6 +4025,7 @@
           "path": "dark-reader/subway-seat.json",
           "flavor": "walnut",
           "dest": "Dark Reader \u2192 See all options \u2192 Colors",
+          "how": null,
           "lang": "json",
           "append": false,
           "binary": false
@@ -3779,6 +4034,7 @@
           "path": "dark-reader/subway-seat-tunnel.json",
           "flavor": "tunnel",
           "dest": "Dark Reader \u2192 See all options \u2192 Colors",
+          "how": null,
           "lang": "json",
           "append": false,
           "binary": false
@@ -3787,6 +4043,7 @@
           "path": "dark-reader/subway-seat-enamel.json",
           "flavor": "enamel",
           "dest": "Dark Reader \u2192 See all options \u2192 Colors",
+          "how": null,
           "lang": "json",
           "append": false,
           "binary": false
@@ -3798,7 +4055,7 @@
       "name": "Discord",
       "category": "Apps",
       "homepage": "https://discord.com",
-      "notes": "Overrides Discord's colour variables only, which survives client updates far better than class-level themes. Each file covers both of Discord's modes and pairs a dark flavor with Enamel.",
+      "notes": "Overrides Discord's color variables only, which survives client updates far better than class-level themes. Each file covers both of Discord's modes and pairs a dark flavor with Enamel.",
       "enable": {
         "walnut": {
           "where": "Vencord/Vesktop: Settings \u2192 Themes \u2192 Open Themes Folder \u00b7 BetterDiscord: Settings \u2192 Themes",
@@ -3821,6 +4078,7 @@
           "path": "discord/subway-seat.theme.css",
           "flavor": "walnut",
           "dest": "Vencord/Vesktop or BetterDiscord themes folder/subway-seat.theme.css",
+          "how": null,
           "lang": "css",
           "append": false,
           "binary": false
@@ -3829,6 +4087,7 @@
           "path": "discord/subway-seat-tunnel.theme.css",
           "flavor": "tunnel",
           "dest": "Vencord/Vesktop or BetterDiscord themes folder/subway-seat-tunnel.theme.css",
+          "how": null,
           "lang": "css",
           "append": false,
           "binary": false
@@ -3837,6 +4096,7 @@
           "path": "discord/subway-seat-enamel.theme.css",
           "flavor": "enamel",
           "dest": "Vencord/Vesktop or BetterDiscord themes folder/subway-seat-enamel.theme.css",
+          "how": null,
           "lang": "css",
           "append": false,
           "binary": false
@@ -3871,6 +4131,7 @@
           "path": "firefox/subway-seat/manifest.json",
           "flavor": "walnut",
           "dest": "inside the .xpi (about:debugging \u2192 Load Temporary Add-on)",
+          "how": null,
           "lang": "json",
           "append": false,
           "binary": false
@@ -3879,6 +4140,7 @@
           "path": "firefox/subway-seat.xpi",
           "flavor": "walnut",
           "dest": "about:addons \u2192 \u2699 \u2192 Install Add-on From File (Developer/Nightly/ESR)",
+          "how": null,
           "lang": "text",
           "append": false,
           "binary": true
@@ -3887,6 +4149,7 @@
           "path": "firefox/subway-seat.firefox-color.txt",
           "flavor": "walnut",
           "dest": "open in Firefox with Firefox Color installed",
+          "how": null,
           "lang": "text",
           "append": false,
           "binary": false
@@ -3895,6 +4158,7 @@
           "path": "firefox/subway-seat-tunnel/manifest.json",
           "flavor": "tunnel",
           "dest": "inside the .xpi (about:debugging \u2192 Load Temporary Add-on)",
+          "how": null,
           "lang": "json",
           "append": false,
           "binary": false
@@ -3903,6 +4167,7 @@
           "path": "firefox/subway-seat-tunnel.xpi",
           "flavor": "tunnel",
           "dest": "about:addons \u2192 \u2699 \u2192 Install Add-on From File (Developer/Nightly/ESR)",
+          "how": null,
           "lang": "text",
           "append": false,
           "binary": true
@@ -3911,6 +4176,7 @@
           "path": "firefox/subway-seat-tunnel.firefox-color.txt",
           "flavor": "tunnel",
           "dest": "open in Firefox with Firefox Color installed",
+          "how": null,
           "lang": "text",
           "append": false,
           "binary": false
@@ -3919,6 +4185,7 @@
           "path": "firefox/subway-seat-enamel/manifest.json",
           "flavor": "enamel",
           "dest": "inside the .xpi (about:debugging \u2192 Load Temporary Add-on)",
+          "how": null,
           "lang": "json",
           "append": false,
           "binary": false
@@ -3927,6 +4194,7 @@
           "path": "firefox/subway-seat-enamel.xpi",
           "flavor": "enamel",
           "dest": "about:addons \u2192 \u2699 \u2192 Install Add-on From File (Developer/Nightly/ESR)",
+          "how": null,
           "lang": "text",
           "append": false,
           "binary": true
@@ -3935,6 +4203,7 @@
           "path": "firefox/subway-seat-enamel.firefox-color.txt",
           "flavor": "enamel",
           "dest": "open in Firefox with Firefox Color installed",
+          "how": null,
           "lang": "text",
           "append": false,
           "binary": false
@@ -3969,6 +4238,7 @@
           "path": "obsidian/Subway Seat/manifest.json",
           "flavor": null,
           "dest": "<vault>/.obsidian/themes/Subway Seat/manifest.json",
+          "how": null,
           "lang": "json",
           "append": false,
           "binary": false
@@ -3977,6 +4247,7 @@
           "path": "obsidian/Subway Seat/theme.css",
           "flavor": null,
           "dest": "<vault>/.obsidian/themes/Subway Seat/theme.css",
+          "how": null,
           "lang": "css",
           "append": false,
           "binary": false
@@ -3985,6 +4256,7 @@
           "path": "obsidian/snippets/subway-seat-tunnel.css",
           "flavor": "tunnel",
           "dest": "<vault>/.obsidian/snippets/subway-seat-tunnel.css",
+          "how": null,
           "lang": "css",
           "append": false,
           "binary": false
@@ -3996,7 +4268,7 @@
       "name": "qutebrowser",
       "category": "Apps",
       "homepage": "https://qutebrowser.org",
-      "notes": "Sets every `c.colors.*` option: tabs, status bar modes, completion, hints, prompts, messages and downloads, plus the page background and preferred colour scheme so new tabs don't flash white.",
+      "notes": "Sets every `c.colors.*` option: tabs, status bar modes, completion, hints, prompts, messages and downloads, plus the page background and preferred color scheme so new tabs don't flash white.",
       "enable": {
         "walnut": {
           "where": "~/.config/qutebrowser/config.py (macOS: ~/.qutebrowser/config.py)",
@@ -4019,6 +4291,7 @@
           "path": "qutebrowser/subway_seat.py",
           "flavor": "walnut",
           "dest": "~/.config/qutebrowser/subway_seat.py",
+          "how": null,
           "lang": "python",
           "append": false,
           "binary": false
@@ -4027,6 +4300,7 @@
           "path": "qutebrowser/subway_seat_tunnel.py",
           "flavor": "tunnel",
           "dest": "~/.config/qutebrowser/subway_seat_tunnel.py",
+          "how": null,
           "lang": "python",
           "append": false,
           "binary": false
@@ -4035,6 +4309,7 @@
           "path": "qutebrowser/subway_seat_enamel.py",
           "flavor": "enamel",
           "dest": "~/.config/qutebrowser/subway_seat_enamel.py",
+          "how": null,
           "lang": "python",
           "append": false,
           "binary": false
@@ -4046,7 +4321,7 @@
       "name": "Raycast",
       "category": "Apps",
       "homepage": "https://www.raycast.com",
-      "notes": "Raycast themes are twelve colours: a walnut gradient, parchment text, a soft orange selection and the palette's accents for icons and tags. Custom themes need Raycast Pro.",
+      "notes": "Raycast themes are twelve colors: a walnut gradient, parchment text, a soft orange selection and the palette's accents for icons and tags. Custom themes need Raycast Pro.",
       "enable": {
         "walnut": {
           "where": "Raycast \u2192 Settings \u2192 Appearance (custom themes need Raycast Pro)",
@@ -4069,6 +4344,7 @@
           "path": "raycast/subway-seat.json",
           "flavor": "walnut",
           "dest": "Raycast \u2192 Settings \u2192 Appearance \u2192 import, or ray.so/themes",
+          "how": null,
           "lang": "json",
           "append": false,
           "binary": false
@@ -4077,6 +4353,7 @@
           "path": "raycast/subway-seat.link.txt",
           "flavor": "walnut",
           "dest": "open in a browser or with `open`",
+          "how": null,
           "lang": "text",
           "append": false,
           "binary": false
@@ -4085,6 +4362,7 @@
           "path": "raycast/subway-seat-tunnel.json",
           "flavor": "tunnel",
           "dest": "Raycast \u2192 Settings \u2192 Appearance \u2192 import, or ray.so/themes",
+          "how": null,
           "lang": "json",
           "append": false,
           "binary": false
@@ -4093,6 +4371,7 @@
           "path": "raycast/subway-seat-tunnel.link.txt",
           "flavor": "tunnel",
           "dest": "open in a browser or with `open`",
+          "how": null,
           "lang": "text",
           "append": false,
           "binary": false
@@ -4101,6 +4380,7 @@
           "path": "raycast/subway-seat-enamel.json",
           "flavor": "enamel",
           "dest": "Raycast \u2192 Settings \u2192 Appearance \u2192 import, or ray.so/themes",
+          "how": null,
           "lang": "json",
           "append": false,
           "binary": false
@@ -4109,6 +4389,7 @@
           "path": "raycast/subway-seat-enamel.link.txt",
           "flavor": "enamel",
           "dest": "open in a browser or with `open`",
+          "how": null,
           "lang": "text",
           "append": false,
           "binary": false
@@ -4120,21 +4401,21 @@
       "name": "Slack",
       "category": "Apps",
       "homepage": "https://slack.com",
-      "notes": "Slack only lets themes colour the sidebar and a few highlights; the message pane follows Slack's own light or dark mode, so pick dark for Walnut and Tunnel and light for Enamel.",
+      "notes": "Slack only lets themes color the sidebar and a few highlights; the message pane follows Slack's own light or dark mode, so pick dark for Walnut and Tunnel and light for Enamel.",
       "enable": {
         "walnut": {
           "where": "Slack \u2192 Preferences \u2192 Appearance \u2192 Custom theme",
-          "code": "Paste the Subway Seat string from subway-seat.txt into any message and click\n\u201cSwitch sidebar theme\u201d, or enter the four colours under Custom theme.",
+          "code": "Paste the Subway Seat string from subway-seat.txt into any message and click\n\u201cSwitch sidebar theme\u201d, or enter the four colors under Custom theme.",
           "lang": "text"
         },
         "tunnel": {
           "where": "Slack \u2192 Preferences \u2192 Appearance \u2192 Custom theme",
-          "code": "Paste the Subway Seat Tunnel string from subway-seat-tunnel.txt into any message and click\n\u201cSwitch sidebar theme\u201d, or enter the four colours under Custom theme.",
+          "code": "Paste the Subway Seat Tunnel string from subway-seat-tunnel.txt into any message and click\n\u201cSwitch sidebar theme\u201d, or enter the four colors under Custom theme.",
           "lang": "text"
         },
         "enamel": {
           "where": "Slack \u2192 Preferences \u2192 Appearance \u2192 Custom theme",
-          "code": "Paste the Subway Seat Enamel string from subway-seat-enamel.txt into any message and click\n\u201cSwitch sidebar theme\u201d, or enter the four colours under Custom theme.",
+          "code": "Paste the Subway Seat Enamel string from subway-seat-enamel.txt into any message and click\n\u201cSwitch sidebar theme\u201d, or enter the four colors under Custom theme.",
           "lang": "text"
         }
       },
@@ -4143,6 +4424,7 @@
           "path": "slack/subway-seat.txt",
           "flavor": "walnut",
           "dest": "Slack \u2192 Preferences \u2192 Appearance \u2192 Custom theme",
+          "how": null,
           "lang": "text",
           "append": false,
           "binary": false
@@ -4151,6 +4433,7 @@
           "path": "slack/subway-seat-tunnel.txt",
           "flavor": "tunnel",
           "dest": "Slack \u2192 Preferences \u2192 Appearance \u2192 Custom theme",
+          "how": null,
           "lang": "text",
           "append": false,
           "binary": false
@@ -4159,6 +4442,7 @@
           "path": "slack/subway-seat-enamel.txt",
           "flavor": "enamel",
           "dest": "Slack \u2192 Preferences \u2192 Appearance \u2192 Custom theme",
+          "how": null,
           "lang": "text",
           "append": false,
           "binary": false
@@ -4170,7 +4454,7 @@
       "name": "Spotify (Spicetify)",
       "category": "Apps",
       "homepage": "https://spicetify.app",
-      "notes": "Spicetify's colour keys plus the whole palette as `--spice-*` variables, and a small user.css that turns Spotify's green accent into burnt orange.",
+      "notes": "Spicetify's color keys plus the whole palette as `--spice-*` variables, and a small user.css that turns Spotify's green accent into burnt orange.",
       "enable": {
         "walnut": {
           "where": "~/.config/spicetify/Themes/subway-seat/",
@@ -4193,6 +4477,7 @@
           "path": "spicetify/subway-seat/color.ini",
           "flavor": null,
           "dest": "~/.config/spicetify/Themes/subway-seat/color.ini",
+          "how": null,
           "lang": "ini",
           "append": false,
           "binary": false
@@ -4201,6 +4486,7 @@
           "path": "spicetify/subway-seat/user.css",
           "flavor": null,
           "dest": "~/.config/spicetify/Themes/subway-seat/user.css",
+          "how": null,
           "lang": "css",
           "append": false,
           "binary": false
@@ -4209,6 +4495,7 @@
           "path": "spicetify/manifest.json",
           "flavor": null,
           "dest": "repo root, for the Spicetify Marketplace (paths are relative to it)",
+          "how": null,
           "lang": "json",
           "append": false,
           "binary": false
@@ -4243,6 +4530,7 @@
           "path": "telegram/subway-seat.tdesktop-theme",
           "flavor": "walnut",
           "dest": "open subway-seat.tdesktop-theme in Telegram Desktop",
+          "how": null,
           "lang": "text",
           "append": false,
           "binary": true
@@ -4251,6 +4539,7 @@
           "path": "telegram/subway-seat/colors.tdesktop-theme",
           "flavor": "walnut",
           "dest": "inside subway-seat.tdesktop-theme",
+          "how": null,
           "lang": "text",
           "append": false,
           "binary": false
@@ -4259,6 +4548,7 @@
           "path": "telegram/subway-seat-tunnel.tdesktop-theme",
           "flavor": "tunnel",
           "dest": "open subway-seat-tunnel.tdesktop-theme in Telegram Desktop",
+          "how": null,
           "lang": "text",
           "append": false,
           "binary": true
@@ -4267,6 +4557,7 @@
           "path": "telegram/subway-seat-tunnel/colors.tdesktop-theme",
           "flavor": "tunnel",
           "dest": "inside subway-seat-tunnel.tdesktop-theme",
+          "how": null,
           "lang": "text",
           "append": false,
           "binary": false
@@ -4275,6 +4566,7 @@
           "path": "telegram/subway-seat-enamel.tdesktop-theme",
           "flavor": "enamel",
           "dest": "open subway-seat-enamel.tdesktop-theme in Telegram Desktop",
+          "how": null,
           "lang": "text",
           "append": false,
           "binary": true
@@ -4283,6 +4575,7 @@
           "path": "telegram/subway-seat-enamel/colors.tdesktop-theme",
           "flavor": "enamel",
           "dest": "inside subway-seat-enamel.tdesktop-theme",
+          "how": null,
           "lang": "text",
           "append": false,
           "binary": false
@@ -4317,6 +4610,7 @@
           "path": "thunderbird/subway-seat/manifest.json",
           "flavor": "walnut",
           "dest": "inside the .xpi",
+          "how": null,
           "lang": "json",
           "append": false,
           "binary": false
@@ -4325,6 +4619,7 @@
           "path": "thunderbird/subway-seat.xpi",
           "flavor": "walnut",
           "dest": "Add-ons and Themes \u2192 \u2699 \u2192 Install Add-on From File",
+          "how": null,
           "lang": "text",
           "append": false,
           "binary": true
@@ -4333,6 +4628,7 @@
           "path": "thunderbird/subway-seat-tunnel/manifest.json",
           "flavor": "tunnel",
           "dest": "inside the .xpi",
+          "how": null,
           "lang": "json",
           "append": false,
           "binary": false
@@ -4341,6 +4637,7 @@
           "path": "thunderbird/subway-seat-tunnel.xpi",
           "flavor": "tunnel",
           "dest": "Add-ons and Themes \u2192 \u2699 \u2192 Install Add-on From File",
+          "how": null,
           "lang": "text",
           "append": false,
           "binary": true
@@ -4349,6 +4646,7 @@
           "path": "thunderbird/subway-seat-enamel/manifest.json",
           "flavor": "enamel",
           "dest": "inside the .xpi",
+          "how": null,
           "lang": "json",
           "append": false,
           "binary": false
@@ -4357,6 +4655,7 @@
           "path": "thunderbird/subway-seat-enamel.xpi",
           "flavor": "enamel",
           "dest": "Add-ons and Themes \u2192 \u2699 \u2192 Install Add-on From File",
+          "how": null,
           "lang": "text",
           "append": false,
           "binary": true
@@ -4391,6 +4690,7 @@
           "path": "vimium/subway-seat.css",
           "flavor": "walnut",
           "dest": "Vimium Options \u2192 CSS for Vimium UI",
+          "how": null,
           "lang": "css",
           "append": false,
           "binary": false
@@ -4399,6 +4699,7 @@
           "path": "vimium/subway-seat-tunnel.css",
           "flavor": "tunnel",
           "dest": "Vimium Options \u2192 CSS for Vimium UI",
+          "how": null,
           "lang": "css",
           "append": false,
           "binary": false
@@ -4407,6 +4708,7 @@
           "path": "vimium/subway-seat-enamel.css",
           "flavor": "enamel",
           "dest": "Vimium Options \u2192 CSS for Vimium UI",
+          "how": null,
           "lang": "css",
           "append": false,
           "binary": false
@@ -4441,6 +4743,7 @@
           "path": "vivaldi/subway-seat/settings.json",
           "flavor": "walnut",
           "dest": "inside the theme zip",
+          "how": null,
           "lang": "json",
           "append": false,
           "binary": false
@@ -4449,6 +4752,7 @@
           "path": "vivaldi/subway-seat.zip",
           "flavor": "walnut",
           "dest": "Settings \u2192 Themes \u2192 Library \u2192 Import Theme",
+          "how": null,
           "lang": "text",
           "append": false,
           "binary": true
@@ -4457,6 +4761,7 @@
           "path": "vivaldi/subway-seat-tunnel/settings.json",
           "flavor": "tunnel",
           "dest": "inside the theme zip",
+          "how": null,
           "lang": "json",
           "append": false,
           "binary": false
@@ -4465,6 +4770,7 @@
           "path": "vivaldi/subway-seat-tunnel.zip",
           "flavor": "tunnel",
           "dest": "Settings \u2192 Themes \u2192 Library \u2192 Import Theme",
+          "how": null,
           "lang": "text",
           "append": false,
           "binary": true
@@ -4473,6 +4779,7 @@
           "path": "vivaldi/subway-seat-enamel/settings.json",
           "flavor": "enamel",
           "dest": "inside the theme zip",
+          "how": null,
           "lang": "json",
           "append": false,
           "binary": false
@@ -4481,6 +4788,7 @@
           "path": "vivaldi/subway-seat-enamel.zip",
           "flavor": "enamel",
           "dest": "Settings \u2192 Themes \u2192 Library \u2192 Import Theme",
+          "how": null,
           "lang": "text",
           "append": false,
           "binary": true
@@ -4492,7 +4800,7 @@
       "name": "Adobe Swatch Exchange",
       "category": "Palettes",
       "homepage": "https://www.adobe.com/creativecloud.html",
-      "notes": "An .ase swatch library per flavor, one named group of all 26 colours. Photoshop, Illustrator, InDesign and the Affinity apps all import it.",
+      "notes": "An .ase swatch library per flavor, one named group of all 26 colors. Photoshop, Illustrator, InDesign and the Affinity apps all import it.",
       "enable": {
         "walnut": {
           "where": "Illustrator, Photoshop, InDesign or Affinity: the Swatches panel menu",
@@ -4515,6 +4823,7 @@
           "path": "ase/Subway Seat.ase",
           "flavor": "walnut",
           "dest": "the Swatches panel (Open Swatch Library)",
+          "how": null,
           "lang": "text",
           "append": false,
           "binary": true
@@ -4523,6 +4832,7 @@
           "path": "ase/Subway Seat Tunnel.ase",
           "flavor": "tunnel",
           "dest": "the Swatches panel (Open Swatch Library)",
+          "how": null,
           "lang": "text",
           "append": false,
           "binary": true
@@ -4531,6 +4841,7 @@
           "path": "ase/Subway Seat Enamel.ase",
           "flavor": "enamel",
           "dest": "the Swatches panel (Open Swatch Library)",
+          "how": null,
           "lang": "text",
           "append": false,
           "binary": true
@@ -4542,7 +4853,7 @@
       "name": "Base16 / Base24",
       "category": "Palettes",
       "homepage": "https://github.com/tinted-theming/home",
-      "notes": "Base16 and Base24 schemes. The accent slots follow the terminal colours, so keywords stay burnt orange and strings avocado, but base16 templates will show functions in denim and classes in harvest gold.",
+      "notes": "Base16 and Base24 schemes. The accent slots follow the terminal colors, so keywords stay burnt orange and strings avocado, but base16 templates will show functions in denim and classes in harvest gold.",
       "enable": {
         "walnut": {
           "where": "tinty, or any tinted-theming builder",
@@ -4565,6 +4876,7 @@
           "path": "base16/base16/subway-seat.yaml",
           "flavor": "walnut",
           "dest": "$(tinty config --data-dir-path)/custom-schemes/base16/subway-seat.yaml",
+          "how": null,
           "lang": "yaml",
           "append": false,
           "binary": false
@@ -4573,6 +4885,7 @@
           "path": "base16/base16/subway-seat-tunnel.yaml",
           "flavor": "tunnel",
           "dest": "$(tinty config --data-dir-path)/custom-schemes/base16/subway-seat-tunnel.yaml",
+          "how": null,
           "lang": "yaml",
           "append": false,
           "binary": false
@@ -4581,6 +4894,7 @@
           "path": "base16/base16/subway-seat-enamel.yaml",
           "flavor": "enamel",
           "dest": "$(tinty config --data-dir-path)/custom-schemes/base16/subway-seat-enamel.yaml",
+          "how": null,
           "lang": "yaml",
           "append": false,
           "binary": false
@@ -4589,6 +4903,7 @@
           "path": "base16/base24/subway-seat.yaml",
           "flavor": "walnut",
           "dest": "$(tinty config --data-dir-path)/custom-schemes/base24/subway-seat.yaml",
+          "how": null,
           "lang": "yaml",
           "append": false,
           "binary": false
@@ -4597,6 +4912,7 @@
           "path": "base16/base24/subway-seat-tunnel.yaml",
           "flavor": "tunnel",
           "dest": "$(tinty config --data-dir-path)/custom-schemes/base24/subway-seat-tunnel.yaml",
+          "how": null,
           "lang": "yaml",
           "append": false,
           "binary": false
@@ -4605,6 +4921,7 @@
           "path": "base16/base24/subway-seat-enamel.yaml",
           "flavor": "enamel",
           "dest": "$(tinty config --data-dir-path)/custom-schemes/base24/subway-seat-enamel.yaml",
+          "how": null,
           "lang": "yaml",
           "append": false,
           "binary": false
@@ -4639,6 +4956,7 @@
           "path": "chroma/subway-seat.xml",
           "flavor": "walnut",
           "dest": "chroma's styles/subway-seat.xml",
+          "how": null,
           "lang": "xml",
           "append": false,
           "binary": false
@@ -4647,6 +4965,7 @@
           "path": "chroma/subway-seat-tunnel.xml",
           "flavor": "tunnel",
           "dest": "chroma's styles/subway-seat-tunnel.xml",
+          "how": null,
           "lang": "xml",
           "append": false,
           "binary": false
@@ -4655,6 +4974,7 @@
           "path": "chroma/subway-seat-enamel.xml",
           "flavor": "enamel",
           "dest": "chroma's styles/subway-seat-enamel.xml",
+          "how": null,
           "lang": "xml",
           "append": false,
           "binary": false
@@ -4689,6 +5009,7 @@
           "path": "css/subway-seat.css",
           "flavor": "walnut",
           "dest": "your project, e.g. styles/subway-seat.css",
+          "how": null,
           "lang": "css",
           "append": false,
           "binary": false
@@ -4697,6 +5018,7 @@
           "path": "css/subway-seat-tunnel.css",
           "flavor": "tunnel",
           "dest": "your project, e.g. styles/subway-seat-tunnel.css",
+          "how": null,
           "lang": "css",
           "append": false,
           "binary": false
@@ -4705,6 +5027,7 @@
           "path": "css/subway-seat-enamel.css",
           "flavor": "enamel",
           "dest": "your project, e.g. styles/subway-seat-enamel.css",
+          "how": null,
           "lang": "css",
           "append": false,
           "binary": false
@@ -4713,6 +5036,7 @@
           "path": "css/subway-seat-flavors.css",
           "flavor": null,
           "dest": "your project, e.g. styles/subway-seat-flavors.css",
+          "how": null,
           "lang": "css",
           "append": false,
           "binary": false
@@ -4747,6 +5071,7 @@
           "path": "gimp/Subway Seat.gpl",
           "flavor": "walnut",
           "dest": "~/.config/GIMP/3.0/palettes/Subway Seat.gpl",
+          "how": null,
           "lang": "text",
           "append": false,
           "binary": false
@@ -4755,6 +5080,7 @@
           "path": "gimp/Subway Seat Tunnel.gpl",
           "flavor": "tunnel",
           "dest": "~/.config/GIMP/3.0/palettes/Subway Seat Tunnel.gpl",
+          "how": null,
           "lang": "text",
           "append": false,
           "binary": false
@@ -4763,6 +5089,7 @@
           "path": "gimp/Subway Seat Enamel.gpl",
           "flavor": "enamel",
           "dest": "~/.config/GIMP/3.0/palettes/Subway Seat Enamel.gpl",
+          "how": null,
           "lang": "text",
           "append": false,
           "binary": false
@@ -4774,7 +5101,7 @@
       "name": "Gogh",
       "category": "Palettes",
       "homepage": "https://github.com/Gogh-Co/Gogh",
-      "notes": "Gogh themes: the 16 ANSI colours, background, foreground and cursor. The YAML is what Gogh's themes/ folder takes; the JSON matches its generated data/json files.",
+      "notes": "Gogh themes: the 16 ANSI colors, background, foreground and cursor. The YAML is what Gogh's themes/ folder takes; the JSON matches its generated data/json files.",
       "enable": {
         "walnut": {
           "where": "a Gogh checkout: the YAML is its theme source (the file name must match the name)",
@@ -4797,6 +5124,7 @@
           "path": "gogh/Subway Seat.yml",
           "flavor": "walnut",
           "dest": "Gogh/themes/Subway Seat.yml",
+          "how": null,
           "lang": "yaml",
           "append": false,
           "binary": false
@@ -4805,6 +5133,7 @@
           "path": "gogh/subway-seat.json",
           "flavor": "walnut",
           "dest": "Gogh/data/json/subway-seat.json",
+          "how": null,
           "lang": "json",
           "append": false,
           "binary": false
@@ -4813,6 +5142,7 @@
           "path": "gogh/Subway Seat Tunnel.yml",
           "flavor": "tunnel",
           "dest": "Gogh/themes/Subway Seat Tunnel.yml",
+          "how": null,
           "lang": "yaml",
           "append": false,
           "binary": false
@@ -4821,6 +5151,7 @@
           "path": "gogh/subway-seat-tunnel.json",
           "flavor": "tunnel",
           "dest": "Gogh/data/json/subway-seat-tunnel.json",
+          "how": null,
           "lang": "json",
           "append": false,
           "binary": false
@@ -4829,6 +5160,7 @@
           "path": "gogh/Subway Seat Enamel.yml",
           "flavor": "enamel",
           "dest": "Gogh/themes/Subway Seat Enamel.yml",
+          "how": null,
           "lang": "yaml",
           "append": false,
           "binary": false
@@ -4837,6 +5169,7 @@
           "path": "gogh/subway-seat-enamel.json",
           "flavor": "enamel",
           "dest": "Gogh/data/json/subway-seat-enamel.json",
+          "how": null,
           "lang": "json",
           "append": false,
           "binary": false
@@ -4848,7 +5181,7 @@
       "name": "Hex list",
       "category": "Palettes",
       "homepage": "https://coolors.co",
-      "notes": "Plain text, one colour per line as #hex and its name. Most palette tools will take a paste of it.",
+      "notes": "Plain text, one color per line as #hex and its name. Most palette tools will take a paste of it.",
       "enable": {
         "walnut": {
           "where": "Coolors, Figma plugins, or anything that takes pasted hex codes",
@@ -4871,6 +5204,7 @@
           "path": "txt/subway-seat.txt",
           "flavor": "walnut",
           "dest": "anywhere; paste it where you need it",
+          "how": null,
           "lang": "text",
           "append": false,
           "binary": false
@@ -4879,6 +5213,7 @@
           "path": "txt/subway-seat-tunnel.txt",
           "flavor": "tunnel",
           "dest": "anywhere; paste it where you need it",
+          "how": null,
           "lang": "text",
           "append": false,
           "binary": false
@@ -4887,6 +5222,7 @@
           "path": "txt/subway-seat-enamel.txt",
           "flavor": "enamel",
           "dest": "anywhere; paste it where you need it",
+          "how": null,
           "lang": "text",
           "append": false,
           "binary": false
@@ -4898,7 +5234,7 @@
       "name": "highlight.js",
       "category": "Palettes",
       "homepage": "https://highlightjs.org",
-      "notes": "A highlight.js stylesheet per flavor, using the same syntax colours as the editor themes.",
+      "notes": "A highlight.js stylesheet per flavor, using the same syntax colors as the editor themes.",
       "enable": {
         "walnut": {
           "where": "your page's <head>, in place of a stock highlight.js theme",
@@ -4921,6 +5257,7 @@
           "path": "highlightjs/subway-seat.css",
           "flavor": "walnut",
           "dest": "your site's assets, e.g. css/subway-seat.css",
+          "how": null,
           "lang": "css",
           "append": false,
           "binary": false
@@ -4929,6 +5266,7 @@
           "path": "highlightjs/subway-seat-tunnel.css",
           "flavor": "tunnel",
           "dest": "your site's assets, e.g. css/subway-seat-tunnel.css",
+          "how": null,
           "lang": "css",
           "append": false,
           "binary": false
@@ -4937,6 +5275,7 @@
           "path": "highlightjs/subway-seat-enamel.css",
           "flavor": "enamel",
           "dest": "your site's assets, e.g. css/subway-seat-enamel.css",
+          "how": null,
           "lang": "css",
           "append": false,
           "binary": false
@@ -4971,6 +5310,7 @@
           "path": "json/subway-seat.json",
           "flavor": null,
           "dest": "wherever your tool reads it",
+          "how": null,
           "lang": "json",
           "append": false,
           "binary": false
@@ -4979,6 +5319,7 @@
           "path": "json/subway-seat.tokens.json",
           "flavor": null,
           "dest": "Tokens Studio (Load from file) or a Style Dictionary source",
+          "how": null,
           "lang": "json",
           "append": false,
           "binary": false
@@ -4990,7 +5331,7 @@
       "name": "Prism",
       "category": "Palettes",
       "homepage": "https://prismjs.com",
-      "notes": "A Prism stylesheet per flavor, using the same syntax colours as the editor themes.",
+      "notes": "A Prism stylesheet per flavor, using the same syntax colors as the editor themes.",
       "enable": {
         "walnut": {
           "where": "your page's <head>, in place of a stock Prism theme",
@@ -5013,6 +5354,7 @@
           "path": "prism/subway-seat.css",
           "flavor": "walnut",
           "dest": "your site's assets, e.g. css/subway-seat.css",
+          "how": null,
           "lang": "css",
           "append": false,
           "binary": false
@@ -5021,6 +5363,7 @@
           "path": "prism/subway-seat-tunnel.css",
           "flavor": "tunnel",
           "dest": "your site's assets, e.g. css/subway-seat-tunnel.css",
+          "how": null,
           "lang": "css",
           "append": false,
           "binary": false
@@ -5029,6 +5372,7 @@
           "path": "prism/subway-seat-enamel.css",
           "flavor": "enamel",
           "dest": "your site's assets, e.g. css/subway-seat-enamel.css",
+          "how": null,
           "lang": "css",
           "append": false,
           "binary": false
@@ -5040,21 +5384,21 @@
       "name": "Procreate",
       "category": "Palettes",
       "homepage": "https://procreate.com",
-      "notes": "A Procreate palette per flavor with all 26 colours in role order: grounds, text, then accents. Procreate palettes don't carry swatch names.",
+      "notes": "A Procreate palette per flavor with all 26 colors in role order: grounds, text, then accents. Procreate palettes don't carry swatch names.",
       "enable": {
         "walnut": {
           "where": "your iPad",
-          "code": "Open Subway Seat.swatches from Files or AirDrop; it lands in Colours \u25b8 Palettes.",
+          "code": "Open Subway Seat.swatches from Files or AirDrop; it lands in Colors \u25b8 Palettes.",
           "lang": "text"
         },
         "tunnel": {
           "where": "your iPad",
-          "code": "Open Subway Seat Tunnel.swatches from Files or AirDrop; it lands in Colours \u25b8 Palettes.",
+          "code": "Open Subway Seat Tunnel.swatches from Files or AirDrop; it lands in Colors \u25b8 Palettes.",
           "lang": "text"
         },
         "enamel": {
           "where": "your iPad",
-          "code": "Open Subway Seat Enamel.swatches from Files or AirDrop; it lands in Colours \u25b8 Palettes.",
+          "code": "Open Subway Seat Enamel.swatches from Files or AirDrop; it lands in Colors \u25b8 Palettes.",
           "lang": "text"
         }
       },
@@ -5063,6 +5407,7 @@
           "path": "procreate/Subway Seat.swatches",
           "flavor": "walnut",
           "dest": "Procreate (open the file on your iPad)",
+          "how": null,
           "lang": "text",
           "append": false,
           "binary": true
@@ -5071,6 +5416,7 @@
           "path": "procreate/Subway Seat Tunnel.swatches",
           "flavor": "tunnel",
           "dest": "Procreate (open the file on your iPad)",
+          "how": null,
           "lang": "text",
           "append": false,
           "binary": true
@@ -5079,6 +5425,7 @@
           "path": "procreate/Subway Seat Enamel.swatches",
           "flavor": "enamel",
           "dest": "Procreate (open the file on your iPad)",
+          "how": null,
           "lang": "text",
           "append": false,
           "binary": true
@@ -5113,6 +5460,7 @@
           "path": "pygments/subway_seat.py",
           "flavor": "walnut",
           "dest": "your PYTHONPATH, e.g. docs/_ext/subway_seat.py",
+          "how": null,
           "lang": "python",
           "append": false,
           "binary": false
@@ -5121,6 +5469,7 @@
           "path": "pygments/subway_seat_tunnel.py",
           "flavor": "tunnel",
           "dest": "your PYTHONPATH, e.g. docs/_ext/subway_seat_tunnel.py",
+          "how": null,
           "lang": "python",
           "append": false,
           "binary": false
@@ -5129,6 +5478,7 @@
           "path": "pygments/subway_seat_enamel.py",
           "flavor": "enamel",
           "dest": "your PYTHONPATH, e.g. docs/_ext/subway_seat_enamel.py",
+          "how": null,
           "lang": "python",
           "append": false,
           "binary": false
@@ -5137,6 +5487,7 @@
           "path": "pygments/package/pyproject.toml",
           "flavor": null,
           "dest": "pip install 'git+https://github.com/oddurs/subway-seat#subdirectory=dist/pygments/package'",
+          "how": null,
           "lang": "toml",
           "append": false,
           "binary": false
@@ -5145,6 +5496,7 @@
           "path": "pygments/package/README.md",
           "flavor": null,
           "dest": null,
+          "how": null,
           "lang": "text",
           "append": false,
           "binary": false
@@ -5153,6 +5505,7 @@
           "path": "pygments/package/subway_seat_pygments/__init__.py",
           "flavor": null,
           "dest": null,
+          "how": null,
           "lang": "python",
           "append": false,
           "binary": false
@@ -5161,6 +5514,7 @@
           "path": "pygments/package/subway_seat_pygments/subway_seat.py",
           "flavor": "walnut",
           "dest": null,
+          "how": null,
           "lang": "python",
           "append": false,
           "binary": false
@@ -5169,6 +5523,7 @@
           "path": "pygments/package/subway_seat_pygments/subway_seat_tunnel.py",
           "flavor": "tunnel",
           "dest": null,
+          "how": null,
           "lang": "python",
           "append": false,
           "binary": false
@@ -5177,6 +5532,7 @@
           "path": "pygments/package/subway_seat_pygments/subway_seat_enamel.py",
           "flavor": "enamel",
           "dest": null,
+          "how": null,
           "lang": "python",
           "append": false,
           "binary": false
@@ -5211,6 +5567,7 @@
           "path": "scss/_subway-seat.scss",
           "flavor": "walnut",
           "dest": "your Sass load path, e.g. styles/_subway-seat.scss",
+          "how": null,
           "lang": "scss",
           "append": false,
           "binary": false
@@ -5219,6 +5576,7 @@
           "path": "scss/_subway-seat-tunnel.scss",
           "flavor": "tunnel",
           "dest": "your Sass load path, e.g. styles/_subway-seat-tunnel.scss",
+          "how": null,
           "lang": "scss",
           "append": false,
           "binary": false
@@ -5227,6 +5585,7 @@
           "path": "scss/_subway-seat-enamel.scss",
           "flavor": "enamel",
           "dest": "your Sass load path, e.g. styles/_subway-seat-enamel.scss",
+          "how": null,
           "lang": "scss",
           "append": false,
           "binary": false
@@ -5261,6 +5620,7 @@
           "path": "shiki/subway-seat.json",
           "flavor": "walnut",
           "dest": "your project, e.g. themes/subway-seat.json",
+          "how": null,
           "lang": "json",
           "append": false,
           "binary": false
@@ -5269,6 +5629,7 @@
           "path": "shiki/subway-seat-tunnel.json",
           "flavor": "tunnel",
           "dest": "your project, e.g. themes/subway-seat-tunnel.json",
+          "how": null,
           "lang": "json",
           "append": false,
           "binary": false
@@ -5277,6 +5638,7 @@
           "path": "shiki/subway-seat-enamel.json",
           "flavor": "enamel",
           "dest": "your project, e.g. themes/subway-seat-enamel.json",
+          "how": null,
           "lang": "json",
           "append": false,
           "binary": false
@@ -5288,7 +5650,7 @@
       "name": "Tailwind CSS",
       "category": "Palettes",
       "homepage": "https://tailwindcss.com",
-      "notes": "Tailwind v4 theme files add ss-* colours (bg-ss-base, text-ss-orange) for one flavor. For v3, subway-seat-preset.js has all three as ss-walnut-*, ss-tunnel-* and ss-enamel-*.",
+      "notes": "Tailwind v4 theme files add ss-* colors (bg-ss-base, text-ss-orange) for one flavor. For v3, subway-seat-preset.js has all three as ss-walnut-*, ss-tunnel-* and ss-enamel-*.",
       "enable": {
         "walnut": {
           "where": "your main CSS file (Tailwind v4)",
@@ -5311,6 +5673,7 @@
           "path": "tailwind/subway-seat.css",
           "flavor": "walnut",
           "dest": "next to your main CSS file",
+          "how": null,
           "lang": "css",
           "append": false,
           "binary": false
@@ -5319,6 +5682,7 @@
           "path": "tailwind/subway-seat-tunnel.css",
           "flavor": "tunnel",
           "dest": "next to your main CSS file",
+          "how": null,
           "lang": "css",
           "append": false,
           "binary": false
@@ -5327,6 +5691,7 @@
           "path": "tailwind/subway-seat-enamel.css",
           "flavor": "enamel",
           "dest": "next to your main CSS file",
+          "how": null,
           "lang": "css",
           "append": false,
           "binary": false
@@ -5335,6 +5700,7 @@
           "path": "tailwind/subway-seat-preset.js",
           "flavor": null,
           "dest": "your project root, next to tailwind.config.js",
+          "how": null,
           "lang": "js",
           "append": false,
           "binary": false

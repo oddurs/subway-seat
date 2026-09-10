@@ -17,10 +17,20 @@ A port is a module in ports/ (no leading underscore) that defines:
 
     def build(flavors) -> list[Out]
 
+Optional META keys:
+
+    "auto": {"where", "code", "lang"}   # how to follow the OS light/dark setting
+                                        # (code is shown as-is, not formatted)
+    "requires": "Ghostty 1.3+"          # the oldest version the files work with
+    enable["sh"]                        # a POSIX-shell line when `code` is fish
+
 `build` receives every Flavor and returns files. A file tied to one flavor sets
 `flavor=f.id`; a file covering all of them (a VS Code extension, an auto
-light/dark theme) leaves it None. `dest` is where the user puts the file, shown
-on the site; `lang` is one of LANGS below (the site's highlighter).
+light/dark theme) leaves it None. `dest` is a path (`~/…`, `/…`, `%APPDATA%\…`)
+the file is copied to, or None; anything that isn't a path (an import dialog,
+"packaged in the extension") goes in `how`. `append=True` means the file's text
+is added to the file at `dest`; wrap it in MARK_START/MARK_END so it can be
+removed again. `lang` is one of LANGS below (the site's highlighter).
 
 Shared helpers live here: `ink(f)`, `selection(f)`, `tints(f)`, the layering
 system (`resolve`, `solid`, `ui_colors`), `ANSI_NAMES`, `zip_bytes` and VERSION
@@ -58,7 +68,7 @@ CATEGORIES = [
 # Languages the site knows how to highlight (see site/src/lib/highlight.ts).
 Lang = Literal[
     "conf", "fish", "sh", "toml", "lua", "json", "xml", "yaml", "css", "scss", "ini", "vim",
-    "elisp", "kdl", "ron", "typescript", "js", "python", "text",
+    "elisp", "kdl", "ron", "typescript", "js", "python", "go", "nushell", "powershell", "text",
 ]
 LANGS: tuple[str, ...] = Lang.__args__
 
@@ -66,6 +76,13 @@ LANGS: tuple[str, ...] = Lang.__args__
 class Enable(TypedDict):
     where: str
     code: str  # formatted with the Flavor: {name} {slug} {snake} {id}
+    lang: Lang
+    sh: NotRequired[str]  # POSIX-shell equivalent of a fish `code`, formatted the same way
+
+
+class Auto(TypedDict):
+    where: str
+    code: str  # shown as-is (it names every flavor itself)
     lang: Lang
 
 
@@ -76,6 +93,8 @@ class Meta(TypedDict):
     homepage: str
     notes: str
     enable: NotRequired[Enable]
+    auto: NotRequired[Auto]
+    requires: NotRequired[str]
 
 
 @dataclass(frozen=True, slots=True)
@@ -86,6 +105,12 @@ class Out:
     dest: str | None = None
     lang: Lang = "text"
     append: bool = False
+    how: str | None = None  # prose install step when there's no path to copy to
+
+
+# Markers around appended blocks, so uninstalling is deleting one block.
+MARK_START = "# >>> subway-seat >>>"
+MARK_END = "# <<< subway-seat <<<"
 
 
 ANSI_NAMES = ("black", "red", "green", "yellow", "blue", "magenta", "cyan", "white")
@@ -97,7 +122,7 @@ def ink(f):
 
 
 def selection(f):
-    """The one solid selection colour for apps without alpha."""
+    """The one solid selection color for apps without alpha."""
     return f.surface2 if f.dark else f.surface1
 
 

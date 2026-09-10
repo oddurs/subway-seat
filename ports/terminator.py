@@ -13,7 +13,7 @@ META = {
         "code": 'terminator -p "{name}"',
         "lang": "sh",
     },
-    "notes": "Palette, cursor and the title bar colours for the focused, broadcast-receiving and inactive "
+    "notes": "Palette, cursor and the title bar colors for the focused, broadcast-receiving and inactive "
     "terminals. Paste the snippet under the existing `[profiles]` heading; the cursor keys need Terminator 2.1.2 or later.",
 }
 

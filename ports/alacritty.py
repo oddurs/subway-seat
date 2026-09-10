@@ -1,4 +1,4 @@
-"""Alacritty: a TOML colour file per flavor, pulled in with `general.import`."""
+"""Alacritty: a TOML color file per flavor, pulled in with `general.import`."""
 
 from ports._lib import HEADER, Out
 from ports._terminals import ANSI_NAMES, dim, lit, search, search_cur, selection
@@ -13,7 +13,7 @@ META = {
         "code": '[general]\nimport = ["~/.config/alacritty/themes/{slug}.toml"]',
         "lang": "toml",
     },
-    "notes": "Normal, bright and dim colours, both cursors, selection, search, hints, footer bar and "
+    "notes": "Normal, bright and dim colors, both cursors, selection, search, hints, footer bar and "
     "line indicator. `general.import` needs Alacritty 0.14 or later; older versions use a top-level `import`.",
 }
 

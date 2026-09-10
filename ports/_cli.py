@@ -18,7 +18,7 @@ def selection(f):
 
 
 def stripe(f, n):
-    """n colours along the 70s stripe: avocado → harvest gold → burnt orange → redbird."""
+    """n colors along the 70s stripe: avocado → harvest gold → burnt orange → redbird."""
     stops = [f.green, f.yellow, f.orange, f.red]
     out = []
     for i in range(n):

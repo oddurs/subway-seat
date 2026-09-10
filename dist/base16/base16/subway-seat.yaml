@@ -4,7 +4,7 @@ name: "Subway Seat"
 author: "oddurs (https://github.com/oddurs/subway-seat)"
 variant: "dark"
 palette:
-  base00: "#362619" # base (Walnut)
+  base00: "#362619" # base (Paneling)
   base01: "#43301F" # surface0 (Coppertone)
   base02: "#634932" # surface2 (Corduroy)
   base03: "#967B5C" # overlay1 (Cardboard)

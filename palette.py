@@ -2,11 +2,11 @@
 
 A 1970s palette: walnut-brown ground, parchment cream text, harvest-gold and
 burnt-orange accents, avocado green. The blues and purples of a "normal"
-16-colour palette are deliberately faded (denim) or re-assigned (magenta is
+16-color palette are deliberately faded (denim) or re-assigned (magenta is
 burnt orange) so the whole screen stays in the same warm room.
 
 Every flavor defines the same roles, so a port written against roles works for
-all of them. Ports read colours as attributes: `f.base`, `f.orange`, `f.text_hi`.
+all of them. Ports read colors as attributes: `f.base`, `f.orange`, `f.text_hi`.
 """
 
 from dataclasses import dataclass, field
@@ -22,7 +22,7 @@ ROLES = GROUND + TEXT + ACCENTS
 
 # What each role is called on the site and in docs (the dark-flavor reading).
 ROLE_NAMES = {
-    "crust": "Tunnel", "mantle": "Espresso", "base": "Walnut", "surface0": "Coppertone",
+    "crust": "Blackout", "mantle": "Espresso", "base": "Paneling", "surface0": "Coppertone",
     "surface1": "Saddle", "surface2": "Corduroy", "overlay0": "Pecan", "overlay1": "Cardboard",
     "overlay2": "Burlap", "subtext0": "Khaki", "subtext1": "Almond", "text": "Parchment",
     "text_hi": "Ivory", "yellow": "Harvest gold", "yellow_hi": "Broadway yellow",
@@ -39,7 +39,31 @@ ACCENT_ROLES = {
     "sage": "types, classes, options",
     "red_hi": "numbers, constants, deletions",
     "clay": "escapes, regex, decorators",
-    "denim": "links and info, the only cool colour",
+    "denim": "links and info, the only cool color",
+}
+
+# What every role is used for, for the site's palette page and dist/json.
+ROLE_USES = {
+    "crust": "grooves and borders between panes",
+    "mantle": "chrome: sidebars, title and status bars",
+    "base": "the editor and terminal ground",
+    "surface0": "the current line, inputs, popovers",
+    "surface1": "raised controls, terminal black",
+    "surface2": "selection",
+    "overlay0": "gutters, whitespace, indent guides",
+    "overlay1": "comments, line numbers, bright black",
+    "overlay2": "punctuation, muted labels",
+    "subtext0": "placeholders, quiet labels",
+    "subtext1": "sidebar and secondary text",
+    "text": "body text, variables",
+    "text_hi": "headings, the active line number, bold",
+    **ACCENT_ROLES,
+    "yellow_hi": "bright yellow, emphasis on gold",
+    "orange_hi": "bright magenta, the Claude spinner shimmer",
+    "red": "errors, terminal red",
+    "green_hi": "bright green",
+    "sage_hi": "bright cyan",
+    "denim_hi": "bright blue",
 }
 
 
@@ -70,8 +94,8 @@ class Flavor:
 
     def syntax(self, role):
         """(hex, styles) for a syntax role."""
-        colour_role, styles = SYNTAX[role]
-        return self.colors[colour_role], styles
+        color_role, styles = SYNTAX[role]
+        return self.colors[color_role], styles
 
     def mix(self, a, b, t):
         """Mix role/hex `a` into `b` by t (0..1): t=0 → b, t=1 → a."""
@@ -157,7 +181,7 @@ FLAVORS = [WALNUT, TUNNEL, ENAMEL]
 DEFAULT = WALNUT
 
 # ── Syntax roles, shared by every editor port ──────────────────────────────
-# role → (colour role, styles ⊂ {"bold", "italic"})
+# role → (color role, styles ⊂ {"bold", "italic"})
 SYNTAX = {
     "comment": ("overlay1", {"italic"}),
     "keyword": ("orange", set()),
@@ -200,7 +224,8 @@ def hex_to_rgb(h):
 def blend(fg, bg, alpha):
     """Mix fg over bg at alpha (0..1) — for tints and in-between grounds."""
     f, b = hex_to_rgb(fg), hex_to_rgb(bg)
-    return "#%02X%02X%02X" % tuple(round(fi * alpha + bi * (1 - alpha)) for fi, bi in zip(f, b))
+    r, g, b_ = (round(fi * alpha + bi * (1 - alpha)) for fi, bi in zip(f, b, strict=True))
+    return f"#{r:02X}{g:02X}{b_:02X}"
 
 
 def alpha(color, a):

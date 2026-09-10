@@ -18,7 +18,7 @@ META = {
         "code": "[main]\ninclude=~/.config/foot/{slug}.ini",
         "lang": "ini",
     },
-    "notes": "Colours, dim colours, cursor, selection, search box, jump labels, URLs and the bell flash, in "
+    "notes": "Colors, dim colors, cursor, selection, search box, jump labels, URLs and the bell flash, in "
     "both a dark and a light section. Needs foot 1.26 or later, which replaced `[colors]` with "
     "`[colors-dark]` and `[colors-light]`.",
 }

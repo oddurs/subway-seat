@@ -12,7 +12,7 @@ META = {
         "lang": "kdl",
     },
     "notes": "Themes in Zellij's component spec (0.42+): an orange frame on the focused pane, gold in "
-    "other modes, orange ribbons for the active tab. A legacy colour-list version is included for "
+    "other modes, orange ribbons for the active tab. A legacy color-list version is included for "
     "older releases; `theme_dark` and `theme_light` can pair Walnut with Enamel.",
 }
 
@@ -54,7 +54,7 @@ def spec(f):
 def legacy(f):
     # Legacy themes are read by slot: `green` paints the focused frame and the
     # active tab, `orange` the frame in other modes. Burnt orange is the active
-    # colour everywhere else in Subway Seat, so the slots are shifted to match.
+    # color everywhere else in Subway Seat, so the slots are shifted to match.
     slots = [
         ("fg", f.text, ""), ("bg", f.surface1, ""), ("black", f.mantle, ""),
         ("red", f.red_hi, ""), ("green", f.orange, "active frame, selected tab"),
@@ -62,7 +62,7 @@ def legacy(f):
         ("orange", f.yellow, "frame in other modes"), ("cyan", f.sage, ""), ("white", f.text_hi, ""),
     ]
     body = "\n".join(f'        {k} "{v}"' + (f" // {note}" if note else "") for k, v, note in slots)
-    return (f"// {HEADER}\n// {f.name}: legacy colour-list theme for Zellij before 0.42.\n\n"
+    return (f"// {HEADER}\n// {f.name}: legacy color-list theme for Zellij before 0.42.\n\n"
             f"themes {{\n    {f.slug} {{\n{body}\n    }}\n}}\n")
 
 

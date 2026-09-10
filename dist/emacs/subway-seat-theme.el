@@ -1,4 +1,4 @@
-;;; subway-seat-theme.el --- A warm 1970s subway-car colour theme -*- lexical-binding: t; -*-
+;;; subway-seat-theme.el --- A warm 1970s subway-car color theme -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2026 Oddur Sigurdsson
 
@@ -44,7 +44,7 @@
 ;;
 ;;   (load-theme 'subway-seat t)
 ;;
-;; To tweak a face with the theme's colours, bind them with
+;; To tweak a face with the theme's colors, bind them with
 ;; `subway-seat-theme-with-colors':
 ;;
 ;;   (subway-seat-theme-with-colors 'subway-seat
@@ -55,7 +55,7 @@
 ;;; Code:
 
 (defgroup subway-seat-theme nil
-  "The Subway Seat colour themes."
+  "The Subway Seat color themes."
   :group 'faces
   :prefix "subway-seat-theme-"
   :link '(url-link "https://github.com/oddurs/subway-seat"))
@@ -248,13 +248,13 @@
      (ansi13        . "#C4561A")
      (ansi14        . "#4C8367")
      (ansi15        . "#CAB48E")))
-  "Colours for each Subway Seat theme, keyed by theme name.
-Each entry maps a colour key (a palette role such as `base' or
+  "Colors for each Subway Seat theme, keyed by theme name.
+Each entry maps a color key (a palette role such as `base' or
 `orange', or a derived ground such as `hl-line' or `bg-add') to a
 hex string.")
 
 (defmacro subway-seat-theme-with-colors (theme &rest body)
-  "Evaluate BODY with the colours of THEME bound as `.KEY' symbols.
+  "Evaluate BODY with the colors of THEME bound as `.KEY' symbols.
 THEME is a symbol such as `subway-seat'; see
 `subway-seat-theme-palettes' for the keys, e.g. `.base' or `.orange'."
   (declare (indent 1))

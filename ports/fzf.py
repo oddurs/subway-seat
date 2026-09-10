@@ -10,7 +10,7 @@ META = {
         "code": "source ~/.config/fzf/{slug}.fish",
         "lang": "fish",
     },
-    "notes": "Colours for the finder, preview border, pointer and marker.",
+    "notes": "Colors for the finder, preview border, pointer and marker.",
 }
 
 

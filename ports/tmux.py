@@ -12,7 +12,7 @@ META = {
         "lang": "conf",
     },
     "notes": "A status bar like a station sign: the session as an orange route bullet (gold while the "
-    "prefix is held), the active window lit in gold, a clock and a four-colour stripe. The rounded "
+    "prefix is held), the active window lit in gold, a clock and a four-color stripe. The rounded "
     "bullet ends need a Nerd Font; no plugins required.",
 }
 
@@ -22,7 +22,7 @@ LEFT_CAP, RIGHT_CAP = "\ue0b6", "\ue0b4"
 
 def conf(f):
     # tmux expands #D and #F inside formats (pane id, window flags), so every
-    # colour is written in lowercase to keep hex digits from being read as aliases.
+    # color is written in lowercase to keep hex digits from being read as aliases.
     c = {k: v.lower() for k, v in f.colors.items()}
     t = {k: v.lower() for k, v in tints(f).items()}
     bg, on = bar(f).lower(), ink(f).lower()

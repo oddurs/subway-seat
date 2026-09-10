@@ -16,7 +16,7 @@ META = {
         "code": "Select theme: {name}",
         "lang": "text",
     },
-    "notes": "Syntax colours for 56 lexers plus the editor chrome: margins, folding, tabs, smart and find "
+    "notes": "Syntax colors for 56 lexers plus the editor chrome: margins, folding, tabs, smart and find "
     "highlights. Pair the dark flavors with Settings → Preferences → Dark Mode so the menus match.",
 }
 

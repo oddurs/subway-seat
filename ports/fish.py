@@ -6,7 +6,7 @@ META = {
     "category": "Shell & prompt",
     "homepage": "https://fishshell.com",
     "enable": {"where": "config.fish (fish 4.3+)", "code": "fish_config theme choose {slug}", "lang": "fish"},
-    "notes": "Command-line syntax colours and the completion pager. `subway-seat-auto` carries both "
+    "notes": "Command-line syntax colors and the completion pager. `subway-seat-auto` carries both "
     "Walnut and Enamel and follows your terminal's background.",
 }
 

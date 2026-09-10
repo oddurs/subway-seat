@@ -3,7 +3,7 @@
     "crust": {
       "$type": "color",
       "$value": "#20160E",
-      "$description": "Tunnel"
+      "$description": "Blackout"
     },
     "mantle": {
       "$type": "color",
@@ -13,7 +13,7 @@
     "base": {
       "$type": "color",
       "$value": "#362619",
-      "$description": "Walnut"
+      "$description": "Paneling"
     },
     "surface0": {
       "$type": "color",
@@ -135,7 +135,7 @@
     "crust": {
       "$type": "color",
       "$value": "#140D07",
-      "$description": "Tunnel"
+      "$description": "Blackout"
     },
     "mantle": {
       "$type": "color",
@@ -145,7 +145,7 @@
     "base": {
       "$type": "color",
       "$value": "#24180E",
-      "$description": "Walnut"
+      "$description": "Paneling"
     },
     "surface0": {
       "$type": "color",
@@ -267,7 +267,7 @@
     "crust": {
       "$type": "color",
       "$value": "#E2D3B6",
-      "$description": "Tunnel"
+      "$description": "Blackout"
     },
     "mantle": {
       "$type": "color",
@@ -277,7 +277,7 @@
     "base": {
       "$type": "color",
       "$value": "#F4E9D4",
-      "$description": "Walnut"
+      "$description": "Paneling"
     },
     "surface0": {
       "$type": "color",

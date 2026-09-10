@@ -1,4 +1,4 @@
-"""iTerm2: an .itermcolors colour preset per flavor."""
+"""iTerm2: an .itermcolors color preset per flavor."""
 
 import plistlib
 
@@ -15,7 +15,7 @@ META = {
         "code": 'open "{name}.itermcolors"   # imports the preset\n# then Color Presets… › {name}',
         "lang": "sh",
     },
-    "notes": "ANSI colours plus cursor, cursor guide, selection, link, search match, badge and tab colour. "
+    "notes": "ANSI colors plus cursor, cursor guide, selection, link, search match, badge and tab color. "
     "Tab Color only shows once the profile's Tab Color box is ticked.",
 }
 

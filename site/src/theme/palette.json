@@ -60,9 +60,9 @@
     "clay"
   ],
   "roleNames": {
-    "crust": "Tunnel",
+    "crust": "Blackout",
     "mantle": "Espresso",
-    "base": "Walnut",
+    "base": "Paneling",
     "surface0": "Coppertone",
     "surface1": "Saddle",
     "surface2": "Corduroy",
@@ -94,7 +94,35 @@
     "sage": "types, classes, options",
     "redHi": "numbers, constants, deletions",
     "clay": "escapes, regex, decorators",
-    "denim": "links and info, the only cool colour"
+    "denim": "links and info, the only cool color"
+  },
+  "roleUses": {
+    "crust": "grooves and borders between panes",
+    "mantle": "chrome: sidebars, title and status bars",
+    "base": "the editor and terminal ground",
+    "surface0": "the current line, inputs, popovers",
+    "surface1": "raised controls, terminal black",
+    "surface2": "selection",
+    "overlay0": "gutters, whitespace, indent guides",
+    "overlay1": "comments, line numbers, bright black",
+    "overlay2": "punctuation, muted labels",
+    "subtext0": "placeholders, quiet labels",
+    "subtext1": "sidebar and secondary text",
+    "text": "body text, variables",
+    "textHi": "headings, the active line number, bold",
+    "yellow": "functions, commands, the cursor",
+    "yellowHi": "bright yellow, emphasis on gold",
+    "orange": "keywords, tags, the Claude spinner",
+    "orangeHi": "bright magenta, the Claude spinner shimmer",
+    "red": "errors, terminal red",
+    "redHi": "numbers, constants, deletions",
+    "green": "strings, additions",
+    "greenHi": "bright green",
+    "sage": "types, classes, options",
+    "sageHi": "bright cyan",
+    "denim": "links and info, the only cool color",
+    "denimHi": "bright blue",
+    "clay": "escapes, regex, decorators"
   },
   "flavors": [
     {

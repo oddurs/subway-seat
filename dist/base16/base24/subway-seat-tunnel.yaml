@@ -4,7 +4,7 @@ name: "Subway Seat Tunnel"
 author: "oddurs (https://github.com/oddurs/subway-seat)"
 variant: "dark"
 palette:
-  base00: "#24180E" # base (Walnut)
+  base00: "#24180E" # base (Paneling)
   base01: "#302115" # surface0 (Coppertone)
   base02: "#4F3927" # surface2 (Corduroy)
   base03: "#917759" # overlay1 (Cardboard)
@@ -21,7 +21,7 @@ palette:
   base0E: "#EC7F31" # orange (Burnt orange)
   base0F: "#E0956C" # clay (Terracotta)
   base10: "#1B120A" # mantle (Espresso)
-  base11: "#140D07" # crust (Tunnel)
+  base11: "#140D07" # crust (Blackout)
   base12: "#F97160" # red_hi (Redbird bright)
   base13: "#FFD36B" # yellow_hi (Broadway yellow)
   base14: "#BFCB63" # green_hi (Avocado bright)

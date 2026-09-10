@@ -28,7 +28,7 @@ def scheme(f):
     c = f
     u = ui(f)
     t = tints(f)
-    roles = {c.colors[r]: r for r in reversed(p.ROLES)}  # hex → first role with that colour
+    roles = {c.colors[r]: r for r in reversed(p.ROLES)}  # hex → first role with that color
     variables = {r: c.colors[r] for r in p.ROLES}
     variables.update({f"tint_{k}": v for k, v in t.items()})
     variables["inactive_selection"] = f.mix(u["selection"], "base", 0.55)

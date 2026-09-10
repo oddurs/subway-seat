@@ -13,7 +13,7 @@ META = {
         "code": "termux-reload-settings",
         "lang": "sh",
     },
-    "notes": "Background, foreground, cursor and the 16 ANSI colours. Termux reads one colour file, so "
+    "notes": "Background, foreground, cursor and the 16 ANSI colors. Termux reads one color file, so "
     "switching flavors means replacing it.",
 }
 

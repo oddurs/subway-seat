@@ -13,7 +13,7 @@ META = {
         "code": 'theme = "{slug}"',
         "lang": "toml",
     },
-    "notes": "Normal, light and dim colours, both cursors, tabs, splits, selection, search and hints. For "
+    "notes": "Normal, light and dim colors, both cursors, tabs, splits, selection, search and hints. For "
     'light/dark following, use `[adaptive-theme]` with `light = "subway-seat-enamel"` and `dark = "subway-seat"`.',
 }
 

@@ -24,7 +24,7 @@ def s(fg=None, bg=None, **attrs):
 
 
 def theme(f):
-    def dim(role):  # size units: the number's colour, quieter
+    def dim(role):  # size units: the number's color, quieter
         return f.mix(role, "base", 0.7)
 
     doc = {

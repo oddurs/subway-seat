@@ -28,12 +28,12 @@ def hsv(color):
 
 
 def style(f, key):
-    """(hex, styles) for a syntax role ("keyword") or a colour role ("green")."""
+    """(hex, styles) for a syntax role ("keyword") or a color role ("green")."""
     return f.syntax(key) if key in p.SYNTAX else (f.colors[key], set())
 
 
 def css_decls(f, key):
-    """CSS declarations for a syntax or colour role."""
+    """CSS declarations for a syntax or color role."""
     color, st = style(f, key)
     out = [f"color: {color};"]
     if "italic" in st:
@@ -48,7 +48,7 @@ def selection(f):
 
 
 # ── Pygments-style token tree (Pygments and chroma share it) ────────────────
-# (token path, syntax or colour role). Chroma drops the dots: Name.Builtin → NameBuiltin.
+# (token path, syntax or color role). Chroma drops the dots: Name.Builtin → NameBuiltin.
 TOKENS = [
     ("Text", "variable"),
     ("Error", "invalid"),

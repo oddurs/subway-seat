@@ -21,7 +21,7 @@ META = {
         "lang": "text",
     },
     "notes": "One plugin for IntelliJ IDEA, PyCharm, WebStorm, GoLand, Rider and the rest: a UI theme and a "
-    "matching editor color scheme for each flavor. The .icls files import on their own if you only want the editor colours.",
+    "matching editor color scheme for each flavor. The .icls files import on their own if you only want the editor colors.",
 }
 
 PLUGIN_ID = "com.oddurs.subway-seat"
@@ -524,7 +524,7 @@ def attributes(f):
         "REGEXP.PARENTHS": S("regexp"),
         "REGEXP.REDUNDANT_ESCAPE": "DEFAULT_VALID_STRING_ESCAPE",
     }
-    # the 16 console colours, straight from the flavor's ANSI palette
+    # the 16 console colors, straight from the flavor's ANSI palette
     names = ["BLACK", "RED", "GREEN", "YELLOW", "BLUE", "MAGENTA", "CYAN"]
     for i, n in enumerate(names):
         attrs[f"CONSOLE_{n}_OUTPUT"] = A(fg=ansi[i])
@@ -632,7 +632,7 @@ def theme(f):
         "warningBorder": f.mix("yellow", "mantle", 0.4),
         "infoBorder": f.mix("denim", "mantle", 0.4),
     })
-    fc = lambda c: f.mix(c, "mantle", 0.16)  # file colours: a faint wash
+    fc = lambda c: f.mix(c, "mantle", 0.16)  # file colors: a faint wash
     theme_ui = {
         "*": {
             "background": "panelBackground",
@@ -1149,7 +1149,7 @@ def build(flavors):
         members.append((f"themes/{f.slug}.theme.json", th))
         members.append((f"schemes/{f.slug}.xml", scheme))
         outs.append(Out(f"schemes/{f.slug}.icls", scheme, flavor=f.id,
-                        dest="Settings → Editor → Color Scheme → ⚙ → Import Scheme… (editor colours only)", lang="xml"))
+                        dest="Settings → Editor → Color Scheme → ⚙ → Import Scheme… (editor colors only)", lang="xml"))
         outs.append(Out(f"themes/{f.slug}.theme.json", th, flavor=f.id, dest="packaged in the plugin JAR", lang="json"))
     outs.append(Out("META-INF/plugin.xml", pxml, dest="packaged in the plugin JAR", lang="xml"))
     outs.append(Out(JAR, jar(members), dest="Settings → Plugins → ⚙ → Install Plugin from Disk…", lang="text"))

@@ -13,7 +13,7 @@ META = {
         "code": 'cp {slug}.yaml "$(tinty config --data-dir-path)/custom-schemes/base16/"\ntinty apply base16-{slug}',
         "lang": "sh",
     },
-    "notes": "Base16 and Base24 schemes. The accent slots follow the terminal colours, so keywords stay burnt orange "
+    "notes": "Base16 and Base24 schemes. The accent slots follow the terminal colors, so keywords stay burnt orange "
     "and strings avocado, but base16 templates will show functions in denim and classes in harvest gold.",
 }
 

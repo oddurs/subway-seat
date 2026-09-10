@@ -1,4 +1,4 @@
-"""Procreate .swatches: a ZIP holding Swatches.json, colours in HSB (0..1)."""
+"""Procreate .swatches: a ZIP holding Swatches.json, colors in HSB (0..1)."""
 
 import io
 import json
@@ -15,10 +15,10 @@ META = {
     "homepage": "https://procreate.com",
     "enable": {
         "where": "your iPad",
-        "code": "Open {name}.swatches from Files or AirDrop; it lands in Colours ▸ Palettes.",
+        "code": "Open {name}.swatches from Files or AirDrop; it lands in Colors ▸ Palettes.",
         "lang": "text",
     },
-    "notes": "A Procreate palette per flavor with all 26 colours in role order: grounds, text, then accents. "
+    "notes": "A Procreate palette per flavor with all 26 colors in role order: grounds, text, then accents. "
     "Procreate palettes don't carry swatch names.",
 }
 

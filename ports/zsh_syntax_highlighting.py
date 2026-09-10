@@ -11,7 +11,7 @@ META = {
         "code": "source ~/.config/zsh/{slug}.zsh",
         "lang": "sh",
     },
-    "notes": "The same command-line colours as the fish port: gold commands, orange keywords and "
+    "notes": "The same command-line colors as the fish port: gold commands, orange keywords and "
     "separators, sage options, avocado strings, terracotta expansions and redirections.",
 }
 

@@ -12,7 +12,7 @@ META = {
         "code": 'cp "{name}.yml" Gogh/themes/\ncd Gogh && task validate',
         "lang": "sh",
     },
-    "notes": "Gogh themes: the 16 ANSI colours, background, foreground and cursor. "
+    "notes": "Gogh themes: the 16 ANSI colors, background, foreground and cursor. "
     "The YAML is what Gogh's themes/ folder takes; the JSON matches its generated data/json files.",
 }
 

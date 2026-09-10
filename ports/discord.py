@@ -20,7 +20,7 @@ META = {
         "code": "{slug}.theme.css",
         "lang": "text",
     },
-    "notes": "Overrides Discord's colour variables only, which survives client updates far better than "
+    "notes": "Overrides Discord's color variables only, which survives client updates far better than "
     "class-level themes. Each file covers both of Discord's modes and pairs a dark flavor with Enamel.",
 }
 
@@ -29,7 +29,7 @@ LIGHT_SEL = ".visual-refresh.theme-light,\n.visual-refresh .theme-light"
 
 
 def ramp(color):
-    """Discord's --brand-100…900 ladder around one colour (500 = the colour)."""
+    """Discord's --brand-100…900 ladder around one color (500 = the color)."""
     steps = [100, 130, 160, 200, 230, 260, 300, 330, 360, 400, 430, 460, 500,
              530, 560, 600, 630, 660, 700, 730, 760, 800, 830, 860, 900]
     out = {}
@@ -287,7 +287,7 @@ def variables(f):
         "--scrollbar-auto-scrollbar-color-thumb": f.surface2 if dark else f.surface1,
         "--scrollbar-auto-scrollbar-color-track": "transparent",
 
-        # Nitro and partner colours, pulled into the palette
+        # Nitro and partner colors, pulled into the palette
         "--premium-perk-yellow": f.yellow,
         "--premium-perk-orange": f.orange,
         "--premium-perk-green": f.green,

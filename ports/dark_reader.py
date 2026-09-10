@@ -1,4 +1,4 @@
-"""Dark Reader: the custom colours to paste into its Colors panel, per flavor."""
+"""Dark Reader: the custom colors to paste into its Colors panel, per flavor."""
 
 import json
 
@@ -16,7 +16,7 @@ META = {
         "(set Selection from Automatic to Custom first).",
         "lang": "text",
     },
-    "notes": "Dark Reader takes only a background, a text colour and a selection colour, so this is just "
+    "notes": "Dark Reader takes only a background, a text color and a selection color, so this is just "
     "those, for both its dark and light schemes. Keys match Dark Reader's own setting names.",
 }
 

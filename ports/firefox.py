@@ -1,5 +1,5 @@
 """Firefox: a static theme per flavor (manifest + unsigned .xpi), plus a
-Firefox Color share link that opens the same colours in color.firefox.com."""
+Firefox Color share link that opens the same colors in color.firefox.com."""
 
 import base64
 import json

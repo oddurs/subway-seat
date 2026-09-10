@@ -14,7 +14,7 @@ META = {
         "lang": "fish",
     },
     "notes": "A Glamour style: top-level headings as orange station signs, the rest stepping down the "
-    "stripe from orange to sage, and code blocks coloured like the editor ports.",
+    "stripe from orange to sage, and code blocks colored like the editor ports.",
 }
 
 

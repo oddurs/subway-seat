@@ -504,7 +504,7 @@ def plugin_groups(f):
 
 
 def lualine(f):
-    """A lualine theme: route-bullet coloured mode segments."""
+    """A lualine theme: route-bullet colored mode segments."""
     c = f
     ink = c.crust if f.dark else c.base
     mode = lambda bg: {

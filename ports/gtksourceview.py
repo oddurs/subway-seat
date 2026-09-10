@@ -27,7 +27,7 @@ DARK = "subway-seat"
 
 
 def styles(f):
-    """name → attributes. Colour values are palette role names (or tint_* names)."""
+    """name → attributes. Color values are palette role names (or tint_* names)."""
     u = ui(f)
     ink = "crust" if f.dark else "base"
     role = {v: k for k, v in reversed(list(f.colors.items()))}
@@ -193,7 +193,7 @@ def scheme(f):
         "",
     ]
     for name, attrs in styles(f).items():
-        for v in attrs.values():  # every colour must be a declared name
+        for v in attrs.values():  # every color must be a declared name
             assert v in colors or v in {"true", "false", "single", "error", "low", "double", "none"}, (name, v)
         a = " ".join(f"{k}={quoteattr(v)}" for k, v in attrs.items())
         lines.append(f'  <style name="{name}" {a}/>')

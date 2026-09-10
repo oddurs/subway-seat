@@ -1,15 +1,15 @@
 """Gemini CLI: a custom theme per flavor, as a file and as a `ui.customThemes` block.
 
-Gemini builds its highlight.js colours from a fixed map (createCustomTheme in
+Gemini builds its highlight.js colors from a fixed map (createCustomTheme in
 packages/cli/src/ui/themes/theme.ts), and the nested keys override the flat
 ones they share a slot with. That forces two trade-offs:
 
-- `status.warning` *is* AccentYellow, which also colours strings; `status.success`
-  *is* AccentGreen, which also colours numbers. Warnings must still look like
+- `status.warning` *is* AccentYellow, which also colors strings; `status.success`
+  *is* AccentGreen, which also colors numbers. Warnings must still look like
   warnings, so strings are harvest gold and numbers avocado here, the reverse of
   the other ports.
 - `text.link` would repaint AccentBlue, AccentCyan and LightBlue (keywords, types,
-  attributes) in one colour, so it is left unset and links take AccentBlue, burnt
+  attributes) in one color, so it is left unset and links take AccentBlue, burnt
   orange.
 
 The rest keeps the usual roles: keywords, literals and tag names burnt orange,
@@ -32,7 +32,7 @@ META = {
         "lang": "json",
     },
     "notes": "A custom theme file per flavor, plus the same theme as a `ui.customThemes` settings block. "
-    "Gemini ties string colour to its warning colour, so strings are harvest gold here instead of avocado.",
+    "Gemini ties string color to its warning color, so strings are harvest gold here instead of avocado.",
 }
 
 
@@ -59,7 +59,7 @@ def theme(f):
         "Gray": f.overlay2,
         "DarkGray": border,
         "GradientColors": gradient,
-        # nested keys: the UI's semantic colours (kept equal to the flat keys they override)
+        # nested keys: the UI's semantic colors (kept equal to the flat keys they override)
         "text": {"primary": f.text, "secondary": f.overlay2, "accent": f.clay, "response": f.text},
         "background": {"primary": f.base, "diff": {"added": t["add"], "removed": t["del"]}},
         "border": {"default": border},

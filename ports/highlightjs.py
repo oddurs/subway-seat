@@ -11,10 +11,10 @@ META = {
         "code": '<link rel="stylesheet" href="{slug}.css">',
         "lang": "xml",
     },
-    "notes": "A highlight.js stylesheet per flavor, using the same syntax colours as the editor themes.",
+    "notes": "A highlight.js stylesheet per flavor, using the same syntax colors as the editor themes.",
 }
 
-# (selectors, syntax or colour role)
+# (selectors, syntax or color role)
 RULES = [
     (".hljs-comment", "comment"),
     (".hljs-quote", "quote"),
@@ -23,7 +23,7 @@ RULES = [
     (".hljs-keyword, .hljs-template-tag", "keyword"),
     (".hljs-operator", "operator"),
     (".hljs-punctuation, .hljs-tag", "punctuation"),
-    # .hljs-attr is JSON/YAML keys, which the editor themes colour like functions.
+    # .hljs-attr is JSON/YAML keys, which the editor themes color like functions.
     (".hljs-title, .hljs-title.function_, .hljs-title.function_.invoke__, .hljs-attr", "function"),
     (".hljs-built_in", "function.builtin"),
     (".hljs-string, .hljs-code", "string"),

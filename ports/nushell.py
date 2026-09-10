@@ -11,7 +11,7 @@ META = {
         "code": "source ~/.config/nushell/themes/{slug}.nu",
         "lang": "text",
     },
-    "notes": "The fish port's command-line colours as a `color_config`, plus table output where file "
+    "notes": "The fish port's command-line colors as a `color_config`, plus table output where file "
     "sizes and ages run down the 70s stripe. It turns on `highlight_resolved_externals`, so unknown "
     "commands show red as they do in fish.",
 }
@@ -29,7 +29,7 @@ def rec(fg=None, bg=None, attr=None):
 
 
 def ramp(steps, last):
-    """A closure that picks a colour by threshold, e.g. file size or age."""
+    """A closure that picks a color by threshold, e.g. file size or age."""
     body = []
     for i, (limit, color) in enumerate(steps):
         body.append(f"{'if' if i == 0 else '} else if'} $in < {limit} {{ \"{color}\"")
@@ -86,7 +86,7 @@ def theme(f):
     age = ramp([("1hr", f.green_hi), ("1day", f.green), ("1wk", f.yellow), ("4wk", f.orange), ("52wk", f.subtext0)],
                f.overlay1)
     values = {
-        # Terminal colours, read by theme-switching commands rather than drawn by Nushell.
+        # Terminal colors, read by theme-switching commands rather than drawn by Nushell.
         "background": q(f.base),
         "foreground": q(f.text),
         "cursor": q(f.yellow if f.dark else f.orange),

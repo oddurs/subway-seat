@@ -6,8 +6,8 @@ META = {
     "category": "CLI & TUI",
     "homepage": "https://atuin.sh",
     "enable": {"where": "~/.config/atuin/config.toml", "code": '[theme]\nname = "{slug}"', "lang": "toml"},
-    "notes": "Colours for the history search: gold titles, orange highlights, calm annotations, and "
-    "command-line colours that match the fish port.",
+    "notes": "Colors for the history search: gold titles, orange highlights, calm annotations, and "
+    "command-line colors that match the fish port.",
 }
 
 

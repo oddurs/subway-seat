@@ -32,7 +32,7 @@ B=$'\033[1m'
 nerd=1; [ "${SUBWAY_SEAT_GLYPHS:-}" = plain ] && nerd=0
 CAP_L=$'\xee\x82\xb6' CAP_R=$'\xee\x82\xb4' BRANCH=$'\xee\x82\xa0'  # Nerd Font U+E0B6 U+E0B4 U+E0A0
 
-# The model as a route bullet: a coloured circle with one bold letter.
+# The model as a route bullet: a colored circle with one bold letter.
 model=$(get '.model.display_name'); model=${model:-Claude}
 case $(printf '%s' "$model" | tr '[:upper:]' '[:lower:]') in
   *opus*) line=$ORANGE ;; *sonnet*) line=$YELLOW ;; *haiku*) line=$GREEN ;; *fable*) line=$SAGE ;; *) line=$CLAY ;;

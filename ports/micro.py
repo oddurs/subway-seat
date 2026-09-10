@@ -1,4 +1,4 @@
-"""micro: a true-colour colorscheme per flavor."""
+"""micro: a true-color colorscheme per flavor."""
 
 from ports._editors import ui
 from ports._lib import HEADER, Out, tints
@@ -14,7 +14,7 @@ META = {
         "lang": "json",
     },
     "notes": "Copy the `.micro` files to `~/.config/micro/colorschemes/`, or run `set colorscheme subway-seat` "
-    "from micro's command bar. True-colour hex; micro maps it to 256 colours when the terminal can't show it.",
+    "from micro's command bar. True-color hex; micro maps it to 256 colors when the terminal can't show it.",
 }
 
 
@@ -27,8 +27,8 @@ def links(f):
         return " ".join([*styles, spec])
 
     def S(role):
-        colour, styles = f.syntax(role)
-        return c(colour, None, *[s for s in ("bold", "italic") if s in styles])
+        color, styles = f.syntax(role)
+        return c(color, None, *[s for s in ("bold", "italic") if s in styles])
 
     return {
         "default": c(f.text, f.base),

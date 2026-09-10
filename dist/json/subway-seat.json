@@ -4,7 +4,7 @@
   "roles": [
     {
       "id": "crust",
-      "name": "Tunnel",
+      "name": "Blackout",
       "group": "ground"
     },
     {
@@ -14,7 +14,7 @@
     },
     {
       "id": "base",
-      "name": "Walnut",
+      "name": "Paneling",
       "group": "ground"
     },
     {
@@ -126,7 +126,7 @@
       "id": "denim",
       "name": "Faded denim",
       "group": "accent",
-      "use": "links and info, the only cool colour"
+      "use": "links and info, the only cool color"
     },
     {
       "id": "denim_hi",
@@ -148,7 +148,7 @@
       "blurb": "Walnut paneling and orange bucket seats. The original.",
       "colors": {
         "crust": {
-          "name": "Tunnel",
+          "name": "Blackout",
           "hex": "#20160E",
           "rgb": [
             32,
@@ -176,7 +176,7 @@
           ]
         },
         "base": {
-          "name": "Walnut",
+          "name": "Paneling",
           "hex": "#362619",
           "rgb": [
             54,
@@ -618,7 +618,7 @@
       "blurb": "The late local after midnight: espresso-deep, same warm lights.",
       "colors": {
         "crust": {
-          "name": "Tunnel",
+          "name": "Blackout",
           "hex": "#140D07",
           "rgb": [
             20,
@@ -646,7 +646,7 @@
           ]
         },
         "base": {
-          "name": "Walnut",
+          "name": "Paneling",
           "hex": "#24180E",
           "rgb": [
             36,
@@ -1088,7 +1088,7 @@
       "blurb": "Cream enamel panels in the morning sun. The light one.",
       "colors": {
         "crust": {
-          "name": "Tunnel",
+          "name": "Blackout",
           "hex": "#E2D3B6",
           "rgb": [
             226,
@@ -1116,7 +1116,7 @@
           ]
         },
         "base": {
-          "name": "Walnut",
+          "name": "Paneling",
           "hex": "#F4E9D4",
           "rgb": [
             244,

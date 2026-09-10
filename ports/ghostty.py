@@ -6,7 +6,7 @@ META = {
     "category": "Terminals",
     "homepage": "https://ghostty.org",
     "enable": {"where": "~/.config/ghostty/config", "code": "theme = {name}", "lang": "conf"},
-    "notes": "The 16 ANSI colours, cursor, selection and split fill. For light/dark following, use "
+    "notes": "The 16 ANSI colors, cursor, selection and split fill. For light/dark following, use "
     "`theme = light:Subway Seat Enamel,dark:Subway Seat`.",
 }
 

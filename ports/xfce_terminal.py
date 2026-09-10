@@ -1,4 +1,4 @@
-"""Xfce Terminal: a colour scheme .theme per flavor."""
+"""Xfce Terminal: a color scheme .theme per flavor."""
 
 from ports._lib import HEADER, Out
 from ports._terminals import lit, selection
@@ -13,7 +13,7 @@ META = {
         "code": "{name}",
         "lang": "text",
     },
-    "notes": "Palette, cursor, bold, selection and the tab activity colour.",
+    "notes": "Palette, cursor, bold, selection and the tab activity color.",
 }
 
 
