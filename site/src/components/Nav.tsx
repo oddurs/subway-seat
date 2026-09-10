@@ -1,44 +1,53 @@
 import * as stylex from "@stylexjs/stylex";
 import Link from "next/link";
+import { sign } from "@/theme/sign.stylex";
 import { font } from "@/theme/type.stylex";
 import { FlavorSwitch } from "./FlavorSwitch";
-
-// Station signs are black with white Helvetica, whatever the flavor.
-const SIGN = "#0C0805";
-const SIGN_TEXT = "#F8ECD4";
-
-const LINKS = [
-  { href: "/#ports", label: "Ports" },
-  { href: "/palette", label: "Palette" },
-  { href: "/ports/claude-code", label: "Claude Code" },
-  { href: "https://github.com/oddurs/subway-seat", label: "GitHub" },
-];
+import { NavLinks } from "./NavLinks";
 
 export function Nav() {
   return (
     <header {...stylex.props(styles.band)}>
+      <a href="#main" {...stylex.props(styles.skip)}>
+        Skip to content
+      </a>
       <div {...stylex.props(styles.inner)}>
         <span aria-hidden {...stylex.props(styles.rule)} />
         <Link href="/" {...stylex.props(styles.mark)}>
           Subway Seat
         </Link>
-        <nav aria-label="Main" {...stylex.props(styles.links)}>
-          {LINKS.map((l) => (
-            <Link key={l.href} href={l.href} {...stylex.props(styles.link)}>
-              {l.label}
-            </Link>
-          ))}
-        </nav>
+        <NavLinks />
         <FlavorSwitch />
       </div>
     </header>
   );
 }
 
-const NARROW = "@media (max-width: 640px)";
-
 const styles = stylex.create({
-  band: { position: "relative", zIndex: 2, backgroundColor: SIGN },
+  band: { position: "relative", zIndex: 2, backgroundColor: sign.bg },
+  skip: {
+    position: "absolute",
+    top: 10,
+    left: 10,
+    zIndex: 3,
+    paddingBlock: 8,
+    paddingInline: 14,
+    fontFamily: font.sans,
+    fontSize: 14,
+    fontWeight: 700,
+    color: sign.bg,
+    textDecoration: "none",
+    outlineWidth: 2,
+    outlineStyle: "solid",
+    outlineColor: sign.ring,
+    outlineOffset: 2,
+    backgroundColor: sign.text,
+    borderRadius: 999,
+    transform: {
+      default: "translateY(-200%)",
+      ":focus": "none",
+    },
+  },
   inner: {
     display: "flex",
     flexWrap: "wrap",
@@ -57,38 +66,23 @@ const styles = stylex.create({
     right: 0,
     left: 0,
     height: 2,
-    backgroundColor: SIGN_TEXT,
+    backgroundColor: sign.text,
     opacity: 0.8,
   },
   mark: {
     fontFamily: font.sans,
     fontSize: 21,
     fontWeight: 700,
-    color: SIGN_TEXT,
+    color: sign.text,
     letterSpacing: "-0.01em",
     textDecoration: "none",
-  },
-  links: {
-    display: "flex",
-    flexBasis: {
-      [NARROW]: "100%",
-      default: "auto",
+    outlineWidth: 2,
+    outlineStyle: {
+      default: "none",
+      ":focus-visible": "solid",
     },
-    flexWrap: "wrap",
-    gap: 18,
-    order: {
-      [NARROW]: 3,
-      default: 0,
-    },
-    marginRight: "auto",
-  },
-  link: {
-    fontFamily: font.sans,
-    fontSize: 14,
-    color: {
-      default: "rgba(248,236,212,0.72)",
-      ":hover": SIGN_TEXT,
-    },
-    textDecoration: "none",
+    outlineColor: sign.ring,
+    outlineOffset: 3,
+    borderRadius: 2,
   },
 });

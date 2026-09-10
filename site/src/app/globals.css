@@ -38,16 +38,42 @@
     display: none !important;
   }
 
-  /* Shiki renders Walnut by default and carries the other flavors as variables. */
-  html[data-flavor="tunnel"] .shiki,
-  html[data-flavor="tunnel"] .shiki span {
+  /* Wide tables show every flavor; phones show the one you're riding. */
+  @media (max-width: 720px) {
+    html:not([data-flavor="walnut"]) [data-narrow-only="walnut"],
+    html:not([data-flavor="tunnel"]) [data-narrow-only="tunnel"],
+    html:not([data-flavor="enamel"]) [data-narrow-only="enamel"] {
+      display: none !important;
+    }
+  }
+
+  /* Shiki renders Walnut by default and carries the other flavors as variables
+     (files for one flavor are highlighted in that flavor alone, without the class).
+     Only the <pre> takes the ground; spans keep their own backgrounds (the
+     editor mock's selections, find matches and line highlights). */
+  html[data-flavor="tunnel"] .shiki-themes,
+  html[data-flavor="tunnel"] .shiki-themes span {
     color: var(--shiki-tunnel) !important;
+  }
+  html[data-flavor="tunnel"] .shiki-themes {
     background-color: var(--shiki-tunnel-bg) !important;
   }
-  html[data-flavor="enamel"] .shiki,
-  html[data-flavor="enamel"] .shiki span {
+  html[data-flavor="enamel"] .shiki-themes,
+  html[data-flavor="enamel"] .shiki-themes span {
     color: var(--shiki-enamel) !important;
+  }
+  html[data-flavor="enamel"] .shiki-themes {
     background-color: var(--shiki-enamel-bg) !important;
+  }
+
+  /* Visually hidden, still read aloud. */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
   }
 
   ::selection {

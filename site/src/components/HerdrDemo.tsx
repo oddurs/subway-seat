@@ -1,6 +1,8 @@
 import * as stylex from "@stylexjs/stylex";
 import type { ReactNode } from "react";
 import { walnut } from "@/lib/palette";
+import { claudeTheme, flavorVars } from "@/lib/themeVars";
+import { ink } from "@/theme/ink.stylex";
 import { color } from "@/theme/tokens.stylex";
 import { font } from "@/theme/type.stylex";
 import { C } from "./TerminalDemo";
@@ -34,17 +36,28 @@ function DiffLine({ sign, children }: { sign: "+" | "-"; children: ReactNode }) 
   return (
     <span {...stylex.props(styles.diff, sign === "+" ? styles.added : styles.removed)}>
       {"  "}
-      <C k="overlay1">12</C> <C k={sign === "+" ? "green" : "redHi"}>{sign}</C> {children}
+      <C k="overlay2">12</C> <C k={sign === "+" ? "green" : "redHi"}>{sign}</C> {children}
     </span>
   );
+}
+
+// Diff and prompt grounds come from the generated Claude Code theme itself.
+function claudeVars() {
+  return flavorVars(".claude-pane", (id) => {
+    const t = claudeTheme(id);
+    const pick = (key: string) => (t[key] ? { [`cc-${key}`]: t[key] } : {});
+    return { ...pick("diffAdded"), ...pick("diffRemoved"), ...pick("userMessageBackground") };
+  });
 }
 
 /** herdr's sidebar next to a Claude Code session using the custom theme. */
 export function HerdrDemo() {
   return (
-    <Window title="herdr — claude">
+    <Window title="herdr — claude" label="herdr running Claude Code, Subway Seat theme">
+      {/* biome-ignore lint/security/noDangerouslySetInnerHtml: generated CSS variables */}
+      <style dangerouslySetInnerHTML={{ __html: claudeVars() }} />
       <div {...stylex.props(styles.split)}>
-        <aside {...stylex.props(styles.side)}>
+        <div {...stylex.props(styles.side)}>
           <div {...stylex.props(styles.head)}>SPACES</div>
           {SPACES.map((row) => (
             <SideRow key={row.name} row={row} />
@@ -53,8 +66,14 @@ export function HerdrDemo() {
           {AGENTS.map((row) => (
             <SideRow key={row.detail} row={row} />
           ))}
-        </aside>
-        <div {...stylex.props(styles.pane)}>
+        </div>
+        {/* biome-ignore lint/a11y/noNoninteractiveTabindex: a scrolling region must take focus */}
+        <div
+          tabIndex={0}
+          role="region"
+          aria-label="Claude Code session"
+          className={`claude-pane ${stylex.props(styles.pane).className ?? ""}`}
+        >
           <span {...stylex.props(styles.user)}>
             <C k="overlay1">&gt;</C> make the ground read brown, not black
           </span>
@@ -86,16 +105,23 @@ export function HerdrDemo() {
 }
 
 const NARROW = "@media (max-width: 720px)";
+const WIDE = "@media (min-width: 1200px)";
 
 const styles = stylex.create({
   split: {
     display: "grid",
+    flexGrow: 1,
     gridTemplateColumns: {
-      [NARROW]: "1fr",
-      default: "230px 1fr",
+      [NARROW]: "minmax(0, 1fr)",
+      [WIDE]: "200px minmax(0, 1fr)",
+      default: "230px minmax(0, 1fr)",
     },
   },
   side: {
+    display: {
+      [NARROW]: "none",
+      default: "block",
+    },
     paddingBlock: 12,
     fontFamily: font.mono,
     fontSize: 13,
@@ -113,7 +139,7 @@ const styles = stylex.create({
     paddingTop: 10,
     paddingBottom: 4,
     fontSize: 11,
-    color: color.overlay0,
+    color: color.overlay2,
     letterSpacing: "0.1em",
   },
   row: {
@@ -131,16 +157,27 @@ const styles = stylex.create({
     whiteSpace: "nowrap",
   },
   activeName: { color: color.textHi },
-  rowDetail: { gridColumn: "2", fontSize: 12, color: color.overlay1 },
+  rowDetail: { gridColumn: "2", fontSize: 12, color: color.overlay2 },
   pane: {
     paddingBlock: 16,
     paddingInline: 20,
     overflowX: "auto",
     fontFamily: font.mono,
-    fontSize: 13.5,
+    fontSize: {
+      [NARROW]: 12,
+      [WIDE]: 13,
+      default: 13.5,
+    },
     lineHeight: 1.6,
     color: color.text,
     whiteSpace: "pre",
+    outlineWidth: 2,
+    outlineStyle: {
+      default: "none",
+      ":focus-visible": "solid",
+    },
+    outlineColor: ink.accent,
+    outlineOffset: -2,
   },
   user: {
     boxSizing: "border-box",
@@ -149,11 +186,17 @@ const styles = stylex.create({
     paddingBlock: 4,
     paddingInline: 20,
     marginInline: -20,
-    backgroundColor: color.surface0,
+    backgroundColor: `var(--cc-userMessageBackground, ${color.surface0})`,
   },
-  diff: { display: "inline-block", minWidth: "100%" },
-  added: { backgroundColor: `color-mix(in srgb, ${color.green} 20%, ${color.base})` },
-  removed: { backgroundColor: `color-mix(in srgb, ${color.red} 22%, ${color.base})` },
+  diff: {
+    boxSizing: "border-box",
+    display: "inline-block",
+    minWidth: "calc(100% + 40px)",
+    paddingInline: 20,
+    marginInline: -20,
+  },
+  added: { backgroundColor: "var(--cc-diffAdded)" },
+  removed: { backgroundColor: "var(--cc-diffRemoved)" },
   input: {
     display: "inline-block",
     width: "min(100%, 44ch)",

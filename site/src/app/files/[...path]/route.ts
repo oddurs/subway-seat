@@ -17,6 +17,9 @@ const TYPES: Record<string, string> = {
   ".xpi": "application/x-xpinstall",
   ".jar": "application/java-archive",
   ".vsix": "application/octet-stream",
+  ".png": "image/png",
+  ".svg": "image/svg+xml",
+  ".jpg": "image/jpeg",
 };
 
 export async function GET(_request: Request, ctx: RouteContext<"/files/[...path]">) {

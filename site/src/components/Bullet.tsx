@@ -1,5 +1,5 @@
 import * as stylex from "@stylexjs/stylex";
-import { color } from "@/theme/tokens.stylex";
+import { ink } from "@/theme/ink.stylex";
 import { font } from "@/theme/type.stylex";
 
 /** An MTA route bullet: a filled circle with one bold letter. */
@@ -27,7 +27,7 @@ const styles = stylex.create({
     fontFamily: font.sans,
     fontWeight: 700,
     lineHeight: 1,
-    color: color.crust,
+    color: ink.onAccent,
     borderRadius: "50%",
   },
   sm: { width: 34, height: 34, fontSize: 19 },

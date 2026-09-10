@@ -7,15 +7,18 @@ import { font } from "@/theme/type.stylex";
 export function Window({
   tabs,
   title,
+  label,
   children,
 }: {
   tabs?: string[];
   title?: string;
+  /** What the window shows, for screen readers, e.g. "Claude Code in Ghostty". */
+  label?: string;
   children: ReactNode;
 }) {
   return (
-    <figure {...stylex.props(styles.win)}>
-      <div {...stylex.props(styles.bar)}>
+    <figure aria-label={label} {...stylex.props(styles.win)}>
+      <div aria-hidden={label ? true : undefined} {...stylex.props(styles.bar)}>
         <span {...stylex.props(styles.dots)}>
           <i {...stylex.props(styles.dot)} />
           <i {...stylex.props(styles.dot)} />
@@ -35,6 +38,8 @@ export function Window({
 
 const styles = stylex.create({
   win: {
+    display: "flex",
+    flexDirection: "column",
     margin: 0,
     overflow: "hidden",
     backgroundColor: color.base,
@@ -49,7 +54,7 @@ const styles = stylex.create({
     paddingInline: 14,
     fontFamily: font.mono,
     fontSize: 12,
-    color: color.overlay1,
+    color: color.overlay2,
     backgroundColor: color.mantle,
   },
   dots: { display: "flex", gap: 6 },

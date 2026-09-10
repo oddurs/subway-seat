@@ -1,26 +1,47 @@
 import * as stylex from "@stylexjs/stylex";
 import type { ReactNode } from "react";
+import { ink } from "@/theme/ink.stylex";
 import { color } from "@/theme/tokens.stylex";
 import { font } from "@/theme/type.stylex";
+
+const slug = (s: string) =>
+  s
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
 
 export function Section({
   id,
   label,
   title,
   intro,
+  level = 2,
   children,
 }: {
   id?: string;
   label: string;
   title?: string;
   intro?: ReactNode;
+  /** 1 for a page's own heading (the palette and install pages). */
+  level?: 1 | 2;
   children: ReactNode;
 }) {
+  const heading = `${id ?? slug(label)}-title`;
+  const Title = level === 1 ? "h1" : "h2";
   return (
-    <section id={id} aria-label={label} {...stylex.props(styles.section)}>
+    <section
+      id={id}
+      aria-labelledby={title ? heading : undefined}
+      aria-label={title ? undefined : label}
+      {...stylex.props(styles.section)}
+    >
       <header {...stylex.props(styles.head)}>
         <p {...stylex.props(styles.label)}>{label}</p>
-        {title && <h2 {...stylex.props(styles.title)}>{title}</h2>}
+        {title && (
+          <Title id={heading} {...stylex.props(styles.title)}>
+            {title}
+          </Title>
+        )}
         {intro && <p {...stylex.props(styles.intro)}>{intro}</p>}
       </header>
       {children}
@@ -40,7 +61,7 @@ const styles = stylex.create({
   label: {
     fontSize: 13,
     fontWeight: 600,
-    color: color.orange,
+    color: ink.accent,
     textTransform: "uppercase",
     letterSpacing: "0.16em",
   },

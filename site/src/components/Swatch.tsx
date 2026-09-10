@@ -2,14 +2,19 @@
 
 import * as stylex from "@stylexjs/stylex";
 import { useState } from "react";
+import { announce, copyText } from "@/lib/clipboard";
 import { currentFlavor } from "@/lib/flavor";
 import type { FlavorId } from "@/lib/palette";
+import { ink } from "@/theme/ink.stylex";
 import { color } from "@/theme/tokens.stylex";
 import { font } from "@/theme/type.stylex";
 
 export type SwatchLabel = { flavor: FlavorId; hex: string; ink: string };
 
-/** A colour chip in the current flavor; click copies that flavor's hex. */
+/**
+ * A color chip in the current flavor; click copies that flavor's hex. Its name
+ * is the visible text (role name and hex), so "Copy" isn't needed in a label.
+ */
 export function Swatch({
   fill,
   name,
@@ -19,20 +24,21 @@ export function Swatch({
   name?: string;
   labels: SwatchLabel[];
 }) {
-  const [copied, setCopied] = useState(false);
+  const [state, setState] = useState<"idle" | "copied" | "failed">("idle");
 
   async function copy() {
     const hex = labels.find((l) => l.flavor === currentFlavor())?.hex ?? labels[0].hex;
-    await navigator.clipboard.writeText(hex);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 1200);
+    const ok = await copyText(hex);
+    setState(ok ? "copied" : "failed");
+    announce(ok ? `Copied ${hex}` : "Couldn't copy");
+    setTimeout(() => setState("idle"), 1200);
   }
 
   return (
     <button
       type="button"
       onClick={copy}
-      aria-label={`Copy ${name ?? "colour"}`}
+      title="Copy the hex"
       {...stylex.props(styles.chip, styles.fill(fill))}
     >
       {labels.map((l) => (
@@ -42,7 +48,9 @@ export function Swatch({
           {...stylex.props(styles.label, styles.ink(l.ink))}
         >
           <b {...stylex.props(styles.name)}>{name ?? " "}</b>
-          <code {...stylex.props(styles.hex)}>{copied ? "copied" : l.hex}</code>
+          <code {...stylex.props(styles.hex)}>
+            {state === "copied" ? "copied" : state === "failed" ? "couldn't copy" : l.hex}
+          </code>
         </span>
       ))}
     </button>
@@ -52,6 +60,9 @@ export function Swatch({
 const styles = stylex.create({
   chip: {
     display: "flex",
+    flexGrow: 1,
+    flexShrink: 1,
+    flexBasis: 112,
     flexDirection: "column",
     justifyContent: "flex-end",
     height: 84,
@@ -64,9 +75,10 @@ const styles = stylex.create({
       default: "none",
       ":focus-visible": "solid",
     },
-    outlineColor: color.orange,
-    outlineOffset: 2,
+    outlineColor: ink.accent,
+    outlineOffset: -4,
     borderWidth: 0,
+    boxShadow: `inset 0 0 0 1px color-mix(in srgb, ${color.text} 12%, transparent)`,
     transform: {
       default: null,
       ":hover": "translateY(-2px)",
@@ -78,5 +90,5 @@ const styles = stylex.create({
   ink: (fg: string) => ({ color: fg }),
   label: { display: "grid", fontFamily: font.sans, fontSize: 13, lineHeight: 1.3 },
   name: { fontWeight: 600 },
-  hex: { fontFamily: font.mono, fontSize: 11, opacity: 0.8 },
+  hex: { fontFamily: font.mono, fontSize: 11 },
 });
