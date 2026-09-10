@@ -8,9 +8,10 @@ specific `markup.inserted.diff`, which a bare lookup never reaches, so this adds
 rules that give both scopes a foreground and a tinted background. syntect lets a
 later rule of equal specificity win, so they go last.
 
-The status line borrows syntax colors by scope (status_line_style.rs): model
-sage, path avocado, branch gold, state and mode burnt orange, usage redbird,
-thread gold.
+The status line borrows syntax colors by scope (bottom_pane/status_line_style.rs):
+model and reasoning sage, path avocado, branch gold, state, mode and permissions
+burnt orange, usage and the 5-hour and weekly limits redbird bright, version,
+host and session id cardboard, thread gold, task progress avocado.
 """
 
 import plistlib
@@ -28,6 +29,7 @@ META = {
         "code": '[tui]\ntheme = "{slug}"',
         "lang": "toml",
     },
+    "detect": ["codex", "~/.codex"],
     "notes": "TextMate themes tuned for Codex, whose diff backgrounds come from the theme's added and removed "
     "scopes. The status line picks up the same warm syntax colors.",
 }
