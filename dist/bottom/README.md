@@ -1,8 +1,8 @@
 # Subway Seat for bottom
 
-A `[styles]` block for bottom 0.10+: cores and sensors in stripe colors, avocado download, orange upload, orange table headers and borders.
+A `[styles]` block: cores and sensors in stripe colors, avocado download, orange upload, orange table headers and borders.
 
-[bottom](https://github.com/ClementTsang/bottom) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/bottom/)
+[bottom](https://github.com/ClementTsang/bottom) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/bottom/) · Needs bottom 0.10+
 
 ## Files
 
@@ -14,22 +14,22 @@ A `[styles]` block for bottom 0.10+: cores and sensors in stripe colors, avocado
 
 ## Turn it on
 
-**Subway Seat**, in bottom.toml (~/.config/bottom/ on Linux, ~/Library/Application Support/bottom/ on macOS):
+**Subway Seat**, in the end of bottom.toml: ~/.config/bottom/ (bottom uses it on macOS too once it exists; otherwise ~/Library/Application Support/bottom/). Skip it if you already have [styles] tables:
 
-```fish
-cat subway-seat.toml >> bottom.toml
+```sh
+cat subway-seat.toml >> ~/.config/bottom/bottom.toml
 ```
 
-**Subway Seat Tunnel**, in bottom.toml (~/.config/bottom/ on Linux, ~/Library/Application Support/bottom/ on macOS):
+**Subway Seat Tunnel**, in the end of bottom.toml: ~/.config/bottom/ (bottom uses it on macOS too once it exists; otherwise ~/Library/Application Support/bottom/). Skip it if you already have [styles] tables:
 
-```fish
-cat subway-seat-tunnel.toml >> bottom.toml
+```sh
+cat subway-seat-tunnel.toml >> ~/.config/bottom/bottom.toml
 ```
 
-**Subway Seat Enamel**, in bottom.toml (~/.config/bottom/ on Linux, ~/Library/Application Support/bottom/ on macOS):
+**Subway Seat Enamel**, in the end of bottom.toml: ~/.config/bottom/ (bottom uses it on macOS too once it exists; otherwise ~/Library/Application Support/bottom/). Skip it if you already have [styles] tables:
 
-```fish
-cat subway-seat-enamel.toml >> bottom.toml
+```sh
+cat subway-seat-enamel.toml >> ~/.config/bottom/bottom.toml
 ```
 
 ## Uninstall

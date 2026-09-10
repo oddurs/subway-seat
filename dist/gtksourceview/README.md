@@ -1,6 +1,6 @@
 # Subway Seat for GtkSourceView
 
-One style scheme for everything built on GtkSourceView: GNOME Text Editor and Builder read `~/.local/share/gtksourceview-5/styles`, gedit reads `gtksourceview-4/styles` (or `libgedit-gtksourceview-300/styles` from gedit 45). Walnut and Enamel are paired, so GNOME Text Editor switches between them with the system style.
+One style scheme for everything built on GtkSourceView: GNOME Text Editor, Builder, gedit and Meld. Walnut and Enamel are paired, so GNOME Text Editor switches between them with the system style.
 
 [GtkSourceView](https://gitlab.gnome.org/GNOME/gtksourceview) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/gtksourceview/)
 
@@ -8,28 +8,42 @@ One style scheme for everything built on GtkSourceView: GNOME Text Editor and Bu
 
 | Flavor | File | Where it goes |
 |---|---|---|
-| Subway Seat | [`subway-seat.xml`](subway-seat.xml) | `~/.local/share/gtksourceview-5/styles/subway-seat.xml` |
-| Subway Seat Tunnel | [`subway-seat-tunnel.xml`](subway-seat-tunnel.xml) | `~/.local/share/gtksourceview-5/styles/subway-seat-tunnel.xml` |
-| Subway Seat Enamel | [`subway-seat-enamel.xml`](subway-seat-enamel.xml) | `~/.local/share/gtksourceview-5/styles/subway-seat-enamel.xml` |
+| Subway Seat | [`subway-seat.xml`](subway-seat.xml) | `~/.local/share/gtksourceview-5/styles/subway-seat.xml`; gedit reads ~/.local/share/gtksourceview-4/styles (libgedit-gtksourceview-300/styles from gedit 45) |
+| Subway Seat Tunnel | [`subway-seat-tunnel.xml`](subway-seat-tunnel.xml) | `~/.local/share/gtksourceview-5/styles/subway-seat-tunnel.xml`; gedit reads ~/.local/share/gtksourceview-4/styles (libgedit-gtksourceview-300/styles from gedit 45) |
+| Subway Seat Enamel | [`subway-seat-enamel.xml`](subway-seat-enamel.xml) | `~/.local/share/gtksourceview-5/styles/subway-seat-enamel.xml`; gedit reads ~/.local/share/gtksourceview-4/styles (libgedit-gtksourceview-300/styles from gedit 45) |
 
 ## Turn it on
 
-**Subway Seat**, in a shell (GNOME Text Editor), or Preferences → Font & Colors in gedit and Builder:
+**Subway Seat**, in a shell (one line per app), or the app's Preferences › Appearance (Font & Colors in gedit):
 
 ```sh
-gsettings set org.gnome.TextEditor style-scheme 'subway-seat'
+gsettings set org.gnome.TextEditor style-scheme 'subway-seat'  # GNOME Text Editor
+gsettings set org.gnome.gedit.preferences.editor scheme 'subway-seat'  # gedit
+gsettings set org.gnome.builder.editor style-scheme-name 'subway-seat'  # Builder
 ```
 
-**Subway Seat Tunnel**, in a shell (GNOME Text Editor), or Preferences → Font & Colors in gedit and Builder:
+**Subway Seat Tunnel**, in a shell (one line per app), or the app's Preferences › Appearance (Font & Colors in gedit):
 
 ```sh
-gsettings set org.gnome.TextEditor style-scheme 'subway-seat-tunnel'
+gsettings set org.gnome.TextEditor style-scheme 'subway-seat-tunnel'  # GNOME Text Editor
+gsettings set org.gnome.gedit.preferences.editor scheme 'subway-seat-tunnel'  # gedit
+gsettings set org.gnome.builder.editor style-scheme-name 'subway-seat-tunnel'  # Builder
 ```
 
-**Subway Seat Enamel**, in a shell (GNOME Text Editor), or Preferences → Font & Colors in gedit and Builder:
+**Subway Seat Enamel**, in a shell (one line per app), or the app's Preferences › Appearance (Font & Colors in gedit):
 
 ```sh
-gsettings set org.gnome.TextEditor style-scheme 'subway-seat-enamel'
+gsettings set org.gnome.TextEditor style-scheme 'subway-seat-enamel'  # GNOME Text Editor
+gsettings set org.gnome.gedit.preferences.editor scheme 'subway-seat-enamel'  # gedit
+gsettings set org.gnome.builder.editor style-scheme-name 'subway-seat-enamel'  # Builder
+```
+
+## Follow light and dark
+
+In a shell (GNOME Text Editor; pick Subway Seat or Enamel first):
+
+```sh
+gsettings set org.gnome.TextEditor style-variant 'follow'
 ```
 
 ## Uninstall

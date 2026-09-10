@@ -1,50 +1,57 @@
 # Subway Seat for JetBrains IDEs
 
-One plugin for IntelliJ IDEA, PyCharm, WebStorm, GoLand, Rider and the rest: a UI theme and a matching editor color scheme for each flavor. The .icls files import on their own if you only want the editor colors.
+One plugin for IntelliJ IDEA, PyCharm, WebStorm, GoLand, Rider and the rest: a UI theme and a matching editor color scheme for each flavor, plus an Islands version of each theme for the Islands look (2025.2.3 and later). The .icls files import on their own if you only want the editor colors.
 
-[JetBrains IDEs](https://www.jetbrains.com) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/jetbrains/)
+[JetBrains IDEs](https://www.jetbrains.com) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/jetbrains/) · Needs IntelliJ-based IDEs 2023.2+
 
 ## Files
 
 | Flavor | File | Where it goes |
 |---|---|---|
-| Subway Seat | [`schemes/subway-seat.icls`](schemes/subway-seat.icls) | `Settings → Editor → Color Scheme → ⚙ → Import Scheme… (editor colors only)` |
-| Subway Seat | [`themes/subway-seat.theme.json`](themes/subway-seat.theme.json) | `packaged in the plugin JAR` |
-| Subway Seat Tunnel | [`schemes/subway-seat-tunnel.icls`](schemes/subway-seat-tunnel.icls) | `Settings → Editor → Color Scheme → ⚙ → Import Scheme… (editor colors only)` |
-| Subway Seat Tunnel | [`themes/subway-seat-tunnel.theme.json`](themes/subway-seat-tunnel.theme.json) | `packaged in the plugin JAR` |
-| Subway Seat Enamel | [`schemes/subway-seat-enamel.icls`](schemes/subway-seat-enamel.icls) | `Settings → Editor → Color Scheme → ⚙ → Import Scheme… (editor colors only)` |
-| Subway Seat Enamel | [`themes/subway-seat-enamel.theme.json`](themes/subway-seat-enamel.theme.json) | `packaged in the plugin JAR` |
-| All three | [`META-INF/plugin.xml`](META-INF/plugin.xml) | `packaged in the plugin JAR` |
-| All three | [`subway-seat-jetbrains.jar`](subway-seat-jetbrains.jar) | `Settings → Plugins → ⚙ → Install Plugin from Disk…` |
+| Subway Seat | [`schemes/subway-seat.icls`](schemes/subway-seat.icls) | Settings › Editor › Color Scheme › ⚙ › Import Scheme… (editor colors only) |
+| Subway Seat | [`themes/subway-seat.theme.json`](themes/subway-seat.theme.json) | packaged in subway-seat-jetbrains.jar |
+| Subway Seat | [`themes/subway-seat-islands.theme.json`](themes/subway-seat-islands.theme.json) | packaged in subway-seat-jetbrains.jar |
+| Subway Seat Tunnel | [`schemes/subway-seat-tunnel.icls`](schemes/subway-seat-tunnel.icls) | Settings › Editor › Color Scheme › ⚙ › Import Scheme… (editor colors only) |
+| Subway Seat Tunnel | [`themes/subway-seat-tunnel.theme.json`](themes/subway-seat-tunnel.theme.json) | packaged in subway-seat-jetbrains.jar |
+| Subway Seat Tunnel | [`themes/subway-seat-tunnel-islands.theme.json`](themes/subway-seat-tunnel-islands.theme.json) | packaged in subway-seat-jetbrains.jar |
+| Subway Seat Enamel | [`schemes/subway-seat-enamel.icls`](schemes/subway-seat-enamel.icls) | Settings › Editor › Color Scheme › ⚙ › Import Scheme… (editor colors only) |
+| Subway Seat Enamel | [`themes/subway-seat-enamel.theme.json`](themes/subway-seat-enamel.theme.json) | packaged in subway-seat-jetbrains.jar |
+| Subway Seat Enamel | [`themes/subway-seat-enamel-islands.theme.json`](themes/subway-seat-enamel-islands.theme.json) | packaged in subway-seat-jetbrains.jar |
+| All three | [`META-INF/plugin.xml`](META-INF/plugin.xml) | packaged in subway-seat-jetbrains.jar |
+| All three | [`META-INF/pluginIcon.svg`](META-INF/pluginIcon.svg) | packaged in subway-seat-jetbrains.jar |
+| All three | [`subway-seat-jetbrains.jar`](subway-seat-jetbrains.jar) | Settings › Plugins › ⚙ › Install Plugin from Disk… |
 
 ## Turn it on
 
-**Subway Seat**, in Settings → Plugins → ⚙ → Install Plugin from Disk… (subway-seat-jetbrains.jar), then Settings → Appearance & Behavior → Appearance:
+**Subway Seat**, in Settings › Plugins › ⚙ › Install Plugin from Disk… (subway-seat-jetbrains.jar), then Settings › Appearance & Behavior › Appearance:
 
 ```text
-Theme: Subway Seat
-Editor → Color Scheme: Subway Seat
+Theme: Subway Seat (or Subway Seat Islands)
+Editor › Color Scheme: Subway Seat
 ```
 
-**Subway Seat Tunnel**, in Settings → Plugins → ⚙ → Install Plugin from Disk… (subway-seat-jetbrains.jar), then Settings → Appearance & Behavior → Appearance:
+**Subway Seat Tunnel**, in Settings › Plugins › ⚙ › Install Plugin from Disk… (subway-seat-jetbrains.jar), then Settings › Appearance & Behavior › Appearance:
 
 ```text
-Theme: Subway Seat Tunnel
-Editor → Color Scheme: Subway Seat Tunnel
+Theme: Subway Seat Tunnel (or Subway Seat Tunnel Islands)
+Editor › Color Scheme: Subway Seat Tunnel
 ```
 
-**Subway Seat Enamel**, in Settings → Plugins → ⚙ → Install Plugin from Disk… (subway-seat-jetbrains.jar), then Settings → Appearance & Behavior → Appearance:
+**Subway Seat Enamel**, in Settings › Plugins › ⚙ › Install Plugin from Disk… (subway-seat-jetbrains.jar), then Settings › Appearance & Behavior › Appearance:
 
 ```text
-Theme: Subway Seat Enamel
-Editor → Color Scheme: Subway Seat Enamel
+Theme: Subway Seat Enamel (or Subway Seat Enamel Islands)
+Editor › Color Scheme: Subway Seat Enamel
 ```
 
-## Uninstall
+## Follow light and dark
 
-- Delete `Settings → Editor → Color Scheme → ⚙ → Import Scheme… (editor colors only)`.
-- Delete `packaged in the plugin JAR`.
-- Delete `Settings → Plugins → ⚙ → Install Plugin from Disk…`.
-- Remove the line you added to turn it on.
+In Settings › Appearance & Behavior › Appearance:
+
+```text
+☑ Sync with OS, then ⚙ beside it:
+Dark: Subway Seat (or Subway Seat Islands)
+Light: Subway Seat Enamel (or Subway Seat Enamel Islands)
+```
 
 Generated by `build.py` from `palette.py` (v0.3.0). Edit the port in `ports/`, not these files.

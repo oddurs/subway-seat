@@ -1,6 +1,6 @@
 // Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
 // Tailwind v3 preset: presets: [require("./subway-seat-preset.js")]
-// Classes: bg-ss-walnut-base, text-ss-enamel-orange, …
+// Classes: bg-ss-walnut-base, text-ss-enamel-orange, bg-ss-tunnel-diff-add, …
 
 module.exports = {
   "theme": {
@@ -33,7 +33,15 @@ module.exports = {
             "sage-hi": "#A5C9B0",
             "denim": "#7F9BAE",
             "denim-hi": "#9DB6C6",
-            "clay": "#E0956C"
+            "clay": "#E0956C",
+            "diff-add": "#3F3A1E",
+            "diff-add-emph": "#504D26",
+            "diff-add-dim": "#342D18",
+            "diff-del": "#52281C",
+            "diff-del-emph": "#6D3224",
+            "diff-del-dim": "#412217",
+            "diff-chg": "#423117",
+            "diff-chg-emph": "#57421C"
           },
           "tunnel": {
             "crust": "#140D07",
@@ -61,7 +69,15 @@ module.exports = {
             "sage-hi": "#A5C9B0",
             "denim": "#7F9BAE",
             "denim-hi": "#9DB6C6",
-            "clay": "#E0956C"
+            "clay": "#E0956C",
+            "diff-add": "#363318",
+            "diff-add-emph": "#484722",
+            "diff-add-dim": "#292512",
+            "diff-del": "#492217",
+            "diff-del-emph": "#662D20",
+            "diff-del-dim": "#371A12",
+            "diff-chg": "#382911",
+            "diff-chg-emph": "#4E3B17"
           },
           "enamel": {
             "crust": "#E2D3B6",
@@ -89,7 +105,15 @@ module.exports = {
             "sage-hi": "#4C8367",
             "denim": "#3F6480",
             "denim-hi": "#517791",
-            "clay": "#A65633"
+            "clay": "#A65633",
+            "diff-add": "#D7DBC1",
+            "diff-add-emph": "#C2C79F",
+            "diff-add-dim": "#E7E9D9",
+            "diff-del": "#EBD3D1",
+            "diff-del-emph": "#DEB9B5",
+            "diff-del-dim": "#F3E5E3",
+            "diff-chg": "#E3D6BD",
+            "diff-chg-emph": "#DCCDAD"
           }
         }
       }

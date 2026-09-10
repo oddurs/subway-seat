@@ -1,6 +1,6 @@
 # Subway Seat for Termux
 
-Background, foreground, cursor and the 16 ANSI colors. Termux reads one color file, so switching flavors means replacing it.
+Background, foreground, cursor and the 16 ANSI colors. Termux reads one color file and doesn't follow Android's dark theme, so switching flavors means replacing the file.
 
 [Termux](https://termux.dev) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/termux/)
 

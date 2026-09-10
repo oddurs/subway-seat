@@ -39,7 +39,7 @@ copy_mode_inactive_highlight_fg = { Color = "#3E2C1E" }
 quick_select_label_bg = { Color = "#AD4E00" }
 quick_select_label_fg = { Color = "#F4E9D4" }
 quick_select_match_bg = { Color = "#D7C094" }
-quick_select_match_fg = { Color = "#2A1D13" }
+quick_select_match_fg = { Color = "#3E2C1E" }
 
 [colors.tab_bar]
 background = "#E2D3B6"

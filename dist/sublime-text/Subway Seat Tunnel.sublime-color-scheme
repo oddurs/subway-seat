@@ -41,7 +41,8 @@
     "tint_hint": "#322D21",
     "tint_search": "#624A1E",
     "tint_search_cur": "#884C20",
-    "inactive_selection": "#3C2A1C"
+    "inactive_selection": "#3C2A1C",
+    "paper": "#302115"
   },
   "globals": {
     "background": "var(base)",
@@ -55,8 +56,8 @@
     "fold_marker": "var(overlay1)",
     "minimap_border": "var(surface2)",
     "accent": "var(orange)",
-    "popup_css": "html { background-color: #1B120A; color: #E9D8B6; } a { color: #7F9BAE; } code, .highlight { background-color: #140D07; color: #ADB956; } h1, h2, h3 { color: #F3BF45; } .error, .errors { color: #F97160; } .warning, .warnings { color: #F3BF45; } .info { color: #7F9BAE; } .hint { color: #86AD95; }",
-    "phantom_css": "html { background-color: #1B120A; color: #E9D8B6; } a { color: #7F9BAE; } code, .highlight { background-color: #140D07; color: #ADB956; } h1, h2, h3 { color: #F3BF45; } .error, .errors { color: #F97160; } .warning, .warnings { color: #F3BF45; } .info { color: #7F9BAE; } .hint { color: #86AD95; }",
+    "popup_css": "html { background-color: #302115; color: #E9D8B6; } a { color: #7F9BAE; } code, .highlight { background-color: #24180E; color: #ADB956; } h1, h2, h3 { color: #F3BF45; } .error, .errors { color: #F97160; } .warning, .warnings { color: #F3BF45; } .info { color: #7F9BAE; } .hint { color: #86AD95; }",
+    "phantom_css": "html { background-color: #302115; color: #E9D8B6; } a { color: #7F9BAE; } code, .highlight { background-color: #24180E; color: #ADB956; } h1, h2, h3 { color: #F3BF45; } .error, .errors { color: #F97160; } .warning, .warnings { color: #F3BF45; } .info { color: #7F9BAE; } .hint { color: #86AD95; }",
     "gutter": "var(base)",
     "gutter_foreground": "var(overlay0)",
     "gutter_foreground_highlight": "var(yellow)",
@@ -249,6 +250,53 @@
     {
       "scope": "markup.strikethrough",
       "foreground": "var(overlay1)"
+    },
+    {
+      "scope": "entity.name.constant, constant.other.symbol",
+      "foreground": "var(red_hi)"
+    },
+    {
+      "scope": "entity.name.trait, entity.name.impl, entity.name.union, entity.name.type.trait",
+      "foreground": "var(sage)"
+    },
+    {
+      "scope": "entity.name.scope-resolution, entity.name.type.namespace",
+      "foreground": "var(subtext0)"
+    },
+    {
+      "scope": "support.variable.magic.python, variable.language.special",
+      "foreground": "var(red_hi)",
+      "font_style": "italic"
+    },
+    {
+      "scope": "keyword.operator.word",
+      "foreground": "var(orange)"
+    },
+    {
+      "scope": "constant.other.character-class.regexp, constant.character.character-class.regexp",
+      "foreground": "var(clay)"
+    },
+    {
+      "scope": "constant.character.entity, punctuation.definition.entity",
+      "foreground": "var(clay)"
+    },
+    {
+      "scope": "constant.other.reference.link.markdown, string.other.link.title.markdown",
+      "foreground": "var(denim)"
+    },
+    {
+      "scope": "entity.name.function.macro, entity.name.macro, support.macro, support.function.macro, meta.attribute.rust, punctuation.definition.attribute.rust",
+      "foreground": "var(clay)",
+      "font_style": "italic"
+    },
+    {
+      "scope": "meta.diff.header.from-file, meta.diff.header.to-file, meta.diff.index",
+      "foreground": "var(text_hi)",
+      "font_style": "bold"
+    },
+    {
+      "scope": "meta.mapping.key string, meta.mapping.key.json string.quoted.double.json",
+      "foreground": "var(yellow)"
     },
     {
       "scope": "diff.inserted",

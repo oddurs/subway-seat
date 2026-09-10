@@ -38,6 +38,35 @@
   --essential-base: var(--spice-ink);
 }
 
+/* Notification banners: ink on denim (info) and on red (errors), not light text. */
+.encore-dark-theme .encore-announcement-set,
+.encore-light-theme .encore-announcement-set,
+.encore-dark-theme .encore-negative-set,
+.encore-light-theme .encore-negative-set {
+  --text-base: var(--spice-ink);
+  --text-subdued: var(--spice-ink);
+  --essential-base: var(--spice-ink);
+  --essential-subdued: var(--spice-ink);
+  --decorative-base: var(--spice-ink);
+}
+
+.encore-dark-theme .encore-announcement-set,
+.encore-light-theme .encore-announcement-set {
+  --background-base: var(--spice-notification);
+}
+
+.encore-dark-theme .encore-negative-set,
+.encore-light-theme .encore-negative-set {
+  --background-base: var(--spice-notification-error);
+}
+
+.encore-dark-theme .encore-announcement-set > *,
+.encore-light-theme .encore-announcement-set > *,
+.encore-dark-theme .encore-negative-set > *,
+.encore-light-theme .encore-negative-set > * {
+  --parents-essential-base: var(--spice-ink);
+}
+
 ::selection {
   background-color: var(--spice-selection);
   color: var(--spice-text-hi);

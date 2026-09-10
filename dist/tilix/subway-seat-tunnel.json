@@ -28,7 +28,7 @@
   "use-highlight-color": true,
   "highlight-background-color": "#4F3927",
   "highlight-foreground-color": "#F6EAD1",
-  "use-bold-color": false,
+  "use-bold-color": true,
   "bold-color": "#F6EAD1",
   "use-badge-color": true,
   "badge-color": "#EC7F31"

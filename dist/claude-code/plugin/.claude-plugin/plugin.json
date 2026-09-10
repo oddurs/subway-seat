@@ -1,4 +1,5 @@
 {
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "subway-seat",
   "displayName": "Subway Seat",
   "version": "0.3.0",
@@ -7,7 +8,7 @@
     "name": "Oddur Sigurdsson",
     "url": "https://github.com/oddurs"
   },
-  "homepage": "https://github.com/oddurs/subway-seat",
+  "homepage": "https://oddurs.github.io/subway-seat/ports/claude-code",
   "repository": "https://github.com/oddurs/subway-seat",
   "license": "MIT",
   "keywords": [
@@ -16,10 +17,7 @@
     "statusline",
     "70s",
     "retro",
+    "subway",
     "subway-seat"
-  ],
-  "outputStyles": "./output-styles/",
-  "experimental": {
-    "themes": "./themes/"
-  }
+  ]
 }

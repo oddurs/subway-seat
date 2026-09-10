@@ -1,6 +1,6 @@
 # Subway Seat for Vim
 
-True-color and 256-color definitions in one file, with groups for ALE, coc, vim-lsp, GitGutter, NERDTree, fugitive and more, plus lightline and airline themes. `colorscheme subway-seat` follows `background`, so `set background=light` gives you Enamel.
+True-color and 256-color definitions in one file, with groups for ALE, coc, vim-lsp, GitGutter, Signify, fugitive, NERDTree, fern and more, plus lightline and airline themes (`let g:lightline = { 'colorscheme': 'subway_seat' }`, `let g:airline_theme = 'subway_seat'`). `colorscheme subway-seat` follows `background`. Install with vim-plug: `Plug 'oddurs/subway-seat', { 'rtp': 'dist/vim' }`, or copy the folders into `~/.vim`.
 
 [Vim](https://www.vim.org) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/vim/)
 
@@ -8,48 +8,61 @@ True-color and 256-color definitions in one file, with groups for ALE, coc, vim-
 
 | Flavor | File | Where it goes |
 |---|---|---|
-| Subway Seat | [`colors/subway-seat.vim`](colors/subway-seat.vim) | `~/.vim/colors/subway-seat.vim` |
-| Subway Seat | [`autoload/lightline/colorscheme/subway_seat.vim`](autoload/lightline/colorscheme/subway_seat.vim) | `~/.vim/autoload/lightline/colorscheme/subway_seat.vim` |
-| Subway Seat | [`autoload/airline/themes/subway_seat.vim`](autoload/airline/themes/subway_seat.vim) | `~/.vim/autoload/airline/themes/subway_seat.vim` |
+| All three | [`colors/subway-seat.vim`](colors/subway-seat.vim) | `~/.vim/colors/subway-seat.vim` |
+| Subway Seat | [`colors/subway-seat-walnut.vim`](colors/subway-seat-walnut.vim) | `~/.vim/colors/subway-seat-walnut.vim` |
 | Subway Seat Tunnel | [`colors/subway-seat-tunnel.vim`](colors/subway-seat-tunnel.vim) | `~/.vim/colors/subway-seat-tunnel.vim` |
+| Subway Seat Enamel | [`colors/subway-seat-enamel.vim`](colors/subway-seat-enamel.vim) | `~/.vim/colors/subway-seat-enamel.vim` |
+| All three | [`autoload/lightline/colorscheme/subway_seat.vim`](autoload/lightline/colorscheme/subway_seat.vim) | `~/.vim/autoload/lightline/colorscheme/subway_seat.vim` |
+| All three | [`autoload/airline/themes/subway_seat.vim`](autoload/airline/themes/subway_seat.vim) | `~/.vim/autoload/airline/themes/subway_seat.vim` |
 | Subway Seat Tunnel | [`autoload/lightline/colorscheme/subway_seat_tunnel.vim`](autoload/lightline/colorscheme/subway_seat_tunnel.vim) | `~/.vim/autoload/lightline/colorscheme/subway_seat_tunnel.vim` |
 | Subway Seat Tunnel | [`autoload/airline/themes/subway_seat_tunnel.vim`](autoload/airline/themes/subway_seat_tunnel.vim) | `~/.vim/autoload/airline/themes/subway_seat_tunnel.vim` |
-| Subway Seat Enamel | [`colors/subway-seat-enamel.vim`](colors/subway-seat-enamel.vim) | `~/.vim/colors/subway-seat-enamel.vim` |
 | Subway Seat Enamel | [`autoload/lightline/colorscheme/subway_seat_enamel.vim`](autoload/lightline/colorscheme/subway_seat_enamel.vim) | `~/.vim/autoload/lightline/colorscheme/subway_seat_enamel.vim` |
 | Subway Seat Enamel | [`autoload/airline/themes/subway_seat_enamel.vim`](autoload/airline/themes/subway_seat_enamel.vim) | `~/.vim/autoload/airline/themes/subway_seat_enamel.vim` |
 
 ## Turn it on
 
-**Subway Seat**, in ~/.vimrc:
+**Subway Seat**, in ~/.vimrc (or ~/.vim/vimrc; Windows ~/_vimrc):
 
 ```vim
-set termguicolors
-colorscheme subway-seat
+if has('termguicolors') | set termguicolors | endif
+colorscheme subway-seat-walnut
 ```
 
-**Subway Seat Tunnel**, in ~/.vimrc:
+**Subway Seat Tunnel**, in ~/.vimrc (or ~/.vim/vimrc; Windows ~/_vimrc):
 
 ```vim
-set termguicolors
+if has('termguicolors') | set termguicolors | endif
 colorscheme subway-seat-tunnel
 ```
 
-**Subway Seat Enamel**, in ~/.vimrc:
+**Subway Seat Enamel**, in ~/.vimrc (or ~/.vim/vimrc; Windows ~/_vimrc):
 
 ```vim
-set termguicolors
+if has('termguicolors') | set termguicolors | endif
 colorscheme subway-seat-enamel
+```
+
+## Follow light and dark
+
+In ~/.vimrc:
+
+```vim
+" subway-seat follows 'background': Walnut when dark, Enamel when light.
+" Vim sets 'background' from the terminal's colors when the terminal reports them.
+if has('termguicolors') | set termguicolors | endif
+colorscheme subway-seat
 ```
 
 ## Uninstall
 
 - Delete `~/.vim/colors/subway-seat.vim`.
+- Delete `~/.vim/colors/subway-seat-walnut.vim`.
+- Delete `~/.vim/colors/subway-seat-tunnel.vim`.
+- Delete `~/.vim/colors/subway-seat-enamel.vim`.
 - Delete `~/.vim/autoload/lightline/colorscheme/subway_seat.vim`.
 - Delete `~/.vim/autoload/airline/themes/subway_seat.vim`.
-- Delete `~/.vim/colors/subway-seat-tunnel.vim`.
 - Delete `~/.vim/autoload/lightline/colorscheme/subway_seat_tunnel.vim`.
 - Delete `~/.vim/autoload/airline/themes/subway_seat_tunnel.vim`.
-- Delete `~/.vim/colors/subway-seat-enamel.vim`.
 - Delete `~/.vim/autoload/lightline/colorscheme/subway_seat_enamel.vim`.
 - Delete `~/.vim/autoload/airline/themes/subway_seat_enamel.vim`.
 - Remove the line you added to turn it on.

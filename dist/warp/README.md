@@ -1,6 +1,6 @@
 # Subway Seat for Warp
 
-Background, text, accent, cursor and the 16 ANSI colors. On Linux the themes folder is `~/.local/share/warp-terminal/themes/`; on Windows, `%APPDATA%\warp\Warp\data\themes\`.
+Background, text, accent, cursor and the 16 ANSI colors. On Linux the themes folder is `~/.local/share/warp-terminal/themes/`; on Windows, `%APPDATA%\warp\Warp\data\themes\`. Warp can take a few minutes to notice a new themes folder; restarting it is quicker.
 
 [Warp](https://www.warp.dev) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/warp/)
 
@@ -14,22 +14,32 @@ Background, text, accent, cursor and the 16 ANSI colors. On Linux the themes fol
 
 ## Turn it on
 
-**Subway Seat**, in Warp › Settings › Appearance › Themes:
+**Subway Seat**, in a shell on macOS, then Warp › Settings › Appearance › Themes:
 
 ```sh
-cp subway-seat.yaml ~/.warp/themes/   # then pick Subway Seat in the theme picker
+mkdir -p ~/.warp/themes && cp subway-seat.yaml ~/.warp/themes/   # then pick Subway Seat in the theme picker
 ```
 
-**Subway Seat Tunnel**, in Warp › Settings › Appearance › Themes:
+**Subway Seat Tunnel**, in a shell on macOS, then Warp › Settings › Appearance › Themes:
 
 ```sh
-cp subway-seat-tunnel.yaml ~/.warp/themes/   # then pick Subway Seat Tunnel in the theme picker
+mkdir -p ~/.warp/themes && cp subway-seat-tunnel.yaml ~/.warp/themes/   # then pick Subway Seat Tunnel in the theme picker
 ```
 
-**Subway Seat Enamel**, in Warp › Settings › Appearance › Themes:
+**Subway Seat Enamel**, in a shell on macOS, then Warp › Settings › Appearance › Themes:
 
 ```sh
-cp subway-seat-enamel.yaml ~/.warp/themes/   # then pick Subway Seat Enamel in the theme picker
+mkdir -p ~/.warp/themes && cp subway-seat-enamel.yaml ~/.warp/themes/   # then pick Subway Seat Enamel in the theme picker
+```
+
+## Follow light and dark
+
+In Warp › Settings › Appearance:
+
+```text
+Sync with OS: on
+Light: Subway Seat Enamel
+Dark: Subway Seat
 ```
 
 ## Uninstall

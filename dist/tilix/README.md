@@ -1,6 +1,6 @@
 # Subway Seat for Tilix
 
-Palette, cursor, selection highlight, bold and badge colors.
+Palette, cursor, selection highlight, bold and badge colors. Tilix doesn't switch color schemes with the system style, so pick one flavor.
 
 [Tilix](https://gnunn1.github.io/tilix-web/) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/tilix/)
 

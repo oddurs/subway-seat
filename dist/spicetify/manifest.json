@@ -2,10 +2,10 @@
   {
     "name": "Subway Seat",
     "description": "A walnut-brown 1970s NYC subway theme: harvest gold, burnt orange and avocado on warm wood.",
-    "preview": "preview.png",
-    "readme": "README.md",
-    "usercss": "subway-seat/user.css",
-    "schemes": "subway-seat/color.ini",
+    "preview": "assets/previews/spicetify.webp",
+    "readme": "dist/spicetify/README.md",
+    "usercss": "dist/spicetify/subway-seat/user.css",
+    "schemes": "dist/spicetify/subway-seat/color.ini",
     "authors": [
       {
         "name": "Oddur Sigurdsson",

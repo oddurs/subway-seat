@@ -7,7 +7,7 @@
   <key>semanticClass</key><string>theme.dark.subway-seat-tunnel</string>
   <key>settings</key>
   <array>
-    <dict><key>settings</key><dict><key>background</key><string>#24180E</string><key>foreground</key><string>#E9D8B6</string><key>caret</key><string>#F3BF45</string><key>lineHighlight</key><string>#302115</string><key>selection</key><string>#4F3927</string><key>gutter</key><string>#24180E</string><key>gutterForeground</key><string>#745B45</string><key>invisibles</key><string>#3D2C1D</string><key>findHighlight</key><string>#F3BF45</string><key>findHighlightForeground</key><string>#140D07</string><key>bracketsForeground</key><string>#FFD36B</string><key>guide</key><string>#302115</string><key>activeGuide</key><string>#4F3927</string></dict></dict>
+    <dict><key>settings</key><dict><key>background</key><string>#24180E</string><key>foreground</key><string>#E9D8B6</string><key>caret</key><string>#F3BF45</string><key>lineHighlight</key><string>#302115</string><key>selection</key><string>#4F3927</string><key>gutter</key><string>#24180E</string><key>gutterForeground</key><string>#745B45</string><key>invisibles</key><string>#3D2C1D</string><key>findHighlight</key><string>#624A1E</string><key>findHighlightForeground</key><string>#F6EAD1</string><key>bracketsForeground</key><string>#FFD36B</string><key>guide</key><string>#302115</string><key>activeGuide</key><string>#4F3927</string><key>accent</key><string>#EC7F31</string><key>misspelling</key><string>#F97160</string></dict></dict>
     <dict><key>scope</key><string>variable, variable.other.readwrite, variable.other.constant, meta.definition.variable</string><key>settings</key><dict><key>foreground</key><string>#E9D8B6</string></dict></dict>
     <dict><key>scope</key><string>punctuation, meta.brace, punctuation.definition.tag, punctuation.separator, punctuation.terminator, punctuation.accessor</string><key>settings</key><dict><key>foreground</key><string>#AA9171</string></dict></dict>
     <dict><key>scope</key><string>keyword.operator, storage.type.function.arrow, punctuation.separator.key-value</string><key>settings</key><dict><key>foreground</key><string>#AA9171</string></dict></dict>
@@ -45,6 +45,8 @@
     <dict><key>scope</key><string>markup.changed, punctuation.definition.changed</string><key>settings</key><dict><key>foreground</key><string>#F3BF45</string></dict></dict>
     <dict><key>scope</key><string>meta.diff.range, meta.diff.header</string><key>settings</key><dict><key>foreground</key><string>#7F9BAE</string></dict></dict>
     <dict><key>scope</key><string>markup.strikethrough</string><key>settings</key><dict><key>foreground</key><string>#917759</string></dict></dict>
+    <dict><key>scope</key><string>meta.diff.header, meta.diff.header.from-file, meta.diff.header.to-file, punctuation.definition.from-file.diff, punctuation.definition.to-file.diff</string><key>settings</key><dict><key>foreground</key><string>#F6EAD1</string><key>fontStyle</key><string>bold</string></dict></dict>
+    <dict><key>scope</key><string>meta.diff.range, punctuation.definition.range.diff</string><key>settings</key><dict><key>foreground</key><string>#7F9BAE</string></dict></dict>
     <dict><key>scope</key><string>markup.inserted.diff</string><key>settings</key><dict><key>background</key><string>#363318</string><key>foreground</key><string>#ADB956</string></dict></dict>
     <dict><key>scope</key><string>markup.deleted.diff</string><key>settings</key><dict><key>background</key><string>#492217</string><key>foreground</key><string>#F97160</string></dict></dict>
   </array>

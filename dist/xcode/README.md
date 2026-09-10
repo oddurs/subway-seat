@@ -1,6 +1,6 @@
 # Subway Seat for Xcode
 
-Source editor, console and rendered documentation colors in SF Mono, with comments in italic. Change the font size in Xcode's Themes settings; the colors stay.
+Source editor, console and rendered documentation colors in SF Mono, with comments in italic. Change the font size in Xcode's Themes settings; the colors stay. Xcode remembers the theme you pick separately for light and dark mode, so it can follow the system.
 
 [Xcode](https://developer.apple.com/xcode/) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/xcode/)
 
@@ -14,28 +14,37 @@ Source editor, console and rendered documentation colors in SF Mono, with commen
 
 ## Turn it on
 
-**Subway Seat**, in Terminal, then Xcode → Settings… → Themes:
+**Subway Seat**, in Terminal, then Xcode › Settings… › Themes:
 
 ```sh
 mkdir -p ~/Library/Developer/Xcode/UserData/FontAndColorThemes
 cp "Subway Seat.xccolortheme" ~/Library/Developer/Xcode/UserData/FontAndColorThemes/
-# restart Xcode, then pick Subway Seat under Settings → Themes
+# restart Xcode, then pick Subway Seat under Settings › Themes
 ```
 
-**Subway Seat Tunnel**, in Terminal, then Xcode → Settings… → Themes:
+**Subway Seat Tunnel**, in Terminal, then Xcode › Settings… › Themes:
 
 ```sh
 mkdir -p ~/Library/Developer/Xcode/UserData/FontAndColorThemes
 cp "Subway Seat Tunnel.xccolortheme" ~/Library/Developer/Xcode/UserData/FontAndColorThemes/
-# restart Xcode, then pick Subway Seat Tunnel under Settings → Themes
+# restart Xcode, then pick Subway Seat Tunnel under Settings › Themes
 ```
 
-**Subway Seat Enamel**, in Terminal, then Xcode → Settings… → Themes:
+**Subway Seat Enamel**, in Terminal, then Xcode › Settings… › Themes:
 
 ```sh
 mkdir -p ~/Library/Developer/Xcode/UserData/FontAndColorThemes
 cp "Subway Seat Enamel.xccolortheme" ~/Library/Developer/Xcode/UserData/FontAndColorThemes/
-# restart Xcode, then pick Subway Seat Enamel under Settings → Themes
+# restart Xcode, then pick Subway Seat Enamel under Settings › Themes
+```
+
+## Follow light and dark
+
+In Terminal, with Xcode closed (Xcode keeps one theme for light mode and one for dark):
+
+```sh
+defaults write com.apple.dt.Xcode XCFontAndColorCurrentTheme -string 'Subway Seat Enamel.xccolortheme'
+defaults write com.apple.dt.Xcode XCFontAndColorCurrentDarkTheme -string 'Subway Seat.xccolortheme'
 ```
 
 ## Uninstall

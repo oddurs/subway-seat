@@ -1,19 +1,19 @@
 # Subway Seat for Zellij
 
-Themes in Zellij's component spec (0.42+): an orange frame on the focused pane, gold in other modes, orange ribbons for the active tab. A legacy color-list version is included for older releases; `theme_dark` and `theme_light` can pair Walnut with Enamel.
+Themes in Zellij's component spec: an orange frame on the focused pane, gold in other modes, orange ribbons for the active tab with their key hints in dark ink. A legacy color-list version is included for Zellij before 0.42.
 
-[Zellij](https://zellij.dev) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/zellij/)
+[Zellij](https://zellij.dev) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/zellij/) · Needs Zellij 0.42+ (a legacy file covers older releases)
 
 ## Files
 
 | Flavor | File | Where it goes |
 |---|---|---|
 | Subway Seat | [`themes/subway-seat.kdl`](themes/subway-seat.kdl) | `~/.config/zellij/themes/subway-seat.kdl` |
-| Subway Seat | [`legacy/subway-seat.kdl`](legacy/subway-seat.kdl) | `~/.config/zellij/themes/subway-seat.kdl` |
+| Subway Seat | [`legacy/subway-seat.kdl`](legacy/subway-seat.kdl) | for Zellij before 0.42, use this file as ~/.config/zellij/themes/subway-seat.kdl instead |
 | Subway Seat Tunnel | [`themes/subway-seat-tunnel.kdl`](themes/subway-seat-tunnel.kdl) | `~/.config/zellij/themes/subway-seat-tunnel.kdl` |
-| Subway Seat Tunnel | [`legacy/subway-seat-tunnel.kdl`](legacy/subway-seat-tunnel.kdl) | `~/.config/zellij/themes/subway-seat-tunnel.kdl` |
+| Subway Seat Tunnel | [`legacy/subway-seat-tunnel.kdl`](legacy/subway-seat-tunnel.kdl) | for Zellij before 0.42, use this file as ~/.config/zellij/themes/subway-seat-tunnel.kdl instead |
 | Subway Seat Enamel | [`themes/subway-seat-enamel.kdl`](themes/subway-seat-enamel.kdl) | `~/.config/zellij/themes/subway-seat-enamel.kdl` |
-| Subway Seat Enamel | [`legacy/subway-seat-enamel.kdl`](legacy/subway-seat-enamel.kdl) | `~/.config/zellij/themes/subway-seat-enamel.kdl` |
+| Subway Seat Enamel | [`legacy/subway-seat-enamel.kdl`](legacy/subway-seat-enamel.kdl) | for Zellij before 0.42, use this file as ~/.config/zellij/themes/subway-seat-enamel.kdl instead |
 
 ## Turn it on
 
@@ -33,6 +33,15 @@ theme "subway-seat-tunnel"
 
 ```kdl
 theme "subway-seat-enamel"
+```
+
+## Follow light and dark
+
+In ~/.config/zellij/config.kdl (a recent Zellij, in a terminal that reports light and dark):
+
+```kdl
+theme_dark "subway-seat"
+theme_light "subway-seat-enamel"
 ```
 
 ## Uninstall

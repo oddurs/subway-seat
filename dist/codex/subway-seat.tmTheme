@@ -12,6 +12,8 @@
 		<dict>
 			<key>settings</key>
 			<dict>
+				<key>accent</key>
+				<string>#EC7F31</string>
 				<key>activeGuide</key>
 				<string>#634932</string>
 				<key>background</key>
@@ -21,9 +23,9 @@
 				<key>caret</key>
 				<string>#F3BF45</string>
 				<key>findHighlight</key>
-				<string>#F3BF45</string>
+				<string>#6F5426</string>
 				<key>findHighlightForeground</key>
-				<string>#20160E</string>
+				<string>#F8ECD4</string>
 				<key>foreground</key>
 				<string>#EDDCBC</string>
 				<key>guide</key>
@@ -36,6 +38,8 @@
 				<string>#513B27</string>
 				<key>lineHighlight</key>
 				<string>#43301F</string>
+				<key>misspelling</key>
+				<string>#F97160</string>
 				<key>selection</key>
 				<string>#634932</string>
 			</dict>
@@ -393,6 +397,26 @@
 			<dict>
 				<key>foreground</key>
 				<string>#967B5C</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>meta.diff.header, meta.diff.header.from-file, meta.diff.header.to-file, punctuation.definition.from-file.diff, punctuation.definition.to-file.diff</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>bold</string>
+				<key>foreground</key>
+				<string>#F8ECD4</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>meta.diff.range, punctuation.definition.range.diff</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#7F9BAE</string>
 			</dict>
 		</dict>
 		<dict>

@@ -1,42 +1,60 @@
 # Subway Seat for Discord
 
-Overrides Discord's color variables only, which survives client updates far better than class-level themes. Each file covers both of Discord's modes and pairs a dark flavor with Enamel.
+Overrides Discord's color variables only, not its generated class names, which change between client updates. Each file covers both of Discord's modes and pairs a dark flavor with Enamel.
 
-[Discord](https://discord.com) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/discord/)
+[Discord](https://discord.com) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/discord/) · Needs Vencord, Vesktop or BetterDiscord
 
 ## Files
 
 | Flavor | File | Where it goes |
 |---|---|---|
-| Subway Seat | [`subway-seat.theme.css`](subway-seat.theme.css) | `Vencord/Vesktop or BetterDiscord themes folder/subway-seat.theme.css` |
-| Subway Seat Tunnel | [`subway-seat-tunnel.theme.css`](subway-seat-tunnel.theme.css) | `Vencord/Vesktop or BetterDiscord themes folder/subway-seat-tunnel.theme.css` |
-| Subway Seat Enamel | [`subway-seat-enamel.theme.css`](subway-seat-enamel.theme.css) | `Vencord/Vesktop or BetterDiscord themes folder/subway-seat-enamel.theme.css` |
+| Subway Seat | [`subway-seat.theme.css`](subway-seat.theme.css) | `~/Library/Application Support/Vencord/themes/subway-seat.theme.css`; that's Vencord on macOS; on Linux it's ~/.config/Vencord/themes, on Windows %APPDATA%\Vencord\themes. Vesktop and BetterDiscord use the same folders with vesktop or BetterDiscord in place of Vencord. |
+| Subway Seat Tunnel | [`subway-seat-tunnel.theme.css`](subway-seat-tunnel.theme.css) | `~/Library/Application Support/Vencord/themes/subway-seat-tunnel.theme.css`; that's Vencord on macOS; on Linux it's ~/.config/Vencord/themes, on Windows %APPDATA%\Vencord\themes. Vesktop and BetterDiscord use the same folders with vesktop or BetterDiscord in place of Vencord. |
+| Subway Seat Enamel | [`subway-seat-enamel.theme.css`](subway-seat-enamel.theme.css) | `~/Library/Application Support/Vencord/themes/subway-seat-enamel.theme.css`; that's Vencord on macOS; on Linux it's ~/.config/Vencord/themes, on Windows %APPDATA%\Vencord\themes. Vesktop and BetterDiscord use the same folders with vesktop or BetterDiscord in place of Vencord. |
 
 ## Turn it on
 
-**Subway Seat**, in Vencord/Vesktop: Settings → Themes → Open Themes Folder · BetterDiscord: Settings → Themes:
+**Subway Seat**, in Vencord or Vesktop: Settings › Themes › Open Themes Folder · BetterDiscord: Settings › Themes:
 
 ```text
-subway-seat.theme.css
+Copy subway-seat.theme.css into the themes folder, then turn it on under Settings › Themes.
+Discord's dark mode shows the dark flavor and its light mode shows Enamel.
+Vencord can also load it by URL (Settings › Themes › Online Themes):
+https://raw.githubusercontent.com/oddurs/subway-seat/main/dist/discord/subway-seat.theme.css
 ```
 
-**Subway Seat Tunnel**, in Vencord/Vesktop: Settings → Themes → Open Themes Folder · BetterDiscord: Settings → Themes:
+**Subway Seat Tunnel**, in Vencord or Vesktop: Settings › Themes › Open Themes Folder · BetterDiscord: Settings › Themes:
 
 ```text
-subway-seat-tunnel.theme.css
+Copy subway-seat-tunnel.theme.css into the themes folder, then turn it on under Settings › Themes.
+Discord's dark mode shows the dark flavor and its light mode shows Enamel.
+Vencord can also load it by URL (Settings › Themes › Online Themes):
+https://raw.githubusercontent.com/oddurs/subway-seat/main/dist/discord/subway-seat-tunnel.theme.css
 ```
 
-**Subway Seat Enamel**, in Vencord/Vesktop: Settings → Themes → Open Themes Folder · BetterDiscord: Settings → Themes:
+**Subway Seat Enamel**, in Vencord or Vesktop: Settings › Themes › Open Themes Folder · BetterDiscord: Settings › Themes:
 
 ```text
-subway-seat-enamel.theme.css
+Copy subway-seat-enamel.theme.css into the themes folder, then turn it on under Settings › Themes.
+Discord's dark mode shows the dark flavor and its light mode shows Enamel.
+Vencord can also load it by URL (Settings › Themes › Online Themes):
+https://raw.githubusercontent.com/oddurs/subway-seat/main/dist/discord/subway-seat-enamel.theme.css
+```
+
+## Follow light and dark
+
+In Discord › User Settings › Appearance:
+
+```text
+Theme: Sync with computer
+(each file covers both of Discord's modes: dark shows Walnut or Tunnel, light shows Enamel)
 ```
 
 ## Uninstall
 
-- Delete `Vencord/Vesktop or BetterDiscord themes folder/subway-seat.theme.css`.
-- Delete `Vencord/Vesktop or BetterDiscord themes folder/subway-seat-tunnel.theme.css`.
-- Delete `Vencord/Vesktop or BetterDiscord themes folder/subway-seat-enamel.theme.css`.
+- Delete `~/Library/Application Support/Vencord/themes/subway-seat.theme.css`.
+- Delete `~/Library/Application Support/Vencord/themes/subway-seat-tunnel.theme.css`.
+- Delete `~/Library/Application Support/Vencord/themes/subway-seat-enamel.theme.css`.
 - Remove the line you added to turn it on.
 
 Generated by `build.py` from `palette.py` (v0.3.0). Edit the port in `ports/`, not these files.

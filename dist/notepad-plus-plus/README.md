@@ -1,6 +1,6 @@
 # Subway Seat for Notepad++
 
-Syntax colors for 56 lexers plus the editor chrome: margins, folding, tabs, smart and find highlights. Pair the dark flavors with Settings → Preferences → Dark Mode so the menus match.
+Syntax colors for all 92 lexers Notepad++ ships, plus the editor chrome: margins, folding, tabs, change history, and smart and find highlights. Pair the dark flavors with Settings › Preferences › Dark Mode so the menus match.
 
 [Notepad++](https://notepad-plus-plus.org) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/notepad-plus-plus/)
 
@@ -8,25 +8,25 @@ Syntax colors for 56 lexers plus the editor chrome: margins, folding, tabs, smar
 
 | Flavor | File | Where it goes |
 |---|---|---|
-| Subway Seat | [`Subway Seat.xml`](Subway%20Seat.xml) | `%AppData%\Notepad++\themes\Subway Seat.xml` |
-| Subway Seat Tunnel | [`Subway Seat Tunnel.xml`](Subway%20Seat%20Tunnel.xml) | `%AppData%\Notepad++\themes\Subway Seat Tunnel.xml` |
-| Subway Seat Enamel | [`Subway Seat Enamel.xml`](Subway%20Seat%20Enamel.xml) | `%AppData%\Notepad++\themes\Subway Seat Enamel.xml` |
+| Subway Seat | [`Subway Seat.xml`](Subway%20Seat.xml) | `%AppData%\Notepad++\themes\Subway Seat.xml`; portable install: the themes folder next to notepad++.exe; restart Notepad++ afterwards |
+| Subway Seat Tunnel | [`Subway Seat Tunnel.xml`](Subway%20Seat%20Tunnel.xml) | `%AppData%\Notepad++\themes\Subway Seat Tunnel.xml`; portable install: the themes folder next to notepad++.exe; restart Notepad++ afterwards |
+| Subway Seat Enamel | [`Subway Seat Enamel.xml`](Subway%20Seat%20Enamel.xml) | `%AppData%\Notepad++\themes\Subway Seat Enamel.xml`; portable install: the themes folder next to notepad++.exe; restart Notepad++ afterwards |
 
 ## Turn it on
 
-**Subway Seat**, in Settings → Style Configurator, after copying the file to %AppData%\Notepad++\themes:
+**Subway Seat**, in Settings › Style Configurator, after copying the file to %AppData%\Notepad++\themes (a portable install uses the themes folder next to notepad++.exe) and restarting Notepad++:
 
 ```text
 Select theme: Subway Seat
 ```
 
-**Subway Seat Tunnel**, in Settings → Style Configurator, after copying the file to %AppData%\Notepad++\themes:
+**Subway Seat Tunnel**, in Settings › Style Configurator, after copying the file to %AppData%\Notepad++\themes (a portable install uses the themes folder next to notepad++.exe) and restarting Notepad++:
 
 ```text
 Select theme: Subway Seat Tunnel
 ```
 
-**Subway Seat Enamel**, in Settings → Style Configurator, after copying the file to %AppData%\Notepad++\themes:
+**Subway Seat Enamel**, in Settings › Style Configurator, after copying the file to %AppData%\Notepad++\themes (a portable install uses the themes folder next to notepad++.exe) and restarting Notepad++:
 
 ```text
 Select theme: Subway Seat Enamel

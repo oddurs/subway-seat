@@ -29,7 +29,9 @@
             "name": "Subway Seat",
             "window": {
                 "applicationTheme": "dark",
-                "useMica": false
+                "useMica": false,
+                "frame": "#20160EFF",
+                "unfocusedFrame": "#20160EFF"
             },
             "tabRow": {
                 "background": "#20160EFF",

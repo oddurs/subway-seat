@@ -34,11 +34,11 @@ size:
   number_mega: {foreground: "#936200"}
   number_giga: {foreground: "#AD4E00"}
   number_huge: {foreground: "#BC4031"}
-  unit_byte: {foreground: "#907D69"}
-  unit_kilo: {foreground: "#91974A"}
-  unit_mega: {foreground: "#B08A40"}
-  unit_giga: {foreground: "#C27C40"}
-  unit_huge: {foreground: "#CD7362"}
+  unit_byte: {foreground: "#7A6652"}
+  unit_kilo: {foreground: "#7B862D"}
+  unit_mega: {foreground: "#A27620"}
+  unit_giga: {foreground: "#B86520"}
+  unit_huge: {foreground: "#C45949"}
 users:
   user_you: {foreground: "#936200"}
   user_root: {foreground: "#BC4031"}

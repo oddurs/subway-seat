@@ -29,7 +29,9 @@
             "name": "Subway Seat Enamel",
             "window": {
                 "applicationTheme": "light",
-                "useMica": false
+                "useMica": false,
+                "frame": "#E2D3B6FF",
+                "unfocusedFrame": "#E2D3B6FF"
             },
             "tabRow": {
                 "background": "#E2D3B6FF",

@@ -1,51 +1,61 @@
 # Subway Seat for Firefox
 
-A static theme for tabs, toolbar, address bar, menus, sidebar and the new-tab page. The .xpi is unsigned, so the Firefox Color link is the easiest permanent install on release Firefox.
+A static theme for tabs, toolbar, address bar, menus, sidebar and the new-tab page. The .xpi files are unsigned, so release Firefox only takes them until a restart; the Firefox Color link installs for good. subway-seat-auto.xpi follows the system: Enamel when it's light, Walnut when it's dark.
 
-[Firefox](https://www.firefox.com) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/firefox/)
+[Firefox](https://www.firefox.com) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/firefox/) · Needs Firefox 106+
 
 ## Files
 
 | Flavor | File | Where it goes |
 |---|---|---|
-| Subway Seat | [`subway-seat/manifest.json`](subway-seat/manifest.json) | `inside the .xpi (about:debugging → Load Temporary Add-on)` |
-| Subway Seat | [`subway-seat.xpi`](subway-seat.xpi) | `about:addons → ⚙ → Install Add-on From File (Developer/Nightly/ESR)` |
-| Subway Seat | [`subway-seat.firefox-color.txt`](subway-seat.firefox-color.txt) | `open in Firefox with Firefox Color installed` |
-| Subway Seat Tunnel | [`subway-seat-tunnel/manifest.json`](subway-seat-tunnel/manifest.json) | `inside the .xpi (about:debugging → Load Temporary Add-on)` |
-| Subway Seat Tunnel | [`subway-seat-tunnel.xpi`](subway-seat-tunnel.xpi) | `about:addons → ⚙ → Install Add-on From File (Developer/Nightly/ESR)` |
-| Subway Seat Tunnel | [`subway-seat-tunnel.firefox-color.txt`](subway-seat-tunnel.firefox-color.txt) | `open in Firefox with Firefox Color installed` |
-| Subway Seat Enamel | [`subway-seat-enamel/manifest.json`](subway-seat-enamel/manifest.json) | `inside the .xpi (about:debugging → Load Temporary Add-on)` |
-| Subway Seat Enamel | [`subway-seat-enamel.xpi`](subway-seat-enamel.xpi) | `about:addons → ⚙ → Install Add-on From File (Developer/Nightly/ESR)` |
-| Subway Seat Enamel | [`subway-seat-enamel.firefox-color.txt`](subway-seat-enamel.firefox-color.txt) | `open in Firefox with Firefox Color installed` |
+| Subway Seat | [`subway-seat/manifest.json`](subway-seat/manifest.json) | inside subway-seat.xpi |
+| Subway Seat | [`subway-seat.xpi`](subway-seat.xpi) | about:addons › ⚙ › Install Add-on From File… (Developer Edition, Nightly or ESR) |
+| Subway Seat | [`subway-seat.firefox-color.txt`](subway-seat.firefox-color.txt) | open the link in Firefox with the Firefox Color add-on installed |
+| Subway Seat Tunnel | [`subway-seat-tunnel/manifest.json`](subway-seat-tunnel/manifest.json) | inside subway-seat-tunnel.xpi |
+| Subway Seat Tunnel | [`subway-seat-tunnel.xpi`](subway-seat-tunnel.xpi) | about:addons › ⚙ › Install Add-on From File… (Developer Edition, Nightly or ESR) |
+| Subway Seat Tunnel | [`subway-seat-tunnel.firefox-color.txt`](subway-seat-tunnel.firefox-color.txt) | open the link in Firefox with the Firefox Color add-on installed |
+| Subway Seat Enamel | [`subway-seat-enamel/manifest.json`](subway-seat-enamel/manifest.json) | inside subway-seat-enamel.xpi |
+| Subway Seat Enamel | [`subway-seat-enamel.xpi`](subway-seat-enamel.xpi) | about:addons › ⚙ › Install Add-on From File… (Developer Edition, Nightly or ESR) |
+| Subway Seat Enamel | [`subway-seat-enamel.firefox-color.txt`](subway-seat-enamel.firefox-color.txt) | open the link in Firefox with the Firefox Color add-on installed |
+| All three | [`subway-seat-auto/manifest.json`](subway-seat-auto/manifest.json) | inside subway-seat-auto.xpi |
+| All three | [`subway-seat-auto.xpi`](subway-seat-auto.xpi) | about:addons › ⚙ › Install Add-on From File… (Developer Edition, Nightly or ESR) |
 
 ## Turn it on
 
-**Subway Seat**, in Firefox → about:addons (or open the Firefox Color link):
+**Subway Seat**, in Firefox: the Firefox Color link, or about:addons for the .xpi:
 
 ```text
-Open subway-seat.firefox-color.txt's link with the Firefox Color add-on installed,
-or load subway-seat.xpi from about:debugging → This Firefox → Load Temporary Add-on.
+Release Firefox: open the link in subway-seat.firefox-color.txt with the Firefox Color add-on installed.
+Developer Edition, Nightly or ESR, with xpinstall.signatures.required set to false in about:config:
+about:addons › ⚙ › Install Add-on From File… › subway-seat.xpi
+To try it on release Firefox until the next restart: about:debugging › This Firefox › Load Temporary Add-on… › subway-seat.xpi
 ```
 
-**Subway Seat Tunnel**, in Firefox → about:addons (or open the Firefox Color link):
+**Subway Seat Tunnel**, in Firefox: the Firefox Color link, or about:addons for the .xpi:
 
 ```text
-Open subway-seat-tunnel.firefox-color.txt's link with the Firefox Color add-on installed,
-or load subway-seat-tunnel.xpi from about:debugging → This Firefox → Load Temporary Add-on.
+Release Firefox: open the link in subway-seat-tunnel.firefox-color.txt with the Firefox Color add-on installed.
+Developer Edition, Nightly or ESR, with xpinstall.signatures.required set to false in about:config:
+about:addons › ⚙ › Install Add-on From File… › subway-seat-tunnel.xpi
+To try it on release Firefox until the next restart: about:debugging › This Firefox › Load Temporary Add-on… › subway-seat-tunnel.xpi
 ```
 
-**Subway Seat Enamel**, in Firefox → about:addons (or open the Firefox Color link):
+**Subway Seat Enamel**, in Firefox: the Firefox Color link, or about:addons for the .xpi:
 
 ```text
-Open subway-seat-enamel.firefox-color.txt's link with the Firefox Color add-on installed,
-or load subway-seat-enamel.xpi from about:debugging → This Firefox → Load Temporary Add-on.
+Release Firefox: open the link in subway-seat-enamel.firefox-color.txt with the Firefox Color add-on installed.
+Developer Edition, Nightly or ESR, with xpinstall.signatures.required set to false in about:config:
+about:addons › ⚙ › Install Add-on From File… › subway-seat-enamel.xpi
+To try it on release Firefox until the next restart: about:debugging › This Firefox › Load Temporary Add-on… › subway-seat-enamel.xpi
 ```
 
-## Uninstall
+## Follow light and dark
 
-- Delete `inside the .xpi (about:debugging → Load Temporary Add-on)`.
-- Delete `about:addons → ⚙ → Install Add-on From File (Developer/Nightly/ESR)`.
-- Delete `open in Firefox with Firefox Color installed`.
-- Remove the line you added to turn it on.
+In about:addons (Developer Edition, Nightly or ESR, as above):
+
+```text
+about:addons › ⚙ › Install Add-on From File… › subway-seat-auto.xpi
+# Enamel while the system is light, Subway Seat (Walnut) while it's dark
+```
 
 Generated by `build.py` from `palette.py` (v0.3.0). Edit the port in `ports/`, not these files.

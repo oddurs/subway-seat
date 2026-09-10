@@ -1,6 +1,6 @@
 # Subway Seat for micro
 
-Copy the `.micro` files to `~/.config/micro/colorschemes/`, or run `set colorscheme subway-seat` from micro's command bar. True-color hex; micro maps it to 256 colors when the terminal can't show it.
+Copy the `.micro` files to `~/.config/micro/colorschemes/` (on Windows, `%USERPROFILE%\.config\micro\colorschemes`), then pick one with `set colorscheme <name>` from micro's command bar or in `settings.json`. True-color hex; micro maps it to 256 colors when the terminal can't show it.
 
 [micro](https://micro-editor.github.io) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/micro/)
 

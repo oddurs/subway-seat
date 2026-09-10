@@ -1,0 +1,35 @@
+// Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+{
+  "name": "Subway Seat Enamel Widgets",
+  "globals": {
+    "foreground": "#3E2C1E",
+    "background": "#FAF4EA",
+    "caret": "#AD4E00",
+    "line_highlight": "#FAF4EA",
+    "selection": "#CAB48E",
+    "selection_border": "#CAB48E",
+    "inactive_selection": "#CAB48E"
+  },
+  "rules": [
+    {
+      "scope": "comment",
+      "foreground": "#8C7254"
+    },
+    {
+      "scope": "keyword, storage",
+      "foreground": "#AD4E00"
+    },
+    {
+      "scope": "constant",
+      "foreground": "#BC4031"
+    },
+    {
+      "scope": "string",
+      "foreground": "#66740F"
+    },
+    {
+      "scope": "constant.character.escape",
+      "foreground": "#A65633"
+    }
+  ]
+}

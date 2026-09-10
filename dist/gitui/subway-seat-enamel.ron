@@ -3,10 +3,10 @@
 (
     selected_tab: Some("#AD4E00"),
     command_fg: Some("#3E2C1E"),
-    selection_bg: Some("#CAB48E"),
+    selection_bg: Some("#D9C8A7"),
     selection_fg: Some("#2A1D13"),
     cmdbar_bg: Some("#E2D3B6"),
-    disabled_fg: Some("#A58C6A"),
+    disabled_fg: Some("#8C7254"),
     diff_line_add: Some("#66740F"),
     diff_line_delete: Some("#BC4031"),
     diff_file_added: Some("#66740F"),
@@ -23,4 +23,5 @@
     branch_fg: Some("#66740F"),
     block_title_focused: Some("#AD4E00"),
     syntax: Some("subway-seat-enamel"),
+    use_selection_fg: Some(false),
 )

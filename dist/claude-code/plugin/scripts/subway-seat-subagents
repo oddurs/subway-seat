@@ -1,0 +1,88 @@
+#!/usr/bin/env bash
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+#
+# Subway Seat rows for Claude Code's subagent panel: a route bullet colored by
+# state, the name, what it's doing, and how full its context is.
+# Reads {columns, tasks:[…]} on stdin and prints one {"id","content"} line per task.
+# Needs jq; without it Claude Code keeps its own rows.
+
+input=$(cat)
+command -v jq >/dev/null 2>&1 || exit 0
+
+pick_flavor() {
+  case ${SUBWAY_SEAT_FLAVOR:-} in walnut | tunnel | enamel) flavor=$SUBWAY_SEAT_FLAVOR; return ;; esac
+  flavor=walnut
+  case $1 in
+    *subway-seat-enamel*) flavor=enamel ;;
+    *subway-seat-tunnel*) flavor=tunnel ;;
+    *subway-seat*) ;;
+    light*) flavor=enamel ;;
+    auto)
+      case ${COLORFGBG:-} in
+        *\;7 | *\;15) flavor=enamel ;;
+        *\;*) ;;
+        *) case $OSTYPE in darwin*) defaults read -g AppleInterfaceStyle >/dev/null 2>&1 || flavor=enamel ;; esac ;;
+      esac ;;
+  esac
+}
+pick_flavor "$(jq -r '.theme // empty' "${CLAUDE_CONFIG_DIR:-$HOME/.claude}/settings.json" 2>/dev/null)"
+
+case $flavor in
+  tunnel) INK='20;13;7' TEXT='233;216;182' DIM='170;145;113' FAINT='145;119;89' RAIL='79;57;39' YELLOW='243;191;69' GREEN='173;185;86' SAGE='134;173;149' RED='249;113;96' ;;
+  enamel) INK='244;233;212' TEXT='62;44;30' DIM='115;92;68' FAINT='140;114;84' RAIL='186;160;122' YELLOW='147;98;0' GREEN='102;116;15' SAGE='62;113;87' RED='188;64;49' ;;
+  *) INK='32;22;14' TEXT='237;220;188' DIM='174;149;117' FAINT='150;123;92' RAIL='99;73;50' YELLOW='243;191;69' GREEN='173;185;86' SAGE='134;173;149' RED='249;113;96' ;;
+esac
+
+# Route bullets: round with a Nerd Font, square with SUBWAY_SEAT_GLYPHS=plain.
+caps=$'\xee\x82\xb6\037\xee\x82\xb4'  # U+E0B6, U+E0B4
+[ "${SUBWAY_SEAT_GLYPHS:-}" = plain ] && caps=$'\037'
+
+jq -c --arg ink "$INK" --arg text "$TEXT" --arg dim "$DIM" --arg faint "$FAINT" --arg rail "$RAIL" \
+  --arg run "$YELLOW" --arg ok "$GREEN" --arg bad "$RED" --arg idle "$SAGE" --arg caps "$caps" '
+  def fg($c): "\u001b[38;2;\($c)m";
+  def bg($c): "\u001b[48;2;\($c)m";
+  def reset: "\u001b[0m";
+  def clean: tostring | gsub("\\p{Cc}"; "");
+  def cut($n): if length > $n then .[0:$n - 1] + "…" else . end;
+  def k($n): if $n >= 1000000 then "\(($n / 100000 | floor) / 10)M"
+             elif $n >= 1000 then "\(($n / 100 | floor) / 10)k" else "\($n | floor)" end;
+  def kind: {local_agent: "agent", local_bash: "shell", remote_agent: "remote agent",
+             local_workflow: "workflow", in_process_teammate: "teammate"}[.] // .;
+  (.columns // 80) as $cols
+  | (.tasks // [])[]
+  | select(.id != null)
+  | ((.status // "") | ascii_downcase) as $s
+  | (if ($s | test("fail|error")) then $bad
+     elif ($s | test("kill|cancel|stop")) then $faint
+     elif ($s | test("complete|done|success|finish")) then $ok
+     elif ($s | test("run|progress|active|work")) then $run
+     else $idle end) as $line
+  | ((.name // .description // (.type // "agent" | kind)) | clean) as $full
+  | (.tokenCount // 0) as $tok
+  | (if (.contextWindowSize // 0) > 0
+     then ($tok * 5 / .contextWindowSize + 0.5 | floor | if . > 5 then 5 elif . < 0 then 0 else . end)
+     else null end) as $cells
+  | k($tok) as $toks
+  | ($cols - 4 - (if $cells != null then 7 else 0 end) - 2 - ($toks | length)) as $avail
+  | ((.label // .description // "") | clean | if . == $full then "" else . end) as $doing
+  # the name gets the whole row when there is nothing else to say, else up to 28 columns
+  | (if $doing == "" or ($full | length) + 2 + ($doing | length) <= $avail then $avail else [28, $avail] | min end
+     | if . < 4 then 4 else . end) as $fit
+  | ($full | cut($fit)) as $name
+  | ($name | .[0:1] | ascii_upcase) as $letter
+  | ($avail - ($name | length) - 2) as $room
+  | ($doing | if $room < 8 then "" else cut($room) end) as $what
+  | {
+      id,
+      content: (
+        (($caps | split("\u001f")) as [$l, $r]
+         | if $l == "" then bg($line) + fg($ink) + " \($letter) " + reset
+           else fg($line) + $l + bg($line) + fg($ink) + "\u001b[1m" + $letter + reset + fg($line) + $r + reset end)
+        + " "
+        + fg($text) + $name + reset
+        + (if $what != "" then "  " + fg($dim) + $what + reset else "" end)
+        + (if $cells != null then "  " + fg($line) + ("━" * $cells) + fg($rail) + ("─" * (5 - $cells)) + reset else "" end)
+        + "  " + fg($faint) + $toks + reset
+      )
+    }
+' <<<"$input"

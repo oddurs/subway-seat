@@ -2,7 +2,7 @@
 
 Command-line syntax colors and the completion pager. `subway-seat-auto` carries both Walnut and Enamel and follows your terminal's background.
 
-[fish](https://fishshell.com) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/fish/)
+[fish](https://fishshell.com) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/fish/) · Needs fish 3.4+ (the auto theme: 4.3+)
 
 ## Files
 
@@ -15,22 +15,48 @@ Command-line syntax colors and the completion pager. `subway-seat-auto` carries 
 
 ## Turn it on
 
-**Subway Seat**, in config.fish (fish 4.3+):
+**Subway Seat**, in config.fish:
 
 ```fish
 fish_config theme choose subway-seat
 ```
 
-**Subway Seat Tunnel**, in config.fish (fish 4.3+):
+In bash or zsh:
+
+```sh
+echo 'fish_config theme choose subway-seat' >> ~/.config/fish/config.fish
+```
+
+**Subway Seat Tunnel**, in config.fish:
 
 ```fish
 fish_config theme choose subway-seat-tunnel
 ```
 
-**Subway Seat Enamel**, in config.fish (fish 4.3+):
+In bash or zsh:
+
+```sh
+echo 'fish_config theme choose subway-seat-tunnel' >> ~/.config/fish/config.fish
+```
+
+**Subway Seat Enamel**, in config.fish:
 
 ```fish
 fish_config theme choose subway-seat-enamel
+```
+
+In bash or zsh:
+
+```sh
+echo 'fish_config theme choose subway-seat-enamel' >> ~/.config/fish/config.fish
+```
+
+## Follow light and dark
+
+In config.fish (fish 4.3+; terminals that don't report their background get Walnut):
+
+```fish
+fish_config theme choose subway-seat-auto
 ```
 
 ## Uninstall

@@ -1,0 +1,35 @@
+/* Subway Seat — generated from palette.py by build.py. Edit the palette, not this file. */
+/* Subway Seat Tunnel for waybar: @import it at the top of style.css. */
+
+@define-color crust #140D07;
+@define-color mantle #1B120A;
+@define-color base #24180E;
+@define-color surface0 #302115;
+@define-color surface1 #3D2C1D;
+@define-color surface2 #4F3927;
+@define-color overlay0 #745B45;
+@define-color overlay1 #917759;
+@define-color overlay2 #AA9171;
+@define-color subtext0 #C0AA88;
+@define-color subtext1 #D6C3A0;
+@define-color text #E9D8B6;
+@define-color text_hi #F6EAD1;
+@define-color yellow #F3BF45;
+@define-color yellow_hi #FFD36B;
+@define-color orange #EC7F31;
+@define-color orange_hi #FF9D55;
+@define-color red #E05C45;
+@define-color red_hi #F97160;
+@define-color green #ADB956;
+@define-color green_hi #BFCB63;
+@define-color sage #86AD95;
+@define-color sage_hi #A5C9B0;
+@define-color denim #7F9BAE;
+@define-color denim_hi #9DB6C6;
+@define-color clay #E0956C;
+
+/* Layers: a raised ground for popovers, and washes of text for borders, hover and selection */
+@define-color paper #302115;
+@define-color edge alpha(@text, 0.12);
+@define-color hover alpha(@text, 0.08);
+@define-color selection alpha(@text, 0.16);

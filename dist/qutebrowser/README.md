@@ -8,9 +8,9 @@ Sets every `c.colors.*` option: tabs, status bar modes, completion, hints, promp
 
 | Flavor | File | Where it goes |
 |---|---|---|
-| Subway Seat | [`subway_seat.py`](subway_seat.py) | `~/.config/qutebrowser/subway_seat.py` |
-| Subway Seat Tunnel | [`subway_seat_tunnel.py`](subway_seat_tunnel.py) | `~/.config/qutebrowser/subway_seat_tunnel.py` |
-| Subway Seat Enamel | [`subway_seat_enamel.py`](subway_seat_enamel.py) | `~/.config/qutebrowser/subway_seat_enamel.py` |
+| Subway Seat | [`subway_seat.py`](subway_seat.py) | `~/.config/qutebrowser/subway_seat.py`; next to config.py; on macOS that's ~/.qutebrowser/ |
+| Subway Seat Tunnel | [`subway_seat_tunnel.py`](subway_seat_tunnel.py) | `~/.config/qutebrowser/subway_seat_tunnel.py`; next to config.py; on macOS that's ~/.qutebrowser/ |
+| Subway Seat Enamel | [`subway_seat_enamel.py`](subway_seat_enamel.py) | `~/.config/qutebrowser/subway_seat_enamel.py`; next to config.py; on macOS that's ~/.qutebrowser/ |
 
 ## Turn it on
 

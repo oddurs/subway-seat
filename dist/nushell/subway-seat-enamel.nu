@@ -50,7 +50,7 @@ $env.config.color_config = {
     row_index: "#8C7254"
     empty: "#A58C6A"
     hints: "#A58C6A"
-    search_result: { fg: "#F4E9D4" bg: "#936200" }
+    search_result: { fg: "#2A1D13" bg: "#D7C094" }
     selection: { fg: "#2A1D13" bg: "#CAB48E" }
     selection_cursor: { attr: "n" }
     bool: "#BC4031"
@@ -100,15 +100,17 @@ $env.config.color_config = {
     }
 }
 
-$env.config.explore = {
-    status_bar_background: { fg: "#3E2C1E" bg: "#E2D3B6" }
-    command_bar_text: { fg: "#3E2C1E" }
-    highlight: { fg: "#F4E9D4" bg: "#936200" }
-    selected_cell: { fg: "#F4E9D4" bg: "#AD4E00" }
-    status: {
-        info: "#3F6480"
-        success: "#66740F"
-        warn: "#936200"
-        error: "#BC4031"
-    }
+$env.config.explore.selected_cell = { fg: "#F4E9D4" bg: "#AD4E00" }
+$env.config.explore.highlight = { fg: "#2A1D13" bg: "#D7C094" }
+$env.config.explore.status_bar_text = { fg: "#54402F" }
+$env.config.explore.status_bar_background = { fg: "#3E2C1E" bg: "#E2D3B6" }
+$env.config.explore.command_bar_text = { fg: "#3E2C1E" }
+$env.config.explore.command_bar_background = { bg: "#E2D3B6" }
+$env.config.explore.title_bar_text = { fg: "#2A1D13" attr: "b" }
+$env.config.explore.title_bar_background = { bg: "#D9C8A7" }
+$env.config.explore.status = {
+    info: { fg: "#3F6480" }
+    success: { fg: "#F4E9D4" bg: "#66740F" }
+    warn: { fg: "#F4E9D4" bg: "#936200" }
+    error: { fg: "#F4E9D4" bg: "#BC4031" }
 }

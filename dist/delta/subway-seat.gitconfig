@@ -2,24 +2,43 @@
 [delta "subway-seat"]
 	dark = true
 	syntax-theme = Subway Seat
+	# changed lines: syntax colors on a tint; changed words on a stronger one
 	plus-style = syntax "#3F3A1E"
+	plus-non-emph-style = syntax "#3F3A1E"
 	plus-emph-style = syntax "#504D26"
 	minus-style = syntax "#52281C"
+	minus-non-emph-style = syntax "#52281C"
 	minus-emph-style = syntax "#6D3224"
-	map-styles = bold purple => syntax "#60422E", bold cyan => syntax "#4A4838"
+	zero-style = syntax
+	whitespace-error-style = normal "#E05C45"
+	# git --color-moved: git's defaults and the git port's colors
+	map-styles = bold purple => syntax "#412217", bold "#EC7F31" => syntax "#412217", bold blue => syntax "#423117", bold "#7F9BAE" => syntax "#423117", bold cyan => syntax "#342D18", bold "#86AD95" => syntax "#342D18", bold yellow => syntax "#423117", bold "#F3BF45" => syntax "#423117"
+	# line numbers (with line-numbers = true) in the color of their change
 	line-numbers-plus-style = "#ADB956"
 	line-numbers-minus-style = "#F97160"
-	line-numbers-zero-style = "#7B6047"
-	line-numbers-left-style = "#634932"
-	line-numbers-right-style = "#634932"
-	file-style = "#F3BF45" bold
+	line-numbers-zero-style = "#967B5C"
+	line-numbers-left-style = "#7B6047"
+	line-numbers-right-style = "#7B6047"
+	# file and hunk headers
+	file-style = "#F8ECD4" bold
 	file-decoration-style = "#EC7F31" ul
 	hunk-header-style = file line-number syntax
-	hunk-header-decoration-style = "#634932" box
-	hunk-header-line-number-style = "#EC7F31"
-	commit-decoration-style = "#EC7F31" box
+	hunk-header-file-style = "#D9C6A3"
+	hunk-header-line-number-style = "#7F9BAE"
+	hunk-header-decoration-style = "#7F9BAE" box
+	commit-decoration-style = "#F3BF45" box
+	inline-hint-style = "#967B5C"
+	# git blame
 	blame-palette = "#362619 #2A1D13 #43301F"
-	merge-conflict-begin-symbol = ~
-	merge-conflict-end-symbol = ~
+	blame-separator-style = "#7B6047"
+	# git grep / rg --json
+	grep-file-style = "#EC7F31"
+	grep-line-number-style = "#ADB956"
+	grep-match-line-style = syntax
+	grep-match-word-style = "#F8ECD4" "#6F5426" bold
+	grep-header-file-style = "#EC7F31" bold
+	# merge conflicts (git's diff3 or zdiff3 conflict style)
 	merge-conflict-ours-diff-header-style = "#F3BF45" bold
+	merge-conflict-ours-diff-header-decoration-style = "#F3BF45" box
 	merge-conflict-theirs-diff-header-style = "#86AD95" bold
+	merge-conflict-theirs-diff-header-decoration-style = "#86AD95" box

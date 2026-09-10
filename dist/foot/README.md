@@ -1,8 +1,8 @@
 # Subway Seat for foot
 
-Colors, dim colors, cursor, selection, search box, jump labels, URLs and the bell flash, in both a dark and a light section. Needs foot 1.26 or later, which replaced `[colors]` with `[colors-dark]` and `[colors-light]`.
+Colors, dim colors, cursor, selection, search box, jump labels, URLs and the bell flash. Each file has a dark and a light section (Enamel is the light side of the dark flavors, Walnut the dark side of Enamel). foot doesn't follow the desktop on its own: switch with the `color-theme-toggle` key binding (unbound by default), or send foot `SIGUSR1` for dark and `SIGUSR2` for light, for example from a darkman script.
 
-[foot](https://codeberg.org/dnkl/foot) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/foot/)
+[foot](https://codeberg.org/dnkl/foot) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/foot/) · Needs foot 1.26+
 
 ## Files
 

@@ -1,0 +1,71 @@
+// Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+// Subway Seat Tunnel for fastfetch.
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "color": {
+      "1": "#ADB956",
+      "2": "#F3BF45",
+      "3": "#EC7F31",
+      "4": "#E05C45",
+      "5": "#E0956C",
+      "6": "#7F9BAE",
+      "7": "#86AD95",
+      "8": "#FF9D55",
+      "9": "#FFD36B"
+    }
+  },
+  "display": {
+    "color": {
+      "keys": "#F3BF45",
+      "title": "#EC7F31",
+      "output": "#E9D8B6",
+      "separator": "#917759"
+    },
+    "percent": {
+      "color": {
+        "green": "#ADB956",
+        "yellow": "#F3BF45",
+        "red": "#F97160"
+      }
+    },
+    "temp": {
+      "color": {
+        "green": "#ADB956",
+        "yellow": "#F3BF45",
+        "red": "#F97160"
+      }
+    }
+  },
+  "modules": [
+    "title",
+    "separator",
+    "os",
+    "host",
+    "kernel",
+    "uptime",
+    "packages",
+    "shell",
+    "display",
+    "de",
+    "wm",
+    "wmtheme",
+    "theme",
+    "icons",
+    "font",
+    "cursor",
+    "terminal",
+    "terminalfont",
+    "cpu",
+    "gpu",
+    "memory",
+    "swap",
+    "disk",
+    "localip",
+    "battery",
+    "poweradapter",
+    "locale",
+    "break",
+    "colors"
+  ]
+}

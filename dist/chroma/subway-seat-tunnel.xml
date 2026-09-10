@@ -44,8 +44,8 @@
   <entry type="GenericSubheading" style="bold #F3BF45"/>
   <entry type="GenericEmph" style="italic #E9D8B6"/>
   <entry type="GenericStrong" style="bold #F6EAD1"/>
-  <entry type="GenericDeleted" style="#F97160"/>
-  <entry type="GenericInserted" style="#ADB956"/>
+  <entry type="GenericDeleted" style="bg:#492217 #F97160"/>
+  <entry type="GenericInserted" style="bg:#363318 #ADB956"/>
   <entry type="GenericError" style="#E05C45"/>
   <entry type="GenericOutput" style="#C0AA88"/>
   <entry type="GenericPrompt" style="#EC7F31"/>

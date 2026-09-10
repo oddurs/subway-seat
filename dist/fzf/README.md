@@ -1,6 +1,6 @@
 # Subway Seat for fzf
 
-Colors for the finder, preview border, pointer and marker.
+Colors for the finder, preview border, pointer and marker. The files add a `--color` to the end of FZF_DEFAULT_OPTS, so your other options stay.
 
 [fzf](https://github.com/junegunn/fzf) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/fzf/)
 
@@ -17,22 +17,40 @@ Colors for the finder, preview border, pointer and marker.
 
 ## Turn it on
 
-**Subway Seat**, in your shell config (fish shown; bash/zsh files use export):
+**Subway Seat**, in config.fish (bash and zsh: source the .sh file from ~/.bashrc or ~/.zshrc):
 
 ```fish
 source ~/.config/fzf/subway-seat.fish
 ```
 
-**Subway Seat Tunnel**, in your shell config (fish shown; bash/zsh files use export):
+In bash or zsh:
+
+```sh
+. ~/.config/fzf/subway-seat.sh
+```
+
+**Subway Seat Tunnel**, in config.fish (bash and zsh: source the .sh file from ~/.bashrc or ~/.zshrc):
 
 ```fish
 source ~/.config/fzf/subway-seat-tunnel.fish
 ```
 
-**Subway Seat Enamel**, in your shell config (fish shown; bash/zsh files use export):
+In bash or zsh:
+
+```sh
+. ~/.config/fzf/subway-seat-tunnel.sh
+```
+
+**Subway Seat Enamel**, in config.fish (bash and zsh: source the .sh file from ~/.bashrc or ~/.zshrc):
 
 ```fish
 source ~/.config/fzf/subway-seat-enamel.fish
+```
+
+In bash or zsh:
+
+```sh
+. ~/.config/fzf/subway-seat-enamel.sh
 ```
 
 ## Uninstall

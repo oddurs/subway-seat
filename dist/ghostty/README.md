@@ -1,8 +1,8 @@
 # Subway Seat for Ghostty
 
-The 16 ANSI colors, cursor, selection and split fill. For light/dark following, use `theme = light:Subway Seat Enamel,dark:Subway Seat`.
+The 16 ANSI colors, cursor, selection, search matches, split divider and unfocused-split fill. Ghostty 1.2 reports the search keys as unknown but applies the rest.
 
-[Ghostty](https://ghostty.org) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/ghostty/)
+[Ghostty](https://ghostty.org) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/ghostty/) · Needs Ghostty 1.3+
 
 ## Files
 
@@ -14,22 +14,30 @@ The 16 ANSI colors, cursor, selection and split fill. For light/dark following, 
 
 ## Turn it on
 
-**Subway Seat**, in ~/.config/ghostty/config:
+**Subway Seat**, in ~/.config/ghostty/config (or config.ghostty):
 
 ```conf
 theme = Subway Seat
 ```
 
-**Subway Seat Tunnel**, in ~/.config/ghostty/config:
+**Subway Seat Tunnel**, in ~/.config/ghostty/config (or config.ghostty):
 
 ```conf
 theme = Subway Seat Tunnel
 ```
 
-**Subway Seat Enamel**, in ~/.config/ghostty/config:
+**Subway Seat Enamel**, in ~/.config/ghostty/config (or config.ghostty):
 
 ```conf
 theme = Subway Seat Enamel
+```
+
+## Follow light and dark
+
+In ~/.config/ghostty/config (or config.ghostty):
+
+```conf
+theme = light:Subway Seat Enamel,dark:Subway Seat
 ```
 
 ## Uninstall

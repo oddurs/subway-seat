@@ -40,7 +40,7 @@ settings:
   --color-green: #ADB956;
   --color-cyan: #86AD95;
   --color-blue: #7F9BAE;
-  --color-purple: #9DB6C6;
+  --color-purple: #FF9D55;
   --color-pink: #E0956C;
   --color-red-rgb: 249, 113, 96;
   --color-orange-rgb: 236, 127, 49;
@@ -48,10 +48,10 @@ settings:
   --color-green-rgb: 173, 185, 86;
   --color-cyan-rgb: 134, 173, 149;
   --color-blue-rgb: 127, 155, 174;
-  --color-purple-rgb: 157, 182, 198;
+  --color-purple-rgb: 255, 157, 85;
   --color-pink-rgb: 224, 149, 108;
 
-  /* Accent: burnt orange, still overridable under Settings → Appearance */
+  /* Accent: burnt orange, still overridable under Settings › Appearance */
   --accent-h: 25.0;
   --accent-s: 83.1%;
   --accent-l: 55.9%;
@@ -129,7 +129,7 @@ settings:
   --h2-color: #F3BF45;
   --h3-color: #ADB956;
   --h4-color: #86AD95;
-  --h5-color: #7F9BAE;
+  --h5-color: #F97160;
   --h6-color: #E0956C;
   --heading-formatting: #7B6047;
   --inline-title-color: #F8ECD4;
@@ -166,6 +166,15 @@ settings:
   --code-tag: #EC7F31;
   --code-value: #F97160;
 
+  /* Diffs in code blocks: line tints, green and red signs, denim hunk headers */
+  --ss-diff-add: #3F3A1E;
+  --ss-diff-del: #52281C;
+  --ss-diff-chg: #423117;
+  --ss-diff-add-fg: #ADB956;
+  --ss-diff-del-fg: #F97160;
+  --ss-diff-chg-fg: #F3BF45;
+  --ss-diff-header: #7F9BAE;
+
   /* Callouts, by type */
   --callout-default: #7F9BAE;
   --callout-info: #7F9BAE;
@@ -179,7 +188,7 @@ settings:
   --callout-fail: #F97160;
   --callout-error: #F97160;
   --callout-bug: #F97160;
-  --callout-example: #9DB6C6;
+  --callout-example: #FF9D55;
   --callout-quote: #967B5C;
 
   /* Blocks: quotes, checklists, lists, rules, tables, properties */
@@ -291,9 +300,9 @@ settings:
   --menu-border-color: #513B27;
   --modal-background: #362619;
   --modal-border-color: #513B27;
-  --prompt-background: #362619;
+  --prompt-background: #43301F;
   --prompt-border-color: #513B27;
-  --suggestion-background: #362619;
+  --suggestion-background: #43301F;
   --setting-items-background: #302216;
   --setting-items-border-color: #43301F;
   --drag-ghost-background: rgba(32, 22, 14, 0.9);
@@ -301,6 +310,10 @@ settings:
   --pdf-background: #2A1D13;
   --pdf-sidebar-background: #2A1D13;
   --pdf-page-background: #362619;
+}
+
+body.theme-dark {
+  --canvas-color: #967B5C;
 }
 
 .theme-dark.subway-seat-tunnel {
@@ -362,6 +375,9 @@ settings:
   --code-operator: #AA9171;
   --code-property: #D6C3A0;
   --code-punctuation: #AA9171;
+  --ss-diff-add: #363318;
+  --ss-diff-del: #492217;
+  --ss-diff-chg: #382911;
   --callout-quote: #917759;
   --blockquote-color: #D6C3A0;
   --checkbox-border-color: #745B45;
@@ -440,9 +456,9 @@ settings:
   --menu-border-color: #3D2C1D;
   --modal-background: #24180E;
   --modal-border-color: #3D2C1D;
-  --prompt-background: #24180E;
+  --prompt-background: #302115;
   --prompt-border-color: #3D2C1D;
-  --suggestion-background: #24180E;
+  --suggestion-background: #302115;
   --setting-items-background: #20150C;
   --setting-items-border-color: #302115;
   --drag-ghost-background: rgba(20, 13, 7, 0.9);
@@ -450,6 +466,10 @@ settings:
   --pdf-background: #1B120A;
   --pdf-sidebar-background: #1B120A;
   --pdf-page-background: #24180E;
+}
+
+body.theme-dark.subway-seat-tunnel {
+  --canvas-color: #917759;
 }
 
 .theme-light {
@@ -472,7 +492,7 @@ settings:
   --color-green: #66740F;
   --color-cyan: #3E7157;
   --color-blue: #3F6480;
-  --color-purple: #517791;
+  --color-purple: #C4561A;
   --color-pink: #A65633;
   --color-red-rgb: 153, 36, 24;
   --color-orange-rgb: 173, 78, 0;
@@ -480,10 +500,10 @@ settings:
   --color-green-rgb: 102, 116, 15;
   --color-cyan-rgb: 62, 113, 87;
   --color-blue-rgb: 63, 100, 128;
-  --color-purple-rgb: 81, 119, 145;
+  --color-purple-rgb: 196, 86, 26;
   --color-pink-rgb: 166, 86, 51;
 
-  /* Accent: burnt orange, still overridable under Settings → Appearance */
+  /* Accent: burnt orange, still overridable under Settings › Appearance */
   --accent-h: 27.1;
   --accent-s: 100.0%;
   --accent-l: 33.9%;
@@ -561,7 +581,7 @@ settings:
   --h2-color: #936200;
   --h3-color: #66740F;
   --h4-color: #3E7157;
-  --h5-color: #3F6480;
+  --h5-color: #992418;
   --h6-color: #A65633;
   --heading-formatting: #A58C6A;
   --inline-title-color: #2A1D13;
@@ -598,6 +618,15 @@ settings:
   --code-tag: #AD4E00;
   --code-value: #BC4031;
 
+  /* Diffs in code blocks: line tints, green and red signs, denim hunk headers */
+  --ss-diff-add: #D7DBC1;
+  --ss-diff-del: #EBD3D1;
+  --ss-diff-chg: #E3D6BD;
+  --ss-diff-add-fg: #66740F;
+  --ss-diff-del-fg: #BC4031;
+  --ss-diff-chg-fg: #936200;
+  --ss-diff-header: #3F6480;
+
   /* Callouts, by type */
   --callout-default: #3F6480;
   --callout-info: #3F6480;
@@ -611,7 +640,7 @@ settings:
   --callout-fail: #992418;
   --callout-error: #992418;
   --callout-bug: #992418;
-  --callout-example: #517791;
+  --callout-example: #C4561A;
   --callout-quote: #8C7254;
 
   /* Blocks: quotes, checklists, lists, rules, tables, properties */
@@ -719,13 +748,13 @@ settings:
   --scrollbar-active-thumb-bg: rgba(140, 114, 84, 0.5);
 
   /* Menus, modals, prompts, popovers, PDFs */
-  --menu-background: #F4E9D4;
+  --menu-background: #FAF4EA;
   --menu-border-color: #CAB48E;
   --modal-background: #F4E9D4;
   --modal-border-color: #CAB48E;
-  --prompt-background: #F4E9D4;
+  --prompt-background: #FAF4EA;
   --prompt-border-color: #CAB48E;
-  --suggestion-background: #F4E9D4;
+  --suggestion-background: #FAF4EA;
   --setting-items-background: #F0E4CD;
   --setting-items-border-color: #D9C8A7;
   --drag-ghost-background: rgba(42, 29, 19, 0.9);
@@ -734,3 +763,24 @@ settings:
   --pdf-sidebar-background: #EBDEC6;
   --pdf-page-background: #F4E9D4;
 }
+
+body.theme-light {
+  --canvas-color: #BAA07A;
+}
+
+/* Diffs in code blocks */
+.markdown-rendered .language-diff .token.inserted:not(.prefix),
+.markdown-rendered .language-diff .token.deleted:not(.prefix),
+.markdown-rendered .language-diff .token.diff:not(.prefix) {
+  display: block;
+  color: var(--code-normal);
+}
+.markdown-rendered .language-diff .token.inserted:not(.prefix) { background-color: var(--ss-diff-add); }
+.markdown-rendered .language-diff .token.deleted:not(.prefix) { background-color: var(--ss-diff-del); }
+.markdown-rendered .language-diff .token.diff:not(.prefix) { background-color: var(--ss-diff-chg); font-weight: inherit; }
+.markdown-rendered .language-diff .token.prefix.inserted { color: var(--ss-diff-add-fg); }
+.markdown-rendered .language-diff .token.prefix.deleted { color: var(--ss-diff-del-fg); }
+.markdown-rendered .language-diff .token.prefix.diff { color: var(--ss-diff-chg-fg); }
+.markdown-rendered .language-diff .token.coord { color: var(--ss-diff-header); }
+.cm-positive { color: var(--ss-diff-add-fg); }
+.cm-negative { color: var(--ss-diff-del-fg); }

@@ -3,6 +3,7 @@
 
 pre code.hljs { display: block; overflow-x: auto; padding: 1em; }
 code.hljs { padding: 3px 5px; }
+.hljs-addition, .hljs-deletion { display: inline-block; width: 100%; } /* diff lines as full-width bands */
 
 .hljs { color: #3E2C1E; background: #F4E9D4; }
 .hljs::selection, .hljs ::selection { color: #2A1D13; background: #CAB48E; }
@@ -34,5 +35,10 @@ code.hljs { padding: 3px 5px; }
 .hljs-emphasis { color: #3E2C1E; font-style: italic; }
 .hljs-strong { color: #2A1D13; font-weight: bold; }
 .hljs-link { color: #3F6480; text-decoration: underline; }
+
+/* Diffs: a diff line is one token, so it takes green or red_hi on its tint.
+   highlight.js marks hunk headers as meta and file headers as comments. */
 .hljs-addition { color: #66740F; background: #D7DBC1; }
 .hljs-deletion { color: #BC4031; background: #EBD3D1; }
+.language-diff .hljs-meta { color: #3F6480; font-style: normal; }
+.language-diff .hljs-comment { color: #2A1D13; font-style: normal; font-weight: bold; }

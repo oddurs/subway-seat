@@ -11,13 +11,18 @@
       "cooldownSessions": 2
     },
     {
+      "id": "subway-seat.context",
+      "text": "/context shows how crowded the car is.",
+      "cooldownSessions": 2
+    },
+    {
       "id": "subway-seat.resume",
       "text": "/resume picks up a ride you left earlier, right where you got off.",
       "cooldownSessions": 2
     },
     {
       "id": "subway-seat.modes",
-      "text": "Shift+Tab changes trains: plan first, or let edits through on their own.",
+      "text": "Shift+Tab changes how you ride: plan the trip first, or let edits through on their own.",
       "cooldownSessions": 2
     },
     {
@@ -27,7 +32,7 @@
     },
     {
       "id": "subway-seat.rewind",
-      "text": "Esc twice rewinds the line to an earlier stop.",
+      "text": "With an empty prompt, Esc twice rewinds the line to an earlier stop.",
       "cooldownSessions": 2
     },
     {
@@ -41,18 +46,28 @@
       "cooldownSessions": 2
     },
     {
+      "id": "subway-seat.btw",
+      "text": "/btw asks a quick side question without adding it to the ride.",
+      "cooldownSessions": 2
+    },
+    {
       "id": "subway-seat.claude-md",
       "text": "Put the house rules in CLAUDE.md so every ride starts on the right line.",
       "cooldownSessions": 2
     },
     {
       "id": "subway-seat.theme",
-      "text": "/theme swaps between Walnut, Tunnel and Enamel. Same seats, different light.",
+      "text": "/theme swaps between Subway Seat, Tunnel and Enamel. Same seats, different light.",
       "cooldownSessions": 2
     },
     {
       "id": "subway-seat.model",
       "text": "/model switches trains. Opus for the long haul, Haiku for a hop.",
+      "cooldownSessions": 2
+    },
+    {
+      "id": "subway-seat.usage",
+      "text": "/usage shows the fare so far and how much of your pass is left.",
       "cooldownSessions": 2
     },
     {

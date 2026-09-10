@@ -1,6 +1,6 @@
 # Subway Seat for Nushell
 
-The fish port's command-line colors as a `color_config`, plus table output where file sizes and ages run down the 70s stripe. It turns on `highlight_resolved_externals`, so unknown commands show red as they do in fish.
+The fish port's command-line colors as a `color_config`, plus table output where file sizes and ages run down the 70s stripe, and the `explore` pager. It turns on `highlight_resolved_externals`, so unknown commands show red as they do in fish.
 
 [Nushell](https://www.nushell.sh) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/nushell/)
 
@@ -16,19 +16,19 @@ The fish port's command-line colors as a `color_config`, plus table output where
 
 **Subway Seat**, in config.nu (`$nu.config-path`):
 
-```text
+```nushell
 source ~/.config/nushell/themes/subway-seat.nu
 ```
 
 **Subway Seat Tunnel**, in config.nu (`$nu.config-path`):
 
-```text
+```nushell
 source ~/.config/nushell/themes/subway-seat-tunnel.nu
 ```
 
 **Subway Seat Enamel**, in config.nu (`$nu.config-path`):
 
-```text
+```nushell
 source ~/.config/nushell/themes/subway-seat-enamel.nu
 ```
 

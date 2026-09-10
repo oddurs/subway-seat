@@ -1,6 +1,6 @@
 {
   "subagentStatusLine": {
     "type": "command",
-    "command": "\"${CLAUDE_PLUGIN_ROOT}/bin/subway-seat-subagents\""
+    "command": "for f in \"${CLAUDE_CONFIG_DIR:-$HOME/.claude}\"/plugins/data/subway-seat-*/subway-seat-subagents; do [ -x \"$f\" ] && exec \"$f\"; done; exit 0"
   }
 }

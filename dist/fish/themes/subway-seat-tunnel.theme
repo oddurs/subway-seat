@@ -15,7 +15,7 @@ fish_color_escape E0956C
 fish_color_comment 917759 --italics
 fish_color_error F97160
 fish_color_cancel E05C45
-fish_color_autosuggestion 745B45
+fish_color_autosuggestion 917759
 fish_color_gray 745B45
 fish_color_valid_path --underline
 fish_color_selection F6EAD1 --bold --background=4F3927
@@ -32,3 +32,6 @@ fish_pager_color_prefix F3BF45 --bold
 fish_pager_color_completion E9D8B6
 fish_pager_color_description 917759 --italics
 fish_pager_color_selected_background --background=3D2C1D
+fish_pager_color_selected_prefix F3BF45 --bold
+fish_pager_color_selected_completion F6EAD1
+fish_pager_color_selected_description D6C3A0 --italics

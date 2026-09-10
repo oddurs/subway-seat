@@ -1,14 +1,14 @@
-# Subway Seat for Copilot CLI, Amp & Goose
+# Subway Seat for Copilot CLI, Amp & goose
 
-These agents have no theme files; they use your terminal's colors, so a Subway Seat terminal theme dresses them too. Copilot CLI needs its `default` theme and Goose its `ansi` theme; Amp needs nothing.
+These agents have no theme files; they use your terminal's colors, so a Subway Seat terminal theme dresses them too. Copilot CLI needs its `default` theme and goose (github.com/aaif-goose/goose) its `ansi` theme; Amp needs nothing.
 
-[Copilot CLI, Amp & Goose](https://github.com/github/copilot-cli) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/terminal-agents/)
+[Copilot CLI, Amp & goose](https://github.com/github/copilot-cli) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/terminal-agents/)
 
 ## Files
 
 | Flavor | File | Where it goes |
 |---|---|---|
-| All three | [`copilot-settings.json`](copilot-settings.json) | `merged into ~/.copilot/settings.json` |
+| All three | [`copilot-settings.json`](copilot-settings.json) | merge into ~/.copilot/settings.json |
 | All three | [`goose-config.yaml`](goose-config.yaml) | add to the end of `~/.config/goose/config.yaml` |
 
 ## Turn it on
@@ -17,13 +17,12 @@ In each agent, inside a terminal running a Subway Seat theme:
 
 ```text
 /settings theme default   # GitHub Copilot CLI (Base-16 terminal colors)
-/t ansi                   # Goose (saved as GOOSE_CLI_THEME)
+/t ansi                   # goose (saved as GOOSE_CLI_THEME)
 # Amp: nothing to set
 ```
 
 ## Uninstall
 
-- Delete `merged into ~/.copilot/settings.json`.
 - Delete the block between `# >>> subway-seat >>>` and `# <<< subway-seat <<<` in `~/.config/goose/config.yaml`.
 - Remove the line you added to turn it on.
 

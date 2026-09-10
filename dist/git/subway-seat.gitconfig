@@ -1,0 +1,93 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# Subway Seat for Git. Include it from your gitconfig:
+#   [include] path = ~/.config/git/subway-seat.gitconfig
+
+[color "diff"]
+	meta = "#f8ecd4 bold"
+	frag = "#7f9bae"
+	func = "#d9c6a3"
+	old = "#f97160"
+	new = "#adb956"
+	commit = "#f3bf45"
+	whitespace = "normal #e05c45"
+	oldMoved = "#ec7f31 bold"
+	oldMovedAlternative = "#7f9bae bold"
+	newMoved = "#86ad95 bold"
+	newMovedAlternative = "#f3bf45 bold"
+	oldMovedDimmed = "#967b5c"
+	oldMovedAlternativeDimmed = "#967b5c italic"
+	newMovedDimmed = "#967b5c"
+	newMovedAlternativeDimmed = "#967b5c italic"
+	contextDimmed = "#967b5c"
+	oldDimmed = "#f97160 dim"
+	newDimmed = "#adb956 dim"
+	contextBold = "#f8ecd4 bold"
+	oldBold = "#f97160 bold"
+	newBold = "#adb956 bold"
+
+[color "diff-highlight"]
+	oldNormal = "#f97160"
+	oldHighlight = "#f97160 #6d3224"
+	newNormal = "#adb956"
+	newHighlight = "#adb956 #504d26"
+
+[color "status"]
+	header = "#d9c6a3"
+	added = "#adb956"
+	changed = "#f97160"
+	untracked = "#e0956c"
+	branch = "#adb956 bold"
+	nobranch = "#f97160 bold"
+	localBranch = "#adb956"
+	remoteBranch = "#f97160"
+	unmerged = "#f97160 bold"
+
+[color "branch"]
+	current = "#adb956 bold"
+	local = "#eddcbc"
+	remote = "#f97160"
+	upstream = "#7f9bae"
+	plain = "#d9c6a3"
+	worktree = "#86ad95"
+
+[color "decorate"]
+	HEAD = "#86ad95 bold"
+	branch = "#adb956 bold"
+	remoteBranch = "#f97160 bold"
+	tag = "#f3bf45 bold"
+	stash = "#ec7f31 bold"
+	grafted = "#7f9bae bold"
+
+[color "grep"]
+	context = "#c4ae8c"
+	filename = "#ec7f31"
+	function = "#f3bf45"
+	lineNumber = "#adb956"
+	column = "#adb956"
+	selected = "#eddcbc"
+	separator = "#967b5c"
+
+[color "interactive"]
+	prompt = "#ec7f31 bold"
+	header = "#f8ecd4 bold"
+	help = "#f3bf45"
+	error = "#f97160 bold"
+
+[color "blame"]
+	highlightRecent = "#967b5c,12 month ago,#d9c6a3,1 month ago,#ec7f31"
+	repeatedLines = "#967b5c"
+
+[color "advice"]
+	hint = "#f3bf45"
+
+[color "push"]
+	error = "#f97160"
+
+[color "transport"]
+	rejected = "#f97160"
+
+[color "remote"]
+	hint = "#f3bf45"
+	warning = "#f3bf45 bold"
+	success = "#adb956 bold"
+	error = "#f97160 bold"

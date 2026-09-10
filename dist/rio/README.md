@@ -1,6 +1,6 @@
 # Subway Seat for Rio
 
-Normal, light and dim colors, both cursors, tabs, splits, selection, search and hints. For light/dark following, use `[adaptive-theme]` with `light = "subway-seat-enamel"` and `dark = "subway-seat"`.
+Normal, light and dim colors, both cursors, tabs, splits, selection, search and hints.
 
 [Rio](https://rioterm.com) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/rio/)
 
@@ -14,22 +14,32 @@ Normal, light and dim colors, both cursors, tabs, splits, selection, search and 
 
 ## Turn it on
 
-**Subway Seat**, in ~/.config/rio/config.toml:
+**Subway Seat**, in ~/.config/rio/config.toml, at the top level (above any [section]):
 
 ```toml
 theme = "subway-seat"
 ```
 
-**Subway Seat Tunnel**, in ~/.config/rio/config.toml:
+**Subway Seat Tunnel**, in ~/.config/rio/config.toml, at the top level (above any [section]):
 
 ```toml
 theme = "subway-seat-tunnel"
 ```
 
-**Subway Seat Enamel**, in ~/.config/rio/config.toml:
+**Subway Seat Enamel**, in ~/.config/rio/config.toml, at the top level (above any [section]):
 
 ```toml
 theme = "subway-seat-enamel"
+```
+
+## Follow light and dark
+
+In ~/.config/rio/config.toml:
+
+```toml
+[adaptive-theme]
+light = "subway-seat-enamel"
+dark = "subway-seat"
 ```
 
 ## Uninstall

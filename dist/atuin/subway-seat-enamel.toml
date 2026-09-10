@@ -4,7 +4,7 @@
 name = "subway-seat-enamel"
 
 [colors]
-AlertInfo = "#66740F"
+AlertInfo = "#3F6480"
 AlertWarn = "#936200"
 AlertError = "#BC4031"
 Annotation = "#8C7254"

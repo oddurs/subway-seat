@@ -1,6 +1,6 @@
 # Subway Seat for Aider
 
-Prompt, reply, tool and completion-menu colors for aider's config file. Code blocks use rich's ANSI theme, so they follow your Subway Seat terminal.
+Prompt, reply, tool and completion-menu colors for aider's config file. Code blocks use rich's ANSI theme, so they follow your Subway Seat terminal, or the Subway Seat Pygments style if you install it. Append one flavor; to switch, replace the block between the markers, since YAML won't take the keys twice.
 
 [Aider](https://aider.chat) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/aider/)
 

@@ -1,6 +1,6 @@
 # Subway Seat for Xfce Terminal
 
-Palette, cursor, bold, selection and the tab activity color.
+Palette, cursor, bold, selection and the tab activity color. Xfce Terminal doesn't follow the system light/dark setting, so pick one flavor.
 
 [Xfce Terminal](https://docs.xfce.org/apps/xfce4-terminal/start) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/xfce-terminal/)
 

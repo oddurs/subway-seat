@@ -1,0 +1,173 @@
+#!/usr/bin/env bash
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+#
+# Subway Seat status line for Claude Code: a station sign under the prompt.
+#   (O) Opus   ~/Code/project    main !2   load ━━━━──────  42%   $0.84
+# Reads Claude Code's status JSON on stdin and needs jq. Segments drop off the
+# right end when the terminal is narrow ($COLUMNS, which Claude Code sets).
+# SUBWAY_SEAT_FLAVOR=walnut|tunnel|enamel overrides the flavor read from your theme;
+# SUBWAY_SEAT_GLYPHS=plain drops the Nerd Font glyphs.
+
+input=$(cat)
+if ! command -v jq >/dev/null 2>&1; then
+  printf 'Subway Seat: the status line needs jq\n'
+  exit 0
+fi
+settings=
+f="${CLAUDE_CONFIG_DIR:-$HOME/.claude}/settings.json"
+[ -r "$f" ] && settings=$(<"$f")
+
+# One jq call. Fields are joined with the unit separator (not a tab, which `read`
+# would treat as whitespace and collapse), and control characters are stripped.
+IFS=$'\037' read -r theme model key letter agent cwd dir pct cost effort rlabel rpct wt wtbranch vim <<EOF
+$(jq -r --arg settings "$settings" '
+  def clean: tostring | gsub("\\p{Cc}"; "");
+  def int: if type == "number" then (. + 0.5 | floor | if . < 0 then 0 else . end) else "" end;
+  def cut($n): if length > $n then .[0:$n - 1] + "…" else . end;
+  def money: (. * 100 + 0.5 | floor) as $c
+    | "\($c / 100 | floor).\($c % 100 | tostring | if length < 2 then "0" + . else . end)";
+  def short: (env.HOME // "") as $h
+    | (if $h != "" and . == $h then "~"
+       elif $h != "" and startswith($h + "/") then "~" + .[($h | length):]
+       else . end)
+    | (if . != "/" then sub("/+$"; "") else . end)
+    | split("/") as $p
+    | if ($p | length) > 3 then "…/" + ($p[-2:] | map(cut(24)) | join("/")) else cut(40) end;
+  (.model.display_name // .model.id // "Claude" | clean | sub(" *\\([0-9.]+ ?[KkMm] context\\)$"; "")) as $model
+  | (.workspace.current_dir // .cwd // "" | clean) as $cwd
+  | (.rate_limits // {}) as $rl
+  | ([["5h", $rl.five_hour.used_percentage], ["7d", $rl.seven_day.used_percentage]]
+     | map(select(.[1] | type == "number")) | max_by(.[1]) // ["", ""]) as $rate
+  | [ (($settings | try fromjson catch {}) | .theme // "" | clean),
+      $model, ($model | ascii_downcase), ($model | .[0:1] | ascii_upcase), (.agent.name // "" | clean | cut(20)),
+      ($cwd | short), $cwd,
+      (.context_window.used_percentage | int),
+      (if ($rl.five_hour // $rl.seven_day) != null then ""
+       elif (.cost.total_cost_usd | type) == "number" then .cost.total_cost_usd | money
+       else "" end),
+      (.effort.level // "" | clean),
+      $rate[0], ($rate[1] | int),
+      (.worktree.name // .workspace.git_worktree // "" | clean),
+      (.worktree.branch // "" | clean),
+      (.vim.mode // "" | clean | ascii_upcase)
+    ] | map(tostring) | join("\u001f")' <<<"$input" 2>/dev/null)
+EOF
+
+model=${model:-Claude} letter=${letter:-C}
+
+pick_flavor() {
+  case ${SUBWAY_SEAT_FLAVOR:-} in walnut | tunnel | enamel) flavor=$SUBWAY_SEAT_FLAVOR; return ;; esac
+  flavor=walnut
+  case $1 in
+    *subway-seat-enamel*) flavor=enamel ;;
+    *subway-seat-tunnel*) flavor=tunnel ;;
+    *subway-seat*) ;;
+    light*) flavor=enamel ;;
+    auto)
+      case ${COLORFGBG:-} in
+        *\;7 | *\;15) flavor=enamel ;;
+        *\;*) ;;
+        *) case $OSTYPE in darwin*) defaults read -g AppleInterfaceStyle >/dev/null 2>&1 || flavor=enamel ;; esac ;;
+      esac ;;
+  esac
+}
+pick_flavor "$theme"
+
+case $flavor in
+  tunnel) INK='20;13;7' TEXT='233;216;182' SUB='214;195;160' DIM='170;145;113' FAINT='145;119;89' RAIL='79;57;39' ORANGE='236;127;49' YELLOW='243;191;69' GREEN='173;185;86' SAGE='134;173;149' RED='249;113;96' CLAY='224;149;108' ;;
+  enamel) INK='244;233;212' TEXT='62;44;30' SUB='84;64;47' DIM='115;92;68' FAINT='140;114;84' RAIL='186;160;122' ORANGE='173;78;0' YELLOW='147;98;0' GREEN='102;116;15' SAGE='62;113;87' RED='188;64;49' CLAY='166;86;51' ;;
+  *) INK='32;22;14' TEXT='237;220;188' SUB='217;198;163' DIM='174;149;117' FAINT='150;123;92' RAIL='99;73;50' ORANGE='236;127;49' YELLOW='243;191;69' GREEN='173;185;86' SAGE='134;173;149' RED='249;113;96' CLAY='224;149;108' ;;
+esac
+
+F=$'\033[38;2;' G=$'\033[48;2;' R=$'\033[0m'  # "$F${TEXT}m" is a foreground, "$G${TEXT}m" a background
+B=$'\033[1m'
+nerd=1; [ "${SUBWAY_SEAT_GLYPHS:-}" = plain ] && nerd=0
+CAP_L=$'\xee\x82\xb6' CAP_R=$'\xee\x82\xb4' BRANCH=$'\xee\x82\xa0'  # Nerd Font U+E0B6 U+E0B4 U+E0A0
+
+# Terminal cells in a string: count bytes, less UTF-8 continuation bytes.
+w() { local LC_ALL=C; local s=${1//[$'\200'-$'\277']/}; W=${#s}; }
+
+# Segments go left to right until the next one doesn't fit.
+cols=${COLUMNS:-0}
+case $cols in '' | *[!0-9]*) cols=0 ;; esac
+room=100000; [ "$cols" -gt 0 ] && room=$((cols - 4))
+out='' used=0 full=''
+add() { # $1 = plain text (for measuring), $2 = colored text
+  [ -n "$full" ] && return 1
+  w "$1"
+  local need=$W
+  [ -n "$out" ] && need=$((W + 3))
+  if [ $((used + need)) -gt "$room" ]; then full=1; return 1; fi
+  [ -n "$out" ] && out+='   '
+  out+=$2 used=$((used + need))
+}
+
+meter() { # $1 = percent, $2 = cells, $3 = color of the filled part
+  local fill=$((($1 * $2 + 50) / 100)) i
+  [ $fill -gt "$2" ] && fill=$2
+  M="$F${3}m"; for ((i = 0; i < fill; i++)); do M+="━"; done
+  M+="$F${RAIL}m"; for ((i = fill; i < $2; i++)); do M+="─"; done
+  M+=$R; MP=''; for ((i = 0; i < $2; i++)); do MP+="-"; done
+}
+level() { if [ "$1" -ge 80 ]; then L=$RED; elif [ "$1" -ge 50 ]; then L=$YELLOW; else L=$GREEN; fi; }
+
+# The model as a route bullet: a colored circle with one bold letter.
+case $key in
+  *opus*) line=$ORANGE ;; *sonnet*) line=$YELLOW ;; *haiku*) line=$GREEN ;; *fable*) line=$SAGE ;; *) line=$CLAY ;;
+esac
+if [ $nerd = 1 ]; then
+  bullet="$F${line}m$CAP_L$R$G${line}m$F${INK}m$B$letter$R$F${line}m$CAP_R$R"
+else
+  bullet="$G${line}m$F${INK}m$B $letter $R"
+fi
+chip='' chipw=''
+case $vim in
+  N*) chip=$YELLOW ;; I*) chip=$GREEN ;; V*) chip=$CLAY ;; R*) chip=$RED ;; ?*) chip=$SAGE ;;
+esac
+[ -n "$chip" ] && chip="$G${chip}m$F${INK}m$B ${vim:0:1} $R " chipw='    '
+as=''; [ -n "$agent" ] && as=" $F${DIM}mas $agent$R"
+add "${chipw}xxx $model${agent:+ as $agent}" "$chip$bullet $F${TEXT}m$model$R$as" ||
+  { out="$chip$bullet"; full=1; }
+
+# Where we are.
+[ -n "$cwd" ] && add "$cwd" "$F${SUB}m$cwd$R"
+
+# Which line: the git branch (or @commit when detached) and a dirty count. In a
+# worktree the branch gets a transfer mark instead of the branch glyph.
+if [ -n "$dir" ] && [ -z "$full" ]; then
+  IFS=$'\037' read -r head oid dirty <<EOF
+$(git --no-optional-locks -C "$dir" status --porcelain=v2 --branch 2>/dev/null |
+    awk '/^# branch\.head /{h=$3} /^# branch\.oid /{o=$3} !/^#/{n++} END{if (h != "") printf "%s\037%s\037%d", h, o, n}')
+EOF
+  [ -z "$head" ] && head=$wtbranch
+  [ "$head" = "(detached)" ] && head="@${oid:0:7}"
+  if [ -n "$head" ]; then
+    mark=''
+    if [ -n "$wt" ]; then mark='↳ '; elif [ $nerd = 1 ]; then mark="$BRANCH "; fi
+    d=''; [ "${dirty:-0}" != 0 ] && d=" !$dirty"
+    add "$mark$head$d" "$F${YELLOW}m$mark$head$R${d:+ $F${CLAY}m!$dirty$R}"
+  fi
+fi
+
+# How full the car is: context used, as a ten-cell meter.
+if [ -n "$pct" ]; then
+  level "$pct"; meter "$pct" 10 "$L"
+  printf -v P '%3d' "$pct"
+  add "load $MP $P%" "$F${FAINT}mload$R $M $F${DIM}m$P%$R"
+fi
+
+# The fare so far, or, on a Pro or Max plan, the pass: the fuller usage limit once it's half used.
+if [ -n "$rlabel" ] && [ "$rpct" -ge 50 ] 2>/dev/null; then
+  level "$rpct"; meter "$rpct" 5 "$L"
+  printf -v P '%3d' "$rpct"
+  add "$rlabel $MP $P%" "$F${FAINT}m$rlabel$R $M $F${DIM}m$P%$R"
+elif [ -n "$cost" ]; then
+  add "\$$cost" "$F${DIM}m\$$cost$R"
+fi
+
+# Effort, when it's turned up.
+case $effort in
+  xhigh | max) add "≋ $effort" "$F${CLAY}m≋ $effort$R" ;;
+esac
+
+printf '%s\n' "$out"

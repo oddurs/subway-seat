@@ -1,25 +1,44 @@
 # Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
 [delta "subway-seat-enamel"]
-	dark = false
+	light = true
 	syntax-theme = Subway Seat Enamel
+	# changed lines: syntax colors on a tint; changed words on a stronger one
 	plus-style = syntax "#D7DBC1"
+	plus-non-emph-style = syntax "#D7DBC1"
 	plus-emph-style = syntax "#C2C79F"
 	minus-style = syntax "#EBD3D1"
+	minus-non-emph-style = syntax "#EBD3D1"
 	minus-emph-style = syntax "#DEB9B5"
-	map-styles = bold purple => syntax "#E0C4AC", bold cyan => syntax "#C6CBB5"
+	zero-style = syntax
+	whitespace-error-style = normal "#992418"
+	# git --color-moved: git's defaults and the git port's colors
+	map-styles = bold purple => syntax "#F3E5E3", bold "#AD4E00" => syntax "#F3E5E3", bold blue => syntax "#E3D6BD", bold "#3F6480" => syntax "#E3D6BD", bold cyan => syntax "#E7E9D9", bold "#3E7157" => syntax "#E7E9D9", bold yellow => syntax "#E3D6BD", bold "#936200" => syntax "#E3D6BD"
+	# line numbers (with line-numbers = true) in the color of their change
 	line-numbers-plus-style = "#66740F"
 	line-numbers-minus-style = "#BC4031"
-	line-numbers-zero-style = "#A58C6A"
-	line-numbers-left-style = "#BAA07A"
-	line-numbers-right-style = "#BAA07A"
-	file-style = "#936200" bold
+	line-numbers-zero-style = "#8C7254"
+	line-numbers-left-style = "#A58C6A"
+	line-numbers-right-style = "#A58C6A"
+	# file and hunk headers
+	file-style = "#2A1D13" bold
 	file-decoration-style = "#AD4E00" ul
 	hunk-header-style = file line-number syntax
-	hunk-header-decoration-style = "#BAA07A" box
-	hunk-header-line-number-style = "#AD4E00"
-	commit-decoration-style = "#AD4E00" box
-	blame-palette = "#F4E9D4 #EBDEC6 #D9C8A7"
-	merge-conflict-begin-symbol = ~
-	merge-conflict-end-symbol = ~
+	hunk-header-file-style = "#54402F"
+	hunk-header-line-number-style = "#3F6480"
+	hunk-header-decoration-style = "#3F6480" box
+	commit-decoration-style = "#936200" box
+	inline-hint-style = "#8C7254"
+	# git blame
+	blame-palette = "#F4E9D4 #EBDEC6 #E2D3B6"
+	blame-separator-style = "#A58C6A"
+	# git grep / rg --json
+	grep-file-style = "#AD4E00"
+	grep-line-number-style = "#66740F"
+	grep-match-line-style = syntax
+	grep-match-word-style = "#2A1D13" "#D7C094" bold
+	grep-header-file-style = "#AD4E00" bold
+	# merge conflicts (git's diff3 or zdiff3 conflict style)
 	merge-conflict-ours-diff-header-style = "#936200" bold
+	merge-conflict-ours-diff-header-decoration-style = "#936200" box
 	merge-conflict-theirs-diff-header-style = "#3E7157" bold
+	merge-conflict-theirs-diff-header-decoration-style = "#3E7157" box

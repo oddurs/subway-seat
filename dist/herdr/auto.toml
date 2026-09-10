@@ -1,10 +1,6 @@
+# >>> subway-seat >>>
 # Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
-[theme]
-name = "catppuccin"
-auto_switch = true
-dark_name = "catppuccin"
-light_name = "catppuccin-latte"
-
+# Walnut when the terminal is dark, Enamel when it's light (needs auto_switch under [theme])
 [theme.custom.dark]
 panel_bg = "#362619"
 sidebar_bg = "#2A1D13"
@@ -46,3 +42,4 @@ green = "#66740F"
 red = "#BC4031"
 blue = "#3F6480"
 teal = "#3E7157"
+# <<< subway-seat <<<

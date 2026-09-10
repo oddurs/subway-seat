@@ -1,0 +1,31 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# Subway Seat for matplotlib. Colors are hex without the leading #, as rc files expect.
+figure.facecolor: 362619
+figure.edgecolor: 362619
+savefig.facecolor: 362619
+savefig.edgecolor: 362619
+axes.facecolor: 362619
+axes.edgecolor: 7B6047
+axes.labelcolor: D9C6A3
+axes.titlecolor: F8ECD4
+axes.prop_cycle: cycler('color', ['EC7F31', '86AD95', 'F3BF45', '7F9BAE', 'F97160', 'ADB956', 'E0956C'])
+text.color: EDDCBC
+xtick.color: 967B5C
+ytick.color: 967B5C
+xtick.labelcolor: C4AE8C
+ytick.labelcolor: C4AE8C
+grid.color: 4C3C2D
+legend.facecolor: 43301F
+legend.edgecolor: 584532
+patch.facecolor: EC7F31
+patch.edgecolor: 362619
+hatch.color: C4AE8C
+boxplot.boxprops.color: D9C6A3
+boxplot.whiskerprops.color: D9C6A3
+boxplot.capprops.color: D9C6A3
+boxplot.flierprops.color: D9C6A3
+boxplot.flierprops.markeredgecolor: D9C6A3
+boxplot.medianprops.color: EC7F31
+boxplot.meanprops.color: F3BF45
+boxplot.meanprops.markerfacecolor: F3BF45
+boxplot.meanprops.markeredgecolor: F3BF45

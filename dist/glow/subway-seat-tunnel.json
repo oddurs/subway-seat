@@ -96,15 +96,15 @@
     "background_color": "#302115"
   },
   "code_block": {
-    "color": "#917759",
+    "color": "#E9D8B6",
     "margin": 2,
     "chroma": {
       "text": {
         "color": "#E9D8B6"
       },
       "error": {
-        "color": "#F6EAD1",
-        "background_color": "#E05C45"
+        "color": "#140D07",
+        "background_color": "#F97160"
       },
       "comment": {
         "color": "#917759",
@@ -204,7 +204,7 @@
     }
   },
   "table": {
-    "color": "#745B45",
+    "color": "#AA9171",
     "center_separator": "┼",
     "column_separator": "│",
     "row_separator": "─"

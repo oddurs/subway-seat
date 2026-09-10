@@ -1,12 +1,23 @@
 #!/bin/sh
 # Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
 # Adds the "Subway Seat" profile to GNOME Terminal. Safe to re-run: it updates the same profile.
+# `sh subway-seat.sh --uninstall` removes it again (dconf reset on the profile, then drops it from the list).
 set -eu
 
 command -v gsettings >/dev/null 2>&1 || { echo "gsettings not found; run this inside a GNOME session." >&2; exit 1; }
 
 UUID=d46b51fa-a141-55d6-be77-b4baff0d6608
 PROFILE="org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$UUID/"
+list=$(gsettings get org.gnome.Terminal.ProfilesList list)
+
+if [ "${1-}" = "--uninstall" ]; then
+  new=$(printf '%s' "$list" | sed "s/'$UUID'//; s/, ,/,/; s/\[, /[/; s/, \]/]/")
+  gsettings set org.gnome.Terminal.ProfilesList list "$new"
+  [ "$(gsettings get org.gnome.Terminal.ProfilesList default)" = "'$UUID'" ] && gsettings reset org.gnome.Terminal.ProfilesList default
+  dconf reset -f "/org/gnome/terminal/legacy/profiles:/:$UUID/"
+  echo "Removed the 'Subway Seat' profile."
+  exit 0
+fi
 
 gsettings set "$PROFILE" visible-name "'Subway Seat'"
 gsettings set "$PROFILE" use-theme-colors "false"
@@ -22,7 +33,6 @@ gsettings set "$PROFILE" highlight-background-color "'#634932'"
 gsettings set "$PROFILE" highlight-foreground-color "'#F8ECD4'"
 gsettings set "$PROFILE" palette "['#513B27', '#E05C45', '#ADB956', '#F3BF45', '#7F9BAE', '#EC7F31', '#86AD95', '#D9C6A3', '#967B5C', '#F97160', '#BFCB63', '#FFD36B', '#9DB6C6', '#FF9D55', '#A5C9B0', '#F8ECD4']"
 
-list=$(gsettings get org.gnome.Terminal.ProfilesList list)
 case "$list" in
   *"$UUID"*) ;;
   "@as []" | "[]") gsettings set org.gnome.Terminal.ProfilesList list "['$UUID']" ;;
@@ -31,3 +41,5 @@ esac
 
 echo "Added the 'Subway Seat' profile. To make it the default:"
 echo "  gsettings set org.gnome.Terminal.ProfilesList default '$UUID'"
+echo "To remove it later:"
+echo "  sh subway-seat.sh --uninstall"

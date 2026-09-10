@@ -42,6 +42,7 @@
     "background": "enamelBase",
     "backgroundPanel": "enamelMantle",
     "backgroundElement": "enamelCrust",
+    "backgroundMenu": "#FAF4EA",
     "border": "enamelSurface2",
     "borderActive": "enamelOverlay0",
     "borderSubtle": "enamelSurface1",

@@ -1,5 +1,5 @@
 /* Subway Seat — generated from palette.py by build.py. Edit the palette, not this file. */
-/* Subway Seat Enamel for Vimium — paste into Options → CSS for Vimium UI. */
+/* Subway Seat Enamel for Vimium: paste into Options › CSS for Vimium UI. */
 
 :root {
   --vimium-background-color: #F4E9D4;
@@ -52,21 +52,21 @@ body.vimium-find-mode ::selection {
 
 /* Vomnibar */
 #vomnibar {
-  background: #F4E9D4;
+  background: #FAF4EA;
   color: #3E2C1E;
-  border: 1px solid #CAB48E;
+  border: 1px solid #DFD8CD;
   border-radius: 8px;
   box-shadow: 0 12px 32px rgba(42, 29, 19, 0.2);
 }
 
 #vomnibar #vomnibar-search-area {
-  background: #F4E9D4;
-  border-bottom: 1px solid #CAB48E;
+  background: #FAF4EA;
+  border-bottom: 1px solid #DFD8CD;
 }
 
 #vomnibar input {
   color: #2A1D13;
-  background: #EBDEC6;
+  background: #F4E9D4;
   border: 1px solid #CAB48E;
   border-radius: 5px;
   box-shadow: none;
@@ -82,11 +82,11 @@ body.vimium-find-mode ::selection {
 }
 
 #vomnibar ul {
-  background: #F4E9D4;
+  background: #FAF4EA;
 }
 
 #vomnibar li {
-  border-bottom: 1px solid #EBDEC6;
+  border-bottom: 1px solid #DFD8CD;
 }
 
 #vomnibar li .source {
@@ -118,15 +118,15 @@ body.vimium-find-mode ::selection {
 
 /* Find HUD */
 #hud-container {
-  background-color: #EBDEC6;
+  background-color: #FAF4EA;
   color: #3E2C1E;
-  border: 1px solid #CAB48E;
+  border: 1px solid #DFD8CD;
   box-shadow: none;
 }
 
 #hud-container #search-area,
 #hud-container #hud {
-  background-color: #EBDEC6;
+  background-color: #FAF4EA;
   color: #3E2C1E;
 }
 

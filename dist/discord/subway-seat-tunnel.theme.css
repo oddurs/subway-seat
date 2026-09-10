@@ -77,8 +77,8 @@
   --background-surface-higher: #2A1C12 !important;
   --background-surface-highest: #302115 !important;
   --background-gradient-highest: #24180E;
-  --bg-surface-raised: #1B120A;
-  --bg-surface-overlay: #1B120A;
+  --bg-surface-raised: #302115;
+  --bg-surface-overlay: #302115;
   --bg-base-primary: #24180E;
   --bg-base-secondary: #1B120A;
   --bg-base-tertiary: #140D07;
@@ -91,8 +91,8 @@
   --background-secondary: #1B120A;
   --background-secondary-alt: #181008 !important;
   --background-tertiary: #140D07;
-  --background-floating: #1B120A;
-  --background-nested-floating: #1B120A;
+  --background-floating: #302115;
+  --background-nested-floating: #302115;
   --background-accent: #3D2C1D !important;
   --background-message-hover: rgba(20, 13, 7, 0.3);
   --message-background-hover: rgba(20, 13, 7, 0.3) !important;
@@ -188,10 +188,27 @@
   --control-connected-background-default: #ADB956;
   --control-connected-background-hover: #969F4A;
   --control-connected-background-active: #878E42;
+  --control-connected-border-default: #ADB956;
+  --control-connected-border-hover: #969F4A;
+  --control-connected-border-active: #878E42;
+  --control-critical-secondary-background-default: transparent;
+  --control-critical-secondary-background-hover: #F97160;
+  --control-critical-secondary-background-active: #E05C45;
+  --control-critical-secondary-border-default: #F97160;
+  --control-critical-secondary-border-hover: #F97160;
+  --control-critical-secondary-border-active: #E05C45;
+  --control-critical-secondary-text-default: #F97160;
+  --control-critical-secondary-text-hover: #140D07;
+  --control-critical-secondary-text-active: #140D07;
+  --control-critical-secondary-icon-default: #F97160;
+  --control-critical-secondary-icon-hover: #140D07;
+  --control-critical-secondary-icon-active: #140D07;
   --button-secondary-background: #3D2C1D;
   --button-secondary-background-hover: #4F3927;
   --button-outline-primary-text: #E9D8B6;
   --button-outline-brand-text: #E9D8B6;
+  --button-outline-brand-background-hover: #D0702B;
+  --button-outline-brand-border-active: #D0702B;
   --button-danger-background: #F97160;
   --button-positive-background: #ADB956;
   --mention-foreground: #EC7F31;
@@ -209,7 +226,10 @@
   --message-automod-background-hover: rgba(224, 149, 108, 0.1);
   --background-code: #1B120A;
   --spoiler-hidden-background: #4F3927;
+  --spoiler-hidden-background-hover: #745B45;
   --spoiler-revealed-background: #302115;
+  --spine-default: #4F3927;
+  --thread-channel-spine: #4F3927;
   --status-positive: #ADB956;
   --status-positive-background: #ADB956;
   --status-positive-text: #140D07;
@@ -224,6 +244,7 @@
   --background-feedback-critical: rgba(249, 113, 96, 0.14);
   --background-feedback-info: rgba(127, 155, 174, 0.14);
   --background-feedback-notification: #F97160;
+  --icon-feedback-notification: #F97160;
   --badge-notification-background: #F97160;
   --badge-text-brand: #140D07;
   --icon-feedback-positive: #ADB956;
@@ -273,7 +294,47 @@
   --guild-boosting-pink: #E0956C;
   --guild-boosting-purple: #E0956C;
   --guild-boosting-blue: #7F9BAE;
+  --premium-tier-0-blue: #7F9BAE;
+  --premium-tier-0-blue-for-gradients: #7F9BAE;
+  --premium-tier-0-blue-for-gradients-2: #9DB6C6;
+  --premium-tier-0-purple: #E0956C;
+  --premium-tier-0-purple-for-gradients: #E0956C;
+  --premium-tier-1-blue: #7F9BAE;
+  --premium-tier-1-blue-for-gradients: #7F9BAE;
+  --premium-tier-1-dark-blue-for-gradients: #7F9BAE;
+  --premium-tier-1-purple: #E0956C;
+  --premium-tier-2-pink: #FF9D55;
+  --premium-tier-2-pink-for-gradients: #FF9D55;
+  --premium-tier-2-pink-for-gradients-2: #EC7F31;
+  --premium-tier-2-purple: #E0956C;
+  --premium-tier-2-purple-for-gradients: #E0956C;
+  --premium-tier-2-purple-for-gradients-2: #EC7F31;
   --spotify: #ADB956;
+  --text-code: #E9D8B6;
+  --text-code-comment: #917759;
+  --text-code-keyword: #EC7F31;
+  --text-code-operator: #AA9171;
+  --text-code-title: #F3BF45;
+  --text-code-builtin: #F3BF45;
+  --text-code-string: #ADB956;
+  --text-code-escape: #E0956C;
+  --text-code-regexp: #E0956C;
+  --text-code-number: #F97160;
+  --text-code-type: #86AD95;
+  --text-code-variable: #E9D8B6;
+  --text-code-property: #D6C3A0;
+  --text-code-attribute: #F3BF45;
+  --text-code-namespace: #C0AA88;
+  --text-code-tag: #EC7F31;
+  --text-code-decorator: #E0956C;
+  --text-code-section: #F3BF45;
+  --text-code-bullet: #EC7F31;
+  --text-code-link: #7F9BAE;
+  --text-code-error: #E05C45;
+  --text-code-addition: #ADB956;
+  --text-code-deletion: #F97160;
+  --background-code-addition: #363318;
+  --background-code-deletion: #492217;
 }
 
 .visual-refresh.theme-dark .hljs,
@@ -382,12 +443,23 @@
 .visual-refresh.theme-dark .hljs-addition,
 .visual-refresh .theme-dark .hljs-addition {
   color: #ADB956;
-  background-color: rgba(173, 185, 86, 0.12);
+  background-color: #363318;
 }
 .visual-refresh.theme-dark .hljs-deletion,
 .visual-refresh .theme-dark .hljs-deletion {
   color: #F97160;
-  background-color: rgba(224, 92, 69, 0.14);
+  background-color: #492217;
+}
+.visual-refresh.theme-dark .hljs:has(> .hljs-addition, > .hljs-deletion) > .hljs-meta,
+.visual-refresh .theme-dark .hljs:has(> .hljs-addition, > .hljs-deletion) > .hljs-meta {
+  color: #7F9BAE;
+  font-style: normal;
+}
+.visual-refresh.theme-dark .hljs:has(> .hljs-addition, > .hljs-deletion) > .hljs-comment,
+.visual-refresh .theme-dark .hljs:has(> .hljs-addition, > .hljs-deletion) > .hljs-comment {
+  color: #F6EAD1;
+  font-style: normal;
+  font-weight: bold;
 }
 
 /* Subway Seat Enamel — Discord's light mode */
@@ -459,8 +531,8 @@
   --background-surface-higher: #F4E9D4 !important;
   --background-surface-highest: #F4E9D4 !important;
   --background-gradient-highest: #F4E9D4;
-  --bg-surface-raised: #F4E9D4;
-  --bg-surface-overlay: #F4E9D4;
+  --bg-surface-raised: #FAF4EA;
+  --bg-surface-overlay: #FAF4EA;
   --bg-base-primary: #F4E9D4;
   --bg-base-secondary: #EBDEC6;
   --bg-base-tertiary: #E2D3B6;
@@ -473,8 +545,8 @@
   --background-secondary: #EBDEC6;
   --background-secondary-alt: #E6D8BE !important;
   --background-tertiary: #E2D3B6;
-  --background-floating: #F4E9D4;
-  --background-nested-floating: #F4E9D4;
+  --background-floating: #FAF4EA;
+  --background-nested-floating: #FAF4EA;
   --background-accent: #CAB48E !important;
   --background-message-hover: rgba(217, 200, 167, 0.45);
   --message-background-hover: rgba(217, 200, 167, 0.45) !important;
@@ -570,10 +642,27 @@
   --control-connected-background-default: #66740F;
   --control-connected-background-hover: #798228;
   --control-connected-background-active: #858C39;
+  --control-connected-border-default: #66740F;
+  --control-connected-border-hover: #798228;
+  --control-connected-border-active: #858C39;
+  --control-critical-secondary-background-default: transparent;
+  --control-critical-secondary-background-hover: #992418;
+  --control-critical-secondary-background-active: #992418;
+  --control-critical-secondary-border-default: #992418;
+  --control-critical-secondary-border-hover: #992418;
+  --control-critical-secondary-border-active: #992418;
+  --control-critical-secondary-text-default: #992418;
+  --control-critical-secondary-text-hover: #F4E9D4;
+  --control-critical-secondary-text-active: #F4E9D4;
+  --control-critical-secondary-icon-default: #992418;
+  --control-critical-secondary-icon-hover: #F4E9D4;
+  --control-critical-secondary-icon-active: #F4E9D4;
   --button-secondary-background: #D9C8A7;
   --button-secondary-background-hover: #CAB48E;
   --button-outline-primary-text: #3E2C1E;
   --button-outline-brand-text: #3E2C1E;
+  --button-outline-brand-background-hover: #984500;
+  --button-outline-brand-border-active: #984500;
   --button-danger-background: #992418;
   --button-positive-background: #66740F;
   --mention-foreground: #AD4E00;
@@ -591,7 +680,10 @@
   --message-automod-background-hover: rgba(166, 86, 51, 0.1);
   --background-code: #E2D3B6;
   --spoiler-hidden-background: #BAA07A;
+  --spoiler-hidden-background-hover: #A58C6A;
   --spoiler-revealed-background: #D9C8A7;
+  --spine-default: #CAB48E;
+  --thread-channel-spine: #CAB48E;
   --status-positive: #66740F;
   --status-positive-background: #66740F;
   --status-positive-text: #F4E9D4;
@@ -606,6 +698,7 @@
   --background-feedback-critical: rgba(153, 36, 24, 0.14);
   --background-feedback-info: rgba(63, 100, 128, 0.14);
   --background-feedback-notification: #992418;
+  --icon-feedback-notification: #992418;
   --badge-notification-background: #992418;
   --badge-text-brand: #F4E9D4;
   --icon-feedback-positive: #66740F;
@@ -655,7 +748,47 @@
   --guild-boosting-pink: #A65633;
   --guild-boosting-purple: #A65633;
   --guild-boosting-blue: #3F6480;
+  --premium-tier-0-blue: #3F6480;
+  --premium-tier-0-blue-for-gradients: #3F6480;
+  --premium-tier-0-blue-for-gradients-2: #517791;
+  --premium-tier-0-purple: #A65633;
+  --premium-tier-0-purple-for-gradients: #A65633;
+  --premium-tier-1-blue: #3F6480;
+  --premium-tier-1-blue-for-gradients: #3F6480;
+  --premium-tier-1-dark-blue-for-gradients: #3F6480;
+  --premium-tier-1-purple: #A65633;
+  --premium-tier-2-pink: #C4561A;
+  --premium-tier-2-pink-for-gradients: #C4561A;
+  --premium-tier-2-pink-for-gradients-2: #AD4E00;
+  --premium-tier-2-purple: #A65633;
+  --premium-tier-2-purple-for-gradients: #A65633;
+  --premium-tier-2-purple-for-gradients-2: #AD4E00;
   --spotify: #66740F;
+  --text-code: #3E2C1E;
+  --text-code-comment: #8C7254;
+  --text-code-keyword: #AD4E00;
+  --text-code-operator: #735C44;
+  --text-code-title: #936200;
+  --text-code-builtin: #936200;
+  --text-code-string: #66740F;
+  --text-code-escape: #A65633;
+  --text-code-regexp: #A65633;
+  --text-code-number: #BC4031;
+  --text-code-type: #3E7157;
+  --text-code-variable: #3E2C1E;
+  --text-code-property: #54402F;
+  --text-code-attribute: #936200;
+  --text-code-namespace: #654F3B;
+  --text-code-tag: #AD4E00;
+  --text-code-decorator: #A65633;
+  --text-code-section: #936200;
+  --text-code-bullet: #AD4E00;
+  --text-code-link: #3F6480;
+  --text-code-error: #992418;
+  --text-code-addition: #66740F;
+  --text-code-deletion: #BC4031;
+  --background-code-addition: #D7DBC1;
+  --background-code-deletion: #EBD3D1;
 }
 
 .visual-refresh.theme-light .hljs,
@@ -764,12 +897,23 @@
 .visual-refresh.theme-light .hljs-addition,
 .visual-refresh .theme-light .hljs-addition {
   color: #66740F;
-  background-color: rgba(102, 116, 15, 0.12);
+  background-color: #D7DBC1;
 }
 .visual-refresh.theme-light .hljs-deletion,
 .visual-refresh .theme-light .hljs-deletion {
   color: #BC4031;
-  background-color: rgba(153, 36, 24, 0.14);
+  background-color: #EBD3D1;
+}
+.visual-refresh.theme-light .hljs:has(> .hljs-addition, > .hljs-deletion) > .hljs-meta,
+.visual-refresh .theme-light .hljs:has(> .hljs-addition, > .hljs-deletion) > .hljs-meta {
+  color: #3F6480;
+  font-style: normal;
+}
+.visual-refresh.theme-light .hljs:has(> .hljs-addition, > .hljs-deletion) > .hljs-comment,
+.visual-refresh .theme-light .hljs:has(> .hljs-addition, > .hljs-deletion) > .hljs-comment {
+  color: #2A1D13;
+  font-style: normal;
+  font-weight: bold;
 }
 
 ::selection {

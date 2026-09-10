@@ -8,28 +8,34 @@ A .gpl palette per flavor, laid out as two rows of 13: the grounds and text, the
 
 | Flavor | File | Where it goes |
 |---|---|---|
-| Subway Seat | [`Subway Seat.gpl`](Subway%20Seat.gpl) | `~/.config/GIMP/3.0/palettes/Subway Seat.gpl` |
-| Subway Seat Tunnel | [`Subway Seat Tunnel.gpl`](Subway%20Seat%20Tunnel.gpl) | `~/.config/GIMP/3.0/palettes/Subway Seat Tunnel.gpl` |
-| Subway Seat Enamel | [`Subway Seat Enamel.gpl`](Subway%20Seat%20Enamel.gpl) | `~/.config/GIMP/3.0/palettes/Subway Seat Enamel.gpl` |
+| Subway Seat | [`Subway Seat.gpl`](Subway%20Seat.gpl) | `~/.config/GIMP/3.0/palettes/Subway Seat.gpl`; GIMP's palettes folder on Linux. On macOS: ~/Library/Application Support/GIMP/3.0/palettes; on Windows: %APPDATA%\GIMP\3.0\palettes. Inkscape: ~/.config/inkscape/palettes (Linux), ~/Library/Application Support/org.inkscape.Inkscape/config/inkscape/palettes (macOS), %APPDATA%\inkscape\palettes (Windows). |
+| Subway Seat Tunnel | [`Subway Seat Tunnel.gpl`](Subway%20Seat%20Tunnel.gpl) | `~/.config/GIMP/3.0/palettes/Subway Seat Tunnel.gpl`; GIMP's palettes folder on Linux. On macOS: ~/Library/Application Support/GIMP/3.0/palettes; on Windows: %APPDATA%\GIMP\3.0\palettes. Inkscape: ~/.config/inkscape/palettes (Linux), ~/Library/Application Support/org.inkscape.Inkscape/config/inkscape/palettes (macOS), %APPDATA%\inkscape\palettes (Windows). |
+| Subway Seat Enamel | [`Subway Seat Enamel.gpl`](Subway%20Seat%20Enamel.gpl) | `~/.config/GIMP/3.0/palettes/Subway Seat Enamel.gpl`; GIMP's palettes folder on Linux. On macOS: ~/Library/Application Support/GIMP/3.0/palettes; on Windows: %APPDATA%\GIMP\3.0\palettes. Inkscape: ~/.config/inkscape/palettes (Linux), ~/Library/Application Support/org.inkscape.Inkscape/config/inkscape/palettes (macOS), %APPDATA%\inkscape\palettes (Windows). |
 
 ## Turn it on
 
-**Subway Seat**, in GIMP: Palettes ▸ Import Palette. Krita: Settings ▸ Manage Resources ▸ Import. Inkscape (Linux path shown)::
+**Subway Seat**, in GIMP, Inkscape or Krita:
 
-```sh
-cp "Subway Seat.gpl" ~/.config/inkscape/palettes/
+```text
+GIMP: copy Subway Seat.gpl to its palettes folder, or Palettes panel menu › Import Palette…
+Krita: Settings › Manage Resources… › Import Resources › Subway Seat.gpl
+Inkscape: copy Subway Seat.gpl to its palettes folder, then restart Inkscape
 ```
 
-**Subway Seat Tunnel**, in GIMP: Palettes ▸ Import Palette. Krita: Settings ▸ Manage Resources ▸ Import. Inkscape (Linux path shown)::
+**Subway Seat Tunnel**, in GIMP, Inkscape or Krita:
 
-```sh
-cp "Subway Seat Tunnel.gpl" ~/.config/inkscape/palettes/
+```text
+GIMP: copy Subway Seat Tunnel.gpl to its palettes folder, or Palettes panel menu › Import Palette…
+Krita: Settings › Manage Resources… › Import Resources › Subway Seat Tunnel.gpl
+Inkscape: copy Subway Seat Tunnel.gpl to its palettes folder, then restart Inkscape
 ```
 
-**Subway Seat Enamel**, in GIMP: Palettes ▸ Import Palette. Krita: Settings ▸ Manage Resources ▸ Import. Inkscape (Linux path shown)::
+**Subway Seat Enamel**, in GIMP, Inkscape or Krita:
 
-```sh
-cp "Subway Seat Enamel.gpl" ~/.config/inkscape/palettes/
+```text
+GIMP: copy Subway Seat Enamel.gpl to its palettes folder, or Palettes panel menu › Import Palette…
+Krita: Settings › Manage Resources… › Import Resources › Subway Seat Enamel.gpl
+Inkscape: copy Subway Seat Enamel.gpl to its palettes folder, then restart Inkscape
 ```
 
 ## Uninstall

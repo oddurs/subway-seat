@@ -35,13 +35,14 @@
     "tint_del": "#EBD3D1",
     "tint_del_emph": "#DEB9B5",
     "tint_del_dim": "#F3E5E3",
-    "tint_chg": "#E9E0CC",
+    "tint_chg": "#E3D6BD",
     "tint_chg_emph": "#DCCDAD",
     "tint_info": "#DBD6C8",
     "tint_hint": "#DBD8C2",
     "tint_search": "#D7C094",
     "tint_search_cur": "#D09C6A",
-    "inactive_selection": "#DDCCAE"
+    "inactive_selection": "#DDCCAE",
+    "paper": "#FAF4EA"
   },
   "globals": {
     "background": "var(base)",
@@ -55,8 +56,8 @@
     "fold_marker": "var(overlay1)",
     "minimap_border": "var(surface2)",
     "accent": "var(orange)",
-    "popup_css": "html { background-color: #EBDEC6; color: #3E2C1E; } a { color: #3F6480; } code, .highlight { background-color: #D9C8A7; color: #66740F; } h1, h2, h3 { color: #936200; } .error, .errors { color: #BC4031; } .warning, .warnings { color: #936200; } .info { color: #3F6480; } .hint { color: #3E7157; }",
-    "phantom_css": "html { background-color: #EBDEC6; color: #3E2C1E; } a { color: #3F6480; } code, .highlight { background-color: #D9C8A7; color: #66740F; } h1, h2, h3 { color: #936200; } .error, .errors { color: #BC4031; } .warning, .warnings { color: #936200; } .info { color: #3F6480; } .hint { color: #3E7157; }",
+    "popup_css": "html { background-color: #FAF4EA; color: #3E2C1E; } a { color: #3F6480; } code, .highlight { background-color: #F4E9D4; color: #66740F; } h1, h2, h3 { color: #936200; } .error, .errors { color: #BC4031; } .warning, .warnings { color: #936200; } .info { color: #3F6480; } .hint { color: #3E7157; }",
+    "phantom_css": "html { background-color: #FAF4EA; color: #3E2C1E; } a { color: #3F6480; } code, .highlight { background-color: #F4E9D4; color: #66740F; } h1, h2, h3 { color: #936200; } .error, .errors { color: #BC4031; } .warning, .warnings { color: #936200; } .info { color: #3F6480; } .hint { color: #3E7157; }",
     "gutter": "var(base)",
     "gutter_foreground": "var(overlay0)",
     "gutter_foreground_highlight": "var(orange)",
@@ -82,7 +83,7 @@
     "active_guide": "var(surface2)",
     "stack_guide": "var(surface1)",
     "brackets_options": "foreground bold",
-    "brackets_foreground": "var(yellow_hi)",
+    "brackets_foreground": "var(orange)",
     "bracket_contents_options": "underline",
     "bracket_contents_foreground": "var(surface2)",
     "tags_options": "stippled_underline",
@@ -249,6 +250,53 @@
     {
       "scope": "markup.strikethrough",
       "foreground": "var(overlay1)"
+    },
+    {
+      "scope": "entity.name.constant, constant.other.symbol",
+      "foreground": "var(red_hi)"
+    },
+    {
+      "scope": "entity.name.trait, entity.name.impl, entity.name.union, entity.name.type.trait",
+      "foreground": "var(sage)"
+    },
+    {
+      "scope": "entity.name.scope-resolution, entity.name.type.namespace",
+      "foreground": "var(subtext0)"
+    },
+    {
+      "scope": "support.variable.magic.python, variable.language.special",
+      "foreground": "var(red_hi)",
+      "font_style": "italic"
+    },
+    {
+      "scope": "keyword.operator.word",
+      "foreground": "var(orange)"
+    },
+    {
+      "scope": "constant.other.character-class.regexp, constant.character.character-class.regexp",
+      "foreground": "var(clay)"
+    },
+    {
+      "scope": "constant.character.entity, punctuation.definition.entity",
+      "foreground": "var(clay)"
+    },
+    {
+      "scope": "constant.other.reference.link.markdown, string.other.link.title.markdown",
+      "foreground": "var(denim)"
+    },
+    {
+      "scope": "entity.name.function.macro, entity.name.macro, support.macro, support.function.macro, meta.attribute.rust, punctuation.definition.attribute.rust",
+      "foreground": "var(clay)",
+      "font_style": "italic"
+    },
+    {
+      "scope": "meta.diff.header.from-file, meta.diff.header.to-file, meta.diff.index",
+      "foreground": "var(text_hi)",
+      "font_style": "bold"
+    },
+    {
+      "scope": "meta.mapping.key string, meta.mapping.key.json string.quoted.double.json",
+      "foreground": "var(yellow)"
     },
     {
       "scope": "diff.inserted",

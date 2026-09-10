@@ -1,8 +1,8 @@
 # Subway Seat for gitui
 
-Orange titles on the focused panel, avocado and red diff lines, gold commit hashes. Syntax highlighting uses the tmTheme that sits next to it (gitui 0.28+).
+Orange titles on the focused panel, avocado added and redbird removed lines that keep their color when selected, gold commit hashes. The file viewer's syntax colors come from the tmTheme next to it.
 
-[gitui](https://github.com/gitui-org/gitui) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/gitui/)
+[gitui](https://github.com/gitui-org/gitui) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/gitui/) · Needs gitui 0.28+
 
 ## Files
 

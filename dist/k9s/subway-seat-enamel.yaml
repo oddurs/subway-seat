@@ -60,7 +60,7 @@ k9s:
       fgColor: '#3E2C1E'
       bgColor: '#F4E9D4'
       cursorFgColor: '#2A1D13'
-      cursorBgColor: '#CAB48E'
+      cursorBgColor: '#D9C8A7'
       markColor: '#C4561A'
       header:
         fgColor: '#654F3B'
@@ -70,7 +70,7 @@ k9s:
     xray:
       fgColor: '#3E2C1E'
       bgColor: '#F4E9D4'
-      cursorColor: '#CAB48E'
+      cursorColor: '#D9C8A7'
       cursorTextColor: '#2A1D13'
       graphicColor: '#3E7157'
     charts:

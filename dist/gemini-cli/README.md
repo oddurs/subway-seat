@@ -1,6 +1,6 @@
 # Subway Seat for Gemini CLI
 
-A custom theme file per flavor, plus the same theme as a `ui.customThemes` settings block. Gemini ties string color to its warning color, so strings are harvest gold here instead of avocado.
+A custom theme file per flavor, the same theme as a `ui.customThemes` settings block, and an extension with all three (`gemini extensions install <folder>`; they show up in /theme as “Subway Seat (subway-seat)”). Gemini ties string color to its warning color, so strings are harvest gold here instead of avocado.
 
 [Gemini CLI](https://github.com/google-gemini/gemini-cli) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/gemini-cli/)
 
@@ -9,11 +9,12 @@ A custom theme file per flavor, plus the same theme as a `ui.customThemes` setti
 | Flavor | File | Where it goes |
 |---|---|---|
 | Subway Seat | [`subway-seat.json`](subway-seat.json) | `~/.gemini/themes/subway-seat.json` |
-| Subway Seat | [`settings/subway-seat.json`](settings/subway-seat.json) | `merged into ~/.gemini/settings.json` |
+| Subway Seat | [`settings/subway-seat.json`](settings/subway-seat.json) | merge into ~/.gemini/settings.json |
 | Subway Seat Tunnel | [`subway-seat-tunnel.json`](subway-seat-tunnel.json) | `~/.gemini/themes/subway-seat-tunnel.json` |
-| Subway Seat Tunnel | [`settings/subway-seat-tunnel.json`](settings/subway-seat-tunnel.json) | `merged into ~/.gemini/settings.json` |
+| Subway Seat Tunnel | [`settings/subway-seat-tunnel.json`](settings/subway-seat-tunnel.json) | merge into ~/.gemini/settings.json |
 | Subway Seat Enamel | [`subway-seat-enamel.json`](subway-seat-enamel.json) | `~/.gemini/themes/subway-seat-enamel.json` |
-| Subway Seat Enamel | [`settings/subway-seat-enamel.json`](settings/subway-seat-enamel.json) | `merged into ~/.gemini/settings.json` |
+| Subway Seat Enamel | [`settings/subway-seat-enamel.json`](settings/subway-seat-enamel.json) | merge into ~/.gemini/settings.json |
+| All three | [`extension/gemini-extension.json`](extension/gemini-extension.json) | gemini extensions install ./extension (from this folder), then pick a flavor with /theme |
 
 ## Turn it on
 
@@ -44,7 +45,6 @@ A custom theme file per flavor, plus the same theme as a `ui.customThemes` setti
 ## Uninstall
 
 - Delete `~/.gemini/themes/subway-seat.json`.
-- Delete `merged into ~/.gemini/settings.json`.
 - Delete `~/.gemini/themes/subway-seat-tunnel.json`.
 - Delete `~/.gemini/themes/subway-seat-enamel.json`.
 - Remove the line you added to turn it on.

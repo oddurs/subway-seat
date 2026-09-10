@@ -1,18 +1,15 @@
 {
-  "theme": "custom:subway-seat-enamel",
+  "theme": "custom:subway-seat:subway-seat-enamel",
   "statusLine": {
     "type": "command",
-    "command": "~/.claude/subway-seat/subway-seat-statusline",
-    "padding": 1
-  },
-  "subagentStatusLine": {
-    "type": "command",
-    "command": "~/.claude/subway-seat/subway-seat-subagents"
+    "command": "${CLAUDE_PLUGIN_DATA}/subway-seat-statusline",
+    "padding": 0,
+    "hideVimModeIndicator": true
   },
   "spinnerVerbs": {
     "mode": "replace",
     "verbs": [
-      "Standing clear",
+      "Reading the Vignelli map",
       "Riding the local",
       "Running express",
       "Transferring",
@@ -32,20 +29,20 @@
       "Adjusting the rabbit ears",
       "Watering the spider plant",
       "Percolating",
-      "Mellowing out",
+      "Taking the A train",
       "Keeping it groovy",
       "Easing on down the road",
       "Digging it",
       "Grooving",
-      "Kicking back",
-      "Taking it easy",
+      "Punching a transfer",
+      "Checking the strip map",
       "Spinning the lazy Susan",
       "Knotting the macram\u00e9",
       "Lava-lamping"
     ]
   },
   "spinnerTipsOverride": {
-    "tipsFile": "~/.claude/subway-seat/tips.json",
+    "tipsFile": "${CLAUDE_PLUGIN_DATA}/tips.json",
     "label": "Next stop"
   }
 }

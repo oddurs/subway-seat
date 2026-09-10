@@ -6,7 +6,7 @@
     selection_bg: Some("#513B27"),
     selection_fg: Some("#F8ECD4"),
     cmdbar_bg: Some("#2A1D13"),
-    disabled_fg: Some("#7B6047"),
+    disabled_fg: Some("#967B5C"),
     diff_line_add: Some("#ADB956"),
     diff_line_delete: Some("#F97160"),
     diff_file_added: Some("#ADB956"),
@@ -23,4 +23,5 @@
     branch_fg: Some("#ADB956"),
     block_title_focused: Some("#EC7F31"),
     syntax: Some("subway-seat"),
+    use_selection_fg: Some(false),
 )

@@ -1,0 +1,26 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# Subway Seat Tunnel for television.
+# general
+background = '#24180E'
+border_fg = '#4F3927'
+text_fg = '#E9D8B6'
+dimmed_text_fg = '#917759'
+# input
+input_text_fg = '#E9D8B6'
+result_count_fg = '#917759'
+# results
+result_name_fg = '#D6C3A0'
+result_line_number_fg = '#917759'
+result_value_fg = '#E9D8B6'
+selection_bg = '#302115'
+selection_fg = '#F6EAD1'
+match_fg = '#F3BF45'
+# preview
+preview_title_fg = '#D6C3A0'
+# modes
+channel_mode_fg = '#140D07'
+channel_mode_bg = '#EC7F31'
+remote_control_mode_fg = '#140D07'
+remote_control_mode_bg = '#F3BF45'
+action_picker_mode_fg = '#140D07'
+action_picker_mode_bg = '#86AD95'

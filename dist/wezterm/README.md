@@ -1,6 +1,6 @@
 # Subway Seat for WezTerm
 
-Colors, cursor, selection, splits, copy mode, quick select and the tab bar. The tab bar colors apply to the retro tab bar (`use_fancy_tab_bar = false`); the fancy one takes its frame from `window_frame`.
+Colors, cursor, selection, splits, copy mode, quick select and the tab bar. On Windows the folder is `%USERPROFILE%\.config\wezterm\colors`.
 
 [WezTerm](https://wezterm.org) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/wezterm/)
 
@@ -18,18 +18,39 @@ Colors, cursor, selection, splits, copy mode, quick select and the tab bar. The 
 
 ```lua
 config.color_scheme = 'Subway Seat'
+-- the fancy tab bar's strip comes from window_frame, which a scheme file can't set
+local colors = wezterm.color.load_scheme(wezterm.home_dir .. '/.config/wezterm/colors/subway-seat.toml')
+config.window_frame = { active_titlebar_bg = colors.tab_bar.background, inactive_titlebar_bg = colors.tab_bar.background }
 ```
 
 **Subway Seat Tunnel**, in ~/.config/wezterm/wezterm.lua:
 
 ```lua
 config.color_scheme = 'Subway Seat Tunnel'
+-- the fancy tab bar's strip comes from window_frame, which a scheme file can't set
+local colors = wezterm.color.load_scheme(wezterm.home_dir .. '/.config/wezterm/colors/subway-seat-tunnel.toml')
+config.window_frame = { active_titlebar_bg = colors.tab_bar.background, inactive_titlebar_bg = colors.tab_bar.background }
 ```
 
 **Subway Seat Enamel**, in ~/.config/wezterm/wezterm.lua:
 
 ```lua
 config.color_scheme = 'Subway Seat Enamel'
+-- the fancy tab bar's strip comes from window_frame, which a scheme file can't set
+local colors = wezterm.color.load_scheme(wezterm.home_dir .. '/.config/wezterm/colors/subway-seat-enamel.toml')
+config.window_frame = { active_titlebar_bg = colors.tab_bar.background, inactive_titlebar_bg = colors.tab_bar.background }
+```
+
+## Follow light and dark
+
+In ~/.config/wezterm/wezterm.lua (WezTerm reloads it when the appearance changes):
+
+```lua
+local dark = not wezterm.gui or wezterm.gui.get_appearance():find('Dark')
+local slug = dark and 'subway-seat' or 'subway-seat-enamel'
+local colors, meta = wezterm.color.load_scheme(wezterm.home_dir .. '/.config/wezterm/colors/' .. slug .. '.toml')
+config.color_scheme = meta.name
+config.window_frame = { active_titlebar_bg = colors.tab_bar.background, inactive_titlebar_bg = colors.tab_bar.background }
 ```
 
 ## Uninstall

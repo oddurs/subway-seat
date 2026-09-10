@@ -1,8 +1,8 @@
 # Subway Seat for Alacritty
 
-Normal, bright and dim colors, both cursors, selection, search, hints, footer bar and line indicator. `general.import` needs Alacritty 0.14 or later; older versions use a top-level `import`.
+Normal, bright and dim colors, both cursors, selection, search, hints, footer bar and line indicator. If your alacritty.toml already has a `[general]` table, add the `import` line to it; a second `[general]` is a TOML error. Alacritty doesn't follow the system light/dark setting, so pick one flavor.
 
-[Alacritty](https://alacritty.org) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/alacritty/)
+[Alacritty](https://alacritty.org) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/alacritty/) · Needs Alacritty 0.14+
 
 ## Files
 

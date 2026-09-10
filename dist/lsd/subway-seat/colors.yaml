@@ -1,0 +1,45 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# Subway Seat for lsd. File names follow LS_COLORS (see the vivid port).
+user: "#F3BF45"
+group: "#D9C6A3"
+permission:
+  read: "#F3BF45"
+  write: "#EC7F31"
+  exec: "#ADB956"
+  exec-sticky: "#E0956C"
+  no-access: "#7B6047"
+  octal: "#E0956C"
+  acl: "#967B5C"
+  context: "#967B5C"
+attributes:
+  archive: "#C4AE8C"
+  read: "#F3BF45"
+  hidden: "#967B5C"
+  system: "#E0956C"
+date:
+  hour-old: "#ADB956"
+  day-old: "#D9C6A3"
+  older: "#C4AE8C"
+size:
+  none: "#967B5C"
+  small: "#ADB956"
+  medium: "#F3BF45"
+  large: "#EC7F31"
+inode:
+  valid: "#967B5C"
+  invalid: "#7B6047"
+links:
+  valid: "#86AD95"
+  invalid: "#7B6047"
+tree-edge: "#7B6047"
+git-status:
+  default: "#C4AE8C"
+  unmodified: "#967B5C"
+  ignored: "#7B6047"
+  new-in-index: "#ADB956"
+  new-in-workdir: "#ADB956"
+  typechange: "#E0956C"
+  deleted: "#F97160"
+  renamed: "#86AD95"
+  modified: "#F3BF45"
+  conflicted: "#E05C45"

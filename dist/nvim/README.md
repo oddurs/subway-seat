@@ -1,50 +1,78 @@
 # Subway Seat for Neovim
 
-A plugin, not a single file: `setup({ flavor, transparent, italics, overrides })`, `colorscheme subway-seat` follows `background` (light → Enamel), lualine themes, and highlight groups for ~40 popular plugins. Install it with lazy.nvim: `{ "oddurs/subway-seat.nvim", lazy = false, priority = 1000 }`.
+A plugin: `setup({ background, transparent, italics, overrides })`, flavors that follow `background` (flip it and Walnut becomes Enamel and back), lualine themes, and groups for Tree-sitter, LSP and about 70 plugins (mini, snacks, blink.cmp, telescope, gitsigns, diffview, neogit and more). Install with lazy.nvim: `{ "oddurs/subway-seat", lazy = false, priority = 1000, config = function(p) vim.opt.rtp:append(p.dir .. "/dist/nvim"); vim.cmd.colorscheme("subway-seat") end }`, or vim-plug: `Plug 'oddurs/subway-seat', { 'rtp': 'dist/nvim' }`. Or copy `dist/nvim` into `~/.config/nvim`; the colors files also work on their own.
 
-[Neovim](https://neovim.io) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/nvim/)
+[Neovim](https://neovim.io) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/nvim/) · Needs Neovim 0.9+
 
 ## Files
 
 | Flavor | File | Where it goes |
 |---|---|---|
-| All three | [`lua/subway-seat/palette.lua`](lua/subway-seat/palette.lua) |  |
-| All three | [`lua/subway-seat/init.lua`](lua/subway-seat/init.lua) |  |
-| Subway Seat | [`lua/subway-seat/groups/walnut.lua`](lua/subway-seat/groups/walnut.lua) |  |
-| Subway Seat | [`lua/lualine/themes/subway_seat.lua`](lua/lualine/themes/subway_seat.lua) |  |
-| Subway Seat | [`colors/subway-seat.lua`](colors/subway-seat.lua) | `~/.config/nvim/colors/subway-seat.lua (or install the plugin)` |
-| Subway Seat Tunnel | [`lua/subway-seat/groups/tunnel.lua`](lua/subway-seat/groups/tunnel.lua) |  |
-| Subway Seat Tunnel | [`lua/lualine/themes/subway_seat_tunnel.lua`](lua/lualine/themes/subway_seat_tunnel.lua) |  |
-| Subway Seat Tunnel | [`colors/subway-seat-tunnel.lua`](colors/subway-seat-tunnel.lua) | `~/.config/nvim/colors/subway-seat-tunnel.lua (or install the plugin)` |
-| Subway Seat Enamel | [`lua/subway-seat/groups/enamel.lua`](lua/subway-seat/groups/enamel.lua) |  |
-| Subway Seat Enamel | [`lua/lualine/themes/subway_seat_enamel.lua`](lua/lualine/themes/subway_seat_enamel.lua) |  |
-| Subway Seat Enamel | [`colors/subway-seat-enamel.lua`](colors/subway-seat-enamel.lua) | `~/.config/nvim/colors/subway-seat-enamel.lua (or install the plugin)` |
+| All three | [`colors/subway-seat.lua`](colors/subway-seat.lua) | `~/.config/nvim/colors/subway-seat.lua` |
+| Subway Seat | [`colors/subway-seat-walnut.lua`](colors/subway-seat-walnut.lua) | `~/.config/nvim/colors/subway-seat-walnut.lua` |
+| Subway Seat Tunnel | [`colors/subway-seat-tunnel.lua`](colors/subway-seat-tunnel.lua) | `~/.config/nvim/colors/subway-seat-tunnel.lua` |
+| Subway Seat Enamel | [`colors/subway-seat-enamel.lua`](colors/subway-seat-enamel.lua) | `~/.config/nvim/colors/subway-seat-enamel.lua` |
+| All three | [`lua/subway-seat/init.lua`](lua/subway-seat/init.lua) | `~/.config/nvim/lua/subway-seat/init.lua` |
+| All three | [`lua/subway-seat/palette.lua`](lua/subway-seat/palette.lua) | `~/.config/nvim/lua/subway-seat/palette.lua` |
+| All three | [`lua/lualine/themes/subway-seat.lua`](lua/lualine/themes/subway-seat.lua) | `~/.config/nvim/lua/lualine/themes/subway-seat.lua` |
+| Subway Seat | [`lua/lualine/themes/subway-seat-walnut.lua`](lua/lualine/themes/subway-seat-walnut.lua) | `~/.config/nvim/lua/lualine/themes/subway-seat-walnut.lua` |
+| Subway Seat | [`lua/lualine/themes/subway_seat.lua`](lua/lualine/themes/subway_seat.lua) | `~/.config/nvim/lua/lualine/themes/subway_seat.lua` |
+| Subway Seat Tunnel | [`lua/lualine/themes/subway-seat-tunnel.lua`](lua/lualine/themes/subway-seat-tunnel.lua) | `~/.config/nvim/lua/lualine/themes/subway-seat-tunnel.lua` |
+| Subway Seat Tunnel | [`lua/lualine/themes/subway_seat_tunnel.lua`](lua/lualine/themes/subway_seat_tunnel.lua) | `~/.config/nvim/lua/lualine/themes/subway_seat_tunnel.lua` |
+| Subway Seat Enamel | [`lua/lualine/themes/subway-seat-enamel.lua`](lua/lualine/themes/subway-seat-enamel.lua) | `~/.config/nvim/lua/lualine/themes/subway-seat-enamel.lua` |
+| Subway Seat Enamel | [`lua/lualine/themes/subway_seat_enamel.lua`](lua/lualine/themes/subway_seat_enamel.lua) | `~/.config/nvim/lua/lualine/themes/subway_seat_enamel.lua` |
+| All three | [`doc/subway-seat.txt`](doc/subway-seat.txt) | `~/.config/nvim/doc/subway-seat.txt` |
 
 ## Turn it on
 
-**Subway Seat**, in init.lua:
+**Subway Seat**, in init.lua (~/.config/nvim/init.lua; Windows ~/AppData/Local/nvim/init.lua):
 
 ```lua
-vim.cmd.colorscheme("subway-seat")
+vim.cmd.colorscheme("subway-seat-walnut")
 ```
 
-**Subway Seat Tunnel**, in init.lua:
+**Subway Seat Tunnel**, in init.lua (~/.config/nvim/init.lua; Windows ~/AppData/Local/nvim/init.lua):
 
 ```lua
 vim.cmd.colorscheme("subway-seat-tunnel")
 ```
 
-**Subway Seat Enamel**, in init.lua:
+**Subway Seat Enamel**, in init.lua (~/.config/nvim/init.lua; Windows ~/AppData/Local/nvim/init.lua):
 
 ```lua
 vim.cmd.colorscheme("subway-seat-enamel")
 ```
 
+## Follow light and dark
+
+In init.lua:
+
+```lua
+-- `subway-seat` follows 'background': Walnut when dark, Enamel when light.
+-- Neovim sets 'background' from the terminal; auto-dark-mode.nvim sets it from the OS.
+require("subway-seat").setup({ background = { dark = "walnut", light = "enamel" } }) -- or dark = "tunnel"
+vim.cmd.colorscheme("subway-seat")
+
+-- lazy.nvim, to follow the OS light/dark setting:
+-- { "f-person/auto-dark-mode.nvim", opts = {} }
+```
+
 ## Uninstall
 
-- Delete `~/.config/nvim/colors/subway-seat.lua (or install the plugin)`.
-- Delete `~/.config/nvim/colors/subway-seat-tunnel.lua (or install the plugin)`.
-- Delete `~/.config/nvim/colors/subway-seat-enamel.lua (or install the plugin)`.
+- Delete `~/.config/nvim/colors/subway-seat.lua`.
+- Delete `~/.config/nvim/colors/subway-seat-walnut.lua`.
+- Delete `~/.config/nvim/colors/subway-seat-tunnel.lua`.
+- Delete `~/.config/nvim/colors/subway-seat-enamel.lua`.
+- Delete `~/.config/nvim/lua/subway-seat/init.lua`.
+- Delete `~/.config/nvim/lua/subway-seat/palette.lua`.
+- Delete `~/.config/nvim/lua/lualine/themes/subway-seat.lua`.
+- Delete `~/.config/nvim/lua/lualine/themes/subway-seat-walnut.lua`.
+- Delete `~/.config/nvim/lua/lualine/themes/subway_seat.lua`.
+- Delete `~/.config/nvim/lua/lualine/themes/subway-seat-tunnel.lua`.
+- Delete `~/.config/nvim/lua/lualine/themes/subway_seat_tunnel.lua`.
+- Delete `~/.config/nvim/lua/lualine/themes/subway-seat-enamel.lua`.
+- Delete `~/.config/nvim/lua/lualine/themes/subway_seat_enamel.lua`.
+- Delete `~/.config/nvim/doc/subway-seat.txt`.
 - Remove the line you added to turn it on.
 
 Generated by `build.py` from `palette.py` (v0.3.0). Edit the port in `ports/`, not these files.

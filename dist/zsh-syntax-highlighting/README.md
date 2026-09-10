@@ -1,6 +1,6 @@
 # Subway Seat for zsh-syntax-highlighting
 
-The same command-line colors as the fish port: gold commands, orange keywords and separators, sage options, avocado strings, terracotta expansions and redirections.
+The same command-line colors as the fish port: gold commands, orange keywords and separators, sage options, avocado strings, terracotta expansions and redirections. It also colors zsh-autosuggestions' suggestions to match fish's.
 
 [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/zsh-syntax-highlighting/)
 
@@ -14,19 +14,19 @@ The same command-line colors as the fish port: gold commands, orange keywords an
 
 ## Turn it on
 
-**Subway Seat**, in ~/.zshrc, next to where zsh-syntax-highlighting is loaded:
+**Subway Seat**, in ~/.zshrc, before or after zsh-syntax-highlighting is loaded (the end is fine):
 
 ```sh
 source ~/.config/zsh/subway-seat.zsh
 ```
 
-**Subway Seat Tunnel**, in ~/.zshrc, next to where zsh-syntax-highlighting is loaded:
+**Subway Seat Tunnel**, in ~/.zshrc, before or after zsh-syntax-highlighting is loaded (the end is fine):
 
 ```sh
 source ~/.config/zsh/subway-seat-tunnel.zsh
 ```
 
-**Subway Seat Enamel**, in ~/.zshrc, next to where zsh-syntax-highlighting is loaded:
+**Subway Seat Enamel**, in ~/.zshrc, before or after zsh-syntax-highlighting is loaded (the end is fine):
 
 ```sh
 source ~/.config/zsh/subway-seat-enamel.zsh

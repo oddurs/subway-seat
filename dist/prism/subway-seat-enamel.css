@@ -3,7 +3,6 @@
 
 code[class*="language-"],
 pre[class*="language-"] {
-  color: #3E2C1E;
   background: none;
   font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
   font-size: 1em;
@@ -18,7 +17,6 @@ pre[class*="language-"] {
 }
 
 pre[class*="language-"] {
-  background: #F4E9D4;
   padding: 1em;
   margin: 0.5em 0;
   overflow: auto;
@@ -26,11 +24,24 @@ pre[class*="language-"] {
 }
 
 :not(pre) > code[class*="language-"] {
-  background: #D9C8A7;
   padding: 0.1em 0.3em;
   border-radius: 0.3em;
   white-space: normal;
 }
+
+.token.important, .token.bold { font-weight: bold; }
+.token.italic { font-style: italic; }
+.token.entity { cursor: help; }
+
+/* Diff lines fill the width, so their tint reads as a band. */
+[class*="language-diff"] .token.inserted:not(.prefix),
+[class*="language-diff"] .token.deleted:not(.prefix),
+[class*="language-diff"] .token.diff:not(.prefix) { display: block; color: inherit; font-weight: inherit; }
+
+code[class*="language-"],
+pre[class*="language-"] { color: #3E2C1E; }
+pre[class*="language-"] { background: #F4E9D4; }
+:not(pre) > code[class*="language-"] { background: #D9C8A7; }
 
 code[class*="language-"]::selection, code[class*="language-"] ::selection,
 pre[class*="language-"]::selection, pre[class*="language-"] ::selection {
@@ -63,8 +74,14 @@ pre[class*="language-"]::selection, pre[class*="language-"] ::selection {
 .token.blockquote { color: #654F3B; font-style: italic; }
 .token.coord { color: #3F6480; }
 .token.url { color: #3F6480; text-decoration: underline; }
-.token.inserted { color: #66740F; background: #D7DBC1; }
-.token.deleted { color: #BC4031; background: #EBD3D1; }
-.token.important, .token.bold { font-weight: bold; }
-.token.italic { font-style: italic; }
-.token.entity { cursor: help; }
+
+/* Diffs: the line keeps its code colors on a green or red tint, and the + / - sign carries the color.
+   (Other languages mark a whole line as inserted or deleted, so it takes the color itself.) */
+.token.inserted { color: #66740F; }
+.token.deleted { color: #BC4031; }
+[class*="language-diff"] .token.inserted:not(.prefix) { background: #D7DBC1; }
+[class*="language-diff"] .token.deleted:not(.prefix) { background: #EBD3D1; }
+[class*="language-diff"] .token.diff:not(.prefix) { background: #E3D6BD; }
+[class*="language-diff"] .token.prefix.inserted { color: #66740F; }
+[class*="language-diff"] .token.prefix.deleted { color: #BC4031; }
+[class*="language-diff"] .token.prefix.diff { color: #936200; }

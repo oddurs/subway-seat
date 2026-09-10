@@ -1,32 +1,33 @@
 ---
 name: setup
-description: Install the Subway Seat status line, subagent rows, spinner verbs and "Next stop" tips into the user's Claude Code settings, and pick a flavor.
+description: Add Subway Seat's theme, station-sign status line, 70s spinner verbs and "Next stop" tips to the user's Claude Code settings, or take them out again with `remove`.
+argument-hint: "[remove]"
 disable-model-invocation: true
-allowed-tools: Bash, Read
+allowed-tools: AskUserQuestion Read Bash(${CLAUDE_PLUGIN_ROOT}/scripts/setup.sh *)
 ---
 
 # Subway Seat setup
 
-Set the user up with Subway Seat's extras. Themes and the output style already ship with this plugin; this adds what a plugin can't set on its own. Everything below is reversible, and nothing is written until the user says yes.
+The plugin already ships the three themes, the subagent rows and the Subway Seat output style. This skill adds what a plugin can't set by itself, in the user's own settings: the theme choice, the status line, the spinner verbs and the tips. Do it all in this one turn, and change nothing until the user picks **Apply**.
 
-1. Ask which flavor they want: **Subway Seat** (Walnut, dark), **Subway Seat Tunnel** (deeper dark) or **Subway Seat Enamel** (light). Suggest the one that matches their terminal background.
-2. Ask whether spinner verbs should **replace** Claude Code's built-in verbs (full 70s vibe) or be **added** to them.
-3. Copy the scripts and tips to a stable location, since the plugin directory changes between versions:
+Run each command exactly as written, without quoting the script path, so it matches the pre-approved rule. Don't edit settings files any other way.
 
-   ```bash
-   mkdir -p ~/.claude/subway-seat
-   cp "${CLAUDE_PLUGIN_ROOT}/bin/subway-seat-statusline" "${CLAUDE_PLUGIN_ROOT}/bin/subway-seat-subagents" "${CLAUDE_PLUGIN_ROOT}/tips.json" ~/.claude/subway-seat/
-   chmod +x ~/.claude/subway-seat/subway-seat-*
-   ```
+Arguments: `$ARGUMENTS`
 
-4. Show the user the settings you'll merge (read the matching file in `${CLAUDE_PLUGIN_ROOT}/settings/`, e.g. `subway-seat-enamel.json`; switch `spinnerVerbs.mode` to `append` if they chose that). Point out any existing `statusLine`, `subagentStatusLine`, `spinnerVerbs`, `spinnerTipsOverride` or `theme` values they'd be replacing.
-5. Only after they confirm, back up and merge with jq, keeping every other key:
+## If the arguments say `remove`
 
-   ```bash
-   s="${CLAUDE_CONFIG_DIR:-$HOME/.claude}/settings.json"
-   cp "$s" "$s.subway-seat.bak"
-   jq -s '.[0] * .[1]' "$s" "${CLAUDE_PLUGIN_ROOT}/settings/<flavor-slug>.json" > "$s.tmp" && mv "$s.tmp" "$s"
-   ```
+1. Run `${CLAUDE_PLUGIN_ROOT}/scripts/setup.sh remove --dry-run` and show the output. If nothing is listed, say so and stop.
+2. Ask with AskUserQuestion: "Remove these Subway Seat settings?" with the options **Remove** and **Cancel**.
+3. On Remove, run `${CLAUDE_PLUGIN_ROOT}/scripts/setup.sh remove` and pass on what it prints. Add that `claude plugin uninstall subway-seat@subway-seat` removes the plugin itself, and that uninstalling never touches these settings.
 
-   If `settings.json` is a symlink (dotfiles), write through it: `cat "$s.tmp" > "$s" && rm "$s.tmp"` instead of `mv`.
-6. Tell them it's done, that the status line needs `jq` and looks best with a Nerd Font (`SUBWAY_SEAT_GLYPHS=plain` drops the glyphs), and that `/output-style` can switch on the relaxed **Subway Seat** voice. Mention the backup path for undoing.
+## Otherwise
+
+1. Run `${CLAUDE_PLUGIN_ROOT}/scripts/setup.sh check`. If it reports a problem, such as jq missing, pass it on and stop.
+2. Ask one AskUserQuestion with three questions:
+   - **Flavor**: "Subway Seat" (Walnut, the original dark brown), "Subway Seat Tunnel" (deeper dark) or "Subway Seat Enamel" (light). Recommend the one that matches their terminal's background.
+   - **Spinner verbs**: "Replace" (only the 70s verbs) or "Add" (mixed in with Claude Code's own).
+   - **Voice**: "Everywhere" (the relaxed Subway Seat output style in every project) or "Not now" (keep the current style; `/config` › Output style switches it per project later).
+3. Run `${CLAUDE_PLUGIN_ROOT}/scripts/setup.sh apply --flavor <walnut|tunnel|enamel> --verbs <replace|append> --voice <yes|no> --data ${CLAUDE_PLUGIN_DATA} --dry-run` with their answers, and show its output: every key it will change, with the current and new value.
+4. Ask with AskUserQuestion: "Apply these changes?" with the options **Apply** and **Cancel**. On Cancel, stop.
+5. On Apply, run the same command without `--dry-run`, and pass on what it prints, including the backup path and any notes.
+6. Finish in two or three short lines: the theme and status line switch over within a moment (restart Claude Code if they don't); the status line looks best with a Nerd Font, and `SUBWAY_SEAT_GLYPHS=plain` drops the glyphs; `/subway-seat:setup remove` undoes all of it.

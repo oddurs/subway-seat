@@ -28,4 +28,12 @@
   --color-ss-denim: #7F9BAE;
   --color-ss-denim-hi: #9DB6C6;
   --color-ss-clay: #E0956C;
+  --color-ss-diff-add: #3F3A1E;
+  --color-ss-diff-add-emph: #504D26;
+  --color-ss-diff-add-dim: #342D18;
+  --color-ss-diff-del: #52281C;
+  --color-ss-diff-del-emph: #6D3224;
+  --color-ss-diff-del-dim: #412217;
+  --color-ss-diff-chg: #423117;
+  --color-ss-diff-chg-emph: #57421C;
 }

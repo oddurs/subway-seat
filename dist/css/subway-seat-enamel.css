@@ -5,21 +5,21 @@
   color-scheme: light;
 
   /* Ground */
-  --ss-crust: #E2D3B6; /* Blackout */
-  --ss-mantle: #EBDEC6; /* Espresso */
-  --ss-base: #F4E9D4; /* Paneling */
-  --ss-surface0: #D9C8A7; /* Coppertone */
-  --ss-surface1: #CAB48E; /* Saddle */
-  --ss-surface2: #BAA07A; /* Corduroy */
-  --ss-overlay0: #A58C6A; /* Pecan */
-  --ss-overlay1: #8C7254; /* Cardboard */
-  --ss-overlay2: #735C44; /* Burlap */
+  --ss-crust: #E2D3B6; /* Enamel crust */
+  --ss-mantle: #EBDEC6; /* Enamel mantle */
+  --ss-base: #F4E9D4; /* Enamel base */
+  --ss-surface0: #D9C8A7; /* Enamel surface0 */
+  --ss-surface1: #CAB48E; /* Enamel surface1 */
+  --ss-surface2: #BAA07A; /* Enamel surface2 */
+  --ss-overlay0: #A58C6A; /* Enamel overlay0 */
+  --ss-overlay1: #8C7254; /* Enamel overlay1 */
+  --ss-overlay2: #735C44; /* Enamel overlay2 */
 
   /* Text */
-  --ss-subtext0: #654F3B; /* Khaki */
-  --ss-subtext1: #54402F; /* Almond */
-  --ss-text: #3E2C1E; /* Parchment */
-  --ss-text-hi: #2A1D13; /* Ivory */
+  --ss-subtext0: #654F3B; /* Enamel subtext0 */
+  --ss-subtext1: #54402F; /* Enamel subtext1 */
+  --ss-text: #3E2C1E; /* Enamel text */
+  --ss-text-hi: #2A1D13; /* Enamel text hi */
 
   /* Accents */
   --ss-yellow: #936200; /* Harvest gold */
@@ -35,6 +35,16 @@
   --ss-denim: #3F6480; /* Faded denim */
   --ss-denim-hi: #517791; /* Denim bright */
   --ss-clay: #A65633; /* Terracotta */
+
+  /* Diff grounds: -add/-del/-chg for lines, -emph for changed words, -dim for faded diffs */
+  --ss-diff-add: #D7DBC1;
+  --ss-diff-add-emph: #C2C79F;
+  --ss-diff-add-dim: #E7E9D9;
+  --ss-diff-del: #EBD3D1;
+  --ss-diff-del-emph: #DEB9B5;
+  --ss-diff-del-dim: #F3E5E3;
+  --ss-diff-chg: #E3D6BD;
+  --ss-diff-chg-emph: #DCCDAD;
 
   /* RGB triplets, for rgb(var(--ss-base-rgb) / 0.5) */
   --ss-crust-rgb: 226 211 182;

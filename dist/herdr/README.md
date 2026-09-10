@@ -1,6 +1,6 @@
 # Subway Seat for herdr
 
-Token overrides on herdr's Catppuccin base: sidebar, agent states, accents. `auto.toml` (herdr 0.9+) pairs Walnut and Enamel and follows the terminal.
+Token overrides for the sidebar, agent states and accents, on herdr's Catppuccin base (Latte under Enamel). `auto.toml` (herdr 0.9+) pairs Walnut with Enamel and follows the terminal's light or dark mode. Append one file; to switch, replace the block between the markers.
 
 [herdr](https://herdr.dev) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/herdr/)
 
@@ -15,11 +15,23 @@ Token overrides on herdr's Catppuccin base: sidebar, agent states, accents. `aut
 
 ## Turn it on
 
-In ~/.config/herdr/config.toml, then `herdr server reload-config`:
+In ~/.config/herdr/config.toml, under your existing `[theme]`, then `herdr server reload-config`:
+
+```toml
+[theme]
+name = "catppuccin"   # with Enamel: "catppuccin-latte"
+```
+
+## Follow light and dark
+
+In ~/.config/herdr/config.toml (herdr 0.9+), under your existing `[theme]`; append auto.toml for the colors:
 
 ```toml
 [theme]
 name = "catppuccin"
+auto_switch = true
+dark_name = "catppuccin"
+light_name = "catppuccin-latte"
 ```
 
 ## Uninstall

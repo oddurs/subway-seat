@@ -75,7 +75,9 @@
             "name": "Subway Seat",
             "window": {
                 "applicationTheme": "dark",
-                "useMica": false
+                "useMica": false,
+                "frame": "#20160EFF",
+                "unfocusedFrame": "#20160EFF"
             },
             "tabRow": {
                 "background": "#20160EFF",
@@ -90,7 +92,9 @@
             "name": "Subway Seat Tunnel",
             "window": {
                 "applicationTheme": "dark",
-                "useMica": false
+                "useMica": false,
+                "frame": "#140D07FF",
+                "unfocusedFrame": "#140D07FF"
             },
             "tabRow": {
                 "background": "#140D07FF",
@@ -105,7 +109,9 @@
             "name": "Subway Seat Enamel",
             "window": {
                 "applicationTheme": "light",
-                "useMica": false
+                "useMica": false,
+                "frame": "#E2D3B6FF",
+                "unfocusedFrame": "#E2D3B6FF"
             },
             "tabRow": {
                 "background": "#E2D3B6FF",

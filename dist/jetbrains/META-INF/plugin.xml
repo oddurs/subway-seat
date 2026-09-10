@@ -8,16 +8,23 @@
   <description><![CDATA[
 <p>A 1970s New York subway car for your IDE: walnut-brown ground, parchment text, harvest gold,
 burnt orange and avocado. Three flavors, each a UI theme with a matching editor color scheme:
-<strong>Subway Seat</strong>, <strong>Subway Seat Tunnel</strong>, <strong>Subway Seat Enamel</strong>.</p>
-<p>Pick one in <strong>Settings → Appearance &amp; Behavior → Appearance</strong>; the editor scheme
-follows, or choose it on its own under <strong>Editor → Color Scheme</strong>.</p>
+<strong>Subway Seat</strong>, <strong>Subway Seat Tunnel</strong>, <strong>Subway Seat Enamel</strong>. Each also comes as an Islands theme for the Islands look (2025.2.3 and later).</p>
+<p>Pick one in <strong>Settings › Appearance &amp; Behavior › Appearance</strong>; the editor scheme
+follows, or choose it on its own under <strong>Editor › Color Scheme</strong>. To follow the system,
+turn on <strong>Sync with OS</strong> there and pick Subway Seat for dark and Subway Seat Enamel for light.</p>
 <p><a href="https://github.com/oddurs/subway-seat">Source and other ports</a> · MIT license</p>
 ]]></description>
+  <change-notes><![CDATA[
+<p>Version 0.3.0. See the <a href="https://github.com/oddurs/subway-seat/blob/main/CHANGELOG.md">changelog</a> for what changed.</p>
+]]></change-notes>
   <depends>com.intellij.modules.platform</depends>
   <extensions defaultExtensionNs="com.intellij">
     <themeProvider id="com.oddurs.subway-seat.walnut" path="/themes/subway-seat.theme.json"/>
     <themeProvider id="com.oddurs.subway-seat.tunnel" path="/themes/subway-seat-tunnel.theme.json"/>
     <themeProvider id="com.oddurs.subway-seat.enamel" path="/themes/subway-seat-enamel.theme.json"/>
+    <themeProvider id="com.oddurs.subway-seat.walnut.islands" path="/themes/subway-seat-islands.theme.json" targetUi="islands"/>
+    <themeProvider id="com.oddurs.subway-seat.tunnel.islands" path="/themes/subway-seat-tunnel-islands.theme.json" targetUi="islands"/>
+    <themeProvider id="com.oddurs.subway-seat.enamel.islands" path="/themes/subway-seat-enamel-islands.theme.json" targetUi="islands"/>
     <bundledColorScheme id="com.oddurs.subway-seat.walnut.scheme" path="/schemes/subway-seat"/>
     <bundledColorScheme id="com.oddurs.subway-seat.tunnel.scheme" path="/schemes/subway-seat-tunnel"/>
     <bundledColorScheme id="com.oddurs.subway-seat.enamel.scheme" path="/schemes/subway-seat-enamel"/>

@@ -1,6 +1,6 @@
 # Subway Seat for Helix
 
-Copy the themes to `~/.config/helix/themes/`. To follow the terminal's light or dark mode, use `[theme]` with `dark = "subway_seat"` and `light = "subway_seat_enamel"`.
+Copy the themes to `~/.config/helix/themes/` (Windows: `%AppData%\helix\themes`). The colored mode badge in the status line needs `color-modes = true` under `[editor]`. Rainbow brackets come from the theme's `rainbow` key, which Helix 25.07.1 skips with a warning in its log; builds after it read it.
 
 [Helix](https://helix-editor.com) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/helix/)
 
@@ -14,22 +14,33 @@ Copy the themes to `~/.config/helix/themes/`. To follow the terminal's light or 
 
 ## Turn it on
 
-**Subway Seat**, in ~/.config/helix/config.toml:
+**Subway Seat**, in ~/.config/helix/config.toml (Windows: %AppData%\helix\config.toml):
 
 ```toml
 theme = "subway_seat"
 ```
 
-**Subway Seat Tunnel**, in ~/.config/helix/config.toml:
+**Subway Seat Tunnel**, in ~/.config/helix/config.toml (Windows: %AppData%\helix\config.toml):
 
 ```toml
 theme = "subway_seat_tunnel"
 ```
 
-**Subway Seat Enamel**, in ~/.config/helix/config.toml:
+**Subway Seat Enamel**, in ~/.config/helix/config.toml (Windows: %AppData%\helix\config.toml):
 
 ```toml
 theme = "subway_seat_enamel"
+```
+
+## Follow light and dark
+
+In ~/.config/helix/config.toml, in place of the `theme = …` line. Needs a Helix build newer than 25.07.1 (25.07.1 rejects a `[theme]` table) and a terminal that reports light or dark (mode 2031):
+
+```toml
+[theme]
+dark = "subway_seat"
+light = "subway_seat_enamel"
+fallback = "subway_seat"
 ```
 
 ## Uninstall

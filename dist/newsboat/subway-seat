@@ -1,0 +1,22 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# Subway Seat for Newsboat. The colorN slots are Subway Seat's terminal palette,
+# so run it in a terminal set to Subway Seat.
+
+color background          default  default
+color listnormal          default  default
+color listfocus           default  color0 bold
+color listnormal_unread   color3   default bold
+color listfocus_unread    color3   color0 bold
+color title               color5   default bold
+color info                color7   color0
+color hint-key            color3   color0 bold
+color hint-keys-delimiter color8   color0
+color hint-separator      color8   color0
+color hint-description    color7   color0
+color article             default  default
+color end-of-text-marker  color8   default
+
+highlight article "^(Feed|Title|Author|Link|Date|Podcast Download URL|Flags):" color5 default bold
+highlight article "https?://[^ ]+" color4 default underline
+highlight article "\\[[0-9]+\\]" color6 default bold
+highlight article "\\((link|image|video|embedded flash|audio)\\)" color8 default

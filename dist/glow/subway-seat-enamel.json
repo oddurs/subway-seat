@@ -93,18 +93,18 @@
     "prefix": " ",
     "suffix": " ",
     "color": "#66740F",
-    "background_color": "#D9C8A7"
+    "background_color": "#EBDEC6"
   },
   "code_block": {
-    "color": "#8C7254",
+    "color": "#3E2C1E",
     "margin": 2,
     "chroma": {
       "text": {
         "color": "#3E2C1E"
       },
       "error": {
-        "color": "#2A1D13",
-        "background_color": "#992418"
+        "color": "#F4E9D4",
+        "background_color": "#BC4031"
       },
       "comment": {
         "color": "#8C7254",
@@ -204,7 +204,7 @@
     }
   },
   "table": {
-    "color": "#A58C6A",
+    "color": "#735C44",
     "center_separator": "┼",
     "column_separator": "│",
     "row_separator": "─"

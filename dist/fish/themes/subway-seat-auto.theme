@@ -16,10 +16,10 @@ fish_color_escape A65633
 fish_color_comment 8C7254 --italics
 fish_color_error BC4031
 fish_color_cancel 992418
-fish_color_autosuggestion A58C6A
+fish_color_autosuggestion 8C7254
 fish_color_gray A58C6A
 fish_color_valid_path --underline
-fish_color_selection 2A1D13 --bold --background=BAA07A
+fish_color_selection 2A1D13 --bold --background=CAB48E
 fish_color_search_match --bold --background=CAB48E
 fish_color_history_current --bold
 fish_color_cwd 936200
@@ -32,7 +32,10 @@ fish_pager_color_progress F4E9D4 --background=AD4E00
 fish_pager_color_prefix 936200 --bold
 fish_pager_color_completion 3E2C1E
 fish_pager_color_description 8C7254 --italics
-fish_pager_color_selected_background --background=CAB48E
+fish_pager_color_selected_background --background=D9C8A7
+fish_pager_color_selected_prefix AD4E00 --bold
+fish_pager_color_selected_completion 2A1D13
+fish_pager_color_selected_description 54402F --italics
 
 [dark]
 # preferred_background: 362619
@@ -49,7 +52,7 @@ fish_color_escape E0956C
 fish_color_comment 967B5C --italics
 fish_color_error F97160
 fish_color_cancel E05C45
-fish_color_autosuggestion 7B6047
+fish_color_autosuggestion 967B5C
 fish_color_gray 7B6047
 fish_color_valid_path --underline
 fish_color_selection F8ECD4 --bold --background=634932
@@ -66,3 +69,41 @@ fish_pager_color_prefix F3BF45 --bold
 fish_pager_color_completion EDDCBC
 fish_pager_color_description 967B5C --italics
 fish_pager_color_selected_background --background=513B27
+fish_pager_color_selected_prefix F3BF45 --bold
+fish_pager_color_selected_completion F8ECD4
+fish_pager_color_selected_description D9C6A3 --italics
+
+[unknown]
+fish_color_normal EDDCBC
+fish_color_command F3BF45
+fish_color_keyword EC7F31
+fish_color_param D9C6A3
+fish_color_option 86AD95
+fish_color_quote ADB956
+fish_color_redirection E0956C
+fish_color_end EC7F31
+fish_color_operator E0956C
+fish_color_escape E0956C
+fish_color_comment 967B5C --italics
+fish_color_error F97160
+fish_color_cancel E05C45
+fish_color_autosuggestion 967B5C
+fish_color_gray 7B6047
+fish_color_valid_path --underline
+fish_color_selection F8ECD4 --bold --background=634932
+fish_color_search_match --bold --background=513B27
+fish_color_history_current --bold
+fish_color_cwd F3BF45
+fish_color_cwd_root F97160
+fish_color_user EC7F31
+fish_color_host D9C6A3
+fish_color_host_remote ADB956
+fish_color_status F97160
+fish_pager_color_progress 20160E --background=EC7F31
+fish_pager_color_prefix F3BF45 --bold
+fish_pager_color_completion EDDCBC
+fish_pager_color_description 967B5C --italics
+fish_pager_color_selected_background --background=513B27
+fish_pager_color_selected_prefix F3BF45 --bold
+fish_pager_color_selected_completion F8ECD4
+fish_pager_color_selected_description D9C6A3 --italics

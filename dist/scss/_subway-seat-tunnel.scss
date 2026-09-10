@@ -1,32 +1,41 @@
 // Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
 // Subway Seat Tunnel: The late local after midnight: espresso-deep, same warm lights.
+// Diff grounds: -add/-del/-chg for lines, -emph for changed words, -dim for faded diffs.
 
-$ss-crust:     #140D07; // Blackout
-$ss-mantle:    #1B120A; // Espresso
-$ss-base:      #24180E; // Paneling
-$ss-surface0:  #302115; // Coppertone
-$ss-surface1:  #3D2C1D; // Saddle
-$ss-surface2:  #4F3927; // Corduroy
-$ss-overlay0:  #745B45; // Pecan
-$ss-overlay1:  #917759; // Cardboard
-$ss-overlay2:  #AA9171; // Burlap
-$ss-subtext0:  #C0AA88; // Khaki
-$ss-subtext1:  #D6C3A0; // Almond
-$ss-text:      #E9D8B6; // Parchment
-$ss-text-hi:   #F6EAD1; // Ivory
-$ss-yellow:    #F3BF45; // Harvest gold
-$ss-yellow-hi: #FFD36B; // Broadway yellow
-$ss-orange:    #EC7F31; // Burnt orange
-$ss-orange-hi: #FF9D55; // Sixth Avenue
-$ss-red:       #E05C45; // Redbird
-$ss-red-hi:    #F97160; // Redbird bright
-$ss-green:     #ADB956; // Avocado
-$ss-green-hi:  #BFCB63; // Avocado bright
-$ss-sage:      #86AD95; // Seafoam tile
-$ss-sage-hi:   #A5C9B0; // Seafoam bright
-$ss-denim:     #7F9BAE; // Faded denim
-$ss-denim-hi:  #9DB6C6; // Denim bright
-$ss-clay:      #E0956C; // Terracotta
+$ss-crust:         #140D07; // Blackout
+$ss-mantle:        #1B120A; // Espresso
+$ss-base:          #24180E; // Paneling
+$ss-surface0:      #302115; // Coppertone
+$ss-surface1:      #3D2C1D; // Saddle
+$ss-surface2:      #4F3927; // Corduroy
+$ss-overlay0:      #745B45; // Pecan
+$ss-overlay1:      #917759; // Cardboard
+$ss-overlay2:      #AA9171; // Burlap
+$ss-subtext0:      #C0AA88; // Khaki
+$ss-subtext1:      #D6C3A0; // Almond
+$ss-text:          #E9D8B6; // Parchment
+$ss-text-hi:       #F6EAD1; // Ivory
+$ss-yellow:        #F3BF45; // Harvest gold
+$ss-yellow-hi:     #FFD36B; // Broadway yellow
+$ss-orange:        #EC7F31; // Burnt orange
+$ss-orange-hi:     #FF9D55; // Sixth Avenue
+$ss-red:           #E05C45; // Redbird
+$ss-red-hi:        #F97160; // Redbird bright
+$ss-green:         #ADB956; // Avocado
+$ss-green-hi:      #BFCB63; // Avocado bright
+$ss-sage:          #86AD95; // Seafoam tile
+$ss-sage-hi:       #A5C9B0; // Seafoam bright
+$ss-denim:         #7F9BAE; // Faded denim
+$ss-denim-hi:      #9DB6C6; // Denim bright
+$ss-clay:          #E0956C; // Terracotta
+$ss-diff-add:      #363318;
+$ss-diff-add-emph: #484722;
+$ss-diff-add-dim:  #292512;
+$ss-diff-del:      #492217;
+$ss-diff-del-emph: #662D20;
+$ss-diff-del-dim:  #371A12;
+$ss-diff-chg:      #382911;
+$ss-diff-chg-emph: #4E3B17;
 
 $subway-seat: (
   "crust": $ss-crust,
@@ -55,4 +64,12 @@ $subway-seat: (
   "denim": $ss-denim,
   "denim-hi": $ss-denim-hi,
   "clay": $ss-clay,
+  "diff-add": $ss-diff-add,
+  "diff-add-emph": $ss-diff-add-emph,
+  "diff-add-dim": $ss-diff-add-dim,
+  "diff-del": $ss-diff-del,
+  "diff-del-emph": $ss-diff-del-emph,
+  "diff-del-dim": $ss-diff-del-dim,
+  "diff-chg": $ss-diff-chg,
+  "diff-chg-emph": $ss-diff-chg-emph,
 );

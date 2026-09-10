@@ -14,25 +14,46 @@ A Glamour style: top-level headings as orange station signs, the rest stepping d
 
 ## Turn it on
 
-**Subway Seat**, in config.fish (GLAMOUR_STYLE also reaches gh and other Glamour apps):
+**Subway Seat**, in config.fish (bash and zsh: ~/.bashrc or ~/.zshrc). Glow ignores GLAMOUR_STYLE, hence the alias; `style:` in glow.yml works too if you give it the full path, without `~`:
 
 ```fish
-set -Ux GLAMOUR_STYLE ~/.config/glamour/subway-seat.json
-set -Ux GLOW_STYLE $GLAMOUR_STYLE
+alias glow 'glow -s ~/.config/glamour/subway-seat.json'
+set -gx GLAMOUR_STYLE ~/.config/glamour/subway-seat.json   # gh and other Glamour apps
 ```
 
-**Subway Seat Tunnel**, in config.fish (GLAMOUR_STYLE also reaches gh and other Glamour apps):
+In bash or zsh:
 
-```fish
-set -Ux GLAMOUR_STYLE ~/.config/glamour/subway-seat-tunnel.json
-set -Ux GLOW_STYLE $GLAMOUR_STYLE
+```sh
+alias glow='glow -s ~/.config/glamour/subway-seat.json'
+export GLAMOUR_STYLE="$HOME/.config/glamour/subway-seat.json"   # gh and other Glamour apps
 ```
 
-**Subway Seat Enamel**, in config.fish (GLAMOUR_STYLE also reaches gh and other Glamour apps):
+**Subway Seat Tunnel**, in config.fish (bash and zsh: ~/.bashrc or ~/.zshrc). Glow ignores GLAMOUR_STYLE, hence the alias; `style:` in glow.yml works too if you give it the full path, without `~`:
 
 ```fish
-set -Ux GLAMOUR_STYLE ~/.config/glamour/subway-seat-enamel.json
-set -Ux GLOW_STYLE $GLAMOUR_STYLE
+alias glow 'glow -s ~/.config/glamour/subway-seat-tunnel.json'
+set -gx GLAMOUR_STYLE ~/.config/glamour/subway-seat-tunnel.json   # gh and other Glamour apps
+```
+
+In bash or zsh:
+
+```sh
+alias glow='glow -s ~/.config/glamour/subway-seat-tunnel.json'
+export GLAMOUR_STYLE="$HOME/.config/glamour/subway-seat-tunnel.json"   # gh and other Glamour apps
+```
+
+**Subway Seat Enamel**, in config.fish (bash and zsh: ~/.bashrc or ~/.zshrc). Glow ignores GLAMOUR_STYLE, hence the alias; `style:` in glow.yml works too if you give it the full path, without `~`:
+
+```fish
+alias glow 'glow -s ~/.config/glamour/subway-seat-enamel.json'
+set -gx GLAMOUR_STYLE ~/.config/glamour/subway-seat-enamel.json   # gh and other Glamour apps
+```
+
+In bash or zsh:
+
+```sh
+alias glow='glow -s ~/.config/glamour/subway-seat-enamel.json'
+export GLAMOUR_STYLE="$HOME/.config/glamour/subway-seat-enamel.json"   # gh and other Glamour apps
 ```
 
 ## Uninstall

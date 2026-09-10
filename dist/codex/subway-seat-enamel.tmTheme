@@ -12,18 +12,20 @@
 		<dict>
 			<key>settings</key>
 			<dict>
+				<key>accent</key>
+				<string>#AD4E00</string>
 				<key>activeGuide</key>
 				<string>#BAA07A</string>
 				<key>background</key>
 				<string>#F4E9D4</string>
 				<key>bracketsForeground</key>
-				<string>#A56E00</string>
+				<string>#AD4E00</string>
 				<key>caret</key>
 				<string>#AD4E00</string>
 				<key>findHighlight</key>
-				<string>#936200</string>
+				<string>#D7C094</string>
 				<key>findHighlightForeground</key>
-				<string>#E2D3B6</string>
+				<string>#2A1D13</string>
 				<key>foreground</key>
 				<string>#3E2C1E</string>
 				<key>guide</key>
@@ -36,6 +38,8 @@
 				<string>#CAB48E</string>
 				<key>lineHighlight</key>
 				<string>#EBDEC6</string>
+				<key>misspelling</key>
+				<string>#BC4031</string>
 				<key>selection</key>
 				<string>#CAB48E</string>
 			</dict>
@@ -393,6 +397,26 @@
 			<dict>
 				<key>foreground</key>
 				<string>#8C7254</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>meta.diff.header, meta.diff.header.from-file, meta.diff.header.to-file, punctuation.definition.from-file.diff, punctuation.definition.to-file.diff</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>bold</string>
+				<key>foreground</key>
+				<string>#2A1D13</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>meta.diff.range, punctuation.definition.range.diff</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#3F6480</string>
 			</dict>
 		</dict>
 		<dict>

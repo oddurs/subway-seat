@@ -1,3 +1,4 @@
+# >>> subway-seat >>>
 # Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
 # Subway Seat for bottom. Key names use the 0.10 spelling, which later releases accept too.
 
@@ -47,3 +48,4 @@ temp_graph_color_styles = ["#ADB956", "#F3BF45", "#EC7F31", "#F97160", "#86AD95"
 [styles.disk_io_graph]
 read_colours = ["#ADB956", "#86AD95", "#BFCB63", "#A5C9B0"]
 write_colours = ["#EC7F31", "#E0956C", "#FF9D55", "#F97160"]
+# <<< subway-seat <<<

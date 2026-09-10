@@ -1,6 +1,6 @@
 # Subway Seat for Hyper
 
-Colors, cursor, selection, borders and the tab strip. Hyper 3 loads local plugins from `~/.hyper_plugins/local/`; the Hyper 4 canary uses `~/.config/Hyper/plugins/local/`.
+Colors, cursor, selection, borders and the tab strip. Hyper 3 loads local plugins from `~/.hyper_plugins/local/` (`$XDG_CONFIG_HOME/hyper/.hyper_plugins/local/` when that's set, `%APPDATA%\Hyper\.hyper_plugins\local\` on Windows). The Hyper 4 canary reads `hyper.json` and `~/.config/Hyper/plugins/local/`. Hyper doesn't follow the system light/dark setting, so pick one flavor.
 
 [Hyper](https://hyper.is) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/hyper/)
 

@@ -1,0 +1,58 @@
+*subway-seat.txt*  A warm 1970s subway-car colorscheme          v0.3.0
+
+SUBWAY SEAT                                                      *subway-seat*
+
+Walnut paneling, parchment text, harvest gold and burnt orange. Three flavors:
+
+  subway-seat-walnut   the original dark
+  subway-seat-tunnel   a deeper dark
+  subway-seat-enamel   the light one
+
+`:colorscheme subway-seat` follows 'background': Walnut when it's dark, Enamel
+when it's light. Change 'background' and the flavor changes with it; that
+also works after picking one flavor by name.
+
+==============================================================================
+SETUP                                                      *subway-seat-setup*
+
+Call setup() before the colorscheme. Every option is optional:
+>lua
+    require("subway-seat").setup({
+      -- the flavor `subway-seat` shows for each 'background'
+      background = { dark = "walnut", light = "enamel" }, -- or dark = "tunnel"
+      transparent = false, -- leave the editor background to the terminal
+      italics = true,      -- false drops every italic
+      overrides = function(colors, flavor)
+        return { CursorLine = { bg = colors.surface1 } }
+      end,
+    })
+    vim.cmd.colorscheme("subway-seat")
+<
+==============================================================================
+LUA API                                                      *subway-seat-api*
+
+require("subway-seat").colors([{flavor}])                *subway-seat.colors()*
+    The palette as role → "#RRGGBB" (`base`, `text`, `orange`, …), for the
+    flavor on screen by default.
+
+require("subway-seat").load([{flavor}])                    *subway-seat.load()*
+    Load "walnut", "tunnel" or "enamel"; nil follows 'background'.
+
+require("subway-seat").current                           *subway-seat.current*
+    The flavor on screen.
+
+==============================================================================
+LUALINE                                                    *subway-seat-lualine*
+
+lualine's default `theme = "auto"` picks the theme named like the
+colorscheme. To name one: `subway-seat`, `subway-seat-walnut`,
+`subway-seat-tunnel` or `subway-seat-enamel`.
+
+==============================================================================
+ON ITS OWN                                                  *subway-seat-files*
+
+The files in colors/ also work without the lua/ folder: copy colors/ into
+your config's colors/ folder. They carry the groups themselves; setup()
+options need the lua/ folder.
+
+ vim:tw=78:ts=8:ft=help:norl:

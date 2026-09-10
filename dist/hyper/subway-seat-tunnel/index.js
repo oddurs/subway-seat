@@ -1,5 +1,7 @@
 // Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
 // Subway Seat Tunnel. Enable with localPlugins: ["subway-seat-tunnel"] in ~/.hyper.js.
+// selectionColor is a translucent wash of the text color, not the solid selection color the other
+// terminals use: Hyper's xterm.js draws the selection over the glyphs, so an opaque color would hide them.
 "use strict";
 
 const theme = {

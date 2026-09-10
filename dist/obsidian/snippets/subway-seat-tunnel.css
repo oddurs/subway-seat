@@ -1,7 +1,7 @@
 /* Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
 
    Subway Seat Tunnel for Obsidian, as a CSS snippet: use it with the Subway Seat theme when
-   you don't run Style Settings. Settings → Appearance → CSS snippets → subway-seat-tunnel. */
+   you don't run Style Settings. Settings › Appearance › CSS snippets › subway-seat-tunnel. */
 
 .theme-dark {
   /* Tunnel: deeper grounds, same warm lights */
@@ -62,6 +62,9 @@
   --code-operator: #AA9171;
   --code-property: #D6C3A0;
   --code-punctuation: #AA9171;
+  --ss-diff-add: #363318;
+  --ss-diff-del: #492217;
+  --ss-diff-chg: #382911;
   --callout-quote: #917759;
   --blockquote-color: #D6C3A0;
   --checkbox-border-color: #745B45;
@@ -140,9 +143,9 @@
   --menu-border-color: #3D2C1D;
   --modal-background: #24180E;
   --modal-border-color: #3D2C1D;
-  --prompt-background: #24180E;
+  --prompt-background: #302115;
   --prompt-border-color: #3D2C1D;
-  --suggestion-background: #24180E;
+  --suggestion-background: #302115;
   --setting-items-background: #20150C;
   --setting-items-border-color: #302115;
   --drag-ghost-background: rgba(20, 13, 7, 0.9);
@@ -150,4 +153,8 @@
   --pdf-background: #1B120A;
   --pdf-sidebar-background: #1B120A;
   --pdf-page-background: #24180E;
+}
+
+body.theme-dark {
+  --canvas-color: #917759;
 }

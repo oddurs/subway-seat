@@ -14,19 +14,19 @@ Every graph runs the 70s stripe, avocado to gold to orange to red, and the four 
 
 ## Turn it on
 
-**Subway Seat**, in ~/.config/btop/btop.conf:
+**Subway Seat**, in ~/.config/btop/btop.conf, or Options › Color theme:
 
 ```conf
 color_theme = "subway-seat"
 ```
 
-**Subway Seat Tunnel**, in ~/.config/btop/btop.conf:
+**Subway Seat Tunnel**, in ~/.config/btop/btop.conf, or Options › Color theme:
 
 ```conf
 color_theme = "subway-seat-tunnel"
 ```
 
-**Subway Seat Enamel**, in ~/.config/btop/btop.conf:
+**Subway Seat Enamel**, in ~/.config/btop/btop.conf, or Options › Color theme:
 
 ```conf
 color_theme = "subway-seat-enamel"

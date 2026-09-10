@@ -1,8 +1,8 @@
 # Subway Seat for Yazi
 
-Yazi flavors with gold directories, an orange mode badge and a gold bar on the hovered file; previews use the bundled tmTheme. File and extension icons keep Yazi's own colors.
+Yazi flavors with gold directories, an orange mode badge and a gold bar on the hovered file; previews use the bundled tmTheme, and Yazi's file icons are recolored in the palette.
 
-[Yazi](https://yazi-rs.github.io) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/yazi/)
+[Yazi](https://yazi-rs.github.io) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/yazi/) · Needs Yazi 25.2+
 
 ## Files
 
@@ -38,6 +38,16 @@ light = "subway-seat-tunnel"
 ```toml
 [flavor]
 dark  = "subway-seat-enamel"
+light = "subway-seat-enamel"
+```
+
+## Follow light and dark
+
+In ~/.config/yazi/theme.toml (Yazi picks by the terminal's background):
+
+```toml
+[flavor]
+dark  = "subway-seat"
 light = "subway-seat-enamel"
 ```
 

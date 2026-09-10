@@ -1,11 +1,11 @@
 {
   "_comment": "Subway Seat \u2014 generated from palette.py by build.py. Edit the palette, not this file.",
   "name": "Subway Seat Tunnel",
-  "mode": "dark",
+  "mode": 1,
   "darkSchemeBackgroundColor": "#24180E",
   "darkSchemeTextColor": "#E9D8B6",
   "lightSchemeBackgroundColor": "#F4E9D4",
   "lightSchemeTextColor": "#3E2C1E",
-  "selectionColor": "#4F3927",
-  "scrollbarColor": "#4F3927"
+  "scrollbarColor": "#4F3927",
+  "selectionColor": "#4F3927"
 }

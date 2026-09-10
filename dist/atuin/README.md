@@ -2,7 +2,7 @@
 
 Colors for the history search: gold titles, orange highlights, calm annotations, and command-line colors that match the fish port.
 
-[Atuin](https://atuin.sh) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/atuin/)
+[Atuin](https://atuin.sh) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/atuin/) · Needs Atuin 18.4+
 
 ## Files
 

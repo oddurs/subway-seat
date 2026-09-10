@@ -127,7 +127,7 @@ current_playing = { fg = "#66740F", modifiers = ["Bold"] }
 page_desc = { fg = "#936200", modifiers = ["Bold"] }
 playlist_desc = { fg = "#8C7254" }
 table_header = { fg = "#AD4E00" }
-selection = { fg = "#2A1D13", bg = "#CAB48E", modifiers = ["Bold"] }
+selection = { fg = "#2A1D13", bg = "#D9C8A7", modifiers = ["Bold"] }
 secondary_row = { bg = "#EBDEC6" }
 like = { fg = "#BC4031" }
 lyrics_played = { fg = "#8C7254" }

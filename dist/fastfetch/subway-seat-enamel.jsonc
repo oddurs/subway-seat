@@ -1,0 +1,71 @@
+// Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+// Subway Seat Enamel for fastfetch.
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "color": {
+      "1": "#66740F",
+      "2": "#936200",
+      "3": "#AD4E00",
+      "4": "#992418",
+      "5": "#A65633",
+      "6": "#3F6480",
+      "7": "#3E7157",
+      "8": "#C4561A",
+      "9": "#A56E00"
+    }
+  },
+  "display": {
+    "color": {
+      "keys": "#936200",
+      "title": "#AD4E00",
+      "output": "#3E2C1E",
+      "separator": "#8C7254"
+    },
+    "percent": {
+      "color": {
+        "green": "#66740F",
+        "yellow": "#936200",
+        "red": "#BC4031"
+      }
+    },
+    "temp": {
+      "color": {
+        "green": "#66740F",
+        "yellow": "#936200",
+        "red": "#BC4031"
+      }
+    }
+  },
+  "modules": [
+    "title",
+    "separator",
+    "os",
+    "host",
+    "kernel",
+    "uptime",
+    "packages",
+    "shell",
+    "display",
+    "de",
+    "wm",
+    "wmtheme",
+    "theme",
+    "icons",
+    "font",
+    "cursor",
+    "terminal",
+    "terminalfont",
+    "cpu",
+    "gpu",
+    "memory",
+    "swap",
+    "disk",
+    "localip",
+    "battery",
+    "poweradapter",
+    "locale",
+    "break",
+    "colors"
+  ]
+}

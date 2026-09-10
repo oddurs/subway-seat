@@ -1,8 +1,8 @@
 # Subway Seat for tmux
 
-A status bar like a station sign: the session as an orange route bullet (gold while the prefix is held), the active window lit in gold, a clock and a four-color stripe. The rounded bullet ends need a Nerd Font; no plugins required.
+A status bar like a station sign: the session as an orange route bullet (gold while the prefix is held), the active window lit in gold, a clock and a four-color stripe. The rounded bullet ends need a Nerd Font; no plugins required. With TPM, `set -g @plugin 'oddurs/subway-seat'` works too: set `@subway_seat_flavor` to walnut, tunnel, enamel or auto first, and list it before tmux-continuum.
 
-[tmux](https://github.com/tmux/tmux) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/tmux/)
+[tmux](https://github.com/tmux/tmux) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/tmux/) · Needs tmux 3.2+
 
 ## Files
 
@@ -14,22 +14,32 @@ A status bar like a station sign: the session as an orange route bullet (gold wh
 
 ## Turn it on
 
-**Subway Seat**, in ~/.tmux.conf or ~/.config/tmux/tmux.conf (after TPM's `run` line, if you use TPM):
+**Subway Seat**, in ~/.tmux.conf or ~/.config/tmux/tmux.conf, above TPM's `run` line if you use TPM (plugins such as tmux-continuum add to the status bar when TPM runs, and this file would replace their additions):
 
 ```conf
 source-file ~/.config/tmux/subway-seat.conf
 ```
 
-**Subway Seat Tunnel**, in ~/.tmux.conf or ~/.config/tmux/tmux.conf (after TPM's `run` line, if you use TPM):
+**Subway Seat Tunnel**, in ~/.tmux.conf or ~/.config/tmux/tmux.conf, above TPM's `run` line if you use TPM (plugins such as tmux-continuum add to the status bar when TPM runs, and this file would replace their additions):
 
 ```conf
 source-file ~/.config/tmux/subway-seat-tunnel.conf
 ```
 
-**Subway Seat Enamel**, in ~/.tmux.conf or ~/.config/tmux/tmux.conf (after TPM's `run` line, if you use TPM):
+**Subway Seat Enamel**, in ~/.tmux.conf or ~/.config/tmux/tmux.conf, above TPM's `run` line if you use TPM (plugins such as tmux-continuum add to the status bar when TPM runs, and this file would replace their additions):
 
 ```conf
 source-file ~/.config/tmux/subway-seat-enamel.conf
+```
+
+## Follow light and dark
+
+In ~/.tmux.conf, in place of the line above (tmux 3.6+, in a terminal that reports light and dark changes):
+
+```conf
+source-file ~/.config/tmux/subway-seat.conf
+set-hook -g client-dark-theme 'source-file ~/.config/tmux/subway-seat.conf'
+set-hook -g client-light-theme 'source-file ~/.config/tmux/subway-seat-enamel.conf'
 ```
 
 ## Uninstall

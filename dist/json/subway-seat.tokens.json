@@ -129,6 +129,40 @@
       "$type": "color",
       "$value": "#E0956C",
       "$description": "Terracotta"
+    },
+    "diff": {
+      "add": {
+        "$type": "color",
+        "$value": "#3F3A1E"
+      },
+      "add-emph": {
+        "$type": "color",
+        "$value": "#504D26"
+      },
+      "add-dim": {
+        "$type": "color",
+        "$value": "#342D18"
+      },
+      "del": {
+        "$type": "color",
+        "$value": "#52281C"
+      },
+      "del-emph": {
+        "$type": "color",
+        "$value": "#6D3224"
+      },
+      "del-dim": {
+        "$type": "color",
+        "$value": "#412217"
+      },
+      "chg": {
+        "$type": "color",
+        "$value": "#423117"
+      },
+      "chg-emph": {
+        "$type": "color",
+        "$value": "#57421C"
+      }
     }
   },
   "tunnel": {
@@ -261,73 +295,107 @@
       "$type": "color",
       "$value": "#E0956C",
       "$description": "Terracotta"
+    },
+    "diff": {
+      "add": {
+        "$type": "color",
+        "$value": "#363318"
+      },
+      "add-emph": {
+        "$type": "color",
+        "$value": "#484722"
+      },
+      "add-dim": {
+        "$type": "color",
+        "$value": "#292512"
+      },
+      "del": {
+        "$type": "color",
+        "$value": "#492217"
+      },
+      "del-emph": {
+        "$type": "color",
+        "$value": "#662D20"
+      },
+      "del-dim": {
+        "$type": "color",
+        "$value": "#371A12"
+      },
+      "chg": {
+        "$type": "color",
+        "$value": "#382911"
+      },
+      "chg-emph": {
+        "$type": "color",
+        "$value": "#4E3B17"
+      }
     }
   },
   "enamel": {
     "crust": {
       "$type": "color",
       "$value": "#E2D3B6",
-      "$description": "Blackout"
+      "$description": "Enamel crust"
     },
     "mantle": {
       "$type": "color",
       "$value": "#EBDEC6",
-      "$description": "Espresso"
+      "$description": "Enamel mantle"
     },
     "base": {
       "$type": "color",
       "$value": "#F4E9D4",
-      "$description": "Paneling"
+      "$description": "Enamel base"
     },
     "surface0": {
       "$type": "color",
       "$value": "#D9C8A7",
-      "$description": "Coppertone"
+      "$description": "Enamel surface0"
     },
     "surface1": {
       "$type": "color",
       "$value": "#CAB48E",
-      "$description": "Saddle"
+      "$description": "Enamel surface1"
     },
     "surface2": {
       "$type": "color",
       "$value": "#BAA07A",
-      "$description": "Corduroy"
+      "$description": "Enamel surface2"
     },
     "overlay0": {
       "$type": "color",
       "$value": "#A58C6A",
-      "$description": "Pecan"
+      "$description": "Enamel overlay0"
     },
     "overlay1": {
       "$type": "color",
       "$value": "#8C7254",
-      "$description": "Cardboard"
+      "$description": "Enamel overlay1"
     },
     "overlay2": {
       "$type": "color",
       "$value": "#735C44",
-      "$description": "Burlap"
+      "$description": "Enamel overlay2"
     },
     "subtext0": {
       "$type": "color",
       "$value": "#654F3B",
-      "$description": "Khaki"
+      "$description": "Enamel subtext0"
     },
     "subtext1": {
       "$type": "color",
       "$value": "#54402F",
-      "$description": "Almond"
+      "$description": "Enamel subtext1"
     },
     "text": {
       "$type": "color",
       "$value": "#3E2C1E",
-      "$description": "Parchment"
+      "$description": "Enamel text"
     },
     "text-hi": {
       "$type": "color",
       "$value": "#2A1D13",
-      "$description": "Ivory"
+      "$description": "Enamel text hi"
     },
     "yellow": {
       "$type": "color",
@@ -393,6 +461,40 @@
       "$type": "color",
       "$value": "#A65633",
       "$description": "Terracotta"
+    },
+    "diff": {
+      "add": {
+        "$type": "color",
+        "$value": "#D7DBC1"
+      },
+      "add-emph": {
+        "$type": "color",
+        "$value": "#C2C79F"
+      },
+      "add-dim": {
+        "$type": "color",
+        "$value": "#E7E9D9"
+      },
+      "del": {
+        "$type": "color",
+        "$value": "#EBD3D1"
+      },
+      "del-emph": {
+        "$type": "color",
+        "$value": "#DEB9B5"
+      },
+      "del-dim": {
+        "$type": "color",
+        "$value": "#F3E5E3"
+      },
+      "chg": {
+        "$type": "color",
+        "$value": "#E3D6BD"
+      },
+      "chg-emph": {
+        "$type": "color",
+        "$value": "#DCCDAD"
+      }
     }
   }
 }

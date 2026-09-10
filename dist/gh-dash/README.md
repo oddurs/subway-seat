@@ -1,8 +1,8 @@
 # Subway Seat for gh-dash
 
-Parchment text, orange borders on the active section and a warm selected row, with author-role icons in the palette's accents.
+Parchment text, orange borders on the active section and a warm selected row, with author-role icons in the palette's accents. gh-dash shows PR diffs through its pager, so set `pager: {diff: delta}` in the same config to see them with the delta port.
 
-[gh-dash](https://github.com/dlvhdr/gh-dash) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/gh-dash/)
+[gh-dash](https://github.com/dlvhdr/gh-dash) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/gh-dash/) · Needs gh-dash 4.25+ for `include`
 
 ## Files
 
@@ -14,21 +14,21 @@ Parchment text, orange borders on the active section and a warm selected row, wi
 
 ## Turn it on
 
-**Subway Seat**, in ~/.config/gh-dash/config.yml (gh-dash 4.25+; on older releases paste the theme block in):
+**Subway Seat**, in ~/.config/gh-dash/config.yml (on releases before 4.25, paste the theme block in instead):
 
 ```yaml
 include:
   - ~/.config/gh-dash/subway-seat.yml
 ```
 
-**Subway Seat Tunnel**, in ~/.config/gh-dash/config.yml (gh-dash 4.25+; on older releases paste the theme block in):
+**Subway Seat Tunnel**, in ~/.config/gh-dash/config.yml (on releases before 4.25, paste the theme block in instead):
 
 ```yaml
 include:
   - ~/.config/gh-dash/subway-seat-tunnel.yml
 ```
 
-**Subway Seat Enamel**, in ~/.config/gh-dash/config.yml (gh-dash 4.25+; on older releases paste the theme block in):
+**Subway Seat Enamel**, in ~/.config/gh-dash/config.yml (on releases before 4.25, paste the theme block in instead):
 
 ```yaml
 include:

@@ -1,6 +1,6 @@
 # Subway Seat for vivid
 
-LS_COLORS for ls, fd, eza and friends: gold directories instead of blue, avocado executables, sage symlinks, terracotta media and red archives.
+LS_COLORS for GNU ls (macOS's own ls ignores it), fd, eza and friends: gold directories instead of blue, avocado executables, sage symlinks, terracotta media and red archives.
 
 [vivid](https://github.com/sharkdp/vivid) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/vivid/)
 
@@ -14,22 +14,40 @@ LS_COLORS for ls, fd, eza and friends: gold directories instead of blue, avocado
 
 ## Turn it on
 
-**Subway Seat**, in config.fish, after copying the theme to ~/.config/vivid/themes/:
+**Subway Seat**, in config.fish (bash and zsh: ~/.bashrc or ~/.zshrc), after copying the theme to ~/.config/vivid/themes/:
 
 ```fish
 set -gx LS_COLORS (vivid generate subway-seat)
 ```
 
-**Subway Seat Tunnel**, in config.fish, after copying the theme to ~/.config/vivid/themes/:
+In bash or zsh:
+
+```sh
+export LS_COLORS="$(vivid generate subway-seat)"
+```
+
+**Subway Seat Tunnel**, in config.fish (bash and zsh: ~/.bashrc or ~/.zshrc), after copying the theme to ~/.config/vivid/themes/:
 
 ```fish
 set -gx LS_COLORS (vivid generate subway-seat-tunnel)
 ```
 
-**Subway Seat Enamel**, in config.fish, after copying the theme to ~/.config/vivid/themes/:
+In bash or zsh:
+
+```sh
+export LS_COLORS="$(vivid generate subway-seat-tunnel)"
+```
+
+**Subway Seat Enamel**, in config.fish (bash and zsh: ~/.bashrc or ~/.zshrc), after copying the theme to ~/.config/vivid/themes/:
 
 ```fish
 set -gx LS_COLORS (vivid generate subway-seat-enamel)
+```
+
+In bash or zsh:
+
+```sh
+export LS_COLORS="$(vivid generate subway-seat-enamel)"
 ```
 
 ## Uninstall

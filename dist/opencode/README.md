@@ -8,8 +8,8 @@ Walnut and Tunnel each pair with Enamel, and opencode switches halves with your 
 
 | Flavor | File | Where it goes |
 |---|---|---|
-| All three | [`subway-seat.json`](subway-seat.json) | `~/.config/opencode/themes/subway-seat.json` |
-| All three | [`subway-seat-tunnel.json`](subway-seat-tunnel.json) | `~/.config/opencode/themes/subway-seat-tunnel.json` |
+| Subway Seat | [`subway-seat.json`](subway-seat.json) | `~/.config/opencode/themes/subway-seat.json` |
+| Subway Seat Tunnel | [`subway-seat-tunnel.json`](subway-seat-tunnel.json) | `~/.config/opencode/themes/subway-seat-tunnel.json` |
 | Subway Seat Enamel | [`subway-seat-enamel.json`](subway-seat-enamel.json) | `~/.config/opencode/themes/subway-seat-enamel.json` |
 
 ## Turn it on
@@ -38,6 +38,17 @@ Walnut and Tunnel each pair with Enamel, and opencode switches halves with your 
 {
   "$schema": "https://opencode.ai/tui.json",
   "theme": "subway-seat-enamel"
+}
+```
+
+## Follow light and dark
+
+In ~/.config/opencode/tui.json: Walnut and Tunnel carry Enamel as their light half:
+
+```json
+{
+  "$schema": "https://opencode.ai/tui.json",
+  "theme": "subway-seat"
 }
 ```
 

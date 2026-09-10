@@ -84,3 +84,13 @@ theme[upload_end]="#F97160"
 theme[process_start]="#ADB956"
 theme[process_mid]="#F09F3B"
 theme[process_end]="#E05C45"
+
+# Banners over the process list while it is paused or following a process
+theme[proc_pause_bg]="#E05C45"
+theme[proc_follow_bg]="#86AD95"
+theme[proc_banner_bg]="#EC7F31"
+theme[proc_banner_fg]="#140D07"
+
+# The process being followed
+theme[followed_bg]="#86AD95"
+theme[followed_fg]="#140D07"

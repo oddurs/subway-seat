@@ -1,70 +1,121 @@
 -- Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+-- Subway Seat for Neovim. `:colorscheme subway-seat` follows 'background';
+-- `subway-seat-walnut`, `-tunnel` and `-enamel` pick one flavor. See :help subway-seat.
 local M = {}
 
 M.flavors = { "walnut", "tunnel", "enamel" }
 
 M.config = {
-  -- "auto" follows vim.o.background: light → enamel, dark → walnut.
-  flavor = "auto",
-  -- Leave Normal/NormalNC/SignColumn backgrounds unset so the terminal shows through.
+  -- The flavor `:colorscheme subway-seat` shows for each 'background'.
+  background = { dark = "walnut", light = "enamel" },
+  -- Leave the editor and gutter backgrounds unset so the terminal shows through.
   transparent = false,
   -- Set false to drop every italic (comments, parameters, builtins …).
   italics = true,
   -- function(colors, flavor) return { GroupName = { fg = colors.orange } } end
   overrides = nil,
+  -- Before 0.3: a fixed flavor for `:colorscheme subway-seat` ("auto" follows 'background').
+  flavor = "auto",
+}
+
+--- The flavor on screen ("walnut", "tunnel" or "enamel"), or nil before the first load.
+M.current = nil
+
+local default = { dark = "walnut", light = "enamel" }
+local shown = {} -- 'background' → the flavor last shown with it
+local transparent = {
+  "Normal", "NormalNC", "SignColumn", "FoldColumn", "EndOfBuffer", "LineNr", "CursorLineNr",
+  "StatusLine", "StatusLineNC", "TabLineFill", "WinBar", "WinBarNC",
+  "NeoTreeNormal", "NeoTreeNormalNC", "NvimTreeNormal", "NvimTreeNormalNC", "TroubleNormal", "TroubleNormalNC",
 }
 
 function M.setup(opts)
   M.config = vim.tbl_deep_extend("force", M.config, opts or {})
 end
 
-local function resolve(flavor)
-  flavor = flavor or M.config.flavor
-  if flavor == "auto" then
-    return vim.o.background == "light" and "enamel" or "walnut"
-  end
-  return flavor
-end
-
---- The palette for a flavor, as role → "#RRGGBB".
+--- The palette for a flavor (default: the one on screen), as role → "#RRGGBB".
 function M.colors(flavor)
-  return require("subway-seat.palette")[resolve(flavor)]
+  return require("subway-seat.palette")[flavor or M.current or default[vim.o.background] or "walnut"]
 end
 
-function M.load(flavor)
-  flavor = resolve(flavor)
-  local colors = M.colors(flavor)
-  local groups = vim.deepcopy(require("subway-seat.groups." .. flavor))
+local function is_light(flavor)
+  return flavor == "enamel"
+end
 
+-- A flavor's groups live in its colors file, which returns them when called with "subway-seat".
+local function read(flavor)
+  local file = "colors/subway-seat-" .. flavor .. ".lua"
+  local path = vim.api.nvim_get_runtime_file(file, false)[1]
+  if not path then
+    error("subway-seat: " .. file .. " isn't on 'runtimepath'")
+  end
+  return assert(loadfile(path))("subway-seat")
+end
+
+local function apply(flavor, name, set_background)
+  local spec = read(flavor)
+  if set_background and vim.o.background ~= spec.background then
+    -- Drop the name first, so Neovim doesn't re-run the previous colorscheme for the new 'background'.
+    vim.g.colors_name = nil
+    vim.o.background = spec.background
+  end
+
+  local groups = vim.deepcopy(spec.groups)
   if M.config.transparent then
-    for _, name in ipairs({ "Normal", "NormalNC", "SignColumn", "FoldColumn", "EndOfBuffer", "StatusLine" }) do
-      if groups[name] then groups[name].bg = nil end
+    for _, group in ipairs(transparent) do
+      if groups[group] then groups[group].bg = nil end
     end
   end
   if not M.config.italics then
-    for _, spec in pairs(groups) do spec.italic = nil end
+    for _, hl in pairs(groups) do hl.italic = nil end
   end
   if type(M.config.overrides) == "function" then
-    for name, spec in pairs(M.config.overrides(colors, flavor) or {}) do
-      groups[name] = spec
+    for group, hl in pairs(M.config.overrides(M.colors(flavor), flavor) or {}) do
+      groups[group] = hl
     end
   end
 
-  if vim.g.colors_name then vim.cmd("highlight clear") end
+  vim.cmd("hi clear")
   if vim.fn.exists("syntax_on") == 1 then vim.cmd("syntax reset") end
-  -- Changing 'background' re-sources the active colorscheme; drop the name first.
-  vim.g.colors_name = nil
-  local bg = flavor == "enamel" and "light" or "dark"
-  if vim.o.background ~= bg then vim.o.background = bg end
   vim.o.termguicolors = true
-  vim.g.colors_name = flavor == "walnut" and "subway-seat" or ("subway-seat-" .. flavor)
+  vim.g.colors_name = name
+  for group, hl in pairs(groups) do
+    vim.api.nvim_set_hl(0, group, hl)
+  end
+  for i, color in ipairs(spec.ansi) do
+    vim.g["terminal_color_" .. (i - 1)] = color
+  end
+  M.current = flavor
+  shown[vim.o.background] = flavor
+end
 
-  for name, spec in pairs(groups) do
-    vim.api.nvim_set_hl(0, name, spec)
+local function follow(bg)
+  return M.config.background[bg] or default[bg]
+end
+
+--- Entry point of the colors/ files. Neovim re-runs the current one when 'background'
+--- changes; then the flavor follows 'background' instead of setting it back.
+function M.colorscheme(name)
+  local bg = vim.o.background
+  local reloading = vim.g.colors_name == name and M.current ~= nil
+  local flavor = name:match("^subway%-seat%-(%a+)$")
+  if not flavor then -- "subway-seat"
+    local fixed = M.config.flavor ~= "auto" and M.config.flavor or nil
+    if fixed and (is_light(fixed) == (bg == "light") or not reloading) then
+      return apply(fixed, name, true)
+    end
+    return apply(follow(bg), name, false)
   end
-  for i, c in ipairs(require("subway-seat.palette").ansi[flavor]) do
-    vim.g["terminal_color_" .. (i - 1)] = c
+  if reloading and is_light(flavor) ~= (bg == "light") then
+    local to = shown[bg] or follow(bg)
+    return apply(to, "subway-seat-" .. to, false)
   end
+  apply(flavor, name, true)
+end
+
+--- Load a flavor ("walnut", "tunnel", "enamel"), or follow 'background' when nil.
+function M.load(flavor)
+  M.colorscheme((flavor == nil or flavor == "auto") and "subway-seat" or ("subway-seat-" .. flavor))
 end
 
 return M

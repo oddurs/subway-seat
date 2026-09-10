@@ -1,6 +1,6 @@
 # Subway Seat for Lite XL
 
-Copy the files to `~/.config/lite-xl/colors/`, then pick one in the settings plugin or load it from `init.lua`. Also colors the indentguide and bracketmatch plugins.
+Copy the files to `~/.config/lite-xl/colors/` (on Windows, `%USERPROFILE%\.config\lite-xl\colors`), then pick one in the settings plugin or load it from `init.lua`. Also colors the indentguide and bracketmatch plugins.
 
 [Lite XL](https://lite-xl.com) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/lite-xl/)
 

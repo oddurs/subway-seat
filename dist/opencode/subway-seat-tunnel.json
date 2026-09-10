@@ -107,6 +107,10 @@
       "dark": "tunnelSurface1",
       "light": "enamelCrust"
     },
+    "backgroundMenu": {
+      "dark": "#302115",
+      "light": "#FAF4EA"
+    },
     "border": {
       "dark": "tunnelSurface2",
       "light": "enamelSurface2"

@@ -1,0 +1,26 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# Subway Seat for television.
+# general
+background = '#362619'
+border_fg = '#634932'
+text_fg = '#EDDCBC'
+dimmed_text_fg = '#967B5C'
+# input
+input_text_fg = '#EDDCBC'
+result_count_fg = '#967B5C'
+# results
+result_name_fg = '#D9C6A3'
+result_line_number_fg = '#967B5C'
+result_value_fg = '#EDDCBC'
+selection_bg = '#43301F'
+selection_fg = '#F8ECD4'
+match_fg = '#F3BF45'
+# preview
+preview_title_fg = '#D9C6A3'
+# modes
+channel_mode_fg = '#20160E'
+channel_mode_bg = '#EC7F31'
+remote_control_mode_fg = '#20160E'
+remote_control_mode_bg = '#F3BF45'
+action_picker_mode_fg = '#20160E'
+action_picker_mode_bg = '#86AD95'

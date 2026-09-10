@@ -1,0 +1,53 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# Subway Seat for zathura. In zathurarc: include subway-seat
+
+# window
+set default-bg              "#362619"
+set default-fg              "#EDDCBC"
+set statusbar-bg            "#2A1D13"
+set statusbar-fg            "#D9C6A3"
+set inputbar-bg             "#2A1D13"
+set inputbar-fg             "#EDDCBC"
+
+# notifications
+set notification-bg         "#43301F"
+set notification-fg         "#EDDCBC"
+set notification-error-bg   "#E05C45"
+set notification-error-fg   "#20160E"
+set notification-warning-bg "#F3BF45"
+set notification-warning-fg "#20160E"
+
+# completion
+set completion-bg           "#43301F"
+set completion-fg           "#EDDCBC"
+set completion-group-bg     "#2A1D13"
+set completion-group-fg     "#C4AE8C"
+set completion-highlight-bg "#634932"
+set completion-highlight-fg "#F8ECD4"
+
+# index (table of contents)
+set index-bg                "#362619"
+set index-fg                "#EDDCBC"
+set index-active-bg         "#634932"
+set index-active-fg         "#F8ECD4"
+
+# search hits and link hints, washed over the page
+set highlight-color         "rgba(243,191,69,0.3)"
+set highlight-active-color  "rgba(236,127,49,0.5)"
+set highlight-fg            "#F8ECD4"
+
+# pages while they render
+set render-loading-bg       "#362619"
+set render-loading-fg       "#967B5C"
+
+# digital signatures
+set signature-success-color "#ADB956"
+set signature-warning-color "#F3BF45"
+set signature-error-color   "#F97160"
+
+# recoloring: white paper → base, black ink → text; Ctrl+R toggles it
+set recolor-lightcolor      "#362619"
+set recolor-darkcolor       "#EDDCBC"
+set recolor                 "true"
+set recolor-keephue         "true"
+set recolor-reverse-video   "true"

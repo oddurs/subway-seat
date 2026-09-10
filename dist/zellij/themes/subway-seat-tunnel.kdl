@@ -30,10 +30,10 @@ themes {
         ribbon_selected {
             base "#140D07"
             background "#EC7F31"
-            emphasis_0 "#F6EAD1"
-            emphasis_1 "#E05C45"
-            emphasis_2 "#FFD36B"
-            emphasis_3 "#86AD95"
+            emphasis_0 "#140D07"
+            emphasis_1 "#140D07"
+            emphasis_2 "#140D07"
+            emphasis_3 "#140D07"
         }
         table_title {
             base "#EC7F31"

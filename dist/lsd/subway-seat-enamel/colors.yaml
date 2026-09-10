@@ -1,0 +1,45 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# Subway Seat Enamel for lsd. File names follow LS_COLORS (see the vivid port).
+user: "#936200"
+group: "#54402F"
+permission:
+  read: "#936200"
+  write: "#AD4E00"
+  exec: "#66740F"
+  exec-sticky: "#A65633"
+  no-access: "#A58C6A"
+  octal: "#A65633"
+  acl: "#8C7254"
+  context: "#8C7254"
+attributes:
+  archive: "#654F3B"
+  read: "#936200"
+  hidden: "#8C7254"
+  system: "#A65633"
+date:
+  hour-old: "#66740F"
+  day-old: "#54402F"
+  older: "#654F3B"
+size:
+  none: "#8C7254"
+  small: "#66740F"
+  medium: "#936200"
+  large: "#AD4E00"
+inode:
+  valid: "#8C7254"
+  invalid: "#A58C6A"
+links:
+  valid: "#3E7157"
+  invalid: "#A58C6A"
+tree-edge: "#A58C6A"
+git-status:
+  default: "#654F3B"
+  unmodified: "#8C7254"
+  ignored: "#A58C6A"
+  new-in-index: "#66740F"
+  new-in-workdir: "#66740F"
+  typechange: "#A65633"
+  deleted: "#BC4031"
+  renamed: "#3E7157"
+  modified: "#936200"
+  conflicted: "#992418"

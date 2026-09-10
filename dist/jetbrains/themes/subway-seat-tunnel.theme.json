@@ -37,12 +37,13 @@
     "editorBackground": "#24180E",
     "panelBackground": "#1B120A",
     "barBackground": "#140D07",
-    "popupBackground": "#1B120A",
+    "popupBackground": "#302115",
     "inputBackground": "#140D07",
     "hoverBackground": "#302115",
     "pressedBackground": "#3D2C1D",
     "selectionBackground": "#3D2C1D",
     "selectionInactiveBackground": "#302115",
+    "popupSelection": "#463729",
     "borderColor": "#140D07",
     "separatorColor": "#302115",
     "controlBorder": "#3D2C1D",
@@ -153,7 +154,7 @@
       "foreground": "subtext1"
     },
     "CheckBoxMenuItem": {
-      "selectionBackground": "selectionBackground",
+      "selectionBackground": "popupSelection",
       "selectionForeground": "text_hi"
     },
     "ColorChooser": {
@@ -181,9 +182,9 @@
     "CompletionPopup": {
       "background": "popupBackground",
       "foreground": "subtext1",
-      "selectionBackground": "selectionBackground",
+      "selectionBackground": "popupSelection",
       "selectionForeground": "text_hi",
-      "selectionInactiveBackground": "selectionInactiveBackground",
+      "selectionInactiveBackground": "popupSelection",
       "matchForeground": "yellow",
       "matchSelectionForeground": "yellow_hi",
       "selectionInfoForeground": "overlay2",
@@ -392,7 +393,7 @@
       "background": "popupBackground",
       "foreground": "text",
       "borderColor": "controlBorder",
-      "selectionBackground": "selectionBackground",
+      "selectionBackground": "popupSelection",
       "selectionForeground": "text_hi",
       "separatorColor": "surface1",
       "disabledForeground": "overlay0",
@@ -409,7 +410,7 @@
     "MenuItem": {
       "background": "popupBackground",
       "foreground": "text",
-      "selectionBackground": "selectionBackground",
+      "selectionBackground": "popupSelection",
       "selectionForeground": "text_hi",
       "disabledForeground": "overlay0",
       "acceleratorForeground": "overlay1",
@@ -481,7 +482,7 @@
       "background": "popupBackground",
       "foreground": "subtext1",
       "borderColor": "controlBorder",
-      "currentOverloadBackground": "selectionBackground",
+      "currentOverloadBackground": "popupSelection",
       "currentParameterForeground": "yellow_hi",
       "disabledForeground": "overlay0",
       "infoForeground": "overlay1",
@@ -556,7 +557,7 @@
       "background": "popupBackground",
       "foreground": "text",
       "borderColor": "controlBorder",
-      "selectionBackground": "selectionBackground",
+      "selectionBackground": "popupSelection",
       "selectionForeground": "text_hi",
       "translucentBackground": "popupBackground"
     },
@@ -579,7 +580,7 @@
       "foreground": "subtext1"
     },
     "RadioButtonMenuItem": {
-      "selectionBackground": "selectionBackground",
+      "selectionBackground": "popupSelection",
       "selectionForeground": "text_hi"
     },
     "RunWidget": {

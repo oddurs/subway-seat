@@ -1,51 +1,60 @@
-# Subway Seat for Base16 / Base24
+# Subway Seat for Base16 / Base24 / Tinted8
 
-Base16 and Base24 schemes. The accent slots follow the terminal colors, so keywords stay burnt orange and strings avocado, but base16 templates will show functions in denim and classes in harvest gold.
+Base16, Base24 and Tinted8 schemes. In base16 and base24 the accent slots follow the terminal colors, so keywords stay burnt orange and strings avocado, but their templates show functions in denim and classes in harvest gold. Tinted8 sets every syntax and UI color by name, so its templates use the editor themes' colors. The Tinted8 files use the key names tinty 0.34 reads.
 
-[Base16 / Base24](https://github.com/tinted-theming/home) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/base16/)
+[Base16 / Base24 / Tinted8](https://github.com/tinted-theming/home) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/base16/)
 
 ## Files
 
 | Flavor | File | Where it goes |
 |---|---|---|
-| Subway Seat | [`base16/subway-seat.yaml`](base16/subway-seat.yaml) | `$(tinty config --data-dir-path)/custom-schemes/base16/subway-seat.yaml` |
-| Subway Seat Tunnel | [`base16/subway-seat-tunnel.yaml`](base16/subway-seat-tunnel.yaml) | `$(tinty config --data-dir-path)/custom-schemes/base16/subway-seat-tunnel.yaml` |
-| Subway Seat Enamel | [`base16/subway-seat-enamel.yaml`](base16/subway-seat-enamel.yaml) | `$(tinty config --data-dir-path)/custom-schemes/base16/subway-seat-enamel.yaml` |
-| Subway Seat | [`base24/subway-seat.yaml`](base24/subway-seat.yaml) | `$(tinty config --data-dir-path)/custom-schemes/base24/subway-seat.yaml` |
-| Subway Seat Tunnel | [`base24/subway-seat-tunnel.yaml`](base24/subway-seat-tunnel.yaml) | `$(tinty config --data-dir-path)/custom-schemes/base24/subway-seat-tunnel.yaml` |
-| Subway Seat Enamel | [`base24/subway-seat-enamel.yaml`](base24/subway-seat-enamel.yaml) | `$(tinty config --data-dir-path)/custom-schemes/base24/subway-seat-enamel.yaml` |
+| Subway Seat | [`base16/subway-seat.yaml`](base16/subway-seat.yaml) | `~/.local/share/tinted-theming/tinty/custom-schemes/base16/subway-seat.yaml`; tinty's data folder; `tinty config --data-dir-path` shows where yours is |
+| Subway Seat Tunnel | [`base16/subway-seat-tunnel.yaml`](base16/subway-seat-tunnel.yaml) | `~/.local/share/tinted-theming/tinty/custom-schemes/base16/subway-seat-tunnel.yaml`; tinty's data folder; `tinty config --data-dir-path` shows where yours is |
+| Subway Seat Enamel | [`base16/subway-seat-enamel.yaml`](base16/subway-seat-enamel.yaml) | `~/.local/share/tinted-theming/tinty/custom-schemes/base16/subway-seat-enamel.yaml`; tinty's data folder; `tinty config --data-dir-path` shows where yours is |
+| Subway Seat | [`base24/subway-seat.yaml`](base24/subway-seat.yaml) | `~/.local/share/tinted-theming/tinty/custom-schemes/base24/subway-seat.yaml`; tinty's data folder; `tinty config --data-dir-path` shows where yours is |
+| Subway Seat Tunnel | [`base24/subway-seat-tunnel.yaml`](base24/subway-seat-tunnel.yaml) | `~/.local/share/tinted-theming/tinty/custom-schemes/base24/subway-seat-tunnel.yaml`; tinty's data folder; `tinty config --data-dir-path` shows where yours is |
+| Subway Seat Enamel | [`base24/subway-seat-enamel.yaml`](base24/subway-seat-enamel.yaml) | `~/.local/share/tinted-theming/tinty/custom-schemes/base24/subway-seat-enamel.yaml`; tinty's data folder; `tinty config --data-dir-path` shows where yours is |
+| Subway Seat | [`tinted8/subway-seat.yaml`](tinted8/subway-seat.yaml) | `~/.local/share/tinted-theming/tinty/custom-schemes/tinted8/subway-seat.yaml`; tinty's data folder; `tinty apply tinted8-…` needs templates that support Tinted8 |
+| Subway Seat Tunnel | [`tinted8/subway-seat-tunnel.yaml`](tinted8/subway-seat-tunnel.yaml) | `~/.local/share/tinted-theming/tinty/custom-schemes/tinted8/subway-seat-tunnel.yaml`; tinty's data folder; `tinty apply tinted8-…` needs templates that support Tinted8 |
+| Subway Seat Enamel | [`tinted8/subway-seat-enamel.yaml`](tinted8/subway-seat-enamel.yaml) | `~/.local/share/tinted-theming/tinty/custom-schemes/tinted8/subway-seat-enamel.yaml`; tinty's data folder; `tinty apply tinted8-…` needs templates that support Tinted8 |
 
 ## Turn it on
 
 **Subway Seat**, in tinty, or any tinted-theming builder:
 
 ```sh
-cp subway-seat.yaml "$(tinty config --data-dir-path)/custom-schemes/base16/"
+d="$(tinty config --data-dir-path)/custom-schemes/base16"
+mkdir -p "$d" && cp base16/subway-seat.yaml "$d/"
 tinty apply base16-subway-seat
 ```
 
 **Subway Seat Tunnel**, in tinty, or any tinted-theming builder:
 
 ```sh
-cp subway-seat-tunnel.yaml "$(tinty config --data-dir-path)/custom-schemes/base16/"
+d="$(tinty config --data-dir-path)/custom-schemes/base16"
+mkdir -p "$d" && cp base16/subway-seat-tunnel.yaml "$d/"
 tinty apply base16-subway-seat-tunnel
 ```
 
 **Subway Seat Enamel**, in tinty, or any tinted-theming builder:
 
 ```sh
-cp subway-seat-enamel.yaml "$(tinty config --data-dir-path)/custom-schemes/base16/"
+d="$(tinty config --data-dir-path)/custom-schemes/base16"
+mkdir -p "$d" && cp base16/subway-seat-enamel.yaml "$d/"
 tinty apply base16-subway-seat-enamel
 ```
 
 ## Uninstall
 
-- Delete `$(tinty config --data-dir-path)/custom-schemes/base16/subway-seat.yaml`.
-- Delete `$(tinty config --data-dir-path)/custom-schemes/base16/subway-seat-tunnel.yaml`.
-- Delete `$(tinty config --data-dir-path)/custom-schemes/base16/subway-seat-enamel.yaml`.
-- Delete `$(tinty config --data-dir-path)/custom-schemes/base24/subway-seat.yaml`.
-- Delete `$(tinty config --data-dir-path)/custom-schemes/base24/subway-seat-tunnel.yaml`.
-- Delete `$(tinty config --data-dir-path)/custom-schemes/base24/subway-seat-enamel.yaml`.
+- Delete `~/.local/share/tinted-theming/tinty/custom-schemes/base16/subway-seat.yaml`.
+- Delete `~/.local/share/tinted-theming/tinty/custom-schemes/base16/subway-seat-tunnel.yaml`.
+- Delete `~/.local/share/tinted-theming/tinty/custom-schemes/base16/subway-seat-enamel.yaml`.
+- Delete `~/.local/share/tinted-theming/tinty/custom-schemes/base24/subway-seat.yaml`.
+- Delete `~/.local/share/tinted-theming/tinty/custom-schemes/base24/subway-seat-tunnel.yaml`.
+- Delete `~/.local/share/tinted-theming/tinty/custom-schemes/base24/subway-seat-enamel.yaml`.
+- Delete `~/.local/share/tinted-theming/tinty/custom-schemes/tinted8/subway-seat.yaml`.
+- Delete `~/.local/share/tinted-theming/tinty/custom-schemes/tinted8/subway-seat-tunnel.yaml`.
+- Delete `~/.local/share/tinted-theming/tinty/custom-schemes/tinted8/subway-seat-enamel.yaml`.
 - Remove the line you added to turn it on.
 
 Generated by `build.py` from `palette.py` (v0.3.0). Edit the port in `ports/`, not these files.

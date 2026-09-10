@@ -47,6 +47,7 @@
   <color name="tint_search" value="#624A1E"/>
   <color name="tint_search_cur" value="#884C20"/>
   <color name="selection_unfocused" value="#3C2A1C"/>
+  <color name="bracket_bg" value="#3D2C1D"/>
 
   <style name="text" foreground="text" background="base"/>
   <style name="selection" foreground="text_hi" background="surface2"/>
@@ -62,7 +63,7 @@
   <style name="right-margin" foreground="surface1" background="mantle"/>
   <style name="draw-spaces" foreground="surface2"/>
   <style name="background-pattern" background="mantle"/>
-  <style name="search-match" foreground="text_hi" background="tint_search"/>
+  <style name="search-match" background="tint_search"/>
   <style name="map-overlay" background="surface1"/>
   <style name="snippet-focus" background="tint_chg"/>
   <style name="def:comment" foreground="overlay1" italic="true"/>
@@ -98,7 +99,7 @@
   <style name="def:inline-code" foreground="green"/>
   <style name="def:insertion" foreground="green" underline="single"/>
   <style name="def:deletion" foreground="red_hi" strikethrough="true"/>
-  <style name="def:link-text" foreground="sage"/>
+  <style name="def:link-text" foreground="denim"/>
   <style name="def:link-symbol" foreground="overlay2"/>
   <style name="def:link-destination" foreground="denim" underline="single"/>
   <style name="def:heading" foreground="yellow" bold="true"/>
@@ -133,7 +134,7 @@
   <style name="diff:removed-line" foreground="red_hi"/>
   <style name="diff:changed-line" foreground="yellow"/>
   <style name="diff:location" foreground="denim"/>
-  <style name="diff:diff-file" foreground="denim" bold="true"/>
+  <style name="diff:diff-file" foreground="text_hi" bold="true"/>
   <style name="diff:special-case" foreground="clay"/>
   <style name="js:built-in-constructor" foreground="sage"/>
   <style name="json:keyname" foreground="yellow"/>
@@ -141,7 +142,7 @@
   <style name="latex:include" foreground="orange"/>
   <style name="latex:display-math" foreground="clay"/>
   <style name="latex:inline-math" foreground="clay"/>
-  <style name="latex:math-bound" foreground="overlay2"/>
+  <style name="latex:math-boundary" foreground="overlay2"/>
   <style name="perl:pod" foreground="overlay1" italic="true"/>
   <style name="python:builtin-function" foreground="yellow" italic="true"/>
   <style name="python:builtin-constant" foreground="red_hi"/>
@@ -153,7 +154,7 @@
   <style name="python:string-conversion" foreground="clay"/>
   <style name="rust:attribute" foreground="clay" italic="true"/>
   <style name="rust:lifetime" foreground="clay" italic="true"/>
-  <style name="rust:macro" foreground="clay"/>
+  <style name="rust:macro" foreground="clay" italic="true"/>
   <style name="rust:scope" foreground="subtext0"/>
   <style name="sh:variable" foreground="text"/>
   <style name="sh:variable-definition" foreground="text"/>
