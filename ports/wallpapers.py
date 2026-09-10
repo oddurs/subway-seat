@@ -121,7 +121,7 @@ def stripes(f, W, H):
     # the paneling's grooves show through the paint
     k = 1
     while k * board < W:
-        body.append(rect(k * board - 1.5, 0, 3, H, dark(f), op=0.14 if f.dark else 0.08))
+        body.append(rect(k * board - 1.5, 0, 3, H, dark(f), op=0.07 if f.dark else 0.05))
         k += 1
     return "\n".join(body)
 

@@ -18,7 +18,7 @@ META = {
     },
     "notes": "Adds a profile with the palette, cursor, selection and bold colors. Re-running the script "
     "updates the same profile in place, and `sh <script> --uninstall` removes it. Profiles don't switch with "
-    "the system style, so pick one flavor. Ptyxis, GNOME's newer terminal, is not covered.",
+    "the system style, so pick one flavor. Ptyxis, GNOME's newer terminal, has its own port that follows the style.",
 }
 
 

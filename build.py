@@ -209,7 +209,7 @@ def port_readme(entry: dict) -> str:
     """dist/<id>/README.md: what's here and how to switch it on, per flavor."""
     by_flavor = {f.id: f for f in p.FLAVORS}
     lines = [
-        f"# Subway Seat for {entry['name']}",
+        f"# Subway Seat {entry['name'].lower()}" if entry['id'] == 'wallpapers' else f"# Subway Seat for {entry['name']}",
         "",
         entry["notes"],
         "",
