@@ -2,11 +2,11 @@
 # Subway Seat Tunnel for cava: gradient from the bottom of the screen to the top.
 [color]
 gradient = 1
-gradient_color_1 = '#A3AE4B'
-gradient_color_2 = '#C5B548'
-gradient_color_3 = '#E8BD46'
+gradient_color_1 = '#ADB956'
+gradient_color_2 = '#CBBC4F'
+gradient_color_3 = '#E9BE47'
 gradient_color_4 = '#F1AD3F'
 gradient_color_5 = '#EE9137'
-gradient_color_6 = '#E87832'
-gradient_color_7 = '#DD6436'
-gradient_color_8 = '#D2503A'
+gradient_color_6 = '#EA7A34'
+gradient_color_7 = '#E56B3C'
+gradient_color_8 = '#E05C45'

@@ -5,8 +5,8 @@ import uuid
 import zipfile
 
 import palette as p
+from ports._lib import VERSION
 
-VERSION = "0.2.0"
 AUTHOR = "Oddur Sigurdsson"
 AUTHOR_URL = "https://github.com/oddurs"
 DESCRIPTION = "A walnut-brown 1970s NYC subway theme: harvest gold, burnt orange and avocado on warm wood."

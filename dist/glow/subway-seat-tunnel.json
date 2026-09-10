@@ -37,7 +37,7 @@
   },
   "h4": {
     "prefix": "#### ",
-    "color": "#A3AE4B"
+    "color": "#ADB956"
   },
   "h5": {
     "prefix": "##### ",
@@ -92,11 +92,11 @@
   "code": {
     "prefix": " ",
     "suffix": " ",
-    "color": "#A3AE4B",
+    "color": "#ADB956",
     "background_color": "#302115"
   },
   "code_block": {
-    "color": "#8A7053",
+    "color": "#917759",
     "margin": 2,
     "chroma": {
       "text": {
@@ -104,10 +104,10 @@
       },
       "error": {
         "color": "#F6EAD1",
-        "background_color": "#D2503A"
+        "background_color": "#E05C45"
       },
       "comment": {
-        "color": "#8A7053",
+        "color": "#917759",
         "italic": true
       },
       "comment_preproc": {
@@ -128,10 +128,10 @@
         "italic": true
       },
       "operator": {
-        "color": "#A48B6C"
+        "color": "#AA9171"
       },
       "punctuation": {
-        "color": "#A48B6C"
+        "color": "#AA9171"
       },
       "name": {
         "color": "#E9D8B6"
@@ -151,7 +151,7 @@
         "color": "#86AD95"
       },
       "name_constant": {
-        "color": "#EC6A50"
+        "color": "#F97160"
       },
       "name_decorator": {
         "color": "#E0956C",
@@ -167,29 +167,29 @@
         "color": "#E9D8B6"
       },
       "literal": {
-        "color": "#EC6A50"
+        "color": "#F97160"
       },
       "literal_number": {
-        "color": "#EC6A50"
+        "color": "#F97160"
       },
       "literal_date": {
-        "color": "#EC6A50"
+        "color": "#F97160"
       },
       "literal_string": {
-        "color": "#A3AE4B"
+        "color": "#ADB956"
       },
       "literal_string_escape": {
         "color": "#E0956C"
       },
       "generic_deleted": {
-        "color": "#EC6A50"
+        "color": "#F97160"
       },
       "generic_emph": {
         "color": "#E9D8B6",
         "italic": true
       },
       "generic_inserted": {
-        "color": "#A3AE4B"
+        "color": "#ADB956"
       },
       "generic_strong": {
         "color": "#F6EAD1",
@@ -204,7 +204,7 @@
     }
   },
   "table": {
-    "color": "#6A523C",
+    "color": "#745B45",
     "center_separator": "┼",
     "column_separator": "│",
     "row_separator": "─"

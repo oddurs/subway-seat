@@ -2,14 +2,14 @@
 [delta "subway-seat-tunnel"]
 	dark = true
 	syntax-theme = Subway Seat Tunnel
-	plus-style = syntax "#3D361A"
-	plus-emph-style = syntax "#595728"
-	minus-style = syntax "#4A2418"
-	minus-emph-style = syntax "#743222"
+	plus-style = syntax "#484221"
+	plus-emph-style = syntax "#5E5C2C"
+	minus-style = syntax "#4D271A"
+	minus-emph-style = syntax "#7A3727"
 	map-styles = bold purple => syntax "#533726", bold cyan => syntax "#3C3D30"
-	line-numbers-plus-style = "#A3AE4B"
-	line-numbers-minus-style = "#EC6A50"
-	line-numbers-zero-style = "#6A523C"
+	line-numbers-plus-style = "#ADB956"
+	line-numbers-minus-style = "#F97160"
+	line-numbers-zero-style = "#745B45"
 	line-numbers-left-style = "#4F3927"
 	line-numbers-right-style = "#4F3927"
 	file-style = "#F3BF45" bold

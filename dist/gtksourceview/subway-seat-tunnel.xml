@@ -14,9 +14,9 @@
   <color name="surface0" value="#302115"/>
   <color name="surface1" value="#3D2C1D"/>
   <color name="surface2" value="#4F3927"/>
-  <color name="overlay0" value="#6A523C"/>
-  <color name="overlay1" value="#8A7053"/>
-  <color name="overlay2" value="#A48B6C"/>
+  <color name="overlay0" value="#745B45"/>
+  <color name="overlay1" value="#917759"/>
+  <color name="overlay2" value="#AA9171"/>
   <color name="subtext0" value="#C0AA88"/>
   <color name="subtext1" value="#D6C3A0"/>
   <color name="text" value="#E9D8B6"/>
@@ -25,21 +25,21 @@
   <color name="yellow_hi" value="#FFD36B"/>
   <color name="orange" value="#EC7F31"/>
   <color name="orange_hi" value="#FF9D55"/>
-  <color name="red" value="#D2503A"/>
-  <color name="red_hi" value="#EC6A50"/>
-  <color name="green" value="#A3AE4B"/>
+  <color name="red" value="#E05C45"/>
+  <color name="red_hi" value="#F97160"/>
+  <color name="green" value="#ADB956"/>
   <color name="green_hi" value="#BFCB63"/>
   <color name="sage" value="#86AD95"/>
   <color name="sage_hi" value="#A5C9B0"/>
   <color name="denim" value="#7F9BAE"/>
   <color name="denim_hi" value="#9DB6C6"/>
   <color name="clay" value="#E0956C"/>
-  <color name="tint_add" value="#3D361A"/>
-  <color name="tint_add_emph" value="#595728"/>
-  <color name="tint_del" value="#4A2418"/>
-  <color name="tint_del_emph" value="#743222"/>
+  <color name="tint_add" value="#484221"/>
+  <color name="tint_add_emph" value="#5E5C2C"/>
+  <color name="tint_del" value="#4D271A"/>
+  <color name="tint_del_emph" value="#7A3727"/>
   <color name="tint_chg" value="#412F16"/>
-  <color name="tint_chg_emph" value="#664D20"/>
+  <color name="tint_chg_emph" value="#523D1A"/>
   <color name="tint_info" value="#312A24"/>
   <color name="tint_hint" value="#322D21"/>
   <color name="tint_search" value="#624A1E"/>

@@ -3,7 +3,7 @@
 Name=Subway Seat Enamel
 ColorForeground=#3E2C1E
 ColorBackground=#F4E9D4
-ColorCursor=#C4561A
+ColorCursor=#AD4E00
 ColorCursorForeground=#F4E9D4
 ColorCursorUseDefault=FALSE
 ColorBold=#2A1D13
@@ -11,5 +11,5 @@ ColorBoldUseDefault=FALSE
 ColorSelection=#2A1D13
 ColorSelectionBackground=#CAB48E
 ColorSelectionUseDefault=FALSE
-TabActivityColor=#C4561A
-ColorPalette=#54402F;#B43B27;#697813;#A56E00;#3F6480;#C4561A;#3E7157;#BAA07A;#8C7254;#C44A33;#7B8B22;#BA8210;#517791;#D66A27;#4C8367;#CAB48E
+TabActivityColor=#AD4E00
+ColorPalette=#54402F;#992418;#66740F;#936200;#3F6480;#AD4E00;#3E7157;#BAA07A;#8C7254;#BC4031;#697813;#A56E00;#517791;#C4561A;#4C8367;#CAB48E

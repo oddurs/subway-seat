@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Subway Seat Tunnel",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "A walnut-brown 1970s NYC subway theme: harvest gold, burnt orange and avocado on warm wood. The late local after midnight: espresso-deep, same warm lights.",
   "theme": {
     "colors": {
@@ -56,14 +56,14 @@
         182
       ],
       "tab_background_text": [
-        164,
-        139,
-        108
+        170,
+        145,
+        113
       ],
       "tab_background_text_inactive": [
-        138,
-        112,
-        83
+        145,
+        119,
+        89
       ],
       "tab_background_text_incognito": [
         192,
@@ -71,9 +71,9 @@
         136
       ],
       "tab_background_text_incognito_inactive": [
-        164,
-        139,
-        108
+        170,
+        145,
+        113
       ],
       "bookmark_text": [
         214,

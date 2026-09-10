@@ -42,29 +42,29 @@ pre[class*="language-"]::selection, pre[class*="language-"] ::selection {
 .token.punctuation { color: #735C44; }
 .token.operator { color: #735C44; }
 .token.namespace { color: #654F3B; }
-.token.keyword, .token.atrule, .token.rule, .token.list, .token.important { color: #C4561A; }
-.token.function { color: #A56E00; }
-.token.builtin { color: #A56E00; font-style: italic; }
-.token.string, .token.char, .token.attr-value, .token.code { color: #697813; }
-.token.escape, .token.entity, .token.interpolation-punctuation { color: #AE5F3A; }
-.token.regex { color: #AE5F3A; }
-.token.number { color: #C44A33; }
-.token.boolean { color: #C44A33; }
-.token.constant, .token.symbol { color: #C44A33; }
+.token.keyword, .token.atrule, .token.rule, .token.list, .token.important { color: #AD4E00; }
+.token.function { color: #936200; }
+.token.builtin { color: #936200; font-style: italic; }
+.token.string, .token.char, .token.attr-value, .token.code { color: #66740F; }
+.token.escape, .token.entity, .token.interpolation-punctuation { color: #A65633; }
+.token.regex { color: #A65633; }
+.token.number { color: #BC4031; }
+.token.boolean { color: #BC4031; }
+.token.constant, .token.symbol { color: #BC4031; }
 .token.class-name { color: #3E7157; }
 .token.variable { color: #3E2C1E; }
 .token.parameter { color: #54402F; font-style: italic; }
 .token.property { color: #54402F; }
-.language-json .token.property { color: #A56E00; }
-.token.tag { color: #C4561A; }
-.token.attr-name, .token.selector { color: #A56E00; font-style: italic; }
-.token.decorator, .token.annotation { color: #AE5F3A; font-style: italic; }
-.token.title { color: #A56E00; font-weight: bold; }
+.language-json .token.property { color: #936200; }
+.token.tag { color: #AD4E00; }
+.token.attr-name, .token.selector { color: #936200; font-style: italic; }
+.token.decorator, .token.annotation { color: #A65633; font-style: italic; }
+.token.title { color: #936200; font-weight: bold; }
 .token.blockquote { color: #654F3B; font-style: italic; }
 .token.coord { color: #3F6480; }
 .token.url { color: #3F6480; text-decoration: underline; }
-.token.inserted { color: #697813; background: #DCD6B3; }
-.token.deleted { color: #C44A33; background: #E8C8B4; }
+.token.inserted { color: #66740F; background: #CFCBA1; }
+.token.deleted { color: #BC4031; background: #E0BEAB; }
 .token.important, .token.bold { font-weight: bold; }
 .token.italic { font-style: italic; }
 .token.entity { cursor: help; }

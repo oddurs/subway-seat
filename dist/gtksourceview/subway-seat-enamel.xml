@@ -21,29 +21,29 @@
   <color name="subtext1" value="#54402F"/>
   <color name="text" value="#3E2C1E"/>
   <color name="text_hi" value="#2A1D13"/>
-  <color name="yellow" value="#A56E00"/>
-  <color name="yellow_hi" value="#BA8210"/>
-  <color name="orange" value="#C4561A"/>
-  <color name="orange_hi" value="#D66A27"/>
-  <color name="red" value="#B43B27"/>
-  <color name="red_hi" value="#C44A33"/>
-  <color name="green" value="#697813"/>
-  <color name="green_hi" value="#7B8B22"/>
+  <color name="yellow" value="#936200"/>
+  <color name="yellow_hi" value="#A56E00"/>
+  <color name="orange" value="#AD4E00"/>
+  <color name="orange_hi" value="#C4561A"/>
+  <color name="red" value="#992418"/>
+  <color name="red_hi" value="#BC4031"/>
+  <color name="green" value="#66740F"/>
+  <color name="green_hi" value="#697813"/>
   <color name="sage" value="#3E7157"/>
   <color name="sage_hi" value="#4C8367"/>
   <color name="denim" value="#3F6480"/>
   <color name="denim_hi" value="#517791"/>
-  <color name="clay" value="#AE5F3A"/>
-  <color name="tint_add" value="#DCD6B3"/>
-  <color name="tint_add_emph" value="#C2C18F"/>
-  <color name="tint_del" value="#E8C8B4"/>
-  <color name="tint_del_emph" value="#DBA590"/>
-  <color name="tint_chg" value="#EBDABB"/>
-  <color name="tint_chg_emph" value="#DFC89A"/>
-  <color name="tint_info" value="#DED9CA"/>
-  <color name="tint_hint" value="#DEDBC5"/>
-  <color name="tint_search" value="#E0CA9E"/>
-  <color name="tint_search_cur" value="#E0AB85"/>
+  <color name="clay" value="#A65633"/>
+  <color name="tint_add" value="#CFCBA1"/>
+  <color name="tint_add_emph" value="#B8B881"/>
+  <color name="tint_del" value="#E0BEAB"/>
+  <color name="tint_del_emph" value="#CA8E7E"/>
+  <color name="tint_chg" value="#E6D6B6"/>
+  <color name="tint_chg_emph" value="#DFCBA5"/>
+  <color name="tint_info" value="#DBD6C8"/>
+  <color name="tint_hint" value="#DBD8C2"/>
+  <color name="tint_search" value="#D7C094"/>
+  <color name="tint_search_cur" value="#D09C6A"/>
   <color name="selection_unfocused" value="#DDCCAE"/>
 
   <style name="text" foreground="text" background="base"/>

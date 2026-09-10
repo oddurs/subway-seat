@@ -14,8 +14,8 @@ split = "#302115"
 visual_bell = "#302115"
 ansi = [
   "#3D2C1D",
-  "#D2503A",
-  "#A3AE4B",
+  "#E05C45",
+  "#ADB956",
   "#F3BF45",
   "#7F9BAE",
   "#EC7F31",
@@ -23,8 +23,8 @@ ansi = [
   "#D6C3A0",
 ]
 brights = [
-  "#6A523C",
-  "#EC6A50",
+  "#917759",
+  "#F97160",
   "#BFCB63",
   "#FFD36B",
   "#9DB6C6",
@@ -55,7 +55,7 @@ underline = "None"
 
 [colors.tab_bar.inactive_tab]
 bg_color = "#1B120A"
-fg_color = "#8A7053"
+fg_color = "#917759"
 intensity = "Normal"
 italic = false
 strikethrough = false
@@ -71,7 +71,7 @@ underline = "None"
 
 [colors.tab_bar.new_tab]
 bg_color = "#140D07"
-fg_color = "#8A7053"
+fg_color = "#917759"
 intensity = "Normal"
 italic = false
 strikethrough = false

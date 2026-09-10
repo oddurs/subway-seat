@@ -8,8 +8,8 @@ theme:
       inverted: "#20160E"
       faint: "#967B5C"
       warning: "#F3BF45"
-      success: "#A3AE4B"
-      error: "#EC6A50"
+      success: "#ADB956"
+      error: "#F97160"
       actor: "#D9C6A3"
     background:
       selected: "#43301F"
@@ -18,7 +18,7 @@ theme:
       secondary: "#634932"
       faint: "#43301F"
     icon:
-      newcontributor: "#A3AE4B"
+      newcontributor: "#ADB956"
       contributor: "#86AD95"
       collaborator: "#F3BF45"
       member: "#F3BF45"

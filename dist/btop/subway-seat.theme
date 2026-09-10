@@ -34,25 +34,25 @@ theme[proc_misc]="#86AD95"
 # Box outlines
 theme[cpu_box]="#EC7F31"
 theme[mem_box]="#F3BF45"
-theme[net_box]="#A3AE4B"
+theme[net_box]="#ADB956"
 theme[proc_box]="#E0956C"
 
 # Box dividers and small box outlines
 theme[div_line]="#634932"
 
 # Temperature graph
-theme[temp_start]="#A3AE4B"
+theme[temp_start]="#ADB956"
 theme[temp_mid]="#F09F3B"
-theme[temp_end]="#D2503A"
+theme[temp_end]="#E05C45"
 
 # CPU graph
-theme[cpu_start]="#A3AE4B"
+theme[cpu_start]="#ADB956"
 theme[cpu_mid]="#F09F3B"
-theme[cpu_end]="#D2503A"
+theme[cpu_end]="#E05C45"
 
 # Mem/disk free meter
-theme[free_start]="#727134"
-theme[free_mid]="#A3AE4B"
+theme[free_start]="#77773B"
+theme[free_mid]="#ADB956"
 theme[free_end]="#BFCB63"
 
 # Mem/disk cached meter
@@ -67,20 +67,20 @@ theme[available_end]="#FFD36B"
 
 # Mem/disk used meter
 theme[used_start]="#EC7F31"
-theme[used_mid]="#D2503A"
-theme[used_end]="#EC6A50"
+theme[used_mid]="#E05C45"
+theme[used_end]="#F97160"
 
 # Download graph
-theme[download_start]="#727134"
-theme[download_mid]="#A3AE4B"
+theme[download_start]="#77773B"
+theme[download_mid]="#ADB956"
 theme[download_end]="#F3BF45"
 
 # Upload graph
 theme[upload_start]="#9A5726"
 theme[upload_mid]="#EC7F31"
-theme[upload_end]="#EC6A50"
+theme[upload_end]="#F97160"
 
 # Process box gradient for threads, memory and cpu usage
-theme[process_start]="#A3AE4B"
+theme[process_start]="#ADB956"
 theme[process_mid]="#F09F3B"
-theme[process_end]="#D2503A"
+theme[process_end]="#E05C45"

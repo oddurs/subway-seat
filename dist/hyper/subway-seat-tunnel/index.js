@@ -11,15 +11,15 @@ const theme = {
   "borderColor": "#302115",
   "colors": {
     "black": "#3D2C1D",
-    "red": "#D2503A",
-    "green": "#A3AE4B",
+    "red": "#E05C45",
+    "green": "#ADB956",
     "yellow": "#F3BF45",
     "blue": "#7F9BAE",
     "magenta": "#EC7F31",
     "cyan": "#86AD95",
     "white": "#D6C3A0",
-    "lightBlack": "#6A523C",
-    "lightRed": "#EC6A50",
+    "lightBlack": "#917759",
+    "lightRed": "#F97160",
     "lightGreen": "#BFCB63",
     "lightYellow": "#FFD36B",
     "lightBlue": "#9DB6C6",
@@ -32,7 +32,7 @@ const theme = {
 const css = `
   .tabs_nav, .tabs_list { background-color: #140D07; }
   .tabs_title { color: #C0AA88; }
-  .tab_tab { color: #8A7053; background-color: #140D07; }
+  .tab_tab { color: #917759; background-color: #140D07; }
   .tab_tab.tab_active { color: #F6EAD1; background-color: #24180E; box-shadow: inset 0 -2px 0 #F3BF45; }
 `;
 

@@ -6,21 +6,21 @@ $env.config.highlight_resolved_externals = true
 $env.config.color_config = {
     shape_internalcall: "#F3BF45"
     shape_external_resolved: "#F3BF45"
-    shape_external: "#EC6A50"
+    shape_external: "#F97160"
     shape_keyword: "#EC7F31"
     shape_flag: "#86AD95"
     shape_externalarg: "#D9C6A3"
     shape_signature: "#86AD95"
-    shape_string: "#A3AE4B"
-    shape_raw_string: "#A3AE4B"
+    shape_string: "#ADB956"
+    shape_raw_string: "#ADB956"
     shape_string_interpolation: "#E0956C"
-    shape_int: "#EC6A50"
-    shape_float: "#EC6A50"
-    shape_bool: "#EC6A50"
-    shape_binary: "#EC6A50"
-    shape_datetime: "#EC6A50"
-    shape_nothing: "#EC6A50"
-    shape_literal: "#EC6A50"
+    shape_int: "#F97160"
+    shape_float: "#F97160"
+    shape_bool: "#F97160"
+    shape_binary: "#F97160"
+    shape_datetime: "#F97160"
+    shape_nothing: "#F97160"
+    shape_literal: "#F97160"
     shape_range: "#E0956C"
     shape_custom: "#E0956C"
     shape_variable: "#E0956C"
@@ -37,9 +37,9 @@ $env.config.color_config = {
     shape_list: "#AE9575"
     shape_record: "#AE9575"
     shape_table: "#AE9575"
-    shape_match_pattern: "#A3AE4B"
+    shape_match_pattern: "#ADB956"
     shape_matching_brackets: { fg: "#FFD36B" attr: "b" }
-    shape_garbage: { fg: "#EC6A50" attr: "u" }
+    shape_garbage: { fg: "#F97160" attr: "u" }
 
     background: "#362619"
     foreground: "#EDDCBC"
@@ -53,14 +53,14 @@ $env.config.color_config = {
     search_result: { fg: "#20160E" bg: "#F3BF45" }
     selection: { fg: "#F8ECD4" bg: "#634932" }
     selection_cursor: { attr: "n" }
-    bool: "#EC6A50"
-    int: "#EC6A50"
-    float: "#EC6A50"
+    bool: "#F97160"
+    int: "#F97160"
+    float: "#F97160"
     string: "#EDDCBC"
     glob: "#E0956C"
-    binary: "#EC6A50"
+    binary: "#F97160"
     binary_null_char: "#7B6047"
-    binary_printable: "#A3AE4B"
+    binary_printable: "#ADB956"
     binary_whitespace: "#86AD95"
     binary_ascii_other: "#E0956C"
     binary_non_ascii: "#EC7F31"
@@ -79,20 +79,20 @@ $env.config.color_config = {
     banner_highlight2: "#F3BF45"
     filesize: {||
       if $in < 1kb { "#C4AE8C"
-      } else if $in < 1mb { "#A3AE4B"
+      } else if $in < 1mb { "#ADB956"
       } else if $in < 100mb { "#F3BF45"
       } else if $in < 1gb { "#EC7F31"
-      } else { "#EC6A50" }
+      } else { "#F97160" }
     }
     duration: {||
-      if $in < 1sec { "#A3AE4B"
+      if $in < 1sec { "#ADB956"
       } else if $in < 1min { "#F3BF45"
       } else if $in < 1hr { "#EC7F31"
-      } else { "#EC6A50" }
+      } else { "#F97160" }
     }
     datetime: {|| (date now) - $in |
       if $in < 1hr { "#BFCB63"
-      } else if $in < 1day { "#A3AE4B"
+      } else if $in < 1day { "#ADB956"
       } else if $in < 1wk { "#F3BF45"
       } else if $in < 4wk { "#EC7F31"
       } else if $in < 52wk { "#C4AE8C"
@@ -107,8 +107,8 @@ $env.config.explore = {
     selected_cell: { fg: "#20160E" bg: "#EC7F31" }
     status: {
         info: "#7F9BAE"
-        success: "#A3AE4B"
+        success: "#ADB956"
         warn: "#F3BF45"
-        error: "#EC6A50"
+        error: "#F97160"
     }
 }

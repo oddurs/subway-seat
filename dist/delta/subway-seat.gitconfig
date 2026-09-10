@@ -2,13 +2,13 @@
 [delta "subway-seat"]
 	dark = true
 	syntax-theme = Subway Seat
-	plus-style = syntax "#4C4123"
-	plus-emph-style = syntax "#645F2E"
-	minus-style = syntax "#582F20"
-	minus-emph-style = syntax "#7E3928"
+	plus-style = syntax "#554C29"
+	plus-emph-style = syntax "#686433"
+	minus-style = syntax "#5B3223"
+	minus-emph-style = syntax "#843F2D"
 	map-styles = bold purple => syntax "#60422E", bold cyan => syntax "#4A4838"
-	line-numbers-plus-style = "#A3AE4B"
-	line-numbers-minus-style = "#EC6A50"
+	line-numbers-plus-style = "#ADB956"
+	line-numbers-minus-style = "#F97160"
 	line-numbers-zero-style = "#7B6047"
 	line-numbers-left-style = "#634932"
 	line-numbers-right-style = "#634932"

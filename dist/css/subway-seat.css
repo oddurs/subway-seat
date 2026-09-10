@@ -26,9 +26,9 @@
   --ss-yellow-hi: #FFD36B; /* Broadway yellow */
   --ss-orange: #EC7F31; /* Burnt orange */
   --ss-orange-hi: #FF9D55; /* Sixth Avenue */
-  --ss-red: #D2503A; /* Redbird */
-  --ss-red-hi: #EC6A50; /* Redbird bright */
-  --ss-green: #A3AE4B; /* Avocado */
+  --ss-red: #E05C45; /* Redbird */
+  --ss-red-hi: #F97160; /* Redbird bright */
+  --ss-green: #ADB956; /* Avocado */
   --ss-green-hi: #BFCB63; /* Avocado bright */
   --ss-sage: #86AD95; /* Seafoam tile */
   --ss-sage-hi: #A5C9B0; /* Seafoam bright */
@@ -54,9 +54,9 @@
   --ss-yellow-hi-rgb: 255 211 107;
   --ss-orange-rgb: 236 127 49;
   --ss-orange-hi-rgb: 255 157 85;
-  --ss-red-rgb: 210 80 58;
-  --ss-red-hi-rgb: 236 106 80;
-  --ss-green-rgb: 163 174 75;
+  --ss-red-rgb: 224 92 69;
+  --ss-red-hi-rgb: 249 113 96;
+  --ss-green-rgb: 173 185 86;
   --ss-green-hi-rgb: 191 203 99;
   --ss-sage-rgb: 134 173 149;
   --ss-sage-hi-rgb: 165 201 176;

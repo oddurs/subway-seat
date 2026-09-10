@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Subway Seat Enamel",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "A walnut-brown 1970s NYC subway theme: harvest gold, burnt orange and avocado on warm wood. Cream enamel panels in the morning sun. The light one.",
   "theme": {
     "colors": {
@@ -16,14 +16,14 @@
         198
       ],
       "frame_incognito": [
-        216,
-        188,
-        157
+        214,
+        186,
+        156
       ],
       "frame_incognito_inactive": [
-        216,
-        188,
-        157
+        214,
+        186,
+        156
       ],
       "background_tab": [
         226,
@@ -36,14 +36,14 @@
         198
       ],
       "background_tab_incognito": [
-        216,
-        188,
-        157
+        214,
+        186,
+        156
       ],
       "background_tab_incognito_inactive": [
-        216,
-        188,
-        157
+        214,
+        186,
+        156
       ],
       "toolbar": [
         244,
@@ -116,9 +116,9 @@
         128
       ],
       "ntp_header": [
-        196,
-        86,
-        26
+        173,
+        78,
+        0
       ],
       "button_background": [
         226,

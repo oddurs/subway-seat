@@ -20,16 +20,29 @@ A port is a module in ports/ (no leading underscore) that defines:
 `build` receives every Flavor and returns files. A file tied to one flavor sets
 `flavor=f.id`; a file covering all of them (a VS Code extension, an auto
 light/dark theme) leaves it None. `dest` is where the user puts the file, shown
-on the site; `lang` is the site's highlighter: conf, fish, toml, lua, json,
-xml, yaml, css, ini, vim, elisp, sh, kdl, ron, typescript or text.
+on the site; `lang` is one of LANGS below (the site's highlighter).
+
+Shared helpers live here: `ink(f)`, `selection(f)`, `tints(f)`, the layering
+system (`resolve`, `solid`, `ui_colors`), `ANSI_NAMES`, `zip_bytes` and VERSION
+(read from pyproject.toml, the one place the version lives).
 """
 
+import io
+import re
+import tomllib
+import zipfile
 from dataclasses import dataclass
+from pathlib import Path
+from typing import Literal, NotRequired, TypedDict
 
 import palette as p
 
+ROOT = Path(__file__).resolve().parent.parent
+VERSION: str = tomllib.loads((ROOT / "pyproject.toml").read_text(encoding="utf-8"))["project"]["version"]
+
 HEADER = "Subway Seat — generated from palette.py by build.py. Edit the palette, not this file."
 REPO = "https://github.com/oddurs/subway-seat"
+SITE = "https://oddurs.github.io/subway-seat"
 
 CATEGORIES = [
     "Terminals",
@@ -42,14 +55,64 @@ CATEGORIES = [
 ]
 
 
-@dataclass
+# Languages the site knows how to highlight (see site/src/lib/highlight.ts).
+Lang = Literal[
+    "conf", "fish", "sh", "toml", "lua", "json", "xml", "yaml", "css", "scss", "ini", "vim",
+    "elisp", "kdl", "ron", "typescript", "js", "python", "text",
+]
+LANGS: tuple[str, ...] = Lang.__args__
+
+
+class Enable(TypedDict):
+    where: str
+    code: str  # formatted with the Flavor: {name} {slug} {snake} {id}
+    lang: Lang
+
+
+class Meta(TypedDict):
+    id: str
+    name: str
+    category: str
+    homepage: str
+    notes: str
+    enable: NotRequired[Enable]
+
+
+@dataclass(frozen=True, slots=True)
 class Out:
     path: str
     content: str | bytes
     flavor: str | None = None
     dest: str | None = None
-    lang: str = "text"
+    lang: Lang = "text"
     append: bool = False
+
+
+ANSI_NAMES = ("black", "red", "green", "yellow", "blue", "magenta", "cyan", "white")
+
+
+def ink(f):
+    """Text that sits on an accent fill (buttons, badges, cursor text)."""
+    return f.crust if f.dark else f.base
+
+
+def selection(f):
+    """The one solid selection colour for apps without alpha."""
+    return f.surface2 if f.dark else f.surface1
+
+
+def zip_bytes(files: dict[str, str | bytes], compress: bool = True) -> bytes:
+    """A deterministic zip: fixed timestamps, Unix attributes, stable order."""
+    buf = io.BytesIO()
+    method = zipfile.ZIP_DEFLATED if compress else zipfile.ZIP_STORED
+    with zipfile.ZipFile(buf, "w", method) as z:
+        for name, body in files.items():
+            info = zipfile.ZipInfo(name, date_time=(1980, 1, 1, 0, 0, 0))
+            info.compress_type = method
+            info.create_system = 3
+            info.external_attr = 0o644 << 16
+            z.writestr(info, body if isinstance(body, bytes) else body.encode("utf-8"))
+    return buf.getvalue()
 
 
 def h(color):
@@ -68,18 +131,18 @@ def rgb_floats(color):
 # ── Tinted backgrounds (diffs, search, diagnostics) ────────────────────────
 def tints(f):
     """Semantic tinted grounds, computed against the flavor's base."""
-    k = 1.0 if f.dark else 0.85
     return {
-        "add": f.mix("green", "base", 0.20 * k),
-        "add_emph": f.mix("green", "base", 0.42 * k),
-        "del": f.mix("red", "base", 0.22 * k),
-        "del_emph": f.mix("red", "base", 0.46 * k),
-        "chg": f.mix("yellow", "base", 0.14 * k),
-        "chg_emph": f.mix("yellow", "base", 0.32 * k),
-        "info": f.mix("denim", "base", 0.14 * k),
-        "hint": f.mix("sage", "base", 0.14 * k),
-        "search": f.mix("yellow", "base", 0.30 * k),
-        "search_cur": f.mix("orange", "base", 0.50 * k),
+        "add": f.mix("green", "base", 0.26),
+        "add_emph": f.mix("green", "base", 0.42),
+        "del": f.mix("red", "base", 0.22),
+        "del_emph": f.mix("red", "base", 0.46),
+        "chg": f.mix("yellow", "base", 0.14),
+        # kept clearly apart from the search tint (0.30), so a match inside a diff reads as a match
+        "chg_emph": f.mix("yellow", "base", 0.22),
+        "info": f.mix("denim", "base", 0.14),
+        "hint": f.mix("sage", "base", 0.14),
+        "search": f.mix("yellow", "base", 0.30),
+        "search_cur": f.mix("orange", "base", 0.50),
     }
 
 
@@ -105,8 +168,6 @@ def ui_colors(f):
 def resolve(expr, f):
     """Resolve a layering expression for flavor f:
     `role`, `role@L3` / `role@35` (alpha), `mix(a,b,t)`, `transparent`, or `#hex`."""
-    import re
-
     c = ui_colors(f)
     expr = expr.strip()
     if expr == "transparent":
@@ -121,7 +182,11 @@ def resolve(expr, f):
     if m:
         role, level = m.groups()
         pct = INK[level][0 if f.dark else 1] if level in INK else int(level)
+        if role not in c:
+            raise ValueError(f"unknown role {role!r} in layering expression {expr!r}")
         return p.alpha(c[role], pct / 100)
+    if expr not in c:
+        raise ValueError(f"unknown role or expression {expr!r}")
     return c[expr]
 
 

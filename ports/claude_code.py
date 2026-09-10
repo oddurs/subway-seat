@@ -3,7 +3,7 @@ and tips, a relaxed output style, and a plugin that bundles all of it."""
 
 import json
 
-from ports._lib import HEADER, REPO, Out, rgb, tints
+from ports._lib import HEADER, REPO, VERSION, Out, rgb, tints
 
 META = {
     "id": "claude-code",
@@ -20,7 +20,6 @@ META = {
     "and “Next stop” tips to your settings. Every token is themed, down to the ultrathink rainbow.",
 }
 
-VERSION = "0.2.0"
 
 
 def theme(f):

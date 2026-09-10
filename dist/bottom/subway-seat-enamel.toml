@@ -3,29 +3,29 @@
 
 [styles.cpu]
 all_entry_color = "#3E2C1E"
-avg_entry_color = "#C4561A"
-cpu_core_colors = ["#697813", "#A56E00", "#C4561A", "#C44A33", "#3E7157", "#AE5F3A", "#7B8B22", "#BA8210"]
+avg_entry_color = "#AD4E00"
+cpu_core_colors = ["#66740F", "#936200", "#AD4E00", "#BC4031", "#3E7157", "#A65633", "#697813", "#A56E00"]
 
 [styles.memory]
-ram_color = "#697813"
+ram_color = "#66740F"
 cache_color = "#3E7157"
-swap_color = "#C4561A"
-arc_color = "#AE5F3A"
-gpu_colors = ["#A56E00", "#C4561A", "#C44A33", "#3E7157", "#AE5F3A", "#7B8B22"]
+swap_color = "#AD4E00"
+arc_color = "#A65633"
+gpu_colors = ["#936200", "#AD4E00", "#BC4031", "#3E7157", "#A65633", "#697813"]
 
 [styles.network]
-rx_color = "#697813"
-tx_color = "#C4561A"
-rx_total_color = "#7B8B22"
-tx_total_color = "#D66A27"
+rx_color = "#66740F"
+tx_color = "#AD4E00"
+rx_total_color = "#697813"
+tx_total_color = "#C4561A"
 
 [styles.battery]
-high_battery_color = "#697813"
-medium_battery_color = "#A56E00"
-low_battery_color = "#C44A33"
+high_battery_color = "#66740F"
+medium_battery_color = "#936200"
+low_battery_color = "#BC4031"
 
 [styles.tables]
-headers = { color = "#C4561A", bold = true }
+headers = { color = "#AD4E00", bold = true }
 
 [styles.graphs]
 graph_color = "#A58C6A"
@@ -33,17 +33,17 @@ legend_text = { color = "#654F3B" }
 
 [styles.widgets]
 border_color = "#BAA07A"
-selected_border_color = "#C4561A"
-widget_title = { color = "#A56E00" }
+selected_border_color = "#AD4E00"
+widget_title = { color = "#936200" }
 text = { color = "#3E2C1E" }
-selected_text = { color = "#F4E9D4", bg_color = "#C4561A" }
+selected_text = { color = "#F4E9D4", bg_color = "#AD4E00" }
 disabled_text = { color = "#A58C6A" }
 thread_text = { color = "#3E7157" }  # 0.11+
 
 # Newer sections (bottom 0.13+); older releases ignore them.
 [styles.temp_graph]
-temp_graph_color_styles = ["#697813", "#A56E00", "#C4561A", "#C44A33", "#3E7157", "#AE5F3A", "#7B8B22", "#BA8210"]
+temp_graph_color_styles = ["#66740F", "#936200", "#AD4E00", "#BC4031", "#3E7157", "#A65633", "#697813", "#A56E00"]
 
 [styles.disk_io_graph]
-read_colours = ["#697813", "#3E7157", "#7B8B22", "#4C8367"]
-write_colours = ["#C4561A", "#AE5F3A", "#D66A27", "#C44A33"]
+read_colours = ["#66740F", "#3E7157", "#697813", "#4C8367"]
+write_colours = ["#AD4E00", "#A65633", "#C4561A", "#BC4031"]

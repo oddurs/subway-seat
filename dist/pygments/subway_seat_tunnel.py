@@ -11,7 +11,7 @@ class SubwaySeatTunnelStyle(Style):
     name = "subway-seat-tunnel"
     background_color = "#24180E"
     highlight_color = "#302115"
-    line_number_color = "#6A523C"
+    line_number_color = "#745B45"
     line_number_background_color = "#24180E"
     line_number_special_color = "#F3BF45"
     line_number_special_background_color = "#302115"
@@ -19,22 +19,22 @@ class SubwaySeatTunnelStyle(Style):
     styles = {
         Token: "#E9D8B6",
         Token.Text: "#E9D8B6",
-        Token.Error: "#D2503A",
-        Token.Comment: "italic #8A7053",
-        Token.Comment.Hashbang: "italic #8A7053",
+        Token.Error: "#E05C45",
+        Token.Comment: "italic #917759",
+        Token.Comment.Hashbang: "italic #917759",
         Token.Comment.Preproc: "italic #E0956C",
         Token.Keyword: "#EC7F31",
-        Token.Keyword.Constant: "#EC6A50",
+        Token.Keyword.Constant: "#F97160",
         Token.Keyword.Type: "italic #86AD95",
-        Token.Operator: "#A48B6C",
+        Token.Operator: "#AA9171",
         Token.Operator.Word: "#EC7F31",
-        Token.Punctuation: "#A48B6C",
+        Token.Punctuation: "#AA9171",
         Token.Name: "#E9D8B6",
         Token.Name.Attribute: "italic #F3BF45",
         Token.Name.Builtin: "italic #F3BF45",
-        Token.Name.Builtin.Pseudo: "italic #EC6A50",
+        Token.Name.Builtin.Pseudo: "italic #F97160",
         Token.Name.Class: "#86AD95",
-        Token.Name.Constant: "#EC6A50",
+        Token.Name.Constant: "#F97160",
         Token.Name.Decorator: "italic #E0956C",
         Token.Name.Entity: "#E0956C",
         Token.Name.Exception: "#86AD95",
@@ -45,25 +45,25 @@ class SubwaySeatTunnelStyle(Style):
         Token.Name.Property: "#D6C3A0",
         Token.Name.Tag: "#EC7F31",
         Token.Name.Variable: "#E9D8B6",
-        Token.Name.Variable.Magic: "italic #EC6A50",
-        Token.Literal.Date: "#EC6A50",
-        Token.Literal.String: "#A3AE4B",
+        Token.Name.Variable.Magic: "italic #F97160",
+        Token.Literal.Date: "#F97160",
+        Token.Literal.String: "#ADB956",
         Token.Literal.String.Affix: "#EC7F31",
         Token.Literal.String.Escape: "#E0956C",
         Token.Literal.String.Interpol: "#E0956C",
         Token.Literal.String.Regex: "#E0956C",
-        Token.Literal.String.Symbol: "#EC6A50",
-        Token.Literal.Number: "#EC6A50",
+        Token.Literal.String.Symbol: "#F97160",
+        Token.Literal.Number: "#F97160",
         Token.Generic.Heading: "bold #F3BF45",
         Token.Generic.Subheading: "bold #F3BF45",
         Token.Generic.Emph: "italic #E9D8B6",
         Token.Generic.Strong: "bold #F6EAD1",
-        Token.Generic.Deleted: "#EC6A50",
-        Token.Generic.Inserted: "#A3AE4B",
-        Token.Generic.Error: "#D2503A",
+        Token.Generic.Deleted: "#F97160",
+        Token.Generic.Inserted: "#ADB956",
+        Token.Generic.Error: "#E05C45",
         Token.Generic.Output: "#C0AA88",
         Token.Generic.Prompt: "#EC7F31",
-        Token.Generic.Traceback: "#D2503A",
+        Token.Generic.Traceback: "#E05C45",
     }
 
 

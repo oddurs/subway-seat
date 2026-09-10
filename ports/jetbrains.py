@@ -7,7 +7,7 @@ from xml.sax.saxutils import escape, quoteattr
 
 import palette as p
 from ports._editors import ui
-from ports._lib import HEADER, REPO, Out, h, tints
+from ports._lib import HEADER, REPO, VERSION, Out, h, tints
 
 META = {
     "id": "jetbrains",
@@ -24,7 +24,6 @@ META = {
     "matching editor color scheme for each flavor. The .icls files import on their own if you only want the editor colours.",
 }
 
-VERSION = "0.2.0"  # matches the VS Code extension
 PLUGIN_ID = "com.oddurs.subway-seat"
 JAR = "subway-seat-jetbrains.jar"
 

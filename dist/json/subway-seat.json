@@ -387,44 +387,44 @@
         },
         "red": {
           "name": "Redbird",
-          "hex": "#D2503A",
+          "hex": "#E05C45",
           "rgb": [
-            210,
-            80,
-            58
+            224,
+            92,
+            69
           ],
           "hsl": [
             9,
-            63,
-            53
+            71,
+            57
           ]
         },
         "red_hi": {
           "name": "Redbird bright",
-          "hex": "#EC6A50",
+          "hex": "#F97160",
           "rgb": [
-            236,
-            106,
-            80
+            249,
+            113,
+            96
           ],
           "hsl": [
-            10,
-            80,
-            62
+            7,
+            93,
+            68
           ]
         },
         "green": {
           "name": "Avocado",
-          "hex": "#A3AE4B",
+          "hex": "#ADB956",
           "rgb": [
-            163,
-            174,
-            75
+            173,
+            185,
+            86
           ],
           "hsl": [
             67,
-            40,
-            49
+            41,
+            53
           ]
         },
         "green_hi": {
@@ -523,13 +523,13 @@
           "index": 1,
           "name": "red",
           "role": "red",
-          "hex": "#D2503A"
+          "hex": "#E05C45"
         },
         {
           "index": 2,
           "name": "green",
           "role": "green",
-          "hex": "#A3AE4B"
+          "hex": "#ADB956"
         },
         {
           "index": 3,
@@ -564,14 +564,14 @@
         {
           "index": 8,
           "name": "bright_black",
-          "role": "overlay0",
-          "hex": "#7B6047"
+          "role": "overlay1",
+          "hex": "#967B5C"
         },
         {
           "index": 9,
           "name": "bright_red",
           "role": "red_hi",
-          "hex": "#EC6A50"
+          "hex": "#F97160"
         },
         {
           "index": 10,
@@ -703,44 +703,44 @@
         },
         "overlay0": {
           "name": "Pecan",
-          "hex": "#6A523C",
+          "hex": "#745B45",
           "rgb": [
-            106,
-            82,
-            60
+            116,
+            91,
+            69
           ],
           "hsl": [
-            29,
             28,
-            33
+            25,
+            36
           ]
         },
         "overlay1": {
           "name": "Cardboard",
-          "hex": "#8A7053",
+          "hex": "#917759",
           "rgb": [
-            138,
-            112,
-            83
+            145,
+            119,
+            89
           ],
           "hsl": [
             32,
-            25,
-            43
+            24,
+            46
           ]
         },
         "overlay2": {
           "name": "Burlap",
-          "hex": "#A48B6C",
+          "hex": "#AA9171",
           "rgb": [
-            164,
-            139,
-            108
+            170,
+            145,
+            113
           ],
           "hsl": [
-            33,
-            24,
-            53
+            34,
+            25,
+            55
           ]
         },
         "subtext0": {
@@ -857,44 +857,44 @@
         },
         "red": {
           "name": "Redbird",
-          "hex": "#D2503A",
+          "hex": "#E05C45",
           "rgb": [
-            210,
-            80,
-            58
+            224,
+            92,
+            69
           ],
           "hsl": [
             9,
-            63,
-            53
+            71,
+            57
           ]
         },
         "red_hi": {
           "name": "Redbird bright",
-          "hex": "#EC6A50",
+          "hex": "#F97160",
           "rgb": [
-            236,
-            106,
-            80
+            249,
+            113,
+            96
           ],
           "hsl": [
-            10,
-            80,
-            62
+            7,
+            93,
+            68
           ]
         },
         "green": {
           "name": "Avocado",
-          "hex": "#A3AE4B",
+          "hex": "#ADB956",
           "rgb": [
-            163,
-            174,
-            75
+            173,
+            185,
+            86
           ],
           "hsl": [
             67,
-            40,
-            49
+            41,
+            53
           ]
         },
         "green_hi": {
@@ -993,13 +993,13 @@
           "index": 1,
           "name": "red",
           "role": "red",
-          "hex": "#D2503A"
+          "hex": "#E05C45"
         },
         {
           "index": 2,
           "name": "green",
           "role": "green",
-          "hex": "#A3AE4B"
+          "hex": "#ADB956"
         },
         {
           "index": 3,
@@ -1034,14 +1034,14 @@
         {
           "index": 8,
           "name": "bright_black",
-          "role": "overlay0",
-          "hex": "#6A523C"
+          "role": "overlay1",
+          "hex": "#917759"
         },
         {
           "index": 9,
           "name": "bright_red",
           "role": "red_hi",
-          "hex": "#EC6A50"
+          "hex": "#F97160"
         },
         {
           "index": 10,
@@ -1271,6 +1271,20 @@
         },
         "yellow": {
           "name": "Harvest gold",
+          "hex": "#936200",
+          "rgb": [
+            147,
+            98,
+            0
+          ],
+          "hsl": [
+            40,
+            100,
+            29
+          ]
+        },
+        "yellow_hi": {
+          "name": "Broadway yellow",
           "hex": "#A56E00",
           "rgb": [
             165,
@@ -1283,22 +1297,22 @@
             32
           ]
         },
-        "yellow_hi": {
-          "name": "Broadway yellow",
-          "hex": "#BA8210",
-          "rgb": [
-            186,
-            130,
-            16
-          ],
-          "hsl": [
-            40,
-            84,
-            40
-          ]
-        },
         "orange": {
           "name": "Burnt orange",
+          "hex": "#AD4E00",
+          "rgb": [
+            173,
+            78,
+            0
+          ],
+          "hsl": [
+            27,
+            100,
+            34
+          ]
+        },
+        "orange_hi": {
+          "name": "Sixth Avenue",
           "hex": "#C4561A",
           "rgb": [
             196,
@@ -1311,50 +1325,50 @@
             44
           ]
         },
-        "orange_hi": {
-          "name": "Sixth Avenue",
-          "hex": "#D66A27",
-          "rgb": [
-            214,
-            106,
-            39
-          ],
-          "hsl": [
-            23,
-            69,
-            50
-          ]
-        },
         "red": {
           "name": "Redbird",
-          "hex": "#B43B27",
+          "hex": "#992418",
           "rgb": [
-            180,
-            59,
-            39
+            153,
+            36,
+            24
           ],
           "hsl": [
-            9,
-            64,
-            43
+            6,
+            73,
+            35
           ]
         },
         "red_hi": {
           "name": "Redbird bright",
-          "hex": "#C44A33",
+          "hex": "#BC4031",
           "rgb": [
-            196,
-            74,
-            51
+            188,
+            64,
+            49
           ],
           "hsl": [
-            10,
+            6,
             59,
-            48
+            46
           ]
         },
         "green": {
           "name": "Avocado",
+          "hex": "#66740F",
+          "rgb": [
+            102,
+            116,
+            15
+          ],
+          "hsl": [
+            68,
+            77,
+            26
+          ]
+        },
+        "green_hi": {
+          "name": "Avocado bright",
           "hex": "#697813",
           "rgb": [
             105,
@@ -1365,20 +1379,6 @@
             69,
             73,
             27
-          ]
-        },
-        "green_hi": {
-          "name": "Avocado bright",
-          "hex": "#7B8B22",
-          "rgb": [
-            123,
-            139,
-            34
-          ],
-          "hsl": [
-            69,
-            61,
-            34
           ]
         },
         "sage": {
@@ -1439,16 +1439,16 @@
         },
         "clay": {
           "name": "Terracotta",
-          "hex": "#AE5F3A",
+          "hex": "#A65633",
           "rgb": [
-            174,
-            95,
-            58
+            166,
+            86,
+            51
           ],
           "hsl": [
-            19,
-            50,
-            45
+            18,
+            53,
+            43
           ]
         }
       },
@@ -1463,19 +1463,19 @@
           "index": 1,
           "name": "red",
           "role": "red",
-          "hex": "#B43B27"
+          "hex": "#992418"
         },
         {
           "index": 2,
           "name": "green",
           "role": "green",
-          "hex": "#697813"
+          "hex": "#66740F"
         },
         {
           "index": 3,
           "name": "yellow",
           "role": "yellow",
-          "hex": "#A56E00"
+          "hex": "#936200"
         },
         {
           "index": 4,
@@ -1487,7 +1487,7 @@
           "index": 5,
           "name": "magenta",
           "role": "orange",
-          "hex": "#C4561A"
+          "hex": "#AD4E00"
         },
         {
           "index": 6,
@@ -1511,19 +1511,19 @@
           "index": 9,
           "name": "bright_red",
           "role": "red_hi",
-          "hex": "#C44A33"
+          "hex": "#BC4031"
         },
         {
           "index": 10,
           "name": "bright_green",
           "role": "green_hi",
-          "hex": "#7B8B22"
+          "hex": "#697813"
         },
         {
           "index": 11,
           "name": "bright_yellow",
           "role": "yellow_hi",
-          "hex": "#BA8210"
+          "hex": "#A56E00"
         },
         {
           "index": 12,
@@ -1535,7 +1535,7 @@
           "index": 13,
           "name": "bright_magenta",
           "role": "orange_hi",
-          "hex": "#D66A27"
+          "hex": "#C4561A"
         },
         {
           "index": 14,

@@ -2,7 +2,7 @@
 
 import palette as p
 from ports._editors import ui
-from ports._lib import HEADER, REPO, Out, tints
+from ports._lib import HEADER, REPO, VERSION, Out, tints
 
 META = {
     "id": "emacs",
@@ -18,7 +18,6 @@ META = {
     "and org, magit, vertico, corfu, company and which-key.",
 }
 
-VERSION = "0.2.0"
 AUTHOR = "Oddur Sigurdsson"
 YEAR = 2026
 

@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Subway Seat",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "A walnut-brown 1970s NYC subway theme: harvest gold, burnt orange and avocado on warm wood. Walnut paneling and orange bucket seats. The original. (Subway Seat \u2014 generated from palette.py by build.py. Edit the palette, not this file.)",
   "author": "Oddur Sigurdsson",
   "homepage_url": "https://github.com/oddurs/subway-seat",

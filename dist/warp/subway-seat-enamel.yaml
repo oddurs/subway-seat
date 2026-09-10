@@ -1,26 +1,26 @@
 # Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
 name: Subway Seat Enamel
-accent: '#C4561A'
-cursor: '#C4561A'
+accent: '#AD4E00'
+cursor: '#AD4E00'
 background: '#F4E9D4'
 foreground: '#3E2C1E'
 details: lighter
 terminal_colors:
   normal:
     black: '#54402F'
-    red: '#B43B27'
-    green: '#697813'
-    yellow: '#A56E00'
+    red: '#992418'
+    green: '#66740F'
+    yellow: '#936200'
     blue: '#3F6480'
-    magenta: '#C4561A'
+    magenta: '#AD4E00'
     cyan: '#3E7157'
     white: '#BAA07A'
   bright:
     black: '#8C7254'
-    red: '#C44A33'
-    green: '#7B8B22'
-    yellow: '#BA8210'
+    red: '#BC4031'
+    green: '#697813'
+    yellow: '#A56E00'
     blue: '#517791'
-    magenta: '#D66A27'
+    magenta: '#C4561A'
     cyan: '#4C8367'
     white: '#CAB48E'

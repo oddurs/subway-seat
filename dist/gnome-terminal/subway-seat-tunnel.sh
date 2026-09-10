@@ -20,7 +20,7 @@ gsettings set "$PROFILE" cursor-foreground-color "'#24180E'"
 gsettings set "$PROFILE" highlight-colors-set "true"
 gsettings set "$PROFILE" highlight-background-color "'#4F3927'"
 gsettings set "$PROFILE" highlight-foreground-color "'#F6EAD1'"
-gsettings set "$PROFILE" palette "['#3D2C1D', '#D2503A', '#A3AE4B', '#F3BF45', '#7F9BAE', '#EC7F31', '#86AD95', '#D6C3A0', '#6A523C', '#EC6A50', '#BFCB63', '#FFD36B', '#9DB6C6', '#FF9D55', '#A5C9B0', '#F6EAD1']"
+gsettings set "$PROFILE" palette "['#3D2C1D', '#E05C45', '#ADB956', '#F3BF45', '#7F9BAE', '#EC7F31', '#86AD95', '#D6C3A0', '#917759', '#F97160', '#BFCB63', '#FFD36B', '#9DB6C6', '#FF9D55', '#A5C9B0', '#F6EAD1']"
 
 list=$(gsettings get org.gnome.Terminal.ProfilesList list)
 case "$list" in

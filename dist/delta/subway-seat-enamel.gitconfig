@@ -2,24 +2,24 @@
 [delta "subway-seat-enamel"]
 	dark = false
 	syntax-theme = Subway Seat Enamel
-	plus-style = syntax "#DCD6B3"
-	plus-emph-style = syntax "#C2C18F"
-	minus-style = syntax "#E8C8B4"
-	minus-emph-style = syntax "#DBA590"
-	map-styles = bold purple => syntax "#E2C6AE", bold cyan => syntax "#C6CBB5"
-	line-numbers-plus-style = "#697813"
-	line-numbers-minus-style = "#C44A33"
+	plus-style = syntax "#CFCBA1"
+	plus-emph-style = syntax "#B8B881"
+	minus-style = syntax "#E0BEAB"
+	minus-emph-style = syntax "#CA8E7E"
+	map-styles = bold purple => syntax "#E0C4AC", bold cyan => syntax "#C6CBB5"
+	line-numbers-plus-style = "#66740F"
+	line-numbers-minus-style = "#BC4031"
 	line-numbers-zero-style = "#A58C6A"
 	line-numbers-left-style = "#BAA07A"
 	line-numbers-right-style = "#BAA07A"
-	file-style = "#A56E00" bold
-	file-decoration-style = "#C4561A" ul
+	file-style = "#936200" bold
+	file-decoration-style = "#AD4E00" ul
 	hunk-header-style = file line-number syntax
 	hunk-header-decoration-style = "#BAA07A" box
-	hunk-header-line-number-style = "#C4561A"
-	commit-decoration-style = "#C4561A" box
+	hunk-header-line-number-style = "#AD4E00"
+	commit-decoration-style = "#AD4E00" box
 	blame-palette = "#F4E9D4 #EBDEC6 #D9C8A7"
 	merge-conflict-begin-symbol = ~
 	merge-conflict-end-symbol = ~
-	merge-conflict-ours-diff-header-style = "#A56E00" bold
+	merge-conflict-ours-diff-header-style = "#936200" bold
 	merge-conflict-theirs-diff-header-style = "#3E7157" bold

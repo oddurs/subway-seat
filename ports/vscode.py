@@ -3,7 +3,7 @@
 import json
 
 import palette as p
-from ports._lib import REPO, Out, resolve, scope_rules, tints
+from ports._lib import REPO, VERSION, Out, resolve, scope_rules, tints
 
 a = p.alpha
 
@@ -21,7 +21,6 @@ META = {
     "token colours. Works in Cursor, Windsurf and VSCodium too.",
 }
 
-VERSION = "0.2.0"
 
 # (key, dark expression, light expression or None for the same)
 LAYERS = [

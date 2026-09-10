@@ -2,7 +2,7 @@
 <idea-plugin>
   <id>com.oddurs.subway-seat</id>
   <name>Subway Seat Theme</name>
-  <version>0.2.0</version>
+  <version>0.3.0</version>
   <vendor url="https://github.com/oddurs/subway-seat">Oddur Sigurdsson</vendor>
   <idea-version since-build="232"/>
   <description><![CDATA[

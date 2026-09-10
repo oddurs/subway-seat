@@ -5,12 +5,12 @@
   <entry type="LineNumbers" style="#7B6047"/>
   <entry type="LineNumbersTable" style="#7B6047"/>
   <entry type="Text" style="#EDDCBC"/>
-  <entry type="Error" style="#D2503A"/>
+  <entry type="Error" style="#E05C45"/>
   <entry type="Comment" style="italic #967B5C"/>
   <entry type="CommentHashbang" style="italic #967B5C"/>
   <entry type="CommentPreproc" style="italic #E0956C"/>
   <entry type="Keyword" style="#EC7F31"/>
-  <entry type="KeywordConstant" style="#EC6A50"/>
+  <entry type="KeywordConstant" style="#F97160"/>
   <entry type="KeywordType" style="italic #86AD95"/>
   <entry type="Operator" style="#AE9575"/>
   <entry type="OperatorWord" style="#EC7F31"/>
@@ -18,9 +18,9 @@
   <entry type="Name" style="#EDDCBC"/>
   <entry type="NameAttribute" style="italic #F3BF45"/>
   <entry type="NameBuiltin" style="italic #F3BF45"/>
-  <entry type="NameBuiltinPseudo" style="italic #EC6A50"/>
+  <entry type="NameBuiltinPseudo" style="italic #F97160"/>
   <entry type="NameClass" style="#86AD95"/>
-  <entry type="NameConstant" style="#EC6A50"/>
+  <entry type="NameConstant" style="#F97160"/>
   <entry type="NameDecorator" style="italic #E0956C"/>
   <entry type="NameEntity" style="#E0956C"/>
   <entry type="NameException" style="#86AD95"/>
@@ -31,24 +31,24 @@
   <entry type="NameProperty" style="#D9C6A3"/>
   <entry type="NameTag" style="#EC7F31"/>
   <entry type="NameVariable" style="#EDDCBC"/>
-  <entry type="NameVariableMagic" style="italic #EC6A50"/>
-  <entry type="LiteralDate" style="#EC6A50"/>
-  <entry type="LiteralString" style="#A3AE4B"/>
+  <entry type="NameVariableMagic" style="italic #F97160"/>
+  <entry type="LiteralDate" style="#F97160"/>
+  <entry type="LiteralString" style="#ADB956"/>
   <entry type="LiteralStringAffix" style="#EC7F31"/>
   <entry type="LiteralStringEscape" style="#E0956C"/>
   <entry type="LiteralStringInterpol" style="#E0956C"/>
   <entry type="LiteralStringRegex" style="#E0956C"/>
-  <entry type="LiteralStringSymbol" style="#EC6A50"/>
-  <entry type="LiteralNumber" style="#EC6A50"/>
+  <entry type="LiteralStringSymbol" style="#F97160"/>
+  <entry type="LiteralNumber" style="#F97160"/>
   <entry type="GenericHeading" style="bold #F3BF45"/>
   <entry type="GenericSubheading" style="bold #F3BF45"/>
   <entry type="GenericEmph" style="italic #EDDCBC"/>
   <entry type="GenericStrong" style="bold #F8ECD4"/>
-  <entry type="GenericDeleted" style="#EC6A50"/>
-  <entry type="GenericInserted" style="#A3AE4B"/>
-  <entry type="GenericError" style="#D2503A"/>
+  <entry type="GenericDeleted" style="#F97160"/>
+  <entry type="GenericInserted" style="#ADB956"/>
+  <entry type="GenericError" style="#E05C45"/>
   <entry type="GenericOutput" style="#C4AE8C"/>
   <entry type="GenericPrompt" style="#EC7F31"/>
-  <entry type="GenericTraceback" style="#D2503A"/>
+  <entry type="GenericTraceback" style="#E05C45"/>
   <entry type="GenericUnderline" style="underline"/>
 </style>

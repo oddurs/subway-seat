@@ -1754,9 +1754,9 @@
           "binary": false
         },
         {
-          "path": "vscode/subway-seat-0.2.0.vsix",
+          "path": "vscode/subway-seat-0.3.0.vsix",
           "flavor": null,
-          "dest": "code --install-extension subway-seat-0.2.0.vsix",
+          "dest": "code --install-extension subway-seat-0.3.0.vsix",
           "lang": "text",
           "append": false,
           "binary": true

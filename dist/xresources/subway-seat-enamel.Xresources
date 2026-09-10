@@ -3,7 +3,7 @@
 
 *.foreground: #3E2C1E
 *.background: #F4E9D4
-*.cursorColor: #C4561A
+*.cursorColor: #AD4E00
 *.highlightColor: #CAB48E
 *.highlightTextColor: #2A1D13
 
@@ -12,24 +12,24 @@
 *.color8: #8C7254
 
 ! red
-*.color1: #B43B27
-*.color9: #C44A33
+*.color1: #992418
+*.color9: #BC4031
 
 ! green
-*.color2: #697813
-*.color10: #7B8B22
+*.color2: #66740F
+*.color10: #697813
 
 ! yellow
-*.color3: #A56E00
-*.color11: #BA8210
+*.color3: #936200
+*.color11: #A56E00
 
 ! blue
 *.color4: #3F6480
 *.color12: #517791
 
 ! magenta
-*.color5: #C4561A
-*.color13: #D66A27
+*.color5: #AD4E00
+*.color13: #C4561A
 
 ! cyan
 *.color6: #3E7157

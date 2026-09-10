@@ -2,11 +2,11 @@
 # Subway Seat Enamel for cava: gradient from the bottom of the screen to the top.
 [color]
 gradient = 1
-gradient_color_1 = '#697813'
-gradient_color_2 = '#83740B'
-gradient_color_3 = '#9C6F03'
-gradient_color_4 = '#AE6707'
-gradient_color_5 = '#BB5D13'
-gradient_color_6 = '#C2521C'
-gradient_color_7 = '#BB4721'
-gradient_color_8 = '#B43B27'
+gradient_color_1 = '#66740F'
+gradient_color_2 = '#796C09'
+gradient_color_3 = '#8D6502'
+gradient_color_4 = '#9A5C00'
+gradient_color_5 = '#A65400'
+gradient_color_6 = '#AA4803'
+gradient_color_7 = '#A2360E'
+gradient_color_8 = '#992418'

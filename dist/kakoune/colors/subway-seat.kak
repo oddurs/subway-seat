@@ -1,12 +1,12 @@
 # Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
 # Subway Seat — Walnut paneling and orange bucket seats. The original.
 
-face global value                     rgb:EC6A50
+face global value                     rgb:F97160
 face global type                      rgb:86AD95
 face global variable                  rgb:EDDCBC
 face global module                    rgb:C4AE8C
 face global function                  rgb:F3BF45
-face global string                    rgb:A3AE4B
+face global string                    rgb:ADB956
 face global keyword                   rgb:EC7F31
 face global operator                  rgb:AE9575
 face global attribute                 rgb:E0956C+i
@@ -16,8 +16,8 @@ face global meta                      rgb:E0956C
 face global builtin                   rgb:F3BF45+i
 face global title                     rgb:EC7F31+b
 face global header                    rgb:F3BF45+b
-face global mono                      rgb:A3AE4B
-face global block                     rgb:A3AE4B
+face global mono                      rgb:ADB956
+face global block                     rgb:ADB956
 face global link                      rgb:7F9BAE+u
 face global bullet                    rgb:EC7F31
 face global list                      rgb:EC7F31
@@ -36,8 +36,8 @@ face global MenuBackground            rgb:D9C6A3,rgb:2A1D13
 face global MenuInfo                  rgb:967B5C
 face global Information               rgb:EDDCBC,rgb:2A1D13
 face global InlineInformation         rgb:EDDCBC,rgb:2A1D13
-face global Error                     rgb:EC6A50+b
-face global DiagnosticError           default,default,rgb:EC6A50+c
+face global Error                     rgb:F97160+b
+face global DiagnosticError           default,default,rgb:F97160+c
 face global DiagnosticWarning         default,default,rgb:F3BF45+c
 face global DiagnosticInfo            default,default,rgb:7F9BAE+c
 face global DiagnosticHint            default,default,rgb:86AD95+c
@@ -53,11 +53,11 @@ face global MatchingChar              rgb:FFD36B,rgb:513B27+b
 face global Whitespace                rgb:513B27+f
 face global WrapMarker                Whitespace
 face global BufferPadding             rgb:513B27,rgb:362619
-face global InlayDiagnosticError      rgb:EC6A50,rgb:492B1D
+face global InlayDiagnosticError      rgb:F97160,rgb:4A2C1E
 face global InlayDiagnosticWarning    rgb:F3BF45,rgb:49351D
 face global InlayDiagnosticInfo       rgb:7F9BAE,rgb:3D3228
 face global InlayDiagnosticHint       rgb:86AD95,rgb:3E3425
-face global LineFlagError             rgb:EC6A50
+face global LineFlagError             rgb:F97160
 face global LineFlagWarning           rgb:F3BF45
 face global LineFlagInfo              rgb:7F9BAE
 face global LineFlagHint              rgb:86AD95

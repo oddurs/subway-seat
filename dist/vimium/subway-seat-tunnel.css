@@ -28,7 +28,7 @@ div.internal-vimium-hint-marker > .matchingCharacter {
 }
 
 div > .vimiumActiveHintMarker span {
-  color: #AC4330 !important;
+  color: #B74C39 !important;
 }
 
 div.internal-vimium-input-hint {
@@ -90,7 +90,7 @@ body.vimium-find-mode ::selection {
 }
 
 #vomnibar li .source {
-  color: #8A7053;
+  color: #917759;
 }
 
 #vomnibar li .title,
@@ -109,7 +109,7 @@ body.vimium-find-mode ::selection {
 }
 
 #vomnibar li .relevancy {
-  color: #6A523C;
+  color: #745B45;
 }
 
 #vomnibar li.selected {
@@ -131,7 +131,7 @@ body.vimium-find-mode ::selection {
 }
 
 span#hud-match-count {
-  color: #8A7053;
+  color: #917759;
 }
 
 /* Help dialog */
@@ -151,7 +151,7 @@ span#hud-match-count {
 }
 
 #dialog a#close {
-  color: #8A7053;
+  color: #917759;
 }
 
 #dialog a#close:hover {
@@ -195,5 +195,5 @@ body.vimium-body input {
 }
 
 body.vimium-body div.example {
-  color: #A48B6C;
+  color: #AA9171;
 }

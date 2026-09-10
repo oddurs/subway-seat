@@ -6,15 +6,15 @@ name = "subway-seat-tunnel"
 background = "#24180E"
 foreground = "#E9D8B6"
 black = "#3D2C1D"
-red = "#D2503A"
-green = "#A3AE4B"
+red = "#E05C45"
+green = "#ADB956"
 yellow = "#F3BF45"
 blue = "#7F9BAE"
 magenta = "#EC7F31"
 cyan = "#86AD95"
 white = "#D6C3A0"
-bright_black = "#6A523C"
-bright_red = "#EC6A50"
+bright_black = "#917759"
+bright_red = "#F97160"
 bright_green = "#BFCB63"
 bright_yellow = "#FFD36B"
 bright_blue = "#9DB6C6"
@@ -29,17 +29,17 @@ playback_status = { fg = "#F3BF45", modifiers = ["Bold"] }
 playback_track = { fg = "#F3BF45", modifiers = ["Bold"] }
 playback_artists = { fg = "#EC7F31" }
 playback_album = { fg = "#86AD95" }
-playback_genres = { fg = "#8A7053", modifiers = ["Italic"] }
+playback_genres = { fg = "#917759", modifiers = ["Italic"] }
 playback_metadata = { fg = "#C0AA88" }
 playback_progress_bar = { fg = "#EC7F31", bg = "#3D2C1D" }
 playback_progress_bar_unfilled = { fg = "#4F3927", bg = "#3D2C1D" }
-current_playing = { fg = "#A3AE4B", modifiers = ["Bold"] }
+current_playing = { fg = "#ADB956", modifiers = ["Bold"] }
 page_desc = { fg = "#F3BF45", modifiers = ["Bold"] }
-playlist_desc = { fg = "#8A7053" }
+playlist_desc = { fg = "#917759" }
 table_header = { fg = "#EC7F31" }
 selection = { fg = "#F6EAD1", bg = "#3D2C1D", modifiers = ["Bold"] }
 secondary_row = { bg = "#1B120A" }
-like = { fg = "#EC6A50" }
-lyrics_played = { fg = "#8A7053" }
+like = { fg = "#F97160" }
+lyrics_played = { fg = "#917759" }
 lyrics_playing = { fg = "#F3BF45", modifiers = ["Bold"] }
-visualization = { low = "#A3AE4B", mid = "#F3BF45", high = "#EC6A50" }
+visualization = { low = "#ADB956", mid = "#F3BF45", high = "#F97160" }

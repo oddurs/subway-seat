@@ -4,31 +4,31 @@
 [styles.cpu]
 all_entry_color = "#E9D8B6"
 avg_entry_color = "#EC7F31"
-cpu_core_colors = ["#A3AE4B", "#F3BF45", "#EC7F31", "#EC6A50", "#86AD95", "#E0956C", "#BFCB63", "#FFD36B"]
+cpu_core_colors = ["#ADB956", "#F3BF45", "#EC7F31", "#F97160", "#86AD95", "#E0956C", "#BFCB63", "#FFD36B"]
 
 [styles.memory]
-ram_color = "#A3AE4B"
+ram_color = "#ADB956"
 cache_color = "#86AD95"
 swap_color = "#EC7F31"
 arc_color = "#E0956C"
-gpu_colors = ["#F3BF45", "#EC7F31", "#EC6A50", "#86AD95", "#E0956C", "#BFCB63"]
+gpu_colors = ["#F3BF45", "#EC7F31", "#F97160", "#86AD95", "#E0956C", "#BFCB63"]
 
 [styles.network]
-rx_color = "#A3AE4B"
+rx_color = "#ADB956"
 tx_color = "#EC7F31"
 rx_total_color = "#BFCB63"
 tx_total_color = "#FF9D55"
 
 [styles.battery]
-high_battery_color = "#A3AE4B"
+high_battery_color = "#ADB956"
 medium_battery_color = "#F3BF45"
-low_battery_color = "#EC6A50"
+low_battery_color = "#F97160"
 
 [styles.tables]
 headers = { color = "#EC7F31", bold = true }
 
 [styles.graphs]
-graph_color = "#6A523C"
+graph_color = "#745B45"
 legend_text = { color = "#C0AA88" }
 
 [styles.widgets]
@@ -37,13 +37,13 @@ selected_border_color = "#EC7F31"
 widget_title = { color = "#F3BF45" }
 text = { color = "#E9D8B6" }
 selected_text = { color = "#140D07", bg_color = "#EC7F31" }
-disabled_text = { color = "#6A523C" }
+disabled_text = { color = "#745B45" }
 thread_text = { color = "#86AD95" }  # 0.11+
 
 # Newer sections (bottom 0.13+); older releases ignore them.
 [styles.temp_graph]
-temp_graph_color_styles = ["#A3AE4B", "#F3BF45", "#EC7F31", "#EC6A50", "#86AD95", "#E0956C", "#BFCB63", "#FFD36B"]
+temp_graph_color_styles = ["#ADB956", "#F3BF45", "#EC7F31", "#F97160", "#86AD95", "#E0956C", "#BFCB63", "#FFD36B"]
 
 [styles.disk_io_graph]
-read_colours = ["#A3AE4B", "#86AD95", "#BFCB63", "#A5C9B0"]
-write_colours = ["#EC7F31", "#E0956C", "#FF9D55", "#EC6A50"]
+read_colours = ["#ADB956", "#86AD95", "#BFCB63", "#A5C9B0"]
+write_colours = ["#EC7F31", "#E0956C", "#FF9D55", "#F97160"]

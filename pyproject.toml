@@ -1,0 +1,34 @@
+[project]
+name = "subway-seat"
+version = "0.3.0"
+description = "A walnut-brown 1970s subway-car color scheme, generated for ~90 apps from one palette."
+requires-python = ">=3.12"
+license = "MIT"
+readme = "README.md"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "pyyaml>=6", "ruff>=0.6"]
+
+[project.urls]
+Homepage = "https://oddurs.github.io/subway-seat"
+Repository = "https://github.com/oddurs/subway-seat"
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+extend-exclude = ["dist", "site"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM", "RUF"]
+ignore = [
+    "E501",   # long template lines are the point of a generator
+    "RUF001", # en dashes, arrows and ellipses are intentional in user-facing text
+    "RUF002",
+    "RUF003",
+    "B023",   # lambdas in comprehensions bind per-flavor on purpose
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

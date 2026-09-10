@@ -1,7 +1,7 @@
 # Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
 [project]
 name = "subway-seat-pygments"
-version = "0.2.0"
+version = "0.3.0"
 description = "Subway Seat styles for Pygments, so Aider, Sphinx, MkDocs and IPython can use them by name."
 readme = "README.md"
 license = "MIT"

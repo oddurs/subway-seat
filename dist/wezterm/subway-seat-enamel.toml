@@ -3,10 +3,10 @@
 [colors]
 foreground = "#3E2C1E"
 background = "#F4E9D4"
-cursor_bg = "#C4561A"
-cursor_border = "#C4561A"
+cursor_bg = "#AD4E00"
+cursor_border = "#AD4E00"
 cursor_fg = "#F4E9D4"
-compose_cursor = "#AE5F3A"
+compose_cursor = "#A65633"
 selection_bg = "#CAB48E"
 selection_fg = "#2A1D13"
 scrollbar_thumb = "#BAA07A"
@@ -14,31 +14,31 @@ split = "#E2D3B6"
 visual_bell = "#D9C8A7"
 ansi = [
   "#54402F",
-  "#B43B27",
-  "#697813",
-  "#A56E00",
+  "#992418",
+  "#66740F",
+  "#936200",
   "#3F6480",
-  "#C4561A",
+  "#AD4E00",
   "#3E7157",
   "#BAA07A",
 ]
 brights = [
   "#8C7254",
-  "#C44A33",
-  "#7B8B22",
-  "#BA8210",
+  "#BC4031",
+  "#697813",
+  "#A56E00",
   "#517791",
-  "#D66A27",
+  "#C4561A",
   "#4C8367",
   "#CAB48E",
 ]
-copy_mode_active_highlight_bg = { Color = "#E0AB85" }
+copy_mode_active_highlight_bg = { Color = "#D09C6A" }
 copy_mode_active_highlight_fg = { Color = "#2A1D13" }
-copy_mode_inactive_highlight_bg = { Color = "#E0CA9E" }
+copy_mode_inactive_highlight_bg = { Color = "#D7C094" }
 copy_mode_inactive_highlight_fg = { Color = "#3E2C1E" }
-quick_select_label_bg = { Color = "#C4561A" }
+quick_select_label_bg = { Color = "#AD4E00" }
 quick_select_label_fg = { Color = "#F4E9D4" }
-quick_select_match_bg = { Color = "#E0CA9E" }
+quick_select_match_bg = { Color = "#D7C094" }
 quick_select_match_fg = { Color = "#2A1D13" }
 
 [colors.tab_bar]
@@ -47,7 +47,7 @@ inactive_tab_edge = "#D9C8A7"
 
 [colors.tab_bar.active_tab]
 bg_color = "#F4E9D4"
-fg_color = "#C4561A"
+fg_color = "#AD4E00"
 intensity = "Bold"
 italic = false
 strikethrough = false
@@ -79,7 +79,7 @@ underline = "None"
 
 [colors.tab_bar.new_tab_hover]
 bg_color = "#D9C8A7"
-fg_color = "#C4561A"
+fg_color = "#AD4E00"
 intensity = "Normal"
 italic = false
 strikethrough = false

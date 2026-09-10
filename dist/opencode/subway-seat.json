@@ -18,9 +18,9 @@
     "walnutYellowHi": "#FFD36B",
     "walnutOrange": "#EC7F31",
     "walnutOrangeHi": "#FF9D55",
-    "walnutRed": "#D2503A",
-    "walnutRedHi": "#EC6A50",
-    "walnutGreen": "#A3AE4B",
+    "walnutRed": "#E05C45",
+    "walnutRedHi": "#F97160",
+    "walnutGreen": "#ADB956",
     "walnutGreenHi": "#BFCB63",
     "walnutSage": "#86AD95",
     "walnutSageHi": "#A5C9B0",
@@ -40,19 +40,19 @@
     "enamelSubtext1": "#54402F",
     "enamelText": "#3E2C1E",
     "enamelTextHi": "#2A1D13",
-    "enamelYellow": "#A56E00",
-    "enamelYellowHi": "#BA8210",
-    "enamelOrange": "#C4561A",
-    "enamelOrangeHi": "#D66A27",
-    "enamelRed": "#B43B27",
-    "enamelRedHi": "#C44A33",
-    "enamelGreen": "#697813",
-    "enamelGreenHi": "#7B8B22",
+    "enamelYellow": "#936200",
+    "enamelYellowHi": "#A56E00",
+    "enamelOrange": "#AD4E00",
+    "enamelOrangeHi": "#C4561A",
+    "enamelRed": "#992418",
+    "enamelRedHi": "#BC4031",
+    "enamelGreen": "#66740F",
+    "enamelGreenHi": "#697813",
     "enamelSage": "#3E7157",
     "enamelSageHi": "#4C8367",
     "enamelDenim": "#3F6480",
     "enamelDenimHi": "#517791",
-    "enamelClay": "#AE5F3A"
+    "enamelClay": "#A65633"
   },
   "theme": {
     "primary": {
@@ -144,12 +144,12 @@
       "light": "enamelRed"
     },
     "diffAddedBg": {
-      "dark": "#4C4123",
-      "light": "#DCD6B3"
+      "dark": "#554C29",
+      "light": "#CFCBA1"
     },
     "diffRemovedBg": {
-      "dark": "#582F20",
-      "light": "#E8C8B4"
+      "dark": "#5B3223",
+      "light": "#E0BEAB"
     },
     "diffContextBg": {
       "dark": "walnutBase",
@@ -160,12 +160,12 @@
       "light": "enamelOverlay0"
     },
     "diffAddedLineNumberBg": {
-      "dark": "#41341E",
-      "light": "#E6DEC1"
+      "dark": "#42351F",
+      "light": "#E6DDC0"
     },
     "diffRemovedLineNumberBg": {
-      "dark": "#472B1D",
-      "light": "#EDD6C1"
+      "dark": "#492C1E",
+      "light": "#EAD3BF"
     },
     "markdownText": {
       "dark": "walnutText",

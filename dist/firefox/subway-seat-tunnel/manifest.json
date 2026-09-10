@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Subway Seat Tunnel",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "A walnut-brown 1970s NYC subway theme: harvest gold, burnt orange and avocado on warm wood. The late local after midnight: espresso-deep, same warm lights. (Subway Seat \u2014 generated from palette.py by build.py. Edit the palette, not this file.)",
   "author": "Oddur Sigurdsson",
   "homepage_url": "https://github.com/oddurs/subway-seat",
@@ -15,7 +15,7 @@
     "colors": {
       "frame": "#140D07",
       "frame_inactive": "#140D07",
-      "tab_background_text": "#A48B6C",
+      "tab_background_text": "#AA9171",
       "tab_background_separator": "#302115",
       "tab_selected": "#24180E",
       "tab_text": "#E9D8B6",

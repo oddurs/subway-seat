@@ -4,7 +4,7 @@
 
 ;; Author: Oddur Sigurdsson
 ;; URL: https://github.com/oddurs/subway-seat
-;; Version: 0.2.0
+;; Version: 0.3.0
 ;; Package-Requires: ((emacs "27.1"))
 ;; SPDX-License-Identifier: MIT
 

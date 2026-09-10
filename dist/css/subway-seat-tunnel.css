@@ -11,9 +11,9 @@
   --ss-surface0: #302115; /* Coppertone */
   --ss-surface1: #3D2C1D; /* Saddle */
   --ss-surface2: #4F3927; /* Corduroy */
-  --ss-overlay0: #6A523C; /* Pecan */
-  --ss-overlay1: #8A7053; /* Cardboard */
-  --ss-overlay2: #A48B6C; /* Burlap */
+  --ss-overlay0: #745B45; /* Pecan */
+  --ss-overlay1: #917759; /* Cardboard */
+  --ss-overlay2: #AA9171; /* Burlap */
 
   /* Text */
   --ss-subtext0: #C0AA88; /* Khaki */
@@ -26,9 +26,9 @@
   --ss-yellow-hi: #FFD36B; /* Broadway yellow */
   --ss-orange: #EC7F31; /* Burnt orange */
   --ss-orange-hi: #FF9D55; /* Sixth Avenue */
-  --ss-red: #D2503A; /* Redbird */
-  --ss-red-hi: #EC6A50; /* Redbird bright */
-  --ss-green: #A3AE4B; /* Avocado */
+  --ss-red: #E05C45; /* Redbird */
+  --ss-red-hi: #F97160; /* Redbird bright */
+  --ss-green: #ADB956; /* Avocado */
   --ss-green-hi: #BFCB63; /* Avocado bright */
   --ss-sage: #86AD95; /* Seafoam tile */
   --ss-sage-hi: #A5C9B0; /* Seafoam bright */
@@ -43,9 +43,9 @@
   --ss-surface0-rgb: 48 33 21;
   --ss-surface1-rgb: 61 44 29;
   --ss-surface2-rgb: 79 57 39;
-  --ss-overlay0-rgb: 106 82 60;
-  --ss-overlay1-rgb: 138 112 83;
-  --ss-overlay2-rgb: 164 139 108;
+  --ss-overlay0-rgb: 116 91 69;
+  --ss-overlay1-rgb: 145 119 89;
+  --ss-overlay2-rgb: 170 145 113;
   --ss-subtext0-rgb: 192 170 136;
   --ss-subtext1-rgb: 214 195 160;
   --ss-text-rgb: 233 216 182;
@@ -54,9 +54,9 @@
   --ss-yellow-hi-rgb: 255 211 107;
   --ss-orange-rgb: 236 127 49;
   --ss-orange-hi-rgb: 255 157 85;
-  --ss-red-rgb: 210 80 58;
-  --ss-red-hi-rgb: 236 106 80;
-  --ss-green-rgb: 163 174 75;
+  --ss-red-rgb: 224 92 69;
+  --ss-red-hi-rgb: 249 113 96;
+  --ss-green-rgb: 173 185 86;
   --ss-green-hi-rgb: 191 203 99;
   --ss-sage-rgb: 134 173 149;
   --ss-sage-hi-rgb: 165 201 176;

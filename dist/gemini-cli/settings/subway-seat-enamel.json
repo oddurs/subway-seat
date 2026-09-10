@@ -7,34 +7,34 @@
         "Background": "#F4E9D4",
         "Foreground": "#3E2C1E",
         "LightBlue": "#54402F",
-        "AccentBlue": "#C4561A",
-        "AccentPurple": "#AE5F3A",
+        "AccentBlue": "#AD4E00",
+        "AccentPurple": "#A65633",
         "AccentCyan": "#3E7157",
-        "AccentGreen": "#697813",
-        "AccentYellow": "#A56E00",
-        "AccentRed": "#C44A33",
-        "DiffAdded": "#DCD6B3",
-        "DiffRemoved": "#E8C8B4",
+        "AccentGreen": "#66740F",
+        "AccentYellow": "#936200",
+        "AccentRed": "#BC4031",
+        "DiffAdded": "#CFCBA1",
+        "DiffRemoved": "#E0BEAB",
         "Comment": "#8C7254",
         "Gray": "#735C44",
         "DarkGray": "#BAA07A",
         "GradientColors": [
-          "#B43B27",
-          "#C4561A",
-          "#A56E00",
-          "#697813"
+          "#992418",
+          "#AD4E00",
+          "#936200",
+          "#66740F"
         ],
         "text": {
           "primary": "#3E2C1E",
           "secondary": "#735C44",
-          "accent": "#AE5F3A",
+          "accent": "#A65633",
           "response": "#3E2C1E"
         },
         "background": {
           "primary": "#F4E9D4",
           "diff": {
-            "added": "#DCD6B3",
-            "removed": "#E8C8B4"
+            "added": "#CFCBA1",
+            "removed": "#E0BEAB"
           }
         },
         "border": {
@@ -42,20 +42,20 @@
         },
         "ui": {
           "comment": "#8C7254",
-          "symbol": "#A56E00",
-          "active": "#C4561A",
-          "focus": "#A56E00",
+          "symbol": "#936200",
+          "active": "#AD4E00",
+          "focus": "#936200",
           "gradient": [
-            "#B43B27",
-            "#C4561A",
-            "#A56E00",
-            "#697813"
+            "#992418",
+            "#AD4E00",
+            "#936200",
+            "#66740F"
           ]
         },
         "status": {
-          "success": "#697813",
-          "warning": "#A56E00",
-          "error": "#C44A33"
+          "success": "#66740F",
+          "warning": "#936200",
+          "error": "#BC4031"
         }
       }
     },

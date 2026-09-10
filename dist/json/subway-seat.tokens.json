@@ -87,17 +87,17 @@
     },
     "red": {
       "$type": "color",
-      "$value": "#D2503A",
+      "$value": "#E05C45",
       "$description": "Redbird"
     },
     "red-hi": {
       "$type": "color",
-      "$value": "#EC6A50",
+      "$value": "#F97160",
       "$description": "Redbird bright"
     },
     "green": {
       "$type": "color",
-      "$value": "#A3AE4B",
+      "$value": "#ADB956",
       "$description": "Avocado"
     },
     "green-hi": {
@@ -164,17 +164,17 @@
     },
     "overlay0": {
       "$type": "color",
-      "$value": "#6A523C",
+      "$value": "#745B45",
       "$description": "Pecan"
     },
     "overlay1": {
       "$type": "color",
-      "$value": "#8A7053",
+      "$value": "#917759",
       "$description": "Cardboard"
     },
     "overlay2": {
       "$type": "color",
-      "$value": "#A48B6C",
+      "$value": "#AA9171",
       "$description": "Burlap"
     },
     "subtext0": {
@@ -219,17 +219,17 @@
     },
     "red": {
       "$type": "color",
-      "$value": "#D2503A",
+      "$value": "#E05C45",
       "$description": "Redbird"
     },
     "red-hi": {
       "$type": "color",
-      "$value": "#EC6A50",
+      "$value": "#F97160",
       "$description": "Redbird bright"
     },
     "green": {
       "$type": "color",
-      "$value": "#A3AE4B",
+      "$value": "#ADB956",
       "$description": "Avocado"
     },
     "green-hi": {
@@ -331,42 +331,42 @@
     },
     "yellow": {
       "$type": "color",
-      "$value": "#A56E00",
+      "$value": "#936200",
       "$description": "Harvest gold"
     },
     "yellow-hi": {
       "$type": "color",
-      "$value": "#BA8210",
+      "$value": "#A56E00",
       "$description": "Broadway yellow"
     },
     "orange": {
       "$type": "color",
-      "$value": "#C4561A",
+      "$value": "#AD4E00",
       "$description": "Burnt orange"
     },
     "orange-hi": {
       "$type": "color",
-      "$value": "#D66A27",
+      "$value": "#C4561A",
       "$description": "Sixth Avenue"
     },
     "red": {
       "$type": "color",
-      "$value": "#B43B27",
+      "$value": "#992418",
       "$description": "Redbird"
     },
     "red-hi": {
       "$type": "color",
-      "$value": "#C44A33",
+      "$value": "#BC4031",
       "$description": "Redbird bright"
     },
     "green": {
       "$type": "color",
-      "$value": "#697813",
+      "$value": "#66740F",
       "$description": "Avocado"
     },
     "green-hi": {
       "$type": "color",
-      "$value": "#7B8B22",
+      "$value": "#697813",
       "$description": "Avocado bright"
     },
     "sage": {
@@ -391,7 +391,7 @@
     },
     "clay": {
       "$type": "color",
-      "$value": "#AE5F3A",
+      "$value": "#A65633",
       "$description": "Terracotta"
     }
   }

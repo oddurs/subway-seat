@@ -11,7 +11,7 @@ grounds and darkens Enamel's cream ones.
 import json
 
 import palette as p
-from ports._lib import HEADER, REPO, Out
+from ports._lib import HEADER, REPO, VERSION, Out
 
 a = p.alpha
 
@@ -29,7 +29,6 @@ META = {
     "editor and lifted menus. The agent panel's diffs, borders and hovers are tuned too.",
 }
 
-VERSION = "0.2.0"
 ANSI = ["black", "red", "green", "yellow", "blue", "magenta", "cyan", "white"]
 
 # Zed syntax capture → SYNTAX role, or (colour role, styles) where the palette has no role.

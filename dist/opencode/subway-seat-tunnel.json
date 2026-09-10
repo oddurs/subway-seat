@@ -7,9 +7,9 @@
     "tunnelSurface0": "#302115",
     "tunnelSurface1": "#3D2C1D",
     "tunnelSurface2": "#4F3927",
-    "tunnelOverlay0": "#6A523C",
-    "tunnelOverlay1": "#8A7053",
-    "tunnelOverlay2": "#A48B6C",
+    "tunnelOverlay0": "#745B45",
+    "tunnelOverlay1": "#917759",
+    "tunnelOverlay2": "#AA9171",
     "tunnelSubtext0": "#C0AA88",
     "tunnelSubtext1": "#D6C3A0",
     "tunnelText": "#E9D8B6",
@@ -18,9 +18,9 @@
     "tunnelYellowHi": "#FFD36B",
     "tunnelOrange": "#EC7F31",
     "tunnelOrangeHi": "#FF9D55",
-    "tunnelRed": "#D2503A",
-    "tunnelRedHi": "#EC6A50",
-    "tunnelGreen": "#A3AE4B",
+    "tunnelRed": "#E05C45",
+    "tunnelRedHi": "#F97160",
+    "tunnelGreen": "#ADB956",
     "tunnelGreenHi": "#BFCB63",
     "tunnelSage": "#86AD95",
     "tunnelSageHi": "#A5C9B0",
@@ -40,19 +40,19 @@
     "enamelSubtext1": "#54402F",
     "enamelText": "#3E2C1E",
     "enamelTextHi": "#2A1D13",
-    "enamelYellow": "#A56E00",
-    "enamelYellowHi": "#BA8210",
-    "enamelOrange": "#C4561A",
-    "enamelOrangeHi": "#D66A27",
-    "enamelRed": "#B43B27",
-    "enamelRedHi": "#C44A33",
-    "enamelGreen": "#697813",
-    "enamelGreenHi": "#7B8B22",
+    "enamelYellow": "#936200",
+    "enamelYellowHi": "#A56E00",
+    "enamelOrange": "#AD4E00",
+    "enamelOrangeHi": "#C4561A",
+    "enamelRed": "#992418",
+    "enamelRedHi": "#BC4031",
+    "enamelGreen": "#66740F",
+    "enamelGreenHi": "#697813",
     "enamelSage": "#3E7157",
     "enamelSageHi": "#4C8367",
     "enamelDenim": "#3F6480",
     "enamelDenimHi": "#517791",
-    "enamelClay": "#AE5F3A"
+    "enamelClay": "#A65633"
   },
   "theme": {
     "primary": {
@@ -144,12 +144,12 @@
       "light": "enamelRed"
     },
     "diffAddedBg": {
-      "dark": "#3D361A",
-      "light": "#DCD6B3"
+      "dark": "#484221",
+      "light": "#CFCBA1"
     },
     "diffRemovedBg": {
-      "dark": "#4A2418",
-      "light": "#E8C8B4"
+      "dark": "#4D271A",
+      "light": "#E0BEAB"
     },
     "diffContextBg": {
       "dark": "tunnelBase",
@@ -160,12 +160,12 @@
       "light": "enamelOverlay0"
     },
     "diffAddedLineNumberBg": {
-      "dark": "#312714",
-      "light": "#E6DEC1"
+      "dark": "#322815",
+      "light": "#E6DDC0"
     },
     "diffRemovedLineNumberBg": {
-      "dark": "#371E13",
-      "light": "#EDD6C1"
+      "dark": "#391F14",
+      "light": "#EAD3BF"
     },
     "markdownText": {
       "dark": "tunnelText",

@@ -6,42 +6,42 @@ k9s:
     bgColor: '#24180E'
     logoColor: '#EC7F31'
     logoColorMsg: '#E9D8B6'
-    logoColorInfo: '#A3AE4B'
+    logoColorInfo: '#ADB956'
     logoColorWarn: '#F3BF45'
-    logoColorError: '#EC6A50'
+    logoColorError: '#F97160'
   prompt:
     fgColor: '#E9D8B6'
     bgColor: '#1B120A'
-    suggestColor: '#8A7053'
+    suggestColor: '#917759'
     border:
       default: '#86AD95'
       command: '#EC7F31'
   info:
     fgColor: '#EC7F31'
     sectionColor: '#E9D8B6'
-    cpuColor: '#A3AE4B'
+    cpuColor: '#ADB956'
     memColor: '#F3BF45'
     k9sRevColor: '#BFCB63'
   help:
     fgColor: '#E9D8B6'
     bgColor: '#24180E'
-    sectionColor: '#A3AE4B'
+    sectionColor: '#ADB956'
     keyColor: '#F3BF45'
-    numKeyColor: '#EC6A50'
+    numKeyColor: '#F97160'
   frame:
     title:
       fgColor: '#F3BF45'
       bgColor: '#24180E'
       highlightColor: '#EC7F31'
-      counterColor: '#EC6A50'
-      filterColor: '#A3AE4B'
+      counterColor: '#F97160'
+      filterColor: '#ADB956'
     border:
       fgColor: '#4F3927'
       focusColor: '#EC7F31'
     menu:
       fgColor: '#D6C3A0'
       keyColor: '#F3BF45'
-      numKeyColor: '#EC6A50'
+      numKeyColor: '#F97160'
     crumbs:
       fgColor: '#140D07'
       bgColor: '#F3BF45'
@@ -49,12 +49,12 @@ k9s:
     status:
       newColor: '#86AD95'
       modifyColor: '#F3BF45'
-      addColor: '#A3AE4B'
+      addColor: '#ADB956'
       pendingColor: '#EC7F31'
-      errorColor: '#EC6A50'
+      errorColor: '#F97160'
       highlightColor: '#FFD36B'
       killColor: '#E0956C'
-      completedColor: '#6A523C'
+      completedColor: '#745B45'
   views:
     table:
       fgColor: '#E9D8B6'
@@ -78,32 +78,32 @@ k9s:
       chartBgColor: '#24180E'
       dialBgColor: '#24180E'
       defaultDialColors:
-        - '#A3AE4B'
-        - '#EC6A50'
+        - '#ADB956'
+        - '#F97160'
       defaultChartColors:
-        - '#A3AE4B'
-        - '#EC6A50'
+        - '#ADB956'
+        - '#F97160'
       resourceColors:
         cpu:
           - '#EC7F31'
           - '#F3BF45'
         mem:
           - '#F3BF45'
-          - '#A3AE4B'
+          - '#ADB956'
       focusFgColor: '#140D07'
       focusBgColor: '#EC7F31'
     yaml:
       keyColor: '#F3BF45'
       valueColor: '#E9D8B6'
-      colonColor: '#A48B6C'
+      colonColor: '#AA9171'
     logs:
       fgColor: '#E9D8B6'
       bgColor: '#24180E'
       indicator:
         fgColor: '#C0AA88'
         bgColor: '#24180E'
-        toggleOnColor: '#A3AE4B'
-        toggleOffColor: '#6A523C'
+        toggleOnColor: '#ADB956'
+        toggleOffColor: '#745B45'
     picker:
       mainColor: '#E9D8B6'
       focusColor: '#EC7F31'

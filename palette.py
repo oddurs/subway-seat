@@ -80,7 +80,7 @@ class Flavor:
 
 DARK_ANSI = (
     "surface1", "red", "green", "yellow", "denim", "orange", "sage", "subtext1",
-    "overlay0", "red_hi", "green_hi", "yellow_hi", "denim_hi", "orange_hi", "sage_hi", "text_hi",
+    "overlay1", "red_hi", "green_hi", "yellow_hi", "denim_hi", "orange_hi", "sage_hi", "text_hi",
 )
 LIGHT_ANSI = (
     "subtext1", "red", "green", "yellow", "denim", "orange", "sage", "surface2",
@@ -90,8 +90,8 @@ LIGHT_ANSI = (
 DARK_ACCENTS = {
     "yellow": "#F3BF45", "yellow_hi": "#FFD36B",
     "orange": "#EC7F31", "orange_hi": "#FF9D55",
-    "red": "#D2503A", "red_hi": "#EC6A50",
-    "green": "#A3AE4B", "green_hi": "#BFCB63",
+    "red": "#E05C45", "red_hi": "#F97160",
+    "green": "#ADB956", "green_hi": "#BFCB63",
     "sage": "#86AD95", "sage_hi": "#A5C9B0",
     "denim": "#7F9BAE", "denim_hi": "#9DB6C6",
     "clay": "#E0956C",
@@ -122,7 +122,7 @@ TUNNEL = Flavor(
     colors={
         "crust": "#140D07", "mantle": "#1B120A", "base": "#24180E",
         "surface0": "#302115", "surface1": "#3D2C1D", "surface2": "#4F3927",
-        "overlay0": "#6A523C", "overlay1": "#8A7053", "overlay2": "#A48B6C",
+        "overlay0": "#745B45", "overlay1": "#917759", "overlay2": "#AA9171",
         "subtext0": "#C0AA88", "subtext1": "#D6C3A0", "text": "#E9D8B6", "text_hi": "#F6EAD1",
         **DARK_ACCENTS,
     },
@@ -142,13 +142,13 @@ ENAMEL = Flavor(
         "surface0": "#D9C8A7", "surface1": "#CAB48E", "surface2": "#BAA07A",
         "overlay0": "#A58C6A", "overlay1": "#8C7254", "overlay2": "#735C44",
         "subtext0": "#654F3B", "subtext1": "#54402F", "text": "#3E2C1E", "text_hi": "#2A1D13",
-        "yellow": "#A56E00", "yellow_hi": "#BA8210",
-        "orange": "#C4561A", "orange_hi": "#D66A27",
-        "red": "#B43B27", "red_hi": "#C44A33",
-        "green": "#697813", "green_hi": "#7B8B22",
+        "yellow": "#936200", "yellow_hi": "#A56E00",
+        "orange": "#AD4E00", "orange_hi": "#C4561A",
+        "red": "#992418", "red_hi": "#BC4031",
+        "green": "#66740F", "green_hi": "#697813",
         "sage": "#3E7157", "sage_hi": "#4C8367",
         "denim": "#3F6480", "denim_hi": "#517791",
-        "clay": "#AE5F3A",
+        "clay": "#A65633",
     },
     ansi_roles=LIGHT_ANSI,
 )

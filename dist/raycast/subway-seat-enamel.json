@@ -8,14 +8,14 @@
     "background": "#F4E9D4",
     "backgroundSecondary": "#EBDEC6",
     "text": "#3E2C1E",
-    "selection": "#C4561A",
-    "loader": "#A56E00",
-    "red": "#B43B27",
-    "orange": "#C4561A",
-    "yellow": "#A56E00",
-    "green": "#697813",
+    "selection": "#AD4E00",
+    "loader": "#936200",
+    "red": "#992418",
+    "orange": "#AD4E00",
+    "yellow": "#936200",
+    "green": "#66740F",
     "blue": "#3F6480",
     "purple": "#3E7157",
-    "magenta": "#AE5F3A"
+    "magenta": "#A65633"
   }
 }

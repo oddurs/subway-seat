@@ -6,9 +6,9 @@ k9s:
     bgColor: '#362619'
     logoColor: '#EC7F31'
     logoColorMsg: '#EDDCBC'
-    logoColorInfo: '#A3AE4B'
+    logoColorInfo: '#ADB956'
     logoColorWarn: '#F3BF45'
-    logoColorError: '#EC6A50'
+    logoColorError: '#F97160'
   prompt:
     fgColor: '#EDDCBC'
     bgColor: '#2A1D13'
@@ -19,29 +19,29 @@ k9s:
   info:
     fgColor: '#EC7F31'
     sectionColor: '#EDDCBC'
-    cpuColor: '#A3AE4B'
+    cpuColor: '#ADB956'
     memColor: '#F3BF45'
     k9sRevColor: '#BFCB63'
   help:
     fgColor: '#EDDCBC'
     bgColor: '#362619'
-    sectionColor: '#A3AE4B'
+    sectionColor: '#ADB956'
     keyColor: '#F3BF45'
-    numKeyColor: '#EC6A50'
+    numKeyColor: '#F97160'
   frame:
     title:
       fgColor: '#F3BF45'
       bgColor: '#362619'
       highlightColor: '#EC7F31'
-      counterColor: '#EC6A50'
-      filterColor: '#A3AE4B'
+      counterColor: '#F97160'
+      filterColor: '#ADB956'
     border:
       fgColor: '#634932'
       focusColor: '#EC7F31'
     menu:
       fgColor: '#D9C6A3'
       keyColor: '#F3BF45'
-      numKeyColor: '#EC6A50'
+      numKeyColor: '#F97160'
     crumbs:
       fgColor: '#20160E'
       bgColor: '#F3BF45'
@@ -49,9 +49,9 @@ k9s:
     status:
       newColor: '#86AD95'
       modifyColor: '#F3BF45'
-      addColor: '#A3AE4B'
+      addColor: '#ADB956'
       pendingColor: '#EC7F31'
-      errorColor: '#EC6A50'
+      errorColor: '#F97160'
       highlightColor: '#FFD36B'
       killColor: '#E0956C'
       completedColor: '#7B6047'
@@ -78,18 +78,18 @@ k9s:
       chartBgColor: '#362619'
       dialBgColor: '#362619'
       defaultDialColors:
-        - '#A3AE4B'
-        - '#EC6A50'
+        - '#ADB956'
+        - '#F97160'
       defaultChartColors:
-        - '#A3AE4B'
-        - '#EC6A50'
+        - '#ADB956'
+        - '#F97160'
       resourceColors:
         cpu:
           - '#EC7F31'
           - '#F3BF45'
         mem:
           - '#F3BF45'
-          - '#A3AE4B'
+          - '#ADB956'
       focusFgColor: '#20160E'
       focusBgColor: '#EC7F31'
     yaml:
@@ -102,7 +102,7 @@ k9s:
       indicator:
         fgColor: '#C4AE8C'
         bgColor: '#362619'
-        toggleOnColor: '#A3AE4B'
+        toggleOnColor: '#ADB956'
         toggleOffColor: '#7B6047'
     picker:
       mainColor: '#EDDCBC'
