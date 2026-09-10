@@ -13,7 +13,7 @@ jobs:
     name: Ports are built and current
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: astral-sh/setup-uv@v6
       - run: uv python install 3.14
       - name: Build every port
@@ -30,7 +30,7 @@ jobs:
     name: Colorschemes load in real editors
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: rhysd/action-setup-vim@v1
         with:
           neovim: true
@@ -64,7 +64,7 @@ jobs:
       run:
         working-directory: site
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: astral-sh/setup-uv@v6
       - run: uv python install 3.14 && echo "$(uv python find 3.14 | xargs dirname)" >> "$GITHUB_PATH"
       - uses: oven-sh/setup-bun@v2
@@ -76,7 +76,7 @@ jobs:
     name: Claude Code plugin validates
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: actions/setup-node@v4
         with:
           node-version: 22
