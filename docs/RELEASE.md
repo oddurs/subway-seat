@@ -123,7 +123,7 @@ Order matters less than being around to answer questions. Post from a real deskt
 
 - **Semver across the board.** `0.x` until launch; `1.0.0` on launch day. A color change that alters how existing code looks is a minor bump; a fixed key or new port is a patch.
 - **One tag releases everything.** Pushing `vX.Y.Z` runs `release.yml`: the full CI workflow first, then a check that the tag matches `version` in `pyproject.toml` and that CHANGELOG.md has a dated `## [X.Y.Z]` section, then `./build.py --check`. It drafts a GitHub release with that CHANGELOG section as notes and attaches `subway-seat-X.Y.Z-dist.zip`, `subway-seat-X.Y.Z.vsix`, the JetBrains JAR and the Firefox `.xpi` files. It publishes to the VS Code Marketplace and Open VSX only when `VSCE_PAT` / `OVSX_PAT` are set (neither is yet). The satellite sync is planned (§2). You review the draft and publish it.
-- **No tags exist yet.** The first tag is `v0.3.0`, cut after the current round of fixes lands. 0.1.0 and 0.2.0 were never tagged.
+- **The first tag is `v0.3.0`** (2026-09-11). 0.1.0 and 0.2.0 were never tagged.
 - **Stable file URLs.** `dist/` is committed and file names don't carry the version (`dist/vscode/subway-seat.vsix`), so links from READMEs and upstream PRs keep working; only the release assets are versioned.
 - VS Code allows only `major.minor.patch`; if pre-releases are ever needed, use odd minor versions.
 - **CHANGELOG.md** in Keep a Changelog format; each release note leads with a screenshot when colors change.
@@ -136,7 +136,7 @@ Order matters less than being around to answer questions. Post from a real deskt
 4. `git tag -s vX.Y.Z -m "Subway Seat X.Y.Z"`, then `git push origin main vX.Y.Z`.
 5. Watch the Release workflow, read the draft release, and publish it.
 
-Protect `v*` tags with a ruleset (no deletion, no force-push, no update) so a published tag can't move.
+The "Release tags" ruleset protects `v*` tags (no deletion, no force-push, no update), so a published tag can't move.
 
 ### VS Code publishing with Entra ID
 
