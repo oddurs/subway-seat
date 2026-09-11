@@ -4,6 +4,14 @@ Palette, cursor, selection highlight, bold and badge colors. Tilix doesn't switc
 
 [Tilix](https://gnunn1.github.io/tilix-web/) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/tilix/)
 
+## The quick way
+
+```sh
+curl -fsSL https://oddurs.github.io/subway-seat/install.sh | sh -s -- --only tilix
+```
+
+The [installer](../../docs/INSTALL.md) shows its plan and asks once. Add `--flavor tunnel`, `--flavor enamel` or `--flavor auto` for another flavor. To do it yourself, use the files below.
+
 ## Files
 
 | Flavor | File | Where it goes |

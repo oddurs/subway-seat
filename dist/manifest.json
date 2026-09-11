@@ -87,7 +87,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "foot",
@@ -147,7 +148,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "ghostty",
@@ -214,7 +216,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "gnome-terminal",
@@ -270,7 +273,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": false
     },
     {
       "id": "hyper",
@@ -327,7 +331,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "iterm2",
@@ -397,7 +402,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": false
     },
     {
       "id": "kitty",
@@ -517,7 +523,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "konsole",
@@ -600,7 +607,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "ptyxis",
@@ -664,7 +672,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "rio",
@@ -726,7 +735,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "tabby",
@@ -788,7 +798,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": false
     },
     {
       "id": "terminal-app",
@@ -844,7 +855,8 @@
           "append": false,
           "binary": true
         }
-      ]
+      ],
+      "installs": false
     },
     {
       "id": "terminator",
@@ -901,7 +913,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": false
     },
     {
       "id": "termux",
@@ -957,7 +970,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "tilix",
@@ -1013,7 +1027,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "warp",
@@ -1075,7 +1090,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "wezterm",
@@ -1137,7 +1153,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "windows-terminal",
@@ -1216,7 +1233,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": false
     },
     {
       "id": "xfce-terminal",
@@ -1272,7 +1290,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "xresources",
@@ -1328,7 +1347,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "emacs",
@@ -1391,7 +1411,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "godot",
@@ -1477,7 +1498,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "gtksourceview",
@@ -1541,7 +1563,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "helix",
@@ -1603,7 +1626,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "jetbrains",
@@ -1756,7 +1780,8 @@
           "append": false,
           "binary": true
         }
-      ]
+      ],
+      "installs": false
     },
     {
       "id": "kakoune",
@@ -1815,7 +1840,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "lite-xl",
@@ -1872,7 +1898,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "micro",
@@ -1928,7 +1955,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "nvim",
@@ -2089,7 +2117,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "notepad-plus-plus",
@@ -2142,7 +2171,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": false
     },
     {
       "id": "sublime-merge",
@@ -2394,7 +2424,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": false
     },
     {
       "id": "sublime-text",
@@ -2457,7 +2488,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "vim",
@@ -2584,7 +2616,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "vscode",
@@ -2716,7 +2749,8 @@
           "append": false,
           "binary": true
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "xcode",
@@ -2778,7 +2812,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "zed",
@@ -2841,7 +2876,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "aider",
@@ -2897,7 +2933,8 @@
           "append": true,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "claude-code",
@@ -3153,7 +3190,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "codex",
@@ -3210,7 +3248,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "terminal-agents",
@@ -3259,7 +3298,8 @@
           "append": true,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "gemini-cli",
@@ -3352,7 +3392,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "herdr",
@@ -3423,7 +3464,8 @@
           "append": true,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "opencode",
@@ -3485,7 +3527,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "fish",
@@ -3563,7 +3606,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "nushell",
@@ -3619,7 +3663,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "powershell",
@@ -3685,7 +3730,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "starship",
@@ -3750,7 +3796,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "zsh-syntax-highlighting",
@@ -3813,7 +3860,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "aichat",
@@ -3874,7 +3922,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "atuin",
@@ -3931,7 +3980,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "bat",
@@ -4000,7 +4050,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "bottom",
@@ -4057,7 +4108,8 @@
           "append": true,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "broot",
@@ -4119,7 +4171,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "btop",
@@ -4175,7 +4228,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "cava",
@@ -4231,7 +4285,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "delta",
@@ -4296,7 +4351,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "eza",
@@ -4359,7 +4415,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "fastfetch",
@@ -4416,7 +4473,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "fzf",
@@ -4505,7 +4563,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "gh-dash",
@@ -4563,7 +4622,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "git",
@@ -4622,7 +4682,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "gitui",
@@ -4706,7 +4767,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "glow",
@@ -4768,7 +4830,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "k9s",
@@ -4824,7 +4887,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "lazygit",
@@ -4910,7 +4974,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "lsd",
@@ -4967,7 +5032,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "midnight-commander",
@@ -5024,7 +5090,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "newsboat",
@@ -5084,7 +5151,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "spotify-player",
@@ -5149,7 +5217,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "television",
@@ -5206,7 +5275,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "tmux",
@@ -5268,7 +5338,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "vivid",
@@ -5330,7 +5401,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "yazi",
@@ -5419,7 +5491,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "zellij",
@@ -5508,7 +5581,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "alfred",
@@ -5570,7 +5644,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": false
     },
     {
       "id": "chrome",
@@ -5661,7 +5736,8 @@
           "append": false,
           "binary": true
         }
-      ]
+      ],
+      "installs": false
     },
     {
       "id": "dark-reader",
@@ -5719,7 +5795,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": false
     },
     {
       "id": "discord",
@@ -5781,7 +5858,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "element",
@@ -5846,7 +5924,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": false
     },
     {
       "id": "firefox",
@@ -5983,7 +6062,8 @@
           "append": false,
           "binary": true
         }
-      ]
+      ],
+      "installs": false
     },
     {
       "id": "mattermost",
@@ -6039,7 +6119,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": false
     },
     {
       "id": "obsidian",
@@ -6102,7 +6183,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": false
     },
     {
       "id": "qutebrowser",
@@ -6159,7 +6241,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "raycast",
@@ -6248,7 +6331,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": false
     },
     {
       "id": "slack",
@@ -6305,7 +6389,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": false
     },
     {
       "id": "spicetify",
@@ -6361,7 +6446,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "telegram",
@@ -6450,7 +6536,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": false
     },
     {
       "id": "thunderbird",
@@ -6558,7 +6645,8 @@
           "append": false,
           "binary": true
         }
-      ]
+      ],
+      "installs": false
     },
     {
       "id": "vimium",
@@ -6626,7 +6714,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": false
     },
     {
       "id": "vivaldi",
@@ -6716,7 +6805,8 @@
           "append": false,
           "binary": true
         }
-      ]
+      ],
+      "installs": false
     },
     {
       "id": "zathura",
@@ -6775,7 +6865,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "dunst",
@@ -6832,7 +6923,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "fuzzel",
@@ -6892,7 +6984,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "gtk",
@@ -6986,7 +7079,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "hyprland",
@@ -7073,7 +7167,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "kde",
@@ -7130,7 +7225,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "mako",
@@ -7188,7 +7284,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "rofi",
@@ -7248,7 +7345,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "wallpapers",
@@ -7441,7 +7539,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "waybar",
@@ -7497,7 +7596,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "ase",
@@ -7550,7 +7650,8 @@
           "append": false,
           "binary": true
         }
-      ]
+      ],
+      "installs": false
     },
     {
       "id": "base16",
@@ -7657,7 +7758,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "chroma",
@@ -7737,7 +7839,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": false
     },
     {
       "id": "css",
@@ -7804,7 +7907,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": false
     },
     {
       "id": "gimp",
@@ -7857,7 +7961,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "gogh",
@@ -7964,7 +8069,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": false
     },
     {
       "id": "txt",
@@ -8017,7 +8123,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": false
     },
     {
       "id": "highlightjs",
@@ -8084,7 +8191,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": false
     },
     {
       "id": "clr",
@@ -8137,7 +8245,8 @@
           "append": false,
           "binary": true
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "matplotlib",
@@ -8191,7 +8300,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "json",
@@ -8235,7 +8345,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": false
     },
     {
       "id": "prism",
@@ -8302,7 +8413,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": false
     },
     {
       "id": "procreate",
@@ -8355,7 +8467,8 @@
           "append": false,
           "binary": true
         }
-      ]
+      ],
+      "installs": false
     },
     {
       "id": "pygments",
@@ -8462,7 +8575,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": false
     },
     {
       "id": "scss",
@@ -8515,7 +8629,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": false
     },
     {
       "id": "shiki",
@@ -8573,7 +8688,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": false
     },
     {
       "id": "tailwind",
@@ -8649,7 +8765,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": false
     }
   ]
 }

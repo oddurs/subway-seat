@@ -34,12 +34,12 @@ const LATER = [
   },
   {
     title: "Check your ticket",
-    body: "Shows what's installed, and in which flavor.",
+    body: "Shows the flavor, each app it set up, anything that changed since, and the steps left for you.",
     code: remote("status"),
   },
   {
     title: "Get off at the next stop",
-    body: "Removes every file it linked and every block it added between its markers. The rest of your config stays as it was.",
+    body: "Removes every file it placed and every block it added between its markers, and puts back anything it moved aside. The rest of your config stays as it was.",
     code: remote("uninstall"),
   },
 ];
@@ -47,10 +47,13 @@ const LATER = [
 const RIDE = [
   [
     "Looks around",
-    "For each app it checks for the command on your PATH or the app in /Applications.",
+    "For each app it checks for its command on your PATH, the app in /Applications, or its config folder.",
   ],
-  ["Shows the plan", "Every file it will link and every line it will add, then asks once."],
-  ["Links the themes", "Files are linked, not copied, so an update reaches every app at once."],
+  ["Shows the plan", "Every file it will place and every line it will add, then asks once."],
+  [
+    "Places the themes",
+    "The one-line install copies them; run it again to update. From a clone they're linked, so a git pull updates every app.",
+  ],
   [
     "Switches them on",
     "Where a config line turns the theme on, it's added between # >>> subway-seat >>> markers.",

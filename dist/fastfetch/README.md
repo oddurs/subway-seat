@@ -4,6 +4,14 @@ Gold keys, an orange title, quiet separators, and percentage bars and temperatur
 
 [fastfetch](https://github.com/fastfetch-cli/fastfetch) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/fastfetch/) · Needs fastfetch 2.14+
 
+## The quick way
+
+```sh
+curl -fsSL https://oddurs.github.io/subway-seat/install.sh | sh -s -- --only fastfetch
+```
+
+The [installer](../../docs/INSTALL.md) shows its plan and asks once. Add `--flavor tunnel`, `--flavor enamel` or `--flavor auto` for another flavor. To do it yourself, use the files below.
+
 ## Files
 
 | Flavor | File | Where it goes |

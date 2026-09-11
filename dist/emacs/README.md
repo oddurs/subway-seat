@@ -4,6 +4,14 @@ Three themes in one package, covering the tree-sitter font-lock faces, org, magi
 
 [Emacs](https://www.gnu.org/software/emacs/) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/emacs/) · Needs Emacs 27.1+
 
+## The quick way
+
+```sh
+curl -fsSL https://oddurs.github.io/subway-seat/install.sh | sh -s -- --only emacs
+```
+
+The [installer](../../docs/INSTALL.md) shows its plan and asks once. Add `--flavor tunnel`, `--flavor enamel` or `--flavor auto` for another flavor. To do it yourself, use the files below.
+
 ## Files
 
 | Flavor | File | Where it goes |

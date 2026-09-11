@@ -4,6 +4,14 @@ Colors on rofi's default layout: the window on the raised paper ground, a text-w
 
 [rofi](https://github.com/davatorium/rofi) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/rofi/) · Needs rofi 1.7+
 
+## The quick way
+
+```sh
+curl -fsSL https://oddurs.github.io/subway-seat/install.sh | sh -s -- --only rofi
+```
+
+The [installer](../../docs/INSTALL.md) shows its plan and asks once. Add `--flavor tunnel`, `--flavor enamel` or `--flavor auto` for another flavor. To do it yourself, use the files below.
+
 ## Files
 
 | Flavor | File | Where it goes |

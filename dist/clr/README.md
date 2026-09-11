@@ -4,6 +4,14 @@ A color list per flavor for the system color picker, so Keynote, Pages, Xcode, S
 
 [macOS color list](https://developer.apple.com/documentation/appkit/nscolorlist) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/clr/)
 
+## The quick way
+
+```sh
+curl -fsSL https://oddurs.github.io/subway-seat/install.sh | sh -s -- --only clr
+```
+
+The [installer](../../docs/INSTALL.md) shows its plan and asks once. Add `--flavor tunnel`, `--flavor enamel` or `--flavor auto` for another flavor. To do it yourself, use the files below.
+
 ## Files
 
 | Flavor | File | Where it goes |

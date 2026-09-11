@@ -4,6 +4,14 @@ Colors, cursor, selection, borders, tab bar, title bar, scrollbar and marks, plu
 
 [kitty](https://sw.kovidgoyal.net/kitty/) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/kitty/) · Needs kitty 0.43+
 
+## The quick way
+
+```sh
+curl -fsSL https://oddurs.github.io/subway-seat/install.sh | sh -s -- --only kitty
+```
+
+The [installer](../../docs/INSTALL.md) shows its plan and asks once. Add `--flavor tunnel`, `--flavor enamel` or `--flavor auto` for another flavor. To do it yourself, use the files below.
+
 ## Files
 
 | Flavor | File | Where it goes |

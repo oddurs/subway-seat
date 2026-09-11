@@ -4,6 +4,14 @@ Colors, cursor, selection, borders and the tab strip. Hyper 3 loads local plugin
 
 [Hyper](https://hyper.is) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/hyper/)
 
+## The quick way
+
+```sh
+curl -fsSL https://oddurs.github.io/subway-seat/install.sh | sh -s -- --only hyper
+```
+
+The [installer](../../docs/INSTALL.md) shows its plan and asks once. Add `--flavor tunnel`, `--flavor enamel` or `--flavor auto` for another flavor. To do it yourself, use the files below.
+
 ## Files
 
 | Flavor | File | Where it goes |

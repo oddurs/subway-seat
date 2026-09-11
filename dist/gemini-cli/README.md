@@ -4,6 +4,14 @@ A custom theme file per flavor, the same theme as a `ui.customThemes` settings b
 
 [Gemini CLI](https://github.com/google-gemini/gemini-cli) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/gemini-cli/)
 
+## The quick way
+
+```sh
+curl -fsSL https://oddurs.github.io/subway-seat/install.sh | sh -s -- --only gemini-cli
+```
+
+The [installer](../../docs/INSTALL.md) shows its plan and asks once. Add `--flavor tunnel`, `--flavor enamel` or `--flavor auto` for another flavor. To do it yourself, use the files below.
+
 ## Files
 
 | Flavor | File | Where it goes |

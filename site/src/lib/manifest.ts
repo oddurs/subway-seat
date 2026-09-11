@@ -38,6 +38,8 @@ export type Port = {
   requires?: string | null;
   detect?: string[] | null;
   files: PortFile[];
+  /** install.sh sets it up on its own (build.py's `installs`, checked against install.sh). */
+  installs: boolean;
 };
 
 type Manifest = { version?: string; categories: string[]; ports: Port[] };
@@ -92,8 +94,7 @@ export function isPath(dest: string) {
 export type Setup = "auto" | "step" | "manual";
 
 export function setupFor(port: Port): Setup {
-  const placed = port.files.some((f) => f.dest && isPath(f.dest));
-  if (!placed) return "manual";
+  if (!port.installs) return "manual";
   const steps = port.files.some((f) => f.how || (f.dest && !isPath(f.dest)));
   const enable = port.enable ? Object.values(port.enable)[0] : null;
   if (steps || (enable && !enable.file)) return "step";

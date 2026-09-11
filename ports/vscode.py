@@ -1149,7 +1149,7 @@ Cursor (`cursor`), Windsurf (`windsurf`) and VSCodium (`codium`) take the same f
 
 ![Subway Seat Enamel]({SHOTS}/vscode-enamel.png)
 
-Subway Seat is available for ~90 apps, from Ghostty and Neovim to Claude Code: [github.com/oddurs/subway-seat](https://github.com/oddurs/subway-seat).
+Subway Seat is available for over 100 apps, from Ghostty and Neovim to Claude Code: [github.com/oddurs/subway-seat](https://github.com/oddurs/subway-seat).
 """
 
 CONTENT_TYPES = """<?xml version="1.0" encoding="utf-8"?>
