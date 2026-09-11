@@ -2,6 +2,12 @@
 
 All notable changes to Subway Seat. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and versions follow [SemVer](https://semver.org/): a color change that alters how existing code looks is a minor bump; a fixed key or a new port is a patch.
 
+## [Unreleased]
+
+### Added
+
+- **Claude Code: "terminal colors" themes.** Claude Code draws code in diffs and file views in its own colors (Monokai on dark, GitHub on light), which no theme can change. Each flavor now also comes with a theme that hands that code to your terminal's 16 colors, so in a Subway Seat terminal it matches the rest; diff lines get the nearest readable 256-color grounds (gray for added lines on the dark flavors). `/subway-seat:setup` asks which you want.
+
 ## [0.3.0] - 2026-09-11
 
 ### Changed
@@ -58,5 +64,6 @@ All notable changes to Subway Seat. The format follows [Keep a Changelog](https:
 
 - The original Walnut palette with Ghostty, fish, Starship, bat/delta, herdr, Neovim, VS Code and Claude Code ports.
 
+[Unreleased]: https://github.com/oddurs/subway-seat/compare/v0.3.0...main
 [0.3.0]: https://github.com/oddurs/subway-seat/compare/744219f...v0.3.0
 [0.2.0]: https://github.com/oddurs/subway-seat/commit/744219f

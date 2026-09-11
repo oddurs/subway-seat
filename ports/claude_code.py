@@ -13,11 +13,19 @@ How Claude Code draws a custom theme (checked against the v2.1.26x binary):
   readable (better than the stock themes do).
 - Inline `code` in messages is drawn from the base preset's `permission` color, not
   from the overrides, so it stays Claude Code's lavender or blue.
+- On a `dark-ansi` or `light-ansi` base the code takes the terminal's 16 colors
+  instead: keywords bright magenta, `const` and types bright cyan, numbers bright
+  blue, strings bright green, calls bright yellow, comments ANSI 8. In a Subway Seat
+  terminal those are our colors, so each flavor also comes as a "terminal colors"
+  theme. Checked against v2.1.268 in the real app. In that mode Claude Code rounds
+  RGB diff grounds to the 256-color cube, so those themes give `ansi256()` grounds
+  picked to keep the code readable (`terminal_grounds`).
 """
 
+import colorsys
 import json
 
-from ports._lib import HEADER, REPO, SITE, VERSION, Out, ink, rgb, selection, tints
+from ports._lib import HEADER, REPO, SITE, VERSION, Out, ink, rgb, rgb_floats, selection, tints
 
 META = {
     "id": "claude-code",
@@ -31,9 +39,12 @@ META = {
     },
     "requires": "Claude Code 2.1.247+",
     "detect": ["claude", "~/.claude"],
-    "notes": "One plugin: all three themes, a relaxed output style and subagent rows. `/subway-seat:setup` "
+    "notes": "One plugin: every flavor's themes, a relaxed output style and subagent rows. `/subway-seat:setup` "
     "asks for a flavor, shows what it will change, then adds the station-sign status line, 70s spinner verbs "
     "and “Next stop” tips to your settings; `/subway-seat:setup remove` takes them out again. "
+    "Claude Code colors code in diffs and file views itself (Monokai on dark, GitHub on light). Each flavor's "
+    "“terminal colors” theme hands that to your terminal's 16 colors instead, so in a Subway Seat terminal the "
+    "code matches the rest; diff lines then get plainer 256-color grounds, gray for added lines on the dark flavors. "
     "Inside tmux, Claude Code rounds colors to 256 unless `CLAUDE_CODE_TMUX_TRUECOLOR=1` is set.",
 }
 
@@ -41,7 +52,8 @@ PLUGIN = "subway-seat"
 OUTPUT_STYLE_NAME = f"{PLUGIN}:Subway Seat"  # plugin output styles are named "<plugin>:<name>"
 
 
-def theme(f):
+def theme(f, terminal=False):
+    """A flavor's theme; `terminal=True` is the version whose code takes the terminal's colors."""
     c = f
     t = tints(f)
     dark = f.dark
@@ -92,7 +104,71 @@ def theme(f):
         "rainbow_blue_shimmer": c.sage_hi, "rainbow_indigo_shimmer": c.denim_hi,
         "rainbow_violet_shimmer": clay_shimmer,
     }
+    if terminal:
+        overrides.update(terminal_grounds(f))
+        return {"name": f"{f.name} (terminal colors)", "base": "dark-ansi" if dark else "light-ansi",
+                "overrides": overrides}
     return {"name": f.name, "base": "dark" if dark else "light", "overrides": overrides}
+
+
+# ── Diff grounds for the terminal-colors themes ────────────────────────────
+XTERM_LEVELS = (0, 95, 135, 175, 215, 255)
+
+
+def xterm(n):
+    """The fixed color of xterm-256 index n (16–231 the color cube, 232–255 the gray ramp)."""
+    if n >= 232:
+        return "#" + f"{8 + (n - 232) * 10:02X}" * 3
+    n -= 16
+    return "#" + "".join(f"{XTERM_LEVELS[v]:02X}" for v in (n // 36, n // 6 % 6, n % 6))
+
+
+def contrast(a, b):
+    def lum(color):
+        r, g, b = (v / 12.92 if v <= 0.04045 else ((v + 0.055) / 1.055) ** 2.4 for v in rgb_floats(color))
+        return 0.2126 * r + 0.7152 * g + 0.0722 * b
+
+    hi, lo = sorted((lum(a), lum(b)), reverse=True)
+    return (hi + 0.05) / (lo + 0.05)
+
+
+def terminal_grounds(f):
+    """For each diff tint, the nearest xterm-256 color (16–255, the same in every
+    terminal) under which every color the highlighter draws, taken from the
+    flavor's ANSI slots, keeps the floors tests hold the tints to: 2.8:1 on lines,
+    2.0:1 on changed words. A color near the tint's hue wins when one qualifies;
+    word emphasis sits farther from base than its line, and a faded line no farther.
+    Dark flavors' added lines come out a neutral gray: the cube has no dark green
+    that keeps comments readable."""
+    a, t = f.ansi, tints(f)
+    code = [a[7] if f.dark else a[0], a[8], a[10], a[11], a[12], a[13], a[14]]
+
+    def hue_sat(color):
+        h, s, _ = colorsys.rgb_to_hsv(*rgb_floats(color))
+        return h * 360, s
+
+    def dist(x, y):
+        return sum((i - j) ** 2 for i, j in zip(rgb(x), rgb(y), strict=True)) ** 0.5
+
+    def pick(tint, colors, floor, allowed):
+        readable = [n for n in range(16, 256) if allowed(n) and min(contrast(c, xterm(n)) for c in colors) >= floor]
+        th, ts = hue_sat(tint)
+
+        def near_hue(n):
+            h, s = hue_sat(xterm(n))
+            return s >= ts / 2 and min(abs(h - th), 360 - abs(h - th)) <= 40
+
+        return min([n for n in readable if near_hue(n)] or readable, key=lambda n: dist(xterm(n), tint))
+
+    grounds = {}
+    for kind, sign, token in (("add", a[10], "diffAdded"), ("del", a[9], "diffRemoved")):
+        colors = [*code, sign]
+        line = pick(t[kind], colors, 2.8, lambda n: True)
+        reach = dist(xterm(line), f.base)
+        word = pick(t[f"{kind}_emph"], colors, 2.0, lambda n: dist(xterm(n), f.base) > reach)
+        dim = pick(t[f"{kind}_dim"], colors, 2.8, lambda n: dist(xterm(n), f.base) <= reach)
+        grounds |= {token: f"ansi256({line})", f"{token}Word": f"ansi256({word})", f"{token}Dimmed": f"ansi256({dim})"}
+    return grounds
 
 
 # ── Spinner verbs and tips ─────────────────────────────────────────────────
@@ -464,8 +540,9 @@ SETUP = r"""#!/usr/bin/env bash
 #
 # Merges Subway Seat into Claude Code's user settings, or takes it out again.
 #   setup.sh check
-#   setup.sh apply --flavor walnut|tunnel|enamel --verbs replace|append --voice yes|no --data DIR [--dry-run]
+#   setup.sh apply --flavor walnut|tunnel|enamel [--code own|terminal] --verbs replace|append --voice yes|no --data DIR [--dry-run]
 #   setup.sh remove [--dry-run]
+# --code terminal picks the flavor's "terminal colors" theme (code in the terminal's 16 colors).
 # Each key it writes is replaced whole, and every other key is kept. The first
 # real write keeps a backup next to settings.json.
 set -u
@@ -488,10 +565,11 @@ fi
 
 action=${1:-}
 [ $# -gt 0 ] && shift
-flavor='' verbs=replace voice=no data='' dry=''
+flavor='' code=own verbs=replace voice=no data='' dry=''
 while [ $# -gt 0 ]; do
   case $1 in
     --flavor) flavor=${2:-} && shift 2 ;;
+    --code) code=${2:-} && shift 2 ;;
     --verbs) verbs=${2:-} && shift 2 ;;
     --voice) voice=${2:-} && shift 2 ;;
     --data) data=${2:-} && shift 2 ;;
@@ -556,12 +634,14 @@ case $action in
       walnut) slug=subway-seat ;; tunnel) slug=subway-seat-tunnel ;; enamel) slug=subway-seat-enamel ;;
       *) die "--flavor must be walnut, tunnel or enamel." ;;
     esac
+    case $code in own | terminal) ;; *) die "--code must be own or terminal." ;; esac
     case $verbs in replace | append) ;; *) die "--verbs must be replace or append." ;; esac
     case $voice in yes | no) ;; *) die "--voice must be yes or no." ;; esac
     [ -n "$data" ] || data="$dir/plugins/data/subway-seat-subway-seat"
     new=$(jq --arg cmd "$(printf '%q' "$data/subway-seat-statusline")" --arg data "$data" \
-      --arg verbs "$verbs" --arg voice "$voice" '
-      .statusLine.command = $cmd
+      --arg code "$code" --arg verbs "$verbs" --arg voice "$voice" '
+      (if $code == "terminal" then .theme += "-terminal" else . end)
+      | .statusLine.command = $cmd
       | .spinnerTipsOverride.tipsFile = ($data + "/tips.json")
       | .spinnerVerbs.mode = $verbs
       | if $voice == "yes" then .outputStyle = "__OUTPUT_STYLE__" else . end' "$root/settings/$slug.json") ||
@@ -592,7 +672,7 @@ case $action in
     write 'reduce $keys[] as $k (.; if .[$k] != null and (.[$k] | ours) then del(.[$k]) else . end)' --argjson keys "$KEYS"
     ;;
   *)
-    die "usage: setup.sh check | apply --flavor F --verbs replace|append --voice yes|no --data DIR [--dry-run] | remove [--dry-run]"
+    die "usage: setup.sh check | apply --flavor F [--code own|terminal] --verbs replace|append --voice yes|no --data DIR [--dry-run] | remove [--dry-run]"
     ;;
 esac
 
@@ -643,7 +723,7 @@ allowed-tools: AskUserQuestion Read Bash(${CLAUDE_PLUGIN_ROOT}/scripts/setup.sh 
 
 # Subway Seat setup
 
-The plugin already ships the three themes, the subagent rows and the Subway Seat output style. This skill adds what a plugin can't set by itself, in the user's own settings: the theme choice, the status line, the spinner verbs and the tips. Do it all in this one turn, and change nothing until the user picks **Apply**.
+The plugin already ships the themes, the subagent rows and the Subway Seat output style. This skill adds what a plugin can't set by itself, in the user's own settings: the theme choice, the status line, the spinner verbs and the tips. Do it all in this one turn, and change nothing until the user picks **Apply**.
 
 Run each command exactly as written, without quoting the script path, so it matches the pre-approved rule. Don't edit settings files any other way.
 
@@ -658,11 +738,12 @@ Arguments: `$ARGUMENTS`
 ## Otherwise
 
 1. Run `${CLAUDE_PLUGIN_ROOT}/scripts/setup.sh check`. If it reports a problem, such as jq missing, pass it on and stop.
-2. Ask one AskUserQuestion with three questions:
+2. Ask one AskUserQuestion with four questions:
    - **Flavor**: "Subway Seat" (Walnut, the original dark brown), "Subway Seat Tunnel" (deeper dark) or "Subway Seat Enamel" (light). Recommend the one that matches their terminal's background.
+   - **Code colors**, for code in diffs and file views: "Claude Code's" (Monokai on dark, GitHub on light; looks the same in any terminal) or "My terminal's" (the terminal's 16 colors, which are Subway Seat's when the terminal uses Subway Seat; diff lines get plainer grounds). Recommend "My terminal's" if their terminal uses a Subway Seat theme, otherwise "Claude Code's".
    - **Spinner verbs**: "Replace" (only the 70s verbs) or "Add" (mixed in with Claude Code's own).
    - **Voice**: "Everywhere" (the relaxed Subway Seat output style in every project) or "Not now" (keep the current style; `/config` › Output style switches it per project later).
-3. Run `${CLAUDE_PLUGIN_ROOT}/scripts/setup.sh apply --flavor <walnut|tunnel|enamel> --verbs <replace|append> --voice <yes|no> --data ${CLAUDE_PLUGIN_DATA} --dry-run` with their answers, and show its output: every key it will change, with the current and new value.
+3. Run `${CLAUDE_PLUGIN_ROOT}/scripts/setup.sh apply --flavor <walnut|tunnel|enamel> --code <own|terminal> --verbs <replace|append> --voice <yes|no> --data ${CLAUDE_PLUGIN_DATA} --dry-run` with their answers, and show its output: every key it will change, with the current and new value.
 4. Ask with AskUserQuestion: "Apply these changes?" with the options **Apply** and **Cancel**. On Cancel, stop.
 5. On Apply, run the same command without `--dry-run`, and pass on what it prints, including the backup path and any notes.
 6. Finish in two or three short lines: the theme and status line switch over within a moment (restart Claude Code if they don't); the status line looks best with a Nerd Font, and `SUBWAY_SEAT_GLYPHS=plain` drops the glyphs; `/subway-seat:setup remove` undoes all of it.
@@ -692,10 +773,11 @@ def build(flavors):
     how_setup = "merged into ~/.claude/settings.json by /subway-seat:setup"
     outs = []
     for f in flavors:
-        body = json.dumps(theme(f), indent=2) + "\n"
-        outs.append(Out(f"themes/{f.slug}.json", body, flavor=f.id,
-                        dest=f"~/.claude/themes/{f.slug}.json", lang="json"))
-        outs.append(Out(f"plugin/themes/{f.slug}.json", body, flavor=f.id, lang="json"))
+        for slug, terminal in ((f.slug, False), (f"{f.slug}-terminal", True)):
+            body = json.dumps(theme(f, terminal), indent=2) + "\n"
+            outs.append(Out(f"themes/{slug}.json", body, flavor=f.id,
+                            dest=f"~/.claude/themes/{slug}.json", lang="json"))
+            outs.append(Out(f"plugin/themes/{slug}.json", body, flavor=f.id, lang="json"))
         outs.append(Out(f"plugin/settings/{f.slug}.json", json.dumps(settings(f), indent=2) + "\n",
                         flavor=f.id, how=how_setup, lang="json"))
     outs += [
