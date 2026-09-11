@@ -158,7 +158,10 @@ mkparents() {
 }
 
 # state_get KIND KEY: the recorded line of that kind for that key (sets R).
-# The record is read into STATE_TEXT once; this only matches strings.
+# The record is read into STATE_TEXT once, without its links, copies and
+# directories. Cutting a match out of a long string takes the shell time that
+# grows with the square of the length, so theme files are looked up in one awk
+# pass in classify instead, and LINKED lists the recorded link paths.
 state_get() {
   case $STATE_TEXT in
     *"$NL$1$TAB$2$TAB"*) R=${STATE_TEXT#*"$NL$1$TAB$2$TAB"}; R="$1$TAB$2$TAB${R%%"$NL"*}" ;;
@@ -230,9 +233,8 @@ load_settings() {
       case $key in flavor) C_FLAVOR=$val ;; only) C_ONLY=$val ;; skip) C_SKIP=$val ;; esac
     done <"$CONF"
   fi
-  S_ROOT='' S_FLAVOR='' S_MODE='' S_APPS=' ' STATE_TEXT=$NL
+  S_ROOT='' S_FLAVOR='' S_MODE='' S_APPS=' ' STATE_TEXT=$NL LINKED=$NL
   if [ -f "$STATE" ]; then
-    STATE_TEXT="$NL$(cat "$STATE")$NL"
     while IFS= read -r line; do
       field 2 "$line"
       case $line in
@@ -240,6 +242,9 @@ load_settings() {
         flavor"$TAB"*) S_FLAVOR=$R ;;
         mode"$TAB"*) S_MODE=$R ;;
         app"$TAB"*) S_APPS="$S_APPS$R " ;;
+        link"$TAB"*) LINKED="$LINKED$R$NL" ;;
+        copy"$TAB"* | dir"$TAB"*) ;;
+        *) STATE_TEXT="$STATE_TEXT$line$NL" ;;
       esac
     done <"$STATE"
   fi
@@ -454,25 +459,26 @@ detect_all() {
 # older checkout, the curl copy, the old install.fish), or where we left it.
 ours_link() {
   case $1 in "$DIST"/* | */subway-seat*/dist/*) return 0 ;; esac
-  state_get link "$2" && field 3 "$R" && [ "$R" = "$1" ]
+  [ "$1" = "$2" ]
 }
 
-# classify_link DEST SRC: new, same, update or conflict (sets R).
+# classify_link DEST SRC TARGET CKSUM: new, same, update or conflict (sets R).
+# TARGET and CKSUM are what the record says was linked or copied there, if any.
 classify_link() {
   want=$DIST/$2
   # shellcheck disable=SC3013 # -ef works in dash, bash, busybox ash and macOS sh
-  if [ -L "$1" ] && [ "$COPY" = 0 ] && [ "$1" -ef "$want" ] && state_get link "$1"; then R=same
+  if [ -L "$1" ] && [ "$COPY" = 0 ] && [ "$1" -ef "$want" ] && [ -n "$3" ]; then R=same
   elif [ -L "$1" ]; then
     target=$(readlink "$1")
     if [ "$target" = "$want" ] && [ "$COPY" = 0 ]; then R=same
-    elif ours_link "$target" "$1"; then R=update
+    elif ours_link "$target" "$3"; then R=update
     else R=conflict
     fi
   elif [ -d "$1" ]; then R=conflict
   elif [ -e "$1" ]; then
     if cmp -s "$1" "$want"; then
       if [ "$COPY" = 1 ]; then R=same; else R=update; fi
-    elif state_get copy "$1" && field 4 "$R" && [ "$R" = "$(cksum <"$1")" ]; then R=update
+    elif [ -n "$4" ] && [ "$4" = "$(cksum <"$1")" ]; then R=update
     else R=conflict
     fi
   else R=new
@@ -593,6 +599,18 @@ classify() {
     printf '%s\t%s\t%s\t%s\n' "$file" "$n" "$st" "$why" >>"$T/blocks"
   done <"$T/blocks.raw"
   BLOCKS="$NL$(cat "$T/blocks")$NL"
+  # Each theme file gets its recorded link target and copy checksum, joined on
+  # in one pass (see state_get).
+  SS_STATE=$STATE awk '
+    BEGIN {
+      FS = OFS = "\t"
+      while ((getline l < ENVIRON["SS_STATE"]) > 0) {
+        split(l, f, "\t")
+        if ((f[1] == "link" || f[1] == "copy") && !((f[1], f[2]) in rec)) rec[f[1], f[2]] = f[1] == "link" ? f[3] : f[4]
+      }
+    }
+    $1 == "link" { $0 = $0 "\t" rec["link", $3] "\t" rec["copy", $3] }
+    { print }' "$T/plan" >"$T/plan.rec"
   while IFS= read -r line; do
     field 1 "$line"; kind=$R
     field 2 "$line"; id=$R
@@ -602,7 +620,9 @@ classify() {
       link)
         field 3 "$line"; dest=$R
         field 4 "$line"; src=$R
-        classify_link "$dest" "$src"
+        field 5 "$line"; linked=$R
+        field 6 "$line"
+        classify_link "$dest" "$src" "$linked" "$R"
         printf 'L\t%s\t%s\t%s\t%s\n' "$id" "$R" "$dest" "$src" >>"$T/act"
         WANT="$WANT${dest}$NL" ;;
       part)
@@ -626,7 +646,7 @@ classify() {
       step)
         printf 'S\t%s\n' "${line#step"$TAB"}" >>"$T/act" ;;
     esac
-  done <"$T/plan"
+  done <"$T/plan.rec"
   forget_unwanted
 }
 
@@ -715,7 +735,7 @@ legacy() {
       [ -L "$f" ] || continue
       case $(readlink "$f") in */subway-seat*/dist/*) ;; *) continue ;; esac
       wanted "$f" && continue
-      state_get link "$f" && continue
+      case $LINKED in *"$NL$f$NL"*) continue ;; esac
       why="left by the old install.fish"
       [ "$rel" = .claude/themes ] && why="the Claude Code plugin carries the themes"
       printf 'T\t-\tremove\t%s\t%s\n' "$f" "$why" >>"$T/act"
