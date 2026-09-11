@@ -2,7 +2,7 @@
 
 All notable changes to Subway Seat. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and versions follow [SemVer](https://semver.org/): a color change that alters how existing code looks is a minor bump; a fixed key or a new port is a patch.
 
-## [0.3.0] - Unreleased
+## [0.3.0] - 2026-09-11
 
 ### Changed
 
@@ -58,6 +58,5 @@ All notable changes to Subway Seat. The format follows [Keep a Changelog](https:
 
 - The original Walnut palette with Ghostty, fish, Starship, bat/delta, herdr, Neovim, VS Code and Claude Code ports.
 
-<!-- No tags exist before v0.3.0. When it's tagged, point [0.3.0] at compare/744219f...v0.3.0. -->
-[0.3.0]: https://github.com/oddurs/subway-seat/compare/744219f...main
+[0.3.0]: https://github.com/oddurs/subway-seat/compare/744219f...v0.3.0
 [0.2.0]: https://github.com/oddurs/subway-seat/commit/744219f
