@@ -1,6 +1,6 @@
 # Installing Subway Seat
 
-`install.sh` puts Subway Seat into the apps on your machine and keeps a record of what it did, so it can switch flavors or take everything out again exactly. It runs on macOS and Linux with nothing but `sh`, `awk`, `sed`, `grep` and `curl` (or `wget`).
+`install.sh` puts Subway Seat into the apps on your machine and keeps a record of what it did, so it can switch flavors or take everything out again exactly. It runs on macOS and Linux with nothing but `sh` and standard tools (`awk`, `sed`, `grep`, `cksum`), plus `curl` or `wget`, `tar` and `gzip` for the one-line install.
 
 ```sh
 curl -fsSL https://oddurs.github.io/subway-seat/install.sh | sh
@@ -30,7 +30,7 @@ From a clone, `./install.sh` does the same with the checkout's files. `./install
 | `--dry-run` | Print the plan and change nothing. |
 | `--copy` | Copy files instead of linking them. This is the default when the files don't come from a git checkout (the curl install). |
 | `--no-enable` | Place theme files but leave app configs alone. The lines to add are listed as steps. |
-| `--ref v0.4.0` | With curl, install this tag or branch instead of `main`. |
+| `--ref v0.3.0` | With curl, install this tag or branch instead of `main`. |
 
 Exit codes: `0` done (or nothing to do), `1` something failed, you answered no, or `status` found drift, `2` a usage error.
 
@@ -47,7 +47,7 @@ Exit codes: `0` done (or nothing to do), `1` something failed, you answered no, 
 
   Running it again replaces the block in place rather than adding a second one. A config file that is a symlink (into a dotfiles repo, say) is written through, so the link stays a link. A port only has a block when appending is a correct and complete way to turn it on; otherwise you get a step to do by hand.
 - **Files it didn't place** are never replaced. The plan marks them `skip`, and the prompt offers `b` to move them aside to `<name>.subway-seat.bak` first. `uninstall` puts them back.
-- **Claude Code** gets the plugin (`claude plugin marketplace add oddurs/subway-seat`, then `claude plugin install subway-seat@subway-seat`). After that, `/subway-seat:setup` in Claude Code picks the flavor, status line and verbs. It never links into `~/.claude/themes`. If the plugin was already there, it's left alone, and `uninstall` doesn't remove it.
+- **Claude Code** gets the plugin (`claude plugin marketplace add oddurs/subway-seat`, then `claude plugin install subway-seat@subway-seat`). After that, `/subway-seat:setup` in Claude Code picks the flavor, whether code in diffs uses Claude Code's colors or your terminal's, the status line and the verbs. It never links into `~/.claude/themes`. If the plugin was already there, it's left alone, and `uninstall` doesn't remove it.
 - **VS Code, Cursor, VSCodium and Windsurf** get the `.vsix` through `<cli> --install-extension`. Choosing the theme in settings is a step by hand.
 - **bat**: its cache is rebuilt after its themes change.
 
@@ -73,7 +73,7 @@ Each port's `dist/<id>/README.md` lists its files and where they go. Delete thos
 The installer reads `dist/install.tsv`, which `build.py` writes from each port's META (see `install_table()` in `build.py` for the records):
 
 - `detect`: commands or paths that show the app is installed.
-- `dest` on each file: where it goes.
+- `dest` on each file: where it goes. Only home, XDG and absolute paths are placed; `build.py` records whether a port has one as `installs` in `dist/manifest.json`, and the site and each port's README offer the one-line install only then.
 - `enable["file"]`: the config file the enable line may be appended to.
 - `auto`: how to follow light and dark.
 

@@ -4,6 +4,14 @@ Copy the files to `~/.config/lite-xl/colors/` (on Windows, `%USERPROFILE%\.confi
 
 [Lite XL](https://lite-xl.com) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/lite-xl/)
 
+## The quick way
+
+```sh
+curl -fsSL https://oddurs.github.io/subway-seat/install.sh | sh -s -- --only lite-xl
+```
+
+The [installer](../../docs/INSTALL.md) shows its plan and asks once. Add `--flavor tunnel`, `--flavor enamel` or `--flavor auto` for another flavor. To do it yourself, use the files below.
+
 ## Files
 
 | Flavor | File | Where it goes |

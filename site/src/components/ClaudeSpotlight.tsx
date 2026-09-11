@@ -20,7 +20,10 @@ type Settings = { spinnerVerbs: { verbs: string[] }; spinnerTipsOverride: { labe
 type Tips = { tips: { text: string }[] };
 
 const INCLUDED = [
-  ["Three themes", "Walnut, Tunnel and Enamel, with every one of Claude Code's color tokens set."],
+  [
+    "A theme for every flavor",
+    "Walnut, Tunnel and Enamel, with every one of Claude Code's color tokens set. Each also comes in a “terminal colors” version that colors code in diffs with your terminal's palette instead of Claude Code's Monokai.",
+  ],
   [
     "A station-sign status line",
     "The model as a route bullet, where you are, the line you're on, how full the car is, and the fare or your plan's pass.",

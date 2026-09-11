@@ -4,6 +4,14 @@ The 16 colors, cursor, header bar, bell flash, and the header tints for root and
 
 [Ptyxis](https://gitlab.gnome.org/GNOME/ptyxis) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/ptyxis/) · Needs Ptyxis 46+
 
+## The quick way
+
+```sh
+curl -fsSL https://oddurs.github.io/subway-seat/install.sh | sh -s -- --only ptyxis
+```
+
+The [installer](../../docs/INSTALL.md) shows its plan and asks once. Add `--flavor tunnel`, `--flavor enamel` or `--flavor auto` for another flavor. To do it yourself, use the files below.
+
 ## Files
 
 | Flavor | File | Where it goes |

@@ -4,6 +4,14 @@ One plugin: every flavor's themes, a relaxed output style and subagent rows. `/s
 
 [Claude Code](https://claude.com/product/claude-code) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/claude-code/) · Needs Claude Code 2.1.247+
 
+## The quick way
+
+```sh
+curl -fsSL https://oddurs.github.io/subway-seat/install.sh | sh -s -- --only claude-code
+```
+
+The [installer](../../docs/INSTALL.md) shows its plan and asks once. Add `--flavor tunnel`, `--flavor enamel` or `--flavor auto` for another flavor. To do it yourself, use the files below.
+
 ## Files
 
 | Flavor | File | Where it goes |

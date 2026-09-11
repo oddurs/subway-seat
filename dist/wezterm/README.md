@@ -4,6 +4,14 @@ Colors, cursor, selection, splits, copy mode, quick select and the tab bar. On W
 
 [WezTerm](https://wezterm.org) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/wezterm/)
 
+## The quick way
+
+```sh
+curl -fsSL https://oddurs.github.io/subway-seat/install.sh | sh -s -- --only wezterm
+```
+
+The [installer](../../docs/INSTALL.md) shows its plan and asks once. Add `--flavor tunnel`, `--flavor enamel` or `--flavor auto` for another flavor. To do it yourself, use the files below.
+
 ## Files
 
 | Flavor | File | Where it goes |

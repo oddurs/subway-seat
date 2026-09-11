@@ -4,6 +4,14 @@ Panels on walnut with gold directories and marked files, menus and the button ba
 
 [Midnight Commander](https://midnight-commander.org) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/midnight-commander/) · Needs mc 4.8.19+ built with S-Lang
 
+## The quick way
+
+```sh
+curl -fsSL https://oddurs.github.io/subway-seat/install.sh | sh -s -- --only midnight-commander
+```
+
+The [installer](../../docs/INSTALL.md) shows its plan and asks once. Add `--flavor tunnel`, `--flavor enamel` or `--flavor auto` for another flavor. To do it yourself, use the files below.
+
 ## Files
 
 | Flavor | File | Where it goes |

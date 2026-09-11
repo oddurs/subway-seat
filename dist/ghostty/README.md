@@ -4,6 +4,14 @@ The 16 ANSI colors, cursor, selection, search matches, split divider and unfocus
 
 [Ghostty](https://ghostty.org) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/ghostty/) · Needs Ghostty 1.3+
 
+## The quick way
+
+```sh
+curl -fsSL https://oddurs.github.io/subway-seat/install.sh | sh -s -- --only ghostty
+```
+
+The [installer](../../docs/INSTALL.md) shows its plan and asks once. Add `--flavor tunnel`, `--flavor enamel` or `--flavor auto` for another flavor. To do it yourself, use the files below.
+
 ## Files
 
 | Flavor | File | Where it goes |

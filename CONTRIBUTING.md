@@ -54,7 +54,7 @@ def build(flavors):
     ]
 ```
 
-- `dest` is a path (`~/…`, `/…`, `%APPDATA%\…`, `$XDG_CONFIG_HOME/…`, or a project path like `styles/subway-seat.css`) or `None`. Directions ("double-click to import", "Settings › Theme › Import") go in `how`.
+- `dest` is a path (`~/…`, `/…`, `%APPDATA%\…`, `$XDG_CONFIG_HOME/…`, or a project path like `styles/subway-seat.css`) or `None`. Directions ("double-click to import", "Settings › Theme › Import") go in `how`. `install.sh` places files at home, XDG and absolute paths; a port with at least one of those gets a one-line install on the site and in its README. Project, vault and Windows paths are listed as steps.
 - `append=True` means the text is added to the end of the file at `dest`. Wrap it in `MARK_START`/`MARK_END` from `_lib`, in the comment syntax the target file uses, so uninstalling is deleting one block.
 - `enable["code"]` is formatted per flavor with `{name}`, `{slug}`, `{snake}` and `{id}`. When it's fish-only, add a POSIX-shell `enable["sh"]`.
 - Menu paths use `›` (`Settings › Appearance › Theme`); `→` means "then".

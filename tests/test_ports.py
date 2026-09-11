@@ -246,6 +246,26 @@ def test_install_tsv_parses(entries, files):
     assert "file" in seen
 
 
+def test_installs_is_what_install_sh_sets_up(entries, tmp_path):
+    """The manifest's `installs`, which the site and each port's README go by, names exactly
+    the ports install.sh --all sets up: its own plan, run over install.tsv."""
+    script = (ROOT / "install.sh").read_text(encoding="utf-8")
+    awk = "".join(re.search(rf"^{name}='\n(.*?)^'$", script, re.S | re.M)[1] for name in ("UNESC_AWK", "PLAN_AWK"))
+    tsv = tmp_path / "install.tsv"
+    tsv.write_text(build.install_table(entries), encoding="utf-8")
+    env = {"PATH": "/usr/bin:/bin", "HOME": str(tmp_path), "SS_FLAVOR": "walnut", "SS_TARGETS": "*",
+           "SS_NOENABLE": "0", "SS_FISH": "1", "SS_SHELL": "fish"}
+    plan = subprocess.run(["awk", awk, str(tsv)], env=env, capture_output=True, text=True, check=True).stdout
+    set_up = set()
+    for line in plan.splitlines():
+        kind, *fields = line.split("\t")
+        if kind in ("link", "run"):
+            set_up.add(fields[0])
+        elif kind == "part":
+            set_up.add(fields[1])
+    assert set_up == {pid for pid, e in entries.items() if e["installs"]}
+
+
 # ── Spelling, hex and version hygiene ──────────────────────────────────────
 # en-GB spellings to catch; matched at the start of a word, so "AccentRed" isn't "centre".
 BRITISH = re.compile(

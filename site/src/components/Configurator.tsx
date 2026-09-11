@@ -44,12 +44,12 @@ type Mode = "detect" | "only" | "all";
 type Tab = "line" | "config" | "clone";
 
 const SETUP: Record<Setup, { label: string; hint: string }> = {
-  auto: { label: "automatic", hint: "Linked and switched on for you" },
+  auto: { label: "automatic", hint: "Set up and switched on for you" },
   step: {
     label: "one step",
-    hint: "Linked for you; the installer tells you the one thing to do by hand",
+    hint: "Set up for you; the installer tells you the one thing to do by hand",
   },
-  manual: { label: "by hand", hint: "Nothing to link; the installer prints the steps" },
+  manual: { label: "by hand", hint: "Nothing it can place; the installer prints the steps" },
 };
 
 const EXTRAS: { id: Extra; label: string; hint: string }[] = [
@@ -59,7 +59,11 @@ const EXTRAS: { id: Extra; label: string; hint: string }[] = [
     label: "Leave my config files alone",
     hint: "Links the themes but adds no lines",
   },
-  { id: "copy", label: "Copy files instead of linking", hint: "Copies won't update on git pull" },
+  {
+    id: "copy",
+    label: "Copy files instead of linking",
+    hint: "For a clone: copies don't follow a git pull. The one-line install copies already",
+  },
 ];
 
 /** The setup configurator: a flavor, some stops, and a ticket to paste. */
@@ -89,6 +93,7 @@ export function Configurator({
     .replace(/[^a-z0-9]/g, "");
 
   const knowsDetect = ports.some((p) => p.detect);
+  const settable = ports.filter((p) => p.setup !== "manual").length;
   const inOrder = (set: Set<string>) => ports.filter((p) => set.has(p.id)).map((p) => p.id);
   const plan = {
     flavor,
@@ -102,7 +107,7 @@ export function Configurator({
     mode === "only"
       ? ports.filter((p) => picked.has(p.id))
       : mode === "all"
-        ? ports
+        ? ports.filter((p) => p.setup !== "manual") // --all leaves out the by-hand ports
         : ports.filter((p) => !skipped.has(p.id) && (p.detect || !knowsDetect));
   const tally = (s: Setup) => chosen.filter((p) => p.setup === s).length;
 
@@ -194,7 +199,11 @@ export function Configurator({
                     "It looks for each app and themes the ones it finds.",
                   ],
                   ["only", "Just these", "Only the apps you tick below."],
-                  ["all", "Everything", `All ${ports.length} ports. Handy on a fresh machine.`],
+                  [
+                    "all",
+                    "Everything",
+                    `All ${settable} ports it can set up, found or not. Handy on a fresh machine.`,
+                  ],
                 ] as const
               ).map(([m, label, hint]) => (
                 <label key={m} {...stylex.props(s.mode, mode === m && s.modeOn)}>
@@ -370,7 +379,7 @@ export function Configurator({
               {mode === "detect"
                 ? `The apps you have${skipped.size ? `, minus ${skipped.size}` : ""}`
                 : mode === "all"
-                  ? `All ${ports.length} ports`
+                  ? `All ${settable} ports it can set up`
                   : `${picked.size} app${picked.size === 1 ? "" : "s"}`}
               {!empty && mode !== "detect" && (
                 <>

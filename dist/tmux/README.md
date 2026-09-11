@@ -4,6 +4,14 @@ A status bar like a station sign: the session as an orange route bullet (gold wh
 
 [tmux](https://github.com/tmux/tmux) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/tmux/) · Needs tmux 3.2+
 
+## The quick way
+
+```sh
+curl -fsSL https://oddurs.github.io/subway-seat/install.sh | sh -s -- --only tmux
+```
+
+The [installer](../../docs/INSTALL.md) shows its plan and asks once. Add `--flavor tunnel`, `--flavor enamel` or `--flavor auto` for another flavor. To do it yourself, use the files below.
+
 ## Files
 
 | Flavor | File | Where it goes |

@@ -1,6 +1,6 @@
 # AGENTS.md
 
-Guide for coding agents working on Subway Seat: a 1970s walnut-brown color scheme generated for ~90 apps from one palette. Humans: see [CONTRIBUTING.md](CONTRIBUTING.md), which has the same rules in more depth.
+Guide for coding agents working on Subway Seat: a 1970s walnut-brown color scheme generated for over 100 apps from one palette. Humans: see [CONTRIBUTING.md](CONTRIBUTING.md), which has the same rules in more depth.
 
 ## Layout
 
