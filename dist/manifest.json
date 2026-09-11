@@ -2909,7 +2909,7 @@
         "claude",
         "~/.claude"
       ],
-      "notes": "One plugin: all three themes, a relaxed output style and subagent rows. `/subway-seat:setup` asks for a flavor, shows what it will change, then adds the station-sign status line, 70s spinner verbs and \u201cNext stop\u201d tips to your settings; `/subway-seat:setup remove` takes them out again. Inside tmux, Claude Code rounds colors to 256 unless `CLAUDE_CODE_TMUX_TRUECOLOR=1` is set.",
+      "notes": "One plugin: every flavor's themes, a relaxed output style and subagent rows. `/subway-seat:setup` asks for a flavor, shows what it will change, then adds the station-sign status line, 70s spinner verbs and \u201cNext stop\u201d tips to your settings; `/subway-seat:setup remove` takes them out again. Claude Code colors code in diffs and file views itself (Monokai on dark, GitHub on light). Each flavor's \u201cterminal colors\u201d theme hands that to your terminal's 16 colors instead, so in a Subway Seat terminal the code matches the rest; diff lines then get plainer 256-color grounds, gray for added lines on the dark flavors. Inside tmux, Claude Code rounds colors to 256 unless `CLAUDE_CODE_TMUX_TRUECOLOR=1` is set.",
       "enable": {
         "walnut": {
           "where": "Claude Code, from the Subway Seat marketplace",
@@ -2947,6 +2947,24 @@
           "binary": false
         },
         {
+          "path": "claude-code/themes/subway-seat-terminal.json",
+          "flavor": "walnut",
+          "dest": "~/.claude/themes/subway-seat-terminal.json",
+          "how": null,
+          "lang": "json",
+          "append": false,
+          "binary": false
+        },
+        {
+          "path": "claude-code/plugin/themes/subway-seat-terminal.json",
+          "flavor": "walnut",
+          "dest": null,
+          "how": null,
+          "lang": "json",
+          "append": false,
+          "binary": false
+        },
+        {
           "path": "claude-code/plugin/settings/subway-seat.json",
           "flavor": "walnut",
           "dest": null,
@@ -2974,6 +2992,24 @@
           "binary": false
         },
         {
+          "path": "claude-code/themes/subway-seat-tunnel-terminal.json",
+          "flavor": "tunnel",
+          "dest": "~/.claude/themes/subway-seat-tunnel-terminal.json",
+          "how": null,
+          "lang": "json",
+          "append": false,
+          "binary": false
+        },
+        {
+          "path": "claude-code/plugin/themes/subway-seat-tunnel-terminal.json",
+          "flavor": "tunnel",
+          "dest": null,
+          "how": null,
+          "lang": "json",
+          "append": false,
+          "binary": false
+        },
+        {
           "path": "claude-code/plugin/settings/subway-seat-tunnel.json",
           "flavor": "tunnel",
           "dest": null,
@@ -2993,6 +3029,24 @@
         },
         {
           "path": "claude-code/plugin/themes/subway-seat-enamel.json",
+          "flavor": "enamel",
+          "dest": null,
+          "how": null,
+          "lang": "json",
+          "append": false,
+          "binary": false
+        },
+        {
+          "path": "claude-code/themes/subway-seat-enamel-terminal.json",
+          "flavor": "enamel",
+          "dest": "~/.claude/themes/subway-seat-enamel-terminal.json",
+          "how": null,
+          "lang": "json",
+          "append": false,
+          "binary": false
+        },
+        {
+          "path": "claude-code/plugin/themes/subway-seat-enamel-terminal.json",
           "flavor": "enamel",
           "dest": null,
           "how": null,

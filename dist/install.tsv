@@ -478,10 +478,13 @@ port	claude-code	Claude Code	Agents	Claude Code 2.1.247+
 detect	claude-code	claude
 detect	claude-code	~/.claude
 file	claude-code	walnut	claude-code/themes/subway-seat.json	~/.claude/themes/subway-seat.json	link
+file	claude-code	walnut	claude-code/themes/subway-seat-terminal.json	~/.claude/themes/subway-seat-terminal.json	link
 how	claude-code	walnut	merged into ~/.claude/settings.json by /subway-seat:setup	claude-code/plugin/settings/subway-seat.json
 file	claude-code	tunnel	claude-code/themes/subway-seat-tunnel.json	~/.claude/themes/subway-seat-tunnel.json	link
+file	claude-code	tunnel	claude-code/themes/subway-seat-tunnel-terminal.json	~/.claude/themes/subway-seat-tunnel-terminal.json	link
 how	claude-code	tunnel	merged into ~/.claude/settings.json by /subway-seat:setup	claude-code/plugin/settings/subway-seat-tunnel.json
 file	claude-code	enamel	claude-code/themes/subway-seat-enamel.json	~/.claude/themes/subway-seat-enamel.json	link
+file	claude-code	enamel	claude-code/themes/subway-seat-enamel-terminal.json	~/.claude/themes/subway-seat-enamel-terminal.json	link
 how	claude-code	enamel	merged into ~/.claude/settings.json by /subway-seat:setup	claude-code/plugin/settings/subway-seat-enamel.json
 file	claude-code	*	claude-code/plugin/scripts/subway-seat-statusline	~/.claude/subway-seat/subway-seat-statusline	link
 file	claude-code	*	claude-code/plugin/scripts/subway-seat-subagents	~/.claude/subway-seat/subway-seat-subagents	link

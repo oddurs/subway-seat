@@ -7,6 +7,7 @@ import pytest
 from conftest import contrast, luminance
 
 import palette as p
+from ports import claude_code
 from ports._lib import tints
 
 HEX = re.compile(r"^#[0-9A-F]{6}$")
@@ -119,6 +120,37 @@ def test_diff_grounds_are_distinct(flavor):
     for a, b in itertools.combinations(("add", "del", "chg"), 2):
         gap = sum((x - y) ** 2 for x, y in zip(p.hex_to_rgb(t[a]), p.hex_to_rgb(t[b]), strict=True)) ** 0.5
         assert gap >= 10, (flavor.id, a, b, round(gap, 1))
+
+
+# ── Claude Code's terminal-colors themes ───────────────────────────────────
+def test_xterm_colors():
+    assert [claude_code.xterm(n) for n in (16, 52, 187, 231, 232, 236, 255)] == [
+        "#000000", "#5F0000", "#D7D7AF", "#FFFFFF", "#080808", "#303030", "#EEEEEE"]
+
+
+@pytest.mark.parametrize("flavor", p.FLAVORS, ids=lambda f: f.id)
+def test_terminal_theme_diff_grounds(flavor):
+    """On an ANSI base Claude Code draws code in the terminal's ANSI slots over
+    xterm-256 grounds; the same floors as the tints hold there."""
+    t = claude_code.theme(flavor, terminal=True)
+    assert t["base"] == ("dark-ansi" if flavor.dark else "light-ansi")
+    assert t["overrides"].keys() == claude_code.theme(flavor)["overrides"].keys()
+    n = {k: int(re.fullmatch(r"ansi256\((\d+)\)", v)[1]) for k, v in t["overrides"].items() if k.startswith("diff")}
+    assert len(n) == 6 and all(16 <= i <= 255 for i in n.values()), n
+    a = flavor.ansi
+    code = [a[7] if flavor.dark else a[0], a[8], a[10], a[11], a[12], a[13], a[14]]
+
+    def reach(token):
+        return sum((x - y) ** 2 for x, y in zip(p.hex_to_rgb(claude_code.xterm(n[token])), p.hex_to_rgb(flavor.base),
+                                                strict=True)) ** 0.5
+
+    for token, sign in (("diffAdded", a[10]), ("diffRemoved", a[9])):
+        for suffix, floor in (("", 2.8), ("Dimmed", 2.8), ("Word", 2.0)):
+            ground = claude_code.xterm(n[token + suffix])
+            low = {c: round(contrast(c, ground), 2) for c in [*code, sign] if contrast(c, ground) < floor}
+            assert not low, (flavor.id, token + suffix, ground, low)
+        assert reach(f"{token}Word") > reach(token) >= reach(f"{token}Dimmed"), (flavor.id, token)
+    assert n["diffAdded"] != n["diffRemoved"], flavor.id
 
 
 # ── Color math ─────────────────────────────────────────────────────────────
