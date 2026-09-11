@@ -211,7 +211,7 @@ fetch() {
   esac </dev/null || fail "Couldn't download $url."
   if ! mkdir "$T/repo" || ! (cd "$T/repo" && gzip -dc ../repo.tgz | tar -xf -); then fail "Couldn't unpack $url."; fi
   set -- "$T/repo"/*
-  [ $# -eq 1 ] && [ -f "$1/dist/install.tsv" ] || fail "$url doesn't look like Subway Seat."
+  if [ $# -ne 1 ] || [ ! -f "$1/dist/install.tsv" ]; then fail "$url doesn't look like Subway Seat."; fi
   mkparents "$DATA_DIR/x" || fail "Couldn't create $DATA_DIR."
   rm -rf "$DATA_DIR.old"
   if [ -d "$DATA_DIR" ]; then mv "$DATA_DIR" "$DATA_DIR.old" || fail "Couldn't replace $DATA_DIR."; fi
@@ -284,7 +284,7 @@ colors() {
   [ "$FLAVOR" = enamel ] && paint=enamel
   while IFS="$TAB" read -r kind fl role hex; do
     [ "$kind" = port ] && break
-    [ "$kind" = color ] && [ "$fl" = "$paint" ] || continue
+    if [ "$kind" != color ] || [ "$fl" != "$paint" ]; then continue; fi
     hex=${hex#\#}
     g=${hex#??}
     c=$(printf '%s[38;2;%d;%d;%dm' "$E" "0x${hex%????}" "0x${g%??}" "0x${hex#????}")
@@ -297,8 +297,9 @@ header() {
 }
 
 need_tsv() {
-  [ -n "$TSV" ] && [ -f "$TSV" ] ||
+  if [ -z "$TSV" ] || [ ! -f "$TSV" ]; then
     fail "Can't find dist/install.tsv. Run this from a Subway Seat checkout, or pipe it from curl."
+  fi
 }
 
 # ── The plan ────────────────────────────────────────────────────────────────
@@ -459,6 +460,7 @@ ours_link() {
 # classify_link DEST SRC: new, same, update or conflict (sets R).
 classify_link() {
   want=$DIST/$2
+  # shellcheck disable=SC3013 # -ef works in dash, bash, busybox ash and macOS sh
   if [ -L "$1" ] && [ "$COPY" = 0 ] && [ "$1" -ef "$want" ] && state_get link "$1"; then R=same
   elif [ -L "$1" ]; then
     target=$(readlink "$1")
@@ -834,6 +836,7 @@ place() {
 # ours, then put back whatever we had moved aside for it.
 take_out() {
   if [ "$1" = link ]; then
+    # shellcheck disable=SC3013 # -ef works in dash, bash, busybox ash and macOS sh
     if [ -L "$2" ] && { [ "$2" -ef "$3" ] || [ "$(readlink "$2")" = "$3" ]; }; then rm -f "$2" || return 1
     elif [ -e "$2" ] || [ -L "$2" ]; then tilde "$2"; printf '  %s%s%s    %s (it changed since it was linked)\n' "$D" kept "$O" "$R"
     fi
