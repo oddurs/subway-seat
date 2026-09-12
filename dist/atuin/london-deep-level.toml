@@ -6,7 +6,7 @@ name = "london-deep-level"
 [colors]
 AlertInfo = "#7595DA"
 AlertWarn = "#F2C03F"
-AlertError = "#F17869"
+AlertError = "#FE8474"
 Annotation = "#6F7C97"
 Base = "#D4DAE7"
 Guidance = "#A5AEC0"

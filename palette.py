@@ -90,7 +90,7 @@ PARIS_NAMES = {
     "orange": "Ligne 11", "orange_hi": "Ligne 11 clair",
     "red": "Rouge RATP", "red_hi": "Rouge clair",
     "green": "Ligne 6", "green_hi": "Ligne 6 clair",
-    "sage": "Ligne 12", "sage_hi": "Ligne 12 clair",
+    "sage": "Vert-de-gris", "sage_hi": "Vert-de-gris clair",
     "denim": "Ligne 2", "denim_hi": "Ligne 2 clair",
     "clay": "Ligne 4",
 }
@@ -154,7 +154,7 @@ LIGHT_ANSI = (
 DARK_ACCENTS = {
     "yellow": "#F3BF45", "yellow_hi": "#FFD36B",
     "orange": "#EC7F31", "orange_hi": "#FF9D55",
-    "red": "#E05C45", "red_hi": "#F97160",
+    "red": "#E05C45", "red_hi": "#FF8373",
     "green": "#ADB956", "green_hi": "#BFCB63",
     "sage": "#86AD95", "sage_hi": "#A5C9B0",
     "denim": "#7F9BAE", "denim_hi": "#9DB6C6",
@@ -209,13 +209,13 @@ ENAMEL = Flavor(
         "surface0": "#DBCDB3", "surface1": "#CBB898", "surface2": "#BAA380",
         "overlay0": "#A58D6D", "overlay1": "#8C7254", "overlay2": "#735C44",
         "subtext0": "#654F3B", "subtext1": "#54402F", "text": "#3E2C1E", "text_hi": "#2A1D13",
-        "yellow": "#936200", "yellow_hi": "#A56E00",
-        "orange": "#AD4E00", "orange_hi": "#C4561A",
-        "red": "#992418", "red_hi": "#BC4031",
+        "yellow": "#976608", "yellow_hi": "#A9720A",
+        "orange": "#A04800", "orange_hi": "#BA4D0A",
+        "red": "#992418", "red_hi": "#BF4233",
         "green": "#66740F", "green_hi": "#697813",
         "sage": "#3E7157", "sage_hi": "#4C8367",
         "denim": "#3F6480", "denim_hi": "#517791",
-        "clay": "#863913",
+        "clay": "#843811",
     },
     ansi_roles=LIGHT_ANSI,
 )
@@ -227,7 +227,7 @@ ENAMEL = Flavor(
 LONDON_ACCENTS = {
     "yellow": "#F2C03F", "yellow_hi": "#FFD36C",   # platform-edge hazard line
     "orange": "#DE8946", "orange_hi": "#E5AA7F",   # London brick
-    "red": "#DB6052", "red_hi": "#F17869",         # Corporate Red
+    "red": "#DB6052", "red_hi": "#FE8474",         # Corporate Red
     "green": "#77C581", "green_hi": "#9AD2A0",     # District green
     "sage": "#54B4B5", "sage_hi": "#72D1D3",       # DLR teal
     "denim": "#7595DA", "denim_hi": "#8BB0FF",     # Corporate Blue
@@ -285,13 +285,13 @@ PORTLAND = Flavor(
         "surface0": "#BFCFF1", "surface1": "#A8BBE2", "surface2": "#93A7CF",
         "overlay0": "#8192B4", "overlay1": "#697794", "overlay2": "#556179",
         "subtext0": "#4A5469", "subtext1": "#3C4557", "text": "#293040", "text_hi": "#1B202B",
-        "yellow": "#896800", "yellow_hi": "#977300",
-        "orange": "#B14A07", "orange_hi": "#B86100",
-        "red": "#9B211A", "red_hi": "#C92B23",
+        "yellow": "#8D6C08", "yellow_hi": "#9B770A",
+        "orange": "#A54300", "orange_hi": "#AC5A00",
+        "red": "#9B211A", "red_hi": "#CC2E25",
         "green": "#0D8131", "green_hi": "#008730",
         "sage": "#007376", "sage_hi": "#008688",
         "denim": "#0019A8", "denim_hi": "#4A6EBD",   # Corporate Blue, exact
-        "clay": "#7660AB",
+        "clay": "#755FA9",
     },
     ansi_roles=LIGHT_ANSI,
 )
@@ -402,9 +402,9 @@ GUIMARD = Flavor(
         "subtext0": "#A9B5AE", "subtext1": "#C2CBC5", "text": "#D9E1DB", "text_hi": "#E9EEEC",
         "yellow": "#F2BF4B", "yellow_hi": "#FFD273",
         "orange": "#D0914F", "orange_hi": "#E7AB6D",
-        "red": "#CD6B63", "red_hi": "#E1837A",
+        "red": "#CD6B63", "red_hi": "#EE8F85",
         "green": "#80C28E", "green_hi": "#8FD59E",
-        "sage": "#6CA087", "sage_hi": "#98CCB2",
+        "sage": "#5FA09D", "sage_hi": "#8CCCC9",
         "denim": "#709BC8", "denim_hi": "#8DB6E2",
         "clay": "#CE96B4",
     },
@@ -425,9 +425,9 @@ CATACOMBES = Flavor(
         "subtext0": "#A5B1AA", "subtext1": "#BFC8C2", "text": "#D4DDD7", "text_hi": "#E7ECEA",
         "yellow": "#F2BF4B", "yellow_hi": "#FFD273",
         "orange": "#D0914F", "orange_hi": "#E7AB6D",
-        "red": "#CD6B63", "red_hi": "#E1837A",
+        "red": "#CD6B63", "red_hi": "#EE8F85",
         "green": "#80C28E", "green_hi": "#8FD59E",
-        "sage": "#6CA087", "sage_hi": "#98CCB2",
+        "sage": "#5FA09D", "sage_hi": "#8CCCC9",
         "denim": "#709BC8", "denim_hi": "#8DB6E2",
         "clay": "#CE96B4",
     },
@@ -452,19 +452,19 @@ CARRELAGE = Flavor(
         "surface0": "#C7D3C5", "surface1": "#B1C0B0", "surface2": "#9BAC9A",
         "overlay0": "#879887", "overlay1": "#6E7C6E", "overlay2": "#586459",
         "subtext0": "#4C574D", "subtext1": "#3D473E", "text": "#2A342B", "text_hi": "#1B221C",
-        "yellow": "#8A6700", "yellow_hi": "#997300",
+        "yellow": "#8E6B08", "yellow_hi": "#9D770A",
         # Paris runs orange at 66 degrees, a bare 19 from its own brass, so the
         # two warm accents can only be told apart by lightness. The stagger was
         # right; its depth was not. At L 0.44 this hue is already hard against
         # the sRGB wall — the most saturated color that exists there is olive.
         # Lifted to 0.495 and taken back out to the gamut edge it is amber, and
         # still sits 0.04 clear of the brass above it.
-        "orange": "#8A5308", "orange_hi": "#AE6800",
-        "red": "#932D29", "red_hi": "#BB403B",
+        "orange": "#804B00", "orange_hi": "#A26100",
+        "red": "#932D29", "red_hi": "#BE423D",
         "green": "#207F41", "green_hi": "#168540",
-        "sage": "#0B714D", "sage_hi": "#3D8666",
+        "sage": "#006E6B", "sage_hi": "#1E8683",
         "denim": "#27629C", "denim_hi": "#3E75AD",
-        "clay": "#9A557D",
+        "clay": "#98547C",
     },
     ansi_roles=LIGHT_ANSI,
 )

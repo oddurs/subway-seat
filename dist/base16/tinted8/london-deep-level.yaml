@@ -21,7 +21,7 @@ palette:
   gray-bright: "#8B96AC"
   gray-dim: "#53617D"
   red: "#DB6052"
-  red-bright: "#F17869"
+  red-bright: "#FE8474"
   green: "#77C581"
   green-bright: "#9AD2A0"
   yellow: "#F2C03F"
@@ -38,9 +38,9 @@ palette:
 syntax:
   comment: "#6F7C97" # comment
   punctuation.definition.comment: "#6F7C97" # comment
-  constant: "#F17869" # constant
-  constant.numeric: "#F17869" # number
-  constant.language: "#F17869" # boolean
+  constant: "#FE8474" # constant
+  constant.numeric: "#FE8474" # number
+  constant.language: "#FE8474" # boolean
   constant.character: "#AE9EDC" # string.escape
   entity.name: "#D4DAE7" # variable
   entity.name.function: "#F2C03F" # function
@@ -66,7 +66,7 @@ syntax:
   markup.quote: "#A5AEC0" # quote
   markup.raw: "#77C581" # code
   markup.inserted: "#77C581" # green
-  markup.deleted: "#F17869" # red_hi
+  markup.deleted: "#FE8474" # red_hi
   markup.changed: "#F2C03F" # yellow
   meta: "#D4DAE7" # text
   meta.annotation: "#AE9EDC" # decorator
@@ -80,11 +80,11 @@ syntax:
   support: "#F2C03F" # function
   support.class: "#54B4B5" # type
   support.type: "#54B4B5" # type.builtin
-  support.constant: "#F17869" # constant
+  support.constant: "#FE8474" # constant
   support.function.builtin: "#F2C03F" # function.builtin
-  support.variable: "#F17869" # variable.builtin
+  support.variable: "#FE8474" # variable.builtin
   variable: "#D4DAE7" # variable
-  variable.language: "#F17869" # variable.builtin
+  variable.language: "#FE8474" # variable.builtin
   variable.parameter: "#BEC6D5" # parameter
   variable.other.property: "#BEC6D5" # property
 ui:
@@ -148,7 +148,7 @@ ui:
     foreground: "#E7EBF3"
     inactive-background: "#232F49"
   status:
-    error: "#F17869"
+    error: "#FE8474"
     info: "#7595DA"
     success: "#77C581"
     warning: "#F2C03F"

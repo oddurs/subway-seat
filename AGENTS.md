@@ -94,6 +94,11 @@ cd site && bun install && bun run check    # the website: lint, types, format
   (`sage`, `denim`, `clay`) are only ever text, and stay quiet.
 - **Diffs:** use `tints(f)` grounds, keep syntax colors on top of them, `+`/`-` in `green`/`red_hi`. The full standard is in CONTRIBUTING.md, "Diffs".
 - **Dark and light:** Enamel's ramp runs the other way; don't just invert. Denim (blue) only for links and info.
+- **Accents that share a line of code must stay apart.** keyword/number, keyword/function,
+  string/type and the rest of the SYNTAX adjacencies hold an OKLab distance of at least
+  0.073 in every flavor. Two accents at the same lightness separate only by hue, and the
+  light flavors have half the dark ones' lightness range to work in, so that is where the
+  collapses happen — check both classes after moving any accent.
 - **US spelling** ("color") in notes, generated files and docs, except names an app defines (tmux `*-color`, eza `colorful`, bottom `*_colors`, Notepad++ style names).
 - **Never hand-edit `dist/` or `site/src/theme/*`** (except `type.stylex.ts`); change the port or palette and rebuild. Don't commit a stale `dist/`: CI runs `./build.py --check`.
 - **Version:** only in `pyproject.toml`; bumping it is in docs/RELEASE.md, "Cutting a release".

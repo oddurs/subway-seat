@@ -12,7 +12,7 @@
     <option name="BLOCK_TERMINAL_BLOCK_BACKGROUND_START" value="0D1421"/>
     <option name="BLOCK_TERMINAL_DEFAULT_BACKGROUND" value="0D1421"/>
     <option name="BLOCK_TERMINAL_DEFAULT_FOREGROUND" value="D4DAE7"/>
-    <option name="BLOCK_TERMINAL_ERROR_BLOCK_STROKE_COLOR" value="F17869"/>
+    <option name="BLOCK_TERMINAL_ERROR_BLOCK_STROKE_COLOR" value="FE8474"/>
     <option name="BLOCK_TERMINAL_INACTIVE_SELECTED_BLOCK_BACKGROUND" value="1A243A"/>
     <option name="BLOCK_TERMINAL_INACTIVE_SELECTED_BLOCK_STROKE_COLOR" value="53617D"/>
     <option name="BLOCK_TERMINAL_PROMPT_SEPARATOR_COLOR" value="232F49"/>
@@ -21,14 +21,14 @@
     <option name="CARET_COLOR" value="F2C03F"/>
     <option name="CARET_ROW_COLOR" value="1A243A"/>
     <option name="CONSOLE_BACKGROUND_KEY" value="0D1421"/>
-    <option name="DELETED_LINES_COLOR" value="F17869"/>
+    <option name="DELETED_LINES_COLOR" value="FE8474"/>
     <option name="DIFF_SEPARATORS_BACKGROUND" value="1A243A"/>
     <option name="DOCUMENTATION_COLOR" value="1A243A"/>
     <option name="DOC_COMMENT_LINK" value="7595DA"/>
     <option name="ERROR_HINT" value="4A3340"/>
     <option name="FILESTATUS_ADDED" value="9AD2A0"/>
     <option name="FILESTATUS_COPIED" value="77C581"/>
-    <option name="FILESTATUS_DELETED" value="F17869"/>
+    <option name="FILESTATUS_DELETED" value="FE8474"/>
     <option name="FILESTATUS_HIJACKED" value="F2C03F"/>
     <option name="FILESTATUS_IDEA_FILESTATUS_DELETED_FROM_FILE_SYSTEM" value="53617D"/>
     <option name="FILESTATUS_IDEA_FILESTATUS_IGNORED" value="53617D"/>
@@ -45,7 +45,7 @@
     <option name="FILESTATUS_SWITCHED" value="54B4B5"/>
     <option name="FILESTATUS_UNKNOWN" value="77C581"/>
     <option name="FILESTATUS_addedOutside" value="77C581"/>
-    <option name="FILESTATUS_changelistConflict" value="F17869"/>
+    <option name="FILESTATUS_changelistConflict" value="FE8474"/>
     <option name="FILESTATUS_modifiedOutside" value="F2C03F"/>
     <option name="FOLDED_TEXT_BORDER_COLOR" value="232F49"/>
     <option name="GUTTER_BACKGROUND" value="121A2D"/>
@@ -56,7 +56,7 @@
     <option name="HTML_TAG_TREE_LEVEL4" value="7595DA"/>
     <option name="HTML_TAG_TREE_LEVEL5" value="AE9EDC"/>
     <option name="IGNORED_ADDED_LINES_BORDER_COLOR" value="77C581"/>
-    <option name="IGNORED_DELETED_LINES_BORDER_COLOR" value="F17869"/>
+    <option name="IGNORED_DELETED_LINES_BORDER_COLOR" value="FE8474"/>
     <option name="IGNORED_MODIFIED_LINES_BORDER_COLOR" value="F2C03F"/>
     <option name="INDENT_GUIDE" value="1A243A"/>
     <option name="INFORMATION_HINT" value="1A243A"/>
@@ -155,7 +155,7 @@
     <option name="APACHE_CONFIG.IDENTIFIER" baseAttributes="DEFAULT_KEYWORD"/>
     <option name="BAD_CHARACTER">
       <value>
-        <option name="EFFECT_COLOR" value="F17869"/>
+        <option name="EFFECT_COLOR" value="FE8474"/>
         <option name="EFFECT_TYPE" value="2"/>
       </value>
     </option>
@@ -195,7 +195,7 @@
     </option>
     <option name="BASH.VAR_USE_BUILTIN">
       <value>
-        <option name="FOREGROUND" value="F17869"/>
+        <option name="FOREGROUND" value="FE8474"/>
         <option name="FONT_TYPE" value="2"/>
       </value>
     </option>
@@ -285,8 +285,8 @@
     </option>
     <option name="BLOCK_TERMINAL_RED_BRIGHT">
       <value>
-        <option name="FOREGROUND" value="F17869"/>
-        <option name="BACKGROUND" value="F17869"/>
+        <option name="FOREGROUND" value="FE8474"/>
+        <option name="BACKGROUND" value="FE8474"/>
       </value>
     </option>
     <option name="BLOCK_TERMINAL_SEARCH_ENTRY">
@@ -410,7 +410,7 @@
     </option>
     <option name="CONSOLE_ERROR_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="F17869"/>
+        <option name="FOREGROUND" value="FE8474"/>
       </value>
     </option>
     <option name="CONSOLE_GRAY_OUTPUT">
@@ -451,7 +451,7 @@
     </option>
     <option name="CONSOLE_RED_BRIGHT_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="F17869"/>
+        <option name="FOREGROUND" value="FE8474"/>
       </value>
     </option>
     <option name="CONSOLE_RED_OUTPUT">
@@ -508,7 +508,7 @@
     </option>
     <option name="CSS.COLOR">
       <value>
-        <option name="FOREGROUND" value="F17869"/>
+        <option name="FOREGROUND" value="FE8474"/>
       </value>
     </option>
     <option name="CSS.FUNCTION">
@@ -540,7 +540,7 @@
     </option>
     <option name="CSS.NUMBER">
       <value>
-        <option name="FOREGROUND" value="F17869"/>
+        <option name="FOREGROUND" value="FE8474"/>
       </value>
     </option>
     <option name="CSS.OPERATORS">
@@ -571,7 +571,7 @@
     </option>
     <option name="CSS.UNIT">
       <value>
-        <option name="FOREGROUND" value="F17869"/>
+        <option name="FOREGROUND" value="FE8474"/>
       </value>
     </option>
     <option name="CSS.URL">
@@ -611,7 +611,7 @@
     </option>
     <option name="CSV_PLUGIN_COLUMN_COLORING_ATTRIBUTE_7">
       <value>
-        <option name="FOREGROUND" value="F17869"/>
+        <option name="FOREGROUND" value="FE8474"/>
       </value>
     </option>
     <option name="CSV_PLUGIN_COLUMN_COLORING_ATTRIBUTE_8">
@@ -644,7 +644,7 @@
     </option>
     <option name="CUSTOM_KEYWORD4_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="F17869"/>
+        <option name="FOREGROUND" value="FE8474"/>
       </value>
     </option>
     <option name="CUSTOM_LINE_COMMENT_ATTRIBUTES" baseAttributes="DEFAULT_LINE_COMMENT"/>
@@ -654,7 +654,7 @@
     <option name="Class" baseAttributes="CLASS_NAME_ATTRIBUTES"/>
     <option name="Clojure Atom">
       <value>
-        <option name="FOREGROUND" value="F17869"/>
+        <option name="FOREGROUND" value="FE8474"/>
       </value>
     </option>
     <option name="Clojure Character">
@@ -664,13 +664,13 @@
     </option>
     <option name="Clojure Keyword">
       <value>
-        <option name="FOREGROUND" value="F17869"/>
+        <option name="FOREGROUND" value="FE8474"/>
       </value>
     </option>
     <option name="Clojure Line comment" baseAttributes="DEFAULT_LINE_COMMENT"/>
     <option name="Clojure Literal">
       <value>
-        <option name="FOREGROUND" value="F17869"/>
+        <option name="FOREGROUND" value="FE8474"/>
       </value>
     </option>
     <option name="Clojure Numbers" baseAttributes="DEFAULT_NUMBER"/>
@@ -744,7 +744,7 @@
     </option>
     <option name="DART_ENUM_CONSTANT">
       <value>
-        <option name="FOREGROUND" value="F17869"/>
+        <option name="FOREGROUND" value="FE8474"/>
       </value>
     </option>
     <option name="DART_FAT_ARROW" baseAttributes="DEFAULT_OPERATION_SIGN"/>
@@ -824,7 +824,7 @@
     </option>
     <option name="DEFAULT_CONSTANT">
       <value>
-        <option name="FOREGROUND" value="F17869"/>
+        <option name="FOREGROUND" value="FE8474"/>
       </value>
     </option>
     <option name="DEFAULT_DOC_COMMENT">
@@ -898,7 +898,7 @@
     <option name="DEFAULT_INVALID_STRING_ESCAPE">
       <value>
         <option name="FOREGROUND" value="AE9EDC"/>
-        <option name="EFFECT_COLOR" value="F17869"/>
+        <option name="EFFECT_COLOR" value="FE8474"/>
         <option name="EFFECT_TYPE" value="2"/>
       </value>
     </option>
@@ -932,7 +932,7 @@
     </option>
     <option name="DEFAULT_NUMBER">
       <value>
-        <option name="FOREGROUND" value="F17869"/>
+        <option name="FOREGROUND" value="FE8474"/>
       </value>
     </option>
     <option name="DEFAULT_OPERATION_SIGN">
@@ -953,7 +953,7 @@
     </option>
     <option name="DEFAULT_PREDEFINED_SYMBOL">
       <value>
-        <option name="FOREGROUND" value="F17869"/>
+        <option name="FOREGROUND" value="FE8474"/>
         <option name="FONT_TYPE" value="2"/>
       </value>
     </option>
@@ -998,7 +998,7 @@
     <option name="DELETED_TEXT_ATTRIBUTES">
       <value>
         <option name="FOREGROUND" value="6F7C97"/>
-        <option name="EFFECT_COLOR" value="F17869"/>
+        <option name="EFFECT_COLOR" value="FE8474"/>
         <option name="EFFECT_TYPE" value="3"/>
       </value>
     </option>
@@ -1019,7 +1019,7 @@
       <value>
         <option name="FOREGROUND" value="402327"/>
         <option name="BACKGROUND" value="5E2F2F"/>
-        <option name="ERROR_STRIPE_COLOR" value="F17869"/>
+        <option name="ERROR_STRIPE_COLOR" value="FE8474"/>
       </value>
     </option>
     <option name="DIFF_INSERTED">
@@ -1075,13 +1075,13 @@
     </option>
     <option name="ENUM_CONST">
       <value>
-        <option name="FOREGROUND" value="F17869"/>
+        <option name="FOREGROUND" value="FE8474"/>
       </value>
     </option>
     <option name="ENUM_NAME_ATTRIBUTES" baseAttributes="DEFAULT_CLASS_NAME"/>
     <option name="ERL_ATOM">
       <value>
-        <option name="FOREGROUND" value="F17869"/>
+        <option name="FOREGROUND" value="FE8474"/>
       </value>
     </option>
     <option name="ERL_MACRO">
@@ -1098,9 +1098,9 @@
     </option>
     <option name="ERRORS_ATTRIBUTES">
       <value>
-        <option name="EFFECT_COLOR" value="F17869"/>
+        <option name="EFFECT_COLOR" value="FE8474"/>
         <option name="EFFECT_TYPE" value="2"/>
-        <option name="ERROR_STRIPE_COLOR" value="F17869"/>
+        <option name="ERROR_STRIPE_COLOR" value="FE8474"/>
       </value>
     </option>
     <option name="EVALUATED_EXPRESSION_ATTRIBUTES">
@@ -1181,7 +1181,7 @@
     </option>
     <option name="GO_BUILTIN_CONSTANT">
       <value>
-        <option name="FOREGROUND" value="F17869"/>
+        <option name="FOREGROUND" value="FE8474"/>
       </value>
     </option>
     <option name="GO_BUILTIN_FUNCTION_CALL">
@@ -1204,7 +1204,7 @@
     </option>
     <option name="GO_BUILTIN_VARIABLE">
       <value>
-        <option name="FOREGROUND" value="F17869"/>
+        <option name="FOREGROUND" value="FE8474"/>
         <option name="FONT_TYPE" value="2"/>
       </value>
     </option>
@@ -1217,13 +1217,13 @@
     <option name="GO_EXPORTED_FUNCTION_CALL" baseAttributes="DEFAULT_FUNCTION_CALL"/>
     <option name="GO_LOCAL_CONSTANT">
       <value>
-        <option name="FOREGROUND" value="F17869"/>
+        <option name="FOREGROUND" value="FE8474"/>
       </value>
     </option>
     <option name="GO_LOCAL_FUNCTION_CALL" baseAttributes="DEFAULT_FUNCTION_CALL"/>
     <option name="GO_METHOD_RECEIVER">
       <value>
-        <option name="FOREGROUND" value="F17869"/>
+        <option name="FOREGROUND" value="FE8474"/>
         <option name="FONT_TYPE" value="2"/>
       </value>
     </option>
@@ -1234,12 +1234,12 @@
     </option>
     <option name="GO_PACKAGE_EXPORTED_CONSTANT">
       <value>
-        <option name="FOREGROUND" value="F17869"/>
+        <option name="FOREGROUND" value="FE8474"/>
       </value>
     </option>
     <option name="GO_PACKAGE_LOCAL_CONSTANT">
       <value>
-        <option name="FOREGROUND" value="F17869"/>
+        <option name="FOREGROUND" value="FE8474"/>
       </value>
     </option>
     <option name="GO_SHADOWING_VARIABLE">
@@ -1482,7 +1482,7 @@
     <option name="JS.STATIC_MEMBER_VARIABLE" baseAttributes="DEFAULT_STATIC_FIELD"/>
     <option name="JSON.KEYWORD">
       <value>
-        <option name="FOREGROUND" value="F17869"/>
+        <option name="FOREGROUND" value="FE8474"/>
       </value>
     </option>
     <option name="JSON.PROPERTY_KEY">
@@ -1507,7 +1507,7 @@
     <option name="KOTLIN_CLASS" baseAttributes="DEFAULT_CLASS_NAME"/>
     <option name="KOTLIN_CLOSURE_DEFAULT_PARAMETER">
       <value>
-        <option name="FOREGROUND" value="F17869"/>
+        <option name="FOREGROUND" value="FE8474"/>
         <option name="FONT_TYPE" value="2"/>
       </value>
     </option>
@@ -1530,7 +1530,7 @@
     </option>
     <option name="KOTLIN_ENUM_ENTRY">
       <value>
-        <option name="FOREGROUND" value="F17869"/>
+        <option name="FOREGROUND" value="FE8474"/>
       </value>
     </option>
     <option name="KOTLIN_EXCLEXCL">
@@ -1617,7 +1617,7 @@
     </option>
     <option name="LINE_NONE_COVERAGE">
       <value>
-        <option name="FOREGROUND" value="F17869"/>
+        <option name="FOREGROUND" value="FE8474"/>
       </value>
     </option>
     <option name="LINE_PARTIAL_COVERAGE">
@@ -1645,7 +1645,7 @@
     <option name="LOCAL_VARIABLE_ATTRIBUTES" baseAttributes="DEFAULT_LOCAL_VARIABLE"/>
     <option name="LOGCAT_ASSERT_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="F17869"/>
+        <option name="FOREGROUND" value="FE8474"/>
         <option name="FONT_TYPE" value="1"/>
       </value>
     </option>
@@ -1656,7 +1656,7 @@
     </option>
     <option name="LOGCAT_ERROR_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="F17869"/>
+        <option name="FOREGROUND" value="FE8474"/>
       </value>
     </option>
     <option name="LOGCAT_FILTER_KEY" baseAttributes="DEFAULT_KEYWORD"/>
@@ -1693,7 +1693,7 @@
     </option>
     <option name="LOG_ERROR_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="F17869"/>
+        <option name="FOREGROUND" value="FE8474"/>
       </value>
     </option>
     <option name="LOG_EXPIRED_ENTRY">
@@ -1931,7 +1931,7 @@
     </option>
     <option name="MARKED_FOR_REMOVAL_ATTRIBUTES">
       <value>
-        <option name="EFFECT_COLOR" value="F17869"/>
+        <option name="EFFECT_COLOR" value="FE8474"/>
         <option name="EFFECT_TYPE" value="3"/>
       </value>
     </option>
@@ -1984,7 +1984,7 @@
     <option name="OC.CPP_KEYWORD" baseAttributes="DEFAULT_KEYWORD"/>
     <option name="OC.ENUM_CONST">
       <value>
-        <option name="FOREGROUND" value="F17869"/>
+        <option name="FOREGROUND" value="FE8474"/>
       </value>
     </option>
     <option name="OC.MACRONAME">
@@ -2039,7 +2039,7 @@
     <option name="PHP_PARAMETER" baseAttributes="DEFAULT_PARAMETER"/>
     <option name="PHP_THIS_VAR">
       <value>
-        <option name="FOREGROUND" value="F17869"/>
+        <option name="FOREGROUND" value="FE8474"/>
         <option name="FONT_TYPE" value="2"/>
       </value>
     </option>
@@ -2135,7 +2135,7 @@
     </option>
     <option name="PY.SELF_PARAMETER">
       <value>
-        <option name="FOREGROUND" value="F17869"/>
+        <option name="FOREGROUND" value="FE8474"/>
         <option name="FONT_TYPE" value="2"/>
       </value>
     </option>
@@ -2352,7 +2352,7 @@
     <option name="RUBY_ESCAPE_SEQUENCE" baseAttributes="DEFAULT_VALID_STRING_ESCAPE"/>
     <option name="RUBY_GVAR">
       <value>
-        <option name="FOREGROUND" value="F17869"/>
+        <option name="FOREGROUND" value="FE8474"/>
         <option name="FONT_TYPE" value="2"/>
       </value>
     </option>
@@ -2364,7 +2364,7 @@
     <option name="RUBY_METHOD_NAME" baseAttributes="DEFAULT_FUNCTION_DECLARATION"/>
     <option name="RUBY_NTH_REF">
       <value>
-        <option name="FOREGROUND" value="F17869"/>
+        <option name="FOREGROUND" value="FE8474"/>
         <option name="FONT_TYPE" value="2"/>
       </value>
     </option>
@@ -2384,15 +2384,15 @@
     </option>
     <option name="RUBY_SYMBOL">
       <value>
-        <option name="FOREGROUND" value="F17869"/>
+        <option name="FOREGROUND" value="FE8474"/>
       </value>
     </option>
     <option name="RUBY_WORDS" baseAttributes="DEFAULT_STRING"/>
     <option name="RUNTIME_ERROR">
       <value>
-        <option name="EFFECT_COLOR" value="F17869"/>
+        <option name="EFFECT_COLOR" value="FE8474"/>
         <option name="EFFECT_TYPE" value="5"/>
-        <option name="ERROR_STRIPE_COLOR" value="F17869"/>
+        <option name="ERROR_STRIPE_COLOR" value="FE8474"/>
       </value>
     </option>
     <option name="R_FUNCTION_CALL" baseAttributes="DEFAULT_FUNCTION_CALL"/>
@@ -2518,7 +2518,7 @@
     </option>
     <option name="SPY-JS.EXCEPTION">
       <value>
-        <option name="FOREGROUND" value="F17869"/>
+        <option name="FOREGROUND" value="FE8474"/>
       </value>
     </option>
     <option name="SPY-JS.FUNCTION_SCOPE">
@@ -2598,7 +2598,7 @@
     <option name="STATIC_FIELD_ATTRIBUTES" baseAttributes="DEFAULT_STATIC_FIELD"/>
     <option name="STATIC_FINAL_FIELD_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="F17869"/>
+        <option name="FOREGROUND" value="FE8474"/>
       </value>
     </option>
     <option name="STATIC_METHOD_ATTRIBUTES" baseAttributes="DEFAULT_STATIC_METHOD"/>
@@ -2709,14 +2709,14 @@
     </option>
     <option name="UNMATCHED_BRACE_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="F17869"/>
+        <option name="FOREGROUND" value="FE8474"/>
         <option name="BACKGROUND" value="402327"/>
         <option name="FONT_TYPE" value="1"/>
       </value>
     </option>
     <option name="Unresolved reference access">
       <value>
-        <option name="EFFECT_COLOR" value="F17869"/>
+        <option name="EFFECT_COLOR" value="FE8474"/>
         <option name="EFFECT_TYPE" value="2"/>
       </value>
     </option>
@@ -2755,10 +2755,10 @@
     </option>
     <option name="WRONG_REFERENCES_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="F17869"/>
-        <option name="EFFECT_COLOR" value="F17869"/>
+        <option name="FOREGROUND" value="FE8474"/>
+        <option name="EFFECT_COLOR" value="FE8474"/>
         <option name="EFFECT_TYPE" value="2"/>
-        <option name="ERROR_STRIPE_COLOR" value="F17869"/>
+        <option name="ERROR_STRIPE_COLOR" value="FE8474"/>
       </value>
     </option>
     <option name="XML_ATTRIBUTE_NAME" baseAttributes="DEFAULT_ATTRIBUTE"/>
@@ -2846,7 +2846,7 @@
     </option>
     <option name="com.plan9.REGISTER">
       <value>
-        <option name="FOREGROUND" value="F17869"/>
+        <option name="FOREGROUND" value="FE8474"/>
         <option name="FONT_TYPE" value="2"/>
       </value>
     </option>
@@ -2872,7 +2872,7 @@
     </option>
     <option name="org.rust.CONSTANT">
       <value>
-        <option name="FOREGROUND" value="F17869"/>
+        <option name="FOREGROUND" value="FE8474"/>
       </value>
     </option>
     <option name="org.rust.CRATE">
@@ -2888,7 +2888,7 @@
     <option name="org.rust.ENUM" baseAttributes="DEFAULT_CLASS_NAME"/>
     <option name="org.rust.ENUM_VARIANT">
       <value>
-        <option name="FOREGROUND" value="F17869"/>
+        <option name="FOREGROUND" value="FE8474"/>
       </value>
     </option>
     <option name="org.rust.FIELD" baseAttributes="DEFAULT_INSTANCE_FIELD"/>
@@ -2948,7 +2948,7 @@
     <option name="org.rust.MUT_PARAMETER" baseAttributes="DEFAULT_REASSIGNED_PARAMETER"/>
     <option name="org.rust.MUT_SELF_PARAMETER">
       <value>
-        <option name="FOREGROUND" value="F17869"/>
+        <option name="FOREGROUND" value="FE8474"/>
         <option name="FONT_TYPE" value="2"/>
       </value>
     </option>
@@ -2966,19 +2966,19 @@
     </option>
     <option name="org.rust.SELF_EXPRESSION">
       <value>
-        <option name="FOREGROUND" value="F17869"/>
+        <option name="FOREGROUND" value="FE8474"/>
         <option name="FONT_TYPE" value="2"/>
       </value>
     </option>
     <option name="org.rust.SELF_PARAMETER">
       <value>
-        <option name="FOREGROUND" value="F17869"/>
+        <option name="FOREGROUND" value="FE8474"/>
         <option name="FONT_TYPE" value="2"/>
       </value>
     </option>
     <option name="org.rust.STATIC">
       <value>
-        <option name="FOREGROUND" value="F17869"/>
+        <option name="FOREGROUND" value="FE8474"/>
       </value>
     </option>
     <option name="org.rust.STRUCT" baseAttributes="DEFAULT_CLASS_NAME"/>

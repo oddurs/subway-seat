@@ -4,29 +4,29 @@
 
 [styles.cpu]
 all_entry_color = "#2A342B"
-avg_entry_color = "#8A5308"
-cpu_core_colors = ["#207F41", "#8A6700", "#8A5308", "#BB403B", "#0B714D", "#9A557D", "#168540", "#997300"]
+avg_entry_color = "#804B00"
+cpu_core_colors = ["#207F41", "#8E6B08", "#804B00", "#BE423D", "#006E6B", "#98547C", "#168540", "#9D770A"]
 
 [styles.memory]
 ram_color = "#207F41"
-cache_color = "#0B714D"
-swap_color = "#8A5308"
-arc_color = "#9A557D"
-gpu_colors = ["#8A6700", "#8A5308", "#BB403B", "#0B714D", "#9A557D", "#168540"]
+cache_color = "#006E6B"
+swap_color = "#804B00"
+arc_color = "#98547C"
+gpu_colors = ["#8E6B08", "#804B00", "#BE423D", "#006E6B", "#98547C", "#168540"]
 
 [styles.network]
 rx_color = "#207F41"
-tx_color = "#8A5308"
+tx_color = "#804B00"
 rx_total_color = "#168540"
-tx_total_color = "#AE6800"
+tx_total_color = "#A26100"
 
 [styles.battery]
 high_battery_color = "#207F41"
-medium_battery_color = "#8A6700"
-low_battery_color = "#BB403B"
+medium_battery_color = "#8E6B08"
+low_battery_color = "#BE423D"
 
 [styles.tables]
-headers = { color = "#8A5308", bold = true }
+headers = { color = "#804B00", bold = true }
 
 [styles.graphs]
 graph_color = "#879887"
@@ -34,18 +34,18 @@ legend_text = { color = "#4C574D" }
 
 [styles.widgets]
 border_color = "#9BAC9A"
-selected_border_color = "#8A5308"
-widget_title = { color = "#8A6700" }
+selected_border_color = "#804B00"
+widget_title = { color = "#8E6B08" }
 text = { color = "#2A342B" }
-selected_text = { color = "#EEF3ED", bg_color = "#8A5308" }
+selected_text = { color = "#EEF3ED", bg_color = "#804B00" }
 disabled_text = { color = "#879887" }
-thread_text = { color = "#0B714D" }  # 0.11+
+thread_text = { color = "#006E6B" }  # 0.11+
 
 # Newer sections (bottom 0.13+); older releases ignore them.
 [styles.temp_graph]
-temp_graph_color_styles = ["#207F41", "#8A6700", "#8A5308", "#BB403B", "#0B714D", "#9A557D", "#168540", "#997300"]
+temp_graph_color_styles = ["#207F41", "#8E6B08", "#804B00", "#BE423D", "#006E6B", "#98547C", "#168540", "#9D770A"]
 
 [styles.disk_io_graph]
-read_colours = ["#207F41", "#0B714D", "#168540", "#3D8666"]
-write_colours = ["#8A5308", "#9A557D", "#AE6800", "#BB403B"]
+read_colours = ["#207F41", "#006E6B", "#168540", "#1E8683"]
+write_colours = ["#804B00", "#98547C", "#A26100", "#BE423D"]
 # <<< subway-seat <<<

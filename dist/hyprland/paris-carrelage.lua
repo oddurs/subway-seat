@@ -45,23 +45,23 @@ M.textAlpha = '2A342B'
 M.text_hi = 'rgb(1B221C)'
 M.text_hiAlpha = '1B221C'
 
-M.yellow = 'rgb(8A6700)'
-M.yellowAlpha = '8A6700'
+M.yellow = 'rgb(8E6B08)'
+M.yellowAlpha = '8E6B08'
 
-M.yellow_hi = 'rgb(997300)'
-M.yellow_hiAlpha = '997300'
+M.yellow_hi = 'rgb(9D770A)'
+M.yellow_hiAlpha = '9D770A'
 
-M.orange = 'rgb(8A5308)'
-M.orangeAlpha = '8A5308'
+M.orange = 'rgb(804B00)'
+M.orangeAlpha = '804B00'
 
-M.orange_hi = 'rgb(AE6800)'
-M.orange_hiAlpha = 'AE6800'
+M.orange_hi = 'rgb(A26100)'
+M.orange_hiAlpha = 'A26100'
 
 M.red = 'rgb(932D29)'
 M.redAlpha = '932D29'
 
-M.red_hi = 'rgb(BB403B)'
-M.red_hiAlpha = 'BB403B'
+M.red_hi = 'rgb(BE423D)'
+M.red_hiAlpha = 'BE423D'
 
 M.green = 'rgb(207F41)'
 M.greenAlpha = '207F41'
@@ -69,11 +69,11 @@ M.greenAlpha = '207F41'
 M.green_hi = 'rgb(168540)'
 M.green_hiAlpha = '168540'
 
-M.sage = 'rgb(0B714D)'
-M.sageAlpha = '0B714D'
+M.sage = 'rgb(006E6B)'
+M.sageAlpha = '006E6B'
 
-M.sage_hi = 'rgb(3D8666)'
-M.sage_hiAlpha = '3D8666'
+M.sage_hi = 'rgb(1E8683)'
+M.sage_hiAlpha = '1E8683'
 
 M.denim = 'rgb(27629C)'
 M.denimAlpha = '27629C'
@@ -81,34 +81,34 @@ M.denimAlpha = '27629C'
 M.denim_hi = 'rgb(3E75AD)'
 M.denim_hiAlpha = '3E75AD'
 
-M.clay = 'rgb(9A557D)'
-M.clayAlpha = '9A557D'
+M.clay = 'rgb(98547C)'
+M.clayAlpha = '98547C'
 
 function M.apply()
   hl.config({
     general = {
       col = {
-        active_border = 'rgb(8A6700)',
+        active_border = 'rgb(8E6B08)',
         inactive_border = 'rgb(B1C0B0)',
-        nogroup_border = 'rgb(A8959C)',
-        nogroup_border_active = 'rgb(9A557D)',
+        nogroup_border = 'rgb(A7959B)',
+        nogroup_border_active = 'rgb(98547C)',
       },
     },
     group = {
       col = {
-        border_active = 'rgb(8A6700)',
-        border_inactive = 'rgb(A19C6A)',
-        border_locked_active = 'rgb(8A5308)',
-        border_locked_inactive = 'rgb(A1946D)',
+        border_active = 'rgb(8E6B08)',
+        border_inactive = 'rgb(A39E6D)',
+        border_locked_active = 'rgb(804B00)',
+        border_locked_inactive = 'rgb(9D916A)',
       },
       groupbar = {
         text_color = 'rgb(1B221C)',
         text_color_inactive = 'rgb(4C574D)',
         col = {
-          active = 'rgb(8A6700)',
+          active = 'rgb(8E6B08)',
           inactive = 'rgb(B1C0B0)',
-          locked_active = 'rgb(8A5308)',
-          locked_inactive = 'rgb(A1946D)',
+          locked_active = 'rgb(804B00)',
+          locked_inactive = 'rgb(9D916A)',
         },
       },
     },

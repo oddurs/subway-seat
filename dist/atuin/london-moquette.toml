@@ -6,7 +6,7 @@ name = "london-moquette"
 [colors]
 AlertInfo = "#7595DA"
 AlertWarn = "#F2C03F"
-AlertError = "#F17869"
+AlertError = "#FE8474"
 Annotation = "#73819C"
 Base = "#D8DEEA"
 Guidance = "#A9B2C4"

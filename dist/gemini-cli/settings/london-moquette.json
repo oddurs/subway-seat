@@ -12,7 +12,7 @@
         "AccentCyan": "#54B4B5",
         "AccentGreen": "#77C581",
         "AccentYellow": "#F2C03F",
-        "AccentRed": "#F17869",
+        "AccentRed": "#FE8474",
         "DiffAdded": "#283E3A",
         "DiffRemoved": "#462B31",
         "Comment": "#73819C",
@@ -52,7 +52,7 @@
         "status": {
           "success": "#77C581",
           "warning": "#F2C03F",
-          "error": "#F17869"
+          "error": "#FE8474"
         }
       }
     },

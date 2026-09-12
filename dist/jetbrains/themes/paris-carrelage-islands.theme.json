@@ -18,23 +18,23 @@
     "subtext1": "#3D473E",
     "text": "#2A342B",
     "text_hi": "#1B221C",
-    "yellow": "#8A6700",
-    "yellow_hi": "#997300",
-    "orange": "#8A5308",
-    "orange_hi": "#AE6800",
+    "yellow": "#8E6B08",
+    "yellow_hi": "#9D770A",
+    "orange": "#804B00",
+    "orange_hi": "#A26100",
     "red": "#932D29",
-    "red_hi": "#BB403B",
+    "red_hi": "#BE423D",
     "green": "#207F41",
     "green_hi": "#168540",
-    "sage": "#0B714D",
-    "sage_hi": "#3D8666",
+    "sage": "#006E6B",
+    "sage_hi": "#1E8683",
     "denim": "#27629C",
     "denim_hi": "#3E75AD",
-    "clay": "#9A557D",
+    "clay": "#98547C",
     "ink": "#EEF3ED",
-    "accent": "#8A5308",
-    "accentHover": "#AE6800",
-    "focus": "#AD8E5E",
+    "accent": "#804B00",
+    "accentHover": "#A26100",
+    "focus": "#A7895A",
     "editorBackground": "#EEF3ED",
     "panelBackground": "#EEF3ED",
     "barBackground": "#D4DCD3",
@@ -48,12 +48,12 @@
     "borderColor": "#D4DCD3",
     "separatorColor": "#C7D3C5",
     "controlBorder": "#B1C0B0",
-    "searchMatch": "#D0C9A6",
+    "searchMatch": "#D1CAA8",
     "errorBackground": "#D6CDC6",
-    "warningBackground": "#D7D8C5",
+    "warningBackground": "#D7D8C6",
     "infoBackground": "#CBD7D8",
     "errorBorder": "#BE938E",
-    "warningBorder": "#BEB486",
+    "warningBorder": "#C0B58A",
     "infoBorder": "#97B2C5"
   },
   "ui": {
@@ -240,11 +240,11 @@
       "underlinedTabForeground": "text_hi"
     },
     "DragAndDrop": {
-      "areaBackground": "#D7D5C6",
+      "areaBackground": "#D5D4C5",
       "areaBorderColor": "accent",
       "areaForeground": "text",
       "borderColor": "accent",
-      "rowBackground": "#D4D1C0"
+      "rowBackground": "#D2D0BE"
     },
     "Editor": {
       "background": "editorBackground",
@@ -284,10 +284,10 @@
     "FileColor": {
       "Blue": "#C3D2D5",
       "Green": "#C2D6C7",
-      "Orange": "#D3CFBD",
+      "Orange": "#D1CEBC",
       "Rose": "#D5C9C3",
-      "Violet": "#D6D0D0",
-      "Yellow": "#D3D3BC",
+      "Violet": "#D5CFD0",
+      "Yellow": "#D4D3BD",
       "Gray": "#D3DAD2"
     },
     "FormattedTextField": {
@@ -745,7 +745,7 @@
       "background": "inputBackground",
       "foreground": "text",
       "selectionBackground": "#B1C0B0",
-      "caretForeground": "#8A5308"
+      "caretForeground": "#804B00"
     },
     "TextField": {
       "background": "inputBackground",
@@ -755,12 +755,12 @@
       "inactiveForeground": "overlay0",
       "selectionBackground": "#B1C0B0",
       "selectionForeground": "text_hi",
-      "caretForeground": "#8A5308"
+      "caretForeground": "#804B00"
     },
     "TextPane": {
       "background": "panelBackground",
       "foreground": "text",
-      "caretForeground": "#8A5308"
+      "caretForeground": "#804B00"
     },
     "TitlePane": {
       "background": "barBackground",
@@ -858,7 +858,7 @@
       },
       "Log": {
         "Commit": {
-          "currentBranchBackground": "#DCDED3",
+          "currentBranchBackground": "#DBDED3",
           "hoveredBackground": "hoverBackground",
           "unmatchedForeground": "overlay0",
           "selectionInactiveBackground": "selectionInactiveBackground"
@@ -905,42 +905,42 @@
       "Actions.Grey": "#6E7C6E",
       "Actions.GreyInline": "#6E7C6E",
       "Actions.GreyInline.Dark": "#6E7C6E",
-      "Actions.Red": "#BB403B",
-      "Actions.Yellow": "#8A6700",
+      "Actions.Red": "#BE423D",
+      "Actions.Yellow": "#8E6B08",
       "Objects.BlackText": "#EEF3ED",
       "Objects.Blue": "#27629C",
       "Objects.Green": "#207F41",
       "Objects.GreenAndroid": "#207F41",
       "Objects.Grey": "#6E7C6E",
-      "Objects.Pink": "#9A557D",
-      "Objects.Purple": "#9A557D",
-      "Objects.Red": "#BB403B",
-      "Objects.RedStatus": "#BB403B",
-      "Objects.Yellow": "#8A6700",
-      "Objects.YellowDark": "#8A5308",
+      "Objects.Pink": "#98547C",
+      "Objects.Purple": "#98547C",
+      "Objects.Red": "#BE423D",
+      "Objects.RedStatus": "#BE423D",
+      "Objects.Yellow": "#8E6B08",
+      "Objects.YellowDark": "#804B00",
       "Tree.iconColor": "#4C574D",
       "Checkbox.Background.Default": "#D4DCD3",
       "Checkbox.Background.Disabled": "#E1E7E0",
-      "Checkbox.Background.Selected": "#8A5308",
+      "Checkbox.Background.Selected": "#804B00",
       "Checkbox.Border.Default": "#9BAC9A",
       "Checkbox.Border.Disabled": "#B1C0B0",
-      "Checkbox.Border.Selected": "#8A5308",
+      "Checkbox.Border.Selected": "#804B00",
       "Checkbox.Foreground.Disabled": "#879887",
       "Checkbox.Foreground.Selected": "#EEF3ED",
-      "Checkbox.Focus.Wide": "#AD8E5E",
-      "Checkbox.Focus.Thin.Default": "#AE6800",
-      "Checkbox.Focus.Thin.Selected": "#AE6800",
+      "Checkbox.Focus.Wide": "#A7895A",
+      "Checkbox.Focus.Thin.Default": "#A26100",
+      "Checkbox.Focus.Thin.Selected": "#A26100",
       "Checkbox.Background.Default.Dark": "#D4DCD3",
       "Checkbox.Background.Disabled.Dark": "#E1E7E0",
-      "Checkbox.Background.Selected.Dark": "#8A5308",
+      "Checkbox.Background.Selected.Dark": "#804B00",
       "Checkbox.Border.Default.Dark": "#9BAC9A",
       "Checkbox.Border.Disabled.Dark": "#B1C0B0",
-      "Checkbox.Border.Selected.Dark": "#8A5308",
+      "Checkbox.Border.Selected.Dark": "#804B00",
       "Checkbox.Foreground.Disabled.Dark": "#879887",
       "Checkbox.Foreground.Selected.Dark": "#EEF3ED",
-      "Checkbox.Focus.Wide.Dark": "#AD8E5E",
-      "Checkbox.Focus.Thin.Default.Dark": "#AE6800",
-      "Checkbox.Focus.Thin.Selected.Dark": "#AE6800"
+      "Checkbox.Focus.Wide.Dark": "#A7895A",
+      "Checkbox.Focus.Thin.Default.Dark": "#A26100",
+      "Checkbox.Focus.Thin.Selected.Dark": "#A26100"
     }
   }
 }

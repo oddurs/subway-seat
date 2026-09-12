@@ -6,10 +6,10 @@
   "LightBlue": "#BFC8C2",
   "AccentBlue": "#D0914F",
   "AccentPurple": "#CE96B4",
-  "AccentCyan": "#6CA087",
+  "AccentCyan": "#5FA09D",
   "AccentGreen": "#80C28E",
   "AccentYellow": "#F2BF4B",
-  "AccentRed": "#E1837A",
+  "AccentRed": "#EE8F85",
   "DiffAdded": "#243729",
   "DiffRemoved": "#3D2823",
   "Comment": "#708178",
@@ -49,6 +49,6 @@
   "status": {
     "success": "#80C28E",
     "warning": "#F2BF4B",
-    "error": "#E1837A"
+    "error": "#EE8F85"
   }
 }

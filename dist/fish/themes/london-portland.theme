@@ -3,17 +3,17 @@
 # preferred_background: E8F0FF
 
 fish_color_normal 293040
-fish_color_command 896800
-fish_color_keyword B14A07
+fish_color_command 8D6C08
+fish_color_keyword A54300
 fish_color_param 3C4557
 fish_color_option 007376
 fish_color_quote 0D8131
-fish_color_redirection 7660AB
-fish_color_end B14A07
-fish_color_operator 7660AB
-fish_color_escape 7660AB
+fish_color_redirection 755FA9
+fish_color_end A54300
+fish_color_operator 755FA9
+fish_color_escape 755FA9
 fish_color_comment 697794 --italics
-fish_color_error C92B23
+fish_color_error CC2E25
 fish_color_cancel 9B211A
 fish_color_autosuggestion 697794
 fish_color_gray 8192B4
@@ -21,17 +21,17 @@ fish_color_valid_path --underline
 fish_color_selection 1B202B --bold --background=A8BBE2
 fish_color_search_match --bold --background=A8BBE2
 fish_color_history_current --bold
-fish_color_cwd 896800
-fish_color_cwd_root C92B23
-fish_color_user B14A07
+fish_color_cwd 8D6C08
+fish_color_cwd_root CC2E25
+fish_color_user A54300
 fish_color_host 3C4557
 fish_color_host_remote 0D8131
-fish_color_status C92B23
-fish_pager_color_progress E8F0FF --background=B14A07
-fish_pager_color_prefix 896800 --bold
+fish_color_status CC2E25
+fish_pager_color_progress E8F0FF --background=A54300
+fish_pager_color_prefix 8D6C08 --bold
 fish_pager_color_completion 293040
 fish_pager_color_description 697794 --italics
 fish_pager_color_selected_background --background=BFCFF1
-fish_pager_color_selected_prefix B14A07 --bold
+fish_pager_color_selected_prefix A54300 --bold
 fish_pager_color_selected_completion 1B202B
 fish_pager_color_selected_description 3C4557 --italics

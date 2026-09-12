@@ -5,14 +5,14 @@
 [styles.cpu]
 all_entry_color = "#D9E1DB"
 avg_entry_color = "#D0914F"
-cpu_core_colors = ["#80C28E", "#F2BF4B", "#D0914F", "#E1837A", "#6CA087", "#CE96B4", "#8FD59E", "#FFD273"]
+cpu_core_colors = ["#80C28E", "#F2BF4B", "#D0914F", "#EE8F85", "#5FA09D", "#CE96B4", "#8FD59E", "#FFD273"]
 
 [styles.memory]
 ram_color = "#80C28E"
-cache_color = "#6CA087"
+cache_color = "#5FA09D"
 swap_color = "#D0914F"
 arc_color = "#CE96B4"
-gpu_colors = ["#F2BF4B", "#D0914F", "#E1837A", "#6CA087", "#CE96B4", "#8FD59E"]
+gpu_colors = ["#F2BF4B", "#D0914F", "#EE8F85", "#5FA09D", "#CE96B4", "#8FD59E"]
 
 [styles.network]
 rx_color = "#80C28E"
@@ -23,7 +23,7 @@ tx_total_color = "#E7AB6D"
 [styles.battery]
 high_battery_color = "#80C28E"
 medium_battery_color = "#F2BF4B"
-low_battery_color = "#E1837A"
+low_battery_color = "#EE8F85"
 
 [styles.tables]
 headers = { color = "#D0914F", bold = true }
@@ -39,13 +39,13 @@ widget_title = { color = "#F2BF4B" }
 text = { color = "#D9E1DB" }
 selected_text = { color = "#131A17", bg_color = "#D0914F" }
 disabled_text = { color = "#586B61" }
-thread_text = { color = "#6CA087" }  # 0.11+
+thread_text = { color = "#5FA09D" }  # 0.11+
 
 # Newer sections (bottom 0.13+); older releases ignore them.
 [styles.temp_graph]
-temp_graph_color_styles = ["#80C28E", "#F2BF4B", "#D0914F", "#E1837A", "#6CA087", "#CE96B4", "#8FD59E", "#FFD273"]
+temp_graph_color_styles = ["#80C28E", "#F2BF4B", "#D0914F", "#EE8F85", "#5FA09D", "#CE96B4", "#8FD59E", "#FFD273"]
 
 [styles.disk_io_graph]
-read_colours = ["#80C28E", "#6CA087", "#8FD59E", "#98CCB2"]
-write_colours = ["#D0914F", "#CE96B4", "#E7AB6D", "#E1837A"]
+read_colours = ["#80C28E", "#5FA09D", "#8FD59E", "#8CCCC9"]
+write_colours = ["#D0914F", "#CE96B4", "#E7AB6D", "#EE8F85"]
 # <<< subway-seat <<<

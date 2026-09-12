@@ -29,7 +29,7 @@ inode:
   valid: "#708178"
   invalid: "#54655C"
 links:
-  valid: "#6CA087"
+  valid: "#5FA09D"
   invalid: "#54655C"
 tree-edge: "#54655C"
 git-status:
@@ -39,7 +39,7 @@ git-status:
   new-in-index: "#80C28E"
   new-in-workdir: "#80C28E"
   typechange: "#CE96B4"
-  deleted: "#E1837A"
-  renamed: "#6CA087"
+  deleted: "#EE8F85"
+  renamed: "#5FA09D"
   modified: "#F2BF4B"
   conflicted: "#CD6B63"

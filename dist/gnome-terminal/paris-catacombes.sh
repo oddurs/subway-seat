@@ -31,7 +31,7 @@ gsettings set "$PROFILE" cursor-foreground-color "'#121E19'"
 gsettings set "$PROFILE" highlight-colors-set "true"
 gsettings set "$PROFILE" highlight-background-color "'#31433A'"
 gsettings set "$PROFILE" highlight-foreground-color "'#E7ECEA'"
-gsettings set "$PROFILE" palette "['#24342C', '#CD6B63', '#80C28E', '#F2BF4B', '#709BC8', '#D0914F', '#6CA087', '#BFC8C2', '#708178', '#E1837A', '#8FD59E', '#FFD273', '#8DB6E2', '#E7AB6D', '#98CCB2', '#E7ECEA']"
+gsettings set "$PROFILE" palette "['#24342C', '#CD6B63', '#80C28E', '#F2BF4B', '#709BC8', '#D0914F', '#5FA09D', '#BFC8C2', '#708178', '#EE8F85', '#8FD59E', '#FFD273', '#8DB6E2', '#E7AB6D', '#8CCCC9', '#E7ECEA']"
 
 case "$list" in
   *"$UUID"*) ;;

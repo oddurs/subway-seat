@@ -20,12 +20,12 @@ code.hljs { padding: 3px 5px; }
 .hljs-string, .hljs-code { color: #80C28E; }
 .hljs-char.escape_ { color: #CE96B4; }
 .hljs-regexp { color: #CE96B4; }
-.hljs-number { color: #E1837A; }
-.hljs-literal, .hljs-symbol, .hljs-variable.constant_, .hljs-formula { color: #E1837A; }
-.hljs-title.class_, .hljs-title.class_.inherited__ { color: #6CA087; }
-.hljs-type { color: #6CA087; font-style: italic; }
+.hljs-number { color: #EE8F85; }
+.hljs-literal, .hljs-symbol, .hljs-variable.constant_, .hljs-formula { color: #EE8F85; }
+.hljs-title.class_, .hljs-title.class_.inherited__ { color: #5FA09D; }
+.hljs-type { color: #5FA09D; font-style: italic; }
 .hljs-variable, .hljs-template-variable, .hljs-subst { color: #D4DDD7; }
-.hljs-variable.language_ { color: #E1837A; font-style: italic; }
+.hljs-variable.language_ { color: #EE8F85; font-style: italic; }
 .hljs-params { color: #BFC8C2; font-style: italic; }
 .hljs-property, .hljs-attribute { color: #BFC8C2; }
 .hljs-name, .hljs-selector-tag { color: #D0914F; }
@@ -39,6 +39,6 @@ code.hljs { padding: 3px 5px; }
 /* Diffs: a diff line is one token, so it takes green or red_hi on its tint.
    highlight.js marks hunk headers as meta and file headers as comments. */
 .hljs-addition { color: #80C28E; background: #243729; }
-.hljs-deletion { color: #E1837A; background: #3D2823; }
+.hljs-deletion { color: #EE8F85; background: #3D2823; }
 .language-diff .hljs-meta { color: #709BC8; font-style: normal; }
 .language-diff .hljs-comment { color: #E7ECEA; font-style: normal; font-weight: bold; }

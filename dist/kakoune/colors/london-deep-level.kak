@@ -1,7 +1,7 @@
 # Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
 # London Deep Level — Below the cut-and-cover lines. The ground drops; the signals don't.
 
-face global value                     rgb:F17869
+face global value                     rgb:FE8474
 face global type                      rgb:54B4B5
 face global variable                  rgb:D4DAE7
 face global module                    rgb:A5AEC0
@@ -36,8 +36,8 @@ face global MenuBackground            rgb:BEC6D5,rgb:1A243A
 face global MenuInfo                  rgb:6F7C97
 face global Information               rgb:D4DAE7,rgb:1A243A
 face global InlineInformation         rgb:D4DAE7,rgb:1A243A
-face global Error                     rgb:F17869+b
-face global DiagnosticError           default,default,rgb:F17869+c
+face global Error                     rgb:FE8474+b
+face global DiagnosticError           default,default,rgb:FE8474+c
 face global DiagnosticWarning         default,default,rgb:F2C03F+c
 face global DiagnosticInfo            default,default,rgb:7595DA+c
 face global DiagnosticHint            default,default,rgb:54B4B5+c
@@ -54,11 +54,11 @@ face global Whitespace                rgb:232F49+f
 face global WhitespaceIndent          Whitespace
 face global WrapMarker                Whitespace
 face global BufferPadding             rgb:232F49,rgb:121A2D
-face global InlayDiagnosticError      rgb:F17869,rgb:2A2231
+face global InlayDiagnosticError      rgb:FE8474,rgb:2A2231
 face global InlayDiagnosticWarning    rgb:F2C03F,rgb:282B2F
 face global InlayDiagnosticInfo       rgb:7595DA,rgb:202B45
 face global InlayDiagnosticHint       rgb:54B4B5,rgb:1B3040
-face global LineFlagError             rgb:F17869
+face global LineFlagError             rgb:FE8474
 face global LineFlagWarning           rgb:F2C03F
 face global LineFlagInfo              rgb:7595DA
 face global LineFlagHint              rgb:54B4B5

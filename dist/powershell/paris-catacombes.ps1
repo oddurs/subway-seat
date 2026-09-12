@@ -9,16 +9,16 @@
     $colors = @{
         Default                = "${esc}[38;2;212;221;215m"                  # text
         Command                = "${esc}[38;2;242;191;75m"                   # yellow
-        Parameter              = "${esc}[38;2;108;160;135m"                  # sage
+        Parameter              = "${esc}[38;2;95;160;157m"                   # sage
         String                 = "${esc}[38;2;128;194;142m"                  # green
         Operator               = "${esc}[38;2;208;145;79m"                   # orange
         Variable               = "${esc}[38;2;206;150;180m"                  # clay
         Member                 = "${esc}[38;2;191;200;194m"                  # subtext1
-        Number                 = "${esc}[38;2;225;131;122m"                  # red_hi
-        Type                   = "${esc}[38;2;108;160;135m"                  # sage
+        Number                 = "${esc}[38;2;238;143;133m"                  # red_hi
+        Type                   = "${esc}[38;2;95;160;157m"                   # sage
         Keyword                = "${esc}[38;2;208;145;79m"                   # orange
         Comment                = "${esc}[3;38;2;112;129;120m"                # overlay1, italic
-        Error                  = "${esc}[38;2;225;131;122m"                  # red_hi
+        Error                  = "${esc}[38;2;238;143;133m"                  # red_hi
         Emphasis               = "${esc}[1;38;2;242;191;75m"                 # yellow, bold: search matches
         Selection              = "${esc}[1;38;2;231;236;234;48;2;49;67;58m"  # text_hi on the selection ground
         ContinuationPrompt     = "${esc}[38;2;112;129;120m"                  # overlay1
@@ -44,10 +44,10 @@
             TableHeader            = "${esc}[1;38;2;242;191;75m"
             CustomTableHeaderLabel = "${esc}[1;3;38;2;242;191;75m"
             ErrorAccent            = "${esc}[1;38;2;208;145;79m"
-            Error                  = "${esc}[1;38;2;225;131;122m"
+            Error                  = "${esc}[1;38;2;238;143;133m"
             Warning                = "${esc}[1;38;2;242;191;75m"
             Verbose                = "${esc}[38;2;112;155;200m"
-            Debug                  = "${esc}[38;2;108;160;135m"
+            Debug                  = "${esc}[38;2;95;160;157m"
             FeedbackName           = "${esc}[38;2;208;145;79m"
             FeedbackText           = "${esc}[38;2;191;200;194m"
             FeedbackAction         = "${esc}[38;2;242;191;75m"
@@ -59,10 +59,10 @@
 
         if ($PSStyle.PSObject.Properties['FileInfo']) {
             $PSStyle.FileInfo.Directory = "${esc}[1;38;2;242;191;75m"
-            $PSStyle.FileInfo.SymbolicLink = "${esc}[38;2;108;160;135m"
+            $PSStyle.FileInfo.SymbolicLink = "${esc}[38;2;95;160;157m"
             $PSStyle.FileInfo.Executable = "${esc}[1;38;2;128;194;142m"
-            foreach ($ext in '.zip', '.tgz', '.gz', '.tar', '.nupkg', '.cab', '.7z') { $PSStyle.FileInfo.Extension[$ext] = "${esc}[38;2;225;131;122m" }
-            foreach ($ext in '.ps1', '.psd1', '.psm1', '.ps1xml') { $PSStyle.FileInfo.Extension[$ext] = "${esc}[38;2;108;160;135m" }
+            foreach ($ext in '.zip', '.tgz', '.gz', '.tar', '.nupkg', '.cab', '.7z') { $PSStyle.FileInfo.Extension[$ext] = "${esc}[38;2;238;143;133m" }
+            foreach ($ext in '.ps1', '.psd1', '.psm1', '.ps1xml') { $PSStyle.FileInfo.Extension[$ext] = "${esc}[38;2;95;160;157m" }
         }
     }
 }

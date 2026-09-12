@@ -1,18 +1,18 @@
 /* Subway Seat — generated from palette.py by build.py. Edit the palette, not this file. */
 /* Paris Carrelage for GTK 3 with the adw-gtk3 theme */
 
-@define-color accent_bg_color #8A5308;
+@define-color accent_bg_color #804B00;
 @define-color accent_fg_color #F6F9F6;
-@define-color accent_color #8A5308;
+@define-color accent_color #804B00;
 @define-color destructive_bg_color #932D29;
 @define-color destructive_fg_color #F6F9F6;
 @define-color destructive_color #932D29;
 @define-color success_bg_color #207F41;
 @define-color success_fg_color #F6F9F6;
 @define-color success_color #207F41;
-@define-color warning_bg_color #8A6700;
+@define-color warning_bg_color #8E6B08;
 @define-color warning_fg_color #F6F9F6;
-@define-color warning_color #8A6700;
+@define-color warning_color #8E6B08;
 @define-color error_bg_color #932D29;
 @define-color error_fg_color #F6F9F6;
 @define-color error_color #932D29;

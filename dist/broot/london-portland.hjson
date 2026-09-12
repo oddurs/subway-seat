@@ -5,83 +5,83 @@ skin: {
     tree:                  rgb(129, 146, 180) none / rgb(147, 167, 207) none
     parent:                rgb(74, 84, 105) none / rgb(105, 119, 148) none
     file:                  rgb(41, 48, 64) none / rgb(74, 84, 105) none
-    directory:             rgb(137, 104, 0) none Bold / rgb(137, 104, 0) none
+    directory:             rgb(141, 108, 8) none Bold / rgb(141, 108, 8) none
     exe:                   rgb(13, 129, 49) none Bold
     link:                  rgb(0, 115, 118) none
     pruning:               rgb(105, 119, 148) none Italic
     perm__:                rgb(129, 146, 180) none
-    perm_r:                rgb(137, 104, 0) none
-    perm_w:                rgb(177, 74, 7) none
+    perm_r:                rgb(141, 108, 8) none
+    perm_w:                rgb(165, 67, 0) none
     perm_x:                rgb(13, 129, 49) none
-    owner:                 rgb(137, 104, 0) none
+    owner:                 rgb(141, 108, 8) none
     group:                 rgb(60, 69, 87) none
     count:                 rgb(85, 97, 121) none
     dates:                 rgb(74, 84, 105) none
-    sparse:                rgb(118, 96, 171) none
+    sparse:                rgb(117, 95, 169) none
     content_extract:       rgb(60, 69, 87) none
-    content_match:         rgb(137, 104, 0) none Bold
+    content_match:         rgb(141, 108, 8) none Bold
     device_id_major:       rgb(74, 84, 105) none
     device_id_sep:         rgb(129, 146, 180) none
     device_id_minor:       rgb(74, 84, 105) none
-    git_branch:            rgb(177, 74, 7) none
+    git_branch:            rgb(165, 67, 0) none
     git_insertions:        rgb(13, 129, 49) none
-    git_deletions:         rgb(201, 43, 35) none
+    git_deletions:         rgb(204, 46, 37) none
     git_status_current:    rgb(105, 119, 148) none
-    git_status_modified:   rgb(137, 104, 0) none
+    git_status_modified:   rgb(141, 108, 8) none
     git_status_staged:     rgb(13, 129, 49) none
     git_status_new:        rgb(13, 129, 49) none Bold
     git_status_ignored:    rgb(129, 146, 180) none
     git_status_conflicted: rgb(155, 33, 26) none Bold
-    git_status_other:      rgb(118, 96, 171) none
+    git_status_other:      rgb(117, 95, 169) none
     selected_line:         none rgb(191, 207, 241) / none rgb(220, 229, 247)
-    char_match:            rgb(137, 104, 0) none Bold
-    file_error:            rgb(201, 43, 35) none
+    char_match:            rgb(141, 108, 8) none Bold
+    file_error:            rgb(204, 46, 37) none
     flag_label:            rgb(74, 84, 105) none
-    flag_value:            rgb(177, 74, 7) none Bold
+    flag_value:            rgb(165, 67, 0) none Bold
     input:                 rgb(41, 48, 64) none / rgb(74, 84, 105) none
     status_error:          rgb(232, 240, 255) rgb(155, 33, 26)
-    status_job:            rgb(137, 104, 0) rgb(220, 229, 247)
+    status_job:            rgb(141, 108, 8) rgb(220, 229, 247)
     status_normal:         rgb(60, 69, 87) rgb(220, 229, 247)
-    status_italic:         rgb(137, 104, 0) rgb(220, 229, 247) Italic
-    status_bold:           rgb(177, 74, 7) rgb(220, 229, 247) Bold
+    status_italic:         rgb(141, 108, 8) rgb(220, 229, 247) Italic
+    status_bold:           rgb(165, 67, 0) rgb(220, 229, 247) Bold
     status_code:           rgb(0, 115, 118) rgb(220, 229, 247)
     status_ellipsis:       rgb(105, 119, 148) rgb(220, 229, 247)
     purpose_normal:        rgb(60, 69, 87) rgb(220, 229, 247)
-    purpose_italic:        rgb(137, 104, 0) rgb(220, 229, 247) Italic
-    purpose_bold:          rgb(177, 74, 7) rgb(220, 229, 247) Bold
+    purpose_italic:        rgb(141, 108, 8) rgb(220, 229, 247) Italic
+    purpose_bold:          rgb(165, 67, 0) rgb(220, 229, 247) Bold
     purpose_ellipsis:      rgb(105, 119, 148) rgb(220, 229, 247)
     scrollbar_track:       rgb(168, 187, 226) none / rgb(191, 207, 241) none
     scrollbar_thumb:       rgb(105, 119, 148) none / rgb(129, 146, 180) none
     help_paragraph:        rgb(41, 48, 64) none
-    help_bold:             rgb(177, 74, 7) none Bold
-    help_italic:           rgb(137, 104, 0) none Italic
+    help_bold:             rgb(165, 67, 0) none Bold
+    help_italic:           rgb(141, 108, 8) none Italic
     help_code:             rgb(13, 129, 49) rgb(191, 207, 241)
-    help_headers:          rgb(137, 104, 0) none Bold
+    help_headers:          rgb(141, 108, 8) none Bold
     help_table_border:     rgb(129, 146, 180) none
     preview:               rgb(41, 48, 64) none / rgb(74, 84, 105) none
     preview_title:         rgb(27, 32, 43) none / rgb(74, 84, 105) none
     preview_line_number:   rgb(129, 146, 180) none
     preview_separator:     rgb(147, 167, 207) none / rgb(168, 187, 226) none
-    preview_match:         none rgb(203, 199, 178)
+    preview_match:         none rgb(205, 200, 181)
     diff_line_number:      rgb(105, 119, 148) none
     diff_added:            none rgb(192, 222, 201)
     diff_removed:          none rgb(235, 211, 209)
     hex_null:              rgb(129, 146, 180) none
     hex_ascii_graphic:     rgb(60, 69, 87) none
     hex_ascii_whitespace:  rgb(13, 129, 49) none
-    hex_ascii_other:       rgb(177, 74, 7) none
-    hex_non_ascii:         rgb(201, 43, 35) none
+    hex_ascii_other:       rgb(165, 67, 0) none
+    hex_non_ascii:         rgb(204, 46, 37) none
     staging_area_title:    rgb(27, 32, 43) none / rgb(74, 84, 105) none
-    mode_command_mark:     rgb(232, 240, 255) rgb(177, 74, 7) Bold
+    mode_command_mark:     rgb(232, 240, 255) rgb(165, 67, 0) Bold
     good_to_bad_0:         rgb(13, 129, 49)
-    good_to_bad_1:         rgb(54, 121, 33)
-    good_to_bad_2:         rgb(96, 112, 16)
-    good_to_bad_3:         rgb(137, 104, 0)
-    good_to_bad_4:         rgb(150, 94, 2)
-    good_to_bad_5:         rgb(164, 84, 5)
-    good_to_bad_6:         rgb(177, 74, 7)
-    good_to_bad_7:         rgb(170, 60, 13)
-    good_to_bad_8:         rgb(162, 47, 20)
+    good_to_bad_1:         rgb(56, 122, 35)
+    good_to_bad_2:         rgb(98, 115, 22)
+    good_to_bad_3:         rgb(141, 108, 8)
+    good_to_bad_4:         rgb(149, 94, 5)
+    good_to_bad_5:         rgb(157, 81, 3)
+    good_to_bad_6:         rgb(165, 67, 0)
+    good_to_bad_7:         rgb(162, 56, 9)
+    good_to_bad_8:         rgb(158, 44, 17)
     good_to_bad_9:         rgb(155, 33, 26)
 }
 

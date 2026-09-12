@@ -6,12 +6,12 @@ themes {
         fg "#3E2C1E"
         bg "#CBB898"
         black "#EEE4D0"
-        red "#BC4031"
-        green "#AD4E00" // active frame, selected tab
-        yellow "#936200"
+        red "#BF4233"
+        green "#A04800" // active frame, selected tab
+        yellow "#976608"
         blue "#3F6480"
-        magenta "#863913"
-        orange "#936200" // frame in other modes
+        magenta "#843811"
+        orange "#976608" // frame in other modes
         cyan "#3E7157"
         white "#2A1D13"
     }

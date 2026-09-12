@@ -7,65 +7,65 @@ flavor	walnut	Subway Seat	subway-seat	dark	new-york
 color	walnut	yellow	#F3BF45
 color	walnut	orange	#EC7F31
 color	walnut	green	#ADB956
-color	walnut	red_hi	#F97160
+color	walnut	red_hi	#FF8373
 color	walnut	denim	#7F9BAE
 color	walnut	sage	#86AD95
 flavor	tunnel	Subway Seat Tunnel	subway-seat-tunnel	dark	new-york
 color	tunnel	yellow	#F3BF45
 color	tunnel	orange	#EC7F31
 color	tunnel	green	#ADB956
-color	tunnel	red_hi	#F97160
+color	tunnel	red_hi	#FF8373
 color	tunnel	denim	#7F9BAE
 color	tunnel	sage	#86AD95
 flavor	enamel	Subway Seat Enamel	subway-seat-enamel	light	new-york
-color	enamel	yellow	#936200
-color	enamel	orange	#AD4E00
+color	enamel	yellow	#976608
+color	enamel	orange	#A04800
 color	enamel	green	#66740F
-color	enamel	red_hi	#BC4031
+color	enamel	red_hi	#BF4233
 color	enamel	denim	#3F6480
 color	enamel	sage	#3E7157
 flavor	moquette	London Moquette	london-moquette	dark	london
 color	moquette	yellow	#F2C03F
 color	moquette	orange	#DE8946
 color	moquette	green	#77C581
-color	moquette	red_hi	#F17869
+color	moquette	red_hi	#FE8474
 color	moquette	denim	#7595DA
 color	moquette	sage	#54B4B5
 flavor	deep	London Deep Level	london-deep-level	dark	london
 color	deep	yellow	#F2C03F
 color	deep	orange	#DE8946
 color	deep	green	#77C581
-color	deep	red_hi	#F17869
+color	deep	red_hi	#FE8474
 color	deep	denim	#7595DA
 color	deep	sage	#54B4B5
 flavor	portland	London Portland	london-portland	light	london
-color	portland	yellow	#896800
-color	portland	orange	#B14A07
+color	portland	yellow	#8D6C08
+color	portland	orange	#A54300
 color	portland	green	#0D8131
-color	portland	red_hi	#C92B23
+color	portland	red_hi	#CC2E25
 color	portland	denim	#0019A8
 color	portland	sage	#007376
 flavor	guimard	Paris Guimard	paris-guimard	dark	paris
 color	guimard	yellow	#F2BF4B
 color	guimard	orange	#D0914F
 color	guimard	green	#80C28E
-color	guimard	red_hi	#E1837A
+color	guimard	red_hi	#EE8F85
 color	guimard	denim	#709BC8
-color	guimard	sage	#6CA087
+color	guimard	sage	#5FA09D
 flavor	catacombes	Paris Catacombes	paris-catacombes	dark	paris
 color	catacombes	yellow	#F2BF4B
 color	catacombes	orange	#D0914F
 color	catacombes	green	#80C28E
-color	catacombes	red_hi	#E1837A
+color	catacombes	red_hi	#EE8F85
 color	catacombes	denim	#709BC8
-color	catacombes	sage	#6CA087
+color	catacombes	sage	#5FA09D
 flavor	carrelage	Paris Carrelage	paris-carrelage	light	paris
-color	carrelage	yellow	#8A6700
-color	carrelage	orange	#8A5308
+color	carrelage	yellow	#8E6B08
+color	carrelage	orange	#804B00
 color	carrelage	green	#207F41
-color	carrelage	red_hi	#BB403B
+color	carrelage	red_hi	#BE423D
 color	carrelage	denim	#27629C
-color	carrelage	sage	#0B714D
+color	carrelage	sage	#006E6B
 port	alacritty	Alacritty	Terminals	Alacritty 0.14+
 detect	alacritty	alacritty
 detect	alacritty	/Applications/Alacritty.app

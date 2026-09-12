@@ -8,7 +8,7 @@ k9s:
     logoColorMsg: '#D8DEEA'
     logoColorInfo: '#77C581'
     logoColorWarn: '#F2C03F'
-    logoColorError: '#F17869'
+    logoColorError: '#FE8474'
   prompt:
     fgColor: '#D8DEEA'
     bgColor: '#172032'
@@ -27,13 +27,13 @@ k9s:
     bgColor: '#1E2941'
     sectionColor: '#77C581'
     keyColor: '#F2C03F'
-    numKeyColor: '#F17869'
+    numKeyColor: '#FE8474'
   frame:
     title:
       fgColor: '#F2C03F'
       bgColor: '#1E2941'
       highlightColor: '#DE8946'
-      counterColor: '#F17869'
+      counterColor: '#FE8474'
       filterColor: '#77C581'
     border:
       fgColor: '#3D4F72'
@@ -41,7 +41,7 @@ k9s:
     menu:
       fgColor: '#C1C9D8'
       keyColor: '#F2C03F'
-      numKeyColor: '#F17869'
+      numKeyColor: '#FE8474'
     crumbs:
       fgColor: '#121826'
       bgColor: '#F2C03F'
@@ -51,7 +51,7 @@ k9s:
       modifyColor: '#F2C03F'
       addColor: '#77C581'
       pendingColor: '#DE8946'
-      errorColor: '#F17869'
+      errorColor: '#FE8474'
       highlightColor: '#FFD36C'
       killColor: '#AE9EDC'
       completedColor: '#576685'
@@ -79,10 +79,10 @@ k9s:
       dialBgColor: '#1E2941'
       defaultDialColors:
         - '#77C581'
-        - '#F17869'
+        - '#FE8474'
       defaultChartColors:
         - '#77C581'
-        - '#F17869'
+        - '#FE8474'
       resourceColors:
         cpu:
           - '#DE8946'

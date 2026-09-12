@@ -53,24 +53,24 @@ pre[class*="language-"]::selection, pre[class*="language-"] ::selection {
 .token.punctuation { color: #556179; }
 .token.operator { color: #556179; }
 .token.namespace { color: #4A5469; }
-.token.keyword, .token.atrule, .token.rule, .token.list, .token.important { color: #B14A07; }
-.token.function { color: #896800; }
-.token.builtin { color: #896800; font-style: italic; }
+.token.keyword, .token.atrule, .token.rule, .token.list, .token.important { color: #A54300; }
+.token.function { color: #8D6C08; }
+.token.builtin { color: #8D6C08; font-style: italic; }
 .token.string, .token.char, .token.attr-value, .token.code { color: #0D8131; }
-.token.escape, .token.entity, .token.interpolation-punctuation { color: #7660AB; }
-.token.regex { color: #7660AB; }
-.token.number { color: #C92B23; }
-.token.boolean { color: #C92B23; }
-.token.constant, .token.symbol { color: #C92B23; }
+.token.escape, .token.entity, .token.interpolation-punctuation { color: #755FA9; }
+.token.regex { color: #755FA9; }
+.token.number { color: #CC2E25; }
+.token.boolean { color: #CC2E25; }
+.token.constant, .token.symbol { color: #CC2E25; }
 .token.class-name { color: #007376; }
 .token.variable { color: #293040; }
 .token.parameter { color: #3C4557; font-style: italic; }
 .token.property { color: #3C4557; }
-.language-json .token.property { color: #896800; }
-.token.tag { color: #B14A07; }
-.token.attr-name, .token.selector { color: #896800; font-style: italic; }
-.token.decorator, .token.annotation { color: #7660AB; font-style: italic; }
-.token.title { color: #896800; font-weight: bold; }
+.language-json .token.property { color: #8D6C08; }
+.token.tag { color: #A54300; }
+.token.attr-name, .token.selector { color: #8D6C08; font-style: italic; }
+.token.decorator, .token.annotation { color: #755FA9; font-style: italic; }
+.token.title { color: #8D6C08; font-weight: bold; }
 .token.blockquote { color: #4A5469; font-style: italic; }
 .token.coord { color: #0019A8; }
 .token.url { color: #0019A8; text-decoration: underline; }
@@ -78,10 +78,10 @@ pre[class*="language-"]::selection, pre[class*="language-"] ::selection {
 /* Diffs: the line keeps its code colors on a green or red tint, and the + / - sign carries the color.
    (Other languages mark a whole line as inserted or deleted, so it takes the color itself.) */
 .token.inserted { color: #0D8131; }
-.token.deleted { color: #C92B23; }
+.token.deleted { color: #CC2E25; }
 [class*="language-diff"] .token.inserted:not(.prefix) { background: #C0DEC9; }
 [class*="language-diff"] .token.deleted:not(.prefix) { background: #EBD3D1; }
-[class*="language-diff"] .token.diff:not(.prefix) { background: #E0D8BD; }
+[class*="language-diff"] .token.diff:not(.prefix) { background: #E1D9BF; }
 [class*="language-diff"] .token.prefix.inserted { color: #0D8131; }
-[class*="language-diff"] .token.prefix.deleted { color: #C92B23; }
-[class*="language-diff"] .token.prefix.diff { color: #896800; }
+[class*="language-diff"] .token.prefix.deleted { color: #CC2E25; }
+[class*="language-diff"] .token.prefix.diff { color: #8D6C08; }

@@ -68,7 +68,7 @@ theme[available_end]="#FFD36C"
 # Mem/disk used meter
 theme[used_start]="#DE8946"
 theme[used_mid]="#DB6052"
-theme[used_end]="#F17869"
+theme[used_end]="#FE8474"
 
 # Download graph
 theme[download_start]="#4F7F64"
@@ -78,7 +78,7 @@ theme[download_end]="#F2C03F"
 # Upload graph
 theme[upload_start]="#885E44"
 theme[upload_mid]="#DE8946"
-theme[upload_end]="#F17869"
+theme[upload_end]="#FE8474"
 
 # Process box gradient for threads, memory and cpu usage
 theme[process_start]="#77C581"

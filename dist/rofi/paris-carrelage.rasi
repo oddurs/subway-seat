@@ -17,19 +17,19 @@
     subtext1:  #3D473E;
     text:      #2A342B;
     text-hi:   #1B221C;
-    yellow:    #8A6700;
-    yellow-hi: #997300;
-    orange:    #8A5308;
-    orange-hi: #AE6800;
+    yellow:    #8E6B08;
+    yellow-hi: #9D770A;
+    orange:    #804B00;
+    orange-hi: #A26100;
     red:       #932D29;
-    red-hi:    #BB403B;
+    red-hi:    #BE423D;
     green:     #207F41;
     green-hi:  #168540;
-    sage:      #0B714D;
-    sage-hi:   #3D8666;
+    sage:      #006E6B;
+    sage-hi:   #1E8683;
     denim:     #27629C;
     denim-hi:  #3E75AD;
-    clay:      #9A557D;
+    clay:      #98547C;
 
     paper:     #F6F9F6;
     edge:      #D9DDD9;
@@ -62,11 +62,11 @@
     selected-active-background:  @selection;
     selected-active-foreground:  #27629C;
     selected-urgent-background:  @selection;
-    selected-urgent-foreground:  #8A5308;
+    selected-urgent-foreground:  #804B00;
 }
 
 element-text {
-    highlight: bold #8A6700;
+    highlight: bold #8E6B08;
 }
 
 entry {

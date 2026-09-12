@@ -92,7 +92,7 @@
     },
     "red-hi": {
       "$type": "color",
-      "$value": "#F97160",
+      "$value": "#FF8373",
       "$description": "Redbird bright"
     },
     "green": {
@@ -258,7 +258,7 @@
     },
     "red-hi": {
       "$type": "color",
-      "$value": "#F97160",
+      "$value": "#FF8373",
       "$description": "Redbird bright"
     },
     "green": {
@@ -399,22 +399,22 @@
     },
     "yellow": {
       "$type": "color",
-      "$value": "#936200",
+      "$value": "#976608",
       "$description": "Harvest gold"
     },
     "yellow-hi": {
       "$type": "color",
-      "$value": "#A56E00",
+      "$value": "#A9720A",
       "$description": "Broadway yellow"
     },
     "orange": {
       "$type": "color",
-      "$value": "#AD4E00",
+      "$value": "#A04800",
       "$description": "Burnt orange"
     },
     "orange-hi": {
       "$type": "color",
-      "$value": "#C4561A",
+      "$value": "#BA4D0A",
       "$description": "Sixth Avenue"
     },
     "red": {
@@ -424,7 +424,7 @@
     },
     "red-hi": {
       "$type": "color",
-      "$value": "#BC4031",
+      "$value": "#BF4233",
       "$description": "Redbird bright"
     },
     "green": {
@@ -459,7 +459,7 @@
     },
     "clay": {
       "$type": "color",
-      "$value": "#863913",
+      "$value": "#843811",
       "$description": "Terracotta"
     },
     "diff": {
@@ -489,11 +489,11 @@
       },
       "chg": {
         "$type": "color",
-        "$value": "#E3D6BD"
+        "$value": "#E4D7BF"
       },
       "chg-emph": {
         "$type": "color",
-        "$value": "#DCCDAD"
+        "$value": "#DECEB0"
       }
     }
   },
@@ -590,7 +590,7 @@
     },
     "red-hi": {
       "$type": "color",
-      "$value": "#F17869",
+      "$value": "#FE8474",
       "$description": "Redbird bright"
     },
     "green": {
@@ -756,7 +756,7 @@
     },
     "red-hi": {
       "$type": "color",
-      "$value": "#F17869",
+      "$value": "#FE8474",
       "$description": "Redbird bright"
     },
     "green": {
@@ -897,22 +897,22 @@
     },
     "yellow": {
       "$type": "color",
-      "$value": "#896800",
+      "$value": "#8D6C08",
       "$description": "Harvest gold"
     },
     "yellow-hi": {
       "$type": "color",
-      "$value": "#977300",
+      "$value": "#9B770A",
       "$description": "Broadway yellow"
     },
     "orange": {
       "$type": "color",
-      "$value": "#B14A07",
+      "$value": "#A54300",
       "$description": "Burnt orange"
     },
     "orange-hi": {
       "$type": "color",
-      "$value": "#B86100",
+      "$value": "#AC5A00",
       "$description": "Sixth Avenue"
     },
     "red": {
@@ -922,7 +922,7 @@
     },
     "red-hi": {
       "$type": "color",
-      "$value": "#C92B23",
+      "$value": "#CC2E25",
       "$description": "Redbird bright"
     },
     "green": {
@@ -957,7 +957,7 @@
     },
     "clay": {
       "$type": "color",
-      "$value": "#7660AB",
+      "$value": "#755FA9",
       "$description": "Terracotta"
     },
     "diff": {
@@ -987,11 +987,11 @@
       },
       "chg": {
         "$type": "color",
-        "$value": "#E0D8BD"
+        "$value": "#E1D9BF"
       },
       "chg-emph": {
         "$type": "color",
-        "$value": "#D9CFAD"
+        "$value": "#DBD0B0"
       }
     }
   },
@@ -1088,7 +1088,7 @@
     },
     "red-hi": {
       "$type": "color",
-      "$value": "#E1837A",
+      "$value": "#EE8F85",
       "$description": "Redbird bright"
     },
     "green": {
@@ -1103,12 +1103,12 @@
     },
     "sage": {
       "$type": "color",
-      "$value": "#6CA087",
+      "$value": "#5FA09D",
       "$description": "Seafoam tile"
     },
     "sage-hi": {
       "$type": "color",
-      "$value": "#98CCB2",
+      "$value": "#8CCCC9",
       "$description": "Seafoam bright"
     },
     "denim": {
@@ -1254,7 +1254,7 @@
     },
     "red-hi": {
       "$type": "color",
-      "$value": "#E1837A",
+      "$value": "#EE8F85",
       "$description": "Redbird bright"
     },
     "green": {
@@ -1269,12 +1269,12 @@
     },
     "sage": {
       "$type": "color",
-      "$value": "#6CA087",
+      "$value": "#5FA09D",
       "$description": "Seafoam tile"
     },
     "sage-hi": {
       "$type": "color",
-      "$value": "#98CCB2",
+      "$value": "#8CCCC9",
       "$description": "Seafoam bright"
     },
     "denim": {
@@ -1395,22 +1395,22 @@
     },
     "yellow": {
       "$type": "color",
-      "$value": "#8A6700",
+      "$value": "#8E6B08",
       "$description": "Harvest gold"
     },
     "yellow-hi": {
       "$type": "color",
-      "$value": "#997300",
+      "$value": "#9D770A",
       "$description": "Broadway yellow"
     },
     "orange": {
       "$type": "color",
-      "$value": "#8A5308",
+      "$value": "#804B00",
       "$description": "Burnt orange"
     },
     "orange-hi": {
       "$type": "color",
-      "$value": "#AE6800",
+      "$value": "#A26100",
       "$description": "Sixth Avenue"
     },
     "red": {
@@ -1420,7 +1420,7 @@
     },
     "red-hi": {
       "$type": "color",
-      "$value": "#BB403B",
+      "$value": "#BE423D",
       "$description": "Redbird bright"
     },
     "green": {
@@ -1435,12 +1435,12 @@
     },
     "sage": {
       "$type": "color",
-      "$value": "#0B714D",
+      "$value": "#006E6B",
       "$description": "Seafoam tile"
     },
     "sage-hi": {
       "$type": "color",
-      "$value": "#3D8666",
+      "$value": "#1E8683",
       "$description": "Seafoam bright"
     },
     "denim": {
@@ -1455,7 +1455,7 @@
     },
     "clay": {
       "$type": "color",
-      "$value": "#9A557D",
+      "$value": "#98547C",
       "$description": "Terracotta"
     },
     "diff": {
@@ -1485,11 +1485,11 @@
       },
       "chg": {
         "$type": "color",
-        "$value": "#E1D7BD"
+        "$value": "#E2D9BF"
       },
       "chg-emph": {
         "$type": "color",
-        "$value": "#DACEAD"
+        "$value": "#DBD0B0"
       }
     }
   }

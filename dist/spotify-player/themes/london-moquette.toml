@@ -15,7 +15,7 @@ magenta = "#DE8946"
 cyan = "#54B4B5"
 white = "#C1C9D8"
 bright_black = "#73819C"
-bright_red = "#F17869"
+bright_red = "#FE8474"
 bright_green = "#9AD2A0"
 bright_yellow = "#FFD36C"
 bright_blue = "#8BB0FF"
@@ -40,8 +40,8 @@ playlist_desc = { fg = "#73819C" }
 table_header = { fg = "#DE8946" }
 selection = { fg = "#E9EDF5", bg = "#303F61", modifiers = ["Bold"] }
 secondary_row = { bg = "#172032" }
-like = { fg = "#F17869" }
+like = { fg = "#FE8474" }
 lyrics_played = { fg = "#73819C" }
 lyrics_playing = { fg = "#F2C03F", modifiers = ["Bold"] }
-visualization = { low = "#77C581", mid = "#F2C03F", high = "#F17869" }
+visualization = { low = "#77C581", mid = "#F2C03F", high = "#FE8474" }
 # <<< subway-seat <<<

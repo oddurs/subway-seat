@@ -26,12 +26,12 @@ gsettings set "$PROFILE" foreground-color "'#2A342B'"
 gsettings set "$PROFILE" bold-color-same-as-fg "false"
 gsettings set "$PROFILE" bold-color "'#1B221C'"
 gsettings set "$PROFILE" cursor-colors-set "true"
-gsettings set "$PROFILE" cursor-background-color "'#8A5308'"
+gsettings set "$PROFILE" cursor-background-color "'#804B00'"
 gsettings set "$PROFILE" cursor-foreground-color "'#EEF3ED'"
 gsettings set "$PROFILE" highlight-colors-set "true"
 gsettings set "$PROFILE" highlight-background-color "'#B1C0B0'"
 gsettings set "$PROFILE" highlight-foreground-color "'#1B221C'"
-gsettings set "$PROFILE" palette "['#3D473E', '#932D29', '#207F41', '#8A6700', '#27629C', '#8A5308', '#0B714D', '#9BAC9A', '#6E7C6E', '#BB403B', '#168540', '#997300', '#3E75AD', '#AE6800', '#3D8666', '#B1C0B0']"
+gsettings set "$PROFILE" palette "['#3D473E', '#932D29', '#207F41', '#8E6B08', '#27629C', '#804B00', '#006E6B', '#9BAC9A', '#6E7C6E', '#BE423D', '#168540', '#9D770A', '#3E75AD', '#A26100', '#1E8683', '#B1C0B0']"
 
 case "$list" in
   *"$UUID"*) ;;

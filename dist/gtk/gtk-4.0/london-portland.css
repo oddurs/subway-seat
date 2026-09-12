@@ -1,18 +1,18 @@
 /* Subway Seat — generated from palette.py by build.py. Edit the palette, not this file. */
 /* London Portland for GTK 4 and libadwaita */
 
-@define-color accent_bg_color #B14A07;
+@define-color accent_bg_color #A54300;
 @define-color accent_fg_color #F4F8FF;
-@define-color accent_color #B14A07;
+@define-color accent_color #A54300;
 @define-color destructive_bg_color #9B211A;
 @define-color destructive_fg_color #F4F8FF;
 @define-color destructive_color #9B211A;
 @define-color success_bg_color #0D8131;
 @define-color success_fg_color #F4F8FF;
 @define-color success_color #0D8131;
-@define-color warning_bg_color #896800;
+@define-color warning_bg_color #8D6C08;
 @define-color warning_fg_color #F4F8FF;
-@define-color warning_color #896800;
+@define-color warning_color #8D6C08;
 @define-color error_bg_color #9B211A;
 @define-color error_fg_color #F4F8FF;
 @define-color error_color #9B211A;

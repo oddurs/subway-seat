@@ -108,7 +108,7 @@ themes {
             emphasis_3 "#7F9BAE"
         }
         exit_code_error {
-            base "#F97160"
+            base "#FF8373"
             background 0
             emphasis_0 "#F3BF45"
             emphasis_1 0
@@ -122,7 +122,7 @@ themes {
             player_4 "#86AD95"
             player_5 "#7F9BAE"
             player_6 "#F4A87E"
-            player_7 "#F97160"
+            player_7 "#FF8373"
             player_8 "#BFCB63"
             player_9 "#FFD36B"
             player_10 "#A5C9B0"

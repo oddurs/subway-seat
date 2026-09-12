@@ -1,8 +1,8 @@
 # Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
 # Paris Catacombes — Under the quarries: the same green with the lights turned down.
 
-face global value                     rgb:E1837A
-face global type                      rgb:6CA087
+face global value                     rgb:EE8F85
+face global type                      rgb:5FA09D
 face global variable                  rgb:D4DDD7
 face global module                    rgb:A5B1AA
 face global function                  rgb:F2BF4B
@@ -36,16 +36,16 @@ face global MenuBackground            rgb:BFC8C2,rgb:1A2921
 face global MenuInfo                  rgb:708178
 face global Information               rgb:D4DDD7,rgb:1A2921
 face global InlineInformation         rgb:D4DDD7,rgb:1A2921
-face global Error                     rgb:E1837A+b
-face global DiagnosticError           default,default,rgb:E1837A+c
+face global Error                     rgb:EE8F85+b
+face global DiagnosticError           default,default,rgb:EE8F85+c
 face global DiagnosticWarning         default,default,rgb:F2BF4B+c
 face global DiagnosticInfo            default,default,rgb:709BC8+c
-face global DiagnosticHint            default,default,rgb:6CA087+c
+face global DiagnosticHint            default,default,rgb:5FA09D+c
 face global DiagnosticTagDeprecated   +s
 face global DiagnosticTagUnnecessary  rgb:708178
 face global StatusLine                rgb:BFC8C2,rgb:0D1711
 face global StatusLineMode            rgb:0A100D,rgb:D0914F+b
-face global StatusLineInfo            rgb:6CA087,rgb:0D1711
+face global StatusLineInfo            rgb:5FA09D,rgb:0D1711
 face global StatusLineValue           rgb:F2BF4B,rgb:0D1711
 face global StatusCursor              rgb:121E19,rgb:F2BF4B
 face global Prompt                    rgb:D0914F,rgb:0D1711+b
@@ -54,14 +54,14 @@ face global Whitespace                rgb:24342C+f
 face global WhitespaceIndent          Whitespace
 face global WrapMarker                Whitespace
 face global BufferPadding             rgb:24342C,rgb:121E19
-face global InlayDiagnosticError      rgb:E1837A,rgb:282722
+face global InlayDiagnosticError      rgb:EE8F85,rgb:282722
 face global InlayDiagnosticWarning    rgb:F2BF4B,rgb:282E1E
 face global InlayDiagnosticInfo       rgb:709BC8,rgb:1F3032
-face global InlayDiagnosticHint       rgb:6CA087,rgb:1F3028
-face global LineFlagError             rgb:E1837A
+face global InlayDiagnosticHint       rgb:5FA09D,rgb:1D302B
+face global LineFlagError             rgb:EE8F85
 face global LineFlagWarning           rgb:F2BF4B
 face global LineFlagInfo              rgb:709BC8
-face global LineFlagHint              rgb:6CA087
+face global LineFlagHint              rgb:5FA09D
 face global Reference                 default,rgb:24342C
 face global ReferenceBind             default,rgb:24342C+u
 face global InlayHint                 rgb:708178,rgb:17251E+i

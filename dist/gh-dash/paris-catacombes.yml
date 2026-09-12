@@ -9,7 +9,7 @@ theme:
       faint: "#708178"
       warning: "#F2BF4B"
       success: "#80C28E"
-      error: "#E1837A"
+      error: "#EE8F85"
       actor: "#BFC8C2"
     background:
       selected: "#24342C"
@@ -19,7 +19,7 @@ theme:
       faint: "#1A2921"
     icon:
       newcontributor: "#80C28E"
-      contributor: "#6CA087"
+      contributor: "#5FA09D"
       collaborator: "#F2BF4B"
       member: "#F2BF4B"
       owner: "#D0914F"

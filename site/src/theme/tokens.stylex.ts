@@ -20,7 +20,7 @@ export const color = stylex.defineVars({
   orange: "#EC7F31",
   orangeHi: "#FF9D55",
   red: "#E05C45",
-  redHi: "#F97160",
+  redHi: "#FF8373",
   green: "#ADB956",
   greenHi: "#BFCB63",
   sage: "#86AD95",

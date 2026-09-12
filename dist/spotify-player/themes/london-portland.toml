@@ -9,39 +9,39 @@ foreground = "#293040"
 black = "#3C4557"
 red = "#9B211A"
 green = "#0D8131"
-yellow = "#896800"
+yellow = "#8D6C08"
 blue = "#0019A8"
-magenta = "#B14A07"
+magenta = "#A54300"
 cyan = "#007376"
 white = "#93A7CF"
 bright_black = "#697794"
-bright_red = "#C92B23"
+bright_red = "#CC2E25"
 bright_green = "#008730"
-bright_yellow = "#977300"
+bright_yellow = "#9B770A"
 bright_blue = "#4A6EBD"
-bright_magenta = "#B86100"
+bright_magenta = "#AC5A00"
 bright_cyan = "#008688"
 bright_white = "#A8BBE2"
 
 [themes.component_style]
-block_title = { fg = "#B14A07", modifiers = ["Bold"] }
+block_title = { fg = "#A54300", modifiers = ["Bold"] }
 border = { fg = "#93A7CF" }
-playback_status = { fg = "#896800", modifiers = ["Bold"] }
-playback_track = { fg = "#896800", modifiers = ["Bold"] }
-playback_artists = { fg = "#B14A07" }
+playback_status = { fg = "#8D6C08", modifiers = ["Bold"] }
+playback_track = { fg = "#8D6C08", modifiers = ["Bold"] }
+playback_artists = { fg = "#A54300" }
 playback_album = { fg = "#007376" }
 playback_genres = { fg = "#697794", modifiers = ["Italic"] }
 playback_metadata = { fg = "#4A5469" }
-playback_progress_bar = { fg = "#B14A07", bg = "#A8BBE2" }
+playback_progress_bar = { fg = "#A54300", bg = "#A8BBE2" }
 playback_progress_bar_unfilled = { fg = "#93A7CF", bg = "#A8BBE2" }
 current_playing = { fg = "#0D8131", modifiers = ["Bold"] }
-page_desc = { fg = "#896800", modifiers = ["Bold"] }
+page_desc = { fg = "#8D6C08", modifiers = ["Bold"] }
 playlist_desc = { fg = "#697794" }
-table_header = { fg = "#B14A07" }
+table_header = { fg = "#A54300" }
 selection = { fg = "#1B202B", bg = "#BFCFF1", modifiers = ["Bold"] }
 secondary_row = { bg = "#DCE5F7" }
-like = { fg = "#C92B23" }
+like = { fg = "#CC2E25" }
 lyrics_played = { fg = "#697794" }
-lyrics_playing = { fg = "#896800", modifiers = ["Bold"] }
-visualization = { low = "#0D8131", mid = "#896800", high = "#C92B23" }
+lyrics_playing = { fg = "#8D6C08", modifiers = ["Bold"] }
+visualization = { low = "#0D8131", mid = "#8D6C08", high = "#CC2E25" }
 # <<< subway-seat <<<

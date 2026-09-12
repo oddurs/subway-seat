@@ -7,7 +7,7 @@ skin: {
     file:                  rgb(217, 225, 219) none / rgb(169, 181, 174) none
     directory:             rgb(242, 191, 75) none Bold / rgb(242, 191, 75) none
     exe:                   rgb(128, 194, 142) none Bold
-    link:                  rgb(108, 160, 135) none
+    link:                  rgb(95, 160, 157) none
     pruning:               rgb(116, 133, 124) none Italic
     perm__:                rgb(88, 107, 97) none
     perm_r:                rgb(242, 191, 75) none
@@ -25,7 +25,7 @@ skin: {
     device_id_minor:       rgb(169, 181, 174) none
     git_branch:            rgb(208, 145, 79) none
     git_insertions:        rgb(128, 194, 142) none
-    git_deletions:         rgb(225, 131, 122) none
+    git_deletions:         rgb(238, 143, 133) none
     git_status_current:    rgb(116, 133, 124) none
     git_status_modified:   rgb(242, 191, 75) none
     git_status_staged:     rgb(128, 194, 142) none
@@ -35,7 +35,7 @@ skin: {
     git_status_other:      rgb(206, 150, 180) none
     selected_line:         none rgb(38, 57, 48) / none rgb(24, 36, 29)
     char_match:            rgb(242, 191, 75) none Bold
-    file_error:            rgb(225, 131, 122) none
+    file_error:            rgb(238, 143, 133) none
     flag_label:            rgb(169, 181, 174) none
     flag_value:            rgb(208, 145, 79) none Bold
     input:                 rgb(217, 225, 219) none / rgb(169, 181, 174) none
@@ -44,7 +44,7 @@ skin: {
     status_normal:         rgb(194, 203, 197) rgb(24, 36, 29)
     status_italic:         rgb(242, 191, 75) rgb(24, 36, 29) Italic
     status_bold:           rgb(208, 145, 79) rgb(24, 36, 29) Bold
-    status_code:           rgb(108, 160, 135) rgb(24, 36, 29)
+    status_code:           rgb(95, 160, 157) rgb(24, 36, 29)
     status_ellipsis:       rgb(116, 133, 124) rgb(24, 36, 29)
     purpose_normal:        rgb(194, 203, 197) rgb(24, 36, 29)
     purpose_italic:        rgb(242, 191, 75) rgb(24, 36, 29) Italic
@@ -70,7 +70,7 @@ skin: {
     hex_ascii_graphic:     rgb(194, 203, 197) none
     hex_ascii_whitespace:  rgb(128, 194, 142) none
     hex_ascii_other:       rgb(208, 145, 79) none
-    hex_non_ascii:         rgb(225, 131, 122) none
+    hex_non_ascii:         rgb(238, 143, 133) none
     staging_area_title:    rgb(233, 238, 236) none / rgb(169, 181, 174) none
     mode_command_mark:     rgb(19, 26, 23) rgb(208, 145, 79) Bold
     good_to_bad_0:         rgb(128, 194, 142)

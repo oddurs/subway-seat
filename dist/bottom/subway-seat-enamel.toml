@@ -4,29 +4,29 @@
 
 [styles.cpu]
 all_entry_color = "#3E2C1E"
-avg_entry_color = "#AD4E00"
-cpu_core_colors = ["#66740F", "#936200", "#AD4E00", "#BC4031", "#3E7157", "#863913", "#697813", "#A56E00"]
+avg_entry_color = "#A04800"
+cpu_core_colors = ["#66740F", "#976608", "#A04800", "#BF4233", "#3E7157", "#843811", "#697813", "#A9720A"]
 
 [styles.memory]
 ram_color = "#66740F"
 cache_color = "#3E7157"
-swap_color = "#AD4E00"
-arc_color = "#863913"
-gpu_colors = ["#936200", "#AD4E00", "#BC4031", "#3E7157", "#863913", "#697813"]
+swap_color = "#A04800"
+arc_color = "#843811"
+gpu_colors = ["#976608", "#A04800", "#BF4233", "#3E7157", "#843811", "#697813"]
 
 [styles.network]
 rx_color = "#66740F"
-tx_color = "#AD4E00"
+tx_color = "#A04800"
 rx_total_color = "#697813"
-tx_total_color = "#C4561A"
+tx_total_color = "#BA4D0A"
 
 [styles.battery]
 high_battery_color = "#66740F"
-medium_battery_color = "#936200"
-low_battery_color = "#BC4031"
+medium_battery_color = "#976608"
+low_battery_color = "#BF4233"
 
 [styles.tables]
-headers = { color = "#AD4E00", bold = true }
+headers = { color = "#A04800", bold = true }
 
 [styles.graphs]
 graph_color = "#A58D6D"
@@ -34,18 +34,18 @@ legend_text = { color = "#654F3B" }
 
 [styles.widgets]
 border_color = "#BAA380"
-selected_border_color = "#AD4E00"
-widget_title = { color = "#936200" }
+selected_border_color = "#A04800"
+widget_title = { color = "#976608" }
 text = { color = "#3E2C1E" }
-selected_text = { color = "#F8EFDF", bg_color = "#AD4E00" }
+selected_text = { color = "#F8EFDF", bg_color = "#A04800" }
 disabled_text = { color = "#A58D6D" }
 thread_text = { color = "#3E7157" }  # 0.11+
 
 # Newer sections (bottom 0.13+); older releases ignore them.
 [styles.temp_graph]
-temp_graph_color_styles = ["#66740F", "#936200", "#AD4E00", "#BC4031", "#3E7157", "#863913", "#697813", "#A56E00"]
+temp_graph_color_styles = ["#66740F", "#976608", "#A04800", "#BF4233", "#3E7157", "#843811", "#697813", "#A9720A"]
 
 [styles.disk_io_graph]
 read_colours = ["#66740F", "#3E7157", "#697813", "#4C8367"]
-write_colours = ["#AD4E00", "#863913", "#C4561A", "#BC4031"]
+write_colours = ["#A04800", "#843811", "#BA4D0A", "#BF4233"]
 # <<< subway-seat <<<

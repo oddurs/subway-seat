@@ -25,7 +25,7 @@ skin: {
     device_id_minor:       rgb(169, 178, 196) none
     git_branch:            rgb(222, 137, 70) none
     git_insertions:        rgb(119, 197, 129) none
-    git_deletions:         rgb(241, 120, 105) none
+    git_deletions:         rgb(254, 132, 116) none
     git_status_current:    rgb(115, 129, 156) none
     git_status_modified:   rgb(242, 192, 63) none
     git_status_staged:     rgb(119, 197, 129) none
@@ -35,7 +35,7 @@ skin: {
     git_status_other:      rgb(174, 158, 220) none
     selected_line:         none rgb(38, 52, 81) / none rgb(23, 32, 50)
     char_match:            rgb(242, 192, 63) none Bold
-    file_error:            rgb(241, 120, 105) none
+    file_error:            rgb(254, 132, 116) none
     flag_label:            rgb(169, 178, 196) none
     flag_value:            rgb(222, 137, 70) none Bold
     input:                 rgb(216, 222, 234) none / rgb(169, 178, 196) none
@@ -70,7 +70,7 @@ skin: {
     hex_ascii_graphic:     rgb(193, 201, 216) none
     hex_ascii_whitespace:  rgb(119, 197, 129) none
     hex_ascii_other:       rgb(222, 137, 70) none
-    hex_non_ascii:         rgb(241, 120, 105) none
+    hex_non_ascii:         rgb(254, 132, 116) none
     staging_area_title:    rgb(233, 237, 245) none / rgb(169, 178, 196) none
     mode_command_mark:     rgb(18, 24, 38) rgb(222, 137, 70) Bold
     good_to_bad_0:         rgb(119, 197, 129)

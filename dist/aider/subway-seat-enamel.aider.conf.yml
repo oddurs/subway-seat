@@ -2,16 +2,16 @@
 # Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
 # Subway Seat Enamel for aider. Leave dark-mode and light-mode unset: aider applies them
 # after this file and they replace these colors and the code theme with its own.
-user-input-color: "#936200"
+user-input-color: "#976608"
 assistant-output-color: "#3E2C1E"
 tool-output-color: "#654F3B"
-tool-error-color: "#BC4031"
-tool-warning-color: "#AD4E00"
+tool-error-color: "#BF4233"
+tool-warning-color: "#A04800"
 completion-menu-color: "#3E2C1E"
 completion-menu-bg-color: "#EEE4D0"
 # aider swaps the next two: current-color is the highlighted item's background,
 # current-bg-color its text. Burnt orange bar, base letters.
-completion-menu-current-color: "#AD4E00"
+completion-menu-current-color: "#A04800"
 completion-menu-current-bg-color: "#F8EFDF"
 # Code blocks in your terminal's colors. For the Subway Seat Pygments style,
 # install it into aider's environment and use `code-theme: subway-seat-enamel` instead:

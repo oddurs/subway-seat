@@ -6,7 +6,7 @@
 @define-color accent_color #EC7F31;
 @define-color destructive_bg_color #E05C45;
 @define-color destructive_fg_color #20160E;
-@define-color destructive_color #F97160;
+@define-color destructive_color #FF8373;
 @define-color success_bg_color #ADB956;
 @define-color success_fg_color #20160E;
 @define-color success_color #ADB956;
@@ -15,7 +15,7 @@
 @define-color warning_color #F3BF45;
 @define-color error_bg_color #E05C45;
 @define-color error_fg_color #20160E;
-@define-color error_color #F97160;
+@define-color error_color #FF8373;
 @define-color window_bg_color #362619;
 @define-color window_fg_color #EDDCBC;
 @define-color view_bg_color #362619;

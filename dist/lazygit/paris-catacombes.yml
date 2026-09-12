@@ -19,14 +19,14 @@ gui:
     cherryPickedCommitFgColor:
       - '#0A100D'
     cherryPickedCommitBgColor:
-      - '#6CA087'
+      - '#5FA09D'
     markedBaseCommitFgColor:
       - '#0A100D'
     markedBaseCommitBgColor:
       - '#F2BF4B'
     unstagedChangesColor:
-      - '#E1837A'
+      - '#EE8F85'
     defaultFgColor:
       - '#D4DDD7'
   authorColors:
-    '*': '#6CA087'
+    '*': '#5FA09D'

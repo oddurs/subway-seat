@@ -21,31 +21,31 @@
   <color name="subtext1" value="#54402F"/>
   <color name="text" value="#3E2C1E"/>
   <color name="text_hi" value="#2A1D13"/>
-  <color name="yellow" value="#936200"/>
-  <color name="yellow_hi" value="#A56E00"/>
-  <color name="orange" value="#AD4E00"/>
-  <color name="orange_hi" value="#C4561A"/>
+  <color name="yellow" value="#976608"/>
+  <color name="yellow_hi" value="#A9720A"/>
+  <color name="orange" value="#A04800"/>
+  <color name="orange_hi" value="#BA4D0A"/>
   <color name="red" value="#992418"/>
-  <color name="red_hi" value="#BC4031"/>
+  <color name="red_hi" value="#BF4233"/>
   <color name="green" value="#66740F"/>
   <color name="green_hi" value="#697813"/>
   <color name="sage" value="#3E7157"/>
   <color name="sage_hi" value="#4C8367"/>
   <color name="denim" value="#3F6480"/>
   <color name="denim_hi" value="#517791"/>
-  <color name="clay" value="#863913"/>
+  <color name="clay" value="#843811"/>
   <color name="tint_add" value="#D7DBC1"/>
   <color name="tint_add_emph" value="#C2C79F"/>
   <color name="tint_add_dim" value="#E7E9D9"/>
   <color name="tint_del" value="#EBD3D1"/>
   <color name="tint_del_emph" value="#DEB9B5"/>
   <color name="tint_del_dim" value="#F3E5E3"/>
-  <color name="tint_chg" value="#E3D6BD"/>
-  <color name="tint_chg_emph" value="#DCCDAD"/>
+  <color name="tint_chg" value="#E4D7BF"/>
+  <color name="tint_chg_emph" value="#DECEB0"/>
   <color name="tint_info" value="#DEDCD2"/>
   <color name="tint_hint" value="#DEDDCC"/>
-  <color name="tint_search" value="#DAC59C"/>
-  <color name="tint_search_cur" value="#D29E70"/>
+  <color name="tint_search" value="#DBC69E"/>
+  <color name="tint_search_cur" value="#CC9C70"/>
   <color name="selection_unfocused" value="#DFD1B8"/>
   <color name="bracket_bg" value="#EBE1D1"/>
 

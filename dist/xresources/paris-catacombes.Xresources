@@ -13,7 +13,7 @@
 
 ! red
 *.color1: #CD6B63
-*.color9: #E1837A
+*.color9: #EE8F85
 
 ! green
 *.color2: #80C28E
@@ -32,8 +32,8 @@
 *.color13: #E7AB6D
 
 ! cyan
-*.color6: #6CA087
-*.color14: #98CCB2
+*.color6: #5FA09D
+*.color14: #8CCCC9
 
 ! white
 *.color7: #BFC8C2

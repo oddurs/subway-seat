@@ -27,7 +27,7 @@
   --ss-orange: #EC7F31; /* Burnt orange */
   --ss-orange-hi: #FF9D55; /* Sixth Avenue */
   --ss-red: #E05C45; /* Redbird */
-  --ss-red-hi: #F97160; /* Redbird bright */
+  --ss-red-hi: #FF8373; /* Redbird bright */
   --ss-green: #ADB956; /* Avocado */
   --ss-green-hi: #BFCB63; /* Avocado bright */
   --ss-sage: #86AD95; /* Seafoam tile */
@@ -65,7 +65,7 @@
   --ss-orange-rgb: 236 127 49;
   --ss-orange-hi-rgb: 255 157 85;
   --ss-red-rgb: 224 92 69;
-  --ss-red-hi-rgb: 249 113 96;
+  --ss-red-hi-rgb: 255 131 115;
   --ss-green-rgb: 173 185 86;
   --ss-green-hi-rgb: 191 203 99;
   --ss-sage-rgb: 134 173 149;

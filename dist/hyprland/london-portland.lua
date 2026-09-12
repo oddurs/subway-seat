@@ -45,23 +45,23 @@ M.textAlpha = '293040'
 M.text_hi = 'rgb(1B202B)'
 M.text_hiAlpha = '1B202B'
 
-M.yellow = 'rgb(896800)'
-M.yellowAlpha = '896800'
+M.yellow = 'rgb(8D6C08)'
+M.yellowAlpha = '8D6C08'
 
-M.yellow_hi = 'rgb(977300)'
-M.yellow_hiAlpha = '977300'
+M.yellow_hi = 'rgb(9B770A)'
+M.yellow_hiAlpha = '9B770A'
 
-M.orange = 'rgb(B14A07)'
-M.orangeAlpha = 'B14A07'
+M.orange = 'rgb(A54300)'
+M.orangeAlpha = 'A54300'
 
-M.orange_hi = 'rgb(B86100)'
-M.orange_hiAlpha = 'B86100'
+M.orange_hi = 'rgb(AC5A00)'
+M.orange_hiAlpha = 'AC5A00'
 
 M.red = 'rgb(9B211A)'
 M.redAlpha = '9B211A'
 
-M.red_hi = 'rgb(C92B23)'
-M.red_hiAlpha = 'C92B23'
+M.red_hi = 'rgb(CC2E25)'
+M.red_hiAlpha = 'CC2E25'
 
 M.green = 'rgb(0D8131)'
 M.greenAlpha = '0D8131'
@@ -81,34 +81,34 @@ M.denimAlpha = '0019A8'
 M.denim_hi = 'rgb(4A6EBD)'
 M.denim_hiAlpha = '4A6EBD'
 
-M.clay = 'rgb(7660AB)'
-M.clayAlpha = '7660AB'
+M.clay = 'rgb(755FA9)'
+M.clayAlpha = '755FA9'
 
 function M.apply()
   hl.config({
     general = {
       col = {
-        active_border = 'rgb(896800)',
+        active_border = 'rgb(8D6C08)',
         inactive_border = 'rgb(A8BBE2)',
-        nogroup_border = 'rgb(9497CC)',
-        nogroup_border_active = 'rgb(7660AB)',
+        nogroup_border = 'rgb(9496CB)',
+        nogroup_border_active = 'rgb(755FA9)',
       },
     },
     group = {
       col = {
-        border_active = 'rgb(896800)',
-        border_inactive = 'rgb(9C9A88)',
-        border_locked_active = 'rgb(B14A07)',
-        border_locked_inactive = 'rgb(AC8E8A)',
+        border_active = 'rgb(8D6C08)',
+        border_inactive = 'rgb(9D9B8B)',
+        border_locked_active = 'rgb(A54300)',
+        border_locked_inactive = 'rgb(A78B88)',
       },
       groupbar = {
         text_color = 'rgb(1B202B)',
         text_color_inactive = 'rgb(4A5469)',
         col = {
-          active = 'rgb(896800)',
+          active = 'rgb(8D6C08)',
           inactive = 'rgb(A8BBE2)',
-          locked_active = 'rgb(B14A07)',
-          locked_inactive = 'rgb(AC8E8A)',
+          locked_active = 'rgb(A54300)',
+          locked_inactive = 'rgb(A78B88)',
         },
       },
     },

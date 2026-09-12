@@ -6,46 +6,46 @@
 	meta = "#1b202b bold"
 	frag = "#0019a8"
 	func = "#3c4557"
-	old = "#c92b23"
+	old = "#cc2e25"
 	new = "#0d8131"
-	commit = "#896800"
+	commit = "#8d6c08"
 	whitespace = "normal #9b211a"
-	oldMoved = "#b14a07 bold"
+	oldMoved = "#a54300 bold"
 	oldMovedAlternative = "#0019a8 bold"
 	newMoved = "#007376 bold"
-	newMovedAlternative = "#896800 bold"
+	newMovedAlternative = "#8d6c08 bold"
 	oldMovedDimmed = "#697794"
 	oldMovedAlternativeDimmed = "#697794 italic"
 	newMovedDimmed = "#697794"
 	newMovedAlternativeDimmed = "#697794 italic"
 	contextDimmed = "#697794"
-	oldDimmed = "#c92b23 dim"
+	oldDimmed = "#cc2e25 dim"
 	newDimmed = "#0d8131 dim"
 	contextBold = "#1b202b bold"
-	oldBold = "#c92b23 bold"
+	oldBold = "#cc2e25 bold"
 	newBold = "#0d8131 bold"
 
 [color "diff-highlight"]
-	oldNormal = "#c92b23"
-	oldHighlight = "#c92b23 #dfb8b6"
+	oldNormal = "#cc2e25"
+	oldHighlight = "#cc2e25 #dfb8b6"
 	newNormal = "#0d8131"
 	newHighlight = "#0d8131 #9ecdad"
 
 [color "status"]
 	header = "#3c4557"
 	added = "#0d8131"
-	changed = "#c92b23"
-	untracked = "#7660ab"
+	changed = "#cc2e25"
+	untracked = "#755fa9"
 	branch = "#0d8131 bold"
-	nobranch = "#c92b23 bold"
+	nobranch = "#cc2e25 bold"
 	localBranch = "#0d8131"
-	remoteBranch = "#c92b23"
-	unmerged = "#c92b23 bold"
+	remoteBranch = "#cc2e25"
+	unmerged = "#cc2e25 bold"
 
 [color "branch"]
 	current = "#0d8131 bold"
 	local = "#293040"
-	remote = "#c92b23"
+	remote = "#cc2e25"
 	upstream = "#0019a8"
 	plain = "#3c4557"
 	worktree = "#007376"
@@ -53,41 +53,41 @@
 [color "decorate"]
 	HEAD = "#007376 bold"
 	branch = "#0d8131 bold"
-	remoteBranch = "#c92b23 bold"
-	tag = "#896800 bold"
-	stash = "#b14a07 bold"
+	remoteBranch = "#cc2e25 bold"
+	tag = "#8d6c08 bold"
+	stash = "#a54300 bold"
 	grafted = "#0019a8 bold"
 
 [color "grep"]
 	context = "#4a5469"
-	filename = "#b14a07"
-	function = "#896800"
+	filename = "#a54300"
+	function = "#8d6c08"
 	lineNumber = "#0d8131"
 	column = "#0d8131"
 	selected = "#293040"
 	separator = "#697794"
 
 [color "interactive"]
-	prompt = "#b14a07 bold"
+	prompt = "#a54300 bold"
 	header = "#1b202b bold"
-	help = "#896800"
-	error = "#c92b23 bold"
+	help = "#8d6c08"
+	error = "#cc2e25 bold"
 
 [color "blame"]
-	highlightRecent = "#697794,12 month ago,#3c4557,1 month ago,#b14a07"
+	highlightRecent = "#697794,12 month ago,#3c4557,1 month ago,#a54300"
 	repeatedLines = "#697794"
 
 [color "advice"]
-	hint = "#896800"
+	hint = "#8d6c08"
 
 [color "push"]
-	error = "#c92b23"
+	error = "#cc2e25"
 
 [color "transport"]
-	rejected = "#c92b23"
+	rejected = "#cc2e25"
 
 [color "remote"]
-	hint = "#896800"
-	warning = "#896800 bold"
+	hint = "#8d6c08"
+	warning = "#8d6c08 bold"
 	success = "#0d8131 bold"
-	error = "#c92b23 bold"
+	error = "#cc2e25 bold"

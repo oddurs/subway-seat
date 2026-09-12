@@ -5,14 +5,14 @@
 [styles.cpu]
 all_entry_color = "#E9D8B6"
 avg_entry_color = "#EC7F31"
-cpu_core_colors = ["#ADB956", "#F3BF45", "#EC7F31", "#F97160", "#86AD95", "#F4A87E", "#BFCB63", "#FFD36B"]
+cpu_core_colors = ["#ADB956", "#F3BF45", "#EC7F31", "#FF8373", "#86AD95", "#F4A87E", "#BFCB63", "#FFD36B"]
 
 [styles.memory]
 ram_color = "#ADB956"
 cache_color = "#86AD95"
 swap_color = "#EC7F31"
 arc_color = "#F4A87E"
-gpu_colors = ["#F3BF45", "#EC7F31", "#F97160", "#86AD95", "#F4A87E", "#BFCB63"]
+gpu_colors = ["#F3BF45", "#EC7F31", "#FF8373", "#86AD95", "#F4A87E", "#BFCB63"]
 
 [styles.network]
 rx_color = "#ADB956"
@@ -23,7 +23,7 @@ tx_total_color = "#FF9D55"
 [styles.battery]
 high_battery_color = "#ADB956"
 medium_battery_color = "#F3BF45"
-low_battery_color = "#F97160"
+low_battery_color = "#FF8373"
 
 [styles.tables]
 headers = { color = "#EC7F31", bold = true }
@@ -43,9 +43,9 @@ thread_text = { color = "#86AD95" }  # 0.11+
 
 # Newer sections (bottom 0.13+); older releases ignore them.
 [styles.temp_graph]
-temp_graph_color_styles = ["#ADB956", "#F3BF45", "#EC7F31", "#F97160", "#86AD95", "#F4A87E", "#BFCB63", "#FFD36B"]
+temp_graph_color_styles = ["#ADB956", "#F3BF45", "#EC7F31", "#FF8373", "#86AD95", "#F4A87E", "#BFCB63", "#FFD36B"]
 
 [styles.disk_io_graph]
 read_colours = ["#ADB956", "#86AD95", "#BFCB63", "#A5C9B0"]
-write_colours = ["#EC7F31", "#F4A87E", "#FF9D55", "#F97160"]
+write_colours = ["#EC7F31", "#F4A87E", "#FF9D55", "#FF8373"]
 # <<< subway-seat <<<

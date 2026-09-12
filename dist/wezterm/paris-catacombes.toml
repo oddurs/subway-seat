@@ -19,17 +19,17 @@ ansi = [
   "#F2BF4B",
   "#709BC8",
   "#D0914F",
-  "#6CA087",
+  "#5FA09D",
   "#BFC8C2",
 ]
 brights = [
   "#708178",
-  "#E1837A",
+  "#EE8F85",
   "#8FD59E",
   "#FFD273",
   "#8DB6E2",
   "#E7AB6D",
-  "#98CCB2",
+  "#8CCCC9",
   "#E7ECEA",
 ]
 copy_mode_active_highlight_bg = { Color = "#715834" }

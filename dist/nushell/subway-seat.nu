@@ -6,7 +6,7 @@ $env.config.highlight_resolved_externals = true
 $env.config.color_config = {
     shape_internalcall: "#F3BF45"
     shape_external_resolved: "#F3BF45"
-    shape_external: "#F97160"
+    shape_external: "#FF8373"
     shape_keyword: "#EC7F31"
     shape_flag: "#86AD95"
     shape_externalarg: "#D9C6A3"
@@ -14,13 +14,13 @@ $env.config.color_config = {
     shape_string: "#ADB956"
     shape_raw_string: "#ADB956"
     shape_string_interpolation: "#F4A87E"
-    shape_int: "#F97160"
-    shape_float: "#F97160"
-    shape_bool: "#F97160"
-    shape_binary: "#F97160"
-    shape_datetime: "#F97160"
-    shape_nothing: "#F97160"
-    shape_literal: "#F97160"
+    shape_int: "#FF8373"
+    shape_float: "#FF8373"
+    shape_bool: "#FF8373"
+    shape_binary: "#FF8373"
+    shape_datetime: "#FF8373"
+    shape_nothing: "#FF8373"
+    shape_literal: "#FF8373"
     shape_range: "#F4A87E"
     shape_custom: "#F4A87E"
     shape_variable: "#F4A87E"
@@ -39,7 +39,7 @@ $env.config.color_config = {
     shape_table: "#AE9575"
     shape_match_pattern: "#ADB956"
     shape_matching_brackets: { fg: "#FFD36B" attr: "b" }
-    shape_garbage: { fg: "#F97160" attr: "u" }
+    shape_garbage: { fg: "#FF8373" attr: "u" }
 
     background: "#362619"
     foreground: "#EDDCBC"
@@ -53,12 +53,12 @@ $env.config.color_config = {
     search_result: { fg: "#F8ECD4" bg: "#6F5426" }
     selection: { fg: "#F8ECD4" bg: "#634932" }
     selection_cursor: { attr: "n" }
-    bool: "#F97160"
-    int: "#F97160"
-    float: "#F97160"
+    bool: "#FF8373"
+    int: "#FF8373"
+    float: "#FF8373"
     string: "#EDDCBC"
     glob: "#F4A87E"
-    binary: "#F97160"
+    binary: "#FF8373"
     binary_null_char: "#7B6047"
     binary_printable: "#ADB956"
     binary_whitespace: "#86AD95"
@@ -82,13 +82,13 @@ $env.config.color_config = {
       } else if $in < 1mb { "#ADB956"
       } else if $in < 100mb { "#F3BF45"
       } else if $in < 1gb { "#EC7F31"
-      } else { "#F97160" }
+      } else { "#FF8373" }
     }
     duration: {||
       if $in < 1sec { "#ADB956"
       } else if $in < 1min { "#F3BF45"
       } else if $in < 1hr { "#EC7F31"
-      } else { "#F97160" }
+      } else { "#FF8373" }
     }
     datetime: {|| (date now) - $in |
       if $in < 1hr { "#BFCB63"
@@ -112,5 +112,5 @@ $env.config.explore.status = {
     info: { fg: "#7F9BAE" }
     success: { fg: "#20160E" bg: "#ADB956" }
     warn: { fg: "#20160E" bg: "#F3BF45" }
-    error: { fg: "#20160E" bg: "#F97160" }
+    error: { fg: "#20160E" bg: "#FF8373" }
 }

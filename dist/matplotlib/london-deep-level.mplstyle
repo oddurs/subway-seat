@@ -8,7 +8,7 @@ axes.facecolor: 121A2D
 axes.edgecolor: 53617D
 axes.labelcolor: BEC6D5
 axes.titlecolor: E7EBF3
-axes.prop_cycle: cycler('color', ['DE8946', '54B4B5', 'F2C03F', '7595DA', 'F17869', '77C581', 'AE9EDC'])
+axes.prop_cycle: cycler('color', ['DE8946', '54B4B5', 'F2C03F', '7595DA', 'FE8474', '77C581', 'AE9EDC'])
 text.color: D4DAE7
 xtick.color: 6F7C97
 ytick.color: 6F7C97

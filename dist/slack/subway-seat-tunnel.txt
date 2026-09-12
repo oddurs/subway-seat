@@ -2,7 +2,7 @@
 # Subway Seat Tunnel: set Slack's color mode to dark.
 #
 # Current Slack: system navigation, selected items, presence, notifications
-#1B120A,#EC7F31,#ADB956,#F97160
+#1B120A,#EC7F31,#ADB956,#FF8373
 
 # Legacy ten-color string (older clients and theme sites)
-#1B120A,#302115,#EC7F31,#140D07,#302115,#E9D8B6,#ADB956,#F97160,#140D07,#E9D8B6
+#1B120A,#302115,#EC7F31,#140D07,#302115,#E9D8B6,#ADB956,#FF8373,#140D07,#E9D8B6

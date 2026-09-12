@@ -39,7 +39,7 @@ git-status:
   new-in-index: "#77C581"
   new-in-workdir: "#77C581"
   typechange: "#AE9EDC"
-  deleted: "#F17869"
+  deleted: "#FE8474"
   renamed: "#54B4B5"
   modified: "#F2C03F"
   conflicted: "#DB6052"

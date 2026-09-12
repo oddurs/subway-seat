@@ -2,11 +2,11 @@
 
 [Appearance]
 ColorScheme=subway-seat-enamel
-FocusBorderColor=173,78,0
-TabActivityColor=173,78,0
+FocusBorderColor=160,72,0
+TabActivityColor=160,72,0
 
 [Cursor Options]
-CustomCursorColor=173,78,0
+CustomCursorColor=160,72,0
 CustomCursorTextColor=248,239,223
 UseCustomCursorColor=true
 

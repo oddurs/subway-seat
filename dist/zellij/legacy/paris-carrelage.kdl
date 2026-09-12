@@ -6,13 +6,13 @@ themes {
         fg "#2A342B"
         bg "#B1C0B0"
         black "#E1E7E0"
-        red "#BB403B"
-        green "#8A5308" // active frame, selected tab
-        yellow "#8A6700"
+        red "#BE423D"
+        green "#804B00" // active frame, selected tab
+        yellow "#8E6B08"
         blue "#27629C"
-        magenta "#9A557D"
-        orange "#8A6700" // frame in other modes
-        cyan "#0B714D"
+        magenta "#98547C"
+        orange "#8E6B08" // frame in other modes
+        cyan "#006E6B"
         white "#1B221C"
     }
 }

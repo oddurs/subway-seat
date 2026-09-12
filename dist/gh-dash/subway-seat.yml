@@ -9,7 +9,7 @@ theme:
       faint: "#967B5C"
       warning: "#F3BF45"
       success: "#ADB956"
-      error: "#F97160"
+      error: "#FF8373"
       actor: "#D9C6A3"
     background:
       selected: "#513B27"

@@ -7,7 +7,7 @@ themes {
             base "#D4DDD7"
             background "#0D1711"
             emphasis_0 "#D0914F"
-            emphasis_1 "#6CA087"
+            emphasis_1 "#5FA09D"
             emphasis_2 "#80C28E"
             emphasis_3 "#F2BF4B"
         }
@@ -15,7 +15,7 @@ themes {
             base "#E7ECEA"
             background "#24342C"
             emphasis_0 "#D0914F"
-            emphasis_1 "#6CA087"
+            emphasis_1 "#5FA09D"
             emphasis_2 "#80C28E"
             emphasis_3 "#F2BF4B"
         }
@@ -24,7 +24,7 @@ themes {
             background "#24342C"
             emphasis_0 "#F2BF4B"
             emphasis_1 "#E7ECEA"
-            emphasis_2 "#6CA087"
+            emphasis_2 "#5FA09D"
             emphasis_3 "#D0914F"
         }
         ribbon_selected {
@@ -39,7 +39,7 @@ themes {
             base "#D0914F"
             background 0
             emphasis_0 "#F2BF4B"
-            emphasis_1 "#6CA087"
+            emphasis_1 "#5FA09D"
             emphasis_2 "#80C28E"
             emphasis_3 "#CE96B4"
         }
@@ -47,7 +47,7 @@ themes {
             base "#E7ECEA"
             background "#24342C"
             emphasis_0 "#D0914F"
-            emphasis_1 "#6CA087"
+            emphasis_1 "#5FA09D"
             emphasis_2 "#80C28E"
             emphasis_3 "#F2BF4B"
         }
@@ -55,7 +55,7 @@ themes {
             base "#D4DDD7"
             background "#0D1711"
             emphasis_0 "#D0914F"
-            emphasis_1 "#6CA087"
+            emphasis_1 "#5FA09D"
             emphasis_2 "#80C28E"
             emphasis_3 "#F2BF4B"
         }
@@ -63,7 +63,7 @@ themes {
             base "#E7ECEA"
             background "#24342C"
             emphasis_0 "#D0914F"
-            emphasis_1 "#6CA087"
+            emphasis_1 "#5FA09D"
             emphasis_2 "#80C28E"
             emphasis_3 "#F2BF4B"
         }
@@ -71,7 +71,7 @@ themes {
             base "#D4DDD7"
             background "#0D1711"
             emphasis_0 "#D0914F"
-            emphasis_1 "#6CA087"
+            emphasis_1 "#5FA09D"
             emphasis_2 "#80C28E"
             emphasis_3 "#F2BF4B"
         }
@@ -79,7 +79,7 @@ themes {
             base "#31433A"
             background 0
             emphasis_0 "#D0914F"
-            emphasis_1 "#6CA087"
+            emphasis_1 "#5FA09D"
             emphasis_2 "#80C28E"
             emphasis_3 "#F2BF4B"
         }
@@ -87,7 +87,7 @@ themes {
             base "#D0914F"
             background 0
             emphasis_0 "#F2BF4B"
-            emphasis_1 "#6CA087"
+            emphasis_1 "#5FA09D"
             emphasis_2 "#80C28E"
             emphasis_3 0
         }
@@ -102,13 +102,13 @@ themes {
         exit_code_success {
             base "#80C28E"
             background 0
-            emphasis_0 "#6CA087"
+            emphasis_0 "#5FA09D"
             emphasis_1 "#0A100D"
             emphasis_2 "#F2BF4B"
             emphasis_3 "#709BC8"
         }
         exit_code_error {
-            base "#E1837A"
+            base "#EE8F85"
             background 0
             emphasis_0 "#F2BF4B"
             emphasis_1 0
@@ -119,13 +119,13 @@ themes {
             player_1 "#D0914F"
             player_2 "#F2BF4B"
             player_3 "#80C28E"
-            player_4 "#6CA087"
+            player_4 "#5FA09D"
             player_5 "#709BC8"
             player_6 "#CE96B4"
-            player_7 "#E1837A"
+            player_7 "#EE8F85"
             player_8 "#8FD59E"
             player_9 "#FFD273"
-            player_10 "#98CCB2"
+            player_10 "#8CCCC9"
         }
     }
 }

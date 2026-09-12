@@ -34,7 +34,7 @@ settings:
   --color-base-60: #AE9575;
   --color-base-70: #C4AE8C;
   --color-base-100: #EDDCBC;
-  --color-red: #F97160;
+  --color-red: #FF8373;
   --color-orange: #EC7F31;
   --color-yellow: #F3BF45;
   --color-green: #ADB956;
@@ -42,7 +42,7 @@ settings:
   --color-blue: #7F9BAE;
   --color-purple: #FF9D55;
   --color-pink: #F4A87E;
-  --color-red-rgb: 249, 113, 96;
+  --color-red-rgb: 255, 131, 115;
   --color-orange-rgb: 236, 127, 49;
   --color-yellow-rgb: 243, 191, 69;
   --color-green-rgb: 173, 185, 86;
@@ -70,7 +70,7 @@ settings:
   --background-modifier-border: #43301F;
   --background-modifier-border-hover: #513B27;
   --background-modifier-border-focus: #EC7F31;
-  --background-modifier-error: #F97160;
+  --background-modifier-error: #FF8373;
   --background-modifier-error-hover: #E05C45;
   --background-modifier-warning: #F3BF45;
   --background-modifier-warning-hover: #FFD36B;
@@ -90,7 +90,7 @@ settings:
   --text-on-accent-inverted: #20160E;
   --text-accent: var(--color-accent);
   --text-accent-hover: var(--color-accent-1);
-  --text-error: #F97160;
+  --text-error: #FF8373;
   --text-warning: #F3BF45;
   --text-success: #ADB956;
   --text-selection: color-mix(in srgb, var(--color-accent) 30%, transparent);
@@ -129,7 +129,7 @@ settings:
   --h2-color: #F3BF45;
   --h3-color: #ADB956;
   --h4-color: #86AD95;
-  --h5-color: #F97160;
+  --h5-color: #FF8373;
   --h6-color: #F4A87E;
   --heading-formatting: #7B6047;
   --inline-title-color: #F8ECD4;
@@ -164,14 +164,14 @@ settings:
   --code-punctuation: #AE9575;
   --code-string: #ADB956;
   --code-tag: #EC7F31;
-  --code-value: #F97160;
+  --code-value: #FF8373;
 
   /* Diffs in code blocks: line tints, green and red signs, denim hunk headers */
   --ss-diff-add: #3F3A1E;
   --ss-diff-del: #52281C;
   --ss-diff-chg: #423117;
   --ss-diff-add-fg: #ADB956;
-  --ss-diff-del-fg: #F97160;
+  --ss-diff-del-fg: #FF8373;
   --ss-diff-chg-fg: #F3BF45;
   --ss-diff-header: #7F9BAE;
 
@@ -185,9 +185,9 @@ settings:
   --callout-success: #ADB956;
   --callout-question: #F4A87E;
   --callout-warning: #F3BF45;
-  --callout-fail: #F97160;
-  --callout-error: #F97160;
-  --callout-bug: #F97160;
+  --callout-fail: #FF8373;
+  --callout-error: #FF8373;
+  --callout-bug: #FF8373;
   --callout-example: #FF9D55;
   --callout-quote: #967B5C;
 
@@ -236,7 +236,7 @@ settings:
   --canvas-background: #362619;
   --canvas-dot-pattern: #513B27;
   --canvas-card-label-color: #967B5C;
-  --canvas-color-1: #F97160;
+  --canvas-color-1: #FF8373;
   --canvas-color-2: #EC7F31;
   --canvas-color-3: #F3BF45;
   --canvas-color-4: #ADB956;
@@ -487,26 +487,26 @@ body.theme-dark.subway-seat-tunnel {
   --color-base-70: #654F3B;
   --color-base-100: #3E2C1E;
   --color-red: #992418;
-  --color-orange: #AD4E00;
-  --color-yellow: #936200;
+  --color-orange: #A04800;
+  --color-yellow: #976608;
   --color-green: #66740F;
   --color-cyan: #3E7157;
   --color-blue: #3F6480;
-  --color-purple: #C4561A;
-  --color-pink: #863913;
+  --color-purple: #BA4D0A;
+  --color-pink: #843811;
   --color-red-rgb: 153, 36, 24;
-  --color-orange-rgb: 173, 78, 0;
-  --color-yellow-rgb: 147, 98, 0;
+  --color-orange-rgb: 160, 72, 0;
+  --color-yellow-rgb: 151, 102, 8;
   --color-green-rgb: 102, 116, 15;
   --color-cyan-rgb: 62, 113, 87;
   --color-blue-rgb: 63, 100, 128;
-  --color-purple-rgb: 196, 86, 26;
-  --color-pink-rgb: 134, 57, 19;
+  --color-purple-rgb: 186, 77, 10;
+  --color-pink-rgb: 132, 56, 17;
 
   /* Accent: burnt orange, still overridable under Settings › Appearance */
-  --accent-h: 27.1;
+  --accent-h: 27.0;
   --accent-s: 100.0%;
-  --accent-l: 33.9%;
+  --accent-l: 31.4%;
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-accent-1: hsl(calc(var(--accent-h) + 1), calc(var(--accent-s) * 1.1), calc(var(--accent-l) * 1.08));
@@ -521,11 +521,11 @@ body.theme-dark.subway-seat-tunnel {
   --background-modifier-active-hover: color-mix(in srgb, var(--color-accent) 14%, transparent);
   --background-modifier-border: #DBCDB3;
   --background-modifier-border-hover: #CBB898;
-  --background-modifier-border-focus: #AD4E00;
+  --background-modifier-border-focus: #A04800;
   --background-modifier-error: #992418;
-  --background-modifier-error-hover: #BC4031;
-  --background-modifier-warning: #936200;
-  --background-modifier-warning-hover: #A56E00;
+  --background-modifier-error-hover: #BF4233;
+  --background-modifier-warning: #976608;
+  --background-modifier-warning-hover: #A9720A;
   --background-modifier-success: #66740F;
   --background-modifier-form-field: #F8EFDF;
   --background-modifier-form-field-hover: #F8EFDF;
@@ -543,12 +543,12 @@ body.theme-dark.subway-seat-tunnel {
   --text-accent: var(--color-accent);
   --text-accent-hover: var(--color-accent-1);
   --text-error: #992418;
-  --text-warning: #936200;
+  --text-warning: #976608;
   --text-success: #66740F;
   --text-selection: color-mix(in srgb, var(--color-accent) 22%, transparent);
-  --text-highlight-bg: rgba(165, 110, 0, 0.32);
-  --text-highlight-bg-rgb: 165, 110, 0;
-  --caret-color: #AD4E00;
+  --text-highlight-bg: rgba(169, 114, 10, 0.32);
+  --text-highlight-bg-rgb: 169, 114, 10;
+  --caret-color: #A04800;
   --bold-color: #2A1D13;
   --italic-color: inherit;
 
@@ -570,19 +570,19 @@ body.theme-dark.subway-seat-tunnel {
   --pill-color: #654F3B;
   --pill-color-hover: #3E2C1E;
   --pill-color-remove: #8C7254;
-  --pill-color-remove-hover: #AD4E00;
+  --pill-color-remove-hover: #A04800;
   --pill-border-color: #CBB898;
   --pill-border-color-hover: #BAA380;
   --search-icon-color: #654F3B;
   --search-clear-button-color: #654F3B;
 
   /* Headings: the 70s stripe, burnt orange down to terracotta */
-  --h1-color: #AD4E00;
-  --h2-color: #936200;
+  --h1-color: #A04800;
+  --h2-color: #976608;
   --h3-color: #66740F;
   --h4-color: #3E7157;
   --h5-color: #992418;
-  --h6-color: #863913;
+  --h6-color: #843811;
   --heading-formatting: #A58D6D;
   --inline-title-color: #2A1D13;
 
@@ -595,12 +595,12 @@ body.theme-dark.subway-seat-tunnel {
   --link-unresolved-opacity: 0.65;
   --link-unresolved-decoration-style: dotted;
   --link-unresolved-decoration-color: rgba(63, 100, 128, 0.5);
-  --tag-color: #AD4E00;
-  --tag-color-hover: #AD4E00;
-  --tag-background: rgba(173, 78, 0, 0.12);
-  --tag-background-hover: rgba(173, 78, 0, 0.2);
-  --tag-border-color: rgba(173, 78, 0, 0.18);
-  --tag-border-color-hover: rgba(173, 78, 0, 0.3);
+  --tag-color: #A04800;
+  --tag-color-hover: #A04800;
+  --tag-background: rgba(160, 72, 0, 0.12);
+  --tag-background-hover: rgba(160, 72, 0, 0.2);
+  --tag-border-color: rgba(160, 72, 0, 0.18);
+  --tag-border-color-hover: rgba(160, 72, 0, 0.3);
 
   /* Code: the same syntax roles as every editor port */
   --code-background: #EEE4D0;
@@ -608,23 +608,23 @@ body.theme-dark.subway-seat-tunnel {
   --code-bracket-background: rgba(140, 114, 84, 0.16);
   --code-normal: #3E2C1E;
   --code-comment: #8C7254;
-  --code-function: #936200;
-  --code-important: #863913;
-  --code-keyword: #AD4E00;
+  --code-function: #976608;
+  --code-important: #843811;
+  --code-keyword: #A04800;
   --code-operator: #735C44;
   --code-property: #54402F;
   --code-punctuation: #735C44;
   --code-string: #66740F;
-  --code-tag: #AD4E00;
-  --code-value: #BC4031;
+  --code-tag: #A04800;
+  --code-value: #BF4233;
 
   /* Diffs in code blocks: line tints, green and red signs, denim hunk headers */
   --ss-diff-add: #D7DBC1;
   --ss-diff-del: #EBD3D1;
-  --ss-diff-chg: #E3D6BD;
+  --ss-diff-chg: #E4D7BF;
   --ss-diff-add-fg: #66740F;
-  --ss-diff-del-fg: #BC4031;
-  --ss-diff-chg-fg: #936200;
+  --ss-diff-del-fg: #BF4233;
+  --ss-diff-chg-fg: #976608;
   --ss-diff-header: #3F6480;
 
   /* Callouts, by type */
@@ -633,18 +633,18 @@ body.theme-dark.subway-seat-tunnel {
   --callout-todo: #3F6480;
   --callout-summary: #3E7157;
   --callout-tip: #3E7157;
-  --callout-important: #AD4E00;
+  --callout-important: #A04800;
   --callout-success: #66740F;
-  --callout-question: #863913;
-  --callout-warning: #936200;
+  --callout-question: #843811;
+  --callout-warning: #976608;
   --callout-fail: #992418;
   --callout-error: #992418;
   --callout-bug: #992418;
-  --callout-example: #C4561A;
+  --callout-example: #BA4D0A;
   --callout-quote: #8C7254;
 
   /* Blocks: quotes, checklists, lists, rules, tables, properties */
-  --blockquote-border-color: #863913;
+  --blockquote-border-color: #843811;
   --blockquote-color: #54402F;
   --blockquote-background-color: transparent;
   --checkbox-color: var(--color-accent);
@@ -655,9 +655,9 @@ body.theme-dark.subway-seat-tunnel {
   --checklist-done-color: #8C7254;
   --list-marker-color: #8C7254;
   --list-marker-color-hover: #654F3B;
-  --list-marker-color-collapsed: #AD4E00;
+  --list-marker-color-collapsed: #A04800;
   --collapse-icon-color: #8C7254;
-  --collapse-icon-color-collapsed: #AD4E00;
+  --collapse-icon-color-collapsed: #A04800;
   --hr-color: #CBB898;
   --table-border-color: #DBCDB3;
   --table-header-background: #EEE4D0;
@@ -682,15 +682,15 @@ body.theme-dark.subway-seat-tunnel {
   --graph-line: #CBB898;
   --graph-node: #654F3B;
   --graph-node-unresolved: #A58D6D;
-  --graph-node-focused: #AD4E00;
+  --graph-node-focused: #A04800;
   --graph-node-tag: #66740F;
-  --graph-node-attachment: #936200;
+  --graph-node-attachment: #976608;
   --canvas-background: #F8EFDF;
   --canvas-dot-pattern: #DBCDB3;
   --canvas-card-label-color: #8C7254;
   --canvas-color-1: #992418;
-  --canvas-color-2: #AD4E00;
-  --canvas-color-3: #936200;
+  --canvas-color-2: #A04800;
+  --canvas-color-3: #976608;
   --canvas-color-4: #66740F;
   --canvas-color-5: #3E7157;
   --canvas-color-6: #3F6480;
@@ -710,7 +710,7 @@ body.theme-dark.subway-seat-tunnel {
   --tab-text-color-focused: #654F3B;
   --tab-text-color-focused-active: #54402F;
   --tab-text-color-focused-active-current: #3E2C1E;
-  --tab-text-color-focused-highlighted: #AD4E00;
+  --tab-text-color-focused-highlighted: #A04800;
   --tab-divider-color: #CBB898;
   --tab-outline-color: #E4D8C0;
   --status-bar-background: #EEE4D0;
@@ -726,7 +726,7 @@ body.theme-dark.subway-seat-tunnel {
   --nav-item-color-hover: #3E2C1E;
   --nav-item-color-active: #3E2C1E;
   --nav-item-color-selected: #3E2C1E;
-  --nav-item-color-highlighted: #AD4E00;
+  --nav-item-color-highlighted: #A04800;
   --nav-item-background-hover: rgba(140, 114, 84, 0.16);
   --nav-item-background-active: #DBCDB3;
   --nav-item-background-selected: color-mix(in srgb, var(--color-accent) 16%, transparent);
@@ -739,7 +739,7 @@ body.theme-dark.subway-seat-tunnel {
   --nav-tag-color-active: #654F3B;
   --icon-color: #654F3B;
   --icon-color-hover: #3E2C1E;
-  --icon-color-active: #AD4E00;
+  --icon-color-active: #A04800;
   --icon-color-focused: #3E2C1E;
   --indentation-guide-color: #DBCDB3;
   --indentation-guide-color-active: #A58D6D;

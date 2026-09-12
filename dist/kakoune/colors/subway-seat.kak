@@ -1,7 +1,7 @@
 # Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
 # Subway Seat — Walnut paneling and orange bucket seats. The original.
 
-face global value                     rgb:F97160
+face global value                     rgb:FF8373
 face global type                      rgb:86AD95
 face global variable                  rgb:EDDCBC
 face global module                    rgb:C4AE8C
@@ -36,8 +36,8 @@ face global MenuBackground            rgb:D9C6A3,rgb:43301F
 face global MenuInfo                  rgb:967B5C
 face global Information               rgb:EDDCBC,rgb:43301F
 face global InlineInformation         rgb:EDDCBC,rgb:43301F
-face global Error                     rgb:F97160+b
-face global DiagnosticError           default,default,rgb:F97160+c
+face global Error                     rgb:FF8373+b
+face global DiagnosticError           default,default,rgb:FF8373+c
 face global DiagnosticWarning         default,default,rgb:F3BF45+c
 face global DiagnosticInfo            default,default,rgb:7F9BAE+c
 face global DiagnosticHint            default,default,rgb:86AD95+c
@@ -54,11 +54,11 @@ face global Whitespace                rgb:513B27+f
 face global WhitespaceIndent          Whitespace
 face global WrapMarker                Whitespace
 face global BufferPadding             rgb:513B27,rgb:362619
-face global InlayDiagnosticError      rgb:F97160,rgb:4A2C1E
+face global InlayDiagnosticError      rgb:FF8373,rgb:4A2C1E
 face global InlayDiagnosticWarning    rgb:F3BF45,rgb:49351D
 face global InlayDiagnosticInfo       rgb:7F9BAE,rgb:40362E
 face global InlayDiagnosticHint       rgb:86AD95,rgb:41392A
-face global LineFlagError             rgb:F97160
+face global LineFlagError             rgb:FF8373
 face global LineFlagWarning           rgb:F3BF45
 face global LineFlagInfo              rgb:7F9BAE
 face global LineFlagHint              rgb:86AD95

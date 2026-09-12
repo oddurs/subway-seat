@@ -11,7 +11,7 @@ theme[main_fg]="#293040"
 theme[title]="#1B202B"
 
 # Highlight color for keyboard shortcuts
-theme[hi_fg]="#B14A07"
+theme[hi_fg]="#A54300"
 
 # Background of the selected item in the processes box
 theme[selected_bg]="#A8BBE2"
@@ -32,22 +32,22 @@ theme[meter_bg]="#A8BBE2"
 theme[proc_misc]="#007376"
 
 # Box outlines
-theme[cpu_box]="#B14A07"
-theme[mem_box]="#896800"
+theme[cpu_box]="#A54300"
+theme[mem_box]="#8D6C08"
 theme[net_box]="#0D8131"
-theme[proc_box]="#7660AB"
+theme[proc_box]="#755FA9"
 
 # Box dividers and small box outlines
 theme[div_line]="#93A7CF"
 
 # Temperature graph
 theme[temp_start]="#0D8131"
-theme[temp_mid]="#9D5904"
+theme[temp_mid]="#995804"
 theme[temp_end]="#9B211A"
 
 # CPU graph
 theme[cpu_start]="#0D8131"
-theme[cpu_mid]="#9D5904"
+theme[cpu_mid]="#995804"
 theme[cpu_end]="#9B211A"
 
 # Mem/disk free meter
@@ -61,34 +61,34 @@ theme[cached_mid]="#0019A8"
 theme[cached_end]="#4A6EBD"
 
 # Mem/disk available meter
-theme[available_start]="#B4A573"
-theme[available_mid]="#896800"
-theme[available_end]="#977300"
+theme[available_start]="#B6A777"
+theme[available_mid]="#8D6C08"
+theme[available_end]="#9B770A"
 
 # Mem/disk used meter
-theme[used_start]="#B14A07"
+theme[used_start]="#A54300"
 theme[used_mid]="#9B211A"
-theme[used_end]="#C92B23"
+theme[used_end]="#CC2E25"
 
 # Download graph
 theme[download_start]="#70B38E"
 theme[download_mid]="#0D8131"
-theme[download_end]="#896800"
+theme[download_end]="#8D6C08"
 
 # Upload graph
-theme[upload_start]="#CA9577"
-theme[upload_mid]="#B14A07"
-theme[upload_end]="#C92B23"
+theme[upload_start]="#C39173"
+theme[upload_mid]="#A54300"
+theme[upload_end]="#CC2E25"
 
 # Process box gradient for threads, memory and cpu usage
 theme[process_start]="#0D8131"
-theme[process_mid]="#9D5904"
+theme[process_mid]="#995804"
 theme[process_end]="#9B211A"
 
 # Banners over the process list while it is paused or following a process
 theme[proc_pause_bg]="#9B211A"
 theme[proc_follow_bg]="#007376"
-theme[proc_banner_bg]="#B14A07"
+theme[proc_banner_bg]="#A54300"
 theme[proc_banner_fg]="#E8F0FF"
 
 # The process being followed

@@ -420,16 +420,16 @@
         },
         "red_hi": {
           "name": "Redbird bright",
-          "hex": "#F97160",
+          "hex": "#FF8373",
           "rgb": [
-            249,
-            113,
-            96
+            255,
+            131,
+            115
           ],
           "hsl": [
             7,
-            93,
-            68
+            100,
+            73
           ]
         },
         "green": {
@@ -590,7 +590,7 @@
           "index": 9,
           "name": "bright_red",
           "role": "red_hi",
-          "hex": "#F97160"
+          "hex": "#FF8373"
         },
         {
           "index": 10,
@@ -900,16 +900,16 @@
         },
         "red_hi": {
           "name": "Redbird bright",
-          "hex": "#F97160",
+          "hex": "#FF8373",
           "rgb": [
-            249,
-            113,
-            96
+            255,
+            131,
+            115
           ],
           "hsl": [
             7,
-            93,
-            68
+            100,
+            73
           ]
         },
         "green": {
@@ -1070,7 +1070,7 @@
           "index": 9,
           "name": "bright_red",
           "role": "red_hi",
-          "hex": "#F97160"
+          "hex": "#FF8373"
         },
         {
           "index": 10,
@@ -1310,58 +1310,58 @@
         },
         "yellow": {
           "name": "Harvest gold",
-          "hex": "#936200",
+          "hex": "#976608",
           "rgb": [
-            147,
-            98,
-            0
+            151,
+            102,
+            8
           ],
           "hsl": [
-            40,
-            100,
-            29
+            39,
+            90,
+            31
           ]
         },
         "yellow_hi": {
           "name": "Broadway yellow",
-          "hex": "#A56E00",
+          "hex": "#A9720A",
           "rgb": [
-            165,
-            110,
-            0
+            169,
+            114,
+            10
           ],
           "hsl": [
-            40,
-            100,
-            32
+            39,
+            89,
+            35
           ]
         },
         "orange": {
           "name": "Burnt orange",
-          "hex": "#AD4E00",
+          "hex": "#A04800",
           "rgb": [
-            173,
-            78,
+            160,
+            72,
             0
           ],
           "hsl": [
             27,
             100,
-            34
+            31
           ]
         },
         "orange_hi": {
           "name": "Sixth Avenue",
-          "hex": "#C4561A",
+          "hex": "#BA4D0A",
           "rgb": [
-            196,
-            86,
-            26
+            186,
+            77,
+            10
           ],
           "hsl": [
-            21,
-            77,
-            44
+            23,
+            90,
+            38
           ]
         },
         "red": {
@@ -1380,16 +1380,16 @@
         },
         "red_hi": {
           "name": "Redbird bright",
-          "hex": "#BC4031",
+          "hex": "#BF4233",
           "rgb": [
-            188,
-            64,
-            49
+            191,
+            66,
+            51
           ],
           "hsl": [
             6,
-            59,
-            46
+            58,
+            47
           ]
         },
         "green": {
@@ -1478,16 +1478,16 @@
         },
         "clay": {
           "name": "Terracotta",
-          "hex": "#863913",
+          "hex": "#843811",
           "rgb": [
-            134,
-            57,
-            19
+            132,
+            56,
+            17
           ],
           "hsl": [
             20,
-            75,
-            30
+            77,
+            29
           ]
         }
       },
@@ -1514,7 +1514,7 @@
           "index": 3,
           "name": "yellow",
           "role": "yellow",
-          "hex": "#936200"
+          "hex": "#976608"
         },
         {
           "index": 4,
@@ -1526,7 +1526,7 @@
           "index": 5,
           "name": "magenta",
           "role": "orange",
-          "hex": "#AD4E00"
+          "hex": "#A04800"
         },
         {
           "index": 6,
@@ -1550,7 +1550,7 @@
           "index": 9,
           "name": "bright_red",
           "role": "red_hi",
-          "hex": "#BC4031"
+          "hex": "#BF4233"
         },
         {
           "index": 10,
@@ -1562,7 +1562,7 @@
           "index": 11,
           "name": "bright_yellow",
           "role": "yellow_hi",
-          "hex": "#A56E00"
+          "hex": "#A9720A"
         },
         {
           "index": 12,
@@ -1574,7 +1574,7 @@
           "index": 13,
           "name": "bright_magenta",
           "role": "orange_hi",
-          "hex": "#C4561A"
+          "hex": "#BA4D0A"
         },
         {
           "index": 14,
@@ -1596,8 +1596,8 @@
         "diff-del": "#EBD3D1",
         "diff-del-emph": "#DEB9B5",
         "diff-del-dim": "#F3E5E3",
-        "diff-chg": "#E3D6BD",
-        "diff-chg-emph": "#DCCDAD"
+        "diff-chg": "#E4D7BF",
+        "diff-chg-emph": "#DECEB0"
       }
     },
     "moquette": {
@@ -1860,16 +1860,16 @@
         },
         "red_hi": {
           "name": "Redbird bright",
-          "hex": "#F17869",
+          "hex": "#FE8474",
           "rgb": [
-            241,
-            120,
-            105
+            254,
+            132,
+            116
           ],
           "hsl": [
             7,
-            83,
-            68
+            99,
+            73
           ]
         },
         "green": {
@@ -2030,7 +2030,7 @@
           "index": 9,
           "name": "bright_red",
           "role": "red_hi",
-          "hex": "#F17869"
+          "hex": "#FE8474"
         },
         {
           "index": 10,
@@ -2340,16 +2340,16 @@
         },
         "red_hi": {
           "name": "Redbird bright",
-          "hex": "#F17869",
+          "hex": "#FE8474",
           "rgb": [
-            241,
-            120,
-            105
+            254,
+            132,
+            116
           ],
           "hsl": [
             7,
-            83,
-            68
+            99,
+            73
           ]
         },
         "green": {
@@ -2510,7 +2510,7 @@
           "index": 9,
           "name": "bright_red",
           "role": "red_hi",
-          "hex": "#F17869"
+          "hex": "#FE8474"
         },
         {
           "index": 10,
@@ -2750,58 +2750,58 @@
         },
         "yellow": {
           "name": "Harvest gold",
-          "hex": "#896800",
+          "hex": "#8D6C08",
           "rgb": [
-            137,
-            104,
-            0
+            141,
+            108,
+            8
           ],
           "hsl": [
-            46,
-            100,
-            27
+            45,
+            89,
+            29
           ]
         },
         "yellow_hi": {
           "name": "Broadway yellow",
-          "hex": "#977300",
+          "hex": "#9B770A",
           "rgb": [
-            151,
-            115,
-            0
+            155,
+            119,
+            10
           ],
           "hsl": [
-            46,
-            100,
-            30
+            45,
+            88,
+            32
           ]
         },
         "orange": {
           "name": "Burnt orange",
-          "hex": "#B14A07",
+          "hex": "#A54300",
           "rgb": [
-            177,
-            74,
-            7
+            165,
+            67,
+            0
           ],
           "hsl": [
             24,
-            92,
-            36
+            100,
+            32
           ]
         },
         "orange_hi": {
           "name": "Sixth Avenue",
-          "hex": "#B86100",
+          "hex": "#AC5A00",
           "rgb": [
-            184,
-            97,
+            172,
+            90,
             0
           ],
           "hsl": [
-            32,
+            31,
             100,
-            36
+            34
           ]
         },
         "red": {
@@ -2820,16 +2820,16 @@
         },
         "red_hi": {
           "name": "Redbird bright",
-          "hex": "#C92B23",
+          "hex": "#CC2E25",
           "rgb": [
-            201,
-            43,
-            35
+            204,
+            46,
+            37
           ],
           "hsl": [
             3,
-            70,
-            46
+            69,
+            47
           ]
         },
         "green": {
@@ -2918,15 +2918,15 @@
         },
         "clay": {
           "name": "Terracotta",
-          "hex": "#7660AB",
+          "hex": "#755FA9",
           "rgb": [
-            118,
-            96,
-            171
+            117,
+            95,
+            169
           ],
           "hsl": [
             258,
-            31,
+            30,
             52
           ]
         }
@@ -2954,7 +2954,7 @@
           "index": 3,
           "name": "yellow",
           "role": "yellow",
-          "hex": "#896800"
+          "hex": "#8D6C08"
         },
         {
           "index": 4,
@@ -2966,7 +2966,7 @@
           "index": 5,
           "name": "magenta",
           "role": "orange",
-          "hex": "#B14A07"
+          "hex": "#A54300"
         },
         {
           "index": 6,
@@ -2990,7 +2990,7 @@
           "index": 9,
           "name": "bright_red",
           "role": "red_hi",
-          "hex": "#C92B23"
+          "hex": "#CC2E25"
         },
         {
           "index": 10,
@@ -3002,7 +3002,7 @@
           "index": 11,
           "name": "bright_yellow",
           "role": "yellow_hi",
-          "hex": "#977300"
+          "hex": "#9B770A"
         },
         {
           "index": 12,
@@ -3014,7 +3014,7 @@
           "index": 13,
           "name": "bright_magenta",
           "role": "orange_hi",
-          "hex": "#B86100"
+          "hex": "#AC5A00"
         },
         {
           "index": 14,
@@ -3036,8 +3036,8 @@
         "diff-del": "#EBD3D1",
         "diff-del-emph": "#DFB8B6",
         "diff-del-dim": "#F3E4E4",
-        "diff-chg": "#E0D8BD",
-        "diff-chg-emph": "#D9CFAD"
+        "diff-chg": "#E1D9BF",
+        "diff-chg-emph": "#DBD0B0"
       }
     },
     "guimard": {
@@ -3300,16 +3300,16 @@
         },
         "red_hi": {
           "name": "Redbird bright",
-          "hex": "#E1837A",
+          "hex": "#EE8F85",
           "rgb": [
-            225,
-            131,
-            122
+            238,
+            143,
+            133
           ],
           "hsl": [
-            5,
-            63,
-            68
+            6,
+            76,
+            73
           ]
         },
         "green": {
@@ -3342,30 +3342,30 @@
         },
         "sage": {
           "name": "Seafoam tile",
-          "hex": "#6CA087",
+          "hex": "#5FA09D",
           "rgb": [
-            108,
+            95,
             160,
-            135
+            157
           ],
           "hsl": [
-            151,
-            21,
-            53
+            177,
+            25,
+            50
           ]
         },
         "sage_hi": {
           "name": "Seafoam bright",
-          "hex": "#98CCB2",
+          "hex": "#8CCCC9",
           "rgb": [
-            152,
+            140,
             204,
-            178
+            201
           ],
           "hsl": [
-            150,
-            34,
-            70
+            177,
+            39,
+            67
           ]
         },
         "denim": {
@@ -3452,7 +3452,7 @@
           "index": 6,
           "name": "cyan",
           "role": "sage",
-          "hex": "#6CA087"
+          "hex": "#5FA09D"
         },
         {
           "index": 7,
@@ -3470,7 +3470,7 @@
           "index": 9,
           "name": "bright_red",
           "role": "red_hi",
-          "hex": "#E1837A"
+          "hex": "#EE8F85"
         },
         {
           "index": 10,
@@ -3500,7 +3500,7 @@
           "index": 14,
           "name": "bright_cyan",
           "role": "sage_hi",
-          "hex": "#98CCB2"
+          "hex": "#8CCCC9"
         },
         {
           "index": 15,
@@ -3780,16 +3780,16 @@
         },
         "red_hi": {
           "name": "Redbird bright",
-          "hex": "#E1837A",
+          "hex": "#EE8F85",
           "rgb": [
-            225,
-            131,
-            122
+            238,
+            143,
+            133
           ],
           "hsl": [
-            5,
-            63,
-            68
+            6,
+            76,
+            73
           ]
         },
         "green": {
@@ -3822,30 +3822,30 @@
         },
         "sage": {
           "name": "Seafoam tile",
-          "hex": "#6CA087",
+          "hex": "#5FA09D",
           "rgb": [
-            108,
+            95,
             160,
-            135
+            157
           ],
           "hsl": [
-            151,
-            21,
-            53
+            177,
+            25,
+            50
           ]
         },
         "sage_hi": {
           "name": "Seafoam bright",
-          "hex": "#98CCB2",
+          "hex": "#8CCCC9",
           "rgb": [
-            152,
+            140,
             204,
-            178
+            201
           ],
           "hsl": [
-            150,
-            34,
-            70
+            177,
+            39,
+            67
           ]
         },
         "denim": {
@@ -3932,7 +3932,7 @@
           "index": 6,
           "name": "cyan",
           "role": "sage",
-          "hex": "#6CA087"
+          "hex": "#5FA09D"
         },
         {
           "index": 7,
@@ -3950,7 +3950,7 @@
           "index": 9,
           "name": "bright_red",
           "role": "red_hi",
-          "hex": "#E1837A"
+          "hex": "#EE8F85"
         },
         {
           "index": 10,
@@ -3980,7 +3980,7 @@
           "index": 14,
           "name": "bright_cyan",
           "role": "sage_hi",
-          "hex": "#98CCB2"
+          "hex": "#8CCCC9"
         },
         {
           "index": 15,
@@ -4190,58 +4190,58 @@
         },
         "yellow": {
           "name": "Harvest gold",
-          "hex": "#8A6700",
+          "hex": "#8E6B08",
           "rgb": [
-            138,
-            103,
-            0
-          ],
-          "hsl": [
-            45,
-            100,
-            27
-          ]
-        },
-        "yellow_hi": {
-          "name": "Broadway yellow",
-          "hex": "#997300",
-          "rgb": [
-            153,
-            115,
-            0
-          ],
-          "hsl": [
-            45,
-            100,
-            30
-          ]
-        },
-        "orange": {
-          "name": "Burnt orange",
-          "hex": "#8A5308",
-          "rgb": [
-            138,
-            83,
+            142,
+            107,
             8
           ],
           "hsl": [
-            35,
+            44,
             89,
             29
           ]
         },
+        "yellow_hi": {
+          "name": "Broadway yellow",
+          "hex": "#9D770A",
+          "rgb": [
+            157,
+            119,
+            10
+          ],
+          "hsl": [
+            44,
+            88,
+            33
+          ]
+        },
+        "orange": {
+          "name": "Burnt orange",
+          "hex": "#804B00",
+          "rgb": [
+            128,
+            75,
+            0
+          ],
+          "hsl": [
+            35,
+            100,
+            25
+          ]
+        },
         "orange_hi": {
           "name": "Sixth Avenue",
-          "hex": "#AE6800",
+          "hex": "#A26100",
           "rgb": [
-            174,
-            104,
+            162,
+            97,
             0
           ],
           "hsl": [
             36,
             100,
-            34
+            32
           ]
         },
         "red": {
@@ -4260,16 +4260,16 @@
         },
         "red_hi": {
           "name": "Redbird bright",
-          "hex": "#BB403B",
+          "hex": "#BE423D",
           "rgb": [
-            187,
-            64,
-            59
+            190,
+            66,
+            61
           ],
           "hsl": [
             2,
-            52,
-            48
+            51,
+            49
           ]
         },
         "green": {
@@ -4302,30 +4302,30 @@
         },
         "sage": {
           "name": "Seafoam tile",
-          "hex": "#0B714D",
+          "hex": "#006E6B",
           "rgb": [
-            11,
-            113,
-            77
+            0,
+            110,
+            107
           ],
           "hsl": [
-            159,
-            82,
-            24
+            178,
+            100,
+            22
           ]
         },
         "sage_hi": {
           "name": "Seafoam bright",
-          "hex": "#3D8666",
+          "hex": "#1E8683",
           "rgb": [
-            61,
+            30,
             134,
-            102
+            131
           ],
           "hsl": [
-            154,
-            37,
-            38
+            178,
+            63,
+            32
           ]
         },
         "denim": {
@@ -4358,16 +4358,16 @@
         },
         "clay": {
           "name": "Terracotta",
-          "hex": "#9A557D",
+          "hex": "#98547C",
           "rgb": [
-            154,
-            85,
-            125
+            152,
+            84,
+            124
           ],
           "hsl": [
             325,
             29,
-            47
+            46
           ]
         }
       },
@@ -4394,7 +4394,7 @@
           "index": 3,
           "name": "yellow",
           "role": "yellow",
-          "hex": "#8A6700"
+          "hex": "#8E6B08"
         },
         {
           "index": 4,
@@ -4406,13 +4406,13 @@
           "index": 5,
           "name": "magenta",
           "role": "orange",
-          "hex": "#8A5308"
+          "hex": "#804B00"
         },
         {
           "index": 6,
           "name": "cyan",
           "role": "sage",
-          "hex": "#0B714D"
+          "hex": "#006E6B"
         },
         {
           "index": 7,
@@ -4430,7 +4430,7 @@
           "index": 9,
           "name": "bright_red",
           "role": "red_hi",
-          "hex": "#BB403B"
+          "hex": "#BE423D"
         },
         {
           "index": 10,
@@ -4442,7 +4442,7 @@
           "index": 11,
           "name": "bright_yellow",
           "role": "yellow_hi",
-          "hex": "#997300"
+          "hex": "#9D770A"
         },
         {
           "index": 12,
@@ -4454,13 +4454,13 @@
           "index": 13,
           "name": "bright_magenta",
           "role": "orange_hi",
-          "hex": "#AE6800"
+          "hex": "#A26100"
         },
         {
           "index": 14,
           "name": "bright_cyan",
           "role": "sage_hi",
-          "hex": "#3D8666"
+          "hex": "#1E8683"
         },
         {
           "index": 15,
@@ -4476,8 +4476,8 @@
         "diff-del": "#E9D5D4",
         "diff-del-emph": "#DCBCBB",
         "diff-del-dim": "#F2E6E5",
-        "diff-chg": "#E1D7BD",
-        "diff-chg-emph": "#DACEAD"
+        "diff-chg": "#E2D9BF",
+        "diff-chg-emph": "#DBD0B0"
       }
     }
   },

@@ -18,15 +18,15 @@ const theme = {
     "yellow": "#F2BF4B",
     "blue": "#709BC8",
     "magenta": "#D0914F",
-    "cyan": "#6CA087",
+    "cyan": "#5FA09D",
     "white": "#C2CBC5",
     "lightBlack": "#74857C",
-    "lightRed": "#E1837A",
+    "lightRed": "#EE8F85",
     "lightGreen": "#8FD59E",
     "lightYellow": "#FFD273",
     "lightBlue": "#8DB6E2",
     "lightMagenta": "#E7AB6D",
-    "lightCyan": "#98CCB2",
+    "lightCyan": "#8CCCC9",
     "lightWhite": "#E9EEEC"
   }
 };

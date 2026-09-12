@@ -12,10 +12,10 @@
 	zero-style = syntax
 	whitespace-error-style = normal "#CD6B63"
 	# git --color-moved: git's defaults and the git port's colors
-	map-styles = bold purple => syntax "#332824", bold "#D0914F" => syntax "#332824", bold blue => syntax "#37341F", bold "#709BC8" => syntax "#37341F", bold cyan => syntax "#223228", bold "#6CA087" => syntax "#223228", bold yellow => syntax "#37341F", bold "#F2BF4B" => syntax "#37341F"
+	map-styles = bold purple => syntax "#332824", bold "#D0914F" => syntax "#332824", bold blue => syntax "#37341F", bold "#709BC8" => syntax "#37341F", bold cyan => syntax "#223228", bold "#5FA09D" => syntax "#223228", bold yellow => syntax "#37341F", bold "#F2BF4B" => syntax "#37341F"
 	# line numbers (with line-numbers = true) in the color of their change
 	line-numbers-plus-style = "#80C28E"
-	line-numbers-minus-style = "#E1837A"
+	line-numbers-minus-style = "#EE8F85"
 	line-numbers-zero-style = "#74857C"
 	line-numbers-left-style = "#586B61"
 	line-numbers-right-style = "#586B61"
@@ -40,5 +40,5 @@
 	# merge conflicts (git's diff3 or zdiff3 conflict style)
 	merge-conflict-ours-diff-header-style = "#F2BF4B" bold
 	merge-conflict-ours-diff-header-decoration-style = "#F2BF4B" box
-	merge-conflict-theirs-diff-header-style = "#6CA087" bold
-	merge-conflict-theirs-diff-header-decoration-style = "#6CA087" box
+	merge-conflict-theirs-diff-header-style = "#5FA09D" bold
+	merge-conflict-theirs-diff-header-decoration-style = "#5FA09D" box

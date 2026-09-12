@@ -6,14 +6,14 @@ fish_color_normal D9E1DB
 fish_color_command F2BF4B
 fish_color_keyword D0914F
 fish_color_param C2CBC5
-fish_color_option 6CA087
+fish_color_option 5FA09D
 fish_color_quote 80C28E
 fish_color_redirection CE96B4
 fish_color_end D0914F
 fish_color_operator CE96B4
 fish_color_escape CE96B4
 fish_color_comment 74857C --italics
-fish_color_error E1837A
+fish_color_error EE8F85
 fish_color_cancel CD6B63
 fish_color_autosuggestion 74857C
 fish_color_gray 586B61
@@ -22,11 +22,11 @@ fish_color_selection E9EEEC --bold --background=3E554A
 fish_color_search_match --bold --background=30463B
 fish_color_history_current --bold
 fish_color_cwd F2BF4B
-fish_color_cwd_root E1837A
+fish_color_cwd_root EE8F85
 fish_color_user D0914F
 fish_color_host C2CBC5
 fish_color_host_remote 80C28E
-fish_color_status E1837A
+fish_color_status EE8F85
 fish_pager_color_progress 131A17 --background=D0914F
 fish_pager_color_prefix F2BF4B --bold
 fish_pager_color_completion D9E1DB

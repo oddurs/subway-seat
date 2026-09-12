@@ -22,19 +22,19 @@
   --ss-text-hi: #2A1D13; /* Enamel text hi */
 
   /* Accents */
-  --ss-yellow: #936200; /* Harvest gold */
-  --ss-yellow-hi: #A56E00; /* Broadway yellow */
-  --ss-orange: #AD4E00; /* Burnt orange */
-  --ss-orange-hi: #C4561A; /* Sixth Avenue */
+  --ss-yellow: #976608; /* Harvest gold */
+  --ss-yellow-hi: #A9720A; /* Broadway yellow */
+  --ss-orange: #A04800; /* Burnt orange */
+  --ss-orange-hi: #BA4D0A; /* Sixth Avenue */
   --ss-red: #992418; /* Redbird */
-  --ss-red-hi: #BC4031; /* Redbird bright */
+  --ss-red-hi: #BF4233; /* Redbird bright */
   --ss-green: #66740F; /* Avocado */
   --ss-green-hi: #697813; /* Avocado bright */
   --ss-sage: #3E7157; /* Seafoam tile */
   --ss-sage-hi: #4C8367; /* Seafoam bright */
   --ss-denim: #3F6480; /* Faded denim */
   --ss-denim-hi: #517791; /* Denim bright */
-  --ss-clay: #863913; /* Terracotta */
+  --ss-clay: #843811; /* Terracotta */
 
   /* Diff grounds: -add/-del/-chg for lines, -emph for changed words, -dim for faded diffs */
   --ss-diff-add: #D7DBC1;
@@ -43,8 +43,8 @@
   --ss-diff-del: #EBD3D1;
   --ss-diff-del-emph: #DEB9B5;
   --ss-diff-del-dim: #F3E5E3;
-  --ss-diff-chg: #E3D6BD;
-  --ss-diff-chg-emph: #DCCDAD;
+  --ss-diff-chg: #E4D7BF;
+  --ss-diff-chg-emph: #DECEB0;
 
   /* RGB triplets, for rgb(var(--ss-base-rgb) / 0.5) */
   --ss-crust-rgb: 228 216 192;
@@ -60,17 +60,17 @@
   --ss-subtext1-rgb: 84 64 47;
   --ss-text-rgb: 62 44 30;
   --ss-text-hi-rgb: 42 29 19;
-  --ss-yellow-rgb: 147 98 0;
-  --ss-yellow-hi-rgb: 165 110 0;
-  --ss-orange-rgb: 173 78 0;
-  --ss-orange-hi-rgb: 196 86 26;
+  --ss-yellow-rgb: 151 102 8;
+  --ss-yellow-hi-rgb: 169 114 10;
+  --ss-orange-rgb: 160 72 0;
+  --ss-orange-hi-rgb: 186 77 10;
   --ss-red-rgb: 153 36 24;
-  --ss-red-hi-rgb: 188 64 49;
+  --ss-red-hi-rgb: 191 66 51;
   --ss-green-rgb: 102 116 15;
   --ss-green-hi-rgb: 105 120 19;
   --ss-sage-rgb: 62 113 87;
   --ss-sage-hi-rgb: 76 131 103;
   --ss-denim-rgb: 63 100 128;
   --ss-denim-hi-rgb: 81 119 145;
-  --ss-clay-rgb: 134 57 19;
+  --ss-clay-rgb: 132 56 17;
 }

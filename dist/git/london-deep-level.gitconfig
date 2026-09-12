@@ -6,7 +6,7 @@
 	meta = "#e7ebf3 bold"
 	frag = "#7595da"
 	func = "#bec6d5"
-	old = "#f17869"
+	old = "#fe8474"
 	new = "#77c581"
 	commit = "#f2c03f"
 	whitespace = "normal #db6052"
@@ -19,33 +19,33 @@
 	newMovedDimmed = "#6f7c97"
 	newMovedAlternativeDimmed = "#6f7c97 italic"
 	contextDimmed = "#6f7c97"
-	oldDimmed = "#f17869 dim"
+	oldDimmed = "#fe8474 dim"
 	newDimmed = "#77c581 dim"
 	contextBold = "#e7ebf3 bold"
-	oldBold = "#f17869 bold"
+	oldBold = "#fe8474 bold"
 	newBold = "#77c581 bold"
 
 [color "diff-highlight"]
-	oldNormal = "#f17869"
-	oldHighlight = "#f17869 #5e2f2f"
+	oldNormal = "#fe8474"
+	oldHighlight = "#fe8474 #5e2f2f"
 	newNormal = "#77c581"
 	newHighlight = "#77c581 #2f4c3c"
 
 [color "status"]
 	header = "#bec6d5"
 	added = "#77c581"
-	changed = "#f17869"
+	changed = "#fe8474"
 	untracked = "#ae9edc"
 	branch = "#77c581 bold"
-	nobranch = "#f17869 bold"
+	nobranch = "#fe8474 bold"
 	localBranch = "#77c581"
-	remoteBranch = "#f17869"
-	unmerged = "#f17869 bold"
+	remoteBranch = "#fe8474"
+	unmerged = "#fe8474 bold"
 
 [color "branch"]
 	current = "#77c581 bold"
 	local = "#d4dae7"
-	remote = "#f17869"
+	remote = "#fe8474"
 	upstream = "#7595da"
 	plain = "#bec6d5"
 	worktree = "#54b4b5"
@@ -53,7 +53,7 @@
 [color "decorate"]
 	HEAD = "#54b4b5 bold"
 	branch = "#77c581 bold"
-	remoteBranch = "#f17869 bold"
+	remoteBranch = "#fe8474 bold"
 	tag = "#f2c03f bold"
 	stash = "#de8946 bold"
 	grafted = "#7595da bold"
@@ -71,7 +71,7 @@
 	prompt = "#de8946 bold"
 	header = "#e7ebf3 bold"
 	help = "#f2c03f"
-	error = "#f17869 bold"
+	error = "#fe8474 bold"
 
 [color "blame"]
 	highlightRecent = "#6f7c97,12 month ago,#bec6d5,1 month ago,#de8946"
@@ -81,13 +81,13 @@
 	hint = "#f2c03f"
 
 [color "push"]
-	error = "#f17869"
+	error = "#fe8474"
 
 [color "transport"]
-	rejected = "#f17869"
+	rejected = "#fe8474"
 
 [color "remote"]
 	hint = "#f2c03f"
 	warning = "#f2c03f bold"
 	success = "#77c581 bold"
-	error = "#f17869 bold"
+	error = "#fe8474 bold"

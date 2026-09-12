@@ -60,8 +60,8 @@ M.orange_hiAlpha = 'E5AA7F'
 M.red = 'rgb(DB6052)'
 M.redAlpha = 'DB6052'
 
-M.red_hi = 'rgb(F17869)'
-M.red_hiAlpha = 'F17869'
+M.red_hi = 'rgb(FE8474)'
+M.red_hiAlpha = 'FE8474'
 
 M.green = 'rgb(77C581)'
 M.greenAlpha = '77C581'

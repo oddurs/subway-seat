@@ -10,20 +10,20 @@
   <entry type="CommentHashbang" style="italic #708178"/>
   <entry type="CommentPreproc" style="italic #CE96B4"/>
   <entry type="Keyword" style="#D0914F"/>
-  <entry type="KeywordConstant" style="#E1837A"/>
-  <entry type="KeywordType" style="italic #6CA087"/>
+  <entry type="KeywordConstant" style="#EE8F85"/>
+  <entry type="KeywordType" style="italic #5FA09D"/>
   <entry type="Operator" style="#8C9A92"/>
   <entry type="OperatorWord" style="#D0914F"/>
   <entry type="Punctuation" style="#8C9A92"/>
   <entry type="Name" style="#D4DDD7"/>
   <entry type="NameAttribute" style="italic #F2BF4B"/>
   <entry type="NameBuiltin" style="italic #F2BF4B"/>
-  <entry type="NameBuiltinPseudo" style="italic #E1837A"/>
-  <entry type="NameClass" style="#6CA087"/>
-  <entry type="NameConstant" style="#E1837A"/>
+  <entry type="NameBuiltinPseudo" style="italic #EE8F85"/>
+  <entry type="NameClass" style="#5FA09D"/>
+  <entry type="NameConstant" style="#EE8F85"/>
   <entry type="NameDecorator" style="italic #CE96B4"/>
   <entry type="NameEntity" style="#CE96B4"/>
-  <entry type="NameException" style="#6CA087"/>
+  <entry type="NameException" style="#5FA09D"/>
   <entry type="NameFunction" style="#F2BF4B"/>
   <entry type="NameFunctionMagic" style="italic #F2BF4B"/>
   <entry type="NameLabel" style="italic #CE96B4"/>
@@ -31,20 +31,20 @@
   <entry type="NameProperty" style="#BFC8C2"/>
   <entry type="NameTag" style="#D0914F"/>
   <entry type="NameVariable" style="#D4DDD7"/>
-  <entry type="NameVariableMagic" style="italic #E1837A"/>
-  <entry type="LiteralDate" style="#E1837A"/>
+  <entry type="NameVariableMagic" style="italic #EE8F85"/>
+  <entry type="LiteralDate" style="#EE8F85"/>
   <entry type="LiteralString" style="#80C28E"/>
   <entry type="LiteralStringAffix" style="#D0914F"/>
   <entry type="LiteralStringEscape" style="#CE96B4"/>
   <entry type="LiteralStringInterpol" style="#CE96B4"/>
   <entry type="LiteralStringRegex" style="#CE96B4"/>
-  <entry type="LiteralStringSymbol" style="#E1837A"/>
-  <entry type="LiteralNumber" style="#E1837A"/>
+  <entry type="LiteralStringSymbol" style="#EE8F85"/>
+  <entry type="LiteralNumber" style="#EE8F85"/>
   <entry type="GenericHeading" style="bold #F2BF4B"/>
   <entry type="GenericSubheading" style="bold #F2BF4B"/>
   <entry type="GenericEmph" style="italic #D4DDD7"/>
   <entry type="GenericStrong" style="bold #E7ECEA"/>
-  <entry type="GenericDeleted" style="bg:#3D2823 #E1837A"/>
+  <entry type="GenericDeleted" style="bg:#3D2823 #EE8F85"/>
   <entry type="GenericInserted" style="bg:#243729 #80C28E"/>
   <entry type="GenericError" style="#CD6B63"/>
   <entry type="GenericOutput" style="#A5B1AA"/>

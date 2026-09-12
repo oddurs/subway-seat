@@ -14,11 +14,11 @@
         Operator               = "${esc}[38;2;222;137;70m"                    # orange
         Variable               = "${esc}[38;2;174;158;220m"                   # clay
         Member                 = "${esc}[38;2;193;201;216m"                   # subtext1
-        Number                 = "${esc}[38;2;241;120;105m"                   # red_hi
+        Number                 = "${esc}[38;2;254;132;116m"                   # red_hi
         Type                   = "${esc}[38;2;84;180;181m"                    # sage
         Keyword                = "${esc}[38;2;222;137;70m"                    # orange
         Comment                = "${esc}[3;38;2;115;129;156m"                 # overlay1, italic
-        Error                  = "${esc}[38;2;241;120;105m"                   # red_hi
+        Error                  = "${esc}[38;2;254;132;116m"                   # red_hi
         Emphasis               = "${esc}[1;38;2;242;192;63m"                  # yellow, bold: search matches
         Selection              = "${esc}[1;38;2;233;237;245;48;2;61;79;114m"  # text_hi on the selection ground
         ContinuationPrompt     = "${esc}[38;2;115;129;156m"                   # overlay1
@@ -44,7 +44,7 @@
             TableHeader            = "${esc}[1;38;2;242;192;63m"
             CustomTableHeaderLabel = "${esc}[1;3;38;2;242;192;63m"
             ErrorAccent            = "${esc}[1;38;2;222;137;70m"
-            Error                  = "${esc}[1;38;2;241;120;105m"
+            Error                  = "${esc}[1;38;2;254;132;116m"
             Warning                = "${esc}[1;38;2;242;192;63m"
             Verbose                = "${esc}[38;2;117;149;218m"
             Debug                  = "${esc}[38;2;84;180;181m"
@@ -61,7 +61,7 @@
             $PSStyle.FileInfo.Directory = "${esc}[1;38;2;242;192;63m"
             $PSStyle.FileInfo.SymbolicLink = "${esc}[38;2;84;180;181m"
             $PSStyle.FileInfo.Executable = "${esc}[1;38;2;119;197;129m"
-            foreach ($ext in '.zip', '.tgz', '.gz', '.tar', '.nupkg', '.cab', '.7z') { $PSStyle.FileInfo.Extension[$ext] = "${esc}[38;2;241;120;105m" }
+            foreach ($ext in '.zip', '.tgz', '.gz', '.tar', '.nupkg', '.cab', '.7z') { $PSStyle.FileInfo.Extension[$ext] = "${esc}[38;2;254;132;116m" }
             foreach ($ext in '.ps1', '.psd1', '.psm1', '.ps1xml') { $PSStyle.FileInfo.Extension[$ext] = "${esc}[38;2;84;180;181m" }
         }
     }

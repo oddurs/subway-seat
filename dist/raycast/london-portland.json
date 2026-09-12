@@ -8,14 +8,14 @@
     "background": "#E8F0FF",
     "backgroundSecondary": "#DCE5F7",
     "text": "#293040",
-    "selection": "#B14A07",
-    "loader": "#896800",
+    "selection": "#A54300",
+    "loader": "#8D6C08",
     "red": "#9B211A",
-    "orange": "#B14A07",
-    "yellow": "#896800",
+    "orange": "#A54300",
+    "yellow": "#8D6C08",
     "green": "#0D8131",
     "blue": "#0019A8",
-    "purple": "#7660AB",
-    "magenta": "#B86100"
+    "purple": "#755FA9",
+    "magenta": "#AC5A00"
   }
 }

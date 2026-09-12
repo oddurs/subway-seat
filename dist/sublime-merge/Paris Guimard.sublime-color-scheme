@@ -21,11 +21,11 @@
     "orange": "#D0914F",
     "orange_hi": "#E7AB6D",
     "red": "#CD6B63",
-    "red_hi": "#E1837A",
+    "red_hi": "#EE8F85",
     "green": "#80C28E",
     "green_hi": "#8FD59E",
-    "sage": "#6CA087",
-    "sage_hi": "#98CCB2",
+    "sage": "#5FA09D",
+    "sage_hi": "#8CCCC9",
     "denim": "#709BC8",
     "denim_hi": "#8DB6E2",
     "clay": "#CE96B4",
@@ -38,7 +38,7 @@
     "tint_chg": "#37341F",
     "tint_chg_emph": "#4D4525",
     "tint_info": "#293D3D",
-    "tint_hint": "#293E34",
+    "tint_hint": "#273E37",
     "tint_search": "#5E5A31",
     "tint_search_cur": "#77603A",
     "inactive_selection": "#30433A",
@@ -56,8 +56,8 @@
     "fold_marker": "var(overlay1)",
     "minimap_border": "var(surface2)",
     "accent": "var(orange)",
-    "popup_css": "html { background-color: #263930; color: #D9E1DB; } a { color: #709BC8; } code, .highlight { background-color: #1E2E26; color: #80C28E; } h1, h2, h3 { color: #F2BF4B; } .error, .errors { color: #E1837A; } .warning, .warnings { color: #F2BF4B; } .info { color: #709BC8; } .hint { color: #6CA087; }",
-    "phantom_css": "html { background-color: #263930; color: #D9E1DB; } a { color: #709BC8; } code, .highlight { background-color: #1E2E26; color: #80C28E; } h1, h2, h3 { color: #F2BF4B; } .error, .errors { color: #E1837A; } .warning, .warnings { color: #F2BF4B; } .info { color: #709BC8; } .hint { color: #6CA087; }",
+    "popup_css": "html { background-color: #263930; color: #D9E1DB; } a { color: #709BC8; } code, .highlight { background-color: #1E2E26; color: #80C28E; } h1, h2, h3 { color: #F2BF4B; } .error, .errors { color: #EE8F85; } .warning, .warnings { color: #F2BF4B; } .info { color: #709BC8; } .hint { color: #5FA09D; }",
+    "phantom_css": "html { background-color: #263930; color: #D9E1DB; } a { color: #709BC8; } code, .highlight { background-color: #1E2E26; color: #80C28E; } h1, h2, h3 { color: #F2BF4B; } .error, .errors { color: #EE8F85; } .warning, .warnings { color: #F2BF4B; } .info { color: #709BC8; } .hint { color: #5FA09D; }",
     "gutter": "var(base)",
     "gutter_foreground": "var(overlay0)",
     "gutter_foreground_highlight": "var(yellow)",
@@ -446,7 +446,7 @@
     },
     {
       "scope": "diff.border.merge-conflict",
-      "background": "#E1837A"
+      "background": "#EE8F85"
     },
     {
       "scope": "diff.border.merge-merged",

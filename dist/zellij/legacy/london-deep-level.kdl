@@ -6,7 +6,7 @@ themes {
         fg "#D4DAE7"
         bg "#232F49"
         black "#0D1421"
-        red "#F17869"
+        red "#FE8474"
         green "#DE8946" // active frame, selected tab
         yellow "#F2C03F"
         blue "#7595DA"

@@ -6,21 +6,21 @@ $env.config.highlight_resolved_externals = true
 $env.config.color_config = {
     shape_internalcall: "#F2BF4B"
     shape_external_resolved: "#F2BF4B"
-    shape_external: "#E1837A"
+    shape_external: "#EE8F85"
     shape_keyword: "#D0914F"
-    shape_flag: "#6CA087"
+    shape_flag: "#5FA09D"
     shape_externalarg: "#C2CBC5"
-    shape_signature: "#6CA087"
+    shape_signature: "#5FA09D"
     shape_string: "#80C28E"
     shape_raw_string: "#80C28E"
     shape_string_interpolation: "#CE96B4"
-    shape_int: "#E1837A"
-    shape_float: "#E1837A"
-    shape_bool: "#E1837A"
-    shape_binary: "#E1837A"
-    shape_datetime: "#E1837A"
-    shape_nothing: "#E1837A"
-    shape_literal: "#E1837A"
+    shape_int: "#EE8F85"
+    shape_float: "#EE8F85"
+    shape_bool: "#EE8F85"
+    shape_binary: "#EE8F85"
+    shape_datetime: "#EE8F85"
+    shape_nothing: "#EE8F85"
+    shape_literal: "#EE8F85"
     shape_range: "#CE96B4"
     shape_custom: "#CE96B4"
     shape_variable: "#CE96B4"
@@ -39,7 +39,7 @@ $env.config.color_config = {
     shape_table: "#909E96"
     shape_match_pattern: "#80C28E"
     shape_matching_brackets: { fg: "#FFD273" attr: "b" }
-    shape_garbage: { fg: "#E1837A" attr: "u" }
+    shape_garbage: { fg: "#EE8F85" attr: "u" }
 
     background: "#1E2E26"
     foreground: "#D9E1DB"
@@ -53,15 +53,15 @@ $env.config.color_config = {
     search_result: { fg: "#E9EEEC" bg: "#5E5A31" }
     selection: { fg: "#E9EEEC" bg: "#3E554A" }
     selection_cursor: { attr: "n" }
-    bool: "#E1837A"
-    int: "#E1837A"
-    float: "#E1837A"
+    bool: "#EE8F85"
+    int: "#EE8F85"
+    float: "#EE8F85"
     string: "#D9E1DB"
     glob: "#CE96B4"
-    binary: "#E1837A"
+    binary: "#EE8F85"
     binary_null_char: "#586B61"
     binary_printable: "#80C28E"
-    binary_whitespace: "#6CA087"
+    binary_whitespace: "#5FA09D"
     binary_ascii_other: "#CE96B4"
     binary_non_ascii: "#D0914F"
     custom: "#CE96B4"
@@ -72,8 +72,8 @@ $env.config.color_config = {
     cell-path: "#909E96"
     block: "#909E96"
     closure: "#909E96"
-    semver: "#6CA087"
-    semver-range: "#6CA087"
+    semver: "#5FA09D"
+    semver-range: "#5FA09D"
     banner_foreground: "#D9E1DB"
     banner_highlight1: "#D0914F"
     banner_highlight2: "#F2BF4B"
@@ -82,13 +82,13 @@ $env.config.color_config = {
       } else if $in < 1mb { "#80C28E"
       } else if $in < 100mb { "#F2BF4B"
       } else if $in < 1gb { "#D0914F"
-      } else { "#E1837A" }
+      } else { "#EE8F85" }
     }
     duration: {||
       if $in < 1sec { "#80C28E"
       } else if $in < 1min { "#F2BF4B"
       } else if $in < 1hr { "#D0914F"
-      } else { "#E1837A" }
+      } else { "#EE8F85" }
     }
     datetime: {|| (date now) - $in |
       if $in < 1hr { "#8FD59E"
@@ -112,5 +112,5 @@ $env.config.explore.status = {
     info: { fg: "#709BC8" }
     success: { fg: "#131A17" bg: "#80C28E" }
     warn: { fg: "#131A17" bg: "#F2BF4B" }
-    error: { fg: "#131A17" bg: "#E1837A" }
+    error: { fg: "#131A17" bg: "#EE8F85" }
 }

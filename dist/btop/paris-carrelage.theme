@@ -11,7 +11,7 @@ theme[main_fg]="#2A342B"
 theme[title]="#1B221C"
 
 # Highlight color for keyboard shortcuts
-theme[hi_fg]="#8A5308"
+theme[hi_fg]="#804B00"
 
 # Background of the selected item in the processes box
 theme[selected_bg]="#B1C0B0"
@@ -29,25 +29,25 @@ theme[graph_text]="#4C574D"
 theme[meter_bg]="#B1C0B0"
 
 # Mini cpu graphs, detailed memory graph and status text in the processes box
-theme[proc_misc]="#0B714D"
+theme[proc_misc]="#006E6B"
 
 # Box outlines
-theme[cpu_box]="#8A5308"
-theme[mem_box]="#8A6700"
+theme[cpu_box]="#804B00"
+theme[mem_box]="#8E6B08"
 theme[net_box]="#207F41"
-theme[proc_box]="#9A557D"
+theme[proc_box]="#98547C"
 
 # Box dividers and small box outlines
 theme[div_line]="#9BAC9A"
 
 # Temperature graph
 theme[temp_start]="#207F41"
-theme[temp_mid]="#8A5D04"
+theme[temp_mid]="#875B04"
 theme[temp_end]="#932D29"
 
 # CPU graph
 theme[cpu_start]="#207F41"
-theme[cpu_mid]="#8A5D04"
+theme[cpu_mid]="#875B04"
 theme[cpu_end]="#932D29"
 
 # Mem/disk free meter
@@ -61,36 +61,36 @@ theme[cached_mid]="#27629C"
 theme[cached_end]="#3E75AD"
 
 # Mem/disk available meter
-theme[available_start]="#B7A66B"
-theme[available_mid]="#8A6700"
-theme[available_end]="#997300"
+theme[available_start]="#B9A86F"
+theme[available_mid]="#8E6B08"
+theme[available_end]="#9D770A"
 
 # Mem/disk used meter
-theme[used_start]="#8A5308"
+theme[used_start]="#804B00"
 theme[used_mid]="#932D29"
-theme[used_end]="#BB403B"
+theme[used_end]="#BE423D"
 
 # Download graph
 theme[download_start]="#7DB38E"
 theme[download_mid]="#207F41"
-theme[download_end]="#8A6700"
+theme[download_end]="#8E6B08"
 
 # Upload graph
-theme[upload_start]="#B79B6F"
-theme[upload_mid]="#8A5308"
-theme[upload_end]="#BB403B"
+theme[upload_start]="#B2976B"
+theme[upload_mid]="#804B00"
+theme[upload_end]="#BE423D"
 
 # Process box gradient for threads, memory and cpu usage
 theme[process_start]="#207F41"
-theme[process_mid]="#8A5D04"
+theme[process_mid]="#875B04"
 theme[process_end]="#932D29"
 
 # Banners over the process list while it is paused or following a process
 theme[proc_pause_bg]="#932D29"
-theme[proc_follow_bg]="#0B714D"
-theme[proc_banner_bg]="#8A5308"
+theme[proc_follow_bg]="#006E6B"
+theme[proc_banner_bg]="#804B00"
 theme[proc_banner_fg]="#EEF3ED"
 
 # The process being followed
-theme[followed_bg]="#0B714D"
+theme[followed_bg]="#006E6B"
 theme[followed_fg]="#EEF3ED"

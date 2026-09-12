@@ -10,7 +10,7 @@
   <entry type="CommentHashbang" style="italic #73819C"/>
   <entry type="CommentPreproc" style="italic #AE9EDC"/>
   <entry type="Keyword" style="#DE8946"/>
-  <entry type="KeywordConstant" style="#F17869"/>
+  <entry type="KeywordConstant" style="#FE8474"/>
   <entry type="KeywordType" style="italic #54B4B5"/>
   <entry type="Operator" style="#8F9AB0"/>
   <entry type="OperatorWord" style="#DE8946"/>
@@ -18,9 +18,9 @@
   <entry type="Name" style="#D8DEEA"/>
   <entry type="NameAttribute" style="italic #F2C03F"/>
   <entry type="NameBuiltin" style="italic #F2C03F"/>
-  <entry type="NameBuiltinPseudo" style="italic #F17869"/>
+  <entry type="NameBuiltinPseudo" style="italic #FE8474"/>
   <entry type="NameClass" style="#54B4B5"/>
-  <entry type="NameConstant" style="#F17869"/>
+  <entry type="NameConstant" style="#FE8474"/>
   <entry type="NameDecorator" style="italic #AE9EDC"/>
   <entry type="NameEntity" style="#AE9EDC"/>
   <entry type="NameException" style="#54B4B5"/>
@@ -31,20 +31,20 @@
   <entry type="NameProperty" style="#C1C9D8"/>
   <entry type="NameTag" style="#DE8946"/>
   <entry type="NameVariable" style="#D8DEEA"/>
-  <entry type="NameVariableMagic" style="italic #F17869"/>
-  <entry type="LiteralDate" style="#F17869"/>
+  <entry type="NameVariableMagic" style="italic #FE8474"/>
+  <entry type="LiteralDate" style="#FE8474"/>
   <entry type="LiteralString" style="#77C581"/>
   <entry type="LiteralStringAffix" style="#DE8946"/>
   <entry type="LiteralStringEscape" style="#AE9EDC"/>
   <entry type="LiteralStringInterpol" style="#AE9EDC"/>
   <entry type="LiteralStringRegex" style="#AE9EDC"/>
-  <entry type="LiteralStringSymbol" style="#F17869"/>
-  <entry type="LiteralNumber" style="#F17869"/>
+  <entry type="LiteralStringSymbol" style="#FE8474"/>
+  <entry type="LiteralNumber" style="#FE8474"/>
   <entry type="GenericHeading" style="bold #F2C03F"/>
   <entry type="GenericSubheading" style="bold #F2C03F"/>
   <entry type="GenericEmph" style="italic #D8DEEA"/>
   <entry type="GenericStrong" style="bold #E9EDF5"/>
-  <entry type="GenericDeleted" style="bg:#462B31 #F17869"/>
+  <entry type="GenericDeleted" style="bg:#462B31 #FE8474"/>
   <entry type="GenericInserted" style="bg:#283E3A #77C581"/>
   <entry type="GenericError" style="#DB6052"/>
   <entry type="GenericOutput" style="#A9B2C4"/>

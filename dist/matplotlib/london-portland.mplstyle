@@ -8,7 +8,7 @@ axes.facecolor: E8F0FF
 axes.edgecolor: 8192B4
 axes.labelcolor: 3C4557
 axes.titlecolor: 1B202B
-axes.prop_cycle: cycler('color', ['B14A07', '007376', '896800', '0019A8', 'C92B23', '0D8131', '7660AB'])
+axes.prop_cycle: cycler('color', ['A54300', '007376', '8D6C08', '0019A8', 'CC2E25', '0D8131', '755FA9'])
 text.color: 293040
 xtick.color: 697794
 ytick.color: 697794
@@ -17,7 +17,7 @@ ytick.labelcolor: 4A5469
 grid.color: D5DCEC
 legend.facecolor: F4F8FF
 legend.edgecolor: D7DCE4
-patch.facecolor: B14A07
+patch.facecolor: A54300
 patch.edgecolor: E8F0FF
 hatch.color: 4A5469
 boxplot.boxprops.color: 3C4557
@@ -25,7 +25,7 @@ boxplot.whiskerprops.color: 3C4557
 boxplot.capprops.color: 3C4557
 boxplot.flierprops.color: 3C4557
 boxplot.flierprops.markeredgecolor: 3C4557
-boxplot.medianprops.color: B14A07
-boxplot.meanprops.color: 896800
-boxplot.meanprops.markerfacecolor: 896800
-boxplot.meanprops.markeredgecolor: 896800
+boxplot.medianprops.color: A54300
+boxplot.meanprops.color: 8D6C08
+boxplot.meanprops.markerfacecolor: 8D6C08
+boxplot.meanprops.markeredgecolor: 8D6C08

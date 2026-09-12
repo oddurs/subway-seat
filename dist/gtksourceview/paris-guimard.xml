@@ -26,11 +26,11 @@
   <color name="orange" value="#D0914F"/>
   <color name="orange_hi" value="#E7AB6D"/>
   <color name="red" value="#CD6B63"/>
-  <color name="red_hi" value="#E1837A"/>
+  <color name="red_hi" value="#EE8F85"/>
   <color name="green" value="#80C28E"/>
   <color name="green_hi" value="#8FD59E"/>
-  <color name="sage" value="#6CA087"/>
-  <color name="sage_hi" value="#98CCB2"/>
+  <color name="sage" value="#5FA09D"/>
+  <color name="sage_hi" value="#8CCCC9"/>
   <color name="denim" value="#709BC8"/>
   <color name="denim_hi" value="#8DB6E2"/>
   <color name="clay" value="#CE96B4"/>
@@ -43,7 +43,7 @@
   <color name="tint_chg" value="#37341F"/>
   <color name="tint_chg_emph" value="#4D4525"/>
   <color name="tint_info" value="#293D3D"/>
-  <color name="tint_hint" value="#293E34"/>
+  <color name="tint_hint" value="#273E37"/>
   <color name="tint_search" value="#5E5A31"/>
   <color name="tint_search_cur" value="#77603A"/>
   <color name="selection_unfocused" value="#30433A"/>

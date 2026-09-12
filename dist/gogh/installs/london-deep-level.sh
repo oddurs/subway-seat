@@ -13,7 +13,7 @@ export COLOR_07="#54B4B5"           # Cyan (Prompt)
 export COLOR_08="#BEC6D5"           # White
 
 export COLOR_09="#6F7C97"           # Bright Black
-export COLOR_10="#F17869"           # Bright Red (Command error)
+export COLOR_10="#FE8474"           # Bright Red (Command error)
 export COLOR_11="#9AD2A0"           # Bright Green (Exec)
 export COLOR_12="#FFD36C"           # Bright Yellow
 export COLOR_13="#8BB0FF"           # Bright Blue (Folder)

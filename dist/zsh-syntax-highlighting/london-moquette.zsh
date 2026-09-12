@@ -5,7 +5,7 @@ typeset -gA ZSH_HIGHLIGHT_STYLES
 
 # General
 ZSH_HIGHLIGHT_STYLES[default]='fg=#D8DEEA'
-ZSH_HIGHLIGHT_STYLES[unknown-token]='fg=#F17869'
+ZSH_HIGHLIGHT_STYLES[unknown-token]='fg=#FE8474'
 ZSH_HIGHLIGHT_STYLES[comment]='fg=#73819C,italic'
 
 # Commands
@@ -37,15 +37,15 @@ ZSH_HIGHLIGHT_STYLES[path_prefix]='fg=#C1C9D8,underline'
 ZSH_HIGHLIGHT_STYLES[path_prefix_pathseparator]='fg=#8F9AB0,underline'
 ZSH_HIGHLIGHT_STYLES[globbing]='fg=#AE9EDC'
 ZSH_HIGHLIGHT_STYLES[history-expansion]='fg=#AE9EDC'
-ZSH_HIGHLIGHT_STYLES[arithmetic-expansion]='fg=#F17869'
+ZSH_HIGHLIGHT_STYLES[arithmetic-expansion]='fg=#FE8474'
 
 # Strings
 ZSH_HIGHLIGHT_STYLES[single-quoted-argument]='fg=#77C581'
-ZSH_HIGHLIGHT_STYLES[single-quoted-argument-unclosed]='fg=#F17869'
+ZSH_HIGHLIGHT_STYLES[single-quoted-argument-unclosed]='fg=#FE8474'
 ZSH_HIGHLIGHT_STYLES[double-quoted-argument]='fg=#77C581'
-ZSH_HIGHLIGHT_STYLES[double-quoted-argument-unclosed]='fg=#F17869'
+ZSH_HIGHLIGHT_STYLES[double-quoted-argument-unclosed]='fg=#FE8474'
 ZSH_HIGHLIGHT_STYLES[dollar-quoted-argument]='fg=#77C581'
-ZSH_HIGHLIGHT_STYLES[dollar-quoted-argument-unclosed]='fg=#F17869'
+ZSH_HIGHLIGHT_STYLES[dollar-quoted-argument-unclosed]='fg=#FE8474'
 ZSH_HIGHLIGHT_STYLES[rc-quote]='fg=#AE9EDC'
 ZSH_HIGHLIGHT_STYLES[dollar-double-quoted-argument]='fg=#AE9EDC'
 ZSH_HIGHLIGHT_STYLES[back-double-quoted-argument]='fg=#AE9EDC'
@@ -61,11 +61,11 @@ ZSH_HIGHLIGHT_STYLES[command-substitution-delimiter-quoted]='fg=#AE9EDC'
 ZSH_HIGHLIGHT_STYLES[process-substitution]='none'
 ZSH_HIGHLIGHT_STYLES[process-substitution-delimiter]='fg=#AE9EDC'
 ZSH_HIGHLIGHT_STYLES[back-quoted-argument]='none'
-ZSH_HIGHLIGHT_STYLES[back-quoted-argument-unclosed]='fg=#F17869'
+ZSH_HIGHLIGHT_STYLES[back-quoted-argument-unclosed]='fg=#FE8474'
 ZSH_HIGHLIGHT_STYLES[back-quoted-argument-delimiter]='fg=#AE9EDC'
 
 # brackets and cursor highlighters (only used if enabled in ZSH_HIGHLIGHT_HIGHLIGHTERS)
-ZSH_HIGHLIGHT_STYLES[bracket-error]='fg=#F17869,bold'
+ZSH_HIGHLIGHT_STYLES[bracket-error]='fg=#FE8474,bold'
 ZSH_HIGHLIGHT_STYLES[bracket-level-1]='fg=#F2C03F'
 ZSH_HIGHLIGHT_STYLES[bracket-level-2]='fg=#DE8946'
 ZSH_HIGHLIGHT_STYLES[bracket-level-3]='fg=#77C581'

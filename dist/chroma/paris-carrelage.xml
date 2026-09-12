@@ -8,47 +8,47 @@
   <entry type="Error" style="#932D29"/>
   <entry type="Comment" style="italic #6E7C6E"/>
   <entry type="CommentHashbang" style="italic #6E7C6E"/>
-  <entry type="CommentPreproc" style="italic #9A557D"/>
-  <entry type="Keyword" style="#8A5308"/>
-  <entry type="KeywordConstant" style="#BB403B"/>
-  <entry type="KeywordType" style="italic #0B714D"/>
+  <entry type="CommentPreproc" style="italic #98547C"/>
+  <entry type="Keyword" style="#804B00"/>
+  <entry type="KeywordConstant" style="#BE423D"/>
+  <entry type="KeywordType" style="italic #006E6B"/>
   <entry type="Operator" style="#586459"/>
-  <entry type="OperatorWord" style="#8A5308"/>
+  <entry type="OperatorWord" style="#804B00"/>
   <entry type="Punctuation" style="#586459"/>
   <entry type="Name" style="#2A342B"/>
-  <entry type="NameAttribute" style="italic #8A6700"/>
-  <entry type="NameBuiltin" style="italic #8A6700"/>
-  <entry type="NameBuiltinPseudo" style="italic #BB403B"/>
-  <entry type="NameClass" style="#0B714D"/>
-  <entry type="NameConstant" style="#BB403B"/>
-  <entry type="NameDecorator" style="italic #9A557D"/>
-  <entry type="NameEntity" style="#9A557D"/>
-  <entry type="NameException" style="#0B714D"/>
-  <entry type="NameFunction" style="#8A6700"/>
-  <entry type="NameFunctionMagic" style="italic #8A6700"/>
-  <entry type="NameLabel" style="italic #9A557D"/>
+  <entry type="NameAttribute" style="italic #8E6B08"/>
+  <entry type="NameBuiltin" style="italic #8E6B08"/>
+  <entry type="NameBuiltinPseudo" style="italic #BE423D"/>
+  <entry type="NameClass" style="#006E6B"/>
+  <entry type="NameConstant" style="#BE423D"/>
+  <entry type="NameDecorator" style="italic #98547C"/>
+  <entry type="NameEntity" style="#98547C"/>
+  <entry type="NameException" style="#006E6B"/>
+  <entry type="NameFunction" style="#8E6B08"/>
+  <entry type="NameFunctionMagic" style="italic #8E6B08"/>
+  <entry type="NameLabel" style="italic #98547C"/>
   <entry type="NameNamespace" style="#4C574D"/>
   <entry type="NameProperty" style="#3D473E"/>
-  <entry type="NameTag" style="#8A5308"/>
+  <entry type="NameTag" style="#804B00"/>
   <entry type="NameVariable" style="#2A342B"/>
-  <entry type="NameVariableMagic" style="italic #BB403B"/>
-  <entry type="LiteralDate" style="#BB403B"/>
+  <entry type="NameVariableMagic" style="italic #BE423D"/>
+  <entry type="LiteralDate" style="#BE423D"/>
   <entry type="LiteralString" style="#207F41"/>
-  <entry type="LiteralStringAffix" style="#8A5308"/>
-  <entry type="LiteralStringEscape" style="#9A557D"/>
-  <entry type="LiteralStringInterpol" style="#9A557D"/>
-  <entry type="LiteralStringRegex" style="#9A557D"/>
-  <entry type="LiteralStringSymbol" style="#BB403B"/>
-  <entry type="LiteralNumber" style="#BB403B"/>
-  <entry type="GenericHeading" style="bold #8A6700"/>
-  <entry type="GenericSubheading" style="bold #8A6700"/>
+  <entry type="LiteralStringAffix" style="#804B00"/>
+  <entry type="LiteralStringEscape" style="#98547C"/>
+  <entry type="LiteralStringInterpol" style="#98547C"/>
+  <entry type="LiteralStringRegex" style="#98547C"/>
+  <entry type="LiteralStringSymbol" style="#BE423D"/>
+  <entry type="LiteralNumber" style="#BE423D"/>
+  <entry type="GenericHeading" style="bold #8E6B08"/>
+  <entry type="GenericSubheading" style="bold #8E6B08"/>
   <entry type="GenericEmph" style="italic #2A342B"/>
   <entry type="GenericStrong" style="bold #1B221C"/>
-  <entry type="GenericDeleted" style="bg:#E9D5D4 #BB403B"/>
+  <entry type="GenericDeleted" style="bg:#E9D5D4 #BE423D"/>
   <entry type="GenericInserted" style="bg:#C5DECE #207F41"/>
   <entry type="GenericError" style="#932D29"/>
   <entry type="GenericOutput" style="#4C574D"/>
-  <entry type="GenericPrompt" style="#8A5308"/>
+  <entry type="GenericPrompt" style="#804B00"/>
   <entry type="GenericTraceback" style="#932D29"/>
   <entry type="GenericUnderline" style="underline"/>
 </style>

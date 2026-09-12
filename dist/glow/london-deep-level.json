@@ -104,7 +104,7 @@
       },
       "error": {
         "color": "#0A0E18",
-        "background_color": "#F17869"
+        "background_color": "#FE8474"
       },
       "comment": {
         "color": "#6F7C97",
@@ -151,7 +151,7 @@
         "color": "#54B4B5"
       },
       "name_constant": {
-        "color": "#F17869"
+        "color": "#FE8474"
       },
       "name_decorator": {
         "color": "#AE9EDC",
@@ -167,13 +167,13 @@
         "color": "#D4DAE7"
       },
       "literal": {
-        "color": "#F17869"
+        "color": "#FE8474"
       },
       "literal_number": {
-        "color": "#F17869"
+        "color": "#FE8474"
       },
       "literal_date": {
-        "color": "#F17869"
+        "color": "#FE8474"
       },
       "literal_string": {
         "color": "#77C581"
@@ -182,7 +182,7 @@
         "color": "#AE9EDC"
       },
       "generic_deleted": {
-        "color": "#F17869"
+        "color": "#FE8474"
       },
       "generic_emph": {
         "color": "#D4DAE7",

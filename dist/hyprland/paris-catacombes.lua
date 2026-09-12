@@ -60,8 +60,8 @@ M.orange_hiAlpha = 'E7AB6D'
 M.red = 'rgb(CD6B63)'
 M.redAlpha = 'CD6B63'
 
-M.red_hi = 'rgb(E1837A)'
-M.red_hiAlpha = 'E1837A'
+M.red_hi = 'rgb(EE8F85)'
+M.red_hiAlpha = 'EE8F85'
 
 M.green = 'rgb(80C28E)'
 M.greenAlpha = '80C28E'
@@ -69,11 +69,11 @@ M.greenAlpha = '80C28E'
 M.green_hi = 'rgb(8FD59E)'
 M.green_hiAlpha = '8FD59E'
 
-M.sage = 'rgb(6CA087)'
-M.sageAlpha = '6CA087'
+M.sage = 'rgb(5FA09D)'
+M.sageAlpha = '5FA09D'
 
-M.sage_hi = 'rgb(98CCB2)'
-M.sage_hiAlpha = '98CCB2'
+M.sage_hi = 'rgb(8CCCC9)'
+M.sage_hiAlpha = '8CCCC9'
 
 M.denim = 'rgb(709BC8)'
 M.denimAlpha = '709BC8'

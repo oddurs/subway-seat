@@ -5,7 +5,7 @@
 user-input-color: "#F2BF4B"
 assistant-output-color: "#D4DDD7"
 tool-output-color: "#A5B1AA"
-tool-error-color: "#E1837A"
+tool-error-color: "#EE8F85"
 tool-warning-color: "#D0914F"
 completion-menu-color: "#D4DDD7"
 completion-menu-bg-color: "#1A2921"

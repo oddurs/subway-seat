@@ -12,33 +12,33 @@
 	zero-style = syntax
 	whitespace-error-style = normal "#9B211A"
 	# git --color-moved: git's defaults and the git port's colors
-	map-styles = bold purple => syntax "#F3E4E4", bold "#B14A07" => syntax "#F3E4E4", bold blue => syntax "#E0D8BD", bold "#0019A8" => syntax "#E0D8BD", bold cyan => syntax "#D8EBDE", bold "#007376" => syntax "#D8EBDE", bold yellow => syntax "#E0D8BD", bold "#896800" => syntax "#E0D8BD"
+	map-styles = bold purple => syntax "#F3E4E4", bold "#A54300" => syntax "#F3E4E4", bold blue => syntax "#E1D9BF", bold "#0019A8" => syntax "#E1D9BF", bold cyan => syntax "#D8EBDE", bold "#007376" => syntax "#D8EBDE", bold yellow => syntax "#E1D9BF", bold "#8D6C08" => syntax "#E1D9BF"
 	# line numbers (with line-numbers = true) in the color of their change
 	line-numbers-plus-style = "#0D8131"
-	line-numbers-minus-style = "#C92B23"
+	line-numbers-minus-style = "#CC2E25"
 	line-numbers-zero-style = "#697794"
 	line-numbers-left-style = "#8192B4"
 	line-numbers-right-style = "#8192B4"
 	# file and hunk headers
 	file-style = "#1B202B" bold
-	file-decoration-style = "#B14A07" ul
+	file-decoration-style = "#A54300" ul
 	hunk-header-style = file line-number syntax
 	hunk-header-file-style = "#3C4557"
 	hunk-header-line-number-style = "#0019A8"
 	hunk-header-decoration-style = "#0019A8" box
-	commit-decoration-style = "#896800" box
+	commit-decoration-style = "#8D6C08" box
 	inline-hint-style = "#697794"
 	# git blame
 	blame-palette = "#E8F0FF #DCE5F7 #CCDAF2"
 	blame-separator-style = "#8192B4"
 	# git grep / rg --json
-	grep-file-style = "#B14A07"
+	grep-file-style = "#A54300"
 	grep-line-number-style = "#0D8131"
 	grep-match-line-style = syntax
-	grep-match-word-style = "#1B202B" "#CBC7B2" bold
-	grep-header-file-style = "#B14A07" bold
+	grep-match-word-style = "#1B202B" "#CDC8B5" bold
+	grep-header-file-style = "#A54300" bold
 	# merge conflicts (git's diff3 or zdiff3 conflict style)
-	merge-conflict-ours-diff-header-style = "#896800" bold
-	merge-conflict-ours-diff-header-decoration-style = "#896800" box
+	merge-conflict-ours-diff-header-style = "#8D6C08" bold
+	merge-conflict-ours-diff-header-decoration-style = "#8D6C08" box
 	merge-conflict-theirs-diff-header-style = "#007376" bold
 	merge-conflict-theirs-diff-header-decoration-style = "#007376" box

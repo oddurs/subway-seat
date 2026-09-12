@@ -33,26 +33,26 @@ size:
   number_kilo: {foreground: "#77C581"}
   number_mega: {foreground: "#F2C03F"}
   number_giga: {foreground: "#DE8946"}
-  number_huge: {foreground: "#F17869"}
+  number_huge: {foreground: "#FE8474"}
   unit_byte: {foreground: "#7F899D"}
   unit_kilo: {foreground: "#5C966E"}
   unit_mega: {foreground: "#B29340"}
   unit_giga: {foreground: "#A46C44"}
-  unit_huge: {foreground: "#B2605D"}
+  unit_huge: {foreground: "#BB6965"}
 users:
   user_you: {foreground: "#F2C03F"}
-  user_root: {foreground: "#F17869"}
+  user_root: {foreground: "#FE8474"}
   user_other: {foreground: "#A9B2C4"}
   group_yours: {foreground: "#C1C9D8"}
   group_other: {foreground: "#8F9AB0"}
-  group_root: {foreground: "#F17869"}
+  group_root: {foreground: "#FE8474"}
 links:
   normal: {foreground: "#54B4B5"}
   multi_link_file: {foreground: "#DE8946"}
 git:
   new: {foreground: "#77C581"}
   modified: {foreground: "#F2C03F"}
-  deleted: {foreground: "#F17869"}
+  deleted: {foreground: "#FE8474"}
   renamed: {foreground: "#54B4B5"}
   typechange: {foreground: "#AE9EDC"}
   ignored: {foreground: "#576685"}
@@ -77,7 +77,7 @@ file_type:
   lossless: {foreground: "#E5AA7F", is_bold: true}
   crypto: {foreground: "#DB6052"}
   document: {foreground: "#7595DA"}
-  compressed: {foreground: "#F17869"}
+  compressed: {foreground: "#FE8474"}
   temp: {foreground: "#576685"}
   compiled: {foreground: "#73819C"}
   build: {foreground: "#F2C03F", is_underline: true}
@@ -91,7 +91,7 @@ octal: {foreground: "#AE9EDC"}
 flags: {foreground: "#8F9AB0"}
 symlink_path: {foreground: "#A9B2C4"}
 control_char: {foreground: "#AE9EDC"}
-broken_symlink: {foreground: "#F17869"}
+broken_symlink: {foreground: "#FE8474"}
 broken_path_overlay: {is_underline: true}
 filenames:
   "README.md": {filename: {foreground: "#FFD36C", is_bold: true}}

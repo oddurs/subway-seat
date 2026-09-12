@@ -26,12 +26,12 @@ export const tunnel = stylex.createTheme(art, {
 
 export const enamel = stylex.createTheme(art, {
   red: "#C04331",
-  orange: "#D0691B",
-  yellow: "#C89526",
+  orange: "#CA661B",
+  yellow: "#CA972A",
   green: "#8D9A36",
   sage: "#669279",
   denim: "#628299",
-  clay: "#C2764E",
+  clay: "#C2764D",
   page: "#FAF4E9",
 });
 
@@ -59,12 +59,12 @@ export const deep = stylex.createTheme(art, {
 
 export const portland = stylex.createTheme(art, {
   red: "#BE4439",
-  orange: "#CA6D2A",
-  yellow: "#C39823",
+  orange: "#C46A26",
+  yellow: "#C59A26",
   green: "#47A65D",
   sage: "#2E9799",
   denim: "#405DC4",
-  clay: "#9582C6",
+  clay: "#9482C5",
   page: "#EFF4FF",
 });
 
@@ -73,7 +73,7 @@ export const guimard = stylex.createTheme(art, {
   orange: "#D0914F",
   yellow: "#F2BF4B",
   green: "#80C28E",
-  sage: "#6CA087",
+  sage: "#5FA09D",
   denim: "#709BC8",
   clay: "#CE96B4",
   page: "#101513",
@@ -84,7 +84,7 @@ export const catacombes = stylex.createTheme(art, {
   orange: "#D0914F",
   yellow: "#F2BF4B",
   green: "#80C28E",
-  sage: "#6CA087",
+  sage: "#5FA09D",
   denim: "#709BC8",
   clay: "#CE96B4",
   page: "#080D0B",
@@ -92,11 +92,11 @@ export const catacombes = stylex.createTheme(art, {
 
 export const carrelage = stylex.createTheme(art, {
   red: "#B34F49",
-  orange: "#B0752F",
-  yellow: "#C39729",
+  orange: "#AC722B",
+  yellow: "#C5992D",
   green: "#55A46B",
-  sage: "#408B6D",
+  sage: "#348A86",
   denim: "#4F81B4",
-  clay: "#B7799B",
+  clay: "#B6789B",
   page: "#F3F7F2",
 });

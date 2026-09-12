@@ -16,7 +16,7 @@ color_07: '#86AD95'    # Cyan (Prompt)
 color_08: '#D9C6A3'    # White
 
 color_09: '#967B5C'    # Bright Black
-color_10: '#F97160'    # Bright Red (Command error)
+color_10: '#FF8373'    # Bright Red (Command error)
 color_11: '#BFCB63'    # Bright Green (Exec)
 color_12: '#FFD36B'    # Bright Yellow
 color_13: '#9DB6C6'    # Bright Blue (Folder)

@@ -15,7 +15,7 @@
 	map-styles = bold purple => syntax "#412217", bold "#EC7F31" => syntax "#412217", bold blue => syntax "#423117", bold "#7F9BAE" => syntax "#423117", bold cyan => syntax "#342D18", bold "#86AD95" => syntax "#342D18", bold yellow => syntax "#423117", bold "#F3BF45" => syntax "#423117"
 	# line numbers (with line-numbers = true) in the color of their change
 	line-numbers-plus-style = "#ADB956"
-	line-numbers-minus-style = "#F97160"
+	line-numbers-minus-style = "#FF8373"
 	line-numbers-zero-style = "#967B5C"
 	line-numbers-left-style = "#7B6047"
 	line-numbers-right-style = "#7B6047"

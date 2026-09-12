@@ -4,7 +4,7 @@
   "globals": {
     "foreground": "#293040",
     "background": "#F4F8FF",
-    "caret": "#B14A07",
+    "caret": "#A54300",
     "line_highlight": "#F4F8FF",
     "selection": "#A8BBE2",
     "selection_border": "#A8BBE2",
@@ -17,11 +17,11 @@
     },
     {
       "scope": "keyword, storage",
-      "foreground": "#B14A07"
+      "foreground": "#A54300"
     },
     {
       "scope": "constant",
-      "foreground": "#C92B23"
+      "foreground": "#CC2E25"
     },
     {
       "scope": "string",
@@ -29,7 +29,7 @@
     },
     {
       "scope": "constant.character.escape",
-      "foreground": "#7660AB"
+      "foreground": "#755FA9"
     }
   ]
 }

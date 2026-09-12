@@ -14,19 +14,19 @@
 @define-color subtext1 #3D473E;
 @define-color text #2A342B;
 @define-color text_hi #1B221C;
-@define-color yellow #8A6700;
-@define-color yellow_hi #997300;
-@define-color orange #8A5308;
-@define-color orange_hi #AE6800;
+@define-color yellow #8E6B08;
+@define-color yellow_hi #9D770A;
+@define-color orange #804B00;
+@define-color orange_hi #A26100;
 @define-color red #932D29;
-@define-color red_hi #BB403B;
+@define-color red_hi #BE423D;
 @define-color green #207F41;
 @define-color green_hi #168540;
-@define-color sage #0B714D;
-@define-color sage_hi #3D8666;
+@define-color sage #006E6B;
+@define-color sage_hi #1E8683;
 @define-color denim #27629C;
 @define-color denim_hi #3E75AD;
-@define-color clay #9A557D;
+@define-color clay #98547C;
 
 /* Layers: a raised ground for popovers, and washes of text for borders, hover and selection */
 @define-color paper #F6F9F6;

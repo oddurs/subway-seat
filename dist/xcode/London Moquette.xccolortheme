@@ -80,7 +80,7 @@
 	<key>DVTScrollbarMarkerDiffConflictColor</key>
 	<string>0.870588 0.537255 0.27451 1</string>
 	<key>DVTScrollbarMarkerErrorColor</key>
-	<string>0.945098 0.470588 0.411765 1</string>
+	<string>0.996078 0.517647 0.454902 1</string>
 	<key>DVTScrollbarMarkerRuntimeIssueColor</key>
 	<string>0.682353 0.619608 0.862745 1</string>
 	<key>DVTScrollbarMarkerWarningColor</key>
@@ -118,9 +118,9 @@
 		<key>xcode.syntax.identifier.class.system</key>
 		<string>0.329412 0.705882 0.709804 1</string>
 		<key>xcode.syntax.identifier.constant</key>
-		<string>0.945098 0.470588 0.411765 1</string>
+		<string>0.996078 0.517647 0.454902 1</string>
 		<key>xcode.syntax.identifier.constant.system</key>
-		<string>0.945098 0.470588 0.411765 1</string>
+		<string>0.996078 0.517647 0.454902 1</string>
 		<key>xcode.syntax.identifier.function</key>
 		<string>0.94902 0.752941 0.247059 1</string>
 		<key>xcode.syntax.identifier.function.system</key>
@@ -144,7 +144,7 @@
 		<key>xcode.syntax.markup.code</key>
 		<string>0.466667 0.772549 0.505882 1</string>
 		<key>xcode.syntax.number</key>
-		<string>0.945098 0.470588 0.411765 1</string>
+		<string>0.996078 0.517647 0.454902 1</string>
 		<key>xcode.syntax.plain</key>
 		<string>0.847059 0.870588 0.917647 1</string>
 		<key>xcode.syntax.preprocessor</key>
@@ -156,7 +156,7 @@
 		<key>xcode.syntax.regex.charname</key>
 		<string>0.329412 0.705882 0.709804 1</string>
 		<key>xcode.syntax.regex.number</key>
-		<string>0.945098 0.470588 0.411765 1</string>
+		<string>0.996078 0.517647 0.454902 1</string>
 		<key>xcode.syntax.regex.other</key>
 		<string>0.870588 0.537255 0.27451 1</string>
 		<key>xcode.syntax.string</key>

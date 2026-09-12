@@ -1,18 +1,18 @@
 /* Subway Seat — generated from palette.py by build.py. Edit the palette, not this file. */
 /* Subway Seat Enamel for GTK 4 and libadwaita */
 
-@define-color accent_bg_color #AD4E00;
+@define-color accent_bg_color #A04800;
 @define-color accent_fg_color #FCF7EF;
-@define-color accent_color #AD4E00;
+@define-color accent_color #A04800;
 @define-color destructive_bg_color #992418;
 @define-color destructive_fg_color #FCF7EF;
 @define-color destructive_color #992418;
 @define-color success_bg_color #66740F;
 @define-color success_fg_color #FCF7EF;
 @define-color success_color #66740F;
-@define-color warning_bg_color #936200;
+@define-color warning_bg_color #976608;
 @define-color warning_fg_color #FCF7EF;
-@define-color warning_color #936200;
+@define-color warning_color #976608;
 @define-color error_bg_color #992418;
 @define-color error_fg_color #FCF7EF;
 @define-color error_color #992418;

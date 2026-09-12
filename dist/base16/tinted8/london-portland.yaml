@@ -21,75 +21,75 @@ palette:
   gray-bright: "#8192B4"
   gray-dim: "#556179"
   red: "#9B211A"
-  red-bright: "#C92B23"
+  red-bright: "#CC2E25"
   green: "#0D8131"
   green-bright: "#008730"
-  yellow: "#896800"
-  yellow-bright: "#977300"
+  yellow: "#8D6C08"
+  yellow-bright: "#9B770A"
   blue: "#0019A8"
   blue-bright: "#4A6EBD"
-  magenta: "#B14A07"
-  magenta-bright: "#B86100"
+  magenta: "#A54300"
+  magenta-bright: "#AC5A00"
   cyan: "#007376"
   cyan-bright: "#008688"
-  orange: "#B14A07"
-  orange-bright: "#B86100"
-  brown: "#7660AB"
+  orange: "#A54300"
+  orange-bright: "#AC5A00"
+  brown: "#755FA9"
 syntax:
   comment: "#697794" # comment
   punctuation.definition.comment: "#697794" # comment
-  constant: "#C92B23" # constant
-  constant.numeric: "#C92B23" # number
-  constant.language: "#C92B23" # boolean
-  constant.character: "#7660AB" # string.escape
+  constant: "#CC2E25" # constant
+  constant.numeric: "#CC2E25" # number
+  constant.language: "#CC2E25" # boolean
+  constant.character: "#755FA9" # string.escape
   entity.name: "#293040" # variable
-  entity.name.function: "#896800" # function
+  entity.name.function: "#8D6C08" # function
   entity.name.class: "#007376" # type
   entity.name.type: "#007376" # type
   entity.name.namespace: "#4A5469" # namespace
-  entity.name.tag: "#B14A07" # tag
-  entity.name.label: "#7660AB" # decorator
-  entity.name.section: "#896800" # heading
+  entity.name.tag: "#A54300" # tag
+  entity.name.label: "#755FA9" # decorator
+  entity.name.section: "#8D6C08" # heading
   entity.other: "#293040" # variable
-  entity.other.attribute-name: "#896800" # attribute
+  entity.other.attribute-name: "#8D6C08" # attribute
   entity.other.inherited-class: "#007376" # type
   invalid: "#9B211A" # invalid
-  invalid.deprecated: "#7660AB" # clay
-  keyword: "#B14A07" # keyword
+  invalid.deprecated: "#755FA9" # clay
+  keyword: "#A54300" # keyword
   keyword.operator: "#556179" # operator
   markup: "#293040" # text
   markup.bold: "#1B202B" # strong
   markup.italic: "#293040" # emphasis
-  markup.heading: "#896800" # heading
+  markup.heading: "#8D6C08" # heading
   markup.link: "#0019A8" # link
-  markup.list: "#B14A07" # keyword
+  markup.list: "#A54300" # keyword
   markup.quote: "#4A5469" # quote
   markup.raw: "#0D8131" # code
   markup.inserted: "#0D8131" # green
-  markup.deleted: "#C92B23" # red_hi
-  markup.changed: "#896800" # yellow
+  markup.deleted: "#CC2E25" # red_hi
+  markup.changed: "#8D6C08" # yellow
   meta: "#293040" # text
-  meta.annotation: "#7660AB" # decorator
+  meta.annotation: "#755FA9" # decorator
   punctuation: "#556179" # punctuation
   punctuation.definition.string: "#0D8131" # string
   punctuation.section: "#556179" # punctuation
-  storage: "#B14A07" # storage
+  storage: "#A54300" # storage
   string: "#0D8131" # string
-  string.regexp: "#7660AB" # regexp
-  string.interpolated: "#7660AB" # string.escape
-  support: "#896800" # function
+  string.regexp: "#755FA9" # regexp
+  string.interpolated: "#755FA9" # string.escape
+  support: "#8D6C08" # function
   support.class: "#007376" # type
   support.type: "#007376" # type.builtin
-  support.constant: "#C92B23" # constant
-  support.function.builtin: "#896800" # function.builtin
-  support.variable: "#C92B23" # variable.builtin
+  support.constant: "#CC2E25" # constant
+  support.function.builtin: "#8D6C08" # function.builtin
+  support.variable: "#CC2E25" # variable.builtin
   variable: "#293040" # variable
-  variable.language: "#C92B23" # variable.builtin
+  variable.language: "#CC2E25" # variable.builtin
   variable.parameter: "#3C4557" # parameter
   variable.other.property: "#3C4557" # property
 ui:
   accent:
-    normal: "#B14A07"
+    normal: "#A54300"
   border:
     normal: "#A8BBE2"
   chrome:
@@ -103,12 +103,12 @@ ui:
       light: "#293040"
   cursor:
     normal:
-      background: "#B14A07"
+      background: "#A54300"
       foreground: "#E8F0FF"
     muted:
       background: "#697794"
       foreground: "#E8F0FF"
-  deprecated: "#7660AB"
+  deprecated: "#755FA9"
   global:
     background:
       normal: "#E8F0FF"
@@ -127,9 +127,9 @@ ui:
       foreground: "#1B202B"
     line:
       background: "#DCE5F7"
-      foreground: "#B14A07"
+      foreground: "#A54300"
     search:
-      background: "#CBC7B2"
+      background: "#CDC8B5"
       foreground: "#1B202B"
     text:
       background: "#BFCFF1"
@@ -151,7 +151,7 @@ ui:
     error: "#9B211A"
     info: "#0019A8"
     success: "#0D8131"
-    warning: "#896800"
+    warning: "#8D6C08"
   tooltip:
     background: "#F4F8FF"
     foreground: "#293040"

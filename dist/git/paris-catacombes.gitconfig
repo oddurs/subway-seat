@@ -6,54 +6,54 @@
 	meta = "#e7ecea bold"
 	frag = "#709bc8"
 	func = "#bfc8c2"
-	old = "#e1837a"
+	old = "#ee8f85"
 	new = "#80c28e"
 	commit = "#f2bf4b"
 	whitespace = "normal #cd6b63"
 	oldMoved = "#d0914f bold"
 	oldMovedAlternative = "#709bc8 bold"
-	newMoved = "#6ca087 bold"
+	newMoved = "#5fa09d bold"
 	newMovedAlternative = "#f2bf4b bold"
 	oldMovedDimmed = "#708178"
 	oldMovedAlternativeDimmed = "#708178 italic"
 	newMovedDimmed = "#708178"
 	newMovedAlternativeDimmed = "#708178 italic"
 	contextDimmed = "#708178"
-	oldDimmed = "#e1837a dim"
+	oldDimmed = "#ee8f85 dim"
 	newDimmed = "#80c28e dim"
 	contextBold = "#e7ecea bold"
-	oldBold = "#e1837a bold"
+	oldBold = "#ee8f85 bold"
 	newBold = "#80c28e bold"
 
 [color "diff-highlight"]
-	oldNormal = "#e1837a"
-	oldHighlight = "#e1837a #58342f"
+	oldNormal = "#ee8f85"
+	oldHighlight = "#ee8f85 #58342f"
 	newNormal = "#80c28e"
 	newHighlight = "#80c28e #324d39"
 
 [color "status"]
 	header = "#bfc8c2"
 	added = "#80c28e"
-	changed = "#e1837a"
+	changed = "#ee8f85"
 	untracked = "#ce96b4"
 	branch = "#80c28e bold"
-	nobranch = "#e1837a bold"
+	nobranch = "#ee8f85 bold"
 	localBranch = "#80c28e"
-	remoteBranch = "#e1837a"
-	unmerged = "#e1837a bold"
+	remoteBranch = "#ee8f85"
+	unmerged = "#ee8f85 bold"
 
 [color "branch"]
 	current = "#80c28e bold"
 	local = "#d4ddd7"
-	remote = "#e1837a"
+	remote = "#ee8f85"
 	upstream = "#709bc8"
 	plain = "#bfc8c2"
-	worktree = "#6ca087"
+	worktree = "#5fa09d"
 
 [color "decorate"]
-	HEAD = "#6ca087 bold"
+	HEAD = "#5fa09d bold"
 	branch = "#80c28e bold"
-	remoteBranch = "#e1837a bold"
+	remoteBranch = "#ee8f85 bold"
 	tag = "#f2bf4b bold"
 	stash = "#d0914f bold"
 	grafted = "#709bc8 bold"
@@ -71,7 +71,7 @@
 	prompt = "#d0914f bold"
 	header = "#e7ecea bold"
 	help = "#f2bf4b"
-	error = "#e1837a bold"
+	error = "#ee8f85 bold"
 
 [color "blame"]
 	highlightRecent = "#708178,12 month ago,#bfc8c2,1 month ago,#d0914f"
@@ -81,13 +81,13 @@
 	hint = "#f2bf4b"
 
 [color "push"]
-	error = "#e1837a"
+	error = "#ee8f85"
 
 [color "transport"]
-	rejected = "#e1837a"
+	rejected = "#ee8f85"
 
 [color "remote"]
 	hint = "#f2bf4b"
 	warning = "#f2bf4b bold"
 	success = "#80c28e bold"
-	error = "#e1837a bold"
+	error = "#ee8f85 bold"

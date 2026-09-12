@@ -12,8 +12,8 @@
 /* Link hints */
 div.internal-vimium-hint-marker {
   padding: 1px 4px;
-  background: #8A6700;
-  border: 1px solid #695208;
+  background: #8E6B08;
+  border: 1px solid #6C550E;
   border-radius: 3px;
   box-shadow: 0 2px 6px rgba(27, 34, 28, 0.35);
 }
@@ -24,7 +24,7 @@ div.internal-vimium-hint-marker span {
 }
 
 div.internal-vimium-hint-marker > .matchingCharacter {
-  color: #52440E;
+  color: #544612;
 }
 
 div > .vimiumActiveHintMarker span {
@@ -32,21 +32,21 @@ div > .vimiumActiveHintMarker span {
 }
 
 div.internal-vimium-input-hint {
-  background-color: rgba(138, 103, 0, 0.2);
-  border: 1px solid #8A6700;
+  background-color: rgba(142, 107, 8, 0.2);
+  border: 1px solid #8E6B08;
 }
 
 div.internal-vimium-selected-input-hint {
-  background-color: rgba(138, 83, 8, 0.25);
-  border: 1px solid #8A5308 !important;
+  background-color: rgba(128, 75, 0, 0.25);
+  border: 1px solid #804B00 !important;
 }
 
 div.vimium-flash {
-  box-shadow: 0 0 4px 2px #8A5308;
+  box-shadow: 0 0 4px 2px #804B00;
 }
 
 body.vimium-find-mode ::selection {
-  background: #8A5308;
+  background: #804B00;
   color: #EEF3ED;
 }
 
@@ -73,7 +73,7 @@ body.vimium-find-mode ::selection {
 }
 
 #vomnibar input:focus {
-  border-color: #8A5308;
+  border-color: #804B00;
 }
 
 #vomnibar input::selection {
@@ -104,7 +104,7 @@ body.vimium-find-mode ::selection {
 
 #vomnibar li .match,
 #vomnibar li .title .match {
-  color: #8A5308;
+  color: #804B00;
   font-weight: bold;
 }
 
@@ -113,7 +113,7 @@ body.vimium-find-mode ::selection {
 }
 
 #vomnibar li.selected {
-  background-color: #E0DDCD;
+  background-color: #DFDBCC;
 }
 
 /* Find HUD */
@@ -147,7 +147,7 @@ span#hud-match-count {
 
 #dialog a,
 #dialog h1 .vim {
-  color: #8A5308;
+  color: #804B00;
 }
 
 #dialog a#close {

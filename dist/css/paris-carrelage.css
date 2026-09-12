@@ -22,19 +22,19 @@
   --ss-text-hi: #1B221C; /* Carrelage text hi */
 
   /* Accents */
-  --ss-yellow: #8A6700; /* Harvest gold */
-  --ss-yellow-hi: #997300; /* Broadway yellow */
-  --ss-orange: #8A5308; /* Burnt orange */
-  --ss-orange-hi: #AE6800; /* Sixth Avenue */
+  --ss-yellow: #8E6B08; /* Harvest gold */
+  --ss-yellow-hi: #9D770A; /* Broadway yellow */
+  --ss-orange: #804B00; /* Burnt orange */
+  --ss-orange-hi: #A26100; /* Sixth Avenue */
   --ss-red: #932D29; /* Redbird */
-  --ss-red-hi: #BB403B; /* Redbird bright */
+  --ss-red-hi: #BE423D; /* Redbird bright */
   --ss-green: #207F41; /* Avocado */
   --ss-green-hi: #168540; /* Avocado bright */
-  --ss-sage: #0B714D; /* Seafoam tile */
-  --ss-sage-hi: #3D8666; /* Seafoam bright */
+  --ss-sage: #006E6B; /* Seafoam tile */
+  --ss-sage-hi: #1E8683; /* Seafoam bright */
   --ss-denim: #27629C; /* Faded denim */
   --ss-denim-hi: #3E75AD; /* Denim bright */
-  --ss-clay: #9A557D; /* Terracotta */
+  --ss-clay: #98547C; /* Terracotta */
 
   /* Diff grounds: -add/-del/-chg for lines, -emph for changed words, -dim for faded diffs */
   --ss-diff-add: #C5DECE;
@@ -43,8 +43,8 @@
   --ss-diff-del: #E9D5D4;
   --ss-diff-del-emph: #DCBCBB;
   --ss-diff-del-dim: #F2E6E5;
-  --ss-diff-chg: #E1D7BD;
-  --ss-diff-chg-emph: #DACEAD;
+  --ss-diff-chg: #E2D9BF;
+  --ss-diff-chg-emph: #DBD0B0;
 
   /* RGB triplets, for rgb(var(--ss-base-rgb) / 0.5) */
   --ss-crust-rgb: 212 220 211;
@@ -60,17 +60,17 @@
   --ss-subtext1-rgb: 61 71 62;
   --ss-text-rgb: 42 52 43;
   --ss-text-hi-rgb: 27 34 28;
-  --ss-yellow-rgb: 138 103 0;
-  --ss-yellow-hi-rgb: 153 115 0;
-  --ss-orange-rgb: 138 83 8;
-  --ss-orange-hi-rgb: 174 104 0;
+  --ss-yellow-rgb: 142 107 8;
+  --ss-yellow-hi-rgb: 157 119 10;
+  --ss-orange-rgb: 128 75 0;
+  --ss-orange-hi-rgb: 162 97 0;
   --ss-red-rgb: 147 45 41;
-  --ss-red-hi-rgb: 187 64 59;
+  --ss-red-hi-rgb: 190 66 61;
   --ss-green-rgb: 32 127 65;
   --ss-green-hi-rgb: 22 133 64;
-  --ss-sage-rgb: 11 113 77;
-  --ss-sage-hi-rgb: 61 134 102;
+  --ss-sage-rgb: 0 110 107;
+  --ss-sage-hi-rgb: 30 134 131;
   --ss-denim-rgb: 39 98 156;
   --ss-denim-hi-rgb: 62 117 173;
-  --ss-clay-rgb: 154 85 125;
+  --ss-clay-rgb: 152 84 124;
 }

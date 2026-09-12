@@ -7,7 +7,7 @@
 const theme = {
   "backgroundColor": "#EEF3ED",
   "foregroundColor": "#2A342B",
-  "cursorColor": "#8A5308",
+  "cursorColor": "#804B00",
   "cursorAccentColor": "#EEF3ED",
   "selectionColor": "#2A342B33",
   "borderColor": "#D4DCD3",
@@ -15,18 +15,18 @@ const theme = {
     "black": "#3D473E",
     "red": "#932D29",
     "green": "#207F41",
-    "yellow": "#8A6700",
+    "yellow": "#8E6B08",
     "blue": "#27629C",
-    "magenta": "#8A5308",
-    "cyan": "#0B714D",
+    "magenta": "#804B00",
+    "cyan": "#006E6B",
     "white": "#9BAC9A",
     "lightBlack": "#6E7C6E",
-    "lightRed": "#BB403B",
+    "lightRed": "#BE423D",
     "lightGreen": "#168540",
-    "lightYellow": "#997300",
+    "lightYellow": "#9D770A",
     "lightBlue": "#3E75AD",
-    "lightMagenta": "#AE6800",
-    "lightCyan": "#3D8666",
+    "lightMagenta": "#A26100",
+    "lightCyan": "#1E8683",
     "lightWhite": "#B1C0B0"
   }
 };
@@ -35,7 +35,7 @@ const css = `
   .tabs_nav, .tabs_list { background-color: #D4DCD3; }
   .tabs_title { color: #4C574D; }
   .tab_tab { color: #6E7C6E; background-color: #D4DCD3; }
-  .tab_tab.tab_active { color: #1B221C; background-color: #EEF3ED; box-shadow: inset 0 -2px 0 #8A5308; }
+  .tab_tab.tab_active { color: #1B221C; background-color: #EEF3ED; box-shadow: inset 0 -2px 0 #804B00; }
 `;
 
 exports.decorateConfig = (config) =>

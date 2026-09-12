@@ -4,7 +4,7 @@ colourful: true
 filekinds:
   normal: {foreground: "#D9E1DB"}
   directory: {foreground: "#F2BF4B", is_bold: true}
-  symlink: {foreground: "#6CA087"}
+  symlink: {foreground: "#5FA09D"}
   pipe: {foreground: "#CE96B4"}
   block_device: {foreground: "#E7AB6D", is_bold: true}
   char_device: {foreground: "#E7AB6D"}
@@ -27,33 +27,33 @@ perms:
   special_other: {foreground: "#74857C"}
   attribute: {foreground: "#74857C"}
 size:
-  major: {foreground: "#6CA087"}
-  minor: {foreground: "#98CCB2"}
+  major: {foreground: "#5FA09D"}
+  minor: {foreground: "#8CCCC9"}
   number_byte: {foreground: "#A9B5AE"}
   number_kilo: {foreground: "#80C28E"}
   number_mega: {foreground: "#F2BF4B"}
   number_giga: {foreground: "#D0914F"}
-  number_huge: {foreground: "#E1837A"}
+  number_huge: {foreground: "#EE8F85"}
   unit_byte: {foreground: "#7F8C85"}
   unit_kilo: {foreground: "#63966F"}
   unit_mega: {foreground: "#B29440"}
   unit_giga: {foreground: "#9B7343"}
-  unit_huge: {foreground: "#A66961"}
+  unit_huge: {foreground: "#B07268"}
 users:
   user_you: {foreground: "#F2BF4B"}
-  user_root: {foreground: "#E1837A"}
+  user_root: {foreground: "#EE8F85"}
   user_other: {foreground: "#A9B5AE"}
   group_yours: {foreground: "#C2CBC5"}
   group_other: {foreground: "#909E96"}
-  group_root: {foreground: "#E1837A"}
+  group_root: {foreground: "#EE8F85"}
 links:
-  normal: {foreground: "#6CA087"}
+  normal: {foreground: "#5FA09D"}
   multi_link_file: {foreground: "#D0914F"}
 git:
   new: {foreground: "#80C28E"}
   modified: {foreground: "#F2BF4B"}
-  deleted: {foreground: "#E1837A"}
-  renamed: {foreground: "#6CA087"}
+  deleted: {foreground: "#EE8F85"}
+  renamed: {foreground: "#5FA09D"}
   typechange: {foreground: "#CE96B4"}
   ignored: {foreground: "#586B61"}
   conflicted: {foreground: "#CD6B63", is_bold: true}
@@ -67,7 +67,7 @@ security_context:
   selinux:
     colon: {foreground: "#586B61"}
     user: {foreground: "#A9B5AE"}
-    role: {foreground: "#6CA087"}
+    role: {foreground: "#5FA09D"}
     typ: {foreground: "#909E96"}
     range: {foreground: "#CE96B4"}
 file_type:
@@ -77,11 +77,11 @@ file_type:
   lossless: {foreground: "#E7AB6D", is_bold: true}
   crypto: {foreground: "#CD6B63"}
   document: {foreground: "#709BC8"}
-  compressed: {foreground: "#E1837A"}
+  compressed: {foreground: "#EE8F85"}
   temp: {foreground: "#586B61"}
   compiled: {foreground: "#74857C"}
   build: {foreground: "#F2BF4B", is_underline: true}
-  source: {foreground: "#6CA087"}
+  source: {foreground: "#5FA09D"}
 punctuation: {foreground: "#586B61"}
 date: {foreground: "#A9B5AE"}
 inode: {foreground: "#74857C"}
@@ -91,7 +91,7 @@ octal: {foreground: "#CE96B4"}
 flags: {foreground: "#909E96"}
 symlink_path: {foreground: "#A9B5AE"}
 control_char: {foreground: "#CE96B4"}
-broken_symlink: {foreground: "#E1837A"}
+broken_symlink: {foreground: "#EE8F85"}
 broken_path_overlay: {is_underline: true}
 filenames:
   "README.md": {filename: {foreground: "#FFD273", is_bold: true}}

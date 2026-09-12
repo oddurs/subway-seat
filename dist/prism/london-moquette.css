@@ -59,9 +59,9 @@ pre[class*="language-"]::selection, pre[class*="language-"] ::selection {
 .token.string, .token.char, .token.attr-value, .token.code { color: #77C581; }
 .token.escape, .token.entity, .token.interpolation-punctuation { color: #AE9EDC; }
 .token.regex { color: #AE9EDC; }
-.token.number { color: #F17869; }
-.token.boolean { color: #F17869; }
-.token.constant, .token.symbol { color: #F17869; }
+.token.number { color: #FE8474; }
+.token.boolean { color: #FE8474; }
+.token.constant, .token.symbol { color: #FE8474; }
 .token.class-name { color: #54B4B5; }
 .token.variable { color: #D8DEEA; }
 .token.parameter { color: #C1C9D8; font-style: italic; }
@@ -78,10 +78,10 @@ pre[class*="language-"]::selection, pre[class*="language-"] ::selection {
 /* Diffs: the line keeps its code colors on a green or red tint, and the + / - sign carries the color.
    (Other languages mark a whole line as inserted or deleted, so it takes the color itself.) */
 .token.inserted { color: #77C581; }
-.token.deleted { color: #F17869; }
+.token.deleted { color: #FE8474; }
 [class*="language-diff"] .token.inserted:not(.prefix) { background: #283E3A; }
 [class*="language-diff"] .token.deleted:not(.prefix) { background: #462B31; }
 [class*="language-diff"] .token.diff:not(.prefix) { background: #36332A; }
 [class*="language-diff"] .token.prefix.inserted { color: #77C581; }
-[class*="language-diff"] .token.prefix.deleted { color: #F17869; }
+[class*="language-diff"] .token.prefix.deleted { color: #FE8474; }
 [class*="language-diff"] .token.prefix.diff { color: #F2C03F; }

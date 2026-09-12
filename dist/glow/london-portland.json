@@ -17,23 +17,23 @@
   },
   "heading": {
     "block_suffix": "\n",
-    "color": "#896800",
+    "color": "#8D6C08",
     "bold": true
   },
   "h1": {
     "prefix": " ",
     "suffix": " ",
     "color": "#E8F0FF",
-    "background_color": "#B14A07",
+    "background_color": "#A54300",
     "bold": true
   },
   "h2": {
     "prefix": "## ",
-    "color": "#B14A07"
+    "color": "#A54300"
   },
   "h3": {
     "prefix": "### ",
-    "color": "#896800"
+    "color": "#8D6C08"
   },
   "h4": {
     "prefix": "#### ",
@@ -104,24 +104,24 @@
       },
       "error": {
         "color": "#E8F0FF",
-        "background_color": "#C92B23"
+        "background_color": "#CC2E25"
       },
       "comment": {
         "color": "#697794",
         "italic": true
       },
       "comment_preproc": {
-        "color": "#7660AB",
+        "color": "#755FA9",
         "italic": true
       },
       "keyword": {
-        "color": "#B14A07"
+        "color": "#A54300"
       },
       "keyword_reserved": {
-        "color": "#B14A07"
+        "color": "#A54300"
       },
       "keyword_namespace": {
-        "color": "#B14A07"
+        "color": "#A54300"
       },
       "keyword_type": {
         "color": "#007376",
@@ -137,52 +137,52 @@
         "color": "#293040"
       },
       "name_builtin": {
-        "color": "#896800",
+        "color": "#8D6C08",
         "italic": true
       },
       "name_tag": {
-        "color": "#B14A07"
+        "color": "#A54300"
       },
       "name_attribute": {
-        "color": "#896800",
+        "color": "#8D6C08",
         "italic": true
       },
       "name_class": {
         "color": "#007376"
       },
       "name_constant": {
-        "color": "#C92B23"
+        "color": "#CC2E25"
       },
       "name_decorator": {
-        "color": "#7660AB",
+        "color": "#755FA9",
         "italic": true
       },
       "name_exception": {
         "color": "#007376"
       },
       "name_function": {
-        "color": "#896800"
+        "color": "#8D6C08"
       },
       "name_other": {
         "color": "#293040"
       },
       "literal": {
-        "color": "#C92B23"
+        "color": "#CC2E25"
       },
       "literal_number": {
-        "color": "#C92B23"
+        "color": "#CC2E25"
       },
       "literal_date": {
-        "color": "#C92B23"
+        "color": "#CC2E25"
       },
       "literal_string": {
         "color": "#0D8131"
       },
       "literal_string_escape": {
-        "color": "#7660AB"
+        "color": "#755FA9"
       },
       "generic_deleted": {
-        "color": "#C92B23"
+        "color": "#CC2E25"
       },
       "generic_emph": {
         "color": "#293040",
@@ -211,7 +211,7 @@
   },
   "definition_list": {},
   "definition_term": {
-    "color": "#896800"
+    "color": "#8D6C08"
   },
   "definition_description": {
     "block_prefix": "\n🠶 "

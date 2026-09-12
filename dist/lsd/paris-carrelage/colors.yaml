@@ -1,21 +1,21 @@
 # Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
 # Paris Carrelage for lsd. File names follow LS_COLORS (see the vivid port).
-user: "#8A6700"
+user: "#8E6B08"
 group: "#3D473E"
 permission:
-  read: "#8A6700"
-  write: "#8A5308"
+  read: "#8E6B08"
+  write: "#804B00"
   exec: "#207F41"
-  exec-sticky: "#9A557D"
+  exec-sticky: "#98547C"
   no-access: "#879887"
-  octal: "#9A557D"
+  octal: "#98547C"
   acl: "#6E7C6E"
   context: "#6E7C6E"
 attributes:
   archive: "#4C574D"
-  read: "#8A6700"
+  read: "#8E6B08"
   hidden: "#6E7C6E"
-  system: "#9A557D"
+  system: "#98547C"
 date:
   hour-old: "#207F41"
   day-old: "#3D473E"
@@ -23,13 +23,13 @@ date:
 size:
   none: "#6E7C6E"
   small: "#207F41"
-  medium: "#8A6700"
-  large: "#8A5308"
+  medium: "#8E6B08"
+  large: "#804B00"
 inode:
   valid: "#6E7C6E"
   invalid: "#879887"
 links:
-  valid: "#0B714D"
+  valid: "#006E6B"
   invalid: "#879887"
 tree-edge: "#879887"
 git-status:
@@ -38,8 +38,8 @@ git-status:
   ignored: "#879887"
   new-in-index: "#207F41"
   new-in-workdir: "#207F41"
-  typechange: "#9A557D"
-  deleted: "#BB403B"
-  renamed: "#0B714D"
-  modified: "#8A6700"
+  typechange: "#98547C"
+  deleted: "#BE423D"
+  renamed: "#006E6B"
+  modified: "#8E6B08"
   conflicted: "#932D29"

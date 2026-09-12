@@ -4,12 +4,12 @@
   "Background": "#EEF3ED",
   "Foreground": "#2A342B",
   "LightBlue": "#3D473E",
-  "AccentBlue": "#8A5308",
-  "AccentPurple": "#9A557D",
-  "AccentCyan": "#0B714D",
+  "AccentBlue": "#804B00",
+  "AccentPurple": "#98547C",
+  "AccentCyan": "#006E6B",
   "AccentGreen": "#207F41",
-  "AccentYellow": "#8A6700",
-  "AccentRed": "#BB403B",
+  "AccentYellow": "#8E6B08",
+  "AccentRed": "#BE423D",
   "DiffAdded": "#C5DECE",
   "DiffRemoved": "#E9D5D4",
   "Comment": "#6E7C6E",
@@ -17,14 +17,14 @@
   "DarkGray": "#9BAC9A",
   "GradientColors": [
     "#932D29",
-    "#8A5308",
-    "#8A6700",
+    "#804B00",
+    "#8E6B08",
     "#207F41"
   ],
   "text": {
     "primary": "#2A342B",
     "secondary": "#586459",
-    "accent": "#9A557D",
+    "accent": "#98547C",
     "response": "#2A342B"
   },
   "background": {
@@ -36,19 +36,19 @@
   },
   "ui": {
     "comment": "#6E7C6E",
-    "symbol": "#8A6700",
-    "active": "#8A5308",
-    "focus": "#8A6700",
+    "symbol": "#8E6B08",
+    "active": "#804B00",
+    "focus": "#8E6B08",
     "gradient": [
       "#932D29",
-      "#8A5308",
-      "#8A6700",
+      "#804B00",
+      "#8E6B08",
       "#207F41"
     ]
   },
   "status": {
     "success": "#207F41",
-    "warning": "#8A6700",
-    "error": "#BB403B"
+    "warning": "#8E6B08",
+    "error": "#BE423D"
   }
 }
