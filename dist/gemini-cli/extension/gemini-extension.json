@@ -329,163 +329,163 @@
     {
       "name": "Paris Guimard",
       "type": "custom",
-      "Background": "#0E3125",
-      "Foreground": "#D3E2DB",
-      "LightBlue": "#BBCDC5",
-      "AccentBlue": "#D78E3C",
-      "AccentPurple": "#E783BD",
-      "AccentCyan": "#6FB393",
-      "AccentGreen": "#73C686",
-      "AccentYellow": "#EBC342",
-      "AccentRed": "#EF796F",
-      "DiffAdded": "#21422E",
-      "DiffRemoved": "#402E26",
-      "Comment": "#67897A",
-      "Gray": "#86A195",
-      "DarkGray": "#285A47",
+      "Background": "#212D27",
+      "Foreground": "#DAE0DC",
+      "LightBlue": "#C3CAC6",
+      "AccentBlue": "#D0914F",
+      "AccentPurple": "#CE96B4",
+      "AccentCyan": "#7BB096",
+      "AccentGreen": "#80C28E",
+      "AccentYellow": "#EBC168",
+      "AccentRed": "#E1837A",
+      "DiffAdded": "#2C3F31",
+      "DiffRemoved": "#442F2B",
+      "Comment": "#77847D",
+      "Gray": "#929D97",
+      "DarkGray": "#42544B",
       "GradientColors": [
-        "#DA6058",
-        "#D78E3C",
-        "#EBC342",
-        "#73C686"
+        "#CD6B63",
+        "#D0914F",
+        "#EBC168",
+        "#80C28E"
       ],
       "text": {
-        "primary": "#D3E2DB",
-        "secondary": "#86A195",
-        "accent": "#E783BD",
-        "response": "#D3E2DB"
+        "primary": "#DAE0DC",
+        "secondary": "#929D97",
+        "accent": "#CE96B4",
+        "response": "#DAE0DC"
       },
       "background": {
-        "primary": "#0E3125",
+        "primary": "#212D27",
         "diff": {
-          "added": "#21422E",
-          "removed": "#402E26"
+          "added": "#2C3F31",
+          "removed": "#442F2B"
         }
       },
       "ui": {
-        "comment": "#67897A",
-        "symbol": "#EBC342",
-        "active": "#D78E3C",
-        "focus": "#EBC342",
+        "comment": "#77847D",
+        "symbol": "#EBC168",
+        "active": "#D0914F",
+        "focus": "#EBC168",
         "gradient": [
-          "#DA6058",
-          "#D78E3C",
-          "#EBC342",
-          "#73C686"
+          "#CD6B63",
+          "#D0914F",
+          "#EBC168",
+          "#80C28E"
         ]
       },
       "status": {
-        "success": "#73C686",
-        "warning": "#EBC342",
-        "error": "#EF796F"
+        "success": "#80C28E",
+        "warning": "#EBC168",
+        "error": "#E1837A"
       }
     },
     {
       "name": "Paris Catacombes",
       "type": "custom",
-      "Background": "#062017",
-      "Foreground": "#CFDED7",
-      "LightBlue": "#B8CAC2",
-      "AccentBlue": "#D78E3C",
-      "AccentPurple": "#E783BD",
-      "AccentCyan": "#6FB393",
-      "AccentGreen": "#73C686",
-      "AccentYellow": "#EBC342",
-      "AccentRed": "#EF796F",
-      "DiffAdded": "#1D3A27",
-      "DiffRemoved": "#3C2620",
-      "Comment": "#648576",
-      "Gray": "#829D91",
-      "DarkGray": "#1E4738",
+      "Background": "#141D19",
+      "Foreground": "#D5DCD8",
+      "LightBlue": "#C0C7C3",
+      "AccentBlue": "#D0914F",
+      "AccentPurple": "#CE96B4",
+      "AccentCyan": "#7BB096",
+      "AccentGreen": "#80C28E",
+      "AccentYellow": "#EBC168",
+      "AccentRed": "#E1837A",
+      "DiffAdded": "#253729",
+      "DiffRemoved": "#3D2823",
+      "Comment": "#738079",
+      "Gray": "#8E9993",
+      "DarkGray": "#34423B",
       "GradientColors": [
-        "#DA6058",
-        "#D78E3C",
-        "#EBC342",
-        "#73C686"
+        "#CD6B63",
+        "#D0914F",
+        "#EBC168",
+        "#80C28E"
       ],
       "text": {
-        "primary": "#CFDED7",
-        "secondary": "#829D91",
-        "accent": "#E783BD",
-        "response": "#CFDED7"
+        "primary": "#D5DCD8",
+        "secondary": "#8E9993",
+        "accent": "#CE96B4",
+        "response": "#D5DCD8"
       },
       "background": {
-        "primary": "#062017",
+        "primary": "#141D19",
         "diff": {
-          "added": "#1D3A27",
-          "removed": "#3C2620"
+          "added": "#253729",
+          "removed": "#3D2823"
         }
       },
       "ui": {
-        "comment": "#648576",
-        "symbol": "#EBC342",
-        "active": "#D78E3C",
-        "focus": "#EBC342",
+        "comment": "#738079",
+        "symbol": "#EBC168",
+        "active": "#D0914F",
+        "focus": "#EBC168",
         "gradient": [
-          "#DA6058",
-          "#D78E3C",
-          "#EBC342",
-          "#73C686"
+          "#CD6B63",
+          "#D0914F",
+          "#EBC168",
+          "#80C28E"
         ]
       },
       "status": {
-        "success": "#73C686",
-        "warning": "#EBC342",
-        "error": "#EF796F"
+        "success": "#80C28E",
+        "warning": "#EBC168",
+        "error": "#E1837A"
       }
     },
     {
       "name": "Paris Carrelage",
       "type": "custom",
-      "Background": "#E2EDE8",
-      "Foreground": "#21352D",
-      "LightBlue": "#334A41",
+      "Background": "#E4EDE8",
+      "Foreground": "#25352C",
+      "LightBlue": "#374940",
       "AccentBlue": "#9B5D00",
-      "AccentPurple": "#B43586",
-      "AccentCyan": "#007752",
-      "AccentGreen": "#00823B",
-      "AccentYellow": "#856A00",
-      "AccentRed": "#C82C2C",
-      "DiffAdded": "#BDDECC",
-      "DiffRemoved": "#EDCCD0",
-      "Comment": "#5C8171",
-      "Gray": "#4A695C",
-      "DarkGray": "#88AF9E",
+      "AccentPurple": "#9A557D",
+      "AccentCyan": "#277555",
+      "AccentGreen": "#18803F",
+      "AccentYellow": "#8A6700",
+      "AccentRed": "#BB403B",
+      "DiffAdded": "#C3DECD",
+      "DiffRemoved": "#ECD1D1",
+      "Comment": "#627F70",
+      "Gray": "#4F675B",
+      "DarkGray": "#8EAD9D",
       "GradientColors": [
-        "#A30013",
+        "#9E171B",
         "#9B5D00",
-        "#856A00",
-        "#00823B"
+        "#8A6700",
+        "#18803F"
       ],
       "text": {
-        "primary": "#21352D",
-        "secondary": "#4A695C",
-        "accent": "#B43586",
-        "response": "#21352D"
+        "primary": "#25352C",
+        "secondary": "#4F675B",
+        "accent": "#9A557D",
+        "response": "#25352C"
       },
       "background": {
-        "primary": "#E2EDE8",
+        "primary": "#E4EDE8",
         "diff": {
-          "added": "#BDDECC",
-          "removed": "#EDCCD0"
+          "added": "#C3DECD",
+          "removed": "#ECD1D1"
         }
       },
       "ui": {
-        "comment": "#5C8171",
-        "symbol": "#856A00",
+        "comment": "#627F70",
+        "symbol": "#8A6700",
         "active": "#9B5D00",
-        "focus": "#856A00",
+        "focus": "#8A6700",
         "gradient": [
-          "#A30013",
+          "#9E171B",
           "#9B5D00",
-          "#856A00",
-          "#00823B"
+          "#8A6700",
+          "#18803F"
         ]
       },
       "status": {
-        "success": "#00823B",
-        "warning": "#856A00",
-        "error": "#C82C2C"
+        "success": "#18803F",
+        "warning": "#8A6700",
+        "error": "#BB403B"
       }
     }
   ]

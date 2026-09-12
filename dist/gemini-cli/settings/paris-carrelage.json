@@ -4,55 +4,55 @@
       "Paris Carrelage": {
         "name": "Paris Carrelage",
         "type": "custom",
-        "Background": "#E2EDE8",
-        "Foreground": "#21352D",
-        "LightBlue": "#334A41",
+        "Background": "#E4EDE8",
+        "Foreground": "#25352C",
+        "LightBlue": "#374940",
         "AccentBlue": "#9B5D00",
-        "AccentPurple": "#B43586",
-        "AccentCyan": "#007752",
-        "AccentGreen": "#00823B",
-        "AccentYellow": "#856A00",
-        "AccentRed": "#C82C2C",
-        "DiffAdded": "#BDDECC",
-        "DiffRemoved": "#EDCCD0",
-        "Comment": "#5C8171",
-        "Gray": "#4A695C",
-        "DarkGray": "#88AF9E",
+        "AccentPurple": "#9A557D",
+        "AccentCyan": "#277555",
+        "AccentGreen": "#18803F",
+        "AccentYellow": "#8A6700",
+        "AccentRed": "#BB403B",
+        "DiffAdded": "#C3DECD",
+        "DiffRemoved": "#ECD1D1",
+        "Comment": "#627F70",
+        "Gray": "#4F675B",
+        "DarkGray": "#8EAD9D",
         "GradientColors": [
-          "#A30013",
+          "#9E171B",
           "#9B5D00",
-          "#856A00",
-          "#00823B"
+          "#8A6700",
+          "#18803F"
         ],
         "text": {
-          "primary": "#21352D",
-          "secondary": "#4A695C",
-          "accent": "#B43586",
-          "response": "#21352D"
+          "primary": "#25352C",
+          "secondary": "#4F675B",
+          "accent": "#9A557D",
+          "response": "#25352C"
         },
         "background": {
-          "primary": "#E2EDE8",
+          "primary": "#E4EDE8",
           "diff": {
-            "added": "#BDDECC",
-            "removed": "#EDCCD0"
+            "added": "#C3DECD",
+            "removed": "#ECD1D1"
           }
         },
         "ui": {
-          "comment": "#5C8171",
-          "symbol": "#856A00",
+          "comment": "#627F70",
+          "symbol": "#8A6700",
           "active": "#9B5D00",
-          "focus": "#856A00",
+          "focus": "#8A6700",
           "gradient": [
-            "#A30013",
+            "#9E171B",
             "#9B5D00",
-            "#856A00",
-            "#00823B"
+            "#8A6700",
+            "#18803F"
           ]
         },
         "status": {
-          "success": "#00823B",
-          "warning": "#856A00",
-          "error": "#C82C2C"
+          "success": "#18803F",
+          "warning": "#8A6700",
+          "error": "#BB403B"
         }
       }
     },

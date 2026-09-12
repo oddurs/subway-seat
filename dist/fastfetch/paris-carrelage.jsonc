@@ -4,36 +4,36 @@
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
   "logo": {
     "color": {
-      "1": "#00823B",
-      "2": "#856A00",
+      "1": "#18803F",
+      "2": "#8A6700",
       "3": "#9B5D00",
-      "4": "#A30013",
-      "5": "#B43586",
-      "6": "#0961A9",
-      "7": "#007752",
+      "4": "#9E171B",
+      "5": "#9A557D",
+      "6": "#27629C",
+      "7": "#277555",
       "8": "#AE6800",
-      "9": "#937500"
+      "9": "#997300"
     }
   },
   "display": {
     "color": {
-      "keys": "#856A00",
+      "keys": "#8A6700",
       "title": "#9B5D00",
-      "output": "#21352D",
-      "separator": "#5C8171"
+      "output": "#25352C",
+      "separator": "#627F70"
     },
     "percent": {
       "color": {
-        "green": "#00823B",
-        "yellow": "#856A00",
-        "red": "#C82C2C"
+        "green": "#18803F",
+        "yellow": "#8A6700",
+        "red": "#BB403B"
       }
     },
     "temp": {
       "color": {
-        "green": "#00823B",
-        "yellow": "#856A00",
-        "red": "#C82C2C"
+        "green": "#18803F",
+        "yellow": "#8A6700",
+        "red": "#BB403B"
       }
     }
   },

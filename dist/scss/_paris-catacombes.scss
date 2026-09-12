@@ -2,40 +2,40 @@
 // Paris Catacombes: Under the quarries: the same green with the lights turned down.
 // Diff grounds: -add/-del/-chg for lines, -emph for changed words, -dim for faded diffs.
 
-$ss-crust:         #05120C; // Blackout
-$ss-mantle:        #061811; // Espresso
-$ss-base:          #062017; // Paneling
-$ss-surface0:      #0A2B20; // Coppertone
-$ss-surface1:      #13382A; // Saddle
-$ss-surface2:      #1E4738; // Corduroy
-$ss-overlay0:      #456A5B; // Pecan
-$ss-overlay1:      #648576; // Cardboard
-$ss-overlay2:      #829D91; // Burlap
-$ss-subtext0:      #9EB3AA; // Khaki
-$ss-subtext1:      #B8CAC2; // Almond
-$ss-text:          #CFDED7; // Parchment
-$ss-text-hi:       #E4EEE9; // Ivory
-$ss-yellow:        #EBC342; // Harvest gold
-$ss-yellow-hi:     #FBD664; // Broadway yellow
-$ss-orange:        #D78E3C; // Burnt orange
-$ss-orange-hi:     #EEA85C; // Sixth Avenue
-$ss-red:           #DA6058; // Redbird
-$ss-red-hi:        #EF796F; // Redbird bright
-$ss-green:         #73C686; // Avocado
-$ss-green-hi:      #82D896; // Avocado bright
-$ss-sage:          #6FB393; // Seafoam tile
-$ss-sage-hi:       #8ECFAF; // Seafoam bright
-$ss-denim:         #639BD5; // Faded denim
-$ss-denim-hi:      #82B7EE; // Denim bright
-$ss-clay:          #E783BD; // Terracotta
-$ss-diff-add:      #1D3A27;
-$ss-diff-add-emph: #2A4F35;
-$ss-diff-add-dim:  #142B1D;
-$ss-diff-del:      #3C2620;
-$ss-diff-del-emph: #5A312A;
-$ss-diff-del-dim:  #291F19;
-$ss-diff-chg:      #2A2E15;
-$ss-diff-chg-emph: #41401A;
+$ss-crust:         #0B100D; // Blackout
+$ss-mantle:        #0F1612; // Espresso
+$ss-base:          #141D19; // Paneling
+$ss-surface0:      #1D2822; // Coppertone
+$ss-surface1:      #27332D; // Saddle
+$ss-surface2:      #34423B; // Corduroy
+$ss-overlay0:      #57645D; // Pecan
+$ss-overlay1:      #738079; // Cardboard
+$ss-overlay2:      #8E9993; // Burlap
+$ss-subtext0:      #A7B0AB; // Khaki
+$ss-subtext1:      #C0C7C3; // Almond
+$ss-text:          #D5DCD8; // Parchment
+$ss-text-hi:       #E8ECEA; // Ivory
+$ss-yellow:        #EBC168; // Harvest gold
+$ss-yellow-hi:     #FBD380; // Broadway yellow
+$ss-orange:        #D0914F; // Burnt orange
+$ss-orange-hi:     #E7AB6D; // Sixth Avenue
+$ss-red:           #CD6B63; // Redbird
+$ss-red-hi:        #E1837A; // Redbird bright
+$ss-green:         #80C28E; // Avocado
+$ss-green-hi:      #8FD59E; // Avocado bright
+$ss-sage:          #7BB096; // Seafoam tile
+$ss-sage-hi:       #98CCB2; // Seafoam bright
+$ss-denim:         #709BC8; // Faded denim
+$ss-denim-hi:      #8DB6E2; // Denim bright
+$ss-clay:          #CE96B4; // Terracotta
+$ss-diff-add:      #253729;
+$ss-diff-add-emph: #334D39;
+$ss-diff-add-dim:  #1B291F;
+$ss-diff-del:      #3D2823;
+$ss-diff-del-emph: #59342F;
+$ss-diff-del-dim:  #2C1F1C;
+$ss-diff-chg:      #2F2C1C;
+$ss-diff-chg-emph: #453E25;
 
 $subway-seat: (
   "crust": $ss-crust,

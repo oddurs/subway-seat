@@ -21,17 +21,17 @@ fi
 
 gsettings set "$PROFILE" visible-name "'Paris Guimard'"
 gsettings set "$PROFILE" use-theme-colors "false"
-gsettings set "$PROFILE" background-color "'#0E3125'"
-gsettings set "$PROFILE" foreground-color "'#D3E2DB'"
+gsettings set "$PROFILE" background-color "'#212D27'"
+gsettings set "$PROFILE" foreground-color "'#DAE0DC'"
 gsettings set "$PROFILE" bold-color-same-as-fg "false"
-gsettings set "$PROFILE" bold-color "'#E6F0EB'"
+gsettings set "$PROFILE" bold-color "'#EAEEEC'"
 gsettings set "$PROFILE" cursor-colors-set "true"
-gsettings set "$PROFILE" cursor-background-color "'#EBC342'"
-gsettings set "$PROFILE" cursor-foreground-color "'#0E3125'"
+gsettings set "$PROFILE" cursor-background-color "'#EBC168'"
+gsettings set "$PROFILE" cursor-foreground-color "'#212D27'"
 gsettings set "$PROFILE" highlight-colors-set "true"
-gsettings set "$PROFILE" highlight-background-color "'#285A47'"
-gsettings set "$PROFILE" highlight-foreground-color "'#E6F0EB'"
-gsettings set "$PROFILE" palette "['#194A39', '#DA6058', '#73C686', '#EBC342', '#639BD5', '#D78E3C', '#6FB393', '#BBCDC5', '#67897A', '#EF796F', '#82D896', '#FBD664', '#82B7EE', '#EEA85C', '#8ECFAF', '#E6F0EB']"
+gsettings set "$PROFILE" highlight-background-color "'#42544B'"
+gsettings set "$PROFILE" highlight-foreground-color "'#EAEEEC'"
+gsettings set "$PROFILE" palette "['#34453C', '#CD6B63', '#80C28E', '#EBC168', '#709BC8', '#D0914F', '#7BB096', '#C3CAC6', '#77847D', '#E1837A', '#8FD59E', '#FBD380', '#8DB6E2', '#E7AB6D', '#98CCB2', '#EAEEEC']"
 
 case "$list" in
   *"$UUID"*) ;;

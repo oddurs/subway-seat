@@ -2,40 +2,40 @@
 // Paris Carrelage: Bevelled white tile under a vaulted platform. The light one.
 // Diff grounds: -add/-del/-chg for lines, -emph for changed words, -dim for faded diffs.
 
-$ss-crust:         #C8DAD1; // Carrelage crust
-$ss-mantle:        #D5E3DD; // Carrelage mantle
-$ss-base:          #E2EDE8; // Carrelage base
-$ss-surface0:      #B6D2C5; // Carrelage surface0
-$ss-surface1:      #9DC1B1; // Carrelage surface1
-$ss-surface2:      #88AF9E; // Carrelage surface2
-$ss-overlay0:      #759A8A; // Carrelage overlay0
-$ss-overlay1:      #5C8171; // Carrelage overlay1
-$ss-overlay2:      #4A695C; // Carrelage overlay2
-$ss-subtext0:      #405B4F; // Carrelage subtext0
-$ss-subtext1:      #334A41; // Carrelage subtext1
-$ss-text:          #21352D; // Carrelage text
-$ss-text-hi:       #16241E; // Carrelage text hi
-$ss-yellow:        #856A00; // Harvest gold
-$ss-yellow-hi:     #937500; // Broadway yellow
+$ss-crust:         #CAD9D1; // Carrelage crust
+$ss-mantle:        #D8E3DC; // Carrelage mantle
+$ss-base:          #E4EDE8; // Carrelage base
+$ss-surface0:      #BAD0C4; // Carrelage surface0
+$ss-surface1:      #A3BFB0; // Carrelage surface1
+$ss-surface2:      #8EAD9D; // Carrelage surface2
+$ss-overlay0:      #7B9989; // Carrelage overlay0
+$ss-overlay1:      #627F70; // Carrelage overlay1
+$ss-overlay2:      #4F675B; // Carrelage overlay2
+$ss-subtext0:      #45594F; // Carrelage subtext0
+$ss-subtext1:      #374940; // Carrelage subtext1
+$ss-text:          #25352C; // Carrelage text
+$ss-text-hi:       #18231D; // Carrelage text hi
+$ss-yellow:        #8A6700; // Harvest gold
+$ss-yellow-hi:     #997300; // Broadway yellow
 $ss-orange:        #9B5D00; // Burnt orange
 $ss-orange-hi:     #AE6800; // Sixth Avenue
-$ss-red:           #A30013; // Redbird
-$ss-red-hi:        #C82C2C; // Redbird bright
-$ss-green:         #00823B; // Avocado
-$ss-green-hi:      #00863D; // Avocado bright
-$ss-sage:          #007752; // Seafoam tile
-$ss-sage-hi:       #2A8862; // Seafoam bright
-$ss-denim:         #0961A9; // Faded denim
-$ss-denim-hi:      #2E75B9; // Denim bright
-$ss-clay:          #B43586; // Terracotta
-$ss-diff-add:      #BDDECC;
-$ss-diff-add-emph: #99CDB1;
-$ss-diff-add-dim:  #D6EBE0;
-$ss-diff-del:      #EDCCD0;
-$ss-diff-del-emph: #E2ADB3;
-$ss-diff-del-dim:  #F4E0E3;
-$ss-diff-chg:      #DFD8BD;
-$ss-diff-chg-emph: #D8CFAD;
+$ss-red:           #9E171B; // Redbird
+$ss-red-hi:        #BB403B; // Redbird bright
+$ss-green:         #18803F; // Avocado
+$ss-green-hi:      #168540; // Avocado bright
+$ss-sage:          #277555; // Seafoam tile
+$ss-sage-hi:       #3D8666; // Seafoam bright
+$ss-denim:         #27629C; // Faded denim
+$ss-denim-hi:      #3E75AD; // Denim bright
+$ss-clay:          #9A557D; // Terracotta
+$ss-diff-add:      #C3DECD;
+$ss-diff-add-emph: #A3CCB2;
+$ss-diff-add-dim:  #DAEBE0;
+$ss-diff-del:      #ECD1D1;
+$ss-diff-del-emph: #E0B5B6;
+$ss-diff-del-dim:  #F3E3E4;
+$ss-diff-chg:      #E1D7BD;
+$ss-diff-chg-emph: #DACEAD;
 
 $subway-seat: (
   "crust": $ss-crust,

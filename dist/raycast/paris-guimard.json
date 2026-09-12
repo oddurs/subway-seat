@@ -5,17 +5,17 @@
   "name": "Paris Guimard",
   "appearance": "dark",
   "colors": {
-    "background": "#0E3125",
-    "backgroundSecondary": "#0C261C",
-    "text": "#D3E2DB",
-    "selection": "#D78E3C",
-    "loader": "#EBC342",
-    "red": "#EF796F",
-    "orange": "#D78E3C",
-    "yellow": "#EBC342",
-    "green": "#73C686",
-    "blue": "#639BD5",
-    "purple": "#E783BD",
-    "magenta": "#EEA85C"
+    "background": "#212D27",
+    "backgroundSecondary": "#1A231E",
+    "text": "#DAE0DC",
+    "selection": "#D0914F",
+    "loader": "#EBC168",
+    "red": "#E1837A",
+    "orange": "#D0914F",
+    "yellow": "#EBC168",
+    "green": "#80C28E",
+    "blue": "#709BC8",
+    "purple": "#CE96B4",
+    "magenta": "#E7AB6D"
   }
 }

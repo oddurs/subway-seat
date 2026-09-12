@@ -2,73 +2,73 @@
 # Paris Catacombes
 
 [colors.primary]
-background = "#062017"
-foreground = "#CFDED7"
-dim_foreground = "#829D91"
-bright_foreground = "#E4EEE9"
+background = "#141D19"
+foreground = "#D5DCD8"
+dim_foreground = "#8E9993"
+bright_foreground = "#E8ECEA"
 
 [colors.cursor]
-text = "#062017"
-cursor = "#EBC342"
+text = "#141D19"
+cursor = "#EBC168"
 
 [colors.vi_mode_cursor]
-text = "#062017"
-cursor = "#6FB393"
+text = "#141D19"
+cursor = "#7BB096"
 
 [colors.search.matches]
-foreground = "#CFDED7"
-background = "#4B5124"
+foreground = "#D5DCD8"
+background = "#544E31"
 
 [colors.search.focused_match]
-foreground = "#E4EEE9"
-background = "#6E572A"
+foreground = "#E8ECEA"
+background = "#725734"
 
 [colors.footer_bar]
-foreground = "#CFDED7"
-background = "#13382A"
+foreground = "#D5DCD8"
+background = "#27332D"
 
 [colors.hints.start]
-foreground = "#062017"
-background = "#EBC342"
+foreground = "#141D19"
+background = "#EBC168"
 
 [colors.hints.end]
-foreground = "#062017"
-background = "#829D91"
+foreground = "#141D19"
+background = "#8E9993"
 
 [colors.line_indicator]
-foreground = "#9EB3AA"
-background = "#0A2B20"
+foreground = "#A7B0AB"
+background = "#1D2822"
 
 [colors.selection]
-text = "#E4EEE9"
-background = "#1E4738"
+text = "#E8ECEA"
+background = "#34423B"
 
 [colors.normal]
-black = "#13382A"
-red = "#DA6058"
-green = "#73C686"
-yellow = "#EBC342"
-blue = "#639BD5"
-magenta = "#D78E3C"
-cyan = "#6FB393"
-white = "#B8CAC2"
+black = "#27332D"
+red = "#CD6B63"
+green = "#80C28E"
+yellow = "#EBC168"
+blue = "#709BC8"
+magenta = "#D0914F"
+cyan = "#7BB096"
+white = "#C0C7C3"
 
 [colors.bright]
-black = "#648576"
-red = "#EF796F"
-green = "#82D896"
-yellow = "#FBD664"
-blue = "#82B7EE"
-magenta = "#EEA85C"
-cyan = "#8ECFAF"
-white = "#E4EEE9"
+black = "#738079"
+red = "#E1837A"
+green = "#8FD59E"
+yellow = "#FBD380"
+blue = "#8DB6E2"
+magenta = "#E7AB6D"
+cyan = "#98CCB2"
+white = "#E8ECEA"
 
 [colors.dim]
-black = "#0F3024"
-red = "#924A42"
-green = "#4E8E60"
-yellow = "#9D8C33"
-blue = "#437194"
-magenta = "#90692F"
-cyan = "#4B8169"
-white = "#7B9088"
+black = "#212C26"
+red = "#8E504A"
+green = "#5B8A66"
+yellow = "#A2894D"
+blue = "#51708C"
+magenta = "#906A3D"
+cyan = "#587E6C"
+white = "#868D89"

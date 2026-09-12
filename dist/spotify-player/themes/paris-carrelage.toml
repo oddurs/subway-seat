@@ -4,44 +4,44 @@
 name = "paris-carrelage"
 
 [themes.palette]
-background = "#E2EDE8"
-foreground = "#21352D"
-black = "#334A41"
-red = "#A30013"
-green = "#00823B"
-yellow = "#856A00"
-blue = "#0961A9"
+background = "#E4EDE8"
+foreground = "#25352C"
+black = "#374940"
+red = "#9E171B"
+green = "#18803F"
+yellow = "#8A6700"
+blue = "#27629C"
 magenta = "#9B5D00"
-cyan = "#007752"
-white = "#88AF9E"
-bright_black = "#5C8171"
-bright_red = "#C82C2C"
-bright_green = "#00863D"
-bright_yellow = "#937500"
-bright_blue = "#2E75B9"
+cyan = "#277555"
+white = "#8EAD9D"
+bright_black = "#627F70"
+bright_red = "#BB403B"
+bright_green = "#168540"
+bright_yellow = "#997300"
+bright_blue = "#3E75AD"
 bright_magenta = "#AE6800"
-bright_cyan = "#2A8862"
-bright_white = "#9DC1B1"
+bright_cyan = "#3D8666"
+bright_white = "#A3BFB0"
 
 [themes.component_style]
 block_title = { fg = "#9B5D00", modifiers = ["Bold"] }
-border = { fg = "#88AF9E" }
-playback_status = { fg = "#856A00", modifiers = ["Bold"] }
-playback_track = { fg = "#856A00", modifiers = ["Bold"] }
+border = { fg = "#8EAD9D" }
+playback_status = { fg = "#8A6700", modifiers = ["Bold"] }
+playback_track = { fg = "#8A6700", modifiers = ["Bold"] }
 playback_artists = { fg = "#9B5D00" }
-playback_album = { fg = "#007752" }
-playback_genres = { fg = "#5C8171", modifiers = ["Italic"] }
-playback_metadata = { fg = "#405B4F" }
-playback_progress_bar = { fg = "#9B5D00", bg = "#9DC1B1" }
-playback_progress_bar_unfilled = { fg = "#88AF9E", bg = "#9DC1B1" }
-current_playing = { fg = "#00823B", modifiers = ["Bold"] }
-page_desc = { fg = "#856A00", modifiers = ["Bold"] }
-playlist_desc = { fg = "#5C8171" }
+playback_album = { fg = "#277555" }
+playback_genres = { fg = "#627F70", modifiers = ["Italic"] }
+playback_metadata = { fg = "#45594F" }
+playback_progress_bar = { fg = "#9B5D00", bg = "#A3BFB0" }
+playback_progress_bar_unfilled = { fg = "#8EAD9D", bg = "#A3BFB0" }
+current_playing = { fg = "#18803F", modifiers = ["Bold"] }
+page_desc = { fg = "#8A6700", modifiers = ["Bold"] }
+playlist_desc = { fg = "#627F70" }
 table_header = { fg = "#9B5D00" }
-selection = { fg = "#16241E", bg = "#B6D2C5", modifiers = ["Bold"] }
-secondary_row = { bg = "#D5E3DD" }
-like = { fg = "#C82C2C" }
-lyrics_played = { fg = "#5C8171" }
-lyrics_playing = { fg = "#856A00", modifiers = ["Bold"] }
-visualization = { low = "#00823B", mid = "#856A00", high = "#C82C2C" }
+selection = { fg = "#18231D", bg = "#BAD0C4", modifiers = ["Bold"] }
+secondary_row = { bg = "#D8E3DC" }
+like = { fg = "#BB403B" }
+lyrics_played = { fg = "#627F70" }
+lyrics_playing = { fg = "#8A6700", modifiers = ["Bold"] }
+visualization = { low = "#18803F", mid = "#8A6700", high = "#BB403B" }
 # <<< subway-seat <<<

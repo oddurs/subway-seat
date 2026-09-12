@@ -39,11 +39,11 @@
 | **London Deep Level** | `deep` · dark | Below the cut-and-cover lines. The ground drops; the signals don't. |
 | **London Portland** | `portland` · light | Holden's Portland stone. Links are the exact Corporate Blue. |
 
-**Paris** — The Metro: Guimard's cast-iron green, white tile, and the line colors of the map.
+**Paris** — The Metro: cast iron and brass, white tile, and the line colors of the map.
 
 | | | |
 |---|---|---|
-| **Paris Guimard** | `guimard` · dark | Cast-iron green off a Metro entrance. The original green. |
+| **Paris Guimard** | `guimard` · dark | Cast iron off a Metro entrance, which is nearly black. Brass leads. |
 | **Paris Catacombes** | `catacombes` · dark | Under the quarries: the same green with the lights turned down. |
 | **Paris Carrelage** | `carrelage` · light | Bevelled white tile under a vaulted platform. The light one. |
 <!-- flavors:end -->

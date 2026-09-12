@@ -1,76 +1,76 @@
 /* Subway Seat — generated from palette.py by build.py. Edit the palette, not this file. */
-/* Paris Guimard: Cast-iron green off a Metro entrance. The original green. */
+/* Paris Guimard: Cast iron off a Metro entrance, which is nearly black. Brass leads. */
 
 :root {
   color-scheme: dark;
 
   /* Ground */
-  --ss-crust: #0A1D15; /* Blackout */
-  --ss-mantle: #0C261C; /* Espresso */
-  --ss-base: #0E3125; /* Paneling */
-  --ss-surface0: #113E2E; /* Coppertone */
-  --ss-surface1: #194A39; /* Saddle */
-  --ss-surface2: #285A47; /* Corduroy */
-  --ss-overlay0: #47705F; /* Pecan */
-  --ss-overlay1: #67897A; /* Cardboard */
-  --ss-overlay2: #86A195; /* Burlap */
+  --ss-crust: #141A17; /* Blackout */
+  --ss-mantle: #1A231E; /* Espresso */
+  --ss-base: #212D27; /* Paneling */
+  --ss-surface0: #2A3831; /* Coppertone */
+  --ss-surface1: #34453C; /* Saddle */
+  --ss-surface2: #42544B; /* Corduroy */
+  --ss-overlay0: #5B6A62; /* Pecan */
+  --ss-overlay1: #77847D; /* Cardboard */
+  --ss-overlay2: #929D97; /* Burlap */
 
   /* Text */
-  --ss-subtext0: #A2B7AE; /* Khaki */
-  --ss-subtext1: #BBCDC5; /* Almond */
-  --ss-text: #D3E2DB; /* Parchment */
-  --ss-text-hi: #E6F0EB; /* Ivory */
+  --ss-subtext0: #ABB4AF; /* Khaki */
+  --ss-subtext1: #C3CAC6; /* Almond */
+  --ss-text: #DAE0DC; /* Parchment */
+  --ss-text-hi: #EAEEEC; /* Ivory */
 
   /* Accents */
-  --ss-yellow: #EBC342; /* Harvest gold */
-  --ss-yellow-hi: #FBD664; /* Broadway yellow */
-  --ss-orange: #D78E3C; /* Burnt orange */
-  --ss-orange-hi: #EEA85C; /* Sixth Avenue */
-  --ss-red: #DA6058; /* Redbird */
-  --ss-red-hi: #EF796F; /* Redbird bright */
-  --ss-green: #73C686; /* Avocado */
-  --ss-green-hi: #82D896; /* Avocado bright */
-  --ss-sage: #6FB393; /* Seafoam tile */
-  --ss-sage-hi: #8ECFAF; /* Seafoam bright */
-  --ss-denim: #639BD5; /* Faded denim */
-  --ss-denim-hi: #82B7EE; /* Denim bright */
-  --ss-clay: #E783BD; /* Terracotta */
+  --ss-yellow: #EBC168; /* Harvest gold */
+  --ss-yellow-hi: #FBD380; /* Broadway yellow */
+  --ss-orange: #D0914F; /* Burnt orange */
+  --ss-orange-hi: #E7AB6D; /* Sixth Avenue */
+  --ss-red: #CD6B63; /* Redbird */
+  --ss-red-hi: #E1837A; /* Redbird bright */
+  --ss-green: #80C28E; /* Avocado */
+  --ss-green-hi: #8FD59E; /* Avocado bright */
+  --ss-sage: #7BB096; /* Seafoam tile */
+  --ss-sage-hi: #98CCB2; /* Seafoam bright */
+  --ss-denim: #709BC8; /* Faded denim */
+  --ss-denim-hi: #8DB6E2; /* Denim bright */
+  --ss-clay: #CE96B4; /* Terracotta */
 
   /* Diff grounds: -add/-del/-chg for lines, -emph for changed words, -dim for faded diffs */
-  --ss-diff-add: #21422E;
-  --ss-diff-add-emph: #2E563B;
-  --ss-diff-add-dim: #193525;
-  --ss-diff-del: #402E26;
-  --ss-diff-del-emph: #5D3830;
-  --ss-diff-del-dim: #2D2820;
-  --ss-diff-chg: #2E381C;
-  --ss-diff-chg-emph: #444821;
+  --ss-diff-add: #2C3F31;
+  --ss-diff-add-emph: #39533F;
+  --ss-diff-add-dim: #233228;
+  --ss-diff-del: #442F2B;
+  --ss-diff-del-emph: #5E3A35;
+  --ss-diff-del-dim: #332824;
+  --ss-diff-chg: #363524;
+  --ss-diff-chg-emph: #4C452C;
 
   /* RGB triplets, for rgb(var(--ss-base-rgb) / 0.5) */
-  --ss-crust-rgb: 10 29 21;
-  --ss-mantle-rgb: 12 38 28;
-  --ss-base-rgb: 14 49 37;
-  --ss-surface0-rgb: 17 62 46;
-  --ss-surface1-rgb: 25 74 57;
-  --ss-surface2-rgb: 40 90 71;
-  --ss-overlay0-rgb: 71 112 95;
-  --ss-overlay1-rgb: 103 137 122;
-  --ss-overlay2-rgb: 134 161 149;
-  --ss-subtext0-rgb: 162 183 174;
-  --ss-subtext1-rgb: 187 205 197;
-  --ss-text-rgb: 211 226 219;
-  --ss-text-hi-rgb: 230 240 235;
-  --ss-yellow-rgb: 235 195 66;
-  --ss-yellow-hi-rgb: 251 214 100;
-  --ss-orange-rgb: 215 142 60;
-  --ss-orange-hi-rgb: 238 168 92;
-  --ss-red-rgb: 218 96 88;
-  --ss-red-hi-rgb: 239 121 111;
-  --ss-green-rgb: 115 198 134;
-  --ss-green-hi-rgb: 130 216 150;
-  --ss-sage-rgb: 111 179 147;
-  --ss-sage-hi-rgb: 142 207 175;
-  --ss-denim-rgb: 99 155 213;
-  --ss-denim-hi-rgb: 130 183 238;
-  --ss-clay-rgb: 231 131 189;
+  --ss-crust-rgb: 20 26 23;
+  --ss-mantle-rgb: 26 35 30;
+  --ss-base-rgb: 33 45 39;
+  --ss-surface0-rgb: 42 56 49;
+  --ss-surface1-rgb: 52 69 60;
+  --ss-surface2-rgb: 66 84 75;
+  --ss-overlay0-rgb: 91 106 98;
+  --ss-overlay1-rgb: 119 132 125;
+  --ss-overlay2-rgb: 146 157 151;
+  --ss-subtext0-rgb: 171 180 175;
+  --ss-subtext1-rgb: 195 202 198;
+  --ss-text-rgb: 218 224 220;
+  --ss-text-hi-rgb: 234 238 236;
+  --ss-yellow-rgb: 235 193 104;
+  --ss-yellow-hi-rgb: 251 211 128;
+  --ss-orange-rgb: 208 145 79;
+  --ss-orange-hi-rgb: 231 171 109;
+  --ss-red-rgb: 205 107 99;
+  --ss-red-hi-rgb: 225 131 122;
+  --ss-green-rgb: 128 194 142;
+  --ss-green-hi-rgb: 143 213 158;
+  --ss-sage-rgb: 123 176 150;
+  --ss-sage-hi-rgb: 152 204 178;
+  --ss-denim-rgb: 112 155 200;
+  --ss-denim-hi-rgb: 141 182 226;
+  --ss-clay-rgb: 206 150 180;
 }

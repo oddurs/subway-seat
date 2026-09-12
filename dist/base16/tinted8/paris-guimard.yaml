@@ -8,152 +8,152 @@ scheme:
   slug: "paris-guimard"
   family: "Subway Seat"
   style: "Paris Guimard"
-  description: "Cast-iron green off a Metro entrance. The original green."
+  description: "Cast iron off a Metro entrance, which is nearly black. Brass leads."
 variant: "dark"
 palette:
-  black: "#0E3125"
-  black-bright: "#194A39"
-  black-dim: "#0C261C"
-  white: "#D3E2DB"
-  white-bright: "#E6F0EB"
-  white-dim: "#BBCDC5"
-  gray: "#67897A"
-  gray-bright: "#86A195"
-  gray-dim: "#47705F"
-  red: "#DA6058"
-  red-bright: "#EF796F"
-  green: "#73C686"
-  green-bright: "#82D896"
-  yellow: "#EBC342"
-  yellow-bright: "#FBD664"
-  blue: "#639BD5"
-  blue-bright: "#82B7EE"
-  magenta: "#D78E3C"
-  magenta-bright: "#EEA85C"
-  cyan: "#6FB393"
-  cyan-bright: "#8ECFAF"
-  orange: "#D78E3C"
-  orange-bright: "#EEA85C"
-  brown: "#E783BD"
+  black: "#212D27"
+  black-bright: "#34453C"
+  black-dim: "#1A231E"
+  white: "#DAE0DC"
+  white-bright: "#EAEEEC"
+  white-dim: "#C3CAC6"
+  gray: "#77847D"
+  gray-bright: "#929D97"
+  gray-dim: "#5B6A62"
+  red: "#CD6B63"
+  red-bright: "#E1837A"
+  green: "#80C28E"
+  green-bright: "#8FD59E"
+  yellow: "#EBC168"
+  yellow-bright: "#FBD380"
+  blue: "#709BC8"
+  blue-bright: "#8DB6E2"
+  magenta: "#D0914F"
+  magenta-bright: "#E7AB6D"
+  cyan: "#7BB096"
+  cyan-bright: "#98CCB2"
+  orange: "#D0914F"
+  orange-bright: "#E7AB6D"
+  brown: "#CE96B4"
 syntax:
-  comment: "#67897A" # comment
-  punctuation.definition.comment: "#67897A" # comment
-  constant: "#EF796F" # constant
-  constant.numeric: "#EF796F" # number
-  constant.language: "#EF796F" # boolean
-  constant.character: "#E783BD" # string.escape
-  entity.name: "#D3E2DB" # variable
-  entity.name.function: "#EBC342" # function
-  entity.name.class: "#6FB393" # type
-  entity.name.type: "#6FB393" # type
-  entity.name.namespace: "#A2B7AE" # namespace
-  entity.name.tag: "#D78E3C" # tag
-  entity.name.label: "#E783BD" # decorator
-  entity.name.section: "#EBC342" # heading
-  entity.other: "#D3E2DB" # variable
-  entity.other.attribute-name: "#EBC342" # attribute
-  entity.other.inherited-class: "#6FB393" # type
-  invalid: "#DA6058" # invalid
-  invalid.deprecated: "#E783BD" # clay
-  keyword: "#D78E3C" # keyword
-  keyword.operator: "#86A195" # operator
-  markup: "#D3E2DB" # text
-  markup.bold: "#E6F0EB" # strong
-  markup.italic: "#D3E2DB" # emphasis
-  markup.heading: "#EBC342" # heading
-  markup.link: "#639BD5" # link
-  markup.list: "#D78E3C" # keyword
-  markup.quote: "#A2B7AE" # quote
-  markup.raw: "#73C686" # code
-  markup.inserted: "#73C686" # green
-  markup.deleted: "#EF796F" # red_hi
-  markup.changed: "#EBC342" # yellow
-  meta: "#D3E2DB" # text
-  meta.annotation: "#E783BD" # decorator
-  punctuation: "#86A195" # punctuation
-  punctuation.definition.string: "#73C686" # string
-  punctuation.section: "#86A195" # punctuation
-  storage: "#D78E3C" # storage
-  string: "#73C686" # string
-  string.regexp: "#E783BD" # regexp
-  string.interpolated: "#E783BD" # string.escape
-  support: "#EBC342" # function
-  support.class: "#6FB393" # type
-  support.type: "#6FB393" # type.builtin
-  support.constant: "#EF796F" # constant
-  support.function.builtin: "#EBC342" # function.builtin
-  support.variable: "#EF796F" # variable.builtin
-  variable: "#D3E2DB" # variable
-  variable.language: "#EF796F" # variable.builtin
-  variable.parameter: "#BBCDC5" # parameter
-  variable.other.property: "#BBCDC5" # property
+  comment: "#77847D" # comment
+  punctuation.definition.comment: "#77847D" # comment
+  constant: "#E1837A" # constant
+  constant.numeric: "#E1837A" # number
+  constant.language: "#E1837A" # boolean
+  constant.character: "#CE96B4" # string.escape
+  entity.name: "#DAE0DC" # variable
+  entity.name.function: "#EBC168" # function
+  entity.name.class: "#7BB096" # type
+  entity.name.type: "#7BB096" # type
+  entity.name.namespace: "#ABB4AF" # namespace
+  entity.name.tag: "#D0914F" # tag
+  entity.name.label: "#CE96B4" # decorator
+  entity.name.section: "#EBC168" # heading
+  entity.other: "#DAE0DC" # variable
+  entity.other.attribute-name: "#EBC168" # attribute
+  entity.other.inherited-class: "#7BB096" # type
+  invalid: "#CD6B63" # invalid
+  invalid.deprecated: "#CE96B4" # clay
+  keyword: "#D0914F" # keyword
+  keyword.operator: "#929D97" # operator
+  markup: "#DAE0DC" # text
+  markup.bold: "#EAEEEC" # strong
+  markup.italic: "#DAE0DC" # emphasis
+  markup.heading: "#EBC168" # heading
+  markup.link: "#709BC8" # link
+  markup.list: "#D0914F" # keyword
+  markup.quote: "#ABB4AF" # quote
+  markup.raw: "#80C28E" # code
+  markup.inserted: "#80C28E" # green
+  markup.deleted: "#E1837A" # red_hi
+  markup.changed: "#EBC168" # yellow
+  meta: "#DAE0DC" # text
+  meta.annotation: "#CE96B4" # decorator
+  punctuation: "#929D97" # punctuation
+  punctuation.definition.string: "#80C28E" # string
+  punctuation.section: "#929D97" # punctuation
+  storage: "#D0914F" # storage
+  string: "#80C28E" # string
+  string.regexp: "#CE96B4" # regexp
+  string.interpolated: "#CE96B4" # string.escape
+  support: "#EBC168" # function
+  support.class: "#7BB096" # type
+  support.type: "#7BB096" # type.builtin
+  support.constant: "#E1837A" # constant
+  support.function.builtin: "#EBC168" # function.builtin
+  support.variable: "#E1837A" # variable.builtin
+  variable: "#DAE0DC" # variable
+  variable.language: "#E1837A" # variable.builtin
+  variable.parameter: "#C3CAC6" # parameter
+  variable.other.property: "#C3CAC6" # property
 ui:
   accent:
-    normal: "#D78E3C"
+    normal: "#D0914F"
   border:
-    normal: "#113E2E"
+    normal: "#2A3831"
   chrome:
     background:
-      normal: "#0C261C"
-      dark: "#0A1D15"
-      light: "#113E2E"
+      normal: "#1A231E"
+      dark: "#141A17"
+      light: "#2A3831"
     foreground:
-      normal: "#BBCDC5"
-      dark: "#A2B7AE"
-      light: "#D3E2DB"
+      normal: "#C3CAC6"
+      dark: "#ABB4AF"
+      light: "#DAE0DC"
   cursor:
     normal:
-      background: "#EBC342"
-      foreground: "#0A1D15"
+      background: "#EBC168"
+      foreground: "#141A17"
     muted:
-      background: "#67897A"
-      foreground: "#0E3125"
-  deprecated: "#E783BD"
+      background: "#77847D"
+      foreground: "#212D27"
+  deprecated: "#CE96B4"
   global:
     background:
-      normal: "#0E3125"
-      dark: "#0C261C"
-      light: "#113E2E"
+      normal: "#212D27"
+      dark: "#1A231E"
+      light: "#2A3831"
     foreground:
-      normal: "#D3E2DB"
-      dark: "#BBCDC5"
-      light: "#E6F0EB"
+      normal: "#DAE0DC"
+      dark: "#C3CAC6"
+      light: "#EAEEEC"
   gutter:
-    background: "#0E3125"
-    foreground: "#67897A"
+    background: "#212D27"
+    foreground: "#77847D"
   highlight:
     button:
-      background: "#194A39"
-      foreground: "#E6F0EB"
+      background: "#34453C"
+      foreground: "#EAEEEC"
     line:
-      background: "#113E2E"
-      foreground: "#EBC342"
+      background: "#2A3831"
+      foreground: "#EBC168"
     search:
-      background: "#505D2E"
-      foreground: "#E6F0EB"
+      background: "#5E593A"
+      foreground: "#EAEEEC"
     text:
-      background: "#194A39"
-      foreground: "#D3E2DB"
-      active-background: "#285A47"
-      active-foreground: "#E6F0EB"
+      background: "#34453C"
+      foreground: "#DAE0DC"
+      active-background: "#42544B"
+      active-foreground: "#EAEEEC"
   indent-guide:
-    background: "#194A39"
-    active-background: "#47705F"
+    background: "#34453C"
+    active-background: "#5B6A62"
   link:
     normal:
-      background: "#0E3125"
-      foreground: "#639BD5"
+      background: "#212D27"
+      foreground: "#709BC8"
   selection:
-    background: "#285A47"
-    foreground: "#E6F0EB"
-    inactive-background: "#194A39"
+    background: "#42544B"
+    foreground: "#EAEEEC"
+    inactive-background: "#34453C"
   status:
-    error: "#EF796F"
-    info: "#639BD5"
-    success: "#73C686"
-    warning: "#EBC342"
+    error: "#E1837A"
+    info: "#709BC8"
+    success: "#80C28E"
+    warning: "#EBC168"
   tooltip:
-    background: "#113E2E"
-    foreground: "#D3E2DB"
+    background: "#2A3831"
+    foreground: "#DAE0DC"
   whitespace:
-    foreground: "#47705F"
+    foreground: "#5B6A62"

@@ -5,37 +5,37 @@
 "use strict";
 
 const theme = {
-  "backgroundColor": "#062017",
-  "foregroundColor": "#CFDED7",
-  "cursorColor": "#EBC342",
-  "cursorAccentColor": "#062017",
-  "selectionColor": "#CFDED733",
-  "borderColor": "#0A2B20",
+  "backgroundColor": "#141D19",
+  "foregroundColor": "#D5DCD8",
+  "cursorColor": "#EBC168",
+  "cursorAccentColor": "#141D19",
+  "selectionColor": "#D5DCD833",
+  "borderColor": "#1D2822",
   "colors": {
-    "black": "#13382A",
-    "red": "#DA6058",
-    "green": "#73C686",
-    "yellow": "#EBC342",
-    "blue": "#639BD5",
-    "magenta": "#D78E3C",
-    "cyan": "#6FB393",
-    "white": "#B8CAC2",
-    "lightBlack": "#648576",
-    "lightRed": "#EF796F",
-    "lightGreen": "#82D896",
-    "lightYellow": "#FBD664",
-    "lightBlue": "#82B7EE",
-    "lightMagenta": "#EEA85C",
-    "lightCyan": "#8ECFAF",
-    "lightWhite": "#E4EEE9"
+    "black": "#27332D",
+    "red": "#CD6B63",
+    "green": "#80C28E",
+    "yellow": "#EBC168",
+    "blue": "#709BC8",
+    "magenta": "#D0914F",
+    "cyan": "#7BB096",
+    "white": "#C0C7C3",
+    "lightBlack": "#738079",
+    "lightRed": "#E1837A",
+    "lightGreen": "#8FD59E",
+    "lightYellow": "#FBD380",
+    "lightBlue": "#8DB6E2",
+    "lightMagenta": "#E7AB6D",
+    "lightCyan": "#98CCB2",
+    "lightWhite": "#E8ECEA"
   }
 };
 
 const css = `
-  .tabs_nav, .tabs_list { background-color: #05120C; }
-  .tabs_title { color: #9EB3AA; }
-  .tab_tab { color: #648576; background-color: #05120C; }
-  .tab_tab.tab_active { color: #E4EEE9; background-color: #062017; box-shadow: inset 0 -2px 0 #EBC342; }
+  .tabs_nav, .tabs_list { background-color: #0B100D; }
+  .tabs_title { color: #A7B0AB; }
+  .tab_tab { color: #738079; background-color: #0B100D; }
+  .tab_tab.tab_active { color: #E8ECEA; background-color: #141D19; box-shadow: inset 0 -2px 0 #EBC168; }
 `;
 
 exports.decorateConfig = (config) =>

@@ -2,9 +2,9 @@
 # Paris Catacombes: Godot's interface theme. Enter these in Editor › Editor Settings › Interface › Theme.
 # (Godot 4.6+ labels the first one "Color Preset"; 4.0 to 4.5 call it "Preset".)
 Color Preset: Custom
-Base Color: #061811
-Accent Color: #D78E3C
-Contrast: 0.22
+Base Color: #0F1612
+Accent Color: #D0914F
+Contrast: 0.24
 Icon Saturation: 1
 
 # And in Text Editor › Theme:

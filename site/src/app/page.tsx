@@ -85,7 +85,7 @@ export default function Home() {
             id="flavors"
             label="Three cities, nine flavors"
             title="Pick a seat."
-            intro="Every flavor defines the same 26 roles, so a port written against roles works in all of them. New York rides warm; London rides cool and spends its color far more carefully. Pick one and the whole site changes with you — type, texture and signage included."
+            intro="Every flavor defines the same 26 roles, so a port written against roles works in all of them. New York rides warm, London rides cool and signal-lit, Paris rides dark iron and brass. Pick one and the whole site changes with you — type, texture and signage included."
           >
             <div data-only="new-york">
               <FlavorCards flavors={flavors.filter((f) => f.family === "new-york")} />
@@ -120,7 +120,7 @@ export default function Home() {
             id="palette"
             label="The palette"
             title="Nine grounds, four texts, thirteen accents."
-            intro="The same 26 slots in both cities. New York fills them warm — blue faded to denim, magenta reassigned to burnt orange. London fills them from the network: brick, the platform-edge yellow, District green, Corporate Blue and the standard red. Pick a chip to copy it."
+            intro="The same 26 slots in all three cities. New York fills them warm — blue faded to denim, magenta reassigned to burnt orange. London fills them from its signage: brick, the platform-edge yellow, Corporate Blue and the standard red. Paris fills them from cast iron and the map: brass, ochre, pistachio, and the line colors. Pick a chip to copy it."
           >
             <Palette />
             <Routes />

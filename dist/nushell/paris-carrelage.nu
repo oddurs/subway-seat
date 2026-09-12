@@ -4,113 +4,113 @@
 $env.config.highlight_resolved_externals = true
 
 $env.config.color_config = {
-    shape_internalcall: "#856A00"
-    shape_external_resolved: "#856A00"
-    shape_external: "#C82C2C"
+    shape_internalcall: "#8A6700"
+    shape_external_resolved: "#8A6700"
+    shape_external: "#BB403B"
     shape_keyword: "#9B5D00"
-    shape_flag: "#007752"
-    shape_externalarg: "#334A41"
-    shape_signature: "#007752"
-    shape_string: "#00823B"
-    shape_raw_string: "#00823B"
-    shape_string_interpolation: "#B43586"
-    shape_int: "#C82C2C"
-    shape_float: "#C82C2C"
-    shape_bool: "#C82C2C"
-    shape_binary: "#C82C2C"
-    shape_datetime: "#C82C2C"
-    shape_nothing: "#C82C2C"
-    shape_literal: "#C82C2C"
-    shape_range: "#B43586"
-    shape_custom: "#B43586"
-    shape_variable: "#B43586"
-    shape_vardecl: "#B43586"
-    shape_filepath: "#334A41"
-    shape_directory: "#334A41"
-    shape_globpattern: "#B43586"
-    shape_glob_interpolation: "#B43586"
+    shape_flag: "#277555"
+    shape_externalarg: "#374940"
+    shape_signature: "#277555"
+    shape_string: "#18803F"
+    shape_raw_string: "#18803F"
+    shape_string_interpolation: "#9A557D"
+    shape_int: "#BB403B"
+    shape_float: "#BB403B"
+    shape_bool: "#BB403B"
+    shape_binary: "#BB403B"
+    shape_datetime: "#BB403B"
+    shape_nothing: "#BB403B"
+    shape_literal: "#BB403B"
+    shape_range: "#9A557D"
+    shape_custom: "#9A557D"
+    shape_variable: "#9A557D"
+    shape_vardecl: "#9A557D"
+    shape_filepath: "#374940"
+    shape_directory: "#374940"
+    shape_globpattern: "#9A557D"
+    shape_glob_interpolation: "#9A557D"
     shape_pipe: "#9B5D00"
-    shape_redirection: "#B43586"
-    shape_operator: "#B43586"
-    shape_block: "#4A695C"
-    shape_closure: "#4A695C"
-    shape_list: "#4A695C"
-    shape_record: "#4A695C"
-    shape_table: "#4A695C"
-    shape_match_pattern: "#00823B"
-    shape_matching_brackets: { fg: "#937500" attr: "b" }
-    shape_garbage: { fg: "#C82C2C" attr: "u" }
+    shape_redirection: "#9A557D"
+    shape_operator: "#9A557D"
+    shape_block: "#4F675B"
+    shape_closure: "#4F675B"
+    shape_list: "#4F675B"
+    shape_record: "#4F675B"
+    shape_table: "#4F675B"
+    shape_match_pattern: "#18803F"
+    shape_matching_brackets: { fg: "#997300" attr: "b" }
+    shape_garbage: { fg: "#BB403B" attr: "u" }
 
-    background: "#E2EDE8"
-    foreground: "#21352D"
+    background: "#E4EDE8"
+    foreground: "#25352C"
     cursor: "#9B5D00"
-    separator: "#88AF9E"
-    leading_trailing_space_bg: { bg: "#9DC1B1" }
+    separator: "#8EAD9D"
+    leading_trailing_space_bg: { bg: "#A3BFB0" }
     header: { fg: "#9B5D00" attr: "b" }
-    row_index: "#5C8171"
-    empty: "#759A8A"
-    hints: "#759A8A"
-    search_result: { fg: "#16241E" bg: "#C6C6A2" }
-    selection: { fg: "#16241E" bg: "#9DC1B1" }
+    row_index: "#627F70"
+    empty: "#7B9989"
+    hints: "#7B9989"
+    search_result: { fg: "#18231D" bg: "#C9C5A2" }
+    selection: { fg: "#18231D" bg: "#A3BFB0" }
     selection_cursor: { attr: "n" }
-    bool: "#C82C2C"
-    int: "#C82C2C"
-    float: "#C82C2C"
-    string: "#21352D"
-    glob: "#B43586"
-    binary: "#C82C2C"
-    binary_null_char: "#759A8A"
-    binary_printable: "#00823B"
-    binary_whitespace: "#007752"
-    binary_ascii_other: "#B43586"
+    bool: "#BB403B"
+    int: "#BB403B"
+    float: "#BB403B"
+    string: "#25352C"
+    glob: "#9A557D"
+    binary: "#BB403B"
+    binary_null_char: "#7B9989"
+    binary_printable: "#18803F"
+    binary_whitespace: "#277555"
+    binary_ascii_other: "#9A557D"
     binary_non_ascii: "#9B5D00"
-    custom: "#B43586"
-    nothing: "#759A8A"
-    list: "#21352D"
-    record: "#21352D"
-    range: "#B43586"
-    cell-path: "#4A695C"
-    block: "#4A695C"
-    closure: "#4A695C"
-    semver: "#007752"
-    semver-range: "#007752"
-    banner_foreground: "#21352D"
+    custom: "#9A557D"
+    nothing: "#7B9989"
+    list: "#25352C"
+    record: "#25352C"
+    range: "#9A557D"
+    cell-path: "#4F675B"
+    block: "#4F675B"
+    closure: "#4F675B"
+    semver: "#277555"
+    semver-range: "#277555"
+    banner_foreground: "#25352C"
     banner_highlight1: "#9B5D00"
-    banner_highlight2: "#856A00"
+    banner_highlight2: "#8A6700"
     filesize: {||
-      if $in < 1kb { "#405B4F"
-      } else if $in < 1mb { "#00823B"
-      } else if $in < 100mb { "#856A00"
+      if $in < 1kb { "#45594F"
+      } else if $in < 1mb { "#18803F"
+      } else if $in < 100mb { "#8A6700"
       } else if $in < 1gb { "#9B5D00"
-      } else { "#C82C2C" }
+      } else { "#BB403B" }
     }
     duration: {||
-      if $in < 1sec { "#00823B"
-      } else if $in < 1min { "#856A00"
+      if $in < 1sec { "#18803F"
+      } else if $in < 1min { "#8A6700"
       } else if $in < 1hr { "#9B5D00"
-      } else { "#C82C2C" }
+      } else { "#BB403B" }
     }
     datetime: {|| (date now) - $in |
-      if $in < 1hr { "#00863D"
-      } else if $in < 1day { "#00823B"
-      } else if $in < 1wk { "#856A00"
+      if $in < 1hr { "#168540"
+      } else if $in < 1day { "#18803F"
+      } else if $in < 1wk { "#8A6700"
       } else if $in < 4wk { "#9B5D00"
-      } else if $in < 52wk { "#405B4F"
-      } else { "#5C8171" }
+      } else if $in < 52wk { "#45594F"
+      } else { "#627F70" }
     }
 }
 
-$env.config.explore.selected_cell = { fg: "#E2EDE8" bg: "#9B5D00" }
-$env.config.explore.highlight = { fg: "#16241E" bg: "#C6C6A2" }
-$env.config.explore.status_bar_text = { fg: "#334A41" }
-$env.config.explore.status_bar_background = { fg: "#21352D" bg: "#C8DAD1" }
-$env.config.explore.command_bar_text = { fg: "#21352D" }
-$env.config.explore.command_bar_background = { bg: "#C8DAD1" }
-$env.config.explore.title_bar_text = { fg: "#16241E" attr: "b" }
-$env.config.explore.title_bar_background = { bg: "#B6D2C5" }
+$env.config.explore.selected_cell = { fg: "#E4EDE8" bg: "#9B5D00" }
+$env.config.explore.highlight = { fg: "#18231D" bg: "#C9C5A2" }
+$env.config.explore.status_bar_text = { fg: "#374940" }
+$env.config.explore.status_bar_background = { fg: "#25352C" bg: "#CAD9D1" }
+$env.config.explore.command_bar_text = { fg: "#25352C" }
+$env.config.explore.command_bar_background = { bg: "#CAD9D1" }
+$env.config.explore.title_bar_text = { fg: "#18231D" attr: "b" }
+$env.config.explore.title_bar_background = { bg: "#BAD0C4" }
 $env.config.explore.status = {
-    info: { fg: "#0961A9" }
-    success: { fg: "#E2EDE8" bg: "#00823B" }
-    warn: { fg: "#E2EDE8" bg: "#856A00" }
-    error: { fg: "#E2EDE8" bg: "#C82C2C" }
+    info: { fg: "#27629C" }
+    success: { fg: "#E4EDE8" bg: "#18803F" }
+    warn: { fg: "#E4EDE8" bg: "#8A6700" }
+    error: { fg: "#E4EDE8" bg: "#BB403B" }
 }

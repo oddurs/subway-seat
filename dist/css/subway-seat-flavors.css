@@ -528,220 +528,220 @@
   color-scheme: dark;
 
   /* Ground */
-  --ss-crust: #0A1D15; /* Blackout */
-  --ss-mantle: #0C261C; /* Espresso */
-  --ss-base: #0E3125; /* Paneling */
-  --ss-surface0: #113E2E; /* Coppertone */
-  --ss-surface1: #194A39; /* Saddle */
-  --ss-surface2: #285A47; /* Corduroy */
-  --ss-overlay0: #47705F; /* Pecan */
-  --ss-overlay1: #67897A; /* Cardboard */
-  --ss-overlay2: #86A195; /* Burlap */
+  --ss-crust: #141A17; /* Blackout */
+  --ss-mantle: #1A231E; /* Espresso */
+  --ss-base: #212D27; /* Paneling */
+  --ss-surface0: #2A3831; /* Coppertone */
+  --ss-surface1: #34453C; /* Saddle */
+  --ss-surface2: #42544B; /* Corduroy */
+  --ss-overlay0: #5B6A62; /* Pecan */
+  --ss-overlay1: #77847D; /* Cardboard */
+  --ss-overlay2: #929D97; /* Burlap */
 
   /* Text */
-  --ss-subtext0: #A2B7AE; /* Khaki */
-  --ss-subtext1: #BBCDC5; /* Almond */
-  --ss-text: #D3E2DB; /* Parchment */
-  --ss-text-hi: #E6F0EB; /* Ivory */
+  --ss-subtext0: #ABB4AF; /* Khaki */
+  --ss-subtext1: #C3CAC6; /* Almond */
+  --ss-text: #DAE0DC; /* Parchment */
+  --ss-text-hi: #EAEEEC; /* Ivory */
 
   /* Accents */
-  --ss-yellow: #EBC342; /* Harvest gold */
-  --ss-yellow-hi: #FBD664; /* Broadway yellow */
-  --ss-orange: #D78E3C; /* Burnt orange */
-  --ss-orange-hi: #EEA85C; /* Sixth Avenue */
-  --ss-red: #DA6058; /* Redbird */
-  --ss-red-hi: #EF796F; /* Redbird bright */
-  --ss-green: #73C686; /* Avocado */
-  --ss-green-hi: #82D896; /* Avocado bright */
-  --ss-sage: #6FB393; /* Seafoam tile */
-  --ss-sage-hi: #8ECFAF; /* Seafoam bright */
-  --ss-denim: #639BD5; /* Faded denim */
-  --ss-denim-hi: #82B7EE; /* Denim bright */
-  --ss-clay: #E783BD; /* Terracotta */
+  --ss-yellow: #EBC168; /* Harvest gold */
+  --ss-yellow-hi: #FBD380; /* Broadway yellow */
+  --ss-orange: #D0914F; /* Burnt orange */
+  --ss-orange-hi: #E7AB6D; /* Sixth Avenue */
+  --ss-red: #CD6B63; /* Redbird */
+  --ss-red-hi: #E1837A; /* Redbird bright */
+  --ss-green: #80C28E; /* Avocado */
+  --ss-green-hi: #8FD59E; /* Avocado bright */
+  --ss-sage: #7BB096; /* Seafoam tile */
+  --ss-sage-hi: #98CCB2; /* Seafoam bright */
+  --ss-denim: #709BC8; /* Faded denim */
+  --ss-denim-hi: #8DB6E2; /* Denim bright */
+  --ss-clay: #CE96B4; /* Terracotta */
 
   /* Diff grounds: -add/-del/-chg for lines, -emph for changed words, -dim for faded diffs */
-  --ss-diff-add: #21422E;
-  --ss-diff-add-emph: #2E563B;
-  --ss-diff-add-dim: #193525;
-  --ss-diff-del: #402E26;
-  --ss-diff-del-emph: #5D3830;
-  --ss-diff-del-dim: #2D2820;
-  --ss-diff-chg: #2E381C;
-  --ss-diff-chg-emph: #444821;
+  --ss-diff-add: #2C3F31;
+  --ss-diff-add-emph: #39533F;
+  --ss-diff-add-dim: #233228;
+  --ss-diff-del: #442F2B;
+  --ss-diff-del-emph: #5E3A35;
+  --ss-diff-del-dim: #332824;
+  --ss-diff-chg: #363524;
+  --ss-diff-chg-emph: #4C452C;
 
   /* RGB triplets, for rgb(var(--ss-base-rgb) / 0.5) */
-  --ss-crust-rgb: 10 29 21;
-  --ss-mantle-rgb: 12 38 28;
-  --ss-base-rgb: 14 49 37;
-  --ss-surface0-rgb: 17 62 46;
-  --ss-surface1-rgb: 25 74 57;
-  --ss-surface2-rgb: 40 90 71;
-  --ss-overlay0-rgb: 71 112 95;
-  --ss-overlay1-rgb: 103 137 122;
-  --ss-overlay2-rgb: 134 161 149;
-  --ss-subtext0-rgb: 162 183 174;
-  --ss-subtext1-rgb: 187 205 197;
-  --ss-text-rgb: 211 226 219;
-  --ss-text-hi-rgb: 230 240 235;
-  --ss-yellow-rgb: 235 195 66;
-  --ss-yellow-hi-rgb: 251 214 100;
-  --ss-orange-rgb: 215 142 60;
-  --ss-orange-hi-rgb: 238 168 92;
-  --ss-red-rgb: 218 96 88;
-  --ss-red-hi-rgb: 239 121 111;
-  --ss-green-rgb: 115 198 134;
-  --ss-green-hi-rgb: 130 216 150;
-  --ss-sage-rgb: 111 179 147;
-  --ss-sage-hi-rgb: 142 207 175;
-  --ss-denim-rgb: 99 155 213;
-  --ss-denim-hi-rgb: 130 183 238;
-  --ss-clay-rgb: 231 131 189;
+  --ss-crust-rgb: 20 26 23;
+  --ss-mantle-rgb: 26 35 30;
+  --ss-base-rgb: 33 45 39;
+  --ss-surface0-rgb: 42 56 49;
+  --ss-surface1-rgb: 52 69 60;
+  --ss-surface2-rgb: 66 84 75;
+  --ss-overlay0-rgb: 91 106 98;
+  --ss-overlay1-rgb: 119 132 125;
+  --ss-overlay2-rgb: 146 157 151;
+  --ss-subtext0-rgb: 171 180 175;
+  --ss-subtext1-rgb: 195 202 198;
+  --ss-text-rgb: 218 224 220;
+  --ss-text-hi-rgb: 234 238 236;
+  --ss-yellow-rgb: 235 193 104;
+  --ss-yellow-hi-rgb: 251 211 128;
+  --ss-orange-rgb: 208 145 79;
+  --ss-orange-hi-rgb: 231 171 109;
+  --ss-red-rgb: 205 107 99;
+  --ss-red-hi-rgb: 225 131 122;
+  --ss-green-rgb: 128 194 142;
+  --ss-green-hi-rgb: 143 213 158;
+  --ss-sage-rgb: 123 176 150;
+  --ss-sage-hi-rgb: 152 204 178;
+  --ss-denim-rgb: 112 155 200;
+  --ss-denim-hi-rgb: 141 182 226;
+  --ss-clay-rgb: 206 150 180;
 }
 
 [data-theme="catacombes"] {
   color-scheme: dark;
 
   /* Ground */
-  --ss-crust: #05120C; /* Blackout */
-  --ss-mantle: #061811; /* Espresso */
-  --ss-base: #062017; /* Paneling */
-  --ss-surface0: #0A2B20; /* Coppertone */
-  --ss-surface1: #13382A; /* Saddle */
-  --ss-surface2: #1E4738; /* Corduroy */
-  --ss-overlay0: #456A5B; /* Pecan */
-  --ss-overlay1: #648576; /* Cardboard */
-  --ss-overlay2: #829D91; /* Burlap */
+  --ss-crust: #0B100D; /* Blackout */
+  --ss-mantle: #0F1612; /* Espresso */
+  --ss-base: #141D19; /* Paneling */
+  --ss-surface0: #1D2822; /* Coppertone */
+  --ss-surface1: #27332D; /* Saddle */
+  --ss-surface2: #34423B; /* Corduroy */
+  --ss-overlay0: #57645D; /* Pecan */
+  --ss-overlay1: #738079; /* Cardboard */
+  --ss-overlay2: #8E9993; /* Burlap */
 
   /* Text */
-  --ss-subtext0: #9EB3AA; /* Khaki */
-  --ss-subtext1: #B8CAC2; /* Almond */
-  --ss-text: #CFDED7; /* Parchment */
-  --ss-text-hi: #E4EEE9; /* Ivory */
+  --ss-subtext0: #A7B0AB; /* Khaki */
+  --ss-subtext1: #C0C7C3; /* Almond */
+  --ss-text: #D5DCD8; /* Parchment */
+  --ss-text-hi: #E8ECEA; /* Ivory */
 
   /* Accents */
-  --ss-yellow: #EBC342; /* Harvest gold */
-  --ss-yellow-hi: #FBD664; /* Broadway yellow */
-  --ss-orange: #D78E3C; /* Burnt orange */
-  --ss-orange-hi: #EEA85C; /* Sixth Avenue */
-  --ss-red: #DA6058; /* Redbird */
-  --ss-red-hi: #EF796F; /* Redbird bright */
-  --ss-green: #73C686; /* Avocado */
-  --ss-green-hi: #82D896; /* Avocado bright */
-  --ss-sage: #6FB393; /* Seafoam tile */
-  --ss-sage-hi: #8ECFAF; /* Seafoam bright */
-  --ss-denim: #639BD5; /* Faded denim */
-  --ss-denim-hi: #82B7EE; /* Denim bright */
-  --ss-clay: #E783BD; /* Terracotta */
+  --ss-yellow: #EBC168; /* Harvest gold */
+  --ss-yellow-hi: #FBD380; /* Broadway yellow */
+  --ss-orange: #D0914F; /* Burnt orange */
+  --ss-orange-hi: #E7AB6D; /* Sixth Avenue */
+  --ss-red: #CD6B63; /* Redbird */
+  --ss-red-hi: #E1837A; /* Redbird bright */
+  --ss-green: #80C28E; /* Avocado */
+  --ss-green-hi: #8FD59E; /* Avocado bright */
+  --ss-sage: #7BB096; /* Seafoam tile */
+  --ss-sage-hi: #98CCB2; /* Seafoam bright */
+  --ss-denim: #709BC8; /* Faded denim */
+  --ss-denim-hi: #8DB6E2; /* Denim bright */
+  --ss-clay: #CE96B4; /* Terracotta */
 
   /* Diff grounds: -add/-del/-chg for lines, -emph for changed words, -dim for faded diffs */
-  --ss-diff-add: #1D3A27;
-  --ss-diff-add-emph: #2A4F35;
-  --ss-diff-add-dim: #142B1D;
-  --ss-diff-del: #3C2620;
-  --ss-diff-del-emph: #5A312A;
-  --ss-diff-del-dim: #291F19;
-  --ss-diff-chg: #2A2E15;
-  --ss-diff-chg-emph: #41401A;
+  --ss-diff-add: #253729;
+  --ss-diff-add-emph: #334D39;
+  --ss-diff-add-dim: #1B291F;
+  --ss-diff-del: #3D2823;
+  --ss-diff-del-emph: #59342F;
+  --ss-diff-del-dim: #2C1F1C;
+  --ss-diff-chg: #2F2C1C;
+  --ss-diff-chg-emph: #453E25;
 
   /* RGB triplets, for rgb(var(--ss-base-rgb) / 0.5) */
-  --ss-crust-rgb: 5 18 12;
-  --ss-mantle-rgb: 6 24 17;
-  --ss-base-rgb: 6 32 23;
-  --ss-surface0-rgb: 10 43 32;
-  --ss-surface1-rgb: 19 56 42;
-  --ss-surface2-rgb: 30 71 56;
-  --ss-overlay0-rgb: 69 106 91;
-  --ss-overlay1-rgb: 100 133 118;
-  --ss-overlay2-rgb: 130 157 145;
-  --ss-subtext0-rgb: 158 179 170;
-  --ss-subtext1-rgb: 184 202 194;
-  --ss-text-rgb: 207 222 215;
-  --ss-text-hi-rgb: 228 238 233;
-  --ss-yellow-rgb: 235 195 66;
-  --ss-yellow-hi-rgb: 251 214 100;
-  --ss-orange-rgb: 215 142 60;
-  --ss-orange-hi-rgb: 238 168 92;
-  --ss-red-rgb: 218 96 88;
-  --ss-red-hi-rgb: 239 121 111;
-  --ss-green-rgb: 115 198 134;
-  --ss-green-hi-rgb: 130 216 150;
-  --ss-sage-rgb: 111 179 147;
-  --ss-sage-hi-rgb: 142 207 175;
-  --ss-denim-rgb: 99 155 213;
-  --ss-denim-hi-rgb: 130 183 238;
-  --ss-clay-rgb: 231 131 189;
+  --ss-crust-rgb: 11 16 13;
+  --ss-mantle-rgb: 15 22 18;
+  --ss-base-rgb: 20 29 25;
+  --ss-surface0-rgb: 29 40 34;
+  --ss-surface1-rgb: 39 51 45;
+  --ss-surface2-rgb: 52 66 59;
+  --ss-overlay0-rgb: 87 100 93;
+  --ss-overlay1-rgb: 115 128 121;
+  --ss-overlay2-rgb: 142 153 147;
+  --ss-subtext0-rgb: 167 176 171;
+  --ss-subtext1-rgb: 192 199 195;
+  --ss-text-rgb: 213 220 216;
+  --ss-text-hi-rgb: 232 236 234;
+  --ss-yellow-rgb: 235 193 104;
+  --ss-yellow-hi-rgb: 251 211 128;
+  --ss-orange-rgb: 208 145 79;
+  --ss-orange-hi-rgb: 231 171 109;
+  --ss-red-rgb: 205 107 99;
+  --ss-red-hi-rgb: 225 131 122;
+  --ss-green-rgb: 128 194 142;
+  --ss-green-hi-rgb: 143 213 158;
+  --ss-sage-rgb: 123 176 150;
+  --ss-sage-hi-rgb: 152 204 178;
+  --ss-denim-rgb: 112 155 200;
+  --ss-denim-hi-rgb: 141 182 226;
+  --ss-clay-rgb: 206 150 180;
 }
 
 [data-theme="carrelage"] {
   color-scheme: light;
 
   /* Ground */
-  --ss-crust: #C8DAD1; /* Carrelage crust */
-  --ss-mantle: #D5E3DD; /* Carrelage mantle */
-  --ss-base: #E2EDE8; /* Carrelage base */
-  --ss-surface0: #B6D2C5; /* Carrelage surface0 */
-  --ss-surface1: #9DC1B1; /* Carrelage surface1 */
-  --ss-surface2: #88AF9E; /* Carrelage surface2 */
-  --ss-overlay0: #759A8A; /* Carrelage overlay0 */
-  --ss-overlay1: #5C8171; /* Carrelage overlay1 */
-  --ss-overlay2: #4A695C; /* Carrelage overlay2 */
+  --ss-crust: #CAD9D1; /* Carrelage crust */
+  --ss-mantle: #D8E3DC; /* Carrelage mantle */
+  --ss-base: #E4EDE8; /* Carrelage base */
+  --ss-surface0: #BAD0C4; /* Carrelage surface0 */
+  --ss-surface1: #A3BFB0; /* Carrelage surface1 */
+  --ss-surface2: #8EAD9D; /* Carrelage surface2 */
+  --ss-overlay0: #7B9989; /* Carrelage overlay0 */
+  --ss-overlay1: #627F70; /* Carrelage overlay1 */
+  --ss-overlay2: #4F675B; /* Carrelage overlay2 */
 
   /* Text */
-  --ss-subtext0: #405B4F; /* Carrelage subtext0 */
-  --ss-subtext1: #334A41; /* Carrelage subtext1 */
-  --ss-text: #21352D; /* Carrelage text */
-  --ss-text-hi: #16241E; /* Carrelage text hi */
+  --ss-subtext0: #45594F; /* Carrelage subtext0 */
+  --ss-subtext1: #374940; /* Carrelage subtext1 */
+  --ss-text: #25352C; /* Carrelage text */
+  --ss-text-hi: #18231D; /* Carrelage text hi */
 
   /* Accents */
-  --ss-yellow: #856A00; /* Harvest gold */
-  --ss-yellow-hi: #937500; /* Broadway yellow */
+  --ss-yellow: #8A6700; /* Harvest gold */
+  --ss-yellow-hi: #997300; /* Broadway yellow */
   --ss-orange: #9B5D00; /* Burnt orange */
   --ss-orange-hi: #AE6800; /* Sixth Avenue */
-  --ss-red: #A30013; /* Redbird */
-  --ss-red-hi: #C82C2C; /* Redbird bright */
-  --ss-green: #00823B; /* Avocado */
-  --ss-green-hi: #00863D; /* Avocado bright */
-  --ss-sage: #007752; /* Seafoam tile */
-  --ss-sage-hi: #2A8862; /* Seafoam bright */
-  --ss-denim: #0961A9; /* Faded denim */
-  --ss-denim-hi: #2E75B9; /* Denim bright */
-  --ss-clay: #B43586; /* Terracotta */
+  --ss-red: #9E171B; /* Redbird */
+  --ss-red-hi: #BB403B; /* Redbird bright */
+  --ss-green: #18803F; /* Avocado */
+  --ss-green-hi: #168540; /* Avocado bright */
+  --ss-sage: #277555; /* Seafoam tile */
+  --ss-sage-hi: #3D8666; /* Seafoam bright */
+  --ss-denim: #27629C; /* Faded denim */
+  --ss-denim-hi: #3E75AD; /* Denim bright */
+  --ss-clay: #9A557D; /* Terracotta */
 
   /* Diff grounds: -add/-del/-chg for lines, -emph for changed words, -dim for faded diffs */
-  --ss-diff-add: #BDDECC;
-  --ss-diff-add-emph: #99CDB1;
-  --ss-diff-add-dim: #D6EBE0;
-  --ss-diff-del: #EDCCD0;
-  --ss-diff-del-emph: #E2ADB3;
-  --ss-diff-del-dim: #F4E0E3;
-  --ss-diff-chg: #DFD8BD;
-  --ss-diff-chg-emph: #D8CFAD;
+  --ss-diff-add: #C3DECD;
+  --ss-diff-add-emph: #A3CCB2;
+  --ss-diff-add-dim: #DAEBE0;
+  --ss-diff-del: #ECD1D1;
+  --ss-diff-del-emph: #E0B5B6;
+  --ss-diff-del-dim: #F3E3E4;
+  --ss-diff-chg: #E1D7BD;
+  --ss-diff-chg-emph: #DACEAD;
 
   /* RGB triplets, for rgb(var(--ss-base-rgb) / 0.5) */
-  --ss-crust-rgb: 200 218 209;
-  --ss-mantle-rgb: 213 227 221;
-  --ss-base-rgb: 226 237 232;
-  --ss-surface0-rgb: 182 210 197;
-  --ss-surface1-rgb: 157 193 177;
-  --ss-surface2-rgb: 136 175 158;
-  --ss-overlay0-rgb: 117 154 138;
-  --ss-overlay1-rgb: 92 129 113;
-  --ss-overlay2-rgb: 74 105 92;
-  --ss-subtext0-rgb: 64 91 79;
-  --ss-subtext1-rgb: 51 74 65;
-  --ss-text-rgb: 33 53 45;
-  --ss-text-hi-rgb: 22 36 30;
-  --ss-yellow-rgb: 133 106 0;
-  --ss-yellow-hi-rgb: 147 117 0;
+  --ss-crust-rgb: 202 217 209;
+  --ss-mantle-rgb: 216 227 220;
+  --ss-base-rgb: 228 237 232;
+  --ss-surface0-rgb: 186 208 196;
+  --ss-surface1-rgb: 163 191 176;
+  --ss-surface2-rgb: 142 173 157;
+  --ss-overlay0-rgb: 123 153 137;
+  --ss-overlay1-rgb: 98 127 112;
+  --ss-overlay2-rgb: 79 103 91;
+  --ss-subtext0-rgb: 69 89 79;
+  --ss-subtext1-rgb: 55 73 64;
+  --ss-text-rgb: 37 53 44;
+  --ss-text-hi-rgb: 24 35 29;
+  --ss-yellow-rgb: 138 103 0;
+  --ss-yellow-hi-rgb: 153 115 0;
   --ss-orange-rgb: 155 93 0;
   --ss-orange-hi-rgb: 174 104 0;
-  --ss-red-rgb: 163 0 19;
-  --ss-red-hi-rgb: 200 44 44;
-  --ss-green-rgb: 0 130 59;
-  --ss-green-hi-rgb: 0 134 61;
-  --ss-sage-rgb: 0 119 82;
-  --ss-sage-hi-rgb: 42 136 98;
-  --ss-denim-rgb: 9 97 169;
-  --ss-denim-hi-rgb: 46 117 185;
-  --ss-clay-rgb: 180 53 134;
+  --ss-red-rgb: 158 23 27;
+  --ss-red-hi-rgb: 187 64 59;
+  --ss-green-rgb: 24 128 63;
+  --ss-green-hi-rgb: 22 133 64;
+  --ss-sage-rgb: 39 117 85;
+  --ss-sage-hi-rgb: 61 134 102;
+  --ss-denim-rgb: 39 98 156;
+  --ss-denim-hi-rgb: 62 117 173;
+  --ss-clay-rgb: 154 85 125;
 }

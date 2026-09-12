@@ -2,11 +2,11 @@
 # Paris Carrelage for cava: gradient from the bottom of the screen to the top.
 [color]
 gradient = 1
-gradient_color_1 = '#00823B'
-gradient_color_2 = '#397822'
-gradient_color_3 = '#726D08'
-gradient_color_4 = '#8B6600'
-gradient_color_5 = '#956100'
-gradient_color_6 = '#9C5003'
-gradient_color_7 = '#A0280B'
-gradient_color_8 = '#A30013'
+gradient_color_1 = '#18803F'
+gradient_color_2 = '#497524'
+gradient_color_3 = '#7A6B09'
+gradient_color_4 = '#8F6400'
+gradient_color_5 = '#966000'
+gradient_color_6 = '#9B5304'
+gradient_color_7 = '#9D350F'
+gradient_color_8 = '#9E171B'

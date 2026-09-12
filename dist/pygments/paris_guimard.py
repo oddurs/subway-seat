@@ -1,5 +1,5 @@
 # Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
-"""Paris Guimard — a Pygments style. Cast-iron green off a Metro entrance. The original green."""
+"""Paris Guimard — a Pygments style. Cast iron off a Metro entrance, which is nearly black. Brass leads."""
 
 from pygments.style import Style
 from pygments.token import Token
@@ -9,61 +9,61 @@ __all__ = ["ParisGuimardStyle", "style"]
 
 class ParisGuimardStyle(Style):
     name = "paris-guimard"
-    background_color = "#0E3125"
-    highlight_color = "#113E2E"
-    line_number_color = "#47705F"
-    line_number_background_color = "#0E3125"
-    line_number_special_color = "#EBC342"
-    line_number_special_background_color = "#113E2E"
+    background_color = "#212D27"
+    highlight_color = "#2A3831"
+    line_number_color = "#5B6A62"
+    line_number_background_color = "#212D27"
+    line_number_special_color = "#EBC168"
+    line_number_special_background_color = "#2A3831"
 
     styles = {
-        Token: "#D3E2DB",
-        Token.Text: "#D3E2DB",
-        Token.Error: "#DA6058",
-        Token.Comment: "italic #67897A",
-        Token.Comment.Hashbang: "italic #67897A",
-        Token.Comment.Preproc: "italic #E783BD",
-        Token.Keyword: "#D78E3C",
-        Token.Keyword.Constant: "#EF796F",
-        Token.Keyword.Type: "italic #6FB393",
-        Token.Operator: "#86A195",
-        Token.Operator.Word: "#D78E3C",
-        Token.Punctuation: "#86A195",
-        Token.Name: "#D3E2DB",
-        Token.Name.Attribute: "italic #EBC342",
-        Token.Name.Builtin: "italic #EBC342",
-        Token.Name.Builtin.Pseudo: "italic #EF796F",
-        Token.Name.Class: "#6FB393",
-        Token.Name.Constant: "#EF796F",
-        Token.Name.Decorator: "italic #E783BD",
-        Token.Name.Entity: "#E783BD",
-        Token.Name.Exception: "#6FB393",
-        Token.Name.Function: "#EBC342",
-        Token.Name.Function.Magic: "italic #EBC342",
-        Token.Name.Label: "italic #E783BD",
-        Token.Name.Namespace: "#A2B7AE",
-        Token.Name.Property: "#BBCDC5",
-        Token.Name.Tag: "#D78E3C",
-        Token.Name.Variable: "#D3E2DB",
-        Token.Name.Variable.Magic: "italic #EF796F",
-        Token.Literal.Date: "#EF796F",
-        Token.Literal.String: "#73C686",
-        Token.Literal.String.Affix: "#D78E3C",
-        Token.Literal.String.Escape: "#E783BD",
-        Token.Literal.String.Interpol: "#E783BD",
-        Token.Literal.String.Regex: "#E783BD",
-        Token.Literal.String.Symbol: "#EF796F",
-        Token.Literal.Number: "#EF796F",
-        Token.Generic.Heading: "bold #EBC342",
-        Token.Generic.Subheading: "bold #EBC342",
-        Token.Generic.Emph: "italic #D3E2DB",
-        Token.Generic.Strong: "bold #E6F0EB",
-        Token.Generic.Deleted: "bg:#402E26 #EF796F",
-        Token.Generic.Inserted: "bg:#21422E #73C686",
-        Token.Generic.Error: "#DA6058",
-        Token.Generic.Output: "#A2B7AE",
-        Token.Generic.Prompt: "#D78E3C",
-        Token.Generic.Traceback: "#DA6058",
+        Token: "#DAE0DC",
+        Token.Text: "#DAE0DC",
+        Token.Error: "#CD6B63",
+        Token.Comment: "italic #77847D",
+        Token.Comment.Hashbang: "italic #77847D",
+        Token.Comment.Preproc: "italic #CE96B4",
+        Token.Keyword: "#D0914F",
+        Token.Keyword.Constant: "#E1837A",
+        Token.Keyword.Type: "italic #7BB096",
+        Token.Operator: "#929D97",
+        Token.Operator.Word: "#D0914F",
+        Token.Punctuation: "#929D97",
+        Token.Name: "#DAE0DC",
+        Token.Name.Attribute: "italic #EBC168",
+        Token.Name.Builtin: "italic #EBC168",
+        Token.Name.Builtin.Pseudo: "italic #E1837A",
+        Token.Name.Class: "#7BB096",
+        Token.Name.Constant: "#E1837A",
+        Token.Name.Decorator: "italic #CE96B4",
+        Token.Name.Entity: "#CE96B4",
+        Token.Name.Exception: "#7BB096",
+        Token.Name.Function: "#EBC168",
+        Token.Name.Function.Magic: "italic #EBC168",
+        Token.Name.Label: "italic #CE96B4",
+        Token.Name.Namespace: "#ABB4AF",
+        Token.Name.Property: "#C3CAC6",
+        Token.Name.Tag: "#D0914F",
+        Token.Name.Variable: "#DAE0DC",
+        Token.Name.Variable.Magic: "italic #E1837A",
+        Token.Literal.Date: "#E1837A",
+        Token.Literal.String: "#80C28E",
+        Token.Literal.String.Affix: "#D0914F",
+        Token.Literal.String.Escape: "#CE96B4",
+        Token.Literal.String.Interpol: "#CE96B4",
+        Token.Literal.String.Regex: "#CE96B4",
+        Token.Literal.String.Symbol: "#E1837A",
+        Token.Literal.Number: "#E1837A",
+        Token.Generic.Heading: "bold #EBC168",
+        Token.Generic.Subheading: "bold #EBC168",
+        Token.Generic.Emph: "italic #DAE0DC",
+        Token.Generic.Strong: "bold #EAEEEC",
+        Token.Generic.Deleted: "bg:#442F2B #E1837A",
+        Token.Generic.Inserted: "bg:#2C3F31 #80C28E",
+        Token.Generic.Error: "#CD6B63",
+        Token.Generic.Output: "#ABB4AF",
+        Token.Generic.Prompt: "#D0914F",
+        Token.Generic.Traceback: "#CD6B63",
     }
 
 

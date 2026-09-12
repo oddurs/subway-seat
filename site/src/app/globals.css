@@ -48,11 +48,11 @@
     --radius-chip: 2px;
   }
   html[data-family="paris"] {
-    --sign-bg: #040b07;
+    --sign-bg: #070c0a;
     --sign-text: #ffffff;
-    --sign-ring: #e783bd;
-    --sign-mark: #e783bd;
-    --sign-mark-alt: #ffffff;
+    --sign-ring: #ebc168;
+    --sign-mark: #ebc168;
+    --sign-mark-alt: #070c0a;
     --radius-pill: 999px;
     --radius-card: 14px;
     --radius-chip: 50%;
@@ -66,8 +66,8 @@
     --ss-shadow-soft: rgba(94, 100, 112, 0.12);
   }
   html[data-flavor="carrelage"] {
-    --ss-shadow: rgba(88, 104, 98, 0.2);
-    --ss-shadow-soft: rgba(88, 104, 98, 0.12);
+    --ss-shadow: rgba(92, 104, 97, 0.2);
+    --ss-shadow-soft: rgba(92, 104, 97, 0.12);
   }
 
   html[data-flavor="walnut"] [data-unless="walnut"],

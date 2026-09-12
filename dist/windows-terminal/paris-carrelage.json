@@ -2,26 +2,26 @@
     "schemes": [
         {
             "name": "Paris Carrelage",
-            "background": "#E2EDE8",
-            "foreground": "#21352D",
+            "background": "#E4EDE8",
+            "foreground": "#25352C",
             "cursorColor": "#9B5D00",
-            "selectionBackground": "#9DC1B1",
-            "black": "#334A41",
-            "red": "#A30013",
-            "green": "#00823B",
-            "yellow": "#856A00",
-            "blue": "#0961A9",
+            "selectionBackground": "#A3BFB0",
+            "black": "#374940",
+            "red": "#9E171B",
+            "green": "#18803F",
+            "yellow": "#8A6700",
+            "blue": "#27629C",
             "purple": "#9B5D00",
-            "cyan": "#007752",
-            "white": "#88AF9E",
-            "brightBlack": "#5C8171",
-            "brightRed": "#C82C2C",
-            "brightGreen": "#00863D",
-            "brightYellow": "#937500",
-            "brightBlue": "#2E75B9",
+            "cyan": "#277555",
+            "white": "#8EAD9D",
+            "brightBlack": "#627F70",
+            "brightRed": "#BB403B",
+            "brightGreen": "#168540",
+            "brightYellow": "#997300",
+            "brightBlue": "#3E75AD",
             "brightPurple": "#AE6800",
-            "brightCyan": "#2A8862",
-            "brightWhite": "#9DC1B1"
+            "brightCyan": "#3D8666",
+            "brightWhite": "#A3BFB0"
         }
     ],
     "themes": [
@@ -30,16 +30,16 @@
             "window": {
                 "applicationTheme": "light",
                 "useMica": false,
-                "frame": "#C8DAD1FF",
-                "unfocusedFrame": "#C8DAD1FF"
+                "frame": "#CAD9D1FF",
+                "unfocusedFrame": "#CAD9D1FF"
             },
             "tabRow": {
-                "background": "#C8DAD1FF",
-                "unfocusedBackground": "#C8DAD1FF"
+                "background": "#CAD9D1FF",
+                "unfocusedBackground": "#CAD9D1FF"
             },
             "tab": {
-                "background": "#E2EDE8FF",
-                "unfocusedBackground": "#D5E3DDFF"
+                "background": "#E4EDE8FF",
+                "unfocusedBackground": "#D8E3DCFF"
             }
         }
     ]

@@ -2,73 +2,73 @@
 # Paris Carrelage
 
 [colors.primary]
-background = "#E2EDE8"
-foreground = "#21352D"
-dim_foreground = "#4A695C"
-bright_foreground = "#16241E"
+background = "#E4EDE8"
+foreground = "#25352C"
+dim_foreground = "#4F675B"
+bright_foreground = "#18231D"
 
 [colors.cursor]
-text = "#E2EDE8"
+text = "#E4EDE8"
 cursor = "#9B5D00"
 
 [colors.vi_mode_cursor]
-text = "#E2EDE8"
-cursor = "#007752"
+text = "#E4EDE8"
+cursor = "#277555"
 
 [colors.search.matches]
-foreground = "#21352D"
-background = "#C6C6A2"
+foreground = "#25352C"
+background = "#C9C5A2"
 
 [colors.search.focused_match]
-foreground = "#16241E"
-background = "#BEA574"
+foreground = "#18231D"
+background = "#C0A574"
 
 [colors.footer_bar]
-foreground = "#21352D"
-background = "#9DC1B1"
+foreground = "#25352C"
+background = "#A3BFB0"
 
 [colors.hints.start]
-foreground = "#E2EDE8"
+foreground = "#E4EDE8"
 background = "#9B5D00"
 
 [colors.hints.end]
-foreground = "#E2EDE8"
-background = "#4A695C"
+foreground = "#E4EDE8"
+background = "#4F675B"
 
 [colors.line_indicator]
-foreground = "#405B4F"
-background = "#B6D2C5"
+foreground = "#45594F"
+background = "#BAD0C4"
 
 [colors.selection]
-text = "#16241E"
-background = "#9DC1B1"
+text = "#18231D"
+background = "#A3BFB0"
 
 [colors.normal]
-black = "#334A41"
-red = "#A30013"
-green = "#00823B"
-yellow = "#856A00"
-blue = "#0961A9"
+black = "#374940"
+red = "#9E171B"
+green = "#18803F"
+yellow = "#8A6700"
+blue = "#27629C"
 magenta = "#9B5D00"
-cyan = "#007752"
-white = "#88AF9E"
+cyan = "#277555"
+white = "#8EAD9D"
 
 [colors.bright]
-black = "#5C8171"
-red = "#C82C2C"
-green = "#00863D"
-yellow = "#937500"
-blue = "#2E75B9"
+black = "#627F70"
+red = "#BB403B"
+green = "#168540"
+yellow = "#997300"
+blue = "#3E75AD"
 magenta = "#AE6800"
-cyan = "#2A8862"
-white = "#9DC1B1"
+cyan = "#3D8666"
+white = "#A3BFB0"
 
 [colors.dim]
-black = "#6E817A"
-red = "#B8515B"
-green = "#4DA676"
-yellow = "#A5974F"
-blue = "#5391BE"
-magenta = "#B38E4F"
-cyan = "#4D9F85"
-white = "#A7C4B7"
+black = "#728179"
+red = "#B66061"
+green = "#5DA578"
+yellow = "#A9954F"
+blue = "#6791B6"
+magenta = "#B48E4F"
+cyan = "#679E87"
+white = "#ABC3B6"

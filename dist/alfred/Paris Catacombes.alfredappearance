@@ -4,22 +4,22 @@
       "textSpacing": 6,
       "subtext": {
         "size": 12,
-        "colorSelected": "#B8CAC2FF",
+        "colorSelected": "#C0C7C3FF",
         "font": "System",
-        "color": "#829D91FF"
+        "color": "#8E9993FF"
       },
       "shortcut": {
         "size": 16,
-        "colorSelected": "#EEA85CFF",
+        "colorSelected": "#E7AB6DFF",
         "font": "System",
-        "color": "#648576FF"
+        "color": "#738079FF"
       },
-      "backgroundSelected": "#34381FFF",
+      "backgroundSelected": "#3D3725FF",
       "text": {
         "size": 18,
-        "colorSelected": "#E4EEE9FF",
+        "colorSelected": "#E8ECEAFF",
         "font": "System",
-        "color": "#CFDED7FF"
+        "color": "#D5DCD8FF"
       },
       "iconPaddingHorizontal": 6,
       "roundness": 8,
@@ -27,35 +27,35 @@
       "iconSize": 38
     },
     "search": {
-      "backgroundSelected": "#1E4738FF",
+      "backgroundSelected": "#34423BFF",
       "paddingHorizontal": 10,
       "spacing": 10,
       "text": {
         "size": 30,
-        "colorSelected": "#E4EEE9FF",
+        "colorSelected": "#E8ECEAFF",
         "font": "System Light",
-        "color": "#CFDED7FF"
+        "color": "#D5DCD8FF"
       },
-      "background": "#061811FF",
+      "background": "#0F1612FF",
       "roundness": 8,
       "paddingVertical": 6
     },
     "window": {
-      "color": "#062017F7",
+      "color": "#141D19F7",
       "paddingHorizontal": 10,
       "width": 620,
       "borderPadding": 0,
-      "borderColor": "#0A2B20FF",
+      "borderColor": "#1D2822FF",
       "blur": 12,
       "roundness": 14,
       "paddingVertical": 10
     },
     "separator": {
-      "color": "#0A2B20FF",
+      "color": "#1D2822FF",
       "thickness": 1
     },
     "scrollbar": {
-      "color": "#1E4738FF",
+      "color": "#34423BFF",
       "thickness": 3
     },
     "name": "Paris Catacombes",

@@ -2,7 +2,7 @@
 # Paris Guimard: set Slack's color mode to dark.
 #
 # Current Slack: system navigation, selected items, presence, notifications
-#0C261C,#D78E3C,#73C686,#EF796F
+#1A231E,#D0914F,#80C28E,#E1837A
 
 # Legacy ten-color string (older clients and theme sites)
-#0C261C,#113E2E,#D78E3C,#0A1D15,#113E2E,#D3E2DB,#73C686,#EF796F,#0A1D15,#D3E2DB
+#1A231E,#2A3831,#D0914F,#141A17,#2A3831,#DAE0DC,#80C28E,#E1837A,#141A17,#DAE0DC

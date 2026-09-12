@@ -2,26 +2,26 @@
     "schemes": [
         {
             "name": "Paris Catacombes",
-            "background": "#062017",
-            "foreground": "#CFDED7",
-            "cursorColor": "#EBC342",
-            "selectionBackground": "#1E4738",
-            "black": "#13382A",
-            "red": "#DA6058",
-            "green": "#73C686",
-            "yellow": "#EBC342",
-            "blue": "#639BD5",
-            "purple": "#D78E3C",
-            "cyan": "#6FB393",
-            "white": "#B8CAC2",
-            "brightBlack": "#648576",
-            "brightRed": "#EF796F",
-            "brightGreen": "#82D896",
-            "brightYellow": "#FBD664",
-            "brightBlue": "#82B7EE",
-            "brightPurple": "#EEA85C",
-            "brightCyan": "#8ECFAF",
-            "brightWhite": "#E4EEE9"
+            "background": "#141D19",
+            "foreground": "#D5DCD8",
+            "cursorColor": "#EBC168",
+            "selectionBackground": "#34423B",
+            "black": "#27332D",
+            "red": "#CD6B63",
+            "green": "#80C28E",
+            "yellow": "#EBC168",
+            "blue": "#709BC8",
+            "purple": "#D0914F",
+            "cyan": "#7BB096",
+            "white": "#C0C7C3",
+            "brightBlack": "#738079",
+            "brightRed": "#E1837A",
+            "brightGreen": "#8FD59E",
+            "brightYellow": "#FBD380",
+            "brightBlue": "#8DB6E2",
+            "brightPurple": "#E7AB6D",
+            "brightCyan": "#98CCB2",
+            "brightWhite": "#E8ECEA"
         }
     ],
     "themes": [
@@ -30,16 +30,16 @@
             "window": {
                 "applicationTheme": "dark",
                 "useMica": false,
-                "frame": "#05120CFF",
-                "unfocusedFrame": "#05120CFF"
+                "frame": "#0B100DFF",
+                "unfocusedFrame": "#0B100DFF"
             },
             "tabRow": {
-                "background": "#05120CFF",
-                "unfocusedBackground": "#05120CFF"
+                "background": "#0B100DFF",
+                "unfocusedBackground": "#0B100DFF"
             },
             "tab": {
-                "background": "#062017FF",
-                "unfocusedBackground": "#061811FF"
+                "background": "#141D19FF",
+                "unfocusedBackground": "#0F1612FF"
             }
         }
     ]

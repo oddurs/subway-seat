@@ -2,198 +2,198 @@
 /* Paris Guimard for Vimium: paste into Options › CSS for Vimium UI. */
 
 :root {
-  --vimium-background-color: #0E3125;
-  --vimium-background-text-color: #D3E2DB;
-  --vimium-foreground-color: #0C261C;
-  --vimium-foreground-text-color: #D3E2DB;
-  --vimium-link-color: #639BD5;
+  --vimium-background-color: #212D27;
+  --vimium-background-text-color: #DAE0DC;
+  --vimium-foreground-color: #1A231E;
+  --vimium-foreground-text-color: #DAE0DC;
+  --vimium-link-color: #709BC8;
 }
 
 /* Link hints */
 div.internal-vimium-hint-marker {
   padding: 1px 4px;
-  background: #EBC342;
-  border: 1px solid #86782E;
+  background: #EBC168;
+  border: 1px solid #8A7644;
   border-radius: 3px;
-  box-shadow: 0 2px 6px rgba(10, 29, 21, 0.35);
+  box-shadow: 0 2px 6px rgba(20, 26, 23, 0.35);
 }
 
 div.internal-vimium-hint-marker span {
-  color: #0A1D15;
+  color: #141A17;
   text-shadow: none;
 }
 
 div.internal-vimium-hint-marker > .matchingCharacter {
-  color: #7A702C;
+  color: #806E40;
 }
 
 div > .vimiumActiveHintMarker span {
-  color: #B0534B !important;
+  color: #A85B54 !important;
 }
 
 div.internal-vimium-input-hint {
-  background-color: rgba(235, 195, 66, 0.2);
-  border: 1px solid #EBC342;
+  background-color: rgba(235, 193, 104, 0.2);
+  border: 1px solid #EBC168;
 }
 
 div.internal-vimium-selected-input-hint {
-  background-color: rgba(215, 142, 60, 0.25);
-  border: 1px solid #D78E3C !important;
+  background-color: rgba(208, 145, 79, 0.25);
+  border: 1px solid #D0914F !important;
 }
 
 div.vimium-flash {
-  box-shadow: 0 0 4px 2px #D78E3C;
+  box-shadow: 0 0 4px 2px #D0914F;
 }
 
 body.vimium-find-mode ::selection {
-  background: #D78E3C;
-  color: #0A1D15;
+  background: #D0914F;
+  color: #141A17;
 }
 
 /* Vomnibar */
 #vomnibar {
-  background: #113E2E;
-  color: #D3E2DB;
-  border: 1px solid #295243;
+  background: #2A3831;
+  color: #DAE0DC;
+  border: 1px solid #3F4C46;
   border-radius: 8px;
-  box-shadow: 0 12px 32px rgba(10, 29, 21, 0.45);
+  box-shadow: 0 12px 32px rgba(20, 26, 23, 0.45);
 }
 
 #vomnibar #vomnibar-search-area {
-  background: #113E2E;
-  border-bottom: 1px solid #295243;
+  background: #2A3831;
+  border-bottom: 1px solid #3F4C46;
 }
 
 #vomnibar input {
-  color: #E6F0EB;
-  background: #0E3125;
-  border: 1px solid #113E2E;
+  color: #EAEEEC;
+  background: #212D27;
+  border: 1px solid #2A3831;
   border-radius: 5px;
   box-shadow: none;
 }
 
 #vomnibar input:focus {
-  border-color: #D78E3C;
+  border-color: #D0914F;
 }
 
 #vomnibar input::selection {
-  background-color: #285A47;
-  color: #E6F0EB;
+  background-color: #42544B;
+  color: #EAEEEC;
 }
 
 #vomnibar ul {
-  background: #113E2E;
+  background: #2A3831;
 }
 
 #vomnibar li {
-  border-bottom: 1px solid #295243;
+  border-bottom: 1px solid #3F4C46;
 }
 
 #vomnibar li .source {
-  color: #67897A;
+  color: #77847D;
 }
 
 #vomnibar li .title,
 #vomnibar li em {
-  color: #D3E2DB;
+  color: #DAE0DC;
 }
 
 #vomnibar li .url {
-  color: #639BD5;
+  color: #709BC8;
 }
 
 #vomnibar li .match,
 #vomnibar li .title .match {
-  color: #D78E3C;
+  color: #D0914F;
   font-weight: bold;
 }
 
 #vomnibar li .relevancy {
-  color: #47705F;
+  color: #5B6A62;
 }
 
 #vomnibar li.selected {
-  background-color: #36442A;
+  background-color: #44412F;
 }
 
 /* Find HUD */
 #hud-container {
-  background-color: #113E2E;
-  color: #D3E2DB;
-  border: 1px solid #295243;
+  background-color: #2A3831;
+  color: #DAE0DC;
+  border: 1px solid #3F4C46;
   box-shadow: none;
 }
 
 #hud-container #search-area,
 #hud-container #hud {
-  background-color: #113E2E;
-  color: #D3E2DB;
+  background-color: #2A3831;
+  color: #DAE0DC;
 }
 
 span#hud-match-count {
-  color: #67897A;
+  color: #77847D;
 }
 
 /* Help dialog */
 #container {
-  background-color: #0E3125;
-  border: 1px solid #113E2E;
+  background-color: #212D27;
+  border: 1px solid #2A3831;
 }
 
 #dialog {
-  background-color: #0E3125;
-  color: #D3E2DB;
+  background-color: #212D27;
+  color: #DAE0DC;
 }
 
 #dialog a,
 #dialog h1 .vim {
-  color: #D78E3C;
+  color: #D0914F;
 }
 
 #dialog a#close {
-  color: #67897A;
+  color: #77847D;
 }
 
 #dialog a#close:hover {
-  color: #E6F0EB;
+  color: #EAEEEC;
 }
 
 #dialog h2,
 #dialog .help-description {
-  color: #D3E2DB;
+  color: #DAE0DC;
 }
 
 #dialog div.divider {
-  background-color: #113E2E;
+  background-color: #2A3831;
 }
 
 #dialog .key,
 body.vimium-body .key {
-  color: #D3E2DB;
-  background-color: #0C261C;
-  border: 1px solid #113E2E;
-  border-bottom-color: #194A39;
+  color: #DAE0DC;
+  background-color: #1A231E;
+  border: 1px solid #2A3831;
+  border-bottom-color: #34453C;
   box-shadow: none;
 }
 
 /* Options and exclusions pages */
 body.vimium-body {
-  background-color: #0E3125;
-  color: #D3E2DB;
+  background-color: #212D27;
+  color: #DAE0DC;
 }
 
 body.vimium-body a,
 body.vimium-body a:visited {
-  color: #639BD5;
+  color: #709BC8;
 }
 
 body.vimium-body textarea,
 body.vimium-body input {
-  background-color: #0C261C;
-  border-color: #113E2E;
-  color: #D3E2DB;
+  background-color: #1A231E;
+  border-color: #2A3831;
+  color: #DAE0DC;
 }
 
 body.vimium-body div.example {
-  color: #86A195;
+  color: #929D97;
 }

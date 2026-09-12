@@ -2,12 +2,12 @@
 
 [Appearance]
 ColorScheme=paris-guimard
-FocusBorderColor=235,195,66
-TabActivityColor=215,142,60
+FocusBorderColor=235,193,104
+TabActivityColor=208,145,79
 
 [Cursor Options]
-CustomCursorColor=235,195,66
-CustomCursorTextColor=14,49,37
+CustomCursorColor=235,193,104
+CustomCursorTextColor=33,45,39
 UseCustomCursorColor=true
 
 [General]

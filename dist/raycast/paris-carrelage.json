@@ -5,17 +5,17 @@
   "name": "Paris Carrelage",
   "appearance": "light",
   "colors": {
-    "background": "#E2EDE8",
-    "backgroundSecondary": "#D5E3DD",
-    "text": "#21352D",
+    "background": "#E4EDE8",
+    "backgroundSecondary": "#D8E3DC",
+    "text": "#25352C",
     "selection": "#9B5D00",
-    "loader": "#856A00",
-    "red": "#A30013",
+    "loader": "#8A6700",
+    "red": "#9E171B",
     "orange": "#9B5D00",
-    "yellow": "#856A00",
-    "green": "#00823B",
-    "blue": "#0961A9",
-    "purple": "#B43586",
+    "yellow": "#8A6700",
+    "green": "#18803F",
+    "blue": "#27629C",
+    "purple": "#9A557D",
     "magenta": "#AE6800"
   }
 }

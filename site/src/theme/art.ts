@@ -69,34 +69,34 @@ export const portland = stylex.createTheme(art, {
 });
 
 export const guimard = stylex.createTheme(art, {
-  red: "#DA6058",
-  orange: "#D78E3C",
-  yellow: "#EBC342",
-  green: "#73C686",
-  sage: "#6FB393",
-  denim: "#639BD5",
-  clay: "#E783BD",
-  page: "#081811",
+  red: "#CD6B63",
+  orange: "#D0914F",
+  yellow: "#EBC168",
+  green: "#80C28E",
+  sage: "#7BB096",
+  denim: "#709BC8",
+  clay: "#CE96B4",
+  page: "#101513",
 });
 
 export const catacombes = stylex.createTheme(art, {
-  red: "#DA6058",
-  orange: "#D78E3C",
-  yellow: "#EBC342",
-  green: "#73C686",
-  sage: "#6FB393",
-  denim: "#639BD5",
-  clay: "#E783BD",
-  page: "#040F0A",
+  red: "#CD6B63",
+  orange: "#D0914F",
+  yellow: "#EBC168",
+  green: "#80C28E",
+  sage: "#7BB096",
+  denim: "#709BC8",
+  clay: "#CE96B4",
+  page: "#090D0B",
 });
 
 export const carrelage = stylex.createTheme(art, {
-  red: "#C13539",
-  orange: "#BC7821",
-  yellow: "#BD9B24",
-  green: "#3FA764",
-  sage: "#3D9876",
-  denim: "#3A81C1",
-  clay: "#D060A4",
-  page: "#EBF2EF",
+  red: "#B84543",
+  orange: "#B87A2B",
+  yellow: "#BF9839",
+  green: "#51A46A",
+  sage: "#559579",
+  denim: "#4F81B4",
+  clay: "#B7799B",
+  page: "#ECF2EF",
 });

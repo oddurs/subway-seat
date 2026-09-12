@@ -6,50 +6,50 @@
 --
 local M = {}
 
-M.crust = 'rgb(C8DAD1)'
-M.crustAlpha = 'C8DAD1'
+M.crust = 'rgb(CAD9D1)'
+M.crustAlpha = 'CAD9D1'
 
-M.mantle = 'rgb(D5E3DD)'
-M.mantleAlpha = 'D5E3DD'
+M.mantle = 'rgb(D8E3DC)'
+M.mantleAlpha = 'D8E3DC'
 
-M.base = 'rgb(E2EDE8)'
-M.baseAlpha = 'E2EDE8'
+M.base = 'rgb(E4EDE8)'
+M.baseAlpha = 'E4EDE8'
 
-M.surface0 = 'rgb(B6D2C5)'
-M.surface0Alpha = 'B6D2C5'
+M.surface0 = 'rgb(BAD0C4)'
+M.surface0Alpha = 'BAD0C4'
 
-M.surface1 = 'rgb(9DC1B1)'
-M.surface1Alpha = '9DC1B1'
+M.surface1 = 'rgb(A3BFB0)'
+M.surface1Alpha = 'A3BFB0'
 
-M.surface2 = 'rgb(88AF9E)'
-M.surface2Alpha = '88AF9E'
+M.surface2 = 'rgb(8EAD9D)'
+M.surface2Alpha = '8EAD9D'
 
-M.overlay0 = 'rgb(759A8A)'
-M.overlay0Alpha = '759A8A'
+M.overlay0 = 'rgb(7B9989)'
+M.overlay0Alpha = '7B9989'
 
-M.overlay1 = 'rgb(5C8171)'
-M.overlay1Alpha = '5C8171'
+M.overlay1 = 'rgb(627F70)'
+M.overlay1Alpha = '627F70'
 
-M.overlay2 = 'rgb(4A695C)'
-M.overlay2Alpha = '4A695C'
+M.overlay2 = 'rgb(4F675B)'
+M.overlay2Alpha = '4F675B'
 
-M.subtext0 = 'rgb(405B4F)'
-M.subtext0Alpha = '405B4F'
+M.subtext0 = 'rgb(45594F)'
+M.subtext0Alpha = '45594F'
 
-M.subtext1 = 'rgb(334A41)'
-M.subtext1Alpha = '334A41'
+M.subtext1 = 'rgb(374940)'
+M.subtext1Alpha = '374940'
 
-M.text = 'rgb(21352D)'
-M.textAlpha = '21352D'
+M.text = 'rgb(25352C)'
+M.textAlpha = '25352C'
 
-M.text_hi = 'rgb(16241E)'
-M.text_hiAlpha = '16241E'
+M.text_hi = 'rgb(18231D)'
+M.text_hiAlpha = '18231D'
 
-M.yellow = 'rgb(856A00)'
-M.yellowAlpha = '856A00'
+M.yellow = 'rgb(8A6700)'
+M.yellowAlpha = '8A6700'
 
-M.yellow_hi = 'rgb(937500)'
-M.yellow_hiAlpha = '937500'
+M.yellow_hi = 'rgb(997300)'
+M.yellow_hiAlpha = '997300'
 
 M.orange = 'rgb(9B5D00)'
 M.orangeAlpha = '9B5D00'
@@ -57,68 +57,68 @@ M.orangeAlpha = '9B5D00'
 M.orange_hi = 'rgb(AE6800)'
 M.orange_hiAlpha = 'AE6800'
 
-M.red = 'rgb(A30013)'
-M.redAlpha = 'A30013'
+M.red = 'rgb(9E171B)'
+M.redAlpha = '9E171B'
 
-M.red_hi = 'rgb(C82C2C)'
-M.red_hiAlpha = 'C82C2C'
+M.red_hi = 'rgb(BB403B)'
+M.red_hiAlpha = 'BB403B'
 
-M.green = 'rgb(00823B)'
-M.greenAlpha = '00823B'
+M.green = 'rgb(18803F)'
+M.greenAlpha = '18803F'
 
-M.green_hi = 'rgb(00863D)'
-M.green_hiAlpha = '00863D'
+M.green_hi = 'rgb(168540)'
+M.green_hiAlpha = '168540'
 
-M.sage = 'rgb(007752)'
-M.sageAlpha = '007752'
+M.sage = 'rgb(277555)'
+M.sageAlpha = '277555'
 
-M.sage_hi = 'rgb(2A8862)'
-M.sage_hiAlpha = '2A8862'
+M.sage_hi = 'rgb(3D8666)'
+M.sage_hiAlpha = '3D8666'
 
-M.denim = 'rgb(0961A9)'
-M.denimAlpha = '0961A9'
+M.denim = 'rgb(27629C)'
+M.denimAlpha = '27629C'
 
-M.denim_hi = 'rgb(2E75B9)'
-M.denim_hiAlpha = '2E75B9'
+M.denim_hi = 'rgb(3E75AD)'
+M.denim_hiAlpha = '3E75AD'
 
-M.clay = 'rgb(B43586)'
-M.clayAlpha = 'B43586'
+M.clay = 'rgb(9A557D)'
+M.clayAlpha = '9A557D'
 
 function M.apply()
   hl.config({
     general = {
       col = {
-        active_border = 'rgb(856A00)',
-        inactive_border = 'rgb(9DC1B1)',
-        nogroup_border = 'rgb(A689A0)',
-        nogroup_border_active = 'rgb(B43586)',
+        active_border = 'rgb(8A6700)',
+        inactive_border = 'rgb(A3BFB0)',
+        nogroup_border = 'rgb(9F959C)',
+        nogroup_border_active = 'rgb(9A557D)',
       },
     },
     group = {
       col = {
-        border_active = 'rgb(856A00)',
-        border_inactive = 'rgb(939E6A)',
+        border_active = 'rgb(8A6700)',
+        border_inactive = 'rgb(999C6A)',
         border_locked_active = 'rgb(9B5D00)',
-        border_locked_inactive = 'rgb(9C996A)',
+        border_locked_inactive = 'rgb(A0986A)',
       },
       groupbar = {
-        text_color = 'rgb(16241E)',
-        text_color_inactive = 'rgb(405B4F)',
+        text_color = 'rgb(18231D)',
+        text_color_inactive = 'rgb(45594F)',
         col = {
-          active = 'rgb(856A00)',
-          inactive = 'rgb(9DC1B1)',
+          active = 'rgb(8A6700)',
+          inactive = 'rgb(A3BFB0)',
           locked_active = 'rgb(9B5D00)',
-          locked_inactive = 'rgb(9C996A)',
+          locked_inactive = 'rgb(A0986A)',
         },
       },
     },
     decoration = {
       shadow = {
-        color = 'rgba(21352D24)',
+        color = 'rgba(25352C24)',
       },
     },
     misc = {
-      background_color = 'rgb(E2EDE8)',
+      background_color = 'rgb(E4EDE8)',
     },
   })
 end

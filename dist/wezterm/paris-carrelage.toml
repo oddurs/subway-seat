@@ -1,52 +1,52 @@
 # Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
 
 [colors]
-foreground = "#21352D"
-background = "#E2EDE8"
+foreground = "#25352C"
+background = "#E4EDE8"
 cursor_bg = "#9B5D00"
 cursor_border = "#9B5D00"
-cursor_fg = "#E2EDE8"
-compose_cursor = "#B43586"
-selection_bg = "#9DC1B1"
-selection_fg = "#16241E"
-scrollbar_thumb = "#88AF9E"
-split = "#C8DAD1"
-visual_bell = "#B6D2C5"
+cursor_fg = "#E4EDE8"
+compose_cursor = "#9A557D"
+selection_bg = "#A3BFB0"
+selection_fg = "#18231D"
+scrollbar_thumb = "#8EAD9D"
+split = "#CAD9D1"
+visual_bell = "#BAD0C4"
 ansi = [
-  "#334A41",
-  "#A30013",
-  "#00823B",
-  "#856A00",
-  "#0961A9",
+  "#374940",
+  "#9E171B",
+  "#18803F",
+  "#8A6700",
+  "#27629C",
   "#9B5D00",
-  "#007752",
-  "#88AF9E",
+  "#277555",
+  "#8EAD9D",
 ]
 brights = [
-  "#5C8171",
-  "#C82C2C",
-  "#00863D",
-  "#937500",
-  "#2E75B9",
+  "#627F70",
+  "#BB403B",
+  "#168540",
+  "#997300",
+  "#3E75AD",
   "#AE6800",
-  "#2A8862",
-  "#9DC1B1",
+  "#3D8666",
+  "#A3BFB0",
 ]
-copy_mode_active_highlight_bg = { Color = "#BEA574" }
-copy_mode_active_highlight_fg = { Color = "#16241E" }
-copy_mode_inactive_highlight_bg = { Color = "#C6C6A2" }
-copy_mode_inactive_highlight_fg = { Color = "#21352D" }
+copy_mode_active_highlight_bg = { Color = "#C0A574" }
+copy_mode_active_highlight_fg = { Color = "#18231D" }
+copy_mode_inactive_highlight_bg = { Color = "#C9C5A2" }
+copy_mode_inactive_highlight_fg = { Color = "#25352C" }
 quick_select_label_bg = { Color = "#9B5D00" }
-quick_select_label_fg = { Color = "#E2EDE8" }
-quick_select_match_bg = { Color = "#C6C6A2" }
-quick_select_match_fg = { Color = "#21352D" }
+quick_select_label_fg = { Color = "#E4EDE8" }
+quick_select_match_bg = { Color = "#C9C5A2" }
+quick_select_match_fg = { Color = "#25352C" }
 
 [colors.tab_bar]
-background = "#C8DAD1"
-inactive_tab_edge = "#B6D2C5"
+background = "#CAD9D1"
+inactive_tab_edge = "#BAD0C4"
 
 [colors.tab_bar.active_tab]
-bg_color = "#E2EDE8"
+bg_color = "#E4EDE8"
 fg_color = "#9B5D00"
 intensity = "Bold"
 italic = false
@@ -54,31 +54,31 @@ strikethrough = false
 underline = "None"
 
 [colors.tab_bar.inactive_tab]
-bg_color = "#D5E3DD"
-fg_color = "#5C8171"
+bg_color = "#D8E3DC"
+fg_color = "#627F70"
 intensity = "Normal"
 italic = false
 strikethrough = false
 underline = "None"
 
 [colors.tab_bar.inactive_tab_hover]
-bg_color = "#B6D2C5"
-fg_color = "#21352D"
+bg_color = "#BAD0C4"
+fg_color = "#25352C"
 intensity = "Normal"
 italic = false
 strikethrough = false
 underline = "None"
 
 [colors.tab_bar.new_tab]
-bg_color = "#C8DAD1"
-fg_color = "#5C8171"
+bg_color = "#CAD9D1"
+fg_color = "#627F70"
 intensity = "Normal"
 italic = false
 strikethrough = false
 underline = "None"
 
 [colors.tab_bar.new_tab_hover]
-bg_color = "#B6D2C5"
+bg_color = "#BAD0C4"
 fg_color = "#9B5D00"
 intensity = "Normal"
 italic = false

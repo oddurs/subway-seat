@@ -1,35 +1,35 @@
 /* Subway Seat — generated from palette.py by build.py. Edit the palette, not this file. */
 /* Paris Carrelage for waybar: @import it at the top of style.css. */
 
-@define-color crust #C8DAD1;
-@define-color mantle #D5E3DD;
-@define-color base #E2EDE8;
-@define-color surface0 #B6D2C5;
-@define-color surface1 #9DC1B1;
-@define-color surface2 #88AF9E;
-@define-color overlay0 #759A8A;
-@define-color overlay1 #5C8171;
-@define-color overlay2 #4A695C;
-@define-color subtext0 #405B4F;
-@define-color subtext1 #334A41;
-@define-color text #21352D;
-@define-color text_hi #16241E;
-@define-color yellow #856A00;
-@define-color yellow_hi #937500;
+@define-color crust #CAD9D1;
+@define-color mantle #D8E3DC;
+@define-color base #E4EDE8;
+@define-color surface0 #BAD0C4;
+@define-color surface1 #A3BFB0;
+@define-color surface2 #8EAD9D;
+@define-color overlay0 #7B9989;
+@define-color overlay1 #627F70;
+@define-color overlay2 #4F675B;
+@define-color subtext0 #45594F;
+@define-color subtext1 #374940;
+@define-color text #25352C;
+@define-color text_hi #18231D;
+@define-color yellow #8A6700;
+@define-color yellow_hi #997300;
 @define-color orange #9B5D00;
 @define-color orange_hi #AE6800;
-@define-color red #A30013;
-@define-color red_hi #C82C2C;
-@define-color green #00823B;
-@define-color green_hi #00863D;
-@define-color sage #007752;
-@define-color sage_hi #2A8862;
-@define-color denim #0961A9;
-@define-color denim_hi #2E75B9;
-@define-color clay #B43586;
+@define-color red #9E171B;
+@define-color red_hi #BB403B;
+@define-color green #18803F;
+@define-color green_hi #168540;
+@define-color sage #277555;
+@define-color sage_hi #3D8666;
+@define-color denim #27629C;
+@define-color denim_hi #3E75AD;
+@define-color clay #9A557D;
 
 /* Layers: a raised ground for popovers, and washes of text for borders, hover and selection */
-@define-color paper #F0F6F4;
+@define-color paper #F2F6F4;
 @define-color edge alpha(@text, 0.14);
 @define-color hover alpha(@text, 0.07);
 @define-color selection alpha(@text, 0.13);

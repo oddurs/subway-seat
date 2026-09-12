@@ -2,52 +2,52 @@
 <!-- Subway Seat — generated from palette.py by build.py. Edit the palette, not this file. -->
 <style-scheme id="paris-guimard" name="Paris Guimard" version="1.0">
   <author>Oddur Sigurdsson</author>
-  <description>Cast-iron green off a Metro entrance. The original green.</description>
+  <description>Cast iron off a Metro entrance, which is nearly black. Brass leads.</description>
   <metadata>
     <property name="variant">dark</property>
     <property name="light-variant">subway-seat-enamel</property>
   </metadata>
 
-  <color name="crust" value="#0A1D15"/>
-  <color name="mantle" value="#0C261C"/>
-  <color name="base" value="#0E3125"/>
-  <color name="surface0" value="#113E2E"/>
-  <color name="surface1" value="#194A39"/>
-  <color name="surface2" value="#285A47"/>
-  <color name="overlay0" value="#47705F"/>
-  <color name="overlay1" value="#67897A"/>
-  <color name="overlay2" value="#86A195"/>
-  <color name="subtext0" value="#A2B7AE"/>
-  <color name="subtext1" value="#BBCDC5"/>
-  <color name="text" value="#D3E2DB"/>
-  <color name="text_hi" value="#E6F0EB"/>
-  <color name="yellow" value="#EBC342"/>
-  <color name="yellow_hi" value="#FBD664"/>
-  <color name="orange" value="#D78E3C"/>
-  <color name="orange_hi" value="#EEA85C"/>
-  <color name="red" value="#DA6058"/>
-  <color name="red_hi" value="#EF796F"/>
-  <color name="green" value="#73C686"/>
-  <color name="green_hi" value="#82D896"/>
-  <color name="sage" value="#6FB393"/>
-  <color name="sage_hi" value="#8ECFAF"/>
-  <color name="denim" value="#639BD5"/>
-  <color name="denim_hi" value="#82B7EE"/>
-  <color name="clay" value="#E783BD"/>
-  <color name="tint_add" value="#21422E"/>
-  <color name="tint_add_emph" value="#2E563B"/>
-  <color name="tint_add_dim" value="#193525"/>
-  <color name="tint_del" value="#402E26"/>
-  <color name="tint_del_emph" value="#5D3830"/>
-  <color name="tint_del_dim" value="#2D2820"/>
-  <color name="tint_chg" value="#2E381C"/>
-  <color name="tint_chg_emph" value="#444821"/>
-  <color name="tint_info" value="#1A403E"/>
-  <color name="tint_hint" value="#1C4334"/>
-  <color name="tint_search" value="#505D2E"/>
-  <color name="tint_search_cur" value="#726030"/>
-  <color name="selection_unfocused" value="#1C4838"/>
-  <color name="bracket_bg" value="#194A39"/>
+  <color name="crust" value="#141A17"/>
+  <color name="mantle" value="#1A231E"/>
+  <color name="base" value="#212D27"/>
+  <color name="surface0" value="#2A3831"/>
+  <color name="surface1" value="#34453C"/>
+  <color name="surface2" value="#42544B"/>
+  <color name="overlay0" value="#5B6A62"/>
+  <color name="overlay1" value="#77847D"/>
+  <color name="overlay2" value="#929D97"/>
+  <color name="subtext0" value="#ABB4AF"/>
+  <color name="subtext1" value="#C3CAC6"/>
+  <color name="text" value="#DAE0DC"/>
+  <color name="text_hi" value="#EAEEEC"/>
+  <color name="yellow" value="#EBC168"/>
+  <color name="yellow_hi" value="#FBD380"/>
+  <color name="orange" value="#D0914F"/>
+  <color name="orange_hi" value="#E7AB6D"/>
+  <color name="red" value="#CD6B63"/>
+  <color name="red_hi" value="#E1837A"/>
+  <color name="green" value="#80C28E"/>
+  <color name="green_hi" value="#8FD59E"/>
+  <color name="sage" value="#7BB096"/>
+  <color name="sage_hi" value="#98CCB2"/>
+  <color name="denim" value="#709BC8"/>
+  <color name="denim_hi" value="#8DB6E2"/>
+  <color name="clay" value="#CE96B4"/>
+  <color name="tint_add" value="#2C3F31"/>
+  <color name="tint_add_emph" value="#39533F"/>
+  <color name="tint_add_dim" value="#233228"/>
+  <color name="tint_del" value="#442F2B"/>
+  <color name="tint_del_emph" value="#5E3A35"/>
+  <color name="tint_del_dim" value="#332824"/>
+  <color name="tint_chg" value="#363524"/>
+  <color name="tint_chg_emph" value="#4C452C"/>
+  <color name="tint_info" value="#2C3C3E"/>
+  <color name="tint_hint" value="#2E3F37"/>
+  <color name="tint_search" value="#5E593A"/>
+  <color name="tint_search_cur" value="#785F3B"/>
+  <color name="selection_unfocused" value="#33423B"/>
+  <color name="bracket_bg" value="#34453C"/>
 
   <style name="text" foreground="text" background="base"/>
   <style name="selection" foreground="text_hi" background="surface2"/>

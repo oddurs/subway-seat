@@ -2,10 +2,10 @@
   "_comment": "Subway Seat \u2014 generated from palette.py by build.py. Edit the palette, not this file.",
   "name": "Paris Catacombes",
   "mode": 1,
-  "darkSchemeBackgroundColor": "#062017",
-  "darkSchemeTextColor": "#CFDED7",
+  "darkSchemeBackgroundColor": "#141D19",
+  "darkSchemeTextColor": "#D5DCD8",
   "lightSchemeBackgroundColor": "#F4E9D4",
   "lightSchemeTextColor": "#3E2C1E",
-  "scrollbarColor": "#1E4738",
-  "selectionColor": "#1E4738"
+  "scrollbarColor": "#34423B",
+  "selectionColor": "#34423B"
 }

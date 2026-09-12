@@ -3,29 +3,29 @@ Name: Paris Carrelage
 Columns: 13
 # Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
 # Bevelled white tile under a vaulted platform. The light one.
-200 218 209	Carrelage crust
-213 227 221	Carrelage mantle
-226 237 232	Carrelage base
-182 210 197	Carrelage surface0
-157 193 177	Carrelage surface1
-136 175 158	Carrelage surface2
-117 154 138	Carrelage overlay0
- 92 129 113	Carrelage overlay1
- 74 105  92	Carrelage overlay2
- 64  91  79	Carrelage subtext0
- 51  74  65	Carrelage subtext1
- 33  53  45	Carrelage text
- 22  36  30	Carrelage text hi
-133 106   0	Harvest gold (yellow)
-147 117   0	Broadway yellow (yellow_hi)
+202 217 209	Carrelage crust
+216 227 220	Carrelage mantle
+228 237 232	Carrelage base
+186 208 196	Carrelage surface0
+163 191 176	Carrelage surface1
+142 173 157	Carrelage surface2
+123 153 137	Carrelage overlay0
+ 98 127 112	Carrelage overlay1
+ 79 103  91	Carrelage overlay2
+ 69  89  79	Carrelage subtext0
+ 55  73  64	Carrelage subtext1
+ 37  53  44	Carrelage text
+ 24  35  29	Carrelage text hi
+138 103   0	Harvest gold (yellow)
+153 115   0	Broadway yellow (yellow_hi)
 155  93   0	Burnt orange (orange)
 174 104   0	Sixth Avenue (orange_hi)
-163   0  19	Redbird (red)
-200  44  44	Redbird bright (red_hi)
-  0 130  59	Avocado (green)
-  0 134  61	Avocado bright (green_hi)
-  0 119  82	Seafoam tile (sage)
- 42 136  98	Seafoam bright (sage_hi)
-  9  97 169	Faded denim (denim)
- 46 117 185	Denim bright (denim_hi)
-180  53 134	Terracotta (clay)
+158  23  27	Redbird (red)
+187  64  59	Redbird bright (red_hi)
+ 24 128  63	Avocado (green)
+ 22 133  64	Avocado bright (green_hi)
+ 39 117  85	Seafoam tile (sage)
+ 61 134 102	Seafoam bright (sage_hi)
+ 39  98 156	Faded denim (denim)
+ 62 117 173	Denim bright (denim_hi)
+154  85 125	Terracotta (clay)

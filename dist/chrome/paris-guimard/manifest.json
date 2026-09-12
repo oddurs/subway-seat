@@ -2,128 +2,128 @@
   "manifest_version": 3,
   "name": "Paris Guimard",
   "version": "0.3.0",
-  "description": "Harvest gold, burnt orange and avocado on walnut. Cast-iron green off a Metro entrance. The original green.",
+  "description": "Harvest gold, burnt orange and avocado on walnut. Cast iron off a Metro entrance, which is nearly black. Brass leads.",
   "theme": {
     "colors": {
       "frame": [
-        10,
-        29,
-        21
+        20,
+        26,
+        23
       ],
       "frame_inactive": [
-        10,
-        29,
-        21
+        20,
+        26,
+        23
       ],
       "frame_incognito": [
-        45,
-        45,
+        50,
+        46,
         48
       ],
       "frame_incognito_inactive": [
-        45,
-        45,
+        50,
+        46,
         48
       ],
       "background_tab": [
-        10,
-        29,
-        21
+        20,
+        26,
+        23
       ],
       "background_tab_inactive": [
-        10,
-        29,
-        21
+        20,
+        26,
+        23
       ],
       "background_tab_incognito": [
-        45,
-        45,
+        50,
+        46,
         48
       ],
       "background_tab_incognito_inactive": [
-        45,
-        45,
+        50,
+        46,
         48
       ],
       "toolbar": [
-        14,
-        49,
-        37
+        33,
+        45,
+        39
       ],
       "tab_text": [
-        211,
-        226,
-        219
+        218,
+        224,
+        220
       ],
       "tab_background_text": [
-        134,
-        161,
-        149
+        146,
+        157,
+        151
       ],
       "tab_background_text_inactive": [
-        103,
-        137,
-        122
+        119,
+        132,
+        125
       ],
       "tab_background_text_incognito": [
-        162,
-        183,
-        174
+        171,
+        180,
+        175
       ],
       "tab_background_text_incognito_inactive": [
-        134,
-        161,
-        149
+        146,
+        157,
+        151
       ],
       "bookmark_text": [
-        187,
-        205,
-        197
+        195,
+        202,
+        198
       ],
       "toolbar_button_icon": [
-        187,
-        205,
-        197
+        195,
+        202,
+        198
       ],
       "toolbar_text": [
-        211,
-        226,
-        219
+        218,
+        224,
+        220
       ],
       "omnibox_background": [
-        12,
-        38,
-        28
+        26,
+        35,
+        30
       ],
       "omnibox_text": [
-        211,
-        226,
-        219
+        218,
+        224,
+        220
       ],
       "ntp_background": [
-        14,
-        49,
-        37
+        33,
+        45,
+        39
       ],
       "ntp_text": [
-        211,
-        226,
-        219
+        218,
+        224,
+        220
       ],
       "ntp_link": [
-        99,
+        112,
         155,
-        213
+        200
       ],
       "ntp_header": [
-        215,
-        142,
-        60
+        208,
+        145,
+        79
       ],
       "button_background": [
-        10,
-        29,
-        21
+        20,
+        26,
+        23
       ]
     },
     "properties": {

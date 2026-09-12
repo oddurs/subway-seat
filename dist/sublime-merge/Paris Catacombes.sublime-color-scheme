@@ -3,46 +3,46 @@
   "name": "Paris Catacombes",
   "author": "Oddur Sigurdsson",
   "variables": {
-    "crust": "#05120C",
-    "mantle": "#061811",
-    "base": "#062017",
-    "surface0": "#0A2B20",
-    "surface1": "#13382A",
-    "surface2": "#1E4738",
-    "overlay0": "#456A5B",
-    "overlay1": "#648576",
-    "overlay2": "#829D91",
-    "subtext0": "#9EB3AA",
-    "subtext1": "#B8CAC2",
-    "text": "#CFDED7",
-    "text_hi": "#E4EEE9",
-    "yellow": "#EBC342",
-    "yellow_hi": "#FBD664",
-    "orange": "#D78E3C",
-    "orange_hi": "#EEA85C",
-    "red": "#DA6058",
-    "red_hi": "#EF796F",
-    "green": "#73C686",
-    "green_hi": "#82D896",
-    "sage": "#6FB393",
-    "sage_hi": "#8ECFAF",
-    "denim": "#639BD5",
-    "denim_hi": "#82B7EE",
-    "clay": "#E783BD",
-    "tint_add": "#1D3A27",
-    "tint_add_emph": "#2A4F35",
-    "tint_add_dim": "#142B1D",
-    "tint_del": "#3C2620",
-    "tint_del_emph": "#5A312A",
-    "tint_del_dim": "#291F19",
-    "tint_chg": "#2A2E15",
-    "tint_chg_emph": "#41401A",
-    "tint_info": "#133132",
-    "tint_hint": "#153528",
-    "tint_search": "#4B5124",
-    "tint_search_cur": "#6E572A",
-    "inactive_selection": "#133529",
-    "paper": "#0A2B20"
+    "crust": "#0B100D",
+    "mantle": "#0F1612",
+    "base": "#141D19",
+    "surface0": "#1D2822",
+    "surface1": "#27332D",
+    "surface2": "#34423B",
+    "overlay0": "#57645D",
+    "overlay1": "#738079",
+    "overlay2": "#8E9993",
+    "subtext0": "#A7B0AB",
+    "subtext1": "#C0C7C3",
+    "text": "#D5DCD8",
+    "text_hi": "#E8ECEA",
+    "yellow": "#EBC168",
+    "yellow_hi": "#FBD380",
+    "orange": "#D0914F",
+    "orange_hi": "#E7AB6D",
+    "red": "#CD6B63",
+    "red_hi": "#E1837A",
+    "green": "#80C28E",
+    "green_hi": "#8FD59E",
+    "sage": "#7BB096",
+    "sage_hi": "#98CCB2",
+    "denim": "#709BC8",
+    "denim_hi": "#8DB6E2",
+    "clay": "#CE96B4",
+    "tint_add": "#253729",
+    "tint_add_emph": "#334D39",
+    "tint_add_dim": "#1B291F",
+    "tint_del": "#3D2823",
+    "tint_del_emph": "#59342F",
+    "tint_del_dim": "#2C1F1C",
+    "tint_chg": "#2F2C1C",
+    "tint_chg_emph": "#453E25",
+    "tint_info": "#212F32",
+    "tint_hint": "#22322A",
+    "tint_search": "#544E31",
+    "tint_search_cur": "#725734",
+    "inactive_selection": "#26312C",
+    "paper": "#1D2822"
   },
   "globals": {
     "background": "var(base)",
@@ -56,8 +56,8 @@
     "fold_marker": "var(overlay1)",
     "minimap_border": "var(surface2)",
     "accent": "var(orange)",
-    "popup_css": "html { background-color: #0A2B20; color: #CFDED7; } a { color: #639BD5; } code, .highlight { background-color: #062017; color: #73C686; } h1, h2, h3 { color: #EBC342; } .error, .errors { color: #EF796F; } .warning, .warnings { color: #EBC342; } .info { color: #639BD5; } .hint { color: #6FB393; }",
-    "phantom_css": "html { background-color: #0A2B20; color: #CFDED7; } a { color: #639BD5; } code, .highlight { background-color: #062017; color: #73C686; } h1, h2, h3 { color: #EBC342; } .error, .errors { color: #EF796F; } .warning, .warnings { color: #EBC342; } .info { color: #639BD5; } .hint { color: #6FB393; }",
+    "popup_css": "html { background-color: #1D2822; color: #D5DCD8; } a { color: #709BC8; } code, .highlight { background-color: #141D19; color: #80C28E; } h1, h2, h3 { color: #EBC168; } .error, .errors { color: #E1837A; } .warning, .warnings { color: #EBC168; } .info { color: #709BC8; } .hint { color: #7BB096; }",
+    "phantom_css": "html { background-color: #1D2822; color: #D5DCD8; } a { color: #709BC8; } code, .highlight { background-color: #141D19; color: #80C28E; } h1, h2, h3 { color: #EBC168; } .error, .errors { color: #E1837A; } .warning, .warnings { color: #EBC168; } .info { color: #709BC8; } .hint { color: #7BB096; }",
     "gutter": "var(base)",
     "gutter_foreground": "var(overlay0)",
     "gutter_foreground_highlight": "var(yellow)",
@@ -402,67 +402,67 @@
     },
     {
       "scope": "diff.inserted.side-by-side",
-      "background": "#1D3A27"
+      "background": "#253729"
     },
     {
       "scope": "diff.inserted.char.side-by-side",
-      "background": "#2A4F35"
+      "background": "#334D39"
     },
     {
       "scope": "diff.deleted.side-by-side",
-      "background": "#3C2620"
+      "background": "#3D2823"
     },
     {
       "scope": "diff.deleted.char.side-by-side",
-      "background": "#5A312A"
+      "background": "#59342F"
     },
     {
       "scope": "diff.fill",
-      "background": "#061811"
+      "background": "#0F1612"
     },
     {
       "scope": "diff.inserted.merge-left",
-      "background": "#1D3A27"
+      "background": "#253729"
     },
     {
       "scope": "diff.inserted.char.merge-left",
-      "background": "#2A4F35"
+      "background": "#334D39"
     },
     {
       "scope": "diff.border.merge-left",
-      "background": "#73C686"
+      "background": "#80C28E"
     },
     {
       "scope": "diff.inserted.merge-right",
-      "background": "#2A2E15"
+      "background": "#2F2C1C"
     },
     {
       "scope": "diff.inserted.char.merge-right",
-      "background": "#41401A"
+      "background": "#453E25"
     },
     {
       "scope": "diff.border.merge-right",
-      "background": "#EBC342"
+      "background": "#EBC168"
     },
     {
       "scope": "diff.border.merge-conflict",
-      "background": "#EF796F"
+      "background": "#E1837A"
     },
     {
       "scope": "diff.border.merge-merged",
-      "background": "#648576"
+      "background": "#738079"
     },
     {
       "scope": "blame.border",
-      "background": "#13382A"
+      "background": "#27332D"
     },
     {
       "scope": "blame.age-icon",
-      "foreground": "#EBC342"
+      "foreground": "#EBC168"
     },
     {
       "scope": "source.sublime-merge.preferences.git_binary",
-      "foreground": "#EBC342"
+      "foreground": "#EBC168"
     }
   ]
 }

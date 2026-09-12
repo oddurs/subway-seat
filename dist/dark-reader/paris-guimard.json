@@ -2,10 +2,10 @@
   "_comment": "Subway Seat \u2014 generated from palette.py by build.py. Edit the palette, not this file.",
   "name": "Paris Guimard",
   "mode": 1,
-  "darkSchemeBackgroundColor": "#0E3125",
-  "darkSchemeTextColor": "#D3E2DB",
+  "darkSchemeBackgroundColor": "#212D27",
+  "darkSchemeTextColor": "#DAE0DC",
   "lightSchemeBackgroundColor": "#F4E9D4",
   "lightSchemeTextColor": "#3E2C1E",
-  "scrollbarColor": "#285A47",
-  "selectionColor": "#285A47"
+  "scrollbarColor": "#42544B",
+  "selectionColor": "#42544B"
 }

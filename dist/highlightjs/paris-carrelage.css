@@ -5,40 +5,40 @@ pre code.hljs { display: block; overflow-x: auto; padding: 1em; }
 code.hljs { padding: 3px 5px; }
 .hljs-addition, .hljs-deletion { display: inline-block; width: 100%; } /* diff lines as full-width bands */
 
-.hljs { color: #21352D; background: #E2EDE8; }
-.hljs::selection, .hljs ::selection { color: #16241E; background: #9DC1B1; }
+.hljs { color: #25352C; background: #E4EDE8; }
+.hljs::selection, .hljs ::selection { color: #18231D; background: #A3BFB0; }
 
-.hljs-comment { color: #5C8171; font-style: italic; }
-.hljs-quote { color: #405B4F; font-style: italic; }
-.hljs-doctag, .hljs-meta, .hljs-meta .hljs-keyword { color: #B43586; font-style: italic; }
-.hljs-meta .hljs-string { color: #00823B; }
+.hljs-comment { color: #627F70; font-style: italic; }
+.hljs-quote { color: #45594F; font-style: italic; }
+.hljs-doctag, .hljs-meta, .hljs-meta .hljs-keyword { color: #9A557D; font-style: italic; }
+.hljs-meta .hljs-string { color: #18803F; }
 .hljs-keyword, .hljs-template-tag { color: #9B5D00; }
-.hljs-operator { color: #4A695C; }
-.hljs-punctuation, .hljs-tag { color: #4A695C; }
-.hljs-title, .hljs-title.function_, .hljs-title.function_.invoke__, .hljs-attr { color: #856A00; }
-.hljs-built_in { color: #856A00; font-style: italic; }
-.hljs-string, .hljs-code { color: #00823B; }
-.hljs-char.escape_ { color: #B43586; }
-.hljs-regexp { color: #B43586; }
-.hljs-number { color: #C82C2C; }
-.hljs-literal, .hljs-symbol, .hljs-variable.constant_, .hljs-formula { color: #C82C2C; }
-.hljs-title.class_, .hljs-title.class_.inherited__ { color: #007752; }
-.hljs-type { color: #007752; font-style: italic; }
-.hljs-variable, .hljs-template-variable, .hljs-subst { color: #21352D; }
-.hljs-variable.language_ { color: #C82C2C; font-style: italic; }
-.hljs-params { color: #334A41; font-style: italic; }
-.hljs-property, .hljs-attribute { color: #334A41; }
+.hljs-operator { color: #4F675B; }
+.hljs-punctuation, .hljs-tag { color: #4F675B; }
+.hljs-title, .hljs-title.function_, .hljs-title.function_.invoke__, .hljs-attr { color: #8A6700; }
+.hljs-built_in { color: #8A6700; font-style: italic; }
+.hljs-string, .hljs-code { color: #18803F; }
+.hljs-char.escape_ { color: #9A557D; }
+.hljs-regexp { color: #9A557D; }
+.hljs-number { color: #BB403B; }
+.hljs-literal, .hljs-symbol, .hljs-variable.constant_, .hljs-formula { color: #BB403B; }
+.hljs-title.class_, .hljs-title.class_.inherited__ { color: #277555; }
+.hljs-type { color: #277555; font-style: italic; }
+.hljs-variable, .hljs-template-variable, .hljs-subst { color: #25352C; }
+.hljs-variable.language_ { color: #BB403B; font-style: italic; }
+.hljs-params { color: #374940; font-style: italic; }
+.hljs-property, .hljs-attribute { color: #374940; }
 .hljs-name, .hljs-selector-tag { color: #9B5D00; }
-.hljs-selector-id, .hljs-selector-class, .hljs-selector-attr, .hljs-selector-pseudo { color: #856A00; font-style: italic; }
-.hljs-section { color: #856A00; font-weight: bold; }
+.hljs-selector-id, .hljs-selector-class, .hljs-selector-attr, .hljs-selector-pseudo { color: #8A6700; font-style: italic; }
+.hljs-section { color: #8A6700; font-weight: bold; }
 .hljs-bullet { color: #9B5D00; }
-.hljs-emphasis { color: #21352D; font-style: italic; }
-.hljs-strong { color: #16241E; font-weight: bold; }
-.hljs-link { color: #0961A9; text-decoration: underline; }
+.hljs-emphasis { color: #25352C; font-style: italic; }
+.hljs-strong { color: #18231D; font-weight: bold; }
+.hljs-link { color: #27629C; text-decoration: underline; }
 
 /* Diffs: a diff line is one token, so it takes green or red_hi on its tint.
    highlight.js marks hunk headers as meta and file headers as comments. */
-.hljs-addition { color: #00823B; background: #BDDECC; }
-.hljs-deletion { color: #C82C2C; background: #EDCCD0; }
-.language-diff .hljs-meta { color: #0961A9; font-style: normal; }
-.language-diff .hljs-comment { color: #16241E; font-style: normal; font-weight: bold; }
+.hljs-addition { color: #18803F; background: #C3DECD; }
+.hljs-deletion { color: #BB403B; background: #ECD1D1; }
+.language-diff .hljs-meta { color: #27629C; font-style: normal; }
+.language-diff .hljs-comment { color: #18231D; font-style: normal; font-weight: bold; }

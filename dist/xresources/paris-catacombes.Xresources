@@ -1,40 +1,40 @@
 ! Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
 ! Paris Catacombes
 
-*.foreground: #CFDED7
-*.background: #062017
-*.cursorColor: #EBC342
-*.highlightColor: #1E4738
-*.highlightTextColor: #E4EEE9
+*.foreground: #D5DCD8
+*.background: #141D19
+*.cursorColor: #EBC168
+*.highlightColor: #34423B
+*.highlightTextColor: #E8ECEA
 
 ! black
-*.color0: #13382A
-*.color8: #648576
+*.color0: #27332D
+*.color8: #738079
 
 ! red
-*.color1: #DA6058
-*.color9: #EF796F
+*.color1: #CD6B63
+*.color9: #E1837A
 
 ! green
-*.color2: #73C686
-*.color10: #82D896
+*.color2: #80C28E
+*.color10: #8FD59E
 
 ! yellow
-*.color3: #EBC342
-*.color11: #FBD664
+*.color3: #EBC168
+*.color11: #FBD380
 
 ! blue
-*.color4: #639BD5
-*.color12: #82B7EE
+*.color4: #709BC8
+*.color12: #8DB6E2
 
 ! magenta
-*.color5: #D78E3C
-*.color13: #EEA85C
+*.color5: #D0914F
+*.color13: #E7AB6D
 
 ! cyan
-*.color6: #6FB393
-*.color14: #8ECFAF
+*.color6: #7BB096
+*.color14: #98CCB2
 
 ! white
-*.color7: #B8CAC2
-*.color15: #E4EEE9
+*.color7: #C0C7C3
+*.color15: #E8ECEA

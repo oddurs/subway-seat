@@ -4,37 +4,37 @@
 @import "default"
 
 * {
-    crust:     #05120C;
-    mantle:    #061811;
-    base:      #062017;
-    surface0:  #0A2B20;
-    surface1:  #13382A;
-    surface2:  #1E4738;
-    overlay0:  #456A5B;
-    overlay1:  #648576;
-    overlay2:  #829D91;
-    subtext0:  #9EB3AA;
-    subtext1:  #B8CAC2;
-    text:      #CFDED7;
-    text-hi:   #E4EEE9;
-    yellow:    #EBC342;
-    yellow-hi: #FBD664;
-    orange:    #D78E3C;
-    orange-hi: #EEA85C;
-    red:       #DA6058;
-    red-hi:    #EF796F;
-    green:     #73C686;
-    green-hi:  #82D896;
-    sage:      #6FB393;
-    sage-hi:   #8ECFAF;
-    denim:     #639BD5;
-    denim-hi:  #82B7EE;
-    clay:      #E783BD;
+    crust:     #0B100D;
+    mantle:    #0F1612;
+    base:      #141D19;
+    surface0:  #1D2822;
+    surface1:  #27332D;
+    surface2:  #34423B;
+    overlay0:  #57645D;
+    overlay1:  #738079;
+    overlay2:  #8E9993;
+    subtext0:  #A7B0AB;
+    subtext1:  #C0C7C3;
+    text:      #D5DCD8;
+    text-hi:   #E8ECEA;
+    yellow:    #EBC168;
+    yellow-hi: #FBD380;
+    orange:    #D0914F;
+    orange-hi: #E7AB6D;
+    red:       #CD6B63;
+    red-hi:    #E1837A;
+    green:     #80C28E;
+    green-hi:  #8FD59E;
+    sage:      #7BB096;
+    sage-hi:   #98CCB2;
+    denim:     #709BC8;
+    denim-hi:  #8DB6E2;
+    clay:      #CE96B4;
 
-    paper:     #0A2B20;
-    edge:      #224136;
-    hover:     #19392E;
-    selection: #39564C;
+    paper:     #1D2822;
+    edge:      #333E38;
+    hover:     #2B3630;
+    selection: #49534E;
 
     /* the default theme's variables */
     background:                  @paper;
@@ -60,17 +60,17 @@
     selected-normal-background:  @selection;
     selected-normal-foreground:  @text-hi;
     selected-active-background:  @selection;
-    selected-active-foreground:  #82B7EE;
+    selected-active-foreground:  #8DB6E2;
     selected-urgent-background:  @selection;
-    selected-urgent-foreground:  #EEA85C;
+    selected-urgent-foreground:  #E7AB6D;
 }
 
 element-text {
-    highlight: bold #EBC342;
+    highlight: bold #EBC168;
 }
 
 entry {
-    placeholder-color: #648576;
+    placeholder-color: #738079;
 }
 
 prompt {
@@ -78,9 +78,9 @@ prompt {
 }
 
 num-filtered-rows, num-rows, textbox-num-sep {
-    text-color: #648576;
+    text-color: #738079;
 }
 
 scrollbar {
-    handle-color: #648576;
+    handle-color: #738079;
 }

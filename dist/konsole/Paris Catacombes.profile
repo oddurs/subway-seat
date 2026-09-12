@@ -2,12 +2,12 @@
 
 [Appearance]
 ColorScheme=paris-catacombes
-FocusBorderColor=235,195,66
-TabActivityColor=215,142,60
+FocusBorderColor=235,193,104
+TabActivityColor=208,145,79
 
 [Cursor Options]
-CustomCursorColor=235,195,66
-CustomCursorTextColor=6,32,23
+CustomCursorColor=235,193,104
+CustomCursorTextColor=20,29,25
 UseCustomCursorColor=true
 
 [General]

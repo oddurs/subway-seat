@@ -4,55 +4,55 @@
       "Paris Guimard": {
         "name": "Paris Guimard",
         "type": "custom",
-        "Background": "#0E3125",
-        "Foreground": "#D3E2DB",
-        "LightBlue": "#BBCDC5",
-        "AccentBlue": "#D78E3C",
-        "AccentPurple": "#E783BD",
-        "AccentCyan": "#6FB393",
-        "AccentGreen": "#73C686",
-        "AccentYellow": "#EBC342",
-        "AccentRed": "#EF796F",
-        "DiffAdded": "#21422E",
-        "DiffRemoved": "#402E26",
-        "Comment": "#67897A",
-        "Gray": "#86A195",
-        "DarkGray": "#285A47",
+        "Background": "#212D27",
+        "Foreground": "#DAE0DC",
+        "LightBlue": "#C3CAC6",
+        "AccentBlue": "#D0914F",
+        "AccentPurple": "#CE96B4",
+        "AccentCyan": "#7BB096",
+        "AccentGreen": "#80C28E",
+        "AccentYellow": "#EBC168",
+        "AccentRed": "#E1837A",
+        "DiffAdded": "#2C3F31",
+        "DiffRemoved": "#442F2B",
+        "Comment": "#77847D",
+        "Gray": "#929D97",
+        "DarkGray": "#42544B",
         "GradientColors": [
-          "#DA6058",
-          "#D78E3C",
-          "#EBC342",
-          "#73C686"
+          "#CD6B63",
+          "#D0914F",
+          "#EBC168",
+          "#80C28E"
         ],
         "text": {
-          "primary": "#D3E2DB",
-          "secondary": "#86A195",
-          "accent": "#E783BD",
-          "response": "#D3E2DB"
+          "primary": "#DAE0DC",
+          "secondary": "#929D97",
+          "accent": "#CE96B4",
+          "response": "#DAE0DC"
         },
         "background": {
-          "primary": "#0E3125",
+          "primary": "#212D27",
           "diff": {
-            "added": "#21422E",
-            "removed": "#402E26"
+            "added": "#2C3F31",
+            "removed": "#442F2B"
           }
         },
         "ui": {
-          "comment": "#67897A",
-          "symbol": "#EBC342",
-          "active": "#D78E3C",
-          "focus": "#EBC342",
+          "comment": "#77847D",
+          "symbol": "#EBC168",
+          "active": "#D0914F",
+          "focus": "#EBC168",
           "gradient": [
-            "#DA6058",
-            "#D78E3C",
-            "#EBC342",
-            "#73C686"
+            "#CD6B63",
+            "#D0914F",
+            "#EBC168",
+            "#80C28E"
           ]
         },
         "status": {
-          "success": "#73C686",
-          "warning": "#EBC342",
-          "error": "#EF796F"
+          "success": "#80C28E",
+          "warning": "#EBC168",
+          "error": "#E1837A"
         }
       }
     },

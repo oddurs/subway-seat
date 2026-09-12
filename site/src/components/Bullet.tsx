@@ -4,10 +4,14 @@ import { font } from "@/theme/type.stylex";
 import { Roundel } from "./Roundel";
 
 /**
- * The mark that names one accent, in whichever city you're riding: an MTA
- * route bullet in New York, a roundel in London. Both are drawn, and CSS shows
- * the one belonging to the active family — the same way flavor-specific content
- * works everywhere else on the site.
+ * The mark that names one accent, in whichever city you're riding: a roundel in
+ * London, and a filled bullet everywhere else — the MTA's route bullet, and the
+ * numbered circle Paris puts on a line, are the same drawing.
+ *
+ * The bullet is the default rather than New York's branch, so a family that
+ * brings no mark of its own still gets one. It was written the other way round
+ * once, and the accents on the palette page rendered with no colour at all the
+ * day a third city arrived.
  */
 export function Bullet({
   letter,

@@ -12,7 +12,7 @@
 
 ;;; Commentary:
 
-;; Cast-iron green off a Metro entrance. The original green.
+;; Cast iron off a Metro entrance, which is nearly black. Brass leads.
 ;; The palette and faces live in subway-seat-theme.el; this file lets
 ;; `load-theme' find `paris-guimard'.
 ;;
@@ -23,7 +23,7 @@
 (require 'subway-seat-theme)
 
 (deftheme paris-guimard
-  "Paris Guimard: Cast-iron green off a Metro entrance. The original green.")
+  "Paris Guimard: Cast iron off a Metro entrance, which is nearly black. Brass leads.")
 
 ;; `load-theme' clears a theme's settings before loading its file, so record them again.
 (subway-seat-theme-apply 'paris-guimard)
