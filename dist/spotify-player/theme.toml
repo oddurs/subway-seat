@@ -228,7 +228,7 @@ visualization = { low = "#77C581", mid = "#F2C03F", high = "#F17869" }
 name = "london-portland"
 
 [themes.palette]
-background = "#E5EAF4"
+background = "#E0EAFE"
 foreground = "#293040"
 black = "#3C4557"
 red = "#9B211A"
@@ -237,7 +237,7 @@ yellow = "#896800"
 blue = "#0019A8"
 magenta = "#B14A07"
 cyan = "#007376"
-white = "#95A5C4"
+white = "#8FA5D0"
 bright_black = "#697794"
 bright_red = "#C92B23"
 bright_green = "#008730"
@@ -245,25 +245,25 @@ bright_yellow = "#977300"
 bright_blue = "#4A6EBD"
 bright_magenta = "#B86100"
 bright_cyan = "#008688"
-bright_white = "#A9B7D4"
+bright_white = "#A1B7E5"
 
 [themes.component_style]
 block_title = { fg = "#B14A07", modifiers = ["Bold"] }
-border = { fg = "#95A5C4" }
+border = { fg = "#8FA5D0" }
 playback_status = { fg = "#896800", modifiers = ["Bold"] }
 playback_track = { fg = "#896800", modifiers = ["Bold"] }
 playback_artists = { fg = "#B14A07" }
 playback_album = { fg = "#007376" }
 playback_genres = { fg = "#697794", modifiers = ["Italic"] }
 playback_metadata = { fg = "#4A5469" }
-playback_progress_bar = { fg = "#B14A07", bg = "#A9B7D4" }
-playback_progress_bar_unfilled = { fg = "#95A5C4", bg = "#A9B7D4" }
+playback_progress_bar = { fg = "#B14A07", bg = "#A1B7E5" }
+playback_progress_bar_unfilled = { fg = "#8FA5D0", bg = "#A1B7E5" }
 current_playing = { fg = "#0D8131", modifiers = ["Bold"] }
 page_desc = { fg = "#896800", modifiers = ["Bold"] }
 playlist_desc = { fg = "#697794" }
 table_header = { fg = "#B14A07" }
-selection = { fg = "#1B202B", bg = "#BFCAE1", modifiers = ["Bold"] }
-secondary_row = { bg = "#DAE0EB" }
+selection = { fg = "#1B202B", bg = "#B6CAF3", modifiers = ["Bold"] }
+secondary_row = { bg = "#D4E0F6" }
 like = { fg = "#C92B23" }
 lyrics_played = { fg = "#697794" }
 lyrics_playing = { fg = "#896800", modifiers = ["Bold"] }
@@ -278,7 +278,7 @@ foreground = "#D9E1DB"
 black = "#30463B"
 red = "#CD6B63"
 green = "#80C28E"
-yellow = "#EBC168"
+yellow = "#F2BF4B"
 blue = "#709BC8"
 magenta = "#D0914F"
 cyan = "#6CA087"
@@ -286,7 +286,7 @@ white = "#C2CBC5"
 bright_black = "#74857C"
 bright_red = "#E1837A"
 bright_green = "#8FD59E"
-bright_yellow = "#FBD380"
+bright_yellow = "#FFD273"
 bright_blue = "#8DB6E2"
 bright_magenta = "#E7AB6D"
 bright_cyan = "#98CCB2"
@@ -295,8 +295,8 @@ bright_white = "#E9EEEC"
 [themes.component_style]
 block_title = { fg = "#D0914F", modifiers = ["Bold"] }
 border = { fg = "#3E554A" }
-playback_status = { fg = "#EBC168", modifiers = ["Bold"] }
-playback_track = { fg = "#EBC168", modifiers = ["Bold"] }
+playback_status = { fg = "#F2BF4B", modifiers = ["Bold"] }
+playback_track = { fg = "#F2BF4B", modifiers = ["Bold"] }
 playback_artists = { fg = "#D0914F" }
 playback_album = { fg = "#6CA087" }
 playback_genres = { fg = "#74857C", modifiers = ["Italic"] }
@@ -304,15 +304,15 @@ playback_metadata = { fg = "#A9B5AE" }
 playback_progress_bar = { fg = "#D0914F", bg = "#30463B" }
 playback_progress_bar_unfilled = { fg = "#3E554A", bg = "#30463B" }
 current_playing = { fg = "#80C28E", modifiers = ["Bold"] }
-page_desc = { fg = "#EBC168", modifiers = ["Bold"] }
+page_desc = { fg = "#F2BF4B", modifiers = ["Bold"] }
 playlist_desc = { fg = "#74857C" }
 table_header = { fg = "#D0914F" }
 selection = { fg = "#E9EEEC", bg = "#30463B", modifiers = ["Bold"] }
 secondary_row = { bg = "#18241D" }
 like = { fg = "#E1837A" }
 lyrics_played = { fg = "#74857C" }
-lyrics_playing = { fg = "#EBC168", modifiers = ["Bold"] }
-visualization = { low = "#80C28E", mid = "#EBC168", high = "#E1837A" }
+lyrics_playing = { fg = "#F2BF4B", modifiers = ["Bold"] }
+visualization = { low = "#80C28E", mid = "#F2BF4B", high = "#E1837A" }
 
 [[themes]]
 name = "paris-catacombes"
@@ -323,7 +323,7 @@ foreground = "#D4DDD7"
 black = "#24342C"
 red = "#CD6B63"
 green = "#80C28E"
-yellow = "#EBC168"
+yellow = "#F2BF4B"
 blue = "#709BC8"
 magenta = "#D0914F"
 cyan = "#6CA087"
@@ -331,7 +331,7 @@ white = "#BFC8C2"
 bright_black = "#708178"
 bright_red = "#E1837A"
 bright_green = "#8FD59E"
-bright_yellow = "#FBD380"
+bright_yellow = "#FFD273"
 bright_blue = "#8DB6E2"
 bright_magenta = "#E7AB6D"
 bright_cyan = "#98CCB2"
@@ -340,8 +340,8 @@ bright_white = "#E7ECEA"
 [themes.component_style]
 block_title = { fg = "#D0914F", modifiers = ["Bold"] }
 border = { fg = "#31433A" }
-playback_status = { fg = "#EBC168", modifiers = ["Bold"] }
-playback_track = { fg = "#EBC168", modifiers = ["Bold"] }
+playback_status = { fg = "#F2BF4B", modifiers = ["Bold"] }
+playback_track = { fg = "#F2BF4B", modifiers = ["Bold"] }
 playback_artists = { fg = "#D0914F" }
 playback_album = { fg = "#6CA087" }
 playback_genres = { fg = "#708178", modifiers = ["Italic"] }
@@ -349,21 +349,21 @@ playback_metadata = { fg = "#A5B1AA" }
 playback_progress_bar = { fg = "#D0914F", bg = "#24342C" }
 playback_progress_bar_unfilled = { fg = "#31433A", bg = "#24342C" }
 current_playing = { fg = "#80C28E", modifiers = ["Bold"] }
-page_desc = { fg = "#EBC168", modifiers = ["Bold"] }
+page_desc = { fg = "#F2BF4B", modifiers = ["Bold"] }
 playlist_desc = { fg = "#708178" }
 table_header = { fg = "#D0914F" }
 selection = { fg = "#E7ECEA", bg = "#24342C", modifiers = ["Bold"] }
 secondary_row = { bg = "#0D1711" }
 like = { fg = "#E1837A" }
 lyrics_played = { fg = "#708178" }
-lyrics_playing = { fg = "#EBC168", modifiers = ["Bold"] }
-visualization = { low = "#80C28E", mid = "#EBC168", high = "#E1837A" }
+lyrics_playing = { fg = "#F2BF4B", modifiers = ["Bold"] }
+visualization = { low = "#80C28E", mid = "#F2BF4B", high = "#E1837A" }
 
 [[themes]]
 name = "paris-carrelage"
 
 [themes.palette]
-background = "#E4EDE8"
+background = "#DEF0E6"
 foreground = "#25352C"
 black = "#374940"
 red = "#932D29"
@@ -372,7 +372,7 @@ yellow = "#8A6700"
 blue = "#27629C"
 magenta = "#754500"
 cyan = "#086142"
-white = "#8EAD9D"
+white = "#84B09A"
 bright_black = "#627F70"
 bright_red = "#BB403B"
 bright_green = "#168540"
@@ -380,25 +380,25 @@ bright_yellow = "#997300"
 bright_blue = "#3E75AD"
 bright_magenta = "#AE6800"
 bright_cyan = "#3D8666"
-bright_white = "#A3BFB0"
+bright_white = "#96C4AC"
 
 [themes.component_style]
 block_title = { fg = "#754500", modifiers = ["Bold"] }
-border = { fg = "#8EAD9D" }
+border = { fg = "#84B09A" }
 playback_status = { fg = "#8A6700", modifiers = ["Bold"] }
 playback_track = { fg = "#8A6700", modifiers = ["Bold"] }
 playback_artists = { fg = "#754500" }
 playback_album = { fg = "#086142" }
 playback_genres = { fg = "#627F70", modifiers = ["Italic"] }
 playback_metadata = { fg = "#45594F" }
-playback_progress_bar = { fg = "#754500", bg = "#A3BFB0" }
-playback_progress_bar_unfilled = { fg = "#8EAD9D", bg = "#A3BFB0" }
+playback_progress_bar = { fg = "#754500", bg = "#96C4AC" }
+playback_progress_bar_unfilled = { fg = "#84B09A", bg = "#96C4AC" }
 current_playing = { fg = "#207F41", modifiers = ["Bold"] }
 page_desc = { fg = "#8A6700", modifiers = ["Bold"] }
 playlist_desc = { fg = "#627F70" }
 table_header = { fg = "#754500" }
-selection = { fg = "#18231D", bg = "#BAD0C4", modifiers = ["Bold"] }
-secondary_row = { bg = "#D8E3DC" }
+selection = { fg = "#18231D", bg = "#ACD5BF", modifiers = ["Bold"] }
+secondary_row = { bg = "#D0E6D8" }
 like = { fg = "#BB403B" }
 lyrics_played = { fg = "#627F70" }
 lyrics_playing = { fg = "#8A6700", modifiers = ["Bold"] }

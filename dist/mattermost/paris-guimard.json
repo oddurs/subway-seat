@@ -9,7 +9,7 @@
   "sidebarHeaderTextColor": "#D9E1DB",
   "sidebarTeamBarBg": "#131A17",
   "onlineIndicator": "#80C28E",
-  "awayIndicator": "#EBC168",
+  "awayIndicator": "#F2BF4B",
   "dndIndicator": "#E1837A",
   "mentionBg": "#D0914F",
   "mentionBj": "#D0914F",
@@ -21,7 +21,7 @@
   "buttonBg": "#D0914F",
   "buttonColor": "#131A17",
   "errorTextColor": "#E1837A",
-  "mentionHighlightBg": "#7A7044",
+  "mentionHighlightBg": "#7D6F37",
   "mentionHighlightLink": "#E9EEEC",
   "codeTheme": "monokai"
 }

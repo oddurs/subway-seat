@@ -8,7 +8,7 @@ axes.facecolor: 121E19
 axes.edgecolor: 54655C
 axes.labelcolor: BFC8C2
 axes.titlecolor: E7ECEA
-axes.prop_cycle: cycler('color', ['D0914F', '6CA087', 'EBC168', '709BC8', 'E1837A', '80C28E', 'CE96B4'])
+axes.prop_cycle: cycler('color', ['D0914F', '6CA087', 'F2BF4B', '709BC8', 'E1837A', '80C28E', 'CE96B4'])
 text.color: D4DDD7
 xtick.color: 708178
 ytick.color: 708178
@@ -26,6 +26,6 @@ boxplot.capprops.color: BFC8C2
 boxplot.flierprops.color: BFC8C2
 boxplot.flierprops.markeredgecolor: BFC8C2
 boxplot.medianprops.color: D0914F
-boxplot.meanprops.color: EBC168
-boxplot.meanprops.markerfacecolor: EBC168
-boxplot.meanprops.markeredgecolor: EBC168
+boxplot.meanprops.color: F2BF4B
+boxplot.meanprops.markerfacecolor: F2BF4B
+boxplot.meanprops.markeredgecolor: F2BF4B

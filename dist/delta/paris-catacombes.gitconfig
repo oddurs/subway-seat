@@ -12,7 +12,7 @@
 	zero-style = syntax
 	whitespace-error-style = normal "#CD6B63"
 	# git --color-moved: git's defaults and the git port's colors
-	map-styles = bold purple => syntax "#2B1F1C", bold "#D0914F" => syntax "#2B1F1C", bold blue => syntax "#2E2C1C", bold "#709BC8" => syntax "#2E2C1C", bold cyan => syntax "#1B291F", bold "#6CA087" => syntax "#1B291F", bold yellow => syntax "#2E2C1C", bold "#EBC168" => syntax "#2E2C1C"
+	map-styles = bold purple => syntax "#2B1F1C", bold "#D0914F" => syntax "#2B1F1C", bold blue => syntax "#2F2C17", bold "#709BC8" => syntax "#2F2C17", bold cyan => syntax "#1B291F", bold "#6CA087" => syntax "#1B291F", bold yellow => syntax "#2F2C17", bold "#F2BF4B" => syntax "#2F2C17"
 	# line numbers (with line-numbers = true) in the color of their change
 	line-numbers-plus-style = "#80C28E"
 	line-numbers-minus-style = "#E1837A"
@@ -26,7 +26,7 @@
 	hunk-header-file-style = "#BFC8C2"
 	hunk-header-line-number-style = "#709BC8"
 	hunk-header-decoration-style = "#709BC8" box
-	commit-decoration-style = "#EBC168" box
+	commit-decoration-style = "#F2BF4B" box
 	inline-hint-style = "#708178"
 	# git blame
 	blame-palette = "#121E19 #0D1711 #1A2921"
@@ -35,10 +35,10 @@
 	grep-file-style = "#D0914F"
 	grep-line-number-style = "#80C28E"
 	grep-match-line-style = syntax
-	grep-match-word-style = "#E7ECEA" "#534F31" bold
+	grep-match-word-style = "#E7ECEA" "#554E28" bold
 	grep-header-file-style = "#D0914F" bold
 	# merge conflicts (git's diff3 or zdiff3 conflict style)
-	merge-conflict-ours-diff-header-style = "#EBC168" bold
-	merge-conflict-ours-diff-header-decoration-style = "#EBC168" box
+	merge-conflict-ours-diff-header-style = "#F2BF4B" bold
+	merge-conflict-ours-diff-header-decoration-style = "#F2BF4B" box
 	merge-conflict-theirs-diff-header-style = "#6CA087" bold
 	merge-conflict-theirs-diff-header-decoration-style = "#6CA087" box

@@ -4,9 +4,9 @@ name: "Paris Carrelage"
 author: "oddurs (https://github.com/oddurs/subway-seat)"
 variant: "light"
 palette:
-  base00: "#E4EDE8" # base (Carrelage base)
-  base01: "#BAD0C4" # surface0 (Carrelage surface0)
-  base02: "#A3BFB0" # surface1 (Carrelage surface1)
+  base00: "#DEF0E6" # base (Carrelage base)
+  base01: "#ACD5BF" # surface0 (Carrelage surface0)
+  base02: "#96C4AC" # surface1 (Carrelage surface1)
   base03: "#627F70" # overlay1 (Carrelage overlay1)
   base04: "#45594F" # subtext0 (Carrelage subtext0)
   base05: "#25352C" # text (Carrelage text)

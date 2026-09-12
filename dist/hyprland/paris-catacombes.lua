@@ -45,11 +45,11 @@ M.textAlpha = 'D4DDD7'
 M.text_hi = 'rgb(E7ECEA)'
 M.text_hiAlpha = 'E7ECEA'
 
-M.yellow = 'rgb(EBC168)'
-M.yellowAlpha = 'EBC168'
+M.yellow = 'rgb(F2BF4B)'
+M.yellowAlpha = 'F2BF4B'
 
-M.yellow_hi = 'rgb(FBD380)'
-M.yellow_hiAlpha = 'FBD380'
+M.yellow_hi = 'rgb(FFD273)'
+M.yellow_hiAlpha = 'FFD273'
 
 M.orange = 'rgb(D0914F)'
 M.orangeAlpha = 'D0914F'
@@ -88,7 +88,7 @@ function M.apply()
   hl.config({
     general = {
       col = {
-        active_border = 'rgb(EBC168)',
+        active_border = 'rgb(F2BF4B)',
         inactive_border = 'rgb(24342C)',
         nogroup_border = 'rgb(685B62)',
         nogroup_border_active = 'rgb(CE96B4)',
@@ -96,8 +96,8 @@ function M.apply()
     },
     group = {
       col = {
-        border_active = 'rgb(EBC168)',
-        border_inactive = 'rgb(746C44)',
+        border_active = 'rgb(F2BF4B)',
+        border_inactive = 'rgb(766C38)',
         border_locked_active = 'rgb(D0914F)',
         border_locked_inactive = 'rgb(69593A)',
       },
@@ -105,7 +105,7 @@ function M.apply()
         text_color = 'rgb(E7ECEA)',
         text_color_inactive = 'rgb(A5B1AA)',
         col = {
-          active = 'rgb(EBC168)',
+          active = 'rgb(F2BF4B)',
           inactive = 'rgb(31433A)',
           locked_active = 'rgb(D0914F)',
           locked_inactive = 'rgb(69593A)',

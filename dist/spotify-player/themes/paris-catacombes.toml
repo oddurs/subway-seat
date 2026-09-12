@@ -9,7 +9,7 @@ foreground = "#D4DDD7"
 black = "#24342C"
 red = "#CD6B63"
 green = "#80C28E"
-yellow = "#EBC168"
+yellow = "#F2BF4B"
 blue = "#709BC8"
 magenta = "#D0914F"
 cyan = "#6CA087"
@@ -17,7 +17,7 @@ white = "#BFC8C2"
 bright_black = "#708178"
 bright_red = "#E1837A"
 bright_green = "#8FD59E"
-bright_yellow = "#FBD380"
+bright_yellow = "#FFD273"
 bright_blue = "#8DB6E2"
 bright_magenta = "#E7AB6D"
 bright_cyan = "#98CCB2"
@@ -26,8 +26,8 @@ bright_white = "#E7ECEA"
 [themes.component_style]
 block_title = { fg = "#D0914F", modifiers = ["Bold"] }
 border = { fg = "#31433A" }
-playback_status = { fg = "#EBC168", modifiers = ["Bold"] }
-playback_track = { fg = "#EBC168", modifiers = ["Bold"] }
+playback_status = { fg = "#F2BF4B", modifiers = ["Bold"] }
+playback_track = { fg = "#F2BF4B", modifiers = ["Bold"] }
 playback_artists = { fg = "#D0914F" }
 playback_album = { fg = "#6CA087" }
 playback_genres = { fg = "#708178", modifiers = ["Italic"] }
@@ -35,13 +35,13 @@ playback_metadata = { fg = "#A5B1AA" }
 playback_progress_bar = { fg = "#D0914F", bg = "#24342C" }
 playback_progress_bar_unfilled = { fg = "#31433A", bg = "#24342C" }
 current_playing = { fg = "#80C28E", modifiers = ["Bold"] }
-page_desc = { fg = "#EBC168", modifiers = ["Bold"] }
+page_desc = { fg = "#F2BF4B", modifiers = ["Bold"] }
 playlist_desc = { fg = "#708178" }
 table_header = { fg = "#D0914F" }
 selection = { fg = "#E7ECEA", bg = "#24342C", modifiers = ["Bold"] }
 secondary_row = { bg = "#0D1711" }
 like = { fg = "#E1837A" }
 lyrics_played = { fg = "#708178" }
-lyrics_playing = { fg = "#EBC168", modifiers = ["Bold"] }
-visualization = { low = "#80C28E", mid = "#EBC168", high = "#E1837A" }
+lyrics_playing = { fg = "#F2BF4B", modifiers = ["Bold"] }
+visualization = { low = "#80C28E", mid = "#F2BF4B", high = "#E1837A" }
 # <<< subway-seat <<<

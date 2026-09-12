@@ -21,17 +21,17 @@ fi
 
 gsettings set "$PROFILE" visible-name "'London Portland'"
 gsettings set "$PROFILE" use-theme-colors "false"
-gsettings set "$PROFILE" background-color "'#E5EAF4'"
+gsettings set "$PROFILE" background-color "'#E0EAFE'"
 gsettings set "$PROFILE" foreground-color "'#293040'"
 gsettings set "$PROFILE" bold-color-same-as-fg "false"
 gsettings set "$PROFILE" bold-color "'#1B202B'"
 gsettings set "$PROFILE" cursor-colors-set "true"
 gsettings set "$PROFILE" cursor-background-color "'#B14A07'"
-gsettings set "$PROFILE" cursor-foreground-color "'#E5EAF4'"
+gsettings set "$PROFILE" cursor-foreground-color "'#E0EAFE'"
 gsettings set "$PROFILE" highlight-colors-set "true"
-gsettings set "$PROFILE" highlight-background-color "'#A9B7D4'"
+gsettings set "$PROFILE" highlight-background-color "'#A1B7E5'"
 gsettings set "$PROFILE" highlight-foreground-color "'#1B202B'"
-gsettings set "$PROFILE" palette "['#3C4557', '#9B211A', '#0D8131', '#896800', '#0019A8', '#B14A07', '#007376', '#95A5C4', '#697794', '#C92B23', '#008730', '#977300', '#4A6EBD', '#B86100', '#008688', '#A9B7D4']"
+gsettings set "$PROFILE" palette "['#3C4557', '#9B211A', '#0D8131', '#896800', '#0019A8', '#B14A07', '#007376', '#8FA5D0', '#697794', '#C92B23', '#008730', '#977300', '#4A6EBD', '#B86100', '#008688', '#A1B7E5']"
 
 case "$list" in
   *"$UUID"*) ;;

@@ -10,7 +10,7 @@ export COLOR_04="#8A6700"           # Yellow (Command second)
 export COLOR_05="#27629C"           # Blue (Path)
 export COLOR_06="#754500"           # Magenta (Syntax var)
 export COLOR_07="#086142"           # Cyan (Prompt)
-export COLOR_08="#8EAD9D"           # White
+export COLOR_08="#84B09A"           # White
 
 export COLOR_09="#627F70"           # Bright Black
 export COLOR_10="#BB403B"           # Bright Red (Command error)
@@ -19,9 +19,9 @@ export COLOR_12="#997300"           # Bright Yellow
 export COLOR_13="#3E75AD"           # Bright Blue (Folder)
 export COLOR_14="#AE6800"           # Bright Magenta
 export COLOR_15="#3D8666"           # Bright Cyan
-export COLOR_16="#A3BFB0"           # Bright White
+export COLOR_16="#96C4AC"           # Bright White
 
-export BACKGROUND_COLOR="#E4EDE8"   # Background
+export BACKGROUND_COLOR="#DEF0E6"   # Background
 export FOREGROUND_COLOR="#25352C"   # Foreground (Text)
 
 export CURSOR_COLOR="#754500" # Cursor

@@ -5,8 +5,8 @@
   "name": "London Portland",
   "appearance": "light",
   "colors": {
-    "background": "#E5EAF4",
-    "backgroundSecondary": "#DAE0EB",
+    "background": "#E0EAFE",
+    "backgroundSecondary": "#D4E0F6",
     "text": "#293040",
     "selection": "#B14A07",
     "loader": "#896800",

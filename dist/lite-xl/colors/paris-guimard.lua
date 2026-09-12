@@ -8,13 +8,13 @@ style.background               = { common.color "#1E2E26" }
 style.background2              = { common.color "#18241D" }
 style.background3              = { common.color "#263930" }
 style.text                     = { common.color "#C2CBC5" }
-style.caret                    = { common.color "#EBC168" }
-style.accent                   = { common.color "#EBC168" }
+style.caret                    = { common.color "#F2BF4B" }
+style.accent                   = { common.color "#F2BF4B" }
 style.dim                      = { common.color "#74857C" }
 style.divider                  = { common.color "#131A17" }
 style.selection                = { common.color "#3E554A" }
 style.line_number              = { common.color "#586B61" }
-style.line_number2             = { common.color "#EBC168" }
+style.line_number2             = { common.color "#F2BF4B" }
 style.line_highlight           = { common.color "#263930" }
 style.scrollbar                = { common.color "#3E554A" }
 style.scrollbar2               = { common.color "#586B61" }
@@ -23,15 +23,15 @@ style.nagbar                   = { common.color "#CD6B63" }
 style.nagbar_text              = { common.color "#131A17" }
 style.nagbar_dim               = { common.color "rgba(10, 13, 12, 0.45)" }
 style.drag_overlay             = { common.color "rgba(217, 225, 219, 0.1)" }
-style.drag_overlay_tab         = { common.color "#EBC168" }
+style.drag_overlay_tab         = { common.color "#F2BF4B" }
 style.good                     = { common.color "#80C28E" }
-style.warn                     = { common.color "#EBC168" }
+style.warn                     = { common.color "#F2BF4B" }
 style.error                    = { common.color "#E1837A" }
-style.modified                 = { common.color "#EBC168" }
+style.modified                 = { common.color "#F2BF4B" }
 style.guide                    = { common.color "#263930" }
 style.guide_highlight          = { common.color "#3E554A" }
-style.bracketmatch_color       = { common.color "#FBD380" }
-style.bracketmatch_char_color  = { common.color "#FBD380" }
+style.bracketmatch_color       = { common.color "#FFD273" }
+style.bracketmatch_char_color  = { common.color "#FFD273" }
 style.bracketmatch_block_color = { common.color "#30463B" }
 style.bracketmatch_frame_color = { common.color "#3E554A" }
 
@@ -44,7 +44,7 @@ style.syntax["number"]   = { common.color "#E1837A" }
 style.syntax["literal"]  = { common.color "#E1837A" }
 style.syntax["string"]   = { common.color "#80C28E" }
 style.syntax["operator"] = { common.color "#909E96" }
-style.syntax["function"] = { common.color "#EBC168" }
+style.syntax["function"] = { common.color "#F2BF4B" }
 
 style.log["INFO"]  = { icon = "i", color = style.text }
 style.log["WARN"]  = { icon = "!", color = style.warn }

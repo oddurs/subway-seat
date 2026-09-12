@@ -2,9 +2,9 @@
 ! London Portland
 
 *.foreground: #293040
-*.background: #E5EAF4
+*.background: #E0EAFE
 *.cursorColor: #B14A07
-*.highlightColor: #A9B7D4
+*.highlightColor: #A1B7E5
 *.highlightTextColor: #1B202B
 
 ! black
@@ -36,5 +36,5 @@
 *.color14: #008688
 
 ! white
-*.color7: #95A5C4
-*.color15: #A9B7D4
+*.color7: #8FA5D0
+*.color15: #A1B7E5

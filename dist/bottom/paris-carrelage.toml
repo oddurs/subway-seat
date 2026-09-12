@@ -29,16 +29,16 @@ low_battery_color = "#BB403B"
 headers = { color = "#754500", bold = true }
 
 [styles.graphs]
-graph_color = "#7B9989"
+graph_color = "#769B87"
 legend_text = { color = "#45594F" }
 
 [styles.widgets]
-border_color = "#8EAD9D"
+border_color = "#84B09A"
 selected_border_color = "#754500"
 widget_title = { color = "#8A6700" }
 text = { color = "#25352C" }
-selected_text = { color = "#E4EDE8", bg_color = "#754500" }
-disabled_text = { color = "#7B9989" }
+selected_text = { color = "#DEF0E6", bg_color = "#754500" }
+disabled_text = { color = "#769B87" }
 thread_text = { color = "#086142" }  # 0.11+
 
 # Newer sections (bottom 0.13+); older releases ignore them.

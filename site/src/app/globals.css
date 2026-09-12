@@ -50,8 +50,8 @@
   html[data-family="paris"] {
     --sign-bg: #070c0a;
     --sign-text: #ffffff;
-    --sign-ring: #ebc168;
-    --sign-mark: #ebc168;
+    --sign-ring: #f2bf4b;
+    --sign-mark: #f2bf4b;
     --sign-mark-alt: #070c0a;
     --radius-pill: 999px;
     --radius-card: 14px;

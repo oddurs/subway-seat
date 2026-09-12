@@ -6,49 +6,49 @@
   "theme": {
     "colors": {
       "frame": [
-        205,
+        197,
         213,
-        228
+        243
       ],
       "frame_inactive": [
-        218,
+        212,
         224,
-        235
+        246
       ],
       "frame_incognito": [
-        188,
+        181,
         190,
-        217
+        229
       ],
       "frame_incognito_inactive": [
-        188,
+        181,
         190,
-        217
+        229
       ],
       "background_tab": [
-        205,
+        197,
         213,
-        228
+        243
       ],
       "background_tab_inactive": [
-        218,
+        212,
         224,
-        235
+        246
       ],
       "background_tab_incognito": [
-        188,
+        181,
         190,
-        217
+        229
       ],
       "background_tab_incognito_inactive": [
-        188,
+        181,
         190,
-        217
+        229
       ],
       "toolbar": [
-        229,
+        224,
         234,
-        244
+        254
       ],
       "tab_text": [
         41,
@@ -91,9 +91,9 @@
         64
       ],
       "omnibox_background": [
-        218,
+        212,
         224,
-        235
+        246
       ],
       "omnibox_text": [
         41,
@@ -101,9 +101,9 @@
         64
       ],
       "ntp_background": [
-        229,
+        224,
         234,
-        244
+        254
       ],
       "ntp_text": [
         41,
@@ -121,9 +121,9 @@
         7
       ],
       "button_background": [
-        205,
+        197,
         213,
-        228
+        243
       ]
     }
   }

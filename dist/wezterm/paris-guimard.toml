@@ -3,8 +3,8 @@
 [colors]
 foreground = "#D9E1DB"
 background = "#1E2E26"
-cursor_bg = "#EBC168"
-cursor_border = "#EBC168"
+cursor_bg = "#F2BF4B"
+cursor_border = "#F2BF4B"
 cursor_fg = "#1E2E26"
 compose_cursor = "#CE96B4"
 selection_bg = "#3E554A"
@@ -16,7 +16,7 @@ ansi = [
   "#30463B",
   "#CD6B63",
   "#80C28E",
-  "#EBC168",
+  "#F2BF4B",
   "#709BC8",
   "#D0914F",
   "#6CA087",
@@ -26,7 +26,7 @@ brights = [
   "#74857C",
   "#E1837A",
   "#8FD59E",
-  "#FBD380",
+  "#FFD273",
   "#8DB6E2",
   "#E7AB6D",
   "#98CCB2",
@@ -34,11 +34,11 @@ brights = [
 ]
 copy_mode_active_highlight_bg = { Color = "#77603A" }
 copy_mode_active_highlight_fg = { Color = "#E9EEEC" }
-copy_mode_inactive_highlight_bg = { Color = "#5C5A3A" }
+copy_mode_inactive_highlight_bg = { Color = "#5E5A31" }
 copy_mode_inactive_highlight_fg = { Color = "#D9E1DB" }
 quick_select_label_bg = { Color = "#D0914F" }
 quick_select_label_fg = { Color = "#1E2E26" }
-quick_select_match_bg = { Color = "#5C5A3A" }
+quick_select_match_bg = { Color = "#5E5A31" }
 quick_select_match_fg = { Color = "#D9E1DB" }
 
 [colors.tab_bar]
@@ -47,7 +47,7 @@ inactive_tab_edge = "#263930"
 
 [colors.tab_bar.active_tab]
 bg_color = "#1E2E26"
-fg_color = "#EBC168"
+fg_color = "#F2BF4B"
 intensity = "Bold"
 italic = false
 strikethrough = false
@@ -79,7 +79,7 @@ underline = "None"
 
 [colors.tab_bar.new_tab_hover]
 bg_color = "#263930"
-fg_color = "#EBC168"
+fg_color = "#F2BF4B"
 intensity = "Normal"
 italic = false
 strikethrough = false

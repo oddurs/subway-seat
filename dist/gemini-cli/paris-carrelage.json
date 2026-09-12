@@ -1,7 +1,7 @@
 {
   "name": "Paris Carrelage",
   "type": "custom",
-  "Background": "#E4EDE8",
+  "Background": "#DEF0E6",
   "Foreground": "#25352C",
   "LightBlue": "#374940",
   "AccentBlue": "#754500",
@@ -14,7 +14,7 @@
   "DiffRemoved": "#E9D5D4",
   "Comment": "#627F70",
   "Gray": "#4F675B",
-  "DarkGray": "#8EAD9D",
+  "DarkGray": "#84B09A",
   "GradientColors": [
     "#932D29",
     "#754500",
@@ -28,7 +28,7 @@
     "response": "#25352C"
   },
   "background": {
-    "primary": "#E4EDE8",
+    "primary": "#DEF0E6",
     "diff": {
       "added": "#C5DECE",
       "removed": "#E9D5D4"

@@ -4,7 +4,7 @@
 name = "london-portland"
 
 [themes.palette]
-background = "#E5EAF4"
+background = "#E0EAFE"
 foreground = "#293040"
 black = "#3C4557"
 red = "#9B211A"
@@ -13,7 +13,7 @@ yellow = "#896800"
 blue = "#0019A8"
 magenta = "#B14A07"
 cyan = "#007376"
-white = "#95A5C4"
+white = "#8FA5D0"
 bright_black = "#697794"
 bright_red = "#C92B23"
 bright_green = "#008730"
@@ -21,25 +21,25 @@ bright_yellow = "#977300"
 bright_blue = "#4A6EBD"
 bright_magenta = "#B86100"
 bright_cyan = "#008688"
-bright_white = "#A9B7D4"
+bright_white = "#A1B7E5"
 
 [themes.component_style]
 block_title = { fg = "#B14A07", modifiers = ["Bold"] }
-border = { fg = "#95A5C4" }
+border = { fg = "#8FA5D0" }
 playback_status = { fg = "#896800", modifiers = ["Bold"] }
 playback_track = { fg = "#896800", modifiers = ["Bold"] }
 playback_artists = { fg = "#B14A07" }
 playback_album = { fg = "#007376" }
 playback_genres = { fg = "#697794", modifiers = ["Italic"] }
 playback_metadata = { fg = "#4A5469" }
-playback_progress_bar = { fg = "#B14A07", bg = "#A9B7D4" }
-playback_progress_bar_unfilled = { fg = "#95A5C4", bg = "#A9B7D4" }
+playback_progress_bar = { fg = "#B14A07", bg = "#A1B7E5" }
+playback_progress_bar_unfilled = { fg = "#8FA5D0", bg = "#A1B7E5" }
 current_playing = { fg = "#0D8131", modifiers = ["Bold"] }
 page_desc = { fg = "#896800", modifiers = ["Bold"] }
 playlist_desc = { fg = "#697794" }
 table_header = { fg = "#B14A07" }
-selection = { fg = "#1B202B", bg = "#BFCAE1", modifiers = ["Bold"] }
-secondary_row = { bg = "#DAE0EB" }
+selection = { fg = "#1B202B", bg = "#B6CAF3", modifiers = ["Bold"] }
+secondary_row = { bg = "#D4E0F6" }
 like = { fg = "#C92B23" }
 lyrics_played = { fg = "#697794" }
 lyrics_playing = { fg = "#896800", modifiers = ["Bold"] }

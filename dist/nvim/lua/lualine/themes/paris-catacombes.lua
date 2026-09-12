@@ -33,7 +33,7 @@ return {
   ["visual"] = {
     ["a"] = {
       ["fg"] = "#0A100D",
-      ["bg"] = "#EBC168",
+      ["bg"] = "#F2BF4B",
       ["gui"] = "bold",
     },
     ["b"] = {

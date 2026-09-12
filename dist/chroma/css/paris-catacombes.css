@@ -19,7 +19,7 @@
 /* KeywordPseudo */ .chroma .kp { color: #D0914F }
 /* KeywordReserved */ .chroma .kr { color: #D0914F }
 /* KeywordType */ .chroma .kt { color: #6CA087; font-style: italic }
-/* NameAttribute */ .chroma .na { color: #EBC168; font-style: italic }
+/* NameAttribute */ .chroma .na { color: #F2BF4B; font-style: italic }
 /* NameClass */ .chroma .nc { color: #6CA087 }
 /* NameConstant */ .chroma .no { color: #E1837A }
 /* NameDecorator */ .chroma .nd { color: #CE96B4; font-style: italic }
@@ -29,11 +29,11 @@
 /* NameNamespace */ .chroma .nn { color: #A5B1AA }
 /* NameProperty */ .chroma .py { color: #BFC8C2 }
 /* NameTag */ .chroma .nt { color: #D0914F }
-/* NameBuiltin */ .chroma .nb { color: #EBC168; font-style: italic }
+/* NameBuiltin */ .chroma .nb { color: #F2BF4B; font-style: italic }
 /* NameBuiltinPseudo */ .chroma .bp { color: #E1837A; font-style: italic }
 /* NameVariableMagic */ .chroma .vm { color: #E1837A; font-style: italic }
-/* NameFunction */ .chroma .nf { color: #EBC168 }
-/* NameFunctionMagic */ .chroma .fm { color: #EBC168; font-style: italic }
+/* NameFunction */ .chroma .nf { color: #F2BF4B }
+/* NameFunctionMagic */ .chroma .fm { color: #F2BF4B; font-style: italic }
 /* LiteralDate */ .chroma .ld { color: #E1837A }
 /* LiteralString */ .chroma .s { color: #80C28E }
 /* LiteralStringAffix */ .chroma .sa { color: #D0914F }
@@ -70,11 +70,11 @@
 /* GenericDeleted */ .chroma .gd { color: #E1837A; background-color: #3D2823 }
 /* GenericEmph */ .chroma .ge { font-style: italic }
 /* GenericError */ .chroma .gr { color: #CD6B63 }
-/* GenericHeading */ .chroma .gh { color: #EBC168; font-weight: bold }
+/* GenericHeading */ .chroma .gh { color: #F2BF4B; font-weight: bold }
 /* GenericInserted */ .chroma .gi { color: #80C28E; background-color: #243729 }
 /* GenericOutput */ .chroma .go { color: #A5B1AA }
 /* GenericPrompt */ .chroma .gp { color: #D0914F }
 /* GenericStrong */ .chroma .gs { color: #E7ECEA; font-weight: bold }
-/* GenericSubheading */ .chroma .gu { color: #EBC168; font-weight: bold }
+/* GenericSubheading */ .chroma .gu { color: #F2BF4B; font-weight: bold }
 /* GenericTraceback */ .chroma .gt { color: #CD6B63 }
 /* GenericUnderline */ .chroma .gl { text-decoration: underline }

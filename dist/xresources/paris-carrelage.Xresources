@@ -2,9 +2,9 @@
 ! Paris Carrelage
 
 *.foreground: #25352C
-*.background: #E4EDE8
+*.background: #DEF0E6
 *.cursorColor: #754500
-*.highlightColor: #A3BFB0
+*.highlightColor: #96C4AC
 *.highlightTextColor: #18231D
 
 ! black
@@ -36,5 +36,5 @@
 *.color14: #3D8666
 
 ! white
-*.color7: #8EAD9D
-*.color15: #A3BFB0
+*.color7: #84B09A
+*.color15: #96C4AC

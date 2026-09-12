@@ -7,7 +7,7 @@ theme:
       secondary: "#D0914F"
       inverted: "#131A17"
       faint: "#74857C"
-      warning: "#EBC168"
+      warning: "#F2BF4B"
       success: "#80C28E"
       error: "#E1837A"
       actor: "#C2CBC5"
@@ -20,7 +20,7 @@ theme:
     icon:
       newcontributor: "#80C28E"
       contributor: "#6CA087"
-      collaborator: "#EBC168"
-      member: "#EBC168"
+      collaborator: "#F2BF4B"
+      member: "#F2BF4B"
       owner: "#D0914F"
       unknownrole: "#74857C"

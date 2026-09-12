@@ -4,9 +4,9 @@ name: "London Portland"
 author: "oddurs (https://github.com/oddurs/subway-seat)"
 variant: "light"
 palette:
-  base00: "#E5EAF4" # base (Portland base)
-  base01: "#BFCAE1" # surface0 (Portland surface0)
-  base02: "#A9B7D4" # surface1 (Portland surface1)
+  base00: "#E0EAFE" # base (Portland base)
+  base01: "#B6CAF3" # surface0 (Portland surface0)
+  base02: "#A1B7E5" # surface1 (Portland surface1)
   base03: "#697794" # overlay1 (Portland overlay1)
   base04: "#4A5469" # subtext0 (Portland subtext0)
   base05: "#293040" # text (Portland text)
@@ -20,8 +20,8 @@ palette:
   base0D: "#0019A8" # denim (Faded denim)
   base0E: "#B14A07" # orange (Burnt orange)
   base0F: "#7660AB" # clay (Terracotta)
-  base10: "#DAE0EB" # mantle (Portland mantle)
-  base11: "#CDD5E4" # crust (Portland crust)
+  base10: "#D4E0F6" # mantle (Portland mantle)
+  base11: "#C5D5F3" # crust (Portland crust)
   base12: "#C92B23" # red_hi (Redbird bright)
   base13: "#977300" # yellow_hi (Broadway yellow)
   base14: "#008730" # green_hi (Avocado bright)

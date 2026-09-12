@@ -14,7 +14,7 @@ set notification-bg         "#263930"
 set notification-fg         "#D9E1DB"
 set notification-error-bg   "#CD6B63"
 set notification-error-fg   "#131A17"
-set notification-warning-bg "#EBC168"
+set notification-warning-bg "#F2BF4B"
 set notification-warning-fg "#131A17"
 
 # completion
@@ -32,7 +32,7 @@ set index-active-bg         "#3E554A"
 set index-active-fg         "#E9EEEC"
 
 # search hits and link hints, washed over the page
-set highlight-color         "rgba(235,193,104,0.3)"
+set highlight-color         "rgba(242,191,75,0.3)"
 set highlight-active-color  "rgba(208,145,79,0.5)"
 set highlight-fg            "#E9EEEC"
 
@@ -42,7 +42,7 @@ set render-loading-fg       "#74857C"
 
 # digital signatures
 set signature-success-color "#80C28E"
-set signature-warning-color "#EBC168"
+set signature-warning-color "#F2BF4B"
 set signature-error-color   "#E1837A"
 
 # recoloring: white paper → base, black ink → text; Ctrl+R toggles it

@@ -9,7 +9,7 @@ variant: 'dark'
 color_01: '#30463B'    # Black (Host)
 color_02: '#CD6B63'    # Red (Syntax string)
 color_03: '#80C28E'    # Green (Command)
-color_04: '#EBC168'    # Yellow (Command second)
+color_04: '#F2BF4B'    # Yellow (Command second)
 color_05: '#709BC8'    # Blue (Path)
 color_06: '#D0914F'    # Magenta (Syntax var)
 color_07: '#6CA087'    # Cyan (Prompt)
@@ -18,7 +18,7 @@ color_08: '#C2CBC5'    # White
 color_09: '#74857C'    # Bright Black
 color_10: '#E1837A'    # Bright Red (Command error)
 color_11: '#8FD59E'    # Bright Green (Exec)
-color_12: '#FBD380'    # Bright Yellow
+color_12: '#FFD273'    # Bright Yellow
 color_13: '#8DB6E2'    # Bright Blue (Folder)
 color_14: '#E7AB6D'    # Bright Magenta
 color_15: '#98CCB2'    # Bright Cyan
@@ -27,4 +27,4 @@ color_16: '#E9EEEC'    # Bright White
 background: '#1E2E26'  # Background
 foreground: '#D9E1DB'  # Foreground (Text)
 
-cursor: '#EBC168'      # Cursor
+cursor: '#F2BF4B'      # Cursor

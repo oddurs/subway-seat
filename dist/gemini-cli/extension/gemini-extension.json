@@ -275,7 +275,7 @@
     {
       "name": "London Portland",
       "type": "custom",
-      "Background": "#E5EAF4",
+      "Background": "#E0EAFE",
       "Foreground": "#293040",
       "LightBlue": "#3C4557",
       "AccentBlue": "#B14A07",
@@ -288,7 +288,7 @@
       "DiffRemoved": "#EBD3D1",
       "Comment": "#697794",
       "Gray": "#556179",
-      "DarkGray": "#95A5C4",
+      "DarkGray": "#8FA5D0",
       "GradientColors": [
         "#9B211A",
         "#B14A07",
@@ -302,7 +302,7 @@
         "response": "#293040"
       },
       "background": {
-        "primary": "#E5EAF4",
+        "primary": "#E0EAFE",
         "diff": {
           "added": "#C0DEC9",
           "removed": "#EBD3D1"
@@ -336,7 +336,7 @@
       "AccentPurple": "#CE96B4",
       "AccentCyan": "#6CA087",
       "AccentGreen": "#80C28E",
-      "AccentYellow": "#EBC168",
+      "AccentYellow": "#F2BF4B",
       "AccentRed": "#E1837A",
       "DiffAdded": "#2B3F31",
       "DiffRemoved": "#432F2B",
@@ -346,7 +346,7 @@
       "GradientColors": [
         "#CD6B63",
         "#D0914F",
-        "#EBC168",
+        "#F2BF4B",
         "#80C28E"
       ],
       "text": {
@@ -364,19 +364,19 @@
       },
       "ui": {
         "comment": "#74857C",
-        "symbol": "#EBC168",
+        "symbol": "#F2BF4B",
         "active": "#D0914F",
-        "focus": "#EBC168",
+        "focus": "#F2BF4B",
         "gradient": [
           "#CD6B63",
           "#D0914F",
-          "#EBC168",
+          "#F2BF4B",
           "#80C28E"
         ]
       },
       "status": {
         "success": "#80C28E",
-        "warning": "#EBC168",
+        "warning": "#F2BF4B",
         "error": "#E1837A"
       }
     },
@@ -390,7 +390,7 @@
       "AccentPurple": "#CE96B4",
       "AccentCyan": "#6CA087",
       "AccentGreen": "#80C28E",
-      "AccentYellow": "#EBC168",
+      "AccentYellow": "#F2BF4B",
       "AccentRed": "#E1837A",
       "DiffAdded": "#243729",
       "DiffRemoved": "#3D2823",
@@ -400,7 +400,7 @@
       "GradientColors": [
         "#CD6B63",
         "#D0914F",
-        "#EBC168",
+        "#F2BF4B",
         "#80C28E"
       ],
       "text": {
@@ -418,26 +418,26 @@
       },
       "ui": {
         "comment": "#708178",
-        "symbol": "#EBC168",
+        "symbol": "#F2BF4B",
         "active": "#D0914F",
-        "focus": "#EBC168",
+        "focus": "#F2BF4B",
         "gradient": [
           "#CD6B63",
           "#D0914F",
-          "#EBC168",
+          "#F2BF4B",
           "#80C28E"
         ]
       },
       "status": {
         "success": "#80C28E",
-        "warning": "#EBC168",
+        "warning": "#F2BF4B",
         "error": "#E1837A"
       }
     },
     {
       "name": "Paris Carrelage",
       "type": "custom",
-      "Background": "#E4EDE8",
+      "Background": "#DEF0E6",
       "Foreground": "#25352C",
       "LightBlue": "#374940",
       "AccentBlue": "#754500",
@@ -450,7 +450,7 @@
       "DiffRemoved": "#E9D5D4",
       "Comment": "#627F70",
       "Gray": "#4F675B",
-      "DarkGray": "#8EAD9D",
+      "DarkGray": "#84B09A",
       "GradientColors": [
         "#932D29",
         "#754500",
@@ -464,7 +464,7 @@
         "response": "#25352C"
       },
       "background": {
-        "primary": "#E4EDE8",
+        "primary": "#DEF0E6",
         "diff": {
           "added": "#C5DECE",
           "removed": "#E9D5D4"

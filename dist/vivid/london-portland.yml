@@ -1,13 +1,13 @@
 # Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
 # London Portland for vivid.
 colors:
-  crust: 'CDD5E4'
-  mantle: 'DAE0EB'
-  base: 'E5EAF4'
-  surface0: 'BFCAE1'
-  surface1: 'A9B7D4'
-  surface2: '95A5C4'
-  overlay0: '8291AE'
+  crust: 'C5D5F3'
+  mantle: 'D4E0F6'
+  base: 'E0EAFE'
+  surface0: 'B6CAF3'
+  surface1: 'A1B7E5'
+  surface2: '8FA5D0'
+  overlay0: '7F91B4'
   overlay1: '697794'
   overlay2: '556179'
   subtext0: '4A5469'
@@ -27,7 +27,7 @@ colors:
   denim: '0019A8'
   denim_hi: '4A6EBD'
   clay: '7660AB'
-  ink: 'E5EAF4'
+  ink: 'E0EAFE'
 
 core:
   normal_text: {}

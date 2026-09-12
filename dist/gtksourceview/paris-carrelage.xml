@@ -8,13 +8,13 @@
     <property name="dark-variant">subway-seat</property>
   </metadata>
 
-  <color name="crust" value="#CAD9D1"/>
-  <color name="mantle" value="#D8E3DC"/>
-  <color name="base" value="#E4EDE8"/>
-  <color name="surface0" value="#BAD0C4"/>
-  <color name="surface1" value="#A3BFB0"/>
-  <color name="surface2" value="#8EAD9D"/>
-  <color name="overlay0" value="#7B9989"/>
+  <color name="crust" value="#BFDDCD"/>
+  <color name="mantle" value="#D0E6D8"/>
+  <color name="base" value="#DEF0E6"/>
+  <color name="surface0" value="#ACD5BF"/>
+  <color name="surface1" value="#96C4AC"/>
+  <color name="surface2" value="#84B09A"/>
+  <color name="overlay0" value="#769B87"/>
   <color name="overlay1" value="#627F70"/>
   <color name="overlay2" value="#4F675B"/>
   <color name="subtext0" value="#45594F"/>
@@ -42,12 +42,12 @@
   <color name="tint_del_dim" value="#F2E6E5"/>
   <color name="tint_chg" value="#E1D7BD"/>
   <color name="tint_chg_emph" value="#DACEAD"/>
-  <color name="tint_info" value="#CADADD"/>
-  <color name="tint_hint" value="#C5D9D1"/>
-  <color name="tint_search" value="#C9C5A2"/>
-  <color name="tint_search_cur" value="#AC9974"/>
-  <color name="selection_unfocused" value="#C0D4C9"/>
-  <color name="bracket_bg" value="#D7E0DB"/>
+  <color name="tint_info" value="#C4DCDC"/>
+  <color name="tint_hint" value="#C0DCCF"/>
+  <color name="tint_search" value="#C5C7A1"/>
+  <color name="tint_search_cur" value="#AA9A73"/>
+  <color name="selection_unfocused" value="#B6D8C6"/>
+  <color name="bracket_bg" value="#D1E3D9"/>
 
   <style name="text" foreground="text" background="base"/>
   <style name="selection" foreground="text_hi" background="surface1"/>

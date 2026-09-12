@@ -15,8 +15,8 @@
   --color-ss-subtext1: #C2CBC5;
   --color-ss-text: #D9E1DB;
   --color-ss-text-hi: #E9EEEC;
-  --color-ss-yellow: #EBC168;
-  --color-ss-yellow-hi: #FBD380;
+  --color-ss-yellow: #F2BF4B;
+  --color-ss-yellow-hi: #FFD273;
   --color-ss-orange: #D0914F;
   --color-ss-orange-hi: #E7AB6D;
   --color-ss-red: #CD6B63;
@@ -34,6 +34,6 @@
   --color-ss-diff-del: #432F2B;
   --color-ss-diff-del-emph: #5D3A35;
   --color-ss-diff-del-dim: #332824;
-  --color-ss-diff-chg: #363524;
-  --color-ss-diff-chg-emph: #4B452C;
+  --color-ss-diff-chg: #37341F;
+  --color-ss-diff-chg-emph: #4D4525;
 }

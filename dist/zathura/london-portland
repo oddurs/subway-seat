@@ -2,33 +2,33 @@
 # London Portland for zathura. In zathurarc: include london-portland
 
 # window
-set default-bg              "#E5EAF4"
+set default-bg              "#E0EAFE"
 set default-fg              "#293040"
-set statusbar-bg            "#DAE0EB"
+set statusbar-bg            "#D4E0F6"
 set statusbar-fg            "#3C4557"
-set inputbar-bg             "#DAE0EB"
+set inputbar-bg             "#D4E0F6"
 set inputbar-fg             "#293040"
 
 # notifications
-set notification-bg         "#F2F4FA"
+set notification-bg         "#F0F4FE"
 set notification-fg         "#293040"
 set notification-error-bg   "#9B211A"
-set notification-error-fg   "#E5EAF4"
+set notification-error-fg   "#E0EAFE"
 set notification-warning-bg "#896800"
-set notification-warning-fg "#E5EAF4"
+set notification-warning-fg "#E0EAFE"
 
 # completion
-set completion-bg           "#F2F4FA"
+set completion-bg           "#F0F4FE"
 set completion-fg           "#293040"
-set completion-group-bg     "#DAE0EB"
+set completion-group-bg     "#D4E0F6"
 set completion-group-fg     "#4A5469"
-set completion-highlight-bg "#A9B7D4"
+set completion-highlight-bg "#A1B7E5"
 set completion-highlight-fg "#1B202B"
 
 # index (table of contents)
-set index-bg                "#E5EAF4"
+set index-bg                "#E0EAFE"
 set index-fg                "#293040"
-set index-active-bg         "#A9B7D4"
+set index-active-bg         "#A1B7E5"
 set index-active-fg         "#1B202B"
 
 # search hits and link hints, washed over the page
@@ -37,7 +37,7 @@ set highlight-active-color  "rgba(177,74,7,0.5)"
 set highlight-fg            "#1B202B"
 
 # pages while they render
-set render-loading-bg       "#E5EAF4"
+set render-loading-bg       "#E0EAFE"
 set render-loading-fg       "#697794"
 
 # digital signatures
@@ -46,7 +46,7 @@ set signature-warning-color "#896800"
 set signature-error-color   "#C92B23"
 
 # recoloring: white paper → base, black ink → text; Ctrl+R toggles it
-set recolor-lightcolor      "#E5EAF4"
+set recolor-lightcolor      "#E0EAFE"
 set recolor-darkcolor       "#293040"
 set recolor                 "true"
 set recolor-keephue         "true"

@@ -2,7 +2,7 @@
 # Paris Carrelage for btop.
 
 # Main background, empty for terminal default
-theme[main_bg]="#E4EDE8"
+theme[main_bg]="#DEF0E6"
 
 # Main text color
 theme[main_fg]="#25352C"
@@ -14,19 +14,19 @@ theme[title]="#18231D"
 theme[hi_fg]="#754500"
 
 # Background of the selected item in the processes box
-theme[selected_bg]="#A3BFB0"
+theme[selected_bg]="#96C4AC"
 
 # Foreground of the selected item in the processes box
 theme[selected_fg]="#18231D"
 
 # Inactive or disabled text
-theme[inactive_fg]="#7B9989"
+theme[inactive_fg]="#769B87"
 
 # Text drawn over graphs: uptime, network graph scale
 theme[graph_text]="#45594F"
 
 # Background of the percentage meters
-theme[meter_bg]="#A3BFB0"
+theme[meter_bg]="#96C4AC"
 
 # Mini cpu graphs, detailed memory graph and status text in the processes box
 theme[proc_misc]="#086142"
@@ -38,7 +38,7 @@ theme[net_box]="#207F41"
 theme[proc_box]="#9A557D"
 
 # Box dividers and small box outlines
-theme[div_line]="#8EAD9D"
+theme[div_line]="#84B09A"
 
 # Temperature graph
 theme[temp_start]="#207F41"
@@ -51,17 +51,17 @@ theme[cpu_mid]="#805600"
 theme[cpu_end]="#932D29"
 
 # Mem/disk free meter
-theme[free_start]="#78B08C"
+theme[free_start]="#76B28B"
 theme[free_mid]="#207F41"
 theme[free_end]="#168540"
 
 # Mem/disk cached meter
-theme[cached_start]="#7CA1BE"
+theme[cached_start]="#79A2BD"
 theme[cached_mid]="#27629C"
 theme[cached_end]="#3E75AD"
 
 # Mem/disk available meter
-theme[available_start]="#B2A368"
+theme[available_start]="#B0A567"
 theme[available_mid]="#8A6700"
 theme[available_end]="#997300"
 
@@ -71,12 +71,12 @@ theme[used_mid]="#932D29"
 theme[used_end]="#BB403B"
 
 # Download graph
-theme[download_start]="#78B08C"
+theme[download_start]="#76B28B"
 theme[download_mid]="#207F41"
 theme[download_end]="#8A6700"
 
 # Upload graph
-theme[upload_start]="#A79168"
+theme[upload_start]="#A49267"
 theme[upload_mid]="#754500"
 theme[upload_end]="#BB403B"
 
@@ -89,8 +89,8 @@ theme[process_end]="#932D29"
 theme[proc_pause_bg]="#932D29"
 theme[proc_follow_bg]="#086142"
 theme[proc_banner_bg]="#754500"
-theme[proc_banner_fg]="#E4EDE8"
+theme[proc_banner_fg]="#DEF0E6"
 
 # The process being followed
 theme[followed_bg]="#086142"
-theme[followed_fg]="#E4EDE8"
+theme[followed_fg]="#DEF0E6"

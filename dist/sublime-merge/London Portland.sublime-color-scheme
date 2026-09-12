@@ -3,13 +3,13 @@
   "name": "London Portland",
   "author": "Oddur Sigurdsson",
   "variables": {
-    "crust": "#CDD5E4",
-    "mantle": "#DAE0EB",
-    "base": "#E5EAF4",
-    "surface0": "#BFCAE1",
-    "surface1": "#A9B7D4",
-    "surface2": "#95A5C4",
-    "overlay0": "#8291AE",
+    "crust": "#C5D5F3",
+    "mantle": "#D4E0F6",
+    "base": "#E0EAFE",
+    "surface0": "#B6CAF3",
+    "surface1": "#A1B7E5",
+    "surface2": "#8FA5D0",
+    "overlay0": "#7F91B4",
     "overlay1": "#697794",
     "overlay2": "#556179",
     "subtext0": "#4A5469",
@@ -37,12 +37,12 @@
     "tint_del_dim": "#F3E4E4",
     "tint_chg": "#E0D8BD",
     "tint_chg_emph": "#D9CFAD",
-    "tint_info": "#C5CDE9",
-    "tint_hint": "#C5D9E2",
-    "tint_search": "#C9C3AB",
-    "tint_search_cur": "#CB9A7E",
-    "inactive_selection": "#C4CEE2",
-    "paper": "#F2F4FA"
+    "tint_info": "#C1CDF2",
+    "tint_hint": "#C1D9EB",
+    "tint_search": "#C6C3B2",
+    "tint_search_cur": "#C89A82",
+    "inactive_selection": "#BDCEF0",
+    "paper": "#F0F4FE"
   },
   "globals": {
     "background": "var(base)",
@@ -56,8 +56,8 @@
     "fold_marker": "var(overlay1)",
     "minimap_border": "var(surface2)",
     "accent": "var(orange)",
-    "popup_css": "html { background-color: #F2F4FA; color: #293040; } a { color: #0019A8; } code, .highlight { background-color: #E5EAF4; color: #0D8131; } h1, h2, h3 { color: #896800; } .error, .errors { color: #C92B23; } .warning, .warnings { color: #896800; } .info { color: #0019A8; } .hint { color: #007376; }",
-    "phantom_css": "html { background-color: #F2F4FA; color: #293040; } a { color: #0019A8; } code, .highlight { background-color: #E5EAF4; color: #0D8131; } h1, h2, h3 { color: #896800; } .error, .errors { color: #C92B23; } .warning, .warnings { color: #896800; } .info { color: #0019A8; } .hint { color: #007376; }",
+    "popup_css": "html { background-color: #F0F4FE; color: #293040; } a { color: #0019A8; } code, .highlight { background-color: #E0EAFE; color: #0D8131; } h1, h2, h3 { color: #896800; } .error, .errors { color: #C92B23; } .warning, .warnings { color: #896800; } .info { color: #0019A8; } .hint { color: #007376; }",
+    "phantom_css": "html { background-color: #F0F4FE; color: #293040; } a { color: #0019A8; } code, .highlight { background-color: #E0EAFE; color: #0D8131; } h1, h2, h3 { color: #896800; } .error, .errors { color: #C92B23; } .warning, .warnings { color: #896800; } .info { color: #0019A8; } .hint { color: #007376; }",
     "gutter": "var(base)",
     "gutter_foreground": "var(overlay0)",
     "gutter_foreground_highlight": "var(orange)",
@@ -418,7 +418,7 @@
     },
     {
       "scope": "diff.fill",
-      "background": "#DAE0EB"
+      "background": "#D4E0F6"
     },
     {
       "scope": "diff.inserted.merge-left",
@@ -454,7 +454,7 @@
     },
     {
       "scope": "blame.border",
-      "background": "#BFCAE1"
+      "background": "#B6CAF3"
     },
     {
       "scope": "blame.age-icon",

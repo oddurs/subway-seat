@@ -2,7 +2,7 @@
 name: London Portland
 accent: '#B14A07'
 cursor: '#B14A07'
-background: '#E5EAF4'
+background: '#E0EAFE'
 foreground: '#293040'
 details: lighter
 terminal_colors:
@@ -14,7 +14,7 @@ terminal_colors:
     blue: '#0019A8'
     magenta: '#B14A07'
     cyan: '#007376'
-    white: '#95A5C4'
+    white: '#8FA5D0'
   bright:
     black: '#697794'
     red: '#C92B23'
@@ -23,4 +23,4 @@ terminal_colors:
     blue: '#4A6EBD'
     magenta: '#B86100'
     cyan: '#008688'
-    white: '#A9B7D4'
+    white: '#A1B7E5'

@@ -6,26 +6,26 @@
 --
 local M = {}
 
-M.crust = 'rgb(CAD9D1)'
-M.crustAlpha = 'CAD9D1'
+M.crust = 'rgb(BFDDCD)'
+M.crustAlpha = 'BFDDCD'
 
-M.mantle = 'rgb(D8E3DC)'
-M.mantleAlpha = 'D8E3DC'
+M.mantle = 'rgb(D0E6D8)'
+M.mantleAlpha = 'D0E6D8'
 
-M.base = 'rgb(E4EDE8)'
-M.baseAlpha = 'E4EDE8'
+M.base = 'rgb(DEF0E6)'
+M.baseAlpha = 'DEF0E6'
 
-M.surface0 = 'rgb(BAD0C4)'
-M.surface0Alpha = 'BAD0C4'
+M.surface0 = 'rgb(ACD5BF)'
+M.surface0Alpha = 'ACD5BF'
 
-M.surface1 = 'rgb(A3BFB0)'
-M.surface1Alpha = 'A3BFB0'
+M.surface1 = 'rgb(96C4AC)'
+M.surface1Alpha = '96C4AC'
 
-M.surface2 = 'rgb(8EAD9D)'
-M.surface2Alpha = '8EAD9D'
+M.surface2 = 'rgb(84B09A)'
+M.surface2Alpha = '84B09A'
 
-M.overlay0 = 'rgb(7B9989)'
-M.overlay0Alpha = '7B9989'
+M.overlay0 = 'rgb(769B87)'
+M.overlay0Alpha = '769B87'
 
 M.overlay1 = 'rgb(627F70)'
 M.overlay1Alpha = '627F70'
@@ -89,26 +89,26 @@ function M.apply()
     general = {
       col = {
         active_border = 'rgb(8A6700)',
-        inactive_border = 'rgb(A3BFB0)',
-        nogroup_border = 'rgb(9F959C)',
+        inactive_border = 'rgb(96C4AC)',
+        nogroup_border = 'rgb(989899)',
         nogroup_border_active = 'rgb(9A557D)',
       },
     },
     group = {
       col = {
         border_active = 'rgb(8A6700)',
-        border_inactive = 'rgb(999C6A)',
+        border_inactive = 'rgb(919F67)',
         border_locked_active = 'rgb(754500)',
-        border_locked_inactive = 'rgb(918E6A)',
+        border_locked_inactive = 'rgb(899167)',
       },
       groupbar = {
         text_color = 'rgb(18231D)',
         text_color_inactive = 'rgb(45594F)',
         col = {
           active = 'rgb(8A6700)',
-          inactive = 'rgb(A3BFB0)',
+          inactive = 'rgb(96C4AC)',
           locked_active = 'rgb(754500)',
-          locked_inactive = 'rgb(918E6A)',
+          locked_inactive = 'rgb(899167)',
         },
       },
     },
@@ -118,7 +118,7 @@ function M.apply()
       },
     },
     misc = {
-      background_color = 'rgb(E4EDE8)',
+      background_color = 'rgb(DEF0E6)',
     },
   })
 end

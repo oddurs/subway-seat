@@ -16,16 +16,16 @@
   <entry type="OperatorWord" style="#D0914F"/>
   <entry type="Punctuation" style="#909E96"/>
   <entry type="Name" style="#D9E1DB"/>
-  <entry type="NameAttribute" style="italic #EBC168"/>
-  <entry type="NameBuiltin" style="italic #EBC168"/>
+  <entry type="NameAttribute" style="italic #F2BF4B"/>
+  <entry type="NameBuiltin" style="italic #F2BF4B"/>
   <entry type="NameBuiltinPseudo" style="italic #E1837A"/>
   <entry type="NameClass" style="#6CA087"/>
   <entry type="NameConstant" style="#E1837A"/>
   <entry type="NameDecorator" style="italic #CE96B4"/>
   <entry type="NameEntity" style="#CE96B4"/>
   <entry type="NameException" style="#6CA087"/>
-  <entry type="NameFunction" style="#EBC168"/>
-  <entry type="NameFunctionMagic" style="italic #EBC168"/>
+  <entry type="NameFunction" style="#F2BF4B"/>
+  <entry type="NameFunctionMagic" style="italic #F2BF4B"/>
   <entry type="NameLabel" style="italic #CE96B4"/>
   <entry type="NameNamespace" style="#A9B5AE"/>
   <entry type="NameProperty" style="#C2CBC5"/>
@@ -40,8 +40,8 @@
   <entry type="LiteralStringRegex" style="#CE96B4"/>
   <entry type="LiteralStringSymbol" style="#E1837A"/>
   <entry type="LiteralNumber" style="#E1837A"/>
-  <entry type="GenericHeading" style="bold #EBC168"/>
-  <entry type="GenericSubheading" style="bold #EBC168"/>
+  <entry type="GenericHeading" style="bold #F2BF4B"/>
+  <entry type="GenericSubheading" style="bold #F2BF4B"/>
   <entry type="GenericEmph" style="italic #D9E1DB"/>
   <entry type="GenericStrong" style="bold #E9EEEC"/>
   <entry type="GenericDeleted" style="bg:#432F2B #E1837A"/>

@@ -8,12 +8,12 @@
 	func = "#c2cbc5"
 	old = "#e1837a"
 	new = "#80c28e"
-	commit = "#ebc168"
+	commit = "#f2bf4b"
 	whitespace = "normal #cd6b63"
 	oldMoved = "#d0914f bold"
 	oldMovedAlternative = "#709bc8 bold"
 	newMoved = "#6ca087 bold"
-	newMovedAlternative = "#ebc168 bold"
+	newMovedAlternative = "#f2bf4b bold"
 	oldMovedDimmed = "#74857c"
 	oldMovedAlternativeDimmed = "#74857c italic"
 	newMovedDimmed = "#74857c"
@@ -54,14 +54,14 @@
 	HEAD = "#6ca087 bold"
 	branch = "#80c28e bold"
 	remoteBranch = "#e1837a bold"
-	tag = "#ebc168 bold"
+	tag = "#f2bf4b bold"
 	stash = "#d0914f bold"
 	grafted = "#709bc8 bold"
 
 [color "grep"]
 	context = "#a9b5ae"
 	filename = "#d0914f"
-	function = "#ebc168"
+	function = "#f2bf4b"
 	lineNumber = "#80c28e"
 	column = "#80c28e"
 	selected = "#d9e1db"
@@ -70,7 +70,7 @@
 [color "interactive"]
 	prompt = "#d0914f bold"
 	header = "#e9eeec bold"
-	help = "#ebc168"
+	help = "#f2bf4b"
 	error = "#e1837a bold"
 
 [color "blame"]
@@ -78,7 +78,7 @@
 	repeatedLines = "#74857c"
 
 [color "advice"]
-	hint = "#ebc168"
+	hint = "#f2bf4b"
 
 [color "push"]
 	error = "#e1837a"
@@ -87,7 +87,7 @@
 	rejected = "#e1837a"
 
 [color "remote"]
-	hint = "#ebc168"
-	warning = "#ebc168 bold"
+	hint = "#f2bf4b"
+	warning = "#f2bf4b bold"
 	success = "#80c28e bold"
 	error = "#e1837a bold"

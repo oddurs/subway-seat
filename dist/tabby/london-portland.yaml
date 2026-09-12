@@ -2,10 +2,10 @@
 # One entry for terminal.customColorSchemes in Tabby's config.yaml, indented to paste under that key.
     - name: London Portland
       foreground: '#293040'
-      background: '#E5EAF4'
+      background: '#E0EAFE'
       cursor: '#B14A07'
-      cursorAccent: '#E5EAF4'
-      selection: '#A9B7D4'
+      cursorAccent: '#E0EAFE'
+      selection: '#A1B7E5'
       selectionForeground: '#1B202B'
       colors:
         - '#3C4557'
@@ -15,7 +15,7 @@
         - '#0019A8'
         - '#B14A07'
         - '#007376'
-        - '#95A5C4'
+        - '#8FA5D0'
         - '#697794'
         - '#C92B23'
         - '#008730'
@@ -23,4 +23,4 @@
         - '#4A6EBD'
         - '#B86100'
         - '#008688'
-        - '#A9B7D4'
+        - '#A1B7E5'

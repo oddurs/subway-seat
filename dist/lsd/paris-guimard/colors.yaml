@@ -1,9 +1,9 @@
 # Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
 # Paris Guimard for lsd. File names follow LS_COLORS (see the vivid port).
-user: "#EBC168"
+user: "#F2BF4B"
 group: "#C2CBC5"
 permission:
-  read: "#EBC168"
+  read: "#F2BF4B"
   write: "#D0914F"
   exec: "#80C28E"
   exec-sticky: "#CE96B4"
@@ -13,7 +13,7 @@ permission:
   context: "#74857C"
 attributes:
   archive: "#A9B5AE"
-  read: "#EBC168"
+  read: "#F2BF4B"
   hidden: "#74857C"
   system: "#CE96B4"
 date:
@@ -23,7 +23,7 @@ date:
 size:
   none: "#74857C"
   small: "#80C28E"
-  medium: "#EBC168"
+  medium: "#F2BF4B"
   large: "#D0914F"
 inode:
   valid: "#74857C"
@@ -41,5 +41,5 @@ git-status:
   typechange: "#CE96B4"
   deleted: "#E1837A"
   renamed: "#6CA087"
-  modified: "#EBC168"
+  modified: "#F2BF4B"
   conflicted: "#CD6B63"

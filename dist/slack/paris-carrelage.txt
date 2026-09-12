@@ -2,7 +2,7 @@
 # Paris Carrelage: set Slack's color mode to light.
 #
 # Current Slack: system navigation, selected items, presence, notifications
-#D8E3DC,#754500,#207F41,#932D29
+#D0E6D8,#754500,#207F41,#932D29
 
 # Legacy ten-color string (older clients and theme sites)
-#D8E3DC,#BAD0C4,#754500,#E4EDE8,#BAD0C4,#25352C,#207F41,#932D29,#CAD9D1,#25352C
+#D0E6D8,#ACD5BF,#754500,#DEF0E6,#ACD5BF,#25352C,#207F41,#932D29,#BFDDCD,#25352C

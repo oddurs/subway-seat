@@ -2,9 +2,9 @@
 # London Portland: Godot's interface theme. Enter these in Editor › Editor Settings › Interface › Theme.
 # (Godot 4.6+ labels the first one "Color Preset"; 4.0 to 4.5 call it "Preset".)
 Color Preset: Custom
-Base Color: #DAE0EB
+Base Color: #D4E0F6
 Accent Color: #B14A07
-Contrast: 0.03
+Contrast: 0.01
 Icon Saturation: 1
 
 # And in Text Editor › Theme:

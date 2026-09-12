@@ -17,7 +17,7 @@ theme[hi_fg]="#D0914F"
 theme[selected_bg]="#30463B"
 
 # Foreground of the selected item in the processes box
-theme[selected_fg]="#FBD380"
+theme[selected_fg]="#FFD273"
 
 # Inactive or disabled text
 theme[inactive_fg]="#586B61"
@@ -33,7 +33,7 @@ theme[proc_misc]="#6CA087"
 
 # Box outlines
 theme[cpu_box]="#D0914F"
-theme[mem_box]="#EBC168"
+theme[mem_box]="#F2BF4B"
 theme[net_box]="#80C28E"
 theme[proc_box]="#CE96B4"
 
@@ -42,12 +42,12 @@ theme[div_line]="#3E554A"
 
 # Temperature graph
 theme[temp_start]="#80C28E"
-theme[temp_mid]="#DEA95C"
+theme[temp_mid]="#E1A84D"
 theme[temp_end]="#CD6B63"
 
 # CPU graph
 theme[cpu_start]="#80C28E"
-theme[cpu_mid]="#DEA95C"
+theme[cpu_mid]="#E1A84D"
 theme[cpu_end]="#CD6B63"
 
 # Mem/disk free meter
@@ -61,9 +61,9 @@ theme[cached_mid]="#709BC8"
 theme[cached_end]="#8DB6E2"
 
 # Mem/disk available meter
-theme[available_start]="#8F7F4A"
-theme[available_mid]="#EBC168"
-theme[available_end]="#FBD380"
+theme[available_start]="#937E3A"
+theme[available_mid]="#F2BF4B"
+theme[available_end]="#FFD273"
 
 # Mem/disk used meter
 theme[used_start]="#D0914F"
@@ -73,7 +73,7 @@ theme[used_end]="#E1837A"
 # Download graph
 theme[download_start]="#547F5F"
 theme[download_mid]="#80C28E"
-theme[download_end]="#EBC168"
+theme[download_end]="#F2BF4B"
 
 # Upload graph
 theme[upload_start]="#80643D"
@@ -82,7 +82,7 @@ theme[upload_end]="#E1837A"
 
 # Process box gradient for threads, memory and cpu usage
 theme[process_start]="#80C28E"
-theme[process_mid]="#DEA95C"
+theme[process_mid]="#E1A84D"
 theme[process_end]="#CD6B63"
 
 # Banners over the process list while it is paused or following a process

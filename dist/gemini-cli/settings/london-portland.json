@@ -4,7 +4,7 @@
       "London Portland": {
         "name": "London Portland",
         "type": "custom",
-        "Background": "#E5EAF4",
+        "Background": "#E0EAFE",
         "Foreground": "#293040",
         "LightBlue": "#3C4557",
         "AccentBlue": "#B14A07",
@@ -17,7 +17,7 @@
         "DiffRemoved": "#EBD3D1",
         "Comment": "#697794",
         "Gray": "#556179",
-        "DarkGray": "#95A5C4",
+        "DarkGray": "#8FA5D0",
         "GradientColors": [
           "#9B211A",
           "#B14A07",
@@ -31,7 +31,7 @@
           "response": "#293040"
         },
         "background": {
-          "primary": "#E5EAF4",
+          "primary": "#E0EAFE",
           "diff": {
             "added": "#C0DEC9",
             "removed": "#EBD3D1"

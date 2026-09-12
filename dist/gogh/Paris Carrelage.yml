@@ -13,7 +13,7 @@ color_04: '#8A6700'    # Yellow (Command second)
 color_05: '#27629C'    # Blue (Path)
 color_06: '#754500'    # Magenta (Syntax var)
 color_07: '#086142'    # Cyan (Prompt)
-color_08: '#8EAD9D'    # White
+color_08: '#84B09A'    # White
 
 color_09: '#627F70'    # Bright Black
 color_10: '#BB403B'    # Bright Red (Command error)
@@ -22,9 +22,9 @@ color_12: '#997300'    # Bright Yellow
 color_13: '#3E75AD'    # Bright Blue (Folder)
 color_14: '#AE6800'    # Bright Magenta
 color_15: '#3D8666'    # Bright Cyan
-color_16: '#A3BFB0'    # Bright White
+color_16: '#96C4AC'    # Bright White
 
-background: '#E4EDE8'  # Background
+background: '#DEF0E6'  # Background
 foreground: '#25352C'  # Foreground (Text)
 
 cursor: '#754500'      # Cursor

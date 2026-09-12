@@ -8,7 +8,7 @@
   "AccentPurple": "#CE96B4",
   "AccentCyan": "#6CA087",
   "AccentGreen": "#80C28E",
-  "AccentYellow": "#EBC168",
+  "AccentYellow": "#F2BF4B",
   "AccentRed": "#E1837A",
   "DiffAdded": "#243729",
   "DiffRemoved": "#3D2823",
@@ -18,7 +18,7 @@
   "GradientColors": [
     "#CD6B63",
     "#D0914F",
-    "#EBC168",
+    "#F2BF4B",
     "#80C28E"
   ],
   "text": {
@@ -36,19 +36,19 @@
   },
   "ui": {
     "comment": "#708178",
-    "symbol": "#EBC168",
+    "symbol": "#F2BF4B",
     "active": "#D0914F",
-    "focus": "#EBC168",
+    "focus": "#F2BF4B",
     "gradient": [
       "#CD6B63",
       "#D0914F",
-      "#EBC168",
+      "#F2BF4B",
       "#80C28E"
     ]
   },
   "status": {
     "success": "#80C28E",
-    "warning": "#EBC168",
+    "warning": "#F2BF4B",
     "error": "#E1837A"
   }
 }

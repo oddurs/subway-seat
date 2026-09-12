@@ -13,7 +13,7 @@ class ParisCatacombesStyle(Style):
     highlight_color = "#1A2921"
     line_number_color = "#54655C"
     line_number_background_color = "#121E19"
-    line_number_special_color = "#EBC168"
+    line_number_special_color = "#F2BF4B"
     line_number_special_background_color = "#1A2921"
 
     styles = {
@@ -30,16 +30,16 @@ class ParisCatacombesStyle(Style):
         Token.Operator.Word: "#D0914F",
         Token.Punctuation: "#8C9A92",
         Token.Name: "#D4DDD7",
-        Token.Name.Attribute: "italic #EBC168",
-        Token.Name.Builtin: "italic #EBC168",
+        Token.Name.Attribute: "italic #F2BF4B",
+        Token.Name.Builtin: "italic #F2BF4B",
         Token.Name.Builtin.Pseudo: "italic #E1837A",
         Token.Name.Class: "#6CA087",
         Token.Name.Constant: "#E1837A",
         Token.Name.Decorator: "italic #CE96B4",
         Token.Name.Entity: "#CE96B4",
         Token.Name.Exception: "#6CA087",
-        Token.Name.Function: "#EBC168",
-        Token.Name.Function.Magic: "italic #EBC168",
+        Token.Name.Function: "#F2BF4B",
+        Token.Name.Function.Magic: "italic #F2BF4B",
         Token.Name.Label: "italic #CE96B4",
         Token.Name.Namespace: "#A5B1AA",
         Token.Name.Property: "#BFC8C2",
@@ -54,8 +54,8 @@ class ParisCatacombesStyle(Style):
         Token.Literal.String.Regex: "#CE96B4",
         Token.Literal.String.Symbol: "#E1837A",
         Token.Literal.Number: "#E1837A",
-        Token.Generic.Heading: "bold #EBC168",
-        Token.Generic.Subheading: "bold #EBC168",
+        Token.Generic.Heading: "bold #F2BF4B",
+        Token.Generic.Subheading: "bold #F2BF4B",
         Token.Generic.Emph: "italic #D4DDD7",
         Token.Generic.Strong: "bold #E7ECEA",
         Token.Generic.Deleted: "bg:#3D2823 #E1837A",

@@ -2,9 +2,9 @@
 # Paris Carrelage: Godot's interface theme. Enter these in Editor › Editor Settings › Interface › Theme.
 # (Godot 4.6+ labels the first one "Color Preset"; 4.0 to 4.5 call it "Preset".)
 Color Preset: Custom
-Base Color: #D8E3DC
+Base Color: #D0E6D8
 Accent Color: #754500
-Contrast: 0.04
+Contrast: 0.03
 Icon Saturation: 1
 
 # And in Text Editor › Theme:

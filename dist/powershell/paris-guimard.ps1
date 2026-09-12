@@ -8,7 +8,7 @@
 
     $colors = @{
         Default                = "${esc}[38;2;217;225;219m"                  # text
-        Command                = "${esc}[38;2;235;193;104m"                  # yellow
+        Command                = "${esc}[38;2;242;191;75m"                   # yellow
         Parameter              = "${esc}[38;2;108;160;135m"                  # sage
         String                 = "${esc}[38;2;128;194;142m"                  # green
         Operator               = "${esc}[38;2;208;145;79m"                   # orange
@@ -19,7 +19,7 @@
         Keyword                = "${esc}[38;2;208;145;79m"                   # orange
         Comment                = "${esc}[3;38;2;116;133;124m"                # overlay1, italic
         Error                  = "${esc}[38;2;225;131;122m"                  # red_hi
-        Emphasis               = "${esc}[1;38;2;235;193;104m"                # yellow, bold: search matches
+        Emphasis               = "${esc}[1;38;2;242;191;75m"                 # yellow, bold: search matches
         Selection              = "${esc}[1;38;2;233;238;236;48;2;62;85;74m"  # text_hi on the selection ground
         ContinuationPrompt     = "${esc}[38;2;116;133;124m"                  # overlay1
         InlinePrediction       = "${esc}[38;2;88;107;97m"                    # overlay0, like fish autosuggestions
@@ -40,25 +40,25 @@
 
     if ($PSStyle) {
         $formatting = @{
-            FormatAccent           = "${esc}[1;38;2;235;193;104m"
-            TableHeader            = "${esc}[1;38;2;235;193;104m"
-            CustomTableHeaderLabel = "${esc}[1;3;38;2;235;193;104m"
+            FormatAccent           = "${esc}[1;38;2;242;191;75m"
+            TableHeader            = "${esc}[1;38;2;242;191;75m"
+            CustomTableHeaderLabel = "${esc}[1;3;38;2;242;191;75m"
             ErrorAccent            = "${esc}[1;38;2;208;145;79m"
             Error                  = "${esc}[1;38;2;225;131;122m"
-            Warning                = "${esc}[1;38;2;235;193;104m"
+            Warning                = "${esc}[1;38;2;242;191;75m"
             Verbose                = "${esc}[38;2;112;155;200m"
             Debug                  = "${esc}[38;2;108;160;135m"
             FeedbackName           = "${esc}[38;2;208;145;79m"
             FeedbackText           = "${esc}[38;2;194;203;197m"
-            FeedbackAction         = "${esc}[38;2;235;193;104m"
+            FeedbackAction         = "${esc}[38;2;242;191;75m"
         }
         foreach ($key in $formatting.Keys) {
             if ($PSStyle.Formatting.PSObject.Properties[$key]) { $PSStyle.Formatting.$key = $formatting[$key] }
         }
-        $PSStyle.Progress.Style = "${esc}[1;38;2;235;193;104m"
+        $PSStyle.Progress.Style = "${esc}[1;38;2;242;191;75m"
 
         if ($PSStyle.PSObject.Properties['FileInfo']) {
-            $PSStyle.FileInfo.Directory = "${esc}[1;38;2;235;193;104m"
+            $PSStyle.FileInfo.Directory = "${esc}[1;38;2;242;191;75m"
             $PSStyle.FileInfo.SymbolicLink = "${esc}[38;2;108;160;135m"
             $PSStyle.FileInfo.Executable = "${esc}[1;38;2;128;194;142m"
             foreach ($ext in '.zip', '.tgz', '.gz', '.tar', '.nupkg', '.cab', '.7z') { $PSStyle.FileInfo.Extension[$ext] = "${esc}[38;2;225;131;122m" }

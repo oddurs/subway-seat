@@ -16,8 +16,8 @@
     "subtext1": "#C2CBC5",
     "text": "#D9E1DB",
     "text_hi": "#E9EEEC",
-    "yellow": "#EBC168",
-    "yellow_hi": "#FBD380",
+    "yellow": "#F2BF4B",
+    "yellow_hi": "#FFD273",
     "orange": "#D0914F",
     "orange_hi": "#E7AB6D",
     "red": "#CD6B63",
@@ -35,11 +35,11 @@
     "tint_del": "#432F2B",
     "tint_del_emph": "#5D3A35",
     "tint_del_dim": "#332824",
-    "tint_chg": "#363524",
-    "tint_chg_emph": "#4B452C",
+    "tint_chg": "#37341F",
+    "tint_chg_emph": "#4D4525",
     "tint_info": "#293D3D",
     "tint_hint": "#293E34",
-    "tint_search": "#5C5A3A",
+    "tint_search": "#5E5A31",
     "tint_search_cur": "#77603A",
     "inactive_selection": "#30433A",
     "paper": "#263930"
@@ -56,8 +56,8 @@
     "fold_marker": "var(overlay1)",
     "minimap_border": "var(surface2)",
     "accent": "var(orange)",
-    "popup_css": "html { background-color: #263930; color: #D9E1DB; } a { color: #709BC8; } code, .highlight { background-color: #1E2E26; color: #80C28E; } h1, h2, h3 { color: #EBC168; } .error, .errors { color: #E1837A; } .warning, .warnings { color: #EBC168; } .info { color: #709BC8; } .hint { color: #6CA087; }",
-    "phantom_css": "html { background-color: #263930; color: #D9E1DB; } a { color: #709BC8; } code, .highlight { background-color: #1E2E26; color: #80C28E; } h1, h2, h3 { color: #EBC168; } .error, .errors { color: #E1837A; } .warning, .warnings { color: #EBC168; } .info { color: #709BC8; } .hint { color: #6CA087; }",
+    "popup_css": "html { background-color: #263930; color: #D9E1DB; } a { color: #709BC8; } code, .highlight { background-color: #1E2E26; color: #80C28E; } h1, h2, h3 { color: #F2BF4B; } .error, .errors { color: #E1837A; } .warning, .warnings { color: #F2BF4B; } .info { color: #709BC8; } .hint { color: #6CA087; }",
+    "phantom_css": "html { background-color: #263930; color: #D9E1DB; } a { color: #709BC8; } code, .highlight { background-color: #1E2E26; color: #80C28E; } h1, h2, h3 { color: #F2BF4B; } .error, .errors { color: #E1837A; } .warning, .warnings { color: #F2BF4B; } .info { color: #709BC8; } .hint { color: #6CA087; }",
     "gutter": "var(base)",
     "gutter_foreground": "var(overlay0)",
     "gutter_foreground_highlight": "var(yellow)",
@@ -434,15 +434,15 @@
     },
     {
       "scope": "diff.inserted.merge-right",
-      "background": "#363524"
+      "background": "#37341F"
     },
     {
       "scope": "diff.inserted.char.merge-right",
-      "background": "#4B452C"
+      "background": "#4D4525"
     },
     {
       "scope": "diff.border.merge-right",
-      "background": "#EBC168"
+      "background": "#F2BF4B"
     },
     {
       "scope": "diff.border.merge-conflict",
@@ -458,11 +458,11 @@
     },
     {
       "scope": "blame.age-icon",
-      "foreground": "#EBC168"
+      "foreground": "#F2BF4B"
     },
     {
       "scope": "source.sublime-merge.preferences.git_binary",
-      "foreground": "#EBC168"
+      "foreground": "#F2BF4B"
     }
   ]
 }

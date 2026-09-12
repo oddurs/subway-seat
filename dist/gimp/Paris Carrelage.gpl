@@ -3,13 +3,13 @@ Name: Paris Carrelage
 Columns: 13
 # Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
 # Bevelled white tile under a vaulted platform. The light one.
-202 217 209	Carrelage crust
-216 227 220	Carrelage mantle
-228 237 232	Carrelage base
-186 208 196	Carrelage surface0
-163 191 176	Carrelage surface1
-142 173 157	Carrelage surface2
-123 153 137	Carrelage overlay0
+191 221 205	Carrelage crust
+208 230 216	Carrelage mantle
+222 240 230	Carrelage base
+172 213 191	Carrelage surface0
+150 196 172	Carrelage surface1
+132 176 154	Carrelage surface2
+118 155 135	Carrelage overlay0
  98 127 112	Carrelage overlay1
  79 103  91	Carrelage overlay2
  69  89  79	Carrelage subtext0

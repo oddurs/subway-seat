@@ -17,7 +17,7 @@
   },
   "heading": {
     "block_suffix": "\n",
-    "color": "#EBC168",
+    "color": "#F2BF4B",
     "bold": true
   },
   "h1": {
@@ -33,7 +33,7 @@
   },
   "h3": {
     "prefix": "### ",
-    "color": "#EBC168"
+    "color": "#F2BF4B"
   },
   "h4": {
     "prefix": "#### ",
@@ -137,14 +137,14 @@
         "color": "#D9E1DB"
       },
       "name_builtin": {
-        "color": "#EBC168",
+        "color": "#F2BF4B",
         "italic": true
       },
       "name_tag": {
         "color": "#D0914F"
       },
       "name_attribute": {
-        "color": "#EBC168",
+        "color": "#F2BF4B",
         "italic": true
       },
       "name_class": {
@@ -161,7 +161,7 @@
         "color": "#6CA087"
       },
       "name_function": {
-        "color": "#EBC168"
+        "color": "#F2BF4B"
       },
       "name_other": {
         "color": "#D9E1DB"
@@ -211,7 +211,7 @@
   },
   "definition_list": {},
   "definition_term": {
-    "color": "#EBC168"
+    "color": "#F2BF4B"
   },
   "definition_description": {
     "block_prefix": "\n🠶 "

@@ -7,7 +7,7 @@ k9s:
     logoColor: '#D0914F'
     logoColorMsg: '#D4DDD7'
     logoColorInfo: '#80C28E'
-    logoColorWarn: '#EBC168'
+    logoColorWarn: '#F2BF4B'
     logoColorError: '#E1837A'
   prompt:
     fgColor: '#D4DDD7'
@@ -20,17 +20,17 @@ k9s:
     fgColor: '#D0914F'
     sectionColor: '#D4DDD7'
     cpuColor: '#80C28E'
-    memColor: '#EBC168'
+    memColor: '#F2BF4B'
     k9sRevColor: '#8FD59E'
   help:
     fgColor: '#D4DDD7'
     bgColor: '#121E19'
     sectionColor: '#80C28E'
-    keyColor: '#EBC168'
+    keyColor: '#F2BF4B'
     numKeyColor: '#E1837A'
   frame:
     title:
-      fgColor: '#EBC168'
+      fgColor: '#F2BF4B'
       bgColor: '#121E19'
       highlightColor: '#D0914F'
       counterColor: '#E1837A'
@@ -40,19 +40,19 @@ k9s:
       focusColor: '#D0914F'
     menu:
       fgColor: '#BFC8C2'
-      keyColor: '#EBC168'
+      keyColor: '#F2BF4B'
       numKeyColor: '#E1837A'
     crumbs:
       fgColor: '#0A100D'
-      bgColor: '#EBC168'
+      bgColor: '#F2BF4B'
       activeColor: '#D0914F'
     status:
       newColor: '#6CA087'
-      modifyColor: '#EBC168'
+      modifyColor: '#F2BF4B'
       addColor: '#80C28E'
       pendingColor: '#D0914F'
       errorColor: '#E1837A'
-      highlightColor: '#FBD380'
+      highlightColor: '#FFD273'
       killColor: '#CE96B4'
       completedColor: '#54655C'
   views:
@@ -86,14 +86,14 @@ k9s:
       resourceColors:
         cpu:
           - '#D0914F'
-          - '#EBC168'
+          - '#F2BF4B'
         mem:
-          - '#EBC168'
+          - '#F2BF4B'
           - '#80C28E'
       focusFgColor: '#0A100D'
       focusBgColor: '#D0914F'
     yaml:
-      keyColor: '#EBC168'
+      keyColor: '#F2BF4B'
       valueColor: '#D4DDD7'
       colonColor: '#8C9A92'
     logs:
@@ -107,7 +107,7 @@ k9s:
     picker:
       mainColor: '#D4DDD7'
       focusColor: '#D0914F'
-      shortcutColor: '#EBC168'
+      shortcutColor: '#F2BF4B'
   dialog:
     fgColor: '#D4DDD7'
     bgColor: '#1A2921'
@@ -115,5 +115,5 @@ k9s:
     buttonBgColor: '#31433A'
     buttonFocusFgColor: '#0A100D'
     buttonFocusBgColor: '#D0914F'
-    labelFgColor: '#EBC168'
+    labelFgColor: '#F2BF4B'
     fieldFgColor: '#D4DDD7'

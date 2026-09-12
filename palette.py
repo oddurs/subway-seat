@@ -281,9 +281,9 @@ PORTLAND = Flavor(
         # as white; a light flavor must do the opposite, because here the text
         # is the inked end and the paper is the pale one. Holding chroma through
         # subtext and text is what keeps the greys from going dead neutral.
-        "crust": "#CDD5E4", "mantle": "#DAE0EB", "base": "#E5EAF4",
-        "surface0": "#BFCAE1", "surface1": "#A9B7D4", "surface2": "#95A5C4",
-        "overlay0": "#8291AE", "overlay1": "#697794", "overlay2": "#556179",
+        "crust": "#C5D5F3", "mantle": "#D4E0F6", "base": "#E0EAFE",
+        "surface0": "#B6CAF3", "surface1": "#A1B7E5", "surface2": "#8FA5D0",
+        "overlay0": "#7F91B4", "overlay1": "#697794", "overlay2": "#556179",
         "subtext0": "#4A5469", "subtext1": "#3C4557", "text": "#293040", "text_hi": "#1B202B",
         "yellow": "#896800", "yellow_hi": "#977300",
         "orange": "#B14A07", "orange_hi": "#B86100",
@@ -375,7 +375,7 @@ GUIMARD = Flavor(
         "surface0": "#263930", "surface1": "#30463B", "surface2": "#3E554A",
         "overlay0": "#586B61", "overlay1": "#74857C", "overlay2": "#909E96",
         "subtext0": "#A9B5AE", "subtext1": "#C2CBC5", "text": "#D9E1DB", "text_hi": "#E9EEEC",
-        "yellow": "#EBC168", "yellow_hi": "#FBD380",
+        "yellow": "#F2BF4B", "yellow_hi": "#FFD273",
         "orange": "#D0914F", "orange_hi": "#E7AB6D",
         "red": "#CD6B63", "red_hi": "#E1837A",
         "green": "#80C28E", "green_hi": "#8FD59E",
@@ -398,7 +398,7 @@ CATACOMBES = Flavor(
         "surface0": "#1A2921", "surface1": "#24342C", "surface2": "#31433A",
         "overlay0": "#54655C", "overlay1": "#708178", "overlay2": "#8C9A92",
         "subtext0": "#A5B1AA", "subtext1": "#BFC8C2", "text": "#D4DDD7", "text_hi": "#E7ECEA",
-        "yellow": "#EBC168", "yellow_hi": "#FBD380",
+        "yellow": "#F2BF4B", "yellow_hi": "#FFD273",
         "orange": "#D0914F", "orange_hi": "#E7AB6D",
         "red": "#CD6B63", "red_hi": "#E1837A",
         "green": "#80C28E", "green_hi": "#8FD59E",
@@ -418,9 +418,9 @@ CARRELAGE = Flavor(
     blurb="Bevelled white tile under a vaulted platform. The light one.",
     colors={
         # As in Enamel and Portland, the ramp runs the other way from base.
-        "crust": "#CAD9D1", "mantle": "#D8E3DC", "base": "#E4EDE8",
-        "surface0": "#BAD0C4", "surface1": "#A3BFB0", "surface2": "#8EAD9D",
-        "overlay0": "#7B9989", "overlay1": "#627F70", "overlay2": "#4F675B",
+        "crust": "#BFDDCD", "mantle": "#D0E6D8", "base": "#DEF0E6",
+        "surface0": "#ACD5BF", "surface1": "#96C4AC", "surface2": "#84B09A",
+        "overlay0": "#769B87", "overlay1": "#627F70", "overlay2": "#4F675B",
         "subtext0": "#45594F", "subtext1": "#374940", "text": "#25352C", "text_hi": "#18231D",
         "yellow": "#8A6700", "yellow_hi": "#997300",
         "orange": "#754500", "orange_hi": "#AE6800",

@@ -7,7 +7,7 @@ permission:
   write: "#B14A07"
   exec: "#0D8131"
   exec-sticky: "#7660AB"
-  no-access: "#8291AE"
+  no-access: "#7F91B4"
   octal: "#7660AB"
   acl: "#697794"
   context: "#697794"
@@ -27,15 +27,15 @@ size:
   large: "#B14A07"
 inode:
   valid: "#697794"
-  invalid: "#8291AE"
+  invalid: "#7F91B4"
 links:
   valid: "#007376"
-  invalid: "#8291AE"
-tree-edge: "#8291AE"
+  invalid: "#7F91B4"
+tree-edge: "#7F91B4"
 git-status:
   default: "#4A5469"
   unmodified: "#697794"
-  ignored: "#8291AE"
+  ignored: "#7F91B4"
   new-in-index: "#0D8131"
   new-in-workdir: "#0D8131"
   typechange: "#7660AB"

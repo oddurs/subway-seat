@@ -17,8 +17,8 @@
     subtext1:  #BFC8C2;
     text:      #D4DDD7;
     text-hi:   #E7ECEA;
-    yellow:    #EBC168;
-    yellow-hi: #FBD380;
+    yellow:    #F2BF4B;
+    yellow-hi: #FFD273;
     orange:    #D0914F;
     orange-hi: #E7AB6D;
     red:       #CD6B63;
@@ -66,7 +66,7 @@
 }
 
 element-text {
-    highlight: bold #EBC168;
+    highlight: bold #F2BF4B;
 }
 
 entry {

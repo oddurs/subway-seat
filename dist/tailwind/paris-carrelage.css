@@ -2,13 +2,13 @@
 /* Paris Carrelage for Tailwind v4: bg-ss-base, text-ss-text, … */
 
 @theme {
-  --color-ss-crust: #CAD9D1;
-  --color-ss-mantle: #D8E3DC;
-  --color-ss-base: #E4EDE8;
-  --color-ss-surface0: #BAD0C4;
-  --color-ss-surface1: #A3BFB0;
-  --color-ss-surface2: #8EAD9D;
-  --color-ss-overlay0: #7B9989;
+  --color-ss-crust: #BFDDCD;
+  --color-ss-mantle: #D0E6D8;
+  --color-ss-base: #DEF0E6;
+  --color-ss-surface0: #ACD5BF;
+  --color-ss-surface1: #96C4AC;
+  --color-ss-surface2: #84B09A;
+  --color-ss-overlay0: #769B87;
   --color-ss-overlay1: #627F70;
   --color-ss-overlay2: #4F675B;
   --color-ss-subtext0: #45594F;

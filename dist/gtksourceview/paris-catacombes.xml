@@ -21,8 +21,8 @@
   <color name="subtext1" value="#BFC8C2"/>
   <color name="text" value="#D4DDD7"/>
   <color name="text_hi" value="#E7ECEA"/>
-  <color name="yellow" value="#EBC168"/>
-  <color name="yellow_hi" value="#FBD380"/>
+  <color name="yellow" value="#F2BF4B"/>
+  <color name="yellow_hi" value="#FFD273"/>
   <color name="orange" value="#D0914F"/>
   <color name="orange_hi" value="#E7AB6D"/>
   <color name="red" value="#CD6B63"/>
@@ -40,11 +40,11 @@
   <color name="tint_del" value="#3D2823"/>
   <color name="tint_del_emph" value="#58342F"/>
   <color name="tint_del_dim" value="#2B1F1C"/>
-  <color name="tint_chg" value="#2E2C1C"/>
-  <color name="tint_chg_emph" value="#443E25"/>
+  <color name="tint_chg" value="#2F2C17"/>
+  <color name="tint_chg_emph" value="#463E1D"/>
   <color name="tint_info" value="#1F3032"/>
   <color name="tint_hint" value="#1F3028"/>
-  <color name="tint_search" value="#534F31"/>
+  <color name="tint_search" value="#554E28"/>
   <color name="tint_search_cur" value="#715834"/>
   <color name="selection_unfocused" value="#23322B"/>
   <color name="bracket_bg" value="#24342C"/>

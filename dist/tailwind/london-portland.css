@@ -2,13 +2,13 @@
 /* London Portland for Tailwind v4: bg-ss-base, text-ss-text, … */
 
 @theme {
-  --color-ss-crust: #CDD5E4;
-  --color-ss-mantle: #DAE0EB;
-  --color-ss-base: #E5EAF4;
-  --color-ss-surface0: #BFCAE1;
-  --color-ss-surface1: #A9B7D4;
-  --color-ss-surface2: #95A5C4;
-  --color-ss-overlay0: #8291AE;
+  --color-ss-crust: #C5D5F3;
+  --color-ss-mantle: #D4E0F6;
+  --color-ss-base: #E0EAFE;
+  --color-ss-surface0: #B6CAF3;
+  --color-ss-surface1: #A1B7E5;
+  --color-ss-surface2: #8FA5D0;
+  --color-ss-overlay0: #7F91B4;
   --color-ss-overlay1: #697794;
   --color-ss-overlay2: #556179;
   --color-ss-subtext0: #4A5469;

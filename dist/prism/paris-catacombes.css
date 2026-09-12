@@ -54,8 +54,8 @@ pre[class*="language-"]::selection, pre[class*="language-"] ::selection {
 .token.operator { color: #8C9A92; }
 .token.namespace { color: #A5B1AA; }
 .token.keyword, .token.atrule, .token.rule, .token.list, .token.important { color: #D0914F; }
-.token.function { color: #EBC168; }
-.token.builtin { color: #EBC168; font-style: italic; }
+.token.function { color: #F2BF4B; }
+.token.builtin { color: #F2BF4B; font-style: italic; }
 .token.string, .token.char, .token.attr-value, .token.code { color: #80C28E; }
 .token.escape, .token.entity, .token.interpolation-punctuation { color: #CE96B4; }
 .token.regex { color: #CE96B4; }
@@ -66,11 +66,11 @@ pre[class*="language-"]::selection, pre[class*="language-"] ::selection {
 .token.variable { color: #D4DDD7; }
 .token.parameter { color: #BFC8C2; font-style: italic; }
 .token.property { color: #BFC8C2; }
-.language-json .token.property { color: #EBC168; }
+.language-json .token.property { color: #F2BF4B; }
 .token.tag { color: #D0914F; }
-.token.attr-name, .token.selector { color: #EBC168; font-style: italic; }
+.token.attr-name, .token.selector { color: #F2BF4B; font-style: italic; }
 .token.decorator, .token.annotation { color: #CE96B4; font-style: italic; }
-.token.title { color: #EBC168; font-weight: bold; }
+.token.title { color: #F2BF4B; font-weight: bold; }
 .token.blockquote { color: #A5B1AA; font-style: italic; }
 .token.coord { color: #709BC8; }
 .token.url { color: #709BC8; text-decoration: underline; }
@@ -81,7 +81,7 @@ pre[class*="language-"]::selection, pre[class*="language-"] ::selection {
 .token.deleted { color: #E1837A; }
 [class*="language-diff"] .token.inserted:not(.prefix) { background: #243729; }
 [class*="language-diff"] .token.deleted:not(.prefix) { background: #3D2823; }
-[class*="language-diff"] .token.diff:not(.prefix) { background: #2E2C1C; }
+[class*="language-diff"] .token.diff:not(.prefix) { background: #2F2C17; }
 [class*="language-diff"] .token.prefix.inserted { color: #80C28E; }
 [class*="language-diff"] .token.prefix.deleted { color: #E1837A; }
-[class*="language-diff"] .token.prefix.diff { color: #EBC168; }
+[class*="language-diff"] .token.prefix.diff { color: #F2BF4B; }

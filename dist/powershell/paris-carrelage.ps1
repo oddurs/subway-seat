@@ -20,11 +20,11 @@
         Comment                = "${esc}[3;38;2;98;127;112m"                 # overlay1, italic
         Error                  = "${esc}[38;2;187;64;59m"                    # red_hi
         Emphasis               = "${esc}[1;38;2;138;103;0m"                  # yellow, bold: search matches
-        Selection              = "${esc}[1;38;2;24;35;29;48;2;163;191;176m"  # text_hi on the selection ground
+        Selection              = "${esc}[1;38;2;24;35;29;48;2;150;196;172m"  # text_hi on the selection ground
         ContinuationPrompt     = "${esc}[38;2;98;127;112m"                   # overlay1
-        InlinePrediction       = "${esc}[38;2;123;153;137m"                  # overlay0, like fish autosuggestions
+        InlinePrediction       = "${esc}[38;2;118;155;135m"                  # overlay0, like fish autosuggestions
         ListPrediction         = "${esc}[38;2;117;69;0m"                     # orange: the > marker and source
-        ListPredictionSelected = "${esc}[48;2;163;191;176m"                  # surface1 ground
+        ListPredictionSelected = "${esc}[48;2;150;196;172m"                  # surface1 ground
         ListPredictionTooltip  = "${esc}[3;38;2;98;127;112m"                 # overlay1, italic
     }
 

@@ -1,6 +1,6 @@
 # name: 'Paris Carrelage'
 # Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
-# preferred_background: E4EDE8
+# preferred_background: DEF0E6
 
 fish_color_normal 25352C
 fish_color_command 8A6700
@@ -16,10 +16,10 @@ fish_color_comment 627F70 --italics
 fish_color_error BB403B
 fish_color_cancel 932D29
 fish_color_autosuggestion 627F70
-fish_color_gray 7B9989
+fish_color_gray 769B87
 fish_color_valid_path --underline
-fish_color_selection 18231D --bold --background=A3BFB0
-fish_color_search_match --bold --background=A3BFB0
+fish_color_selection 18231D --bold --background=96C4AC
+fish_color_search_match --bold --background=96C4AC
 fish_color_history_current --bold
 fish_color_cwd 8A6700
 fish_color_cwd_root BB403B
@@ -27,11 +27,11 @@ fish_color_user 754500
 fish_color_host 374940
 fish_color_host_remote 207F41
 fish_color_status BB403B
-fish_pager_color_progress E4EDE8 --background=754500
+fish_pager_color_progress DEF0E6 --background=754500
 fish_pager_color_prefix 8A6700 --bold
 fish_pager_color_completion 25352C
 fish_pager_color_description 627F70 --italics
-fish_pager_color_selected_background --background=BAD0C4
+fish_pager_color_selected_background --background=ACD5BF
 fish_pager_color_selected_prefix 754500 --bold
 fish_pager_color_selected_completion 18231D
 fish_pager_color_selected_description 374940 --italics

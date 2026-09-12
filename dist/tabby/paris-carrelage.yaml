@@ -2,10 +2,10 @@
 # One entry for terminal.customColorSchemes in Tabby's config.yaml, indented to paste under that key.
     - name: Paris Carrelage
       foreground: '#25352C'
-      background: '#E4EDE8'
+      background: '#DEF0E6'
       cursor: '#754500'
-      cursorAccent: '#E4EDE8'
-      selection: '#A3BFB0'
+      cursorAccent: '#DEF0E6'
+      selection: '#96C4AC'
       selectionForeground: '#18231D'
       colors:
         - '#374940'
@@ -15,7 +15,7 @@
         - '#27629C'
         - '#754500'
         - '#086142'
-        - '#8EAD9D'
+        - '#84B09A'
         - '#627F70'
         - '#BB403B'
         - '#168540'
@@ -23,4 +23,4 @@
         - '#3E75AD'
         - '#AE6800'
         - '#3D8666'
-        - '#A3BFB0'
+        - '#96C4AC'

@@ -2,33 +2,33 @@
 # Paris Carrelage for zathura. In zathurarc: include paris-carrelage
 
 # window
-set default-bg              "#E4EDE8"
+set default-bg              "#DEF0E6"
 set default-fg              "#25352C"
-set statusbar-bg            "#D8E3DC"
+set statusbar-bg            "#D0E6D8"
 set statusbar-fg            "#374940"
-set inputbar-bg             "#D8E3DC"
+set inputbar-bg             "#D0E6D8"
 set inputbar-fg             "#25352C"
 
 # notifications
-set notification-bg         "#F2F6F4"
+set notification-bg         "#EEF8F2"
 set notification-fg         "#25352C"
 set notification-error-bg   "#932D29"
-set notification-error-fg   "#E4EDE8"
+set notification-error-fg   "#DEF0E6"
 set notification-warning-bg "#8A6700"
-set notification-warning-fg "#E4EDE8"
+set notification-warning-fg "#DEF0E6"
 
 # completion
-set completion-bg           "#F2F6F4"
+set completion-bg           "#EEF8F2"
 set completion-fg           "#25352C"
-set completion-group-bg     "#D8E3DC"
+set completion-group-bg     "#D0E6D8"
 set completion-group-fg     "#45594F"
-set completion-highlight-bg "#A3BFB0"
+set completion-highlight-bg "#96C4AC"
 set completion-highlight-fg "#18231D"
 
 # index (table of contents)
-set index-bg                "#E4EDE8"
+set index-bg                "#DEF0E6"
 set index-fg                "#25352C"
-set index-active-bg         "#A3BFB0"
+set index-active-bg         "#96C4AC"
 set index-active-fg         "#18231D"
 
 # search hits and link hints, washed over the page
@@ -37,7 +37,7 @@ set highlight-active-color  "rgba(117,69,0,0.5)"
 set highlight-fg            "#18231D"
 
 # pages while they render
-set render-loading-bg       "#E4EDE8"
+set render-loading-bg       "#DEF0E6"
 set render-loading-fg       "#627F70"
 
 # digital signatures
@@ -46,7 +46,7 @@ set signature-warning-color "#8A6700"
 set signature-error-color   "#BB403B"
 
 # recoloring: white paper → base, black ink → text; Ctrl+R toggles it
-set recolor-lightcolor      "#E4EDE8"
+set recolor-lightcolor      "#DEF0E6"
 set recolor-darkcolor       "#25352C"
 set recolor                 "true"
 set recolor-keephue         "true"

@@ -41,17 +41,17 @@ $env.config.color_config = {
     shape_matching_brackets: { fg: "#977300" attr: "b" }
     shape_garbage: { fg: "#C92B23" attr: "u" }
 
-    background: "#E5EAF4"
+    background: "#E0EAFE"
     foreground: "#293040"
     cursor: "#B14A07"
-    separator: "#95A5C4"
-    leading_trailing_space_bg: { bg: "#A9B7D4" }
+    separator: "#8FA5D0"
+    leading_trailing_space_bg: { bg: "#A1B7E5" }
     header: { fg: "#B14A07" attr: "b" }
     row_index: "#697794"
-    empty: "#8291AE"
-    hints: "#8291AE"
-    search_result: { fg: "#1B202B" bg: "#C9C3AB" }
-    selection: { fg: "#1B202B" bg: "#A9B7D4" }
+    empty: "#7F91B4"
+    hints: "#7F91B4"
+    search_result: { fg: "#1B202B" bg: "#C6C3B2" }
+    selection: { fg: "#1B202B" bg: "#A1B7E5" }
     selection_cursor: { attr: "n" }
     bool: "#C92B23"
     int: "#C92B23"
@@ -59,13 +59,13 @@ $env.config.color_config = {
     string: "#293040"
     glob: "#7660AB"
     binary: "#C92B23"
-    binary_null_char: "#8291AE"
+    binary_null_char: "#7F91B4"
     binary_printable: "#0D8131"
     binary_whitespace: "#007376"
     binary_ascii_other: "#7660AB"
     binary_non_ascii: "#B14A07"
     custom: "#7660AB"
-    nothing: "#8291AE"
+    nothing: "#7F91B4"
     list: "#293040"
     record: "#293040"
     range: "#7660AB"
@@ -100,17 +100,17 @@ $env.config.color_config = {
     }
 }
 
-$env.config.explore.selected_cell = { fg: "#E5EAF4" bg: "#B14A07" }
-$env.config.explore.highlight = { fg: "#1B202B" bg: "#C9C3AB" }
+$env.config.explore.selected_cell = { fg: "#E0EAFE" bg: "#B14A07" }
+$env.config.explore.highlight = { fg: "#1B202B" bg: "#C6C3B2" }
 $env.config.explore.status_bar_text = { fg: "#3C4557" }
-$env.config.explore.status_bar_background = { fg: "#293040" bg: "#CDD5E4" }
+$env.config.explore.status_bar_background = { fg: "#293040" bg: "#C5D5F3" }
 $env.config.explore.command_bar_text = { fg: "#293040" }
-$env.config.explore.command_bar_background = { bg: "#CDD5E4" }
+$env.config.explore.command_bar_background = { bg: "#C5D5F3" }
 $env.config.explore.title_bar_text = { fg: "#1B202B" attr: "b" }
-$env.config.explore.title_bar_background = { bg: "#BFCAE1" }
+$env.config.explore.title_bar_background = { bg: "#B6CAF3" }
 $env.config.explore.status = {
     info: { fg: "#0019A8" }
-    success: { fg: "#E5EAF4" bg: "#0D8131" }
-    warn: { fg: "#E5EAF4" bg: "#896800" }
-    error: { fg: "#E5EAF4" bg: "#C92B23" }
+    success: { fg: "#E0EAFE" bg: "#0D8131" }
+    warn: { fg: "#E0EAFE" bg: "#896800" }
+    error: { fg: "#E0EAFE" bg: "#C92B23" }
 }

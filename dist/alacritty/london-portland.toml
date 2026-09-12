@@ -2,46 +2,46 @@
 # London Portland
 
 [colors.primary]
-background = "#E5EAF4"
+background = "#E0EAFE"
 foreground = "#293040"
 dim_foreground = "#556179"
 bright_foreground = "#1B202B"
 
 [colors.cursor]
-text = "#E5EAF4"
+text = "#E0EAFE"
 cursor = "#B14A07"
 
 [colors.vi_mode_cursor]
-text = "#E5EAF4"
+text = "#E0EAFE"
 cursor = "#007376"
 
 [colors.search.matches]
 foreground = "#293040"
-background = "#C9C3AB"
+background = "#C6C3B2"
 
 [colors.search.focused_match]
 foreground = "#1B202B"
-background = "#CB9A7E"
+background = "#C89A82"
 
 [colors.footer_bar]
 foreground = "#293040"
-background = "#A9B7D4"
+background = "#A1B7E5"
 
 [colors.hints.start]
-foreground = "#E5EAF4"
+foreground = "#E0EAFE"
 background = "#B14A07"
 
 [colors.hints.end]
-foreground = "#E5EAF4"
+foreground = "#E0EAFE"
 background = "#556179"
 
 [colors.line_indicator]
 foreground = "#4A5469"
-background = "#BFCAE1"
+background = "#B6CAF3"
 
 [colors.selection]
 text = "#1B202B"
-background = "#A9B7D4"
+background = "#A1B7E5"
 
 [colors.normal]
 black = "#3C4557"
@@ -51,7 +51,7 @@ yellow = "#896800"
 blue = "#0019A8"
 magenta = "#B14A07"
 cyan = "#007376"
-white = "#95A5C4"
+white = "#8FA5D0"
 
 [colors.bright]
 black = "#697794"
@@ -61,14 +61,14 @@ yellow = "#977300"
 blue = "#4A6EBD"
 magenta = "#B86100"
 cyan = "#008688"
-white = "#A9B7D4"
+white = "#A1B7E5"
 
 [colors.dim]
-black = "#757D8C"
-red = "#B46564"
-green = "#56A573"
-yellow = "#A89453"
-blue = "#4E60C2"
-magenta = "#C38058"
-cyan = "#4E9BA1"
-white = "#B0BCD4"
+black = "#747D90"
+red = "#B26568"
+green = "#55A577"
+yellow = "#A79456"
+blue = "#4C60C5"
+magenta = "#C1805B"
+cyan = "#4C9BA4"
+white = "#ABBCE0"

@@ -24,8 +24,8 @@ palette:
   red-bright: "#E1837A"
   green: "#80C28E"
   green-bright: "#8FD59E"
-  yellow: "#EBC168"
-  yellow-bright: "#FBD380"
+  yellow: "#F2BF4B"
+  yellow-bright: "#FFD273"
   blue: "#709BC8"
   blue-bright: "#8DB6E2"
   magenta: "#D0914F"
@@ -43,15 +43,15 @@ syntax:
   constant.language: "#E1837A" # boolean
   constant.character: "#CE96B4" # string.escape
   entity.name: "#D9E1DB" # variable
-  entity.name.function: "#EBC168" # function
+  entity.name.function: "#F2BF4B" # function
   entity.name.class: "#6CA087" # type
   entity.name.type: "#6CA087" # type
   entity.name.namespace: "#A9B5AE" # namespace
   entity.name.tag: "#D0914F" # tag
   entity.name.label: "#CE96B4" # decorator
-  entity.name.section: "#EBC168" # heading
+  entity.name.section: "#F2BF4B" # heading
   entity.other: "#D9E1DB" # variable
-  entity.other.attribute-name: "#EBC168" # attribute
+  entity.other.attribute-name: "#F2BF4B" # attribute
   entity.other.inherited-class: "#6CA087" # type
   invalid: "#CD6B63" # invalid
   invalid.deprecated: "#CE96B4" # clay
@@ -60,14 +60,14 @@ syntax:
   markup: "#D9E1DB" # text
   markup.bold: "#E9EEEC" # strong
   markup.italic: "#D9E1DB" # emphasis
-  markup.heading: "#EBC168" # heading
+  markup.heading: "#F2BF4B" # heading
   markup.link: "#709BC8" # link
   markup.list: "#D0914F" # keyword
   markup.quote: "#A9B5AE" # quote
   markup.raw: "#80C28E" # code
   markup.inserted: "#80C28E" # green
   markup.deleted: "#E1837A" # red_hi
-  markup.changed: "#EBC168" # yellow
+  markup.changed: "#F2BF4B" # yellow
   meta: "#D9E1DB" # text
   meta.annotation: "#CE96B4" # decorator
   punctuation: "#909E96" # punctuation
@@ -77,11 +77,11 @@ syntax:
   string: "#80C28E" # string
   string.regexp: "#CE96B4" # regexp
   string.interpolated: "#CE96B4" # string.escape
-  support: "#EBC168" # function
+  support: "#F2BF4B" # function
   support.class: "#6CA087" # type
   support.type: "#6CA087" # type.builtin
   support.constant: "#E1837A" # constant
-  support.function.builtin: "#EBC168" # function.builtin
+  support.function.builtin: "#F2BF4B" # function.builtin
   support.variable: "#E1837A" # variable.builtin
   variable: "#D9E1DB" # variable
   variable.language: "#E1837A" # variable.builtin
@@ -103,7 +103,7 @@ ui:
       light: "#D9E1DB"
   cursor:
     normal:
-      background: "#EBC168"
+      background: "#F2BF4B"
       foreground: "#131A17"
     muted:
       background: "#74857C"
@@ -127,9 +127,9 @@ ui:
       foreground: "#E9EEEC"
     line:
       background: "#263930"
-      foreground: "#EBC168"
+      foreground: "#F2BF4B"
     search:
-      background: "#5C5A3A"
+      background: "#5E5A31"
       foreground: "#E9EEEC"
     text:
       background: "#30463B"
@@ -151,7 +151,7 @@ ui:
     error: "#E1837A"
     info: "#709BC8"
     success: "#80C28E"
-    warning: "#EBC168"
+    warning: "#F2BF4B"
   tooltip:
     background: "#263930"
     foreground: "#D9E1DB"

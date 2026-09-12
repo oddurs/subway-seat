@@ -18,8 +18,8 @@
     "subtext1": "#C2CBC5",
     "text": "#D9E1DB",
     "text_hi": "#E9EEEC",
-    "yellow": "#EBC168",
-    "yellow_hi": "#FBD380",
+    "yellow": "#F2BF4B",
+    "yellow_hi": "#FFD273",
     "orange": "#D0914F",
     "orange_hi": "#E7AB6D",
     "red": "#CD6B63",
@@ -48,12 +48,12 @@
     "borderColor": "#131A17",
     "separatorColor": "#263930",
     "controlBorder": "#30463B",
-    "searchMatch": "#5C5A3A",
+    "searchMatch": "#5E5A31",
     "errorBackground": "#312E27",
-    "warningBackground": "#313726",
+    "warningBackground": "#323723",
     "infoBackground": "#233232",
     "errorBorder": "#69443D",
-    "warningBorder": "#6C633B",
+    "warningBorder": "#6F622F",
     "infoBorder": "#3B5461"
   },
   "ui": {
@@ -287,7 +287,7 @@
       "Orange": "#353525",
       "Rose": "#352F28",
       "Violet": "#353635",
-      "Yellow": "#3A3D29",
+      "Yellow": "#3B3D24",
       "Gray": "#222F28"
     },
     "FormattedTextField": {
@@ -745,7 +745,7 @@
       "background": "inputBackground",
       "foreground": "text",
       "selectionBackground": "#3E554A",
-      "caretForeground": "#EBC168"
+      "caretForeground": "#F2BF4B"
     },
     "TextField": {
       "background": "inputBackground",
@@ -755,12 +755,12 @@
       "inactiveForeground": "overlay0",
       "selectionBackground": "#3E554A",
       "selectionForeground": "text_hi",
-      "caretForeground": "#EBC168"
+      "caretForeground": "#F2BF4B"
     },
     "TextPane": {
       "background": "panelBackground",
       "foreground": "text",
-      "caretForeground": "#EBC168"
+      "caretForeground": "#F2BF4B"
     },
     "TitlePane": {
       "background": "barBackground",
@@ -906,7 +906,7 @@
       "Actions.GreyInline": "#74857C",
       "Actions.GreyInline.Dark": "#74857C",
       "Actions.Red": "#E1837A",
-      "Actions.Yellow": "#EBC168",
+      "Actions.Yellow": "#F2BF4B",
       "Objects.BlackText": "#131A17",
       "Objects.Blue": "#709BC8",
       "Objects.Green": "#80C28E",
@@ -916,7 +916,7 @@
       "Objects.Purple": "#CE96B4",
       "Objects.Red": "#E1837A",
       "Objects.RedStatus": "#E1837A",
-      "Objects.Yellow": "#EBC168",
+      "Objects.Yellow": "#F2BF4B",
       "Objects.YellowDark": "#D0914F",
       "Tree.iconColor": "#A9B5AE",
       "Checkbox.Background.Default": "#131A17",

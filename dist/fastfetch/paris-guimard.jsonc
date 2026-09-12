@@ -5,19 +5,19 @@
   "logo": {
     "color": {
       "1": "#80C28E",
-      "2": "#EBC168",
+      "2": "#F2BF4B",
       "3": "#D0914F",
       "4": "#CD6B63",
       "5": "#CE96B4",
       "6": "#709BC8",
       "7": "#6CA087",
       "8": "#E7AB6D",
-      "9": "#FBD380"
+      "9": "#FFD273"
     }
   },
   "display": {
     "color": {
-      "keys": "#EBC168",
+      "keys": "#F2BF4B",
       "title": "#D0914F",
       "output": "#D9E1DB",
       "separator": "#74857C"
@@ -25,14 +25,14 @@
     "percent": {
       "color": {
         "green": "#80C28E",
-        "yellow": "#EBC168",
+        "yellow": "#F2BF4B",
         "red": "#E1837A"
       }
     },
     "temp": {
       "color": {
         "green": "#80C28E",
-        "yellow": "#EBC168",
+        "yellow": "#F2BF4B",
         "red": "#E1837A"
       }
     }

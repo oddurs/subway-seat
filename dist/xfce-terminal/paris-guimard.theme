@@ -3,7 +3,7 @@
 Name=Paris Guimard
 ColorForeground=#D9E1DB
 ColorBackground=#1E2E26
-ColorCursor=#EBC168
+ColorCursor=#F2BF4B
 ColorCursorForeground=#1E2E26
 ColorCursorUseDefault=FALSE
 ColorBold=#E9EEEC
@@ -12,4 +12,4 @@ ColorSelection=#E9EEEC
 ColorSelectionBackground=#3E554A
 ColorSelectionUseDefault=FALSE
 TabActivityColor=#D0914F
-ColorPalette=#30463B;#CD6B63;#80C28E;#EBC168;#709BC8;#D0914F;#6CA087;#C2CBC5;#74857C;#E1837A;#8FD59E;#FBD380;#8DB6E2;#E7AB6D;#98CCB2;#E9EEEC
+ColorPalette=#30463B;#CD6B63;#80C28E;#F2BF4B;#709BC8;#D0914F;#6CA087;#C2CBC5;#74857C;#E1837A;#8FD59E;#FFD273;#8DB6E2;#E7AB6D;#98CCB2;#E9EEEC

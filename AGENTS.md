@@ -79,6 +79,15 @@ cd site && bun install && bun run check    # the website: lint, types, format
   `text`, so pale type stays white. A light flavor must do the opposite: there `text`
   is the inked end and the paper is the pale one, and tapering it leaves the greys
   dead neutral.
+- **Compare across families, not only within one.** Take the three flavors of one
+  class — the three defaults, the three deeper darks, the three lights — and put
+  their numbers side by side. Two rules hold there. A family's **lead** is
+  identity, so it belongs to the system: keep it within about 15% of the class
+  mean, or the quiet family reads as a weaker idea rather than a quieter one.
+  A family's **ground** is character, so it belongs to the family: it can range
+  about a third either side of the class mean, and past that one flavor stops
+  looking restrained and starts looking unfinished. The light class reached 99%
+  once and had to be pulled back.
 - **Accents come in two bands, not one.** The four used as large fills — `red`,
   `orange`, `yellow`, `green`, which is what a powerline prompt and the diff grounds
   paint with — hold a tight even chroma band, or the stripe wobbles. The rest

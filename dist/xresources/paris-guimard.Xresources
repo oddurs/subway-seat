@@ -3,7 +3,7 @@
 
 *.foreground: #D9E1DB
 *.background: #1E2E26
-*.cursorColor: #EBC168
+*.cursorColor: #F2BF4B
 *.highlightColor: #3E554A
 *.highlightTextColor: #E9EEEC
 
@@ -20,8 +20,8 @@
 *.color10: #8FD59E
 
 ! yellow
-*.color3: #EBC168
-*.color11: #FBD380
+*.color3: #F2BF4B
+*.color11: #FFD273
 
 ! blue
 *.color4: #709BC8

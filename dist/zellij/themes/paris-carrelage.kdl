@@ -5,7 +5,7 @@ themes {
     paris-carrelage {
         text_unselected {
             base "#25352C"
-            background "#CAD9D1"
+            background "#BFDDCD"
             emphasis_0 "#754500"
             emphasis_1 "#086142"
             emphasis_2 "#207F41"
@@ -13,7 +13,7 @@ themes {
         }
         text_selected {
             base "#18231D"
-            background "#A3BFB0"
+            background "#96C4AC"
             emphasis_0 "#754500"
             emphasis_1 "#086142"
             emphasis_2 "#207F41"
@@ -21,19 +21,19 @@ themes {
         }
         ribbon_unselected {
             base "#25352C"
-            background "#A3BFB0"
+            background "#96C4AC"
             emphasis_0 "#8A6700"
             emphasis_1 "#18231D"
             emphasis_2 "#086142"
             emphasis_3 "#754500"
         }
         ribbon_selected {
-            base "#E4EDE8"
+            base "#DEF0E6"
             background "#754500"
-            emphasis_0 "#E4EDE8"
-            emphasis_1 "#E4EDE8"
-            emphasis_2 "#E4EDE8"
-            emphasis_3 "#E4EDE8"
+            emphasis_0 "#DEF0E6"
+            emphasis_1 "#DEF0E6"
+            emphasis_2 "#DEF0E6"
+            emphasis_3 "#DEF0E6"
         }
         table_title {
             base "#754500"
@@ -45,7 +45,7 @@ themes {
         }
         table_cell_selected {
             base "#18231D"
-            background "#A3BFB0"
+            background "#96C4AC"
             emphasis_0 "#754500"
             emphasis_1 "#086142"
             emphasis_2 "#207F41"
@@ -53,7 +53,7 @@ themes {
         }
         table_cell_unselected {
             base "#25352C"
-            background "#CAD9D1"
+            background "#BFDDCD"
             emphasis_0 "#754500"
             emphasis_1 "#086142"
             emphasis_2 "#207F41"
@@ -61,7 +61,7 @@ themes {
         }
         list_selected {
             base "#18231D"
-            background "#A3BFB0"
+            background "#96C4AC"
             emphasis_0 "#754500"
             emphasis_1 "#086142"
             emphasis_2 "#207F41"
@@ -69,14 +69,14 @@ themes {
         }
         list_unselected {
             base "#25352C"
-            background "#CAD9D1"
+            background "#BFDDCD"
             emphasis_0 "#754500"
             emphasis_1 "#086142"
             emphasis_2 "#207F41"
             emphasis_3 "#8A6700"
         }
         frame_unselected {
-            base "#8EAD9D"
+            base "#84B09A"
             background 0
             emphasis_0 "#754500"
             emphasis_1 "#086142"
@@ -103,7 +103,7 @@ themes {
             base "#207F41"
             background 0
             emphasis_0 "#086142"
-            emphasis_1 "#E4EDE8"
+            emphasis_1 "#DEF0E6"
             emphasis_2 "#8A6700"
             emphasis_3 "#27629C"
         }

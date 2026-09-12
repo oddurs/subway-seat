@@ -4,8 +4,8 @@
 $env.config.highlight_resolved_externals = true
 
 $env.config.color_config = {
-    shape_internalcall: "#EBC168"
-    shape_external_resolved: "#EBC168"
+    shape_internalcall: "#F2BF4B"
+    shape_external_resolved: "#F2BF4B"
     shape_external: "#E1837A"
     shape_keyword: "#D0914F"
     shape_flag: "#6CA087"
@@ -38,19 +38,19 @@ $env.config.color_config = {
     shape_record: "#8C9A92"
     shape_table: "#8C9A92"
     shape_match_pattern: "#80C28E"
-    shape_matching_brackets: { fg: "#FBD380" attr: "b" }
+    shape_matching_brackets: { fg: "#FFD273" attr: "b" }
     shape_garbage: { fg: "#E1837A" attr: "u" }
 
     background: "#121E19"
     foreground: "#D4DDD7"
-    cursor: "#EBC168"
+    cursor: "#F2BF4B"
     separator: "#31433A"
     leading_trailing_space_bg: { bg: "#24342C" }
     header: { fg: "#D0914F" attr: "b" }
     row_index: "#708178"
     empty: "#54655C"
     hints: "#54655C"
-    search_result: { fg: "#E7ECEA" bg: "#534F31" }
+    search_result: { fg: "#E7ECEA" bg: "#554E28" }
     selection: { fg: "#E7ECEA" bg: "#31433A" }
     selection_cursor: { attr: "n" }
     bool: "#E1837A"
@@ -76,24 +76,24 @@ $env.config.color_config = {
     semver-range: "#6CA087"
     banner_foreground: "#D4DDD7"
     banner_highlight1: "#D0914F"
-    banner_highlight2: "#EBC168"
+    banner_highlight2: "#F2BF4B"
     filesize: {||
       if $in < 1kb { "#A5B1AA"
       } else if $in < 1mb { "#80C28E"
-      } else if $in < 100mb { "#EBC168"
+      } else if $in < 100mb { "#F2BF4B"
       } else if $in < 1gb { "#D0914F"
       } else { "#E1837A" }
     }
     duration: {||
       if $in < 1sec { "#80C28E"
-      } else if $in < 1min { "#EBC168"
+      } else if $in < 1min { "#F2BF4B"
       } else if $in < 1hr { "#D0914F"
       } else { "#E1837A" }
     }
     datetime: {|| (date now) - $in |
       if $in < 1hr { "#8FD59E"
       } else if $in < 1day { "#80C28E"
-      } else if $in < 1wk { "#EBC168"
+      } else if $in < 1wk { "#F2BF4B"
       } else if $in < 4wk { "#D0914F"
       } else if $in < 52wk { "#A5B1AA"
       } else { "#708178" }
@@ -101,7 +101,7 @@ $env.config.color_config = {
 }
 
 $env.config.explore.selected_cell = { fg: "#0A100D" bg: "#D0914F" }
-$env.config.explore.highlight = { fg: "#E7ECEA" bg: "#534F31" }
+$env.config.explore.highlight = { fg: "#E7ECEA" bg: "#554E28" }
 $env.config.explore.status_bar_text = { fg: "#BFC8C2" }
 $env.config.explore.status_bar_background = { fg: "#D4DDD7" bg: "#0D1711" }
 $env.config.explore.command_bar_text = { fg: "#D4DDD7" }
@@ -111,6 +111,6 @@ $env.config.explore.title_bar_background = { bg: "#24342C" }
 $env.config.explore.status = {
     info: { fg: "#709BC8" }
     success: { fg: "#0A100D" bg: "#80C28E" }
-    warn: { fg: "#0A100D" bg: "#EBC168" }
+    warn: { fg: "#0A100D" bg: "#F2BF4B" }
     error: { fg: "#0A100D" bg: "#E1837A" }
 }

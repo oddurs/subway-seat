@@ -2,46 +2,46 @@
 # Paris Carrelage
 
 [colors.primary]
-background = "#E4EDE8"
+background = "#DEF0E6"
 foreground = "#25352C"
 dim_foreground = "#4F675B"
 bright_foreground = "#18231D"
 
 [colors.cursor]
-text = "#E4EDE8"
+text = "#DEF0E6"
 cursor = "#754500"
 
 [colors.vi_mode_cursor]
-text = "#E4EDE8"
+text = "#DEF0E6"
 cursor = "#086142"
 
 [colors.search.matches]
 foreground = "#25352C"
-background = "#C9C5A2"
+background = "#C5C7A1"
 
 [colors.search.focused_match]
 foreground = "#18231D"
-background = "#AC9974"
+background = "#AA9A73"
 
 [colors.footer_bar]
 foreground = "#25352C"
-background = "#A3BFB0"
+background = "#96C4AC"
 
 [colors.hints.start]
-foreground = "#E4EDE8"
+foreground = "#DEF0E6"
 background = "#754500"
 
 [colors.hints.end]
-foreground = "#E4EDE8"
+foreground = "#DEF0E6"
 background = "#4F675B"
 
 [colors.line_indicator]
 foreground = "#45594F"
-background = "#BAD0C4"
+background = "#ACD5BF"
 
 [colors.selection]
 text = "#18231D"
-background = "#A3BFB0"
+background = "#96C4AC"
 
 [colors.normal]
 black = "#374940"
@@ -51,7 +51,7 @@ yellow = "#8A6700"
 blue = "#27629C"
 magenta = "#754500"
 cyan = "#086142"
-white = "#8EAD9D"
+white = "#84B09A"
 
 [colors.bright]
 black = "#627F70"
@@ -61,14 +61,14 @@ yellow = "#997300"
 blue = "#3E75AD"
 magenta = "#AE6800"
 cyan = "#3D8666"
-white = "#A3BFB0"
+white = "#96C4AC"
 
 [colors.dim]
-black = "#728179"
-red = "#AF6E6A"
-green = "#63A47A"
-yellow = "#A9954F"
-blue = "#6791B6"
-magenta = "#9B7E4F"
-cyan = "#53917A"
-white = "#ABC3B6"
+black = "#708278"
+red = "#AC6F69"
+green = "#61A579"
+yellow = "#A7964E"
+blue = "#6592B5"
+magenta = "#997F4E"
+cyan = "#51927A"
+white = "#A3C6B4"

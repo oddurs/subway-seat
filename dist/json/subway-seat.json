@@ -2568,99 +2568,99 @@
       "colors": {
         "crust": {
           "name": "Portland crust",
-          "hex": "#CDD5E4",
+          "hex": "#C5D5F3",
           "rgb": [
-            205,
+            197,
             213,
-            228
+            243
           ],
           "hsl": [
             219,
-            30,
-            85
+            66,
+            86
           ]
         },
         "mantle": {
           "name": "Portland mantle",
-          "hex": "#DAE0EB",
+          "hex": "#D4E0F6",
           "rgb": [
-            218,
+            212,
             224,
-            235
+            246
           ],
           "hsl": [
             219,
-            30,
-            89
+            65,
+            90
           ]
         },
         "base": {
           "name": "Portland base",
-          "hex": "#E5EAF4",
+          "hex": "#E0EAFE",
           "rgb": [
-            229,
+            224,
             234,
-            244
+            254
           ],
           "hsl": [
             220,
-            41,
-            93
+            94,
+            94
           ]
         },
         "surface0": {
           "name": "Portland surface0",
-          "hex": "#BFCAE1",
+          "hex": "#B6CAF3",
           "rgb": [
-            191,
+            182,
             202,
-            225
+            243
           ],
           "hsl": [
-            221,
-            36,
-            82
+            220,
+            72,
+            83
           ]
         },
         "surface1": {
           "name": "Portland surface1",
-          "hex": "#A9B7D4",
+          "hex": "#A1B7E5",
           "rgb": [
-            169,
+            161,
             183,
-            212
+            229
           ],
           "hsl": [
-            220,
-            33,
-            75
+            221,
+            57,
+            76
           ]
         },
         "surface2": {
           "name": "Portland surface2",
-          "hex": "#95A5C4",
+          "hex": "#8FA5D0",
           "rgb": [
-            149,
+            143,
             165,
-            196
+            208
           ],
           "hsl": [
             220,
-            28,
-            68
+            41,
+            69
           ]
         },
         "overlay0": {
           "name": "Portland overlay0",
-          "hex": "#8291AE",
+          "hex": "#7F91B4",
           "rgb": [
-            130,
+            127,
             145,
-            174
+            180
           ],
           "hsl": [
             220,
-            21,
+            26,
             60
           ]
         },
@@ -2978,7 +2978,7 @@
           "index": 7,
           "name": "white",
           "role": "surface2",
-          "hex": "#95A5C4"
+          "hex": "#8FA5D0"
         },
         {
           "index": 8,
@@ -3026,7 +3026,7 @@
           "index": 15,
           "name": "bright_white",
           "role": "surface1",
-          "hex": "#A9B7D4"
+          "hex": "#A1B7E5"
         }
       ],
       "diff": {
@@ -3230,30 +3230,30 @@
         },
         "yellow": {
           "name": "Harvest gold",
-          "hex": "#EBC168",
+          "hex": "#F2BF4B",
           "rgb": [
-            235,
-            193,
-            104
+            242,
+            191,
+            75
           ],
           "hsl": [
-            41,
-            77,
-            66
+            42,
+            87,
+            62
           ]
         },
         "yellow_hi": {
           "name": "Broadway yellow",
-          "hex": "#FBD380",
+          "hex": "#FFD273",
           "rgb": [
-            251,
-            211,
-            128
+            255,
+            210,
+            115
           ],
           "hsl": [
-            40,
-            94,
-            74
+            41,
+            100,
+            73
           ]
         },
         "orange": {
@@ -3434,7 +3434,7 @@
           "index": 3,
           "name": "yellow",
           "role": "yellow",
-          "hex": "#EBC168"
+          "hex": "#F2BF4B"
         },
         {
           "index": 4,
@@ -3482,7 +3482,7 @@
           "index": 11,
           "name": "bright_yellow",
           "role": "yellow_hi",
-          "hex": "#FBD380"
+          "hex": "#FFD273"
         },
         {
           "index": 12,
@@ -3516,8 +3516,8 @@
         "diff-del": "#432F2B",
         "diff-del-emph": "#5D3A35",
         "diff-del-dim": "#332824",
-        "diff-chg": "#363524",
-        "diff-chg-emph": "#4B452C"
+        "diff-chg": "#37341F",
+        "diff-chg-emph": "#4D4525"
       }
     },
     "catacombes": {
@@ -3710,30 +3710,30 @@
         },
         "yellow": {
           "name": "Harvest gold",
-          "hex": "#EBC168",
+          "hex": "#F2BF4B",
           "rgb": [
-            235,
-            193,
-            104
+            242,
+            191,
+            75
           ],
           "hsl": [
-            41,
-            77,
-            66
+            42,
+            87,
+            62
           ]
         },
         "yellow_hi": {
           "name": "Broadway yellow",
-          "hex": "#FBD380",
+          "hex": "#FFD273",
           "rgb": [
-            251,
-            211,
-            128
+            255,
+            210,
+            115
           ],
           "hsl": [
-            40,
-            94,
-            74
+            41,
+            100,
+            73
           ]
         },
         "orange": {
@@ -3914,7 +3914,7 @@
           "index": 3,
           "name": "yellow",
           "role": "yellow",
-          "hex": "#EBC168"
+          "hex": "#F2BF4B"
         },
         {
           "index": 4,
@@ -3962,7 +3962,7 @@
           "index": 11,
           "name": "bright_yellow",
           "role": "yellow_hi",
-          "hex": "#FBD380"
+          "hex": "#FFD273"
         },
         {
           "index": 12,
@@ -3996,8 +3996,8 @@
         "diff-del": "#3D2823",
         "diff-del-emph": "#58342F",
         "diff-del-dim": "#2B1F1C",
-        "diff-chg": "#2E2C1C",
-        "diff-chg-emph": "#443E25"
+        "diff-chg": "#2F2C17",
+        "diff-chg-emph": "#463E1D"
       }
     },
     "carrelage": {
@@ -4008,99 +4008,99 @@
       "colors": {
         "crust": {
           "name": "Carrelage crust",
-          "hex": "#CAD9D1",
+          "hex": "#BFDDCD",
           "rgb": [
-            202,
-            217,
-            209
+            191,
+            221,
+            205
           ],
           "hsl": [
             148,
-            16,
-            82
+            31,
+            81
           ]
         },
         "mantle": {
           "name": "Carrelage mantle",
-          "hex": "#D8E3DC",
+          "hex": "#D0E6D8",
           "rgb": [
-            216,
-            227,
-            220
+            208,
+            230,
+            216
           ],
           "hsl": [
             142,
-            16,
-            87
+            31,
+            86
           ]
         },
         "base": {
           "name": "Carrelage base",
-          "hex": "#E4EDE8",
+          "hex": "#DEF0E6",
           "rgb": [
-            228,
-            237,
-            232
+            222,
+            240,
+            230
           ],
           "hsl": [
             147,
-            20,
+            37,
             91
           ]
         },
         "surface0": {
           "name": "Carrelage surface0",
-          "hex": "#BAD0C4",
+          "hex": "#ACD5BF",
           "rgb": [
-            186,
-            208,
-            196
+            172,
+            213,
+            191
           ],
           "hsl": [
-            147,
-            19,
-            77
+            148,
+            33,
+            75
           ]
         },
         "surface1": {
           "name": "Carrelage surface1",
-          "hex": "#A3BFB0",
+          "hex": "#96C4AC",
           "rgb": [
-            163,
-            191,
-            176
+            150,
+            196,
+            172
           ],
           "hsl": [
-            148,
-            18,
-            69
+            149,
+            28,
+            68
           ]
         },
         "surface2": {
           "name": "Carrelage surface2",
-          "hex": "#8EAD9D",
+          "hex": "#84B09A",
           "rgb": [
-            142,
-            173,
-            157
+            132,
+            176,
+            154
           ],
           "hsl": [
-            149,
-            16,
-            62
+            150,
+            22,
+            60
           ]
         },
         "overlay0": {
           "name": "Carrelage overlay0",
-          "hex": "#7B9989",
+          "hex": "#769B87",
           "rgb": [
-            123,
-            153,
-            137
+            118,
+            155,
+            135
           ],
           "hsl": [
             148,
-            13,
+            16,
             54
           ]
         },
@@ -4418,7 +4418,7 @@
           "index": 7,
           "name": "white",
           "role": "surface2",
-          "hex": "#8EAD9D"
+          "hex": "#84B09A"
         },
         {
           "index": 8,
@@ -4466,7 +4466,7 @@
           "index": 15,
           "name": "bright_white",
           "role": "surface1",
-          "hex": "#A3BFB0"
+          "hex": "#96C4AC"
         }
       ],
       "diff": {

@@ -12,8 +12,8 @@
 /* Link hints */
 div.internal-vimium-hint-marker {
   padding: 1px 4px;
-  background: #EBC168;
-  border: 1px solid #86713F;
+  background: #F2BF4B;
+  border: 1px solid #8A702F;
   border-radius: 3px;
   box-shadow: 0 2px 6px rgba(10, 16, 13, 0.35);
 }
@@ -24,7 +24,7 @@ div.internal-vimium-hint-marker span {
 }
 
 div.internal-vimium-hint-marker > .matchingCharacter {
-  color: #7A683A;
+  color: #7E682C;
 }
 
 div > .vimiumActiveHintMarker span {
@@ -32,8 +32,8 @@ div > .vimiumActiveHintMarker span {
 }
 
 div.internal-vimium-input-hint {
-  background-color: rgba(235, 193, 104, 0.2);
-  border: 1px solid #EBC168;
+  background-color: rgba(242, 191, 75, 0.2);
+  border: 1px solid #F2BF4B;
 }
 
 div.internal-vimium-selected-input-hint {

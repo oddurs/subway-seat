@@ -10,16 +10,16 @@ ZSH_HIGHLIGHT_STYLES[comment]='fg=#708178,italic'
 
 # Commands
 ZSH_HIGHLIGHT_STYLES[reserved-word]='fg=#D0914F'
-ZSH_HIGHLIGHT_STYLES[alias]='fg=#EBC168'
-ZSH_HIGHLIGHT_STYLES[suffix-alias]='fg=#EBC168'
-ZSH_HIGHLIGHT_STYLES[global-alias]='fg=#EBC168'
-ZSH_HIGHLIGHT_STYLES[builtin]='fg=#EBC168'
-ZSH_HIGHLIGHT_STYLES[function]='fg=#EBC168'
-ZSH_HIGHLIGHT_STYLES[command]='fg=#EBC168'
-ZSH_HIGHLIGHT_STYLES[hashed-command]='fg=#EBC168'
-ZSH_HIGHLIGHT_STYLES[precommand]='fg=#EBC168,italic'
-ZSH_HIGHLIGHT_STYLES[autodirectory]='fg=#EBC168,italic'
-ZSH_HIGHLIGHT_STYLES[arg0]='fg=#EBC168'
+ZSH_HIGHLIGHT_STYLES[alias]='fg=#F2BF4B'
+ZSH_HIGHLIGHT_STYLES[suffix-alias]='fg=#F2BF4B'
+ZSH_HIGHLIGHT_STYLES[global-alias]='fg=#F2BF4B'
+ZSH_HIGHLIGHT_STYLES[builtin]='fg=#F2BF4B'
+ZSH_HIGHLIGHT_STYLES[function]='fg=#F2BF4B'
+ZSH_HIGHLIGHT_STYLES[command]='fg=#F2BF4B'
+ZSH_HIGHLIGHT_STYLES[hashed-command]='fg=#F2BF4B'
+ZSH_HIGHLIGHT_STYLES[precommand]='fg=#F2BF4B,italic'
+ZSH_HIGHLIGHT_STYLES[autodirectory]='fg=#F2BF4B,italic'
+ZSH_HIGHLIGHT_STYLES[arg0]='fg=#F2BF4B'
 
 # Separators and redirection
 ZSH_HIGHLIGHT_STYLES[commandseparator]='fg=#D0914F'
@@ -66,12 +66,12 @@ ZSH_HIGHLIGHT_STYLES[back-quoted-argument-delimiter]='fg=#CE96B4'
 
 # brackets and cursor highlighters (only used if enabled in ZSH_HIGHLIGHT_HIGHLIGHTERS)
 ZSH_HIGHLIGHT_STYLES[bracket-error]='fg=#E1837A,bold'
-ZSH_HIGHLIGHT_STYLES[bracket-level-1]='fg=#EBC168'
+ZSH_HIGHLIGHT_STYLES[bracket-level-1]='fg=#F2BF4B'
 ZSH_HIGHLIGHT_STYLES[bracket-level-2]='fg=#D0914F'
 ZSH_HIGHLIGHT_STYLES[bracket-level-3]='fg=#80C28E'
 ZSH_HIGHLIGHT_STYLES[bracket-level-4]='fg=#6CA087'
-ZSH_HIGHLIGHT_STYLES[cursor-matchingbracket]='fg=#FBD380,bold'
-ZSH_HIGHLIGHT_STYLES[cursor]='fg=#0A100D,bg=#EBC168'
+ZSH_HIGHLIGHT_STYLES[cursor-matchingbracket]='fg=#FFD273,bold'
+ZSH_HIGHLIGHT_STYLES[cursor]='fg=#0A100D,bg=#F2BF4B'
 
 # zsh-autosuggestions (fish's autosuggestion color)
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=#708178'
