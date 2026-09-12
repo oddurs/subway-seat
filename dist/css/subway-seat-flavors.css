@@ -454,41 +454,41 @@
   color-scheme: light;
 
   /* Ground */
-  --ss-crust: #CED5E3; /* Portland crust */
-  --ss-mantle: #D9E0EC; /* Portland mantle */
-  --ss-base: #E5EAF6; /* Portland base */
-  --ss-surface0: #C1CADC; /* Portland surface0 */
-  --ss-surface1: #ADB7CB; /* Portland surface1 */
-  --ss-surface2: #9BA5B8; /* Portland surface2 */
-  --ss-overlay0: #8A919F; /* Portland overlay0 */
-  --ss-overlay1: #727781; /* Portland overlay1 */
-  --ss-overlay2: #5D6168; /* Portland overlay2 */
+  --ss-crust: #CDD5E4; /* Portland crust */
+  --ss-mantle: #DAE0EB; /* Portland mantle */
+  --ss-base: #E5EAF4; /* Portland base */
+  --ss-surface0: #BFCAE1; /* Portland surface0 */
+  --ss-surface1: #A9B7D4; /* Portland surface1 */
+  --ss-surface2: #95A5C4; /* Portland surface2 */
+  --ss-overlay0: #8291AE; /* Portland overlay0 */
+  --ss-overlay1: #697794; /* Portland overlay1 */
+  --ss-overlay2: #556179; /* Portland overlay2 */
 
   /* Text */
-  --ss-subtext0: #515459; /* Portland subtext0 */
-  --ss-subtext1: #434548; /* Portland subtext1 */
-  --ss-text: #2F3033; /* Portland text */
-  --ss-text-hi: #1F2022; /* Portland text hi */
+  --ss-subtext0: #4A5469; /* Portland subtext0 */
+  --ss-subtext1: #3C4557; /* Portland subtext1 */
+  --ss-text: #293040; /* Portland text */
+  --ss-text-hi: #1B202B; /* Portland text hi */
 
   /* Accents */
   --ss-yellow: #896800; /* Harvest gold */
   --ss-yellow-hi: #977300; /* Broadway yellow */
-  --ss-orange: #9F591B; /* Burnt orange */
-  --ss-orange-hi: #AE672B; /* Sixth Avenue */
+  --ss-orange: #A45600; /* Burnt orange */
+  --ss-orange-hi: #B86100; /* Sixth Avenue */
   --ss-red: #A40005; /* Redbird */
-  --ss-red-hi: #CA2822; /* Redbird bright */
-  --ss-green: #357D41; /* Avocado */
-  --ss-green-hi: #398145; /* Avocado bright */
+  --ss-red-hi: #C92B23; /* Redbird bright */
+  --ss-green: #00822E; /* Avocado */
+  --ss-green-hi: #008730; /* Avocado bright */
   --ss-sage: #007376; /* Seafoam tile */
-  --ss-sage-hi: #008689; /* Seafoam bright */
+  --ss-sage-hi: #008688; /* Seafoam bright */
   --ss-denim: #0019A8; /* Faded denim */
-  --ss-denim-hi: #406BD0; /* Denim bright */
+  --ss-denim-hi: #4A6EBD; /* Denim bright */
   --ss-clay: #7660AB; /* Terracotta */
 
   /* Diff grounds: -add/-del/-chg for lines, -emph for changed words, -dim for faded diffs */
-  --ss-diff-add: #CADDCE;
-  --ss-diff-add-emph: #AECBB3;
-  --ss-diff-add-dim: #DFEAE1;
+  --ss-diff-add: #BDDEC9;
+  --ss-diff-add-emph: #99CDAB;
+  --ss-diff-add-dim: #D6EBDE;
   --ss-diff-del: #EDCCCD;
   --ss-diff-del-emph: #E2ADAF;
   --ss-diff-del-dim: #F4E0E1;
@@ -496,30 +496,30 @@
   --ss-diff-chg-emph: #D9CFAD;
 
   /* RGB triplets, for rgb(var(--ss-base-rgb) / 0.5) */
-  --ss-crust-rgb: 206 213 227;
-  --ss-mantle-rgb: 217 224 236;
-  --ss-base-rgb: 229 234 246;
-  --ss-surface0-rgb: 193 202 220;
-  --ss-surface1-rgb: 173 183 203;
-  --ss-surface2-rgb: 155 165 184;
-  --ss-overlay0-rgb: 138 145 159;
-  --ss-overlay1-rgb: 114 119 129;
-  --ss-overlay2-rgb: 93 97 104;
-  --ss-subtext0-rgb: 81 84 89;
-  --ss-subtext1-rgb: 67 69 72;
-  --ss-text-rgb: 47 48 51;
-  --ss-text-hi-rgb: 31 32 34;
+  --ss-crust-rgb: 205 213 228;
+  --ss-mantle-rgb: 218 224 235;
+  --ss-base-rgb: 229 234 244;
+  --ss-surface0-rgb: 191 202 225;
+  --ss-surface1-rgb: 169 183 212;
+  --ss-surface2-rgb: 149 165 196;
+  --ss-overlay0-rgb: 130 145 174;
+  --ss-overlay1-rgb: 105 119 148;
+  --ss-overlay2-rgb: 85 97 121;
+  --ss-subtext0-rgb: 74 84 105;
+  --ss-subtext1-rgb: 60 69 87;
+  --ss-text-rgb: 41 48 64;
+  --ss-text-hi-rgb: 27 32 43;
   --ss-yellow-rgb: 137 104 0;
   --ss-yellow-hi-rgb: 151 115 0;
-  --ss-orange-rgb: 159 89 27;
-  --ss-orange-hi-rgb: 174 103 43;
+  --ss-orange-rgb: 164 86 0;
+  --ss-orange-hi-rgb: 184 97 0;
   --ss-red-rgb: 164 0 5;
-  --ss-red-hi-rgb: 202 40 34;
-  --ss-green-rgb: 53 125 65;
-  --ss-green-hi-rgb: 57 129 69;
+  --ss-red-hi-rgb: 201 43 35;
+  --ss-green-rgb: 0 130 46;
+  --ss-green-hi-rgb: 0 135 48;
   --ss-sage-rgb: 0 115 118;
-  --ss-sage-hi-rgb: 0 134 137;
+  --ss-sage-hi-rgb: 0 134 136;
   --ss-denim-rgb: 0 25 168;
-  --ss-denim-hi-rgb: 64 107 208;
+  --ss-denim-hi-rgb: 74 110 189;
   --ss-clay-rgb: 118 96 171;
 }

@@ -1,54 +1,54 @@
 {
   "name": "London Portland",
   "type": "custom",
-  "Background": "#E5EAF6",
-  "Foreground": "#2F3033",
-  "LightBlue": "#434548",
-  "AccentBlue": "#9F591B",
+  "Background": "#E5EAF4",
+  "Foreground": "#293040",
+  "LightBlue": "#3C4557",
+  "AccentBlue": "#A45600",
   "AccentPurple": "#7660AB",
   "AccentCyan": "#007376",
-  "AccentGreen": "#357D41",
+  "AccentGreen": "#00822E",
   "AccentYellow": "#896800",
-  "AccentRed": "#CA2822",
-  "DiffAdded": "#CADDCE",
+  "AccentRed": "#C92B23",
+  "DiffAdded": "#BDDEC9",
   "DiffRemoved": "#EDCCCD",
-  "Comment": "#727781",
-  "Gray": "#5D6168",
-  "DarkGray": "#9BA5B8",
+  "Comment": "#697794",
+  "Gray": "#556179",
+  "DarkGray": "#95A5C4",
   "GradientColors": [
     "#A40005",
-    "#9F591B",
+    "#A45600",
     "#896800",
-    "#357D41"
+    "#00822E"
   ],
   "text": {
-    "primary": "#2F3033",
-    "secondary": "#5D6168",
+    "primary": "#293040",
+    "secondary": "#556179",
     "accent": "#7660AB",
-    "response": "#2F3033"
+    "response": "#293040"
   },
   "background": {
-    "primary": "#E5EAF6",
+    "primary": "#E5EAF4",
     "diff": {
-      "added": "#CADDCE",
+      "added": "#BDDEC9",
       "removed": "#EDCCCD"
     }
   },
   "ui": {
-    "comment": "#727781",
+    "comment": "#697794",
     "symbol": "#896800",
-    "active": "#9F591B",
+    "active": "#A45600",
     "focus": "#896800",
     "gradient": [
       "#A40005",
-      "#9F591B",
+      "#A45600",
       "#896800",
-      "#357D41"
+      "#00822E"
     ]
   },
   "status": {
-    "success": "#357D41",
+    "success": "#00822E",
     "warning": "#896800",
-    "error": "#CA2822"
+    "error": "#C92B23"
   }
 }

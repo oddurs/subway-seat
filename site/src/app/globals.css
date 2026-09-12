@@ -52,8 +52,8 @@
     --ss-shadow-soft: rgba(110, 97, 86, 0.12);
   }
   html[data-flavor="portland"] {
-    --ss-shadow: rgba(99, 100, 102, 0.2);
-    --ss-shadow-soft: rgba(99, 100, 102, 0.12);
+    --ss-shadow: rgba(94, 100, 112, 0.2);
+    --ss-shadow-soft: rgba(94, 100, 112, 0.12);
   }
 
   /* Content written for one flavor or one family; the rest is hidden. */

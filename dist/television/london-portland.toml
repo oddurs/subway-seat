@@ -1,26 +1,26 @@
 # Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
 # London Portland for television.
 # general
-background = '#E5EAF6'
-border_fg = '#9BA5B8'
-text_fg = '#2F3033'
-dimmed_text_fg = '#727781'
+background = '#E5EAF4'
+border_fg = '#95A5C4'
+text_fg = '#293040'
+dimmed_text_fg = '#697794'
 # input
-input_text_fg = '#2F3033'
-result_count_fg = '#727781'
+input_text_fg = '#293040'
+result_count_fg = '#697794'
 # results
-result_name_fg = '#434548'
-result_line_number_fg = '#727781'
-result_value_fg = '#2F3033'
-selection_bg = '#C1CADC'
-selection_fg = '#1F2022'
+result_name_fg = '#3C4557'
+result_line_number_fg = '#697794'
+result_value_fg = '#293040'
+selection_bg = '#BFCAE1'
+selection_fg = '#1B202B'
 match_fg = '#896800'
 # preview
-preview_title_fg = '#434548'
+preview_title_fg = '#3C4557'
 # modes
-channel_mode_fg = '#E5EAF6'
-channel_mode_bg = '#9F591B'
-remote_control_mode_fg = '#E5EAF6'
+channel_mode_fg = '#E5EAF4'
+channel_mode_bg = '#A45600'
+remote_control_mode_fg = '#E5EAF4'
 remote_control_mode_bg = '#896800'
-action_picker_mode_fg = '#E5EAF6'
+action_picker_mode_fg = '#E5EAF4'
 action_picker_mode_bg = '#007376'

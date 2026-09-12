@@ -11,149 +11,149 @@ scheme:
   description: "Holden's Portland stone. Links are the exact Corporate Blue."
 variant: "light"
 palette:
-  black: "#2F3033"
-  black-bright: "#434548"
-  black-dim: "#1F2022"
-  white: "#E5EAF6"
+  black: "#293040"
+  black-bright: "#3C4557"
+  black-dim: "#1B202B"
+  white: "#E5EAF4"
   white-bright: "#F2F4FA"
-  white-dim: "#D9E0EC"
-  gray: "#727781"
-  gray-bright: "#8A919F"
-  gray-dim: "#5D6168"
+  white-dim: "#DAE0EB"
+  gray: "#697794"
+  gray-bright: "#8291AE"
+  gray-dim: "#556179"
   red: "#A40005"
-  red-bright: "#CA2822"
-  green: "#357D41"
-  green-bright: "#398145"
+  red-bright: "#C92B23"
+  green: "#00822E"
+  green-bright: "#008730"
   yellow: "#896800"
   yellow-bright: "#977300"
   blue: "#0019A8"
-  blue-bright: "#406BD0"
-  magenta: "#9F591B"
-  magenta-bright: "#AE672B"
+  blue-bright: "#4A6EBD"
+  magenta: "#A45600"
+  magenta-bright: "#B86100"
   cyan: "#007376"
-  cyan-bright: "#008689"
-  orange: "#9F591B"
-  orange-bright: "#AE672B"
+  cyan-bright: "#008688"
+  orange: "#A45600"
+  orange-bright: "#B86100"
   brown: "#7660AB"
 syntax:
-  comment: "#727781" # comment
-  punctuation.definition.comment: "#727781" # comment
-  constant: "#CA2822" # constant
-  constant.numeric: "#CA2822" # number
-  constant.language: "#CA2822" # boolean
+  comment: "#697794" # comment
+  punctuation.definition.comment: "#697794" # comment
+  constant: "#C92B23" # constant
+  constant.numeric: "#C92B23" # number
+  constant.language: "#C92B23" # boolean
   constant.character: "#7660AB" # string.escape
-  entity.name: "#2F3033" # variable
+  entity.name: "#293040" # variable
   entity.name.function: "#896800" # function
   entity.name.class: "#007376" # type
   entity.name.type: "#007376" # type
-  entity.name.namespace: "#515459" # namespace
-  entity.name.tag: "#9F591B" # tag
+  entity.name.namespace: "#4A5469" # namespace
+  entity.name.tag: "#A45600" # tag
   entity.name.label: "#7660AB" # decorator
   entity.name.section: "#896800" # heading
-  entity.other: "#2F3033" # variable
+  entity.other: "#293040" # variable
   entity.other.attribute-name: "#896800" # attribute
   entity.other.inherited-class: "#007376" # type
   invalid: "#A40005" # invalid
   invalid.deprecated: "#7660AB" # clay
-  keyword: "#9F591B" # keyword
-  keyword.operator: "#5D6168" # operator
-  markup: "#2F3033" # text
-  markup.bold: "#1F2022" # strong
-  markup.italic: "#2F3033" # emphasis
+  keyword: "#A45600" # keyword
+  keyword.operator: "#556179" # operator
+  markup: "#293040" # text
+  markup.bold: "#1B202B" # strong
+  markup.italic: "#293040" # emphasis
   markup.heading: "#896800" # heading
   markup.link: "#0019A8" # link
-  markup.list: "#9F591B" # keyword
-  markup.quote: "#515459" # quote
-  markup.raw: "#357D41" # code
-  markup.inserted: "#357D41" # green
-  markup.deleted: "#CA2822" # red_hi
+  markup.list: "#A45600" # keyword
+  markup.quote: "#4A5469" # quote
+  markup.raw: "#00822E" # code
+  markup.inserted: "#00822E" # green
+  markup.deleted: "#C92B23" # red_hi
   markup.changed: "#896800" # yellow
-  meta: "#2F3033" # text
+  meta: "#293040" # text
   meta.annotation: "#7660AB" # decorator
-  punctuation: "#5D6168" # punctuation
-  punctuation.definition.string: "#357D41" # string
-  punctuation.section: "#5D6168" # punctuation
-  storage: "#9F591B" # storage
-  string: "#357D41" # string
+  punctuation: "#556179" # punctuation
+  punctuation.definition.string: "#00822E" # string
+  punctuation.section: "#556179" # punctuation
+  storage: "#A45600" # storage
+  string: "#00822E" # string
   string.regexp: "#7660AB" # regexp
   string.interpolated: "#7660AB" # string.escape
   support: "#896800" # function
   support.class: "#007376" # type
   support.type: "#007376" # type.builtin
-  support.constant: "#CA2822" # constant
+  support.constant: "#C92B23" # constant
   support.function.builtin: "#896800" # function.builtin
-  support.variable: "#CA2822" # variable.builtin
-  variable: "#2F3033" # variable
-  variable.language: "#CA2822" # variable.builtin
-  variable.parameter: "#434548" # parameter
-  variable.other.property: "#434548" # property
+  support.variable: "#C92B23" # variable.builtin
+  variable: "#293040" # variable
+  variable.language: "#C92B23" # variable.builtin
+  variable.parameter: "#3C4557" # parameter
+  variable.other.property: "#3C4557" # property
 ui:
   accent:
-    normal: "#9F591B"
+    normal: "#A45600"
   border:
-    normal: "#ADB7CB"
+    normal: "#A9B7D4"
   chrome:
     background:
-      normal: "#D9E0EC"
-      dark: "#CED5E3"
+      normal: "#DAE0EB"
+      dark: "#CDD5E4"
       light: "#F2F4FA"
     foreground:
-      normal: "#434548"
-      dark: "#515459"
-      light: "#2F3033"
+      normal: "#3C4557"
+      dark: "#4A5469"
+      light: "#293040"
   cursor:
     normal:
-      background: "#9F591B"
-      foreground: "#E5EAF6"
+      background: "#A45600"
+      foreground: "#E5EAF4"
     muted:
-      background: "#727781"
-      foreground: "#E5EAF6"
+      background: "#697794"
+      foreground: "#E5EAF4"
   deprecated: "#7660AB"
   global:
     background:
-      normal: "#E5EAF6"
-      dark: "#D9E0EC"
+      normal: "#E5EAF4"
+      dark: "#DAE0EB"
       light: "#F2F4FA"
     foreground:
-      normal: "#2F3033"
-      dark: "#434548"
-      light: "#1F2022"
+      normal: "#293040"
+      dark: "#3C4557"
+      light: "#1B202B"
   gutter:
-    background: "#E5EAF6"
-    foreground: "#727781"
+    background: "#E5EAF4"
+    foreground: "#697794"
   highlight:
     button:
-      background: "#C1CADC"
-      foreground: "#1F2022"
+      background: "#BFCAE1"
+      foreground: "#1B202B"
     line:
-      background: "#D9E0EC"
-      foreground: "#9F591B"
+      background: "#DAE0EB"
+      foreground: "#A45600"
     search:
-      background: "#C9C3AC"
-      foreground: "#1F2022"
+      background: "#C9C3AB"
+      foreground: "#1B202B"
     text:
-      background: "#C1CADC"
-      foreground: "#2F3033"
-      active-background: "#ADB7CB"
-      active-foreground: "#1F2022"
+      background: "#BFCAE1"
+      foreground: "#293040"
+      active-background: "#A9B7D4"
+      active-foreground: "#1B202B"
   indent-guide:
-    background: "#C1CADC"
-    active-background: "#8A919F"
+    background: "#BFCAE1"
+    active-background: "#8291AE"
   link:
     normal:
-      background: "#E5EAF6"
+      background: "#E5EAF4"
       foreground: "#0019A8"
   selection:
-    background: "#ADB7CB"
-    foreground: "#1F2022"
-    inactive-background: "#C1CADC"
+    background: "#A9B7D4"
+    foreground: "#1B202B"
+    inactive-background: "#BFCAE1"
   status:
     error: "#A40005"
     info: "#0019A8"
-    success: "#357D41"
+    success: "#00822E"
     warning: "#896800"
   tooltip:
     background: "#F2F4FA"
-    foreground: "#2F3033"
+    foreground: "#293040"
   whitespace:
-    foreground: "#8A919F"
+    foreground: "#8291AE"

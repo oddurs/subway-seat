@@ -1,68 +1,110 @@
 import * as stylex from "@stylexjs/stylex";
+import { art } from "@/theme/art.stylex";
 import { color } from "@/theme/tokens.stylex";
 
 /**
- * A Beck diagram. Harry Beck's 1933 map threw away geography and kept only
- * order and connection: horizontals, verticals, 45° diagonals, even spacing,
- * and a ring at every interchange. It's the same instinct as the supergraphic
- * on the New York side — a wall-sized mark made of one repeated rule — reached
- * from the opposite direction. The supergraphic is a curve painted to please;
- * this is a straight line drawn to inform, and both end up as pure geometry.
+ * A Beck diagram. Harry Beck threw away geography in 1933 and kept only order
+ * and connection: horizontals, verticals, 45° diagonals, even line spacing, a
+ * tick at every stop and a ring at every interchange. It is the same instinct
+ * as the supergraphic on the New York side — a wall-sized mark made of one
+ * repeated rule — arrived at from the other direction.
+ *
+ * The rules it follows, which is what makes it read as a network rather than
+ * as five lines that happen to cross:
+ *
+ *   · lines run parallel in a trunk at one fixed spacing, then fan out
+ *   · every corner is 45°, and every diagonal is a true diagonal
+ *   · where lines meet, a ring; where one line stops, a tick
+ *   · several platforms under one name are one interchange, tied with a bar
  */
+const GAP = 30; // trunk spacing
+const TOP = 96; // the first trunk line
+const W = 12; // line weight
+const X_INT = 168; // the interchange, where the vertical crosses the trunk
+const y = (n: number) => TOP + n * GAP;
+
+/** A 45° drop from (x, y) down to `to`, then straight on to the right edge. */
+const fan = (x: number, from: number, to: number) =>
+  `M -20 ${from} H ${x} L ${x + (to - from)} ${to} H 580`;
+
+// Where each line leaves the right edge. Beck's spacing rule holds after the
+// fan too, so no two lines end up close enough to read as one.
+const OUT = { red: y(0), yellow: 218, green: 284, denim: 328, orange: 372 };
+
 const LINES: { d: string; stroke: string }[] = [
-  { d: "M -20 96 L 150 96 L 246 192 L 560 192", stroke: color.red },
-  { d: "M -20 148 L 190 148 L 286 244 L 560 244", stroke: color.yellow },
-  { d: "M 60 -20 L 60 200 L 148 288 L 560 288", stroke: color.denim },
-  { d: "M -20 336 L 236 336 L 332 240 L 560 240", stroke: color.green },
-  { d: "M 112 -20 L 112 156 L 300 344 L 560 344", stroke: color.orange },
+  // Trunk: three lines in from the left, fanning at different points.
+  { d: `M -20 ${y(0)} H 580`, stroke: art.red },
+  { d: fan(300, y(1), OUT.yellow), stroke: art.yellow },
+  { d: fan(246, y(2), OUT.green), stroke: art.green },
+  // A vertical down the left, turning 45° out under the trunk.
+  {
+    d: `M ${X_INT} -20 V 250 L ${X_INT + (OUT.denim - 250)} ${OUT.denim} H 580`,
+    stroke: art.denim,
+  },
+  // One more in from under the bottom edge, rising to meet the fan.
+  { d: `M -20 438 H 118 L ${118 + (438 - OUT.orange)} ${OUT.orange} H 580`, stroke: art.orange },
 ];
 
-// Interchanges sit where lines meet; plain stops are ticks on one line.
-const INTERCHANGES: [number, number][] = [
-  [150, 96],
-  [286, 244],
-  [148, 288],
-];
-const STOPS: [number, number, number, number][] = [
-  [100, 96, 100, 74],
-  [200, 192, 200, 170],
-  [340, 192, 340, 170],
-  [240, 288, 240, 310],
-  [400, 288, 400, 310],
+/** Three platforms under one name: a ring on each line, tied with a bar. */
+const INTERCHANGE = [y(0), y(1), y(2)];
+
+/** Single-line stops: a tick across the line. */
+const STOPS: { x: number; y: number; v?: boolean }[] = [
+  { x: 84, y: y(0) },
+  { x: 380, y: y(0) },
+  { x: 470, y: y(0) },
+  { x: 250, y: y(1) },
+  { x: 470, y: OUT.yellow },
+  { x: 196, y: y(2) },
+  { x: 470, y: OUT.green },
+  { x: 500, y: OUT.denim },
+  { x: 430, y: OUT.orange },
+  { x: X_INT, y: 62, v: true },
 ];
 
 export function Diagram() {
   return (
-    <svg viewBox="0 0 520 400" aria-hidden {...stylex.props(styles.svg)}>
+    <svg viewBox="0 0 540 400" aria-hidden {...stylex.props(styles.svg)}>
       {LINES.map((l) => (
         <path
           key={l.d}
           d={l.d}
           fill="none"
-          strokeWidth={13}
+          strokeWidth={W}
           strokeLinecap="butt"
           strokeLinejoin="round"
           style={{ stroke: l.stroke }}
         />
       ))}
-      {STOPS.map(([x1, y1, x2, y2]) => (
+
+      {STOPS.map((s) => (
         <line
-          key={`${x1}-${y1}`}
-          x1={x1}
-          y1={y1}
-          x2={x2}
-          y2={y2}
-          strokeWidth={4}
+          key={`${s.x}-${s.y}`}
+          x1={s.v ? s.x - 11 : s.x}
+          y1={s.v ? s.y : s.y - 11}
+          x2={s.v ? s.x + 11 : s.x}
+          y2={s.v ? s.y : s.y + 11}
+          strokeWidth={3.5}
           style={{ stroke: color.textHi }}
         />
       ))}
-      {INTERCHANGES.map(([cx, cy]) => (
+
+      {/* The tie bar sits under the rings, so they read as one station. */}
+      <line
+        x1={X_INT}
+        y1={INTERCHANGE[0]}
+        x2={X_INT}
+        y2={INTERCHANGE[INTERCHANGE.length - 1]}
+        strokeWidth={5}
+        style={{ stroke: color.textHi }}
+      />
+      {INTERCHANGE.map((cy) => (
         <circle
-          key={`${cx}-${cy}`}
-          cx={cx}
+          key={cy}
+          cx={X_INT}
           cy={cy}
-          r={9.5}
-          strokeWidth={4.5}
+          r={8.5}
+          strokeWidth={4}
           style={{ stroke: color.textHi, fill: color.base }}
         />
       ))}

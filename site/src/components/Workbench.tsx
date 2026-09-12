@@ -398,7 +398,7 @@ const s = stylex.create({
   window: {
     margin: 0,
     overflow: "hidden",
-    fontFamily: font.sans,
+    fontFamily: font.ui,
     fontSize: 13,
     color: "var(--vsc-editor-foreground)",
     backgroundColor: "var(--vsc-editor-background)",

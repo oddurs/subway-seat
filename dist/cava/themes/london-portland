@@ -2,11 +2,11 @@
 # London Portland for cava: gradient from the bottom of the screen to the top.
 [color]
 gradient = 1
-gradient_color_1 = '#357D41'
-gradient_color_2 = '#597425'
-gradient_color_3 = '#7D6B09'
-gradient_color_4 = '#8F6408'
-gradient_color_5 = '#995D13'
-gradient_color_6 = '#A04C18'
-gradient_color_7 = '#A2260E'
+gradient_color_1 = '#00822E'
+gradient_color_2 = '#3B771A'
+gradient_color_3 = '#756C07'
+gradient_color_4 = '#916300'
+gradient_color_5 = '#9C5B00'
+gradient_color_6 = '#A44A01'
+gradient_color_7 = '#A42503'
 gradient_color_8 = '#A40005'

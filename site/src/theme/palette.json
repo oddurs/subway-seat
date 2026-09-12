@@ -244,6 +244,15 @@
         "denimHi": "#9DB6C6",
         "clay": "#E0956C"
       },
+      "art": {
+        "red": "#E05C45",
+        "orange": "#EC7F31",
+        "yellow": "#F3BF45",
+        "green": "#ADB956",
+        "sage": "#86AD95",
+        "denim": "#7F9BAE",
+        "clay": "#E0956C"
+      },
       "ansi": [
         "surface1",
         "red",
@@ -296,6 +305,15 @@
         "sageHi": "#A5C9B0",
         "denim": "#7F9BAE",
         "denimHi": "#9DB6C6",
+        "clay": "#E0956C"
+      },
+      "art": {
+        "red": "#E05C45",
+        "orange": "#EC7F31",
+        "yellow": "#F3BF45",
+        "green": "#ADB956",
+        "sage": "#86AD95",
+        "denim": "#7F9BAE",
         "clay": "#E0956C"
       },
       "ansi": [
@@ -352,6 +370,15 @@
         "denimHi": "#517791",
         "clay": "#A65633"
       },
+      "art": {
+        "red": "#E05C45",
+        "orange": "#EC7F31",
+        "yellow": "#F3BF45",
+        "green": "#ADB956",
+        "sage": "#86AD95",
+        "denim": "#7F9BAE",
+        "clay": "#E0956C"
+      },
       "ansi": [
         "subtext1",
         "red",
@@ -404,6 +431,15 @@
         "sageHi": "#72D1D3",
         "denim": "#7595DA",
         "denimHi": "#8BB0FF",
+        "clay": "#AE9EDC"
+      },
+      "art": {
+        "red": "#DB6052",
+        "orange": "#DE8946",
+        "yellow": "#F2C03F",
+        "green": "#77C581",
+        "sage": "#54B4B5",
+        "denim": "#7595DA",
         "clay": "#AE9EDC"
       },
       "ansi": [
@@ -460,6 +496,15 @@
         "denimHi": "#8BB0FF",
         "clay": "#AE9EDC"
       },
+      "art": {
+        "red": "#DB6052",
+        "orange": "#DE8946",
+        "yellow": "#F2C03F",
+        "green": "#77C581",
+        "sage": "#54B4B5",
+        "denim": "#7595DA",
+        "clay": "#AE9EDC"
+      },
       "ansi": [
         "surface1",
         "red",
@@ -487,32 +532,41 @@
       "dark": false,
       "blurb": "Holden's Portland stone. Links are the exact Corporate Blue.",
       "colors": {
-        "crust": "#CED5E3",
-        "mantle": "#D9E0EC",
-        "base": "#E5EAF6",
-        "surface0": "#C1CADC",
-        "surface1": "#ADB7CB",
-        "surface2": "#9BA5B8",
-        "overlay0": "#8A919F",
-        "overlay1": "#727781",
-        "overlay2": "#5D6168",
-        "subtext0": "#515459",
-        "subtext1": "#434548",
-        "text": "#2F3033",
-        "textHi": "#1F2022",
+        "crust": "#CDD5E4",
+        "mantle": "#DAE0EB",
+        "base": "#E5EAF4",
+        "surface0": "#BFCAE1",
+        "surface1": "#A9B7D4",
+        "surface2": "#95A5C4",
+        "overlay0": "#8291AE",
+        "overlay1": "#697794",
+        "overlay2": "#556179",
+        "subtext0": "#4A5469",
+        "subtext1": "#3C4557",
+        "text": "#293040",
+        "textHi": "#1B202B",
         "yellow": "#896800",
         "yellowHi": "#977300",
-        "orange": "#9F591B",
-        "orangeHi": "#AE672B",
+        "orange": "#A45600",
+        "orangeHi": "#B86100",
         "red": "#A40005",
-        "redHi": "#CA2822",
-        "green": "#357D41",
-        "greenHi": "#398145",
+        "redHi": "#C92B23",
+        "green": "#00822E",
+        "greenHi": "#008730",
         "sage": "#007376",
-        "sageHi": "#008689",
+        "sageHi": "#008688",
         "denim": "#0019A8",
-        "denimHi": "#406BD0",
+        "denimHi": "#4A6EBD",
         "clay": "#7660AB"
+      },
+      "art": {
+        "red": "#DB6052",
+        "orange": "#DE8946",
+        "yellow": "#F2C03F",
+        "green": "#77C581",
+        "sage": "#54B4B5",
+        "denim": "#7595DA",
+        "clay": "#AE9EDC"
       },
       "ansi": [
         "subtext1",

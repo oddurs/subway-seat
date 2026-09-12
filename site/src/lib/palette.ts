@@ -12,6 +12,8 @@ export type Flavor = {
   dark: boolean;
   blurb: string;
   colors: Record<ColorName, string>;
+  /** Decorative colours for site graphics; see build.py's ART note. */
+  art: Record<string, string>;
   ansi: ColorName[];
 };
 

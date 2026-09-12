@@ -53,7 +53,8 @@ const styles = stylex.create({
     alignItems: "center",
     minHeight: 36,
     paddingInline: 14,
-    fontFamily: font.mono,
+    // A window's title bar is the OS's chrome, not the terminal's.
+    fontFamily: font.ui,
     fontSize: 12,
     color: color.overlay2,
     backgroundColor: color.mantle,

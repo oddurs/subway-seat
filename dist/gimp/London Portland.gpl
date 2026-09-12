@@ -3,29 +3,29 @@ Name: London Portland
 Columns: 13
 # Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
 # Holden's Portland stone. Links are the exact Corporate Blue.
-206 213 227	Portland crust
-217 224 236	Portland mantle
-229 234 246	Portland base
-193 202 220	Portland surface0
-173 183 203	Portland surface1
-155 165 184	Portland surface2
-138 145 159	Portland overlay0
-114 119 129	Portland overlay1
- 93  97 104	Portland overlay2
- 81  84  89	Portland subtext0
- 67  69  72	Portland subtext1
- 47  48  51	Portland text
- 31  32  34	Portland text hi
+205 213 228	Portland crust
+218 224 235	Portland mantle
+229 234 244	Portland base
+191 202 225	Portland surface0
+169 183 212	Portland surface1
+149 165 196	Portland surface2
+130 145 174	Portland overlay0
+105 119 148	Portland overlay1
+ 85  97 121	Portland overlay2
+ 74  84 105	Portland subtext0
+ 60  69  87	Portland subtext1
+ 41  48  64	Portland text
+ 27  32  43	Portland text hi
 137 104   0	Harvest gold (yellow)
 151 115   0	Broadway yellow (yellow_hi)
-159  89  27	Burnt orange (orange)
-174 103  43	Sixth Avenue (orange_hi)
+164  86   0	Burnt orange (orange)
+184  97   0	Sixth Avenue (orange_hi)
 164   0   5	Redbird (red)
-202  40  34	Redbird bright (red_hi)
- 53 125  65	Avocado (green)
- 57 129  69	Avocado bright (green_hi)
+201  43  35	Redbird bright (red_hi)
+  0 130  46	Avocado (green)
+  0 135  48	Avocado bright (green_hi)
   0 115 118	Seafoam tile (sage)
-  0 134 137	Seafoam bright (sage_hi)
+  0 134 136	Seafoam bright (sage_hi)
   0  25 168	Faded denim (denim)
- 64 107 208	Denim bright (denim_hi)
+ 74 110 189	Denim bright (denim_hi)
 118  96 171	Terracotta (clay)

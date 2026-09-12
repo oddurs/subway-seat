@@ -3,16 +3,16 @@
 
 themes {
     london-portland {
-        fg "#2F3033"
-        bg "#ADB7CB"
-        black "#D9E0EC"
-        red "#CA2822"
-        green "#9F591B" // active frame, selected tab
+        fg "#293040"
+        bg "#A9B7D4"
+        black "#DAE0EB"
+        red "#C92B23"
+        green "#A45600" // active frame, selected tab
         yellow "#896800"
         blue "#0019A8"
         magenta "#7660AB"
         orange "#896800" // frame in other modes
         cyan "#007376"
-        white "#1F2022"
+        white "#1B202B"
     }
 }

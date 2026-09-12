@@ -3,28 +3,28 @@
 
 export PROFILE_NAME="London Portland"
 
-export COLOR_01="#434548"           # Black (Host)
+export COLOR_01="#3C4557"           # Black (Host)
 export COLOR_02="#A40005"           # Red (Syntax string)
-export COLOR_03="#357D41"           # Green (Command)
+export COLOR_03="#00822E"           # Green (Command)
 export COLOR_04="#896800"           # Yellow (Command second)
 export COLOR_05="#0019A8"           # Blue (Path)
-export COLOR_06="#9F591B"           # Magenta (Syntax var)
+export COLOR_06="#A45600"           # Magenta (Syntax var)
 export COLOR_07="#007376"           # Cyan (Prompt)
-export COLOR_08="#9BA5B8"           # White
+export COLOR_08="#95A5C4"           # White
 
-export COLOR_09="#727781"           # Bright Black
-export COLOR_10="#CA2822"           # Bright Red (Command error)
-export COLOR_11="#398145"           # Bright Green (Exec)
+export COLOR_09="#697794"           # Bright Black
+export COLOR_10="#C92B23"           # Bright Red (Command error)
+export COLOR_11="#008730"           # Bright Green (Exec)
 export COLOR_12="#977300"           # Bright Yellow
-export COLOR_13="#406BD0"           # Bright Blue (Folder)
-export COLOR_14="#AE672B"           # Bright Magenta
-export COLOR_15="#008689"           # Bright Cyan
-export COLOR_16="#ADB7CB"           # Bright White
+export COLOR_13="#4A6EBD"           # Bright Blue (Folder)
+export COLOR_14="#B86100"           # Bright Magenta
+export COLOR_15="#008688"           # Bright Cyan
+export COLOR_16="#A9B7D4"           # Bright White
 
-export BACKGROUND_COLOR="#E5EAF6"   # Background
-export FOREGROUND_COLOR="#2F3033"   # Foreground (Text)
+export BACKGROUND_COLOR="#E5EAF4"   # Background
+export FOREGROUND_COLOR="#293040"   # Foreground (Text)
 
-export CURSOR_COLOR="#9F591B" # Cursor
+export CURSOR_COLOR="#A45600" # Cursor
 
 apply_theme() {
     if [[ -e "${GOGH_APPLY_SCRIPT}" ]]; then

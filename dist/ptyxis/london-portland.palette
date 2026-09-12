@@ -5,34 +5,34 @@ Name=London Portland
 
 # London Portland
 [Light]
-Foreground=#2F3033
-Background=#E5EAF6
-Cursor=#9F591B
-CursorForeground=#E5EAF6
-Color0=#434548
+Foreground=#293040
+Background=#E5EAF4
+Cursor=#A45600
+CursorForeground=#E5EAF4
+Color0=#3C4557
 Color1=#A40005
-Color2=#357D41
+Color2=#00822E
 Color3=#896800
 Color4=#0019A8
-Color5=#9F591B
+Color5=#A45600
 Color6=#007376
-Color7=#9BA5B8
-Color8=#727781
-Color9=#CA2822
-Color10=#398145
+Color7=#95A5C4
+Color8=#697794
+Color9=#C92B23
+Color10=#008730
 Color11=#977300
-Color12=#406BD0
-Color13=#AE672B
-Color14=#008689
-Color15=#ADB7CB
-TitlebarForeground=#2F3033
-TitlebarBackground=#D9E0EC
-BellForeground=#1F2022
-BellBackground=#C5C2B1
-SuperuserForeground=#1F2022
+Color12=#4A6EBD
+Color13=#B86100
+Color14=#008688
+Color15=#A9B7D4
+TitlebarForeground=#293040
+TitlebarBackground=#DAE0EB
+BellForeground=#1B202B
+BellBackground=#C6C2B0
+SuperuserForeground=#1B202B
 SuperuserBackground=#EDCCCD
-RemoteForeground=#1F2022
-RemoteBackground=#C5CDEB
+RemoteForeground=#1B202B
+RemoteBackground=#C5CDE9
 
 # Subway Seat
 [Dark]

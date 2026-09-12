@@ -7,25 +7,25 @@
     $esc = [char]27
 
     $colors = @{
-        Default                = "${esc}[38;2;47;48;51m"                     # text
+        Default                = "${esc}[38;2;41;48;64m"                     # text
         Command                = "${esc}[38;2;137;104;0m"                    # yellow
         Parameter              = "${esc}[38;2;0;115;118m"                    # sage
-        String                 = "${esc}[38;2;53;125;65m"                    # green
-        Operator               = "${esc}[38;2;159;89;27m"                    # orange
+        String                 = "${esc}[38;2;0;130;46m"                     # green
+        Operator               = "${esc}[38;2;164;86;0m"                     # orange
         Variable               = "${esc}[38;2;118;96;171m"                   # clay
-        Member                 = "${esc}[38;2;67;69;72m"                     # subtext1
-        Number                 = "${esc}[38;2;202;40;34m"                    # red_hi
+        Member                 = "${esc}[38;2;60;69;87m"                     # subtext1
+        Number                 = "${esc}[38;2;201;43;35m"                    # red_hi
         Type                   = "${esc}[38;2;0;115;118m"                    # sage
-        Keyword                = "${esc}[38;2;159;89;27m"                    # orange
-        Comment                = "${esc}[3;38;2;114;119;129m"                # overlay1, italic
-        Error                  = "${esc}[38;2;202;40;34m"                    # red_hi
+        Keyword                = "${esc}[38;2;164;86;0m"                     # orange
+        Comment                = "${esc}[3;38;2;105;119;148m"                # overlay1, italic
+        Error                  = "${esc}[38;2;201;43;35m"                    # red_hi
         Emphasis               = "${esc}[1;38;2;137;104;0m"                  # yellow, bold: search matches
-        Selection              = "${esc}[1;38;2;31;32;34;48;2;173;183;203m"  # text_hi on the selection ground
-        ContinuationPrompt     = "${esc}[38;2;114;119;129m"                  # overlay1
-        InlinePrediction       = "${esc}[38;2;138;145;159m"                  # overlay0, like fish autosuggestions
-        ListPrediction         = "${esc}[38;2;159;89;27m"                    # orange: the > marker and source
-        ListPredictionSelected = "${esc}[48;2;173;183;203m"                  # surface1 ground
-        ListPredictionTooltip  = "${esc}[3;38;2;114;119;129m"                # overlay1, italic
+        Selection              = "${esc}[1;38;2;27;32;43;48;2;169;183;212m"  # text_hi on the selection ground
+        ContinuationPrompt     = "${esc}[38;2;105;119;148m"                  # overlay1
+        InlinePrediction       = "${esc}[38;2;130;145;174m"                  # overlay0, like fish autosuggestions
+        ListPrediction         = "${esc}[38;2;164;86;0m"                     # orange: the > marker and source
+        ListPredictionSelected = "${esc}[48;2;169;183;212m"                  # surface1 ground
+        ListPredictionTooltip  = "${esc}[3;38;2;105;119;148m"                # overlay1, italic
     }
 
     if (Get-Command Set-PSReadLineOption -ErrorAction Ignore) {
@@ -43,13 +43,13 @@
             FormatAccent           = "${esc}[1;38;2;137;104;0m"
             TableHeader            = "${esc}[1;38;2;137;104;0m"
             CustomTableHeaderLabel = "${esc}[1;3;38;2;137;104;0m"
-            ErrorAccent            = "${esc}[1;38;2;159;89;27m"
-            Error                  = "${esc}[1;38;2;202;40;34m"
+            ErrorAccent            = "${esc}[1;38;2;164;86;0m"
+            Error                  = "${esc}[1;38;2;201;43;35m"
             Warning                = "${esc}[1;38;2;137;104;0m"
             Verbose                = "${esc}[38;2;0;25;168m"
             Debug                  = "${esc}[38;2;0;115;118m"
-            FeedbackName           = "${esc}[38;2;159;89;27m"
-            FeedbackText           = "${esc}[38;2;67;69;72m"
+            FeedbackName           = "${esc}[38;2;164;86;0m"
+            FeedbackText           = "${esc}[38;2;60;69;87m"
             FeedbackAction         = "${esc}[38;2;137;104;0m"
         }
         foreach ($key in $formatting.Keys) {
@@ -60,8 +60,8 @@
         if ($PSStyle.PSObject.Properties['FileInfo']) {
             $PSStyle.FileInfo.Directory = "${esc}[1;38;2;137;104;0m"
             $PSStyle.FileInfo.SymbolicLink = "${esc}[38;2;0;115;118m"
-            $PSStyle.FileInfo.Executable = "${esc}[1;38;2;53;125;65m"
-            foreach ($ext in '.zip', '.tgz', '.gz', '.tar', '.nupkg', '.cab', '.7z') { $PSStyle.FileInfo.Extension[$ext] = "${esc}[38;2;202;40;34m" }
+            $PSStyle.FileInfo.Executable = "${esc}[1;38;2;0;130;46m"
+            foreach ($ext in '.zip', '.tgz', '.gz', '.tar', '.nupkg', '.cab', '.7z') { $PSStyle.FileInfo.Extension[$ext] = "${esc}[38;2;201;43;35m" }
             foreach ($ext in '.ps1', '.psd1', '.psm1', '.ps1xml') { $PSStyle.FileInfo.Extension[$ext] = "${esc}[38;2;0;115;118m" }
         }
     }

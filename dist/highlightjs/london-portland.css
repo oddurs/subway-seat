@@ -5,40 +5,40 @@ pre code.hljs { display: block; overflow-x: auto; padding: 1em; }
 code.hljs { padding: 3px 5px; }
 .hljs-addition, .hljs-deletion { display: inline-block; width: 100%; } /* diff lines as full-width bands */
 
-.hljs { color: #2F3033; background: #E5EAF6; }
-.hljs::selection, .hljs ::selection { color: #1F2022; background: #ADB7CB; }
+.hljs { color: #293040; background: #E5EAF4; }
+.hljs::selection, .hljs ::selection { color: #1B202B; background: #A9B7D4; }
 
-.hljs-comment { color: #727781; font-style: italic; }
-.hljs-quote { color: #515459; font-style: italic; }
+.hljs-comment { color: #697794; font-style: italic; }
+.hljs-quote { color: #4A5469; font-style: italic; }
 .hljs-doctag, .hljs-meta, .hljs-meta .hljs-keyword { color: #7660AB; font-style: italic; }
-.hljs-meta .hljs-string { color: #357D41; }
-.hljs-keyword, .hljs-template-tag { color: #9F591B; }
-.hljs-operator { color: #5D6168; }
-.hljs-punctuation, .hljs-tag { color: #5D6168; }
+.hljs-meta .hljs-string { color: #00822E; }
+.hljs-keyword, .hljs-template-tag { color: #A45600; }
+.hljs-operator { color: #556179; }
+.hljs-punctuation, .hljs-tag { color: #556179; }
 .hljs-title, .hljs-title.function_, .hljs-title.function_.invoke__, .hljs-attr { color: #896800; }
 .hljs-built_in { color: #896800; font-style: italic; }
-.hljs-string, .hljs-code { color: #357D41; }
+.hljs-string, .hljs-code { color: #00822E; }
 .hljs-char.escape_ { color: #7660AB; }
 .hljs-regexp { color: #7660AB; }
-.hljs-number { color: #CA2822; }
-.hljs-literal, .hljs-symbol, .hljs-variable.constant_, .hljs-formula { color: #CA2822; }
+.hljs-number { color: #C92B23; }
+.hljs-literal, .hljs-symbol, .hljs-variable.constant_, .hljs-formula { color: #C92B23; }
 .hljs-title.class_, .hljs-title.class_.inherited__ { color: #007376; }
 .hljs-type { color: #007376; font-style: italic; }
-.hljs-variable, .hljs-template-variable, .hljs-subst { color: #2F3033; }
-.hljs-variable.language_ { color: #CA2822; font-style: italic; }
-.hljs-params { color: #434548; font-style: italic; }
-.hljs-property, .hljs-attribute { color: #434548; }
-.hljs-name, .hljs-selector-tag { color: #9F591B; }
+.hljs-variable, .hljs-template-variable, .hljs-subst { color: #293040; }
+.hljs-variable.language_ { color: #C92B23; font-style: italic; }
+.hljs-params { color: #3C4557; font-style: italic; }
+.hljs-property, .hljs-attribute { color: #3C4557; }
+.hljs-name, .hljs-selector-tag { color: #A45600; }
 .hljs-selector-id, .hljs-selector-class, .hljs-selector-attr, .hljs-selector-pseudo { color: #896800; font-style: italic; }
 .hljs-section { color: #896800; font-weight: bold; }
-.hljs-bullet { color: #9F591B; }
-.hljs-emphasis { color: #2F3033; font-style: italic; }
-.hljs-strong { color: #1F2022; font-weight: bold; }
+.hljs-bullet { color: #A45600; }
+.hljs-emphasis { color: #293040; font-style: italic; }
+.hljs-strong { color: #1B202B; font-weight: bold; }
 .hljs-link { color: #0019A8; text-decoration: underline; }
 
 /* Diffs: a diff line is one token, so it takes green or red_hi on its tint.
    highlight.js marks hunk headers as meta and file headers as comments. */
-.hljs-addition { color: #357D41; background: #CADDCE; }
-.hljs-deletion { color: #CA2822; background: #EDCCCD; }
+.hljs-addition { color: #00822E; background: #BDDEC9; }
+.hljs-deletion { color: #C92B23; background: #EDCCCD; }
 .language-diff .hljs-meta { color: #0019A8; font-style: normal; }
-.language-diff .hljs-comment { color: #1F2022; font-style: normal; font-weight: bold; }
+.language-diff .hljs-comment { color: #1B202B; font-style: normal; font-weight: bold; }

@@ -258,17 +258,21 @@ PORTLAND = Flavor(
     dark=False,
     blurb="Holden's Portland stone. Links are the exact Corporate Blue.",
     colors={
-        # As in Enamel, the ramp runs the other way from base.
-        "crust": "#CED5E3", "mantle": "#D9E0EC", "base": "#E5EAF6",
-        "surface0": "#C1CADC", "surface1": "#ADB7CB", "surface2": "#9BA5B8",
-        "overlay0": "#8A919F", "overlay1": "#727781", "overlay2": "#5D6168",
-        "subtext0": "#515459", "subtext1": "#434548", "text": "#2F3033", "text_hi": "#1F2022",
+        # As in Enamel, the ramp runs the other way from base — and so does the
+        # chroma. A dark flavor pulls color out of its text so pale type reads
+        # as white; a light flavor must do the opposite, because here the text
+        # is the inked end and the paper is the pale one. Holding chroma through
+        # subtext and text is what keeps the greys from going dead neutral.
+        "crust": "#CDD5E4", "mantle": "#DAE0EB", "base": "#E5EAF4",
+        "surface0": "#BFCAE1", "surface1": "#A9B7D4", "surface2": "#95A5C4",
+        "overlay0": "#8291AE", "overlay1": "#697794", "overlay2": "#556179",
+        "subtext0": "#4A5469", "subtext1": "#3C4557", "text": "#293040", "text_hi": "#1B202B",
         "yellow": "#896800", "yellow_hi": "#977300",
-        "orange": "#9F591B", "orange_hi": "#AE672B",
-        "red": "#A40005", "red_hi": "#CA2822",
-        "green": "#357D41", "green_hi": "#398145",
-        "sage": "#007376", "sage_hi": "#008689",
-        "denim": "#0019A8", "denim_hi": "#406BD0",   # Corporate Blue, exact
+        "orange": "#A45600", "orange_hi": "#B86100",
+        "red": "#A40005", "red_hi": "#C92B23",
+        "green": "#00822E", "green_hi": "#008730",
+        "sage": "#007376", "sage_hi": "#008688",
+        "denim": "#0019A8", "denim_hi": "#4A6EBD",   # Corporate Blue, exact
         "clay": "#7660AB",
     },
     ansi_roles=LIGHT_ANSI,

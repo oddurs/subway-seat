@@ -2,12 +2,12 @@
 
 [Appearance]
 ColorScheme=london-portland
-FocusBorderColor=159,89,27
-TabActivityColor=159,89,27
+FocusBorderColor=164,86,0
+TabActivityColor=164,86,0
 
 [Cursor Options]
-CustomCursorColor=159,89,27
-CustomCursorTextColor=229,234,246
+CustomCursorColor=164,86,0
+CustomCursorTextColor=229,234,244
 UseCustomCursorColor=true
 
 [General]

@@ -1,31 +1,31 @@
 # Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
 # London Portland for matplotlib. Colors are hex without the leading #, as rc files expect.
-figure.facecolor: E5EAF6
-figure.edgecolor: E5EAF6
-savefig.facecolor: E5EAF6
-savefig.edgecolor: E5EAF6
-axes.facecolor: E5EAF6
-axes.edgecolor: 8A919F
-axes.labelcolor: 434548
-axes.titlecolor: 1F2022
-axes.prop_cycle: cycler('color', ['9F591B', '007376', '896800', '0019A8', 'CA2822', '357D41', '7660AB'])
-text.color: 2F3033
-xtick.color: 727781
-ytick.color: 727781
-xtick.labelcolor: 515459
-ytick.labelcolor: 515459
+figure.facecolor: E5EAF4
+figure.edgecolor: E5EAF4
+savefig.facecolor: E5EAF4
+savefig.edgecolor: E5EAF4
+axes.facecolor: E5EAF4
+axes.edgecolor: 8291AE
+axes.labelcolor: 3C4557
+axes.titlecolor: 1B202B
+axes.prop_cycle: cycler('color', ['A45600', '007376', '896800', '0019A8', 'C92B23', '00822E', '7660AB'])
+text.color: 293040
+xtick.color: 697794
+ytick.color: 697794
+xtick.labelcolor: 4A5469
+ytick.labelcolor: 4A5469
 grid.color: D2D7E2
 legend.facecolor: F2F4FA
-legend.edgecolor: D6D8DE
-patch.facecolor: 9F591B
-patch.edgecolor: E5EAF6
-hatch.color: 515459
-boxplot.boxprops.color: 434548
-boxplot.whiskerprops.color: 434548
-boxplot.capprops.color: 434548
-boxplot.flierprops.color: 434548
-boxplot.flierprops.markeredgecolor: 434548
-boxplot.medianprops.color: 9F591B
+legend.edgecolor: D6D8E0
+patch.facecolor: A45600
+patch.edgecolor: E5EAF4
+hatch.color: 4A5469
+boxplot.boxprops.color: 3C4557
+boxplot.whiskerprops.color: 3C4557
+boxplot.capprops.color: 3C4557
+boxplot.flierprops.color: 3C4557
+boxplot.flierprops.markeredgecolor: 3C4557
+boxplot.medianprops.color: A45600
 boxplot.meanprops.color: 896800
 boxplot.meanprops.markerfacecolor: 896800
 boxplot.meanprops.markeredgecolor: 896800

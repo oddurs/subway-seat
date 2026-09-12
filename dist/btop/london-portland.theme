@@ -2,95 +2,95 @@
 # London Portland for btop.
 
 # Main background, empty for terminal default
-theme[main_bg]="#E5EAF6"
+theme[main_bg]="#E5EAF4"
 
 # Main text color
-theme[main_fg]="#2F3033"
+theme[main_fg]="#293040"
 
 # Title color for boxes
-theme[title]="#1F2022"
+theme[title]="#1B202B"
 
 # Highlight color for keyboard shortcuts
-theme[hi_fg]="#9F591B"
+theme[hi_fg]="#A45600"
 
 # Background of the selected item in the processes box
-theme[selected_bg]="#ADB7CB"
+theme[selected_bg]="#A9B7D4"
 
 # Foreground of the selected item in the processes box
-theme[selected_fg]="#1F2022"
+theme[selected_fg]="#1B202B"
 
 # Inactive or disabled text
-theme[inactive_fg]="#8A919F"
+theme[inactive_fg]="#8291AE"
 
 # Text drawn over graphs: uptime, network graph scale
-theme[graph_text]="#515459"
+theme[graph_text]="#4A5469"
 
 # Background of the percentage meters
-theme[meter_bg]="#ADB7CB"
+theme[meter_bg]="#A9B7D4"
 
 # Mini cpu graphs, detailed memory graph and status text in the processes box
 theme[proc_misc]="#007376"
 
 # Box outlines
-theme[cpu_box]="#9F591B"
+theme[cpu_box]="#A45600"
 theme[mem_box]="#896800"
-theme[net_box]="#357D41"
+theme[net_box]="#00822E"
 theme[proc_box]="#7660AB"
 
 # Box dividers and small box outlines
-theme[div_line]="#9BA5B8"
+theme[div_line]="#95A5C4"
 
 # Temperature graph
-theme[temp_start]="#357D41"
-theme[temp_mid]="#94600E"
+theme[temp_start]="#00822E"
+theme[temp_mid]="#965F00"
 theme[temp_end]="#A40005"
 
 # CPU graph
-theme[cpu_start]="#357D41"
-theme[cpu_mid]="#94600E"
+theme[cpu_start]="#00822E"
+theme[cpu_mid]="#965F00"
 theme[cpu_end]="#A40005"
 
 # Mem/disk free meter
-theme[free_start]="#84AE92"
-theme[free_mid]="#357D41"
-theme[free_end]="#398145"
+theme[free_start]="#67B187"
+theme[free_mid]="#00822E"
+theme[free_end]="#008730"
 
 # Mem/disk cached meter
-theme[cached_start]="#6777CB"
+theme[cached_start]="#6777CA"
 theme[cached_mid]="#0019A8"
-theme[cached_end]="#406BD0"
+theme[cached_end]="#4A6EBD"
 
 # Mem/disk available meter
-theme[available_start]="#B2A26F"
+theme[available_start]="#B2A26E"
 theme[available_mid]="#896800"
 theme[available_end]="#977300"
 
 # Mem/disk used meter
-theme[used_start]="#9F591B"
+theme[used_start]="#A45600"
 theme[used_mid]="#A40005"
-theme[used_end]="#CA2822"
+theme[used_end]="#C92B23"
 
 # Download graph
-theme[download_start]="#84AE92"
-theme[download_mid]="#357D41"
+theme[download_start]="#67B187"
+theme[download_mid]="#00822E"
 theme[download_end]="#896800"
 
 # Upload graph
-theme[upload_start]="#BE9A7E"
-theme[upload_mid]="#9F591B"
-theme[upload_end]="#CA2822"
+theme[upload_start]="#C1996E"
+theme[upload_mid]="#A45600"
+theme[upload_end]="#C92B23"
 
 # Process box gradient for threads, memory and cpu usage
-theme[process_start]="#357D41"
-theme[process_mid]="#94600E"
+theme[process_start]="#00822E"
+theme[process_mid]="#965F00"
 theme[process_end]="#A40005"
 
 # Banners over the process list while it is paused or following a process
 theme[proc_pause_bg]="#A40005"
 theme[proc_follow_bg]="#007376"
-theme[proc_banner_bg]="#9F591B"
-theme[proc_banner_fg]="#E5EAF6"
+theme[proc_banner_bg]="#A45600"
+theme[proc_banner_fg]="#E5EAF4"
 
 # The process being followed
 theme[followed_bg]="#007376"
-theme[followed_fg]="#E5EAF6"
+theme[followed_fg]="#E5EAF4"

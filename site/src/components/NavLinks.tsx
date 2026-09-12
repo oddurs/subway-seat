@@ -65,10 +65,10 @@ const styles = stylex.create({
   link: {
     paddingBlock: 6,
     fontFamily: font.sans,
-    fontSize: 14,
-    // A fixed line box, so the links centre against the wordmark and the city
-    // switch whichever face the family sets them in.
-    lineHeight: 1,
+    fontSize: font.sizeSmall,
+    // A fixed line box, so the links share a baseline with the wordmark and the
+    // city switch whichever face the family sets them in.
+    lineHeight: font.leadFlat,
     color: {
       default: "color-mix(in srgb, var(--sign-text) 72%, transparent)",
       ":hover": "var(--sign-text)",

@@ -2,73 +2,73 @@
 # London Portland
 
 [colors.primary]
-background = "#E5EAF6"
-foreground = "#2F3033"
-dim_foreground = "#5D6168"
-bright_foreground = "#1F2022"
+background = "#E5EAF4"
+foreground = "#293040"
+dim_foreground = "#556179"
+bright_foreground = "#1B202B"
 
 [colors.cursor]
-text = "#E5EAF6"
-cursor = "#9F591B"
+text = "#E5EAF4"
+cursor = "#A45600"
 
 [colors.vi_mode_cursor]
-text = "#E5EAF6"
+text = "#E5EAF4"
 cursor = "#007376"
 
 [colors.search.matches]
-foreground = "#2F3033"
-background = "#C9C3AC"
+foreground = "#293040"
+background = "#C9C3AB"
 
 [colors.search.focused_match]
-foreground = "#1F2022"
-background = "#C2A288"
+foreground = "#1B202B"
+background = "#C4A07A"
 
 [colors.footer_bar]
-foreground = "#2F3033"
-background = "#ADB7CB"
+foreground = "#293040"
+background = "#A9B7D4"
 
 [colors.hints.start]
-foreground = "#E5EAF6"
-background = "#9F591B"
+foreground = "#E5EAF4"
+background = "#A45600"
 
 [colors.hints.end]
-foreground = "#E5EAF6"
-background = "#5D6168"
+foreground = "#E5EAF4"
+background = "#556179"
 
 [colors.line_indicator]
-foreground = "#515459"
-background = "#C1CADC"
+foreground = "#4A5469"
+background = "#BFCAE1"
 
 [colors.selection]
-text = "#1F2022"
-background = "#ADB7CB"
+text = "#1B202B"
+background = "#A9B7D4"
 
 [colors.normal]
-black = "#434548"
+black = "#3C4557"
 red = "#A40005"
-green = "#357D41"
+green = "#00822E"
 yellow = "#896800"
 blue = "#0019A8"
-magenta = "#9F591B"
+magenta = "#A45600"
 cyan = "#007376"
-white = "#9BA5B8"
+white = "#95A5C4"
 
 [colors.bright]
-black = "#727781"
-red = "#CA2822"
-green = "#398145"
+black = "#697794"
+red = "#C92B23"
+green = "#008730"
 yellow = "#977300"
-blue = "#406BD0"
-magenta = "#AE672B"
-cyan = "#008689"
-white = "#ADB7CB"
+blue = "#4A6EBD"
+magenta = "#B86100"
+cyan = "#008688"
+white = "#A9B7D4"
 
 [colors.dim]
-black = "#7A7D83"
-red = "#BA5057"
-green = "#71A27F"
-yellow = "#A89454"
-blue = "#4E60C3"
-magenta = "#B78A65"
-cyan = "#4E9BA2"
-white = "#B4BCCD"
+black = "#757D8C"
+red = "#BA5056"
+green = "#4EA571"
+yellow = "#A89453"
+blue = "#4E60C2"
+magenta = "#BA8853"
+cyan = "#4E9BA1"
+white = "#B0BCD4"

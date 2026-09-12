@@ -2,7 +2,7 @@
 # London Portland: set Slack's color mode to light.
 #
 # Current Slack: system navigation, selected items, presence, notifications
-#D9E0EC,#9F591B,#357D41,#A40005
+#DAE0EB,#A45600,#00822E,#A40005
 
 # Legacy ten-color string (older clients and theme sites)
-#D9E0EC,#C1CADC,#9F591B,#E5EAF6,#C1CADC,#2F3033,#357D41,#A40005,#CED5E3,#2F3033
+#DAE0EB,#BFCAE1,#A45600,#E5EAF4,#BFCAE1,#293040,#00822E,#A40005,#CDD5E4,#293040

@@ -6,6 +6,7 @@ import { FlavorCards } from "@/components/FlavorCards";
 import { Footer } from "@/components/Footer";
 import { HerdrDemo } from "@/components/HerdrDemo";
 import { Hero } from "@/components/Hero";
+import { LastStop } from "@/components/LastStop";
 import { Nav } from "@/components/Nav";
 import { Palette } from "@/components/Palette";
 import { PortGrid } from "@/components/PortGrid";
@@ -23,10 +24,11 @@ import { ink } from "@/theme/ink.stylex";
 const shag = Object.fromEntries(
   flavors.map((f) => {
     const c = f.colors;
+    const a = f.art;
     const palette: ShagPalette = {
       ground: c.mantle,
       fibers: [c.crust, c.mantle, c.base, c.surface0, c.surface1, c.surface2, c.overlay0],
-      threads: [c.orange, c.yellow, c.clay, c.red, c.green, c.orangeHi],
+      threads: [a.orange, a.yellow, a.clay, a.red, a.green, a.orange],
     };
     return [f.id, palette];
   }),
@@ -35,11 +37,12 @@ const shag = Object.fromEntries(
 const weave = Object.fromEntries(
   flavors.map((f) => {
     const c = f.colors;
+    const a = f.art;
     const palette: WeavePalette = {
       ground: c.mantle,
       // The quiet field the motif is woven into, and the few threads that aren't.
       warp: [c.surface0, c.base, c.surface1, c.crust, c.surface0, c.surface2],
-      motif: [c.red, c.denim, c.yellow, c.green, c.orange, c.sage],
+      motif: [a.red, a.denim, a.yellow, a.green, a.orange, a.sage],
     };
     return [f.id, palette];
   }),
@@ -135,6 +138,7 @@ export default function Home() {
             <PortGrid />
           </Section>
         </div>
+        <LastStop />
       </main>
       <Footer />
     </>

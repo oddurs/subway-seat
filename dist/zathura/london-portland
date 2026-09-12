@@ -2,52 +2,52 @@
 # London Portland for zathura. In zathurarc: include london-portland
 
 # window
-set default-bg              "#E5EAF6"
-set default-fg              "#2F3033"
-set statusbar-bg            "#D9E0EC"
-set statusbar-fg            "#434548"
-set inputbar-bg             "#D9E0EC"
-set inputbar-fg             "#2F3033"
+set default-bg              "#E5EAF4"
+set default-fg              "#293040"
+set statusbar-bg            "#DAE0EB"
+set statusbar-fg            "#3C4557"
+set inputbar-bg             "#DAE0EB"
+set inputbar-fg             "#293040"
 
 # notifications
 set notification-bg         "#F2F4FA"
-set notification-fg         "#2F3033"
+set notification-fg         "#293040"
 set notification-error-bg   "#A40005"
-set notification-error-fg   "#E5EAF6"
+set notification-error-fg   "#E5EAF4"
 set notification-warning-bg "#896800"
-set notification-warning-fg "#E5EAF6"
+set notification-warning-fg "#E5EAF4"
 
 # completion
 set completion-bg           "#F2F4FA"
-set completion-fg           "#2F3033"
-set completion-group-bg     "#D9E0EC"
-set completion-group-fg     "#515459"
-set completion-highlight-bg "#ADB7CB"
-set completion-highlight-fg "#1F2022"
+set completion-fg           "#293040"
+set completion-group-bg     "#DAE0EB"
+set completion-group-fg     "#4A5469"
+set completion-highlight-bg "#A9B7D4"
+set completion-highlight-fg "#1B202B"
 
 # index (table of contents)
-set index-bg                "#E5EAF6"
-set index-fg                "#2F3033"
-set index-active-bg         "#ADB7CB"
-set index-active-fg         "#1F2022"
+set index-bg                "#E5EAF4"
+set index-fg                "#293040"
+set index-active-bg         "#A9B7D4"
+set index-active-fg         "#1B202B"
 
 # search hits and link hints, washed over the page
 set highlight-color         "rgba(137,104,0,0.3)"
-set highlight-active-color  "rgba(159,89,27,0.5)"
-set highlight-fg            "#1F2022"
+set highlight-active-color  "rgba(164,86,0,0.5)"
+set highlight-fg            "#1B202B"
 
 # pages while they render
-set render-loading-bg       "#E5EAF6"
-set render-loading-fg       "#727781"
+set render-loading-bg       "#E5EAF4"
+set render-loading-fg       "#697794"
 
 # digital signatures
-set signature-success-color "#357D41"
+set signature-success-color "#00822E"
 set signature-warning-color "#896800"
-set signature-error-color   "#CA2822"
+set signature-error-color   "#C92B23"
 
 # recoloring: white paper → base, black ink → text; Ctrl+R toggles it
-set recolor-lightcolor      "#E5EAF6"
-set recolor-darkcolor       "#2F3033"
+set recolor-lightcolor      "#E5EAF4"
+set recolor-darkcolor       "#293040"
 set recolor                 "true"
 set recolor-keephue         "true"
 set recolor-reverse-video   "true"

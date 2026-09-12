@@ -5,6 +5,16 @@ import { CityMark } from "./CityMark";
 import { CitySwitch } from "./CitySwitch";
 import { NavLinks } from "./NavLinks";
 
+/**
+ * The station sign. One band, dark in both cities, carrying the wordmark, the
+ * links and the one control the nav owns — which city you're riding.
+ *
+ * The whole row sits on a single baseline: the wordmark is one line box with
+ * the mark set inline against it, the links and the switch have flat line
+ * heights, and nothing is centred against anything else. The only rule is the
+ * platform edge along the bottom, in the city's lead colour, which is also
+ * what the closing band opens with.
+ */
 export function Nav() {
   return (
     <header {...stylex.props(styles.band)}>
@@ -12,20 +22,24 @@ export function Nav() {
         Skip to content
       </a>
       <div {...stylex.props(styles.inner)}>
-        <span aria-hidden {...stylex.props(styles.rule)} />
         <Link href="/" {...stylex.props(styles.mark)}>
           <CityMark />
-          <span>Subway Seat</span>
+          Subway Seat
         </Link>
         <NavLinks />
         <CitySwitch />
       </div>
+      <span aria-hidden {...stylex.props(styles.edge)} />
     </header>
   );
 }
 
 const styles = stylex.create({
-  band: { position: "relative", zIndex: 2, backgroundColor: "var(--sign-bg)" },
+  band: {
+    position: "relative",
+    zIndex: 2,
+    backgroundColor: "var(--sign-bg)",
+  },
   skip: {
     position: "absolute",
     top: 10,
@@ -34,7 +48,7 @@ const styles = stylex.create({
     paddingBlock: 8,
     paddingInline: 14,
     fontFamily: font.sans,
-    fontSize: 14,
+    fontSize: font.sizeSmall,
     fontWeight: 700,
     color: "var(--sign-bg)",
     textDecoration: "none",
@@ -43,7 +57,7 @@ const styles = stylex.create({
     outlineColor: "var(--sign-ring)",
     outlineOffset: 2,
     backgroundColor: "var(--sign-text)",
-    borderRadius: 999,
+    borderRadius: "var(--radius-pill)",
     transform: {
       default: "translateY(-200%)",
       ":focus": "none",
@@ -52,34 +66,23 @@ const styles = stylex.create({
   inner: {
     display: "flex",
     flexWrap: "wrap",
-    rowGap: 10,
-    columnGap: 24,
-    alignItems: "center",
+    rowGap: 14,
+    columnGap: 30,
+    alignItems: "baseline",
     maxWidth: 1200,
     paddingInline: 24,
-    paddingTop: 17,
-    paddingBottom: 14,
+    paddingBlock: 20,
     marginInline: "auto",
   },
-  // The sign's top edge, flush and full width, in the city's lead colour.
-  rule: {
-    position: "absolute",
-    top: 0,
-    right: 0,
-    left: 0,
-    height: 3,
-    backgroundColor: "var(--sign-mark)",
-  },
+  // One line box: the mark is inline, so the wordmark's baseline is the row's.
   mark: {
-    display: "flex",
-    gap: 10,
-    alignItems: "center",
     fontFamily: font.sans,
-    fontSize: 20,
+    fontSize: font.sizeMark,
     fontWeight: 700,
-    lineHeight: 1,
+    lineHeight: font.leadFlat,
     color: "var(--sign-text)",
-    letterSpacing: font.markTracking,
+    letterSpacing: font.trackMark,
+    whiteSpace: "nowrap",
     textDecoration: "none",
     outlineWidth: 2,
     outlineStyle: {
@@ -87,7 +90,17 @@ const styles = stylex.create({
       ":focus-visible": "solid",
     },
     outlineColor: "var(--sign-ring)",
-    outlineOffset: 3,
-    borderRadius: 2,
+    outlineOffset: 5,
+    borderRadius: "var(--radius-pill)",
+  },
+  // The platform edge, in the city's lead colour.
+  edge: {
+    position: "absolute",
+    right: 0,
+    bottom: 0,
+    left: 0,
+    height: 2,
+    backgroundColor: "var(--sign-mark)",
+    opacity: 0.9,
   },
 });

@@ -117,26 +117,26 @@
         },
         {
             "name": "London Portland",
-            "background": "#E5EAF6",
-            "foreground": "#2F3033",
-            "cursorColor": "#9F591B",
-            "selectionBackground": "#ADB7CB",
-            "black": "#434548",
+            "background": "#E5EAF4",
+            "foreground": "#293040",
+            "cursorColor": "#A45600",
+            "selectionBackground": "#A9B7D4",
+            "black": "#3C4557",
             "red": "#A40005",
-            "green": "#357D41",
+            "green": "#00822E",
             "yellow": "#896800",
             "blue": "#0019A8",
-            "purple": "#9F591B",
+            "purple": "#A45600",
             "cyan": "#007376",
-            "white": "#9BA5B8",
-            "brightBlack": "#727781",
-            "brightRed": "#CA2822",
-            "brightGreen": "#398145",
+            "white": "#95A5C4",
+            "brightBlack": "#697794",
+            "brightRed": "#C92B23",
+            "brightGreen": "#008730",
             "brightYellow": "#977300",
-            "brightBlue": "#406BD0",
-            "brightPurple": "#AE672B",
-            "brightCyan": "#008689",
-            "brightWhite": "#ADB7CB"
+            "brightBlue": "#4A6EBD",
+            "brightPurple": "#B86100",
+            "brightCyan": "#008688",
+            "brightWhite": "#A9B7D4"
         }
     ],
     "themes": [
@@ -230,16 +230,16 @@
             "window": {
                 "applicationTheme": "light",
                 "useMica": false,
-                "frame": "#CED5E3FF",
-                "unfocusedFrame": "#CED5E3FF"
+                "frame": "#CDD5E4FF",
+                "unfocusedFrame": "#CDD5E4FF"
             },
             "tabRow": {
-                "background": "#CED5E3FF",
-                "unfocusedBackground": "#CED5E3FF"
+                "background": "#CDD5E4FF",
+                "unfocusedBackground": "#CDD5E4FF"
             },
             "tab": {
-                "background": "#E5EAF6FF",
-                "unfocusedBackground": "#D9E0ECFF"
+                "background": "#E5EAF4FF",
+                "unfocusedBackground": "#DAE0EBFF"
             }
         }
     ]

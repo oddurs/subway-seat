@@ -2568,184 +2568,184 @@
       "colors": {
         "crust": {
           "name": "Portland crust",
-          "hex": "#CED5E3",
+          "hex": "#CDD5E4",
           "rgb": [
-            206,
+            205,
             213,
-            227
+            228
           ],
           "hsl": [
-            220,
-            27,
+            219,
+            30,
             85
           ]
         },
         "mantle": {
           "name": "Portland mantle",
-          "hex": "#D9E0EC",
+          "hex": "#DAE0EB",
           "rgb": [
-            217,
+            218,
             224,
-            236
+            235
           ],
           "hsl": [
-            218,
-            33,
+            219,
+            30,
             89
           ]
         },
         "base": {
           "name": "Portland base",
-          "hex": "#E5EAF6",
+          "hex": "#E5EAF4",
           "rgb": [
             229,
             234,
-            246
+            244
           ],
           "hsl": [
-            222,
-            49,
+            220,
+            41,
             93
           ]
         },
         "surface0": {
           "name": "Portland surface0",
-          "hex": "#C1CADC",
+          "hex": "#BFCAE1",
           "rgb": [
-            193,
+            191,
             202,
-            220
+            225
           ],
           "hsl": [
-            220,
-            28,
-            81
+            221,
+            36,
+            82
           ]
         },
         "surface1": {
           "name": "Portland surface1",
-          "hex": "#ADB7CB",
+          "hex": "#A9B7D4",
           "rgb": [
-            173,
+            169,
             183,
-            203
+            212
           ],
           "hsl": [
             220,
-            22,
-            74
+            33,
+            75
           ]
         },
         "surface2": {
           "name": "Portland surface2",
-          "hex": "#9BA5B8",
+          "hex": "#95A5C4",
           "rgb": [
-            155,
+            149,
             165,
-            184
+            196
           ],
           "hsl": [
-            219,
-            17,
-            66
+            220,
+            28,
+            68
           ]
         },
         "overlay0": {
           "name": "Portland overlay0",
-          "hex": "#8A919F",
+          "hex": "#8291AE",
           "rgb": [
-            138,
+            130,
             145,
-            159
+            174
           ],
           "hsl": [
             220,
-            10,
-            58
+            21,
+            60
           ]
         },
         "overlay1": {
           "name": "Portland overlay1",
-          "hex": "#727781",
+          "hex": "#697794",
           "rgb": [
-            114,
+            105,
             119,
-            129
+            148
           ],
           "hsl": [
             220,
-            6,
-            48
+            17,
+            50
           ]
         },
         "overlay2": {
           "name": "Portland overlay2",
-          "hex": "#5D6168",
+          "hex": "#556179",
           "rgb": [
-            93,
+            85,
             97,
-            104
+            121
           ],
           "hsl": [
-            218,
-            6,
-            39
+            220,
+            17,
+            40
           ]
         },
         "subtext0": {
           "name": "Portland subtext0",
-          "hex": "#515459",
+          "hex": "#4A5469",
           "rgb": [
-            81,
+            74,
             84,
-            89
+            105
           ],
           "hsl": [
-            218,
-            5,
-            33
+            221,
+            17,
+            35
           ]
         },
         "subtext1": {
           "name": "Portland subtext1",
-          "hex": "#434548",
+          "hex": "#3C4557",
           "rgb": [
-            67,
+            60,
             69,
-            72
+            87
           ],
           "hsl": [
-            216,
-            4,
-            27
+            220,
+            18,
+            29
           ]
         },
         "text": {
           "name": "Portland text",
-          "hex": "#2F3033",
+          "hex": "#293040",
           "rgb": [
-            47,
+            41,
             48,
-            51
+            64
           ],
           "hsl": [
-            225,
-            4,
-            19
+            222,
+            22,
+            21
           ]
         },
         "text_hi": {
           "name": "Portland text hi",
-          "hex": "#1F2022",
+          "hex": "#1B202B",
           "rgb": [
-            31,
+            27,
             32,
-            34
+            43
           ],
           "hsl": [
-            220,
-            5,
-            13
+            221,
+            23,
+            14
           ]
         },
         "yellow": {
@@ -2778,30 +2778,30 @@
         },
         "orange": {
           "name": "Burnt orange",
-          "hex": "#9F591B",
+          "hex": "#A45600",
           "rgb": [
-            159,
-            89,
-            27
+            164,
+            86,
+            0
           ],
           "hsl": [
-            28,
-            71,
-            36
+            31,
+            100,
+            32
           ]
         },
         "orange_hi": {
           "name": "Sixth Avenue",
-          "hex": "#AE672B",
+          "hex": "#B86100",
           "rgb": [
-            174,
-            103,
-            43
+            184,
+            97,
+            0
           ],
           "hsl": [
-            27,
-            60,
-            43
+            32,
+            100,
+            36
           ]
         },
         "red": {
@@ -2820,44 +2820,44 @@
         },
         "red_hi": {
           "name": "Redbird bright",
-          "hex": "#CA2822",
+          "hex": "#C92B23",
           "rgb": [
-            202,
-            40,
-            34
+            201,
+            43,
+            35
           ],
           "hsl": [
-            2,
-            71,
+            3,
+            70,
             46
           ]
         },
         "green": {
           "name": "Avocado",
-          "hex": "#357D41",
+          "hex": "#00822E",
           "rgb": [
-            53,
-            125,
-            65
+            0,
+            130,
+            46
           ],
           "hsl": [
-            130,
-            40,
-            35
+            141,
+            100,
+            25
           ]
         },
         "green_hi": {
           "name": "Avocado bright",
-          "hex": "#398145",
+          "hex": "#008730",
           "rgb": [
-            57,
-            129,
-            69
+            0,
+            135,
+            48
           ],
           "hsl": [
-            130,
-            39,
-            36
+            141,
+            100,
+            26
           ]
         },
         "sage": {
@@ -2876,11 +2876,11 @@
         },
         "sage_hi": {
           "name": "Seafoam bright",
-          "hex": "#008689",
+          "hex": "#008688",
           "rgb": [
             0,
             134,
-            137
+            136
           ],
           "hsl": [
             181,
@@ -2904,16 +2904,16 @@
         },
         "denim_hi": {
           "name": "Denim bright",
-          "hex": "#406BD0",
+          "hex": "#4A6EBD",
           "rgb": [
-            64,
-            107,
-            208
+            74,
+            110,
+            189
           ],
           "hsl": [
-            222,
-            61,
-            53
+            221,
+            47,
+            52
           ]
         },
         "clay": {
@@ -2936,7 +2936,7 @@
           "index": 0,
           "name": "black",
           "role": "subtext1",
-          "hex": "#434548"
+          "hex": "#3C4557"
         },
         {
           "index": 1,
@@ -2948,7 +2948,7 @@
           "index": 2,
           "name": "green",
           "role": "green",
-          "hex": "#357D41"
+          "hex": "#00822E"
         },
         {
           "index": 3,
@@ -2966,7 +2966,7 @@
           "index": 5,
           "name": "magenta",
           "role": "orange",
-          "hex": "#9F591B"
+          "hex": "#A45600"
         },
         {
           "index": 6,
@@ -2978,25 +2978,25 @@
           "index": 7,
           "name": "white",
           "role": "surface2",
-          "hex": "#9BA5B8"
+          "hex": "#95A5C4"
         },
         {
           "index": 8,
           "name": "bright_black",
           "role": "overlay1",
-          "hex": "#727781"
+          "hex": "#697794"
         },
         {
           "index": 9,
           "name": "bright_red",
           "role": "red_hi",
-          "hex": "#CA2822"
+          "hex": "#C92B23"
         },
         {
           "index": 10,
           "name": "bright_green",
           "role": "green_hi",
-          "hex": "#398145"
+          "hex": "#008730"
         },
         {
           "index": 11,
@@ -3008,31 +3008,31 @@
           "index": 12,
           "name": "bright_blue",
           "role": "denim_hi",
-          "hex": "#406BD0"
+          "hex": "#4A6EBD"
         },
         {
           "index": 13,
           "name": "bright_magenta",
           "role": "orange_hi",
-          "hex": "#AE672B"
+          "hex": "#B86100"
         },
         {
           "index": 14,
           "name": "bright_cyan",
           "role": "sage_hi",
-          "hex": "#008689"
+          "hex": "#008688"
         },
         {
           "index": 15,
           "name": "bright_white",
           "role": "surface1",
-          "hex": "#ADB7CB"
+          "hex": "#A9B7D4"
         }
       ],
       "diff": {
-        "diff-add": "#CADDCE",
-        "diff-add-emph": "#AECBB3",
-        "diff-add-dim": "#DFEAE1",
+        "diff-add": "#BDDEC9",
+        "diff-add-emph": "#99CDAB",
+        "diff-add-dim": "#D6EBDE",
         "diff-del": "#EDCCCD",
         "diff-del-emph": "#E2ADAF",
         "diff-del-dim": "#F4E0E1",

@@ -7,6 +7,7 @@ import { ports, version } from "@/lib/manifest";
 import { flavors } from "@/lib/palette";
 import { ORIGIN, pageMeta, pageUrl, REPO, SITE_NAME } from "@/lib/seo";
 import { londonType } from "@/theme/faces";
+import * as artTheme from "@/theme/art";
 import * as theme from "@/theme/flavors";
 import { enamelInk, londonInk, portlandInk } from "@/theme/ink";
 import { sign } from "@/theme/sign.stylex";
@@ -66,7 +67,12 @@ const themeClasses = Object.fromEntries(
   flavors.map((f) => {
     const london = f.family === "london";
     const ink = f.dark ? (london ? londonInk : null) : LIGHT_INK[f.family];
-    const parts = [theme[f.id as keyof typeof theme], london ? londonType : null, ink];
+    const parts = [
+      theme[f.id as keyof typeof theme],
+      artTheme[f.id as keyof typeof artTheme],
+      london ? londonType : null,
+      ink,
+    ];
     return [f.id, stylex.props(...parts.filter(Boolean)).className ?? ""];
   }),
 );

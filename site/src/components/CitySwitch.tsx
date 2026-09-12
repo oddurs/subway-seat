@@ -12,7 +12,7 @@ import { font } from "@/theme/type.stylex";
  * Two stops on a line. Each carries a rule in its own family's lead accent —
  * New York's burnt orange, London's red — so the pair reads as two route
  * segments and the one you're on is the lit one. The flavor within a city is
- * chosen where the flavors are actually shown, not up here.
+ * chosen in the footer and on the cards, where the flavors are actually shown.
  */
 export function CitySwitch() {
   const city = useSyncExternalStore(subscribeFlavor, currentFamily, () => null);
@@ -40,40 +40,43 @@ export function CitySwitch() {
 }
 
 const styles = stylex.create({
-  group: { display: "flex", gap: 4, alignItems: "center" },
+  group: { display: "flex", gap: 22, alignItems: "baseline" },
   stop: {
     display: "grid",
-    gap: 6,
+    // The rule sits a clear step below the cap line, not tucked under it.
+    gap: 9,
     padding: 0,
-    paddingInline: 10,
-    paddingTop: 4,
     cursor: "pointer",
     outlineWidth: 2,
     outlineStyle: { default: "none", ":focus-visible": "solid" },
     outlineColor: "var(--sign-ring)",
-    outlineOffset: 3,
+    outlineOffset: 5,
     borderWidth: 0,
     borderRadius: 0,
     backgroundColor: "transparent",
   },
   name: (on: boolean) => ({
     fontFamily: font.sans,
-    fontSize: 12,
+    fontSize: font.sizeLabel,
     fontWeight: 700,
-    lineHeight: 1,
-    letterSpacing: font.labelTracking,
+    lineHeight: font.leadFlat,
+    letterSpacing: font.trackLabel,
+    // The tracking adds a trailing gap after the last letter; pulling it back
+    // keeps the rule the same width as the word it belongs to.
+    marginRight: "-0.22em",
     textTransform: "uppercase",
     color: "var(--sign-text)",
-    opacity: on ? 1 : 0.52,
+    opacity: on ? 1 : 0.62,
     transitionDuration: "180ms",
     transitionProperty: "opacity",
   }),
-  // The route segment under the name: full strength on the stop you're at.
   line: (lead: string, on: boolean) => ({
-    height: 3,
+    height: on ? 3 : 2,
+    marginRight: "-0.22em",
+    marginTop: on ? 0 : 1,
     backgroundColor: lead,
-    opacity: on ? 1 : 0.32,
+    opacity: on ? 1 : 0.45,
     transitionDuration: "180ms",
-    transitionProperty: "opacity",
+    transitionProperty: "opacity, height",
   }),
 });

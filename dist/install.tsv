@@ -39,9 +39,9 @@ color	deep	denim	#7595DA
 color	deep	sage	#54B4B5
 flavor	portland	London Portland	london-portland	light	london
 color	portland	yellow	#896800
-color	portland	orange	#9F591B
-color	portland	green	#357D41
-color	portland	red_hi	#CA2822
+color	portland	orange	#A45600
+color	portland	green	#00822E
+color	portland	red_hi	#C92B23
 color	portland	denim	#0019A8
 color	portland	sage	#007376
 port	alacritty	Alacritty	Terminals	Alacritty 0.14+

@@ -832,67 +832,67 @@
   "portland": {
     "crust": {
       "$type": "color",
-      "$value": "#CED5E3",
+      "$value": "#CDD5E4",
       "$description": "Portland crust"
     },
     "mantle": {
       "$type": "color",
-      "$value": "#D9E0EC",
+      "$value": "#DAE0EB",
       "$description": "Portland mantle"
     },
     "base": {
       "$type": "color",
-      "$value": "#E5EAF6",
+      "$value": "#E5EAF4",
       "$description": "Portland base"
     },
     "surface0": {
       "$type": "color",
-      "$value": "#C1CADC",
+      "$value": "#BFCAE1",
       "$description": "Portland surface0"
     },
     "surface1": {
       "$type": "color",
-      "$value": "#ADB7CB",
+      "$value": "#A9B7D4",
       "$description": "Portland surface1"
     },
     "surface2": {
       "$type": "color",
-      "$value": "#9BA5B8",
+      "$value": "#95A5C4",
       "$description": "Portland surface2"
     },
     "overlay0": {
       "$type": "color",
-      "$value": "#8A919F",
+      "$value": "#8291AE",
       "$description": "Portland overlay0"
     },
     "overlay1": {
       "$type": "color",
-      "$value": "#727781",
+      "$value": "#697794",
       "$description": "Portland overlay1"
     },
     "overlay2": {
       "$type": "color",
-      "$value": "#5D6168",
+      "$value": "#556179",
       "$description": "Portland overlay2"
     },
     "subtext0": {
       "$type": "color",
-      "$value": "#515459",
+      "$value": "#4A5469",
       "$description": "Portland subtext0"
     },
     "subtext1": {
       "$type": "color",
-      "$value": "#434548",
+      "$value": "#3C4557",
       "$description": "Portland subtext1"
     },
     "text": {
       "$type": "color",
-      "$value": "#2F3033",
+      "$value": "#293040",
       "$description": "Portland text"
     },
     "text-hi": {
       "$type": "color",
-      "$value": "#1F2022",
+      "$value": "#1B202B",
       "$description": "Portland text hi"
     },
     "yellow": {
@@ -907,12 +907,12 @@
     },
     "orange": {
       "$type": "color",
-      "$value": "#9F591B",
+      "$value": "#A45600",
       "$description": "Burnt orange"
     },
     "orange-hi": {
       "$type": "color",
-      "$value": "#AE672B",
+      "$value": "#B86100",
       "$description": "Sixth Avenue"
     },
     "red": {
@@ -922,17 +922,17 @@
     },
     "red-hi": {
       "$type": "color",
-      "$value": "#CA2822",
+      "$value": "#C92B23",
       "$description": "Redbird bright"
     },
     "green": {
       "$type": "color",
-      "$value": "#357D41",
+      "$value": "#00822E",
       "$description": "Avocado"
     },
     "green-hi": {
       "$type": "color",
-      "$value": "#398145",
+      "$value": "#008730",
       "$description": "Avocado bright"
     },
     "sage": {
@@ -942,7 +942,7 @@
     },
     "sage-hi": {
       "$type": "color",
-      "$value": "#008689",
+      "$value": "#008688",
       "$description": "Seafoam bright"
     },
     "denim": {
@@ -952,7 +952,7 @@
     },
     "denim-hi": {
       "$type": "color",
-      "$value": "#406BD0",
+      "$value": "#4A6EBD",
       "$description": "Denim bright"
     },
     "clay": {
@@ -963,15 +963,15 @@
     "diff": {
       "add": {
         "$type": "color",
-        "$value": "#CADDCE"
+        "$value": "#BDDEC9"
       },
       "add-emph": {
         "$type": "color",
-        "$value": "#AECBB3"
+        "$value": "#99CDAB"
       },
       "add-dim": {
         "$type": "color",
-        "$value": "#DFEAE1"
+        "$value": "#D6EBDE"
       },
       "del": {
         "$type": "color",

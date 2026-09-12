@@ -4,44 +4,44 @@
 name = "london-portland"
 
 [themes.palette]
-background = "#E5EAF6"
-foreground = "#2F3033"
-black = "#434548"
+background = "#E5EAF4"
+foreground = "#293040"
+black = "#3C4557"
 red = "#A40005"
-green = "#357D41"
+green = "#00822E"
 yellow = "#896800"
 blue = "#0019A8"
-magenta = "#9F591B"
+magenta = "#A45600"
 cyan = "#007376"
-white = "#9BA5B8"
-bright_black = "#727781"
-bright_red = "#CA2822"
-bright_green = "#398145"
+white = "#95A5C4"
+bright_black = "#697794"
+bright_red = "#C92B23"
+bright_green = "#008730"
 bright_yellow = "#977300"
-bright_blue = "#406BD0"
-bright_magenta = "#AE672B"
-bright_cyan = "#008689"
-bright_white = "#ADB7CB"
+bright_blue = "#4A6EBD"
+bright_magenta = "#B86100"
+bright_cyan = "#008688"
+bright_white = "#A9B7D4"
 
 [themes.component_style]
-block_title = { fg = "#9F591B", modifiers = ["Bold"] }
-border = { fg = "#9BA5B8" }
+block_title = { fg = "#A45600", modifiers = ["Bold"] }
+border = { fg = "#95A5C4" }
 playback_status = { fg = "#896800", modifiers = ["Bold"] }
 playback_track = { fg = "#896800", modifiers = ["Bold"] }
-playback_artists = { fg = "#9F591B" }
+playback_artists = { fg = "#A45600" }
 playback_album = { fg = "#007376" }
-playback_genres = { fg = "#727781", modifiers = ["Italic"] }
-playback_metadata = { fg = "#515459" }
-playback_progress_bar = { fg = "#9F591B", bg = "#ADB7CB" }
-playback_progress_bar_unfilled = { fg = "#9BA5B8", bg = "#ADB7CB" }
-current_playing = { fg = "#357D41", modifiers = ["Bold"] }
+playback_genres = { fg = "#697794", modifiers = ["Italic"] }
+playback_metadata = { fg = "#4A5469" }
+playback_progress_bar = { fg = "#A45600", bg = "#A9B7D4" }
+playback_progress_bar_unfilled = { fg = "#95A5C4", bg = "#A9B7D4" }
+current_playing = { fg = "#00822E", modifiers = ["Bold"] }
 page_desc = { fg = "#896800", modifiers = ["Bold"] }
-playlist_desc = { fg = "#727781" }
-table_header = { fg = "#9F591B" }
-selection = { fg = "#1F2022", bg = "#C1CADC", modifiers = ["Bold"] }
-secondary_row = { bg = "#D9E0EC" }
-like = { fg = "#CA2822" }
-lyrics_played = { fg = "#727781" }
+playlist_desc = { fg = "#697794" }
+table_header = { fg = "#A45600" }
+selection = { fg = "#1B202B", bg = "#BFCAE1", modifiers = ["Bold"] }
+secondary_row = { bg = "#DAE0EB" }
+like = { fg = "#C92B23" }
+lyrics_played = { fg = "#697794" }
 lyrics_playing = { fg = "#896800", modifiers = ["Bold"] }
-visualization = { low = "#357D41", mid = "#896800", high = "#CA2822" }
+visualization = { low = "#00822E", mid = "#896800", high = "#C92B23" }
 # <<< subway-seat <<<

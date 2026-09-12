@@ -4,22 +4,22 @@
       "textSpacing": 6,
       "subtext": {
         "size": 12,
-        "colorSelected": "#434548FF",
+        "colorSelected": "#3C4557FF",
         "font": "System",
-        "color": "#5D6168FF"
+        "color": "#556179FF"
       },
       "shortcut": {
         "size": 16,
-        "colorSelected": "#9F591BFF",
+        "colorSelected": "#A45600FF",
         "font": "System",
-        "color": "#727781FF"
+        "color": "#697794FF"
       },
-      "backgroundSelected": "#DAD3D3FF",
+      "backgroundSelected": "#DBD2CDFF",
       "text": {
         "size": 18,
-        "colorSelected": "#1F2022FF",
+        "colorSelected": "#1B202BFF",
         "font": "System",
-        "color": "#2F3033FF"
+        "color": "#293040FF"
       },
       "iconPaddingHorizontal": 6,
       "roundness": 8,
@@ -27,35 +27,35 @@
       "iconSize": 38
     },
     "search": {
-      "backgroundSelected": "#ADB7CBFF",
+      "backgroundSelected": "#A9B7D4FF",
       "paddingHorizontal": 10,
       "spacing": 10,
       "text": {
         "size": 30,
-        "colorSelected": "#1F2022FF",
+        "colorSelected": "#1B202BFF",
         "font": "System Light",
-        "color": "#2F3033FF"
+        "color": "#293040FF"
       },
-      "background": "#CED5E3FF",
+      "background": "#CDD5E4FF",
       "roundness": 8,
       "paddingVertical": 6
     },
     "window": {
-      "color": "#E5EAF6F7",
+      "color": "#E5EAF4F7",
       "paddingHorizontal": 10,
       "width": 620,
       "borderPadding": 0,
-      "borderColor": "#ADB7CBFF",
+      "borderColor": "#A9B7D4FF",
       "blur": 12,
       "roundness": 14,
       "paddingVertical": 10
     },
     "separator": {
-      "color": "#CED5E3FF",
+      "color": "#CDD5E4FF",
       "thickness": 1
     },
     "scrollbar": {
-      "color": "#ADB7CBFF",
+      "color": "#A9B7D4FF",
       "thickness": 3
     },
     "name": "London Portland",

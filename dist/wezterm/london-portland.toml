@@ -1,85 +1,85 @@
 # Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
 
 [colors]
-foreground = "#2F3033"
-background = "#E5EAF6"
-cursor_bg = "#9F591B"
-cursor_border = "#9F591B"
-cursor_fg = "#E5EAF6"
+foreground = "#293040"
+background = "#E5EAF4"
+cursor_bg = "#A45600"
+cursor_border = "#A45600"
+cursor_fg = "#E5EAF4"
 compose_cursor = "#7660AB"
-selection_bg = "#ADB7CB"
-selection_fg = "#1F2022"
-scrollbar_thumb = "#9BA5B8"
-split = "#CED5E3"
-visual_bell = "#C1CADC"
+selection_bg = "#A9B7D4"
+selection_fg = "#1B202B"
+scrollbar_thumb = "#95A5C4"
+split = "#CDD5E4"
+visual_bell = "#BFCAE1"
 ansi = [
-  "#434548",
+  "#3C4557",
   "#A40005",
-  "#357D41",
+  "#00822E",
   "#896800",
   "#0019A8",
-  "#9F591B",
+  "#A45600",
   "#007376",
-  "#9BA5B8",
+  "#95A5C4",
 ]
 brights = [
-  "#727781",
-  "#CA2822",
-  "#398145",
+  "#697794",
+  "#C92B23",
+  "#008730",
   "#977300",
-  "#406BD0",
-  "#AE672B",
-  "#008689",
-  "#ADB7CB",
+  "#4A6EBD",
+  "#B86100",
+  "#008688",
+  "#A9B7D4",
 ]
-copy_mode_active_highlight_bg = { Color = "#C2A288" }
-copy_mode_active_highlight_fg = { Color = "#1F2022" }
-copy_mode_inactive_highlight_bg = { Color = "#C9C3AC" }
-copy_mode_inactive_highlight_fg = { Color = "#2F3033" }
-quick_select_label_bg = { Color = "#9F591B" }
-quick_select_label_fg = { Color = "#E5EAF6" }
-quick_select_match_bg = { Color = "#C9C3AC" }
-quick_select_match_fg = { Color = "#2F3033" }
+copy_mode_active_highlight_bg = { Color = "#C4A07A" }
+copy_mode_active_highlight_fg = { Color = "#1B202B" }
+copy_mode_inactive_highlight_bg = { Color = "#C9C3AB" }
+copy_mode_inactive_highlight_fg = { Color = "#293040" }
+quick_select_label_bg = { Color = "#A45600" }
+quick_select_label_fg = { Color = "#E5EAF4" }
+quick_select_match_bg = { Color = "#C9C3AB" }
+quick_select_match_fg = { Color = "#293040" }
 
 [colors.tab_bar]
-background = "#CED5E3"
-inactive_tab_edge = "#C1CADC"
+background = "#CDD5E4"
+inactive_tab_edge = "#BFCAE1"
 
 [colors.tab_bar.active_tab]
-bg_color = "#E5EAF6"
-fg_color = "#9F591B"
+bg_color = "#E5EAF4"
+fg_color = "#A45600"
 intensity = "Bold"
 italic = false
 strikethrough = false
 underline = "None"
 
 [colors.tab_bar.inactive_tab]
-bg_color = "#D9E0EC"
-fg_color = "#727781"
+bg_color = "#DAE0EB"
+fg_color = "#697794"
 intensity = "Normal"
 italic = false
 strikethrough = false
 underline = "None"
 
 [colors.tab_bar.inactive_tab_hover]
-bg_color = "#C1CADC"
-fg_color = "#2F3033"
+bg_color = "#BFCAE1"
+fg_color = "#293040"
 intensity = "Normal"
 italic = false
 strikethrough = false
 underline = "None"
 
 [colors.tab_bar.new_tab]
-bg_color = "#CED5E3"
-fg_color = "#727781"
+bg_color = "#CDD5E4"
+fg_color = "#697794"
 intensity = "Normal"
 italic = false
 strikethrough = false
 underline = "None"
 
 [colors.tab_bar.new_tab_hover]
-bg_color = "#C1CADC"
-fg_color = "#9F591B"
+bg_color = "#BFCAE1"
+fg_color = "#A45600"
 intensity = "Normal"
 italic = false
 strikethrough = false

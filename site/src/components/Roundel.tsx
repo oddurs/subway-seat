@@ -57,7 +57,7 @@ const styles = stylex.create({
     lineHeight: 1,
     color: ink.onAccent,
     textTransform: "uppercase",
-    letterSpacing: "0.02em",
+    letterSpacing: font.trackLabel,
   },
   barColor: (c: string) => ({ backgroundColor: c }),
 });

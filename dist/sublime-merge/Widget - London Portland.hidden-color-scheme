@@ -2,30 +2,30 @@
 {
   "name": "London Portland Widgets",
   "globals": {
-    "foreground": "#2F3033",
+    "foreground": "#293040",
     "background": "#F2F4FA",
-    "caret": "#9F591B",
+    "caret": "#A45600",
     "line_highlight": "#F2F4FA",
-    "selection": "#ADB7CB",
-    "selection_border": "#ADB7CB",
-    "inactive_selection": "#ADB7CB"
+    "selection": "#A9B7D4",
+    "selection_border": "#A9B7D4",
+    "inactive_selection": "#A9B7D4"
   },
   "rules": [
     {
       "scope": "comment",
-      "foreground": "#727781"
+      "foreground": "#697794"
     },
     {
       "scope": "keyword, storage",
-      "foreground": "#9F591B"
+      "foreground": "#A45600"
     },
     {
       "scope": "constant",
-      "foreground": "#CA2822"
+      "foreground": "#C92B23"
     },
     {
       "scope": "string",
-      "foreground": "#357D41"
+      "foreground": "#00822E"
     },
     {
       "scope": "constant.character.escape",

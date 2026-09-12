@@ -49,11 +49,11 @@ export function FlavorPicker() {
 const styles = stylex.create({
   row: { display: "flex", flexWrap: "wrap", gap: 12, alignItems: "center" },
   label: {
-    fontSize: 11,
+    fontSize: font.sizeLabel,
     fontWeight: 700,
     color: color.overlay1,
     textTransform: "uppercase",
-    letterSpacing: "0.16em",
+    letterSpacing: font.trackLabel,
   },
   group: { display: "flex", flexWrap: "wrap", gap: 6 },
   item: {
@@ -63,7 +63,7 @@ const styles = stylex.create({
     paddingBlock: 6,
     paddingInline: 10,
     fontFamily: font.sans,
-    fontSize: 13.5,
+    fontSize: font.sizeSmall,
     fontWeight: 600,
     color: { default: color.subtext0, ":hover": color.textHi },
     cursor: "pointer",

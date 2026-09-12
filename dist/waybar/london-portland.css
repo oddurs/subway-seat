@@ -1,31 +1,31 @@
 /* Subway Seat — generated from palette.py by build.py. Edit the palette, not this file. */
 /* London Portland for waybar: @import it at the top of style.css. */
 
-@define-color crust #CED5E3;
-@define-color mantle #D9E0EC;
-@define-color base #E5EAF6;
-@define-color surface0 #C1CADC;
-@define-color surface1 #ADB7CB;
-@define-color surface2 #9BA5B8;
-@define-color overlay0 #8A919F;
-@define-color overlay1 #727781;
-@define-color overlay2 #5D6168;
-@define-color subtext0 #515459;
-@define-color subtext1 #434548;
-@define-color text #2F3033;
-@define-color text_hi #1F2022;
+@define-color crust #CDD5E4;
+@define-color mantle #DAE0EB;
+@define-color base #E5EAF4;
+@define-color surface0 #BFCAE1;
+@define-color surface1 #A9B7D4;
+@define-color surface2 #95A5C4;
+@define-color overlay0 #8291AE;
+@define-color overlay1 #697794;
+@define-color overlay2 #556179;
+@define-color subtext0 #4A5469;
+@define-color subtext1 #3C4557;
+@define-color text #293040;
+@define-color text_hi #1B202B;
 @define-color yellow #896800;
 @define-color yellow_hi #977300;
-@define-color orange #9F591B;
-@define-color orange_hi #AE672B;
+@define-color orange #A45600;
+@define-color orange_hi #B86100;
 @define-color red #A40005;
-@define-color red_hi #CA2822;
-@define-color green #357D41;
-@define-color green_hi #398145;
+@define-color red_hi #C92B23;
+@define-color green #00822E;
+@define-color green_hi #008730;
 @define-color sage #007376;
-@define-color sage_hi #008689;
+@define-color sage_hi #008688;
 @define-color denim #0019A8;
-@define-color denim_hi #406BD0;
+@define-color denim_hi #4A6EBD;
 @define-color clay #7660AB;
 
 /* Layers: a raised ground for popovers, and washes of text for borders, hover and selection */

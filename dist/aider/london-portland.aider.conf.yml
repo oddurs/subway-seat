@@ -3,16 +3,16 @@
 # London Portland for aider. Leave dark-mode and light-mode unset: aider applies them
 # after this file and they replace these colors and the code theme with its own.
 user-input-color: "#896800"
-assistant-output-color: "#2F3033"
-tool-output-color: "#515459"
-tool-error-color: "#CA2822"
-tool-warning-color: "#9F591B"
-completion-menu-color: "#2F3033"
-completion-menu-bg-color: "#D9E0EC"
+assistant-output-color: "#293040"
+tool-output-color: "#4A5469"
+tool-error-color: "#C92B23"
+tool-warning-color: "#A45600"
+completion-menu-color: "#293040"
+completion-menu-bg-color: "#DAE0EB"
 # aider swaps the next two: current-color is the highlighted item's background,
 # current-bg-color its text. Burnt orange bar, base letters.
-completion-menu-current-color: "#9F591B"
-completion-menu-current-bg-color: "#E5EAF6"
+completion-menu-current-color: "#A45600"
+completion-menu-current-bg-color: "#E5EAF4"
 # Code blocks in your terminal's colors. For the Subway Seat Pygments style,
 # install it into aider's environment and use `code-theme: london-portland` instead:
 #   uv tool install aider-chat --with "subway-seat-pygments @ git+https://github.com/oddurs/subway-seat#subdirectory=dist/pygments/package"
