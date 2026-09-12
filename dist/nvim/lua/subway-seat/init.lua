@@ -3,7 +3,12 @@
 -- `subway-seat-walnut`, `-tunnel` and `-enamel` pick one flavor. See :help subway-seat.
 local M = {}
 
-M.flavors = { "walnut", "tunnel", "enamel" }
+M.flavors = { "walnut", "tunnel", "enamel", "moquette", "deep", "portland" }
+
+-- Every flavor's file stem, and which of them are light. Both come from
+-- palette.py, so a new family needs no change here.
+M.prefix = { walnut = "subway-seat", tunnel = "subway-seat", enamel = "subway-seat", moquette = "london", deep = "london", portland = "london" }
+M.light = { enamel = true, portland = true }
 
 M.config = {
   -- The flavor `:colorscheme subway-seat` shows for each 'background'.
@@ -39,7 +44,7 @@ function M.colors(flavor)
 end
 
 local function is_light(flavor)
-  return flavor == "enamel"
+  return M.light[flavor] == true
 end
 
 -- A flavor's groups live in its colors file, which returns them when called with "subway-seat".

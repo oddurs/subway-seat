@@ -3,7 +3,7 @@
 import palette as p
 from ports import nvim
 from ports._editors import ui
-from ports._lib import HEADER, REPO, Out, tints
+from ports._lib import HEADER, REPO, Out, pair, tints
 
 META = {
     "id": "vim",
@@ -12,7 +12,7 @@ META = {
     "homepage": "https://www.vim.org",
     "enable": {
         "where": "~/.vimrc (or ~/.vim/vimrc; Windows ~/_vimrc)",
-        "code": "if has('termguicolors') | set termguicolors | endif\ncolorscheme subway-seat-{id}",
+        "code": "if has('termguicolors') | set termguicolors | endif\ncolorscheme {prefix}-{id}",
         "lang": "vim",
     },
     "auto": {
@@ -305,18 +305,25 @@ def airline(name, flavors_by_bg):
 
 
 def build(flavors):
-    by_id = {f.id: f for f in flavors}
-    walnut, enamel = by_id["walnut"], by_id["enamel"]
-    outs = [Out("colors/subway-seat.vim", auto(walnut, enamel), dest="~/.vim/colors/subway-seat.vim", lang="vim")]
+    outs = []
+    # One colorscheme per family that follows 'background', named for the family,
+    # and one per flavor beside it.
+    for fam in {f.family: f for f in flavors}:
+        dark, light = pair(next(f for f in flavors if f.family == fam))
+        outs.append(Out(f"colors/{dark.prefix}.vim", auto(dark, light),
+                        dest=f"~/.vim/colors/{dark.prefix}.vim", lang="vim"))
     for f in flavors:
-        outs.append(Out(f"colors/subway-seat-{f.id}.vim", colorscheme(f), flavor=f.id,
-                        dest=f"~/.vim/colors/subway-seat-{f.id}.vim", lang="vim"))
+        outs.append(Out(f"colors/{f.prefix}-{f.id}.vim", colorscheme(f), flavor=f.id,
+                        dest=f"~/.vim/colors/{f.prefix}-{f.id}.vim", lang="vim"))
     for f in flavors:
-        # subway_seat pairs Walnut and Enamel by 'background'; the others are one flavor
-        pair = [walnut, enamel] if f is walnut else [f]
-        flavor = None if f is walnut else f.id
-        outs.append(Out(f"autoload/lightline/colorscheme/{f.snake}.vim", lightline(f.snake, pair), flavor=flavor,
+        # The family's default pairs with its light flavor by 'background'; the
+        # rest are one flavor each.
+        dark, light = pair(f)
+        is_default = f is dark and f.dark
+        pairing = [dark, light] if is_default else [f]
+        flavor = None if is_default else f.id
+        outs.append(Out(f"autoload/lightline/colorscheme/{f.snake}.vim", lightline(f.snake, pairing), flavor=flavor,
                         dest=f"~/.vim/autoload/lightline/colorscheme/{f.snake}.vim", lang="vim"))
-        outs.append(Out(f"autoload/airline/themes/{f.snake}.vim", airline(f.snake, pair), flavor=flavor,
+        outs.append(Out(f"autoload/airline/themes/{f.snake}.vim", airline(f.snake, pairing), flavor=flavor,
                         dest=f"~/.vim/autoload/airline/themes/{f.snake}.vim", lang="vim"))
     return outs

@@ -495,7 +495,6 @@ def theme(main, dark_f, light_f):
 
 def build(flavors):
     by = {f.id: f for f in flavors}
-    pairs = {"walnut": ("walnut", "enamel"), "tunnel": ("tunnel", "enamel"), "enamel": ("walnut", "enamel")}
     outs = []
     for f in flavors:
         dark_f, light_f = pair(f)

@@ -105,6 +105,11 @@ class Flavor:
         return self.slug.replace("-", "_")
 
     @property
+    def prefix(self):
+        """The filename stem of this flavor's family."""
+        return FAMILY[self.family].prefix
+
+    @property
     def role_names(self):
         """What this family calls each role."""
         return FAMILY[self.family].role_names
@@ -283,6 +288,10 @@ class Family:
     # Corner radii the site's furniture is built on. New York rounds everything
     # the way 70s signage did; the Underground sets its signs in rectangles.
     shape: dict = field(repr=False)
+    # The stem every one of this family's filenames is built on. Ports that
+    # ship one file per flavor plus an auto file name them `<prefix>-<id>` and
+    # `<prefix>`, so a port never has to know which city it is writing for.
+    prefix: str
     role_names: dict = field(repr=False)
     flavors: tuple = field(repr=False, default=())
 
@@ -301,6 +310,7 @@ NEW_YORK = Family(
     blurb="A 1970s subway car: walnut paneling, orange bucket seats, cream enamel.",
     sign={"bg": "#0C0805", "text": "#F8ECD4", "ring": "#EC7F31"},
     shape={"pill": "999px", "card": "6px", "chip": "50%"},
+    prefix="subway-seat",
     role_names=NEW_YORK_NAMES,
     flavors=(WALNUT, TUNNEL, ENAMEL),
 )
@@ -311,6 +321,7 @@ LONDON = Family(
     blurb="The Tube: Corporate Blue turned down, brick and hazard yellow, the standard red.",
     sign={"bg": "#0019A8", "text": "#FFFFFF", "ring": "#F2C03F"},
     shape={"pill": "2px", "card": "0px", "chip": "2px"},
+    prefix="london",
     role_names=LONDON_NAMES,
     flavors=(MOQUETTE, DEEP_LEVEL, PORTLAND),
 )

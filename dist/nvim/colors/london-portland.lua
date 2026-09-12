@@ -2012,17 +2012,17 @@ local spec = {
 if ... == "subway-seat" then return spec end
 
 if vim.api.nvim_get_runtime_file("lua/subway-seat/init.lua", false)[1] then
-  return require("subway-seat").colorscheme("subway-seat-portland")
+  return require("subway-seat").colorscheme("london-portland")
 end
 
 -- On its own. A flip of 'background' re-runs this file; keep the flavor rather than fight it.
-if vim.g.colors_name ~= "subway-seat-portland" and vim.o.background ~= spec.background then
+if vim.g.colors_name ~= "london-portland" and vim.o.background ~= spec.background then
   vim.g.colors_name = nil -- so Neovim doesn't re-run the previous colorscheme for the new 'background'
   vim.o.background = spec.background
 end
 vim.cmd("hi clear")
 if vim.fn.exists("syntax_on") == 1 then vim.cmd("syntax reset") end
 vim.o.termguicolors = true
-vim.g.colors_name = "subway-seat-portland"
+vim.g.colors_name = "london-portland"
 for group, hl in pairs(spec.groups) do vim.api.nvim_set_hl(0, group, hl) end
 for i, color in ipairs(spec.ansi) do vim.g["terminal_color_" .. (i - 1)] = color end

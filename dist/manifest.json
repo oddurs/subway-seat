@@ -3332,17 +3332,17 @@
         },
         "moquette": {
           "where": "init.lua (~/.config/nvim/init.lua; Windows ~/AppData/Local/nvim/init.lua)",
-          "code": "vim.cmd.colorscheme(\"subway-seat-moquette\")",
+          "code": "vim.cmd.colorscheme(\"london-moquette\")",
           "lang": "lua"
         },
         "deep": {
           "where": "init.lua (~/.config/nvim/init.lua; Windows ~/AppData/Local/nvim/init.lua)",
-          "code": "vim.cmd.colorscheme(\"subway-seat-deep\")",
+          "code": "vim.cmd.colorscheme(\"london-deep\")",
           "lang": "lua"
         },
         "portland": {
           "where": "init.lua (~/.config/nvim/init.lua; Windows ~/AppData/Local/nvim/init.lua)",
-          "code": "vim.cmd.colorscheme(\"subway-seat-portland\")",
+          "code": "vim.cmd.colorscheme(\"london-portland\")",
           "lang": "lua"
         }
       },
@@ -3384,27 +3384,27 @@
           "binary": false
         },
         {
-          "path": "nvim/colors/subway-seat-moquette.lua",
+          "path": "nvim/colors/london-moquette.lua",
           "flavor": "moquette",
-          "dest": "~/.config/nvim/colors/subway-seat-moquette.lua",
+          "dest": "~/.config/nvim/colors/london-moquette.lua",
           "how": null,
           "lang": "lua",
           "append": false,
           "binary": false
         },
         {
-          "path": "nvim/colors/subway-seat-deep.lua",
+          "path": "nvim/colors/london-deep.lua",
           "flavor": "deep",
-          "dest": "~/.config/nvim/colors/subway-seat-deep.lua",
+          "dest": "~/.config/nvim/colors/london-deep.lua",
           "how": null,
           "lang": "lua",
           "append": false,
           "binary": false
         },
         {
-          "path": "nvim/colors/subway-seat-portland.lua",
+          "path": "nvim/colors/london-portland.lua",
           "flavor": "portland",
-          "dest": "~/.config/nvim/colors/subway-seat-portland.lua",
+          "dest": "~/.config/nvim/colors/london-portland.lua",
           "how": null,
           "lang": "lua",
           "append": false,
@@ -3492,9 +3492,9 @@
           "binary": false
         },
         {
-          "path": "nvim/lua/lualine/themes/subway-seat-moquette.lua",
+          "path": "nvim/lua/lualine/themes/london-moquette.lua",
           "flavor": "moquette",
-          "dest": "~/.config/nvim/lua/lualine/themes/subway-seat-moquette.lua",
+          "dest": "~/.config/nvim/lua/lualine/themes/london-moquette.lua",
           "how": null,
           "lang": "lua",
           "append": false,
@@ -3510,9 +3510,9 @@
           "binary": false
         },
         {
-          "path": "nvim/lua/lualine/themes/subway-seat-deep.lua",
+          "path": "nvim/lua/lualine/themes/london-deep.lua",
           "flavor": "deep",
-          "dest": "~/.config/nvim/lua/lualine/themes/subway-seat-deep.lua",
+          "dest": "~/.config/nvim/lua/lualine/themes/london-deep.lua",
           "how": null,
           "lang": "lua",
           "append": false,
@@ -3528,9 +3528,9 @@
           "binary": false
         },
         {
-          "path": "nvim/lua/lualine/themes/subway-seat-portland.lua",
+          "path": "nvim/lua/lualine/themes/london-portland.lua",
           "flavor": "portland",
-          "dest": "~/.config/nvim/lua/lualine/themes/subway-seat-portland.lua",
+          "dest": "~/.config/nvim/lua/lualine/themes/london-portland.lua",
           "how": null,
           "lang": "lua",
           "append": false,
@@ -4274,17 +4274,17 @@
         },
         "moquette": {
           "where": "~/.vimrc (or ~/.vim/vimrc; Windows ~/_vimrc)",
-          "code": "if has('termguicolors') | set termguicolors | endif\ncolorscheme subway-seat-moquette",
+          "code": "if has('termguicolors') | set termguicolors | endif\ncolorscheme london-moquette",
           "lang": "vim"
         },
         "deep": {
           "where": "~/.vimrc (or ~/.vim/vimrc; Windows ~/_vimrc)",
-          "code": "if has('termguicolors') | set termguicolors | endif\ncolorscheme subway-seat-deep",
+          "code": "if has('termguicolors') | set termguicolors | endif\ncolorscheme london-deep",
           "lang": "vim"
         },
         "portland": {
           "where": "~/.vimrc (or ~/.vim/vimrc; Windows ~/_vimrc)",
-          "code": "if has('termguicolors') | set termguicolors | endif\ncolorscheme subway-seat-portland",
+          "code": "if has('termguicolors') | set termguicolors | endif\ncolorscheme london-portland",
           "lang": "vim"
         }
       },
@@ -4293,6 +4293,15 @@
           "path": "vim/colors/subway-seat.vim",
           "flavor": null,
           "dest": "~/.vim/colors/subway-seat.vim",
+          "how": null,
+          "lang": "vim",
+          "append": false,
+          "binary": false
+        },
+        {
+          "path": "vim/colors/london.vim",
+          "flavor": null,
+          "dest": "~/.vim/colors/london.vim",
           "how": null,
           "lang": "vim",
           "append": false,
@@ -4326,27 +4335,27 @@
           "binary": false
         },
         {
-          "path": "vim/colors/subway-seat-moquette.vim",
+          "path": "vim/colors/london-moquette.vim",
           "flavor": "moquette",
-          "dest": "~/.vim/colors/subway-seat-moquette.vim",
+          "dest": "~/.vim/colors/london-moquette.vim",
           "how": null,
           "lang": "vim",
           "append": false,
           "binary": false
         },
         {
-          "path": "vim/colors/subway-seat-deep.vim",
+          "path": "vim/colors/london-deep.vim",
           "flavor": "deep",
-          "dest": "~/.vim/colors/subway-seat-deep.vim",
+          "dest": "~/.vim/colors/london-deep.vim",
           "how": null,
           "lang": "vim",
           "append": false,
           "binary": false
         },
         {
-          "path": "vim/colors/subway-seat-portland.vim",
+          "path": "vim/colors/london-portland.vim",
           "flavor": "portland",
-          "dest": "~/.vim/colors/subway-seat-portland.vim",
+          "dest": "~/.vim/colors/london-portland.vim",
           "how": null,
           "lang": "vim",
           "append": false,
@@ -4372,7 +4381,7 @@
         },
         {
           "path": "vim/autoload/lightline/colorscheme/subway_seat_tunnel.vim",
-          "flavor": "tunnel",
+          "flavor": null,
           "dest": "~/.vim/autoload/lightline/colorscheme/subway_seat_tunnel.vim",
           "how": null,
           "lang": "vim",
@@ -4381,7 +4390,7 @@
         },
         {
           "path": "vim/autoload/airline/themes/subway_seat_tunnel.vim",
-          "flavor": "tunnel",
+          "flavor": null,
           "dest": "~/.vim/autoload/airline/themes/subway_seat_tunnel.vim",
           "how": null,
           "lang": "vim",
@@ -4408,7 +4417,7 @@
         },
         {
           "path": "vim/autoload/lightline/colorscheme/london_moquette.vim",
-          "flavor": "moquette",
+          "flavor": null,
           "dest": "~/.vim/autoload/lightline/colorscheme/london_moquette.vim",
           "how": null,
           "lang": "vim",
@@ -4417,7 +4426,7 @@
         },
         {
           "path": "vim/autoload/airline/themes/london_moquette.vim",
-          "flavor": "moquette",
+          "flavor": null,
           "dest": "~/.vim/autoload/airline/themes/london_moquette.vim",
           "how": null,
           "lang": "vim",
@@ -4426,7 +4435,7 @@
         },
         {
           "path": "vim/autoload/lightline/colorscheme/london_deep_level.vim",
-          "flavor": "deep",
+          "flavor": null,
           "dest": "~/.vim/autoload/lightline/colorscheme/london_deep_level.vim",
           "how": null,
           "lang": "vim",
@@ -4435,7 +4444,7 @@
         },
         {
           "path": "vim/autoload/airline/themes/london_deep_level.vim",
-          "flavor": "deep",
+          "flavor": null,
           "dest": "~/.vim/autoload/airline/themes/london_deep_level.vim",
           "how": null,
           "lang": "vim",

@@ -12,9 +12,9 @@ A plugin: `setup({ background, transparent, italics, overrides })`, flavors that
 | Subway Seat | [`colors/subway-seat-walnut.lua`](colors/subway-seat-walnut.lua) | `~/.config/nvim/colors/subway-seat-walnut.lua` |
 | Subway Seat Tunnel | [`colors/subway-seat-tunnel.lua`](colors/subway-seat-tunnel.lua) | `~/.config/nvim/colors/subway-seat-tunnel.lua` |
 | Subway Seat Enamel | [`colors/subway-seat-enamel.lua`](colors/subway-seat-enamel.lua) | `~/.config/nvim/colors/subway-seat-enamel.lua` |
-| London Moquette | [`colors/subway-seat-moquette.lua`](colors/subway-seat-moquette.lua) | `~/.config/nvim/colors/subway-seat-moquette.lua` |
-| London Deep Level | [`colors/subway-seat-deep.lua`](colors/subway-seat-deep.lua) | `~/.config/nvim/colors/subway-seat-deep.lua` |
-| London Portland | [`colors/subway-seat-portland.lua`](colors/subway-seat-portland.lua) | `~/.config/nvim/colors/subway-seat-portland.lua` |
+| London Moquette | [`colors/london-moquette.lua`](colors/london-moquette.lua) | `~/.config/nvim/colors/london-moquette.lua` |
+| London Deep Level | [`colors/london-deep.lua`](colors/london-deep.lua) | `~/.config/nvim/colors/london-deep.lua` |
+| London Portland | [`colors/london-portland.lua`](colors/london-portland.lua) | `~/.config/nvim/colors/london-portland.lua` |
 | All three | [`lua/subway-seat/init.lua`](lua/subway-seat/init.lua) | `~/.config/nvim/lua/subway-seat/init.lua` |
 | All three | [`lua/subway-seat/palette.lua`](lua/subway-seat/palette.lua) | `~/.config/nvim/lua/subway-seat/palette.lua` |
 | All three | [`lua/lualine/themes/subway-seat.lua`](lua/lualine/themes/subway-seat.lua) | `~/.config/nvim/lua/lualine/themes/subway-seat.lua` |
@@ -24,11 +24,11 @@ A plugin: `setup({ background, transparent, italics, overrides })`, flavors that
 | Subway Seat Tunnel | [`lua/lualine/themes/subway_seat_tunnel.lua`](lua/lualine/themes/subway_seat_tunnel.lua) | `~/.config/nvim/lua/lualine/themes/subway_seat_tunnel.lua` |
 | Subway Seat Enamel | [`lua/lualine/themes/subway-seat-enamel.lua`](lua/lualine/themes/subway-seat-enamel.lua) | `~/.config/nvim/lua/lualine/themes/subway-seat-enamel.lua` |
 | Subway Seat Enamel | [`lua/lualine/themes/subway_seat_enamel.lua`](lua/lualine/themes/subway_seat_enamel.lua) | `~/.config/nvim/lua/lualine/themes/subway_seat_enamel.lua` |
-| London Moquette | [`lua/lualine/themes/subway-seat-moquette.lua`](lua/lualine/themes/subway-seat-moquette.lua) | `~/.config/nvim/lua/lualine/themes/subway-seat-moquette.lua` |
+| London Moquette | [`lua/lualine/themes/london-moquette.lua`](lua/lualine/themes/london-moquette.lua) | `~/.config/nvim/lua/lualine/themes/london-moquette.lua` |
 | London Moquette | [`lua/lualine/themes/london_moquette.lua`](lua/lualine/themes/london_moquette.lua) | `~/.config/nvim/lua/lualine/themes/london_moquette.lua` |
-| London Deep Level | [`lua/lualine/themes/subway-seat-deep.lua`](lua/lualine/themes/subway-seat-deep.lua) | `~/.config/nvim/lua/lualine/themes/subway-seat-deep.lua` |
+| London Deep Level | [`lua/lualine/themes/london-deep.lua`](lua/lualine/themes/london-deep.lua) | `~/.config/nvim/lua/lualine/themes/london-deep.lua` |
 | London Deep Level | [`lua/lualine/themes/london_deep_level.lua`](lua/lualine/themes/london_deep_level.lua) | `~/.config/nvim/lua/lualine/themes/london_deep_level.lua` |
-| London Portland | [`lua/lualine/themes/subway-seat-portland.lua`](lua/lualine/themes/subway-seat-portland.lua) | `~/.config/nvim/lua/lualine/themes/subway-seat-portland.lua` |
+| London Portland | [`lua/lualine/themes/london-portland.lua`](lua/lualine/themes/london-portland.lua) | `~/.config/nvim/lua/lualine/themes/london-portland.lua` |
 | London Portland | [`lua/lualine/themes/london_portland.lua`](lua/lualine/themes/london_portland.lua) | `~/.config/nvim/lua/lualine/themes/london_portland.lua` |
 | All three | [`doc/subway-seat.txt`](doc/subway-seat.txt) | `~/.config/nvim/doc/subway-seat.txt` |
 
@@ -55,19 +55,19 @@ vim.cmd.colorscheme("subway-seat-enamel")
 **London Moquette**, in init.lua (~/.config/nvim/init.lua; Windows ~/AppData/Local/nvim/init.lua):
 
 ```lua
-vim.cmd.colorscheme("subway-seat-moquette")
+vim.cmd.colorscheme("london-moquette")
 ```
 
 **London Deep Level**, in init.lua (~/.config/nvim/init.lua; Windows ~/AppData/Local/nvim/init.lua):
 
 ```lua
-vim.cmd.colorscheme("subway-seat-deep")
+vim.cmd.colorscheme("london-deep")
 ```
 
 **London Portland**, in init.lua (~/.config/nvim/init.lua; Windows ~/AppData/Local/nvim/init.lua):
 
 ```lua
-vim.cmd.colorscheme("subway-seat-portland")
+vim.cmd.colorscheme("london-portland")
 ```
 
 ## Follow light and dark
@@ -90,9 +90,9 @@ vim.cmd.colorscheme("subway-seat")
 - Delete `~/.config/nvim/colors/subway-seat-walnut.lua`.
 - Delete `~/.config/nvim/colors/subway-seat-tunnel.lua`.
 - Delete `~/.config/nvim/colors/subway-seat-enamel.lua`.
-- Delete `~/.config/nvim/colors/subway-seat-moquette.lua`.
-- Delete `~/.config/nvim/colors/subway-seat-deep.lua`.
-- Delete `~/.config/nvim/colors/subway-seat-portland.lua`.
+- Delete `~/.config/nvim/colors/london-moquette.lua`.
+- Delete `~/.config/nvim/colors/london-deep.lua`.
+- Delete `~/.config/nvim/colors/london-portland.lua`.
 - Delete `~/.config/nvim/lua/subway-seat/init.lua`.
 - Delete `~/.config/nvim/lua/subway-seat/palette.lua`.
 - Delete `~/.config/nvim/lua/lualine/themes/subway-seat.lua`.
@@ -102,11 +102,11 @@ vim.cmd.colorscheme("subway-seat")
 - Delete `~/.config/nvim/lua/lualine/themes/subway_seat_tunnel.lua`.
 - Delete `~/.config/nvim/lua/lualine/themes/subway-seat-enamel.lua`.
 - Delete `~/.config/nvim/lua/lualine/themes/subway_seat_enamel.lua`.
-- Delete `~/.config/nvim/lua/lualine/themes/subway-seat-moquette.lua`.
+- Delete `~/.config/nvim/lua/lualine/themes/london-moquette.lua`.
 - Delete `~/.config/nvim/lua/lualine/themes/london_moquette.lua`.
-- Delete `~/.config/nvim/lua/lualine/themes/subway-seat-deep.lua`.
+- Delete `~/.config/nvim/lua/lualine/themes/london-deep.lua`.
 - Delete `~/.config/nvim/lua/lualine/themes/london_deep_level.lua`.
-- Delete `~/.config/nvim/lua/lualine/themes/subway-seat-portland.lua`.
+- Delete `~/.config/nvim/lua/lualine/themes/london-portland.lua`.
 - Delete `~/.config/nvim/lua/lualine/themes/london_portland.lua`.
 - Delete `~/.config/nvim/doc/subway-seat.txt`.
 - Remove the line you added to turn it on.

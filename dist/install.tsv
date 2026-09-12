@@ -531,9 +531,9 @@ file	nvim	*	nvim/colors/subway-seat.lua	~/.config/nvim/colors/subway-seat.lua	li
 file	nvim	walnut	nvim/colors/subway-seat-walnut.lua	~/.config/nvim/colors/subway-seat-walnut.lua	link
 file	nvim	tunnel	nvim/colors/subway-seat-tunnel.lua	~/.config/nvim/colors/subway-seat-tunnel.lua	link
 file	nvim	enamel	nvim/colors/subway-seat-enamel.lua	~/.config/nvim/colors/subway-seat-enamel.lua	link
-file	nvim	moquette	nvim/colors/subway-seat-moquette.lua	~/.config/nvim/colors/subway-seat-moquette.lua	link
-file	nvim	deep	nvim/colors/subway-seat-deep.lua	~/.config/nvim/colors/subway-seat-deep.lua	link
-file	nvim	portland	nvim/colors/subway-seat-portland.lua	~/.config/nvim/colors/subway-seat-portland.lua	link
+file	nvim	moquette	nvim/colors/london-moquette.lua	~/.config/nvim/colors/london-moquette.lua	link
+file	nvim	deep	nvim/colors/london-deep.lua	~/.config/nvim/colors/london-deep.lua	link
+file	nvim	portland	nvim/colors/london-portland.lua	~/.config/nvim/colors/london-portland.lua	link
 file	nvim	*	nvim/lua/subway-seat/init.lua	~/.config/nvim/lua/subway-seat/init.lua	link
 file	nvim	*	nvim/lua/subway-seat/palette.lua	~/.config/nvim/lua/subway-seat/palette.lua	link
 file	nvim	*	nvim/lua/lualine/themes/subway-seat.lua	~/.config/nvim/lua/lualine/themes/subway-seat.lua	link
@@ -543,19 +543,19 @@ file	nvim	tunnel	nvim/lua/lualine/themes/subway-seat-tunnel.lua	~/.config/nvim/l
 file	nvim	tunnel	nvim/lua/lualine/themes/subway_seat_tunnel.lua	~/.config/nvim/lua/lualine/themes/subway_seat_tunnel.lua	link
 file	nvim	enamel	nvim/lua/lualine/themes/subway-seat-enamel.lua	~/.config/nvim/lua/lualine/themes/subway-seat-enamel.lua	link
 file	nvim	enamel	nvim/lua/lualine/themes/subway_seat_enamel.lua	~/.config/nvim/lua/lualine/themes/subway_seat_enamel.lua	link
-file	nvim	moquette	nvim/lua/lualine/themes/subway-seat-moquette.lua	~/.config/nvim/lua/lualine/themes/subway-seat-moquette.lua	link
+file	nvim	moquette	nvim/lua/lualine/themes/london-moquette.lua	~/.config/nvim/lua/lualine/themes/london-moquette.lua	link
 file	nvim	moquette	nvim/lua/lualine/themes/london_moquette.lua	~/.config/nvim/lua/lualine/themes/london_moquette.lua	link
-file	nvim	deep	nvim/lua/lualine/themes/subway-seat-deep.lua	~/.config/nvim/lua/lualine/themes/subway-seat-deep.lua	link
+file	nvim	deep	nvim/lua/lualine/themes/london-deep.lua	~/.config/nvim/lua/lualine/themes/london-deep.lua	link
 file	nvim	deep	nvim/lua/lualine/themes/london_deep_level.lua	~/.config/nvim/lua/lualine/themes/london_deep_level.lua	link
-file	nvim	portland	nvim/lua/lualine/themes/subway-seat-portland.lua	~/.config/nvim/lua/lualine/themes/subway-seat-portland.lua	link
+file	nvim	portland	nvim/lua/lualine/themes/london-portland.lua	~/.config/nvim/lua/lualine/themes/london-portland.lua	link
 file	nvim	portland	nvim/lua/lualine/themes/london_portland.lua	~/.config/nvim/lua/lualine/themes/london_portland.lua	link
 file	nvim	*	nvim/doc/subway-seat.txt	~/.config/nvim/doc/subway-seat.txt	link
 enable	nvim	walnut		vim.cmd.colorscheme("subway-seat-walnut")	init.lua (~/.config/nvim/init.lua; Windows ~/AppData/Local/nvim/init.lua)	lua	
 enable	nvim	tunnel		vim.cmd.colorscheme("subway-seat-tunnel")	init.lua (~/.config/nvim/init.lua; Windows ~/AppData/Local/nvim/init.lua)	lua	
 enable	nvim	enamel		vim.cmd.colorscheme("subway-seat-enamel")	init.lua (~/.config/nvim/init.lua; Windows ~/AppData/Local/nvim/init.lua)	lua	
-enable	nvim	moquette		vim.cmd.colorscheme("subway-seat-moquette")	init.lua (~/.config/nvim/init.lua; Windows ~/AppData/Local/nvim/init.lua)	lua	
-enable	nvim	deep		vim.cmd.colorscheme("subway-seat-deep")	init.lua (~/.config/nvim/init.lua; Windows ~/AppData/Local/nvim/init.lua)	lua	
-enable	nvim	portland		vim.cmd.colorscheme("subway-seat-portland")	init.lua (~/.config/nvim/init.lua; Windows ~/AppData/Local/nvim/init.lua)	lua	
+enable	nvim	moquette		vim.cmd.colorscheme("london-moquette")	init.lua (~/.config/nvim/init.lua; Windows ~/AppData/Local/nvim/init.lua)	lua	
+enable	nvim	deep		vim.cmd.colorscheme("london-deep")	init.lua (~/.config/nvim/init.lua; Windows ~/AppData/Local/nvim/init.lua)	lua	
+enable	nvim	portland		vim.cmd.colorscheme("london-portland")	init.lua (~/.config/nvim/init.lua; Windows ~/AppData/Local/nvim/init.lua)	lua	
 auto	nvim		-- `subway-seat` follows 'background': Walnut when dark, Enamel when light.\n-- Neovim sets 'background' from the terminal; auto-dark-mode.nvim sets it from the OS.\nrequire("subway-seat").setup({ background = { dark = "walnut", light = "enamel" } }) -- or dark = "tunnel"\nvim.cmd.colorscheme("subway-seat")\n\n-- lazy.nvim, to follow the OS light/dark setting:\n-- { "f-person/auto-dark-mode.nvim", opts = {} }	init.lua	lua
 port	notepad-plus-plus	Notepad++	Editors	
 file	notepad-plus-plus	walnut	notepad-plus-plus/Subway Seat.xml	%AppData%\\Notepad++\\themes\\Subway Seat.xml	link
@@ -710,30 +710,31 @@ detect	vim	gvim
 detect	vim	mvim
 detect	vim	/Applications/MacVim.app
 file	vim	*	vim/colors/subway-seat.vim	~/.vim/colors/subway-seat.vim	link
+file	vim	*	vim/colors/london.vim	~/.vim/colors/london.vim	link
 file	vim	walnut	vim/colors/subway-seat-walnut.vim	~/.vim/colors/subway-seat-walnut.vim	link
 file	vim	tunnel	vim/colors/subway-seat-tunnel.vim	~/.vim/colors/subway-seat-tunnel.vim	link
 file	vim	enamel	vim/colors/subway-seat-enamel.vim	~/.vim/colors/subway-seat-enamel.vim	link
-file	vim	moquette	vim/colors/subway-seat-moquette.vim	~/.vim/colors/subway-seat-moquette.vim	link
-file	vim	deep	vim/colors/subway-seat-deep.vim	~/.vim/colors/subway-seat-deep.vim	link
-file	vim	portland	vim/colors/subway-seat-portland.vim	~/.vim/colors/subway-seat-portland.vim	link
+file	vim	moquette	vim/colors/london-moquette.vim	~/.vim/colors/london-moquette.vim	link
+file	vim	deep	vim/colors/london-deep.vim	~/.vim/colors/london-deep.vim	link
+file	vim	portland	vim/colors/london-portland.vim	~/.vim/colors/london-portland.vim	link
 file	vim	*	vim/autoload/lightline/colorscheme/subway_seat.vim	~/.vim/autoload/lightline/colorscheme/subway_seat.vim	link
 file	vim	*	vim/autoload/airline/themes/subway_seat.vim	~/.vim/autoload/airline/themes/subway_seat.vim	link
-file	vim	tunnel	vim/autoload/lightline/colorscheme/subway_seat_tunnel.vim	~/.vim/autoload/lightline/colorscheme/subway_seat_tunnel.vim	link
-file	vim	tunnel	vim/autoload/airline/themes/subway_seat_tunnel.vim	~/.vim/autoload/airline/themes/subway_seat_tunnel.vim	link
+file	vim	*	vim/autoload/lightline/colorscheme/subway_seat_tunnel.vim	~/.vim/autoload/lightline/colorscheme/subway_seat_tunnel.vim	link
+file	vim	*	vim/autoload/airline/themes/subway_seat_tunnel.vim	~/.vim/autoload/airline/themes/subway_seat_tunnel.vim	link
 file	vim	enamel	vim/autoload/lightline/colorscheme/subway_seat_enamel.vim	~/.vim/autoload/lightline/colorscheme/subway_seat_enamel.vim	link
 file	vim	enamel	vim/autoload/airline/themes/subway_seat_enamel.vim	~/.vim/autoload/airline/themes/subway_seat_enamel.vim	link
-file	vim	moquette	vim/autoload/lightline/colorscheme/london_moquette.vim	~/.vim/autoload/lightline/colorscheme/london_moquette.vim	link
-file	vim	moquette	vim/autoload/airline/themes/london_moquette.vim	~/.vim/autoload/airline/themes/london_moquette.vim	link
-file	vim	deep	vim/autoload/lightline/colorscheme/london_deep_level.vim	~/.vim/autoload/lightline/colorscheme/london_deep_level.vim	link
-file	vim	deep	vim/autoload/airline/themes/london_deep_level.vim	~/.vim/autoload/airline/themes/london_deep_level.vim	link
+file	vim	*	vim/autoload/lightline/colorscheme/london_moquette.vim	~/.vim/autoload/lightline/colorscheme/london_moquette.vim	link
+file	vim	*	vim/autoload/airline/themes/london_moquette.vim	~/.vim/autoload/airline/themes/london_moquette.vim	link
+file	vim	*	vim/autoload/lightline/colorscheme/london_deep_level.vim	~/.vim/autoload/lightline/colorscheme/london_deep_level.vim	link
+file	vim	*	vim/autoload/airline/themes/london_deep_level.vim	~/.vim/autoload/airline/themes/london_deep_level.vim	link
 file	vim	portland	vim/autoload/lightline/colorscheme/london_portland.vim	~/.vim/autoload/lightline/colorscheme/london_portland.vim	link
 file	vim	portland	vim/autoload/airline/themes/london_portland.vim	~/.vim/autoload/airline/themes/london_portland.vim	link
 enable	vim	walnut		if has('termguicolors') | set termguicolors | endif\ncolorscheme subway-seat-walnut	~/.vimrc (or ~/.vim/vimrc; Windows ~/_vimrc)	vim	
 enable	vim	tunnel		if has('termguicolors') | set termguicolors | endif\ncolorscheme subway-seat-tunnel	~/.vimrc (or ~/.vim/vimrc; Windows ~/_vimrc)	vim	
 enable	vim	enamel		if has('termguicolors') | set termguicolors | endif\ncolorscheme subway-seat-enamel	~/.vimrc (or ~/.vim/vimrc; Windows ~/_vimrc)	vim	
-enable	vim	moquette		if has('termguicolors') | set termguicolors | endif\ncolorscheme subway-seat-moquette	~/.vimrc (or ~/.vim/vimrc; Windows ~/_vimrc)	vim	
-enable	vim	deep		if has('termguicolors') | set termguicolors | endif\ncolorscheme subway-seat-deep	~/.vimrc (or ~/.vim/vimrc; Windows ~/_vimrc)	vim	
-enable	vim	portland		if has('termguicolors') | set termguicolors | endif\ncolorscheme subway-seat-portland	~/.vimrc (or ~/.vim/vimrc; Windows ~/_vimrc)	vim	
+enable	vim	moquette		if has('termguicolors') | set termguicolors | endif\ncolorscheme london-moquette	~/.vimrc (or ~/.vim/vimrc; Windows ~/_vimrc)	vim	
+enable	vim	deep		if has('termguicolors') | set termguicolors | endif\ncolorscheme london-deep	~/.vimrc (or ~/.vim/vimrc; Windows ~/_vimrc)	vim	
+enable	vim	portland		if has('termguicolors') | set termguicolors | endif\ncolorscheme london-portland	~/.vimrc (or ~/.vim/vimrc; Windows ~/_vimrc)	vim	
 auto	vim		" subway-seat follows 'background': Walnut when dark, Enamel when light.\n" Vim sets 'background' from the terminal's colors when the terminal reports them.\nif has('termguicolors') | set termguicolors | endif\ncolorscheme subway-seat	~/.vimrc	vim
 port	vscode	VS Code	Editors	VS Code 1.85+
 detect	vscode	code

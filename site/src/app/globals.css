@@ -28,17 +28,17 @@
   :root {
     --ss-shadow: rgba(8, 5, 2, 0.55);
     --ss-shadow-soft: rgba(8, 5, 2, 0.28);
-    --sign-bg: #0C0805;
-    --sign-text: #F8ECD4;
-    --sign-ring: #EC7F31;
+    --sign-bg: #0c0805;
+    --sign-text: #f8ecd4;
+    --sign-ring: #ec7f31;
     --radius-pill: 999px;
     --radius-card: 6px;
     --radius-chip: 50%;
   }
   html[data-family="london"] {
-    --sign-bg: #0019A8;
-    --sign-text: #FFFFFF;
-    --sign-ring: #F2C03F;
+    --sign-bg: #0019a8;
+    --sign-text: #ffffff;
+    --sign-ring: #f2c03f;
     --radius-pill: 2px;
     --radius-card: 0px;
     --radius-chip: 2px;
@@ -114,7 +114,7 @@
   html[data-flavor="portland"] .shiki-themes {
     background-color: var(--shiki-portland-bg) !important;
   }
-/* flavors:end */
+  /* flavors:end */
 
   /* Visually hidden, still read aloud. */
   .sr-only {

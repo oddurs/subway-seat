@@ -149,7 +149,7 @@ def warn(msg: str) -> None:
 
 
 def vars_for(f) -> dict:
-    return {"name": f.name, "slug": f.slug, "snake": f.snake, "id": f.id}
+    return {"name": f.name, "slug": f.slug, "snake": f.snake, "id": f.id, "prefix": f.prefix}
 
 
 # ── One port → files + manifest entry ─────────────────────────────────────
@@ -335,17 +335,21 @@ def site_tokens() -> dict[str, str]:
 def globals_css() -> str:
     """The per-flavor rules in site/src/app/globals.css, one block per flavor.
 
+    Hex is written lowercase here, and only here: it is the site's CSS
+    convention (biome reformats anything else), while the palette itself and
+    every generated theme stay uppercase.
+
     Hand-written CSS can't match a flavor id generically, so every rule that
     names one is generated here and a new family costs nothing."""
     ind = "  "
     first = p.FAMILIES[0].sign
     out = [f"{ind}:root {{", f"{ind}{ind}--ss-shadow: rgba(8, 5, 2, 0.55);",
            f"{ind}{ind}--ss-shadow-soft: rgba(8, 5, 2, 0.28);",
-           *(f"{ind}{ind}--sign-{k}: {v};" for k, v in first.items()),
+           *(f"{ind}{ind}--sign-{k}: {v.lower()};" for k, v in first.items()),
            *(f"{ind}{ind}--radius-{k}: {v};" for k, v in p.FAMILIES[0].shape.items()), f"{ind}}}"]
     for fam in p.FAMILIES[1:]:
         out += [f'{ind}html[data-family="{fam.id}"] {{',
-                *(f"{ind}{ind}--sign-{k}: {v};" for k, v in fam.sign.items()),
+                *(f"{ind}{ind}--sign-{k}: {v.lower()};" for k, v in fam.sign.items()),
                 *(f"{ind}{ind}--radius-{k}: {v};" for k, v in fam.shape.items()), f"{ind}}}"]
     for f in p.FLAVORS:
         if not f.dark:
@@ -569,7 +573,7 @@ def main() -> None:
         outputs.update({SITE_THEME / name: body for name, body in site_tokens().items()})
         outputs[README] = readme_with_tables(entries)
         outputs[GLOBALS] = fill_markers(
-            GLOBALS.read_text(encoding="utf-8"), {"flavors": globals_css()}, mark="/* {} */"
+            GLOBALS.read_text(encoding="utf-8"), {"flavors": globals_css()}, mark="  /* {} */"
         )
 
     port_dirs = {DIST / pid for pid in mods}

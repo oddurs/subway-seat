@@ -9,22 +9,23 @@ True-color and 256-color definitions in one file, with groups for ALE, coc, vim-
 | Flavor | File | Where it goes |
 |---|---|---|
 | All three | [`colors/subway-seat.vim`](colors/subway-seat.vim) | `~/.vim/colors/subway-seat.vim` |
+| All three | [`colors/london.vim`](colors/london.vim) | `~/.vim/colors/london.vim` |
 | Subway Seat | [`colors/subway-seat-walnut.vim`](colors/subway-seat-walnut.vim) | `~/.vim/colors/subway-seat-walnut.vim` |
 | Subway Seat Tunnel | [`colors/subway-seat-tunnel.vim`](colors/subway-seat-tunnel.vim) | `~/.vim/colors/subway-seat-tunnel.vim` |
 | Subway Seat Enamel | [`colors/subway-seat-enamel.vim`](colors/subway-seat-enamel.vim) | `~/.vim/colors/subway-seat-enamel.vim` |
-| London Moquette | [`colors/subway-seat-moquette.vim`](colors/subway-seat-moquette.vim) | `~/.vim/colors/subway-seat-moquette.vim` |
-| London Deep Level | [`colors/subway-seat-deep.vim`](colors/subway-seat-deep.vim) | `~/.vim/colors/subway-seat-deep.vim` |
-| London Portland | [`colors/subway-seat-portland.vim`](colors/subway-seat-portland.vim) | `~/.vim/colors/subway-seat-portland.vim` |
+| London Moquette | [`colors/london-moquette.vim`](colors/london-moquette.vim) | `~/.vim/colors/london-moquette.vim` |
+| London Deep Level | [`colors/london-deep.vim`](colors/london-deep.vim) | `~/.vim/colors/london-deep.vim` |
+| London Portland | [`colors/london-portland.vim`](colors/london-portland.vim) | `~/.vim/colors/london-portland.vim` |
 | All three | [`autoload/lightline/colorscheme/subway_seat.vim`](autoload/lightline/colorscheme/subway_seat.vim) | `~/.vim/autoload/lightline/colorscheme/subway_seat.vim` |
 | All three | [`autoload/airline/themes/subway_seat.vim`](autoload/airline/themes/subway_seat.vim) | `~/.vim/autoload/airline/themes/subway_seat.vim` |
-| Subway Seat Tunnel | [`autoload/lightline/colorscheme/subway_seat_tunnel.vim`](autoload/lightline/colorscheme/subway_seat_tunnel.vim) | `~/.vim/autoload/lightline/colorscheme/subway_seat_tunnel.vim` |
-| Subway Seat Tunnel | [`autoload/airline/themes/subway_seat_tunnel.vim`](autoload/airline/themes/subway_seat_tunnel.vim) | `~/.vim/autoload/airline/themes/subway_seat_tunnel.vim` |
+| All three | [`autoload/lightline/colorscheme/subway_seat_tunnel.vim`](autoload/lightline/colorscheme/subway_seat_tunnel.vim) | `~/.vim/autoload/lightline/colorscheme/subway_seat_tunnel.vim` |
+| All three | [`autoload/airline/themes/subway_seat_tunnel.vim`](autoload/airline/themes/subway_seat_tunnel.vim) | `~/.vim/autoload/airline/themes/subway_seat_tunnel.vim` |
 | Subway Seat Enamel | [`autoload/lightline/colorscheme/subway_seat_enamel.vim`](autoload/lightline/colorscheme/subway_seat_enamel.vim) | `~/.vim/autoload/lightline/colorscheme/subway_seat_enamel.vim` |
 | Subway Seat Enamel | [`autoload/airline/themes/subway_seat_enamel.vim`](autoload/airline/themes/subway_seat_enamel.vim) | `~/.vim/autoload/airline/themes/subway_seat_enamel.vim` |
-| London Moquette | [`autoload/lightline/colorscheme/london_moquette.vim`](autoload/lightline/colorscheme/london_moquette.vim) | `~/.vim/autoload/lightline/colorscheme/london_moquette.vim` |
-| London Moquette | [`autoload/airline/themes/london_moquette.vim`](autoload/airline/themes/london_moquette.vim) | `~/.vim/autoload/airline/themes/london_moquette.vim` |
-| London Deep Level | [`autoload/lightline/colorscheme/london_deep_level.vim`](autoload/lightline/colorscheme/london_deep_level.vim) | `~/.vim/autoload/lightline/colorscheme/london_deep_level.vim` |
-| London Deep Level | [`autoload/airline/themes/london_deep_level.vim`](autoload/airline/themes/london_deep_level.vim) | `~/.vim/autoload/airline/themes/london_deep_level.vim` |
+| All three | [`autoload/lightline/colorscheme/london_moquette.vim`](autoload/lightline/colorscheme/london_moquette.vim) | `~/.vim/autoload/lightline/colorscheme/london_moquette.vim` |
+| All three | [`autoload/airline/themes/london_moquette.vim`](autoload/airline/themes/london_moquette.vim) | `~/.vim/autoload/airline/themes/london_moquette.vim` |
+| All three | [`autoload/lightline/colorscheme/london_deep_level.vim`](autoload/lightline/colorscheme/london_deep_level.vim) | `~/.vim/autoload/lightline/colorscheme/london_deep_level.vim` |
+| All three | [`autoload/airline/themes/london_deep_level.vim`](autoload/airline/themes/london_deep_level.vim) | `~/.vim/autoload/airline/themes/london_deep_level.vim` |
 | London Portland | [`autoload/lightline/colorscheme/london_portland.vim`](autoload/lightline/colorscheme/london_portland.vim) | `~/.vim/autoload/lightline/colorscheme/london_portland.vim` |
 | London Portland | [`autoload/airline/themes/london_portland.vim`](autoload/airline/themes/london_portland.vim) | `~/.vim/autoload/airline/themes/london_portland.vim` |
 
@@ -55,21 +56,21 @@ colorscheme subway-seat-enamel
 
 ```vim
 if has('termguicolors') | set termguicolors | endif
-colorscheme subway-seat-moquette
+colorscheme london-moquette
 ```
 
 **London Deep Level**, in ~/.vimrc (or ~/.vim/vimrc; Windows ~/_vimrc):
 
 ```vim
 if has('termguicolors') | set termguicolors | endif
-colorscheme subway-seat-deep
+colorscheme london-deep
 ```
 
 **London Portland**, in ~/.vimrc (or ~/.vim/vimrc; Windows ~/_vimrc):
 
 ```vim
 if has('termguicolors') | set termguicolors | endif
-colorscheme subway-seat-portland
+colorscheme london-portland
 ```
 
 ## Follow light and dark
@@ -86,12 +87,13 @@ colorscheme subway-seat
 ## Uninstall
 
 - Delete `~/.vim/colors/subway-seat.vim`.
+- Delete `~/.vim/colors/london.vim`.
 - Delete `~/.vim/colors/subway-seat-walnut.vim`.
 - Delete `~/.vim/colors/subway-seat-tunnel.vim`.
 - Delete `~/.vim/colors/subway-seat-enamel.vim`.
-- Delete `~/.vim/colors/subway-seat-moquette.vim`.
-- Delete `~/.vim/colors/subway-seat-deep.vim`.
-- Delete `~/.vim/colors/subway-seat-portland.vim`.
+- Delete `~/.vim/colors/london-moquette.vim`.
+- Delete `~/.vim/colors/london-deep.vim`.
+- Delete `~/.vim/colors/london-portland.vim`.
 - Delete `~/.vim/autoload/lightline/colorscheme/subway_seat.vim`.
 - Delete `~/.vim/autoload/airline/themes/subway_seat.vim`.
 - Delete `~/.vim/autoload/lightline/colorscheme/subway_seat_tunnel.vim`.
