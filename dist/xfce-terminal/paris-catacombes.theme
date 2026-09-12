@@ -3,7 +3,7 @@
 Name=Paris Catacombes
 ColorForeground=#D4DDD7
 ColorBackground=#121E19
-ColorCursor=#F2BF4B
+ColorCursor=#F1BF4B
 ColorCursorForeground=#121E19
 ColorCursorUseDefault=FALSE
 ColorBold=#E7ECEA
@@ -11,5 +11,5 @@ ColorBoldUseDefault=FALSE
 ColorSelection=#E7ECEA
 ColorSelectionBackground=#31433A
 ColorSelectionUseDefault=FALSE
-TabActivityColor=#D0914F
-ColorPalette=#24342C;#CD6B63;#80C28E;#F2BF4B;#709BC8;#D0914F;#5FA09D;#BFC8C2;#708178;#EE8F85;#8FD59E;#FFD273;#8DB6E2;#E7AB6D;#8CCCC9;#E7ECEA
+TabActivityColor=#CA9245
+ColorPalette=#24342C;#C7665B;#70CAA9;#F1BF4B;#709BC8;#CA9245;#549B9F;#BFC8C2;#708178;#E7877B;#89DEBE;#FFD57A;#8DB6E2;#DFAA61;#70B5B9;#E7ECEA

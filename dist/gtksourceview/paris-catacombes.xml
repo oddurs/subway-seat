@@ -21,31 +21,31 @@
   <color name="subtext1" value="#BFC8C2"/>
   <color name="text" value="#D4DDD7"/>
   <color name="text_hi" value="#E7ECEA"/>
-  <color name="yellow" value="#F2BF4B"/>
-  <color name="yellow_hi" value="#FFD273"/>
-  <color name="orange" value="#D0914F"/>
-  <color name="orange_hi" value="#E7AB6D"/>
-  <color name="red" value="#CD6B63"/>
-  <color name="red_hi" value="#EE8F85"/>
-  <color name="green" value="#80C28E"/>
-  <color name="green_hi" value="#8FD59E"/>
-  <color name="sage" value="#5FA09D"/>
-  <color name="sage_hi" value="#8CCCC9"/>
+  <color name="yellow" value="#F1BF4B"/>
+  <color name="yellow_hi" value="#FFD57A"/>
+  <color name="orange" value="#CA9245"/>
+  <color name="orange_hi" value="#DFAA61"/>
+  <color name="red" value="#C7665B"/>
+  <color name="red_hi" value="#E7877B"/>
+  <color name="green" value="#70CAA9"/>
+  <color name="green_hi" value="#89DEBE"/>
+  <color name="sage" value="#549B9F"/>
+  <color name="sage_hi" value="#70B5B9"/>
   <color name="denim" value="#709BC8"/>
   <color name="denim_hi" value="#8DB6E2"/>
-  <color name="clay" value="#CE96B4"/>
-  <color name="tint_add" value="#243729"/>
-  <color name="tint_add_emph" value="#324D39"/>
-  <color name="tint_add_dim" value="#1B291F"/>
-  <color name="tint_del" value="#3D2823"/>
-  <color name="tint_del_emph" value="#58342F"/>
-  <color name="tint_del_dim" value="#2B1F1C"/>
+  <color name="clay" value="#FAB49C"/>
+  <color name="tint_add" value="#20392F"/>
+  <color name="tint_add_emph" value="#2D4F42"/>
+  <color name="tint_add_dim" value="#182A23"/>
+  <color name="tint_del" value="#3B2621"/>
+  <color name="tint_del_emph" value="#56322C"/>
+  <color name="tint_del_dim" value="#2A1F1A"/>
   <color name="tint_chg" value="#2F2C17"/>
   <color name="tint_chg_emph" value="#463E1D"/>
   <color name="tint_info" value="#1F3032"/>
-  <color name="tint_hint" value="#1D302B"/>
+  <color name="tint_hint" value="#1B302C"/>
   <color name="tint_search" value="#554E28"/>
-  <color name="tint_search_cur" value="#715834"/>
+  <color name="tint_search_cur" value="#6E582F"/>
   <color name="selection_unfocused" value="#23322B"/>
   <color name="bracket_bg" value="#24342C"/>
 

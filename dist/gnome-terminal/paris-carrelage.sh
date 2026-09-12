@@ -21,17 +21,17 @@ fi
 
 gsettings set "$PROFILE" visible-name "'Paris Carrelage'"
 gsettings set "$PROFILE" use-theme-colors "false"
-gsettings set "$PROFILE" background-color "'#EEF3ED'"
-gsettings set "$PROFILE" foreground-color "'#2A342B'"
+gsettings set "$PROFILE" background-color "'#EEF2F1'"
+gsettings set "$PROFILE" foreground-color "'#27342F'"
 gsettings set "$PROFILE" bold-color-same-as-fg "false"
-gsettings set "$PROFILE" bold-color "'#1B221C'"
+gsettings set "$PROFILE" bold-color "'#19221E'"
 gsettings set "$PROFILE" cursor-colors-set "true"
-gsettings set "$PROFILE" cursor-background-color "'#804B00'"
-gsettings set "$PROFILE" cursor-foreground-color "'#EEF3ED'"
+gsettings set "$PROFILE" cursor-background-color "'#764C00'"
+gsettings set "$PROFILE" cursor-foreground-color "'#EEF2F1'"
 gsettings set "$PROFILE" highlight-colors-set "true"
-gsettings set "$PROFILE" highlight-background-color "'#B1C0B0'"
-gsettings set "$PROFILE" highlight-foreground-color "'#1B221C'"
-gsettings set "$PROFILE" palette "['#3D473E', '#932D29', '#207F41', '#8E6B08', '#27629C', '#804B00', '#006E6B', '#9BAC9A', '#6E7C6E', '#BE423D', '#168540', '#9D770A', '#3E75AD', '#A26100', '#1E8683', '#B1C0B0']"
+gsettings set "$PROFILE" highlight-background-color "'#B0BFBB'"
+gsettings set "$PROFILE" highlight-foreground-color "'#19221E'"
+gsettings set "$PROFILE" palette "['#3B4742', '#88251E', '#218366', '#916D07', '#25629B', '#764C00', '#006267', '#99ABA6', '#6C7C76', '#AC3B32', '#278D6E', '#A07A12', '#3D75AD', '#885A00', '#027479', '#B0BFBB']"
 
 case "$list" in
   *"$UUID"*) ;;

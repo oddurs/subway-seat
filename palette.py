@@ -79,20 +79,22 @@ ROLE_USES = {
 
 
 PARIS_NAMES = {
-    # The grounds are the architecture; the accents are the map. That split is
-    # how the city itself is colored: cast iron and limestone underfoot, and a
-    # line colour for everything you need to find.
+    # The grounds are the architecture and the accents are its materials —
+    # not, as they were, the fourteen line colors of the map. A map is a
+    # rainbow, and a rainbow is what was fighting on the pale flavor. Four
+    # materials instead, each aged into two: brass into bronze, fired clay into
+    # brick, verdigris into the older bluer patina, and the blue of a plate.
     "crust": "Ballast", "mantle": "Fonte", "base": "Guimard", "surface0": "Banquette",
     "surface1": "Rambarde", "surface2": "Ferronnerie", "overlay0": "Ardoise",
     "overlay1": "Zinc", "overlay2": "Brume", "subtext0": "Calcaire", "subtext1": "Craie",
     "text": "Faience", "text_hi": "Porcelaine",
     "yellow": "Laiton", "yellow_hi": "Laiton clair",
-    "orange": "Ligne 11", "orange_hi": "Ligne 11 clair",
-    "red": "Rouge RATP", "red_hi": "Rouge clair",
-    "green": "Ligne 6", "green_hi": "Ligne 6 clair",
+    "orange": "Bronze", "orange_hi": "Bronze clair",
+    "red": "Terre cuite", "red_hi": "Terre cuite claire",
+    "green": "Patine", "green_hi": "Patine claire",
     "sage": "Vert-de-gris", "sage_hi": "Vert-de-gris clair",
-    "denim": "Ligne 2", "denim_hi": "Ligne 2 clair",
-    "clay": "Ligne 4",
+    "denim": "Email", "denim_hi": "Email clair",
+    "clay": "Brique",
 }
 
 
@@ -400,13 +402,13 @@ GUIMARD = Flavor(
         "surface0": "#263930", "surface1": "#30463B", "surface2": "#3E554A",
         "overlay0": "#586B61", "overlay1": "#74857C", "overlay2": "#909E96",
         "subtext0": "#A9B5AE", "subtext1": "#C2CBC5", "text": "#D9E1DB", "text_hi": "#E9EEEC",
-        "yellow": "#F2BF4B", "yellow_hi": "#FFD273",
-        "orange": "#D0914F", "orange_hi": "#E7AB6D",
-        "red": "#CD6B63", "red_hi": "#EE8F85",
-        "green": "#80C28E", "green_hi": "#8FD59E",
-        "sage": "#5FA09D", "sage_hi": "#8CCCC9",
+        "yellow": "#F1BF4B", "yellow_hi": "#FFD57A",
+        "orange": "#CA9245", "orange_hi": "#DFAA61",
+        "red": "#C7665B", "red_hi": "#E7877B",
+        "green": "#70CAA9", "green_hi": "#89DEBE",
+        "sage": "#549B9F", "sage_hi": "#70B5B9",
         "denim": "#709BC8", "denim_hi": "#8DB6E2",
-        "clay": "#CE96B4",
+        "clay": "#FAB49C",
     },
     ansi_roles=DARK_ANSI,
 )
@@ -423,13 +425,13 @@ CATACOMBES = Flavor(
         "surface0": "#1A2921", "surface1": "#24342C", "surface2": "#31433A",
         "overlay0": "#54655C", "overlay1": "#708178", "overlay2": "#8C9A92",
         "subtext0": "#A5B1AA", "subtext1": "#BFC8C2", "text": "#D4DDD7", "text_hi": "#E7ECEA",
-        "yellow": "#F2BF4B", "yellow_hi": "#FFD273",
-        "orange": "#D0914F", "orange_hi": "#E7AB6D",
-        "red": "#CD6B63", "red_hi": "#EE8F85",
-        "green": "#80C28E", "green_hi": "#8FD59E",
-        "sage": "#5FA09D", "sage_hi": "#8CCCC9",
+        "yellow": "#F1BF4B", "yellow_hi": "#FFD57A",
+        "orange": "#CA9245", "orange_hi": "#DFAA61",
+        "red": "#C7665B", "red_hi": "#E7877B",
+        "green": "#70CAA9", "green_hi": "#89DEBE",
+        "sage": "#549B9F", "sage_hi": "#70B5B9",
         "denim": "#709BC8", "denim_hi": "#8DB6E2",
-        "clay": "#CE96B4",
+        "clay": "#FAB49C",
     },
     ansi_roles=DARK_ANSI,
 )
@@ -448,23 +450,23 @@ CARRELAGE = Flavor(
         # the cast is turned off mint towards a ceramic green and pulled to
         # under half its chroma at the paper end, where it meets brass, and let
         # back up through the ramp, where it meets nothing.
-        "crust": "#D4DCD3", "mantle": "#E1E7E0", "base": "#EEF3ED",
-        "surface0": "#C7D3C5", "surface1": "#B1C0B0", "surface2": "#9BAC9A",
-        "overlay0": "#879887", "overlay1": "#6E7C6E", "overlay2": "#586459",
-        "subtext0": "#4C574D", "subtext1": "#3D473E", "text": "#2A342B", "text_hi": "#1B221C",
-        "yellow": "#8E6B08", "yellow_hi": "#9D770A",
+        "crust": "#D5DBDA", "mantle": "#E1E6E5", "base": "#EEF2F1",
+        "surface0": "#C6D2CF", "surface1": "#B0BFBB", "surface2": "#99ABA6",
+        "overlay0": "#859792", "overlay1": "#6C7C76", "overlay2": "#56645F",
+        "subtext0": "#4A5752", "subtext1": "#3B4742", "text": "#27342F", "text_hi": "#19221E",
+        "yellow": "#916D07", "yellow_hi": "#A07A12",
         # Paris runs orange at 66 degrees, a bare 19 from its own brass, so the
         # two warm accents can only be told apart by lightness. The stagger was
         # right; its depth was not. At L 0.44 this hue is already hard against
         # the sRGB wall — the most saturated color that exists there is olive.
         # Lifted to 0.495 and taken back out to the gamut edge it is amber, and
         # still sits 0.04 clear of the brass above it.
-        "orange": "#804B00", "orange_hi": "#A26100",
-        "red": "#932D29", "red_hi": "#BE423D",
-        "green": "#207F41", "green_hi": "#168540",
-        "sage": "#006E6B", "sage_hi": "#1E8683",
-        "denim": "#27629C", "denim_hi": "#3E75AD",
-        "clay": "#98547C",
+        "orange": "#764C00", "orange_hi": "#885A00",
+        "red": "#88251E", "red_hi": "#AC3B32",
+        "green": "#218366", "green_hi": "#278D6E",
+        "sage": "#006267", "sage_hi": "#027479",
+        "denim": "#25629B", "denim_hi": "#3D75AD",
+        "clay": "#B36B51",
     },
     ansi_roles=LIGHT_ANSI,
 )
@@ -473,7 +475,7 @@ CARRELAGE = Flavor(
 PARIS = Family(
     id="paris",
     name="Paris",
-    blurb="The Metro: cast iron and brass, white tile, and the line colors of the map.",
+    blurb="The Metro in its materials: cast iron and brass, white tile, verdigris and terracotta.",
     sign={"bg": "#070C0A", "text": "#FFFFFF", "ring": GUIMARD.yellow,
           "mark": GUIMARD.yellow, "mark-alt": "#070C0A"},
     # Art Nouveau bends; nothing Guimard drew was ever square.

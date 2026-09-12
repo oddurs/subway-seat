@@ -4,23 +4,23 @@ theme:
   colors:
     text:
       primary: "#D9E1DB"
-      secondary: "#D0914F"
+      secondary: "#CA9245"
       inverted: "#131A17"
       faint: "#74857C"
-      warning: "#F2BF4B"
-      success: "#80C28E"
-      error: "#EE8F85"
+      warning: "#F1BF4B"
+      success: "#70CAA9"
+      error: "#E7877B"
       actor: "#C2CBC5"
     background:
       selected: "#30463B"
     border:
-      primary: "#D0914F"
+      primary: "#CA9245"
       secondary: "#3E554A"
       faint: "#263930"
     icon:
-      newcontributor: "#80C28E"
-      contributor: "#5FA09D"
-      collaborator: "#F2BF4B"
-      member: "#F2BF4B"
-      owner: "#D0914F"
+      newcontributor: "#70CAA9"
+      contributor: "#549B9F"
+      collaborator: "#F1BF4B"
+      member: "#F1BF4B"
+      owner: "#CA9245"
       unknownrole: "#74857C"

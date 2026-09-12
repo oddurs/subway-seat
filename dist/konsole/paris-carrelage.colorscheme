@@ -1,94 +1,94 @@
 # Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
 
 [Background]
-Color=238,243,237
+Color=238,242,241
 
 [BackgroundFaint]
-Color=238,243,237
+Color=238,242,241
 
 [BackgroundIntense]
-Color=238,243,237
+Color=238,242,241
 
 [Color0]
-Color=61,71,62
+Color=59,71,66
 
 [Color0Faint]
-Color=121,129,122
+Color=120,129,126
 
 [Color0Intense]
-Color=110,124,110
+Color=108,124,118
 
 [Color1]
-Color=147,45,41
+Color=136,37,30
 
 [Color1Faint]
-Color=178,112,108
+Color=171,107,102
 
 [Color1Intense]
-Color=190,66,61
+Color=172,59,50
 
 [Color2]
-Color=32,127,65
+Color=33,131,102
 
 [Color2Faint]
-Color=102,166,123
+Color=103,169,149
 
 [Color2Intense]
-Color=22,133,64
+Color=39,141,110
 
 [Color3]
-Color=142,107,8
+Color=145,109,7
 
 [Color3Faint]
-Color=175,153,86
+Color=177,154,87
 
 [Color3Intense]
-Color=157,119,10
+Color=160,122,18
 
 [Color4]
-Color=39,98,156
+Color=37,98,155
 
 [Color4Faint]
-Color=107,147,184
+Color=105,147,184
 
 [Color4Intense]
-Color=62,117,173
+Color=61,117,173
 
 [Color5]
-Color=128,75,0
+Color=118,76,0
 
 [Color5Faint]
-Color=165,132,81
+Color=159,132,82
 
 [Color5Intense]
-Color=162,97,0
+Color=136,90,0
 
 [Color6]
-Color=0,110,107
+Color=0,98,103
 
 [Color6Faint]
-Color=81,155,151
+Color=81,147,150
 
 [Color6Intense]
-Color=30,134,131
+Color=2,116,121
 
 [Color7]
-Color=155,172,154
+Color=153,171,166
 
 [Color7Faint]
-Color=183,196,182
+Color=182,195,192
 
 [Color7Intense]
-Color=177,192,176
+Color=176,191,187
 
 [Foreground]
-Color=42,52,43
+Color=39,52,47
 
 [ForegroundFaint]
-Color=88,100,89
+Color=86,100,95
 
 [ForegroundIntense]
-Color=27,34,28
+Color=25,34,30
 
 [General]
 Blur=false

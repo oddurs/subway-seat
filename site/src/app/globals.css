@@ -50,8 +50,8 @@
   html[data-family="paris"] {
     --sign-bg: #070c0a;
     --sign-text: #ffffff;
-    --sign-ring: #f2bf4b;
-    --sign-mark: #f2bf4b;
+    --sign-ring: #f1bf4b;
+    --sign-mark: #f1bf4b;
     --sign-mark-alt: #070c0a;
     --radius-pill: 999px;
     --radius-card: 14px;
@@ -66,8 +66,8 @@
     --ss-shadow-soft: rgba(94, 100, 112, 0.12);
   }
   html[data-flavor="carrelage"] {
-    --ss-shadow: rgba(95, 103, 96, 0.2);
-    --ss-shadow-soft: rgba(95, 103, 96, 0.12);
+    --ss-shadow: rgba(93, 103, 99, 0.2);
+    --ss-shadow-soft: rgba(93, 103, 99, 0.12);
   }
 
   html[data-flavor="walnut"] [data-unless="walnut"],

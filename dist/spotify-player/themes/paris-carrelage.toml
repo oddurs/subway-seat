@@ -4,44 +4,44 @@
 name = "paris-carrelage"
 
 [themes.palette]
-background = "#EEF3ED"
-foreground = "#2A342B"
-black = "#3D473E"
-red = "#932D29"
-green = "#207F41"
-yellow = "#8E6B08"
-blue = "#27629C"
-magenta = "#804B00"
-cyan = "#006E6B"
-white = "#9BAC9A"
-bright_black = "#6E7C6E"
-bright_red = "#BE423D"
-bright_green = "#168540"
-bright_yellow = "#9D770A"
-bright_blue = "#3E75AD"
-bright_magenta = "#A26100"
-bright_cyan = "#1E8683"
-bright_white = "#B1C0B0"
+background = "#EEF2F1"
+foreground = "#27342F"
+black = "#3B4742"
+red = "#88251E"
+green = "#218366"
+yellow = "#916D07"
+blue = "#25629B"
+magenta = "#764C00"
+cyan = "#006267"
+white = "#99ABA6"
+bright_black = "#6C7C76"
+bright_red = "#AC3B32"
+bright_green = "#278D6E"
+bright_yellow = "#A07A12"
+bright_blue = "#3D75AD"
+bright_magenta = "#885A00"
+bright_cyan = "#027479"
+bright_white = "#B0BFBB"
 
 [themes.component_style]
-block_title = { fg = "#804B00", modifiers = ["Bold"] }
-border = { fg = "#9BAC9A" }
-playback_status = { fg = "#8E6B08", modifiers = ["Bold"] }
-playback_track = { fg = "#8E6B08", modifiers = ["Bold"] }
-playback_artists = { fg = "#804B00" }
-playback_album = { fg = "#006E6B" }
-playback_genres = { fg = "#6E7C6E", modifiers = ["Italic"] }
-playback_metadata = { fg = "#4C574D" }
-playback_progress_bar = { fg = "#804B00", bg = "#B1C0B0" }
-playback_progress_bar_unfilled = { fg = "#9BAC9A", bg = "#B1C0B0" }
-current_playing = { fg = "#207F41", modifiers = ["Bold"] }
-page_desc = { fg = "#8E6B08", modifiers = ["Bold"] }
-playlist_desc = { fg = "#6E7C6E" }
-table_header = { fg = "#804B00" }
-selection = { fg = "#1B221C", bg = "#C7D3C5", modifiers = ["Bold"] }
-secondary_row = { bg = "#E1E7E0" }
-like = { fg = "#BE423D" }
-lyrics_played = { fg = "#6E7C6E" }
-lyrics_playing = { fg = "#8E6B08", modifiers = ["Bold"] }
-visualization = { low = "#207F41", mid = "#8E6B08", high = "#BE423D" }
+block_title = { fg = "#764C00", modifiers = ["Bold"] }
+border = { fg = "#99ABA6" }
+playback_status = { fg = "#916D07", modifiers = ["Bold"] }
+playback_track = { fg = "#916D07", modifiers = ["Bold"] }
+playback_artists = { fg = "#764C00" }
+playback_album = { fg = "#006267" }
+playback_genres = { fg = "#6C7C76", modifiers = ["Italic"] }
+playback_metadata = { fg = "#4A5752" }
+playback_progress_bar = { fg = "#764C00", bg = "#B0BFBB" }
+playback_progress_bar_unfilled = { fg = "#99ABA6", bg = "#B0BFBB" }
+current_playing = { fg = "#218366", modifiers = ["Bold"] }
+page_desc = { fg = "#916D07", modifiers = ["Bold"] }
+playlist_desc = { fg = "#6C7C76" }
+table_header = { fg = "#764C00" }
+selection = { fg = "#19221E", bg = "#C6D2CF", modifiers = ["Bold"] }
+secondary_row = { bg = "#E1E6E5" }
+like = { fg = "#AC3B32" }
+lyrics_played = { fg = "#6C7C76" }
+lyrics_playing = { fg = "#916D07", modifiers = ["Bold"] }
+visualization = { low = "#218366", mid = "#916D07", high = "#AC3B32" }
 # <<< subway-seat <<<

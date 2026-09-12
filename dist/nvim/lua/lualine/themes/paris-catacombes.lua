@@ -3,7 +3,7 @@ return {
   ["normal"] = {
     ["a"] = {
       ["fg"] = "#0A100D",
-      ["bg"] = "#D0914F",
+      ["bg"] = "#CA9245",
       ["gui"] = "bold",
     },
     ["b"] = {
@@ -18,7 +18,7 @@ return {
   ["insert"] = {
     ["a"] = {
       ["fg"] = "#0A100D",
-      ["bg"] = "#80C28E",
+      ["bg"] = "#70CAA9",
       ["gui"] = "bold",
     },
     ["b"] = {
@@ -33,7 +33,7 @@ return {
   ["visual"] = {
     ["a"] = {
       ["fg"] = "#0A100D",
-      ["bg"] = "#F2BF4B",
+      ["bg"] = "#F1BF4B",
       ["gui"] = "bold",
     },
     ["b"] = {
@@ -48,7 +48,7 @@ return {
   ["replace"] = {
     ["a"] = {
       ["fg"] = "#0A100D",
-      ["bg"] = "#EE8F85",
+      ["bg"] = "#E7877B",
       ["gui"] = "bold",
     },
     ["b"] = {
@@ -63,7 +63,7 @@ return {
   ["command"] = {
     ["a"] = {
       ["fg"] = "#0A100D",
-      ["bg"] = "#5FA09D",
+      ["bg"] = "#549B9F",
       ["gui"] = "bold",
     },
     ["b"] = {
@@ -78,7 +78,7 @@ return {
   ["terminal"] = {
     ["a"] = {
       ["fg"] = "#0A100D",
-      ["bg"] = "#CE96B4",
+      ["bg"] = "#FAB49C",
       ["gui"] = "bold",
     },
     ["b"] = {

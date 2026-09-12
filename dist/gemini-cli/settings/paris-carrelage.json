@@ -4,55 +4,55 @@
       "Paris Carrelage": {
         "name": "Paris Carrelage",
         "type": "custom",
-        "Background": "#EEF3ED",
-        "Foreground": "#2A342B",
-        "LightBlue": "#3D473E",
-        "AccentBlue": "#804B00",
-        "AccentPurple": "#98547C",
-        "AccentCyan": "#006E6B",
-        "AccentGreen": "#207F41",
-        "AccentYellow": "#8E6B08",
-        "AccentRed": "#BE423D",
-        "DiffAdded": "#C5DECE",
-        "DiffRemoved": "#E9D5D4",
-        "Comment": "#6E7C6E",
-        "Gray": "#586459",
-        "DarkGray": "#9BAC9A",
+        "Background": "#EEF2F1",
+        "Foreground": "#27342F",
+        "LightBlue": "#3B4742",
+        "AccentBlue": "#764C00",
+        "AccentPurple": "#B36B51",
+        "AccentCyan": "#006267",
+        "AccentGreen": "#218366",
+        "AccentYellow": "#916D07",
+        "AccentRed": "#AC3B32",
+        "DiffAdded": "#C5DFD7",
+        "DiffRemoved": "#E7D3D2",
+        "Comment": "#6C7C76",
+        "Gray": "#56645F",
+        "DarkGray": "#99ABA6",
         "GradientColors": [
-          "#932D29",
-          "#804B00",
-          "#8E6B08",
-          "#207F41"
+          "#88251E",
+          "#764C00",
+          "#916D07",
+          "#218366"
         ],
         "text": {
-          "primary": "#2A342B",
-          "secondary": "#586459",
-          "accent": "#98547C",
-          "response": "#2A342B"
+          "primary": "#27342F",
+          "secondary": "#56645F",
+          "accent": "#B36B51",
+          "response": "#27342F"
         },
         "background": {
-          "primary": "#EEF3ED",
+          "primary": "#EEF2F1",
           "diff": {
-            "added": "#C5DECE",
-            "removed": "#E9D5D4"
+            "added": "#C5DFD7",
+            "removed": "#E7D3D2"
           }
         },
         "ui": {
-          "comment": "#6E7C6E",
-          "symbol": "#8E6B08",
-          "active": "#804B00",
-          "focus": "#8E6B08",
+          "comment": "#6C7C76",
+          "symbol": "#916D07",
+          "active": "#764C00",
+          "focus": "#916D07",
           "gradient": [
-            "#932D29",
-            "#804B00",
-            "#8E6B08",
-            "#207F41"
+            "#88251E",
+            "#764C00",
+            "#916D07",
+            "#218366"
           ]
         },
         "status": {
-          "success": "#207F41",
-          "warning": "#8E6B08",
-          "error": "#BE423D"
+          "success": "#218366",
+          "warning": "#916D07",
+          "error": "#AC3B32"
         }
       }
     },

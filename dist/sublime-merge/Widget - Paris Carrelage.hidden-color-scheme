@@ -2,34 +2,34 @@
 {
   "name": "Paris Carrelage Widgets",
   "globals": {
-    "foreground": "#2A342B",
-    "background": "#F6F9F6",
-    "caret": "#804B00",
-    "line_highlight": "#F6F9F6",
-    "selection": "#B1C0B0",
-    "selection_border": "#B1C0B0",
-    "inactive_selection": "#B1C0B0"
+    "foreground": "#27342F",
+    "background": "#F6F8F8",
+    "caret": "#764C00",
+    "line_highlight": "#F6F8F8",
+    "selection": "#B0BFBB",
+    "selection_border": "#B0BFBB",
+    "inactive_selection": "#B0BFBB"
   },
   "rules": [
     {
       "scope": "comment",
-      "foreground": "#6E7C6E"
+      "foreground": "#6C7C76"
     },
     {
       "scope": "keyword, storage",
-      "foreground": "#804B00"
+      "foreground": "#764C00"
     },
     {
       "scope": "constant",
-      "foreground": "#BE423D"
+      "foreground": "#AC3B32"
     },
     {
       "scope": "string",
-      "foreground": "#207F41"
+      "foreground": "#218366"
     },
     {
       "scope": "constant.character.escape",
-      "foreground": "#98547C"
+      "foreground": "#B36B51"
     }
   ]
 }

@@ -332,52 +332,52 @@
       "Background": "#1E2E26",
       "Foreground": "#D9E1DB",
       "LightBlue": "#C2CBC5",
-      "AccentBlue": "#D0914F",
-      "AccentPurple": "#CE96B4",
-      "AccentCyan": "#5FA09D",
-      "AccentGreen": "#80C28E",
-      "AccentYellow": "#F2BF4B",
-      "AccentRed": "#EE8F85",
-      "DiffAdded": "#2B3F31",
-      "DiffRemoved": "#432F2B",
+      "AccentBlue": "#CA9245",
+      "AccentPurple": "#FAB49C",
+      "AccentCyan": "#549B9F",
+      "AccentGreen": "#70CAA9",
+      "AccentYellow": "#F1BF4B",
+      "AccentRed": "#E7877B",
+      "DiffAdded": "#274137",
+      "DiffRemoved": "#422E29",
       "Comment": "#74857C",
       "Gray": "#909E96",
       "DarkGray": "#3E554A",
       "GradientColors": [
-        "#CD6B63",
-        "#D0914F",
-        "#F2BF4B",
-        "#80C28E"
+        "#C7665B",
+        "#CA9245",
+        "#F1BF4B",
+        "#70CAA9"
       ],
       "text": {
         "primary": "#D9E1DB",
         "secondary": "#909E96",
-        "accent": "#CE96B4",
+        "accent": "#FAB49C",
         "response": "#D9E1DB"
       },
       "background": {
         "primary": "#1E2E26",
         "diff": {
-          "added": "#2B3F31",
-          "removed": "#432F2B"
+          "added": "#274137",
+          "removed": "#422E29"
         }
       },
       "ui": {
         "comment": "#74857C",
-        "symbol": "#F2BF4B",
-        "active": "#D0914F",
-        "focus": "#F2BF4B",
+        "symbol": "#F1BF4B",
+        "active": "#CA9245",
+        "focus": "#F1BF4B",
         "gradient": [
-          "#CD6B63",
-          "#D0914F",
-          "#F2BF4B",
-          "#80C28E"
+          "#C7665B",
+          "#CA9245",
+          "#F1BF4B",
+          "#70CAA9"
         ]
       },
       "status": {
-        "success": "#80C28E",
-        "warning": "#F2BF4B",
-        "error": "#EE8F85"
+        "success": "#70CAA9",
+        "warning": "#F1BF4B",
+        "error": "#E7877B"
       }
     },
     {
@@ -386,106 +386,106 @@
       "Background": "#121E19",
       "Foreground": "#D4DDD7",
       "LightBlue": "#BFC8C2",
-      "AccentBlue": "#D0914F",
-      "AccentPurple": "#CE96B4",
-      "AccentCyan": "#5FA09D",
-      "AccentGreen": "#80C28E",
-      "AccentYellow": "#F2BF4B",
-      "AccentRed": "#EE8F85",
-      "DiffAdded": "#243729",
-      "DiffRemoved": "#3D2823",
+      "AccentBlue": "#CA9245",
+      "AccentPurple": "#FAB49C",
+      "AccentCyan": "#549B9F",
+      "AccentGreen": "#70CAA9",
+      "AccentYellow": "#F1BF4B",
+      "AccentRed": "#E7877B",
+      "DiffAdded": "#20392F",
+      "DiffRemoved": "#3B2621",
       "Comment": "#708178",
       "Gray": "#8C9A92",
       "DarkGray": "#31433A",
       "GradientColors": [
-        "#CD6B63",
-        "#D0914F",
-        "#F2BF4B",
-        "#80C28E"
+        "#C7665B",
+        "#CA9245",
+        "#F1BF4B",
+        "#70CAA9"
       ],
       "text": {
         "primary": "#D4DDD7",
         "secondary": "#8C9A92",
-        "accent": "#CE96B4",
+        "accent": "#FAB49C",
         "response": "#D4DDD7"
       },
       "background": {
         "primary": "#121E19",
         "diff": {
-          "added": "#243729",
-          "removed": "#3D2823"
+          "added": "#20392F",
+          "removed": "#3B2621"
         }
       },
       "ui": {
         "comment": "#708178",
-        "symbol": "#F2BF4B",
-        "active": "#D0914F",
-        "focus": "#F2BF4B",
+        "symbol": "#F1BF4B",
+        "active": "#CA9245",
+        "focus": "#F1BF4B",
         "gradient": [
-          "#CD6B63",
-          "#D0914F",
-          "#F2BF4B",
-          "#80C28E"
+          "#C7665B",
+          "#CA9245",
+          "#F1BF4B",
+          "#70CAA9"
         ]
       },
       "status": {
-        "success": "#80C28E",
-        "warning": "#F2BF4B",
-        "error": "#EE8F85"
+        "success": "#70CAA9",
+        "warning": "#F1BF4B",
+        "error": "#E7877B"
       }
     },
     {
       "name": "Paris Carrelage",
       "type": "custom",
-      "Background": "#EEF3ED",
-      "Foreground": "#2A342B",
-      "LightBlue": "#3D473E",
-      "AccentBlue": "#804B00",
-      "AccentPurple": "#98547C",
-      "AccentCyan": "#006E6B",
-      "AccentGreen": "#207F41",
-      "AccentYellow": "#8E6B08",
-      "AccentRed": "#BE423D",
-      "DiffAdded": "#C5DECE",
-      "DiffRemoved": "#E9D5D4",
-      "Comment": "#6E7C6E",
-      "Gray": "#586459",
-      "DarkGray": "#9BAC9A",
+      "Background": "#EEF2F1",
+      "Foreground": "#27342F",
+      "LightBlue": "#3B4742",
+      "AccentBlue": "#764C00",
+      "AccentPurple": "#B36B51",
+      "AccentCyan": "#006267",
+      "AccentGreen": "#218366",
+      "AccentYellow": "#916D07",
+      "AccentRed": "#AC3B32",
+      "DiffAdded": "#C5DFD7",
+      "DiffRemoved": "#E7D3D2",
+      "Comment": "#6C7C76",
+      "Gray": "#56645F",
+      "DarkGray": "#99ABA6",
       "GradientColors": [
-        "#932D29",
-        "#804B00",
-        "#8E6B08",
-        "#207F41"
+        "#88251E",
+        "#764C00",
+        "#916D07",
+        "#218366"
       ],
       "text": {
-        "primary": "#2A342B",
-        "secondary": "#586459",
-        "accent": "#98547C",
-        "response": "#2A342B"
+        "primary": "#27342F",
+        "secondary": "#56645F",
+        "accent": "#B36B51",
+        "response": "#27342F"
       },
       "background": {
-        "primary": "#EEF3ED",
+        "primary": "#EEF2F1",
         "diff": {
-          "added": "#C5DECE",
-          "removed": "#E9D5D4"
+          "added": "#C5DFD7",
+          "removed": "#E7D3D2"
         }
       },
       "ui": {
-        "comment": "#6E7C6E",
-        "symbol": "#8E6B08",
-        "active": "#804B00",
-        "focus": "#8E6B08",
+        "comment": "#6C7C76",
+        "symbol": "#916D07",
+        "active": "#764C00",
+        "focus": "#916D07",
         "gradient": [
-          "#932D29",
-          "#804B00",
-          "#8E6B08",
-          "#207F41"
+          "#88251E",
+          "#764C00",
+          "#916D07",
+          "#218366"
         ]
       },
       "status": {
-        "success": "#207F41",
-        "warning": "#8E6B08",
-        "error": "#BE423D"
+        "success": "#218366",
+        "warning": "#916D07",
+        "error": "#AC3B32"
       }
     }
   ]

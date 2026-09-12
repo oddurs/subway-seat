@@ -2,11 +2,11 @@
 # Paris Catacombes for cava: gradient from the bottom of the screen to the top.
 [color]
 gradient = 1
-gradient_color_1 = '#80C28E'
-gradient_color_2 = '#B1C171'
-gradient_color_3 = '#E2BF55'
-gradient_color_4 = '#E8B24C'
-gradient_color_5 = '#DA9E4E'
-gradient_color_6 = '#D08C52'
-gradient_color_7 = '#CE7B5A'
-gradient_color_8 = '#CD6B63'
+gradient_color_1 = '#70CAA9'
+gradient_color_2 = '#A7C581'
+gradient_color_3 = '#DFC158'
+gradient_color_4 = '#E6B249'
+gradient_color_5 = '#D59F47'
+gradient_color_6 = '#CA8C48'
+gradient_color_7 = '#C87952'
+gradient_color_8 = '#C7665B'

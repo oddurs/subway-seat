@@ -18,23 +18,23 @@
     "subtext1": "#C2CBC5",
     "text": "#D9E1DB",
     "text_hi": "#E9EEEC",
-    "yellow": "#F2BF4B",
-    "yellow_hi": "#FFD273",
-    "orange": "#D0914F",
-    "orange_hi": "#E7AB6D",
-    "red": "#CD6B63",
-    "red_hi": "#EE8F85",
-    "green": "#80C28E",
-    "green_hi": "#8FD59E",
-    "sage": "#5FA09D",
-    "sage_hi": "#8CCCC9",
+    "yellow": "#F1BF4B",
+    "yellow_hi": "#FFD57A",
+    "orange": "#CA9245",
+    "orange_hi": "#DFAA61",
+    "red": "#C7665B",
+    "red_hi": "#E7877B",
+    "green": "#70CAA9",
+    "green_hi": "#89DEBE",
+    "sage": "#549B9F",
+    "sage_hi": "#70B5B9",
     "denim": "#709BC8",
     "denim_hi": "#8DB6E2",
-    "clay": "#CE96B4",
+    "clay": "#FAB49C",
     "ink": "#131A17",
-    "accent": "#D0914F",
-    "accentHover": "#E7AB6D",
-    "focus": "#86653B",
+    "accent": "#CA9245",
+    "accentHover": "#DFAA61",
+    "focus": "#836635",
     "editorBackground": "#1E2E26",
     "panelBackground": "#1E2E26",
     "barBackground": "#131A17",
@@ -48,11 +48,11 @@
     "borderColor": "#131A17",
     "separatorColor": "#263930",
     "controlBorder": "#30463B",
-    "searchMatch": "#5E5A31",
-    "errorBackground": "#312E27",
+    "searchMatch": "#5D5A31",
+    "errorBackground": "#302D26",
     "warningBackground": "#323723",
     "infoBackground": "#233232",
-    "errorBorder": "#69443D",
+    "errorBorder": "#674239",
     "warningBorder": "#6F622F",
     "infoBorder": "#3B5461"
   },
@@ -93,8 +93,8 @@
       "warningBorderColor": "warningBorder",
       "infoBackground": "infoBackground",
       "infoBorderColor": "infoBorder",
-      "successBackground": "#24372B",
-      "successBorderColor": "#42634A",
+      "successBackground": "#23382E",
+      "successBorderColor": "#3B6655",
       "foreground": "text"
     },
     "Bookmark": {
@@ -240,11 +240,11 @@
       "underlinedTabForeground": "text_hi"
     },
     "DragAndDrop": {
-      "areaBackground": "#2E3123",
+      "areaBackground": "#2D3122",
       "areaBorderColor": "accent",
       "areaForeground": "text",
       "borderColor": "accent",
-      "rowBackground": "#343424"
+      "rowBackground": "#333423"
     },
     "Editor": {
       "background": "editorBackground",
@@ -283,10 +283,10 @@
     },
     "FileColor": {
       "Blue": "#263738",
-      "Green": "#293D2F",
-      "Orange": "#353525",
-      "Rose": "#352F28",
-      "Violet": "#353635",
+      "Green": "#263F33",
+      "Orange": "#343623",
+      "Rose": "#342F27",
+      "Violet": "#3C3B31",
       "Yellow": "#3B3D24",
       "Gray": "#222F28"
     },
@@ -745,7 +745,7 @@
       "background": "inputBackground",
       "foreground": "text",
       "selectionBackground": "#3E554A",
-      "caretForeground": "#F2BF4B"
+      "caretForeground": "#F1BF4B"
     },
     "TextField": {
       "background": "inputBackground",
@@ -755,12 +755,12 @@
       "inactiveForeground": "overlay0",
       "selectionBackground": "#3E554A",
       "selectionForeground": "text_hi",
-      "caretForeground": "#F2BF4B"
+      "caretForeground": "#F1BF4B"
     },
     "TextPane": {
       "background": "panelBackground",
       "foreground": "text",
-      "caretForeground": "#F2BF4B"
+      "caretForeground": "#F1BF4B"
     },
     "TitlePane": {
       "background": "barBackground",
@@ -858,7 +858,7 @@
       },
       "Log": {
         "Commit": {
-          "currentBranchBackground": "#232B20",
+          "currentBranchBackground": "#232B1F",
           "hoveredBackground": "hoverBackground",
           "unmatchedForeground": "overlay0",
           "selectionInactiveBackground": "selectionInactiveBackground"
@@ -901,46 +901,46 @@
   "icons": {
     "ColorPalette": {
       "Actions.Blue": "#709BC8",
-      "Actions.Green": "#80C28E",
+      "Actions.Green": "#70CAA9",
       "Actions.Grey": "#74857C",
       "Actions.GreyInline": "#74857C",
       "Actions.GreyInline.Dark": "#74857C",
-      "Actions.Red": "#EE8F85",
-      "Actions.Yellow": "#F2BF4B",
+      "Actions.Red": "#E7877B",
+      "Actions.Yellow": "#F1BF4B",
       "Objects.BlackText": "#131A17",
       "Objects.Blue": "#709BC8",
-      "Objects.Green": "#80C28E",
-      "Objects.GreenAndroid": "#80C28E",
+      "Objects.Green": "#70CAA9",
+      "Objects.GreenAndroid": "#70CAA9",
       "Objects.Grey": "#74857C",
-      "Objects.Pink": "#CE96B4",
-      "Objects.Purple": "#CE96B4",
-      "Objects.Red": "#EE8F85",
-      "Objects.RedStatus": "#EE8F85",
-      "Objects.Yellow": "#F2BF4B",
-      "Objects.YellowDark": "#D0914F",
+      "Objects.Pink": "#FAB49C",
+      "Objects.Purple": "#FAB49C",
+      "Objects.Red": "#E7877B",
+      "Objects.RedStatus": "#E7877B",
+      "Objects.Yellow": "#F1BF4B",
+      "Objects.YellowDark": "#CA9245",
       "Tree.iconColor": "#A9B5AE",
       "Checkbox.Background.Default": "#131A17",
       "Checkbox.Background.Disabled": "#18241D",
-      "Checkbox.Background.Selected": "#D0914F",
+      "Checkbox.Background.Selected": "#CA9245",
       "Checkbox.Border.Default": "#3E554A",
       "Checkbox.Border.Disabled": "#30463B",
-      "Checkbox.Border.Selected": "#D0914F",
+      "Checkbox.Border.Selected": "#CA9245",
       "Checkbox.Foreground.Disabled": "#586B61",
       "Checkbox.Foreground.Selected": "#131A17",
-      "Checkbox.Focus.Wide": "#86653B",
-      "Checkbox.Focus.Thin.Default": "#E7AB6D",
-      "Checkbox.Focus.Thin.Selected": "#E7AB6D",
+      "Checkbox.Focus.Wide": "#836635",
+      "Checkbox.Focus.Thin.Default": "#DFAA61",
+      "Checkbox.Focus.Thin.Selected": "#DFAA61",
       "Checkbox.Background.Default.Dark": "#131A17",
       "Checkbox.Background.Disabled.Dark": "#18241D",
-      "Checkbox.Background.Selected.Dark": "#D0914F",
+      "Checkbox.Background.Selected.Dark": "#CA9245",
       "Checkbox.Border.Default.Dark": "#3E554A",
       "Checkbox.Border.Disabled.Dark": "#30463B",
-      "Checkbox.Border.Selected.Dark": "#D0914F",
+      "Checkbox.Border.Selected.Dark": "#CA9245",
       "Checkbox.Foreground.Disabled.Dark": "#586B61",
       "Checkbox.Foreground.Selected.Dark": "#131A17",
-      "Checkbox.Focus.Wide.Dark": "#86653B",
-      "Checkbox.Focus.Thin.Default.Dark": "#E7AB6D",
-      "Checkbox.Focus.Thin.Selected.Dark": "#E7AB6D"
+      "Checkbox.Focus.Wide.Dark": "#836635",
+      "Checkbox.Focus.Thin.Default.Dark": "#DFAA61",
+      "Checkbox.Focus.Thin.Selected.Dark": "#DFAA61"
     }
   }
 }

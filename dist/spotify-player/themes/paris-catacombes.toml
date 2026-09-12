@@ -7,41 +7,41 @@ name = "paris-catacombes"
 background = "#121E19"
 foreground = "#D4DDD7"
 black = "#24342C"
-red = "#CD6B63"
-green = "#80C28E"
-yellow = "#F2BF4B"
+red = "#C7665B"
+green = "#70CAA9"
+yellow = "#F1BF4B"
 blue = "#709BC8"
-magenta = "#D0914F"
-cyan = "#5FA09D"
+magenta = "#CA9245"
+cyan = "#549B9F"
 white = "#BFC8C2"
 bright_black = "#708178"
-bright_red = "#EE8F85"
-bright_green = "#8FD59E"
-bright_yellow = "#FFD273"
+bright_red = "#E7877B"
+bright_green = "#89DEBE"
+bright_yellow = "#FFD57A"
 bright_blue = "#8DB6E2"
-bright_magenta = "#E7AB6D"
-bright_cyan = "#8CCCC9"
+bright_magenta = "#DFAA61"
+bright_cyan = "#70B5B9"
 bright_white = "#E7ECEA"
 
 [themes.component_style]
-block_title = { fg = "#D0914F", modifiers = ["Bold"] }
+block_title = { fg = "#CA9245", modifiers = ["Bold"] }
 border = { fg = "#31433A" }
-playback_status = { fg = "#F2BF4B", modifiers = ["Bold"] }
-playback_track = { fg = "#F2BF4B", modifiers = ["Bold"] }
-playback_artists = { fg = "#D0914F" }
-playback_album = { fg = "#5FA09D" }
+playback_status = { fg = "#F1BF4B", modifiers = ["Bold"] }
+playback_track = { fg = "#F1BF4B", modifiers = ["Bold"] }
+playback_artists = { fg = "#CA9245" }
+playback_album = { fg = "#549B9F" }
 playback_genres = { fg = "#708178", modifiers = ["Italic"] }
 playback_metadata = { fg = "#A5B1AA" }
-playback_progress_bar = { fg = "#D0914F", bg = "#24342C" }
+playback_progress_bar = { fg = "#CA9245", bg = "#24342C" }
 playback_progress_bar_unfilled = { fg = "#31433A", bg = "#24342C" }
-current_playing = { fg = "#80C28E", modifiers = ["Bold"] }
-page_desc = { fg = "#F2BF4B", modifiers = ["Bold"] }
+current_playing = { fg = "#70CAA9", modifiers = ["Bold"] }
+page_desc = { fg = "#F1BF4B", modifiers = ["Bold"] }
 playlist_desc = { fg = "#708178" }
-table_header = { fg = "#D0914F" }
+table_header = { fg = "#CA9245" }
 selection = { fg = "#E7ECEA", bg = "#24342C", modifiers = ["Bold"] }
 secondary_row = { bg = "#0D1711" }
-like = { fg = "#EE8F85" }
+like = { fg = "#E7877B" }
 lyrics_played = { fg = "#708178" }
-lyrics_playing = { fg = "#F2BF4B", modifiers = ["Bold"] }
-visualization = { low = "#80C28E", mid = "#F2BF4B", high = "#EE8F85" }
+lyrics_playing = { fg = "#F1BF4B", modifiers = ["Bold"] }
+visualization = { low = "#70CAA9", mid = "#F1BF4B", high = "#E7877B" }
 # <<< subway-seat <<<

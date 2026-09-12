@@ -2,73 +2,73 @@
 # Paris Carrelage
 
 [colors.primary]
-background = "#EEF3ED"
-foreground = "#2A342B"
-dim_foreground = "#586459"
-bright_foreground = "#1B221C"
+background = "#EEF2F1"
+foreground = "#27342F"
+dim_foreground = "#56645F"
+bright_foreground = "#19221E"
 
 [colors.cursor]
-text = "#EEF3ED"
-cursor = "#804B00"
+text = "#EEF2F1"
+cursor = "#764C00"
 
 [colors.vi_mode_cursor]
-text = "#EEF3ED"
-cursor = "#006E6B"
+text = "#EEF2F1"
+cursor = "#006267"
 
 [colors.search.matches]
-foreground = "#2A342B"
-background = "#D1CAA8"
+foreground = "#27342F"
+background = "#D2CAAB"
 
 [colors.search.focused_match]
-foreground = "#1B221C"
-background = "#B79F76"
+foreground = "#19221E"
+background = "#B29F78"
 
 [colors.footer_bar]
-foreground = "#2A342B"
-background = "#B1C0B0"
+foreground = "#27342F"
+background = "#B0BFBB"
 
 [colors.hints.start]
-foreground = "#EEF3ED"
-background = "#804B00"
+foreground = "#EEF2F1"
+background = "#764C00"
 
 [colors.hints.end]
-foreground = "#EEF3ED"
-background = "#586459"
+foreground = "#EEF2F1"
+background = "#56645F"
 
 [colors.line_indicator]
-foreground = "#4C574D"
-background = "#C7D3C5"
+foreground = "#4A5752"
+background = "#C6D2CF"
 
 [colors.selection]
-text = "#1B221C"
-background = "#B1C0B0"
+text = "#19221E"
+background = "#B0BFBB"
 
 [colors.normal]
-black = "#3D473E"
-red = "#932D29"
-green = "#207F41"
-yellow = "#8E6B08"
-blue = "#27629C"
-magenta = "#804B00"
-cyan = "#006E6B"
-white = "#9BAC9A"
+black = "#3B4742"
+red = "#88251E"
+green = "#218366"
+yellow = "#916D07"
+blue = "#25629B"
+magenta = "#764C00"
+cyan = "#006267"
+white = "#99ABA6"
 
 [colors.bright]
-black = "#6E7C6E"
-red = "#BE423D"
-green = "#168540"
-yellow = "#9D770A"
-blue = "#3E75AD"
-magenta = "#A26100"
-cyan = "#1E8683"
-white = "#B1C0B0"
+black = "#6C7C76"
+red = "#AC3B32"
+green = "#278D6E"
+yellow = "#A07A12"
+blue = "#3D75AD"
+magenta = "#885A00"
+cyan = "#027479"
+white = "#B0BFBB"
 
 [colors.dim]
-black = "#79817A"
-red = "#B2706C"
-green = "#66A67B"
-yellow = "#AF9956"
-blue = "#6B93B8"
-magenta = "#A58451"
-cyan = "#519B97"
-white = "#B7C4B6"
+black = "#78817E"
+red = "#AB6B66"
+green = "#67A995"
+yellow = "#B19A57"
+blue = "#6993B8"
+magenta = "#9F8452"
+cyan = "#519396"
+white = "#B6C3C0"

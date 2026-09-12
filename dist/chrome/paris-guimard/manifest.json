@@ -16,14 +16,14 @@
         23
       ],
       "frame_incognito": [
-        49,
-        46,
-        48
+        56,
+        51,
+        44
       ],
       "frame_incognito_inactive": [
-        49,
-        46,
-        48
+        56,
+        51,
+        44
       ],
       "background_tab": [
         19,
@@ -36,14 +36,14 @@
         23
       ],
       "background_tab_incognito": [
-        49,
-        46,
-        48
+        56,
+        51,
+        44
       ],
       "background_tab_incognito_inactive": [
-        49,
-        46,
-        48
+        56,
+        51,
+        44
       ],
       "toolbar": [
         30,
@@ -116,9 +116,9 @@
         200
       ],
       "ntp_header": [
-        208,
-        145,
-        79
+        202,
+        146,
+        69
       ],
       "button_background": [
         19,

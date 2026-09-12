@@ -2,26 +2,26 @@
     "schemes": [
         {
             "name": "Paris Carrelage",
-            "background": "#EEF3ED",
-            "foreground": "#2A342B",
-            "cursorColor": "#804B00",
-            "selectionBackground": "#B1C0B0",
-            "black": "#3D473E",
-            "red": "#932D29",
-            "green": "#207F41",
-            "yellow": "#8E6B08",
-            "blue": "#27629C",
-            "purple": "#804B00",
-            "cyan": "#006E6B",
-            "white": "#9BAC9A",
-            "brightBlack": "#6E7C6E",
-            "brightRed": "#BE423D",
-            "brightGreen": "#168540",
-            "brightYellow": "#9D770A",
-            "brightBlue": "#3E75AD",
-            "brightPurple": "#A26100",
-            "brightCyan": "#1E8683",
-            "brightWhite": "#B1C0B0"
+            "background": "#EEF2F1",
+            "foreground": "#27342F",
+            "cursorColor": "#764C00",
+            "selectionBackground": "#B0BFBB",
+            "black": "#3B4742",
+            "red": "#88251E",
+            "green": "#218366",
+            "yellow": "#916D07",
+            "blue": "#25629B",
+            "purple": "#764C00",
+            "cyan": "#006267",
+            "white": "#99ABA6",
+            "brightBlack": "#6C7C76",
+            "brightRed": "#AC3B32",
+            "brightGreen": "#278D6E",
+            "brightYellow": "#A07A12",
+            "brightBlue": "#3D75AD",
+            "brightPurple": "#885A00",
+            "brightCyan": "#027479",
+            "brightWhite": "#B0BFBB"
         }
     ],
     "themes": [
@@ -30,16 +30,16 @@
             "window": {
                 "applicationTheme": "light",
                 "useMica": false,
-                "frame": "#D4DCD3FF",
-                "unfocusedFrame": "#D4DCD3FF"
+                "frame": "#D5DBDAFF",
+                "unfocusedFrame": "#D5DBDAFF"
             },
             "tabRow": {
-                "background": "#D4DCD3FF",
-                "unfocusedBackground": "#D4DCD3FF"
+                "background": "#D5DBDAFF",
+                "unfocusedBackground": "#D5DBDAFF"
             },
             "tab": {
-                "background": "#EEF3EDFF",
-                "unfocusedBackground": "#E1E7E0FF"
+                "background": "#EEF2F1FF",
+                "unfocusedBackground": "#E1E6E5FF"
             }
         }
     ]

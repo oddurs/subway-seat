@@ -4,27 +4,27 @@
 export PROFILE_NAME="Paris Guimard"
 
 export COLOR_01="#30463B"           # Black (Host)
-export COLOR_02="#CD6B63"           # Red (Syntax string)
-export COLOR_03="#80C28E"           # Green (Command)
-export COLOR_04="#F2BF4B"           # Yellow (Command second)
+export COLOR_02="#C7665B"           # Red (Syntax string)
+export COLOR_03="#70CAA9"           # Green (Command)
+export COLOR_04="#F1BF4B"           # Yellow (Command second)
 export COLOR_05="#709BC8"           # Blue (Path)
-export COLOR_06="#D0914F"           # Magenta (Syntax var)
-export COLOR_07="#5FA09D"           # Cyan (Prompt)
+export COLOR_06="#CA9245"           # Magenta (Syntax var)
+export COLOR_07="#549B9F"           # Cyan (Prompt)
 export COLOR_08="#C2CBC5"           # White
 
 export COLOR_09="#74857C"           # Bright Black
-export COLOR_10="#EE8F85"           # Bright Red (Command error)
-export COLOR_11="#8FD59E"           # Bright Green (Exec)
-export COLOR_12="#FFD273"           # Bright Yellow
+export COLOR_10="#E7877B"           # Bright Red (Command error)
+export COLOR_11="#89DEBE"           # Bright Green (Exec)
+export COLOR_12="#FFD57A"           # Bright Yellow
 export COLOR_13="#8DB6E2"           # Bright Blue (Folder)
-export COLOR_14="#E7AB6D"           # Bright Magenta
-export COLOR_15="#8CCCC9"           # Bright Cyan
+export COLOR_14="#DFAA61"           # Bright Magenta
+export COLOR_15="#70B5B9"           # Bright Cyan
 export COLOR_16="#E9EEEC"           # Bright White
 
 export BACKGROUND_COLOR="#1E2E26"   # Background
 export FOREGROUND_COLOR="#D9E1DB"   # Foreground (Text)
 
-export CURSOR_COLOR="#F2BF4B" # Cursor
+export CURSOR_COLOR="#F1BF4B" # Cursor
 
 apply_theme() {
     if [[ -e "${GOGH_APPLY_SCRIPT}" ]]; then

@@ -4,128 +4,128 @@
 themes {
     paris-carrelage {
         text_unselected {
-            base "#2A342B"
-            background "#D4DCD3"
-            emphasis_0 "#804B00"
-            emphasis_1 "#006E6B"
-            emphasis_2 "#207F41"
-            emphasis_3 "#8E6B08"
+            base "#27342F"
+            background "#D5DBDA"
+            emphasis_0 "#764C00"
+            emphasis_1 "#006267"
+            emphasis_2 "#218366"
+            emphasis_3 "#916D07"
         }
         text_selected {
-            base "#1B221C"
-            background "#B1C0B0"
-            emphasis_0 "#804B00"
-            emphasis_1 "#006E6B"
-            emphasis_2 "#207F41"
-            emphasis_3 "#8E6B08"
+            base "#19221E"
+            background "#B0BFBB"
+            emphasis_0 "#764C00"
+            emphasis_1 "#006267"
+            emphasis_2 "#218366"
+            emphasis_3 "#916D07"
         }
         ribbon_unselected {
-            base "#2A342B"
-            background "#B1C0B0"
-            emphasis_0 "#8E6B08"
-            emphasis_1 "#1B221C"
-            emphasis_2 "#006E6B"
-            emphasis_3 "#804B00"
+            base "#27342F"
+            background "#B0BFBB"
+            emphasis_0 "#916D07"
+            emphasis_1 "#19221E"
+            emphasis_2 "#006267"
+            emphasis_3 "#764C00"
         }
         ribbon_selected {
-            base "#EEF3ED"
-            background "#804B00"
-            emphasis_0 "#EEF3ED"
-            emphasis_1 "#EEF3ED"
-            emphasis_2 "#EEF3ED"
-            emphasis_3 "#EEF3ED"
+            base "#EEF2F1"
+            background "#764C00"
+            emphasis_0 "#EEF2F1"
+            emphasis_1 "#EEF2F1"
+            emphasis_2 "#EEF2F1"
+            emphasis_3 "#EEF2F1"
         }
         table_title {
-            base "#804B00"
+            base "#764C00"
             background 0
-            emphasis_0 "#8E6B08"
-            emphasis_1 "#006E6B"
-            emphasis_2 "#207F41"
-            emphasis_3 "#98547C"
+            emphasis_0 "#916D07"
+            emphasis_1 "#006267"
+            emphasis_2 "#218366"
+            emphasis_3 "#B36B51"
         }
         table_cell_selected {
-            base "#1B221C"
-            background "#B1C0B0"
-            emphasis_0 "#804B00"
-            emphasis_1 "#006E6B"
-            emphasis_2 "#207F41"
-            emphasis_3 "#8E6B08"
+            base "#19221E"
+            background "#B0BFBB"
+            emphasis_0 "#764C00"
+            emphasis_1 "#006267"
+            emphasis_2 "#218366"
+            emphasis_3 "#916D07"
         }
         table_cell_unselected {
-            base "#2A342B"
-            background "#D4DCD3"
-            emphasis_0 "#804B00"
-            emphasis_1 "#006E6B"
-            emphasis_2 "#207F41"
-            emphasis_3 "#8E6B08"
+            base "#27342F"
+            background "#D5DBDA"
+            emphasis_0 "#764C00"
+            emphasis_1 "#006267"
+            emphasis_2 "#218366"
+            emphasis_3 "#916D07"
         }
         list_selected {
-            base "#1B221C"
-            background "#B1C0B0"
-            emphasis_0 "#804B00"
-            emphasis_1 "#006E6B"
-            emphasis_2 "#207F41"
-            emphasis_3 "#8E6B08"
+            base "#19221E"
+            background "#B0BFBB"
+            emphasis_0 "#764C00"
+            emphasis_1 "#006267"
+            emphasis_2 "#218366"
+            emphasis_3 "#916D07"
         }
         list_unselected {
-            base "#2A342B"
-            background "#D4DCD3"
-            emphasis_0 "#804B00"
-            emphasis_1 "#006E6B"
-            emphasis_2 "#207F41"
-            emphasis_3 "#8E6B08"
+            base "#27342F"
+            background "#D5DBDA"
+            emphasis_0 "#764C00"
+            emphasis_1 "#006267"
+            emphasis_2 "#218366"
+            emphasis_3 "#916D07"
         }
         frame_unselected {
-            base "#9BAC9A"
+            base "#99ABA6"
             background 0
-            emphasis_0 "#804B00"
-            emphasis_1 "#006E6B"
-            emphasis_2 "#207F41"
-            emphasis_3 "#8E6B08"
+            emphasis_0 "#764C00"
+            emphasis_1 "#006267"
+            emphasis_2 "#218366"
+            emphasis_3 "#916D07"
         }
         frame_selected {
-            base "#804B00"
+            base "#764C00"
             background 0
-            emphasis_0 "#8E6B08"
-            emphasis_1 "#006E6B"
-            emphasis_2 "#207F41"
+            emphasis_0 "#916D07"
+            emphasis_1 "#006267"
+            emphasis_2 "#218366"
             emphasis_3 0
         }
         frame_highlight {
-            base "#8E6B08"
+            base "#916D07"
             background 0
-            emphasis_0 "#804B00"
-            emphasis_1 "#8E6B08"
-            emphasis_2 "#8E6B08"
-            emphasis_3 "#8E6B08"
+            emphasis_0 "#764C00"
+            emphasis_1 "#916D07"
+            emphasis_2 "#916D07"
+            emphasis_3 "#916D07"
         }
         exit_code_success {
-            base "#207F41"
+            base "#218366"
             background 0
-            emphasis_0 "#006E6B"
-            emphasis_1 "#EEF3ED"
-            emphasis_2 "#8E6B08"
-            emphasis_3 "#27629C"
+            emphasis_0 "#006267"
+            emphasis_1 "#EEF2F1"
+            emphasis_2 "#916D07"
+            emphasis_3 "#25629B"
         }
         exit_code_error {
-            base "#BE423D"
+            base "#AC3B32"
             background 0
-            emphasis_0 "#8E6B08"
+            emphasis_0 "#916D07"
             emphasis_1 0
             emphasis_2 0
             emphasis_3 0
         }
         multiplayer_user_colors {
-            player_1 "#804B00"
-            player_2 "#8E6B08"
-            player_3 "#207F41"
-            player_4 "#006E6B"
-            player_5 "#27629C"
-            player_6 "#98547C"
-            player_7 "#BE423D"
-            player_8 "#168540"
-            player_9 "#9D770A"
-            player_10 "#1E8683"
+            player_1 "#764C00"
+            player_2 "#916D07"
+            player_3 "#218366"
+            player_4 "#006267"
+            player_5 "#25629B"
+            player_6 "#B36B51"
+            player_7 "#AC3B32"
+            player_8 "#278D6E"
+            player_9 "#A07A12"
+            player_10 "#027479"
         }
     }
 }

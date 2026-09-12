@@ -39,7 +39,7 @@
 | **London Deep Level** | `deep` · dark | Below the cut-and-cover lines. The ground drops; the signals don't. |
 | **London Portland** | `portland` · light | Holden's Portland stone. Links are the exact Corporate Blue. |
 
-**Paris** — The Metro: cast iron and brass, white tile, and the line colors of the map.
+**Paris** — The Metro in its materials: cast iron and brass, white tile, verdigris and terracotta.
 
 | | | |
 |---|---|---|

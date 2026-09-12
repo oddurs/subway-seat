@@ -3,49 +3,49 @@
 # Paris Carrelage for bottom. Key names use the 0.10 spelling, which later releases accept too.
 
 [styles.cpu]
-all_entry_color = "#2A342B"
-avg_entry_color = "#804B00"
-cpu_core_colors = ["#207F41", "#8E6B08", "#804B00", "#BE423D", "#006E6B", "#98547C", "#168540", "#9D770A"]
+all_entry_color = "#27342F"
+avg_entry_color = "#764C00"
+cpu_core_colors = ["#218366", "#916D07", "#764C00", "#AC3B32", "#006267", "#B36B51", "#278D6E", "#A07A12"]
 
 [styles.memory]
-ram_color = "#207F41"
-cache_color = "#006E6B"
-swap_color = "#804B00"
-arc_color = "#98547C"
-gpu_colors = ["#8E6B08", "#804B00", "#BE423D", "#006E6B", "#98547C", "#168540"]
+ram_color = "#218366"
+cache_color = "#006267"
+swap_color = "#764C00"
+arc_color = "#B36B51"
+gpu_colors = ["#916D07", "#764C00", "#AC3B32", "#006267", "#B36B51", "#278D6E"]
 
 [styles.network]
-rx_color = "#207F41"
-tx_color = "#804B00"
-rx_total_color = "#168540"
-tx_total_color = "#A26100"
+rx_color = "#218366"
+tx_color = "#764C00"
+rx_total_color = "#278D6E"
+tx_total_color = "#885A00"
 
 [styles.battery]
-high_battery_color = "#207F41"
-medium_battery_color = "#8E6B08"
-low_battery_color = "#BE423D"
+high_battery_color = "#218366"
+medium_battery_color = "#916D07"
+low_battery_color = "#AC3B32"
 
 [styles.tables]
-headers = { color = "#804B00", bold = true }
+headers = { color = "#764C00", bold = true }
 
 [styles.graphs]
-graph_color = "#879887"
-legend_text = { color = "#4C574D" }
+graph_color = "#859792"
+legend_text = { color = "#4A5752" }
 
 [styles.widgets]
-border_color = "#9BAC9A"
-selected_border_color = "#804B00"
-widget_title = { color = "#8E6B08" }
-text = { color = "#2A342B" }
-selected_text = { color = "#EEF3ED", bg_color = "#804B00" }
-disabled_text = { color = "#879887" }
-thread_text = { color = "#006E6B" }  # 0.11+
+border_color = "#99ABA6"
+selected_border_color = "#764C00"
+widget_title = { color = "#916D07" }
+text = { color = "#27342F" }
+selected_text = { color = "#EEF2F1", bg_color = "#764C00" }
+disabled_text = { color = "#859792" }
+thread_text = { color = "#006267" }  # 0.11+
 
 # Newer sections (bottom 0.13+); older releases ignore them.
 [styles.temp_graph]
-temp_graph_color_styles = ["#207F41", "#8E6B08", "#804B00", "#BE423D", "#006E6B", "#98547C", "#168540", "#9D770A"]
+temp_graph_color_styles = ["#218366", "#916D07", "#764C00", "#AC3B32", "#006267", "#B36B51", "#278D6E", "#A07A12"]
 
 [styles.disk_io_graph]
-read_colours = ["#207F41", "#006E6B", "#168540", "#1E8683"]
-write_colours = ["#804B00", "#98547C", "#A26100", "#BE423D"]
+read_colours = ["#218366", "#006267", "#278D6E", "#027479"]
+write_colours = ["#764C00", "#B36B51", "#885A00", "#AC3B32"]
 # <<< subway-seat <<<

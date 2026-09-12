@@ -46,26 +46,26 @@ color	portland	red_hi	#CC2E25
 color	portland	denim	#0019A8
 color	portland	sage	#007376
 flavor	guimard	Paris Guimard	paris-guimard	dark	paris
-color	guimard	yellow	#F2BF4B
-color	guimard	orange	#D0914F
-color	guimard	green	#80C28E
-color	guimard	red_hi	#EE8F85
+color	guimard	yellow	#F1BF4B
+color	guimard	orange	#CA9245
+color	guimard	green	#70CAA9
+color	guimard	red_hi	#E7877B
 color	guimard	denim	#709BC8
-color	guimard	sage	#5FA09D
+color	guimard	sage	#549B9F
 flavor	catacombes	Paris Catacombes	paris-catacombes	dark	paris
-color	catacombes	yellow	#F2BF4B
-color	catacombes	orange	#D0914F
-color	catacombes	green	#80C28E
-color	catacombes	red_hi	#EE8F85
+color	catacombes	yellow	#F1BF4B
+color	catacombes	orange	#CA9245
+color	catacombes	green	#70CAA9
+color	catacombes	red_hi	#E7877B
 color	catacombes	denim	#709BC8
-color	catacombes	sage	#5FA09D
+color	catacombes	sage	#549B9F
 flavor	carrelage	Paris Carrelage	paris-carrelage	light	paris
-color	carrelage	yellow	#8E6B08
-color	carrelage	orange	#804B00
-color	carrelage	green	#207F41
-color	carrelage	red_hi	#BE423D
-color	carrelage	denim	#27629C
-color	carrelage	sage	#006E6B
+color	carrelage	yellow	#916D07
+color	carrelage	orange	#764C00
+color	carrelage	green	#218366
+color	carrelage	red_hi	#AC3B32
+color	carrelage	denim	#25629B
+color	carrelage	sage	#006267
 port	alacritty	Alacritty	Terminals	Alacritty 0.14+
 detect	alacritty	alacritty
 detect	alacritty	/Applications/Alacritty.app

@@ -3,28 +3,28 @@
 
 export PROFILE_NAME="Paris Carrelage"
 
-export COLOR_01="#3D473E"           # Black (Host)
-export COLOR_02="#932D29"           # Red (Syntax string)
-export COLOR_03="#207F41"           # Green (Command)
-export COLOR_04="#8E6B08"           # Yellow (Command second)
-export COLOR_05="#27629C"           # Blue (Path)
-export COLOR_06="#804B00"           # Magenta (Syntax var)
-export COLOR_07="#006E6B"           # Cyan (Prompt)
-export COLOR_08="#9BAC9A"           # White
+export COLOR_01="#3B4742"           # Black (Host)
+export COLOR_02="#88251E"           # Red (Syntax string)
+export COLOR_03="#218366"           # Green (Command)
+export COLOR_04="#916D07"           # Yellow (Command second)
+export COLOR_05="#25629B"           # Blue (Path)
+export COLOR_06="#764C00"           # Magenta (Syntax var)
+export COLOR_07="#006267"           # Cyan (Prompt)
+export COLOR_08="#99ABA6"           # White
 
-export COLOR_09="#6E7C6E"           # Bright Black
-export COLOR_10="#BE423D"           # Bright Red (Command error)
-export COLOR_11="#168540"           # Bright Green (Exec)
-export COLOR_12="#9D770A"           # Bright Yellow
-export COLOR_13="#3E75AD"           # Bright Blue (Folder)
-export COLOR_14="#A26100"           # Bright Magenta
-export COLOR_15="#1E8683"           # Bright Cyan
-export COLOR_16="#B1C0B0"           # Bright White
+export COLOR_09="#6C7C76"           # Bright Black
+export COLOR_10="#AC3B32"           # Bright Red (Command error)
+export COLOR_11="#278D6E"           # Bright Green (Exec)
+export COLOR_12="#A07A12"           # Bright Yellow
+export COLOR_13="#3D75AD"           # Bright Blue (Folder)
+export COLOR_14="#885A00"           # Bright Magenta
+export COLOR_15="#027479"           # Bright Cyan
+export COLOR_16="#B0BFBB"           # Bright White
 
-export BACKGROUND_COLOR="#EEF3ED"   # Background
-export FOREGROUND_COLOR="#2A342B"   # Foreground (Text)
+export BACKGROUND_COLOR="#EEF2F1"   # Background
+export FOREGROUND_COLOR="#27342F"   # Foreground (Text)
 
-export CURSOR_COLOR="#804B00" # Cursor
+export CURSOR_COLOR="#764C00" # Cursor
 
 apply_theme() {
     if [[ -e "${GOGH_APPLY_SCRIPT}" ]]; then

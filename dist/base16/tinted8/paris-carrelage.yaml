@@ -11,149 +11,149 @@ scheme:
   description: "Bevelled white tile under a vaulted platform. The light one."
 variant: "light"
 palette:
-  black: "#2A342B"
-  black-bright: "#3D473E"
-  black-dim: "#1B221C"
-  white: "#EEF3ED"
-  white-bright: "#F6F9F6"
-  white-dim: "#E1E7E0"
-  gray: "#6E7C6E"
-  gray-bright: "#879887"
-  gray-dim: "#586459"
-  red: "#932D29"
-  red-bright: "#BE423D"
-  green: "#207F41"
-  green-bright: "#168540"
-  yellow: "#8E6B08"
-  yellow-bright: "#9D770A"
-  blue: "#27629C"
-  blue-bright: "#3E75AD"
-  magenta: "#804B00"
-  magenta-bright: "#A26100"
-  cyan: "#006E6B"
-  cyan-bright: "#1E8683"
-  orange: "#804B00"
-  orange-bright: "#A26100"
-  brown: "#98547C"
+  black: "#27342F"
+  black-bright: "#3B4742"
+  black-dim: "#19221E"
+  white: "#EEF2F1"
+  white-bright: "#F6F8F8"
+  white-dim: "#E1E6E5"
+  gray: "#6C7C76"
+  gray-bright: "#859792"
+  gray-dim: "#56645F"
+  red: "#88251E"
+  red-bright: "#AC3B32"
+  green: "#218366"
+  green-bright: "#278D6E"
+  yellow: "#916D07"
+  yellow-bright: "#A07A12"
+  blue: "#25629B"
+  blue-bright: "#3D75AD"
+  magenta: "#764C00"
+  magenta-bright: "#885A00"
+  cyan: "#006267"
+  cyan-bright: "#027479"
+  orange: "#764C00"
+  orange-bright: "#885A00"
+  brown: "#B36B51"
 syntax:
-  comment: "#6E7C6E" # comment
-  punctuation.definition.comment: "#6E7C6E" # comment
-  constant: "#BE423D" # constant
-  constant.numeric: "#BE423D" # number
-  constant.language: "#BE423D" # boolean
-  constant.character: "#98547C" # string.escape
-  entity.name: "#2A342B" # variable
-  entity.name.function: "#8E6B08" # function
-  entity.name.class: "#006E6B" # type
-  entity.name.type: "#006E6B" # type
-  entity.name.namespace: "#4C574D" # namespace
-  entity.name.tag: "#804B00" # tag
-  entity.name.label: "#98547C" # decorator
-  entity.name.section: "#8E6B08" # heading
-  entity.other: "#2A342B" # variable
-  entity.other.attribute-name: "#8E6B08" # attribute
-  entity.other.inherited-class: "#006E6B" # type
-  invalid: "#932D29" # invalid
-  invalid.deprecated: "#98547C" # clay
-  keyword: "#804B00" # keyword
-  keyword.operator: "#586459" # operator
-  markup: "#2A342B" # text
-  markup.bold: "#1B221C" # strong
-  markup.italic: "#2A342B" # emphasis
-  markup.heading: "#8E6B08" # heading
-  markup.link: "#27629C" # link
-  markup.list: "#804B00" # keyword
-  markup.quote: "#4C574D" # quote
-  markup.raw: "#207F41" # code
-  markup.inserted: "#207F41" # green
-  markup.deleted: "#BE423D" # red_hi
-  markup.changed: "#8E6B08" # yellow
-  meta: "#2A342B" # text
-  meta.annotation: "#98547C" # decorator
-  punctuation: "#586459" # punctuation
-  punctuation.definition.string: "#207F41" # string
-  punctuation.section: "#586459" # punctuation
-  storage: "#804B00" # storage
-  string: "#207F41" # string
-  string.regexp: "#98547C" # regexp
-  string.interpolated: "#98547C" # string.escape
-  support: "#8E6B08" # function
-  support.class: "#006E6B" # type
-  support.type: "#006E6B" # type.builtin
-  support.constant: "#BE423D" # constant
-  support.function.builtin: "#8E6B08" # function.builtin
-  support.variable: "#BE423D" # variable.builtin
-  variable: "#2A342B" # variable
-  variable.language: "#BE423D" # variable.builtin
-  variable.parameter: "#3D473E" # parameter
-  variable.other.property: "#3D473E" # property
+  comment: "#6C7C76" # comment
+  punctuation.definition.comment: "#6C7C76" # comment
+  constant: "#AC3B32" # constant
+  constant.numeric: "#AC3B32" # number
+  constant.language: "#AC3B32" # boolean
+  constant.character: "#B36B51" # string.escape
+  entity.name: "#27342F" # variable
+  entity.name.function: "#916D07" # function
+  entity.name.class: "#006267" # type
+  entity.name.type: "#006267" # type
+  entity.name.namespace: "#4A5752" # namespace
+  entity.name.tag: "#764C00" # tag
+  entity.name.label: "#B36B51" # decorator
+  entity.name.section: "#916D07" # heading
+  entity.other: "#27342F" # variable
+  entity.other.attribute-name: "#916D07" # attribute
+  entity.other.inherited-class: "#006267" # type
+  invalid: "#88251E" # invalid
+  invalid.deprecated: "#B36B51" # clay
+  keyword: "#764C00" # keyword
+  keyword.operator: "#56645F" # operator
+  markup: "#27342F" # text
+  markup.bold: "#19221E" # strong
+  markup.italic: "#27342F" # emphasis
+  markup.heading: "#916D07" # heading
+  markup.link: "#25629B" # link
+  markup.list: "#764C00" # keyword
+  markup.quote: "#4A5752" # quote
+  markup.raw: "#218366" # code
+  markup.inserted: "#218366" # green
+  markup.deleted: "#AC3B32" # red_hi
+  markup.changed: "#916D07" # yellow
+  meta: "#27342F" # text
+  meta.annotation: "#B36B51" # decorator
+  punctuation: "#56645F" # punctuation
+  punctuation.definition.string: "#218366" # string
+  punctuation.section: "#56645F" # punctuation
+  storage: "#764C00" # storage
+  string: "#218366" # string
+  string.regexp: "#B36B51" # regexp
+  string.interpolated: "#B36B51" # string.escape
+  support: "#916D07" # function
+  support.class: "#006267" # type
+  support.type: "#006267" # type.builtin
+  support.constant: "#AC3B32" # constant
+  support.function.builtin: "#916D07" # function.builtin
+  support.variable: "#AC3B32" # variable.builtin
+  variable: "#27342F" # variable
+  variable.language: "#AC3B32" # variable.builtin
+  variable.parameter: "#3B4742" # parameter
+  variable.other.property: "#3B4742" # property
 ui:
   accent:
-    normal: "#804B00"
+    normal: "#764C00"
   border:
-    normal: "#B1C0B0"
+    normal: "#B0BFBB"
   chrome:
     background:
-      normal: "#E1E7E0"
-      dark: "#D4DCD3"
-      light: "#F6F9F6"
+      normal: "#E1E6E5"
+      dark: "#D5DBDA"
+      light: "#F6F8F8"
     foreground:
-      normal: "#3D473E"
-      dark: "#4C574D"
-      light: "#2A342B"
+      normal: "#3B4742"
+      dark: "#4A5752"
+      light: "#27342F"
   cursor:
     normal:
-      background: "#804B00"
-      foreground: "#EEF3ED"
+      background: "#764C00"
+      foreground: "#EEF2F1"
     muted:
-      background: "#6E7C6E"
-      foreground: "#EEF3ED"
-  deprecated: "#98547C"
+      background: "#6C7C76"
+      foreground: "#EEF2F1"
+  deprecated: "#B36B51"
   global:
     background:
-      normal: "#EEF3ED"
-      dark: "#E1E7E0"
-      light: "#F6F9F6"
+      normal: "#EEF2F1"
+      dark: "#E1E6E5"
+      light: "#F6F8F8"
     foreground:
-      normal: "#2A342B"
-      dark: "#3D473E"
-      light: "#1B221C"
+      normal: "#27342F"
+      dark: "#3B4742"
+      light: "#19221E"
   gutter:
-    background: "#EEF3ED"
-    foreground: "#6E7C6E"
+    background: "#EEF2F1"
+    foreground: "#6C7C76"
   highlight:
     button:
-      background: "#C7D3C5"
-      foreground: "#1B221C"
+      background: "#C6D2CF"
+      foreground: "#19221E"
     line:
-      background: "#E1E7E0"
-      foreground: "#804B00"
+      background: "#E1E6E5"
+      foreground: "#764C00"
     search:
-      background: "#D1CAA8"
-      foreground: "#1B221C"
+      background: "#D2CAAB"
+      foreground: "#19221E"
     text:
-      background: "#C7D3C5"
-      foreground: "#2A342B"
-      active-background: "#B1C0B0"
-      active-foreground: "#1B221C"
+      background: "#C6D2CF"
+      foreground: "#27342F"
+      active-background: "#B0BFBB"
+      active-foreground: "#19221E"
   indent-guide:
-    background: "#C7D3C5"
-    active-background: "#879887"
+    background: "#C6D2CF"
+    active-background: "#859792"
   link:
     normal:
-      background: "#EEF3ED"
-      foreground: "#27629C"
+      background: "#EEF2F1"
+      foreground: "#25629B"
   selection:
-    background: "#B1C0B0"
-    foreground: "#1B221C"
-    inactive-background: "#C7D3C5"
+    background: "#B0BFBB"
+    foreground: "#19221E"
+    inactive-background: "#C6D2CF"
   status:
-    error: "#932D29"
-    info: "#27629C"
-    success: "#207F41"
-    warning: "#8E6B08"
+    error: "#88251E"
+    info: "#25629B"
+    success: "#218366"
+    warning: "#916D07"
   tooltip:
-    background: "#F6F9F6"
-    foreground: "#2A342B"
+    background: "#F6F8F8"
+    foreground: "#27342F"
   whitespace:
-    foreground: "#879887"
+    foreground: "#859792"

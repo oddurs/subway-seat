@@ -2,101 +2,101 @@
 # Paris Carrelage for eza 0.20+.
 colourful: true
 filekinds:
-  normal: {foreground: "#2A342B"}
-  directory: {foreground: "#8E6B08", is_bold: true}
-  symlink: {foreground: "#006E6B"}
-  pipe: {foreground: "#98547C"}
-  block_device: {foreground: "#A26100", is_bold: true}
-  char_device: {foreground: "#A26100"}
-  socket: {foreground: "#98547C", is_bold: true}
-  special: {foreground: "#98547C"}
-  executable: {foreground: "#207F41", is_bold: true}
-  mount_point: {foreground: "#9D770A", is_bold: true, is_underline: true}
+  normal: {foreground: "#27342F"}
+  directory: {foreground: "#916D07", is_bold: true}
+  symlink: {foreground: "#006267"}
+  pipe: {foreground: "#B36B51"}
+  block_device: {foreground: "#885A00", is_bold: true}
+  char_device: {foreground: "#885A00"}
+  socket: {foreground: "#B36B51", is_bold: true}
+  special: {foreground: "#B36B51"}
+  executable: {foreground: "#218366", is_bold: true}
+  mount_point: {foreground: "#A07A12", is_bold: true, is_underline: true}
 perms:
-  user_read: {foreground: "#8E6B08", is_bold: true}
-  user_write: {foreground: "#804B00", is_bold: true}
-  user_execute_file: {foreground: "#207F41", is_bold: true}
-  user_execute_other: {foreground: "#207F41", is_bold: true}
-  group_read: {foreground: "#8E6B08"}
-  group_write: {foreground: "#804B00"}
-  group_execute: {foreground: "#207F41"}
-  other_read: {foreground: "#8E6B08"}
-  other_write: {foreground: "#804B00"}
-  other_execute: {foreground: "#207F41"}
-  special_user_file: {foreground: "#98547C"}
-  special_other: {foreground: "#6E7C6E"}
-  attribute: {foreground: "#6E7C6E"}
+  user_read: {foreground: "#916D07", is_bold: true}
+  user_write: {foreground: "#764C00", is_bold: true}
+  user_execute_file: {foreground: "#218366", is_bold: true}
+  user_execute_other: {foreground: "#218366", is_bold: true}
+  group_read: {foreground: "#916D07"}
+  group_write: {foreground: "#764C00"}
+  group_execute: {foreground: "#218366"}
+  other_read: {foreground: "#916D07"}
+  other_write: {foreground: "#764C00"}
+  other_execute: {foreground: "#218366"}
+  special_user_file: {foreground: "#B36B51"}
+  special_other: {foreground: "#6C7C76"}
+  attribute: {foreground: "#6C7C76"}
 size:
-  major: {foreground: "#006E6B"}
-  minor: {foreground: "#1E8683"}
-  number_byte: {foreground: "#4C574D"}
-  number_kilo: {foreground: "#207F41"}
-  number_mega: {foreground: "#8E6B08"}
-  number_giga: {foreground: "#804B00"}
-  number_huge: {foreground: "#BE423D"}
-  unit_byte: {foreground: "#646E65"}
-  unit_kilo: {foreground: "#3F905B"}
-  unit_mega: {foreground: "#9C7F2A"}
-  unit_giga: {foreground: "#906424"}
-  unit_huge: {foreground: "#C55D57"}
+  major: {foreground: "#006267"}
+  minor: {foreground: "#027479"}
+  number_byte: {foreground: "#4A5752"}
+  number_kilo: {foreground: "#218366"}
+  number_mega: {foreground: "#916D07"}
+  number_giga: {foreground: "#764C00"}
+  number_huge: {foreground: "#AC3B32"}
+  unit_byte: {foreground: "#636E6A"}
+  unit_kilo: {foreground: "#40947B"}
+  unit_mega: {foreground: "#9F812A"}
+  unit_giga: {foreground: "#886524"}
+  unit_huge: {foreground: "#B6564F"}
 users:
-  user_you: {foreground: "#8E6B08"}
-  user_root: {foreground: "#BE423D"}
-  user_other: {foreground: "#4C574D"}
-  group_yours: {foreground: "#3D473E"}
-  group_other: {foreground: "#586459"}
-  group_root: {foreground: "#BE423D"}
+  user_you: {foreground: "#916D07"}
+  user_root: {foreground: "#AC3B32"}
+  user_other: {foreground: "#4A5752"}
+  group_yours: {foreground: "#3B4742"}
+  group_other: {foreground: "#56645F"}
+  group_root: {foreground: "#AC3B32"}
 links:
-  normal: {foreground: "#006E6B"}
-  multi_link_file: {foreground: "#804B00"}
+  normal: {foreground: "#006267"}
+  multi_link_file: {foreground: "#764C00"}
 git:
-  new: {foreground: "#207F41"}
-  modified: {foreground: "#8E6B08"}
-  deleted: {foreground: "#BE423D"}
-  renamed: {foreground: "#006E6B"}
-  typechange: {foreground: "#98547C"}
-  ignored: {foreground: "#879887"}
-  conflicted: {foreground: "#932D29", is_bold: true}
+  new: {foreground: "#218366"}
+  modified: {foreground: "#916D07"}
+  deleted: {foreground: "#AC3B32"}
+  renamed: {foreground: "#006267"}
+  typechange: {foreground: "#B36B51"}
+  ignored: {foreground: "#859792"}
+  conflicted: {foreground: "#88251E", is_bold: true}
 git_repo:
-  branch_main: {foreground: "#3D473E"}
-  branch_other: {foreground: "#804B00"}
-  git_clean: {foreground: "#207F41"}
-  git_dirty: {foreground: "#8E6B08"}
+  branch_main: {foreground: "#3B4742"}
+  branch_other: {foreground: "#764C00"}
+  git_clean: {foreground: "#218366"}
+  git_dirty: {foreground: "#916D07"}
 security_context:
-  none: {foreground: "#6E7C6E"}
+  none: {foreground: "#6C7C76"}
   selinux:
-    colon: {foreground: "#879887"}
-    user: {foreground: "#4C574D"}
-    role: {foreground: "#006E6B"}
-    typ: {foreground: "#586459"}
-    range: {foreground: "#98547C"}
+    colon: {foreground: "#859792"}
+    user: {foreground: "#4A5752"}
+    role: {foreground: "#006267"}
+    typ: {foreground: "#56645F"}
+    range: {foreground: "#B36B51"}
 file_type:
-  image: {foreground: "#98547C"}
-  video: {foreground: "#804B00"}
-  music: {foreground: "#A26100"}
-  lossless: {foreground: "#A26100", is_bold: true}
-  crypto: {foreground: "#932D29"}
-  document: {foreground: "#27629C"}
-  compressed: {foreground: "#BE423D"}
-  temp: {foreground: "#879887"}
-  compiled: {foreground: "#6E7C6E"}
-  build: {foreground: "#8E6B08", is_underline: true}
-  source: {foreground: "#006E6B"}
-punctuation: {foreground: "#879887"}
-date: {foreground: "#4C574D"}
-inode: {foreground: "#6E7C6E"}
-blocks: {foreground: "#6E7C6E"}
-header: {foreground: "#3D473E", is_underline: true}
-octal: {foreground: "#98547C"}
-flags: {foreground: "#586459"}
-symlink_path: {foreground: "#4C574D"}
-control_char: {foreground: "#98547C"}
-broken_symlink: {foreground: "#BE423D"}
+  image: {foreground: "#B36B51"}
+  video: {foreground: "#764C00"}
+  music: {foreground: "#885A00"}
+  lossless: {foreground: "#885A00", is_bold: true}
+  crypto: {foreground: "#88251E"}
+  document: {foreground: "#25629B"}
+  compressed: {foreground: "#AC3B32"}
+  temp: {foreground: "#859792"}
+  compiled: {foreground: "#6C7C76"}
+  build: {foreground: "#916D07", is_underline: true}
+  source: {foreground: "#006267"}
+punctuation: {foreground: "#859792"}
+date: {foreground: "#4A5752"}
+inode: {foreground: "#6C7C76"}
+blocks: {foreground: "#6C7C76"}
+header: {foreground: "#3B4742", is_underline: true}
+octal: {foreground: "#B36B51"}
+flags: {foreground: "#56645F"}
+symlink_path: {foreground: "#4A5752"}
+control_char: {foreground: "#B36B51"}
+broken_symlink: {foreground: "#AC3B32"}
 broken_path_overlay: {is_underline: true}
 filenames:
-  "README.md": {filename: {foreground: "#9D770A", is_bold: true}}
-  "README": {filename: {foreground: "#9D770A", is_bold: true}}
-  "LICENSE": {filename: {foreground: "#586459"}}
+  "README.md": {filename: {foreground: "#A07A12", is_bold: true}}
+  "README": {filename: {foreground: "#A07A12", is_bold: true}}
+  "LICENSE": {filename: {foreground: "#56645F"}}
 extensions:
-  lock: {filename: {foreground: "#6E7C6E"}}
-  log: {filename: {foreground: "#6E7C6E"}}
+  lock: {filename: {foreground: "#6C7C76"}}
+  log: {filename: {foreground: "#6C7C76"}}

@@ -3,99 +3,99 @@
 colourful: true
 filekinds:
   normal: {foreground: "#D4DDD7"}
-  directory: {foreground: "#F2BF4B", is_bold: true}
-  symlink: {foreground: "#5FA09D"}
-  pipe: {foreground: "#CE96B4"}
-  block_device: {foreground: "#E7AB6D", is_bold: true}
-  char_device: {foreground: "#E7AB6D"}
-  socket: {foreground: "#CE96B4", is_bold: true}
-  special: {foreground: "#CE96B4"}
-  executable: {foreground: "#80C28E", is_bold: true}
-  mount_point: {foreground: "#FFD273", is_bold: true, is_underline: true}
+  directory: {foreground: "#F1BF4B", is_bold: true}
+  symlink: {foreground: "#549B9F"}
+  pipe: {foreground: "#FAB49C"}
+  block_device: {foreground: "#DFAA61", is_bold: true}
+  char_device: {foreground: "#DFAA61"}
+  socket: {foreground: "#FAB49C", is_bold: true}
+  special: {foreground: "#FAB49C"}
+  executable: {foreground: "#70CAA9", is_bold: true}
+  mount_point: {foreground: "#FFD57A", is_bold: true, is_underline: true}
 perms:
-  user_read: {foreground: "#F2BF4B", is_bold: true}
-  user_write: {foreground: "#D0914F", is_bold: true}
-  user_execute_file: {foreground: "#80C28E", is_bold: true}
-  user_execute_other: {foreground: "#80C28E", is_bold: true}
-  group_read: {foreground: "#F2BF4B"}
-  group_write: {foreground: "#D0914F"}
-  group_execute: {foreground: "#80C28E"}
-  other_read: {foreground: "#F2BF4B"}
-  other_write: {foreground: "#D0914F"}
-  other_execute: {foreground: "#80C28E"}
-  special_user_file: {foreground: "#CE96B4"}
+  user_read: {foreground: "#F1BF4B", is_bold: true}
+  user_write: {foreground: "#CA9245", is_bold: true}
+  user_execute_file: {foreground: "#70CAA9", is_bold: true}
+  user_execute_other: {foreground: "#70CAA9", is_bold: true}
+  group_read: {foreground: "#F1BF4B"}
+  group_write: {foreground: "#CA9245"}
+  group_execute: {foreground: "#70CAA9"}
+  other_read: {foreground: "#F1BF4B"}
+  other_write: {foreground: "#CA9245"}
+  other_execute: {foreground: "#70CAA9"}
+  special_user_file: {foreground: "#FAB49C"}
   special_other: {foreground: "#708178"}
   attribute: {foreground: "#708178"}
 size:
-  major: {foreground: "#5FA09D"}
-  minor: {foreground: "#8CCCC9"}
+  major: {foreground: "#549B9F"}
+  minor: {foreground: "#70B5B9"}
   number_byte: {foreground: "#A5B1AA"}
-  number_kilo: {foreground: "#80C28E"}
-  number_mega: {foreground: "#F2BF4B"}
-  number_giga: {foreground: "#D0914F"}
-  number_huge: {foreground: "#EE8F85"}
+  number_kilo: {foreground: "#70CAA9"}
+  number_mega: {foreground: "#F1BF4B"}
+  number_giga: {foreground: "#CA9245"}
+  number_huge: {foreground: "#E7877B"}
   unit_byte: {foreground: "#79857E"}
-  unit_kilo: {foreground: "#5F916B"}
-  unit_mega: {foreground: "#AF8F3C"}
-  unit_giga: {foreground: "#976E3F"}
-  unit_huge: {foreground: "#AC6D65"}
+  unit_kilo: {foreground: "#54967E"}
+  unit_mega: {foreground: "#AE8F3C"}
+  unit_giga: {foreground: "#936F38"}
+  unit_huge: {foreground: "#A7685E"}
 users:
-  user_you: {foreground: "#F2BF4B"}
-  user_root: {foreground: "#EE8F85"}
+  user_you: {foreground: "#F1BF4B"}
+  user_root: {foreground: "#E7877B"}
   user_other: {foreground: "#A5B1AA"}
   group_yours: {foreground: "#BFC8C2"}
   group_other: {foreground: "#8C9A92"}
-  group_root: {foreground: "#EE8F85"}
+  group_root: {foreground: "#E7877B"}
 links:
-  normal: {foreground: "#5FA09D"}
-  multi_link_file: {foreground: "#D0914F"}
+  normal: {foreground: "#549B9F"}
+  multi_link_file: {foreground: "#CA9245"}
 git:
-  new: {foreground: "#80C28E"}
-  modified: {foreground: "#F2BF4B"}
-  deleted: {foreground: "#EE8F85"}
-  renamed: {foreground: "#5FA09D"}
-  typechange: {foreground: "#CE96B4"}
+  new: {foreground: "#70CAA9"}
+  modified: {foreground: "#F1BF4B"}
+  deleted: {foreground: "#E7877B"}
+  renamed: {foreground: "#549B9F"}
+  typechange: {foreground: "#FAB49C"}
   ignored: {foreground: "#54655C"}
-  conflicted: {foreground: "#CD6B63", is_bold: true}
+  conflicted: {foreground: "#C7665B", is_bold: true}
 git_repo:
   branch_main: {foreground: "#BFC8C2"}
-  branch_other: {foreground: "#D0914F"}
-  git_clean: {foreground: "#80C28E"}
-  git_dirty: {foreground: "#F2BF4B"}
+  branch_other: {foreground: "#CA9245"}
+  git_clean: {foreground: "#70CAA9"}
+  git_dirty: {foreground: "#F1BF4B"}
 security_context:
   none: {foreground: "#708178"}
   selinux:
     colon: {foreground: "#54655C"}
     user: {foreground: "#A5B1AA"}
-    role: {foreground: "#5FA09D"}
+    role: {foreground: "#549B9F"}
     typ: {foreground: "#8C9A92"}
-    range: {foreground: "#CE96B4"}
+    range: {foreground: "#FAB49C"}
 file_type:
-  image: {foreground: "#CE96B4"}
-  video: {foreground: "#D0914F"}
-  music: {foreground: "#E7AB6D"}
-  lossless: {foreground: "#E7AB6D", is_bold: true}
-  crypto: {foreground: "#CD6B63"}
+  image: {foreground: "#FAB49C"}
+  video: {foreground: "#CA9245"}
+  music: {foreground: "#DFAA61"}
+  lossless: {foreground: "#DFAA61", is_bold: true}
+  crypto: {foreground: "#C7665B"}
   document: {foreground: "#709BC8"}
-  compressed: {foreground: "#EE8F85"}
+  compressed: {foreground: "#E7877B"}
   temp: {foreground: "#54655C"}
   compiled: {foreground: "#708178"}
-  build: {foreground: "#F2BF4B", is_underline: true}
-  source: {foreground: "#5FA09D"}
+  build: {foreground: "#F1BF4B", is_underline: true}
+  source: {foreground: "#549B9F"}
 punctuation: {foreground: "#54655C"}
 date: {foreground: "#A5B1AA"}
 inode: {foreground: "#708178"}
 blocks: {foreground: "#708178"}
 header: {foreground: "#BFC8C2", is_underline: true}
-octal: {foreground: "#CE96B4"}
+octal: {foreground: "#FAB49C"}
 flags: {foreground: "#8C9A92"}
 symlink_path: {foreground: "#A5B1AA"}
-control_char: {foreground: "#CE96B4"}
-broken_symlink: {foreground: "#EE8F85"}
+control_char: {foreground: "#FAB49C"}
+broken_symlink: {foreground: "#E7877B"}
 broken_path_overlay: {is_underline: true}
 filenames:
-  "README.md": {filename: {foreground: "#FFD273", is_bold: true}}
-  "README": {filename: {foreground: "#FFD273", is_bold: true}}
+  "README.md": {filename: {foreground: "#FFD57A", is_bold: true}}
+  "README": {filename: {foreground: "#FFD57A", is_bold: true}}
   "LICENSE": {filename: {foreground: "#8C9A92"}}
 extensions:
   lock: {filename: {foreground: "#708178"}}

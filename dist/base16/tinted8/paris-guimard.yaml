@@ -20,76 +20,76 @@ palette:
   gray: "#74857C"
   gray-bright: "#909E96"
   gray-dim: "#586B61"
-  red: "#CD6B63"
-  red-bright: "#EE8F85"
-  green: "#80C28E"
-  green-bright: "#8FD59E"
-  yellow: "#F2BF4B"
-  yellow-bright: "#FFD273"
+  red: "#C7665B"
+  red-bright: "#E7877B"
+  green: "#70CAA9"
+  green-bright: "#89DEBE"
+  yellow: "#F1BF4B"
+  yellow-bright: "#FFD57A"
   blue: "#709BC8"
   blue-bright: "#8DB6E2"
-  magenta: "#D0914F"
-  magenta-bright: "#E7AB6D"
-  cyan: "#5FA09D"
-  cyan-bright: "#8CCCC9"
-  orange: "#D0914F"
-  orange-bright: "#E7AB6D"
-  brown: "#CE96B4"
+  magenta: "#CA9245"
+  magenta-bright: "#DFAA61"
+  cyan: "#549B9F"
+  cyan-bright: "#70B5B9"
+  orange: "#CA9245"
+  orange-bright: "#DFAA61"
+  brown: "#FAB49C"
 syntax:
   comment: "#74857C" # comment
   punctuation.definition.comment: "#74857C" # comment
-  constant: "#EE8F85" # constant
-  constant.numeric: "#EE8F85" # number
-  constant.language: "#EE8F85" # boolean
-  constant.character: "#CE96B4" # string.escape
+  constant: "#E7877B" # constant
+  constant.numeric: "#E7877B" # number
+  constant.language: "#E7877B" # boolean
+  constant.character: "#FAB49C" # string.escape
   entity.name: "#D9E1DB" # variable
-  entity.name.function: "#F2BF4B" # function
-  entity.name.class: "#5FA09D" # type
-  entity.name.type: "#5FA09D" # type
+  entity.name.function: "#F1BF4B" # function
+  entity.name.class: "#549B9F" # type
+  entity.name.type: "#549B9F" # type
   entity.name.namespace: "#A9B5AE" # namespace
-  entity.name.tag: "#D0914F" # tag
-  entity.name.label: "#CE96B4" # decorator
-  entity.name.section: "#F2BF4B" # heading
+  entity.name.tag: "#CA9245" # tag
+  entity.name.label: "#FAB49C" # decorator
+  entity.name.section: "#F1BF4B" # heading
   entity.other: "#D9E1DB" # variable
-  entity.other.attribute-name: "#F2BF4B" # attribute
-  entity.other.inherited-class: "#5FA09D" # type
-  invalid: "#CD6B63" # invalid
-  invalid.deprecated: "#CE96B4" # clay
-  keyword: "#D0914F" # keyword
+  entity.other.attribute-name: "#F1BF4B" # attribute
+  entity.other.inherited-class: "#549B9F" # type
+  invalid: "#C7665B" # invalid
+  invalid.deprecated: "#FAB49C" # clay
+  keyword: "#CA9245" # keyword
   keyword.operator: "#909E96" # operator
   markup: "#D9E1DB" # text
   markup.bold: "#E9EEEC" # strong
   markup.italic: "#D9E1DB" # emphasis
-  markup.heading: "#F2BF4B" # heading
+  markup.heading: "#F1BF4B" # heading
   markup.link: "#709BC8" # link
-  markup.list: "#D0914F" # keyword
+  markup.list: "#CA9245" # keyword
   markup.quote: "#A9B5AE" # quote
-  markup.raw: "#80C28E" # code
-  markup.inserted: "#80C28E" # green
-  markup.deleted: "#EE8F85" # red_hi
-  markup.changed: "#F2BF4B" # yellow
+  markup.raw: "#70CAA9" # code
+  markup.inserted: "#70CAA9" # green
+  markup.deleted: "#E7877B" # red_hi
+  markup.changed: "#F1BF4B" # yellow
   meta: "#D9E1DB" # text
-  meta.annotation: "#CE96B4" # decorator
+  meta.annotation: "#FAB49C" # decorator
   punctuation: "#909E96" # punctuation
-  punctuation.definition.string: "#80C28E" # string
+  punctuation.definition.string: "#70CAA9" # string
   punctuation.section: "#909E96" # punctuation
-  storage: "#D0914F" # storage
-  string: "#80C28E" # string
-  string.regexp: "#CE96B4" # regexp
-  string.interpolated: "#CE96B4" # string.escape
-  support: "#F2BF4B" # function
-  support.class: "#5FA09D" # type
-  support.type: "#5FA09D" # type.builtin
-  support.constant: "#EE8F85" # constant
-  support.function.builtin: "#F2BF4B" # function.builtin
-  support.variable: "#EE8F85" # variable.builtin
+  storage: "#CA9245" # storage
+  string: "#70CAA9" # string
+  string.regexp: "#FAB49C" # regexp
+  string.interpolated: "#FAB49C" # string.escape
+  support: "#F1BF4B" # function
+  support.class: "#549B9F" # type
+  support.type: "#549B9F" # type.builtin
+  support.constant: "#E7877B" # constant
+  support.function.builtin: "#F1BF4B" # function.builtin
+  support.variable: "#E7877B" # variable.builtin
   variable: "#D9E1DB" # variable
-  variable.language: "#EE8F85" # variable.builtin
+  variable.language: "#E7877B" # variable.builtin
   variable.parameter: "#C2CBC5" # parameter
   variable.other.property: "#C2CBC5" # property
 ui:
   accent:
-    normal: "#D0914F"
+    normal: "#CA9245"
   border:
     normal: "#263930"
   chrome:
@@ -103,12 +103,12 @@ ui:
       light: "#D9E1DB"
   cursor:
     normal:
-      background: "#F2BF4B"
+      background: "#F1BF4B"
       foreground: "#131A17"
     muted:
       background: "#74857C"
       foreground: "#1E2E26"
-  deprecated: "#CE96B4"
+  deprecated: "#FAB49C"
   global:
     background:
       normal: "#1E2E26"
@@ -127,9 +127,9 @@ ui:
       foreground: "#E9EEEC"
     line:
       background: "#263930"
-      foreground: "#F2BF4B"
+      foreground: "#F1BF4B"
     search:
-      background: "#5E5A31"
+      background: "#5D5A31"
       foreground: "#E9EEEC"
     text:
       background: "#30463B"
@@ -148,10 +148,10 @@ ui:
     foreground: "#E9EEEC"
     inactive-background: "#30463B"
   status:
-    error: "#EE8F85"
+    error: "#E7877B"
     info: "#709BC8"
-    success: "#80C28E"
-    warning: "#F2BF4B"
+    success: "#70CAA9"
+    warning: "#F1BF4B"
   tooltip:
     background: "#263930"
     foreground: "#D9E1DB"

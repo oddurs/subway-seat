@@ -4,113 +4,113 @@
 $env.config.highlight_resolved_externals = true
 
 $env.config.color_config = {
-    shape_internalcall: "#8E6B08"
-    shape_external_resolved: "#8E6B08"
-    shape_external: "#BE423D"
-    shape_keyword: "#804B00"
-    shape_flag: "#006E6B"
-    shape_externalarg: "#3D473E"
-    shape_signature: "#006E6B"
-    shape_string: "#207F41"
-    shape_raw_string: "#207F41"
-    shape_string_interpolation: "#98547C"
-    shape_int: "#BE423D"
-    shape_float: "#BE423D"
-    shape_bool: "#BE423D"
-    shape_binary: "#BE423D"
-    shape_datetime: "#BE423D"
-    shape_nothing: "#BE423D"
-    shape_literal: "#BE423D"
-    shape_range: "#98547C"
-    shape_custom: "#98547C"
-    shape_variable: "#98547C"
-    shape_vardecl: "#98547C"
-    shape_filepath: "#3D473E"
-    shape_directory: "#3D473E"
-    shape_globpattern: "#98547C"
-    shape_glob_interpolation: "#98547C"
-    shape_pipe: "#804B00"
-    shape_redirection: "#98547C"
-    shape_operator: "#98547C"
-    shape_block: "#586459"
-    shape_closure: "#586459"
-    shape_list: "#586459"
-    shape_record: "#586459"
-    shape_table: "#586459"
-    shape_match_pattern: "#207F41"
-    shape_matching_brackets: { fg: "#9D770A" attr: "b" }
-    shape_garbage: { fg: "#BE423D" attr: "u" }
+    shape_internalcall: "#916D07"
+    shape_external_resolved: "#916D07"
+    shape_external: "#AC3B32"
+    shape_keyword: "#764C00"
+    shape_flag: "#006267"
+    shape_externalarg: "#3B4742"
+    shape_signature: "#006267"
+    shape_string: "#218366"
+    shape_raw_string: "#218366"
+    shape_string_interpolation: "#B36B51"
+    shape_int: "#AC3B32"
+    shape_float: "#AC3B32"
+    shape_bool: "#AC3B32"
+    shape_binary: "#AC3B32"
+    shape_datetime: "#AC3B32"
+    shape_nothing: "#AC3B32"
+    shape_literal: "#AC3B32"
+    shape_range: "#B36B51"
+    shape_custom: "#B36B51"
+    shape_variable: "#B36B51"
+    shape_vardecl: "#B36B51"
+    shape_filepath: "#3B4742"
+    shape_directory: "#3B4742"
+    shape_globpattern: "#B36B51"
+    shape_glob_interpolation: "#B36B51"
+    shape_pipe: "#764C00"
+    shape_redirection: "#B36B51"
+    shape_operator: "#B36B51"
+    shape_block: "#56645F"
+    shape_closure: "#56645F"
+    shape_list: "#56645F"
+    shape_record: "#56645F"
+    shape_table: "#56645F"
+    shape_match_pattern: "#218366"
+    shape_matching_brackets: { fg: "#A07A12" attr: "b" }
+    shape_garbage: { fg: "#AC3B32" attr: "u" }
 
-    background: "#EEF3ED"
-    foreground: "#2A342B"
-    cursor: "#804B00"
-    separator: "#9BAC9A"
-    leading_trailing_space_bg: { bg: "#B1C0B0" }
-    header: { fg: "#804B00" attr: "b" }
-    row_index: "#6E7C6E"
-    empty: "#879887"
-    hints: "#879887"
-    search_result: { fg: "#1B221C" bg: "#D1CAA8" }
-    selection: { fg: "#1B221C" bg: "#B1C0B0" }
+    background: "#EEF2F1"
+    foreground: "#27342F"
+    cursor: "#764C00"
+    separator: "#99ABA6"
+    leading_trailing_space_bg: { bg: "#B0BFBB" }
+    header: { fg: "#764C00" attr: "b" }
+    row_index: "#6C7C76"
+    empty: "#859792"
+    hints: "#859792"
+    search_result: { fg: "#19221E" bg: "#D2CAAB" }
+    selection: { fg: "#19221E" bg: "#B0BFBB" }
     selection_cursor: { attr: "n" }
-    bool: "#BE423D"
-    int: "#BE423D"
-    float: "#BE423D"
-    string: "#2A342B"
-    glob: "#98547C"
-    binary: "#BE423D"
-    binary_null_char: "#879887"
-    binary_printable: "#207F41"
-    binary_whitespace: "#006E6B"
-    binary_ascii_other: "#98547C"
-    binary_non_ascii: "#804B00"
-    custom: "#98547C"
-    nothing: "#879887"
-    list: "#2A342B"
-    record: "#2A342B"
-    range: "#98547C"
-    cell-path: "#586459"
-    block: "#586459"
-    closure: "#586459"
-    semver: "#006E6B"
-    semver-range: "#006E6B"
-    banner_foreground: "#2A342B"
-    banner_highlight1: "#804B00"
-    banner_highlight2: "#8E6B08"
+    bool: "#AC3B32"
+    int: "#AC3B32"
+    float: "#AC3B32"
+    string: "#27342F"
+    glob: "#B36B51"
+    binary: "#AC3B32"
+    binary_null_char: "#859792"
+    binary_printable: "#218366"
+    binary_whitespace: "#006267"
+    binary_ascii_other: "#B36B51"
+    binary_non_ascii: "#764C00"
+    custom: "#B36B51"
+    nothing: "#859792"
+    list: "#27342F"
+    record: "#27342F"
+    range: "#B36B51"
+    cell-path: "#56645F"
+    block: "#56645F"
+    closure: "#56645F"
+    semver: "#006267"
+    semver-range: "#006267"
+    banner_foreground: "#27342F"
+    banner_highlight1: "#764C00"
+    banner_highlight2: "#916D07"
     filesize: {||
-      if $in < 1kb { "#4C574D"
-      } else if $in < 1mb { "#207F41"
-      } else if $in < 100mb { "#8E6B08"
-      } else if $in < 1gb { "#804B00"
-      } else { "#BE423D" }
+      if $in < 1kb { "#4A5752"
+      } else if $in < 1mb { "#218366"
+      } else if $in < 100mb { "#916D07"
+      } else if $in < 1gb { "#764C00"
+      } else { "#AC3B32" }
     }
     duration: {||
-      if $in < 1sec { "#207F41"
-      } else if $in < 1min { "#8E6B08"
-      } else if $in < 1hr { "#804B00"
-      } else { "#BE423D" }
+      if $in < 1sec { "#218366"
+      } else if $in < 1min { "#916D07"
+      } else if $in < 1hr { "#764C00"
+      } else { "#AC3B32" }
     }
     datetime: {|| (date now) - $in |
-      if $in < 1hr { "#168540"
-      } else if $in < 1day { "#207F41"
-      } else if $in < 1wk { "#8E6B08"
-      } else if $in < 4wk { "#804B00"
-      } else if $in < 52wk { "#4C574D"
-      } else { "#6E7C6E" }
+      if $in < 1hr { "#278D6E"
+      } else if $in < 1day { "#218366"
+      } else if $in < 1wk { "#916D07"
+      } else if $in < 4wk { "#764C00"
+      } else if $in < 52wk { "#4A5752"
+      } else { "#6C7C76" }
     }
 }
 
-$env.config.explore.selected_cell = { fg: "#EEF3ED" bg: "#804B00" }
-$env.config.explore.highlight = { fg: "#1B221C" bg: "#D1CAA8" }
-$env.config.explore.status_bar_text = { fg: "#3D473E" }
-$env.config.explore.status_bar_background = { fg: "#2A342B" bg: "#D4DCD3" }
-$env.config.explore.command_bar_text = { fg: "#2A342B" }
-$env.config.explore.command_bar_background = { bg: "#D4DCD3" }
-$env.config.explore.title_bar_text = { fg: "#1B221C" attr: "b" }
-$env.config.explore.title_bar_background = { bg: "#C7D3C5" }
+$env.config.explore.selected_cell = { fg: "#EEF2F1" bg: "#764C00" }
+$env.config.explore.highlight = { fg: "#19221E" bg: "#D2CAAB" }
+$env.config.explore.status_bar_text = { fg: "#3B4742" }
+$env.config.explore.status_bar_background = { fg: "#27342F" bg: "#D5DBDA" }
+$env.config.explore.command_bar_text = { fg: "#27342F" }
+$env.config.explore.command_bar_background = { bg: "#D5DBDA" }
+$env.config.explore.title_bar_text = { fg: "#19221E" attr: "b" }
+$env.config.explore.title_bar_background = { bg: "#C6D2CF" }
 $env.config.explore.status = {
-    info: { fg: "#27629C" }
-    success: { fg: "#EEF3ED" bg: "#207F41" }
-    warn: { fg: "#EEF3ED" bg: "#8E6B08" }
-    error: { fg: "#EEF3ED" bg: "#BE423D" }
+    info: { fg: "#25629B" }
+    success: { fg: "#EEF2F1" bg: "#218366" }
+    warn: { fg: "#EEF2F1" bg: "#916D07" }
+    error: { fg: "#EEF2F1" bg: "#AC3B32" }
 }

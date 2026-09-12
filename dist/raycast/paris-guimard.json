@@ -8,14 +8,14 @@
     "background": "#1E2E26",
     "backgroundSecondary": "#18241D",
     "text": "#D9E1DB",
-    "selection": "#D0914F",
-    "loader": "#F2BF4B",
-    "red": "#EE8F85",
-    "orange": "#D0914F",
-    "yellow": "#F2BF4B",
-    "green": "#80C28E",
+    "selection": "#CA9245",
+    "loader": "#F1BF4B",
+    "red": "#E7877B",
+    "orange": "#CA9245",
+    "yellow": "#F1BF4B",
+    "green": "#70CAA9",
     "blue": "#709BC8",
-    "purple": "#CE96B4",
-    "magenta": "#E7AB6D"
+    "purple": "#FAB49C",
+    "magenta": "#DFAA61"
   }
 }

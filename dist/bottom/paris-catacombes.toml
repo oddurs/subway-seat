@@ -4,29 +4,29 @@
 
 [styles.cpu]
 all_entry_color = "#D4DDD7"
-avg_entry_color = "#D0914F"
-cpu_core_colors = ["#80C28E", "#F2BF4B", "#D0914F", "#EE8F85", "#5FA09D", "#CE96B4", "#8FD59E", "#FFD273"]
+avg_entry_color = "#CA9245"
+cpu_core_colors = ["#70CAA9", "#F1BF4B", "#CA9245", "#E7877B", "#549B9F", "#FAB49C", "#89DEBE", "#FFD57A"]
 
 [styles.memory]
-ram_color = "#80C28E"
-cache_color = "#5FA09D"
-swap_color = "#D0914F"
-arc_color = "#CE96B4"
-gpu_colors = ["#F2BF4B", "#D0914F", "#EE8F85", "#5FA09D", "#CE96B4", "#8FD59E"]
+ram_color = "#70CAA9"
+cache_color = "#549B9F"
+swap_color = "#CA9245"
+arc_color = "#FAB49C"
+gpu_colors = ["#F1BF4B", "#CA9245", "#E7877B", "#549B9F", "#FAB49C", "#89DEBE"]
 
 [styles.network]
-rx_color = "#80C28E"
-tx_color = "#D0914F"
-rx_total_color = "#8FD59E"
-tx_total_color = "#E7AB6D"
+rx_color = "#70CAA9"
+tx_color = "#CA9245"
+rx_total_color = "#89DEBE"
+tx_total_color = "#DFAA61"
 
 [styles.battery]
-high_battery_color = "#80C28E"
-medium_battery_color = "#F2BF4B"
-low_battery_color = "#EE8F85"
+high_battery_color = "#70CAA9"
+medium_battery_color = "#F1BF4B"
+low_battery_color = "#E7877B"
 
 [styles.tables]
-headers = { color = "#D0914F", bold = true }
+headers = { color = "#CA9245", bold = true }
 
 [styles.graphs]
 graph_color = "#54655C"
@@ -34,18 +34,18 @@ legend_text = { color = "#A5B1AA" }
 
 [styles.widgets]
 border_color = "#31433A"
-selected_border_color = "#D0914F"
-widget_title = { color = "#F2BF4B" }
+selected_border_color = "#CA9245"
+widget_title = { color = "#F1BF4B" }
 text = { color = "#D4DDD7" }
-selected_text = { color = "#0A100D", bg_color = "#D0914F" }
+selected_text = { color = "#0A100D", bg_color = "#CA9245" }
 disabled_text = { color = "#54655C" }
-thread_text = { color = "#5FA09D" }  # 0.11+
+thread_text = { color = "#549B9F" }  # 0.11+
 
 # Newer sections (bottom 0.13+); older releases ignore them.
 [styles.temp_graph]
-temp_graph_color_styles = ["#80C28E", "#F2BF4B", "#D0914F", "#EE8F85", "#5FA09D", "#CE96B4", "#8FD59E", "#FFD273"]
+temp_graph_color_styles = ["#70CAA9", "#F1BF4B", "#CA9245", "#E7877B", "#549B9F", "#FAB49C", "#89DEBE", "#FFD57A"]
 
 [styles.disk_io_graph]
-read_colours = ["#80C28E", "#5FA09D", "#8FD59E", "#8CCCC9"]
-write_colours = ["#D0914F", "#CE96B4", "#E7AB6D", "#EE8F85"]
+read_colours = ["#70CAA9", "#549B9F", "#89DEBE", "#70B5B9"]
+write_colours = ["#CA9245", "#FAB49C", "#DFAA61", "#E7877B"]
 # <<< subway-seat <<<

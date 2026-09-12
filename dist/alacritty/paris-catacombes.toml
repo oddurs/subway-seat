@@ -9,11 +9,11 @@ bright_foreground = "#E7ECEA"
 
 [colors.cursor]
 text = "#121E19"
-cursor = "#F2BF4B"
+cursor = "#F1BF4B"
 
 [colors.vi_mode_cursor]
 text = "#121E19"
-cursor = "#5FA09D"
+cursor = "#549B9F"
 
 [colors.search.matches]
 foreground = "#D4DDD7"
@@ -21,7 +21,7 @@ background = "#554E28"
 
 [colors.search.focused_match]
 foreground = "#E7ECEA"
-background = "#715834"
+background = "#6E582F"
 
 [colors.footer_bar]
 foreground = "#D4DDD7"
@@ -29,7 +29,7 @@ background = "#24342C"
 
 [colors.hints.start]
 foreground = "#121E19"
-background = "#F2BF4B"
+background = "#F1BF4B"
 
 [colors.hints.end]
 foreground = "#121E19"
@@ -45,30 +45,30 @@ background = "#31433A"
 
 [colors.normal]
 black = "#24342C"
-red = "#CD6B63"
-green = "#80C28E"
-yellow = "#F2BF4B"
+red = "#C7665B"
+green = "#70CAA9"
+yellow = "#F1BF4B"
 blue = "#709BC8"
-magenta = "#D0914F"
-cyan = "#5FA09D"
+magenta = "#CA9245"
+cyan = "#549B9F"
 white = "#BFC8C2"
 
 [colors.bright]
 black = "#708178"
-red = "#EE8F85"
-green = "#8FD59E"
-yellow = "#FFD273"
+red = "#E7877B"
+green = "#89DEBE"
+yellow = "#FFD57A"
 blue = "#8DB6E2"
-magenta = "#E7AB6D"
-cyan = "#8CCCC9"
+magenta = "#DFAA61"
+cyan = "#70B5B9"
 white = "#E7ECEA"
 
 [colors.dim]
 black = "#1E2D26"
-red = "#8D514A"
-green = "#5B8A66"
-yellow = "#A6883A"
+red = "#894E45"
+green = "#509078"
+yellow = "#A5883A"
 blue = "#50718C"
-magenta = "#8F6A3D"
-cyan = "#457470"
+magenta = "#8B6B36"
+cyan = "#3E7171"
 white = "#848E89"
