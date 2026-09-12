@@ -24,7 +24,7 @@ export function Nav() {
       <div {...stylex.props(styles.inner)}>
         <Link href="/" {...stylex.props(styles.mark)}>
           <CityMark />
-          Subway Seat
+          <span>Subway Seat</span>
         </Link>
         <NavLinks />
         <CitySwitch />
@@ -68,14 +68,18 @@ const styles = stylex.create({
     flexWrap: "wrap",
     rowGap: 14,
     columnGap: 30,
-    alignItems: "baseline",
+    alignItems: "center",
     maxWidth: 1200,
     paddingInline: 24,
     paddingBlock: 20,
     marginInline: "auto",
   },
-  // One line box: the mark is inline, so the wordmark's baseline is the row's.
+  // A lockup: the mark centred on the wordmark's cap height, the pair centred
+  // in the band with the links and the switch.
   mark: {
+    display: "flex",
+    gap: 11,
+    alignItems: "center",
     fontFamily: font.sans,
     fontSize: font.sizeMark,
     fontWeight: 700,

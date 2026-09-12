@@ -11,6 +11,7 @@ import * as artTheme from "@/theme/art";
 import * as theme from "@/theme/flavors";
 import { enamelInk, londonInk, portlandInk } from "@/theme/ink";
 import { sign } from "@/theme/sign.stylex";
+import { art } from "@/theme/art.stylex";
 import { color } from "@/theme/tokens.stylex";
 import { font } from "@/theme/type.stylex";
 import "./globals.css";
@@ -150,8 +151,9 @@ const styles = stylex.create({
       default: "smooth",
       "@media (prefers-reduced-motion: reduce)": "auto",
     },
-    // The canvas below a short page continues the footer.
-    backgroundColor: color.crust,
+    // The site's own canvas: a step past the theme's darkest ground, so the page
+    // recedes and the cards and mockups on it carry the flavor.
+    backgroundColor: art.page,
   },
   body: {
     overflowX: "clip",
@@ -159,7 +161,7 @@ const styles = stylex.create({
     fontSize: 16,
     lineHeight: 1.6,
     color: color.text,
-    backgroundColor: color.mantle,
+    backgroundColor: art.page,
     transitionDuration: "240ms",
     transitionProperty: "background-color, color",
   },

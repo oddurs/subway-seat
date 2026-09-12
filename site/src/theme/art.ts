@@ -10,6 +10,7 @@ export const walnut = stylex.createTheme(art, {
   sage: "#86AD95",
   denim: "#7F9BAE",
   clay: "#E0956C",
+  page: "#0F0B07",
 });
 
 export const tunnel = stylex.createTheme(art, {
@@ -20,6 +21,7 @@ export const tunnel = stylex.createTheme(art, {
   sage: "#86AD95",
   denim: "#7F9BAE",
   clay: "#E0956C",
+  page: "#090603",
 });
 
 export const enamel = stylex.createTheme(art, {
@@ -30,6 +32,7 @@ export const enamel = stylex.createTheme(art, {
   sage: "#86AD95",
   denim: "#7F9BAE",
   clay: "#E0956C",
+  page: "#FAF5EC",
 });
 
 export const moquette = stylex.createTheme(art, {
@@ -40,6 +43,7 @@ export const moquette = stylex.createTheme(art, {
   sage: "#54B4B5",
   denim: "#7595DA",
   clay: "#AE9EDC",
+  page: "#090C13",
 });
 
 export const deep = stylex.createTheme(art, {
@@ -50,6 +54,7 @@ export const deep = stylex.createTheme(art, {
   sage: "#54B4B5",
   denim: "#7595DA",
   clay: "#AE9EDC",
+  page: "#05070C",
 });
 
 export const portland = stylex.createTheme(art, {
@@ -60,4 +65,5 @@ export const portland = stylex.createTheme(art, {
   sage: "#54B4B5",
   denim: "#7595DA",
   clay: "#AE9EDC",
+  page: "#F3F6FA",
 });

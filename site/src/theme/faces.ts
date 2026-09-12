@@ -23,6 +23,7 @@ export const londonType = stylex.createTheme(font, {
   trackTitle: "-0.004em",
   trackHead: "-0.002em",
   trackLabel: "0.22em",
+  trackControl: "0.13em",
   trackMark: "0.004em",
 
   axesHero: "normal",

@@ -121,7 +121,11 @@ export function Shag({
 const styles = stylex.create({
   // Until the canvas draws (or without JavaScript), a brushed pile in CSS.
   canvas: {
+    display: "block",
     width: "100%",
+    borderBlockColor: color.crust,
+    borderBlockStyle: "solid",
+    borderBlockWidth: 1,
     backgroundColor: color.mantle,
     backgroundImage: `linear-gradient(to bottom, transparent 55%, rgba(0,0,0,0.28)), repeating-linear-gradient(100deg, ${color.base} 0 3px, ${color.surface0} 3px 5px, ${color.mantle} 5px 8px, ${color.surface1} 8px 9px, ${color.crust} 9px 11px)`,
   },

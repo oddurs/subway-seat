@@ -2,7 +2,6 @@ import * as stylex from "@stylexjs/stylex";
 import Link from "next/link";
 import { installCommand } from "@/lib/install";
 import { flavors } from "@/lib/palette";
-import { art } from "@/theme/art.stylex";
 import { ink } from "@/theme/ink.stylex";
 import { color } from "@/theme/tokens.stylex";
 import { font } from "@/theme/type.stylex";
@@ -128,7 +127,7 @@ const styles = stylex.create({
     lineHeight: font.leadFlat,
     letterSpacing: font.trackTitle,
     fontVariantNumeric: "tabular-nums",
-    color: art.yellow,
+    color: color.textHi,
   },
   factLabel: {
     margin: 0,

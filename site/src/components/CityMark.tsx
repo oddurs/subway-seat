@@ -9,9 +9,10 @@ import { font } from "@/theme/type.stylex";
  * dark sign in both cities, rather than a wall of colour fighting every page
  * under it.
  *
- * Both marks are inline-grid and sit on the text baseline through
- * `vertical-align`, so the wordmark stays a single line box and lines up with
- * the nav links instead of pushing them around.
+ * A mark in a lockup is centred on the wordmark's cap height, not sat on its
+ * baseline — a baseline is for text, and a circle has none. The nudge below is
+ * the difference between the em box's centre, which is what flexbox centres on,
+ * and the cap centre, which is what the eye reads.
  */
 export function CityMark() {
   return (
@@ -27,16 +28,17 @@ export function CityMark() {
   );
 }
 
-const SIZE = 26;
+const SIZE = 24;
+/** Em-box centre sits a touch below cap centre; lift the mark to match. */
+const LIFT = 2;
 
 const styles = stylex.create({
   bullet: {
-    display: "inline-grid",
+    display: "grid",
     placeItems: "center",
     width: SIZE,
     height: SIZE,
-    marginRight: 10,
-    verticalAlign: "-0.26em",
+    marginBottom: LIFT,
     fontFamily: font.sans,
     fontSize: 14,
     fontWeight: 700,
@@ -47,12 +49,11 @@ const styles = stylex.create({
   },
   roundel: {
     position: "relative",
-    display: "inline-grid",
+    display: "grid",
     placeItems: "center",
     width: SIZE,
     height: SIZE,
-    marginRight: 10,
-    verticalAlign: "-0.26em",
+    marginBottom: LIFT,
   },
   ring: {
     position: "absolute",

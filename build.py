@@ -289,6 +289,20 @@ def camel(key: str) -> str:
 ART = ("red", "orange", "yellow", "green", "sage", "denim", "clay")
 
 
+def page_ground(f) -> str:
+    """The website's own canvas, a step beyond the theme's darkest ground.
+
+    An editor fills the screen, so its `base` has to be comfortable to stare
+    into. A web page is mostly margin, and the same value there reads heavier
+    and more colored than it does behind code. So the site drops a step past
+    `crust` on the dark flavors and lifts past `base` on the light ones, and
+    takes a little chroma out on the way: the page recedes, and the cards and
+    mockups sitting on it are what carry the flavor."""
+    if f.dark:
+        return p.blend(p.blend(f.crust, "#000000", 0.42), f.crust, 0.88)
+    return p.blend("#FFFFFF", f.base, 0.55)
+
+
 def art_colors(f) -> dict[str, str]:
     src = f if f.dark else p.FAMILY[f.family].default
     return {role: src.colors[role] for role in ART}
@@ -333,16 +347,18 @@ def site_tokens() -> dict[str, str]:
                 "dark": f.dark,
                 "blurb": f.blurb,
                 "colors": {camel(r): f.colors[r] for r in p.ROLES},
-                "art": {camel(r): v for r, v in art_colors(f).items()},
+                "art": {**{camel(r): v for r, v in art_colors(f).items()}, "page": page_ground(f)},
                 "ansi": [camel(r) for r in f.ansi_roles],
             }
             for f in p.FLAVORS
         ],
     }
     art_default = "\n".join(f'  {camel(r)}: "{art_colors(p.DEFAULT)[r]}",' for r in ART)
+    art_default += f'\n  page: "{page_ground(p.DEFAULT)}",'
     art_themes = "\n\n".join(
         f"export const {f.id} = stylex.createTheme(art, {{\n"
         + "\n".join(f'  {camel(r)}: "{art_colors(f)[r]}",' for r in ART)
+        + f'\n  page: "{page_ground(f)}",'
         + "\n});"
         for f in p.FLAVORS
     )

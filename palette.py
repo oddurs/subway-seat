@@ -336,7 +336,7 @@ LONDON = Family(
     # The roundel is drawn in the flavor's solved red and blue, not the raw
     # #DC241F and #0019A8: those are three times the chroma of anything else on
     # screen and read as a sticker rather than part of the scheme.
-    sign={"bg": "#06090F", "text": "#FFFFFF", "ring": MOQUETTE.yellow,
+    sign={"bg": "#06090F", "text": "#FFFFFF", "ring": MOQUETTE.red,
           "mark": MOQUETTE.red, "mark-alt": MOQUETTE.denim},
     shape={"pill": "2px", "card": "0px", "chip": "2px"},
     lead="red",

@@ -7,52 +7,63 @@ import { families, flavorById, type FlavorId } from "@/lib/palette";
 import { font } from "@/theme/type.stylex";
 
 /**
- * The nav's only control: which city you're riding.
+ * Which city you're riding — the nav's only control.
  *
- * Two stops on a line. Each carries a rule in its own family's lead accent —
- * New York's burnt orange, London's red — so the pair reads as two route
- * segments and the one you're on is the lit one. The flavor within a city is
- * chosen in the footer and on the cards, where the flavors are actually shown.
+ * Two stops joined by a line, which is the one diagram both networks draw the
+ * same way. The stop you're at is filled, in its own city's lead colour; the
+ * other is an open ring in the sign's own ink. That's the whole use of colour
+ * here: it marks where you are and nothing else, so the band stays a quiet
+ * sign and the switch still reads as one object rather than two links.
  */
 export function CitySwitch() {
   const city = useSyncExternalStore(subscribeFlavor, currentFamily, () => null);
+  const [first, second] = families;
+
+  const stop = (fam: (typeof families)[number], labelFirst: boolean) => {
+    const on = city === fam.id;
+    const lead = flavorById[fam.default as FlavorId].colors[fam.lead];
+    const label = <span {...stylex.props(styles.name(on))}>{fam.name}</span>;
+    return (
+      <button
+        key={fam.id}
+        type="button"
+        aria-pressed={city === null ? undefined : on}
+        onClick={() => setFamily(fam.id)}
+        {...stylex.props(styles.stop)}
+      >
+        {labelFirst && label}
+        <span aria-hidden {...stylex.props(styles.dot(on ? lead : null))} />
+        {!labelFirst && label}
+      </button>
+    );
+  };
 
   return (
     <div role="group" aria-label="City" {...stylex.props(styles.group)}>
-      {families.map((fam) => {
-        const on = city === fam.id;
-        const lead = flavorById[fam.default as FlavorId].colors[fam.lead];
-        return (
-          <button
-            key={fam.id}
-            type="button"
-            aria-pressed={city === null ? undefined : on}
-            onClick={() => setFamily(fam.id)}
-            {...stylex.props(styles.stop)}
-          >
-            <span {...stylex.props(styles.name(on))}>{fam.name}</span>
-            <span aria-hidden {...stylex.props(styles.line(lead, on))} />
-          </button>
-        );
-      })}
+      {stop(first, true)}
+      <span aria-hidden {...stylex.props(styles.track)} />
+      {stop(second, false)}
     </div>
   );
 }
 
+const DOT = 11;
+
 const styles = stylex.create({
-  group: { display: "flex", gap: 22, alignItems: "baseline" },
+  group: { display: "flex", alignItems: "center", gap: 0 },
   stop: {
-    display: "grid",
-    // The rule sits a clear step below the cap line, not tucked under it.
+    display: "flex",
     gap: 9,
-    padding: 0,
+    alignItems: "center",
+    paddingBlock: 4,
+    paddingInline: 2,
     cursor: "pointer",
     outlineWidth: 2,
     outlineStyle: { default: "none", ":focus-visible": "solid" },
     outlineColor: "var(--sign-ring)",
-    outlineOffset: 5,
+    outlineOffset: 4,
     borderWidth: 0,
-    borderRadius: 0,
+    borderRadius: "var(--radius-pill)",
     backgroundColor: "transparent",
   },
   name: (on: boolean) => ({
@@ -60,23 +71,30 @@ const styles = stylex.create({
     fontSize: font.sizeLabel,
     fontWeight: 700,
     lineHeight: font.leadFlat,
-    letterSpacing: font.trackLabel,
-    // The tracking adds a trailing gap after the last letter; pulling it back
-    // keeps the rule the same width as the word it belongs to.
-    marginRight: "-0.22em",
+    letterSpacing: font.trackControl,
     textTransform: "uppercase",
     color: "var(--sign-text)",
-    opacity: on ? 1 : 0.62,
+    opacity: on ? 1 : 0.58,
     transitionDuration: "180ms",
     transitionProperty: "opacity",
   }),
-  line: (lead: string, on: boolean) => ({
-    height: on ? 3 : 2,
-    marginRight: "-0.22em",
-    marginTop: on ? 0 : 1,
-    backgroundColor: lead,
-    opacity: on ? 1 : 0.45,
+  // Filled where you are; an open ring where you aren't.
+  dot: (lead: string | null) => ({
+    width: DOT,
+    height: DOT,
+    flexShrink: 0,
+    borderColor: lead ?? "color-mix(in srgb, var(--sign-text) 55%, transparent)",
+    borderStyle: "solid",
+    borderWidth: lead ? 5.5 : 2,
+    borderRadius: "50%",
+    backgroundColor: "transparent",
     transitionDuration: "180ms",
-    transitionProperty: "opacity, height",
+    transitionProperty: "border-color, border-width",
   }),
+  // The line between the two stops.
+  track: {
+    width: 26,
+    height: 2,
+    backgroundColor: "color-mix(in srgb, var(--sign-text) 28%, transparent)",
+  },
 });

@@ -59,6 +59,8 @@ export const font = stylex.defineVars({
   trackBody: "0em",
   /** Uppercase eyebrows and small labels. */
   trackLabel: "0.16em",
+  /** Caps inside a control, where sprawl reads as loose rather than as signage. */
+  trackControl: "0.09em",
   /** The wordmark in the nav. */
   trackMark: "-0.01em",
 

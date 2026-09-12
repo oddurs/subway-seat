@@ -18,7 +18,7 @@ export type WeavePalette = { ground: string; warp: string[]; motif: string[] };
  * loom, so there is no randomness here at all — one motif, repeated exactly,
  * on a warp of fixed pitch. Same band, same job, opposite logic.
  */
-const TILE = 68; // one repeat of the motif
+const TILE = 50; // one repeat of the motif
 const WARP = 3; // pitch of the woven grain
 
 function draw(canvas: HTMLCanvasElement, pal: WeavePalette) {
@@ -46,7 +46,10 @@ function draw(canvas: HTMLCanvasElement, pal: WeavePalette) {
       // Moquette is loud in life, but this family's whole argument is that the
       // color is spent sparingly, and the band has to make the same case.
       const n = row * 7 + col + (col < 0 ? cols : 0);
-      const c = n % 5 === 2 ? pal.motif[n % pal.motif.length] : pal.warp[n % pal.warp.length];
+      // Which lozenges are accented, and which accent, have to step at
+      // different rates — share a modulus and every accent comes out the same.
+      const c =
+        n % 6 === 2 ? pal.motif[((n / 6) | 0) % pal.motif.length] : pal.warp[n % pal.warp.length];
       // A lozenge: the simplest shape a loom can hold an edge on.
       ctx.fillStyle = c;
       ctx.beginPath();
@@ -58,7 +61,7 @@ function draw(canvas: HTMLCanvasElement, pal: WeavePalette) {
       ctx.fill();
       // A bar through the lozenge, so the motif reads as a roundel at distance.
       ctx.fillStyle = pal.ground;
-      ctx.fillRect(x + TILE * 0.28, y + TILE * 0.22, TILE * 0.44, TILE * 0.06);
+      ctx.fillRect(x + TILE * 0.3, y + TILE * 0.215, TILE * 0.4, TILE * 0.07);
     }
   }
 
@@ -121,7 +124,11 @@ export function Weave({
 const styles = stylex.create({
   // Before the canvas draws, a flat woven grain in CSS.
   canvas: {
+    display: "block",
     width: "100%",
+    borderBlockColor: color.crust,
+    borderBlockStyle: "solid",
+    borderBlockWidth: 1,
     backgroundColor: color.mantle,
     backgroundImage: `linear-gradient(to bottom, transparent 55%, rgba(0,0,0,0.28)), repeating-linear-gradient(90deg, ${color.surface0} 0 2px, ${color.mantle} 2px 4px)`,
   },
