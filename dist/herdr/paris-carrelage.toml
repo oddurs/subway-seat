@@ -1,0 +1,24 @@
+# >>> subway-seat >>>
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# Paris Carrelage; base theme: catppuccin-latte
+[theme.custom]
+panel_bg = "#EEF2F1"
+sidebar_bg = "#E1E6E5"
+active_row_bg = "#C6D2CF"
+selection_bg = "#B0BFBB"
+surface_dim = "#E1E6E5"
+surface0 = "#C6D2CF"
+surface1 = "#B0BFBB"
+overlay0 = "#859792"
+overlay1 = "#6C7C76"
+text = "#27342F"
+subtext0 = "#4A5752"
+accent = "#764C00"
+mauve = "#B36B51"
+peach = "#885A00"
+yellow = "#916D07"
+green = "#218366"
+red = "#AC3B32"
+blue = "#25629B"
+teal = "#006267"
+# <<< subway-seat <<<

@@ -1,0 +1,64 @@
+{
+  "alfredtheme": {
+    "result": {
+      "textSpacing": 6,
+      "subtext": {
+        "size": 12,
+        "colorSelected": "#C2CBC5FF",
+        "font": "System",
+        "color": "#909E96FF"
+      },
+      "shortcut": {
+        "size": 16,
+        "colorSelected": "#DFAA61FF",
+        "font": "System",
+        "color": "#74857CFF"
+      },
+      "backgroundSelected": "#44442DFF",
+      "text": {
+        "size": 18,
+        "colorSelected": "#E9EEECFF",
+        "font": "System",
+        "color": "#D9E1DBFF"
+      },
+      "iconPaddingHorizontal": 6,
+      "roundness": 8,
+      "paddingVertical": 4,
+      "iconSize": 38
+    },
+    "search": {
+      "backgroundSelected": "#3E554AFF",
+      "paddingHorizontal": 10,
+      "spacing": 10,
+      "text": {
+        "size": 30,
+        "colorSelected": "#E9EEECFF",
+        "font": "System Light",
+        "color": "#D9E1DBFF"
+      },
+      "background": "#18241DFF",
+      "roundness": 8,
+      "paddingVertical": 6
+    },
+    "window": {
+      "color": "#1E2E26F7",
+      "paddingHorizontal": 10,
+      "width": 620,
+      "borderPadding": 0,
+      "borderColor": "#263930FF",
+      "blur": 12,
+      "roundness": 14,
+      "paddingVertical": 10
+    },
+    "separator": {
+      "color": "#263930FF",
+      "thickness": 1
+    },
+    "scrollbar": {
+      "color": "#3E554AFF",
+      "thickness": 3
+    },
+    "name": "Paris Guimard",
+    "credit": "Oddur Sigurdsson"
+  }
+}

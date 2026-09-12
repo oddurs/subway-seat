@@ -1,0 +1,46 @@
+{
+    "schemes": [
+        {
+            "name": "London Moquette",
+            "background": "#1E2941",
+            "foreground": "#D8DEEA",
+            "cursorColor": "#F2C03F",
+            "selectionBackground": "#3D4F72",
+            "black": "#303F61",
+            "red": "#DB6052",
+            "green": "#77C581",
+            "yellow": "#F2C03F",
+            "blue": "#7595DA",
+            "purple": "#DE8946",
+            "cyan": "#54B4B5",
+            "white": "#C1C9D8",
+            "brightBlack": "#73819C",
+            "brightRed": "#FE8474",
+            "brightGreen": "#9AD2A0",
+            "brightYellow": "#FFD36C",
+            "brightBlue": "#8BB0FF",
+            "brightPurple": "#E5AA7F",
+            "brightCyan": "#72D1D3",
+            "brightWhite": "#E9EDF5"
+        }
+    ],
+    "themes": [
+        {
+            "name": "London Moquette",
+            "window": {
+                "applicationTheme": "dark",
+                "useMica": false,
+                "frame": "#121826FF",
+                "unfocusedFrame": "#121826FF"
+            },
+            "tabRow": {
+                "background": "#121826FF",
+                "unfocusedBackground": "#121826FF"
+            },
+            "tab": {
+                "background": "#1E2941FF",
+                "unfocusedBackground": "#172032FF"
+            }
+        }
+    ]
+}

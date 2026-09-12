@@ -1,0 +1,24 @@
+# >>> subway-seat >>>
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# London Deep Level; base theme: catppuccin
+[theme.custom]
+panel_bg = "#121A2D"
+sidebar_bg = "#0D1421"
+active_row_bg = "#1A243A"
+selection_bg = "#232F49"
+surface_dim = "#0D1421"
+surface0 = "#1A243A"
+surface1 = "#232F49"
+overlay0 = "#53617D"
+overlay1 = "#6F7C97"
+text = "#D4DAE7"
+subtext0 = "#A5AEC0"
+accent = "#DE8946"
+mauve = "#AE9EDC"
+peach = "#E5AA7F"
+yellow = "#F2C03F"
+green = "#77C581"
+red = "#FE8474"
+blue = "#7595DA"
+teal = "#54B4B5"
+# <<< subway-seat <<<

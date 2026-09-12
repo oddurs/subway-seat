@@ -1,0 +1,30 @@
+---
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+name: 'Paris Carrelage'
+author: 'oddurs (https://github.com/oddurs/subway-seat)'
+author_name: 'oddurs'
+author_url: 'https://github.com/oddurs/subway-seat'
+variant: 'light'
+
+color_01: '#3B4742'    # Black (Host)
+color_02: '#88251E'    # Red (Syntax string)
+color_03: '#218366'    # Green (Command)
+color_04: '#916D07'    # Yellow (Command second)
+color_05: '#25629B'    # Blue (Path)
+color_06: '#764C00'    # Magenta (Syntax var)
+color_07: '#006267'    # Cyan (Prompt)
+color_08: '#99ABA6'    # White
+
+color_09: '#6C7C76'    # Bright Black
+color_10: '#AC3B32'    # Bright Red (Command error)
+color_11: '#278D6E'    # Bright Green (Exec)
+color_12: '#A07A12'    # Bright Yellow
+color_13: '#3D75AD'    # Bright Blue (Folder)
+color_14: '#885A00'    # Bright Magenta
+color_15: '#027479'    # Bright Cyan
+color_16: '#B0BFBB'    # Bright White
+
+background: '#EEF2F1'  # Background
+foreground: '#27342F'  # Foreground (Text)
+
+cursor: '#764C00'      # Cursor

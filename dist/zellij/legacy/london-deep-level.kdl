@@ -1,0 +1,18 @@
+// Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+// London Deep Level: legacy color-list theme for Zellij before 0.42.
+
+themes {
+    london-deep-level {
+        fg "#D4DAE7"
+        bg "#232F49"
+        black "#0D1421"
+        red "#FE8474"
+        green "#DE8946" // active frame, selected tab
+        yellow "#F2C03F"
+        blue "#7595DA"
+        magenta "#AE9EDC"
+        orange "#F2C03F" // frame in other modes
+        cyan "#54B4B5"
+        white "#E7EBF3"
+    }
+}

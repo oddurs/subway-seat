@@ -1,0 +1,35 @@
+// Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+{
+  "name": "Paris Carrelage Widgets",
+  "globals": {
+    "foreground": "#27342F",
+    "background": "#F6F8F8",
+    "caret": "#764C00",
+    "line_highlight": "#F6F8F8",
+    "selection": "#B0BFBB",
+    "selection_border": "#B0BFBB",
+    "inactive_selection": "#B0BFBB"
+  },
+  "rules": [
+    {
+      "scope": "comment",
+      "foreground": "#6C7C76"
+    },
+    {
+      "scope": "keyword, storage",
+      "foreground": "#764C00"
+    },
+    {
+      "scope": "constant",
+      "foreground": "#AC3B32"
+    },
+    {
+      "scope": "string",
+      "foreground": "#218366"
+    },
+    {
+      "scope": "constant.character.escape",
+      "foreground": "#B36B51"
+    }
+  ]
+}

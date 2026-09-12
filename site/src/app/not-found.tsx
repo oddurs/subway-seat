@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Footer } from "@/components/Footer";
 import { Nav } from "@/components/Nav";
 import { ink } from "@/theme/ink.stylex";
+import { space } from "@/theme/space.stylex";
 import { color } from "@/theme/tokens.stylex";
 import { font } from "@/theme/type.stylex";
 
@@ -39,9 +40,9 @@ const styles = stylex.create({
     display: "grid",
     gap: 20,
     justifyItems: "start",
-    maxWidth: 1200,
+    maxWidth: space.measure,
     minHeight: "50vh",
-    paddingInline: 24,
+    paddingInline: space.gutter,
     paddingTop: 96,
     marginInline: "auto",
   },
@@ -66,7 +67,7 @@ const styles = stylex.create({
   links: { display: "flex", flexWrap: "wrap", gap: 12 },
   cta: {
     paddingBlock: 12,
-    paddingInline: 24,
+    paddingInline: space.gutter,
     fontWeight: 700,
     textDecoration: "none",
     outlineWidth: 2,
@@ -81,7 +82,7 @@ const styles = stylex.create({
   primary: {
     color: ink.onAccent,
     backgroundColor: {
-      default: color.orange,
+      default: ink.fill,
       ":hover": ink.fillHover,
     },
   },

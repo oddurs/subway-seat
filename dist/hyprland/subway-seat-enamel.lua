@@ -6,26 +6,26 @@
 --
 local M = {}
 
-M.crust = 'rgb(E2D3B6)'
-M.crustAlpha = 'E2D3B6'
+M.crust = 'rgb(E4D8C0)'
+M.crustAlpha = 'E4D8C0'
 
-M.mantle = 'rgb(EBDEC6)'
-M.mantleAlpha = 'EBDEC6'
+M.mantle = 'rgb(EEE4D0)'
+M.mantleAlpha = 'EEE4D0'
 
-M.base = 'rgb(F4E9D4)'
-M.baseAlpha = 'F4E9D4'
+M.base = 'rgb(F8EFDF)'
+M.baseAlpha = 'F8EFDF'
 
-M.surface0 = 'rgb(D9C8A7)'
-M.surface0Alpha = 'D9C8A7'
+M.surface0 = 'rgb(DBCDB3)'
+M.surface0Alpha = 'DBCDB3'
 
-M.surface1 = 'rgb(CAB48E)'
-M.surface1Alpha = 'CAB48E'
+M.surface1 = 'rgb(CBB898)'
+M.surface1Alpha = 'CBB898'
 
-M.surface2 = 'rgb(BAA07A)'
-M.surface2Alpha = 'BAA07A'
+M.surface2 = 'rgb(BAA380)'
+M.surface2Alpha = 'BAA380'
 
-M.overlay0 = 'rgb(A58C6A)'
-M.overlay0Alpha = 'A58C6A'
+M.overlay0 = 'rgb(A58D6D)'
+M.overlay0Alpha = 'A58D6D'
 
 M.overlay1 = 'rgb(8C7254)'
 M.overlay1Alpha = '8C7254'
@@ -45,23 +45,23 @@ M.textAlpha = '3E2C1E'
 M.text_hi = 'rgb(2A1D13)'
 M.text_hiAlpha = '2A1D13'
 
-M.yellow = 'rgb(936200)'
-M.yellowAlpha = '936200'
+M.yellow = 'rgb(976608)'
+M.yellowAlpha = '976608'
 
-M.yellow_hi = 'rgb(A56E00)'
-M.yellow_hiAlpha = 'A56E00'
+M.yellow_hi = 'rgb(A9720A)'
+M.yellow_hiAlpha = 'A9720A'
 
-M.orange = 'rgb(AD4E00)'
-M.orangeAlpha = 'AD4E00'
+M.orange = 'rgb(A04800)'
+M.orangeAlpha = 'A04800'
 
-M.orange_hi = 'rgb(C4561A)'
-M.orange_hiAlpha = 'C4561A'
+M.orange_hi = 'rgb(BA4D0A)'
+M.orange_hiAlpha = 'BA4D0A'
 
 M.red = 'rgb(992418)'
 M.redAlpha = '992418'
 
-M.red_hi = 'rgb(BC4031)'
-M.red_hiAlpha = 'BC4031'
+M.red_hi = 'rgb(BF4233)'
+M.red_hiAlpha = 'BF4233'
 
 M.green = 'rgb(66740F)'
 M.greenAlpha = '66740F'
@@ -81,34 +81,34 @@ M.denimAlpha = '3F6480'
 M.denim_hi = 'rgb(517791)'
 M.denim_hiAlpha = '517791'
 
-M.clay = 'rgb(A65633)'
-M.clayAlpha = 'A65633'
+M.clay = 'rgb(843811)'
+M.clayAlpha = '843811'
 
 function M.apply()
   hl.config({
     general = {
       col = {
-        active_border = 'rgb(936200)',
-        inactive_border = 'rgb(CAB48E)',
-        nogroup_border = 'rgb(BC8E6A)',
-        nogroup_border_active = 'rgb(A65633)',
+        active_border = 'rgb(976608)',
+        inactive_border = 'rgb(CBB898)',
+        nogroup_border = 'rgb(AF8562)',
+        nogroup_border_active = 'rgb(843811)',
       },
     },
     group = {
       col = {
-        border_active = 'rgb(936200)',
-        border_inactive = 'rgb(B49355)',
-        border_locked_active = 'rgb(AD4E00)',
-        border_locked_inactive = 'rgb(BE8B55)',
+        border_active = 'rgb(976608)',
+        border_inactive = 'rgb(B6975E)',
+        border_locked_active = 'rgb(A04800)',
+        border_locked_inactive = 'rgb(BA8B5B)',
       },
       groupbar = {
         text_color = 'rgb(2A1D13)',
         text_color_inactive = 'rgb(654F3B)',
         col = {
-          active = 'rgb(936200)',
-          inactive = 'rgb(CAB48E)',
-          locked_active = 'rgb(AD4E00)',
-          locked_inactive = 'rgb(BE8B55)',
+          active = 'rgb(976608)',
+          inactive = 'rgb(CBB898)',
+          locked_active = 'rgb(A04800)',
+          locked_inactive = 'rgb(BA8B5B)',
         },
       },
     },
@@ -118,7 +118,7 @@ function M.apply()
       },
     },
     misc = {
-      background_color = 'rgb(F4E9D4)',
+      background_color = 'rgb(F8EFDF)',
     },
   })
 end

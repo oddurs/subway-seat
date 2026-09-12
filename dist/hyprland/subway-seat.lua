@@ -60,8 +60,8 @@ M.orange_hiAlpha = 'FF9D55'
 M.red = 'rgb(E05C45)'
 M.redAlpha = 'E05C45'
 
-M.red_hi = 'rgb(F97160)'
-M.red_hiAlpha = 'F97160'
+M.red_hi = 'rgb(FF8373)'
+M.red_hiAlpha = 'FF8373'
 
 M.green = 'rgb(ADB956)'
 M.greenAlpha = 'ADB956'
@@ -81,8 +81,8 @@ M.denimAlpha = '7F9BAE'
 M.denim_hi = 'rgb(9DB6C6)'
 M.denim_hiAlpha = '9DB6C6'
 
-M.clay = 'rgb(E0956C)'
-M.clayAlpha = 'E0956C'
+M.clay = 'rgb(F4A87E)'
+M.clayAlpha = 'F4A87E'
 
 function M.apply()
   hl.config({
@@ -90,8 +90,8 @@ function M.apply()
       col = {
         active_border = 'rgb(F3BF45)',
         inactive_border = 'rgb(513B27)',
-        nogroup_border = 'rgb(8A5F43)',
-        nogroup_border_active = 'rgb(E0956C)',
+        nogroup_border = 'rgb(92674A)',
+        nogroup_border_active = 'rgb(F4A87E)',
       },
     },
     group = {

@@ -1,0 +1,32 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# London Deep Level for lazygit.
+gui:
+  theme:
+    activeBorderColor:
+      - '#DE8946'
+      - 'bold'
+    inactiveBorderColor:
+      - '#53617D'
+    searchingActiveBorderColor:
+      - '#F2C03F'
+      - 'bold'
+    optionsTextColor:
+      - '#F2C03F'
+    selectedLineBgColor:
+      - '#232F49'
+    inactiveViewSelectedLineBgColor:
+      - '#1A243A'
+    cherryPickedCommitFgColor:
+      - '#0A0E18'
+    cherryPickedCommitBgColor:
+      - '#54B4B5'
+    markedBaseCommitFgColor:
+      - '#0A0E18'
+    markedBaseCommitBgColor:
+      - '#F2C03F'
+    unstagedChangesColor:
+      - '#FE8474'
+    defaultFgColor:
+      - '#D4DAE7'
+  authorColors:
+    '*': '#54B4B5'

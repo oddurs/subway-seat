@@ -49,6 +49,60 @@ The [installer](../../docs/INSTALL.md) shows its plan and asks once. Add `--flav
 }
 ```
 
+**London Moquette**, in ~/.config/opencode/tui.json after copying the theme to ~/.config/opencode/themes/, or pick it with /theme:
+
+```json
+{
+  "$schema": "https://opencode.ai/tui.json",
+  "theme": "london-moquette"
+}
+```
+
+**London Deep Level**, in ~/.config/opencode/tui.json after copying the theme to ~/.config/opencode/themes/, or pick it with /theme:
+
+```json
+{
+  "$schema": "https://opencode.ai/tui.json",
+  "theme": "london-deep-level"
+}
+```
+
+**London Portland**, in ~/.config/opencode/tui.json after copying the theme to ~/.config/opencode/themes/, or pick it with /theme:
+
+```json
+{
+  "$schema": "https://opencode.ai/tui.json",
+  "theme": "london-portland"
+}
+```
+
+**Paris Guimard**, in ~/.config/opencode/tui.json after copying the theme to ~/.config/opencode/themes/, or pick it with /theme:
+
+```json
+{
+  "$schema": "https://opencode.ai/tui.json",
+  "theme": "paris-guimard"
+}
+```
+
+**Paris Catacombes**, in ~/.config/opencode/tui.json after copying the theme to ~/.config/opencode/themes/, or pick it with /theme:
+
+```json
+{
+  "$schema": "https://opencode.ai/tui.json",
+  "theme": "paris-catacombes"
+}
+```
+
+**Paris Carrelage**, in ~/.config/opencode/tui.json after copying the theme to ~/.config/opencode/themes/, or pick it with /theme:
+
+```json
+{
+  "$schema": "https://opencode.ai/tui.json",
+  "theme": "paris-carrelage"
+}
+```
+
 ## Follow light and dark
 
 In ~/.config/opencode/tui.json: Walnut and Tunnel carry Enamel as their light half:

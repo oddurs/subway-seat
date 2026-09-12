@@ -9,11 +9,11 @@
       "Foreground": "#EDDCBC",
       "LightBlue": "#D9C6A3",
       "AccentBlue": "#EC7F31",
-      "AccentPurple": "#E0956C",
+      "AccentPurple": "#F4A87E",
       "AccentCyan": "#86AD95",
       "AccentGreen": "#ADB956",
       "AccentYellow": "#F3BF45",
-      "AccentRed": "#F97160",
+      "AccentRed": "#FF8373",
       "DiffAdded": "#3F3A1E",
       "DiffRemoved": "#52281C",
       "Comment": "#967B5C",
@@ -28,7 +28,7 @@
       "text": {
         "primary": "#EDDCBC",
         "secondary": "#AE9575",
-        "accent": "#E0956C",
+        "accent": "#F4A87E",
         "response": "#EDDCBC"
       },
       "background": {
@@ -53,7 +53,7 @@
       "status": {
         "success": "#ADB956",
         "warning": "#F3BF45",
-        "error": "#F97160"
+        "error": "#FF8373"
       }
     },
     {
@@ -63,11 +63,11 @@
       "Foreground": "#E9D8B6",
       "LightBlue": "#D6C3A0",
       "AccentBlue": "#EC7F31",
-      "AccentPurple": "#E0956C",
+      "AccentPurple": "#F4A87E",
       "AccentCyan": "#86AD95",
       "AccentGreen": "#ADB956",
       "AccentYellow": "#F3BF45",
-      "AccentRed": "#F97160",
+      "AccentRed": "#FF8373",
       "DiffAdded": "#363318",
       "DiffRemoved": "#492217",
       "Comment": "#917759",
@@ -82,7 +82,7 @@
       "text": {
         "primary": "#E9D8B6",
         "secondary": "#AA9171",
-        "accent": "#E0956C",
+        "accent": "#F4A87E",
         "response": "#E9D8B6"
       },
       "background": {
@@ -107,40 +107,40 @@
       "status": {
         "success": "#ADB956",
         "warning": "#F3BF45",
-        "error": "#F97160"
+        "error": "#FF8373"
       }
     },
     {
       "name": "Subway Seat Enamel",
       "type": "custom",
-      "Background": "#F4E9D4",
+      "Background": "#F8EFDF",
       "Foreground": "#3E2C1E",
       "LightBlue": "#54402F",
-      "AccentBlue": "#AD4E00",
-      "AccentPurple": "#A65633",
+      "AccentBlue": "#A04800",
+      "AccentPurple": "#843811",
       "AccentCyan": "#3E7157",
       "AccentGreen": "#66740F",
-      "AccentYellow": "#936200",
-      "AccentRed": "#BC4031",
+      "AccentYellow": "#976608",
+      "AccentRed": "#BF4233",
       "DiffAdded": "#D7DBC1",
       "DiffRemoved": "#EBD3D1",
       "Comment": "#8C7254",
       "Gray": "#735C44",
-      "DarkGray": "#BAA07A",
+      "DarkGray": "#BAA380",
       "GradientColors": [
         "#992418",
-        "#AD4E00",
-        "#936200",
+        "#A04800",
+        "#976608",
         "#66740F"
       ],
       "text": {
         "primary": "#3E2C1E",
         "secondary": "#735C44",
-        "accent": "#A65633",
+        "accent": "#843811",
         "response": "#3E2C1E"
       },
       "background": {
-        "primary": "#F4E9D4",
+        "primary": "#F8EFDF",
         "diff": {
           "added": "#D7DBC1",
           "removed": "#EBD3D1"
@@ -148,20 +148,344 @@
       },
       "ui": {
         "comment": "#8C7254",
-        "symbol": "#936200",
-        "active": "#AD4E00",
-        "focus": "#936200",
+        "symbol": "#976608",
+        "active": "#A04800",
+        "focus": "#976608",
         "gradient": [
           "#992418",
-          "#AD4E00",
-          "#936200",
+          "#A04800",
+          "#976608",
           "#66740F"
         ]
       },
       "status": {
         "success": "#66740F",
-        "warning": "#936200",
-        "error": "#BC4031"
+        "warning": "#976608",
+        "error": "#BF4233"
+      }
+    },
+    {
+      "name": "London Moquette",
+      "type": "custom",
+      "Background": "#1E2941",
+      "Foreground": "#D8DEEA",
+      "LightBlue": "#C1C9D8",
+      "AccentBlue": "#DE8946",
+      "AccentPurple": "#AE9EDC",
+      "AccentCyan": "#54B4B5",
+      "AccentGreen": "#77C581",
+      "AccentYellow": "#F2C03F",
+      "AccentRed": "#FE8474",
+      "DiffAdded": "#283E3A",
+      "DiffRemoved": "#462B31",
+      "Comment": "#73819C",
+      "Gray": "#8F9AB0",
+      "DarkGray": "#3D4F72",
+      "GradientColors": [
+        "#DB6052",
+        "#DE8946",
+        "#F2C03F",
+        "#77C581"
+      ],
+      "text": {
+        "primary": "#D8DEEA",
+        "secondary": "#8F9AB0",
+        "accent": "#AE9EDC",
+        "response": "#D8DEEA"
+      },
+      "background": {
+        "primary": "#1E2941",
+        "diff": {
+          "added": "#283E3A",
+          "removed": "#462B31"
+        }
+      },
+      "ui": {
+        "comment": "#73819C",
+        "symbol": "#F2C03F",
+        "active": "#DE8946",
+        "focus": "#F2C03F",
+        "gradient": [
+          "#DB6052",
+          "#DE8946",
+          "#F2C03F",
+          "#77C581"
+        ]
+      },
+      "status": {
+        "success": "#77C581",
+        "warning": "#F2C03F",
+        "error": "#FE8474"
+      }
+    },
+    {
+      "name": "London Deep Level",
+      "type": "custom",
+      "Background": "#121A2D",
+      "Foreground": "#D4DAE7",
+      "LightBlue": "#BEC6D5",
+      "AccentBlue": "#DE8946",
+      "AccentPurple": "#AE9EDC",
+      "AccentCyan": "#54B4B5",
+      "AccentGreen": "#77C581",
+      "AccentYellow": "#F2C03F",
+      "AccentRed": "#FE8474",
+      "DiffAdded": "#22362F",
+      "DiffRemoved": "#402327",
+      "Comment": "#6F7C97",
+      "Gray": "#8B96AC",
+      "DarkGray": "#303E5B",
+      "GradientColors": [
+        "#DB6052",
+        "#DE8946",
+        "#F2C03F",
+        "#77C581"
+      ],
+      "text": {
+        "primary": "#D4DAE7",
+        "secondary": "#8B96AC",
+        "accent": "#AE9EDC",
+        "response": "#D4DAE7"
+      },
+      "background": {
+        "primary": "#121A2D",
+        "diff": {
+          "added": "#22362F",
+          "removed": "#402327"
+        }
+      },
+      "ui": {
+        "comment": "#6F7C97",
+        "symbol": "#F2C03F",
+        "active": "#DE8946",
+        "focus": "#F2C03F",
+        "gradient": [
+          "#DB6052",
+          "#DE8946",
+          "#F2C03F",
+          "#77C581"
+        ]
+      },
+      "status": {
+        "success": "#77C581",
+        "warning": "#F2C03F",
+        "error": "#FE8474"
+      }
+    },
+    {
+      "name": "London Portland",
+      "type": "custom",
+      "Background": "#E8F0FF",
+      "Foreground": "#293040",
+      "LightBlue": "#3C4557",
+      "AccentBlue": "#A54300",
+      "AccentPurple": "#755FA9",
+      "AccentCyan": "#007376",
+      "AccentGreen": "#0D8131",
+      "AccentYellow": "#8D6C08",
+      "AccentRed": "#CC2E25",
+      "DiffAdded": "#C0DEC9",
+      "DiffRemoved": "#EBD3D1",
+      "Comment": "#697794",
+      "Gray": "#556179",
+      "DarkGray": "#93A7CF",
+      "GradientColors": [
+        "#9B211A",
+        "#A54300",
+        "#8D6C08",
+        "#0D8131"
+      ],
+      "text": {
+        "primary": "#293040",
+        "secondary": "#556179",
+        "accent": "#755FA9",
+        "response": "#293040"
+      },
+      "background": {
+        "primary": "#E8F0FF",
+        "diff": {
+          "added": "#C0DEC9",
+          "removed": "#EBD3D1"
+        }
+      },
+      "ui": {
+        "comment": "#697794",
+        "symbol": "#8D6C08",
+        "active": "#A54300",
+        "focus": "#8D6C08",
+        "gradient": [
+          "#9B211A",
+          "#A54300",
+          "#8D6C08",
+          "#0D8131"
+        ]
+      },
+      "status": {
+        "success": "#0D8131",
+        "warning": "#8D6C08",
+        "error": "#CC2E25"
+      }
+    },
+    {
+      "name": "Paris Guimard",
+      "type": "custom",
+      "Background": "#1E2E26",
+      "Foreground": "#D9E1DB",
+      "LightBlue": "#C2CBC5",
+      "AccentBlue": "#CA9245",
+      "AccentPurple": "#FAB49C",
+      "AccentCyan": "#549B9F",
+      "AccentGreen": "#70CAA9",
+      "AccentYellow": "#F1BF4B",
+      "AccentRed": "#E7877B",
+      "DiffAdded": "#274137",
+      "DiffRemoved": "#422E29",
+      "Comment": "#74857C",
+      "Gray": "#909E96",
+      "DarkGray": "#3E554A",
+      "GradientColors": [
+        "#C7665B",
+        "#CA9245",
+        "#F1BF4B",
+        "#70CAA9"
+      ],
+      "text": {
+        "primary": "#D9E1DB",
+        "secondary": "#909E96",
+        "accent": "#FAB49C",
+        "response": "#D9E1DB"
+      },
+      "background": {
+        "primary": "#1E2E26",
+        "diff": {
+          "added": "#274137",
+          "removed": "#422E29"
+        }
+      },
+      "ui": {
+        "comment": "#74857C",
+        "symbol": "#F1BF4B",
+        "active": "#CA9245",
+        "focus": "#F1BF4B",
+        "gradient": [
+          "#C7665B",
+          "#CA9245",
+          "#F1BF4B",
+          "#70CAA9"
+        ]
+      },
+      "status": {
+        "success": "#70CAA9",
+        "warning": "#F1BF4B",
+        "error": "#E7877B"
+      }
+    },
+    {
+      "name": "Paris Catacombes",
+      "type": "custom",
+      "Background": "#121E19",
+      "Foreground": "#D4DDD7",
+      "LightBlue": "#BFC8C2",
+      "AccentBlue": "#CA9245",
+      "AccentPurple": "#FAB49C",
+      "AccentCyan": "#549B9F",
+      "AccentGreen": "#70CAA9",
+      "AccentYellow": "#F1BF4B",
+      "AccentRed": "#E7877B",
+      "DiffAdded": "#20392F",
+      "DiffRemoved": "#3B2621",
+      "Comment": "#708178",
+      "Gray": "#8C9A92",
+      "DarkGray": "#31433A",
+      "GradientColors": [
+        "#C7665B",
+        "#CA9245",
+        "#F1BF4B",
+        "#70CAA9"
+      ],
+      "text": {
+        "primary": "#D4DDD7",
+        "secondary": "#8C9A92",
+        "accent": "#FAB49C",
+        "response": "#D4DDD7"
+      },
+      "background": {
+        "primary": "#121E19",
+        "diff": {
+          "added": "#20392F",
+          "removed": "#3B2621"
+        }
+      },
+      "ui": {
+        "comment": "#708178",
+        "symbol": "#F1BF4B",
+        "active": "#CA9245",
+        "focus": "#F1BF4B",
+        "gradient": [
+          "#C7665B",
+          "#CA9245",
+          "#F1BF4B",
+          "#70CAA9"
+        ]
+      },
+      "status": {
+        "success": "#70CAA9",
+        "warning": "#F1BF4B",
+        "error": "#E7877B"
+      }
+    },
+    {
+      "name": "Paris Carrelage",
+      "type": "custom",
+      "Background": "#EEF2F1",
+      "Foreground": "#27342F",
+      "LightBlue": "#3B4742",
+      "AccentBlue": "#764C00",
+      "AccentPurple": "#B36B51",
+      "AccentCyan": "#006267",
+      "AccentGreen": "#218366",
+      "AccentYellow": "#916D07",
+      "AccentRed": "#AC3B32",
+      "DiffAdded": "#C5DFD7",
+      "DiffRemoved": "#E7D3D2",
+      "Comment": "#6C7C76",
+      "Gray": "#56645F",
+      "DarkGray": "#99ABA6",
+      "GradientColors": [
+        "#88251E",
+        "#764C00",
+        "#916D07",
+        "#218366"
+      ],
+      "text": {
+        "primary": "#27342F",
+        "secondary": "#56645F",
+        "accent": "#B36B51",
+        "response": "#27342F"
+      },
+      "background": {
+        "primary": "#EEF2F1",
+        "diff": {
+          "added": "#C5DFD7",
+          "removed": "#E7D3D2"
+        }
+      },
+      "ui": {
+        "comment": "#6C7C76",
+        "symbol": "#916D07",
+        "active": "#764C00",
+        "focus": "#916D07",
+        "gradient": [
+          "#88251E",
+          "#764C00",
+          "#916D07",
+          "#218366"
+        ]
+      },
+      "status": {
+        "success": "#218366",
+        "warning": "#916D07",
+        "error": "#AC3B32"
       }
     }
   ]

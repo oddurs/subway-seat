@@ -1,0 +1,61 @@
+{
+  "manifest_version": 2,
+  "name": "Paris Catacombes",
+  "version": "0.3.0",
+  "description": "A walnut-brown 1970s NYC subway theme: harvest gold, burnt orange and avocado on warm wood. Under the quarries: the same green with the lights turned down.",
+  "author": "Oddur Sigurdsson",
+  "homepage_url": "https://github.com/oddurs/subway-seat",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "paris-catacombes@oddurs.github.io",
+      "strict_min_version": "106.0"
+    }
+  },
+  "theme": {
+    "colors": {
+      "frame": "#0A100D",
+      "frame_inactive": "#0A100D",
+      "tab_background_text": "#8C9A92",
+      "tab_background_separator": "#1A2921",
+      "tab_selected": "#121E19",
+      "tab_text": "#D4DDD7",
+      "tab_line": "#CA9245",
+      "tab_loading": "#CA9245",
+      "toolbar": "#121E19",
+      "toolbar_text": "#D4DDD7",
+      "toolbar_top_separator": "#0A100D",
+      "toolbar_bottom_separator": "#1A2921",
+      "toolbar_vertical_separator": "#1A2921",
+      "icons": "#BFC8C2",
+      "icons_attention": "#CA9245",
+      "button_background_hover": "#1A2921",
+      "button_background_active": "#24342C",
+      "toolbar_field": "#0D1711",
+      "toolbar_field_text": "#D4DDD7",
+      "toolbar_field_border": "#1A2921",
+      "toolbar_field_focus": "#0D1711",
+      "toolbar_field_text_focus": "#E7ECEA",
+      "toolbar_field_border_focus": "#CA9245",
+      "toolbar_field_highlight": "#31433A",
+      "toolbar_field_highlight_text": "#E7ECEA",
+      "toolbar_field_separator": "#1A2921",
+      "popup": "#1A2921",
+      "popup_text": "#D4DDD7",
+      "popup_border": "#313F37",
+      "popup_highlight": "#31433A",
+      "popup_highlight_text": "#E7ECEA",
+      "sidebar": "#0D1711",
+      "sidebar_text": "#D4DDD7",
+      "sidebar_border": "#1A2921",
+      "sidebar_highlight": "#31433A",
+      "sidebar_highlight_text": "#E7ECEA",
+      "ntp_background": "#121E19",
+      "ntp_card_background": "#1A2921",
+      "ntp_text": "#D4DDD7"
+    },
+    "properties": {
+      "color_scheme": "dark",
+      "content_color_scheme": "dark"
+    }
+  }
+}

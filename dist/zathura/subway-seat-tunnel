@@ -43,7 +43,7 @@ set render-loading-fg       "#917759"
 # digital signatures
 set signature-success-color "#ADB956"
 set signature-warning-color "#F3BF45"
-set signature-error-color   "#F97160"
+set signature-error-color   "#FF8373"
 
 # recoloring: white paper → base, black ink → text; Ctrl+R toggles it
 set recolor-lightcolor      "#24180E"

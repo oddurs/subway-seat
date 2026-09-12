@@ -1,0 +1,76 @@
+/* Subway Seat — generated from palette.py by build.py. Edit the palette, not this file. */
+/* Paris Carrelage: Bevelled white tile under a vaulted platform. The light one. */
+
+:root {
+  color-scheme: light;
+
+  /* Ground */
+  --ss-crust: #D5DBDA; /* Carrelage crust */
+  --ss-mantle: #E1E6E5; /* Carrelage mantle */
+  --ss-base: #EEF2F1; /* Carrelage base */
+  --ss-surface0: #C6D2CF; /* Carrelage surface0 */
+  --ss-surface1: #B0BFBB; /* Carrelage surface1 */
+  --ss-surface2: #99ABA6; /* Carrelage surface2 */
+  --ss-overlay0: #859792; /* Carrelage overlay0 */
+  --ss-overlay1: #6C7C76; /* Carrelage overlay1 */
+  --ss-overlay2: #56645F; /* Carrelage overlay2 */
+
+  /* Text */
+  --ss-subtext0: #4A5752; /* Carrelage subtext0 */
+  --ss-subtext1: #3B4742; /* Carrelage subtext1 */
+  --ss-text: #27342F; /* Carrelage text */
+  --ss-text-hi: #19221E; /* Carrelage text hi */
+
+  /* Accents */
+  --ss-yellow: #916D07; /* Harvest gold */
+  --ss-yellow-hi: #A07A12; /* Broadway yellow */
+  --ss-orange: #764C00; /* Burnt orange */
+  --ss-orange-hi: #885A00; /* Sixth Avenue */
+  --ss-red: #88251E; /* Redbird */
+  --ss-red-hi: #AC3B32; /* Redbird bright */
+  --ss-green: #218366; /* Avocado */
+  --ss-green-hi: #278D6E; /* Avocado bright */
+  --ss-sage: #006267; /* Seafoam tile */
+  --ss-sage-hi: #027479; /* Seafoam bright */
+  --ss-denim: #25629B; /* Faded denim */
+  --ss-denim-hi: #3D75AD; /* Denim bright */
+  --ss-clay: #B36B51; /* Terracotta */
+
+  /* Diff grounds: -add/-del/-chg for lines, -emph for changed words, -dim for faded diffs */
+  --ss-diff-add: #C5DFD7;
+  --ss-diff-add-emph: #A6CDC2;
+  --ss-diff-add-dim: #DBEBE7;
+  --ss-diff-del: #E7D3D2;
+  --ss-diff-del-emph: #D9B9B7;
+  --ss-diff-del-dim: #F1E5E4;
+  --ss-diff-chg: #E2D9BF;
+  --ss-diff-chg-emph: #DCD0B0;
+
+  /* RGB triplets, for rgb(var(--ss-base-rgb) / 0.5) */
+  --ss-crust-rgb: 213 219 218;
+  --ss-mantle-rgb: 225 230 229;
+  --ss-base-rgb: 238 242 241;
+  --ss-surface0-rgb: 198 210 207;
+  --ss-surface1-rgb: 176 191 187;
+  --ss-surface2-rgb: 153 171 166;
+  --ss-overlay0-rgb: 133 151 146;
+  --ss-overlay1-rgb: 108 124 118;
+  --ss-overlay2-rgb: 86 100 95;
+  --ss-subtext0-rgb: 74 87 82;
+  --ss-subtext1-rgb: 59 71 66;
+  --ss-text-rgb: 39 52 47;
+  --ss-text-hi-rgb: 25 34 30;
+  --ss-yellow-rgb: 145 109 7;
+  --ss-yellow-hi-rgb: 160 122 18;
+  --ss-orange-rgb: 118 76 0;
+  --ss-orange-hi-rgb: 136 90 0;
+  --ss-red-rgb: 136 37 30;
+  --ss-red-hi-rgb: 172 59 50;
+  --ss-green-rgb: 33 131 102;
+  --ss-green-hi-rgb: 39 141 110;
+  --ss-sage-rgb: 0 98 103;
+  --ss-sage-hi-rgb: 2 116 121;
+  --ss-denim-rgb: 37 98 155;
+  --ss-denim-hi-rgb: 61 117 173;
+  --ss-clay-rgb: 179 107 81;
+}

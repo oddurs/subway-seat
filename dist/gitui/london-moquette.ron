@@ -1,0 +1,27 @@
+// Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+// London Moquette for gitui.
+(
+    selected_tab: Some("#DE8946"),
+    command_fg: Some("#D8DEEA"),
+    selection_bg: Some("#303F61"),
+    selection_fg: Some("#E9EDF5"),
+    cmdbar_bg: Some("#172032"),
+    disabled_fg: Some("#73819C"),
+    diff_line_add: Some("#77C581"),
+    diff_line_delete: Some("#FE8474"),
+    diff_file_added: Some("#77C581"),
+    diff_file_removed: Some("#FE8474"),
+    diff_file_moved: Some("#54B4B5"),
+    diff_file_modified: Some("#F2C03F"),
+    commit_hash: Some("#F2C03F"),
+    commit_time: Some("#A9B2C4"),
+    commit_author: Some("#54B4B5"),
+    danger_fg: Some("#FE8474"),
+    push_gauge_bg: Some("#DE8946"),
+    push_gauge_fg: Some("#121826"),
+    tag_fg: Some("#AE9EDC"),
+    branch_fg: Some("#77C581"),
+    block_title_focused: Some("#DE8946"),
+    syntax: Some("london-moquette"),
+    use_selection_fg: Some(false),
+)

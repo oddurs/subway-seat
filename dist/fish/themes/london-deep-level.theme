@@ -1,0 +1,37 @@
+# name: 'London Deep Level'
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# preferred_background: 121A2D
+
+fish_color_normal D4DAE7
+fish_color_command F2C03F
+fish_color_keyword DE8946
+fish_color_param BEC6D5
+fish_color_option 54B4B5
+fish_color_quote 77C581
+fish_color_redirection AE9EDC
+fish_color_end DE8946
+fish_color_operator AE9EDC
+fish_color_escape AE9EDC
+fish_color_comment 6F7C97 --italics
+fish_color_error FE8474
+fish_color_cancel DB6052
+fish_color_autosuggestion 6F7C97
+fish_color_gray 53617D
+fish_color_valid_path --underline
+fish_color_selection E7EBF3 --bold --background=303E5B
+fish_color_search_match --bold --background=232F49
+fish_color_history_current --bold
+fish_color_cwd F2C03F
+fish_color_cwd_root FE8474
+fish_color_user DE8946
+fish_color_host BEC6D5
+fish_color_host_remote 77C581
+fish_color_status FE8474
+fish_pager_color_progress 0A0E18 --background=DE8946
+fish_pager_color_prefix F2C03F --bold
+fish_pager_color_completion D4DAE7
+fish_pager_color_description 6F7C97 --italics
+fish_pager_color_selected_background --background=232F49
+fish_pager_color_selected_prefix F2C03F --bold
+fish_pager_color_selected_completion E7EBF3
+fish_pager_color_selected_description BEC6D5 --italics

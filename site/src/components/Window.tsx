@@ -1,5 +1,6 @@
 import * as stylex from "@stylexjs/stylex";
 import type { ReactNode } from "react";
+import { ink } from "@/theme/ink.stylex";
 import { color } from "@/theme/tokens.stylex";
 import { font } from "@/theme/type.stylex";
 
@@ -43,7 +44,7 @@ const styles = stylex.create({
     margin: 0,
     overflow: "hidden",
     backgroundColor: color.base,
-    borderRadius: 10,
+    borderRadius: "var(--radius-card)",
     boxShadow: "0 24px 60px var(--ss-shadow), 0 0 0 1px var(--ss-shadow-soft)",
   },
   bar: {
@@ -52,7 +53,8 @@ const styles = stylex.create({
     alignItems: "center",
     minHeight: 36,
     paddingInline: 14,
-    fontFamily: font.mono,
+    // A window's title bar is the OS's chrome, not the terminal's.
+    fontFamily: font.ui,
     fontSize: 12,
     color: color.overlay2,
     backgroundColor: color.mantle,
@@ -73,7 +75,7 @@ const styles = stylex.create({
   activeTab: {
     color: color.text,
     backgroundColor: color.base,
-    borderTopColor: color.orange,
+    borderTopColor: ink.fill,
     borderTopStyle: "solid",
     borderTopWidth: 2,
   },

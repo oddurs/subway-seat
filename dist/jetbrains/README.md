@@ -17,6 +17,24 @@ One plugin for IntelliJ IDEA, PyCharm, WebStorm, GoLand, Rider and the rest: a U
 | Subway Seat Enamel | [`schemes/subway-seat-enamel.icls`](schemes/subway-seat-enamel.icls) | Settings › Editor › Color Scheme › ⚙ › Import Scheme… (editor colors only) |
 | Subway Seat Enamel | [`themes/subway-seat-enamel.theme.json`](themes/subway-seat-enamel.theme.json) | packaged in subway-seat-jetbrains.jar |
 | Subway Seat Enamel | [`themes/subway-seat-enamel-islands.theme.json`](themes/subway-seat-enamel-islands.theme.json) | packaged in subway-seat-jetbrains.jar |
+| London Moquette | [`schemes/london-moquette.icls`](schemes/london-moquette.icls) | Settings › Editor › Color Scheme › ⚙ › Import Scheme… (editor colors only) |
+| London Moquette | [`themes/london-moquette.theme.json`](themes/london-moquette.theme.json) | packaged in subway-seat-jetbrains.jar |
+| London Moquette | [`themes/london-moquette-islands.theme.json`](themes/london-moquette-islands.theme.json) | packaged in subway-seat-jetbrains.jar |
+| London Deep Level | [`schemes/london-deep-level.icls`](schemes/london-deep-level.icls) | Settings › Editor › Color Scheme › ⚙ › Import Scheme… (editor colors only) |
+| London Deep Level | [`themes/london-deep-level.theme.json`](themes/london-deep-level.theme.json) | packaged in subway-seat-jetbrains.jar |
+| London Deep Level | [`themes/london-deep-level-islands.theme.json`](themes/london-deep-level-islands.theme.json) | packaged in subway-seat-jetbrains.jar |
+| London Portland | [`schemes/london-portland.icls`](schemes/london-portland.icls) | Settings › Editor › Color Scheme › ⚙ › Import Scheme… (editor colors only) |
+| London Portland | [`themes/london-portland.theme.json`](themes/london-portland.theme.json) | packaged in subway-seat-jetbrains.jar |
+| London Portland | [`themes/london-portland-islands.theme.json`](themes/london-portland-islands.theme.json) | packaged in subway-seat-jetbrains.jar |
+| Paris Guimard | [`schemes/paris-guimard.icls`](schemes/paris-guimard.icls) | Settings › Editor › Color Scheme › ⚙ › Import Scheme… (editor colors only) |
+| Paris Guimard | [`themes/paris-guimard.theme.json`](themes/paris-guimard.theme.json) | packaged in subway-seat-jetbrains.jar |
+| Paris Guimard | [`themes/paris-guimard-islands.theme.json`](themes/paris-guimard-islands.theme.json) | packaged in subway-seat-jetbrains.jar |
+| Paris Catacombes | [`schemes/paris-catacombes.icls`](schemes/paris-catacombes.icls) | Settings › Editor › Color Scheme › ⚙ › Import Scheme… (editor colors only) |
+| Paris Catacombes | [`themes/paris-catacombes.theme.json`](themes/paris-catacombes.theme.json) | packaged in subway-seat-jetbrains.jar |
+| Paris Catacombes | [`themes/paris-catacombes-islands.theme.json`](themes/paris-catacombes-islands.theme.json) | packaged in subway-seat-jetbrains.jar |
+| Paris Carrelage | [`schemes/paris-carrelage.icls`](schemes/paris-carrelage.icls) | Settings › Editor › Color Scheme › ⚙ › Import Scheme… (editor colors only) |
+| Paris Carrelage | [`themes/paris-carrelage.theme.json`](themes/paris-carrelage.theme.json) | packaged in subway-seat-jetbrains.jar |
+| Paris Carrelage | [`themes/paris-carrelage-islands.theme.json`](themes/paris-carrelage-islands.theme.json) | packaged in subway-seat-jetbrains.jar |
 | All three | [`META-INF/plugin.xml`](META-INF/plugin.xml) | packaged in subway-seat-jetbrains.jar |
 | All three | [`META-INF/pluginIcon.svg`](META-INF/pluginIcon.svg) | packaged in subway-seat-jetbrains.jar |
 | All three | [`subway-seat-jetbrains.jar`](subway-seat-jetbrains.jar) | Settings › Plugins › ⚙ › Install Plugin from Disk… |
@@ -42,6 +60,48 @@ Editor › Color Scheme: Subway Seat Tunnel
 ```text
 Theme: Subway Seat Enamel (or Subway Seat Enamel Islands)
 Editor › Color Scheme: Subway Seat Enamel
+```
+
+**London Moquette**, in Settings › Plugins › ⚙ › Install Plugin from Disk… (subway-seat-jetbrains.jar), then Settings › Appearance & Behavior › Appearance:
+
+```text
+Theme: London Moquette (or London Moquette Islands)
+Editor › Color Scheme: London Moquette
+```
+
+**London Deep Level**, in Settings › Plugins › ⚙ › Install Plugin from Disk… (subway-seat-jetbrains.jar), then Settings › Appearance & Behavior › Appearance:
+
+```text
+Theme: London Deep Level (or London Deep Level Islands)
+Editor › Color Scheme: London Deep Level
+```
+
+**London Portland**, in Settings › Plugins › ⚙ › Install Plugin from Disk… (subway-seat-jetbrains.jar), then Settings › Appearance & Behavior › Appearance:
+
+```text
+Theme: London Portland (or London Portland Islands)
+Editor › Color Scheme: London Portland
+```
+
+**Paris Guimard**, in Settings › Plugins › ⚙ › Install Plugin from Disk… (subway-seat-jetbrains.jar), then Settings › Appearance & Behavior › Appearance:
+
+```text
+Theme: Paris Guimard (or Paris Guimard Islands)
+Editor › Color Scheme: Paris Guimard
+```
+
+**Paris Catacombes**, in Settings › Plugins › ⚙ › Install Plugin from Disk… (subway-seat-jetbrains.jar), then Settings › Appearance & Behavior › Appearance:
+
+```text
+Theme: Paris Catacombes (or Paris Catacombes Islands)
+Editor › Color Scheme: Paris Catacombes
+```
+
+**Paris Carrelage**, in Settings › Plugins › ⚙ › Install Plugin from Disk… (subway-seat-jetbrains.jar), then Settings › Appearance & Behavior › Appearance:
+
+```text
+Theme: Paris Carrelage (or Paris Carrelage Islands)
+Editor › Color Scheme: Paris Carrelage
 ```
 
 ## Follow light and dark

@@ -1,0 +1,54 @@
+{
+  "name": "Paris Guimard",
+  "type": "custom",
+  "Background": "#1E2E26",
+  "Foreground": "#D9E1DB",
+  "LightBlue": "#C2CBC5",
+  "AccentBlue": "#CA9245",
+  "AccentPurple": "#FAB49C",
+  "AccentCyan": "#549B9F",
+  "AccentGreen": "#70CAA9",
+  "AccentYellow": "#F1BF4B",
+  "AccentRed": "#E7877B",
+  "DiffAdded": "#274137",
+  "DiffRemoved": "#422E29",
+  "Comment": "#74857C",
+  "Gray": "#909E96",
+  "DarkGray": "#3E554A",
+  "GradientColors": [
+    "#C7665B",
+    "#CA9245",
+    "#F1BF4B",
+    "#70CAA9"
+  ],
+  "text": {
+    "primary": "#D9E1DB",
+    "secondary": "#909E96",
+    "accent": "#FAB49C",
+    "response": "#D9E1DB"
+  },
+  "background": {
+    "primary": "#1E2E26",
+    "diff": {
+      "added": "#274137",
+      "removed": "#422E29"
+    }
+  },
+  "ui": {
+    "comment": "#74857C",
+    "symbol": "#F1BF4B",
+    "active": "#CA9245",
+    "focus": "#F1BF4B",
+    "gradient": [
+      "#C7665B",
+      "#CA9245",
+      "#F1BF4B",
+      "#70CAA9"
+    ]
+  },
+  "status": {
+    "success": "#70CAA9",
+    "warning": "#F1BF4B",
+    "error": "#E7877B"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "ui": {
+    "customThemes": {
+      "London Deep Level": {
+        "name": "London Deep Level",
+        "type": "custom",
+        "Background": "#121A2D",
+        "Foreground": "#D4DAE7",
+        "LightBlue": "#BEC6D5",
+        "AccentBlue": "#DE8946",
+        "AccentPurple": "#AE9EDC",
+        "AccentCyan": "#54B4B5",
+        "AccentGreen": "#77C581",
+        "AccentYellow": "#F2C03F",
+        "AccentRed": "#FE8474",
+        "DiffAdded": "#22362F",
+        "DiffRemoved": "#402327",
+        "Comment": "#6F7C97",
+        "Gray": "#8B96AC",
+        "DarkGray": "#303E5B",
+        "GradientColors": [
+          "#DB6052",
+          "#DE8946",
+          "#F2C03F",
+          "#77C581"
+        ],
+        "text": {
+          "primary": "#D4DAE7",
+          "secondary": "#8B96AC",
+          "accent": "#AE9EDC",
+          "response": "#D4DAE7"
+        },
+        "background": {
+          "primary": "#121A2D",
+          "diff": {
+            "added": "#22362F",
+            "removed": "#402327"
+          }
+        },
+        "ui": {
+          "comment": "#6F7C97",
+          "symbol": "#F2C03F",
+          "active": "#DE8946",
+          "focus": "#F2C03F",
+          "gradient": [
+            "#DB6052",
+            "#DE8946",
+            "#F2C03F",
+            "#77C581"
+          ]
+        },
+        "status": {
+          "success": "#77C581",
+          "warning": "#F2C03F",
+          "error": "#FE8474"
+        }
+      }
+    },
+    "theme": "London Deep Level"
+  }
+}

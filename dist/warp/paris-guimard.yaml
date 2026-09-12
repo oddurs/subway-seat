@@ -1,0 +1,26 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+name: Paris Guimard
+accent: '#CA9245'
+cursor: '#F1BF4B'
+background: '#1E2E26'
+foreground: '#D9E1DB'
+details: darker
+terminal_colors:
+  normal:
+    black: '#30463B'
+    red: '#C7665B'
+    green: '#70CAA9'
+    yellow: '#F1BF4B'
+    blue: '#709BC8'
+    magenta: '#CA9245'
+    cyan: '#549B9F'
+    white: '#C2CBC5'
+  bright:
+    black: '#74857C'
+    red: '#E7877B'
+    green: '#89DEBE'
+    yellow: '#FFD57A'
+    blue: '#8DB6E2'
+    magenta: '#DFAA61'
+    cyan: '#70B5B9'
+    white: '#E9EEEC'

@@ -1,0 +1,92 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+
+[colors]
+foreground = "#293040"
+background = "#E8F0FF"
+cursor_bg = "#A54300"
+cursor_border = "#A54300"
+cursor_fg = "#E8F0FF"
+compose_cursor = "#755FA9"
+selection_bg = "#A8BBE2"
+selection_fg = "#1B202B"
+scrollbar_thumb = "#93A7CF"
+split = "#CCDAF2"
+visual_bell = "#BFCFF1"
+ansi = [
+  "#3C4557",
+  "#9B211A",
+  "#0D8131",
+  "#8D6C08",
+  "#0019A8",
+  "#A54300",
+  "#007376",
+  "#93A7CF",
+]
+brights = [
+  "#697794",
+  "#CC2E25",
+  "#008730",
+  "#9B770A",
+  "#4A6EBD",
+  "#AC5A00",
+  "#008688",
+  "#A8BBE2",
+]
+copy_mode_active_highlight_bg = { Color = "#C69A80" }
+copy_mode_active_highlight_fg = { Color = "#1B202B" }
+copy_mode_inactive_highlight_bg = { Color = "#CDC8B5" }
+copy_mode_inactive_highlight_fg = { Color = "#293040" }
+quick_select_label_bg = { Color = "#A54300" }
+quick_select_label_fg = { Color = "#E8F0FF" }
+quick_select_match_bg = { Color = "#CDC8B5" }
+quick_select_match_fg = { Color = "#293040" }
+
+[colors.tab_bar]
+background = "#CCDAF2"
+inactive_tab_edge = "#BFCFF1"
+
+[colors.tab_bar.active_tab]
+bg_color = "#E8F0FF"
+fg_color = "#A54300"
+intensity = "Bold"
+italic = false
+strikethrough = false
+underline = "None"
+
+[colors.tab_bar.inactive_tab]
+bg_color = "#DCE5F7"
+fg_color = "#697794"
+intensity = "Normal"
+italic = false
+strikethrough = false
+underline = "None"
+
+[colors.tab_bar.inactive_tab_hover]
+bg_color = "#BFCFF1"
+fg_color = "#293040"
+intensity = "Normal"
+italic = false
+strikethrough = false
+underline = "None"
+
+[colors.tab_bar.new_tab]
+bg_color = "#CCDAF2"
+fg_color = "#697794"
+intensity = "Normal"
+italic = false
+strikethrough = false
+underline = "None"
+
+[colors.tab_bar.new_tab_hover]
+bg_color = "#BFCFF1"
+fg_color = "#A54300"
+intensity = "Normal"
+italic = false
+strikethrough = false
+underline = "None"
+
+[metadata]
+name = "London Portland"
+author = "oddurs"
+origin_url = "https://github.com/oddurs/subway-seat"
+aliases = []

@@ -1,16 +1,43 @@
 import data from "@/theme/palette.json";
 
 export type ColorName = keyof (typeof data.flavors)[number]["colors"];
-export type FlavorId = "walnut" | "tunnel" | "enamel";
+export type FlavorId =
+  | "walnut"
+  | "tunnel"
+  | "enamel"
+  | "moquette"
+  | "deep"
+  | "portland"
+  | "guimard"
+  | "catacombes"
+  | "carrelage";
+export type FamilyId = "new-york" | "london" | "paris";
 
 export type Flavor = {
   id: FlavorId;
+  family: FamilyId;
   name: string;
   slug: string;
   dark: boolean;
   blurb: string;
   colors: Record<ColorName, string>;
+  /** Decorative colours for site graphics; see build.py's ART note. */
+  art: Record<string, string>;
   ansi: ColorName[];
+};
+
+export type Family = {
+  id: FamilyId;
+  name: string;
+  blurb: string;
+  /** The one accent this family spends on identity. */
+  lead: ColorName;
+  /** What the Claude Code plugin says while it thinks, in this city's voice. */
+  verbs: string[];
+  roleNames: Partial<Record<ColorName, string>>;
+  flavors: FlavorId[];
+  default: FlavorId;
+  light: FlavorId;
 };
 
 export const flavors = data.flavors as Flavor[];
@@ -20,9 +47,42 @@ export const flavorById = Object.fromEntries(flavors.map((f) => [f.id, f])) as R
 >;
 export const walnut = flavorById.walnut;
 
-/** The short name the site uses for a flavor: Walnut, Tunnel, Enamel. Files keep the full name. */
+export const families = data.families as Family[];
+export const familyById = Object.fromEntries(families.map((f) => [f.id, f])) as Record<
+  FamilyId,
+  Family
+>;
+
+/** The family a flavor belongs to. */
+export function familyOf(id: FlavorId): Family {
+  return familyById[flavorById[id].family];
+}
+
+/** The flavors of one family, in order. */
+export function flavorsOf(family: FamilyId) {
+  return flavors.filter((f) => f.family === family);
+}
+
+/** The short name the site uses for a flavor — the part after the city. */
+const SHORT: Record<FlavorId, string> = {
+  walnut: "Walnut",
+  tunnel: "Tunnel",
+  enamel: "Enamel",
+  moquette: "Moquette",
+  deep: "Deep Level",
+  portland: "Portland",
+  guimard: "Guimard",
+  catacombes: "Catacombes",
+  carrelage: "Carrelage",
+};
+
 export function shortName(id: FlavorId) {
-  return id.charAt(0).toUpperCase() + id.slice(1);
+  return SHORT[id];
+}
+
+/** What this flavor's own family calls a role. */
+export function roleName(id: FlavorId, role: ColorName) {
+  return familyOf(id).roleNames[role] ?? roleNames[role];
 }
 
 export const roles = data.roles as ColorName[];

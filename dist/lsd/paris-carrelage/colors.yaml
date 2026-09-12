@@ -1,0 +1,45 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# Paris Carrelage for lsd. File names follow LS_COLORS (see the vivid port).
+user: "#916D07"
+group: "#3B4742"
+permission:
+  read: "#916D07"
+  write: "#764C00"
+  exec: "#218366"
+  exec-sticky: "#B36B51"
+  no-access: "#859792"
+  octal: "#B36B51"
+  acl: "#6C7C76"
+  context: "#6C7C76"
+attributes:
+  archive: "#4A5752"
+  read: "#916D07"
+  hidden: "#6C7C76"
+  system: "#B36B51"
+date:
+  hour-old: "#218366"
+  day-old: "#3B4742"
+  older: "#4A5752"
+size:
+  none: "#6C7C76"
+  small: "#218366"
+  medium: "#916D07"
+  large: "#764C00"
+inode:
+  valid: "#6C7C76"
+  invalid: "#859792"
+links:
+  valid: "#006267"
+  invalid: "#859792"
+tree-edge: "#859792"
+git-status:
+  default: "#4A5752"
+  unmodified: "#6C7C76"
+  ignored: "#859792"
+  new-in-index: "#218366"
+  new-in-workdir: "#218366"
+  typechange: "#B36B51"
+  deleted: "#AC3B32"
+  renamed: "#006267"
+  modified: "#916D07"
+  conflicted: "#88251E"

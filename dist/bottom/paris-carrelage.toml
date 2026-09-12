@@ -1,0 +1,51 @@
+# >>> subway-seat >>>
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# Paris Carrelage for bottom. Key names use the 0.10 spelling, which later releases accept too.
+
+[styles.cpu]
+all_entry_color = "#27342F"
+avg_entry_color = "#764C00"
+cpu_core_colors = ["#218366", "#916D07", "#764C00", "#AC3B32", "#006267", "#B36B51", "#278D6E", "#A07A12"]
+
+[styles.memory]
+ram_color = "#218366"
+cache_color = "#006267"
+swap_color = "#764C00"
+arc_color = "#B36B51"
+gpu_colors = ["#916D07", "#764C00", "#AC3B32", "#006267", "#B36B51", "#278D6E"]
+
+[styles.network]
+rx_color = "#218366"
+tx_color = "#764C00"
+rx_total_color = "#278D6E"
+tx_total_color = "#885A00"
+
+[styles.battery]
+high_battery_color = "#218366"
+medium_battery_color = "#916D07"
+low_battery_color = "#AC3B32"
+
+[styles.tables]
+headers = { color = "#764C00", bold = true }
+
+[styles.graphs]
+graph_color = "#859792"
+legend_text = { color = "#4A5752" }
+
+[styles.widgets]
+border_color = "#99ABA6"
+selected_border_color = "#764C00"
+widget_title = { color = "#916D07" }
+text = { color = "#27342F" }
+selected_text = { color = "#EEF2F1", bg_color = "#764C00" }
+disabled_text = { color = "#859792" }
+thread_text = { color = "#006267" }  # 0.11+
+
+# Newer sections (bottom 0.13+); older releases ignore them.
+[styles.temp_graph]
+temp_graph_color_styles = ["#218366", "#916D07", "#764C00", "#AC3B32", "#006267", "#B36B51", "#278D6E", "#A07A12"]
+
+[styles.disk_io_graph]
+read_colours = ["#218366", "#006267", "#278D6E", "#027479"]
+write_colours = ["#764C00", "#B36B51", "#885A00", "#AC3B32"]
+# <<< subway-seat <<<

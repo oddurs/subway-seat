@@ -3,7 +3,6 @@
 import * as stylex from "@stylexjs/stylex";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { sign } from "@/theme/sign.stylex";
 import { font } from "@/theme/type.stylex";
 
 const LINKS = [
@@ -46,6 +45,7 @@ export function NavLinks() {
 }
 
 const NARROW = "@media (max-width: 640px)";
+const CALM = "@media (prefers-reduced-motion: reduce)";
 
 const styles = stylex.create({
   links: {
@@ -64,12 +64,19 @@ const styles = stylex.create({
     marginRight: "auto",
   },
   link: {
+    // A tap target taller than the type, taken back out of the layout: without
+    // the negative margin the padding hangs 6px below every baseline in the
+    // bar and quietly decentres the whole band.
     paddingBlock: 6,
+    marginBlock: -6,
     fontFamily: font.sans,
-    fontSize: 14,
+    fontSize: font.sizeSmall,
+    // A fixed line box, so the links share a baseline with the wordmark and the
+    // city switch whichever face the family sets them in.
+    lineHeight: font.leadFlat,
     color: {
-      default: "rgba(248,236,212,0.72)",
-      ":hover": sign.text,
+      default: "color-mix(in srgb, var(--sign-text) 72%, transparent)",
+      ":hover": "var(--sign-text)",
     },
     textDecorationLine: "none",
     textDecorationThickness: 2,
@@ -79,13 +86,16 @@ const styles = stylex.create({
       default: "none",
       ":focus-visible": "solid",
     },
-    outlineColor: sign.ring,
+    outlineColor: "var(--sign-ring)",
     outlineOffset: 2,
     borderRadius: 2,
+    transitionDelay: "40ms",
+    transitionDuration: { [CALM]: "1ms", default: "360ms" },
+    transitionProperty: "color",
   },
   here: {
-    color: sign.text,
+    color: "var(--sign-text)",
     textDecorationLine: "underline",
-    textDecorationColor: sign.ring,
+    textDecorationColor: "var(--sign-ring)",
   },
 });

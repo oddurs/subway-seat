@@ -1,0 +1,92 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+
+[colors]
+foreground = "#D8DEEA"
+background = "#1E2941"
+cursor_bg = "#F2C03F"
+cursor_border = "#F2C03F"
+cursor_fg = "#1E2941"
+compose_cursor = "#AE9EDC"
+selection_bg = "#3D4F72"
+selection_fg = "#E9EDF5"
+scrollbar_thumb = "#3D4F72"
+split = "#263451"
+visual_bell = "#263451"
+ansi = [
+  "#303F61",
+  "#DB6052",
+  "#77C581",
+  "#F2C03F",
+  "#7595DA",
+  "#DE8946",
+  "#54B4B5",
+  "#C1C9D8",
+]
+brights = [
+  "#73819C",
+  "#FE8474",
+  "#9AD2A0",
+  "#FFD36C",
+  "#8BB0FF",
+  "#E5AA7F",
+  "#72D1D3",
+  "#E9EDF5",
+]
+copy_mode_active_highlight_bg = { Color = "#7E5944" }
+copy_mode_active_highlight_fg = { Color = "#E9EDF5" }
+copy_mode_inactive_highlight_bg = { Color = "#5E5640" }
+copy_mode_inactive_highlight_fg = { Color = "#D8DEEA" }
+quick_select_label_bg = { Color = "#DE8946" }
+quick_select_label_fg = { Color = "#1E2941" }
+quick_select_match_bg = { Color = "#5E5640" }
+quick_select_match_fg = { Color = "#D8DEEA" }
+
+[colors.tab_bar]
+background = "#121826"
+inactive_tab_edge = "#263451"
+
+[colors.tab_bar.active_tab]
+bg_color = "#1E2941"
+fg_color = "#F2C03F"
+intensity = "Bold"
+italic = false
+strikethrough = false
+underline = "None"
+
+[colors.tab_bar.inactive_tab]
+bg_color = "#172032"
+fg_color = "#73819C"
+intensity = "Normal"
+italic = false
+strikethrough = false
+underline = "None"
+
+[colors.tab_bar.inactive_tab_hover]
+bg_color = "#263451"
+fg_color = "#D8DEEA"
+intensity = "Normal"
+italic = false
+strikethrough = false
+underline = "None"
+
+[colors.tab_bar.new_tab]
+bg_color = "#121826"
+fg_color = "#73819C"
+intensity = "Normal"
+italic = false
+strikethrough = false
+underline = "None"
+
+[colors.tab_bar.new_tab_hover]
+bg_color = "#263451"
+fg_color = "#F2C03F"
+intensity = "Normal"
+italic = false
+strikethrough = false
+underline = "None"
+
+[metadata]
+name = "London Moquette"
+author = "oddurs"
+origin_url = "https://github.com/oddurs/subway-seat"
+aliases = []

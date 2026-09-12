@@ -1,0 +1,133 @@
+{
+  "manifest_version": 3,
+  "name": "London Moquette",
+  "version": "0.3.0",
+  "description": "Harvest gold, burnt orange and avocado on walnut. The seat you're sitting on. Corporate Blue, turned right down.",
+  "theme": {
+    "colors": {
+      "frame": [
+        18,
+        24,
+        38
+      ],
+      "frame_inactive": [
+        18,
+        24,
+        38
+      ],
+      "frame_incognito": [
+        43,
+        45,
+        67
+      ],
+      "frame_incognito_inactive": [
+        43,
+        45,
+        67
+      ],
+      "background_tab": [
+        18,
+        24,
+        38
+      ],
+      "background_tab_inactive": [
+        18,
+        24,
+        38
+      ],
+      "background_tab_incognito": [
+        43,
+        45,
+        67
+      ],
+      "background_tab_incognito_inactive": [
+        43,
+        45,
+        67
+      ],
+      "toolbar": [
+        30,
+        41,
+        65
+      ],
+      "tab_text": [
+        216,
+        222,
+        234
+      ],
+      "tab_background_text": [
+        143,
+        154,
+        176
+      ],
+      "tab_background_text_inactive": [
+        115,
+        129,
+        156
+      ],
+      "tab_background_text_incognito": [
+        169,
+        178,
+        196
+      ],
+      "tab_background_text_incognito_inactive": [
+        143,
+        154,
+        176
+      ],
+      "bookmark_text": [
+        193,
+        201,
+        216
+      ],
+      "toolbar_button_icon": [
+        193,
+        201,
+        216
+      ],
+      "toolbar_text": [
+        216,
+        222,
+        234
+      ],
+      "omnibox_background": [
+        23,
+        32,
+        50
+      ],
+      "omnibox_text": [
+        216,
+        222,
+        234
+      ],
+      "ntp_background": [
+        30,
+        41,
+        65
+      ],
+      "ntp_text": [
+        216,
+        222,
+        234
+      ],
+      "ntp_link": [
+        117,
+        149,
+        218
+      ],
+      "ntp_header": [
+        222,
+        137,
+        70
+      ],
+      "button_background": [
+        18,
+        24,
+        38
+      ]
+    },
+    "properties": {
+      "ntp_logo_alternate": 1
+    }
+  }
+}

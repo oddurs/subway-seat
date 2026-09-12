@@ -1,0 +1,74 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# Paris Carrelage
+
+[colors.primary]
+background = "#EEF2F1"
+foreground = "#27342F"
+dim_foreground = "#56645F"
+bright_foreground = "#19221E"
+
+[colors.cursor]
+text = "#EEF2F1"
+cursor = "#764C00"
+
+[colors.vi_mode_cursor]
+text = "#EEF2F1"
+cursor = "#006267"
+
+[colors.search.matches]
+foreground = "#27342F"
+background = "#D2CAAB"
+
+[colors.search.focused_match]
+foreground = "#19221E"
+background = "#B29F78"
+
+[colors.footer_bar]
+foreground = "#27342F"
+background = "#B0BFBB"
+
+[colors.hints.start]
+foreground = "#EEF2F1"
+background = "#764C00"
+
+[colors.hints.end]
+foreground = "#EEF2F1"
+background = "#56645F"
+
+[colors.line_indicator]
+foreground = "#4A5752"
+background = "#C6D2CF"
+
+[colors.selection]
+text = "#19221E"
+background = "#B0BFBB"
+
+[colors.normal]
+black = "#3B4742"
+red = "#88251E"
+green = "#218366"
+yellow = "#916D07"
+blue = "#25629B"
+magenta = "#764C00"
+cyan = "#006267"
+white = "#99ABA6"
+
+[colors.bright]
+black = "#6C7C76"
+red = "#AC3B32"
+green = "#278D6E"
+yellow = "#A07A12"
+blue = "#3D75AD"
+magenta = "#885A00"
+cyan = "#027479"
+white = "#B0BFBB"
+
+[colors.dim]
+black = "#78817E"
+red = "#AB6B66"
+green = "#67A995"
+yellow = "#B19A57"
+blue = "#6993B8"
+magenta = "#9F8452"
+cyan = "#519396"
+white = "#B6C3C0"

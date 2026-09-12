@@ -1,0 +1,21 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# London Deep Level for Atuin.
+[theme]
+name = "london-deep-level"
+
+[colors]
+AlertInfo = "#7595DA"
+AlertWarn = "#F2C03F"
+AlertError = "#FE8474"
+Annotation = "#6F7C97"
+Base = "#D4DAE7"
+Guidance = "#A5AEC0"
+Important = "#DE8946"
+Title = "#F2C03F"
+Muted = "#53617D"
+SyntaxCommand = "#F2C03F"
+SyntaxFlag = "#54B4B5"
+SyntaxString = "#77C581"
+SyntaxVariable = "#AE9EDC"
+SyntaxOperator = "#DE8946"
+SyntaxComment = "#6F7C97"

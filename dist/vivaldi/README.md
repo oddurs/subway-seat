@@ -14,6 +14,18 @@ Toolbars and panels on the flavor's base, the window frame one step deeper, and 
 | Subway Seat Tunnel | [`subway-seat-tunnel.zip`](subway-seat-tunnel.zip) | Vivaldi › Settings › Themes › Library › Import Theme |
 | Subway Seat Enamel | [`subway-seat-enamel/settings.json`](subway-seat-enamel/settings.json) | inside subway-seat-enamel.zip |
 | Subway Seat Enamel | [`subway-seat-enamel.zip`](subway-seat-enamel.zip) | Vivaldi › Settings › Themes › Library › Import Theme |
+| London Moquette | [`london-moquette/settings.json`](london-moquette/settings.json) | inside london-moquette.zip |
+| London Moquette | [`london-moquette.zip`](london-moquette.zip) | Vivaldi › Settings › Themes › Library › Import Theme |
+| London Deep Level | [`london-deep-level/settings.json`](london-deep-level/settings.json) | inside london-deep-level.zip |
+| London Deep Level | [`london-deep-level.zip`](london-deep-level.zip) | Vivaldi › Settings › Themes › Library › Import Theme |
+| London Portland | [`london-portland/settings.json`](london-portland/settings.json) | inside london-portland.zip |
+| London Portland | [`london-portland.zip`](london-portland.zip) | Vivaldi › Settings › Themes › Library › Import Theme |
+| Paris Guimard | [`paris-guimard/settings.json`](paris-guimard/settings.json) | inside paris-guimard.zip |
+| Paris Guimard | [`paris-guimard.zip`](paris-guimard.zip) | Vivaldi › Settings › Themes › Library › Import Theme |
+| Paris Catacombes | [`paris-catacombes/settings.json`](paris-catacombes/settings.json) | inside paris-catacombes.zip |
+| Paris Catacombes | [`paris-catacombes.zip`](paris-catacombes.zip) | Vivaldi › Settings › Themes › Library › Import Theme |
+| Paris Carrelage | [`paris-carrelage/settings.json`](paris-carrelage/settings.json) | inside paris-carrelage.zip |
+| Paris Carrelage | [`paris-carrelage.zip`](paris-carrelage.zip) | Vivaldi › Settings › Themes › Library › Import Theme |
 
 ## Turn it on
 
@@ -33,6 +45,42 @@ Import Theme › subway-seat-tunnel.zip
 
 ```text
 Import Theme › subway-seat-enamel.zip
+```
+
+**London Moquette**, in Vivaldi › Settings › Themes › Library:
+
+```text
+Import Theme › london-moquette.zip
+```
+
+**London Deep Level**, in Vivaldi › Settings › Themes › Library:
+
+```text
+Import Theme › london-deep-level.zip
+```
+
+**London Portland**, in Vivaldi › Settings › Themes › Library:
+
+```text
+Import Theme › london-portland.zip
+```
+
+**Paris Guimard**, in Vivaldi › Settings › Themes › Library:
+
+```text
+Import Theme › paris-guimard.zip
+```
+
+**Paris Catacombes**, in Vivaldi › Settings › Themes › Library:
+
+```text
+Import Theme › paris-catacombes.zip
+```
+
+**Paris Carrelage**, in Vivaldi › Settings › Themes › Library:
+
+```text
+Import Theme › paris-carrelage.zip
 ```
 
 ## Follow light and dark

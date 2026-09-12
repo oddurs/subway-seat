@@ -1,0 +1,133 @@
+{
+  "manifest_version": 3,
+  "name": "Paris Catacombes",
+  "version": "0.3.0",
+  "description": "Harvest gold, burnt orange and avocado on walnut. Under the quarries: the same green with the lights turned down.",
+  "theme": {
+    "colors": {
+      "frame": [
+        10,
+        16,
+        13
+      ],
+      "frame_inactive": [
+        10,
+        16,
+        13
+      ],
+      "frame_incognito": [
+        48,
+        42,
+        36
+      ],
+      "frame_incognito_inactive": [
+        48,
+        42,
+        36
+      ],
+      "background_tab": [
+        10,
+        16,
+        13
+      ],
+      "background_tab_inactive": [
+        10,
+        16,
+        13
+      ],
+      "background_tab_incognito": [
+        48,
+        42,
+        36
+      ],
+      "background_tab_incognito_inactive": [
+        48,
+        42,
+        36
+      ],
+      "toolbar": [
+        18,
+        30,
+        25
+      ],
+      "tab_text": [
+        212,
+        221,
+        215
+      ],
+      "tab_background_text": [
+        140,
+        154,
+        146
+      ],
+      "tab_background_text_inactive": [
+        112,
+        129,
+        120
+      ],
+      "tab_background_text_incognito": [
+        165,
+        177,
+        170
+      ],
+      "tab_background_text_incognito_inactive": [
+        140,
+        154,
+        146
+      ],
+      "bookmark_text": [
+        191,
+        200,
+        194
+      ],
+      "toolbar_button_icon": [
+        191,
+        200,
+        194
+      ],
+      "toolbar_text": [
+        212,
+        221,
+        215
+      ],
+      "omnibox_background": [
+        13,
+        23,
+        17
+      ],
+      "omnibox_text": [
+        212,
+        221,
+        215
+      ],
+      "ntp_background": [
+        18,
+        30,
+        25
+      ],
+      "ntp_text": [
+        212,
+        221,
+        215
+      ],
+      "ntp_link": [
+        112,
+        155,
+        200
+      ],
+      "ntp_header": [
+        202,
+        146,
+        69
+      ],
+      "button_background": [
+        10,
+        16,
+        13
+      ]
+    },
+    "properties": {
+      "ntp_logo_alternate": 1
+    }
+  }
+}

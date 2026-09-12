@@ -1,0 +1,76 @@
+/* Subway Seat — generated from palette.py by build.py. Edit the palette, not this file. */
+/* Paris Guimard: Cast iron off a Metro entrance, which is nearly black. Brass leads. */
+
+:root {
+  color-scheme: dark;
+
+  /* Ground */
+  --ss-crust: #131A17; /* Blackout */
+  --ss-mantle: #18241D; /* Espresso */
+  --ss-base: #1E2E26; /* Paneling */
+  --ss-surface0: #263930; /* Coppertone */
+  --ss-surface1: #30463B; /* Saddle */
+  --ss-surface2: #3E554A; /* Corduroy */
+  --ss-overlay0: #586B61; /* Pecan */
+  --ss-overlay1: #74857C; /* Cardboard */
+  --ss-overlay2: #909E96; /* Burlap */
+
+  /* Text */
+  --ss-subtext0: #A9B5AE; /* Khaki */
+  --ss-subtext1: #C2CBC5; /* Almond */
+  --ss-text: #D9E1DB; /* Parchment */
+  --ss-text-hi: #E9EEEC; /* Ivory */
+
+  /* Accents */
+  --ss-yellow: #F1BF4B; /* Harvest gold */
+  --ss-yellow-hi: #FFD57A; /* Broadway yellow */
+  --ss-orange: #CA9245; /* Burnt orange */
+  --ss-orange-hi: #DFAA61; /* Sixth Avenue */
+  --ss-red: #C7665B; /* Redbird */
+  --ss-red-hi: #E7877B; /* Redbird bright */
+  --ss-green: #70CAA9; /* Avocado */
+  --ss-green-hi: #89DEBE; /* Avocado bright */
+  --ss-sage: #549B9F; /* Seafoam tile */
+  --ss-sage-hi: #70B5B9; /* Seafoam bright */
+  --ss-denim: #709BC8; /* Faded denim */
+  --ss-denim-hi: #8DB6E2; /* Denim bright */
+  --ss-clay: #FAB49C; /* Terracotta */
+
+  /* Diff grounds: -add/-del/-chg for lines, -emph for changed words, -dim for faded diffs */
+  --ss-diff-add: #274137;
+  --ss-diff-add-emph: #335649;
+  --ss-diff-add-dim: #20332B;
+  --ss-diff-del: #422E29;
+  --ss-diff-del-emph: #5B3832;
+  --ss-diff-del-dim: #322723;
+  --ss-diff-chg: #37341F;
+  --ss-diff-chg-emph: #4D4525;
+
+  /* RGB triplets, for rgb(var(--ss-base-rgb) / 0.5) */
+  --ss-crust-rgb: 19 26 23;
+  --ss-mantle-rgb: 24 36 29;
+  --ss-base-rgb: 30 46 38;
+  --ss-surface0-rgb: 38 57 48;
+  --ss-surface1-rgb: 48 70 59;
+  --ss-surface2-rgb: 62 85 74;
+  --ss-overlay0-rgb: 88 107 97;
+  --ss-overlay1-rgb: 116 133 124;
+  --ss-overlay2-rgb: 144 158 150;
+  --ss-subtext0-rgb: 169 181 174;
+  --ss-subtext1-rgb: 194 203 197;
+  --ss-text-rgb: 217 225 219;
+  --ss-text-hi-rgb: 233 238 236;
+  --ss-yellow-rgb: 241 191 75;
+  --ss-yellow-hi-rgb: 255 213 122;
+  --ss-orange-rgb: 202 146 69;
+  --ss-orange-hi-rgb: 223 170 97;
+  --ss-red-rgb: 199 102 91;
+  --ss-red-hi-rgb: 231 135 123;
+  --ss-green-rgb: 112 202 169;
+  --ss-green-hi-rgb: 137 222 190;
+  --ss-sage-rgb: 84 155 159;
+  --ss-sage-hi-rgb: 112 181 185;
+  --ss-denim-rgb: 112 155 200;
+  --ss-denim-hi-rgb: 141 182 226;
+  --ss-clay-rgb: 250 180 156;
+}

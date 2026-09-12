@@ -1,8 +1,10 @@
 import * as stylex from "@stylexjs/stylex";
 import Link from "next/link";
 import { ports, version } from "@/lib/manifest";
+import { FlavorPicker } from "./FlavorPicker";
 import { REPO } from "@/lib/seo";
 import { ink } from "@/theme/ink.stylex";
+import { space } from "@/theme/space.stylex";
 import { color } from "@/theme/tokens.stylex";
 import { font } from "@/theme/type.stylex";
 
@@ -28,6 +30,7 @@ export function Footer() {
           <code {...stylex.props(styles.code)}>./build.py</code>, and all {ports().length} ports
           follow.
         </p>
+        <FlavorPicker />
         <nav aria-label="Footer" {...stylex.props(styles.links)}>
           {LINKS.map((l) => (
             <Link key={l.href} href={l.href} prefetch={false} {...stylex.props(styles.link)}>
@@ -52,8 +55,8 @@ const styles = stylex.create({
   inner: {
     display: "grid",
     gap: 14,
-    maxWidth: 1200,
-    paddingInline: 24,
+    maxWidth: space.measure,
+    paddingInline: space.gutter,
     paddingTop: 48,
     paddingBottom: 56,
     marginInline: "auto",

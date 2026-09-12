@@ -1,0 +1,74 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# London Deep Level
+
+[colors.primary]
+background = "#121A2D"
+foreground = "#D4DAE7"
+dim_foreground = "#8B96AC"
+bright_foreground = "#E7EBF3"
+
+[colors.cursor]
+text = "#121A2D"
+cursor = "#F2C03F"
+
+[colors.vi_mode_cursor]
+text = "#121A2D"
+cursor = "#54B4B5"
+
+[colors.search.matches]
+foreground = "#D4DAE7"
+background = "#554C32"
+
+[colors.search.focused_match]
+foreground = "#E7EBF3"
+background = "#78523A"
+
+[colors.footer_bar]
+foreground = "#D4DAE7"
+background = "#232F49"
+
+[colors.hints.start]
+foreground = "#121A2D"
+background = "#F2C03F"
+
+[colors.hints.end]
+foreground = "#121A2D"
+background = "#8B96AC"
+
+[colors.line_indicator]
+foreground = "#A5AEC0"
+background = "#1A243A"
+
+[colors.selection]
+text = "#E7EBF3"
+background = "#303E5B"
+
+[colors.normal]
+black = "#232F49"
+red = "#DB6052"
+green = "#77C581"
+yellow = "#F2C03F"
+blue = "#7595DA"
+magenta = "#DE8946"
+cyan = "#54B4B5"
+white = "#BEC6D5"
+
+[colors.bright]
+black = "#6F7C97"
+red = "#FE8474"
+green = "#9AD2A0"
+yellow = "#FFD36C"
+blue = "#8BB0FF"
+magenta = "#E5AA7F"
+cyan = "#72D1D3"
+white = "#E7EBF3"
+
+[colors.dim]
+black = "#1D283F"
+red = "#974845"
+green = "#558B64"
+yellow = "#A68839"
+blue = "#536B9F"
+magenta = "#99633E"
+cyan = "#3E8087"
+white = "#848C9C"

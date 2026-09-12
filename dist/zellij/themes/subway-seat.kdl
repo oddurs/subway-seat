@@ -41,7 +41,7 @@ themes {
             emphasis_0 "#F3BF45"
             emphasis_1 "#86AD95"
             emphasis_2 "#ADB956"
-            emphasis_3 "#E0956C"
+            emphasis_3 "#F4A87E"
         }
         table_cell_selected {
             base "#F8ECD4"
@@ -108,7 +108,7 @@ themes {
             emphasis_3 "#7F9BAE"
         }
         exit_code_error {
-            base "#F97160"
+            base "#FF8373"
             background 0
             emphasis_0 "#F3BF45"
             emphasis_1 0
@@ -121,8 +121,8 @@ themes {
             player_3 "#ADB956"
             player_4 "#86AD95"
             player_5 "#7F9BAE"
-            player_6 "#E0956C"
-            player_7 "#F97160"
+            player_6 "#F4A87E"
+            player_7 "#FF8373"
             player_8 "#BFCB63"
             player_9 "#FFD36B"
             player_10 "#A5C9B0"

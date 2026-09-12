@@ -1,0 +1,12 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# Paris Carrelage for cava: gradient from the bottom of the screen to the top.
+[color]
+gradient = 1
+gradient_color_1 = '#218366'
+gradient_color_2 = '#517A3D'
+gradient_color_3 = '#817015'
+gradient_color_4 = '#896405'
+gradient_color_5 = '#7E5502'
+gradient_color_6 = '#794604'
+gradient_color_7 = '#803611'
+gradient_color_8 = '#88251E'

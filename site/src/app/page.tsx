@@ -6,30 +6,71 @@ import { FlavorCards } from "@/components/FlavorCards";
 import { Footer } from "@/components/Footer";
 import { HerdrDemo } from "@/components/HerdrDemo";
 import { Hero } from "@/components/Hero";
+import { LastStop } from "@/components/LastStop";
 import { Nav } from "@/components/Nav";
 import { Palette } from "@/components/Palette";
 import { PortGrid } from "@/components/PortGrid";
 import { Routes } from "@/components/Routes";
 import { Section } from "@/components/Section";
 import { Shag, type ShagPalette } from "@/components/Shag";
+import { Carrelage, type TilePalette } from "@/components/Carrelage";
+import { Weave, type WeavePalette } from "@/components/Weave";
 import { TerminalDemo } from "@/components/TerminalDemo";
 import { Workbench } from "@/components/Workbench";
 import { installCommand } from "@/lib/install";
 import { ports } from "@/lib/manifest";
 import { type FlavorId, flavors } from "@/lib/palette";
 import { ink } from "@/theme/ink.stylex";
+import { space } from "@/theme/space.stylex";
 
 const shag = Object.fromEntries(
   flavors.map((f) => {
     const c = f.colors;
+    const a = f.art;
     const palette: ShagPalette = {
       ground: c.mantle,
       fibers: [c.crust, c.mantle, c.base, c.surface0, c.surface1, c.surface2, c.overlay0],
-      threads: [c.orange, c.yellow, c.clay, c.red, c.green, c.orangeHi],
+      threads: [a.orange, a.yellow, a.clay, a.red, a.green, a.orange],
     };
     return [f.id, palette];
   }),
 ) as Record<FlavorId, ShagPalette>;
+
+const weave = Object.fromEntries(
+  flavors.map((f) => {
+    const c = f.colors;
+    const a = f.art;
+    const palette: WeavePalette = {
+      ground: c.mantle,
+      // The quiet field the motif is woven into, and the few threads that aren't.
+      warp: [c.surface0, c.base, c.surface1, c.crust, c.surface0, c.surface2],
+      motif: [a.red, a.denim, a.yellow, a.green, a.orange, a.sage],
+    };
+    return [f.id, palette];
+  }),
+) as Record<FlavorId, WeavePalette>;
+
+const tile = Object.fromEntries(
+  flavors.map((f) => {
+    const c = f.colors;
+    const a = f.art;
+    // Tile is the pale end of the ramp, and which end that is flips with the
+    // flavor: in a dark one the pale end is the text ramp, in a light one it is
+    // the paper. Reading the same roles in both is what made Carrelage's tiles
+    // come out near-black.
+    const faces = f.dark
+      ? [c.subtext1, c.subtext0, c.text, c.overlay2, c.subtext1, c.subtext0]
+      : [c.base, c.mantle, c.surface0, c.mantle, c.base, c.surface0];
+    const palette: TilePalette = {
+      // Grout is the recess behind the tiles, so it sits a step darker than they do.
+      grout: f.dark ? c.crust : c.surface1,
+      // Glazed tile is never one white: every face fired a little apart.
+      faces,
+      accents: [a.clay, a.green, a.yellow, a.denim, a.orange, a.sage],
+    };
+    return [f.id, palette];
+  }),
+) as Record<FlavorId, TilePalette>;
 
 export default function Home() {
   const count = ports().length;
@@ -38,15 +79,31 @@ export default function Home() {
       <Nav />
       <main id="main">
         <Hero count={count} />
-        <Shag palettes={shag} height={130} />
+        <div data-only="new-york">
+          <Shag palettes={shag} height={130} />
+        </div>
+        <div data-only="london">
+          <Weave palettes={weave} height={130} />
+        </div>
+        <div data-only="paris">
+          <Carrelage palettes={tile} height={130} />
+        </div>
         <div {...stylex.props(styles.sections)}>
           <Section
             id="flavors"
-            label="Three flavors"
+            label="Three cities, nine flavors"
             title="Pick a seat."
-            intro="Walnut is the original. Tunnel is the late local after midnight. Enamel is the same car in morning sun. Pick one and the whole site changes with you."
+            intro="Every flavor defines the same 26 roles, so a port written against roles works in all of them. New York rides warm, London rides cool and signal-lit, Paris rides dark iron and brass. Pick one and the whole site changes with you — type, texture and signage included."
           >
-            <FlavorCards flavors={flavors} />
+            <div data-only="new-york">
+              <FlavorCards flavors={flavors.filter((f) => f.family === "new-york")} />
+            </div>
+            <div data-only="london">
+              <FlavorCards flavors={flavors.filter((f) => f.family === "london")} />
+            </div>
+            <div data-only="paris">
+              <FlavorCards flavors={flavors.filter((f) => f.family === "paris")} />
+            </div>
           </Section>
 
           <Section
@@ -70,8 +127,8 @@ export default function Home() {
           <Section
             id="palette"
             label="The palette"
-            title="Brown, cream, and the good stuff."
-            intro="A brown ground, a cream text ramp, and seven accents. Blue is faded denim and only marks links; magenta got reassigned to burnt orange. Pick a chip to copy it."
+            title="Nine grounds, four texts, thirteen accents."
+            intro="The same 26 slots in all three cities. New York fills them warm — blue faded to denim, magenta reassigned to burnt orange. London fills them from its signage: brick, the platform-edge yellow, Corporate Blue and the standard red. Paris fills them from cast iron and the map: brass, ochre, pistachio, and the line colors. Pick a chip to copy it."
           >
             <Palette />
             <Routes />
@@ -90,7 +147,7 @@ export default function Home() {
             id="terminal"
             label="In the terminal"
             title="Ghostty, fish and friends."
-            intro="The 16 ANSI colors are chosen so terminal tools land in the palette too: magenta is burnt orange, blue is denim, cyan is seafoam. Starship's segments become a 70s stripe."
+            intro="The 16 ANSI colors are chosen so terminal tools land in the palette too, and each city reassigns the ones it has no use for: New York turns magenta into burnt orange and cyan into seafoam tile, London keeps blue for Corporate Blue alone, Paris puts brass where yellow goes. Starship's segments become a stripe of four."
           >
             <div {...stylex.props(styles.stack)}>
               <TerminalDemo />
@@ -106,11 +163,12 @@ export default function Home() {
             id="ports"
             label="Ports"
             title={`${count} ports and counting.`}
-            intro="Every port is generated from the same palette, in all three flavors, with install steps and the full file to copy."
+            intro="Every port is generated from the same palette, in all six flavors, with install steps and the full file to copy. Not one of them knows which city it's in."
           >
             <PortGrid />
           </Section>
         </div>
+        <LastStop />
       </main>
       <Footer />
     </>
@@ -119,8 +177,8 @@ export default function Home() {
 
 const styles = stylex.create({
   sections: {
-    maxWidth: 1200,
-    paddingInline: 24,
+    maxWidth: space.measure,
+    paddingInline: space.gutter,
     marginInline: "auto",
   },
   install: { display: "grid", gridTemplateColumns: "minmax(0, 1fr)", gap: 14, maxWidth: 860 },

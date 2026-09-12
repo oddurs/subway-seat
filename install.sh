@@ -34,13 +34,13 @@ Subway Seat installer
 usage: sh install.sh [command] [options]
 
   install            link themes into the apps you have (the default)
-  switch <flavor>    re-point everything at walnut, tunnel, enamel or auto
+  switch <flavor>    re-point everything at another flavor, or auto
   status             what's installed, what drifted, what's left by hand
   uninstall          remove everything the installer placed
   list               every port, and whether it's on this machine
 
-  --flavor <name>    walnut, tunnel, enamel or auto (follow the OS where the
-                     app can); default: your saved flavor, else walnut
+  --flavor <name>    a flavor id, or auto (follow the OS where the app can);
+                     `list` shows them; default: your saved flavor
   --only <ids>       only these ports (comma-separated ids from `list`)
   --skip <ids>       never these ports (takes them out if installed)
   --all              every port with a file to place, even if not detected
@@ -94,14 +94,13 @@ parse_args() {
     install | status | uninstall | list) ;;
     switch)
       TO=${TO:-$FLAVOR}
-      [ -n "$TO" ] || die "switch needs a flavor: walnut, tunnel, enamel or auto"
+      [ -n "$TO" ] || die "switch needs a flavor name, or auto (see \`$SELF list --flavors\`)"
       FLAVOR=$TO ;;
     *) die "unknown command '$CMD' (try --help)" ;;
   esac
-  case ${FLAVOR:-walnut} in
-    walnut | tunnel | enamel | auto) ;;
-    *) die "unknown flavor '$FLAVOR': pick walnut, tunnel, enamel or auto" ;;
-  esac
+  # The table isn't downloaded yet, so only the shape is checked here; the name
+  # is checked against install.tsv in settings(), once the table is readable.
+  case $FLAVOR in *[!a-z0-9-]*) die "a flavor is a name like walnut or london-moquette" ;; esac
   case $ONLY$SKIP in *[!a-z0-9,-]*) die "--only and --skip take port ids, like ghostty,vim" ;; esac
   case $REF in *[!A-Za-z0-9._/-]*) die "--ref takes a tag or branch name" ;; esac
 }
@@ -250,8 +249,14 @@ load_settings() {
   fi
   [ -n "$HAS_ONLY" ] || ONLY=$C_ONLY
   [ -n "$HAS_SKIP" ] || SKIP=$C_SKIP
-  FLAVOR=${FLAVOR:-${C_FLAVOR:-${S_FLAVOR:-walnut}}}
-  case $FLAVOR in walnut | tunnel | enamel | auto) ;; *) FLAVOR=walnut ;; esac
+  load_flavors
+  # An explicit --flavor that isn't in the table is a mistake worth stopping for;
+  # a stale one in the config or state file just falls back.
+  if [ -n "$FLAVOR" ] && ! known_flavor "$FLAVOR"; then
+    die "unknown flavor '$FLAVOR'; \`$SELF list\` shows them"
+  fi
+  FLAVOR=${FLAVOR:-${C_FLAVOR:-${S_FLAVOR:-${FLAVOR_IDS%% *}}}}
+  known_flavor "$FLAVOR" || FLAVOR=${FLAVOR_IDS%% *}
   if [ -z "$COPY" ]; then
     if [ -n "$S_MODE" ]; then [ "$S_MODE" = copy ] && COPY=1
     elif [ -n "$ROOT" ] && [ ! -e "$ROOT/.git" ]; then COPY=1
@@ -266,13 +271,61 @@ load_settings() {
   fi
 }
 
+# ── The flavors, read from install.tsv ──────────────────────────────────────
+# Nothing here names a flavor or a family: the table is the list, so adding a
+# city to palette.py costs this script nothing.
+FLAVOR_ROWS='' FLAVOR_IDS='' FAMILY_IDS=''
+
+load_flavors() {
+  [ -z "$FLAVOR_ROWS" ] || return 0
+  [ -n "$TSV" ] && [ -f "$TSV" ] || return 0
+  while IFS="$TAB" read -r kind a b c d e; do
+    case $kind in
+      family) FAMILY_IDS="$FAMILY_IDS$a " ;;
+      flavor)
+        FLAVOR_ROWS="$FLAVOR_ROWS$a$TAB$b$TAB$c$TAB$d$TAB$e$NL"
+        FLAVOR_IDS="$FLAVOR_IDS$a " ;;
+      port) break ;;
+    esac
+  done <"$TSV"
+}
+
+# field <n> of the flavor row for <id>, into $R.
+flavor_field() {
+  R=''
+  load_flavors
+  R=$(printf '%s' "$FLAVOR_ROWS" | awk -F"$TAB" -v id="$1" -v n="$2" '$1 == id { print $n; exit }')
+}
+
 flavor_name() {
-  case $1 in
-    walnut) R=Walnut ;;
-    tunnel) R=Tunnel ;;
-    enamel) R=Enamel ;;
-    *) R="light and dark (auto)" ;;
-  esac
+  flavor_field "$1" 2
+  [ -n "$R" ] || R="light and dark (auto)"
+}
+
+# The dark default, or the light flavor, of one family, into $R.
+family_flavor() {
+  load_flavors
+  R=$(printf '%s' "$FLAVOR_ROWS" | awk -F"$TAB" -v fam="$1" -v want="$2" '$5 == fam && $4 == want { print $1; exit }')
+}
+
+# The family a flavor belongs to, else the first family in the table.
+family_of() {
+  flavor_field "$1" 5
+  [ -n "$R" ] || R=${FAMILY_IDS%% *}
+}
+
+# `auto` follows the OS inside one family; which one comes from the flavor you
+# already ride, else the first city in the table.
+auto_base() {
+  family_of "${S_FLAVOR:-}"
+  family_flavor "$R" dark
+}
+
+known_flavor() {
+  load_flavors
+  [ "$1" = auto ] && return 0
+  case " $FLAVOR_IDS" in *" $1 "*) return 0 ;; esac
+  return 1
 }
 
 # ── Colors: the palette's own accents, when there's a terminal to paint ─────
@@ -285,8 +338,8 @@ colors() {
   GOLD="${E}[33m" ORANGE="${E}[35m" GREEN="${E}[32m" RED="${E}[91m"
   case ${COLORTERM:-} in truecolor | 24bit) ;; *) return 0 ;; esac
   [ -n "$TSV" ] && [ -f "$TSV" ] || return 0
-  paint=walnut
-  [ "$FLAVOR" = enamel ] && paint=enamel
+  paint=$FLAVOR
+  if [ "$paint" = auto ]; then auto_base; paint=$R; fi
   while IFS="$TAB" read -r kind fl role hex; do
     [ "$kind" = port ] && break
     if [ "$kind" != color ] || [ "$fl" != "$paint" ]; then continue; fi
@@ -365,8 +418,8 @@ function step(text, file,   k) {
 function flush(   F, base, i, j, shared, used, placed, code, file, where, lang, sh, dest, bat) {
   if (pid == "" || !sel) return
   F = flavor
-  if (F == "auto" && !has_auto) F = "walnut"
-  base = F == "auto" ? "walnut" : F
+  if (F == "auto" && !has_auto) F = base_flavor
+  base = F == "auto" ? base_flavor : F
   print "app\t" pid "\t" pname "\t" pcat "\t" preq
   if (pid == "claude-code") { print "run\t" pid "\tclaude"; clear(); return }
   split("", used); split("", placed)
@@ -413,6 +466,7 @@ function flush(   F, base, i, j, shared, used, placed, code, file, where, lang, 
 }
 BEGIN {
   FS = "\t"; HOME = ENVIRON["HOME"]; flavor = ENVIRON["SS_FLAVOR"]; targets = ENVIRON["SS_TARGETS"]
+  base_flavor = ENVIRON["SS_BASE"]
   noenable = ENVIRON["SS_NOENABLE"] == 1; fishok = ENVIRON["SS_FISH"] == 1; shell = ENVIRON["SS_SHELL"]
   XC = ENVIRON["XDG_CONFIG_HOME"]; if (XC == "") XC = HOME "/.config"
   XD = ENVIRON["XDG_DATA_HOME"]; if (XD == "") XD = HOME "/.local/share"
@@ -431,7 +485,9 @@ END { flush() }
 plan() {
   fish=0
   has fish && fish=1
-  SS_FLAVOR=$1 SS_TARGETS=$2 SS_NOENABLE=$NOENABLE SS_FISH=$fish SS_SHELL=${SUBWAY_SEAT_SHELL:-${SHELL##*/}} \
+  ss_base=$1
+  if [ "$ss_base" = auto ]; then auto_base; ss_base=$R; fi
+  SS_FLAVOR=$1 SS_BASE=$ss_base SS_TARGETS=$2 SS_NOENABLE=$NOENABLE SS_FISH=$fish SS_SHELL=${SUBWAY_SEAT_SHELL:-${SHELL##*/}} \
     awk "$UNESC_AWK$PLAN_AWK" "$TSV"
 }
 
@@ -1223,6 +1279,13 @@ cmd_uninstall() {
 
 cmd_list() {
   need_tsv
+  load_flavors
+  printf '%sFlavors%s\n' "$B" "$O"
+  printf '%s' "$FLAVOR_ROWS" | while IFS="$TAB" read -r id name _ mode fam; do
+    [ -n "$id" ] || continue
+    printf '  %-24s %-24s %s%s · %s%s\n' "$name" "$id" "$D" "$fam" "$mode" "$O"
+  done
+  printf '  %-24s %-24s %s%s\n\n' "Follow the OS" "auto" "$D" "light and dark, where the app can$O"
   detect_all
   plan "$FLAVOR" '*' >"$T/plan"
   DET=$DETECTED INST=$S_APPS B=$B D=$D O=$O GREEN=$GREEN GOLD=$GOLD awk -F'\t' '

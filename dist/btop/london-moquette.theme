@@ -1,0 +1,96 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# London Moquette for btop.
+
+# Main background, empty for terminal default
+theme[main_bg]="#1E2941"
+
+# Main text color
+theme[main_fg]="#D8DEEA"
+
+# Title color for boxes
+theme[title]="#E9EDF5"
+
+# Highlight color for keyboard shortcuts
+theme[hi_fg]="#DE8946"
+
+# Background of the selected item in the processes box
+theme[selected_bg]="#303F61"
+
+# Foreground of the selected item in the processes box
+theme[selected_fg]="#FFD36C"
+
+# Inactive or disabled text
+theme[inactive_fg]="#576685"
+
+# Text drawn over graphs: uptime, network graph scale
+theme[graph_text]="#A9B2C4"
+
+# Background of the percentage meters
+theme[meter_bg]="#303F61"
+
+# Mini cpu graphs, detailed memory graph and status text in the processes box
+theme[proc_misc]="#54B4B5"
+
+# Box outlines
+theme[cpu_box]="#DE8946"
+theme[mem_box]="#F2C03F"
+theme[net_box]="#77C581"
+theme[proc_box]="#AE9EDC"
+
+# Box dividers and small box outlines
+theme[div_line]="#3D4F72"
+
+# Temperature graph
+theme[temp_start]="#77C581"
+theme[temp_mid]="#E8A442"
+theme[temp_end]="#DB6052"
+
+# CPU graph
+theme[cpu_start]="#77C581"
+theme[cpu_mid]="#E8A442"
+theme[cpu_end]="#DB6052"
+
+# Mem/disk free meter
+theme[free_start]="#4F7F64"
+theme[free_mid]="#77C581"
+theme[free_end]="#9AD2A0"
+
+# Mem/disk cached meter
+theme[cached_start]="#4E6495"
+theme[cached_mid]="#7595DA"
+theme[cached_end]="#8BB0FF"
+
+# Mem/disk available meter
+theme[available_start]="#937C40"
+theme[available_mid]="#F2C03F"
+theme[available_end]="#FFD36C"
+
+# Mem/disk used meter
+theme[used_start]="#DE8946"
+theme[used_mid]="#DB6052"
+theme[used_end]="#FE8474"
+
+# Download graph
+theme[download_start]="#4F7F64"
+theme[download_mid]="#77C581"
+theme[download_end]="#F2C03F"
+
+# Upload graph
+theme[upload_start]="#885E44"
+theme[upload_mid]="#DE8946"
+theme[upload_end]="#FE8474"
+
+# Process box gradient for threads, memory and cpu usage
+theme[process_start]="#77C581"
+theme[process_mid]="#E8A442"
+theme[process_end]="#DB6052"
+
+# Banners over the process list while it is paused or following a process
+theme[proc_pause_bg]="#DB6052"
+theme[proc_follow_bg]="#54B4B5"
+theme[proc_banner_bg]="#DE8946"
+theme[proc_banner_fg]="#121826"
+
+# The process being followed
+theme[followed_bg]="#54B4B5"
+theme[followed_fg]="#121826"

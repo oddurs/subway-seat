@@ -2,6 +2,7 @@ import * as stylex from "@stylexjs/stylex";
 import type { ReactNode } from "react";
 import { ink } from "@/theme/ink.stylex";
 import { color } from "@/theme/tokens.stylex";
+import { space } from "@/theme/space.stylex";
 import { font } from "@/theme/type.stylex";
 
 const slug = (s: string) =>
@@ -53,33 +54,33 @@ const styles = stylex.create({
   section: {
     display: "grid",
     gridTemplateColumns: "minmax(0, 1fr)",
-    gap: 26,
-    paddingTop: 88,
+    gap: space.heading,
+    paddingTop: space.section,
     scrollMarginTop: 24,
   },
   head: { display: "grid", gap: 10 },
   label: {
-    fontSize: 13,
-    fontWeight: 600,
+    fontSize: font.sizeLabel,
+    fontWeight: 700,
     color: ink.accent,
     textTransform: "uppercase",
-    letterSpacing: "0.16em",
+    letterSpacing: font.trackLabel,
   },
   title: {
     maxWidth: "20ch",
     fontFamily: font.display,
-    fontSize: "clamp(32px, 4.4vw, 52px)",
-    fontVariationSettings: '"SOFT" 100, "WONK" 1',
-    fontWeight: 750,
-    lineHeight: 1.04,
+    fontSize: font.sizeTitle,
+    fontVariationSettings: font.axesTitle,
+    fontWeight: font.weightTitle,
+    lineHeight: font.leadTitle,
     color: color.textHi,
-    letterSpacing: "-0.015em",
+    letterSpacing: font.trackTitle,
     textWrap: "balance",
   },
   intro: {
     maxWidth: "62ch",
-    fontSize: 17,
-    lineHeight: 1.6,
+    fontSize: font.sizeLede,
+    lineHeight: font.leadLede,
     color: color.subtext0,
     textWrap: "pretty",
   },

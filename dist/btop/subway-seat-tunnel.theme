@@ -35,7 +35,7 @@ theme[proc_misc]="#86AD95"
 theme[cpu_box]="#EC7F31"
 theme[mem_box]="#F3BF45"
 theme[net_box]="#ADB956"
-theme[proc_box]="#E0956C"
+theme[proc_box]="#F4A87E"
 
 # Box dividers and small box outlines
 theme[div_line]="#4F3927"
@@ -68,7 +68,7 @@ theme[available_end]="#FFD36B"
 # Mem/disk used meter
 theme[used_start]="#EC7F31"
 theme[used_mid]="#E05C45"
-theme[used_end]="#F97160"
+theme[used_end]="#FF8373"
 
 # Download graph
 theme[download_start]="#6F7136"
@@ -78,7 +78,7 @@ theme[download_end]="#F3BF45"
 # Upload graph
 theme[upload_start]="#925121"
 theme[upload_mid]="#EC7F31"
-theme[upload_end]="#F97160"
+theme[upload_end]="#FF8373"
 
 # Process box gradient for threads, memory and cpu usage
 theme[process_start]="#ADB956"

@@ -103,7 +103,7 @@ const styles = stylex.create({
     borderColor: color.surface0,
     borderStyle: "solid",
     borderWidth: 1,
-    borderRadius: 10,
+    borderRadius: "var(--radius-card)",
   },
   scroll: { maxHeight: "26rem" },
   fade: {

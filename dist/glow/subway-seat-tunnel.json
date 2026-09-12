@@ -104,14 +104,14 @@
       },
       "error": {
         "color": "#140D07",
-        "background_color": "#F97160"
+        "background_color": "#FF8373"
       },
       "comment": {
         "color": "#917759",
         "italic": true
       },
       "comment_preproc": {
-        "color": "#E0956C",
+        "color": "#F4A87E",
         "italic": true
       },
       "keyword": {
@@ -151,10 +151,10 @@
         "color": "#86AD95"
       },
       "name_constant": {
-        "color": "#F97160"
+        "color": "#FF8373"
       },
       "name_decorator": {
-        "color": "#E0956C",
+        "color": "#F4A87E",
         "italic": true
       },
       "name_exception": {
@@ -167,22 +167,22 @@
         "color": "#E9D8B6"
       },
       "literal": {
-        "color": "#F97160"
+        "color": "#FF8373"
       },
       "literal_number": {
-        "color": "#F97160"
+        "color": "#FF8373"
       },
       "literal_date": {
-        "color": "#F97160"
+        "color": "#FF8373"
       },
       "literal_string": {
         "color": "#ADB956"
       },
       "literal_string_escape": {
-        "color": "#E0956C"
+        "color": "#F4A87E"
       },
       "generic_deleted": {
-        "color": "#F97160"
+        "color": "#FF8373"
       },
       "generic_emph": {
         "color": "#E9D8B6",

@@ -1,0 +1,21 @@
+{
+  "author": "Oddur Sigurdsson",
+  "authorUsername": "oddurs",
+  "version": "1",
+  "name": "Paris Guimard",
+  "appearance": "dark",
+  "colors": {
+    "background": "#1E2E26",
+    "backgroundSecondary": "#18241D",
+    "text": "#D9E1DB",
+    "selection": "#CA9245",
+    "loader": "#F1BF4B",
+    "red": "#E7877B",
+    "orange": "#CA9245",
+    "yellow": "#F1BF4B",
+    "green": "#70CAA9",
+    "blue": "#709BC8",
+    "purple": "#FAB49C",
+    "magenta": "#DFAA61"
+  }
+}

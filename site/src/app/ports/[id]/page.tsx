@@ -23,9 +23,10 @@ import {
   ports,
   setupFor,
 } from "@/lib/manifest";
-import { type FlavorId, flavorById, flavors, roleNames, roles, shortName } from "@/lib/palette";
+import { type FlavorId, flavorById, flavors, roleName, roles, shortName } from "@/lib/palette";
 import { pageMeta, REPO, summary } from "@/lib/seo";
 import { ink } from "@/theme/ink.stylex";
+import { space } from "@/theme/space.stylex";
 import { color } from "@/theme/tokens.stylex";
 import { font } from "@/theme/type.stylex";
 
@@ -106,7 +107,7 @@ function Inside({ flavor, terminal }: { flavor: FlavorId; terminal: boolean }) {
         <span
           // biome-ignore lint/suspicious/noArrayIndexKey: ANSI slots repeat roles
           key={i}
-          title={`${terminal ? `${i} ` : ""}${roleNames[role] ?? role} ${f.colors[role]}`}
+          title={`${terminal ? `${i} ` : ""}${roleName(f.id, role)} ${f.colors[role]}`}
           {...stylex.props(styles.insideChip, styles.fill(f.colors[role]))}
         />
       ))}
@@ -331,7 +332,12 @@ export default async function PortPage({ params }: PageProps<"/ports/[id]">) {
 }
 
 const styles = stylex.create({
-  main: { maxWidth: 1200, paddingInline: 24, paddingTop: 40, marginInline: "auto" },
+  main: {
+    maxWidth: space.measure,
+    paddingInline: space.gutter,
+    paddingTop: 40,
+    marginInline: "auto",
+  },
   column: {
     display: "grid",
     gridTemplateColumns: "minmax(0, 1fr)",
@@ -453,11 +459,11 @@ const styles = stylex.create({
     borderColor: color.surface0,
     borderStyle: "solid",
     borderWidth: 1,
-    borderRadius: 10,
+    borderRadius: "var(--radius-card)",
   },
   insideChip: {
     height: 26,
-    borderRadius: 6,
+    borderRadius: "var(--radius-card)",
     boxShadow: `inset 0 0 0 1px color-mix(in srgb, ${color.text} 12%, transparent)`,
   },
   fill: (bg: string) => ({ backgroundColor: bg }),
@@ -469,6 +475,6 @@ const styles = stylex.create({
     borderColor: color.surface0,
     borderStyle: "solid",
     borderWidth: 1,
-    borderRadius: 10,
+    borderRadius: "var(--radius-card)",
   },
 });

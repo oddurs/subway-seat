@@ -19,6 +19,12 @@ The [installer](../../docs/INSTALL.md) shows its plan and asks once. Add `--flav
 | Subway Seat | [`subway-seat.toml`](subway-seat.toml) | add to the end of `~/.config/herdr/config.toml` |
 | Subway Seat Tunnel | [`subway-seat-tunnel.toml`](subway-seat-tunnel.toml) | add to the end of `~/.config/herdr/config.toml` |
 | Subway Seat Enamel | [`subway-seat-enamel.toml`](subway-seat-enamel.toml) | add to the end of `~/.config/herdr/config.toml` |
+| London Moquette | [`london-moquette.toml`](london-moquette.toml) | add to the end of `~/.config/herdr/config.toml` |
+| London Deep Level | [`london-deep-level.toml`](london-deep-level.toml) | add to the end of `~/.config/herdr/config.toml` |
+| London Portland | [`london-portland.toml`](london-portland.toml) | add to the end of `~/.config/herdr/config.toml` |
+| Paris Guimard | [`paris-guimard.toml`](paris-guimard.toml) | add to the end of `~/.config/herdr/config.toml` |
+| Paris Catacombes | [`paris-catacombes.toml`](paris-catacombes.toml) | add to the end of `~/.config/herdr/config.toml` |
+| Paris Carrelage | [`paris-carrelage.toml`](paris-carrelage.toml) | add to the end of `~/.config/herdr/config.toml` |
 | All three | [`auto.toml`](auto.toml) | add to the end of `~/.config/herdr/config.toml` |
 
 ## Turn it on

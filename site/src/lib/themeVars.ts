@@ -5,8 +5,8 @@ import { type FlavorId, flavorById, flavors } from "./palette";
 
 /**
  * CSS custom properties read from a generated theme file, one block per flavor,
- * so a mock shows exactly the colors the port installs. `.walnut` rules are the
- * default; Tunnel and Enamel override under html[data-flavor].
+ * so a mock shows exactly the colors the port installs. The first flavor is the
+ * default; every other one overrides under html[data-flavor].
  */
 export function flavorVars(scope: string, read: (id: FlavorId) => Record<string, string>) {
   return flavors
@@ -14,7 +14,8 @@ export function flavorVars(scope: string, read: (id: FlavorId) => Record<string,
       const vars = Object.entries(read(f.id))
         .map(([k, v]) => `--${k}:${v};`)
         .join("");
-      const sel = f.id === "walnut" ? scope : `html[data-flavor="${f.id}"] ${scope}`;
+      // The first flavor is the bare rule; the rest override under html[data-flavor].
+      const sel = f.id === flavors[0].id ? scope : `html[data-flavor="${f.id}"] ${scope}`;
       return `${sel}{${vars}}`;
     })
     .join("");

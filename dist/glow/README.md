@@ -19,6 +19,12 @@ The [installer](../../docs/INSTALL.md) shows its plan and asks once. Add `--flav
 | Subway Seat | [`subway-seat.json`](subway-seat.json) | `~/.config/glamour/subway-seat.json` |
 | Subway Seat Tunnel | [`subway-seat-tunnel.json`](subway-seat-tunnel.json) | `~/.config/glamour/subway-seat-tunnel.json` |
 | Subway Seat Enamel | [`subway-seat-enamel.json`](subway-seat-enamel.json) | `~/.config/glamour/subway-seat-enamel.json` |
+| London Moquette | [`london-moquette.json`](london-moquette.json) | `~/.config/glamour/london-moquette.json` |
+| London Deep Level | [`london-deep-level.json`](london-deep-level.json) | `~/.config/glamour/london-deep-level.json` |
+| London Portland | [`london-portland.json`](london-portland.json) | `~/.config/glamour/london-portland.json` |
+| Paris Guimard | [`paris-guimard.json`](paris-guimard.json) | `~/.config/glamour/paris-guimard.json` |
+| Paris Catacombes | [`paris-catacombes.json`](paris-catacombes.json) | `~/.config/glamour/paris-catacombes.json` |
+| Paris Carrelage | [`paris-carrelage.json`](paris-carrelage.json) | `~/.config/glamour/paris-carrelage.json` |
 
 ## Turn it on
 
@@ -64,11 +70,101 @@ alias glow='glow -s ~/.config/glamour/subway-seat-enamel.json'
 export GLAMOUR_STYLE="$HOME/.config/glamour/subway-seat-enamel.json"   # gh and other Glamour apps
 ```
 
+**London Moquette**, in config.fish (bash and zsh: ~/.bashrc or ~/.zshrc). Glow ignores GLAMOUR_STYLE, hence the alias; `style:` in glow.yml works too if you give it the full path, without `~`:
+
+```fish
+alias glow 'glow -s ~/.config/glamour/london-moquette.json'
+set -gx GLAMOUR_STYLE ~/.config/glamour/london-moquette.json   # gh and other Glamour apps
+```
+
+In bash or zsh:
+
+```sh
+alias glow='glow -s ~/.config/glamour/london-moquette.json'
+export GLAMOUR_STYLE="$HOME/.config/glamour/london-moquette.json"   # gh and other Glamour apps
+```
+
+**London Deep Level**, in config.fish (bash and zsh: ~/.bashrc or ~/.zshrc). Glow ignores GLAMOUR_STYLE, hence the alias; `style:` in glow.yml works too if you give it the full path, without `~`:
+
+```fish
+alias glow 'glow -s ~/.config/glamour/london-deep-level.json'
+set -gx GLAMOUR_STYLE ~/.config/glamour/london-deep-level.json   # gh and other Glamour apps
+```
+
+In bash or zsh:
+
+```sh
+alias glow='glow -s ~/.config/glamour/london-deep-level.json'
+export GLAMOUR_STYLE="$HOME/.config/glamour/london-deep-level.json"   # gh and other Glamour apps
+```
+
+**London Portland**, in config.fish (bash and zsh: ~/.bashrc or ~/.zshrc). Glow ignores GLAMOUR_STYLE, hence the alias; `style:` in glow.yml works too if you give it the full path, without `~`:
+
+```fish
+alias glow 'glow -s ~/.config/glamour/london-portland.json'
+set -gx GLAMOUR_STYLE ~/.config/glamour/london-portland.json   # gh and other Glamour apps
+```
+
+In bash or zsh:
+
+```sh
+alias glow='glow -s ~/.config/glamour/london-portland.json'
+export GLAMOUR_STYLE="$HOME/.config/glamour/london-portland.json"   # gh and other Glamour apps
+```
+
+**Paris Guimard**, in config.fish (bash and zsh: ~/.bashrc or ~/.zshrc). Glow ignores GLAMOUR_STYLE, hence the alias; `style:` in glow.yml works too if you give it the full path, without `~`:
+
+```fish
+alias glow 'glow -s ~/.config/glamour/paris-guimard.json'
+set -gx GLAMOUR_STYLE ~/.config/glamour/paris-guimard.json   # gh and other Glamour apps
+```
+
+In bash or zsh:
+
+```sh
+alias glow='glow -s ~/.config/glamour/paris-guimard.json'
+export GLAMOUR_STYLE="$HOME/.config/glamour/paris-guimard.json"   # gh and other Glamour apps
+```
+
+**Paris Catacombes**, in config.fish (bash and zsh: ~/.bashrc or ~/.zshrc). Glow ignores GLAMOUR_STYLE, hence the alias; `style:` in glow.yml works too if you give it the full path, without `~`:
+
+```fish
+alias glow 'glow -s ~/.config/glamour/paris-catacombes.json'
+set -gx GLAMOUR_STYLE ~/.config/glamour/paris-catacombes.json   # gh and other Glamour apps
+```
+
+In bash or zsh:
+
+```sh
+alias glow='glow -s ~/.config/glamour/paris-catacombes.json'
+export GLAMOUR_STYLE="$HOME/.config/glamour/paris-catacombes.json"   # gh and other Glamour apps
+```
+
+**Paris Carrelage**, in config.fish (bash and zsh: ~/.bashrc or ~/.zshrc). Glow ignores GLAMOUR_STYLE, hence the alias; `style:` in glow.yml works too if you give it the full path, without `~`:
+
+```fish
+alias glow 'glow -s ~/.config/glamour/paris-carrelage.json'
+set -gx GLAMOUR_STYLE ~/.config/glamour/paris-carrelage.json   # gh and other Glamour apps
+```
+
+In bash or zsh:
+
+```sh
+alias glow='glow -s ~/.config/glamour/paris-carrelage.json'
+export GLAMOUR_STYLE="$HOME/.config/glamour/paris-carrelage.json"   # gh and other Glamour apps
+```
+
 ## Uninstall
 
 - Delete `~/.config/glamour/subway-seat.json`.
 - Delete `~/.config/glamour/subway-seat-tunnel.json`.
 - Delete `~/.config/glamour/subway-seat-enamel.json`.
+- Delete `~/.config/glamour/london-moquette.json`.
+- Delete `~/.config/glamour/london-deep-level.json`.
+- Delete `~/.config/glamour/london-portland.json`.
+- Delete `~/.config/glamour/paris-guimard.json`.
+- Delete `~/.config/glamour/paris-catacombes.json`.
+- Delete `~/.config/glamour/paris-carrelage.json`.
 - Remove the line you added to turn it on.
 
 Generated by `build.py` from `palette.py` (v0.3.0). Edit the port in `ports/`, not these files.

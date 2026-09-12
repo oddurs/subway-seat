@@ -1,0 +1,31 @@
+GIMP Palette
+Name: London Deep Level
+Columns: 13
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# Below the cut-and-cover lines. The ground drops; the signals don't.
+ 10  14  24	Blackout (crust)
+ 13  20  33	Espresso (mantle)
+ 18  26  45	Paneling (base)
+ 26  36  58	Coppertone (surface0)
+ 35  47  73	Saddle (surface1)
+ 48  62  91	Corduroy (surface2)
+ 83  97 125	Pecan (overlay0)
+111 124 151	Cardboard (overlay1)
+139 150 172	Burlap (overlay2)
+165 174 192	Khaki (subtext0)
+190 198 213	Almond (subtext1)
+212 218 231	Parchment (text)
+231 235 243	Ivory (text_hi)
+242 192  63	Harvest gold (yellow)
+255 211 108	Broadway yellow (yellow_hi)
+222 137  70	Burnt orange (orange)
+229 170 127	Sixth Avenue (orange_hi)
+219  96  82	Redbird (red)
+254 132 116	Redbird bright (red_hi)
+119 197 129	Avocado (green)
+154 210 160	Avocado bright (green_hi)
+ 84 180 181	Seafoam tile (sage)
+114 209 211	Seafoam bright (sage_hi)
+117 149 218	Faded denim (denim)
+139 176 255	Denim bright (denim_hi)
+174 158 220	Terracotta (clay)

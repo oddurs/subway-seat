@@ -1,0 +1,21 @@
+{
+  "author": "Oddur Sigurdsson",
+  "authorUsername": "oddurs",
+  "version": "1",
+  "name": "London Portland",
+  "appearance": "light",
+  "colors": {
+    "background": "#E8F0FF",
+    "backgroundSecondary": "#DCE5F7",
+    "text": "#293040",
+    "selection": "#A54300",
+    "loader": "#8D6C08",
+    "red": "#9B211A",
+    "orange": "#A54300",
+    "yellow": "#8D6C08",
+    "green": "#0D8131",
+    "blue": "#0019A8",
+    "purple": "#755FA9",
+    "magenta": "#AC5A00"
+  }
+}

@@ -19,6 +19,12 @@ The [installer](../../docs/INSTALL.md) shows its plan and asks once. Add `--flav
 | Subway Seat | [`subway-seat.gitconfig`](subway-seat.gitconfig) | `~/.config/delta/subway-seat.gitconfig` |
 | Subway Seat Tunnel | [`subway-seat-tunnel.gitconfig`](subway-seat-tunnel.gitconfig) | `~/.config/delta/subway-seat-tunnel.gitconfig` |
 | Subway Seat Enamel | [`subway-seat-enamel.gitconfig`](subway-seat-enamel.gitconfig) | `~/.config/delta/subway-seat-enamel.gitconfig` |
+| London Moquette | [`london-moquette.gitconfig`](london-moquette.gitconfig) | `~/.config/delta/london-moquette.gitconfig` |
+| London Deep Level | [`london-deep-level.gitconfig`](london-deep-level.gitconfig) | `~/.config/delta/london-deep-level.gitconfig` |
+| London Portland | [`london-portland.gitconfig`](london-portland.gitconfig) | `~/.config/delta/london-portland.gitconfig` |
+| Paris Guimard | [`paris-guimard.gitconfig`](paris-guimard.gitconfig) | `~/.config/delta/paris-guimard.gitconfig` |
+| Paris Catacombes | [`paris-catacombes.gitconfig`](paris-catacombes.gitconfig) | `~/.config/delta/paris-catacombes.gitconfig` |
+| Paris Carrelage | [`paris-carrelage.gitconfig`](paris-carrelage.gitconfig) | `~/.config/delta/paris-carrelage.gitconfig` |
 | All three | [`themes.gitconfig`](themes.gitconfig) | `~/.config/delta/subway-seat-flavors.gitconfig` |
 
 ## Turn it on
@@ -50,11 +56,71 @@ The [installer](../../docs/INSTALL.md) shows its plan and asks once. Add `--flav
 	features = subway-seat-enamel
 ```
 
+**London Moquette**, in ~/.gitconfig or ~/.config/git/config, with delta already set as your pager. If you have a `features` line, add the flavor to it instead:
+
+```ini
+[include]
+	path = ~/.config/delta/london-moquette.gitconfig
+[delta]
+	features = london-moquette
+```
+
+**London Deep Level**, in ~/.gitconfig or ~/.config/git/config, with delta already set as your pager. If you have a `features` line, add the flavor to it instead:
+
+```ini
+[include]
+	path = ~/.config/delta/london-deep-level.gitconfig
+[delta]
+	features = london-deep-level
+```
+
+**London Portland**, in ~/.gitconfig or ~/.config/git/config, with delta already set as your pager. If you have a `features` line, add the flavor to it instead:
+
+```ini
+[include]
+	path = ~/.config/delta/london-portland.gitconfig
+[delta]
+	features = london-portland
+```
+
+**Paris Guimard**, in ~/.gitconfig or ~/.config/git/config, with delta already set as your pager. If you have a `features` line, add the flavor to it instead:
+
+```ini
+[include]
+	path = ~/.config/delta/paris-guimard.gitconfig
+[delta]
+	features = paris-guimard
+```
+
+**Paris Catacombes**, in ~/.gitconfig or ~/.config/git/config, with delta already set as your pager. If you have a `features` line, add the flavor to it instead:
+
+```ini
+[include]
+	path = ~/.config/delta/paris-catacombes.gitconfig
+[delta]
+	features = paris-catacombes
+```
+
+**Paris Carrelage**, in ~/.gitconfig or ~/.config/git/config, with delta already set as your pager. If you have a `features` line, add the flavor to it instead:
+
+```ini
+[include]
+	path = ~/.config/delta/paris-carrelage.gitconfig
+[delta]
+	features = paris-carrelage
+```
+
 ## Uninstall
 
 - Delete `~/.config/delta/subway-seat.gitconfig`.
 - Delete `~/.config/delta/subway-seat-tunnel.gitconfig`.
 - Delete `~/.config/delta/subway-seat-enamel.gitconfig`.
+- Delete `~/.config/delta/london-moquette.gitconfig`.
+- Delete `~/.config/delta/london-deep-level.gitconfig`.
+- Delete `~/.config/delta/london-portland.gitconfig`.
+- Delete `~/.config/delta/paris-guimard.gitconfig`.
+- Delete `~/.config/delta/paris-catacombes.gitconfig`.
+- Delete `~/.config/delta/paris-carrelage.gitconfig`.
 - Delete `~/.config/delta/subway-seat-flavors.gitconfig`.
 - Remove the line you added to turn it on.
 

@@ -1,0 +1,39 @@
+/* Subway Seat — generated from palette.py by build.py. Edit the palette, not this file. */
+/* London Portland for Tailwind v4: bg-ss-base, text-ss-text, … */
+
+@theme {
+  --color-ss-crust: #CCDAF2;
+  --color-ss-mantle: #DCE5F7;
+  --color-ss-base: #E8F0FF;
+  --color-ss-surface0: #BFCFF1;
+  --color-ss-surface1: #A8BBE2;
+  --color-ss-surface2: #93A7CF;
+  --color-ss-overlay0: #8192B4;
+  --color-ss-overlay1: #697794;
+  --color-ss-overlay2: #556179;
+  --color-ss-subtext0: #4A5469;
+  --color-ss-subtext1: #3C4557;
+  --color-ss-text: #293040;
+  --color-ss-text-hi: #1B202B;
+  --color-ss-yellow: #8D6C08;
+  --color-ss-yellow-hi: #9B770A;
+  --color-ss-orange: #A54300;
+  --color-ss-orange-hi: #AC5A00;
+  --color-ss-red: #9B211A;
+  --color-ss-red-hi: #CC2E25;
+  --color-ss-green: #0D8131;
+  --color-ss-green-hi: #008730;
+  --color-ss-sage: #007376;
+  --color-ss-sage-hi: #008688;
+  --color-ss-denim: #0019A8;
+  --color-ss-denim-hi: #4A6EBD;
+  --color-ss-clay: #755FA9;
+  --color-ss-diff-add: #C0DEC9;
+  --color-ss-diff-add-emph: #9ECDAD;
+  --color-ss-diff-add-dim: #D8EBDE;
+  --color-ss-diff-del: #EBD3D1;
+  --color-ss-diff-del-emph: #DFB8B6;
+  --color-ss-diff-del-dim: #F3E4E4;
+  --color-ss-diff-chg: #E1D9BF;
+  --color-ss-diff-chg-emph: #DBD0B0;
+}

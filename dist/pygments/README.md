@@ -11,12 +11,24 @@ A Pygments Style class per flavor, for Sphinx, MkDocs, Jupyter or your own HTML 
 | Subway Seat | [`subway_seat.py`](subway_seat.py) | `docs/_ext/subway_seat.py`; in your project, anywhere on the Python path (a Sphinx docs/_ext folder, say) |
 | Subway Seat Tunnel | [`subway_seat_tunnel.py`](subway_seat_tunnel.py) | `docs/_ext/subway_seat_tunnel.py`; in your project, anywhere on the Python path (a Sphinx docs/_ext folder, say) |
 | Subway Seat Enamel | [`subway_seat_enamel.py`](subway_seat_enamel.py) | `docs/_ext/subway_seat_enamel.py`; in your project, anywhere on the Python path (a Sphinx docs/_ext folder, say) |
+| London Moquette | [`london_moquette.py`](london_moquette.py) | `docs/_ext/london_moquette.py`; in your project, anywhere on the Python path (a Sphinx docs/_ext folder, say) |
+| London Deep Level | [`london_deep_level.py`](london_deep_level.py) | `docs/_ext/london_deep_level.py`; in your project, anywhere on the Python path (a Sphinx docs/_ext folder, say) |
+| London Portland | [`london_portland.py`](london_portland.py) | `docs/_ext/london_portland.py`; in your project, anywhere on the Python path (a Sphinx docs/_ext folder, say) |
+| Paris Guimard | [`paris_guimard.py`](paris_guimard.py) | `docs/_ext/paris_guimard.py`; in your project, anywhere on the Python path (a Sphinx docs/_ext folder, say) |
+| Paris Catacombes | [`paris_catacombes.py`](paris_catacombes.py) | `docs/_ext/paris_catacombes.py`; in your project, anywhere on the Python path (a Sphinx docs/_ext folder, say) |
+| Paris Carrelage | [`paris_carrelage.py`](paris_carrelage.py) | `docs/_ext/paris_carrelage.py`; in your project, anywhere on the Python path (a Sphinx docs/_ext folder, say) |
 | All three | [`package/pyproject.toml`](package/pyproject.toml) | the package installs from the repository: pip install 'git+https://github.com/oddurs/subway-seat#subdirectory=dist/pygments/package' |
 | All three | [`package/README.md`](package/README.md) |  |
 | All three | [`package/subway_seat_pygments/__init__.py`](package/subway_seat_pygments/__init__.py) |  |
 | Subway Seat | [`package/subway_seat_pygments/subway_seat.py`](package/subway_seat_pygments/subway_seat.py) |  |
 | Subway Seat Tunnel | [`package/subway_seat_pygments/subway_seat_tunnel.py`](package/subway_seat_pygments/subway_seat_tunnel.py) |  |
 | Subway Seat Enamel | [`package/subway_seat_pygments/subway_seat_enamel.py`](package/subway_seat_pygments/subway_seat_enamel.py) |  |
+| London Moquette | [`package/subway_seat_pygments/london_moquette.py`](package/subway_seat_pygments/london_moquette.py) |  |
+| London Deep Level | [`package/subway_seat_pygments/london_deep_level.py`](package/subway_seat_pygments/london_deep_level.py) |  |
+| London Portland | [`package/subway_seat_pygments/london_portland.py`](package/subway_seat_pygments/london_portland.py) |  |
+| Paris Guimard | [`package/subway_seat_pygments/paris_guimard.py`](package/subway_seat_pygments/paris_guimard.py) |  |
+| Paris Catacombes | [`package/subway_seat_pygments/paris_catacombes.py`](package/subway_seat_pygments/paris_catacombes.py) |  |
+| Paris Carrelage | [`package/subway_seat_pygments/paris_carrelage.py`](package/subway_seat_pygments/paris_carrelage.py) |  |
 
 ## Turn it on
 
@@ -47,11 +59,71 @@ from subway_seat_enamel import style
 print(HtmlFormatter(style=style).get_style_defs(".highlight"))
 ```
 
+**London Moquette**, in any Python code, with the file on your PYTHONPATH:
+
+```python
+from pygments.formatters import HtmlFormatter
+from london_moquette import style
+
+print(HtmlFormatter(style=style).get_style_defs(".highlight"))
+```
+
+**London Deep Level**, in any Python code, with the file on your PYTHONPATH:
+
+```python
+from pygments.formatters import HtmlFormatter
+from london_deep_level import style
+
+print(HtmlFormatter(style=style).get_style_defs(".highlight"))
+```
+
+**London Portland**, in any Python code, with the file on your PYTHONPATH:
+
+```python
+from pygments.formatters import HtmlFormatter
+from london_portland import style
+
+print(HtmlFormatter(style=style).get_style_defs(".highlight"))
+```
+
+**Paris Guimard**, in any Python code, with the file on your PYTHONPATH:
+
+```python
+from pygments.formatters import HtmlFormatter
+from paris_guimard import style
+
+print(HtmlFormatter(style=style).get_style_defs(".highlight"))
+```
+
+**Paris Catacombes**, in any Python code, with the file on your PYTHONPATH:
+
+```python
+from pygments.formatters import HtmlFormatter
+from paris_catacombes import style
+
+print(HtmlFormatter(style=style).get_style_defs(".highlight"))
+```
+
+**Paris Carrelage**, in any Python code, with the file on your PYTHONPATH:
+
+```python
+from pygments.formatters import HtmlFormatter
+from paris_carrelage import style
+
+print(HtmlFormatter(style=style).get_style_defs(".highlight"))
+```
+
 ## Uninstall
 
 - Delete `docs/_ext/subway_seat.py`.
 - Delete `docs/_ext/subway_seat_tunnel.py`.
 - Delete `docs/_ext/subway_seat_enamel.py`.
+- Delete `docs/_ext/london_moquette.py`.
+- Delete `docs/_ext/london_deep_level.py`.
+- Delete `docs/_ext/london_portland.py`.
+- Delete `docs/_ext/paris_guimard.py`.
+- Delete `docs/_ext/paris_catacombes.py`.
+- Delete `docs/_ext/paris_carrelage.py`.
 - Remove the line you added to turn it on.
 
 Generated by `build.py` from `palette.py` (v0.3.0). Edit the port in `ports/`, not these files.

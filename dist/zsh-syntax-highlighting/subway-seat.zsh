@@ -5,7 +5,7 @@ typeset -gA ZSH_HIGHLIGHT_STYLES
 
 # General
 ZSH_HIGHLIGHT_STYLES[default]='fg=#EDDCBC'
-ZSH_HIGHLIGHT_STYLES[unknown-token]='fg=#F97160'
+ZSH_HIGHLIGHT_STYLES[unknown-token]='fg=#FF8373'
 ZSH_HIGHLIGHT_STYLES[comment]='fg=#967B5C,italic'
 
 # Commands
@@ -23,9 +23,9 @@ ZSH_HIGHLIGHT_STYLES[arg0]='fg=#F3BF45'
 
 # Separators and redirection
 ZSH_HIGHLIGHT_STYLES[commandseparator]='fg=#EC7F31'
-ZSH_HIGHLIGHT_STYLES[redirection]='fg=#E0956C'
-ZSH_HIGHLIGHT_STYLES[named-fd]='fg=#E0956C'
-ZSH_HIGHLIGHT_STYLES[numeric-fd]='fg=#E0956C'
+ZSH_HIGHLIGHT_STYLES[redirection]='fg=#F4A87E'
+ZSH_HIGHLIGHT_STYLES[named-fd]='fg=#F4A87E'
+ZSH_HIGHLIGHT_STYLES[numeric-fd]='fg=#F4A87E'
 
 # Arguments and options
 ZSH_HIGHLIGHT_STYLES[single-hyphen-option]='fg=#86AD95'
@@ -35,37 +35,37 @@ ZSH_HIGHLIGHT_STYLES[path]='fg=#D9C6A3,underline'
 ZSH_HIGHLIGHT_STYLES[path_pathseparator]='fg=#AE9575,underline'
 ZSH_HIGHLIGHT_STYLES[path_prefix]='fg=#D9C6A3,underline'
 ZSH_HIGHLIGHT_STYLES[path_prefix_pathseparator]='fg=#AE9575,underline'
-ZSH_HIGHLIGHT_STYLES[globbing]='fg=#E0956C'
-ZSH_HIGHLIGHT_STYLES[history-expansion]='fg=#E0956C'
-ZSH_HIGHLIGHT_STYLES[arithmetic-expansion]='fg=#F97160'
+ZSH_HIGHLIGHT_STYLES[globbing]='fg=#F4A87E'
+ZSH_HIGHLIGHT_STYLES[history-expansion]='fg=#F4A87E'
+ZSH_HIGHLIGHT_STYLES[arithmetic-expansion]='fg=#FF8373'
 
 # Strings
 ZSH_HIGHLIGHT_STYLES[single-quoted-argument]='fg=#ADB956'
-ZSH_HIGHLIGHT_STYLES[single-quoted-argument-unclosed]='fg=#F97160'
+ZSH_HIGHLIGHT_STYLES[single-quoted-argument-unclosed]='fg=#FF8373'
 ZSH_HIGHLIGHT_STYLES[double-quoted-argument]='fg=#ADB956'
-ZSH_HIGHLIGHT_STYLES[double-quoted-argument-unclosed]='fg=#F97160'
+ZSH_HIGHLIGHT_STYLES[double-quoted-argument-unclosed]='fg=#FF8373'
 ZSH_HIGHLIGHT_STYLES[dollar-quoted-argument]='fg=#ADB956'
-ZSH_HIGHLIGHT_STYLES[dollar-quoted-argument-unclosed]='fg=#F97160'
-ZSH_HIGHLIGHT_STYLES[rc-quote]='fg=#E0956C'
-ZSH_HIGHLIGHT_STYLES[dollar-double-quoted-argument]='fg=#E0956C'
-ZSH_HIGHLIGHT_STYLES[back-double-quoted-argument]='fg=#E0956C'
-ZSH_HIGHLIGHT_STYLES[back-dollar-quoted-argument]='fg=#E0956C'
+ZSH_HIGHLIGHT_STYLES[dollar-quoted-argument-unclosed]='fg=#FF8373'
+ZSH_HIGHLIGHT_STYLES[rc-quote]='fg=#F4A87E'
+ZSH_HIGHLIGHT_STYLES[dollar-double-quoted-argument]='fg=#F4A87E'
+ZSH_HIGHLIGHT_STYLES[back-double-quoted-argument]='fg=#F4A87E'
+ZSH_HIGHLIGHT_STYLES[back-dollar-quoted-argument]='fg=#F4A87E'
 
 # Substitutions
 ZSH_HIGHLIGHT_STYLES[command-substitution]='none'
 ZSH_HIGHLIGHT_STYLES[command-substitution-unquoted]='none'
 ZSH_HIGHLIGHT_STYLES[command-substitution-quoted]='fg=#ADB956'
-ZSH_HIGHLIGHT_STYLES[command-substitution-delimiter]='fg=#E0956C'
-ZSH_HIGHLIGHT_STYLES[command-substitution-delimiter-unquoted]='fg=#E0956C'
-ZSH_HIGHLIGHT_STYLES[command-substitution-delimiter-quoted]='fg=#E0956C'
+ZSH_HIGHLIGHT_STYLES[command-substitution-delimiter]='fg=#F4A87E'
+ZSH_HIGHLIGHT_STYLES[command-substitution-delimiter-unquoted]='fg=#F4A87E'
+ZSH_HIGHLIGHT_STYLES[command-substitution-delimiter-quoted]='fg=#F4A87E'
 ZSH_HIGHLIGHT_STYLES[process-substitution]='none'
-ZSH_HIGHLIGHT_STYLES[process-substitution-delimiter]='fg=#E0956C'
+ZSH_HIGHLIGHT_STYLES[process-substitution-delimiter]='fg=#F4A87E'
 ZSH_HIGHLIGHT_STYLES[back-quoted-argument]='none'
-ZSH_HIGHLIGHT_STYLES[back-quoted-argument-unclosed]='fg=#F97160'
-ZSH_HIGHLIGHT_STYLES[back-quoted-argument-delimiter]='fg=#E0956C'
+ZSH_HIGHLIGHT_STYLES[back-quoted-argument-unclosed]='fg=#FF8373'
+ZSH_HIGHLIGHT_STYLES[back-quoted-argument-delimiter]='fg=#F4A87E'
 
 # brackets and cursor highlighters (only used if enabled in ZSH_HIGHLIGHT_HIGHLIGHTERS)
-ZSH_HIGHLIGHT_STYLES[bracket-error]='fg=#F97160,bold'
+ZSH_HIGHLIGHT_STYLES[bracket-error]='fg=#FF8373,bold'
 ZSH_HIGHLIGHT_STYLES[bracket-level-1]='fg=#F3BF45'
 ZSH_HIGHLIGHT_STYLES[bracket-level-2]='fg=#EC7F31'
 ZSH_HIGHLIGHT_STYLES[bracket-level-3]='fg=#ADB956'

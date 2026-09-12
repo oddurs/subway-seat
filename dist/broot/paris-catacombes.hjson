@@ -1,0 +1,88 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# Paris Catacombes for broot.
+skin: {
+    default:               rgb(212, 221, 215) none / rgb(165, 177, 170) none
+    tree:                  rgb(84, 101, 92) none / rgb(49, 67, 58) none
+    parent:                rgb(165, 177, 170) none / rgb(112, 129, 120) none
+    file:                  rgb(212, 221, 215) none / rgb(165, 177, 170) none
+    directory:             rgb(241, 191, 75) none Bold / rgb(241, 191, 75) none
+    exe:                   rgb(112, 202, 169) none Bold
+    link:                  rgb(84, 155, 159) none
+    pruning:               rgb(112, 129, 120) none Italic
+    perm__:                rgb(84, 101, 92) none
+    perm_r:                rgb(241, 191, 75) none
+    perm_w:                rgb(202, 146, 69) none
+    perm_x:                rgb(112, 202, 169) none
+    owner:                 rgb(241, 191, 75) none
+    group:                 rgb(191, 200, 194) none
+    count:                 rgb(140, 154, 146) none
+    dates:                 rgb(165, 177, 170) none
+    sparse:                rgb(250, 180, 156) none
+    content_extract:       rgb(191, 200, 194) none
+    content_match:         rgb(241, 191, 75) none Bold
+    device_id_major:       rgb(165, 177, 170) none
+    device_id_sep:         rgb(84, 101, 92) none
+    device_id_minor:       rgb(165, 177, 170) none
+    git_branch:            rgb(202, 146, 69) none
+    git_insertions:        rgb(112, 202, 169) none
+    git_deletions:         rgb(231, 135, 123) none
+    git_status_current:    rgb(112, 129, 120) none
+    git_status_modified:   rgb(241, 191, 75) none
+    git_status_staged:     rgb(112, 202, 169) none
+    git_status_new:        rgb(112, 202, 169) none Bold
+    git_status_ignored:    rgb(84, 101, 92) none
+    git_status_conflicted: rgb(199, 102, 91) none Bold
+    git_status_other:      rgb(250, 180, 156) none
+    selected_line:         none rgb(26, 41, 33) / none rgb(13, 23, 17)
+    char_match:            rgb(241, 191, 75) none Bold
+    file_error:            rgb(231, 135, 123) none
+    flag_label:            rgb(165, 177, 170) none
+    flag_value:            rgb(202, 146, 69) none Bold
+    input:                 rgb(212, 221, 215) none / rgb(165, 177, 170) none
+    status_error:          rgb(10, 16, 13) rgb(199, 102, 91)
+    status_job:            rgb(241, 191, 75) rgb(13, 23, 17)
+    status_normal:         rgb(191, 200, 194) rgb(13, 23, 17)
+    status_italic:         rgb(241, 191, 75) rgb(13, 23, 17) Italic
+    status_bold:           rgb(202, 146, 69) rgb(13, 23, 17) Bold
+    status_code:           rgb(84, 155, 159) rgb(13, 23, 17)
+    status_ellipsis:       rgb(112, 129, 120) rgb(13, 23, 17)
+    purpose_normal:        rgb(191, 200, 194) rgb(13, 23, 17)
+    purpose_italic:        rgb(241, 191, 75) rgb(13, 23, 17) Italic
+    purpose_bold:          rgb(202, 146, 69) rgb(13, 23, 17) Bold
+    purpose_ellipsis:      rgb(112, 129, 120) rgb(13, 23, 17)
+    scrollbar_track:       rgb(36, 52, 44) none / rgb(26, 41, 33) none
+    scrollbar_thumb:       rgb(112, 129, 120) none / rgb(84, 101, 92) none
+    help_paragraph:        rgb(212, 221, 215) none
+    help_bold:             rgb(202, 146, 69) none Bold
+    help_italic:           rgb(241, 191, 75) none Italic
+    help_code:             rgb(112, 202, 169) rgb(26, 41, 33)
+    help_headers:          rgb(241, 191, 75) none Bold
+    help_table_border:     rgb(84, 101, 92) none
+    preview:               rgb(212, 221, 215) none / rgb(165, 177, 170) none
+    preview_title:         rgb(231, 236, 234) none / rgb(165, 177, 170) none
+    preview_line_number:   rgb(84, 101, 92) none
+    preview_separator:     rgb(49, 67, 58) none / rgb(36, 52, 44) none
+    preview_match:         none rgb(85, 78, 40)
+    diff_line_number:      rgb(112, 129, 120) none
+    diff_added:            none rgb(32, 57, 47)
+    diff_removed:          none rgb(59, 38, 33)
+    hex_null:              rgb(84, 101, 92) none
+    hex_ascii_graphic:     rgb(191, 200, 194) none
+    hex_ascii_whitespace:  rgb(112, 202, 169) none
+    hex_ascii_other:       rgb(202, 146, 69) none
+    hex_non_ascii:         rgb(231, 135, 123) none
+    staging_area_title:    rgb(231, 236, 234) none / rgb(165, 177, 170) none
+    mode_command_mark:     rgb(10, 16, 13) rgb(202, 146, 69) Bold
+    good_to_bad_0:         rgb(112, 202, 169)
+    good_to_bad_1:         rgb(155, 198, 138)
+    good_to_bad_2:         rgb(198, 195, 106)
+    good_to_bad_3:         rgb(241, 191, 75)
+    good_to_bad_4:         rgb(228, 176, 73)
+    good_to_bad_5:         rgb(215, 161, 71)
+    good_to_bad_6:         rgb(202, 146, 69)
+    good_to_bad_7:         rgb(201, 131, 76)
+    good_to_bad_8:         rgb(200, 117, 84)
+    good_to_bad_9:         rgb(199, 102, 91)
+}
+
+syntax_theme: MochaDark

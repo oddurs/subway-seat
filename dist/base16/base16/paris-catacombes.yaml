@@ -1,0 +1,22 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+system: "base16"
+name: "Paris Catacombes"
+author: "oddurs (https://github.com/oddurs/subway-seat)"
+variant: "dark"
+palette:
+  base00: "#121E19" # base (Paneling)
+  base01: "#1A2921" # surface0 (Coppertone)
+  base02: "#31433A" # surface2 (Corduroy)
+  base03: "#708178" # overlay1 (Cardboard)
+  base04: "#A5B1AA" # subtext0 (Khaki)
+  base05: "#D4DDD7" # text (Parchment)
+  base06: "#E7ECEA" # text_hi (Ivory)
+  base07: "#E7ECEA" # text_hi (Ivory)
+  base08: "#C7665B" # red (Redbird)
+  base09: "#E7877B" # red_hi (Redbird bright)
+  base0A: "#F1BF4B" # yellow (Harvest gold)
+  base0B: "#70CAA9" # green (Avocado)
+  base0C: "#549B9F" # sage (Seafoam tile)
+  base0D: "#709BC8" # denim (Faded denim)
+  base0E: "#CA9245" # orange (Burnt orange)
+  base0F: "#FAB49C" # clay (Terracotta)

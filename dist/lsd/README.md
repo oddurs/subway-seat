@@ -19,6 +19,12 @@ The [installer](../../docs/INSTALL.md) shows its plan and asks once. Add `--flav
 | Subway Seat | [`subway-seat/colors.yaml`](subway-seat/colors.yaml) | `~/.config/lsd/colors.yaml` |
 | Subway Seat Tunnel | [`subway-seat-tunnel/colors.yaml`](subway-seat-tunnel/colors.yaml) | `~/.config/lsd/colors.yaml` |
 | Subway Seat Enamel | [`subway-seat-enamel/colors.yaml`](subway-seat-enamel/colors.yaml) | `~/.config/lsd/colors.yaml` |
+| London Moquette | [`london-moquette/colors.yaml`](london-moquette/colors.yaml) | `~/.config/lsd/colors.yaml` |
+| London Deep Level | [`london-deep-level/colors.yaml`](london-deep-level/colors.yaml) | `~/.config/lsd/colors.yaml` |
+| London Portland | [`london-portland/colors.yaml`](london-portland/colors.yaml) | `~/.config/lsd/colors.yaml` |
+| Paris Guimard | [`paris-guimard/colors.yaml`](paris-guimard/colors.yaml) | `~/.config/lsd/colors.yaml` |
+| Paris Catacombes | [`paris-catacombes/colors.yaml`](paris-catacombes/colors.yaml) | `~/.config/lsd/colors.yaml` |
+| Paris Carrelage | [`paris-carrelage/colors.yaml`](paris-carrelage/colors.yaml) | `~/.config/lsd/colors.yaml` |
 
 ## Turn it on
 

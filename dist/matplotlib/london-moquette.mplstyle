@@ -1,0 +1,31 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# London Moquette for matplotlib. Colors are hex without the leading #, as rc files expect.
+figure.facecolor: 1E2941
+figure.edgecolor: 1E2941
+savefig.facecolor: 1E2941
+savefig.edgecolor: 1E2941
+axes.facecolor: 1E2941
+axes.edgecolor: 576685
+axes.labelcolor: C1C9D8
+axes.titlecolor: E9EDF5
+axes.prop_cycle: cycler('color', ['DE8946', '54B4B5', 'F2C03F', '7595DA', 'FE8474', '77C581', 'AE9EDC'])
+text.color: D8DEEA
+xtick.color: 73819C
+ytick.color: 73819C
+xtick.labelcolor: A9B2C4
+ytick.labelcolor: A9B2C4
+grid.color: 353F56
+legend.facecolor: 263451
+legend.edgecolor: 3C4964
+patch.facecolor: DE8946
+patch.edgecolor: 1E2941
+hatch.color: A9B2C4
+boxplot.boxprops.color: C1C9D8
+boxplot.whiskerprops.color: C1C9D8
+boxplot.capprops.color: C1C9D8
+boxplot.flierprops.color: C1C9D8
+boxplot.flierprops.markeredgecolor: C1C9D8
+boxplot.medianprops.color: DE8946
+boxplot.meanprops.color: F2C03F
+boxplot.meanprops.markerfacecolor: F2C03F
+boxplot.meanprops.markeredgecolor: F2C03F

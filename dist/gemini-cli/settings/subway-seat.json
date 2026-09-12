@@ -8,11 +8,11 @@
         "Foreground": "#EDDCBC",
         "LightBlue": "#D9C6A3",
         "AccentBlue": "#EC7F31",
-        "AccentPurple": "#E0956C",
+        "AccentPurple": "#F4A87E",
         "AccentCyan": "#86AD95",
         "AccentGreen": "#ADB956",
         "AccentYellow": "#F3BF45",
-        "AccentRed": "#F97160",
+        "AccentRed": "#FF8373",
         "DiffAdded": "#3F3A1E",
         "DiffRemoved": "#52281C",
         "Comment": "#967B5C",
@@ -27,7 +27,7 @@
         "text": {
           "primary": "#EDDCBC",
           "secondary": "#AE9575",
-          "accent": "#E0956C",
+          "accent": "#F4A87E",
           "response": "#EDDCBC"
         },
         "background": {
@@ -52,7 +52,7 @@
         "status": {
           "success": "#ADB956",
           "warning": "#F3BF45",
-          "error": "#F97160"
+          "error": "#FF8373"
         }
       }
     },

@@ -1,0 +1,35 @@
+/* Subway Seat — generated from palette.py by build.py. Edit the palette, not this file. */
+/* Paris Guimard for waybar: @import it at the top of style.css. */
+
+@define-color crust #131A17;
+@define-color mantle #18241D;
+@define-color base #1E2E26;
+@define-color surface0 #263930;
+@define-color surface1 #30463B;
+@define-color surface2 #3E554A;
+@define-color overlay0 #586B61;
+@define-color overlay1 #74857C;
+@define-color overlay2 #909E96;
+@define-color subtext0 #A9B5AE;
+@define-color subtext1 #C2CBC5;
+@define-color text #D9E1DB;
+@define-color text_hi #E9EEEC;
+@define-color yellow #F1BF4B;
+@define-color yellow_hi #FFD57A;
+@define-color orange #CA9245;
+@define-color orange_hi #DFAA61;
+@define-color red #C7665B;
+@define-color red_hi #E7877B;
+@define-color green #70CAA9;
+@define-color green_hi #89DEBE;
+@define-color sage #549B9F;
+@define-color sage_hi #70B5B9;
+@define-color denim #709BC8;
+@define-color denim_hi #8DB6E2;
+@define-color clay #FAB49C;
+
+/* Layers: a raised ground for popovers, and washes of text for borders, hover and selection */
+@define-color paper #263930;
+@define-color edge alpha(@text, 0.12);
+@define-color hover alpha(@text, 0.08);
+@define-color selection alpha(@text, 0.16);

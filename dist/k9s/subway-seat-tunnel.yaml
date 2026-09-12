@@ -8,7 +8,7 @@ k9s:
     logoColorMsg: '#E9D8B6'
     logoColorInfo: '#ADB956'
     logoColorWarn: '#F3BF45'
-    logoColorError: '#F97160'
+    logoColorError: '#FF8373'
   prompt:
     fgColor: '#E9D8B6'
     bgColor: '#1B120A'
@@ -27,13 +27,13 @@ k9s:
     bgColor: '#24180E'
     sectionColor: '#ADB956'
     keyColor: '#F3BF45'
-    numKeyColor: '#F97160'
+    numKeyColor: '#FF8373'
   frame:
     title:
       fgColor: '#F3BF45'
       bgColor: '#24180E'
       highlightColor: '#EC7F31'
-      counterColor: '#F97160'
+      counterColor: '#FF8373'
       filterColor: '#ADB956'
     border:
       fgColor: '#4F3927'
@@ -41,7 +41,7 @@ k9s:
     menu:
       fgColor: '#D6C3A0'
       keyColor: '#F3BF45'
-      numKeyColor: '#F97160'
+      numKeyColor: '#FF8373'
     crumbs:
       fgColor: '#140D07'
       bgColor: '#F3BF45'
@@ -51,9 +51,9 @@ k9s:
       modifyColor: '#F3BF45'
       addColor: '#ADB956'
       pendingColor: '#EC7F31'
-      errorColor: '#F97160'
+      errorColor: '#FF8373'
       highlightColor: '#FFD36B'
-      killColor: '#E0956C'
+      killColor: '#F4A87E'
       completedColor: '#745B45'
   views:
     table:
@@ -79,10 +79,10 @@ k9s:
       dialBgColor: '#24180E'
       defaultDialColors:
         - '#ADB956'
-        - '#F97160'
+        - '#FF8373'
       defaultChartColors:
         - '#ADB956'
-        - '#F97160'
+        - '#FF8373'
       resourceColors:
         cpu:
           - '#EC7F31'

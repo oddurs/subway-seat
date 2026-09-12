@@ -1,8 +1,9 @@
 import * as stylex from "@stylexjs/stylex";
-import { accentRoles, type ColorName, flavors, roleNames } from "@/lib/palette";
+import { accentRoles, type ColorName, flavors } from "@/lib/palette";
 import { color } from "@/theme/tokens.stylex";
 import { font } from "@/theme/type.stylex";
 import { Bullet } from "./Bullet";
+import { RoleName } from "./RoleName";
 
 // Each bullet's letter names the syntax role that accent plays.
 export const ROUTES: { letter: string; key: ColorName }[] = [
@@ -22,7 +23,9 @@ export function Routes() {
         <div key={r.letter} {...stylex.props(styles.route)}>
           <Bullet letter={r.letter} bg={color[r.key]} />
           <div>
-            <b {...stylex.props(styles.name)}>{roleNames[r.key]}</b>{" "}
+            <b {...stylex.props(styles.name)}>
+              <RoleName role={r.key} />
+            </b>{" "}
             {flavors.map((f) => (
               <code key={f.id} data-only={f.id} {...stylex.props(styles.hex)}>
                 {f.colors[r.key]}

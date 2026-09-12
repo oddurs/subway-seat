@@ -1,0 +1,45 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# London Portland for lsd. File names follow LS_COLORS (see the vivid port).
+user: "#8D6C08"
+group: "#3C4557"
+permission:
+  read: "#8D6C08"
+  write: "#A54300"
+  exec: "#0D8131"
+  exec-sticky: "#755FA9"
+  no-access: "#8192B4"
+  octal: "#755FA9"
+  acl: "#697794"
+  context: "#697794"
+attributes:
+  archive: "#4A5469"
+  read: "#8D6C08"
+  hidden: "#697794"
+  system: "#755FA9"
+date:
+  hour-old: "#0D8131"
+  day-old: "#3C4557"
+  older: "#4A5469"
+size:
+  none: "#697794"
+  small: "#0D8131"
+  medium: "#8D6C08"
+  large: "#A54300"
+inode:
+  valid: "#697794"
+  invalid: "#8192B4"
+links:
+  valid: "#007376"
+  invalid: "#8192B4"
+tree-edge: "#8192B4"
+git-status:
+  default: "#4A5469"
+  unmodified: "#697794"
+  ignored: "#8192B4"
+  new-in-index: "#0D8131"
+  new-in-workdir: "#0D8131"
+  typechange: "#755FA9"
+  deleted: "#CC2E25"
+  renamed: "#007376"
+  modified: "#8D6C08"
+  conflicted: "#9B211A"

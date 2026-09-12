@@ -1,0 +1,45 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# London Moquette for lsd. File names follow LS_COLORS (see the vivid port).
+user: "#F2C03F"
+group: "#C1C9D8"
+permission:
+  read: "#F2C03F"
+  write: "#DE8946"
+  exec: "#77C581"
+  exec-sticky: "#AE9EDC"
+  no-access: "#576685"
+  octal: "#AE9EDC"
+  acl: "#73819C"
+  context: "#73819C"
+attributes:
+  archive: "#A9B2C4"
+  read: "#F2C03F"
+  hidden: "#73819C"
+  system: "#AE9EDC"
+date:
+  hour-old: "#77C581"
+  day-old: "#C1C9D8"
+  older: "#A9B2C4"
+size:
+  none: "#73819C"
+  small: "#77C581"
+  medium: "#F2C03F"
+  large: "#DE8946"
+inode:
+  valid: "#73819C"
+  invalid: "#576685"
+links:
+  valid: "#54B4B5"
+  invalid: "#576685"
+tree-edge: "#576685"
+git-status:
+  default: "#A9B2C4"
+  unmodified: "#73819C"
+  ignored: "#576685"
+  new-in-index: "#77C581"
+  new-in-workdir: "#77C581"
+  typechange: "#AE9EDC"
+  deleted: "#FE8474"
+  renamed: "#54B4B5"
+  modified: "#F2C03F"
+  conflicted: "#DB6052"

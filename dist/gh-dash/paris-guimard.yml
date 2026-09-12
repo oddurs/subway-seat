@@ -1,0 +1,26 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# Paris Guimard for gh-dash.
+theme:
+  colors:
+    text:
+      primary: "#D9E1DB"
+      secondary: "#CA9245"
+      inverted: "#131A17"
+      faint: "#74857C"
+      warning: "#F1BF4B"
+      success: "#70CAA9"
+      error: "#E7877B"
+      actor: "#C2CBC5"
+    background:
+      selected: "#30463B"
+    border:
+      primary: "#CA9245"
+      secondary: "#3E554A"
+      faint: "#263930"
+    icon:
+      newcontributor: "#70CAA9"
+      contributor: "#549B9F"
+      collaborator: "#F1BF4B"
+      member: "#F1BF4B"
+      owner: "#CA9245"
+      unknownrole: "#74857C"

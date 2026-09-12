@@ -1,0 +1,11 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# London Moquette: Godot's interface theme. Enter these in Editor › Editor Settings › Interface › Theme.
+# (Godot 4.6+ labels the first one "Color Preset"; 4.0 to 4.5 call it "Preset".)
+Color Preset: Custom
+Base Color: #172032
+Accent Color: #DE8946
+Contrast: 0.21
+Icon Saturation: 1
+
+# And in Text Editor › Theme:
+Color Theme: London Moquette

@@ -27,14 +27,14 @@
   --ss-orange: #EC7F31; /* Burnt orange */
   --ss-orange-hi: #FF9D55; /* Sixth Avenue */
   --ss-red: #E05C45; /* Redbird */
-  --ss-red-hi: #F97160; /* Redbird bright */
+  --ss-red-hi: #FF8373; /* Redbird bright */
   --ss-green: #ADB956; /* Avocado */
   --ss-green-hi: #BFCB63; /* Avocado bright */
   --ss-sage: #86AD95; /* Seafoam tile */
   --ss-sage-hi: #A5C9B0; /* Seafoam bright */
   --ss-denim: #7F9BAE; /* Faded denim */
   --ss-denim-hi: #9DB6C6; /* Denim bright */
-  --ss-clay: #E0956C; /* Terracotta */
+  --ss-clay: #F4A87E; /* Terracotta */
 
   /* Diff grounds: -add/-del/-chg for lines, -emph for changed words, -dim for faded diffs */
   --ss-diff-add: #363318;
@@ -65,12 +65,12 @@
   --ss-orange-rgb: 236 127 49;
   --ss-orange-hi-rgb: 255 157 85;
   --ss-red-rgb: 224 92 69;
-  --ss-red-hi-rgb: 249 113 96;
+  --ss-red-hi-rgb: 255 131 115;
   --ss-green-rgb: 173 185 86;
   --ss-green-hi-rgb: 191 203 99;
   --ss-sage-rgb: 134 173 149;
   --ss-sage-hi-rgb: 165 201 176;
   --ss-denim-rgb: 127 155 174;
   --ss-denim-hi-rgb: 157 182 198;
-  --ss-clay-rgb: 224 149 108;
+  --ss-clay-rgb: 244 168 126;
 }

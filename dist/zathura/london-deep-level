@@ -1,0 +1,53 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# London Deep Level for zathura. In zathurarc: include london-deep-level
+
+# window
+set default-bg              "#121A2D"
+set default-fg              "#D4DAE7"
+set statusbar-bg            "#0D1421"
+set statusbar-fg            "#BEC6D5"
+set inputbar-bg             "#0D1421"
+set inputbar-fg             "#D4DAE7"
+
+# notifications
+set notification-bg         "#1A243A"
+set notification-fg         "#D4DAE7"
+set notification-error-bg   "#DB6052"
+set notification-error-fg   "#0A0E18"
+set notification-warning-bg "#F2C03F"
+set notification-warning-fg "#0A0E18"
+
+# completion
+set completion-bg           "#1A243A"
+set completion-fg           "#D4DAE7"
+set completion-group-bg     "#0D1421"
+set completion-group-fg     "#A5AEC0"
+set completion-highlight-bg "#303E5B"
+set completion-highlight-fg "#E7EBF3"
+
+# index (table of contents)
+set index-bg                "#121A2D"
+set index-fg                "#D4DAE7"
+set index-active-bg         "#303E5B"
+set index-active-fg         "#E7EBF3"
+
+# search hits and link hints, washed over the page
+set highlight-color         "rgba(242,192,63,0.3)"
+set highlight-active-color  "rgba(222,137,70,0.5)"
+set highlight-fg            "#E7EBF3"
+
+# pages while they render
+set render-loading-bg       "#121A2D"
+set render-loading-fg       "#6F7C97"
+
+# digital signatures
+set signature-success-color "#77C581"
+set signature-warning-color "#F2C03F"
+set signature-error-color   "#FE8474"
+
+# recoloring: white paper → base, black ink → text; Ctrl+R toggles it
+set recolor-lightcolor      "#121A2D"
+set recolor-darkcolor       "#D4DAE7"
+set recolor                 "true"
+set recolor-keephue         "true"
+set recolor-reverse-video   "true"

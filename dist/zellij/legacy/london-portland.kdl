@@ -1,0 +1,18 @@
+// Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+// London Portland: legacy color-list theme for Zellij before 0.42.
+
+themes {
+    london-portland {
+        fg "#293040"
+        bg "#A8BBE2"
+        black "#DCE5F7"
+        red "#CC2E25"
+        green "#A54300" // active frame, selected tab
+        yellow "#8D6C08"
+        blue "#0019A8"
+        magenta "#755FA9"
+        orange "#8D6C08" // frame in other modes
+        cyan "#007376"
+        white "#1B202B"
+    }
+}

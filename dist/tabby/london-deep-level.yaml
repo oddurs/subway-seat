@@ -1,0 +1,26 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# One entry for terminal.customColorSchemes in Tabby's config.yaml, indented to paste under that key.
+    - name: London Deep Level
+      foreground: '#D4DAE7'
+      background: '#121A2D'
+      cursor: '#F2C03F'
+      cursorAccent: '#121A2D'
+      selection: '#303E5B'
+      selectionForeground: '#E7EBF3'
+      colors:
+        - '#232F49'
+        - '#DB6052'
+        - '#77C581'
+        - '#F2C03F'
+        - '#7595DA'
+        - '#DE8946'
+        - '#54B4B5'
+        - '#BEC6D5'
+        - '#6F7C97'
+        - '#FE8474'
+        - '#9AD2A0'
+        - '#FFD36C'
+        - '#8BB0FF'
+        - '#E5AA7F'
+        - '#72D1D3'
+        - '#E7EBF3'

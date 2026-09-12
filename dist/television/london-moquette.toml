@@ -1,0 +1,26 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# London Moquette for television.
+# general
+background = '#1E2941'
+border_fg = '#3D4F72'
+text_fg = '#D8DEEA'
+dimmed_text_fg = '#73819C'
+# input
+input_text_fg = '#D8DEEA'
+result_count_fg = '#73819C'
+# results
+result_name_fg = '#C1C9D8'
+result_line_number_fg = '#73819C'
+result_value_fg = '#D8DEEA'
+selection_bg = '#263451'
+selection_fg = '#E9EDF5'
+match_fg = '#F2C03F'
+# preview
+preview_title_fg = '#C1C9D8'
+# modes
+channel_mode_fg = '#121826'
+channel_mode_bg = '#DE8946'
+remote_control_mode_fg = '#121826'
+remote_control_mode_bg = '#F2C03F'
+action_picker_mode_fg = '#121826'
+action_picker_mode_bg = '#54B4B5'

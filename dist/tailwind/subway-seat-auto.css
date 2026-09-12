@@ -3,40 +3,40 @@
    The utilities read these variables, so bg-ss-base and the rest switch with it. */
 
 @theme {
-  --color-ss-crust: #E2D3B6;
-  --color-ss-mantle: #EBDEC6;
-  --color-ss-base: #F4E9D4;
-  --color-ss-surface0: #D9C8A7;
-  --color-ss-surface1: #CAB48E;
-  --color-ss-surface2: #BAA07A;
-  --color-ss-overlay0: #A58C6A;
+  --color-ss-crust: #E4D8C0;
+  --color-ss-mantle: #EEE4D0;
+  --color-ss-base: #F8EFDF;
+  --color-ss-surface0: #DBCDB3;
+  --color-ss-surface1: #CBB898;
+  --color-ss-surface2: #BAA380;
+  --color-ss-overlay0: #A58D6D;
   --color-ss-overlay1: #8C7254;
   --color-ss-overlay2: #735C44;
   --color-ss-subtext0: #654F3B;
   --color-ss-subtext1: #54402F;
   --color-ss-text: #3E2C1E;
   --color-ss-text-hi: #2A1D13;
-  --color-ss-yellow: #936200;
-  --color-ss-yellow-hi: #A56E00;
-  --color-ss-orange: #AD4E00;
-  --color-ss-orange-hi: #C4561A;
+  --color-ss-yellow: #976608;
+  --color-ss-yellow-hi: #A9720A;
+  --color-ss-orange: #A04800;
+  --color-ss-orange-hi: #BA4D0A;
   --color-ss-red: #992418;
-  --color-ss-red-hi: #BC4031;
+  --color-ss-red-hi: #BF4233;
   --color-ss-green: #66740F;
   --color-ss-green-hi: #697813;
   --color-ss-sage: #3E7157;
   --color-ss-sage-hi: #4C8367;
   --color-ss-denim: #3F6480;
   --color-ss-denim-hi: #517791;
-  --color-ss-clay: #A65633;
+  --color-ss-clay: #843811;
   --color-ss-diff-add: #D7DBC1;
   --color-ss-diff-add-emph: #C2C79F;
   --color-ss-diff-add-dim: #E7E9D9;
   --color-ss-diff-del: #EBD3D1;
   --color-ss-diff-del-emph: #DEB9B5;
   --color-ss-diff-del-dim: #F3E5E3;
-  --color-ss-diff-chg: #E3D6BD;
-  --color-ss-diff-chg-emph: #DCCDAD;
+  --color-ss-diff-chg: #E4D7BF;
+  --color-ss-diff-chg-emph: #DECEB0;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -59,14 +59,14 @@
     --color-ss-orange: #EC7F31;
     --color-ss-orange-hi: #FF9D55;
     --color-ss-red: #E05C45;
-    --color-ss-red-hi: #F97160;
+    --color-ss-red-hi: #FF8373;
     --color-ss-green: #ADB956;
     --color-ss-green-hi: #BFCB63;
     --color-ss-sage: #86AD95;
     --color-ss-sage-hi: #A5C9B0;
     --color-ss-denim: #7F9BAE;
     --color-ss-denim-hi: #9DB6C6;
-    --color-ss-clay: #E0956C;
+    --color-ss-clay: #F4A87E;
     --color-ss-diff-add: #3F3A1E;
     --color-ss-diff-add-emph: #504D26;
     --color-ss-diff-add-dim: #342D18;

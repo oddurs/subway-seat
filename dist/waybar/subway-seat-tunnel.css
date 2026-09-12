@@ -19,14 +19,14 @@
 @define-color orange #EC7F31;
 @define-color orange_hi #FF9D55;
 @define-color red #E05C45;
-@define-color red_hi #F97160;
+@define-color red_hi #FF8373;
 @define-color green #ADB956;
 @define-color green_hi #BFCB63;
 @define-color sage #86AD95;
 @define-color sage_hi #A5C9B0;
 @define-color denim #7F9BAE;
 @define-color denim_hi #9DB6C6;
-@define-color clay #E0956C;
+@define-color clay #F4A87E;
 
 /* Layers: a raised ground for popovers, and washes of text for borders, hover and selection */
 @define-color paper #302115;

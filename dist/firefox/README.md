@@ -17,6 +17,24 @@ A static theme for tabs, toolbar, address bar, menus, sidebar and the new-tab pa
 | Subway Seat Enamel | [`subway-seat-enamel/manifest.json`](subway-seat-enamel/manifest.json) | inside subway-seat-enamel.xpi |
 | Subway Seat Enamel | [`subway-seat-enamel.xpi`](subway-seat-enamel.xpi) | about:addons › ⚙ › Install Add-on From File… (Developer Edition, Nightly or ESR) |
 | Subway Seat Enamel | [`subway-seat-enamel.firefox-color.txt`](subway-seat-enamel.firefox-color.txt) | open the link in Firefox with the Firefox Color add-on installed |
+| London Moquette | [`london-moquette/manifest.json`](london-moquette/manifest.json) | inside london-moquette.xpi |
+| London Moquette | [`london-moquette.xpi`](london-moquette.xpi) | about:addons › ⚙ › Install Add-on From File… (Developer Edition, Nightly or ESR) |
+| London Moquette | [`london-moquette.firefox-color.txt`](london-moquette.firefox-color.txt) | open the link in Firefox with the Firefox Color add-on installed |
+| London Deep Level | [`london-deep-level/manifest.json`](london-deep-level/manifest.json) | inside london-deep-level.xpi |
+| London Deep Level | [`london-deep-level.xpi`](london-deep-level.xpi) | about:addons › ⚙ › Install Add-on From File… (Developer Edition, Nightly or ESR) |
+| London Deep Level | [`london-deep-level.firefox-color.txt`](london-deep-level.firefox-color.txt) | open the link in Firefox with the Firefox Color add-on installed |
+| London Portland | [`london-portland/manifest.json`](london-portland/manifest.json) | inside london-portland.xpi |
+| London Portland | [`london-portland.xpi`](london-portland.xpi) | about:addons › ⚙ › Install Add-on From File… (Developer Edition, Nightly or ESR) |
+| London Portland | [`london-portland.firefox-color.txt`](london-portland.firefox-color.txt) | open the link in Firefox with the Firefox Color add-on installed |
+| Paris Guimard | [`paris-guimard/manifest.json`](paris-guimard/manifest.json) | inside paris-guimard.xpi |
+| Paris Guimard | [`paris-guimard.xpi`](paris-guimard.xpi) | about:addons › ⚙ › Install Add-on From File… (Developer Edition, Nightly or ESR) |
+| Paris Guimard | [`paris-guimard.firefox-color.txt`](paris-guimard.firefox-color.txt) | open the link in Firefox with the Firefox Color add-on installed |
+| Paris Catacombes | [`paris-catacombes/manifest.json`](paris-catacombes/manifest.json) | inside paris-catacombes.xpi |
+| Paris Catacombes | [`paris-catacombes.xpi`](paris-catacombes.xpi) | about:addons › ⚙ › Install Add-on From File… (Developer Edition, Nightly or ESR) |
+| Paris Catacombes | [`paris-catacombes.firefox-color.txt`](paris-catacombes.firefox-color.txt) | open the link in Firefox with the Firefox Color add-on installed |
+| Paris Carrelage | [`paris-carrelage/manifest.json`](paris-carrelage/manifest.json) | inside paris-carrelage.xpi |
+| Paris Carrelage | [`paris-carrelage.xpi`](paris-carrelage.xpi) | about:addons › ⚙ › Install Add-on From File… (Developer Edition, Nightly or ESR) |
+| Paris Carrelage | [`paris-carrelage.firefox-color.txt`](paris-carrelage.firefox-color.txt) | open the link in Firefox with the Firefox Color add-on installed |
 | All three | [`subway-seat-auto/manifest.json`](subway-seat-auto/manifest.json) | inside subway-seat-auto.xpi |
 | All three | [`subway-seat-auto.xpi`](subway-seat-auto.xpi) | about:addons › ⚙ › Install Add-on From File… (Developer Edition, Nightly or ESR) |
 
@@ -47,6 +65,60 @@ Release Firefox: open the link in subway-seat-enamel.firefox-color.txt with the 
 Developer Edition, Nightly or ESR, with xpinstall.signatures.required set to false in about:config:
 about:addons › ⚙ › Install Add-on From File… › subway-seat-enamel.xpi
 To try it on release Firefox until the next restart: about:debugging › This Firefox › Load Temporary Add-on… › subway-seat-enamel.xpi
+```
+
+**London Moquette**, in Firefox: the Firefox Color link, or about:addons for the .xpi:
+
+```text
+Release Firefox: open the link in london-moquette.firefox-color.txt with the Firefox Color add-on installed.
+Developer Edition, Nightly or ESR, with xpinstall.signatures.required set to false in about:config:
+about:addons › ⚙ › Install Add-on From File… › london-moquette.xpi
+To try it on release Firefox until the next restart: about:debugging › This Firefox › Load Temporary Add-on… › london-moquette.xpi
+```
+
+**London Deep Level**, in Firefox: the Firefox Color link, or about:addons for the .xpi:
+
+```text
+Release Firefox: open the link in london-deep-level.firefox-color.txt with the Firefox Color add-on installed.
+Developer Edition, Nightly or ESR, with xpinstall.signatures.required set to false in about:config:
+about:addons › ⚙ › Install Add-on From File… › london-deep-level.xpi
+To try it on release Firefox until the next restart: about:debugging › This Firefox › Load Temporary Add-on… › london-deep-level.xpi
+```
+
+**London Portland**, in Firefox: the Firefox Color link, or about:addons for the .xpi:
+
+```text
+Release Firefox: open the link in london-portland.firefox-color.txt with the Firefox Color add-on installed.
+Developer Edition, Nightly or ESR, with xpinstall.signatures.required set to false in about:config:
+about:addons › ⚙ › Install Add-on From File… › london-portland.xpi
+To try it on release Firefox until the next restart: about:debugging › This Firefox › Load Temporary Add-on… › london-portland.xpi
+```
+
+**Paris Guimard**, in Firefox: the Firefox Color link, or about:addons for the .xpi:
+
+```text
+Release Firefox: open the link in paris-guimard.firefox-color.txt with the Firefox Color add-on installed.
+Developer Edition, Nightly or ESR, with xpinstall.signatures.required set to false in about:config:
+about:addons › ⚙ › Install Add-on From File… › paris-guimard.xpi
+To try it on release Firefox until the next restart: about:debugging › This Firefox › Load Temporary Add-on… › paris-guimard.xpi
+```
+
+**Paris Catacombes**, in Firefox: the Firefox Color link, or about:addons for the .xpi:
+
+```text
+Release Firefox: open the link in paris-catacombes.firefox-color.txt with the Firefox Color add-on installed.
+Developer Edition, Nightly or ESR, with xpinstall.signatures.required set to false in about:config:
+about:addons › ⚙ › Install Add-on From File… › paris-catacombes.xpi
+To try it on release Firefox until the next restart: about:debugging › This Firefox › Load Temporary Add-on… › paris-catacombes.xpi
+```
+
+**Paris Carrelage**, in Firefox: the Firefox Color link, or about:addons for the .xpi:
+
+```text
+Release Firefox: open the link in paris-carrelage.firefox-color.txt with the Firefox Color add-on installed.
+Developer Edition, Nightly or ESR, with xpinstall.signatures.required set to false in about:config:
+about:addons › ⚙ › Install Add-on From File… › paris-carrelage.xpi
+To try it on release Firefox until the next restart: about:debugging › This Firefox › Load Temporary Add-on… › paris-carrelage.xpi
 ```
 
 ## Follow light and dark

@@ -1,0 +1,227 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# London Portland — Holden's Portland stone. Links are the exact Corporate Blue.
+
+"attribute" = { fg = "clay", modifiers = ["italic"] }
+"type" = "sage"
+"type.builtin" = { fg = "sage", modifiers = ["italic"] }
+"type.parameter" = { fg = "sage", modifiers = ["italic"] }
+"type.enum.variant" = "red_hi"
+"constructor" = "sage"
+"constant" = "red_hi"
+"constant.builtin" = "red_hi"
+"constant.builtin.boolean" = "red_hi"
+"constant.character" = "green"
+"constant.character.escape" = "clay"
+"constant.numeric" = "red_hi"
+"string" = "green"
+"string.regexp" = "clay"
+"string.special" = "clay"
+"string.special.path" = "green"
+"string.special.url" = { fg = "denim", underline = { color = "denim", style = "line" } }
+"string.special.symbol" = "clay"
+"comment" = { fg = "overlay1", modifiers = ["italic"] }
+"comment.line.documentation" = { fg = "overlay1", modifiers = ["italic"] }
+"comment.block.documentation" = { fg = "overlay1", modifiers = ["italic"] }
+"comment.unused" = "overlay1"
+"variable" = "text"
+"variable.mutable" = "text"
+"variable.builtin" = { fg = "red_hi", modifiers = ["italic"] }
+"variable.builtin.mutable" = { fg = "red_hi", modifiers = ["italic"] }
+"variable.parameter" = { fg = "subtext1", modifiers = ["italic"] }
+"variable.parameter.mutable" = { fg = "subtext1", modifiers = ["italic"] }
+"variable.other.member" = "subtext1"
+"variable.other.member.private" = "subtext1"
+"label" = { fg = "clay", modifiers = ["italic"] }
+"punctuation" = "overlay2"
+"punctuation.delimiter" = "overlay2"
+"punctuation.bracket" = "overlay2"
+"punctuation.special" = "clay"
+"keyword" = "orange"
+"keyword.control" = "orange"
+"keyword.control.conditional" = "orange"
+"keyword.control.repeat" = "orange"
+"keyword.control.import" = "orange"
+"keyword.control.return" = "orange"
+"keyword.control.exception" = "orange"
+"keyword.operator" = "orange"
+"keyword.directive" = "clay"
+"keyword.function" = "orange"
+"keyword.storage" = "orange"
+"keyword.storage.type" = "orange"
+"keyword.storage.modifier" = "orange"
+"operator" = "overlay2"
+"function" = "yellow"
+"function.public" = "yellow"
+"function.builtin" = { fg = "yellow", modifiers = ["italic"] }
+"function.method" = "yellow"
+"function.method.public" = "yellow"
+"function.method.private" = "yellow"
+"function.macro" = { fg = "clay", modifiers = ["italic"] }
+"function.special" = "clay"
+"tag" = "orange"
+"tag.builtin" = "orange"
+"namespace" = "subtext0"
+"special" = { fg = "yellow", modifiers = ["bold"] }
+"embedded" = "text"
+"markup.heading" = { fg = "yellow", modifiers = ["bold"] }
+"markup.heading.marker" = { fg = "overlay2", modifiers = ["bold"] }
+"markup.heading.1" = { fg = "orange", modifiers = ["bold"] }
+"markup.heading.2" = { fg = "yellow", modifiers = ["bold"] }
+"markup.heading.3" = { fg = "green", modifiers = ["bold"] }
+"markup.heading.4" = { fg = "sage", modifiers = ["bold"] }
+"markup.heading.5" = { fg = "clay", modifiers = ["bold"] }
+"markup.heading.6" = { fg = "subtext1", modifiers = ["bold"] }
+"markup.list" = "orange"
+"markup.list.unnumbered" = "orange"
+"markup.list.numbered" = "orange"
+"markup.list.checked" = "green"
+"markup.list.unchecked" = "overlay1"
+"markup.bold" = { fg = "text_hi", modifiers = ["bold"] }
+"markup.italic" = { fg = "text", modifiers = ["italic"] }
+"markup.strikethrough" = { modifiers = ["crossed_out"] }
+"markup.link" = "denim"
+"markup.link.url" = { fg = "denim", underline = { color = "denim", style = "line" } }
+"markup.link.label" = "denim"
+"markup.link.text" = "denim"
+"markup.quote" = { fg = "subtext0", modifiers = ["italic"] }
+"markup.raw" = "green"
+"markup.raw.inline" = "green"
+"markup.raw.block" = "green"
+"markup.normal.completion" = "text"
+"markup.normal.hover" = "text"
+"markup.heading.completion" = { fg = "yellow", modifiers = ["bold"] }
+"markup.heading.hover" = { fg = "yellow", modifiers = ["bold"] }
+"markup.raw.inline.completion" = "green"
+"markup.raw.inline.hover" = "green"
+"diff.plus" = "green"
+"diff.plus.gutter" = "green"
+"diff.minus" = "red_hi"
+"diff.minus.gutter" = "red_hi"
+"diff.delta" = "yellow"
+"diff.delta.gutter" = "yellow"
+"diff.delta.moved" = "sage"
+"diff.delta.conflict" = "orange"
+"ui.background" = { fg = "text", bg = "base" }
+"ui.background.separator" = "surface1"
+"ui.text" = "text"
+"ui.text.focus" = { fg = "text_hi", bg = "surface1", modifiers = ["bold"] }
+"ui.text.inactive" = "overlay1"
+"ui.text.info" = "subtext1"
+"ui.text.directory" = "yellow"
+"ui.text.symlink" = "sage"
+"ui.cursor" = { fg = "base", bg = "cursor_secondary" }
+"ui.cursor.normal" = { fg = "base", bg = "cursor_secondary" }
+"ui.cursor.insert" = { fg = "base", bg = "cursor_secondary_insert" }
+"ui.cursor.select" = { fg = "base", bg = "cursor_secondary_select" }
+"ui.cursor.match" = { fg = "bracket", bg = "bracket_bg", modifiers = ["bold"] }
+"ui.cursor.primary" = { fg = "base", bg = "cursor" }
+"ui.cursor.primary.normal" = { fg = "base", bg = "cursor" }
+"ui.cursor.primary.insert" = { fg = "base", bg = "green" }
+"ui.cursor.primary.select" = { fg = "base", bg = "cursor_select" }
+"ui.cursorline.primary" = { bg = "cursorline" }
+"ui.cursorline.secondary" = { bg = "cursorline_secondary" }
+"ui.cursorcolumn.primary" = { bg = "cursorline" }
+"ui.cursorcolumn.secondary" = { bg = "cursorline_secondary" }
+"ui.selection" = { bg = "selection_secondary" }
+"ui.selection.primary" = { bg = "selection" }
+"ui.highlight" = { bg = "surface1" }
+"ui.highlight.frameline" = { bg = "frameline" }
+"ui.gutter" = { bg = "base" }
+"ui.gutter.selected" = { bg = "cursorline" }
+"ui.linenr" = "overlay0"
+"ui.linenr.selected" = { fg = "orange", modifiers = ["bold"] }
+"ui.debug.breakpoint" = "red_hi"
+"ui.debug.active" = "yellow"
+"ui.statusline" = { fg = "subtext1", bg = "mantle" }
+"ui.statusline.inactive" = { fg = "overlay0", bg = "crust" }
+"ui.statusline.normal" = { fg = "ink", bg = "orange", modifiers = ["bold"] }
+"ui.statusline.insert" = { fg = "ink", bg = "green", modifiers = ["bold"] }
+"ui.statusline.select" = { fg = "ink", bg = "yellow", modifiers = ["bold"] }
+"ui.statusline.separator" = "surface1"
+"ui.bufferline" = { fg = "overlay1", bg = "crust" }
+"ui.bufferline.active" = { fg = "text_hi", bg = "base", underline = { color = "orange", style = "line" }, modifiers = ["bold"] }
+"ui.bufferline.background" = { bg = "crust" }
+"ui.popup" = { fg = "text", bg = "paper" }
+"ui.popup.info" = { fg = "text", bg = "paper" }
+"ui.picker.header" = { fg = "subtext0", bg = "mantle", modifiers = ["bold"] }
+"ui.picker.header.column" = "overlay1"
+"ui.picker.header.column.active" = { fg = "yellow", modifiers = ["bold"] }
+"ui.window" = "crust"
+"ui.help" = { fg = "subtext1", bg = "paper" }
+"ui.menu" = { fg = "subtext1", bg = "paper" }
+"ui.menu.selected" = { fg = "text_hi", bg = "row", modifiers = ["bold"] }
+"ui.menu.scroll" = { fg = "overlay0", bg = "paper" }
+"ui.virtual.whitespace" = "surface1"
+"ui.virtual.ruler" = { bg = "surface0" }
+"ui.virtual.indent-guide" = "surface0"
+"ui.virtual.inlay-hint" = { fg = "overlay1", bg = "inlay_bg", modifiers = ["italic"] }
+"ui.virtual.inlay-hint.parameter" = { fg = "overlay1", bg = "inlay_bg", modifiers = ["italic"] }
+"ui.virtual.inlay-hint.type" = { fg = "overlay1", bg = "inlay_bg", modifiers = ["italic"] }
+"ui.virtual.wrap" = "surface2"
+"ui.virtual.jump-label" = { fg = "ink", bg = "orange", modifiers = ["bold"] }
+"tabstop" = { bg = "surface1" }
+"error" = "red_hi"
+"warning" = "yellow"
+"info" = "denim"
+"hint" = "sage"
+"error.diagnostic.inline" = { fg = "red_hi", bg = "error_bg" }
+"warning.diagnostic.inline" = { fg = "yellow", bg = "warning_bg" }
+"info.diagnostic.inline" = { fg = "denim", bg = "info_bg" }
+"hint.diagnostic.inline" = { fg = "sage", bg = "hint_bg" }
+"diagnostic" = { underline = { color = "overlay1", style = "curl" } }
+"diagnostic.error" = { underline = { color = "red_hi", style = "curl" } }
+"diagnostic.warning" = { underline = { color = "yellow", style = "curl" } }
+"diagnostic.info" = { underline = { color = "denim", style = "curl" } }
+"diagnostic.hint" = { underline = { color = "sage", style = "curl" } }
+"diagnostic.unnecessary" = "overlay1"
+"diagnostic.deprecated" = { modifiers = ["crossed_out"] }
+
+rainbow = ["red_hi", "orange", "yellow", "green", "sage", "denim", "clay"]
+
+[palette]
+crust = "#ccdaf2"
+mantle = "#dce5f7"
+base = "#e8f0ff"
+surface0 = "#bfcff1"
+surface1 = "#a8bbe2"
+surface2 = "#93a7cf"
+overlay0 = "#8192b4"
+overlay1 = "#697794"
+overlay2 = "#556179"
+subtext0 = "#4a5469"
+subtext1 = "#3c4557"
+text = "#293040"
+text_hi = "#1b202b"
+yellow = "#8d6c08"
+yellow_hi = "#9b770a"
+orange = "#a54300"
+orange_hi = "#ac5a00"
+red = "#9b211a"
+red_hi = "#cc2e25"
+green = "#0d8131"
+green_hi = "#008730"
+sage = "#007376"
+sage_hi = "#008688"
+denim = "#0019a8"
+denim_hi = "#4a6ebd"
+clay = "#755fa9"
+cursor = "#a54300"
+cursor_select = "#8d6c08"
+cursor_secondary = "#c39173"
+cursor_secondary_insert = "#70b38e"
+cursor_secondary_select = "#b6a777"
+cursorline = "#dce5f7"
+cursorline_secondary = "#e2eafb"
+selection = "#a8bbe2"
+selection_secondary = "#c5d3ef"
+bracket = "#a54300"
+bracket_bg = "#dbe2f2"
+paper = "#f4f8ff"
+row = "#dfe4ec"
+inlay_bg = "#cfdcf7"
+ink = "#e8f0ff"
+error_bg = "#dfd7e4"
+warning_bg = "#dfe3e6"
+info_bg = "#c8d2f3"
+hint_bg = "#c8deec"
+frameline = "#e1d9bf"

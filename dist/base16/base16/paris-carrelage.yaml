@@ -1,0 +1,22 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+system: "base16"
+name: "Paris Carrelage"
+author: "oddurs (https://github.com/oddurs/subway-seat)"
+variant: "light"
+palette:
+  base00: "#EEF2F1" # base (Carrelage base)
+  base01: "#C6D2CF" # surface0 (Carrelage surface0)
+  base02: "#B0BFBB" # surface1 (Carrelage surface1)
+  base03: "#6C7C76" # overlay1 (Carrelage overlay1)
+  base04: "#4A5752" # subtext0 (Carrelage subtext0)
+  base05: "#27342F" # text (Carrelage text)
+  base06: "#19221E" # text_hi (Carrelage text hi)
+  base07: "#19221E" # text_hi (Carrelage text hi)
+  base08: "#88251E" # red (Redbird)
+  base09: "#AC3B32" # red_hi (Redbird bright)
+  base0A: "#916D07" # yellow (Harvest gold)
+  base0B: "#218366" # green (Avocado)
+  base0C: "#006267" # sage (Seafoam tile)
+  base0D: "#25629B" # denim (Faded denim)
+  base0E: "#764C00" # orange (Burnt orange)
+  base0F: "#B36B51" # clay (Terracotta)

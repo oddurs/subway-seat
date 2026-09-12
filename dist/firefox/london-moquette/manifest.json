@@ -1,0 +1,61 @@
+{
+  "manifest_version": 2,
+  "name": "London Moquette",
+  "version": "0.3.0",
+  "description": "A walnut-brown 1970s NYC subway theme: harvest gold, burnt orange and avocado on warm wood. The seat you're sitting on. Corporate Blue, turned right down.",
+  "author": "Oddur Sigurdsson",
+  "homepage_url": "https://github.com/oddurs/subway-seat",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "london-moquette@oddurs.github.io",
+      "strict_min_version": "106.0"
+    }
+  },
+  "theme": {
+    "colors": {
+      "frame": "#121826",
+      "frame_inactive": "#121826",
+      "tab_background_text": "#8F9AB0",
+      "tab_background_separator": "#263451",
+      "tab_selected": "#1E2941",
+      "tab_text": "#D8DEEA",
+      "tab_line": "#DE8946",
+      "tab_loading": "#DE8946",
+      "toolbar": "#1E2941",
+      "toolbar_text": "#D8DEEA",
+      "toolbar_top_separator": "#121826",
+      "toolbar_bottom_separator": "#263451",
+      "toolbar_vertical_separator": "#263451",
+      "icons": "#C1C9D8",
+      "icons_attention": "#DE8946",
+      "button_background_hover": "#263451",
+      "button_background_active": "#303F61",
+      "toolbar_field": "#172032",
+      "toolbar_field_text": "#D8DEEA",
+      "toolbar_field_border": "#263451",
+      "toolbar_field_focus": "#172032",
+      "toolbar_field_text_focus": "#E9EDF5",
+      "toolbar_field_border_focus": "#DE8946",
+      "toolbar_field_highlight": "#3D4F72",
+      "toolbar_field_highlight_text": "#E9EDF5",
+      "toolbar_field_separator": "#263451",
+      "popup": "#263451",
+      "popup_text": "#D8DEEA",
+      "popup_border": "#3C4964",
+      "popup_highlight": "#3D4F72",
+      "popup_highlight_text": "#E9EDF5",
+      "sidebar": "#172032",
+      "sidebar_text": "#D8DEEA",
+      "sidebar_border": "#263451",
+      "sidebar_highlight": "#3D4F72",
+      "sidebar_highlight_text": "#E9EDF5",
+      "ntp_background": "#1E2941",
+      "ntp_card_background": "#263451",
+      "ntp_text": "#D8DEEA"
+    },
+    "properties": {
+      "color_scheme": "dark",
+      "content_color_scheme": "dark"
+    }
+  }
+}

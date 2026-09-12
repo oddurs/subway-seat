@@ -43,6 +43,48 @@ spicetify config current_theme subway-seat color_scheme enamel
 spicetify apply
 ```
 
+**London Moquette**, in a terminal, with the theme in Spicetify's Themes folder:
+
+```sh
+spicetify config current_theme subway-seat color_scheme moquette
+spicetify apply
+```
+
+**London Deep Level**, in a terminal, with the theme in Spicetify's Themes folder:
+
+```sh
+spicetify config current_theme subway-seat color_scheme deep
+spicetify apply
+```
+
+**London Portland**, in a terminal, with the theme in Spicetify's Themes folder:
+
+```sh
+spicetify config current_theme subway-seat color_scheme portland
+spicetify apply
+```
+
+**Paris Guimard**, in a terminal, with the theme in Spicetify's Themes folder:
+
+```sh
+spicetify config current_theme subway-seat color_scheme guimard
+spicetify apply
+```
+
+**Paris Catacombes**, in a terminal, with the theme in Spicetify's Themes folder:
+
+```sh
+spicetify config current_theme subway-seat color_scheme catacombes
+spicetify apply
+```
+
+**Paris Carrelage**, in a terminal, with the theme in Spicetify's Themes folder:
+
+```sh
+spicetify config current_theme subway-seat color_scheme carrelage
+spicetify apply
+```
+
 ## Uninstall
 
 - Delete `~/.config/spicetify/Themes/subway-seat/color.ini`.

@@ -1,0 +1,61 @@
+{
+  "manifest_version": 2,
+  "name": "London Deep Level",
+  "version": "0.3.0",
+  "description": "A walnut-brown 1970s NYC subway theme: harvest gold, burnt orange and avocado on warm wood. Below the cut-and-cover lines. The ground drops; the signals don't.",
+  "author": "Oddur Sigurdsson",
+  "homepage_url": "https://github.com/oddurs/subway-seat",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "london-deep-level@oddurs.github.io",
+      "strict_min_version": "106.0"
+    }
+  },
+  "theme": {
+    "colors": {
+      "frame": "#0A0E18",
+      "frame_inactive": "#0A0E18",
+      "tab_background_text": "#8B96AC",
+      "tab_background_separator": "#1A243A",
+      "tab_selected": "#121A2D",
+      "tab_text": "#D4DAE7",
+      "tab_line": "#DE8946",
+      "tab_loading": "#DE8946",
+      "toolbar": "#121A2D",
+      "toolbar_text": "#D4DAE7",
+      "toolbar_top_separator": "#0A0E18",
+      "toolbar_bottom_separator": "#1A243A",
+      "toolbar_vertical_separator": "#1A243A",
+      "icons": "#BEC6D5",
+      "icons_attention": "#DE8946",
+      "button_background_hover": "#1A243A",
+      "button_background_active": "#232F49",
+      "toolbar_field": "#0D1421",
+      "toolbar_field_text": "#D4DAE7",
+      "toolbar_field_border": "#1A243A",
+      "toolbar_field_focus": "#0D1421",
+      "toolbar_field_text_focus": "#E7EBF3",
+      "toolbar_field_border_focus": "#DE8946",
+      "toolbar_field_highlight": "#303E5B",
+      "toolbar_field_highlight_text": "#E7EBF3",
+      "toolbar_field_separator": "#1A243A",
+      "popup": "#1A243A",
+      "popup_text": "#D4DAE7",
+      "popup_border": "#313A4F",
+      "popup_highlight": "#303E5B",
+      "popup_highlight_text": "#E7EBF3",
+      "sidebar": "#0D1421",
+      "sidebar_text": "#D4DAE7",
+      "sidebar_border": "#1A243A",
+      "sidebar_highlight": "#303E5B",
+      "sidebar_highlight_text": "#E7EBF3",
+      "ntp_background": "#121A2D",
+      "ntp_card_background": "#1A243A",
+      "ntp_text": "#D4DAE7"
+    },
+    "properties": {
+      "color_scheme": "dark",
+      "content_color_scheme": "dark"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# London Portland for cava: gradient from the bottom of the screen to the top.
+[color]
+gradient = 1
+gradient_color_1 = '#0D8131'
+gradient_color_2 = '#44781F'
+gradient_color_3 = '#7B6F0E'
+gradient_color_4 = '#946006'
+gradient_color_5 = '#9E4F02'
+gradient_color_6 = '#A43E04'
+gradient_color_7 = '#9F300F'
+gradient_color_8 = '#9B211A'

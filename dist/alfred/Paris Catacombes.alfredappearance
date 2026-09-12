@@ -1,0 +1,64 @@
+{
+  "alfredtheme": {
+    "result": {
+      "textSpacing": 6,
+      "subtext": {
+        "size": 12,
+        "colorSelected": "#BFC8C2FF",
+        "font": "System",
+        "color": "#8C9A92FF"
+      },
+      "shortcut": {
+        "size": 16,
+        "colorSelected": "#DFAA61FF",
+        "font": "System",
+        "color": "#708178FF"
+      },
+      "backgroundSelected": "#3A3823FF",
+      "text": {
+        "size": 18,
+        "colorSelected": "#E7ECEAFF",
+        "font": "System",
+        "color": "#D4DDD7FF"
+      },
+      "iconPaddingHorizontal": 6,
+      "roundness": 8,
+      "paddingVertical": 4,
+      "iconSize": 38
+    },
+    "search": {
+      "backgroundSelected": "#31433AFF",
+      "paddingHorizontal": 10,
+      "spacing": 10,
+      "text": {
+        "size": 30,
+        "colorSelected": "#E7ECEAFF",
+        "font": "System Light",
+        "color": "#D4DDD7FF"
+      },
+      "background": "#0D1711FF",
+      "roundness": 8,
+      "paddingVertical": 6
+    },
+    "window": {
+      "color": "#121E19F7",
+      "paddingHorizontal": 10,
+      "width": 620,
+      "borderPadding": 0,
+      "borderColor": "#1A2921FF",
+      "blur": 12,
+      "roundness": 14,
+      "paddingVertical": 10
+    },
+    "separator": {
+      "color": "#1A2921FF",
+      "thickness": 1
+    },
+    "scrollbar": {
+      "color": "#31433AFF",
+      "thickness": 3
+    },
+    "name": "Paris Catacombes",
+    "credit": "Oddur Sigurdsson"
+  }
+}

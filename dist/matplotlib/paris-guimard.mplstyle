@@ -1,0 +1,31 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# Paris Guimard for matplotlib. Colors are hex without the leading #, as rc files expect.
+figure.facecolor: 1E2E26
+figure.edgecolor: 1E2E26
+savefig.facecolor: 1E2E26
+savefig.edgecolor: 1E2E26
+axes.facecolor: 1E2E26
+axes.edgecolor: 586B61
+axes.labelcolor: C2CBC5
+axes.titlecolor: E9EEEC
+axes.prop_cycle: cycler('color', ['CA9245', '549B9F', 'F1BF4B', '709BC8', 'E7877B', '70CAA9', 'FAB49C'])
+text.color: D9E1DB
+xtick.color: 74857C
+ytick.color: 74857C
+xtick.labelcolor: A9B5AE
+ytick.labelcolor: A9B5AE
+grid.color: 35443C
+legend.facecolor: 263930
+legend.edgecolor: 3C4D45
+patch.facecolor: CA9245
+patch.edgecolor: 1E2E26
+hatch.color: A9B5AE
+boxplot.boxprops.color: C2CBC5
+boxplot.whiskerprops.color: C2CBC5
+boxplot.capprops.color: C2CBC5
+boxplot.flierprops.color: C2CBC5
+boxplot.flierprops.markeredgecolor: C2CBC5
+boxplot.medianprops.color: CA9245
+boxplot.meanprops.color: F1BF4B
+boxplot.meanprops.markerfacecolor: F1BF4B
+boxplot.meanprops.markeredgecolor: F1BF4B

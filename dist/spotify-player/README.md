@@ -19,6 +19,12 @@ The [installer](../../docs/INSTALL.md) shows its plan and asks once. Add `--flav
 | Subway Seat | [`themes/subway-seat.toml`](themes/subway-seat.toml) | add to the end of `~/.config/spotify-player/theme.toml` |
 | Subway Seat Tunnel | [`themes/subway-seat-tunnel.toml`](themes/subway-seat-tunnel.toml) | add to the end of `~/.config/spotify-player/theme.toml` |
 | Subway Seat Enamel | [`themes/subway-seat-enamel.toml`](themes/subway-seat-enamel.toml) | add to the end of `~/.config/spotify-player/theme.toml` |
+| London Moquette | [`themes/london-moquette.toml`](themes/london-moquette.toml) | add to the end of `~/.config/spotify-player/theme.toml` |
+| London Deep Level | [`themes/london-deep-level.toml`](themes/london-deep-level.toml) | add to the end of `~/.config/spotify-player/theme.toml` |
+| London Portland | [`themes/london-portland.toml`](themes/london-portland.toml) | add to the end of `~/.config/spotify-player/theme.toml` |
+| Paris Guimard | [`themes/paris-guimard.toml`](themes/paris-guimard.toml) | add to the end of `~/.config/spotify-player/theme.toml` |
+| Paris Catacombes | [`themes/paris-catacombes.toml`](themes/paris-catacombes.toml) | add to the end of `~/.config/spotify-player/theme.toml` |
+| Paris Carrelage | [`themes/paris-carrelage.toml`](themes/paris-carrelage.toml) | add to the end of `~/.config/spotify-player/theme.toml` |
 | All three | [`theme.toml`](theme.toml) | all three flavors: use it as ~/.config/spotify-player/theme.toml if you have no themes of your own |
 
 ## Turn it on
@@ -39,6 +45,42 @@ theme = "subway-seat-tunnel"
 
 ```toml
 theme = "subway-seat-enamel"
+```
+
+**London Moquette**, in ~/.config/spotify-player/app.toml, after adding the theme to the end of theme.toml:
+
+```toml
+theme = "london-moquette"
+```
+
+**London Deep Level**, in ~/.config/spotify-player/app.toml, after adding the theme to the end of theme.toml:
+
+```toml
+theme = "london-deep-level"
+```
+
+**London Portland**, in ~/.config/spotify-player/app.toml, after adding the theme to the end of theme.toml:
+
+```toml
+theme = "london-portland"
+```
+
+**Paris Guimard**, in ~/.config/spotify-player/app.toml, after adding the theme to the end of theme.toml:
+
+```toml
+theme = "paris-guimard"
+```
+
+**Paris Catacombes**, in ~/.config/spotify-player/app.toml, after adding the theme to the end of theme.toml:
+
+```toml
+theme = "paris-catacombes"
+```
+
+**Paris Carrelage**, in ~/.config/spotify-player/app.toml, after adding the theme to the end of theme.toml:
+
+```toml
+theme = "paris-carrelage"
 ```
 
 ## Uninstall

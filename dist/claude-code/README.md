@@ -31,6 +31,36 @@ The [installer](../../docs/INSTALL.md) shows its plan and asks once. Add `--flav
 | Subway Seat Enamel | [`themes/subway-seat-enamel-terminal.json`](themes/subway-seat-enamel-terminal.json) | `~/.claude/themes/subway-seat-enamel-terminal.json` |
 | Subway Seat Enamel | [`plugin/themes/subway-seat-enamel-terminal.json`](plugin/themes/subway-seat-enamel-terminal.json) |  |
 | Subway Seat Enamel | [`plugin/settings/subway-seat-enamel.json`](plugin/settings/subway-seat-enamel.json) | merged into ~/.claude/settings.json by /subway-seat:setup |
+| London Moquette | [`themes/london-moquette.json`](themes/london-moquette.json) | `~/.claude/themes/london-moquette.json` |
+| London Moquette | [`plugin/themes/london-moquette.json`](plugin/themes/london-moquette.json) |  |
+| London Moquette | [`themes/london-moquette-terminal.json`](themes/london-moquette-terminal.json) | `~/.claude/themes/london-moquette-terminal.json` |
+| London Moquette | [`plugin/themes/london-moquette-terminal.json`](plugin/themes/london-moquette-terminal.json) |  |
+| London Moquette | [`plugin/settings/london-moquette.json`](plugin/settings/london-moquette.json) | merged into ~/.claude/settings.json by /subway-seat:setup |
+| London Deep Level | [`themes/london-deep-level.json`](themes/london-deep-level.json) | `~/.claude/themes/london-deep-level.json` |
+| London Deep Level | [`plugin/themes/london-deep-level.json`](plugin/themes/london-deep-level.json) |  |
+| London Deep Level | [`themes/london-deep-level-terminal.json`](themes/london-deep-level-terminal.json) | `~/.claude/themes/london-deep-level-terminal.json` |
+| London Deep Level | [`plugin/themes/london-deep-level-terminal.json`](plugin/themes/london-deep-level-terminal.json) |  |
+| London Deep Level | [`plugin/settings/london-deep-level.json`](plugin/settings/london-deep-level.json) | merged into ~/.claude/settings.json by /subway-seat:setup |
+| London Portland | [`themes/london-portland.json`](themes/london-portland.json) | `~/.claude/themes/london-portland.json` |
+| London Portland | [`plugin/themes/london-portland.json`](plugin/themes/london-portland.json) |  |
+| London Portland | [`themes/london-portland-terminal.json`](themes/london-portland-terminal.json) | `~/.claude/themes/london-portland-terminal.json` |
+| London Portland | [`plugin/themes/london-portland-terminal.json`](plugin/themes/london-portland-terminal.json) |  |
+| London Portland | [`plugin/settings/london-portland.json`](plugin/settings/london-portland.json) | merged into ~/.claude/settings.json by /subway-seat:setup |
+| Paris Guimard | [`themes/paris-guimard.json`](themes/paris-guimard.json) | `~/.claude/themes/paris-guimard.json` |
+| Paris Guimard | [`plugin/themes/paris-guimard.json`](plugin/themes/paris-guimard.json) |  |
+| Paris Guimard | [`themes/paris-guimard-terminal.json`](themes/paris-guimard-terminal.json) | `~/.claude/themes/paris-guimard-terminal.json` |
+| Paris Guimard | [`plugin/themes/paris-guimard-terminal.json`](plugin/themes/paris-guimard-terminal.json) |  |
+| Paris Guimard | [`plugin/settings/paris-guimard.json`](plugin/settings/paris-guimard.json) | merged into ~/.claude/settings.json by /subway-seat:setup |
+| Paris Catacombes | [`themes/paris-catacombes.json`](themes/paris-catacombes.json) | `~/.claude/themes/paris-catacombes.json` |
+| Paris Catacombes | [`plugin/themes/paris-catacombes.json`](plugin/themes/paris-catacombes.json) |  |
+| Paris Catacombes | [`themes/paris-catacombes-terminal.json`](themes/paris-catacombes-terminal.json) | `~/.claude/themes/paris-catacombes-terminal.json` |
+| Paris Catacombes | [`plugin/themes/paris-catacombes-terminal.json`](plugin/themes/paris-catacombes-terminal.json) |  |
+| Paris Catacombes | [`plugin/settings/paris-catacombes.json`](plugin/settings/paris-catacombes.json) | merged into ~/.claude/settings.json by /subway-seat:setup |
+| Paris Carrelage | [`themes/paris-carrelage.json`](themes/paris-carrelage.json) | `~/.claude/themes/paris-carrelage.json` |
+| Paris Carrelage | [`plugin/themes/paris-carrelage.json`](plugin/themes/paris-carrelage.json) |  |
+| Paris Carrelage | [`themes/paris-carrelage-terminal.json`](themes/paris-carrelage-terminal.json) | `~/.claude/themes/paris-carrelage-terminal.json` |
+| Paris Carrelage | [`plugin/themes/paris-carrelage-terminal.json`](plugin/themes/paris-carrelage-terminal.json) |  |
+| Paris Carrelage | [`plugin/settings/paris-carrelage.json`](plugin/settings/paris-carrelage.json) | merged into ~/.claude/settings.json by /subway-seat:setup |
 | All three | [`plugin/.claude-plugin/plugin.json`](plugin/.claude-plugin/plugin.json) |  |
 | All three | [`plugin/settings.json`](plugin/settings.json) |  |
 | All three | [`plugin/hooks/hooks.json`](plugin/hooks/hooks.json) |  |
@@ -68,6 +98,54 @@ The [installer](../../docs/INSTALL.md) shows its plan and asks once. Add `--flav
 /subway-seat:setup   # and pick Subway Seat Enamel
 ```
 
+**London Moquette**, in Claude Code, from the Subway Seat marketplace:
+
+```text
+/plugin marketplace add oddurs/subway-seat
+/plugin install subway-seat@subway-seat
+/subway-seat:setup   # and pick London Moquette
+```
+
+**London Deep Level**, in Claude Code, from the Subway Seat marketplace:
+
+```text
+/plugin marketplace add oddurs/subway-seat
+/plugin install subway-seat@subway-seat
+/subway-seat:setup   # and pick London Deep Level
+```
+
+**London Portland**, in Claude Code, from the Subway Seat marketplace:
+
+```text
+/plugin marketplace add oddurs/subway-seat
+/plugin install subway-seat@subway-seat
+/subway-seat:setup   # and pick London Portland
+```
+
+**Paris Guimard**, in Claude Code, from the Subway Seat marketplace:
+
+```text
+/plugin marketplace add oddurs/subway-seat
+/plugin install subway-seat@subway-seat
+/subway-seat:setup   # and pick Paris Guimard
+```
+
+**Paris Catacombes**, in Claude Code, from the Subway Seat marketplace:
+
+```text
+/plugin marketplace add oddurs/subway-seat
+/plugin install subway-seat@subway-seat
+/subway-seat:setup   # and pick Paris Catacombes
+```
+
+**Paris Carrelage**, in Claude Code, from the Subway Seat marketplace:
+
+```text
+/plugin marketplace add oddurs/subway-seat
+/plugin install subway-seat@subway-seat
+/subway-seat:setup   # and pick Paris Carrelage
+```
+
 ## Uninstall
 
 - Delete `~/.claude/themes/subway-seat.json`.
@@ -76,6 +154,18 @@ The [installer](../../docs/INSTALL.md) shows its plan and asks once. Add `--flav
 - Delete `~/.claude/themes/subway-seat-tunnel-terminal.json`.
 - Delete `~/.claude/themes/subway-seat-enamel.json`.
 - Delete `~/.claude/themes/subway-seat-enamel-terminal.json`.
+- Delete `~/.claude/themes/london-moquette.json`.
+- Delete `~/.claude/themes/london-moquette-terminal.json`.
+- Delete `~/.claude/themes/london-deep-level.json`.
+- Delete `~/.claude/themes/london-deep-level-terminal.json`.
+- Delete `~/.claude/themes/london-portland.json`.
+- Delete `~/.claude/themes/london-portland-terminal.json`.
+- Delete `~/.claude/themes/paris-guimard.json`.
+- Delete `~/.claude/themes/paris-guimard-terminal.json`.
+- Delete `~/.claude/themes/paris-catacombes.json`.
+- Delete `~/.claude/themes/paris-catacombes-terminal.json`.
+- Delete `~/.claude/themes/paris-carrelage.json`.
+- Delete `~/.claude/themes/paris-carrelage-terminal.json`.
 - Delete `~/.claude/subway-seat/subway-seat-statusline`.
 - Delete `~/.claude/subway-seat/subway-seat-subagents`.
 - Delete `~/.claude/subway-seat/tips.json`.

@@ -1,0 +1,11 @@
+{
+  "_comment": "Subway Seat \u2014 generated from palette.py by build.py. Edit the palette, not this file.",
+  "name": "London Portland",
+  "mode": 0,
+  "darkSchemeBackgroundColor": "#362619",
+  "darkSchemeTextColor": "#EDDCBC",
+  "lightSchemeBackgroundColor": "#F8EFDF",
+  "lightSchemeTextColor": "#3E2C1E",
+  "scrollbarColor": "#A8BBE2",
+  "selectionColor": "#A8BBE2"
+}

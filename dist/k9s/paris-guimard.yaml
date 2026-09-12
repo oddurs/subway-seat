@@ -1,0 +1,119 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# Paris Guimard skin for k9s.
+k9s:
+  body:
+    fgColor: '#D9E1DB'
+    bgColor: '#1E2E26'
+    logoColor: '#CA9245'
+    logoColorMsg: '#D9E1DB'
+    logoColorInfo: '#70CAA9'
+    logoColorWarn: '#F1BF4B'
+    logoColorError: '#E7877B'
+  prompt:
+    fgColor: '#D9E1DB'
+    bgColor: '#18241D'
+    suggestColor: '#74857C'
+    border:
+      default: '#549B9F'
+      command: '#CA9245'
+  info:
+    fgColor: '#CA9245'
+    sectionColor: '#D9E1DB'
+    cpuColor: '#70CAA9'
+    memColor: '#F1BF4B'
+    k9sRevColor: '#89DEBE'
+  help:
+    fgColor: '#D9E1DB'
+    bgColor: '#1E2E26'
+    sectionColor: '#70CAA9'
+    keyColor: '#F1BF4B'
+    numKeyColor: '#E7877B'
+  frame:
+    title:
+      fgColor: '#F1BF4B'
+      bgColor: '#1E2E26'
+      highlightColor: '#CA9245'
+      counterColor: '#E7877B'
+      filterColor: '#70CAA9'
+    border:
+      fgColor: '#3E554A'
+      focusColor: '#CA9245'
+    menu:
+      fgColor: '#C2CBC5'
+      keyColor: '#F1BF4B'
+      numKeyColor: '#E7877B'
+    crumbs:
+      fgColor: '#131A17'
+      bgColor: '#F1BF4B'
+      activeColor: '#CA9245'
+    status:
+      newColor: '#549B9F'
+      modifyColor: '#F1BF4B'
+      addColor: '#70CAA9'
+      pendingColor: '#CA9245'
+      errorColor: '#E7877B'
+      highlightColor: '#FFD57A'
+      killColor: '#FAB49C'
+      completedColor: '#586B61'
+  views:
+    table:
+      fgColor: '#D9E1DB'
+      bgColor: '#1E2E26'
+      cursorFgColor: '#E9EEEC'
+      cursorBgColor: '#30463B'
+      markColor: '#DFAA61'
+      header:
+        fgColor: '#A9B5AE'
+        bgColor: '#1E2E26'
+        sorterColor: '#CA9245'
+        selectedSortColumnColor: '#CA9245'
+    xray:
+      fgColor: '#D9E1DB'
+      bgColor: '#1E2E26'
+      cursorColor: '#30463B'
+      cursorTextColor: '#E9EEEC'
+      graphicColor: '#549B9F'
+    charts:
+      bgColor: '#1E2E26'
+      chartBgColor: '#1E2E26'
+      dialBgColor: '#1E2E26'
+      defaultDialColors:
+        - '#70CAA9'
+        - '#E7877B'
+      defaultChartColors:
+        - '#70CAA9'
+        - '#E7877B'
+      resourceColors:
+        cpu:
+          - '#CA9245'
+          - '#F1BF4B'
+        mem:
+          - '#F1BF4B'
+          - '#70CAA9'
+      focusFgColor: '#131A17'
+      focusBgColor: '#CA9245'
+    yaml:
+      keyColor: '#F1BF4B'
+      valueColor: '#D9E1DB'
+      colonColor: '#909E96'
+    logs:
+      fgColor: '#D9E1DB'
+      bgColor: '#1E2E26'
+      indicator:
+        fgColor: '#A9B5AE'
+        bgColor: '#1E2E26'
+        toggleOnColor: '#70CAA9'
+        toggleOffColor: '#586B61'
+    picker:
+      mainColor: '#D9E1DB'
+      focusColor: '#CA9245'
+      shortcutColor: '#F1BF4B'
+  dialog:
+    fgColor: '#D9E1DB'
+    bgColor: '#263930'
+    buttonFgColor: '#D9E1DB'
+    buttonBgColor: '#3E554A'
+    buttonFocusFgColor: '#131A17'
+    buttonFocusBgColor: '#CA9245'
+    labelFgColor: '#F1BF4B'
+    fieldFgColor: '#D9E1DB'

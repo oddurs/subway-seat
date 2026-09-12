@@ -4,37 +4,37 @@
 @import "default"
 
 * {
-    crust:     #E2D3B6;
-    mantle:    #EBDEC6;
-    base:      #F4E9D4;
-    surface0:  #D9C8A7;
-    surface1:  #CAB48E;
-    surface2:  #BAA07A;
-    overlay0:  #A58C6A;
+    crust:     #E4D8C0;
+    mantle:    #EEE4D0;
+    base:      #F8EFDF;
+    surface0:  #DBCDB3;
+    surface1:  #CBB898;
+    surface2:  #BAA380;
+    overlay0:  #A58D6D;
     overlay1:  #8C7254;
     overlay2:  #735C44;
     subtext0:  #654F3B;
     subtext1:  #54402F;
     text:      #3E2C1E;
     text-hi:   #2A1D13;
-    yellow:    #936200;
-    yellow-hi: #A56E00;
-    orange:    #AD4E00;
-    orange-hi: #C4561A;
+    yellow:    #976608;
+    yellow-hi: #A9720A;
+    orange:    #A04800;
+    orange-hi: #BA4D0A;
     red:       #992418;
-    red-hi:    #BC4031;
+    red-hi:    #BF4233;
     green:     #66740F;
     green-hi:  #697813;
     sage:      #3E7157;
     sage-hi:   #4C8367;
     denim:     #3F6480;
     denim-hi:  #517791;
-    clay:      #A65633;
+    clay:      #843811;
 
-    paper:     #FAF4EA;
-    edge:      #DFD8CD;
-    hover:     #EDE6DC;
-    selection: #D4CCC1;
+    paper:     #FCF7EF;
+    edge:      #E1DAD1;
+    hover:     #EFE9E0;
+    selection: #D6CEC5;
 
     /* the default theme's variables */
     background:                  @paper;
@@ -62,11 +62,11 @@
     selected-active-background:  @selection;
     selected-active-foreground:  #3F6480;
     selected-urgent-background:  @selection;
-    selected-urgent-foreground:  #AD4E00;
+    selected-urgent-foreground:  #A04800;
 }
 
 element-text {
-    highlight: bold #936200;
+    highlight: bold #976608;
 }
 
 entry {

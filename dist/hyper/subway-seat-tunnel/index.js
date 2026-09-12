@@ -21,7 +21,7 @@ const theme = {
     "cyan": "#86AD95",
     "white": "#D6C3A0",
     "lightBlack": "#917759",
-    "lightRed": "#F97160",
+    "lightRed": "#FF8373",
     "lightGreen": "#BFCB63",
     "lightYellow": "#FFD36B",
     "lightBlue": "#9DB6C6",

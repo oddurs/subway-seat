@@ -1,0 +1,35 @@
+/* Subway Seat — generated from palette.py by build.py. Edit the palette, not this file. */
+/* London Deep Level for waybar: @import it at the top of style.css. */
+
+@define-color crust #0A0E18;
+@define-color mantle #0D1421;
+@define-color base #121A2D;
+@define-color surface0 #1A243A;
+@define-color surface1 #232F49;
+@define-color surface2 #303E5B;
+@define-color overlay0 #53617D;
+@define-color overlay1 #6F7C97;
+@define-color overlay2 #8B96AC;
+@define-color subtext0 #A5AEC0;
+@define-color subtext1 #BEC6D5;
+@define-color text #D4DAE7;
+@define-color text_hi #E7EBF3;
+@define-color yellow #F2C03F;
+@define-color yellow_hi #FFD36C;
+@define-color orange #DE8946;
+@define-color orange_hi #E5AA7F;
+@define-color red #DB6052;
+@define-color red_hi #FE8474;
+@define-color green #77C581;
+@define-color green_hi #9AD2A0;
+@define-color sage #54B4B5;
+@define-color sage_hi #72D1D3;
+@define-color denim #7595DA;
+@define-color denim_hi #8BB0FF;
+@define-color clay #AE9EDC;
+
+/* Layers: a raised ground for popovers, and washes of text for borders, hover and selection */
+@define-color paper #1A243A;
+@define-color edge alpha(@text, 0.12);
+@define-color hover alpha(@text, 0.08);
+@define-color selection alpha(@text, 0.16);

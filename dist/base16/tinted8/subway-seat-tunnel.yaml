@@ -21,7 +21,7 @@ palette:
   gray-bright: "#AA9171"
   gray-dim: "#745B45"
   red: "#E05C45"
-  red-bright: "#F97160"
+  red-bright: "#FF8373"
   green: "#ADB956"
   green-bright: "#BFCB63"
   yellow: "#F3BF45"
@@ -34,27 +34,27 @@ palette:
   cyan-bright: "#A5C9B0"
   orange: "#EC7F31"
   orange-bright: "#FF9D55"
-  brown: "#E0956C"
+  brown: "#F4A87E"
 syntax:
   comment: "#917759" # comment
   punctuation.definition.comment: "#917759" # comment
-  constant: "#F97160" # constant
-  constant.numeric: "#F97160" # number
-  constant.language: "#F97160" # boolean
-  constant.character: "#E0956C" # string.escape
+  constant: "#FF8373" # constant
+  constant.numeric: "#FF8373" # number
+  constant.language: "#FF8373" # boolean
+  constant.character: "#F4A87E" # string.escape
   entity.name: "#E9D8B6" # variable
   entity.name.function: "#F3BF45" # function
   entity.name.class: "#86AD95" # type
   entity.name.type: "#86AD95" # type
   entity.name.namespace: "#C0AA88" # namespace
   entity.name.tag: "#EC7F31" # tag
-  entity.name.label: "#E0956C" # decorator
+  entity.name.label: "#F4A87E" # decorator
   entity.name.section: "#F3BF45" # heading
   entity.other: "#E9D8B6" # variable
   entity.other.attribute-name: "#F3BF45" # attribute
   entity.other.inherited-class: "#86AD95" # type
   invalid: "#E05C45" # invalid
-  invalid.deprecated: "#E0956C" # clay
+  invalid.deprecated: "#F4A87E" # clay
   keyword: "#EC7F31" # keyword
   keyword.operator: "#AA9171" # operator
   markup: "#E9D8B6" # text
@@ -66,25 +66,25 @@ syntax:
   markup.quote: "#C0AA88" # quote
   markup.raw: "#ADB956" # code
   markup.inserted: "#ADB956" # green
-  markup.deleted: "#F97160" # red_hi
+  markup.deleted: "#FF8373" # red_hi
   markup.changed: "#F3BF45" # yellow
   meta: "#E9D8B6" # text
-  meta.annotation: "#E0956C" # decorator
+  meta.annotation: "#F4A87E" # decorator
   punctuation: "#AA9171" # punctuation
   punctuation.definition.string: "#ADB956" # string
   punctuation.section: "#AA9171" # punctuation
   storage: "#EC7F31" # storage
   string: "#ADB956" # string
-  string.regexp: "#E0956C" # regexp
-  string.interpolated: "#E0956C" # string.escape
+  string.regexp: "#F4A87E" # regexp
+  string.interpolated: "#F4A87E" # string.escape
   support: "#F3BF45" # function
   support.class: "#86AD95" # type
   support.type: "#86AD95" # type.builtin
-  support.constant: "#F97160" # constant
+  support.constant: "#FF8373" # constant
   support.function.builtin: "#F3BF45" # function.builtin
-  support.variable: "#F97160" # variable.builtin
+  support.variable: "#FF8373" # variable.builtin
   variable: "#E9D8B6" # variable
-  variable.language: "#F97160" # variable.builtin
+  variable.language: "#FF8373" # variable.builtin
   variable.parameter: "#D6C3A0" # parameter
   variable.other.property: "#D6C3A0" # property
 ui:
@@ -108,7 +108,7 @@ ui:
     muted:
       background: "#917759"
       foreground: "#24180E"
-  deprecated: "#E0956C"
+  deprecated: "#F4A87E"
   global:
     background:
       normal: "#24180E"
@@ -148,7 +148,7 @@ ui:
     foreground: "#F6EAD1"
     inactive-background: "#3D2C1D"
   status:
-    error: "#F97160"
+    error: "#FF8373"
     info: "#7F9BAE"
     success: "#ADB956"
     warning: "#F3BF45"

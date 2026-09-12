@@ -7,17 +7,18 @@ import {
   type ThemeRegistrationRaw,
 } from "shiki";
 import { readDist } from "./dist";
-import type { FlavorId } from "./palette";
+import { type FlavorId, flavors } from "./palette";
 
 // Highlight with the real generated VS Code themes — what you see is what you install.
 const theme = (slug: string) =>
   JSON.parse(readDist(`vscode/themes/${slug}-color-theme.json`)) as ThemeRegistrationRaw;
 
-const THEMES = {
-  walnut: theme("subway-seat"),
-  tunnel: theme("subway-seat-tunnel"),
-  enamel: theme("subway-seat-enamel"),
-} satisfies Record<FlavorId, ThemeRegistrationRaw>;
+// One entry per flavor, read from the palette — a new family costs nothing here.
+const THEMES = Object.fromEntries(flavors.map((f) => [f.id, theme(f.slug)])) as Record<
+  FlavorId,
+  ThemeRegistrationRaw
+>;
+const DEFAULT_FLAVOR = flavors[0].id;
 
 // Ghostty config, fish theme files and gitconfig are all "key [=] value" with
 // full-line comments. Stock ini/properties grammars treat `#513B27` as a comment.
@@ -77,8 +78,8 @@ export async function highlight(
   const themes = flavor
     ? { theme: name(flavor) }
     : {
-        themes: { walnut: name("walnut"), tunnel: name("tunnel"), enamel: name("enamel") },
-        defaultColor: "walnut" as const,
+        themes: Object.fromEntries(flavors.map((f) => [f.id, name(f.id)])),
+        defaultColor: DEFAULT_FLAVOR,
       };
   return shiki.codeToHtml(code, { lang: l, ...themes, transformers, decorations });
 }

@@ -1,0 +1,61 @@
+{
+  "ui": {
+    "customThemes": {
+      "London Portland": {
+        "name": "London Portland",
+        "type": "custom",
+        "Background": "#E8F0FF",
+        "Foreground": "#293040",
+        "LightBlue": "#3C4557",
+        "AccentBlue": "#A54300",
+        "AccentPurple": "#755FA9",
+        "AccentCyan": "#007376",
+        "AccentGreen": "#0D8131",
+        "AccentYellow": "#8D6C08",
+        "AccentRed": "#CC2E25",
+        "DiffAdded": "#C0DEC9",
+        "DiffRemoved": "#EBD3D1",
+        "Comment": "#697794",
+        "Gray": "#556179",
+        "DarkGray": "#93A7CF",
+        "GradientColors": [
+          "#9B211A",
+          "#A54300",
+          "#8D6C08",
+          "#0D8131"
+        ],
+        "text": {
+          "primary": "#293040",
+          "secondary": "#556179",
+          "accent": "#755FA9",
+          "response": "#293040"
+        },
+        "background": {
+          "primary": "#E8F0FF",
+          "diff": {
+            "added": "#C0DEC9",
+            "removed": "#EBD3D1"
+          }
+        },
+        "ui": {
+          "comment": "#697794",
+          "symbol": "#8D6C08",
+          "active": "#A54300",
+          "focus": "#8D6C08",
+          "gradient": [
+            "#9B211A",
+            "#A54300",
+            "#8D6C08",
+            "#0D8131"
+          ]
+        },
+        "status": {
+          "success": "#0D8131",
+          "warning": "#8D6C08",
+          "error": "#CC2E25"
+        }
+      }
+    },
+    "theme": "London Portland"
+  }
+}

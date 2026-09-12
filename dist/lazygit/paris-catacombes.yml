@@ -1,0 +1,32 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# Paris Catacombes for lazygit.
+gui:
+  theme:
+    activeBorderColor:
+      - '#CA9245'
+      - 'bold'
+    inactiveBorderColor:
+      - '#54655C'
+    searchingActiveBorderColor:
+      - '#F1BF4B'
+      - 'bold'
+    optionsTextColor:
+      - '#F1BF4B'
+    selectedLineBgColor:
+      - '#24342C'
+    inactiveViewSelectedLineBgColor:
+      - '#1A2921'
+    cherryPickedCommitFgColor:
+      - '#0A100D'
+    cherryPickedCommitBgColor:
+      - '#549B9F'
+    markedBaseCommitFgColor:
+      - '#0A100D'
+    markedBaseCommitBgColor:
+      - '#F1BF4B'
+    unstagedChangesColor:
+      - '#E7877B'
+    defaultFgColor:
+      - '#D4DDD7'
+  authorColors:
+    '*': '#549B9F'

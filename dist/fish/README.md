@@ -19,6 +19,12 @@ The [installer](../../docs/INSTALL.md) shows its plan and asks once. Add `--flav
 | Subway Seat | [`themes/subway-seat.theme`](themes/subway-seat.theme) | `~/.config/fish/themes/subway-seat.theme` |
 | Subway Seat Tunnel | [`themes/subway-seat-tunnel.theme`](themes/subway-seat-tunnel.theme) | `~/.config/fish/themes/subway-seat-tunnel.theme` |
 | Subway Seat Enamel | [`themes/subway-seat-enamel.theme`](themes/subway-seat-enamel.theme) | `~/.config/fish/themes/subway-seat-enamel.theme` |
+| London Moquette | [`themes/london-moquette.theme`](themes/london-moquette.theme) | `~/.config/fish/themes/london-moquette.theme` |
+| London Deep Level | [`themes/london-deep-level.theme`](themes/london-deep-level.theme) | `~/.config/fish/themes/london-deep-level.theme` |
+| London Portland | [`themes/london-portland.theme`](themes/london-portland.theme) | `~/.config/fish/themes/london-portland.theme` |
+| Paris Guimard | [`themes/paris-guimard.theme`](themes/paris-guimard.theme) | `~/.config/fish/themes/paris-guimard.theme` |
+| Paris Catacombes | [`themes/paris-catacombes.theme`](themes/paris-catacombes.theme) | `~/.config/fish/themes/paris-catacombes.theme` |
+| Paris Carrelage | [`themes/paris-carrelage.theme`](themes/paris-carrelage.theme) | `~/.config/fish/themes/paris-carrelage.theme` |
 | All three | [`themes/subway-seat-auto.theme`](themes/subway-seat-auto.theme) | `~/.config/fish/themes/subway-seat-auto.theme` |
 
 ## Turn it on
@@ -59,6 +65,78 @@ In bash or zsh:
 echo 'fish_config theme choose subway-seat-enamel' >> ~/.config/fish/config.fish
 ```
 
+**London Moquette**, in config.fish:
+
+```fish
+fish_config theme choose london-moquette
+```
+
+In bash or zsh:
+
+```sh
+echo 'fish_config theme choose london-moquette' >> ~/.config/fish/config.fish
+```
+
+**London Deep Level**, in config.fish:
+
+```fish
+fish_config theme choose london-deep-level
+```
+
+In bash or zsh:
+
+```sh
+echo 'fish_config theme choose london-deep-level' >> ~/.config/fish/config.fish
+```
+
+**London Portland**, in config.fish:
+
+```fish
+fish_config theme choose london-portland
+```
+
+In bash or zsh:
+
+```sh
+echo 'fish_config theme choose london-portland' >> ~/.config/fish/config.fish
+```
+
+**Paris Guimard**, in config.fish:
+
+```fish
+fish_config theme choose paris-guimard
+```
+
+In bash or zsh:
+
+```sh
+echo 'fish_config theme choose paris-guimard' >> ~/.config/fish/config.fish
+```
+
+**Paris Catacombes**, in config.fish:
+
+```fish
+fish_config theme choose paris-catacombes
+```
+
+In bash or zsh:
+
+```sh
+echo 'fish_config theme choose paris-catacombes' >> ~/.config/fish/config.fish
+```
+
+**Paris Carrelage**, in config.fish:
+
+```fish
+fish_config theme choose paris-carrelage
+```
+
+In bash or zsh:
+
+```sh
+echo 'fish_config theme choose paris-carrelage' >> ~/.config/fish/config.fish
+```
+
 ## Follow light and dark
 
 In config.fish (fish 4.3+; terminals that don't report their background get Walnut):
@@ -72,6 +150,12 @@ fish_config theme choose subway-seat-auto
 - Delete `~/.config/fish/themes/subway-seat.theme`.
 - Delete `~/.config/fish/themes/subway-seat-tunnel.theme`.
 - Delete `~/.config/fish/themes/subway-seat-enamel.theme`.
+- Delete `~/.config/fish/themes/london-moquette.theme`.
+- Delete `~/.config/fish/themes/london-deep-level.theme`.
+- Delete `~/.config/fish/themes/london-portland.theme`.
+- Delete `~/.config/fish/themes/paris-guimard.theme`.
+- Delete `~/.config/fish/themes/paris-catacombes.theme`.
+- Delete `~/.config/fish/themes/paris-carrelage.theme`.
 - Delete `~/.config/fish/themes/subway-seat-auto.theme`.
 - Remove the line you added to turn it on.
 

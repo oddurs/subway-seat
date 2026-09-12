@@ -17,23 +17,23 @@
   },
   "heading": {
     "block_suffix": "\n",
-    "color": "#936200",
+    "color": "#976608",
     "bold": true
   },
   "h1": {
     "prefix": " ",
     "suffix": " ",
-    "color": "#F4E9D4",
-    "background_color": "#AD4E00",
+    "color": "#F8EFDF",
+    "background_color": "#A04800",
     "bold": true
   },
   "h2": {
     "prefix": "## ",
-    "color": "#AD4E00"
+    "color": "#A04800"
   },
   "h3": {
     "prefix": "### ",
-    "color": "#936200"
+    "color": "#976608"
   },
   "h4": {
     "prefix": "#### ",
@@ -60,7 +60,7 @@
     "bold": true
   },
   "hr": {
-    "color": "#BAA07A",
+    "color": "#BAA380",
     "format": "\n--------\n"
   },
   "item": {
@@ -93,7 +93,7 @@
     "prefix": " ",
     "suffix": " ",
     "color": "#66740F",
-    "background_color": "#EBDEC6"
+    "background_color": "#EEE4D0"
   },
   "code_block": {
     "color": "#3E2C1E",
@@ -103,25 +103,25 @@
         "color": "#3E2C1E"
       },
       "error": {
-        "color": "#F4E9D4",
-        "background_color": "#BC4031"
+        "color": "#F8EFDF",
+        "background_color": "#BF4233"
       },
       "comment": {
         "color": "#8C7254",
         "italic": true
       },
       "comment_preproc": {
-        "color": "#A65633",
+        "color": "#843811",
         "italic": true
       },
       "keyword": {
-        "color": "#AD4E00"
+        "color": "#A04800"
       },
       "keyword_reserved": {
-        "color": "#AD4E00"
+        "color": "#A04800"
       },
       "keyword_namespace": {
-        "color": "#AD4E00"
+        "color": "#A04800"
       },
       "keyword_type": {
         "color": "#3E7157",
@@ -137,52 +137,52 @@
         "color": "#3E2C1E"
       },
       "name_builtin": {
-        "color": "#936200",
+        "color": "#976608",
         "italic": true
       },
       "name_tag": {
-        "color": "#AD4E00"
+        "color": "#A04800"
       },
       "name_attribute": {
-        "color": "#936200",
+        "color": "#976608",
         "italic": true
       },
       "name_class": {
         "color": "#3E7157"
       },
       "name_constant": {
-        "color": "#BC4031"
+        "color": "#BF4233"
       },
       "name_decorator": {
-        "color": "#A65633",
+        "color": "#843811",
         "italic": true
       },
       "name_exception": {
         "color": "#3E7157"
       },
       "name_function": {
-        "color": "#936200"
+        "color": "#976608"
       },
       "name_other": {
         "color": "#3E2C1E"
       },
       "literal": {
-        "color": "#BC4031"
+        "color": "#BF4233"
       },
       "literal_number": {
-        "color": "#BC4031"
+        "color": "#BF4233"
       },
       "literal_date": {
-        "color": "#BC4031"
+        "color": "#BF4233"
       },
       "literal_string": {
         "color": "#66740F"
       },
       "literal_string_escape": {
-        "color": "#A65633"
+        "color": "#843811"
       },
       "generic_deleted": {
-        "color": "#BC4031"
+        "color": "#BF4233"
       },
       "generic_emph": {
         "color": "#3E2C1E",
@@ -199,7 +199,7 @@
         "color": "#3F6480"
       },
       "background": {
-        "background_color": "#EBDEC6"
+        "background_color": "#EEE4D0"
       }
     }
   },
@@ -211,7 +211,7 @@
   },
   "definition_list": {},
   "definition_term": {
-    "color": "#936200"
+    "color": "#976608"
   },
   "definition_description": {
     "block_prefix": "\n🠶 "

@@ -1,0 +1,27 @@
+// Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+// London Portland for gitui.
+(
+    selected_tab: Some("#A54300"),
+    command_fg: Some("#293040"),
+    selection_bg: Some("#BFCFF1"),
+    selection_fg: Some("#1B202B"),
+    cmdbar_bg: Some("#CCDAF2"),
+    disabled_fg: Some("#697794"),
+    diff_line_add: Some("#0D8131"),
+    diff_line_delete: Some("#CC2E25"),
+    diff_file_added: Some("#0D8131"),
+    diff_file_removed: Some("#CC2E25"),
+    diff_file_moved: Some("#007376"),
+    diff_file_modified: Some("#8D6C08"),
+    commit_hash: Some("#8D6C08"),
+    commit_time: Some("#4A5469"),
+    commit_author: Some("#007376"),
+    danger_fg: Some("#CC2E25"),
+    push_gauge_bg: Some("#A54300"),
+    push_gauge_fg: Some("#E8F0FF"),
+    tag_fg: Some("#755FA9"),
+    branch_fg: Some("#0D8131"),
+    block_title_focused: Some("#A54300"),
+    syntax: Some("london-portland"),
+    use_selection_fg: Some(false),
+)

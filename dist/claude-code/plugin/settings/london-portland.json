@@ -1,0 +1,48 @@
+{
+  "theme": "custom:subway-seat:london-portland",
+  "statusLine": {
+    "type": "command",
+    "command": "${CLAUDE_PLUGIN_DATA}/subway-seat-statusline",
+    "padding": 0,
+    "hideVimModeIndicator": true
+  },
+  "spinnerVerbs": {
+    "mode": "replace",
+    "verbs": [
+      "Reading the diagram",
+      "Minding the gap",
+      "Standing clear of the doors",
+      "Changing at Baker Street",
+      "Riding the deep level",
+      "Touching in",
+      "Touching out",
+      "Checking the board",
+      "Standing on the right",
+      "Counting the stops",
+      "Following the roundel",
+      "Waiting at a red signal",
+      "Letting them off first",
+      "Finding a seat on the moquette",
+      "Going southbound",
+      "Going northbound",
+      "Running to timetable",
+      "Watching the countdown",
+      "Alighting here",
+      "Changing for the Circle",
+      "Taking the long escalator",
+      "Sheltering from the drizzle",
+      "Queueing",
+      "Brewing up",
+      "Waiting for the next one",
+      "Passing Aldgate",
+      "Reading over a shoulder",
+      "Consulting the map",
+      "Holding on",
+      "Terminating here"
+    ]
+  },
+  "spinnerTipsOverride": {
+    "tipsFile": "${CLAUDE_PLUGIN_DATA}/tips.json",
+    "label": "Next stop"
+  }
+}

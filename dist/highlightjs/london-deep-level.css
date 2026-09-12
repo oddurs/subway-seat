@@ -1,0 +1,44 @@
+/* Subway Seat — generated from palette.py by build.py. Edit the palette, not this file. */
+/* London Deep Level for highlight.js */
+
+pre code.hljs { display: block; overflow-x: auto; padding: 1em; }
+code.hljs { padding: 3px 5px; }
+.hljs-addition, .hljs-deletion { display: inline-block; width: 100%; } /* diff lines as full-width bands */
+
+.hljs { color: #D4DAE7; background: #121A2D; }
+.hljs::selection, .hljs ::selection { color: #E7EBF3; background: #303E5B; }
+
+.hljs-comment { color: #6F7C97; font-style: italic; }
+.hljs-quote { color: #A5AEC0; font-style: italic; }
+.hljs-doctag, .hljs-meta, .hljs-meta .hljs-keyword { color: #AE9EDC; font-style: italic; }
+.hljs-meta .hljs-string { color: #77C581; }
+.hljs-keyword, .hljs-template-tag { color: #DE8946; }
+.hljs-operator { color: #8B96AC; }
+.hljs-punctuation, .hljs-tag { color: #8B96AC; }
+.hljs-title, .hljs-title.function_, .hljs-title.function_.invoke__, .hljs-attr { color: #F2C03F; }
+.hljs-built_in { color: #F2C03F; font-style: italic; }
+.hljs-string, .hljs-code { color: #77C581; }
+.hljs-char.escape_ { color: #AE9EDC; }
+.hljs-regexp { color: #AE9EDC; }
+.hljs-number { color: #FE8474; }
+.hljs-literal, .hljs-symbol, .hljs-variable.constant_, .hljs-formula { color: #FE8474; }
+.hljs-title.class_, .hljs-title.class_.inherited__ { color: #54B4B5; }
+.hljs-type { color: #54B4B5; font-style: italic; }
+.hljs-variable, .hljs-template-variable, .hljs-subst { color: #D4DAE7; }
+.hljs-variable.language_ { color: #FE8474; font-style: italic; }
+.hljs-params { color: #BEC6D5; font-style: italic; }
+.hljs-property, .hljs-attribute { color: #BEC6D5; }
+.hljs-name, .hljs-selector-tag { color: #DE8946; }
+.hljs-selector-id, .hljs-selector-class, .hljs-selector-attr, .hljs-selector-pseudo { color: #F2C03F; font-style: italic; }
+.hljs-section { color: #F2C03F; font-weight: bold; }
+.hljs-bullet { color: #DE8946; }
+.hljs-emphasis { color: #D4DAE7; font-style: italic; }
+.hljs-strong { color: #E7EBF3; font-weight: bold; }
+.hljs-link { color: #7595DA; text-decoration: underline; }
+
+/* Diffs: a diff line is one token, so it takes green or red_hi on its tint.
+   highlight.js marks hunk headers as meta and file headers as comments. */
+.hljs-addition { color: #77C581; background: #22362F; }
+.hljs-deletion { color: #FE8474; background: #402327; }
+.language-diff .hljs-meta { color: #7595DA; font-style: normal; }
+.language-diff .hljs-comment { color: #E7EBF3; font-style: normal; font-weight: bold; }

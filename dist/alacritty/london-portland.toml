@@ -1,0 +1,74 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# London Portland
+
+[colors.primary]
+background = "#E8F0FF"
+foreground = "#293040"
+dim_foreground = "#556179"
+bright_foreground = "#1B202B"
+
+[colors.cursor]
+text = "#E8F0FF"
+cursor = "#A54300"
+
+[colors.vi_mode_cursor]
+text = "#E8F0FF"
+cursor = "#007376"
+
+[colors.search.matches]
+foreground = "#293040"
+background = "#CDC8B5"
+
+[colors.search.focused_match]
+foreground = "#1B202B"
+background = "#C69A80"
+
+[colors.footer_bar]
+foreground = "#293040"
+background = "#A8BBE2"
+
+[colors.hints.start]
+foreground = "#E8F0FF"
+background = "#A54300"
+
+[colors.hints.end]
+foreground = "#E8F0FF"
+background = "#556179"
+
+[colors.line_indicator]
+foreground = "#4A5469"
+background = "#BFCFF1"
+
+[colors.selection]
+text = "#1B202B"
+background = "#A8BBE2"
+
+[colors.normal]
+black = "#3C4557"
+red = "#9B211A"
+green = "#0D8131"
+yellow = "#8D6C08"
+blue = "#0019A8"
+magenta = "#A54300"
+cyan = "#007376"
+white = "#93A7CF"
+
+[colors.bright]
+black = "#697794"
+red = "#CC2E25"
+green = "#008730"
+yellow = "#9B770A"
+blue = "#4A6EBD"
+magenta = "#AC5A00"
+cyan = "#008688"
+white = "#A8BBE2"
+
+[colors.dim]
+black = "#767F90"
+red = "#B56768"
+green = "#57A777"
+yellow = "#AC995C"
+blue = "#4F62C6"
+magenta = "#BC7E57"
+cyan = "#4F9EA5"
+white = "#B0C0DF"

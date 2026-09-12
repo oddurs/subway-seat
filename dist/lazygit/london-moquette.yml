@@ -1,0 +1,32 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# London Moquette for lazygit.
+gui:
+  theme:
+    activeBorderColor:
+      - '#DE8946'
+      - 'bold'
+    inactiveBorderColor:
+      - '#576685'
+    searchingActiveBorderColor:
+      - '#F2C03F'
+      - 'bold'
+    optionsTextColor:
+      - '#F2C03F'
+    selectedLineBgColor:
+      - '#303F61'
+    inactiveViewSelectedLineBgColor:
+      - '#263451'
+    cherryPickedCommitFgColor:
+      - '#121826'
+    cherryPickedCommitBgColor:
+      - '#54B4B5'
+    markedBaseCommitFgColor:
+      - '#121826'
+    markedBaseCommitBgColor:
+      - '#F2C03F'
+    unstagedChangesColor:
+      - '#FE8474'
+    defaultFgColor:
+      - '#D8DEEA'
+  authorColors:
+    '*': '#54B4B5'

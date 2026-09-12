@@ -1,0 +1,27 @@
+// Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+// Paris Guimard for gitui.
+(
+    selected_tab: Some("#CA9245"),
+    command_fg: Some("#D9E1DB"),
+    selection_bg: Some("#30463B"),
+    selection_fg: Some("#E9EEEC"),
+    cmdbar_bg: Some("#18241D"),
+    disabled_fg: Some("#74857C"),
+    diff_line_add: Some("#70CAA9"),
+    diff_line_delete: Some("#E7877B"),
+    diff_file_added: Some("#70CAA9"),
+    diff_file_removed: Some("#E7877B"),
+    diff_file_moved: Some("#549B9F"),
+    diff_file_modified: Some("#F1BF4B"),
+    commit_hash: Some("#F1BF4B"),
+    commit_time: Some("#A9B5AE"),
+    commit_author: Some("#549B9F"),
+    danger_fg: Some("#E7877B"),
+    push_gauge_bg: Some("#CA9245"),
+    push_gauge_fg: Some("#131A17"),
+    tag_fg: Some("#FAB49C"),
+    branch_fg: Some("#70CAA9"),
+    block_title_focused: Some("#CA9245"),
+    syntax: Some("paris-guimard"),
+    use_selection_fg: Some(false),
+)

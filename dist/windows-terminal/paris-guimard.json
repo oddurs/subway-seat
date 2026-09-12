@@ -1,0 +1,46 @@
+{
+    "schemes": [
+        {
+            "name": "Paris Guimard",
+            "background": "#1E2E26",
+            "foreground": "#D9E1DB",
+            "cursorColor": "#F1BF4B",
+            "selectionBackground": "#3E554A",
+            "black": "#30463B",
+            "red": "#C7665B",
+            "green": "#70CAA9",
+            "yellow": "#F1BF4B",
+            "blue": "#709BC8",
+            "purple": "#CA9245",
+            "cyan": "#549B9F",
+            "white": "#C2CBC5",
+            "brightBlack": "#74857C",
+            "brightRed": "#E7877B",
+            "brightGreen": "#89DEBE",
+            "brightYellow": "#FFD57A",
+            "brightBlue": "#8DB6E2",
+            "brightPurple": "#DFAA61",
+            "brightCyan": "#70B5B9",
+            "brightWhite": "#E9EEEC"
+        }
+    ],
+    "themes": [
+        {
+            "name": "Paris Guimard",
+            "window": {
+                "applicationTheme": "dark",
+                "useMica": false,
+                "frame": "#131A17FF",
+                "unfocusedFrame": "#131A17FF"
+            },
+            "tabRow": {
+                "background": "#131A17FF",
+                "unfocusedBackground": "#131A17FF"
+            },
+            "tab": {
+                "background": "#1E2E26FF",
+                "unfocusedBackground": "#18241DFF"
+            }
+        }
+    ]
+}

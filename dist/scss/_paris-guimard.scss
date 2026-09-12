@@ -1,0 +1,75 @@
+// Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+// Paris Guimard: Cast iron off a Metro entrance, which is nearly black. Brass leads.
+// Diff grounds: -add/-del/-chg for lines, -emph for changed words, -dim for faded diffs.
+
+$ss-crust:         #131A17; // Blackout
+$ss-mantle:        #18241D; // Espresso
+$ss-base:          #1E2E26; // Paneling
+$ss-surface0:      #263930; // Coppertone
+$ss-surface1:      #30463B; // Saddle
+$ss-surface2:      #3E554A; // Corduroy
+$ss-overlay0:      #586B61; // Pecan
+$ss-overlay1:      #74857C; // Cardboard
+$ss-overlay2:      #909E96; // Burlap
+$ss-subtext0:      #A9B5AE; // Khaki
+$ss-subtext1:      #C2CBC5; // Almond
+$ss-text:          #D9E1DB; // Parchment
+$ss-text-hi:       #E9EEEC; // Ivory
+$ss-yellow:        #F1BF4B; // Harvest gold
+$ss-yellow-hi:     #FFD57A; // Broadway yellow
+$ss-orange:        #CA9245; // Burnt orange
+$ss-orange-hi:     #DFAA61; // Sixth Avenue
+$ss-red:           #C7665B; // Redbird
+$ss-red-hi:        #E7877B; // Redbird bright
+$ss-green:         #70CAA9; // Avocado
+$ss-green-hi:      #89DEBE; // Avocado bright
+$ss-sage:          #549B9F; // Seafoam tile
+$ss-sage-hi:       #70B5B9; // Seafoam bright
+$ss-denim:         #709BC8; // Faded denim
+$ss-denim-hi:      #8DB6E2; // Denim bright
+$ss-clay:          #FAB49C; // Terracotta
+$ss-diff-add:      #274137;
+$ss-diff-add-emph: #335649;
+$ss-diff-add-dim:  #20332B;
+$ss-diff-del:      #422E29;
+$ss-diff-del-emph: #5B3832;
+$ss-diff-del-dim:  #322723;
+$ss-diff-chg:      #37341F;
+$ss-diff-chg-emph: #4D4525;
+
+$subway-seat: (
+  "crust": $ss-crust,
+  "mantle": $ss-mantle,
+  "base": $ss-base,
+  "surface0": $ss-surface0,
+  "surface1": $ss-surface1,
+  "surface2": $ss-surface2,
+  "overlay0": $ss-overlay0,
+  "overlay1": $ss-overlay1,
+  "overlay2": $ss-overlay2,
+  "subtext0": $ss-subtext0,
+  "subtext1": $ss-subtext1,
+  "text": $ss-text,
+  "text-hi": $ss-text-hi,
+  "yellow": $ss-yellow,
+  "yellow-hi": $ss-yellow-hi,
+  "orange": $ss-orange,
+  "orange-hi": $ss-orange-hi,
+  "red": $ss-red,
+  "red-hi": $ss-red-hi,
+  "green": $ss-green,
+  "green-hi": $ss-green-hi,
+  "sage": $ss-sage,
+  "sage-hi": $ss-sage-hi,
+  "denim": $ss-denim,
+  "denim-hi": $ss-denim-hi,
+  "clay": $ss-clay,
+  "diff-add": $ss-diff-add,
+  "diff-add-emph": $ss-diff-add-emph,
+  "diff-add-dim": $ss-diff-add-dim,
+  "diff-del": $ss-diff-del,
+  "diff-del-emph": $ss-diff-del-emph,
+  "diff-del-dim": $ss-diff-del-dim,
+  "diff-chg": $ss-diff-chg,
+  "diff-chg-emph": $ss-diff-chg-emph,
+);

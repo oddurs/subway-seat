@@ -3,7 +3,7 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 import { readDist } from "@/lib/dist";
 import { portById } from "@/lib/manifest";
-import { flavorById } from "@/lib/palette";
+import { type Family, families, flavorById, flavorsOf, shortName } from "@/lib/palette";
 import { claudeTheme, flavorVars } from "@/lib/themeVars";
 import { color } from "@/theme/tokens.stylex";
 import { font } from "@/theme/type.stylex";
@@ -19,20 +19,35 @@ import { Window } from "./Window";
 type Settings = { spinnerVerbs: { verbs: string[] }; spinnerTipsOverride: { label: string } };
 type Tips = { tips: { text: string }[] };
 
-const INCLUDED = [
+/**
+ * Two of these rows name things that belong to a family rather than to the
+ * plugin — which flavors it ships, and what it says while it thinks — so they
+ * are built per city and the page shows the one you're riding.
+ */
+const included = (fam: Family) => [
   [
     "A theme for every flavor",
-    "Walnut, Tunnel and Enamel, with every one of Claude Code's color tokens set. Each also comes in a “terminal colors” version that colors code in diffs with your terminal's palette instead of Claude Code's Monokai.",
+    `${flavorsOf(fam.id)
+      .map((f) => shortName(f.id))
+      .join(
+        ", ",
+      )}, with every one of Claude Code's color tokens set. Each also comes in a “terminal colors” version that colors code in diffs with your terminal's palette instead of Claude Code's Monokai.`,
   ],
   [
     "A station-sign status line",
-    "The model as a route bullet, where you are, the line you're on, how full the car is, and the fare or your plan's pass.",
+    "The model as a bullet, where you are, the line you're on, how full the car is, and the fare or your plan's pass.",
   ],
   [
     "Subagent rows",
     "Each helper gets a bullet colored by its state and its own little load meter.",
   ],
-  ["Spinner verbs", "“Sinking into the shag”, “Flipping the record”, “Changing at 14th Street”…"],
+  [
+    "Spinner verbs",
+    `${fam.verbs
+      .slice(0, 3)
+      .map((v) => `“${v}”`)
+      .join(", ")}…`,
+  ],
   ["“Next stop” tips", "Real Claude Code tips, in the same unhurried voice."],
   ["A relaxed output style", "Warm and plain-spoken, never at the expense of being exact."],
 ];
@@ -509,13 +524,15 @@ export async function ClaudeSpotlight() {
           Most themes stop at colors. This one follows Claude Code into every corner it lets you
           touch, and it all comes as one plugin.
         </p>
-        <ul {...stylex.props(styles.list)}>
-          {INCLUDED.map(([title, body]) => (
-            <li key={title} {...stylex.props(styles.item)}>
-              <b {...stylex.props(styles.itemTitle)}>{title}</b> {body}
-            </li>
-          ))}
-        </ul>
+        {families.map((fam) => (
+          <ul key={fam.id} data-only={fam.id} {...stylex.props(styles.list)}>
+            {included(fam).map(([title, body]) => (
+              <li key={title} {...stylex.props(styles.item)}>
+                <b {...stylex.props(styles.itemTitle)}>{title}</b> {body}
+              </li>
+            ))}
+          </ul>
+        ))}
         <CodeBlock lang="text" code={install} copy label="Install the Claude Code plugin" />
         <Link href="/ports/claude-code" {...stylex.props(styles.more)}>
           Every file in the plugin →

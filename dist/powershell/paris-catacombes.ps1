@@ -1,0 +1,68 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# Paris Catacombes for PowerShell: PSReadLine token colors, and $PSStyle on PowerShell 7.2+.
+# Dot-source it from your profile:  . "$PSScriptRoot/paris-catacombes.ps1"
+# Needs a terminal with 24-bit color (Windows Terminal, iTerm2, Ghostty, …).
+
+& {
+    $esc = [char]27
+
+    $colors = @{
+        Default                = "${esc}[38;2;212;221;215m"                  # text
+        Command                = "${esc}[38;2;241;191;75m"                   # yellow
+        Parameter              = "${esc}[38;2;84;155;159m"                   # sage
+        String                 = "${esc}[38;2;112;202;169m"                  # green
+        Operator               = "${esc}[38;2;202;146;69m"                   # orange
+        Variable               = "${esc}[38;2;250;180;156m"                  # clay
+        Member                 = "${esc}[38;2;191;200;194m"                  # subtext1
+        Number                 = "${esc}[38;2;231;135;123m"                  # red_hi
+        Type                   = "${esc}[38;2;84;155;159m"                   # sage
+        Keyword                = "${esc}[38;2;202;146;69m"                   # orange
+        Comment                = "${esc}[3;38;2;112;129;120m"                # overlay1, italic
+        Error                  = "${esc}[38;2;231;135;123m"                  # red_hi
+        Emphasis               = "${esc}[1;38;2;241;191;75m"                 # yellow, bold: search matches
+        Selection              = "${esc}[1;38;2;231;236;234;48;2;49;67;58m"  # text_hi on the selection ground
+        ContinuationPrompt     = "${esc}[38;2;112;129;120m"                  # overlay1
+        InlinePrediction       = "${esc}[38;2;84;101;92m"                    # overlay0, like fish autosuggestions
+        ListPrediction         = "${esc}[38;2;202;146;69m"                   # orange: the > marker and source
+        ListPredictionSelected = "${esc}[48;2;36;52;44m"                     # surface1 ground
+        ListPredictionTooltip  = "${esc}[3;38;2;112;129;120m"                # overlay1, italic
+    }
+
+    if (Get-Command Set-PSReadLineOption -ErrorAction Ignore) {
+        # Drop keys this PSReadLine doesn't have (2.0 lacks the prediction colors).
+        $known = (Get-PSReadLineOption).PSObject.Properties.Name
+        foreach ($key in @($colors.Keys)) {
+            $property = if ($key -eq 'Default') { 'DefaultTokenColor' } else { "${key}Color" }
+            if ($property -notin $known) { $colors.Remove($key) }
+        }
+        Set-PSReadLineOption -Colors $colors
+    }
+
+    if ($PSStyle) {
+        $formatting = @{
+            FormatAccent           = "${esc}[1;38;2;241;191;75m"
+            TableHeader            = "${esc}[1;38;2;241;191;75m"
+            CustomTableHeaderLabel = "${esc}[1;3;38;2;241;191;75m"
+            ErrorAccent            = "${esc}[1;38;2;202;146;69m"
+            Error                  = "${esc}[1;38;2;231;135;123m"
+            Warning                = "${esc}[1;38;2;241;191;75m"
+            Verbose                = "${esc}[38;2;112;155;200m"
+            Debug                  = "${esc}[38;2;84;155;159m"
+            FeedbackName           = "${esc}[38;2;202;146;69m"
+            FeedbackText           = "${esc}[38;2;191;200;194m"
+            FeedbackAction         = "${esc}[38;2;241;191;75m"
+        }
+        foreach ($key in $formatting.Keys) {
+            if ($PSStyle.Formatting.PSObject.Properties[$key]) { $PSStyle.Formatting.$key = $formatting[$key] }
+        }
+        $PSStyle.Progress.Style = "${esc}[1;38;2;241;191;75m"
+
+        if ($PSStyle.PSObject.Properties['FileInfo']) {
+            $PSStyle.FileInfo.Directory = "${esc}[1;38;2;241;191;75m"
+            $PSStyle.FileInfo.SymbolicLink = "${esc}[38;2;84;155;159m"
+            $PSStyle.FileInfo.Executable = "${esc}[1;38;2;112;202;169m"
+            foreach ($ext in '.zip', '.tgz', '.gz', '.tar', '.nupkg', '.cab', '.7z') { $PSStyle.FileInfo.Extension[$ext] = "${esc}[38;2;231;135;123m" }
+            foreach ($ext in '.ps1', '.psd1', '.psm1', '.ps1xml') { $PSStyle.FileInfo.Extension[$ext] = "${esc}[38;2;84;155;159m" }
+        }
+    }
+}

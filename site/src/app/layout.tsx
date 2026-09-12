@@ -1,13 +1,17 @@
 import * as stylex from "@stylexjs/stylex";
 import type { Metadata, Viewport } from "next";
-import { Fraunces, JetBrains_Mono } from "next/font/google";
+import { Cabin, Fraunces, Inter, JetBrains_Mono, Jost } from "next/font/google";
 import type { ReactNode } from "react";
 import { FlavorSync } from "@/components/FlavorSync";
 import { ports, version } from "@/lib/manifest";
+import { flavors } from "@/lib/palette";
 import { ORIGIN, pageMeta, pageUrl, REPO, SITE_NAME } from "@/lib/seo";
-import { enamel, tunnel, walnut } from "@/theme/flavors";
-import { enamelInk } from "@/theme/ink";
+import { carrelageType, londonType, parisType, portlandType } from "@/theme/faces";
+import * as artTheme from "@/theme/art";
+import * as theme from "@/theme/flavors";
+import { carrelageInk, enamelInk, londonInk, parisInk, portlandInk } from "@/theme/ink";
 import { sign } from "@/theme/sign.stylex";
+import { art } from "@/theme/art.stylex";
 import { color } from "@/theme/tokens.stylex";
 import { font } from "@/theme/type.stylex";
 import "./globals.css";
@@ -27,8 +31,22 @@ const display = Fraunces({
   variable: "--font-fraunces",
 });
 
+// Inter carries the UI in New York: Helvetica's skeleton, drawn for screens,
+// and the same everywhere instead of falling back to Arial off macOS.
+const ui = Inter({ subsets: ["latin"], variable: "--font-inter" });
+
+// Cabin stands in for Johnston, the Underground's own face since 1916.
+const johnston = Cabin({
+  subsets: ["latin"],
+  weight: ["500", "600", "700"],
+  variable: "--font-cabin",
+});
+
+// Jost stands in for the Metro's own signage: see theme/faces.ts.
+const paris = Jost({ subsets: ["latin"], weight: ["400", "500", "600"], variable: "--font-jost" });
+
 const count = ports().length;
-const description = `A walnut-brown 1970s subway-car color scheme for Ghostty, VS Code, Neovim, Zed, Claude Code and more: ${count} ports in three flavors. Sit back.`;
+const description = `Transit color schemes for Ghostty, VS Code, Neovim, Zed, Claude Code and more: ${count} ports, two families, six flavors. Sit back.`;
 
 export const metadata: Metadata = {
   metadataBase: new URL(ORIGIN),
@@ -40,25 +58,55 @@ export const metadata: Metadata = {
   }),
 };
 
-// The browser bar runs into the station-sign nav, which is the same black in every flavor.
+// The browser bar runs into the station-sign nav. New York's black is the
+// first paint; the London band takes over from --sign-bg once the page renders.
 export const viewport: Viewport = { themeColor: sign.bg };
 
-const themeClasses = {
-  walnut: stylex.props(walnut).className ?? "",
-  tunnel: stylex.props(tunnel).className ?? "",
-  enamel: stylex.props(enamel, enamelInk).className ?? "",
-};
+// A light flavor's accents are tuned for code on paper and run light for small
+// UI text, so each family's light one gets its own ink theme.
+const LIGHT_INK = { "new-york": enamelInk, london: portlandInk, paris: carrelageInk } as const;
+const DARK_INK = { "new-york": null, london: londonInk, paris: parisInk } as const;
+const DARK_TYPE = { "new-york": null, london: londonType, paris: parisType } as const;
+const LIGHT_TYPE = { "new-york": null, london: portlandType, paris: carrelageType } as const;
+
+/** Each flavor's classes: its colors, plus its family's typography and ink. */
+const themeClasses = Object.fromEntries(
+  flavors.map((f) => {
+    // A light flavor is set differently from its dark siblings: dark type on a
+    // pale ground needs the opposite correction to light type on dark.
+    const type = f.dark ? DARK_TYPE[f.family] : LIGHT_TYPE[f.family];
+    const ink = f.dark ? DARK_INK[f.family] : LIGHT_INK[f.family];
+    const parts = [
+      theme[f.id as keyof typeof theme],
+      artTheme[f.id as keyof typeof artTheme],
+      type,
+      ink,
+    ];
+    return [f.id, stylex.props(...parts.filter(Boolean)).className ?? ""];
+  }),
+);
+
+const familyOfFlavor = Object.fromEntries(flavors.map((f) => [f.id, f.family]));
+const defaults = Object.fromEntries(flavors.filter((f) => f.dark).map((f) => [f.family, f.id]));
+const lights = Object.fromEntries(flavors.filter((f) => !f.dark).map((f) => [f.family, f.id]));
 
 // Runs before paint: saved choice, else the system's light/dark preference.
 const boot = `(() => {
   const d = document.documentElement, c = ${JSON.stringify(themeClasses)};
+  const fam = ${JSON.stringify(familyOfFlavor)}, dark = ${JSON.stringify(defaults)}, light = ${JSON.stringify(lights)};
   let f = null;
   try { f = localStorage.getItem("subway-seat:flavor"); } catch {}
   const q = new URLSearchParams(location.search).get("flavor");
   if (c[q]) f = q;
-  if (!c[f]) f = matchMedia("(prefers-color-scheme: light)").matches ? "enamel" : "walnut";
+  if (!c[f]) {
+    let city = null;
+    try { city = localStorage.getItem("subway-seat:family"); } catch {}
+    if (!dark[city]) city = "new-york";
+    f = matchMedia("(prefers-color-scheme: light)").matches ? light[city] : dark[city];
+  }
   d.dataset.flavor = f;
-  d.style.colorScheme = f === "enamel" ? "light" : "dark";
+  d.dataset.family = fam[f];
+  d.style.colorScheme = light[fam[f]] === f ? "light" : "dark";
   for (const k of c[f].split(" ")) if (k) d.classList.add(k);
 })();`;
 
@@ -80,9 +128,10 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html
       lang="en"
-      className={`${mono.variable} ${display.variable} ${html.className ?? ""}`}
+      className={`${ui.variable} ${mono.variable} ${display.variable} ${johnston.variable} ${paris.variable} ${html.className ?? ""}`}
       style={html.style}
       data-flavor="walnut"
+      data-family="new-york"
       data-theme-classes={JSON.stringify(themeClasses)}
       suppressHydrationWarning
     >
@@ -110,8 +159,9 @@ const styles = stylex.create({
       default: "smooth",
       "@media (prefers-reduced-motion: reduce)": "auto",
     },
-    // The canvas below a short page continues the footer.
-    backgroundColor: color.crust,
+    // The site's own canvas: a step past the theme's darkest ground, so the page
+    // recedes and the cards and mockups on it carry the flavor.
+    backgroundColor: art.page,
   },
   body: {
     overflowX: "clip",
@@ -119,7 +169,7 @@ const styles = stylex.create({
     fontSize: 16,
     lineHeight: 1.6,
     color: color.text,
-    backgroundColor: color.mantle,
+    backgroundColor: art.page,
     transitionDuration: "240ms",
     transitionProperty: "background-color, color",
   },

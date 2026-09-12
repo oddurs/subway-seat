@@ -3,46 +3,46 @@
   "name": "Subway Seat Enamel",
   "author": "Oddur Sigurdsson",
   "variables": {
-    "crust": "#E2D3B6",
-    "mantle": "#EBDEC6",
-    "base": "#F4E9D4",
-    "surface0": "#D9C8A7",
-    "surface1": "#CAB48E",
-    "surface2": "#BAA07A",
-    "overlay0": "#A58C6A",
+    "crust": "#E4D8C0",
+    "mantle": "#EEE4D0",
+    "base": "#F8EFDF",
+    "surface0": "#DBCDB3",
+    "surface1": "#CBB898",
+    "surface2": "#BAA380",
+    "overlay0": "#A58D6D",
     "overlay1": "#8C7254",
     "overlay2": "#735C44",
     "subtext0": "#654F3B",
     "subtext1": "#54402F",
     "text": "#3E2C1E",
     "text_hi": "#2A1D13",
-    "yellow": "#936200",
-    "yellow_hi": "#A56E00",
-    "orange": "#AD4E00",
-    "orange_hi": "#C4561A",
+    "yellow": "#976608",
+    "yellow_hi": "#A9720A",
+    "orange": "#A04800",
+    "orange_hi": "#BA4D0A",
     "red": "#992418",
-    "red_hi": "#BC4031",
+    "red_hi": "#BF4233",
     "green": "#66740F",
     "green_hi": "#697813",
     "sage": "#3E7157",
     "sage_hi": "#4C8367",
     "denim": "#3F6480",
     "denim_hi": "#517791",
-    "clay": "#A65633",
+    "clay": "#843811",
     "tint_add": "#D7DBC1",
     "tint_add_emph": "#C2C79F",
     "tint_add_dim": "#E7E9D9",
     "tint_del": "#EBD3D1",
     "tint_del_emph": "#DEB9B5",
     "tint_del_dim": "#F3E5E3",
-    "tint_chg": "#E3D6BD",
-    "tint_chg_emph": "#DCCDAD",
-    "tint_info": "#DBD6C8",
-    "tint_hint": "#DBD8C2",
-    "tint_search": "#D7C094",
-    "tint_search_cur": "#D09C6A",
-    "inactive_selection": "#DDCCAE",
-    "paper": "#FAF4EA"
+    "tint_chg": "#E4D7BF",
+    "tint_chg_emph": "#DECEB0",
+    "tint_info": "#DEDCD2",
+    "tint_hint": "#DEDDCC",
+    "tint_search": "#DBC69E",
+    "tint_search_cur": "#CC9C70",
+    "inactive_selection": "#DFD1B8",
+    "paper": "#FCF7EF"
   },
   "globals": {
     "background": "var(base)",
@@ -56,8 +56,8 @@
     "fold_marker": "var(overlay1)",
     "minimap_border": "var(surface2)",
     "accent": "var(orange)",
-    "popup_css": "html { background-color: #FAF4EA; color: #3E2C1E; } a { color: #3F6480; } code, .highlight { background-color: #F4E9D4; color: #66740F; } h1, h2, h3 { color: #936200; } .error, .errors { color: #BC4031; } .warning, .warnings { color: #936200; } .info { color: #3F6480; } .hint { color: #3E7157; }",
-    "phantom_css": "html { background-color: #FAF4EA; color: #3E2C1E; } a { color: #3F6480; } code, .highlight { background-color: #F4E9D4; color: #66740F; } h1, h2, h3 { color: #936200; } .error, .errors { color: #BC4031; } .warning, .warnings { color: #936200; } .info { color: #3F6480; } .hint { color: #3E7157; }",
+    "popup_css": "html { background-color: #FCF7EF; color: #3E2C1E; } a { color: #3F6480; } code, .highlight { background-color: #F8EFDF; color: #66740F; } h1, h2, h3 { color: #976608; } .error, .errors { color: #BF4233; } .warning, .warnings { color: #976608; } .info { color: #3F6480; } .hint { color: #3E7157; }",
+    "phantom_css": "html { background-color: #FCF7EF; color: #3E2C1E; } a { color: #3F6480; } code, .highlight { background-color: #F8EFDF; color: #66740F; } h1, h2, h3 { color: #976608; } .error, .errors { color: #BF4233; } .warning, .warnings { color: #976608; } .info { color: #3F6480; } .hint { color: #3E7157; }",
     "gutter": "var(base)",
     "gutter_foreground": "var(overlay0)",
     "gutter_foreground_highlight": "var(orange)",
@@ -418,7 +418,7 @@
     },
     {
       "scope": "diff.fill",
-      "background": "#EBDEC6"
+      "background": "#EEE4D0"
     },
     {
       "scope": "diff.inserted.merge-left",
@@ -434,19 +434,19 @@
     },
     {
       "scope": "diff.inserted.merge-right",
-      "background": "#E3D6BD"
+      "background": "#E4D7BF"
     },
     {
       "scope": "diff.inserted.char.merge-right",
-      "background": "#DCCDAD"
+      "background": "#DECEB0"
     },
     {
       "scope": "diff.border.merge-right",
-      "background": "#936200"
+      "background": "#976608"
     },
     {
       "scope": "diff.border.merge-conflict",
-      "background": "#BC4031"
+      "background": "#BF4233"
     },
     {
       "scope": "diff.border.merge-merged",
@@ -454,15 +454,15 @@
     },
     {
       "scope": "blame.border",
-      "background": "#D9C8A7"
+      "background": "#DBCDB3"
     },
     {
       "scope": "blame.age-icon",
-      "foreground": "#AD4E00"
+      "foreground": "#A04800"
     },
     {
       "scope": "source.sublime-merge.preferences.git_binary",
-      "foreground": "#AD4E00"
+      "foreground": "#A04800"
     }
   ]
 }

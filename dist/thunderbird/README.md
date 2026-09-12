@@ -14,6 +14,18 @@ The folder pane, message list, spaces toolbar and tabs, with burnt orange for th
 | Subway Seat Tunnel | [`subway-seat-tunnel.xpi`](subway-seat-tunnel.xpi) | Add-ons and Themes › ⚙ › Install Add-on From File… |
 | Subway Seat Enamel | [`subway-seat-enamel/manifest.json`](subway-seat-enamel/manifest.json) | inside subway-seat-enamel.xpi |
 | Subway Seat Enamel | [`subway-seat-enamel.xpi`](subway-seat-enamel.xpi) | Add-ons and Themes › ⚙ › Install Add-on From File… |
+| London Moquette | [`london-moquette/manifest.json`](london-moquette/manifest.json) | inside london-moquette.xpi |
+| London Moquette | [`london-moquette.xpi`](london-moquette.xpi) | Add-ons and Themes › ⚙ › Install Add-on From File… |
+| London Deep Level | [`london-deep-level/manifest.json`](london-deep-level/manifest.json) | inside london-deep-level.xpi |
+| London Deep Level | [`london-deep-level.xpi`](london-deep-level.xpi) | Add-ons and Themes › ⚙ › Install Add-on From File… |
+| London Portland | [`london-portland/manifest.json`](london-portland/manifest.json) | inside london-portland.xpi |
+| London Portland | [`london-portland.xpi`](london-portland.xpi) | Add-ons and Themes › ⚙ › Install Add-on From File… |
+| Paris Guimard | [`paris-guimard/manifest.json`](paris-guimard/manifest.json) | inside paris-guimard.xpi |
+| Paris Guimard | [`paris-guimard.xpi`](paris-guimard.xpi) | Add-ons and Themes › ⚙ › Install Add-on From File… |
+| Paris Catacombes | [`paris-catacombes/manifest.json`](paris-catacombes/manifest.json) | inside paris-catacombes.xpi |
+| Paris Catacombes | [`paris-catacombes.xpi`](paris-catacombes.xpi) | Add-ons and Themes › ⚙ › Install Add-on From File… |
+| Paris Carrelage | [`paris-carrelage/manifest.json`](paris-carrelage/manifest.json) | inside paris-carrelage.xpi |
+| Paris Carrelage | [`paris-carrelage.xpi`](paris-carrelage.xpi) | Add-ons and Themes › ⚙ › Install Add-on From File… |
 | All three | [`subway-seat-auto/manifest.json`](subway-seat-auto/manifest.json) | inside subway-seat-auto.xpi |
 | All three | [`subway-seat-auto.xpi`](subway-seat-auto.xpi) | Add-ons and Themes › ⚙ › Install Add-on From File… |
 
@@ -35,6 +47,42 @@ The folder pane, message list, spaces toolbar and tabs, with burnt orange for th
 
 ```text
 ⚙ › Install Add-on From File… › subway-seat-enamel.xpi
+```
+
+**London Moquette**, in Thunderbird › Tools › Add-ons and Themes:
+
+```text
+⚙ › Install Add-on From File… › london-moquette.xpi
+```
+
+**London Deep Level**, in Thunderbird › Tools › Add-ons and Themes:
+
+```text
+⚙ › Install Add-on From File… › london-deep-level.xpi
+```
+
+**London Portland**, in Thunderbird › Tools › Add-ons and Themes:
+
+```text
+⚙ › Install Add-on From File… › london-portland.xpi
+```
+
+**Paris Guimard**, in Thunderbird › Tools › Add-ons and Themes:
+
+```text
+⚙ › Install Add-on From File… › paris-guimard.xpi
+```
+
+**Paris Catacombes**, in Thunderbird › Tools › Add-ons and Themes:
+
+```text
+⚙ › Install Add-on From File… › paris-catacombes.xpi
+```
+
+**Paris Carrelage**, in Thunderbird › Tools › Add-ons and Themes:
+
+```text
+⚙ › Install Add-on From File… › paris-carrelage.xpi
 ```
 
 ## Follow light and dark

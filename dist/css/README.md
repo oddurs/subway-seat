@@ -11,6 +11,12 @@ Every role as a custom property, with an -rgb triplet beside it for transparency
 | Subway Seat | [`subway-seat.css`](subway-seat.css) | `styles/subway-seat.css`; in your project |
 | Subway Seat Tunnel | [`subway-seat-tunnel.css`](subway-seat-tunnel.css) | `styles/subway-seat-tunnel.css`; in your project |
 | Subway Seat Enamel | [`subway-seat-enamel.css`](subway-seat-enamel.css) | `styles/subway-seat-enamel.css`; in your project |
+| London Moquette | [`london-moquette.css`](london-moquette.css) | `styles/london-moquette.css`; in your project |
+| London Deep Level | [`london-deep-level.css`](london-deep-level.css) | `styles/london-deep-level.css`; in your project |
+| London Portland | [`london-portland.css`](london-portland.css) | `styles/london-portland.css`; in your project |
+| Paris Guimard | [`paris-guimard.css`](paris-guimard.css) | `styles/paris-guimard.css`; in your project |
+| Paris Catacombes | [`paris-catacombes.css`](paris-catacombes.css) | `styles/paris-catacombes.css`; in your project |
+| Paris Carrelage | [`paris-carrelage.css`](paris-carrelage.css) | `styles/paris-carrelage.css`; in your project |
 | All three | [`subway-seat-flavors.css`](subway-seat-flavors.css) | `styles/subway-seat-flavors.css`; in your project |
 
 ## Turn it on
@@ -60,6 +66,96 @@ body {
 }
 ```
 
+**London Moquette**, in your stylesheet:
+
+```css
+@import url("london-moquette.css");
+
+body {
+  background: var(--ss-base);
+  color: var(--ss-text);
+}
+
+.scrim {
+  background: rgb(var(--ss-crust-rgb) / 0.8);
+}
+```
+
+**London Deep Level**, in your stylesheet:
+
+```css
+@import url("london-deep-level.css");
+
+body {
+  background: var(--ss-base);
+  color: var(--ss-text);
+}
+
+.scrim {
+  background: rgb(var(--ss-crust-rgb) / 0.8);
+}
+```
+
+**London Portland**, in your stylesheet:
+
+```css
+@import url("london-portland.css");
+
+body {
+  background: var(--ss-base);
+  color: var(--ss-text);
+}
+
+.scrim {
+  background: rgb(var(--ss-crust-rgb) / 0.8);
+}
+```
+
+**Paris Guimard**, in your stylesheet:
+
+```css
+@import url("paris-guimard.css");
+
+body {
+  background: var(--ss-base);
+  color: var(--ss-text);
+}
+
+.scrim {
+  background: rgb(var(--ss-crust-rgb) / 0.8);
+}
+```
+
+**Paris Catacombes**, in your stylesheet:
+
+```css
+@import url("paris-catacombes.css");
+
+body {
+  background: var(--ss-base);
+  color: var(--ss-text);
+}
+
+.scrim {
+  background: rgb(var(--ss-crust-rgb) / 0.8);
+}
+```
+
+**Paris Carrelage**, in your stylesheet:
+
+```css
+@import url("paris-carrelage.css");
+
+body {
+  background: var(--ss-base);
+  color: var(--ss-text);
+}
+
+.scrim {
+  background: rgb(var(--ss-crust-rgb) / 0.8);
+}
+```
+
 ## Follow light and dark
 
 In your stylesheet:
@@ -76,6 +172,12 @@ In your stylesheet:
 - Delete `styles/subway-seat.css`.
 - Delete `styles/subway-seat-tunnel.css`.
 - Delete `styles/subway-seat-enamel.css`.
+- Delete `styles/london-moquette.css`.
+- Delete `styles/london-deep-level.css`.
+- Delete `styles/london-portland.css`.
+- Delete `styles/paris-guimard.css`.
+- Delete `styles/paris-catacombes.css`.
+- Delete `styles/paris-carrelage.css`.
 - Delete `styles/subway-seat-flavors.css`.
 - Remove the line you added to turn it on.
 

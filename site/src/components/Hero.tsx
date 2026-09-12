@@ -1,8 +1,11 @@
 import * as stylex from "@stylexjs/stylex";
-import Link from "next/link";
 import { ink } from "@/theme/ink.stylex";
+import { space } from "@/theme/space.stylex";
 import { color } from "@/theme/tokens.stylex";
 import { font } from "@/theme/type.stylex";
+import { Button } from "./Button";
+import { Diagram } from "./Diagram";
+import { Guimard } from "./Guimard";
 import { Supergraphic } from "./Supergraphic";
 
 export function Hero({ count }: { count: number }) {
@@ -11,23 +14,55 @@ export function Hero({ count }: { count: number }) {
     <div {...stylex.props(styles.clip)}>
       <section {...stylex.props(styles.hero)}>
         <div {...stylex.props(styles.art)} aria-hidden>
-          <Supergraphic />
+          <span data-only="new-york">
+            <Supergraphic />
+          </span>
+          <span data-only="london" {...stylex.props(styles.diagram)}>
+            <Diagram />
+          </span>
+          <span data-only="paris">
+            <Guimard />
+          </span>
         </div>
         <div {...stylex.props(styles.copy)}>
-          <p {...stylex.props(styles.eyebrow)}>A color scheme for the long ride</p>
-          <h1 {...stylex.props(styles.title)}>Sink into a warmer screen.</h1>
-          <p {...stylex.props(styles.lede)}>
+          <p data-only="new-york" {...stylex.props(styles.eyebrow)}>
+            A color scheme for the long ride
+          </p>
+          <p data-only="london" {...stylex.props(styles.eyebrow)}>
+            Mind the gap
+          </p>
+          <p data-only="paris" {...stylex.props(styles.eyebrow)}>
+            Correspondance
+          </p>
+          <h1 data-only="new-york" {...stylex.props(styles.title)}>
+            Sink into a warmer screen.
+          </h1>
+          <h1 data-only="london" {...stylex.props(styles.title, styles.titleLondon)}>
+            Stand clear of the closing tabs.
+          </h1>
+          <h1 data-only="paris" {...stylex.props(styles.title, styles.titleLondon)}>
+            Take the scenic line.
+          </h1>
+          <p data-only="new-york" {...stylex.props(styles.lede)}>
             Subway Seat is a walnut-brown theme from a 1970s subway car: orange bucket seats,
             wood-grain paneling, cream enamel and a little avocado. Three flavors, {count} ports,
             one palette.
           </p>
+          <p data-only="paris" {...stylex.props(styles.lede)}>
+            Paris fills the same slots from its materials, not its map: Guimard&apos;s green
+            underfoot, white carrelage in the light, and brass, terracotta, verdigris and enamel on
+            top. Three flavors, {count} ports, the same 26 roles.
+          </p>
+          <p data-only="london" {...stylex.props(styles.lede)}>
+            London is the same system riding a different network: Corporate Blue turned right down,
+            London brick, the yellow off the platform edge, and the standard red kept rare so it
+            still means something. Three flavors, {count} ports, the same 26 roles.
+          </p>
           <div {...stylex.props(styles.ctas)}>
-            <Link href="/install" {...stylex.props(styles.cta, styles.primary)}>
+            <Button href="/install" variant="primary">
               Get on board
-            </Link>
-            <Link href="#ports" {...stylex.props(styles.cta, styles.secondary)}>
-              Find your app
-            </Link>
+            </Button>
+            <Button href="#ports">Find your app</Button>
           </div>
         </div>
       </section>
@@ -47,12 +82,15 @@ const styles = stylex.create({
       default: "minmax(0, 1.1fr) minmax(0, 0.9fr)",
     },
     alignItems: "center",
-    maxWidth: 1200,
+    maxWidth: space.measure,
+    // Both cities' copy fits this, so the band under the hero — shag in New
+    // York, moquette in London — stays exactly where it is when you switch.
+    // A hero that resized would drag the material up and down the page.
     minHeight: {
       [NARROW]: 0,
-      default: 520,
+      default: 600,
     },
-    paddingInline: 24,
+    paddingInline: space.gutter,
     paddingTop: {
       [NARROW]: 40,
       default: 72,
@@ -82,76 +120,42 @@ const styles = stylex.create({
       [NARROW]: 0.2,
       default: 1,
     },
+    // A bleed: the graphic runs off the right edge, and fades out on the left
+    // instead of stopping at a seam, so it reads as a system passing through
+    // the frame rather than a picture sitting in it.
+    maskImage: "linear-gradient(to right, transparent 0, rgba(0,0,0,0.35) 9%, #000 26%)",
   },
-  copy: { position: "relative", display: "grid", gap: 22 },
+  copy: { position: "relative", display: "grid", gap: space.s5 },
   eyebrow: {
     fontFamily: font.sans,
-    fontSize: 13,
-    fontWeight: 600,
+    fontSize: font.sizeLabel,
+    fontWeight: 700,
     color: ink.accent,
     textTransform: "uppercase",
-    letterSpacing: "0.16em",
+    letterSpacing: font.trackLabel,
   },
+  diagram: { display: "block", marginTop: 40 },
+  // Cabin sets wider than Fraunces at the same size, so London's headline gets
+  // a couple more characters before it wraps. Everything else about how it is
+  // set comes from the family's type theme, not from here.
+  titleLondon: { maxWidth: "15ch" },
   title: {
     maxWidth: "12ch",
     fontFamily: font.display,
-    fontSize: "clamp(48px, 7.4vw, 96px)",
-    fontVariationSettings: '"SOFT" 100, "WONK" 1, "opsz" 144',
-    fontWeight: 800,
-    lineHeight: 0.98,
+    fontSize: font.sizeHero,
+    fontVariationSettings: font.axesHero,
+    fontWeight: font.weightHero,
+    lineHeight: font.leadHero,
     color: color.textHi,
-    letterSpacing: "-0.02em",
+    letterSpacing: font.trackHero,
     textWrap: "balance",
   },
   lede: {
     maxWidth: "52ch",
-    fontSize: 19,
-    lineHeight: 1.6,
+    fontSize: font.sizeLede,
+    lineHeight: font.leadLede,
     color: color.subtext1,
     textWrap: "pretty",
   },
-  ctas: { display: "flex", flexWrap: "wrap", gap: 12 },
-  cta: {
-    flexGrow: {
-      default: 0,
-      "@media (max-width: 480px)": 1,
-    },
-    paddingBlock: 12,
-    paddingInline: 24,
-    fontSize: 16,
-    fontWeight: 700,
-    textAlign: "center",
-    textDecoration: "none",
-    outlineWidth: 2,
-    outlineStyle: {
-      default: "none",
-      ":focus-visible": "solid",
-    },
-    outlineColor: ink.accent,
-    outlineOffset: 3,
-    borderRadius: 999,
-    transform: {
-      default: null,
-      ":hover": "translateY(-1px)",
-    },
-    transitionDuration: "160ms",
-    transitionProperty: "transform, background-color",
-  },
-  primary: {
-    color: ink.onAccent,
-    backgroundColor: {
-      default: color.orange,
-      ":hover": ink.fillHover,
-    },
-  },
-  secondary: {
-    color: color.text,
-    backgroundColor: {
-      default: "transparent",
-      ":hover": color.surface0,
-    },
-    borderColor: color.surface2,
-    borderStyle: "solid",
-    borderWidth: 1,
-  },
+  ctas: { display: "flex", flexWrap: "wrap", gap: space.s3 },
 });

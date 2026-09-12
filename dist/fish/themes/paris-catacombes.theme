@@ -1,0 +1,37 @@
+# name: 'Paris Catacombes'
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# preferred_background: 121E19
+
+fish_color_normal D4DDD7
+fish_color_command F1BF4B
+fish_color_keyword CA9245
+fish_color_param BFC8C2
+fish_color_option 549B9F
+fish_color_quote 70CAA9
+fish_color_redirection FAB49C
+fish_color_end CA9245
+fish_color_operator FAB49C
+fish_color_escape FAB49C
+fish_color_comment 708178 --italics
+fish_color_error E7877B
+fish_color_cancel C7665B
+fish_color_autosuggestion 708178
+fish_color_gray 54655C
+fish_color_valid_path --underline
+fish_color_selection E7ECEA --bold --background=31433A
+fish_color_search_match --bold --background=24342C
+fish_color_history_current --bold
+fish_color_cwd F1BF4B
+fish_color_cwd_root E7877B
+fish_color_user CA9245
+fish_color_host BFC8C2
+fish_color_host_remote 70CAA9
+fish_color_status E7877B
+fish_pager_color_progress 0A100D --background=CA9245
+fish_pager_color_prefix F1BF4B --bold
+fish_pager_color_completion D4DDD7
+fish_pager_color_description 708178 --italics
+fish_pager_color_selected_background --background=24342C
+fish_pager_color_selected_prefix F1BF4B --bold
+fish_pager_color_selected_completion E7ECEA
+fish_pager_color_selected_description BFC8C2 --italics

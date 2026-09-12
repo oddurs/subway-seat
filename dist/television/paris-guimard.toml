@@ -1,0 +1,26 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# Paris Guimard for television.
+# general
+background = '#1E2E26'
+border_fg = '#3E554A'
+text_fg = '#D9E1DB'
+dimmed_text_fg = '#74857C'
+# input
+input_text_fg = '#D9E1DB'
+result_count_fg = '#74857C'
+# results
+result_name_fg = '#C2CBC5'
+result_line_number_fg = '#74857C'
+result_value_fg = '#D9E1DB'
+selection_bg = '#263930'
+selection_fg = '#E9EEEC'
+match_fg = '#F1BF4B'
+# preview
+preview_title_fg = '#C2CBC5'
+# modes
+channel_mode_fg = '#131A17'
+channel_mode_bg = '#CA9245'
+remote_control_mode_fg = '#131A17'
+remote_control_mode_bg = '#F1BF4B'
+action_picker_mode_fg = '#131A17'
+action_picker_mode_bg = '#549B9F'

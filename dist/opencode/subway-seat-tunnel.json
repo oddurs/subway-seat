@@ -19,40 +19,40 @@
     "tunnelOrange": "#EC7F31",
     "tunnelOrangeHi": "#FF9D55",
     "tunnelRed": "#E05C45",
-    "tunnelRedHi": "#F97160",
+    "tunnelRedHi": "#FF8373",
     "tunnelGreen": "#ADB956",
     "tunnelGreenHi": "#BFCB63",
     "tunnelSage": "#86AD95",
     "tunnelSageHi": "#A5C9B0",
     "tunnelDenim": "#7F9BAE",
     "tunnelDenimHi": "#9DB6C6",
-    "tunnelClay": "#E0956C",
-    "enamelCrust": "#E2D3B6",
-    "enamelMantle": "#EBDEC6",
-    "enamelBase": "#F4E9D4",
-    "enamelSurface0": "#D9C8A7",
-    "enamelSurface1": "#CAB48E",
-    "enamelSurface2": "#BAA07A",
-    "enamelOverlay0": "#A58C6A",
+    "tunnelClay": "#F4A87E",
+    "enamelCrust": "#E4D8C0",
+    "enamelMantle": "#EEE4D0",
+    "enamelBase": "#F8EFDF",
+    "enamelSurface0": "#DBCDB3",
+    "enamelSurface1": "#CBB898",
+    "enamelSurface2": "#BAA380",
+    "enamelOverlay0": "#A58D6D",
     "enamelOverlay1": "#8C7254",
     "enamelOverlay2": "#735C44",
     "enamelSubtext0": "#654F3B",
     "enamelSubtext1": "#54402F",
     "enamelText": "#3E2C1E",
     "enamelTextHi": "#2A1D13",
-    "enamelYellow": "#936200",
-    "enamelYellowHi": "#A56E00",
-    "enamelOrange": "#AD4E00",
-    "enamelOrangeHi": "#C4561A",
+    "enamelYellow": "#976608",
+    "enamelYellowHi": "#A9720A",
+    "enamelOrange": "#A04800",
+    "enamelOrangeHi": "#BA4D0A",
     "enamelRed": "#992418",
-    "enamelRedHi": "#BC4031",
+    "enamelRedHi": "#BF4233",
     "enamelGreen": "#66740F",
     "enamelGreenHi": "#697813",
     "enamelSage": "#3E7157",
     "enamelSageHi": "#4C8367",
     "enamelDenim": "#3F6480",
     "enamelDenimHi": "#517791",
-    "enamelClay": "#A65633"
+    "enamelClay": "#843811"
   },
   "theme": {
     "primary": {
@@ -109,7 +109,7 @@
     },
     "backgroundMenu": {
       "dark": "#302115",
-      "light": "#FAF4EA"
+      "light": "#FCF7EF"
     },
     "border": {
       "dark": "tunnelSurface2",
@@ -165,11 +165,11 @@
     },
     "diffAddedLineNumberBg": {
       "dark": "#322815",
-      "light": "#E6DDC0"
+      "light": "#E9E3CA"
     },
     "diffRemovedLineNumberBg": {
       "dark": "#391F14",
-      "light": "#EAD3BF"
+      "light": "#EED9C9"
     },
     "markdownText": {
       "dark": "tunnelText",

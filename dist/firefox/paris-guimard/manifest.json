@@ -1,0 +1,61 @@
+{
+  "manifest_version": 2,
+  "name": "Paris Guimard",
+  "version": "0.3.0",
+  "description": "A walnut-brown 1970s NYC subway theme: harvest gold, burnt orange and avocado on warm wood. Cast iron off a Metro entrance, which is nearly black. Brass leads.",
+  "author": "Oddur Sigurdsson",
+  "homepage_url": "https://github.com/oddurs/subway-seat",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "paris-guimard@oddurs.github.io",
+      "strict_min_version": "106.0"
+    }
+  },
+  "theme": {
+    "colors": {
+      "frame": "#131A17",
+      "frame_inactive": "#131A17",
+      "tab_background_text": "#909E96",
+      "tab_background_separator": "#263930",
+      "tab_selected": "#1E2E26",
+      "tab_text": "#D9E1DB",
+      "tab_line": "#CA9245",
+      "tab_loading": "#CA9245",
+      "toolbar": "#1E2E26",
+      "toolbar_text": "#D9E1DB",
+      "toolbar_top_separator": "#131A17",
+      "toolbar_bottom_separator": "#263930",
+      "toolbar_vertical_separator": "#263930",
+      "icons": "#C2CBC5",
+      "icons_attention": "#CA9245",
+      "button_background_hover": "#263930",
+      "button_background_active": "#30463B",
+      "toolbar_field": "#18241D",
+      "toolbar_field_text": "#D9E1DB",
+      "toolbar_field_border": "#263930",
+      "toolbar_field_focus": "#18241D",
+      "toolbar_field_text_focus": "#E9EEEC",
+      "toolbar_field_border_focus": "#CA9245",
+      "toolbar_field_highlight": "#3E554A",
+      "toolbar_field_highlight_text": "#E9EEEC",
+      "toolbar_field_separator": "#263930",
+      "popup": "#263930",
+      "popup_text": "#D9E1DB",
+      "popup_border": "#3C4D45",
+      "popup_highlight": "#3E554A",
+      "popup_highlight_text": "#E9EEEC",
+      "sidebar": "#18241D",
+      "sidebar_text": "#D9E1DB",
+      "sidebar_border": "#263930",
+      "sidebar_highlight": "#3E554A",
+      "sidebar_highlight_text": "#E9EEEC",
+      "ntp_background": "#1E2E26",
+      "ntp_card_background": "#263930",
+      "ntp_text": "#D9E1DB"
+    },
+    "properties": {
+      "color_scheme": "dark",
+      "content_color_scheme": "dark"
+    }
+  }
+}

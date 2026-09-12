@@ -19,14 +19,14 @@ colors:
   orange: 'EC7F31'
   orange_hi: 'FF9D55'
   red: 'E05C45'
-  red_hi: 'F97160'
+  red_hi: 'FF8373'
   green: 'ADB956'
   green_hi: 'BFCB63'
   sage: '86AD95'
   sage_hi: 'A5C9B0'
   denim: '7F9BAE'
   denim_hi: '9DB6C6'
-  clay: 'E0956C'
+  clay: 'F4A87E'
   ink: '20160E'
 
 core:

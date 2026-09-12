@@ -1,0 +1,31 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# London Deep Level for matplotlib. Colors are hex without the leading #, as rc files expect.
+figure.facecolor: 121A2D
+figure.edgecolor: 121A2D
+savefig.facecolor: 121A2D
+savefig.edgecolor: 121A2D
+axes.facecolor: 121A2D
+axes.edgecolor: 53617D
+axes.labelcolor: BEC6D5
+axes.titlecolor: E7EBF3
+axes.prop_cycle: cycler('color', ['DE8946', '54B4B5', 'F2C03F', '7595DA', 'FE8474', '77C581', 'AE9EDC'])
+text.color: D4DAE7
+xtick.color: 6F7C97
+ytick.color: 6F7C97
+xtick.labelcolor: A5AEC0
+ytick.labelcolor: A5AEC0
+grid.color: 2A3144
+legend.facecolor: 1A243A
+legend.edgecolor: 313A4F
+patch.facecolor: DE8946
+patch.edgecolor: 121A2D
+hatch.color: A5AEC0
+boxplot.boxprops.color: BEC6D5
+boxplot.whiskerprops.color: BEC6D5
+boxplot.capprops.color: BEC6D5
+boxplot.flierprops.color: BEC6D5
+boxplot.flierprops.markeredgecolor: BEC6D5
+boxplot.medianprops.color: DE8946
+boxplot.meanprops.color: F2C03F
+boxplot.meanprops.markerfacecolor: F2C03F
+boxplot.meanprops.markeredgecolor: F2C03F

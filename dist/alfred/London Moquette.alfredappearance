@@ -1,0 +1,64 @@
+{
+  "alfredtheme": {
+    "result": {
+      "textSpacing": 6,
+      "subtext": {
+        "size": 12,
+        "colorSelected": "#C1C9D8FF",
+        "font": "System",
+        "color": "#8F9AB0FF"
+      },
+      "shortcut": {
+        "size": 16,
+        "colorSelected": "#E5AA7FFF",
+        "font": "System",
+        "color": "#73819CFF"
+      },
+      "backgroundSelected": "#483E42FF",
+      "text": {
+        "size": 18,
+        "colorSelected": "#E9EDF5FF",
+        "font": "System",
+        "color": "#D8DEEAFF"
+      },
+      "iconPaddingHorizontal": 6,
+      "roundness": 8,
+      "paddingVertical": 4,
+      "iconSize": 38
+    },
+    "search": {
+      "backgroundSelected": "#3D4F72FF",
+      "paddingHorizontal": 10,
+      "spacing": 10,
+      "text": {
+        "size": 30,
+        "colorSelected": "#E9EDF5FF",
+        "font": "System Light",
+        "color": "#D8DEEAFF"
+      },
+      "background": "#172032FF",
+      "roundness": 8,
+      "paddingVertical": 6
+    },
+    "window": {
+      "color": "#1E2941F7",
+      "paddingHorizontal": 10,
+      "width": 620,
+      "borderPadding": 0,
+      "borderColor": "#263451FF",
+      "blur": 12,
+      "roundness": 14,
+      "paddingVertical": 10
+    },
+    "separator": {
+      "color": "#263451FF",
+      "thickness": 1
+    },
+    "scrollbar": {
+      "color": "#3D4F72FF",
+      "thickness": 3
+    },
+    "name": "London Moquette",
+    "credit": "Oddur Sigurdsson"
+  }
+}

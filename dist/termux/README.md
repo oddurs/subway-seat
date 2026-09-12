@@ -19,6 +19,12 @@ The [installer](../../docs/INSTALL.md) shows its plan and asks once. Add `--flav
 | Subway Seat | [`subway-seat.properties`](subway-seat.properties) | `~/.termux/colors.properties` |
 | Subway Seat Tunnel | [`subway-seat-tunnel.properties`](subway-seat-tunnel.properties) | `~/.termux/colors.properties` |
 | Subway Seat Enamel | [`subway-seat-enamel.properties`](subway-seat-enamel.properties) | `~/.termux/colors.properties` |
+| London Moquette | [`london-moquette.properties`](london-moquette.properties) | `~/.termux/colors.properties` |
+| London Deep Level | [`london-deep-level.properties`](london-deep-level.properties) | `~/.termux/colors.properties` |
+| London Portland | [`london-portland.properties`](london-portland.properties) | `~/.termux/colors.properties` |
+| Paris Guimard | [`paris-guimard.properties`](paris-guimard.properties) | `~/.termux/colors.properties` |
+| Paris Catacombes | [`paris-catacombes.properties`](paris-catacombes.properties) | `~/.termux/colors.properties` |
+| Paris Carrelage | [`paris-carrelage.properties`](paris-carrelage.properties) | `~/.termux/colors.properties` |
 
 ## Turn it on
 

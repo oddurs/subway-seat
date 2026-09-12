@@ -1,0 +1,92 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+
+[colors]
+foreground = "#D4DAE7"
+background = "#121A2D"
+cursor_bg = "#F2C03F"
+cursor_border = "#F2C03F"
+cursor_fg = "#121A2D"
+compose_cursor = "#AE9EDC"
+selection_bg = "#303E5B"
+selection_fg = "#E7EBF3"
+scrollbar_thumb = "#303E5B"
+split = "#1A243A"
+visual_bell = "#1A243A"
+ansi = [
+  "#232F49",
+  "#DB6052",
+  "#77C581",
+  "#F2C03F",
+  "#7595DA",
+  "#DE8946",
+  "#54B4B5",
+  "#BEC6D5",
+]
+brights = [
+  "#6F7C97",
+  "#FE8474",
+  "#9AD2A0",
+  "#FFD36C",
+  "#8BB0FF",
+  "#E5AA7F",
+  "#72D1D3",
+  "#E7EBF3",
+]
+copy_mode_active_highlight_bg = { Color = "#78523A" }
+copy_mode_active_highlight_fg = { Color = "#E7EBF3" }
+copy_mode_inactive_highlight_bg = { Color = "#554C32" }
+copy_mode_inactive_highlight_fg = { Color = "#D4DAE7" }
+quick_select_label_bg = { Color = "#DE8946" }
+quick_select_label_fg = { Color = "#121A2D" }
+quick_select_match_bg = { Color = "#554C32" }
+quick_select_match_fg = { Color = "#D4DAE7" }
+
+[colors.tab_bar]
+background = "#0A0E18"
+inactive_tab_edge = "#1A243A"
+
+[colors.tab_bar.active_tab]
+bg_color = "#121A2D"
+fg_color = "#F2C03F"
+intensity = "Bold"
+italic = false
+strikethrough = false
+underline = "None"
+
+[colors.tab_bar.inactive_tab]
+bg_color = "#0D1421"
+fg_color = "#6F7C97"
+intensity = "Normal"
+italic = false
+strikethrough = false
+underline = "None"
+
+[colors.tab_bar.inactive_tab_hover]
+bg_color = "#1A243A"
+fg_color = "#D4DAE7"
+intensity = "Normal"
+italic = false
+strikethrough = false
+underline = "None"
+
+[colors.tab_bar.new_tab]
+bg_color = "#0A0E18"
+fg_color = "#6F7C97"
+intensity = "Normal"
+italic = false
+strikethrough = false
+underline = "None"
+
+[colors.tab_bar.new_tab_hover]
+bg_color = "#1A243A"
+fg_color = "#F2C03F"
+intensity = "Normal"
+italic = false
+strikethrough = false
+underline = "None"
+
+[metadata]
+name = "London Deep Level"
+author = "oddurs"
+origin_url = "https://github.com/oddurs/subway-seat"
+aliases = []

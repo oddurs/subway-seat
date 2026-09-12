@@ -21,20 +21,83 @@
   }
 }
 
-/* Flavor-specific content rendered for every flavor; only the active one shows. */
+/* Flavor-specific content rendered for every flavor; only the active one shows.
+   Everything between the markers is written by build.py from palette.py. */
 @layer flavors {
+  /* flavors:start */
   :root {
     --ss-shadow: rgba(8, 5, 2, 0.55);
     --ss-shadow-soft: rgba(8, 5, 2, 0.28);
+    --sign-bg: #0c0805;
+    --sign-text: #f8ecd4;
+    --sign-ring: #ec7f31;
+    --sign-mark: #ec7f31;
+    --sign-mark-alt: #20160e;
+    --radius-pill: 999px;
+    --radius-card: 6px;
+    --radius-chip: 50%;
+  }
+  html[data-family="london"] {
+    --sign-bg: #06090f;
+    --sign-text: #ffffff;
+    --sign-ring: #db6052;
+    --sign-mark: #db6052;
+    --sign-mark-alt: #7595da;
+    --radius-pill: 2px;
+    --radius-card: 0px;
+    --radius-chip: 2px;
+  }
+  html[data-family="paris"] {
+    --sign-bg: #070c0a;
+    --sign-text: #ffffff;
+    --sign-ring: #f1bf4b;
+    --sign-mark: #f1bf4b;
+    --sign-mark-alt: #070c0a;
+    --radius-pill: 999px;
+    --radius-card: 14px;
+    --radius-chip: 50%;
   }
   html[data-flavor="enamel"] {
-    --ss-shadow: rgba(62, 44, 30, 0.2);
-    --ss-shadow-soft: rgba(62, 44, 30, 0.12);
+    --ss-shadow: rgba(110, 97, 86, 0.2);
+    --ss-shadow-soft: rgba(110, 97, 86, 0.12);
+  }
+  html[data-flavor="portland"] {
+    --ss-shadow: rgba(94, 100, 112, 0.2);
+    --ss-shadow-soft: rgba(94, 100, 112, 0.12);
+  }
+  html[data-flavor="carrelage"] {
+    --ss-shadow: rgba(93, 103, 99, 0.2);
+    --ss-shadow-soft: rgba(93, 103, 99, 0.12);
   }
 
+  html[data-flavor="walnut"] [data-unless="walnut"],
+  html[data-flavor="tunnel"] [data-unless="tunnel"],
+  html[data-flavor="enamel"] [data-unless="enamel"],
+  html[data-flavor="moquette"] [data-unless="moquette"],
+  html[data-flavor="deep"] [data-unless="deep"],
+  html[data-flavor="portland"] [data-unless="portland"],
+  html[data-flavor="guimard"] [data-unless="guimard"],
+  html[data-flavor="catacombes"] [data-unless="catacombes"],
+  html[data-flavor="carrelage"] [data-unless="carrelage"],
+  html[data-family="new-york"] [data-unless="new-york"],
+  html[data-family="london"] [data-unless="london"],
+  html[data-family="paris"] [data-unless="paris"] {
+    display: none !important;
+  }
+
+  /* Content written for one flavor or one family; the rest is hidden. */
   html:not([data-flavor="walnut"]) [data-only="walnut"],
   html:not([data-flavor="tunnel"]) [data-only="tunnel"],
-  html:not([data-flavor="enamel"]) [data-only="enamel"] {
+  html:not([data-flavor="enamel"]) [data-only="enamel"],
+  html:not([data-flavor="moquette"]) [data-only="moquette"],
+  html:not([data-flavor="deep"]) [data-only="deep"],
+  html:not([data-flavor="portland"]) [data-only="portland"],
+  html:not([data-flavor="guimard"]) [data-only="guimard"],
+  html:not([data-flavor="catacombes"]) [data-only="catacombes"],
+  html:not([data-flavor="carrelage"]) [data-only="carrelage"],
+  html:not([data-family="new-york"]) [data-only="new-york"],
+  html:not([data-family="london"]) [data-only="london"],
+  html:not([data-family="paris"]) [data-only="paris"] {
     display: none !important;
   }
 
@@ -42,15 +105,21 @@
   @media (max-width: 720px) {
     html:not([data-flavor="walnut"]) [data-narrow-only="walnut"],
     html:not([data-flavor="tunnel"]) [data-narrow-only="tunnel"],
-    html:not([data-flavor="enamel"]) [data-narrow-only="enamel"] {
+    html:not([data-flavor="enamel"]) [data-narrow-only="enamel"],
+    html:not([data-flavor="moquette"]) [data-narrow-only="moquette"],
+    html:not([data-flavor="deep"]) [data-narrow-only="deep"],
+    html:not([data-flavor="portland"]) [data-narrow-only="portland"],
+    html:not([data-flavor="guimard"]) [data-narrow-only="guimard"],
+    html:not([data-flavor="catacombes"]) [data-narrow-only="catacombes"],
+    html:not([data-flavor="carrelage"]) [data-narrow-only="carrelage"],
+    html:not([data-family="new-york"]) [data-narrow-only="new-york"],
+    html:not([data-family="london"]) [data-narrow-only="london"],
+    html:not([data-family="paris"]) [data-narrow-only="paris"] {
       display: none !important;
     }
   }
 
-  /* Shiki renders Walnut by default and carries the other flavors as variables
-     (files for one flavor are highlighted in that flavor alone, without the class).
-     Only the <pre> takes the ground; spans keep their own backgrounds (the
-     editor mock's selections, find matches and line highlights). */
+  /* Shiki renders Subway Seat by default and carries the others as variables. */
   html[data-flavor="tunnel"] .shiki-themes,
   html[data-flavor="tunnel"] .shiki-themes span {
     color: var(--shiki-tunnel) !important;
@@ -65,6 +134,49 @@
   html[data-flavor="enamel"] .shiki-themes {
     background-color: var(--shiki-enamel-bg) !important;
   }
+  html[data-flavor="moquette"] .shiki-themes,
+  html[data-flavor="moquette"] .shiki-themes span {
+    color: var(--shiki-moquette) !important;
+  }
+  html[data-flavor="moquette"] .shiki-themes {
+    background-color: var(--shiki-moquette-bg) !important;
+  }
+  html[data-flavor="deep"] .shiki-themes,
+  html[data-flavor="deep"] .shiki-themes span {
+    color: var(--shiki-deep) !important;
+  }
+  html[data-flavor="deep"] .shiki-themes {
+    background-color: var(--shiki-deep-bg) !important;
+  }
+  html[data-flavor="portland"] .shiki-themes,
+  html[data-flavor="portland"] .shiki-themes span {
+    color: var(--shiki-portland) !important;
+  }
+  html[data-flavor="portland"] .shiki-themes {
+    background-color: var(--shiki-portland-bg) !important;
+  }
+  html[data-flavor="guimard"] .shiki-themes,
+  html[data-flavor="guimard"] .shiki-themes span {
+    color: var(--shiki-guimard) !important;
+  }
+  html[data-flavor="guimard"] .shiki-themes {
+    background-color: var(--shiki-guimard-bg) !important;
+  }
+  html[data-flavor="catacombes"] .shiki-themes,
+  html[data-flavor="catacombes"] .shiki-themes span {
+    color: var(--shiki-catacombes) !important;
+  }
+  html[data-flavor="catacombes"] .shiki-themes {
+    background-color: var(--shiki-catacombes-bg) !important;
+  }
+  html[data-flavor="carrelage"] .shiki-themes,
+  html[data-flavor="carrelage"] .shiki-themes span {
+    color: var(--shiki-carrelage) !important;
+  }
+  html[data-flavor="carrelage"] .shiki-themes {
+    background-color: var(--shiki-carrelage-bg) !important;
+  }
+  /* flavors:end */
 
   /* Visually hidden, still read aloud. */
   .sr-only {

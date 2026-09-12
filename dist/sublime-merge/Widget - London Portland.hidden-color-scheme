@@ -1,0 +1,35 @@
+// Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+{
+  "name": "London Portland Widgets",
+  "globals": {
+    "foreground": "#293040",
+    "background": "#F4F8FF",
+    "caret": "#A54300",
+    "line_highlight": "#F4F8FF",
+    "selection": "#A8BBE2",
+    "selection_border": "#A8BBE2",
+    "inactive_selection": "#A8BBE2"
+  },
+  "rules": [
+    {
+      "scope": "comment",
+      "foreground": "#697794"
+    },
+    {
+      "scope": "keyword, storage",
+      "foreground": "#A54300"
+    },
+    {
+      "scope": "constant",
+      "foreground": "#CC2E25"
+    },
+    {
+      "scope": "string",
+      "foreground": "#0D8131"
+    },
+    {
+      "scope": "constant.character.escape",
+      "foreground": "#755FA9"
+    }
+  ]
+}

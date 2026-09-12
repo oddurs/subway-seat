@@ -1,0 +1,77 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# Paris Guimard for zsh-syntax-highlighting. Needs a truecolor terminal.
+
+typeset -gA ZSH_HIGHLIGHT_STYLES
+
+# General
+ZSH_HIGHLIGHT_STYLES[default]='fg=#D9E1DB'
+ZSH_HIGHLIGHT_STYLES[unknown-token]='fg=#E7877B'
+ZSH_HIGHLIGHT_STYLES[comment]='fg=#74857C,italic'
+
+# Commands
+ZSH_HIGHLIGHT_STYLES[reserved-word]='fg=#CA9245'
+ZSH_HIGHLIGHT_STYLES[alias]='fg=#F1BF4B'
+ZSH_HIGHLIGHT_STYLES[suffix-alias]='fg=#F1BF4B'
+ZSH_HIGHLIGHT_STYLES[global-alias]='fg=#F1BF4B'
+ZSH_HIGHLIGHT_STYLES[builtin]='fg=#F1BF4B'
+ZSH_HIGHLIGHT_STYLES[function]='fg=#F1BF4B'
+ZSH_HIGHLIGHT_STYLES[command]='fg=#F1BF4B'
+ZSH_HIGHLIGHT_STYLES[hashed-command]='fg=#F1BF4B'
+ZSH_HIGHLIGHT_STYLES[precommand]='fg=#F1BF4B,italic'
+ZSH_HIGHLIGHT_STYLES[autodirectory]='fg=#F1BF4B,italic'
+ZSH_HIGHLIGHT_STYLES[arg0]='fg=#F1BF4B'
+
+# Separators and redirection
+ZSH_HIGHLIGHT_STYLES[commandseparator]='fg=#CA9245'
+ZSH_HIGHLIGHT_STYLES[redirection]='fg=#FAB49C'
+ZSH_HIGHLIGHT_STYLES[named-fd]='fg=#FAB49C'
+ZSH_HIGHLIGHT_STYLES[numeric-fd]='fg=#FAB49C'
+
+# Arguments and options
+ZSH_HIGHLIGHT_STYLES[single-hyphen-option]='fg=#549B9F'
+ZSH_HIGHLIGHT_STYLES[double-hyphen-option]='fg=#549B9F'
+ZSH_HIGHLIGHT_STYLES[assign]='fg=#D9E1DB'
+ZSH_HIGHLIGHT_STYLES[path]='fg=#C2CBC5,underline'
+ZSH_HIGHLIGHT_STYLES[path_pathseparator]='fg=#909E96,underline'
+ZSH_HIGHLIGHT_STYLES[path_prefix]='fg=#C2CBC5,underline'
+ZSH_HIGHLIGHT_STYLES[path_prefix_pathseparator]='fg=#909E96,underline'
+ZSH_HIGHLIGHT_STYLES[globbing]='fg=#FAB49C'
+ZSH_HIGHLIGHT_STYLES[history-expansion]='fg=#FAB49C'
+ZSH_HIGHLIGHT_STYLES[arithmetic-expansion]='fg=#E7877B'
+
+# Strings
+ZSH_HIGHLIGHT_STYLES[single-quoted-argument]='fg=#70CAA9'
+ZSH_HIGHLIGHT_STYLES[single-quoted-argument-unclosed]='fg=#E7877B'
+ZSH_HIGHLIGHT_STYLES[double-quoted-argument]='fg=#70CAA9'
+ZSH_HIGHLIGHT_STYLES[double-quoted-argument-unclosed]='fg=#E7877B'
+ZSH_HIGHLIGHT_STYLES[dollar-quoted-argument]='fg=#70CAA9'
+ZSH_HIGHLIGHT_STYLES[dollar-quoted-argument-unclosed]='fg=#E7877B'
+ZSH_HIGHLIGHT_STYLES[rc-quote]='fg=#FAB49C'
+ZSH_HIGHLIGHT_STYLES[dollar-double-quoted-argument]='fg=#FAB49C'
+ZSH_HIGHLIGHT_STYLES[back-double-quoted-argument]='fg=#FAB49C'
+ZSH_HIGHLIGHT_STYLES[back-dollar-quoted-argument]='fg=#FAB49C'
+
+# Substitutions
+ZSH_HIGHLIGHT_STYLES[command-substitution]='none'
+ZSH_HIGHLIGHT_STYLES[command-substitution-unquoted]='none'
+ZSH_HIGHLIGHT_STYLES[command-substitution-quoted]='fg=#70CAA9'
+ZSH_HIGHLIGHT_STYLES[command-substitution-delimiter]='fg=#FAB49C'
+ZSH_HIGHLIGHT_STYLES[command-substitution-delimiter-unquoted]='fg=#FAB49C'
+ZSH_HIGHLIGHT_STYLES[command-substitution-delimiter-quoted]='fg=#FAB49C'
+ZSH_HIGHLIGHT_STYLES[process-substitution]='none'
+ZSH_HIGHLIGHT_STYLES[process-substitution-delimiter]='fg=#FAB49C'
+ZSH_HIGHLIGHT_STYLES[back-quoted-argument]='none'
+ZSH_HIGHLIGHT_STYLES[back-quoted-argument-unclosed]='fg=#E7877B'
+ZSH_HIGHLIGHT_STYLES[back-quoted-argument-delimiter]='fg=#FAB49C'
+
+# brackets and cursor highlighters (only used if enabled in ZSH_HIGHLIGHT_HIGHLIGHTERS)
+ZSH_HIGHLIGHT_STYLES[bracket-error]='fg=#E7877B,bold'
+ZSH_HIGHLIGHT_STYLES[bracket-level-1]='fg=#F1BF4B'
+ZSH_HIGHLIGHT_STYLES[bracket-level-2]='fg=#CA9245'
+ZSH_HIGHLIGHT_STYLES[bracket-level-3]='fg=#70CAA9'
+ZSH_HIGHLIGHT_STYLES[bracket-level-4]='fg=#549B9F'
+ZSH_HIGHLIGHT_STYLES[cursor-matchingbracket]='fg=#FFD57A,bold'
+ZSH_HIGHLIGHT_STYLES[cursor]='fg=#131A17,bg=#F1BF4B'
+
+# zsh-autosuggestions (fish's autosuggestion color)
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=#74857C'

@@ -57,11 +57,11 @@ pre[class*="language-"]::selection, pre[class*="language-"] ::selection {
 .token.function { color: #F3BF45; }
 .token.builtin { color: #F3BF45; font-style: italic; }
 .token.string, .token.char, .token.attr-value, .token.code { color: #ADB956; }
-.token.escape, .token.entity, .token.interpolation-punctuation { color: #E0956C; }
-.token.regex { color: #E0956C; }
-.token.number { color: #F97160; }
-.token.boolean { color: #F97160; }
-.token.constant, .token.symbol { color: #F97160; }
+.token.escape, .token.entity, .token.interpolation-punctuation { color: #F4A87E; }
+.token.regex { color: #F4A87E; }
+.token.number { color: #FF8373; }
+.token.boolean { color: #FF8373; }
+.token.constant, .token.symbol { color: #FF8373; }
 .token.class-name { color: #86AD95; }
 .token.variable { color: #EDDCBC; }
 .token.parameter { color: #D9C6A3; font-style: italic; }
@@ -69,7 +69,7 @@ pre[class*="language-"]::selection, pre[class*="language-"] ::selection {
 .language-json .token.property { color: #F3BF45; }
 .token.tag { color: #EC7F31; }
 .token.attr-name, .token.selector { color: #F3BF45; font-style: italic; }
-.token.decorator, .token.annotation { color: #E0956C; font-style: italic; }
+.token.decorator, .token.annotation { color: #F4A87E; font-style: italic; }
 .token.title { color: #F3BF45; font-weight: bold; }
 .token.blockquote { color: #C4AE8C; font-style: italic; }
 .token.coord { color: #7F9BAE; }
@@ -78,10 +78,10 @@ pre[class*="language-"]::selection, pre[class*="language-"] ::selection {
 /* Diffs: the line keeps its code colors on a green or red tint, and the + / - sign carries the color.
    (Other languages mark a whole line as inserted or deleted, so it takes the color itself.) */
 .token.inserted { color: #ADB956; }
-.token.deleted { color: #F97160; }
+.token.deleted { color: #FF8373; }
 [class*="language-diff"] .token.inserted:not(.prefix) { background: #3F3A1E; }
 [class*="language-diff"] .token.deleted:not(.prefix) { background: #52281C; }
 [class*="language-diff"] .token.diff:not(.prefix) { background: #423117; }
 [class*="language-diff"] .token.prefix.inserted { color: #ADB956; }
-[class*="language-diff"] .token.prefix.deleted { color: #F97160; }
+[class*="language-diff"] .token.prefix.deleted { color: #FF8373; }
 [class*="language-diff"] .token.prefix.diff { color: #F3BF45; }

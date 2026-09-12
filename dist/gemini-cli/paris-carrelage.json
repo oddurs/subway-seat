@@ -1,0 +1,54 @@
+{
+  "name": "Paris Carrelage",
+  "type": "custom",
+  "Background": "#EEF2F1",
+  "Foreground": "#27342F",
+  "LightBlue": "#3B4742",
+  "AccentBlue": "#764C00",
+  "AccentPurple": "#B36B51",
+  "AccentCyan": "#006267",
+  "AccentGreen": "#218366",
+  "AccentYellow": "#916D07",
+  "AccentRed": "#AC3B32",
+  "DiffAdded": "#C5DFD7",
+  "DiffRemoved": "#E7D3D2",
+  "Comment": "#6C7C76",
+  "Gray": "#56645F",
+  "DarkGray": "#99ABA6",
+  "GradientColors": [
+    "#88251E",
+    "#764C00",
+    "#916D07",
+    "#218366"
+  ],
+  "text": {
+    "primary": "#27342F",
+    "secondary": "#56645F",
+    "accent": "#B36B51",
+    "response": "#27342F"
+  },
+  "background": {
+    "primary": "#EEF2F1",
+    "diff": {
+      "added": "#C5DFD7",
+      "removed": "#E7D3D2"
+    }
+  },
+  "ui": {
+    "comment": "#6C7C76",
+    "symbol": "#916D07",
+    "active": "#764C00",
+    "focus": "#916D07",
+    "gradient": [
+      "#88251E",
+      "#764C00",
+      "#916D07",
+      "#218366"
+    ]
+  },
+  "status": {
+    "success": "#218366",
+    "warning": "#916D07",
+    "error": "#AC3B32"
+  }
+}

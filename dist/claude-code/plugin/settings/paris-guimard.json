@@ -1,0 +1,48 @@
+{
+  "theme": "custom:subway-seat:paris-guimard",
+  "statusLine": {
+    "type": "command",
+    "command": "${CLAUDE_PLUGIN_DATA}/subway-seat-statusline",
+    "padding": 0,
+    "hideVimModeIndicator": true
+  },
+  "spinnerVerbs": {
+    "mode": "replace",
+    "verbs": [
+      "Reading the plan",
+      "Waiting for the correspondance",
+      "Changing at Chatelet",
+      "Pushing through the portillon",
+      "Riding on rubber tyres",
+      "Counting the stations",
+      "Following the ironwork",
+      "Sitting on the strapontin",
+      "Watching the doors",
+      "Waiting on the quai",
+      "Stamping the ticket",
+      "Admiring the faience",
+      "Descending to the platform",
+      "Going towards La Defense",
+      "Letting the train pass",
+      "Taking the long corridor",
+      "Passing Bastille",
+      "Reading the enamel plate",
+      "Listening for the chime",
+      "Holding the rail",
+      "Crossing under the river",
+      "Checking the next departure",
+      "Riding the last one",
+      "Counting the arches",
+      "Following the green paint",
+      "Walking to the exit",
+      "Standing at the front",
+      "Waiting out the interval",
+      "Coming up into daylight",
+      "Terminus"
+    ]
+  },
+  "spinnerTipsOverride": {
+    "tipsFile": "${CLAUDE_PLUGIN_DATA}/tips.json",
+    "label": "Next stop"
+  }
+}

@@ -1,0 +1,35 @@
+// Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+{
+  "name": "Paris Guimard Widgets",
+  "globals": {
+    "foreground": "#D9E1DB",
+    "background": "#263930",
+    "caret": "#F1BF4B",
+    "line_highlight": "#263930",
+    "selection": "#3E554A",
+    "selection_border": "#3E554A",
+    "inactive_selection": "#3E554A"
+  },
+  "rules": [
+    {
+      "scope": "comment",
+      "foreground": "#74857C"
+    },
+    {
+      "scope": "keyword, storage",
+      "foreground": "#CA9245"
+    },
+    {
+      "scope": "constant",
+      "foreground": "#E7877B"
+    },
+    {
+      "scope": "string",
+      "foreground": "#70CAA9"
+    },
+    {
+      "scope": "constant.character.escape",
+      "foreground": "#FAB49C"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+// Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+{
+  "name": "London Deep Level Widgets",
+  "globals": {
+    "foreground": "#D4DAE7",
+    "background": "#1A243A",
+    "caret": "#F2C03F",
+    "line_highlight": "#1A243A",
+    "selection": "#303E5B",
+    "selection_border": "#303E5B",
+    "inactive_selection": "#303E5B"
+  },
+  "rules": [
+    {
+      "scope": "comment",
+      "foreground": "#6F7C97"
+    },
+    {
+      "scope": "keyword, storage",
+      "foreground": "#DE8946"
+    },
+    {
+      "scope": "constant",
+      "foreground": "#FE8474"
+    },
+    {
+      "scope": "string",
+      "foreground": "#77C581"
+    },
+    {
+      "scope": "constant.character.escape",
+      "foreground": "#AE9EDC"
+    }
+  ]
+}

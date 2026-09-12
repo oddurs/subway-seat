@@ -1,0 +1,26 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# Paris Carrelage for gh-dash.
+theme:
+  colors:
+    text:
+      primary: "#27342F"
+      secondary: "#764C00"
+      inverted: "#EEF2F1"
+      faint: "#6C7C76"
+      warning: "#916D07"
+      success: "#218366"
+      error: "#AC3B32"
+      actor: "#3B4742"
+    background:
+      selected: "#C6D2CF"
+    border:
+      primary: "#764C00"
+      secondary: "#99ABA6"
+      faint: "#C6D2CF"
+    icon:
+      newcontributor: "#218366"
+      contributor: "#006267"
+      collaborator: "#916D07"
+      member: "#916D07"
+      owner: "#764C00"
+      unknownrole: "#6C7C76"

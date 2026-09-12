@@ -1,31 +1,31 @@
 # Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
 # Subway Seat Enamel for matplotlib. Colors are hex without the leading #, as rc files expect.
-figure.facecolor: F4E9D4
-figure.edgecolor: F4E9D4
-savefig.facecolor: F4E9D4
-savefig.edgecolor: F4E9D4
-axes.facecolor: F4E9D4
-axes.edgecolor: A58C6A
+figure.facecolor: F8EFDF
+figure.edgecolor: F8EFDF
+savefig.facecolor: F8EFDF
+savefig.edgecolor: F8EFDF
+axes.facecolor: F8EFDF
+axes.edgecolor: A58D6D
 axes.labelcolor: 54402F
 axes.titlecolor: 2A1D13
-axes.prop_cycle: cycler('color', ['AD4E00', '3E7157', '936200', '3F6480', 'BC4031', '66740F', 'A65633'])
+axes.prop_cycle: cycler('color', ['A04800', '3E7157', '976608', '3F6480', 'BF4233', '66740F', '843811'])
 text.color: 3E2C1E
 xtick.color: 8C7254
 ytick.color: 8C7254
 xtick.labelcolor: 654F3B
 ytick.labelcolor: 654F3B
-grid.color: E1D6C1
-legend.facecolor: FAF4EA
-legend.edgecolor: DFD8CD
-patch.facecolor: AD4E00
-patch.edgecolor: F4E9D4
+grid.color: E5DBCB
+legend.facecolor: FCF7EF
+legend.edgecolor: E1DAD1
+patch.facecolor: A04800
+patch.edgecolor: F8EFDF
 hatch.color: 654F3B
 boxplot.boxprops.color: 54402F
 boxplot.whiskerprops.color: 54402F
 boxplot.capprops.color: 54402F
 boxplot.flierprops.color: 54402F
 boxplot.flierprops.markeredgecolor: 54402F
-boxplot.medianprops.color: AD4E00
-boxplot.meanprops.color: 936200
-boxplot.meanprops.markerfacecolor: 936200
-boxplot.meanprops.markeredgecolor: 936200
+boxplot.medianprops.color: A04800
+boxplot.meanprops.color: 976608
+boxplot.meanprops.markerfacecolor: 976608
+boxplot.meanprops.markeredgecolor: 976608

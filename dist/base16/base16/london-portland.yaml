@@ -1,0 +1,22 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+system: "base16"
+name: "London Portland"
+author: "oddurs (https://github.com/oddurs/subway-seat)"
+variant: "light"
+palette:
+  base00: "#E8F0FF" # base (Portland base)
+  base01: "#BFCFF1" # surface0 (Portland surface0)
+  base02: "#A8BBE2" # surface1 (Portland surface1)
+  base03: "#697794" # overlay1 (Portland overlay1)
+  base04: "#4A5469" # subtext0 (Portland subtext0)
+  base05: "#293040" # text (Portland text)
+  base06: "#1B202B" # text_hi (Portland text hi)
+  base07: "#1B202B" # text_hi (Portland text hi)
+  base08: "#9B211A" # red (Redbird)
+  base09: "#CC2E25" # red_hi (Redbird bright)
+  base0A: "#8D6C08" # yellow (Harvest gold)
+  base0B: "#0D8131" # green (Avocado)
+  base0C: "#007376" # sage (Seafoam tile)
+  base0D: "#0019A8" # denim (Faded denim)
+  base0E: "#A54300" # orange (Burnt orange)
+  base0F: "#755FA9" # clay (Terracotta)

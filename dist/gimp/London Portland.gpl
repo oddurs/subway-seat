@@ -1,0 +1,31 @@
+GIMP Palette
+Name: London Portland
+Columns: 13
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# Holden's Portland stone. Links are the exact Corporate Blue.
+204 218 242	Portland crust
+220 229 247	Portland mantle
+232 240 255	Portland base
+191 207 241	Portland surface0
+168 187 226	Portland surface1
+147 167 207	Portland surface2
+129 146 180	Portland overlay0
+105 119 148	Portland overlay1
+ 85  97 121	Portland overlay2
+ 74  84 105	Portland subtext0
+ 60  69  87	Portland subtext1
+ 41  48  64	Portland text
+ 27  32  43	Portland text hi
+141 108   8	Harvest gold (yellow)
+155 119  10	Broadway yellow (yellow_hi)
+165  67   0	Burnt orange (orange)
+172  90   0	Sixth Avenue (orange_hi)
+155  33  26	Redbird (red)
+204  46  37	Redbird bright (red_hi)
+ 13 129  49	Avocado (green)
+  0 135  48	Avocado bright (green_hi)
+  0 115 118	Seafoam tile (sage)
+  0 134 136	Seafoam bright (sage_hi)
+  0  25 168	Faded denim (denim)
+ 74 110 189	Denim bright (denim_hi)
+117  95 169	Terracotta (clay)

@@ -24,7 +24,7 @@ META = {
     "homepage": "https://neovim.io",
     "enable": {
         "where": "init.lua (~/.config/nvim/init.lua; Windows ~/AppData/Local/nvim/init.lua)",
-        "code": 'vim.cmd.colorscheme("subway-seat-{id}")',
+        "code": 'vim.cmd.colorscheme("{prefix}-{id}")',
         "lang": "lua",
     },
     "auto": {
@@ -1726,7 +1726,7 @@ for i, color in ipairs(spec.ansi) do vim.g["terminal_color_" .. (i - 1)] = color
 
 def colors_flavor(f):
     """colors/subway-seat-<flavor>.lua: this flavor's groups, applied by the plugin or on their own."""
-    name = f"subway-seat-{f.id}"
+    name = f"{f.prefix}-{f.id}"
     body = "\n".join(f'    ["{g}"] = {compact(spec)},' for g, spec in all_groups(f).items())
     ansi = ", ".join(f'"{x}"' for x in f.ansi)
     bg = "dark" if f.dark else "light"
@@ -1787,7 +1787,12 @@ INIT = """-- {header}
 -- `subway-seat-walnut`, `-tunnel` and `-enamel` pick one flavor. See :help subway-seat.
 local M = {{}}
 
-M.flavors = {{ "walnut", "tunnel", "enamel" }}
+M.flavors = {{ {flavor_list} }}
+
+-- Every flavor's file stem, and which of them are light. Both come from
+-- palette.py, so a new family needs no change here.
+M.prefix = {{ {prefix_map} }}
+M.light = {{ {light_map} }}
 
 M.config = {{
   -- The flavor `:colorscheme subway-seat` shows for each 'background'.
@@ -1823,7 +1828,7 @@ function M.colors(flavor)
 end
 
 local function is_light(flavor)
-  return flavor == "enamel"
+  return M.light[flavor] == true
 end
 
 -- A flavor's groups live in its colors file, which returns them when called with "subway-seat".
@@ -1974,9 +1979,14 @@ def build(flavors):
     pal_lua = "-- " + HEADER + "\nlocal M = " + lua(palette) + "\nM.ansi = " + lua(ansi) + "\nreturn M\n"
     outs.append(Out("colors/subway-seat.lua", colors_auto(), dest=f"{cfg}/colors/subway-seat.lua", lang="lua"))
     for f in flavors:
-        outs.append(Out(f"colors/subway-seat-{f.id}.lua", colors_flavor(f), flavor=f.id,
-                        dest=f"{cfg}/colors/subway-seat-{f.id}.lua", lang="lua"))
-    outs.append(Out("lua/subway-seat/init.lua", INIT.format(header=HEADER),
+        outs.append(Out(f"colors/{f.prefix}-{f.id}.lua", colors_flavor(f), flavor=f.id,
+                        dest=f"{cfg}/colors/{f.prefix}-{f.id}.lua", lang="lua"))
+    lua_list = ", ".join(f'"{f.id}"' for f in flavors)
+    prefix_map = ", ".join(f'{f.id} = "{f.prefix}"' for f in flavors)
+    light_map = ", ".join(f"{f.id} = true" for f in flavors if not f.dark)
+    outs.append(Out("lua/subway-seat/init.lua",
+                    INIT.format(header=HEADER, flavor_list=lua_list,
+                                prefix_map=prefix_map, light_map=light_map),
                     dest=f"{cfg}/lua/subway-seat/init.lua", lang="lua"))
     outs.append(Out("lua/subway-seat/palette.lua", pal_lua, dest=f"{cfg}/lua/subway-seat/palette.lua", lang="lua"))
     themes = "lua/lualine/themes"
@@ -1984,10 +1994,10 @@ def build(flavors):
                     dest=f"{cfg}/{themes}/subway-seat.lua", lang="lua"))
     for f in flavors:
         body = "-- " + HEADER + "\nreturn " + lua(lualine_theme(f)) + "\n"
-        outs.append(Out(f"{themes}/subway-seat-{f.id}.lua", body, flavor=f.id,
-                        dest=f"{cfg}/{themes}/subway-seat-{f.id}.lua", lang="lua"))
+        outs.append(Out(f"{themes}/{f.prefix}-{f.id}.lua", body, flavor=f.id,
+                        dest=f"{cfg}/{themes}/{f.prefix}-{f.id}.lua", lang="lua"))
         # the snake_case names from before 0.3
-        alias = f"-- {HEADER}\nreturn require(\"lualine.themes.subway-seat-{f.id}\")\n"
+        alias = f"-- {HEADER}\nreturn require(\"lualine.themes.{f.prefix}-{f.id}\")\n"
         outs.append(Out(f"{themes}/{f.snake}.lua", alias, flavor=f.id, dest=f"{cfg}/{themes}/{f.snake}.lua",
                         lang="lua"))
     outs.append(Out("doc/subway-seat.txt", DOC.format(version=f"v{VERSION}"),

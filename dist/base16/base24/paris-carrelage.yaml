@@ -1,0 +1,30 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+system: "base24"
+name: "Paris Carrelage"
+author: "oddurs (https://github.com/oddurs/subway-seat)"
+variant: "light"
+palette:
+  base00: "#EEF2F1" # base (Carrelage base)
+  base01: "#C6D2CF" # surface0 (Carrelage surface0)
+  base02: "#B0BFBB" # surface1 (Carrelage surface1)
+  base03: "#6C7C76" # overlay1 (Carrelage overlay1)
+  base04: "#4A5752" # subtext0 (Carrelage subtext0)
+  base05: "#27342F" # text (Carrelage text)
+  base06: "#19221E" # text_hi (Carrelage text hi)
+  base07: "#19221E" # text_hi (Carrelage text hi)
+  base08: "#88251E" # red (Redbird)
+  base09: "#AC3B32" # red_hi (Redbird bright)
+  base0A: "#916D07" # yellow (Harvest gold)
+  base0B: "#218366" # green (Avocado)
+  base0C: "#006267" # sage (Seafoam tile)
+  base0D: "#25629B" # denim (Faded denim)
+  base0E: "#764C00" # orange (Burnt orange)
+  base0F: "#B36B51" # clay (Terracotta)
+  base10: "#E1E6E5" # mantle (Carrelage mantle)
+  base11: "#D5DBDA" # crust (Carrelage crust)
+  base12: "#AC3B32" # red_hi (Redbird bright)
+  base13: "#A07A12" # yellow_hi (Broadway yellow)
+  base14: "#278D6E" # green_hi (Avocado bright)
+  base15: "#027479" # sage_hi (Seafoam bright)
+  base16: "#3D75AD" # denim_hi (Denim bright)
+  base17: "#885A00" # orange_hi (Sixth Avenue)

@@ -1,0 +1,26 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# London Portland for television.
+# general
+background = '#E8F0FF'
+border_fg = '#93A7CF'
+text_fg = '#293040'
+dimmed_text_fg = '#697794'
+# input
+input_text_fg = '#293040'
+result_count_fg = '#697794'
+# results
+result_name_fg = '#3C4557'
+result_line_number_fg = '#697794'
+result_value_fg = '#293040'
+selection_bg = '#BFCFF1'
+selection_fg = '#1B202B'
+match_fg = '#8D6C08'
+# preview
+preview_title_fg = '#3C4557'
+# modes
+channel_mode_fg = '#E8F0FF'
+channel_mode_bg = '#A54300'
+remote_control_mode_fg = '#E8F0FF'
+remote_control_mode_bg = '#8D6C08'
+action_picker_mode_fg = '#E8F0FF'
+action_picker_mode_bg = '#007376'

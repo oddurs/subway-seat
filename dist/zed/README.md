@@ -40,6 +40,42 @@ The [installer](../../docs/INSTALL.md) shows its plan and asks once. Add `--flav
 "theme": "Subway Seat Enamel"
 ```
 
+**London Moquette**, in settings.json:
+
+```json
+"theme": "London Moquette"
+```
+
+**London Deep Level**, in settings.json:
+
+```json
+"theme": "London Deep Level"
+```
+
+**London Portland**, in settings.json:
+
+```json
+"theme": "London Portland"
+```
+
+**Paris Guimard**, in settings.json:
+
+```json
+"theme": "Paris Guimard"
+```
+
+**Paris Catacombes**, in settings.json:
+
+```json
+"theme": "Paris Catacombes"
+```
+
+**Paris Carrelage**, in settings.json:
+
+```json
+"theme": "Paris Carrelage"
+```
+
 ## Follow light and dark
 
 In settings.json:

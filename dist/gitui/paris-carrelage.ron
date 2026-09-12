@@ -1,0 +1,27 @@
+// Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+// Paris Carrelage for gitui.
+(
+    selected_tab: Some("#764C00"),
+    command_fg: Some("#27342F"),
+    selection_bg: Some("#C6D2CF"),
+    selection_fg: Some("#19221E"),
+    cmdbar_bg: Some("#D5DBDA"),
+    disabled_fg: Some("#6C7C76"),
+    diff_line_add: Some("#218366"),
+    diff_line_delete: Some("#AC3B32"),
+    diff_file_added: Some("#218366"),
+    diff_file_removed: Some("#AC3B32"),
+    diff_file_moved: Some("#006267"),
+    diff_file_modified: Some("#916D07"),
+    commit_hash: Some("#916D07"),
+    commit_time: Some("#4A5752"),
+    commit_author: Some("#006267"),
+    danger_fg: Some("#AC3B32"),
+    push_gauge_bg: Some("#764C00"),
+    push_gauge_fg: Some("#EEF2F1"),
+    tag_fg: Some("#B36B51"),
+    branch_fg: Some("#218366"),
+    block_title_focused: Some("#764C00"),
+    syntax: Some("paris-carrelage"),
+    use_selection_fg: Some(false),
+)

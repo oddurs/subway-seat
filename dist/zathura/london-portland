@@ -1,0 +1,53 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# London Portland for zathura. In zathurarc: include london-portland
+
+# window
+set default-bg              "#E8F0FF"
+set default-fg              "#293040"
+set statusbar-bg            "#DCE5F7"
+set statusbar-fg            "#3C4557"
+set inputbar-bg             "#DCE5F7"
+set inputbar-fg             "#293040"
+
+# notifications
+set notification-bg         "#F4F8FF"
+set notification-fg         "#293040"
+set notification-error-bg   "#9B211A"
+set notification-error-fg   "#E8F0FF"
+set notification-warning-bg "#8D6C08"
+set notification-warning-fg "#E8F0FF"
+
+# completion
+set completion-bg           "#F4F8FF"
+set completion-fg           "#293040"
+set completion-group-bg     "#DCE5F7"
+set completion-group-fg     "#4A5469"
+set completion-highlight-bg "#A8BBE2"
+set completion-highlight-fg "#1B202B"
+
+# index (table of contents)
+set index-bg                "#E8F0FF"
+set index-fg                "#293040"
+set index-active-bg         "#A8BBE2"
+set index-active-fg         "#1B202B"
+
+# search hits and link hints, washed over the page
+set highlight-color         "rgba(141,108,8,0.3)"
+set highlight-active-color  "rgba(165,67,0,0.5)"
+set highlight-fg            "#1B202B"
+
+# pages while they render
+set render-loading-bg       "#E8F0FF"
+set render-loading-fg       "#697794"
+
+# digital signatures
+set signature-success-color "#0D8131"
+set signature-warning-color "#8D6C08"
+set signature-error-color   "#CC2E25"
+
+# recoloring: white paper → base, black ink → text; Ctrl+R toggles it
+set recolor-lightcolor      "#E8F0FF"
+set recolor-darkcolor       "#293040"
+set recolor                 "true"
+set recolor-keephue         "true"
+set recolor-reverse-video   "true"

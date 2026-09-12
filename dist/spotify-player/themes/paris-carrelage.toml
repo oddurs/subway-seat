@@ -1,0 +1,47 @@
+# >>> subway-seat >>>
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+[[themes]]
+name = "paris-carrelage"
+
+[themes.palette]
+background = "#EEF2F1"
+foreground = "#27342F"
+black = "#3B4742"
+red = "#88251E"
+green = "#218366"
+yellow = "#916D07"
+blue = "#25629B"
+magenta = "#764C00"
+cyan = "#006267"
+white = "#99ABA6"
+bright_black = "#6C7C76"
+bright_red = "#AC3B32"
+bright_green = "#278D6E"
+bright_yellow = "#A07A12"
+bright_blue = "#3D75AD"
+bright_magenta = "#885A00"
+bright_cyan = "#027479"
+bright_white = "#B0BFBB"
+
+[themes.component_style]
+block_title = { fg = "#764C00", modifiers = ["Bold"] }
+border = { fg = "#99ABA6" }
+playback_status = { fg = "#916D07", modifiers = ["Bold"] }
+playback_track = { fg = "#916D07", modifiers = ["Bold"] }
+playback_artists = { fg = "#764C00" }
+playback_album = { fg = "#006267" }
+playback_genres = { fg = "#6C7C76", modifiers = ["Italic"] }
+playback_metadata = { fg = "#4A5752" }
+playback_progress_bar = { fg = "#764C00", bg = "#B0BFBB" }
+playback_progress_bar_unfilled = { fg = "#99ABA6", bg = "#B0BFBB" }
+current_playing = { fg = "#218366", modifiers = ["Bold"] }
+page_desc = { fg = "#916D07", modifiers = ["Bold"] }
+playlist_desc = { fg = "#6C7C76" }
+table_header = { fg = "#764C00" }
+selection = { fg = "#19221E", bg = "#C6D2CF", modifiers = ["Bold"] }
+secondary_row = { bg = "#E1E6E5" }
+like = { fg = "#AC3B32" }
+lyrics_played = { fg = "#6C7C76" }
+lyrics_playing = { fg = "#916D07", modifiers = ["Bold"] }
+visualization = { low = "#218366", mid = "#916D07", high = "#AC3B32" }
+# <<< subway-seat <<<

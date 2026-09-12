@@ -2,73 +2,73 @@
 # Subway Seat Enamel
 
 [colors.primary]
-background = "#F4E9D4"
+background = "#F8EFDF"
 foreground = "#3E2C1E"
 dim_foreground = "#735C44"
 bright_foreground = "#2A1D13"
 
 [colors.cursor]
-text = "#F4E9D4"
-cursor = "#AD4E00"
+text = "#F8EFDF"
+cursor = "#A04800"
 
 [colors.vi_mode_cursor]
-text = "#F4E9D4"
+text = "#F8EFDF"
 cursor = "#3E7157"
 
 [colors.search.matches]
 foreground = "#3E2C1E"
-background = "#D7C094"
+background = "#DBC69E"
 
 [colors.search.focused_match]
 foreground = "#2A1D13"
-background = "#D09C6A"
+background = "#CC9C70"
 
 [colors.footer_bar]
 foreground = "#3E2C1E"
-background = "#CAB48E"
+background = "#CBB898"
 
 [colors.hints.start]
-foreground = "#F4E9D4"
-background = "#AD4E00"
+foreground = "#F8EFDF"
+background = "#A04800"
 
 [colors.hints.end]
-foreground = "#F4E9D4"
+foreground = "#F8EFDF"
 background = "#735C44"
 
 [colors.line_indicator]
 foreground = "#654F3B"
-background = "#D9C8A7"
+background = "#DBCDB3"
 
 [colors.selection]
 text = "#2A1D13"
-background = "#CAB48E"
+background = "#CBB898"
 
 [colors.normal]
 black = "#54402F"
 red = "#992418"
 green = "#66740F"
-yellow = "#936200"
+yellow = "#976608"
 blue = "#3F6480"
-magenta = "#AD4E00"
+magenta = "#A04800"
 cyan = "#3E7157"
-white = "#BAA07A"
+white = "#BAA380"
 
 [colors.bright]
 black = "#8C7254"
-red = "#BC4031"
+red = "#BF4233"
 green = "#697813"
-yellow = "#A56E00"
+yellow = "#A9720A"
 blue = "#517791"
-magenta = "#C4561A"
+magenta = "#BA4D0A"
 cyan = "#4C8367"
-white = "#CAB48E"
+white = "#CBB898"
 
 [colors.dim]
-black = "#8A7967"
-red = "#B86758"
-green = "#969C52"
-yellow = "#B49048"
-blue = "#7D919D"
-magenta = "#C58348"
-cyan = "#7C9A82"
-white = "#CEB999"
+black = "#8C7C6B"
+red = "#B9695C"
+green = "#989E56"
+yellow = "#B89551"
+blue = "#7E93A0"
+magenta = "#BE814C"
+cyan = "#7D9C85"
+white = "#CFBDA0"

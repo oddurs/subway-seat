@@ -8,7 +8,7 @@ classes, which come from the library, not Discord's hashed class names).
 
 import palette as p
 from ports._apps import AUTHOR, rgba
-from ports._lib import HEADER, REPO, VERSION, Out, ink, tints, ui_colors
+from ports._lib import HEADER, REPO, VERSION, Out, ink, pair, tints, ui_colors
 
 RAW = "https://raw.githubusercontent.com/oddurs/subway-seat/main/dist/discord"
 
@@ -495,10 +495,10 @@ def theme(main, dark_f, light_f):
 
 def build(flavors):
     by = {f.id: f for f in flavors}
-    pairs = {"walnut": ("walnut", "enamel"), "tunnel": ("tunnel", "enamel"), "enamel": ("walnut", "enamel")}
     outs = []
     for f in flavors:
-        dark_id, light_id = pairs[f.id]
+        dark_f, light_f = pair(f)
+        dark_id, light_id = dark_f.id, light_f.id
         outs.append(Out(f"{f.slug}.theme.css", theme(f, by[dark_id], by[light_id]), flavor=f.id, lang="css",
                         dest=f"~/Library/Application Support/Vencord/themes/{f.slug}.theme.css", how=FOLDERS))
     return outs

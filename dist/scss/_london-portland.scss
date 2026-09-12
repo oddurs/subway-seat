@@ -1,0 +1,75 @@
+// Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+// London Portland: Holden's Portland stone. Links are the exact Corporate Blue.
+// Diff grounds: -add/-del/-chg for lines, -emph for changed words, -dim for faded diffs.
+
+$ss-crust:         #CCDAF2; // Portland crust
+$ss-mantle:        #DCE5F7; // Portland mantle
+$ss-base:          #E8F0FF; // Portland base
+$ss-surface0:      #BFCFF1; // Portland surface0
+$ss-surface1:      #A8BBE2; // Portland surface1
+$ss-surface2:      #93A7CF; // Portland surface2
+$ss-overlay0:      #8192B4; // Portland overlay0
+$ss-overlay1:      #697794; // Portland overlay1
+$ss-overlay2:      #556179; // Portland overlay2
+$ss-subtext0:      #4A5469; // Portland subtext0
+$ss-subtext1:      #3C4557; // Portland subtext1
+$ss-text:          #293040; // Portland text
+$ss-text-hi:       #1B202B; // Portland text hi
+$ss-yellow:        #8D6C08; // Harvest gold
+$ss-yellow-hi:     #9B770A; // Broadway yellow
+$ss-orange:        #A54300; // Burnt orange
+$ss-orange-hi:     #AC5A00; // Sixth Avenue
+$ss-red:           #9B211A; // Redbird
+$ss-red-hi:        #CC2E25; // Redbird bright
+$ss-green:         #0D8131; // Avocado
+$ss-green-hi:      #008730; // Avocado bright
+$ss-sage:          #007376; // Seafoam tile
+$ss-sage-hi:       #008688; // Seafoam bright
+$ss-denim:         #0019A8; // Faded denim
+$ss-denim-hi:      #4A6EBD; // Denim bright
+$ss-clay:          #755FA9; // Terracotta
+$ss-diff-add:      #C0DEC9;
+$ss-diff-add-emph: #9ECDAD;
+$ss-diff-add-dim:  #D8EBDE;
+$ss-diff-del:      #EBD3D1;
+$ss-diff-del-emph: #DFB8B6;
+$ss-diff-del-dim:  #F3E4E4;
+$ss-diff-chg:      #E1D9BF;
+$ss-diff-chg-emph: #DBD0B0;
+
+$subway-seat: (
+  "crust": $ss-crust,
+  "mantle": $ss-mantle,
+  "base": $ss-base,
+  "surface0": $ss-surface0,
+  "surface1": $ss-surface1,
+  "surface2": $ss-surface2,
+  "overlay0": $ss-overlay0,
+  "overlay1": $ss-overlay1,
+  "overlay2": $ss-overlay2,
+  "subtext0": $ss-subtext0,
+  "subtext1": $ss-subtext1,
+  "text": $ss-text,
+  "text-hi": $ss-text-hi,
+  "yellow": $ss-yellow,
+  "yellow-hi": $ss-yellow-hi,
+  "orange": $ss-orange,
+  "orange-hi": $ss-orange-hi,
+  "red": $ss-red,
+  "red-hi": $ss-red-hi,
+  "green": $ss-green,
+  "green-hi": $ss-green-hi,
+  "sage": $ss-sage,
+  "sage-hi": $ss-sage-hi,
+  "denim": $ss-denim,
+  "denim-hi": $ss-denim-hi,
+  "clay": $ss-clay,
+  "diff-add": $ss-diff-add,
+  "diff-add-emph": $ss-diff-add-emph,
+  "diff-add-dim": $ss-diff-add-dim,
+  "diff-del": $ss-diff-del,
+  "diff-del-emph": $ss-diff-del-emph,
+  "diff-del-dim": $ss-diff-del-dim,
+  "diff-chg": $ss-diff-chg,
+  "diff-chg-emph": $ss-diff-chg-emph,
+);

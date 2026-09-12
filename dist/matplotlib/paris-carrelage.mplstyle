@@ -1,0 +1,31 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# Paris Carrelage for matplotlib. Colors are hex without the leading #, as rc files expect.
+figure.facecolor: EEF2F1
+figure.edgecolor: EEF2F1
+savefig.facecolor: EEF2F1
+savefig.edgecolor: EEF2F1
+axes.facecolor: EEF2F1
+axes.edgecolor: 859792
+axes.labelcolor: 3B4742
+axes.titlecolor: 19221E
+axes.prop_cycle: cycler('color', ['764C00', '006267', '916D07', '25629B', 'AC3B32', '218366', 'B36B51'])
+text.color: 27342F
+xtick.color: 6C7C76
+ytick.color: 6C7C76
+xtick.labelcolor: 4A5752
+ytick.labelcolor: 4A5752
+grid.color: DADFDD
+legend.facecolor: F6F8F8
+legend.edgecolor: D9DCDC
+patch.facecolor: 764C00
+patch.edgecolor: EEF2F1
+hatch.color: 4A5752
+boxplot.boxprops.color: 3B4742
+boxplot.whiskerprops.color: 3B4742
+boxplot.capprops.color: 3B4742
+boxplot.flierprops.color: 3B4742
+boxplot.flierprops.markeredgecolor: 3B4742
+boxplot.medianprops.color: 764C00
+boxplot.meanprops.color: 916D07
+boxplot.meanprops.markerfacecolor: 916D07
+boxplot.meanprops.markeredgecolor: 916D07

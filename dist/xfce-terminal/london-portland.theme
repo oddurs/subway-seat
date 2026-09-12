@@ -1,0 +1,15 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+[Scheme]
+Name=London Portland
+ColorForeground=#293040
+ColorBackground=#E8F0FF
+ColorCursor=#A54300
+ColorCursorForeground=#E8F0FF
+ColorCursorUseDefault=FALSE
+ColorBold=#1B202B
+ColorBoldUseDefault=FALSE
+ColorSelection=#1B202B
+ColorSelectionBackground=#A8BBE2
+ColorSelectionUseDefault=FALSE
+TabActivityColor=#A54300
+ColorPalette=#3C4557;#9B211A;#0D8131;#8D6C08;#0019A8;#A54300;#007376;#93A7CF;#697794;#CC2E25;#008730;#9B770A;#4A6EBD;#AC5A00;#008688;#A8BBE2

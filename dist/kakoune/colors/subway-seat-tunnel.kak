@@ -1,7 +1,7 @@
 # Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
 # Subway Seat Tunnel — The late local after midnight: espresso-deep, same warm lights.
 
-face global value                     rgb:F97160
+face global value                     rgb:FF8373
 face global type                      rgb:86AD95
 face global variable                  rgb:E9D8B6
 face global module                    rgb:C0AA88
@@ -9,10 +9,10 @@ face global function                  rgb:F3BF45
 face global string                    rgb:ADB956
 face global keyword                   rgb:EC7F31
 face global operator                  rgb:AA9171
-face global attribute                 rgb:E0956C+i
+face global attribute                 rgb:F4A87E+i
 face global comment                   rgb:917759+i
 face global documentation             comment
-face global meta                      rgb:E0956C
+face global meta                      rgb:F4A87E
 face global builtin                   rgb:F3BF45+i
 face global title                     rgb:EC7F31+b
 face global header                    rgb:F3BF45+b
@@ -36,8 +36,8 @@ face global MenuBackground            rgb:D6C3A0,rgb:302115
 face global MenuInfo                  rgb:917759
 face global Information               rgb:E9D8B6,rgb:302115
 face global InlineInformation         rgb:E9D8B6,rgb:302115
-face global Error                     rgb:F97160+b
-face global DiagnosticError           default,default,rgb:F97160+c
+face global Error                     rgb:FF8373+b
+face global DiagnosticError           default,default,rgb:FF8373+c
 face global DiagnosticWarning         default,default,rgb:F3BF45+c
 face global DiagnosticInfo            default,default,rgb:7F9BAE+c
 face global DiagnosticHint            default,default,rgb:86AD95+c
@@ -54,11 +54,11 @@ face global Whitespace                rgb:3D2C1D+f
 face global WhitespaceIndent          Whitespace
 face global WrapMarker                Whitespace
 face global BufferPadding             rgb:3D2C1D,rgb:24180E
-face global InlayDiagnosticError      rgb:F97160,rgb:3B2015
+face global InlayDiagnosticError      rgb:FF8373,rgb:3B2015
 face global InlayDiagnosticWarning    rgb:F3BF45,rgb:392914
 face global InlayDiagnosticInfo       rgb:7F9BAE,rgb:312A24
 face global InlayDiagnosticHint       rgb:86AD95,rgb:322D21
-face global LineFlagError             rgb:F97160
+face global LineFlagError             rgb:FF8373
 face global LineFlagWarning           rgb:F3BF45
 face global LineFlagInfo              rgb:7F9BAE
 face global LineFlagHint              rgb:86AD95

@@ -1,0 +1,39 @@
+/* Subway Seat — generated from palette.py by build.py. Edit the palette, not this file. */
+/* London Moquette for Tailwind v4: bg-ss-base, text-ss-text, … */
+
+@theme {
+  --color-ss-crust: #121826;
+  --color-ss-mantle: #172032;
+  --color-ss-base: #1E2941;
+  --color-ss-surface0: #263451;
+  --color-ss-surface1: #303F61;
+  --color-ss-surface2: #3D4F72;
+  --color-ss-overlay0: #576685;
+  --color-ss-overlay1: #73819C;
+  --color-ss-overlay2: #8F9AB0;
+  --color-ss-subtext0: #A9B2C4;
+  --color-ss-subtext1: #C1C9D8;
+  --color-ss-text: #D8DEEA;
+  --color-ss-text-hi: #E9EDF5;
+  --color-ss-yellow: #F2C03F;
+  --color-ss-yellow-hi: #FFD36C;
+  --color-ss-orange: #DE8946;
+  --color-ss-orange-hi: #E5AA7F;
+  --color-ss-red: #DB6052;
+  --color-ss-red-hi: #FE8474;
+  --color-ss-green: #77C581;
+  --color-ss-green-hi: #9AD2A0;
+  --color-ss-sage: #54B4B5;
+  --color-ss-sage-hi: #72D1D3;
+  --color-ss-denim: #7595DA;
+  --color-ss-denim-hi: #8BB0FF;
+  --color-ss-clay: #AE9EDC;
+  --color-ss-diff-add: #283E3A;
+  --color-ss-diff-add-emph: #345345;
+  --color-ss-diff-add-dim: #203033;
+  --color-ss-diff-del: #462B31;
+  --color-ss-diff-del-emph: #623538;
+  --color-ss-diff-del-dim: #34242D;
+  --color-ss-diff-chg: #36332A;
+  --color-ss-diff-chg-emph: #4C442C;
+}

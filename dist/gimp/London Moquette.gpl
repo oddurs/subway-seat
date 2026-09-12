@@ -1,0 +1,31 @@
+GIMP Palette
+Name: London Moquette
+Columns: 13
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# The seat you're sitting on. Corporate Blue, turned right down.
+ 18  24  38	Blackout (crust)
+ 23  32  50	Espresso (mantle)
+ 30  41  65	Paneling (base)
+ 38  52  81	Coppertone (surface0)
+ 48  63  97	Saddle (surface1)
+ 61  79 114	Corduroy (surface2)
+ 87 102 133	Pecan (overlay0)
+115 129 156	Cardboard (overlay1)
+143 154 176	Burlap (overlay2)
+169 178 196	Khaki (subtext0)
+193 201 216	Almond (subtext1)
+216 222 234	Parchment (text)
+233 237 245	Ivory (text_hi)
+242 192  63	Harvest gold (yellow)
+255 211 108	Broadway yellow (yellow_hi)
+222 137  70	Burnt orange (orange)
+229 170 127	Sixth Avenue (orange_hi)
+219  96  82	Redbird (red)
+254 132 116	Redbird bright (red_hi)
+119 197 129	Avocado (green)
+154 210 160	Avocado bright (green_hi)
+ 84 180 181	Seafoam tile (sage)
+114 209 211	Seafoam bright (sage_hi)
+117 149 218	Faded denim (denim)
+139 176 255	Denim bright (denim_hi)
+174 158 220	Terracotta (clay)

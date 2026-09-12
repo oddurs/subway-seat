@@ -1,0 +1,26 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# London Portland for gh-dash.
+theme:
+  colors:
+    text:
+      primary: "#293040"
+      secondary: "#A54300"
+      inverted: "#E8F0FF"
+      faint: "#697794"
+      warning: "#8D6C08"
+      success: "#0D8131"
+      error: "#CC2E25"
+      actor: "#3C4557"
+    background:
+      selected: "#BFCFF1"
+    border:
+      primary: "#A54300"
+      secondary: "#93A7CF"
+      faint: "#BFCFF1"
+    icon:
+      newcontributor: "#0D8131"
+      contributor: "#007376"
+      collaborator: "#8D6C08"
+      member: "#8D6C08"
+      owner: "#A54300"
+      unknownrole: "#697794"
