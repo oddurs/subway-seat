@@ -77,7 +77,7 @@ cd site && bun install && bun run check    # the website: lint, types, format
   rounds of failures: its lightness isn't perceptual, so equal steps aren't equal.
 - **The chroma curve flips with polarity.** A dark flavor pulls chroma out toward
   `text`, so pale type stays white. A light flavor must do the opposite: there `text`
-  is the inked end and the paper is the pale one, and tapering it leaves the greys
+  is the inked end and the paper is the pale one, and tapering it leaves the grays
   dead neutral.
 - **Compare across families, not only within one.** Take the three flavors of one
   class — the three defaults, the three deeper darks, the three lights — and put
