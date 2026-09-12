@@ -54,10 +54,18 @@ const tile = Object.fromEntries(
   flavors.map((f) => {
     const c = f.colors;
     const a = f.art;
+    // Tile is the pale end of the ramp, and which end that is flips with the
+    // flavor: in a dark one the pale end is the text ramp, in a light one it is
+    // the paper. Reading the same roles in both is what made Carrelage's tiles
+    // come out near-black.
+    const faces = f.dark
+      ? [c.subtext1, c.subtext0, c.text, c.overlay2, c.subtext1, c.subtext0]
+      : [c.base, c.mantle, c.surface0, c.mantle, c.base, c.surface0];
     const palette: TilePalette = {
-      grout: c.surface0,
-      // Glazed white tile is never one white: every face fired a little apart.
-      faces: [c.subtext1, c.text, c.subtext0, c.text, c.subtext1, c.overlay2],
+      // Grout is the recess behind the tiles, so it sits a step darker than they do.
+      grout: f.dark ? c.crust : c.surface1,
+      // Glazed tile is never one white: every face fired a little apart.
+      faces,
       accents: [a.clay, a.green, a.yellow, a.denim, a.orange, a.sage],
     };
     return [f.id, palette];

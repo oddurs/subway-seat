@@ -50,7 +50,7 @@ export function CitySwitch() {
 const DOT = 11;
 
 const styles = stylex.create({
-  group: { display: "flex", alignItems: "center", gap: 0 },
+  group: { display: "flex", gap: 0, alignItems: "center" },
   stop: {
     display: "flex",
     gap: 8,
@@ -62,38 +62,38 @@ const styles = stylex.create({
     outlineStyle: { default: "none", ":focus-visible": "solid" },
     outlineColor: "var(--sign-ring)",
     outlineOffset: 4,
+    backgroundColor: "transparent",
     borderWidth: 0,
     borderRadius: "var(--radius-pill)",
-    backgroundColor: "transparent",
   },
   name: (on: boolean) => ({
     fontFamily: font.sans,
     fontSize: font.sizeLabel,
     fontWeight: 700,
     lineHeight: font.leadFlat,
-    letterSpacing: font.trackControl,
-    textTransform: "uppercase",
     color: "var(--sign-text)",
+    textTransform: "uppercase",
+    letterSpacing: font.trackControl,
     opacity: on ? 1 : 0.58,
     transitionDuration: "180ms",
     transitionProperty: "opacity",
   }),
   dot: (lead: string | null) => ({
+    flexShrink: 0,
     width: DOT,
     height: DOT,
-    flexShrink: 0,
+    backgroundColor: "transparent",
     borderColor: lead ?? "color-mix(in srgb, var(--sign-text) 55%, transparent)",
     borderStyle: "solid",
     borderWidth: lead ? 5.5 : 2,
     borderRadius: "50%",
-    backgroundColor: "transparent",
     transitionDuration: "180ms",
     transitionProperty: "border-color, border-width",
   }),
   track: {
+    flexShrink: 0,
     width: 20,
     height: 2,
-    flexShrink: 0,
     backgroundColor: "color-mix(in srgb, var(--sign-text) 28%, transparent)",
   },
 });

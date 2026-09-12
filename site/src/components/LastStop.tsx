@@ -74,20 +74,20 @@ const WIDE = "@media (min-width: 960px)";
 const styles = stylex.create({
   band: {
     position: "relative",
-    marginTop: 40,
     paddingBlock: 0,
+    marginTop: 40,
     backgroundColor: color.mantle,
   },
   // The platform edge: the city's own lead colour, full width.
   rule: { display: "block", height: 4, backgroundColor: ink.fill },
   inner: {
     display: "grid",
-    gridTemplateColumns: { default: "minmax(0, 1fr)", [WIDE]: "minmax(0, 0.9fr) minmax(0, 1.1fr)" },
-    gap: { default: 28, [WIDE]: 56 },
+    gridTemplateColumns: { [WIDE]: "minmax(0, 0.9fr) minmax(0, 1.1fr)", default: "minmax(0, 1fr)" },
+    gap: { [WIDE]: 56, default: 28 },
     alignItems: "center",
     maxWidth: space.measure,
+    paddingBlock: { [WIDE]: 72, default: 48 },
     paddingInline: space.gutter,
-    paddingBlock: { default: 48, [WIDE]: 72 },
     marginInline: "auto",
   },
   copy: { display: "grid", gap: 14 },
@@ -106,8 +106,8 @@ const styles = stylex.create({
     fontVariationSettings: font.axesTitle,
     fontWeight: font.weightTitle,
     lineHeight: font.leadTitle,
-    letterSpacing: font.trackTitle,
     color: color.textHi,
+    letterSpacing: font.trackTitle,
     textWrap: "balance",
   },
   lede: {
@@ -125,10 +125,10 @@ const styles = stylex.create({
     fontSize: 26,
     fontVariationSettings: font.axesTitle,
     fontWeight: font.weightTitle,
-    lineHeight: font.leadFlat,
-    letterSpacing: font.trackTitle,
     fontVariantNumeric: "tabular-nums",
+    lineHeight: font.leadFlat,
     color: color.textHi,
+    letterSpacing: font.trackTitle,
   },
   factLabel: {
     margin: 0,

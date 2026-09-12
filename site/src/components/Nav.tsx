@@ -71,8 +71,8 @@ const styles = stylex.create({
     columnGap: 30,
     alignItems: "center",
     maxWidth: space.measure,
-    paddingInline: space.gutter,
     paddingBlock: 20,
+    paddingInline: space.gutter,
     marginInline: "auto",
   },
   // A lockup: the mark centred on the wordmark's cap height, the pair centred

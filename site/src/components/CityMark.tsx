@@ -81,10 +81,10 @@ const styles = stylex.create({
   letter: {
     position: "relative",
     fontFamily: font.sans,
-    fontSize: 13,
-    fontWeight: 700,
+    fontSize: 12,
+    fontWeight: 600,
     lineHeight: 1,
-    color: "var(--sign-mark-alt)",
+    color: "var(--sign-mark)",
   },
   // The bar runs past the ring on both sides — that overhang is most of what
   // makes a roundel read as a roundel and not as a disc.

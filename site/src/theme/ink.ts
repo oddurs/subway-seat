@@ -48,29 +48,30 @@ export const londonInk = stylex.createTheme(ink, {
   okFill: color.green,
 });
 
-// Paris's dark flavors. The lead is line 4's magenta, which leads escapes and
-// regex — rare tokens — so spending it on chrome keeps it rare there too.
+// Paris's dark flavors. Brass leads: a dark hue can't, because every accent is
+// lifted until it clears the contrast floor and a dark one stops being itself
+// on the way up. Brass is still brass at the top.
 export const parisInk = stylex.createTheme(ink, {
-  accent: color.clay,
-  accentHover: color.clay,
-  code: color.yellow,
+  accent: color.yellow,
+  accentHover: color.yellowHi,
+  code: color.orange,
   flag: color.sage,
   string: color.green,
-  fill: color.clay,
+  fill: color.yellow,
   onAccent: color.crust,
-  fillHover: color.clay,
+  fillHover: color.yellowHi,
   okFill: color.green,
 });
 
 // Carrelage: the same idea on tile.
 export const carrelageInk = stylex.createTheme(ink, {
-  accent: color.clay,
-  accentHover: `color-mix(in srgb, ${color.clay} 78%, ${color.text})`,
+  accent: color.yellow,
+  accentHover: `color-mix(in srgb, ${color.yellow} 78%, ${color.text})`,
   code: color.orange,
   flag: color.sage,
   string: color.green,
-  fill: color.clay,
+  fill: color.yellow,
   onAccent: color.base,
-  fillHover: `color-mix(in srgb, ${color.clay} 82%, ${color.text})`,
+  fillHover: `color-mix(in srgb, ${color.yellow} 82%, ${color.text})`,
   okFill: color.green,
 });

@@ -99,10 +99,6 @@ const styles = stylex.create({
     marginInline: "auto",
   },
   art: {
-    // A bleed: the graphic runs off the right edge, and fades out on the left
-    // instead of stopping at a seam, so it reads as a system passing through
-    // the frame rather than a picture sitting in it.
-    maskImage: "linear-gradient(to right, transparent 0, rgba(0,0,0,0.35) 9%, #000 26%)",
     position: {
       [NARROW]: "absolute",
       default: "absolute",
@@ -124,6 +120,10 @@ const styles = stylex.create({
       [NARROW]: 0.2,
       default: 1,
     },
+    // A bleed: the graphic runs off the right edge, and fades out on the left
+    // instead of stopping at a seam, so it reads as a system passing through
+    // the frame rather than a picture sitting in it.
+    maskImage: "linear-gradient(to right, transparent 0, rgba(0,0,0,0.35) 9%, #000 26%)",
   },
   copy: { position: "relative", display: "grid", gap: space.s5 },
   eyebrow: {

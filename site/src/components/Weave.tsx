@@ -124,11 +124,11 @@ export function Weave({
 const styles = stylex.create({
   // Before the canvas draws, a flat woven grain in CSS.
   canvas: {
-    display: "block",
-    width: "100%",
     borderBlockColor: color.crust,
     borderBlockStyle: "solid",
     borderBlockWidth: 1,
+    display: "block",
+    width: "100%",
     backgroundColor: color.mantle,
     backgroundImage: `linear-gradient(to bottom, transparent 55%, rgba(0,0,0,0.28)), repeating-linear-gradient(90deg, ${color.surface0} 0 2px, ${color.mantle} 2px 4px)`,
   },
