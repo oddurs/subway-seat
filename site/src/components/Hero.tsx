@@ -1,8 +1,9 @@
 import * as stylex from "@stylexjs/stylex";
-import Link from "next/link";
 import { ink } from "@/theme/ink.stylex";
+import { space } from "@/theme/space.stylex";
 import { color } from "@/theme/tokens.stylex";
 import { font } from "@/theme/type.stylex";
+import { Button } from "./Button";
 import { Diagram } from "./Diagram";
 import { Supergraphic } from "./Supergraphic";
 
@@ -43,12 +44,10 @@ export function Hero({ count }: { count: number }) {
             still means something. Three flavors, {count} ports, the same 26 roles.
           </p>
           <div {...stylex.props(styles.ctas)}>
-            <Link href="/install" {...stylex.props(styles.cta, styles.primary)}>
+            <Button href="/install" variant="primary">
               Get on board
-            </Link>
-            <Link href="#ports" {...stylex.props(styles.cta, styles.secondary)}>
-              Find your app
-            </Link>
+            </Button>
+            <Button href="#ports">Find your app</Button>
           </div>
         </div>
       </section>
@@ -68,12 +67,12 @@ const styles = stylex.create({
       default: "minmax(0, 1.1fr) minmax(0, 0.9fr)",
     },
     alignItems: "center",
-    maxWidth: 1200,
+    maxWidth: space.measure,
     minHeight: {
       [NARROW]: 0,
       default: 520,
     },
-    paddingInline: 24,
+    paddingInline: space.gutter,
     paddingTop: {
       [NARROW]: 40,
       default: 72,
@@ -108,7 +107,7 @@ const styles = stylex.create({
       default: 1,
     },
   },
-  copy: { position: "relative", display: "grid", gap: 22 },
+  copy: { position: "relative", display: "grid", gap: space.s5 },
   eyebrow: {
     fontFamily: font.sans,
     fontSize: font.sizeLabel,
@@ -118,14 +117,10 @@ const styles = stylex.create({
     letterSpacing: font.trackLabel,
   },
   diagram: { display: "block", marginTop: 40 },
-  // Johnston is set tight and upright; the 70s display face wants the opposite.
-  titleLondon: {
-    maxWidth: "14ch",
-    fontVariationSettings: "normal",
-    fontWeight: 700,
-    lineHeight: 1.02,
-    letterSpacing: "-0.012em",
-  },
+  // Cabin sets wider than Fraunces at the same size, so London's headline gets
+  // a couple more characters before it wraps. Everything else about how it is
+  // set comes from the family's type theme, not from here.
+  titleLondon: { maxWidth: "15ch" },
   title: {
     maxWidth: "12ch",
     fontFamily: font.display,
@@ -144,49 +139,5 @@ const styles = stylex.create({
     color: color.subtext1,
     textWrap: "pretty",
   },
-  ctas: { display: "flex", flexWrap: "wrap", gap: 12 },
-  cta: {
-    flexGrow: {
-      default: 0,
-      "@media (max-width: 480px)": 1,
-    },
-    paddingBlock: 12,
-    paddingInline: 24,
-    fontSize: font.sizeBody,
-    fontWeight: 700,
-    lineHeight: font.leadFlat,
-    textAlign: "center",
-    textDecoration: "none",
-    outlineWidth: 2,
-    outlineStyle: {
-      default: "none",
-      ":focus-visible": "solid",
-    },
-    outlineColor: ink.accent,
-    outlineOffset: 3,
-    borderRadius: "var(--radius-pill)",
-    transform: {
-      default: null,
-      ":hover": "translateY(-1px)",
-    },
-    transitionDuration: "160ms",
-    transitionProperty: "transform, background-color",
-  },
-  primary: {
-    color: ink.onAccent,
-    backgroundColor: {
-      default: ink.fill,
-      ":hover": ink.fillHover,
-    },
-  },
-  secondary: {
-    color: color.text,
-    backgroundColor: {
-      default: "transparent",
-      ":hover": color.surface0,
-    },
-    borderColor: color.surface2,
-    borderStyle: "solid",
-    borderWidth: 1,
-  },
+  ctas: { display: "flex", flexWrap: "wrap", gap: space.s3 },
 });

@@ -6,7 +6,7 @@ import { FlavorSync } from "@/components/FlavorSync";
 import { ports, version } from "@/lib/manifest";
 import { flavors } from "@/lib/palette";
 import { ORIGIN, pageMeta, pageUrl, REPO, SITE_NAME } from "@/lib/seo";
-import { londonType } from "@/theme/faces";
+import { londonType, portlandType } from "@/theme/faces";
 import * as artTheme from "@/theme/art";
 import * as theme from "@/theme/flavors";
 import { enamelInk, londonInk, portlandInk } from "@/theme/ink";
@@ -68,10 +68,13 @@ const themeClasses = Object.fromEntries(
   flavors.map((f) => {
     const london = f.family === "london";
     const ink = f.dark ? (london ? londonInk : null) : LIGHT_INK[f.family];
+    // London's light flavor is set differently from its dark ones: dark type on
+    // pale ground needs the opposite correction to light type on dark.
+    const type = london ? (f.dark ? londonType : portlandType) : null;
     const parts = [
       theme[f.id as keyof typeof theme],
       artTheme[f.id as keyof typeof artTheme],
-      london ? londonType : null,
+      type,
       ink,
     ];
     return [f.id, stylex.props(...parts.filter(Boolean)).className ?? ""];

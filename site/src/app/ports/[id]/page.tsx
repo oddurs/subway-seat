@@ -26,6 +26,7 @@ import {
 import { type FlavorId, flavorById, flavors, roleName, roles, shortName } from "@/lib/palette";
 import { pageMeta, REPO, summary } from "@/lib/seo";
 import { ink } from "@/theme/ink.stylex";
+import { space } from "@/theme/space.stylex";
 import { color } from "@/theme/tokens.stylex";
 import { font } from "@/theme/type.stylex";
 
@@ -331,7 +332,12 @@ export default async function PortPage({ params }: PageProps<"/ports/[id]">) {
 }
 
 const styles = stylex.create({
-  main: { maxWidth: 1200, paddingInline: 24, paddingTop: 40, marginInline: "auto" },
+  main: {
+    maxWidth: space.measure,
+    paddingInline: space.gutter,
+    paddingTop: 40,
+    marginInline: "auto",
+  },
   column: {
     display: "grid",
     gridTemplateColumns: "minmax(0, 1fr)",

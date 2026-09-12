@@ -20,6 +20,7 @@ import { installCommand } from "@/lib/install";
 import { ports } from "@/lib/manifest";
 import { type FlavorId, flavors } from "@/lib/palette";
 import { ink } from "@/theme/ink.stylex";
+import { space } from "@/theme/space.stylex";
 
 const shag = Object.fromEntries(
   flavors.map((f) => {
@@ -147,8 +148,8 @@ export default function Home() {
 
 const styles = stylex.create({
   sections: {
-    maxWidth: 1200,
-    paddingInline: 24,
+    maxWidth: space.measure,
+    paddingInline: space.gutter,
     marginInline: "auto",
   },
   install: { display: "grid", gridTemplateColumns: "minmax(0, 1fr)", gap: 14, maxWidth: 860 },

@@ -1,5 +1,6 @@
 import * as stylex from "@stylexjs/stylex";
 import Link from "next/link";
+import { space } from "@/theme/space.stylex";
 import { font } from "@/theme/type.stylex";
 import { CityMark } from "./CityMark";
 import { CitySwitch } from "./CitySwitch";
@@ -69,8 +70,8 @@ const styles = stylex.create({
     rowGap: 14,
     columnGap: 30,
     alignItems: "center",
-    maxWidth: 1200,
-    paddingInline: 24,
+    maxWidth: space.measure,
+    paddingInline: space.gutter,
     paddingBlock: 20,
     marginInline: "auto",
   },

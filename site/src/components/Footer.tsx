@@ -4,6 +4,7 @@ import { ports, version } from "@/lib/manifest";
 import { FlavorPicker } from "./FlavorPicker";
 import { REPO } from "@/lib/seo";
 import { ink } from "@/theme/ink.stylex";
+import { space } from "@/theme/space.stylex";
 import { color } from "@/theme/tokens.stylex";
 import { font } from "@/theme/type.stylex";
 
@@ -54,8 +55,8 @@ const styles = stylex.create({
   inner: {
     display: "grid",
     gap: 14,
-    maxWidth: 1200,
-    paddingInline: 24,
+    maxWidth: space.measure,
+    paddingInline: space.gutter,
     paddingTop: 48,
     paddingBottom: 56,
     marginInline: "auto",

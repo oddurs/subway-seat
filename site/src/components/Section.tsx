@@ -2,6 +2,7 @@ import * as stylex from "@stylexjs/stylex";
 import type { ReactNode } from "react";
 import { ink } from "@/theme/ink.stylex";
 import { color } from "@/theme/tokens.stylex";
+import { space } from "@/theme/space.stylex";
 import { font } from "@/theme/type.stylex";
 
 const slug = (s: string) =>
@@ -53,8 +54,8 @@ const styles = stylex.create({
   section: {
     display: "grid",
     gridTemplateColumns: "minmax(0, 1fr)",
-    gap: 26,
-    paddingTop: 88,
+    gap: space.heading,
+    paddingTop: space.section,
     scrollMarginTop: 24,
   },
   head: { display: "grid", gap: 10 },

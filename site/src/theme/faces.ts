@@ -31,3 +31,34 @@ export const londonType = stylex.createTheme(font, {
   weightHero: "700",
   weightTitle: "700",
 });
+
+/**
+ * Portland, London's light flavor.
+ *
+ * The same face on the other polarity. Light type on a dark ground haloes —
+ * the glyphs bloom a little and read heavier than they are — so the dark
+ * flavors are set with the tracking opened to compensate. Dark type on a pale
+ * ground does the reverse: it reads thinner and looser than the same setting
+ * looks at night. Cabin has no weight above 700 to answer that with, so the
+ * correction is in the fit — tracking closed up and the leading with it, which
+ * puts the words back at the colour they have on the dark flavors.
+ */
+export const portlandType = stylex.createTheme(font, {
+  sans: 'var(--font-cabin), "Gill Sans", "Gill Sans MT", Calibri, sans-serif',
+  display: 'var(--font-cabin), "Gill Sans", "Gill Sans MT", Calibri, sans-serif',
+
+  leadHero: "1.02",
+  leadTitle: "1.1",
+  leadHead: "1.28",
+
+  trackHero: "-0.016em",
+  trackTitle: "-0.012em",
+  trackHead: "-0.008em",
+  trackLabel: "0.19em",
+  trackControl: "0.11em",
+
+  axesHero: "normal",
+  axesTitle: "normal",
+  weightHero: "700",
+  weightTitle: "700",
+});

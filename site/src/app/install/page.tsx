@@ -10,6 +10,7 @@ import { byCategory, categoryLabel, ports, setupFor } from "@/lib/manifest";
 import { families, type FlavorId, flavorById, flavors, shortName } from "@/lib/palette";
 import { pageMeta } from "@/lib/seo";
 import { ink } from "@/theme/ink.stylex";
+import { space } from "@/theme/space.stylex";
 import { color } from "@/theme/tokens.stylex";
 import { font } from "@/theme/type.stylex";
 
@@ -163,7 +164,7 @@ export default function InstallPage() {
 }
 
 const styles = stylex.create({
-  main: { maxWidth: 1200, paddingInline: 24, marginInline: "auto" },
+  main: { maxWidth: space.measure, paddingInline: space.gutter, marginInline: "auto" },
   ride: {
     display: "grid",
     gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",

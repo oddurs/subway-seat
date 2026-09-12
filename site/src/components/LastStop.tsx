@@ -1,10 +1,11 @@
 import * as stylex from "@stylexjs/stylex";
-import Link from "next/link";
 import { installCommand } from "@/lib/install";
 import { flavors } from "@/lib/palette";
 import { ink } from "@/theme/ink.stylex";
+import { space } from "@/theme/space.stylex";
 import { color } from "@/theme/tokens.stylex";
 import { font } from "@/theme/type.stylex";
+import { Button } from "./Button";
 import { Command } from "./Command";
 
 /**
@@ -59,9 +60,9 @@ export function LastStop() {
               </div>
             ))}
           </dl>
-          <Link href="/install" {...stylex.props(styles.more)}>
+          <Button href="/install" variant="quiet" size="sm">
             Pick your apps, follow light and dark, or clone the repo →
-          </Link>
+          </Button>
         </div>
       </div>
     </section>
@@ -84,8 +85,8 @@ const styles = stylex.create({
     gridTemplateColumns: { default: "minmax(0, 1fr)", [WIDE]: "minmax(0, 0.9fr) minmax(0, 1.1fr)" },
     gap: { default: 28, [WIDE]: 56 },
     alignItems: "center",
-    maxWidth: 1200,
-    paddingInline: 24,
+    maxWidth: space.measure,
+    paddingInline: space.gutter,
     paddingBlock: { default: 48, [WIDE]: 72 },
     marginInline: "auto",
   },
@@ -117,8 +118,8 @@ const styles = stylex.create({
     textWrap: "pretty",
   },
   ticket: { display: "grid", gap: 20 },
-  facts: { display: "flex", flexWrap: "wrap", gap: "18px 36px", margin: 0 },
-  fact: { display: "flex", gap: 9, alignItems: "baseline" },
+  facts: { display: "flex", flexWrap: "wrap", gap: space.s5, margin: 0 },
+  fact: { display: "flex", gap: space.s2, alignItems: "baseline" },
   factNum: {
     fontFamily: font.display,
     fontSize: 26,
@@ -134,17 +135,5 @@ const styles = stylex.create({
     fontSize: font.sizeMicro,
     lineHeight: font.leadFlat,
     color: color.subtext0,
-  },
-  more: {
-    justifySelf: "start",
-    fontSize: font.sizeSmall,
-    fontWeight: 600,
-    color: { default: ink.accent, ":hover": ink.accentHover },
-    textDecoration: "none",
-    outlineWidth: 2,
-    outlineStyle: { default: "none", ":focus-visible": "solid" },
-    outlineColor: ink.accent,
-    outlineOffset: 3,
-    borderRadius: "var(--radius-pill)",
   },
 });

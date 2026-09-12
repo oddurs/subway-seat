@@ -23,6 +23,7 @@ import {
 } from "@/lib/palette";
 import { pageMeta } from "@/lib/seo";
 import { ink } from "@/theme/ink.stylex";
+import { space } from "@/theme/space.stylex";
 import { font } from "@/theme/type.stylex";
 
 const TITLE = "The palette";
@@ -192,7 +193,7 @@ export default async function PalettePage() {
 }
 
 const styles = stylex.create({
-  main: { maxWidth: 1200, paddingInline: 24, marginInline: "auto" },
+  main: { maxWidth: space.measure, paddingInline: space.gutter, marginInline: "auto" },
   link: {
     color: {
       default: ink.accent,
