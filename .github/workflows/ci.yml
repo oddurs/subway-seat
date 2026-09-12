@@ -234,9 +234,17 @@ jobs:
           done
       - name: tmux
         run: |
+          # Each config gets its own socket. Sharing one meant every iteration
+          # killed the server and the next reopened the same socket straight
+          # away, so a new client could reach the dying one and get "server
+          # exited unexpectedly" — which failed this step on a different theme
+          # file every few runs. Teardown also stays out of the checked command:
+          # sourcing the config is what this tests.
           for f in dist/tmux/*.conf; do
             echo "$f"
-            tmux -L ci -f /dev/null new-session -d \; source-file "$f" \; kill-server
+            sock="ci-$(basename "$f" .conf)"
+            tmux -L "$sock" -f /dev/null new-session -d \; source-file "$f"
+            tmux -L "$sock" kill-server 2>/dev/null || true
           done
       - name: zellij
         run: |

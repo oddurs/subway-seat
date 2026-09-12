@@ -22,3 +22,15 @@ site/src/theme/flavors.ts linguist-generated=true
 site/src/theme/palette.json linguist-generated=true
 site/bun.lock linguist-generated=true
 uv.lock linguist-generated=true
+
+# …and rebuilt on merge rather than resolved. A palette change rewrites every
+# one of them, so two branches that both touch a color conflict in ~1,600 files,
+# some of them binaries git cannot even diff — and the resolution is never to
+# pick a side, it is to run build.py. This driver keeps whichever side you are
+# on and lets the rebuild settle it; CI's `build.py --check` fails if you forget.
+# The driver itself lives outside the repo, so it needs saying once per clone:
+#   git config merge.generated.driver true
+dist/** merge=generated
+site/src/theme/tokens.stylex.ts merge=generated
+site/src/theme/flavors.ts merge=generated
+site/src/theme/palette.json merge=generated
