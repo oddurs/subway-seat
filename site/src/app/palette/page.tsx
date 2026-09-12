@@ -6,6 +6,7 @@ import { blockHtml } from "@/components/blockHtml";
 import { Footer } from "@/components/Footer";
 import { Nav } from "@/components/Nav";
 import { type PaletteGroup, PaletteTable } from "@/components/PaletteTable";
+import { RoleName } from "@/components/RoleName";
 import { Section } from "@/components/Section";
 import { BASE } from "@/lib/base";
 import { portById } from "@/lib/manifest";
@@ -16,7 +17,6 @@ import {
   type FlavorId,
   flavors,
   ground,
-  roleNames,
   roleUses,
   shortName,
   textRoles,
@@ -27,13 +27,13 @@ import { font } from "@/theme/type.stylex";
 
 const TITLE = "The palette";
 const DESCRIPTION =
-  "Every Subway Seat color in all three flavors, in hex, RGB, HSL and OKLCH, with contrast and what each one is for. Copy any value, or download the palette for your design tools.";
+  "Every color in both families, in hex, RGB, HSL and OKLCH, with contrast and what each one is for. Copy any value, or download the palette for your design tools.";
 
 export const metadata: Metadata = {
   title: "Palette",
   ...pageMeta("/palette", `${TITLE} · Subway Seat`, DESCRIPTION, {
     name: "palette.png",
-    alt: "The Subway Seat palette: twenty-six colors in three flavors.",
+    alt: "The Subway Seat palette: twenty-six roles, two families, six flavors.",
   }),
 };
 
@@ -95,7 +95,7 @@ export default async function PalettePage() {
     title: g.title,
     rows: g.roles.map((role) => ({
       role,
-      name: roleNames[role] ?? role,
+      name: <RoleName role={role} />,
       use: roleUses[role] ?? "",
       values: perFlavor((id) => flavors.find((f) => f.id === id)?.colors[role] ?? ""),
       contrast: g.contrast
@@ -117,12 +117,17 @@ export default async function PalettePage() {
         <Section
           label="The palette"
           level={1}
-          title="Twenty-six colors, three flavors."
-          intro="Every port is written against these roles, not raw hex, so each flavor fills the same slots. Rows show all three flavors side by side, with each color's contrast on that flavor's base; the big swatch follows the one you're riding. Pick any value to copy it."
+          title="Twenty-six roles, six flavors."
+          intro="Every port is written against these roles, not raw hex, so each flavor fills the same slots — and the role keeps its own name in each city. Rows show the flavors of the city you're riding, with each color's contrast on that flavor's base. Pick any value to copy it."
         >
           <PaletteTable
             groups={groups}
-            flavors={flavors.map((f) => ({ id: f.id, label: shortName(f.id), colors: f.colors }))}
+            flavors={flavors.map((f) => ({
+              id: f.id,
+              family: f.family,
+              label: shortName(f.id),
+              colors: f.colors,
+            }))}
           />
         </Section>
 

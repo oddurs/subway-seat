@@ -1,6 +1,7 @@
 "use client";
 
 import * as stylex from "@stylexjs/stylex";
+import type { ReactNode } from "react";
 import { useState } from "react";
 import { announce, copyText } from "@/lib/clipboard";
 import { currentFlavor } from "@/lib/flavor";
@@ -21,7 +22,7 @@ export function Swatch({
   labels,
 }: {
   fill: string;
-  name?: string;
+  name?: ReactNode;
   labels: SwatchLabel[];
 }) {
   const [state, setState] = useState<"idle" | "copied" | "failed">("idle");

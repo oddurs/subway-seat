@@ -1,11 +1,12 @@
 "use client";
 
 import * as stylex from "@stylexjs/stylex";
+import type { ReactNode } from "react";
 import { useState, useSyncExternalStore } from "react";
 import { announce, copyText } from "@/lib/clipboard";
 import { cssVariables, FORMATS, type Format, formatColor } from "@/lib/color";
 import { currentFlavor, subscribeFlavor } from "@/lib/flavor";
-import type { ColorName, FlavorId } from "@/lib/palette";
+import type { ColorName, FamilyId, FlavorId } from "@/lib/palette";
 import { ink } from "@/theme/ink.stylex";
 import { color } from "@/theme/tokens.stylex";
 import { font } from "@/theme/type.stylex";
@@ -13,14 +14,19 @@ import { action } from "./action";
 
 export type PaletteRow = {
   role: string;
-  name: string;
+  name: ReactNode;
   use: string;
   values: Record<FlavorId, string>;
   /** Contrast on the flavor's base, for text and accents. */
   contrast?: Record<FlavorId, number>;
 };
 export type PaletteGroup = { title: string; rows: PaletteRow[] };
-export type PaletteFlavor = { id: FlavorId; label: string; colors: Record<string, string> };
+export type PaletteFlavor = {
+  id: FlavorId;
+  family: FamilyId;
+  label: string;
+  colors: Record<string, string>;
+};
 
 /** AA for body text, AA for large text, or below either. */
 const grade = (ratio: number) =>
@@ -99,7 +105,12 @@ export function PaletteTable({
               <col {...stylex.props(styles.colChip)} />
               <col {...stylex.props(styles.colRole)} />
               {flavors.map((f) => (
-                <col key={f.id} data-narrow-only={f.id} {...stylex.props(styles.colFlavor)} />
+                <col
+                  key={f.id}
+                  data-only={f.family}
+                  data-narrow-only={f.id}
+                  {...stylex.props(styles.colFlavor)}
+                />
               ))}
               <col />
             </colgroup>
@@ -110,7 +121,12 @@ export function PaletteTable({
                 </th>
                 <th {...stylex.props(styles.th)}>Role</th>
                 {flavors.map((f) => (
-                  <th key={f.id} data-narrow-only={f.id} {...stylex.props(styles.th)}>
+                  <th
+                    key={f.id}
+                    data-only={f.family}
+                    data-narrow-only={f.id}
+                    {...stylex.props(styles.th)}
+                  >
                     {f.label}
                   </th>
                 ))}
@@ -133,7 +149,12 @@ export function PaletteTable({
                   {flavors.map((f) => {
                     const ratio = row.contrast?.[f.id];
                     return (
-                      <td key={f.id} data-narrow-only={f.id} {...stylex.props(styles.td)}>
+                      <td
+                        key={f.id}
+                        data-only={f.family}
+                        data-narrow-only={f.id}
+                        {...stylex.props(styles.td)}
+                      >
                         <Value hex={row.values[f.id]} format={format} />
                         {ratio !== undefined && (
                           <span {...stylex.props(styles.ratio)}>
@@ -195,7 +216,7 @@ const styles = stylex.create({
     borderWidth: 0,
     borderRadius: 999,
   },
-  formatOn: { color: ink.onAccent, backgroundColor: color.orange },
+  formatOn: { color: ink.onAccent, backgroundColor: ink.fill },
   tableWrap: {
     overflowX: "auto",
     backgroundColor: color.base,

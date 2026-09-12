@@ -81,7 +81,7 @@ const styles = stylex.create({
   primary: {
     color: ink.onAccent,
     backgroundColor: {
-      default: color.orange,
+      default: ink.fill,
       ":hover": ink.fillHover,
     },
   },

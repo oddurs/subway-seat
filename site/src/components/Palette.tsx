@@ -1,14 +1,7 @@
 import * as stylex from "@stylexjs/stylex";
-import {
-  bestInk,
-  type ColorName,
-  contrast,
-  flavors,
-  ground,
-  roleNames,
-  textRoles,
-} from "@/lib/palette";
+import { bestInk, type ColorName, contrast, flavors, ground, textRoles } from "@/lib/palette";
 import { color } from "@/theme/tokens.stylex";
+import { RoleName } from "./RoleName";
 import { Swatch, type SwatchLabel } from "./Swatch";
 
 /**
@@ -33,7 +26,12 @@ export function Palette() {
       {[ground, textRoles].map((ramp) => (
         <div key={ramp[0]} {...stylex.props(styles.strip)}>
           {ramp.map((role) => (
-            <Swatch key={role} fill={color[role]} name={roleNames[role]} labels={labelsFor(role)} />
+            <Swatch
+              key={role}
+              fill={color[role]}
+              name={<RoleName role={role} />}
+              labels={labelsFor(role)}
+            />
           ))}
         </div>
       ))}

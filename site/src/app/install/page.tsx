@@ -173,7 +173,7 @@ const styles = stylex.create({
     marginBottom: 4,
     fontWeight: 700,
     color: ink.onAccent,
-    backgroundColor: color.orange,
+    backgroundColor: ink.fill,
     borderRadius: "50%",
   },
   rideTitle: { fontSize: 17, color: color.textHi },

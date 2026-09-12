@@ -23,7 +23,7 @@ import {
   ports,
   setupFor,
 } from "@/lib/manifest";
-import { type FlavorId, flavorById, flavors, roleNames, roles, shortName } from "@/lib/palette";
+import { type FlavorId, flavorById, flavors, roleName, roles, shortName } from "@/lib/palette";
 import { pageMeta, REPO, summary } from "@/lib/seo";
 import { ink } from "@/theme/ink.stylex";
 import { color } from "@/theme/tokens.stylex";
@@ -106,7 +106,7 @@ function Inside({ flavor, terminal }: { flavor: FlavorId; terminal: boolean }) {
         <span
           // biome-ignore lint/suspicious/noArrayIndexKey: ANSI slots repeat roles
           key={i}
-          title={`${terminal ? `${i} ` : ""}${roleNames[role] ?? role} ${f.colors[role]}`}
+          title={`${terminal ? `${i} ` : ""}${roleName(f.id, role)} ${f.colors[role]}`}
           {...stylex.props(styles.insideChip, styles.fill(f.colors[role]))}
         />
       ))}

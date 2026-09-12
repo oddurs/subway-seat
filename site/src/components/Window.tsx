@@ -1,5 +1,6 @@
 import * as stylex from "@stylexjs/stylex";
 import type { ReactNode } from "react";
+import { ink } from "@/theme/ink.stylex";
 import { color } from "@/theme/tokens.stylex";
 import { font } from "@/theme/type.stylex";
 
@@ -73,7 +74,7 @@ const styles = stylex.create({
   activeTab: {
     color: color.text,
     backgroundColor: color.base,
-    borderTopColor: color.orange,
+    borderTopColor: ink.fill,
     borderTopStyle: "solid",
     borderTopWidth: 2,
   },

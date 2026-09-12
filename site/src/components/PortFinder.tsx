@@ -173,7 +173,7 @@ const styles = stylex.create({
     backgroundColor: color.base,
     borderColor: {
       default: color.surface1,
-      ":focus": color.orange,
+      ":focus": ink.accent,
     },
     borderStyle: "solid",
     borderWidth: 1,
