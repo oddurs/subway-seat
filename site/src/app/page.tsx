@@ -147,7 +147,7 @@ export default function Home() {
             id="terminal"
             label="In the terminal"
             title="Ghostty, fish and friends."
-            intro="The 16 ANSI colors are chosen so terminal tools land in the palette too: magenta is burnt orange, blue is denim, cyan is seafoam. Starship's segments become a 70s stripe."
+            intro="The 16 ANSI colors are chosen so terminal tools land in the palette too, and each city reassigns the ones it has no use for: New York turns magenta into burnt orange and cyan into seafoam tile, London keeps blue for Corporate Blue alone, Paris puts brass where yellow goes. Starship's segments become a stripe of four."
           >
             <div {...stylex.props(styles.stack)}>
               <TerminalDemo />

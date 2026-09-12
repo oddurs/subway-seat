@@ -17,6 +17,7 @@ How Claude Code draws a custom theme (checked against the v2.1.26x binary):
 
 import json
 
+import palette as p
 from ports._lib import HEADER, REPO, SITE, VERSION, Out, ink, rgb, selection, tints
 
 META = {
@@ -96,6 +97,8 @@ def theme(f):
 
 
 # ── Spinner verbs and tips ─────────────────────────────────────────────────
+# The verbs are the family's, not this port's: each city says what it would say.
+# palette.py holds them; this list is New York's, kept here only as the shape.
 VERBS = [
     "Reading the Vignelli map", "Riding the local", "Running express", "Transferring", "Holding the doors",
     "Watching the gap", "Waiting on the platform", "Rolling uptown", "Rolling downtown",
@@ -143,7 +146,7 @@ def settings(f):
             "type": "command", "command": f"{DATA}/subway-seat-statusline", "padding": 0,
             "hideVimModeIndicator": True,
         },
-        "spinnerVerbs": {"mode": "replace", "verbs": VERBS},
+        "spinnerVerbs": {"mode": "replace", "verbs": list(p.FAMILY[f.family].verbs or VERBS)},
         "spinnerTipsOverride": {"tipsFile": f"{DATA}/tips.json", "label": "Next stop"},
     }
 

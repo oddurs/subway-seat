@@ -334,6 +334,7 @@ def site_tokens() -> dict[str, str]:
                 "name": fam.name,
                 "blurb": fam.blurb,
                 "lead": camel(fam.lead),
+                "verbs": list(fam.verbs),
                 "roleNames": {camel(k): v for k, v in fam.role_names.items()},
                 "flavors": [f.id for f in fam.flavors],
                 "default": fam.default.id,

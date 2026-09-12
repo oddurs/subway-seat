@@ -316,6 +316,10 @@ class Family:
     # the cursor, the site's links. New York's also leads keywords, so it is
     # everywhere; London's leads nothing else, which is what keeps it rare.
     lead: str
+    # What the Claude Code plugin says while it thinks. Voice is family-level:
+    # a Paris user being told the agent is "sinking into the shag" is the same
+    # mistake as painting the London nav in burnt orange.
+    verbs: tuple = field(repr=False)
     # The stem every one of this family's filenames is built on. Ports that
     # ship one file per flavor plus an auto file name them `<prefix>-<id>` and
     # `<prefix>`, so a port never has to know which city it is writing for.
@@ -343,6 +347,16 @@ NEW_YORK = Family(
     shape={"pill": "999px", "card": "6px", "chip": "50%"},
     lead="orange",
     prefix="subway-seat",
+    verbs=(
+        "Reading the Vignelli map", "Riding the local", "Running express", "Transferring",
+        "Holding the doors", "Watching the gap", "Waiting on the platform", "Rolling uptown",
+        "Rolling downtown", "Changing at 14th Street", "Dropping a token", "Grabbing the pole",
+        "Finding a seat", "Sinking into the shag", "Flipping the record", "Warming up the hi-fi",
+        "Tuning the 8-track", "Adjusting the rabbit ears", "Watering the spider plant",
+        "Percolating", "Taking the A train", "Keeping it groovy", "Easing on down the road",
+        "Digging it", "Grooving", "Punching a transfer", "Checking the strip map",
+        "Spinning the lazy Susan", "Knotting the macrame", "Lava-lamping",
+    ),
     role_names=NEW_YORK_NAMES,
     flavors=(WALNUT, TUNNEL, ENAMEL),
 )
@@ -359,6 +373,17 @@ LONDON = Family(
     shape={"pill": "2px", "card": "0px", "chip": "2px"},
     lead="red",
     prefix="london",
+    verbs=(
+        "Reading the diagram", "Minding the gap", "Standing clear of the doors",
+        "Changing at Baker Street", "Riding the deep level", "Touching in", "Touching out",
+        "Checking the board", "Standing on the right", "Counting the stops",
+        "Following the roundel", "Waiting at a red signal", "Letting them off first",
+        "Finding a seat on the moquette", "Going southbound", "Going northbound",
+        "Running to timetable", "Watching the countdown", "Alighting here",
+        "Changing for the Circle", "Taking the long escalator", "Sheltering from the drizzle",
+        "Queueing", "Brewing up", "Waiting for the next one", "Passing Aldgate",
+        "Reading over a shoulder", "Consulting the map", "Holding on", "Terminating here",
+    ),
     role_names=LONDON_NAMES,
     flavors=(MOQUETTE, DEEP_LEVEL, PORTLAND),
 )
@@ -448,6 +473,18 @@ PARIS = Family(
     # the top, which is what a lead accent has to do.
     lead="yellow",
     prefix="paris",
+    verbs=(
+        "Reading the plan", "Waiting for the correspondance", "Changing at Chatelet",
+        "Pushing through the portillon", "Riding on rubber tyres", "Counting the stations",
+        "Following the ironwork", "Sitting on the strapontin", "Watching the doors",
+        "Waiting on the quai", "Stamping the ticket", "Admiring the faience",
+        "Descending to the platform", "Going towards La Defense", "Letting the train pass",
+        "Taking the long corridor", "Passing Bastille", "Reading the enamel plate",
+        "Listening for the chime", "Holding the rail", "Crossing under the river",
+        "Checking the next departure", "Riding the last one", "Counting the arches",
+        "Following the green paint", "Walking to the exit", "Standing at the front",
+        "Waiting out the interval", "Coming up into daylight", "Terminus",
+    ),
     role_names=PARIS_NAMES,
     flavors=(GUIMARD, CATACOMBES, CARRELAGE),
 )

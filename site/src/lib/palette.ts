@@ -32,6 +32,8 @@ export type Family = {
   blurb: string;
   /** The one accent this family spends on identity. */
   lead: ColorName;
+  /** What the Claude Code plugin says while it thinks, in this city's voice. */
+  verbs: string[];
   roleNames: Partial<Record<ColorName, string>>;
   flavors: FlavorId[];
   default: FlavorId;
