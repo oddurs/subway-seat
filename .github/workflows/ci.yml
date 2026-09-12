@@ -234,9 +234,14 @@ jobs:
           done
       - name: tmux
         run: |
+          # kill-server stays out of the checked chain: the client races the
+          # server's exit and reports "server exited unexpectedly", which failed
+          # this step on a different theme file every few runs. Sourcing the
+          # config is what we are testing; tearing the server down is not.
           for f in dist/tmux/*.conf; do
             echo "$f"
-            tmux -L ci -f /dev/null new-session -d \; source-file "$f" \; kill-server
+            tmux -L ci -f /dev/null new-session -d \; source-file "$f"
+            tmux -L ci kill-server 2>/dev/null || true
           done
       - name: zellij
         run: |
