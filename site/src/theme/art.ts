@@ -10,7 +10,7 @@ export const walnut = stylex.createTheme(art, {
   sage: "#86AD95",
   denim: "#7F9BAE",
   clay: "#E0956C",
-  page: "#0F0B07",
+  page: "#1A120B",
 });
 
 export const tunnel = stylex.createTheme(art, {
@@ -21,18 +21,18 @@ export const tunnel = stylex.createTheme(art, {
   sage: "#86AD95",
   denim: "#7F9BAE",
   clay: "#E0956C",
-  page: "#090603",
+  page: "#100B06",
 });
 
 export const enamel = stylex.createTheme(art, {
-  red: "#E05C45",
-  orange: "#EC7F31",
-  yellow: "#F3BF45",
-  green: "#ADB956",
-  sage: "#86AD95",
-  denim: "#7F9BAE",
-  clay: "#E0956C",
-  page: "#FAF5EC",
+  red: "#C04331",
+  orange: "#D0691B",
+  yellow: "#C89526",
+  green: "#8D9A36",
+  sage: "#669279",
+  denim: "#628299",
+  clay: "#C67952",
+  page: "#F7F0E1",
 });
 
 export const moquette = stylex.createTheme(art, {
@@ -43,7 +43,7 @@ export const moquette = stylex.createTheme(art, {
   sage: "#54B4B5",
   denim: "#7595DA",
   clay: "#AE9EDC",
-  page: "#090C13",
+  page: "#0F141F",
 });
 
 export const deep = stylex.createTheme(art, {
@@ -54,16 +54,16 @@ export const deep = stylex.createTheme(art, {
   sage: "#54B4B5",
   denim: "#7595DA",
   clay: "#AE9EDC",
-  page: "#05070C",
+  page: "#080B14",
 });
 
 export const portland = stylex.createTheme(art, {
-  red: "#DB6052",
-  orange: "#DE8946",
-  yellow: "#F2C03F",
-  green: "#77C581",
-  sage: "#54B4B5",
-  denim: "#7595DA",
-  clay: "#AE9EDC",
-  page: "#F3F6FA",
+  red: "#C2352F",
+  orange: "#C47226",
+  yellow: "#C39823",
+  green: "#41A75C",
+  sage: "#2E9799",
+  denim: "#405DC4",
+  clay: "#9582C6",
+  page: "#EDF0F7",
 });

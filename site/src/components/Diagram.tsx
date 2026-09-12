@@ -13,36 +13,85 @@ import { color } from "@/theme/tokens.stylex";
  * as five lines that happen to cross:
  *
  *   · lines run parallel in a trunk at one fixed spacing, then fan out
- *   · every corner is 45°, and every diagonal is a true diagonal
+ *   · every corner is 45°, and turned through a radius rather than mitred,
+ *     which is what the map itself has done since it went digital
  *   · where lines meet, a ring; where one line stops, a tick
  *   · several platforms under one name are one interchange, tied with a bar
+ *   · no two lines leave the frame close enough to read as one
  */
 const GAP = 30; // trunk spacing
 const TOP = 96; // the first trunk line
 const W = 12; // line weight
+const R = 20; // corner radius
 const X_INT = 168; // the interchange, where the vertical crosses the trunk
 const y = (n: number) => TOP + n * GAP;
 
-/** A 45° drop from (x, y) down to `to`, then straight on to the right edge. */
-const fan = (x: number, from: number, to: number) =>
-  `M -20 ${from} H ${x} L ${x + (to - from)} ${to} H 580`;
+type Pt = [number, number];
 
-// Where each line leaves the right edge. Beck's spacing rule holds after the
-// fan too, so no two lines end up close enough to read as one.
+/** A polyline with its corners turned through R instead of mitred. */
+function route(points: Pt[], r = R) {
+  const unit = (dx: number, dy: number) => {
+    const len = Math.hypot(dx, dy) || 1;
+    return [dx / len, dy / len] as const;
+  };
+  let d = `M ${points[0][0]} ${points[0][1]}`;
+  for (let i = 1; i < points.length - 1; i++) {
+    const [px, py] = points[i - 1];
+    const [x, cy] = points[i];
+    const [nx, ny] = points[i + 1];
+    // Never cut a corner deeper than half the leg it sits on.
+    const room = Math.min(Math.hypot(px - x, py - cy), Math.hypot(nx - x, ny - cy)) / 2;
+    const cut = Math.min(r, room);
+    const [ax, ay] = unit(px - x, py - cy);
+    const [bx, by] = unit(nx - x, ny - cy);
+    d += ` L ${x + ax * cut} ${cy + ay * cut} Q ${x} ${cy} ${x + bx * cut} ${cy + by * cut}`;
+  }
+  const [lx, ly] = points[points.length - 1];
+  return `${d} L ${lx} ${ly}`;
+}
+
+/** Where each line leaves the right edge. Beck's spacing rule holds after the
+ *  fan too, so no two lines end up close enough to read as one. */
 const OUT = { red: y(0), yellow: 218, green: 284, denim: 328, orange: 372 };
 
+/** In from the left, a 45° drop at `x`, then straight on to the right edge. */
+const fan = (x: number, from: number, to: number): Pt[] => [
+  [-40, from],
+  [x, from],
+  [x + (to - from), to],
+  [600, to],
+];
+
 const LINES: { d: string; stroke: string }[] = [
-  // Trunk: three lines in from the left, fanning at different points.
-  { d: `M -20 ${y(0)} H 580`, stroke: art.red },
-  { d: fan(300, y(1), OUT.yellow), stroke: art.yellow },
-  { d: fan(246, y(2), OUT.green), stroke: art.green },
+  {
+    d: route([
+      [-40, y(0)],
+      [600, y(0)],
+    ]),
+    stroke: art.red,
+  },
+  { d: route(fan(300, y(1), OUT.yellow)), stroke: art.yellow },
+  { d: route(fan(246, y(2), OUT.green)), stroke: art.green },
   // A vertical down the left, turning 45° out under the trunk.
   {
-    d: `M ${X_INT} -20 V 250 L ${X_INT + (OUT.denim - 250)} ${OUT.denim} H 580`,
+    d: route([
+      [X_INT, -40],
+      [X_INT, 250],
+      [X_INT + (OUT.denim - 250), OUT.denim],
+      [600, OUT.denim],
+    ]),
     stroke: art.denim,
   },
   // One more in from under the bottom edge, rising to meet the fan.
-  { d: `M -20 438 H 118 L ${118 + (438 - OUT.orange)} ${OUT.orange} H 580`, stroke: art.orange },
+  {
+    d: route([
+      [-40, 438],
+      [118, 438],
+      [118 + (438 - OUT.orange), OUT.orange],
+      [600, OUT.orange],
+    ]),
+    stroke: art.orange,
+  },
 ];
 
 /** Three platforms under one name: a ring on each line, tied with a bar. */

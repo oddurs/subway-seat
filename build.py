@@ -294,18 +294,23 @@ def page_ground(f) -> str:
 
     An editor fills the screen, so its `base` has to be comfortable to stare
     into. A web page is mostly margin, and the same value there reads heavier
-    and more colored than it does behind code. So the site drops a step past
-    `crust` on the dark flavors and lifts past `base` on the light ones, and
-    takes a little chroma out on the way: the page recedes, and the cards and
-    mockups sitting on it are what carry the flavor."""
+    and more colored than it does behind code. So the site steps a little past
+    `crust` on the dark flavors and a little past `base` on the light ones —
+    a shade, not a different room: the page recedes, and the cards and mockups
+    sitting on it are what carry the flavor."""
     if f.dark:
-        return p.blend(p.blend(f.crust, "#000000", 0.42), f.crust, 0.88)
-    return p.blend("#FFFFFF", f.base, 0.55)
+        return p.blend(f.crust, "#000000", 0.82)
+    return p.blend("#FFFFFF", f.base, 0.3)
 
 
 def art_colors(f) -> dict[str, str]:
-    src = f if f.dark else p.FAMILY[f.family].default
-    return {role: src.colors[role] for role in ART}
+    if f.dark:
+        return {role: f.colors[role] for role in ART}
+    # Part of the way toward the family's dark default, not all of it: enough to
+    # lift the art off a pale ground, not so much that the page stops looking
+    # like the flavor it is.
+    vivid = p.FAMILY[f.family].default
+    return {role: p.blend(vivid.colors[role], f.colors[role], 0.55) for role in ART}
 
 
 def site_tokens() -> dict[str, str]:
@@ -403,6 +408,16 @@ def globals_css() -> str:
                     f"{ind}{ind}--ss-shadow: rgba({r}, {g}, {b}, 0.2);",
                     f"{ind}{ind}--ss-shadow-soft: rgba({r}, {g}, {b}, 0.12);", f"{ind}}}"]
     out.append("")
+    # The inverse of data-only: shown everywhere except its own flavor or family.
+    # Lets a control render both of its states and let CSS pick, so it is correct
+    # in the first painted frame rather than after React hydrates.
+    unless = ",\n".join(
+        f'{ind}html[data-flavor="{f.id}"] [data-unless="{f.id}"]' for f in p.FLAVORS
+    ) + ",\n" + ",\n".join(
+        f'{ind}html[data-family="{fam.id}"] [data-unless="{fam.id}"]' for fam in p.FAMILIES
+    )
+    out += [f"{unless} {{", f"{ind}{ind}display: none !important;", f"{ind}}}", ""]
+
     for attr, media in (("data-only", None), ("data-narrow-only", "@media (max-width: 720px)")):
         pad = ind + (ind if media else "")
         rules = ",\n".join(

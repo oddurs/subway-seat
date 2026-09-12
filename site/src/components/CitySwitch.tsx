@@ -32,7 +32,10 @@ export function CitySwitch() {
         {...stylex.props(styles.stop)}
       >
         {labelFirst && label}
-        <span aria-hidden {...stylex.props(styles.dot(on ? lead : null))} />
+        {/* Both states are drawn and CSS shows the right one, so the control is
+            correct in the first painted frame rather than after hydration. */}
+        <span data-only={fam.id} aria-hidden {...stylex.props(styles.dot(lead))} />
+        <span data-unless={fam.id} aria-hidden {...stylex.props(styles.dot(null))} />
         {!labelFirst && label}
       </button>
     );

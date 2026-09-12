@@ -56,6 +56,17 @@
     --ss-shadow-soft: rgba(94, 100, 112, 0.12);
   }
 
+  html[data-flavor="walnut"] [data-unless="walnut"],
+  html[data-flavor="tunnel"] [data-unless="tunnel"],
+  html[data-flavor="enamel"] [data-unless="enamel"],
+  html[data-flavor="moquette"] [data-unless="moquette"],
+  html[data-flavor="deep"] [data-unless="deep"],
+  html[data-flavor="portland"] [data-unless="portland"],
+  html[data-family="new-york"] [data-unless="new-york"],
+  html[data-family="london"] [data-unless="london"] {
+    display: none !important;
+  }
+
   /* Content written for one flavor or one family; the rest is hidden. */
   html:not([data-flavor="walnut"]) [data-only="walnut"],
   html:not([data-flavor="tunnel"]) [data-only="tunnel"],
