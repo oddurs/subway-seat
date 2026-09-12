@@ -15,8 +15,8 @@ export const londonType = stylex.createTheme(font, {
   sans: 'var(--font-cabin), "Gill Sans", "Gill Sans MT", Calibri, sans-serif',
   display: 'var(--font-cabin), "Gill Sans", "Gill Sans MT", Calibri, sans-serif',
 
-  leadHero: "1.06",
-  leadTitle: "1.14",
+  leadHero: "0.98",
+  leadTitle: "1.06",
   leadHead: "1.3",
 
   trackHero: "-0.006em",
@@ -47,8 +47,8 @@ export const portlandType = stylex.createTheme(font, {
   sans: 'var(--font-cabin), "Gill Sans", "Gill Sans MT", Calibri, sans-serif',
   display: 'var(--font-cabin), "Gill Sans", "Gill Sans MT", Calibri, sans-serif',
 
-  leadHero: "1.02",
-  leadTitle: "1.1",
+  leadHero: "0.95",
+  leadTitle: "1.03",
   leadHead: "1.28",
 
   trackHero: "-0.016em",

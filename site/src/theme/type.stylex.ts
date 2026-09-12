@@ -44,8 +44,12 @@ export const font = stylex.defineVars({
   sizeMark: "20px",
 
   // ── Leading ─────────────────────────────────────────────────────────────
-  leadHero: "0.98",
-  leadTitle: "1.06",
+  // Display sizes are set far tighter than text: at 92px the gap between two
+  // lines is 92px of air, and Fraunces has short descenders and a tall cap, so
+  // anything near 1 reads as a gap rather than as a headline. Cabin's larger
+  // x-height needs a little more room than Fraunces, but only a little.
+  leadHero: "0.9",
+  leadTitle: "1.0",
   leadHead: "1.25",
   leadLede: "1.55",
   leadBody: "1.62",

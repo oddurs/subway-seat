@@ -68,9 +68,12 @@ const styles = stylex.create({
     },
     alignItems: "center",
     maxWidth: space.measure,
+    // Both cities' copy fits this, so the band under the hero — shag in New
+    // York, moquette in London — stays exactly where it is when you switch.
+    // A hero that resized would drag the material up and down the page.
     minHeight: {
       [NARROW]: 0,
-      default: 520,
+      default: 600,
     },
     paddingInline: space.gutter,
     paddingTop: {
