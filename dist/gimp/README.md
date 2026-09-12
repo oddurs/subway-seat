@@ -4,6 +4,14 @@ A .gpl palette per flavor, laid out as two rows of 13: the grounds and text, the
 
 [GIMP, Inkscape, Krita](https://www.gimp.org) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/gimp/)
 
+## The quick way
+
+```sh
+curl -fsSL https://oddurs.github.io/subway-seat/install.sh | sh -s -- --only gimp
+```
+
+The [installer](../../docs/INSTALL.md) shows its plan and asks once. Add `--flavor tunnel`, `--flavor enamel` or `--flavor auto` for another flavor. To do it yourself, use the files below.
+
 ## Files
 
 | Flavor | File | Where it goes |

@@ -4,6 +4,14 @@ All three flavors in one theme family: copy the theme file, or install the dist/
 
 [Zed](https://zed.dev) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/zed/)
 
+## The quick way
+
+```sh
+curl -fsSL https://oddurs.github.io/subway-seat/install.sh | sh -s -- --only zed
+```
+
+The [installer](../../docs/INSTALL.md) shows its plan and asks once. Add `--flavor tunnel`, `--flavor enamel` or `--flavor auto` for another flavor. To do it yourself, use the files below.
+
 ## Files
 
 | Flavor | File | Where it goes |

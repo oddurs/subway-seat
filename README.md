@@ -91,7 +91,7 @@ Every port is generated from [`palette.py`](palette.py) in all three flavors. Ea
 ### The deep ones
 
 - **VS Code** (and Cursor, Windsurf, VSCodium): a layered workbench with about 1,000 color keys, including the AI panels of each fork. One chrome ground, grooves instead of lines, popovers on paper, translucent hovers and selections.
-- **Claude Code**: themes for all three flavors, a station-sign status line, subagent rows, 70s spinner verbs, "Next stop" tips and a relaxed output style, bundled as a plugin:
+- **Claude Code**: themes for all three flavors, a station-sign status line, subagent rows, 70s spinner verbs, "Next stop" tips and a relaxed output style, bundled as a plugin. Claude Code colors the code in diffs itself; each flavor's "terminal colors" theme hands that to your terminal's palette, so in a Subway Seat terminal it matches too. `/subway-seat:setup` asks which you want.
 
   ```
   /plugin marketplace add oddurs/subway-seat
@@ -125,7 +125,7 @@ sh ~/.local/share/subway-seat/install.sh uninstall       # remove everything it 
 
 `auto` follows the system's light or dark setting in the apps that can, and uses Walnut elsewhere.
 
-From a clone, run `./install.sh` (or `./install.fish`) instead. The files are linked rather than copied, so a `git pull` updates them in place. It needs only `sh`, `awk` and `curl`. [docs/INSTALL.md](docs/INSTALL.md) covers `--only`, `--skip`, `--copy`, `--no-enable`, the settings file and how to uninstall by hand.
+From a clone, run `./install.sh` (or `./install.fish`) instead. The files are then linked rather than copied, so a `git pull` updates them in place. It needs only `sh` and the tools every Mac and Linux system has, plus `curl` or `wget` for the one-line install. [docs/INSTALL.md](docs/INSTALL.md) covers `--only`, `--skip`, `--copy`, `--no-enable`, the settings file and how to uninstall by hand.
 
 ## How it's built
 

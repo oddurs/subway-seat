@@ -4,6 +4,14 @@ Normal, bright and dim colors, both cursors, selection, search, hints, footer ba
 
 [Alacritty](https://alacritty.org) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/alacritty/) · Needs Alacritty 0.14+
 
+## The quick way
+
+```sh
+curl -fsSL https://oddurs.github.io/subway-seat/install.sh | sh -s -- --only alacritty
+```
+
+The [installer](../../docs/INSTALL.md) shows its plan and asks once. Add `--flavor tunnel`, `--flavor enamel` or `--flavor auto` for another flavor. To do it yourself, use the files below.
+
 ## Files
 
 | Flavor | File | Where it goes |

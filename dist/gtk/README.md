@@ -4,6 +4,14 @@ Window, view, header bar, sidebar, card, dialog, popover and accent colors for l
 
 [GTK and libadwaita](https://gnome.pages.gitlab.gnome.org/libadwaita/doc/main/css-variables.html) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/gtk/)
 
+## The quick way
+
+```sh
+curl -fsSL https://oddurs.github.io/subway-seat/install.sh | sh -s -- --only gtk
+```
+
+The [installer](../../docs/INSTALL.md) shows its plan and asks once. Add `--flavor tunnel`, `--flavor enamel` or `--flavor auto` for another flavor. To do it yourself, use the files below.
+
 ## Files
 
 | Flavor | File | Where it goes |

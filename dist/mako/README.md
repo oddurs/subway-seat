@@ -4,6 +4,14 @@ Notifications on the raised paper ground. Low urgency is quiet, normal has a den
 
 [mako](https://github.com/emersion/mako) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/mako/) · Needs mako 1.10+
 
+## The quick way
+
+```sh
+curl -fsSL https://oddurs.github.io/subway-seat/install.sh | sh -s -- --only mako
+```
+
+The [installer](../../docs/INSTALL.md) shows its plan and asks once. Add `--flavor tunnel`, `--flavor enamel` or `--flavor auto` for another flavor. To do it yourself, use the files below.
+
 ## Files
 
 | Flavor | File | Where it goes |

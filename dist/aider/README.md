@@ -4,6 +4,14 @@ Prompt, reply, tool and completion-menu colors for aider's config file. Code blo
 
 [Aider](https://aider.chat) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/aider/)
 
+## The quick way
+
+```sh
+curl -fsSL https://oddurs.github.io/subway-seat/install.sh | sh -s -- --only aider
+```
+
+The [installer](../../docs/INSTALL.md) shows its plan and asks once. Add `--flavor tunnel`, `--flavor enamel` or `--flavor auto` for another flavor. To do it yourself, use the files below.
+
 ## Files
 
 | Flavor | File | Where it goes |

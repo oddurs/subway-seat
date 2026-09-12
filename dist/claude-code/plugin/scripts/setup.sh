@@ -3,8 +3,9 @@
 #
 # Merges Subway Seat into Claude Code's user settings, or takes it out again.
 #   setup.sh check
-#   setup.sh apply --flavor walnut|tunnel|enamel --verbs replace|append --voice yes|no --data DIR [--dry-run]
+#   setup.sh apply --flavor walnut|tunnel|enamel [--code own|terminal] --verbs replace|append --voice yes|no --data DIR [--dry-run]
 #   setup.sh remove [--dry-run]
+# --code terminal picks the flavor's "terminal colors" theme (code in the terminal's 16 colors).
 # Each key it writes is replaced whole, and every other key is kept. The first
 # real write keeps a backup next to settings.json.
 set -u
@@ -27,10 +28,11 @@ fi
 
 action=${1:-}
 [ $# -gt 0 ] && shift
-flavor='' verbs=replace voice=no data='' dry=''
+flavor='' code=own verbs=replace voice=no data='' dry=''
 while [ $# -gt 0 ]; do
   case $1 in
     --flavor) flavor=${2:-} && shift 2 ;;
+    --code) code=${2:-} && shift 2 ;;
     --verbs) verbs=${2:-} && shift 2 ;;
     --voice) voice=${2:-} && shift 2 ;;
     --data) data=${2:-} && shift 2 ;;
@@ -95,12 +97,14 @@ case $action in
       walnut) slug=subway-seat ;; tunnel) slug=subway-seat-tunnel ;; enamel) slug=subway-seat-enamel ;;
       *) die "--flavor must be walnut, tunnel or enamel." ;;
     esac
+    case $code in own | terminal) ;; *) die "--code must be own or terminal." ;; esac
     case $verbs in replace | append) ;; *) die "--verbs must be replace or append." ;; esac
     case $voice in yes | no) ;; *) die "--voice must be yes or no." ;; esac
     [ -n "$data" ] || data="$dir/plugins/data/subway-seat-subway-seat"
     new=$(jq --arg cmd "$(printf '%q' "$data/subway-seat-statusline")" --arg data "$data" \
-      --arg verbs "$verbs" --arg voice "$voice" '
-      .statusLine.command = $cmd
+      --arg code "$code" --arg verbs "$verbs" --arg voice "$voice" '
+      (if $code == "terminal" then .theme += "-terminal" else . end)
+      | .statusLine.command = $cmd
       | .spinnerTipsOverride.tipsFile = ($data + "/tips.json")
       | .spinnerVerbs.mode = $verbs
       | if $voice == "yes" then .outputStyle = "subway-seat:Subway Seat" else . end' "$root/settings/$slug.json") ||
@@ -131,7 +135,7 @@ case $action in
     write 'reduce $keys[] as $k (.; if .[$k] != null and (.[$k] | ours) then del(.[$k]) else . end)' --argjson keys "$KEYS"
     ;;
   *)
-    die "usage: setup.sh check | apply --flavor F --verbs replace|append --voice yes|no --data DIR [--dry-run] | remove [--dry-run]"
+    die "usage: setup.sh check | apply --flavor F [--code own|terminal] --verbs replace|append --voice yes|no --data DIR [--dry-run] | remove [--dry-run]"
     ;;
 esac
 

@@ -4,6 +4,14 @@ Command-line syntax colors and the completion pager. `subway-seat-auto` carries 
 
 [fish](https://fishshell.com) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/fish/) · Needs fish 3.4+ (the auto theme: 4.3+)
 
+## The quick way
+
+```sh
+curl -fsSL https://oddurs.github.io/subway-seat/install.sh | sh -s -- --only fish
+```
+
+The [installer](../../docs/INSTALL.md) shows its plan and asks once. Add `--flavor tunnel`, `--flavor enamel` or `--flavor auto` for another flavor. To do it yourself, use the files below.
+
 ## Files
 
 | Flavor | File | Where it goes |

@@ -26,10 +26,10 @@ type Tips = { tips: { text: string }[] };
  */
 const included = (fam: Family) => [
   [
-    "Three themes",
+    "A theme for every flavor",
     `${flavorsOf(fam.id)
       .map((f) => shortName(f.id))
-      .join(", ")}, with every one of Claude Code's color tokens set.`,
+      .join(", ")}, with every one of Claude Code's color tokens set. Each also comes in a “terminal colors” version that colors code in diffs with your terminal's palette instead of Claude Code's Monokai.`,
   ],
   [
     "A station-sign status line",

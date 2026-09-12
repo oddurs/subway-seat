@@ -10,7 +10,7 @@ The short version: **one YAML file in iTerm2-Color-Schemes** reaches Ghostty, Wi
 
 - **Name:** Subway Seat. Flavors: **Subway Seat** (Walnut, dark), **Subway Seat Tunnel** (deeper dark), **Subway Seat Enamel** (light).
 - **One line:** A warm, walnut-brown color scheme from a 1970s subway car: parchment text, harvest gold, burnt orange, avocado. Sit back.
-- **Proof points:** ~90 ports from one `palette.py`; a real layered VS Code/Zed workbench; the deepest Claude Code theme there is (themes, status line, subagent rows, spinner verbs, tips, output style, all in one plugin); ports for opencode, Codex, Gemini CLI, Aider and herdr.
+- **Proof points:** over 100 ports from one `palette.py`; a real layered VS Code/Zed workbench; the deepest Claude Code theme there is (themes, status line, subagent rows, spinner verbs, tips, output style, all in one plugin); ports for opencode, Codex, Gemini CLI, Aider and herdr.
 - **Voice:** relaxed and plain. No hype words, no "blazing", no emoji walls. Let the screenshots do the work.
 
 ## 2. Repo shape
@@ -95,7 +95,7 @@ Order matters less than being around to answer questions. Post from a real deskt
 
 **Bluesky / Mastodon (thread of 3)**
 
-> 1/ Subway Seat: a color scheme from a 1970s subway car. Walnut paneling, orange bucket seats, cream enamel, avocado. Three flavors, ~90 apps, one palette file. <url>
+> 1/ Subway Seat: a color scheme from a 1970s subway car. Walnut paneling, orange bucket seats, cream enamel, avocado. Three flavors, over 100 apps, one palette file. <url>
 >
 > 2/ The whole spectrum isn't invited. Blue is faded denim and only marks links; magenta got reassigned to burnt orange. Everything stays in the same warm room.
 >

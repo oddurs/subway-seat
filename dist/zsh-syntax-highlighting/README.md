@@ -4,6 +4,14 @@ The same command-line colors as the fish port: gold commands, orange keywords an
 
 [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/zsh-syntax-highlighting/)
 
+## The quick way
+
+```sh
+curl -fsSL https://oddurs.github.io/subway-seat/install.sh | sh -s -- --only zsh-syntax-highlighting
+```
+
+The [installer](../../docs/INSTALL.md) shows its plan and asks once. Add `--flavor tunnel`, `--flavor enamel` or `--flavor auto` for another flavor. To do it yourself, use the files below.
+
 ## Files
 
 | Flavor | File | Where it goes |

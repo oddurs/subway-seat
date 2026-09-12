@@ -34,6 +34,8 @@ bun run check:links  # every internal href/src/og:image in out/ resolves under t
   - `/install.sh` — the repo's `../install.sh` (a stub that says so when it's missing).
 - `/install` is the setup configurator: it writes the `install.sh` one-liner, the
   `~/.config/subway-seat/config` file and the clone command from a flavor and a set of apps.
+  Whether a port is set up automatically, with one step or by hand comes from the manifest's
+  `installs` (checked against `install.sh` by the tests), and port pages use the same answer.
 - `/shot/[name]` renders one demo on a plain ground for README and store screenshots
   (`?flavor=tunnel|enamel`).
 

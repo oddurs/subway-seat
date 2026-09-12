@@ -24,6 +24,7 @@ import io
 import json
 import pkgutil
 import plistlib
+import re
 import shutil
 import sys
 import tomllib
@@ -49,6 +50,20 @@ REQUIRED_META = ("id", "name", "category", "homepage", "notes")
 KNOWN_META = {*REQUIRED_META, "enable", "auto", "requires", "detect"}
 # `dest` is a path; directions and prose belong in `how`.
 NOT_A_PATH = ("→", "›", " e.g.", " or ", "`", "; ", "double-click", "packaged", "merged", "wherever", "anywhere")
+
+# Destinations install.sh can place a file at (its `expand`): home, XDG and absolute
+# paths, or a path under a command's output. Project paths, vaults and Windows paths
+# stay steps by hand.
+PLACEABLE = re.compile(r"^(~(/|$)|/|\$HOME/|\$\{HOME\}/|\$XDG_(CONFIG|DATA)_HOME/|\$\(.*\)/)")
+
+
+def installs(pid: str, files: list[dict]) -> bool:
+    """Whether install.sh sets the port up itself: it places a file, or (Claude Code, VS Code)
+    runs the app's own installer. tests/test_ports.py checks this against install.sh's plan."""
+    return pid in ("claude-code", "vscode") or any(
+        f["dest"] and PLACEABLE.match(f["dest"]) and not any(w in f["dest"] for w in (", ", " (", "<"))
+        for f in files
+    )
 
 
 # ── Discovery and validation ───────────────────────────────────────────────
@@ -199,6 +214,7 @@ def render_port(mod) -> tuple[dict[str, str | bytes], dict]:
         if enable
         else None,
         "files": listed,
+        "installs": installs(meta["id"], listed),
     }
     readme = f"{meta['id']}/README.md"
     if readme not in files:
@@ -217,6 +233,20 @@ def port_readme(entry: dict) -> str:
         f"[{entry['name']}]({entry['homepage']}) · [Previews and copy buttons]({SITE}/ports/{entry['id']}/)"
         + (f" · Needs {entry['requires']}" if entry.get("requires") else ""),
         "",
+    ]
+    if entry["installs"]:
+        lines += [
+            "## The quick way",
+            "",
+            "```sh",
+            f"curl -fsSL {SITE}/install.sh | sh -s -- --only {entry['id']}",
+            "```",
+            "",
+            "The [installer](../../docs/INSTALL.md) shows its plan and asks once. Add `--flavor tunnel`, "
+            "`--flavor enamel` or `--flavor auto` for another flavor. To do it yourself, use the files below.",
+            "",
+        ]
+    lines += [
         "## Files",
         "",
         "| Flavor | File | Where it goes |",

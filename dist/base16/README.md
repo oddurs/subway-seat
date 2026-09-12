@@ -4,6 +4,14 @@ Base16, Base24 and Tinted8 schemes. In base16 and base24 the accent slots follow
 
 [Base16 / Base24 / Tinted8](https://github.com/tinted-theming/home) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/base16/)
 
+## The quick way
+
+```sh
+curl -fsSL https://oddurs.github.io/subway-seat/install.sh | sh -s -- --only base16
+```
+
+The [installer](../../docs/INSTALL.md) shows its plan and asks once. Add `--flavor tunnel`, `--flavor enamel` or `--flavor auto` for another flavor. To do it yourself, use the files below.
+
 ## Files
 
 | Flavor | File | Where it goes |

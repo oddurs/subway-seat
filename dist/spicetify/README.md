@@ -4,6 +4,14 @@ Spicetify's color keys plus the whole palette as `--spice-*` variables, and a sm
 
 [Spotify (Spicetify)](https://spicetify.app) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/spicetify/)
 
+## The quick way
+
+```sh
+curl -fsSL https://oddurs.github.io/subway-seat/install.sh | sh -s -- --only spicetify
+```
+
+The [installer](../../docs/INSTALL.md) shows its plan and asks once. Add `--flavor tunnel`, `--flavor enamel` or `--flavor auto` for another flavor. To do it yourself, use the files below.
+
 ## Files
 
 | Flavor | File | Where it goes |

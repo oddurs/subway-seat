@@ -4,6 +4,14 @@ Background, text, accent, cursor and the 16 ANSI colors. On Linux the themes fol
 
 [Warp](https://www.warp.dev) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/warp/)
 
+## The quick way
+
+```sh
+curl -fsSL https://oddurs.github.io/subway-seat/install.sh | sh -s -- --only warp
+```
+
+The [installer](../../docs/INSTALL.md) shows its plan and asks once. Add `--flavor tunnel`, `--flavor enamel` or `--flavor auto` for another flavor. To do it yourself, use the files below.
+
 ## Files
 
 | Flavor | File | Where it goes |

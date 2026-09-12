@@ -219,7 +219,7 @@ export default async function PortPage({ params }: PageProps<"/ports/[id]">) {
                 The quick way
               </h2>
               <p {...stylex.props(styles.lede)}>
-                The installer links the files{" "}
+                The installer sets it up{" "}
                 {setup === "auto"
                   ? "and switches the theme on for you."
                   : "for you, then tells you the one thing it can't do."}{" "}

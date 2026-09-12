@@ -4,6 +4,14 @@ Every color fuzzel has: the launcher on the raised paper ground with a quiet bor
 
 [fuzzel](https://codeberg.org/dnkl/fuzzel) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/fuzzel/) · Needs fuzzel 1.10+
 
+## The quick way
+
+```sh
+curl -fsSL https://oddurs.github.io/subway-seat/install.sh | sh -s -- --only fuzzel
+```
+
+The [installer](../../docs/INSTALL.md) shows its plan and asks once. Add `--flavor tunnel`, `--flavor enamel` or `--flavor auto` for another flavor. To do it yourself, use the files below.
+
 ## Files
 
 | Flavor | File | Where it goes |

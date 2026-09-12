@@ -4,6 +4,14 @@ TextMate themes tuned for Codex, whose diff backgrounds come from the theme's ad
 
 [Codex CLI](https://github.com/openai/codex) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/codex/)
 
+## The quick way
+
+```sh
+curl -fsSL https://oddurs.github.io/subway-seat/install.sh | sh -s -- --only codex
+```
+
+The [installer](../../docs/INSTALL.md) shows its plan and asks once. Add `--flavor tunnel`, `--flavor enamel` or `--flavor auto` for another flavor. To do it yourself, use the files below.
+
 ## Files
 
 | Flavor | File | Where it goes |

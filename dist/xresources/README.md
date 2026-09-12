@@ -4,6 +4,14 @@ Foreground, background, cursor, selection and the 16 ANSI colors as wildcard res
 
 [Xresources](https://wiki.archlinux.org/title/X_resources) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/xresources/)
 
+## The quick way
+
+```sh
+curl -fsSL https://oddurs.github.io/subway-seat/install.sh | sh -s -- --only xresources
+```
+
+The [installer](../../docs/INSTALL.md) shows its plan and asks once. Add `--flavor tunnel`, `--flavor enamel` or `--flavor auto` for another flavor. To do it yourself, use the files below.
+
 ## Files
 
 | Flavor | File | Where it goes |

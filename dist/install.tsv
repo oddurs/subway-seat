@@ -1125,22 +1125,31 @@ port	claude-code	Claude Code	Agents	Claude Code 2.1.247+
 detect	claude-code	claude
 detect	claude-code	~/.claude
 file	claude-code	walnut	claude-code/themes/subway-seat.json	~/.claude/themes/subway-seat.json	link
+file	claude-code	walnut	claude-code/themes/subway-seat-terminal.json	~/.claude/themes/subway-seat-terminal.json	link
 how	claude-code	walnut	merged into ~/.claude/settings.json by /subway-seat:setup	claude-code/plugin/settings/subway-seat.json
 file	claude-code	tunnel	claude-code/themes/subway-seat-tunnel.json	~/.claude/themes/subway-seat-tunnel.json	link
+file	claude-code	tunnel	claude-code/themes/subway-seat-tunnel-terminal.json	~/.claude/themes/subway-seat-tunnel-terminal.json	link
 how	claude-code	tunnel	merged into ~/.claude/settings.json by /subway-seat:setup	claude-code/plugin/settings/subway-seat-tunnel.json
 file	claude-code	enamel	claude-code/themes/subway-seat-enamel.json	~/.claude/themes/subway-seat-enamel.json	link
+file	claude-code	enamel	claude-code/themes/subway-seat-enamel-terminal.json	~/.claude/themes/subway-seat-enamel-terminal.json	link
 how	claude-code	enamel	merged into ~/.claude/settings.json by /subway-seat:setup	claude-code/plugin/settings/subway-seat-enamel.json
 file	claude-code	moquette	claude-code/themes/london-moquette.json	~/.claude/themes/london-moquette.json	link
+file	claude-code	moquette	claude-code/themes/london-moquette-terminal.json	~/.claude/themes/london-moquette-terminal.json	link
 how	claude-code	moquette	merged into ~/.claude/settings.json by /subway-seat:setup	claude-code/plugin/settings/london-moquette.json
 file	claude-code	deep	claude-code/themes/london-deep-level.json	~/.claude/themes/london-deep-level.json	link
+file	claude-code	deep	claude-code/themes/london-deep-level-terminal.json	~/.claude/themes/london-deep-level-terminal.json	link
 how	claude-code	deep	merged into ~/.claude/settings.json by /subway-seat:setup	claude-code/plugin/settings/london-deep-level.json
 file	claude-code	portland	claude-code/themes/london-portland.json	~/.claude/themes/london-portland.json	link
+file	claude-code	portland	claude-code/themes/london-portland-terminal.json	~/.claude/themes/london-portland-terminal.json	link
 how	claude-code	portland	merged into ~/.claude/settings.json by /subway-seat:setup	claude-code/plugin/settings/london-portland.json
 file	claude-code	guimard	claude-code/themes/paris-guimard.json	~/.claude/themes/paris-guimard.json	link
+file	claude-code	guimard	claude-code/themes/paris-guimard-terminal.json	~/.claude/themes/paris-guimard-terminal.json	link
 how	claude-code	guimard	merged into ~/.claude/settings.json by /subway-seat:setup	claude-code/plugin/settings/paris-guimard.json
 file	claude-code	catacombes	claude-code/themes/paris-catacombes.json	~/.claude/themes/paris-catacombes.json	link
+file	claude-code	catacombes	claude-code/themes/paris-catacombes-terminal.json	~/.claude/themes/paris-catacombes-terminal.json	link
 how	claude-code	catacombes	merged into ~/.claude/settings.json by /subway-seat:setup	claude-code/plugin/settings/paris-catacombes.json
 file	claude-code	carrelage	claude-code/themes/paris-carrelage.json	~/.claude/themes/paris-carrelage.json	link
+file	claude-code	carrelage	claude-code/themes/paris-carrelage-terminal.json	~/.claude/themes/paris-carrelage-terminal.json	link
 how	claude-code	carrelage	merged into ~/.claude/settings.json by /subway-seat:setup	claude-code/plugin/settings/paris-carrelage.json
 file	claude-code	*	claude-code/plugin/scripts/subway-seat-statusline	~/.claude/subway-seat/subway-seat-statusline	link
 file	claude-code	*	claude-code/plugin/scripts/subway-seat-subagents	~/.claude/subway-seat/subway-seat-subagents	link

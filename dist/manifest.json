@@ -248,7 +248,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "foot",
@@ -398,7 +399,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "ghostty",
@@ -555,7 +557,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "gnome-terminal",
@@ -695,7 +698,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": false
     },
     {
       "id": "hyper",
@@ -836,7 +840,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "iterm2",
@@ -990,7 +995,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": false
     },
     {
       "id": "kitty",
@@ -1254,7 +1260,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "konsole",
@@ -1475,7 +1482,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "ptyxis",
@@ -1623,7 +1631,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "rio",
@@ -1769,7 +1778,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "tabby",
@@ -1915,7 +1925,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": false
     },
     {
       "id": "terminal-app",
@@ -2055,7 +2066,8 @@
           "append": false,
           "binary": true
         }
-      ]
+      ],
+      "installs": false
     },
     {
       "id": "terminator",
@@ -2196,7 +2208,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": false
     },
     {
       "id": "termux",
@@ -2336,7 +2349,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "tilix",
@@ -2476,7 +2490,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "warp",
@@ -2622,7 +2637,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "wezterm",
@@ -2768,7 +2784,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "windows-terminal",
@@ -2931,7 +2948,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": false
     },
     {
       "id": "xfce-terminal",
@@ -3071,7 +3089,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "xresources",
@@ -3211,7 +3230,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "emacs",
@@ -3358,7 +3378,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "godot",
@@ -3582,7 +3603,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "gtksourceview",
@@ -3730,7 +3752,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "helix",
@@ -3876,7 +3899,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "jetbrains",
@@ -4221,7 +4245,8 @@
           "append": false,
           "binary": true
         }
-      ]
+      ],
+      "installs": false
     },
     {
       "id": "kakoune",
@@ -4370,7 +4395,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "lite-xl",
@@ -4511,7 +4537,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "micro",
@@ -4651,7 +4678,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "nvim",
@@ -5004,7 +5032,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "notepad-plus-plus",
@@ -5141,7 +5170,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": false
     },
     {
       "id": "sublime-merge",
@@ -5855,7 +5885,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": false
     },
     {
       "id": "sublime-text",
@@ -6002,7 +6033,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "vim",
@@ -6339,7 +6371,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "vscode",
@@ -6555,7 +6588,8 @@
           "append": false,
           "binary": true
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "xcode",
@@ -6701,7 +6735,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "zed",
@@ -6794,7 +6829,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "aider",
@@ -6934,7 +6970,8 @@
           "append": true,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "claude-code",
@@ -6946,7 +6983,7 @@
         "claude",
         "~/.claude"
       ],
-      "notes": "One plugin: all three themes, a relaxed output style and subagent rows. `/subway-seat:setup` asks for a flavor, shows what it will change, then adds the station-sign status line, 70s spinner verbs and \u201cNext stop\u201d tips to your settings; `/subway-seat:setup remove` takes them out again. Inside tmux, Claude Code rounds colors to 256 unless `CLAUDE_CODE_TMUX_TRUECOLOR=1` is set.",
+      "notes": "One plugin: every flavor's themes, a relaxed output style and subagent rows. `/subway-seat:setup` asks for a flavor, shows what it will change, then adds the station-sign status line, 70s spinner verbs and \u201cNext stop\u201d tips to your settings; `/subway-seat:setup remove` takes them out again. Claude Code colors code in diffs and file views itself (Monokai on dark, GitHub on light). Each flavor's \u201cterminal colors\u201d theme hands that to your terminal's 16 colors instead, so in a Subway Seat terminal the code matches the rest; diff lines then get plainer 256-color grounds, gray for added lines on the dark flavors. Inside tmux, Claude Code rounds colors to 256 unless `CLAUDE_CODE_TMUX_TRUECOLOR=1` is set.",
       "enable": {
         "walnut": {
           "where": "Claude Code, from the Subway Seat marketplace",
@@ -7014,6 +7051,24 @@
           "binary": false
         },
         {
+          "path": "claude-code/themes/subway-seat-terminal.json",
+          "flavor": "walnut",
+          "dest": "~/.claude/themes/subway-seat-terminal.json",
+          "how": null,
+          "lang": "json",
+          "append": false,
+          "binary": false
+        },
+        {
+          "path": "claude-code/plugin/themes/subway-seat-terminal.json",
+          "flavor": "walnut",
+          "dest": null,
+          "how": null,
+          "lang": "json",
+          "append": false,
+          "binary": false
+        },
+        {
           "path": "claude-code/plugin/settings/subway-seat.json",
           "flavor": "walnut",
           "dest": null,
@@ -7033,6 +7088,24 @@
         },
         {
           "path": "claude-code/plugin/themes/subway-seat-tunnel.json",
+          "flavor": "tunnel",
+          "dest": null,
+          "how": null,
+          "lang": "json",
+          "append": false,
+          "binary": false
+        },
+        {
+          "path": "claude-code/themes/subway-seat-tunnel-terminal.json",
+          "flavor": "tunnel",
+          "dest": "~/.claude/themes/subway-seat-tunnel-terminal.json",
+          "how": null,
+          "lang": "json",
+          "append": false,
+          "binary": false
+        },
+        {
+          "path": "claude-code/plugin/themes/subway-seat-tunnel-terminal.json",
           "flavor": "tunnel",
           "dest": null,
           "how": null,
@@ -7068,6 +7141,24 @@
           "binary": false
         },
         {
+          "path": "claude-code/themes/subway-seat-enamel-terminal.json",
+          "flavor": "enamel",
+          "dest": "~/.claude/themes/subway-seat-enamel-terminal.json",
+          "how": null,
+          "lang": "json",
+          "append": false,
+          "binary": false
+        },
+        {
+          "path": "claude-code/plugin/themes/subway-seat-enamel-terminal.json",
+          "flavor": "enamel",
+          "dest": null,
+          "how": null,
+          "lang": "json",
+          "append": false,
+          "binary": false
+        },
+        {
           "path": "claude-code/plugin/settings/subway-seat-enamel.json",
           "flavor": "enamel",
           "dest": null,
@@ -7087,6 +7178,24 @@
         },
         {
           "path": "claude-code/plugin/themes/london-moquette.json",
+          "flavor": "moquette",
+          "dest": null,
+          "how": null,
+          "lang": "json",
+          "append": false,
+          "binary": false
+        },
+        {
+          "path": "claude-code/themes/london-moquette-terminal.json",
+          "flavor": "moquette",
+          "dest": "~/.claude/themes/london-moquette-terminal.json",
+          "how": null,
+          "lang": "json",
+          "append": false,
+          "binary": false
+        },
+        {
+          "path": "claude-code/plugin/themes/london-moquette-terminal.json",
           "flavor": "moquette",
           "dest": null,
           "how": null,
@@ -7122,6 +7231,24 @@
           "binary": false
         },
         {
+          "path": "claude-code/themes/london-deep-level-terminal.json",
+          "flavor": "deep",
+          "dest": "~/.claude/themes/london-deep-level-terminal.json",
+          "how": null,
+          "lang": "json",
+          "append": false,
+          "binary": false
+        },
+        {
+          "path": "claude-code/plugin/themes/london-deep-level-terminal.json",
+          "flavor": "deep",
+          "dest": null,
+          "how": null,
+          "lang": "json",
+          "append": false,
+          "binary": false
+        },
+        {
           "path": "claude-code/plugin/settings/london-deep-level.json",
           "flavor": "deep",
           "dest": null,
@@ -7141,6 +7268,24 @@
         },
         {
           "path": "claude-code/plugin/themes/london-portland.json",
+          "flavor": "portland",
+          "dest": null,
+          "how": null,
+          "lang": "json",
+          "append": false,
+          "binary": false
+        },
+        {
+          "path": "claude-code/themes/london-portland-terminal.json",
+          "flavor": "portland",
+          "dest": "~/.claude/themes/london-portland-terminal.json",
+          "how": null,
+          "lang": "json",
+          "append": false,
+          "binary": false
+        },
+        {
+          "path": "claude-code/plugin/themes/london-portland-terminal.json",
           "flavor": "portland",
           "dest": null,
           "how": null,
@@ -7176,6 +7321,24 @@
           "binary": false
         },
         {
+          "path": "claude-code/themes/paris-guimard-terminal.json",
+          "flavor": "guimard",
+          "dest": "~/.claude/themes/paris-guimard-terminal.json",
+          "how": null,
+          "lang": "json",
+          "append": false,
+          "binary": false
+        },
+        {
+          "path": "claude-code/plugin/themes/paris-guimard-terminal.json",
+          "flavor": "guimard",
+          "dest": null,
+          "how": null,
+          "lang": "json",
+          "append": false,
+          "binary": false
+        },
+        {
           "path": "claude-code/plugin/settings/paris-guimard.json",
           "flavor": "guimard",
           "dest": null,
@@ -7203,6 +7366,24 @@
           "binary": false
         },
         {
+          "path": "claude-code/themes/paris-catacombes-terminal.json",
+          "flavor": "catacombes",
+          "dest": "~/.claude/themes/paris-catacombes-terminal.json",
+          "how": null,
+          "lang": "json",
+          "append": false,
+          "binary": false
+        },
+        {
+          "path": "claude-code/plugin/themes/paris-catacombes-terminal.json",
+          "flavor": "catacombes",
+          "dest": null,
+          "how": null,
+          "lang": "json",
+          "append": false,
+          "binary": false
+        },
+        {
           "path": "claude-code/plugin/settings/paris-catacombes.json",
           "flavor": "catacombes",
           "dest": null,
@@ -7222,6 +7403,24 @@
         },
         {
           "path": "claude-code/plugin/themes/paris-carrelage.json",
+          "flavor": "carrelage",
+          "dest": null,
+          "how": null,
+          "lang": "json",
+          "append": false,
+          "binary": false
+        },
+        {
+          "path": "claude-code/themes/paris-carrelage-terminal.json",
+          "flavor": "carrelage",
+          "dest": "~/.claude/themes/paris-carrelage-terminal.json",
+          "how": null,
+          "lang": "json",
+          "append": false,
+          "binary": false
+        },
+        {
+          "path": "claude-code/plugin/themes/paris-carrelage-terminal.json",
           "flavor": "carrelage",
           "dest": null,
           "how": null,
@@ -7328,7 +7527,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "codex",
@@ -7469,7 +7669,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "terminal-agents",
@@ -7548,7 +7749,8 @@
           "append": true,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "gemini-cli",
@@ -7779,7 +7981,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "herdr",
@@ -7934,7 +8137,8 @@
           "append": true,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "opencode",
@@ -8026,7 +8230,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "fish",
@@ -8200,7 +8405,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "nushell",
@@ -8340,7 +8546,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "powershell",
@@ -8496,7 +8703,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "starship",
@@ -8645,7 +8853,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "zsh-syntax-highlighting",
@@ -8798,7 +9007,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "aichat",
@@ -8943,7 +9153,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "atuin",
@@ -9084,7 +9295,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "bat",
@@ -9249,7 +9461,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "bottom",
@@ -9390,7 +9603,8 @@
           "append": true,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "broot",
@@ -9536,7 +9750,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "btop",
@@ -9676,7 +9891,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "cava",
@@ -9816,7 +10032,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "delta",
@@ -9965,7 +10182,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "eza",
@@ -10124,7 +10342,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "fastfetch",
@@ -10265,7 +10484,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "fzf",
@@ -10504,7 +10724,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "gh-dash",
@@ -10646,7 +10867,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "git",
@@ -10795,7 +11017,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "gitui",
@@ -11017,7 +11240,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "glow",
@@ -11175,7 +11399,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "k9s",
@@ -11315,7 +11540,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "lazygit",
@@ -11545,7 +11771,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "lsd",
@@ -11686,7 +11913,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "midnight-commander",
@@ -11827,7 +12055,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "newsboat",
@@ -11977,7 +12206,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "spotify-player",
@@ -12126,7 +12356,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "television",
@@ -12267,7 +12498,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "tmux",
@@ -12413,7 +12645,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "vivid",
@@ -12571,7 +12804,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "yazi",
@@ -12798,7 +13032,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "zellij",
@@ -13025,7 +13260,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "alfred",
@@ -13171,7 +13407,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": false
     },
     {
       "id": "chrome",
@@ -13400,7 +13637,8 @@
           "append": false,
           "binary": true
         }
-      ]
+      ],
+      "installs": false
     },
     {
       "id": "dark-reader",
@@ -13542,7 +13780,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": false
     },
     {
       "id": "discord",
@@ -13688,7 +13927,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "element",
@@ -13837,7 +14077,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": false
     },
     {
       "id": "firefox",
@@ -14166,7 +14407,8 @@
           "append": false,
           "binary": true
         }
-      ]
+      ],
+      "installs": false
     },
     {
       "id": "mattermost",
@@ -14306,7 +14548,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": false
     },
     {
       "id": "obsidian",
@@ -14399,7 +14642,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": false
     },
     {
       "id": "qutebrowser",
@@ -14540,7 +14784,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "raycast",
@@ -14767,7 +15012,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": false
     },
     {
       "id": "slack",
@@ -14908,7 +15154,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": false
     },
     {
       "id": "spicetify",
@@ -14994,7 +15241,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "telegram",
@@ -15221,7 +15469,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": false
     },
     {
       "id": "thunderbird",
@@ -15467,7 +15716,8 @@
           "append": false,
           "binary": true
         }
-      ]
+      ],
+      "installs": false
     },
     {
       "id": "vimium",
@@ -15619,7 +15869,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": false
     },
     {
       "id": "vivaldi",
@@ -15847,7 +16098,8 @@
           "append": false,
           "binary": true
         }
-      ]
+      ],
+      "installs": false
     },
     {
       "id": "zathura",
@@ -15996,7 +16248,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "dunst",
@@ -16137,7 +16390,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "fuzzel",
@@ -16287,7 +16541,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "gtk",
@@ -16525,7 +16780,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "hyprland",
@@ -16756,7 +17012,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "kde",
@@ -16897,7 +17154,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "mako",
@@ -17039,7 +17297,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "rofi",
@@ -17189,7 +17448,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "wallpapers",
@@ -17736,7 +17996,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "waybar",
@@ -17876,7 +18137,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "ase",
@@ -18013,7 +18275,8 @@
           "append": false,
           "binary": true
         }
-      ]
+      ],
+      "installs": false
     },
     {
       "id": "base16",
@@ -18312,7 +18575,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "chroma",
@@ -18530,7 +18794,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": false
     },
     {
       "id": "css",
@@ -18681,7 +18946,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": false
     },
     {
       "id": "gimp",
@@ -18818,7 +19084,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "gogh",
@@ -19117,7 +19384,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": false
     },
     {
       "id": "txt",
@@ -19254,7 +19522,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": false
     },
     {
       "id": "highlightjs",
@@ -19405,7 +19674,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": false
     },
     {
       "id": "clr",
@@ -19542,7 +19812,8 @@
           "append": false,
           "binary": true
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "matplotlib",
@@ -19680,7 +19951,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": true
     },
     {
       "id": "json",
@@ -19754,7 +20026,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": false
     },
     {
       "id": "prism",
@@ -19905,7 +20178,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": false
     },
     {
       "id": "procreate",
@@ -20042,7 +20316,8 @@
           "append": false,
           "binary": true
         }
-      ]
+      ],
+      "installs": false
     },
     {
       "id": "pygments",
@@ -20287,7 +20562,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": false
     },
     {
       "id": "scss",
@@ -20424,7 +20700,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": false
     },
     {
       "id": "shiki",
@@ -20566,7 +20843,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": false
     },
     {
       "id": "tailwind",
@@ -20726,7 +21004,8 @@
           "append": false,
           "binary": false
         }
-      ]
+      ],
+      "installs": false
     }
   ]
 }

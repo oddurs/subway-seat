@@ -1,7 +1,7 @@
 [project]
 name = "subway-seat"
 version = "0.3.0"
-description = "A walnut-brown 1970s subway-car color scheme, generated for ~90 apps from one palette."
+description = "A walnut-brown 1970s subway-car color scheme, generated for over 100 apps from one palette."
 requires-python = ">=3.12"
 license = "MIT"
 readme = "README.md"

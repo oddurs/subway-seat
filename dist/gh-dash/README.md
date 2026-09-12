@@ -4,6 +4,14 @@ Parchment text, orange borders on the active section and a warm selected row, wi
 
 [gh-dash](https://github.com/dlvhdr/gh-dash) · [Previews and copy buttons](https://oddurs.github.io/subway-seat/ports/gh-dash/) · Needs gh-dash 4.25+ for `include`
 
+## The quick way
+
+```sh
+curl -fsSL https://oddurs.github.io/subway-seat/install.sh | sh -s -- --only gh-dash
+```
+
+The [installer](../../docs/INSTALL.md) shows its plan and asks once. Add `--flavor tunnel`, `--flavor enamel` or `--flavor auto` for another flavor. To do it yourself, use the files below.
+
 ## Files
 
 | Flavor | File | Where it goes |
