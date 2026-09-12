@@ -1,0 +1,53 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# Paris Catacombes for zathura. In zathurarc: include paris-catacombes
+
+# window
+set default-bg              "#062017"
+set default-fg              "#CFDED7"
+set statusbar-bg            "#061811"
+set statusbar-fg            "#B8CAC2"
+set inputbar-bg             "#061811"
+set inputbar-fg             "#CFDED7"
+
+# notifications
+set notification-bg         "#0A2B20"
+set notification-fg         "#CFDED7"
+set notification-error-bg   "#DA6058"
+set notification-error-fg   "#05120C"
+set notification-warning-bg "#EBC342"
+set notification-warning-fg "#05120C"
+
+# completion
+set completion-bg           "#0A2B20"
+set completion-fg           "#CFDED7"
+set completion-group-bg     "#061811"
+set completion-group-fg     "#9EB3AA"
+set completion-highlight-bg "#1E4738"
+set completion-highlight-fg "#E4EEE9"
+
+# index (table of contents)
+set index-bg                "#062017"
+set index-fg                "#CFDED7"
+set index-active-bg         "#1E4738"
+set index-active-fg         "#E4EEE9"
+
+# search hits and link hints, washed over the page
+set highlight-color         "rgba(235,195,66,0.3)"
+set highlight-active-color  "rgba(215,142,60,0.5)"
+set highlight-fg            "#E4EEE9"
+
+# pages while they render
+set render-loading-bg       "#062017"
+set render-loading-fg       "#648576"
+
+# digital signatures
+set signature-success-color "#73C686"
+set signature-warning-color "#EBC342"
+set signature-error-color   "#EF796F"
+
+# recoloring: white paper → base, black ink → text; Ctrl+R toggles it
+set recolor-lightcolor      "#062017"
+set recolor-darkcolor       "#CFDED7"
+set recolor                 "true"
+set recolor-keephue         "true"
+set recolor-reverse-video   "true"

@@ -47,3 +47,30 @@ export const londonInk = stylex.createTheme(ink, {
   fillHover: color.redHi,
   okFill: color.green,
 });
+
+// Paris's dark flavors. The lead is line 4's magenta, which leads escapes and
+// regex — rare tokens — so spending it on chrome keeps it rare there too.
+export const parisInk = stylex.createTheme(ink, {
+  accent: color.clay,
+  accentHover: color.clay,
+  code: color.yellow,
+  flag: color.sage,
+  string: color.green,
+  fill: color.clay,
+  onAccent: color.crust,
+  fillHover: color.clay,
+  okFill: color.green,
+});
+
+// Carrelage: the same idea on tile.
+export const carrelageInk = stylex.createTheme(ink, {
+  accent: color.clay,
+  accentHover: `color-mix(in srgb, ${color.clay} 78%, ${color.text})`,
+  code: color.orange,
+  flag: color.sage,
+  string: color.green,
+  fill: color.clay,
+  onAccent: color.base,
+  fillHover: `color-mix(in srgb, ${color.clay} 82%, ${color.text})`,
+  okFill: color.green,
+});

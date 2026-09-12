@@ -78,6 +78,24 @@ ROLE_USES = {
 }
 
 
+PARIS_NAMES = {
+    # The grounds are the architecture; the accents are the map. That split is
+    # how the city itself is colored: cast iron and limestone underfoot, and a
+    # line colour for everything you need to find.
+    "crust": "Ballast", "mantle": "Fonte", "base": "Guimard", "surface0": "Banquette",
+    "surface1": "Rambarde", "surface2": "Ferronnerie", "overlay0": "Ardoise",
+    "overlay1": "Zinc", "overlay2": "Brume", "subtext0": "Calcaire", "subtext1": "Craie",
+    "text": "Faience", "text_hi": "Porcelaine",
+    "yellow": "Ligne 1", "yellow_hi": "Ligne 1 clair",
+    "orange": "Ligne 11", "orange_hi": "Ligne 11 clair",
+    "red": "Rouge RATP", "red_hi": "Rouge clair",
+    "green": "Ligne 6", "green_hi": "Ligne 6 clair",
+    "sage": "Ligne 12", "sage_hi": "Ligne 12 clair",
+    "denim": "Ligne 2", "denim_hi": "Ligne 2 clair",
+    "clay": "Ligne 4",
+}
+
+
 @dataclass(frozen=True)
 class Flavor:
     id: str        # "walnut" | "tunnel" | "moquette" | …
@@ -345,7 +363,94 @@ LONDON = Family(
     flavors=(MOQUETTE, DEEP_LEVEL, PORTLAND),
 )
 
-FAMILIES = [NEW_YORK, LONDON]
+GUIMARD = Flavor(
+    id="guimard",
+    family="paris",
+    name="Paris Guimard",
+    slug="paris-guimard",
+    dark=True,
+    blurb="Cast-iron green off a Metro entrance. The original green.",
+    colors={
+        "crust": "#0A1D15", "mantle": "#0C261C", "base": "#0E3125",
+        "surface0": "#113E2E", "surface1": "#194A39", "surface2": "#285A47",
+        "overlay0": "#47705F", "overlay1": "#67897A", "overlay2": "#86A195",
+        "subtext0": "#A2B7AE", "subtext1": "#BBCDC5", "text": "#D3E2DB", "text_hi": "#E6F0EB",
+        "yellow": "#EBC342", "yellow_hi": "#FBD664",
+        "orange": "#D78E3C", "orange_hi": "#EEA85C",
+        "red": "#DA6058", "red_hi": "#EF796F",
+        "green": "#73C686", "green_hi": "#82D896",
+        "sage": "#6FB393", "sage_hi": "#8ECFAF",
+        "denim": "#639BD5", "denim_hi": "#82B7EE",
+        "clay": "#E783BD",
+    },
+    ansi_roles=DARK_ANSI,
+)
+
+CATACOMBES = Flavor(
+    id="catacombes",
+    family="paris",
+    name="Paris Catacombes",
+    slug="paris-catacombes",
+    dark=True,
+    blurb="Under the quarries: the same green with the lights turned down.",
+    colors={
+        "crust": "#05120C", "mantle": "#061811", "base": "#062017",
+        "surface0": "#0A2B20", "surface1": "#13382A", "surface2": "#1E4738",
+        "overlay0": "#456A5B", "overlay1": "#648576", "overlay2": "#829D91",
+        "subtext0": "#9EB3AA", "subtext1": "#B8CAC2", "text": "#CFDED7", "text_hi": "#E4EEE9",
+        "yellow": "#EBC342", "yellow_hi": "#FBD664",
+        "orange": "#D78E3C", "orange_hi": "#EEA85C",
+        "red": "#DA6058", "red_hi": "#EF796F",
+        "green": "#73C686", "green_hi": "#82D896",
+        "sage": "#6FB393", "sage_hi": "#8ECFAF",
+        "denim": "#639BD5", "denim_hi": "#82B7EE",
+        "clay": "#E783BD",
+    },
+    ansi_roles=DARK_ANSI,
+)
+
+CARRELAGE = Flavor(
+    id="carrelage",
+    family="paris",
+    name="Paris Carrelage",
+    slug="paris-carrelage",
+    dark=False,
+    blurb="Bevelled white tile under a vaulted platform. The light one.",
+    colors={
+        # As in Enamel and Portland, the ramp runs the other way from base.
+        "crust": "#C8DAD1", "mantle": "#D5E3DD", "base": "#E2EDE8",
+        "surface0": "#B6D2C5", "surface1": "#9DC1B1", "surface2": "#88AF9E",
+        "overlay0": "#759A8A", "overlay1": "#5C8171", "overlay2": "#4A695C",
+        "subtext0": "#405B4F", "subtext1": "#334A41", "text": "#21352D", "text_hi": "#16241E",
+        "yellow": "#856A00", "yellow_hi": "#937500",
+        "orange": "#9B5D00", "orange_hi": "#AE6800",
+        "red": "#A30013", "red_hi": "#C82C2C",
+        "green": "#00823B", "green_hi": "#00863D",
+        "sage": "#007752", "sage_hi": "#2A8862",
+        "denim": "#0961A9", "denim_hi": "#2E75B9",
+        "clay": "#B43586",
+    },
+    ansi_roles=LIGHT_ANSI,
+)
+
+
+PARIS = Family(
+    id="paris",
+    name="Paris",
+    blurb="The Metro: Guimard's cast-iron green, white tile, and the line colors of the map.",
+    sign={"bg": "#040B07", "text": "#FFFFFF", "ring": GUIMARD.clay,
+          "mark": GUIMARD.clay, "mark-alt": "#FFFFFF"},
+    # Art Nouveau bends; nothing Guimard drew was ever square.
+    shape={"pill": "999px", "card": "14px", "chip": "50%"},
+    # Line 4's magenta. It leads escapes and regex, which are rare, so spending
+    # it on chrome keeps it rare there too.
+    lead="clay",
+    prefix="paris",
+    role_names=PARIS_NAMES,
+    flavors=(GUIMARD, CATACOMBES, CARRELAGE),
+)
+
+FAMILIES = [NEW_YORK, LONDON, PARIS]
 FAMILY = {fam.id: fam for fam in FAMILIES}
 FLAVORS = [f for fam in FAMILIES for f in fam.flavors]
 DEFAULT = WALNUT

@@ -49,6 +49,24 @@ jq -r '.flavors.deep.colors.orange.hex' subway-seat.json
 jq -r '.flavors.portland.colors.orange.hex' subway-seat.json
 ```
 
+**Paris Guimard**, in any script or tool that reads JSON:
+
+```sh
+jq -r '.flavors.guimard.colors.orange.hex' subway-seat.json
+```
+
+**Paris Catacombes**, in any script or tool that reads JSON:
+
+```sh
+jq -r '.flavors.catacombes.colors.orange.hex' subway-seat.json
+```
+
+**Paris Carrelage**, in any script or tool that reads JSON:
+
+```sh
+jq -r '.flavors.carrelage.colors.orange.hex' subway-seat.json
+```
+
 ## Uninstall
 
 - Delete `tokens/subway-seat.tokens.json`.

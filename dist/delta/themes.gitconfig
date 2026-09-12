@@ -262,3 +262,135 @@
 	merge-conflict-ours-diff-header-decoration-style = "#896800" box
 	merge-conflict-theirs-diff-header-style = "#007376" bold
 	merge-conflict-theirs-diff-header-decoration-style = "#007376" box
+
+[delta "paris-guimard"]
+	dark = true
+	syntax-theme = Paris Guimard
+	# changed lines: syntax colors on a tint; changed words on a stronger one
+	plus-style = syntax "#21422E"
+	plus-non-emph-style = syntax "#21422E"
+	plus-emph-style = syntax "#2E563B"
+	minus-style = syntax "#402E26"
+	minus-non-emph-style = syntax "#402E26"
+	minus-emph-style = syntax "#5D3830"
+	zero-style = syntax
+	whitespace-error-style = normal "#DA6058"
+	# git --color-moved: git's defaults and the git port's colors
+	map-styles = bold purple => syntax "#2D2820", bold "#D78E3C" => syntax "#2D2820", bold blue => syntax "#2E381C", bold "#639BD5" => syntax "#2E381C", bold cyan => syntax "#193525", bold "#6FB393" => syntax "#193525", bold yellow => syntax "#2E381C", bold "#EBC342" => syntax "#2E381C"
+	# line numbers (with line-numbers = true) in the color of their change
+	line-numbers-plus-style = "#73C686"
+	line-numbers-minus-style = "#EF796F"
+	line-numbers-zero-style = "#67897A"
+	line-numbers-left-style = "#47705F"
+	line-numbers-right-style = "#47705F"
+	# file and hunk headers
+	file-style = "#E6F0EB" bold
+	file-decoration-style = "#D78E3C" ul
+	hunk-header-style = file line-number syntax
+	hunk-header-file-style = "#BBCDC5"
+	hunk-header-line-number-style = "#639BD5"
+	hunk-header-decoration-style = "#639BD5" box
+	commit-decoration-style = "#EBC342" box
+	inline-hint-style = "#67897A"
+	# git blame
+	blame-palette = "#0E3125 #0C261C #113E2E"
+	blame-separator-style = "#47705F"
+	# git grep / rg --json
+	grep-file-style = "#D78E3C"
+	grep-line-number-style = "#73C686"
+	grep-match-line-style = syntax
+	grep-match-word-style = "#E6F0EB" "#505D2E" bold
+	grep-header-file-style = "#D78E3C" bold
+	# merge conflicts (git's diff3 or zdiff3 conflict style)
+	merge-conflict-ours-diff-header-style = "#EBC342" bold
+	merge-conflict-ours-diff-header-decoration-style = "#EBC342" box
+	merge-conflict-theirs-diff-header-style = "#6FB393" bold
+	merge-conflict-theirs-diff-header-decoration-style = "#6FB393" box
+
+[delta "paris-catacombes"]
+	dark = true
+	syntax-theme = Paris Catacombes
+	# changed lines: syntax colors on a tint; changed words on a stronger one
+	plus-style = syntax "#1D3A27"
+	plus-non-emph-style = syntax "#1D3A27"
+	plus-emph-style = syntax "#2A4F35"
+	minus-style = syntax "#3C2620"
+	minus-non-emph-style = syntax "#3C2620"
+	minus-emph-style = syntax "#5A312A"
+	zero-style = syntax
+	whitespace-error-style = normal "#DA6058"
+	# git --color-moved: git's defaults and the git port's colors
+	map-styles = bold purple => syntax "#291F19", bold "#D78E3C" => syntax "#291F19", bold blue => syntax "#2A2E15", bold "#639BD5" => syntax "#2A2E15", bold cyan => syntax "#142B1D", bold "#6FB393" => syntax "#142B1D", bold yellow => syntax "#2A2E15", bold "#EBC342" => syntax "#2A2E15"
+	# line numbers (with line-numbers = true) in the color of their change
+	line-numbers-plus-style = "#73C686"
+	line-numbers-minus-style = "#EF796F"
+	line-numbers-zero-style = "#648576"
+	line-numbers-left-style = "#456A5B"
+	line-numbers-right-style = "#456A5B"
+	# file and hunk headers
+	file-style = "#E4EEE9" bold
+	file-decoration-style = "#D78E3C" ul
+	hunk-header-style = file line-number syntax
+	hunk-header-file-style = "#B8CAC2"
+	hunk-header-line-number-style = "#639BD5"
+	hunk-header-decoration-style = "#639BD5" box
+	commit-decoration-style = "#EBC342" box
+	inline-hint-style = "#648576"
+	# git blame
+	blame-palette = "#062017 #061811 #0A2B20"
+	blame-separator-style = "#456A5B"
+	# git grep / rg --json
+	grep-file-style = "#D78E3C"
+	grep-line-number-style = "#73C686"
+	grep-match-line-style = syntax
+	grep-match-word-style = "#E4EEE9" "#4B5124" bold
+	grep-header-file-style = "#D78E3C" bold
+	# merge conflicts (git's diff3 or zdiff3 conflict style)
+	merge-conflict-ours-diff-header-style = "#EBC342" bold
+	merge-conflict-ours-diff-header-decoration-style = "#EBC342" box
+	merge-conflict-theirs-diff-header-style = "#6FB393" bold
+	merge-conflict-theirs-diff-header-decoration-style = "#6FB393" box
+
+[delta "paris-carrelage"]
+	light = true
+	syntax-theme = Paris Carrelage
+	# changed lines: syntax colors on a tint; changed words on a stronger one
+	plus-style = syntax "#BDDECC"
+	plus-non-emph-style = syntax "#BDDECC"
+	plus-emph-style = syntax "#99CDB1"
+	minus-style = syntax "#EDCCD0"
+	minus-non-emph-style = syntax "#EDCCD0"
+	minus-emph-style = syntax "#E2ADB3"
+	zero-style = syntax
+	whitespace-error-style = normal "#A30013"
+	# git --color-moved: git's defaults and the git port's colors
+	map-styles = bold purple => syntax "#F4E0E3", bold "#9B5D00" => syntax "#F4E0E3", bold blue => syntax "#DFD8BD", bold "#0961A9" => syntax "#DFD8BD", bold cyan => syntax "#D6EBE0", bold "#007752" => syntax "#D6EBE0", bold yellow => syntax "#DFD8BD", bold "#856A00" => syntax "#DFD8BD"
+	# line numbers (with line-numbers = true) in the color of their change
+	line-numbers-plus-style = "#00823B"
+	line-numbers-minus-style = "#C82C2C"
+	line-numbers-zero-style = "#5C8171"
+	line-numbers-left-style = "#759A8A"
+	line-numbers-right-style = "#759A8A"
+	# file and hunk headers
+	file-style = "#16241E" bold
+	file-decoration-style = "#9B5D00" ul
+	hunk-header-style = file line-number syntax
+	hunk-header-file-style = "#334A41"
+	hunk-header-line-number-style = "#0961A9"
+	hunk-header-decoration-style = "#0961A9" box
+	commit-decoration-style = "#856A00" box
+	inline-hint-style = "#5C8171"
+	# git blame
+	blame-palette = "#E2EDE8 #D5E3DD #C8DAD1"
+	blame-separator-style = "#759A8A"
+	# git grep / rg --json
+	grep-file-style = "#9B5D00"
+	grep-line-number-style = "#00823B"
+	grep-match-line-style = syntax
+	grep-match-word-style = "#16241E" "#C6C6A2" bold
+	grep-header-file-style = "#9B5D00" bold
+	# merge conflicts (git's diff3 or zdiff3 conflict style)
+	merge-conflict-ours-diff-header-style = "#856A00" bold
+	merge-conflict-ours-diff-header-decoration-style = "#856A00" box
+	merge-conflict-theirs-diff-header-style = "#007752" bold
+	merge-conflict-theirs-diff-header-decoration-style = "#007752" box

@@ -66,6 +66,21 @@
         "label": "London Portland",
         "uiTheme": "vs",
         "path": "./themes/london-portland-color-theme.json"
+      },
+      {
+        "label": "Paris Guimard",
+        "uiTheme": "vs-dark",
+        "path": "./themes/paris-guimard-color-theme.json"
+      },
+      {
+        "label": "Paris Catacombes",
+        "uiTheme": "vs-dark",
+        "path": "./themes/paris-catacombes-color-theme.json"
+      },
+      {
+        "label": "Paris Carrelage",
+        "uiTheme": "vs",
+        "path": "./themes/paris-carrelage-color-theme.json"
       }
     ]
   }

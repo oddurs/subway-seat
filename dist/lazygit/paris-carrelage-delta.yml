@@ -1,0 +1,7 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# Paris Carrelage: lazygit's diff pane through delta, with the delta port's paris-carrelage feature.
+# Needs delta, the delta port's include in your gitconfig, and the bat theme.
+git:
+  diffRenderers:
+    - colorArg: always
+      command: delta --features paris-carrelage --paging=never

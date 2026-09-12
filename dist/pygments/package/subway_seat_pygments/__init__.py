@@ -5,3 +5,6 @@ from .subway_seat_enamel import SubwaySeatEnamelStyle
 from .london_moquette import LondonMoquetteStyle
 from .london_deep_level import LondonDeepLevelStyle
 from .london_portland import LondonPortlandStyle
+from .paris_guimard import ParisGuimardStyle
+from .paris_catacombes import ParisCatacombesStyle
+from .paris_carrelage import ParisCarrelageStyle

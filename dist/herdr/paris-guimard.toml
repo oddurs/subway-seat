@@ -1,0 +1,24 @@
+# >>> subway-seat >>>
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# Paris Guimard; base theme: catppuccin
+[theme.custom]
+panel_bg = "#0E3125"
+sidebar_bg = "#0C261C"
+active_row_bg = "#113E2E"
+selection_bg = "#194A39"
+surface_dim = "#0C261C"
+surface0 = "#113E2E"
+surface1 = "#194A39"
+overlay0 = "#47705F"
+overlay1 = "#67897A"
+text = "#D3E2DB"
+subtext0 = "#A2B7AE"
+accent = "#D78E3C"
+mauve = "#E783BD"
+peach = "#EEA85C"
+yellow = "#EBC342"
+green = "#73C686"
+red = "#EF796F"
+blue = "#639BD5"
+teal = "#6FB393"
+# <<< subway-seat <<<

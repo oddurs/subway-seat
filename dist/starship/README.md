@@ -14,6 +14,9 @@ Palettes use the slot names of Starship's Gruvbox Rainbow preset, so its segment
 | London Moquette | [`palettes/london-moquette.toml`](palettes/london-moquette.toml) | add to the end of `~/.config/starship.toml` |
 | London Deep Level | [`palettes/london-deep-level.toml`](palettes/london-deep-level.toml) | add to the end of `~/.config/starship.toml` |
 | London Portland | [`palettes/london-portland.toml`](palettes/london-portland.toml) | add to the end of `~/.config/starship.toml` |
+| Paris Guimard | [`palettes/paris-guimard.toml`](palettes/paris-guimard.toml) | add to the end of `~/.config/starship.toml` |
+| Paris Catacombes | [`palettes/paris-catacombes.toml`](palettes/paris-catacombes.toml) | add to the end of `~/.config/starship.toml` |
+| Paris Carrelage | [`palettes/paris-carrelage.toml`](palettes/paris-carrelage.toml) | add to the end of `~/.config/starship.toml` |
 | All three | [`subway-seat.toml`](subway-seat.toml) | `~/.config/starship/subway-seat.toml`; use it with STARSHIP_CONFIG=~/.config/starship/subway-seat.toml, or copy it over ~/.config/starship.toml; change `palette` to pick the flavor |
 
 ## Turn it on
@@ -52,6 +55,24 @@ palette = 'london_deep_level'
 
 ```toml
 palette = 'london_portland'
+```
+
+**Paris Guimard**, in the top of ~/.config/starship.toml, above every [section] (below a table it would be read as part of that table and ignored), after adding the palette block to the end:
+
+```toml
+palette = 'paris_guimard'
+```
+
+**Paris Catacombes**, in the top of ~/.config/starship.toml, above every [section] (below a table it would be read as part of that table and ignored), after adding the palette block to the end:
+
+```toml
+palette = 'paris_catacombes'
+```
+
+**Paris Carrelage**, in the top of ~/.config/starship.toml, above every [section] (below a table it would be read as part of that table and ignored), after adding the palette block to the end:
+
+```toml
+palette = 'paris_carrelage'
 ```
 
 ## Uninstall

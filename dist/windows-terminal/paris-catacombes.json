@@ -1,0 +1,46 @@
+{
+    "schemes": [
+        {
+            "name": "Paris Catacombes",
+            "background": "#062017",
+            "foreground": "#CFDED7",
+            "cursorColor": "#EBC342",
+            "selectionBackground": "#1E4738",
+            "black": "#13382A",
+            "red": "#DA6058",
+            "green": "#73C686",
+            "yellow": "#EBC342",
+            "blue": "#639BD5",
+            "purple": "#D78E3C",
+            "cyan": "#6FB393",
+            "white": "#B8CAC2",
+            "brightBlack": "#648576",
+            "brightRed": "#EF796F",
+            "brightGreen": "#82D896",
+            "brightYellow": "#FBD664",
+            "brightBlue": "#82B7EE",
+            "brightPurple": "#EEA85C",
+            "brightCyan": "#8ECFAF",
+            "brightWhite": "#E4EEE9"
+        }
+    ],
+    "themes": [
+        {
+            "name": "Paris Catacombes",
+            "window": {
+                "applicationTheme": "dark",
+                "useMica": false,
+                "frame": "#05120CFF",
+                "unfocusedFrame": "#05120CFF"
+            },
+            "tabRow": {
+                "background": "#05120CFF",
+                "unfocusedBackground": "#05120CFF"
+            },
+            "tab": {
+                "background": "#062017FF",
+                "unfocusedBackground": "#061811FF"
+            }
+        }
+    ]
+}

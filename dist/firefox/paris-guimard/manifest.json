@@ -1,0 +1,61 @@
+{
+  "manifest_version": 2,
+  "name": "Paris Guimard",
+  "version": "0.3.0",
+  "description": "A walnut-brown 1970s NYC subway theme: harvest gold, burnt orange and avocado on warm wood. Cast-iron green off a Metro entrance. The original green.",
+  "author": "Oddur Sigurdsson",
+  "homepage_url": "https://github.com/oddurs/subway-seat",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "paris-guimard@oddurs.github.io",
+      "strict_min_version": "106.0"
+    }
+  },
+  "theme": {
+    "colors": {
+      "frame": "#0A1D15",
+      "frame_inactive": "#0A1D15",
+      "tab_background_text": "#86A195",
+      "tab_background_separator": "#113E2E",
+      "tab_selected": "#0E3125",
+      "tab_text": "#D3E2DB",
+      "tab_line": "#D78E3C",
+      "tab_loading": "#D78E3C",
+      "toolbar": "#0E3125",
+      "toolbar_text": "#D3E2DB",
+      "toolbar_top_separator": "#0A1D15",
+      "toolbar_bottom_separator": "#113E2E",
+      "toolbar_vertical_separator": "#113E2E",
+      "icons": "#BBCDC5",
+      "icons_attention": "#D78E3C",
+      "button_background_hover": "#113E2E",
+      "button_background_active": "#194A39",
+      "toolbar_field": "#0C261C",
+      "toolbar_field_text": "#D3E2DB",
+      "toolbar_field_border": "#113E2E",
+      "toolbar_field_focus": "#0C261C",
+      "toolbar_field_text_focus": "#E6F0EB",
+      "toolbar_field_border_focus": "#D78E3C",
+      "toolbar_field_highlight": "#285A47",
+      "toolbar_field_highlight_text": "#E6F0EB",
+      "toolbar_field_separator": "#113E2E",
+      "popup": "#113E2E",
+      "popup_text": "#D3E2DB",
+      "popup_border": "#295243",
+      "popup_highlight": "#285A47",
+      "popup_highlight_text": "#E6F0EB",
+      "sidebar": "#0C261C",
+      "sidebar_text": "#D3E2DB",
+      "sidebar_border": "#113E2E",
+      "sidebar_highlight": "#285A47",
+      "sidebar_highlight_text": "#E6F0EB",
+      "ntp_background": "#0E3125",
+      "ntp_card_background": "#113E2E",
+      "ntp_text": "#D3E2DB"
+    },
+    "properties": {
+      "color_scheme": "dark",
+      "content_color_scheme": "dark"
+    }
+  }
+}

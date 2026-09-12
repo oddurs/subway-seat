@@ -1,0 +1,31 @@
+GIMP Palette
+Name: Paris Carrelage
+Columns: 13
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# Bevelled white tile under a vaulted platform. The light one.
+200 218 209	Carrelage crust
+213 227 221	Carrelage mantle
+226 237 232	Carrelage base
+182 210 197	Carrelage surface0
+157 193 177	Carrelage surface1
+136 175 158	Carrelage surface2
+117 154 138	Carrelage overlay0
+ 92 129 113	Carrelage overlay1
+ 74 105  92	Carrelage overlay2
+ 64  91  79	Carrelage subtext0
+ 51  74  65	Carrelage subtext1
+ 33  53  45	Carrelage text
+ 22  36  30	Carrelage text hi
+133 106   0	Harvest gold (yellow)
+147 117   0	Broadway yellow (yellow_hi)
+155  93   0	Burnt orange (orange)
+174 104   0	Sixth Avenue (orange_hi)
+163   0  19	Redbird (red)
+200  44  44	Redbird bright (red_hi)
+  0 130  59	Avocado (green)
+  0 134  61	Avocado bright (green_hi)
+  0 119  82	Seafoam tile (sage)
+ 42 136  98	Seafoam bright (sage_hi)
+  9  97 169	Faded denim (denim)
+ 46 117 185	Denim bright (denim_hi)
+180  53 134	Terracotta (clay)

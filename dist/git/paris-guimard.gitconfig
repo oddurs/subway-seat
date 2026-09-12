@@ -1,0 +1,93 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# Paris Guimard for Git. Include it from your gitconfig:
+#   [include] path = ~/.config/git/paris-guimard.gitconfig
+
+[color "diff"]
+	meta = "#e6f0eb bold"
+	frag = "#639bd5"
+	func = "#bbcdc5"
+	old = "#ef796f"
+	new = "#73c686"
+	commit = "#ebc342"
+	whitespace = "normal #da6058"
+	oldMoved = "#d78e3c bold"
+	oldMovedAlternative = "#639bd5 bold"
+	newMoved = "#6fb393 bold"
+	newMovedAlternative = "#ebc342 bold"
+	oldMovedDimmed = "#67897a"
+	oldMovedAlternativeDimmed = "#67897a italic"
+	newMovedDimmed = "#67897a"
+	newMovedAlternativeDimmed = "#67897a italic"
+	contextDimmed = "#67897a"
+	oldDimmed = "#ef796f dim"
+	newDimmed = "#73c686 dim"
+	contextBold = "#e6f0eb bold"
+	oldBold = "#ef796f bold"
+	newBold = "#73c686 bold"
+
+[color "diff-highlight"]
+	oldNormal = "#ef796f"
+	oldHighlight = "#ef796f #5d3830"
+	newNormal = "#73c686"
+	newHighlight = "#73c686 #2e563b"
+
+[color "status"]
+	header = "#bbcdc5"
+	added = "#73c686"
+	changed = "#ef796f"
+	untracked = "#e783bd"
+	branch = "#73c686 bold"
+	nobranch = "#ef796f bold"
+	localBranch = "#73c686"
+	remoteBranch = "#ef796f"
+	unmerged = "#ef796f bold"
+
+[color "branch"]
+	current = "#73c686 bold"
+	local = "#d3e2db"
+	remote = "#ef796f"
+	upstream = "#639bd5"
+	plain = "#bbcdc5"
+	worktree = "#6fb393"
+
+[color "decorate"]
+	HEAD = "#6fb393 bold"
+	branch = "#73c686 bold"
+	remoteBranch = "#ef796f bold"
+	tag = "#ebc342 bold"
+	stash = "#d78e3c bold"
+	grafted = "#639bd5 bold"
+
+[color "grep"]
+	context = "#a2b7ae"
+	filename = "#d78e3c"
+	function = "#ebc342"
+	lineNumber = "#73c686"
+	column = "#73c686"
+	selected = "#d3e2db"
+	separator = "#67897a"
+
+[color "interactive"]
+	prompt = "#d78e3c bold"
+	header = "#e6f0eb bold"
+	help = "#ebc342"
+	error = "#ef796f bold"
+
+[color "blame"]
+	highlightRecent = "#67897a,12 month ago,#bbcdc5,1 month ago,#d78e3c"
+	repeatedLines = "#67897a"
+
+[color "advice"]
+	hint = "#ebc342"
+
+[color "push"]
+	error = "#ef796f"
+
+[color "transport"]
+	rejected = "#ef796f"
+
+[color "remote"]
+	hint = "#ebc342"
+	warning = "#ebc342 bold"
+	success = "#73c686 bold"
+	error = "#ef796f bold"

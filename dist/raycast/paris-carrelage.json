@@ -1,0 +1,21 @@
+{
+  "author": "Oddur Sigurdsson",
+  "authorUsername": "oddurs",
+  "version": "1",
+  "name": "Paris Carrelage",
+  "appearance": "light",
+  "colors": {
+    "background": "#E2EDE8",
+    "backgroundSecondary": "#D5E3DD",
+    "text": "#21352D",
+    "selection": "#9B5D00",
+    "loader": "#856A00",
+    "red": "#A30013",
+    "orange": "#9B5D00",
+    "yellow": "#856A00",
+    "green": "#00823B",
+    "blue": "#0961A9",
+    "purple": "#B43586",
+    "magenta": "#AE6800"
+  }
+}

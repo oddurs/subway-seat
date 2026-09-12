@@ -1,0 +1,61 @@
+{
+  "ui": {
+    "customThemes": {
+      "Paris Carrelage": {
+        "name": "Paris Carrelage",
+        "type": "custom",
+        "Background": "#E2EDE8",
+        "Foreground": "#21352D",
+        "LightBlue": "#334A41",
+        "AccentBlue": "#9B5D00",
+        "AccentPurple": "#B43586",
+        "AccentCyan": "#007752",
+        "AccentGreen": "#00823B",
+        "AccentYellow": "#856A00",
+        "AccentRed": "#C82C2C",
+        "DiffAdded": "#BDDECC",
+        "DiffRemoved": "#EDCCD0",
+        "Comment": "#5C8171",
+        "Gray": "#4A695C",
+        "DarkGray": "#88AF9E",
+        "GradientColors": [
+          "#A30013",
+          "#9B5D00",
+          "#856A00",
+          "#00823B"
+        ],
+        "text": {
+          "primary": "#21352D",
+          "secondary": "#4A695C",
+          "accent": "#B43586",
+          "response": "#21352D"
+        },
+        "background": {
+          "primary": "#E2EDE8",
+          "diff": {
+            "added": "#BDDECC",
+            "removed": "#EDCCD0"
+          }
+        },
+        "ui": {
+          "comment": "#5C8171",
+          "symbol": "#856A00",
+          "active": "#9B5D00",
+          "focus": "#856A00",
+          "gradient": [
+            "#A30013",
+            "#9B5D00",
+            "#856A00",
+            "#00823B"
+          ]
+        },
+        "status": {
+          "success": "#00823B",
+          "warning": "#856A00",
+          "error": "#C82C2C"
+        }
+      }
+    },
+    "theme": "Paris Carrelage"
+  }
+}

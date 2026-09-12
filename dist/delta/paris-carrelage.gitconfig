@@ -1,0 +1,44 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+[delta "paris-carrelage"]
+	light = true
+	syntax-theme = Paris Carrelage
+	# changed lines: syntax colors on a tint; changed words on a stronger one
+	plus-style = syntax "#BDDECC"
+	plus-non-emph-style = syntax "#BDDECC"
+	plus-emph-style = syntax "#99CDB1"
+	minus-style = syntax "#EDCCD0"
+	minus-non-emph-style = syntax "#EDCCD0"
+	minus-emph-style = syntax "#E2ADB3"
+	zero-style = syntax
+	whitespace-error-style = normal "#A30013"
+	# git --color-moved: git's defaults and the git port's colors
+	map-styles = bold purple => syntax "#F4E0E3", bold "#9B5D00" => syntax "#F4E0E3", bold blue => syntax "#DFD8BD", bold "#0961A9" => syntax "#DFD8BD", bold cyan => syntax "#D6EBE0", bold "#007752" => syntax "#D6EBE0", bold yellow => syntax "#DFD8BD", bold "#856A00" => syntax "#DFD8BD"
+	# line numbers (with line-numbers = true) in the color of their change
+	line-numbers-plus-style = "#00823B"
+	line-numbers-minus-style = "#C82C2C"
+	line-numbers-zero-style = "#5C8171"
+	line-numbers-left-style = "#759A8A"
+	line-numbers-right-style = "#759A8A"
+	# file and hunk headers
+	file-style = "#16241E" bold
+	file-decoration-style = "#9B5D00" ul
+	hunk-header-style = file line-number syntax
+	hunk-header-file-style = "#334A41"
+	hunk-header-line-number-style = "#0961A9"
+	hunk-header-decoration-style = "#0961A9" box
+	commit-decoration-style = "#856A00" box
+	inline-hint-style = "#5C8171"
+	# git blame
+	blame-palette = "#E2EDE8 #D5E3DD #C8DAD1"
+	blame-separator-style = "#759A8A"
+	# git grep / rg --json
+	grep-file-style = "#9B5D00"
+	grep-line-number-style = "#00823B"
+	grep-match-line-style = syntax
+	grep-match-word-style = "#16241E" "#C6C6A2" bold
+	grep-header-file-style = "#9B5D00" bold
+	# merge conflicts (git's diff3 or zdiff3 conflict style)
+	merge-conflict-ours-diff-header-style = "#856A00" bold
+	merge-conflict-ours-diff-header-decoration-style = "#856A00" box
+	merge-conflict-theirs-diff-header-style = "#007752" bold
+	merge-conflict-theirs-diff-header-decoration-style = "#007752" box

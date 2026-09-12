@@ -1,15 +1,15 @@
 import * as stylex from "@stylexjs/stylex";
 import type { Metadata, Viewport } from "next";
-import { Cabin, Fraunces, Inter, JetBrains_Mono } from "next/font/google";
+import { Cabin, Fraunces, Inter, JetBrains_Mono, Jost } from "next/font/google";
 import type { ReactNode } from "react";
 import { FlavorSync } from "@/components/FlavorSync";
 import { ports, version } from "@/lib/manifest";
 import { flavors } from "@/lib/palette";
 import { ORIGIN, pageMeta, pageUrl, REPO, SITE_NAME } from "@/lib/seo";
-import { londonType, portlandType } from "@/theme/faces";
+import { carrelageType, londonType, parisType, portlandType } from "@/theme/faces";
 import * as artTheme from "@/theme/art";
 import * as theme from "@/theme/flavors";
-import { enamelInk, londonInk, portlandInk } from "@/theme/ink";
+import { carrelageInk, enamelInk, londonInk, parisInk, portlandInk } from "@/theme/ink";
 import { sign } from "@/theme/sign.stylex";
 import { art } from "@/theme/art.stylex";
 import { color } from "@/theme/tokens.stylex";
@@ -42,6 +42,9 @@ const johnston = Cabin({
   variable: "--font-cabin",
 });
 
+// Jost stands in for the Metro's own signage: see theme/faces.ts.
+const paris = Jost({ subsets: ["latin"], weight: ["400", "500", "600"], variable: "--font-jost" });
+
 const count = ports().length;
 const description = `Transit color schemes for Ghostty, VS Code, Neovim, Zed, Claude Code and more: ${count} ports, two families, six flavors. Sit back.`;
 
@@ -61,16 +64,18 @@ export const viewport: Viewport = { themeColor: sign.bg };
 
 // A light flavor's accents are tuned for code on paper and run light for small
 // UI text, so each family's light one gets its own ink theme.
-const LIGHT_INK = { "new-york": enamelInk, london: portlandInk } as const;
+const LIGHT_INK = { "new-york": enamelInk, london: portlandInk, paris: carrelageInk } as const;
+const DARK_INK = { "new-york": null, london: londonInk, paris: parisInk } as const;
+const DARK_TYPE = { "new-york": null, london: londonType, paris: parisType } as const;
+const LIGHT_TYPE = { "new-york": null, london: portlandType, paris: carrelageType } as const;
 
 /** Each flavor's classes: its colors, plus its family's typography and ink. */
 const themeClasses = Object.fromEntries(
   flavors.map((f) => {
-    const london = f.family === "london";
-    const ink = f.dark ? (london ? londonInk : null) : LIGHT_INK[f.family];
-    // London's light flavor is set differently from its dark ones: dark type on
+    // A light flavor is set differently from its dark siblings: dark type on a
     // pale ground needs the opposite correction to light type on dark.
-    const type = london ? (f.dark ? londonType : portlandType) : null;
+    const type = f.dark ? DARK_TYPE[f.family] : LIGHT_TYPE[f.family];
+    const ink = f.dark ? DARK_INK[f.family] : LIGHT_INK[f.family];
     const parts = [
       theme[f.id as keyof typeof theme],
       artTheme[f.id as keyof typeof artTheme],
@@ -123,7 +128,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html
       lang="en"
-      className={`${ui.variable} ${mono.variable} ${display.variable} ${johnston.variable} ${html.className ?? ""}`}
+      className={`${ui.variable} ${mono.variable} ${display.variable} ${johnston.variable} ${paris.variable} ${html.className ?? ""}`}
       style={html.style}
       data-flavor="walnut"
       data-family="new-york"

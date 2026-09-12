@@ -1,0 +1,48 @@
+{
+  "theme": "custom:subway-seat:paris-catacombes",
+  "statusLine": {
+    "type": "command",
+    "command": "${CLAUDE_PLUGIN_DATA}/subway-seat-statusline",
+    "padding": 0,
+    "hideVimModeIndicator": true
+  },
+  "spinnerVerbs": {
+    "mode": "replace",
+    "verbs": [
+      "Reading the Vignelli map",
+      "Riding the local",
+      "Running express",
+      "Transferring",
+      "Holding the doors",
+      "Watching the gap",
+      "Waiting on the platform",
+      "Rolling uptown",
+      "Rolling downtown",
+      "Changing at 14th Street",
+      "Dropping a token",
+      "Grabbing the pole",
+      "Finding a seat",
+      "Sinking into the shag",
+      "Flipping the record",
+      "Warming up the hi-fi",
+      "Tuning the 8-track",
+      "Adjusting the rabbit ears",
+      "Watering the spider plant",
+      "Percolating",
+      "Taking the A train",
+      "Keeping it groovy",
+      "Easing on down the road",
+      "Digging it",
+      "Grooving",
+      "Punching a transfer",
+      "Checking the strip map",
+      "Spinning the lazy Susan",
+      "Knotting the macram\u00e9",
+      "Lava-lamping"
+    ]
+  },
+  "spinnerTipsOverride": {
+    "tipsFile": "${CLAUDE_PLUGIN_DATA}/tips.json",
+    "label": "Next stop"
+  }
+}

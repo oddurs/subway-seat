@@ -14,6 +14,9 @@ Harvest-gold link hints, a walnut Vomnibar with denim URLs and orange matches, a
 | London Moquette | [`london-moquette.css`](london-moquette.css) | paste into Vimium Options › CSS for Vimium UI |
 | London Deep Level | [`london-deep-level.css`](london-deep-level.css) | paste into Vimium Options › CSS for Vimium UI |
 | London Portland | [`london-portland.css`](london-portland.css) | paste into Vimium Options › CSS for Vimium UI |
+| Paris Guimard | [`paris-guimard.css`](paris-guimard.css) | paste into Vimium Options › CSS for Vimium UI |
+| Paris Catacombes | [`paris-catacombes.css`](paris-catacombes.css) | paste into Vimium Options › CSS for Vimium UI |
+| Paris Carrelage | [`paris-carrelage.css`](paris-carrelage.css) | paste into Vimium Options › CSS for Vimium UI |
 | All three | [`subway-seat-auto.css`](subway-seat-auto.css) | paste into Vimium Options › CSS for Vimium UI |
 
 ## Turn it on
@@ -52,6 +55,24 @@ Paste the contents of london-deep-level.css and click Save
 
 ```text
 Paste the contents of london-portland.css and click Save
+```
+
+**Paris Guimard**, in Vimium Options › Show advanced options › CSS for Vimium UI:
+
+```text
+Paste the contents of paris-guimard.css and click Save
+```
+
+**Paris Catacombes**, in Vimium Options › Show advanced options › CSS for Vimium UI:
+
+```text
+Paste the contents of paris-catacombes.css and click Save
+```
+
+**Paris Carrelage**, in Vimium Options › Show advanced options › CSS for Vimium UI:
+
+```text
+Paste the contents of paris-carrelage.css and click Save
 ```
 
 ## Follow light and dark

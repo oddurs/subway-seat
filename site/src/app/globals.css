@@ -47,6 +47,16 @@
     --radius-card: 0px;
     --radius-chip: 2px;
   }
+  html[data-family="paris"] {
+    --sign-bg: #040b07;
+    --sign-text: #ffffff;
+    --sign-ring: #e783bd;
+    --sign-mark: #e783bd;
+    --sign-mark-alt: #ffffff;
+    --radius-pill: 999px;
+    --radius-card: 14px;
+    --radius-chip: 50%;
+  }
   html[data-flavor="enamel"] {
     --ss-shadow: rgba(110, 97, 86, 0.2);
     --ss-shadow-soft: rgba(110, 97, 86, 0.12);
@@ -55,6 +65,10 @@
     --ss-shadow: rgba(94, 100, 112, 0.2);
     --ss-shadow-soft: rgba(94, 100, 112, 0.12);
   }
+  html[data-flavor="carrelage"] {
+    --ss-shadow: rgba(88, 104, 98, 0.2);
+    --ss-shadow-soft: rgba(88, 104, 98, 0.12);
+  }
 
   html[data-flavor="walnut"] [data-unless="walnut"],
   html[data-flavor="tunnel"] [data-unless="tunnel"],
@@ -62,8 +76,12 @@
   html[data-flavor="moquette"] [data-unless="moquette"],
   html[data-flavor="deep"] [data-unless="deep"],
   html[data-flavor="portland"] [data-unless="portland"],
+  html[data-flavor="guimard"] [data-unless="guimard"],
+  html[data-flavor="catacombes"] [data-unless="catacombes"],
+  html[data-flavor="carrelage"] [data-unless="carrelage"],
   html[data-family="new-york"] [data-unless="new-york"],
-  html[data-family="london"] [data-unless="london"] {
+  html[data-family="london"] [data-unless="london"],
+  html[data-family="paris"] [data-unless="paris"] {
     display: none !important;
   }
 
@@ -74,8 +92,12 @@
   html:not([data-flavor="moquette"]) [data-only="moquette"],
   html:not([data-flavor="deep"]) [data-only="deep"],
   html:not([data-flavor="portland"]) [data-only="portland"],
+  html:not([data-flavor="guimard"]) [data-only="guimard"],
+  html:not([data-flavor="catacombes"]) [data-only="catacombes"],
+  html:not([data-flavor="carrelage"]) [data-only="carrelage"],
   html:not([data-family="new-york"]) [data-only="new-york"],
-  html:not([data-family="london"]) [data-only="london"] {
+  html:not([data-family="london"]) [data-only="london"],
+  html:not([data-family="paris"]) [data-only="paris"] {
     display: none !important;
   }
 
@@ -87,8 +109,12 @@
     html:not([data-flavor="moquette"]) [data-narrow-only="moquette"],
     html:not([data-flavor="deep"]) [data-narrow-only="deep"],
     html:not([data-flavor="portland"]) [data-narrow-only="portland"],
+    html:not([data-flavor="guimard"]) [data-narrow-only="guimard"],
+    html:not([data-flavor="catacombes"]) [data-narrow-only="catacombes"],
+    html:not([data-flavor="carrelage"]) [data-narrow-only="carrelage"],
     html:not([data-family="new-york"]) [data-narrow-only="new-york"],
-    html:not([data-family="london"]) [data-narrow-only="london"] {
+    html:not([data-family="london"]) [data-narrow-only="london"],
+    html:not([data-family="paris"]) [data-narrow-only="paris"] {
       display: none !important;
     }
   }
@@ -128,6 +154,27 @@
   }
   html[data-flavor="portland"] .shiki-themes {
     background-color: var(--shiki-portland-bg) !important;
+  }
+  html[data-flavor="guimard"] .shiki-themes,
+  html[data-flavor="guimard"] .shiki-themes span {
+    color: var(--shiki-guimard) !important;
+  }
+  html[data-flavor="guimard"] .shiki-themes {
+    background-color: var(--shiki-guimard-bg) !important;
+  }
+  html[data-flavor="catacombes"] .shiki-themes,
+  html[data-flavor="catacombes"] .shiki-themes span {
+    color: var(--shiki-catacombes) !important;
+  }
+  html[data-flavor="catacombes"] .shiki-themes {
+    background-color: var(--shiki-catacombes-bg) !important;
+  }
+  html[data-flavor="carrelage"] .shiki-themes,
+  html[data-flavor="carrelage"] .shiki-themes span {
+    color: var(--shiki-carrelage) !important;
+  }
+  html[data-flavor="carrelage"] .shiki-themes {
+    background-color: var(--shiki-carrelage-bg) !important;
   }
   /* flavors:end */
 

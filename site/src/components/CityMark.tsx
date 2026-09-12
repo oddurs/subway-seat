@@ -24,6 +24,10 @@ export function CityMark() {
         <span {...stylex.props(styles.ring)} />
         <span {...stylex.props(styles.bar)} />
       </span>
+      <span data-only="paris" aria-hidden {...stylex.props(styles.metro)}>
+        <span {...stylex.props(styles.ring)} />
+        <span {...stylex.props(styles.letter)}>M</span>
+      </span>
     </>
   );
 }
@@ -63,6 +67,24 @@ const styles = stylex.create({
     // The Underground's ring is about a seventh of its diameter.
     borderWidth: 3.5,
     borderRadius: "50%",
+  },
+  // Paris signs its entrances with an M inside a ring — the Dervaux standard,
+  // the one that replaced most of Guimard's ironwork.
+  metro: {
+    position: "relative",
+    display: "grid",
+    placeItems: "center",
+    width: SIZE,
+    height: SIZE,
+    marginBottom: LIFT,
+  },
+  letter: {
+    position: "relative",
+    fontFamily: font.sans,
+    fontSize: 13,
+    fontWeight: 700,
+    lineHeight: 1,
+    color: "var(--sign-mark-alt)",
   },
   // The bar runs past the ring on both sides — that overhang is most of what
   // makes a roundel read as a roundel and not as a disc.

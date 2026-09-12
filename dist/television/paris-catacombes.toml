@@ -1,0 +1,26 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# Paris Catacombes for television.
+# general
+background = '#062017'
+border_fg = '#1E4738'
+text_fg = '#CFDED7'
+dimmed_text_fg = '#648576'
+# input
+input_text_fg = '#CFDED7'
+result_count_fg = '#648576'
+# results
+result_name_fg = '#B8CAC2'
+result_line_number_fg = '#648576'
+result_value_fg = '#CFDED7'
+selection_bg = '#0A2B20'
+selection_fg = '#E4EEE9'
+match_fg = '#EBC342'
+# preview
+preview_title_fg = '#B8CAC2'
+# modes
+channel_mode_fg = '#05120C'
+channel_mode_bg = '#D78E3C'
+remote_control_mode_fg = '#05120C'
+remote_control_mode_bg = '#EBC342'
+action_picker_mode_fg = '#05120C'
+action_picker_mode_bg = '#6FB393'

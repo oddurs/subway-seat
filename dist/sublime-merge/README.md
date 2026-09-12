@@ -56,6 +56,30 @@ A walnut theme for the whole window and the diff colors to go with it: syntax co
 | London Portland | [`Commit Message - London Portland.sublime-settings`](Commit%20Message%20-%20London%20Portland.sublime-settings) | `Packages/User/Commit Message - London Portland.sublime-settings`; In Sublime Merge's Packages/User folder (Preferences › Browse Packages…) |
 | London Portland | [`File Mode - London Portland.sublime-settings`](File%20Mode%20-%20London%20Portland.sublime-settings) | `Packages/User/File Mode - London Portland.sublime-settings`; In Sublime Merge's Packages/User folder (Preferences › Browse Packages…) |
 | London Portland | [`Git Output - London Portland.sublime-settings`](Git%20Output%20-%20London%20Portland.sublime-settings) | `Packages/User/Git Output - London Portland.sublime-settings`; In Sublime Merge's Packages/User folder (Preferences › Browse Packages…) |
+| Paris Guimard | [`Paris Guimard.sublime-theme`](Paris%20Guimard.sublime-theme) | `Packages/User/Paris Guimard.sublime-theme`; In Sublime Merge's Packages/User folder (Preferences › Browse Packages…) |
+| Paris Guimard | [`Paris Guimard.sublime-color-scheme`](Paris%20Guimard.sublime-color-scheme) | `Packages/User/Paris Guimard.sublime-color-scheme`; In Sublime Merge's Packages/User folder (Preferences › Browse Packages…) |
+| Paris Guimard | [`Widget - Paris Guimard.hidden-color-scheme`](Widget%20-%20Paris%20Guimard.hidden-color-scheme) | `Packages/User/Widget - Paris Guimard.hidden-color-scheme`; In Sublime Merge's Packages/User folder (Preferences › Browse Packages…) |
+| Paris Guimard | [`Widget - Paris Guimard.sublime-settings`](Widget%20-%20Paris%20Guimard.sublime-settings) | `Packages/User/Widget - Paris Guimard.sublime-settings`; In Sublime Merge's Packages/User folder (Preferences › Browse Packages…) |
+| Paris Guimard | [`Diff - Paris Guimard.sublime-settings`](Diff%20-%20Paris%20Guimard.sublime-settings) | `Packages/User/Diff - Paris Guimard.sublime-settings`; In Sublime Merge's Packages/User folder (Preferences › Browse Packages…) |
+| Paris Guimard | [`Commit Message - Paris Guimard.sublime-settings`](Commit%20Message%20-%20Paris%20Guimard.sublime-settings) | `Packages/User/Commit Message - Paris Guimard.sublime-settings`; In Sublime Merge's Packages/User folder (Preferences › Browse Packages…) |
+| Paris Guimard | [`File Mode - Paris Guimard.sublime-settings`](File%20Mode%20-%20Paris%20Guimard.sublime-settings) | `Packages/User/File Mode - Paris Guimard.sublime-settings`; In Sublime Merge's Packages/User folder (Preferences › Browse Packages…) |
+| Paris Guimard | [`Git Output - Paris Guimard.sublime-settings`](Git%20Output%20-%20Paris%20Guimard.sublime-settings) | `Packages/User/Git Output - Paris Guimard.sublime-settings`; In Sublime Merge's Packages/User folder (Preferences › Browse Packages…) |
+| Paris Catacombes | [`Paris Catacombes.sublime-theme`](Paris%20Catacombes.sublime-theme) | `Packages/User/Paris Catacombes.sublime-theme`; In Sublime Merge's Packages/User folder (Preferences › Browse Packages…) |
+| Paris Catacombes | [`Paris Catacombes.sublime-color-scheme`](Paris%20Catacombes.sublime-color-scheme) | `Packages/User/Paris Catacombes.sublime-color-scheme`; In Sublime Merge's Packages/User folder (Preferences › Browse Packages…) |
+| Paris Catacombes | [`Widget - Paris Catacombes.hidden-color-scheme`](Widget%20-%20Paris%20Catacombes.hidden-color-scheme) | `Packages/User/Widget - Paris Catacombes.hidden-color-scheme`; In Sublime Merge's Packages/User folder (Preferences › Browse Packages…) |
+| Paris Catacombes | [`Widget - Paris Catacombes.sublime-settings`](Widget%20-%20Paris%20Catacombes.sublime-settings) | `Packages/User/Widget - Paris Catacombes.sublime-settings`; In Sublime Merge's Packages/User folder (Preferences › Browse Packages…) |
+| Paris Catacombes | [`Diff - Paris Catacombes.sublime-settings`](Diff%20-%20Paris%20Catacombes.sublime-settings) | `Packages/User/Diff - Paris Catacombes.sublime-settings`; In Sublime Merge's Packages/User folder (Preferences › Browse Packages…) |
+| Paris Catacombes | [`Commit Message - Paris Catacombes.sublime-settings`](Commit%20Message%20-%20Paris%20Catacombes.sublime-settings) | `Packages/User/Commit Message - Paris Catacombes.sublime-settings`; In Sublime Merge's Packages/User folder (Preferences › Browse Packages…) |
+| Paris Catacombes | [`File Mode - Paris Catacombes.sublime-settings`](File%20Mode%20-%20Paris%20Catacombes.sublime-settings) | `Packages/User/File Mode - Paris Catacombes.sublime-settings`; In Sublime Merge's Packages/User folder (Preferences › Browse Packages…) |
+| Paris Catacombes | [`Git Output - Paris Catacombes.sublime-settings`](Git%20Output%20-%20Paris%20Catacombes.sublime-settings) | `Packages/User/Git Output - Paris Catacombes.sublime-settings`; In Sublime Merge's Packages/User folder (Preferences › Browse Packages…) |
+| Paris Carrelage | [`Paris Carrelage.sublime-theme`](Paris%20Carrelage.sublime-theme) | `Packages/User/Paris Carrelage.sublime-theme`; In Sublime Merge's Packages/User folder (Preferences › Browse Packages…) |
+| Paris Carrelage | [`Paris Carrelage.sublime-color-scheme`](Paris%20Carrelage.sublime-color-scheme) | `Packages/User/Paris Carrelage.sublime-color-scheme`; In Sublime Merge's Packages/User folder (Preferences › Browse Packages…) |
+| Paris Carrelage | [`Widget - Paris Carrelage.hidden-color-scheme`](Widget%20-%20Paris%20Carrelage.hidden-color-scheme) | `Packages/User/Widget - Paris Carrelage.hidden-color-scheme`; In Sublime Merge's Packages/User folder (Preferences › Browse Packages…) |
+| Paris Carrelage | [`Widget - Paris Carrelage.sublime-settings`](Widget%20-%20Paris%20Carrelage.sublime-settings) | `Packages/User/Widget - Paris Carrelage.sublime-settings`; In Sublime Merge's Packages/User folder (Preferences › Browse Packages…) |
+| Paris Carrelage | [`Diff - Paris Carrelage.sublime-settings`](Diff%20-%20Paris%20Carrelage.sublime-settings) | `Packages/User/Diff - Paris Carrelage.sublime-settings`; In Sublime Merge's Packages/User folder (Preferences › Browse Packages…) |
+| Paris Carrelage | [`Commit Message - Paris Carrelage.sublime-settings`](Commit%20Message%20-%20Paris%20Carrelage.sublime-settings) | `Packages/User/Commit Message - Paris Carrelage.sublime-settings`; In Sublime Merge's Packages/User folder (Preferences › Browse Packages…) |
+| Paris Carrelage | [`File Mode - Paris Carrelage.sublime-settings`](File%20Mode%20-%20Paris%20Carrelage.sublime-settings) | `Packages/User/File Mode - Paris Carrelage.sublime-settings`; In Sublime Merge's Packages/User folder (Preferences › Browse Packages…) |
+| Paris Carrelage | [`Git Output - Paris Carrelage.sublime-settings`](Git%20Output%20-%20Paris%20Carrelage.sublime-settings) | `Packages/User/Git Output - Paris Carrelage.sublime-settings`; In Sublime Merge's Packages/User folder (Preferences › Browse Packages…) |
 
 ## Turn it on
 
@@ -93,6 +117,24 @@ A walnut theme for the whole window and the diff colors to go with it: syntax co
 
 ```json
 "theme": "London Portland.sublime-theme"
+```
+
+**Paris Guimard**, in Preferences › Edit Settings… (Preferences.sublime-settings):
+
+```json
+"theme": "Paris Guimard.sublime-theme"
+```
+
+**Paris Catacombes**, in Preferences › Edit Settings… (Preferences.sublime-settings):
+
+```json
+"theme": "Paris Catacombes.sublime-theme"
+```
+
+**Paris Carrelage**, in Preferences › Edit Settings… (Preferences.sublime-settings):
+
+```json
+"theme": "Paris Carrelage.sublime-theme"
 ```
 
 ## Follow light and dark
@@ -155,6 +197,30 @@ In Preferences › Edit Settings… (Preferences.sublime-settings):
 - Delete `Packages/User/Commit Message - London Portland.sublime-settings`.
 - Delete `Packages/User/File Mode - London Portland.sublime-settings`.
 - Delete `Packages/User/Git Output - London Portland.sublime-settings`.
+- Delete `Packages/User/Paris Guimard.sublime-theme`.
+- Delete `Packages/User/Paris Guimard.sublime-color-scheme`.
+- Delete `Packages/User/Widget - Paris Guimard.hidden-color-scheme`.
+- Delete `Packages/User/Widget - Paris Guimard.sublime-settings`.
+- Delete `Packages/User/Diff - Paris Guimard.sublime-settings`.
+- Delete `Packages/User/Commit Message - Paris Guimard.sublime-settings`.
+- Delete `Packages/User/File Mode - Paris Guimard.sublime-settings`.
+- Delete `Packages/User/Git Output - Paris Guimard.sublime-settings`.
+- Delete `Packages/User/Paris Catacombes.sublime-theme`.
+- Delete `Packages/User/Paris Catacombes.sublime-color-scheme`.
+- Delete `Packages/User/Widget - Paris Catacombes.hidden-color-scheme`.
+- Delete `Packages/User/Widget - Paris Catacombes.sublime-settings`.
+- Delete `Packages/User/Diff - Paris Catacombes.sublime-settings`.
+- Delete `Packages/User/Commit Message - Paris Catacombes.sublime-settings`.
+- Delete `Packages/User/File Mode - Paris Catacombes.sublime-settings`.
+- Delete `Packages/User/Git Output - Paris Catacombes.sublime-settings`.
+- Delete `Packages/User/Paris Carrelage.sublime-theme`.
+- Delete `Packages/User/Paris Carrelage.sublime-color-scheme`.
+- Delete `Packages/User/Widget - Paris Carrelage.hidden-color-scheme`.
+- Delete `Packages/User/Widget - Paris Carrelage.sublime-settings`.
+- Delete `Packages/User/Diff - Paris Carrelage.sublime-settings`.
+- Delete `Packages/User/Commit Message - Paris Carrelage.sublime-settings`.
+- Delete `Packages/User/File Mode - Paris Carrelage.sublime-settings`.
+- Delete `Packages/User/Git Output - Paris Carrelage.sublime-settings`.
 - Remove the line you added to turn it on.
 
 Generated by `build.py` from `palette.py` (v0.3.0). Edit the port in `ports/`, not these files.

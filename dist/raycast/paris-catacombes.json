@@ -1,0 +1,21 @@
+{
+  "author": "Oddur Sigurdsson",
+  "authorUsername": "oddurs",
+  "version": "1",
+  "name": "Paris Catacombes",
+  "appearance": "dark",
+  "colors": {
+    "background": "#062017",
+    "backgroundSecondary": "#061811",
+    "text": "#CFDED7",
+    "selection": "#D78E3C",
+    "loader": "#EBC342",
+    "red": "#EF796F",
+    "orange": "#D78E3C",
+    "yellow": "#EBC342",
+    "green": "#73C686",
+    "blue": "#639BD5",
+    "purple": "#E783BD",
+    "magenta": "#EEA85C"
+  }
+}

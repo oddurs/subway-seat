@@ -1,0 +1,130 @@
+{
+  "manifest_version": 3,
+  "name": "Paris Carrelage",
+  "version": "0.3.0",
+  "description": "Harvest gold, burnt orange and avocado on walnut. Bevelled white tile under a vaulted platform. The light one.",
+  "theme": {
+    "colors": {
+      "frame": [
+        200,
+        218,
+        209
+      ],
+      "frame_inactive": [
+        213,
+        227,
+        221
+      ],
+      "frame_incognito": [
+        196,
+        185,
+        194
+      ],
+      "frame_incognito_inactive": [
+        196,
+        185,
+        194
+      ],
+      "background_tab": [
+        200,
+        218,
+        209
+      ],
+      "background_tab_inactive": [
+        213,
+        227,
+        221
+      ],
+      "background_tab_incognito": [
+        196,
+        185,
+        194
+      ],
+      "background_tab_incognito_inactive": [
+        196,
+        185,
+        194
+      ],
+      "toolbar": [
+        226,
+        237,
+        232
+      ],
+      "tab_text": [
+        33,
+        53,
+        45
+      ],
+      "tab_background_text": [
+        74,
+        105,
+        92
+      ],
+      "tab_background_text_inactive": [
+        92,
+        129,
+        113
+      ],
+      "tab_background_text_incognito": [
+        64,
+        91,
+        79
+      ],
+      "tab_background_text_incognito_inactive": [
+        74,
+        105,
+        92
+      ],
+      "bookmark_text": [
+        51,
+        74,
+        65
+      ],
+      "toolbar_button_icon": [
+        51,
+        74,
+        65
+      ],
+      "toolbar_text": [
+        33,
+        53,
+        45
+      ],
+      "omnibox_background": [
+        213,
+        227,
+        221
+      ],
+      "omnibox_text": [
+        33,
+        53,
+        45
+      ],
+      "ntp_background": [
+        226,
+        237,
+        232
+      ],
+      "ntp_text": [
+        33,
+        53,
+        45
+      ],
+      "ntp_link": [
+        9,
+        97,
+        169
+      ],
+      "ntp_header": [
+        155,
+        93,
+        0
+      ],
+      "button_background": [
+        200,
+        218,
+        209
+      ]
+    }
+  }
+}

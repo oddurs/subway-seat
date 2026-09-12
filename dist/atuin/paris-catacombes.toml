@@ -1,0 +1,21 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# Paris Catacombes for Atuin.
+[theme]
+name = "paris-catacombes"
+
+[colors]
+AlertInfo = "#639BD5"
+AlertWarn = "#EBC342"
+AlertError = "#EF796F"
+Annotation = "#648576"
+Base = "#CFDED7"
+Guidance = "#9EB3AA"
+Important = "#D78E3C"
+Title = "#EBC342"
+Muted = "#456A5B"
+SyntaxCommand = "#EBC342"
+SyntaxFlag = "#6FB393"
+SyntaxString = "#73C686"
+SyntaxVariable = "#E783BD"
+SyntaxOperator = "#D78E3C"
+SyntaxComment = "#648576"

@@ -1,0 +1,159 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+scheme:
+  system: "tinted8"
+  supports:
+    styling-spec: "0.2.0"
+  author: "oddurs (https://github.com/oddurs/subway-seat)"
+  name: "Paris Guimard"
+  slug: "paris-guimard"
+  family: "Subway Seat"
+  style: "Paris Guimard"
+  description: "Cast-iron green off a Metro entrance. The original green."
+variant: "dark"
+palette:
+  black: "#0E3125"
+  black-bright: "#194A39"
+  black-dim: "#0C261C"
+  white: "#D3E2DB"
+  white-bright: "#E6F0EB"
+  white-dim: "#BBCDC5"
+  gray: "#67897A"
+  gray-bright: "#86A195"
+  gray-dim: "#47705F"
+  red: "#DA6058"
+  red-bright: "#EF796F"
+  green: "#73C686"
+  green-bright: "#82D896"
+  yellow: "#EBC342"
+  yellow-bright: "#FBD664"
+  blue: "#639BD5"
+  blue-bright: "#82B7EE"
+  magenta: "#D78E3C"
+  magenta-bright: "#EEA85C"
+  cyan: "#6FB393"
+  cyan-bright: "#8ECFAF"
+  orange: "#D78E3C"
+  orange-bright: "#EEA85C"
+  brown: "#E783BD"
+syntax:
+  comment: "#67897A" # comment
+  punctuation.definition.comment: "#67897A" # comment
+  constant: "#EF796F" # constant
+  constant.numeric: "#EF796F" # number
+  constant.language: "#EF796F" # boolean
+  constant.character: "#E783BD" # string.escape
+  entity.name: "#D3E2DB" # variable
+  entity.name.function: "#EBC342" # function
+  entity.name.class: "#6FB393" # type
+  entity.name.type: "#6FB393" # type
+  entity.name.namespace: "#A2B7AE" # namespace
+  entity.name.tag: "#D78E3C" # tag
+  entity.name.label: "#E783BD" # decorator
+  entity.name.section: "#EBC342" # heading
+  entity.other: "#D3E2DB" # variable
+  entity.other.attribute-name: "#EBC342" # attribute
+  entity.other.inherited-class: "#6FB393" # type
+  invalid: "#DA6058" # invalid
+  invalid.deprecated: "#E783BD" # clay
+  keyword: "#D78E3C" # keyword
+  keyword.operator: "#86A195" # operator
+  markup: "#D3E2DB" # text
+  markup.bold: "#E6F0EB" # strong
+  markup.italic: "#D3E2DB" # emphasis
+  markup.heading: "#EBC342" # heading
+  markup.link: "#639BD5" # link
+  markup.list: "#D78E3C" # keyword
+  markup.quote: "#A2B7AE" # quote
+  markup.raw: "#73C686" # code
+  markup.inserted: "#73C686" # green
+  markup.deleted: "#EF796F" # red_hi
+  markup.changed: "#EBC342" # yellow
+  meta: "#D3E2DB" # text
+  meta.annotation: "#E783BD" # decorator
+  punctuation: "#86A195" # punctuation
+  punctuation.definition.string: "#73C686" # string
+  punctuation.section: "#86A195" # punctuation
+  storage: "#D78E3C" # storage
+  string: "#73C686" # string
+  string.regexp: "#E783BD" # regexp
+  string.interpolated: "#E783BD" # string.escape
+  support: "#EBC342" # function
+  support.class: "#6FB393" # type
+  support.type: "#6FB393" # type.builtin
+  support.constant: "#EF796F" # constant
+  support.function.builtin: "#EBC342" # function.builtin
+  support.variable: "#EF796F" # variable.builtin
+  variable: "#D3E2DB" # variable
+  variable.language: "#EF796F" # variable.builtin
+  variable.parameter: "#BBCDC5" # parameter
+  variable.other.property: "#BBCDC5" # property
+ui:
+  accent:
+    normal: "#D78E3C"
+  border:
+    normal: "#113E2E"
+  chrome:
+    background:
+      normal: "#0C261C"
+      dark: "#0A1D15"
+      light: "#113E2E"
+    foreground:
+      normal: "#BBCDC5"
+      dark: "#A2B7AE"
+      light: "#D3E2DB"
+  cursor:
+    normal:
+      background: "#EBC342"
+      foreground: "#0A1D15"
+    muted:
+      background: "#67897A"
+      foreground: "#0E3125"
+  deprecated: "#E783BD"
+  global:
+    background:
+      normal: "#0E3125"
+      dark: "#0C261C"
+      light: "#113E2E"
+    foreground:
+      normal: "#D3E2DB"
+      dark: "#BBCDC5"
+      light: "#E6F0EB"
+  gutter:
+    background: "#0E3125"
+    foreground: "#67897A"
+  highlight:
+    button:
+      background: "#194A39"
+      foreground: "#E6F0EB"
+    line:
+      background: "#113E2E"
+      foreground: "#EBC342"
+    search:
+      background: "#505D2E"
+      foreground: "#E6F0EB"
+    text:
+      background: "#194A39"
+      foreground: "#D3E2DB"
+      active-background: "#285A47"
+      active-foreground: "#E6F0EB"
+  indent-guide:
+    background: "#194A39"
+    active-background: "#47705F"
+  link:
+    normal:
+      background: "#0E3125"
+      foreground: "#639BD5"
+  selection:
+    background: "#285A47"
+    foreground: "#E6F0EB"
+    inactive-background: "#194A39"
+  status:
+    error: "#EF796F"
+    info: "#639BD5"
+    success: "#73C686"
+    warning: "#EBC342"
+  tooltip:
+    background: "#113E2E"
+    foreground: "#D3E2DB"
+  whitespace:
+    foreground: "#47705F"

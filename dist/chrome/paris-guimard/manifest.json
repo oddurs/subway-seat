@@ -1,0 +1,133 @@
+{
+  "manifest_version": 3,
+  "name": "Paris Guimard",
+  "version": "0.3.0",
+  "description": "Harvest gold, burnt orange and avocado on walnut. Cast-iron green off a Metro entrance. The original green.",
+  "theme": {
+    "colors": {
+      "frame": [
+        10,
+        29,
+        21
+      ],
+      "frame_inactive": [
+        10,
+        29,
+        21
+      ],
+      "frame_incognito": [
+        45,
+        45,
+        48
+      ],
+      "frame_incognito_inactive": [
+        45,
+        45,
+        48
+      ],
+      "background_tab": [
+        10,
+        29,
+        21
+      ],
+      "background_tab_inactive": [
+        10,
+        29,
+        21
+      ],
+      "background_tab_incognito": [
+        45,
+        45,
+        48
+      ],
+      "background_tab_incognito_inactive": [
+        45,
+        45,
+        48
+      ],
+      "toolbar": [
+        14,
+        49,
+        37
+      ],
+      "tab_text": [
+        211,
+        226,
+        219
+      ],
+      "tab_background_text": [
+        134,
+        161,
+        149
+      ],
+      "tab_background_text_inactive": [
+        103,
+        137,
+        122
+      ],
+      "tab_background_text_incognito": [
+        162,
+        183,
+        174
+      ],
+      "tab_background_text_incognito_inactive": [
+        134,
+        161,
+        149
+      ],
+      "bookmark_text": [
+        187,
+        205,
+        197
+      ],
+      "toolbar_button_icon": [
+        187,
+        205,
+        197
+      ],
+      "toolbar_text": [
+        211,
+        226,
+        219
+      ],
+      "omnibox_background": [
+        12,
+        38,
+        28
+      ],
+      "omnibox_text": [
+        211,
+        226,
+        219
+      ],
+      "ntp_background": [
+        14,
+        49,
+        37
+      ],
+      "ntp_text": [
+        211,
+        226,
+        219
+      ],
+      "ntp_link": [
+        99,
+        155,
+        213
+      ],
+      "ntp_header": [
+        215,
+        142,
+        60
+      ],
+      "button_background": [
+        10,
+        29,
+        21
+      ]
+    },
+    "properties": {
+      "ntp_logo_alternate": 1
+    }
+  }
+}

@@ -1,0 +1,26 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# Paris Carrelage for television.
+# general
+background = '#E2EDE8'
+border_fg = '#88AF9E'
+text_fg = '#21352D'
+dimmed_text_fg = '#5C8171'
+# input
+input_text_fg = '#21352D'
+result_count_fg = '#5C8171'
+# results
+result_name_fg = '#334A41'
+result_line_number_fg = '#5C8171'
+result_value_fg = '#21352D'
+selection_bg = '#B6D2C5'
+selection_fg = '#16241E'
+match_fg = '#856A00'
+# preview
+preview_title_fg = '#334A41'
+# modes
+channel_mode_fg = '#E2EDE8'
+channel_mode_bg = '#9B5D00'
+remote_control_mode_fg = '#E2EDE8'
+remote_control_mode_bg = '#856A00'
+action_picker_mode_fg = '#E2EDE8'
+action_picker_mode_bg = '#007752'

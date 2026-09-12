@@ -1,0 +1,21 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# Paris Carrelage for Atuin.
+[theme]
+name = "paris-carrelage"
+
+[colors]
+AlertInfo = "#0961A9"
+AlertWarn = "#856A00"
+AlertError = "#C82C2C"
+Annotation = "#5C8171"
+Base = "#21352D"
+Guidance = "#405B4F"
+Important = "#9B5D00"
+Title = "#856A00"
+Muted = "#759A8A"
+SyntaxCommand = "#856A00"
+SyntaxFlag = "#007752"
+SyntaxString = "#00823B"
+SyntaxVariable = "#B43586"
+SyntaxOperator = "#9B5D00"
+SyntaxComment = "#5C8171"

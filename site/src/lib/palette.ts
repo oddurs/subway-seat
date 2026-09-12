@@ -1,8 +1,17 @@
 import data from "@/theme/palette.json";
 
 export type ColorName = keyof (typeof data.flavors)[number]["colors"];
-export type FlavorId = "walnut" | "tunnel" | "enamel" | "moquette" | "deep" | "portland";
-export type FamilyId = "new-york" | "london";
+export type FlavorId =
+  | "walnut"
+  | "tunnel"
+  | "enamel"
+  | "moquette"
+  | "deep"
+  | "portland"
+  | "guimard"
+  | "catacombes"
+  | "carrelage";
+export type FamilyId = "new-york" | "london" | "paris";
 
 export type Flavor = {
   id: FlavorId;
@@ -60,6 +69,9 @@ const SHORT: Record<FlavorId, string> = {
   moquette: "Moquette",
   deep: "Deep Level",
   portland: "Portland",
+  guimard: "Guimard",
+  catacombes: "Catacombes",
+  carrelage: "Carrelage",
 };
 
 export function shortName(id: FlavorId) {

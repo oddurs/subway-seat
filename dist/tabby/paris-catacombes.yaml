@@ -1,0 +1,26 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# One entry for terminal.customColorSchemes in Tabby's config.yaml, indented to paste under that key.
+    - name: Paris Catacombes
+      foreground: '#CFDED7'
+      background: '#062017'
+      cursor: '#EBC342'
+      cursorAccent: '#062017'
+      selection: '#1E4738'
+      selectionForeground: '#E4EEE9'
+      colors:
+        - '#13382A'
+        - '#DA6058'
+        - '#73C686'
+        - '#EBC342'
+        - '#639BD5'
+        - '#D78E3C'
+        - '#6FB393'
+        - '#B8CAC2'
+        - '#648576'
+        - '#EF796F'
+        - '#82D896'
+        - '#FBD664'
+        - '#82B7EE'
+        - '#EEA85C'
+        - '#8ECFAF'
+        - '#E4EEE9'

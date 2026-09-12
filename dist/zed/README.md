@@ -50,6 +50,24 @@ All three flavors in one theme family: copy the theme file, or install the dist/
 "theme": "London Portland"
 ```
 
+**Paris Guimard**, in settings.json:
+
+```json
+"theme": "Paris Guimard"
+```
+
+**Paris Catacombes**, in settings.json:
+
+```json
+"theme": "Paris Catacombes"
+```
+
+**Paris Carrelage**, in settings.json:
+
+```json
+"theme": "Paris Carrelage"
+```
+
 ## Follow light and dark
 
 In settings.json:

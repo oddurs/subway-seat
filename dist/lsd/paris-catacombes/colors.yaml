@@ -1,0 +1,45 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# Paris Catacombes for lsd. File names follow LS_COLORS (see the vivid port).
+user: "#EBC342"
+group: "#B8CAC2"
+permission:
+  read: "#EBC342"
+  write: "#D78E3C"
+  exec: "#73C686"
+  exec-sticky: "#E783BD"
+  no-access: "#456A5B"
+  octal: "#E783BD"
+  acl: "#648576"
+  context: "#648576"
+attributes:
+  archive: "#9EB3AA"
+  read: "#EBC342"
+  hidden: "#648576"
+  system: "#E783BD"
+date:
+  hour-old: "#73C686"
+  day-old: "#B8CAC2"
+  older: "#9EB3AA"
+size:
+  none: "#648576"
+  small: "#73C686"
+  medium: "#EBC342"
+  large: "#D78E3C"
+inode:
+  valid: "#648576"
+  invalid: "#456A5B"
+links:
+  valid: "#6FB393"
+  invalid: "#456A5B"
+tree-edge: "#456A5B"
+git-status:
+  default: "#9EB3AA"
+  unmodified: "#648576"
+  ignored: "#456A5B"
+  new-in-index: "#73C686"
+  new-in-workdir: "#73C686"
+  typechange: "#E783BD"
+  deleted: "#EF796F"
+  renamed: "#6FB393"
+  modified: "#EBC342"
+  conflicted: "#DA6058"

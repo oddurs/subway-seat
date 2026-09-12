@@ -1,0 +1,18 @@
+// Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+// Paris Guimard: legacy color-list theme for Zellij before 0.42.
+
+themes {
+    paris-guimard {
+        fg "#D3E2DB"
+        bg "#194A39"
+        black "#0C261C"
+        red "#EF796F"
+        green "#D78E3C" // active frame, selected tab
+        yellow "#EBC342"
+        blue "#639BD5"
+        magenta "#E783BD"
+        orange "#EBC342" // frame in other modes
+        cyan "#6FB393"
+        white "#E6F0EB"
+    }
+}

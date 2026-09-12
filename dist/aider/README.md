@@ -14,6 +14,9 @@ Prompt, reply, tool and completion-menu colors for aider's config file. Code blo
 | London Moquette | [`london-moquette.aider.conf.yml`](london-moquette.aider.conf.yml) | add to the end of `~/.aider.conf.yml` |
 | London Deep Level | [`london-deep-level.aider.conf.yml`](london-deep-level.aider.conf.yml) | add to the end of `~/.aider.conf.yml` |
 | London Portland | [`london-portland.aider.conf.yml`](london-portland.aider.conf.yml) | add to the end of `~/.aider.conf.yml` |
+| Paris Guimard | [`paris-guimard.aider.conf.yml`](paris-guimard.aider.conf.yml) | add to the end of `~/.aider.conf.yml` |
+| Paris Catacombes | [`paris-catacombes.aider.conf.yml`](paris-catacombes.aider.conf.yml) | add to the end of `~/.aider.conf.yml` |
+| Paris Carrelage | [`paris-carrelage.aider.conf.yml`](paris-carrelage.aider.conf.yml) | add to the end of `~/.aider.conf.yml` |
 
 ## Turn it on
 
@@ -51,6 +54,24 @@ cat london-deep-level.aider.conf.yml >> ~/.aider.conf.yml
 
 ```sh
 cat london-portland.aider.conf.yml >> ~/.aider.conf.yml
+```
+
+**Paris Guimard**, in ~/.aider.conf.yml (or .aider.conf.yml in a repo):
+
+```sh
+cat paris-guimard.aider.conf.yml >> ~/.aider.conf.yml
+```
+
+**Paris Catacombes**, in ~/.aider.conf.yml (or .aider.conf.yml in a repo):
+
+```sh
+cat paris-catacombes.aider.conf.yml >> ~/.aider.conf.yml
+```
+
+**Paris Carrelage**, in ~/.aider.conf.yml (or .aider.conf.yml in a repo):
+
+```sh
+cat paris-carrelage.aider.conf.yml >> ~/.aider.conf.yml
 ```
 
 ## Uninstall

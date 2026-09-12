@@ -1,0 +1,92 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+
+[colors]
+foreground = "#CFDED7"
+background = "#062017"
+cursor_bg = "#EBC342"
+cursor_border = "#EBC342"
+cursor_fg = "#062017"
+compose_cursor = "#E783BD"
+selection_bg = "#1E4738"
+selection_fg = "#E4EEE9"
+scrollbar_thumb = "#1E4738"
+split = "#0A2B20"
+visual_bell = "#0A2B20"
+ansi = [
+  "#13382A",
+  "#DA6058",
+  "#73C686",
+  "#EBC342",
+  "#639BD5",
+  "#D78E3C",
+  "#6FB393",
+  "#B8CAC2",
+]
+brights = [
+  "#648576",
+  "#EF796F",
+  "#82D896",
+  "#FBD664",
+  "#82B7EE",
+  "#EEA85C",
+  "#8ECFAF",
+  "#E4EEE9",
+]
+copy_mode_active_highlight_bg = { Color = "#6E572A" }
+copy_mode_active_highlight_fg = { Color = "#E4EEE9" }
+copy_mode_inactive_highlight_bg = { Color = "#4B5124" }
+copy_mode_inactive_highlight_fg = { Color = "#CFDED7" }
+quick_select_label_bg = { Color = "#D78E3C" }
+quick_select_label_fg = { Color = "#062017" }
+quick_select_match_bg = { Color = "#4B5124" }
+quick_select_match_fg = { Color = "#CFDED7" }
+
+[colors.tab_bar]
+background = "#05120C"
+inactive_tab_edge = "#0A2B20"
+
+[colors.tab_bar.active_tab]
+bg_color = "#062017"
+fg_color = "#EBC342"
+intensity = "Bold"
+italic = false
+strikethrough = false
+underline = "None"
+
+[colors.tab_bar.inactive_tab]
+bg_color = "#061811"
+fg_color = "#648576"
+intensity = "Normal"
+italic = false
+strikethrough = false
+underline = "None"
+
+[colors.tab_bar.inactive_tab_hover]
+bg_color = "#0A2B20"
+fg_color = "#CFDED7"
+intensity = "Normal"
+italic = false
+strikethrough = false
+underline = "None"
+
+[colors.tab_bar.new_tab]
+bg_color = "#05120C"
+fg_color = "#648576"
+intensity = "Normal"
+italic = false
+strikethrough = false
+underline = "None"
+
+[colors.tab_bar.new_tab_hover]
+bg_color = "#0A2B20"
+fg_color = "#EBC342"
+intensity = "Normal"
+italic = false
+strikethrough = false
+underline = "None"
+
+[metadata]
+name = "Paris Catacombes"
+author = "oddurs"
+origin_url = "https://github.com/oddurs/subway-seat"
+aliases = []

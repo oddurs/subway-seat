@@ -14,6 +14,9 @@ Slack only lets themes color the sidebar and a few highlights; the message pane 
 | London Moquette | [`london-moquette.txt`](london-moquette.txt) | paste a string into Slack › Preferences › Themes › Import theme |
 | London Deep Level | [`london-deep-level.txt`](london-deep-level.txt) | paste a string into Slack › Preferences › Themes › Import theme |
 | London Portland | [`london-portland.txt`](london-portland.txt) | paste a string into Slack › Preferences › Themes › Import theme |
+| Paris Guimard | [`paris-guimard.txt`](paris-guimard.txt) | paste a string into Slack › Preferences › Themes › Import theme |
+| Paris Catacombes | [`paris-catacombes.txt`](paris-catacombes.txt) | paste a string into Slack › Preferences › Themes › Import theme |
+| Paris Carrelage | [`paris-carrelage.txt`](paris-carrelage.txt) | paste a string into Slack › Preferences › Themes › Import theme |
 
 ## Turn it on
 
@@ -56,6 +59,27 @@ and click “Switch sidebar theme”. The four colors also go one by one under C
 
 ```text
 Paste a string from london-portland.txt into Import theme, or into any message
+and click “Switch sidebar theme”. The four colors also go one by one under Custom theme.
+```
+
+**Paris Guimard**, in Slack › Preferences › Themes:
+
+```text
+Paste a string from paris-guimard.txt into Import theme, or into any message
+and click “Switch sidebar theme”. The four colors also go one by one under Custom theme.
+```
+
+**Paris Catacombes**, in Slack › Preferences › Themes:
+
+```text
+Paste a string from paris-catacombes.txt into Import theme, or into any message
+and click “Switch sidebar theme”. The four colors also go one by one under Custom theme.
+```
+
+**Paris Carrelage**, in Slack › Preferences › Themes:
+
+```text
+Paste a string from paris-carrelage.txt into Import theme, or into any message
 and click “Switch sidebar theme”. The four colors also go one by one under Custom theme.
 ```
 

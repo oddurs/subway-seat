@@ -1,0 +1,39 @@
+/* Subway Seat — generated from palette.py by build.py. Edit the palette, not this file. */
+/* Paris Carrelage for Tailwind v4: bg-ss-base, text-ss-text, … */
+
+@theme {
+  --color-ss-crust: #C8DAD1;
+  --color-ss-mantle: #D5E3DD;
+  --color-ss-base: #E2EDE8;
+  --color-ss-surface0: #B6D2C5;
+  --color-ss-surface1: #9DC1B1;
+  --color-ss-surface2: #88AF9E;
+  --color-ss-overlay0: #759A8A;
+  --color-ss-overlay1: #5C8171;
+  --color-ss-overlay2: #4A695C;
+  --color-ss-subtext0: #405B4F;
+  --color-ss-subtext1: #334A41;
+  --color-ss-text: #21352D;
+  --color-ss-text-hi: #16241E;
+  --color-ss-yellow: #856A00;
+  --color-ss-yellow-hi: #937500;
+  --color-ss-orange: #9B5D00;
+  --color-ss-orange-hi: #AE6800;
+  --color-ss-red: #A30013;
+  --color-ss-red-hi: #C82C2C;
+  --color-ss-green: #00823B;
+  --color-ss-green-hi: #00863D;
+  --color-ss-sage: #007752;
+  --color-ss-sage-hi: #2A8862;
+  --color-ss-denim: #0961A9;
+  --color-ss-denim-hi: #2E75B9;
+  --color-ss-clay: #B43586;
+  --color-ss-diff-add: #BDDECC;
+  --color-ss-diff-add-emph: #99CDB1;
+  --color-ss-diff-add-dim: #D6EBE0;
+  --color-ss-diff-del: #EDCCD0;
+  --color-ss-diff-del-emph: #E2ADB3;
+  --color-ss-diff-del-dim: #F4E0E3;
+  --color-ss-diff-chg: #DFD8BD;
+  --color-ss-diff-chg-emph: #D8CFAD;
+}

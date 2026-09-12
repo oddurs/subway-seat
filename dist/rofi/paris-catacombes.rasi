@@ -1,0 +1,86 @@
+/* Subway Seat — generated from palette.py by build.py. Edit the palette, not this file. */
+/* Paris Catacombes for rofi */
+
+@import "default"
+
+* {
+    crust:     #05120C;
+    mantle:    #061811;
+    base:      #062017;
+    surface0:  #0A2B20;
+    surface1:  #13382A;
+    surface2:  #1E4738;
+    overlay0:  #456A5B;
+    overlay1:  #648576;
+    overlay2:  #829D91;
+    subtext0:  #9EB3AA;
+    subtext1:  #B8CAC2;
+    text:      #CFDED7;
+    text-hi:   #E4EEE9;
+    yellow:    #EBC342;
+    yellow-hi: #FBD664;
+    orange:    #D78E3C;
+    orange-hi: #EEA85C;
+    red:       #DA6058;
+    red-hi:    #EF796F;
+    green:     #73C686;
+    green-hi:  #82D896;
+    sage:      #6FB393;
+    sage-hi:   #8ECFAF;
+    denim:     #639BD5;
+    denim-hi:  #82B7EE;
+    clay:      #E783BD;
+
+    paper:     #0A2B20;
+    edge:      #224136;
+    hover:     #19392E;
+    selection: #39564C;
+
+    /* the default theme's variables */
+    background:                  @paper;
+    foreground:                  @text;
+    lightbg:                     @hover;
+    lightfg:                     @subtext1;
+    red:                         @red;
+    blue:                        @denim;
+    border-color:                @edge;
+    separatorcolor:              @edge;
+    normal-background:           @paper;
+    normal-foreground:           @text;
+    alternate-normal-background: @paper;
+    alternate-normal-foreground: @text;
+    active-background:           @paper;
+    active-foreground:           @denim;
+    alternate-active-background: @paper;
+    alternate-active-foreground: @denim;
+    urgent-background:           @paper;
+    urgent-foreground:           @orange;
+    alternate-urgent-background: @paper;
+    alternate-urgent-foreground: @orange;
+    selected-normal-background:  @selection;
+    selected-normal-foreground:  @text-hi;
+    selected-active-background:  @selection;
+    selected-active-foreground:  #82B7EE;
+    selected-urgent-background:  @selection;
+    selected-urgent-foreground:  #EEA85C;
+}
+
+element-text {
+    highlight: bold #EBC342;
+}
+
+entry {
+    placeholder-color: #648576;
+}
+
+prompt {
+    text-color: @subtext1;
+}
+
+num-filtered-rows, num-rows, textbox-num-sep {
+    text-color: #648576;
+}
+
+scrollbar {
+    handle-color: #648576;
+}

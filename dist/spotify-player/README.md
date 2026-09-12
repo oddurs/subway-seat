@@ -14,6 +14,9 @@ A full palette plus component styles: gold track titles, orange progress bar, av
 | London Moquette | [`themes/london-moquette.toml`](themes/london-moquette.toml) | add to the end of `~/.config/spotify-player/theme.toml` |
 | London Deep Level | [`themes/london-deep-level.toml`](themes/london-deep-level.toml) | add to the end of `~/.config/spotify-player/theme.toml` |
 | London Portland | [`themes/london-portland.toml`](themes/london-portland.toml) | add to the end of `~/.config/spotify-player/theme.toml` |
+| Paris Guimard | [`themes/paris-guimard.toml`](themes/paris-guimard.toml) | add to the end of `~/.config/spotify-player/theme.toml` |
+| Paris Catacombes | [`themes/paris-catacombes.toml`](themes/paris-catacombes.toml) | add to the end of `~/.config/spotify-player/theme.toml` |
+| Paris Carrelage | [`themes/paris-carrelage.toml`](themes/paris-carrelage.toml) | add to the end of `~/.config/spotify-player/theme.toml` |
 | All three | [`theme.toml`](theme.toml) | all three flavors: use it as ~/.config/spotify-player/theme.toml if you have no themes of your own |
 
 ## Turn it on
@@ -52,6 +55,24 @@ theme = "london-deep-level"
 
 ```toml
 theme = "london-portland"
+```
+
+**Paris Guimard**, in ~/.config/spotify-player/app.toml, after adding the theme to the end of theme.toml:
+
+```toml
+theme = "paris-guimard"
+```
+
+**Paris Catacombes**, in ~/.config/spotify-player/app.toml, after adding the theme to the end of theme.toml:
+
+```toml
+theme = "paris-catacombes"
+```
+
+**Paris Carrelage**, in ~/.config/spotify-player/app.toml, after adding the theme to the end of theme.toml:
+
+```toml
+theme = "paris-carrelage"
 ```
 
 ## Uninstall

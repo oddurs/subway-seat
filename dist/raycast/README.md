@@ -20,6 +20,12 @@ Raycast themes are twelve colors: a walnut gradient, parchment text, a soft oran
 | London Deep Level | [`london-deep-level.link.txt`](london-deep-level.link.txt) | open a link in your browser, or run `open` on it |
 | London Portland | [`london-portland.json`](london-portland.json) | the theme as ray.so stores it; the links in the .link.txt file import it |
 | London Portland | [`london-portland.link.txt`](london-portland.link.txt) | open a link in your browser, or run `open` on it |
+| Paris Guimard | [`paris-guimard.json`](paris-guimard.json) | the theme as ray.so stores it; the links in the .link.txt file import it |
+| Paris Guimard | [`paris-guimard.link.txt`](paris-guimard.link.txt) | open a link in your browser, or run `open` on it |
+| Paris Catacombes | [`paris-catacombes.json`](paris-catacombes.json) | the theme as ray.so stores it; the links in the .link.txt file import it |
+| Paris Catacombes | [`paris-catacombes.link.txt`](paris-catacombes.link.txt) | open a link in your browser, or run `open` on it |
+| Paris Carrelage | [`paris-carrelage.json`](paris-carrelage.json) | the theme as ray.so stores it; the links in the .link.txt file import it |
+| Paris Carrelage | [`paris-carrelage.link.txt`](paris-carrelage.link.txt) | open a link in your browser, or run `open` on it |
 
 ## Turn it on
 
@@ -62,6 +68,27 @@ Or open the ray.so link beside it to preview the theme first.
 
 ```text
 Open the raycast://theme link in london-portland.link.txt, and Raycast asks to add London Portland.
+Or open the ray.so link beside it to preview the theme first.
+```
+
+**Paris Guimard**, in Raycast › Settings › General › Appearance:
+
+```text
+Open the raycast://theme link in paris-guimard.link.txt, and Raycast asks to add Paris Guimard.
+Or open the ray.so link beside it to preview the theme first.
+```
+
+**Paris Catacombes**, in Raycast › Settings › General › Appearance:
+
+```text
+Open the raycast://theme link in paris-catacombes.link.txt, and Raycast asks to add Paris Catacombes.
+Or open the ray.so link beside it to preview the theme first.
+```
+
+**Paris Carrelage**, in Raycast › Settings › General › Appearance:
+
+```text
+Open the raycast://theme link in paris-carrelage.link.txt, and Raycast asks to add Paris Carrelage.
 Or open the ray.so link beside it to preview the theme first.
 ```
 

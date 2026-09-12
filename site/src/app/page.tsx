@@ -13,6 +13,7 @@ import { PortGrid } from "@/components/PortGrid";
 import { Routes } from "@/components/Routes";
 import { Section } from "@/components/Section";
 import { Shag, type ShagPalette } from "@/components/Shag";
+import { Carrelage, type TilePalette } from "@/components/Carrelage";
 import { Weave, type WeavePalette } from "@/components/Weave";
 import { TerminalDemo } from "@/components/TerminalDemo";
 import { Workbench } from "@/components/Workbench";
@@ -49,6 +50,20 @@ const weave = Object.fromEntries(
   }),
 ) as Record<FlavorId, WeavePalette>;
 
+const tile = Object.fromEntries(
+  flavors.map((f) => {
+    const c = f.colors;
+    const a = f.art;
+    const palette: TilePalette = {
+      grout: c.surface0,
+      // Glazed white tile is never one white: every face fired a little apart.
+      faces: [c.subtext1, c.text, c.subtext0, c.text, c.subtext1, c.overlay2],
+      accents: [a.clay, a.green, a.yellow, a.denim, a.orange, a.sage],
+    };
+    return [f.id, palette];
+  }),
+) as Record<FlavorId, TilePalette>;
+
 export default function Home() {
   const count = ports().length;
   return (
@@ -62,10 +77,13 @@ export default function Home() {
         <div data-only="london">
           <Weave palettes={weave} height={130} />
         </div>
+        <div data-only="paris">
+          <Carrelage palettes={tile} height={130} />
+        </div>
         <div {...stylex.props(styles.sections)}>
           <Section
             id="flavors"
-            label="Two cities, six flavors"
+            label="Three cities, nine flavors"
             title="Pick a seat."
             intro="Every flavor defines the same 26 roles, so a port written against roles works in all of them. New York rides warm; London rides cool and spends its color far more carefully. Pick one and the whole site changes with you — type, texture and signage included."
           >
@@ -74,6 +92,9 @@ export default function Home() {
             </div>
             <div data-only="london">
               <FlavorCards flavors={flavors.filter((f) => f.family === "london")} />
+            </div>
+            <div data-only="paris">
+              <FlavorCards flavors={flavors.filter((f) => f.family === "paris")} />
             </div>
           </Section>
 

@@ -14,6 +14,9 @@ ANSI colors plus cursor, cursor guide, selection, link, search match, underline,
 | London Moquette | [`London Moquette.itermcolors`](London%20Moquette.itermcolors) | Open the file to import it as a color preset |
 | London Deep Level | [`London Deep Level.itermcolors`](London%20Deep%20Level.itermcolors) | Open the file to import it as a color preset |
 | London Portland | [`London Portland.itermcolors`](London%20Portland.itermcolors) | Open the file to import it as a color preset |
+| Paris Guimard | [`Paris Guimard.itermcolors`](Paris%20Guimard.itermcolors) | Open the file to import it as a color preset |
+| Paris Catacombes | [`Paris Catacombes.itermcolors`](Paris%20Catacombes.itermcolors) | Open the file to import it as a color preset |
+| Paris Carrelage | [`Paris Carrelage.itermcolors`](Paris%20Carrelage.itermcolors) | Open the file to import it as a color preset |
 | All three | [`Subway Seat Light and Dark.itermcolors`](Subway%20Seat%20Light%20and%20Dark.itermcolors) | Open the file to import it as a color preset; it switches with the macOS appearance (iTerm2 3.5+) |
 
 ## Turn it on
@@ -58,6 +61,27 @@ open "London Deep Level.itermcolors"   # imports the preset
 ```sh
 open "London Portland.itermcolors"   # imports the preset
 # then Color Presets… › London Portland
+```
+
+**Paris Guimard**, in iTerm2 › Settings › Profiles › Colors › Color Presets… › Import…:
+
+```sh
+open "Paris Guimard.itermcolors"   # imports the preset
+# then Color Presets… › Paris Guimard
+```
+
+**Paris Catacombes**, in iTerm2 › Settings › Profiles › Colors › Color Presets… › Import…:
+
+```sh
+open "Paris Catacombes.itermcolors"   # imports the preset
+# then Color Presets… › Paris Catacombes
+```
+
+**Paris Carrelage**, in iTerm2 › Settings › Profiles › Colors › Color Presets… › Import…:
+
+```sh
+open "Paris Carrelage.itermcolors"   # imports the preset
+# then Color Presets… › Paris Carrelage
 ```
 
 ## Follow light and dark

@@ -1,0 +1,39 @@
+/* Subway Seat — generated from palette.py by build.py. Edit the palette, not this file. */
+/* Paris Guimard for Tailwind v4: bg-ss-base, text-ss-text, … */
+
+@theme {
+  --color-ss-crust: #0A1D15;
+  --color-ss-mantle: #0C261C;
+  --color-ss-base: #0E3125;
+  --color-ss-surface0: #113E2E;
+  --color-ss-surface1: #194A39;
+  --color-ss-surface2: #285A47;
+  --color-ss-overlay0: #47705F;
+  --color-ss-overlay1: #67897A;
+  --color-ss-overlay2: #86A195;
+  --color-ss-subtext0: #A2B7AE;
+  --color-ss-subtext1: #BBCDC5;
+  --color-ss-text: #D3E2DB;
+  --color-ss-text-hi: #E6F0EB;
+  --color-ss-yellow: #EBC342;
+  --color-ss-yellow-hi: #FBD664;
+  --color-ss-orange: #D78E3C;
+  --color-ss-orange-hi: #EEA85C;
+  --color-ss-red: #DA6058;
+  --color-ss-red-hi: #EF796F;
+  --color-ss-green: #73C686;
+  --color-ss-green-hi: #82D896;
+  --color-ss-sage: #6FB393;
+  --color-ss-sage-hi: #8ECFAF;
+  --color-ss-denim: #639BD5;
+  --color-ss-denim-hi: #82B7EE;
+  --color-ss-clay: #E783BD;
+  --color-ss-diff-add: #21422E;
+  --color-ss-diff-add-emph: #2E563B;
+  --color-ss-diff-add-dim: #193525;
+  --color-ss-diff-del: #402E26;
+  --color-ss-diff-del-emph: #5D3830;
+  --color-ss-diff-del-dim: #2D2820;
+  --color-ss-diff-chg: #2E381C;
+  --color-ss-diff-chg-emph: #444821;
+}

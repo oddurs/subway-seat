@@ -14,6 +14,9 @@ A walnut window with a recessed search field; the selected result sits on a soft
 | London Moquette | [`London Moquette.alfredappearance`](London%20Moquette.alfredappearance) | double-click it to import into Alfred |
 | London Deep Level | [`London Deep Level.alfredappearance`](London%20Deep%20Level.alfredappearance) | double-click it to import into Alfred |
 | London Portland | [`London Portland.alfredappearance`](London%20Portland.alfredappearance) | double-click it to import into Alfred |
+| Paris Guimard | [`Paris Guimard.alfredappearance`](Paris%20Guimard.alfredappearance) | double-click it to import into Alfred |
+| Paris Catacombes | [`Paris Catacombes.alfredappearance`](Paris%20Catacombes.alfredappearance) | double-click it to import into Alfred |
+| Paris Carrelage | [`Paris Carrelage.alfredappearance`](Paris%20Carrelage.alfredappearance) | double-click it to import into Alfred |
 
 ## Turn it on
 
@@ -51,6 +54,24 @@ Double-click London Deep Level.alfredappearance, then pick London Deep Level und
 
 ```text
 Double-click London Portland.alfredappearance, then pick London Portland under Appearance
+```
+
+**Paris Guimard**, in Alfred Preferences › Appearance:
+
+```text
+Double-click Paris Guimard.alfredappearance, then pick Paris Guimard under Appearance
+```
+
+**Paris Catacombes**, in Alfred Preferences › Appearance:
+
+```text
+Double-click Paris Catacombes.alfredappearance, then pick Paris Catacombes under Appearance
+```
+
+**Paris Carrelage**, in Alfred Preferences › Appearance:
+
+```text
+Double-click Paris Carrelage.alfredappearance, then pick Paris Carrelage under Appearance
 ```
 
 ## Follow light and dark

@@ -325,6 +325,168 @@
         "warning": "#896800",
         "error": "#C92B23"
       }
+    },
+    {
+      "name": "Paris Guimard",
+      "type": "custom",
+      "Background": "#0E3125",
+      "Foreground": "#D3E2DB",
+      "LightBlue": "#BBCDC5",
+      "AccentBlue": "#D78E3C",
+      "AccentPurple": "#E783BD",
+      "AccentCyan": "#6FB393",
+      "AccentGreen": "#73C686",
+      "AccentYellow": "#EBC342",
+      "AccentRed": "#EF796F",
+      "DiffAdded": "#21422E",
+      "DiffRemoved": "#402E26",
+      "Comment": "#67897A",
+      "Gray": "#86A195",
+      "DarkGray": "#285A47",
+      "GradientColors": [
+        "#DA6058",
+        "#D78E3C",
+        "#EBC342",
+        "#73C686"
+      ],
+      "text": {
+        "primary": "#D3E2DB",
+        "secondary": "#86A195",
+        "accent": "#E783BD",
+        "response": "#D3E2DB"
+      },
+      "background": {
+        "primary": "#0E3125",
+        "diff": {
+          "added": "#21422E",
+          "removed": "#402E26"
+        }
+      },
+      "ui": {
+        "comment": "#67897A",
+        "symbol": "#EBC342",
+        "active": "#D78E3C",
+        "focus": "#EBC342",
+        "gradient": [
+          "#DA6058",
+          "#D78E3C",
+          "#EBC342",
+          "#73C686"
+        ]
+      },
+      "status": {
+        "success": "#73C686",
+        "warning": "#EBC342",
+        "error": "#EF796F"
+      }
+    },
+    {
+      "name": "Paris Catacombes",
+      "type": "custom",
+      "Background": "#062017",
+      "Foreground": "#CFDED7",
+      "LightBlue": "#B8CAC2",
+      "AccentBlue": "#D78E3C",
+      "AccentPurple": "#E783BD",
+      "AccentCyan": "#6FB393",
+      "AccentGreen": "#73C686",
+      "AccentYellow": "#EBC342",
+      "AccentRed": "#EF796F",
+      "DiffAdded": "#1D3A27",
+      "DiffRemoved": "#3C2620",
+      "Comment": "#648576",
+      "Gray": "#829D91",
+      "DarkGray": "#1E4738",
+      "GradientColors": [
+        "#DA6058",
+        "#D78E3C",
+        "#EBC342",
+        "#73C686"
+      ],
+      "text": {
+        "primary": "#CFDED7",
+        "secondary": "#829D91",
+        "accent": "#E783BD",
+        "response": "#CFDED7"
+      },
+      "background": {
+        "primary": "#062017",
+        "diff": {
+          "added": "#1D3A27",
+          "removed": "#3C2620"
+        }
+      },
+      "ui": {
+        "comment": "#648576",
+        "symbol": "#EBC342",
+        "active": "#D78E3C",
+        "focus": "#EBC342",
+        "gradient": [
+          "#DA6058",
+          "#D78E3C",
+          "#EBC342",
+          "#73C686"
+        ]
+      },
+      "status": {
+        "success": "#73C686",
+        "warning": "#EBC342",
+        "error": "#EF796F"
+      }
+    },
+    {
+      "name": "Paris Carrelage",
+      "type": "custom",
+      "Background": "#E2EDE8",
+      "Foreground": "#21352D",
+      "LightBlue": "#334A41",
+      "AccentBlue": "#9B5D00",
+      "AccentPurple": "#B43586",
+      "AccentCyan": "#007752",
+      "AccentGreen": "#00823B",
+      "AccentYellow": "#856A00",
+      "AccentRed": "#C82C2C",
+      "DiffAdded": "#BDDECC",
+      "DiffRemoved": "#EDCCD0",
+      "Comment": "#5C8171",
+      "Gray": "#4A695C",
+      "DarkGray": "#88AF9E",
+      "GradientColors": [
+        "#A30013",
+        "#9B5D00",
+        "#856A00",
+        "#00823B"
+      ],
+      "text": {
+        "primary": "#21352D",
+        "secondary": "#4A695C",
+        "accent": "#B43586",
+        "response": "#21352D"
+      },
+      "background": {
+        "primary": "#E2EDE8",
+        "diff": {
+          "added": "#BDDECC",
+          "removed": "#EDCCD0"
+        }
+      },
+      "ui": {
+        "comment": "#5C8171",
+        "symbol": "#856A00",
+        "active": "#9B5D00",
+        "focus": "#856A00",
+        "gradient": [
+          "#A30013",
+          "#9B5D00",
+          "#856A00",
+          "#00823B"
+        ]
+      },
+      "status": {
+        "success": "#00823B",
+        "warning": "#856A00",
+        "error": "#C82C2C"
+      }
     }
   ]
 }

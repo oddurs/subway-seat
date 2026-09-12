@@ -1,0 +1,53 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# Paris Guimard for zathura. In zathurarc: include paris-guimard
+
+# window
+set default-bg              "#0E3125"
+set default-fg              "#D3E2DB"
+set statusbar-bg            "#0C261C"
+set statusbar-fg            "#BBCDC5"
+set inputbar-bg             "#0C261C"
+set inputbar-fg             "#D3E2DB"
+
+# notifications
+set notification-bg         "#113E2E"
+set notification-fg         "#D3E2DB"
+set notification-error-bg   "#DA6058"
+set notification-error-fg   "#0A1D15"
+set notification-warning-bg "#EBC342"
+set notification-warning-fg "#0A1D15"
+
+# completion
+set completion-bg           "#113E2E"
+set completion-fg           "#D3E2DB"
+set completion-group-bg     "#0C261C"
+set completion-group-fg     "#A2B7AE"
+set completion-highlight-bg "#285A47"
+set completion-highlight-fg "#E6F0EB"
+
+# index (table of contents)
+set index-bg                "#0E3125"
+set index-fg                "#D3E2DB"
+set index-active-bg         "#285A47"
+set index-active-fg         "#E6F0EB"
+
+# search hits and link hints, washed over the page
+set highlight-color         "rgba(235,195,66,0.3)"
+set highlight-active-color  "rgba(215,142,60,0.5)"
+set highlight-fg            "#E6F0EB"
+
+# pages while they render
+set render-loading-bg       "#0E3125"
+set render-loading-fg       "#67897A"
+
+# digital signatures
+set signature-success-color "#73C686"
+set signature-warning-color "#EBC342"
+set signature-error-color   "#EF796F"
+
+# recoloring: white paper → base, black ink → text; Ctrl+R toggles it
+set recolor-lightcolor      "#0E3125"
+set recolor-darkcolor       "#D3E2DB"
+set recolor                 "true"
+set recolor-keephue         "true"
+set recolor-reverse-video   "true"

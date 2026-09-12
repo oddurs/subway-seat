@@ -1,0 +1,54 @@
+<!-- Subway Seat — generated from palette.py by build.py. Edit the palette, not this file. -->
+<style name="paris-guimard">
+  <entry type="Background" style="#D3E2DB bg:#0E3125"/>
+  <entry type="LineHighlight" style="bg:#113E2E"/>
+  <entry type="LineNumbers" style="#47705F"/>
+  <entry type="LineNumbersTable" style="#47705F"/>
+  <entry type="Text" style="#D3E2DB"/>
+  <entry type="Error" style="#DA6058"/>
+  <entry type="Comment" style="italic #67897A"/>
+  <entry type="CommentHashbang" style="italic #67897A"/>
+  <entry type="CommentPreproc" style="italic #E783BD"/>
+  <entry type="Keyword" style="#D78E3C"/>
+  <entry type="KeywordConstant" style="#EF796F"/>
+  <entry type="KeywordType" style="italic #6FB393"/>
+  <entry type="Operator" style="#86A195"/>
+  <entry type="OperatorWord" style="#D78E3C"/>
+  <entry type="Punctuation" style="#86A195"/>
+  <entry type="Name" style="#D3E2DB"/>
+  <entry type="NameAttribute" style="italic #EBC342"/>
+  <entry type="NameBuiltin" style="italic #EBC342"/>
+  <entry type="NameBuiltinPseudo" style="italic #EF796F"/>
+  <entry type="NameClass" style="#6FB393"/>
+  <entry type="NameConstant" style="#EF796F"/>
+  <entry type="NameDecorator" style="italic #E783BD"/>
+  <entry type="NameEntity" style="#E783BD"/>
+  <entry type="NameException" style="#6FB393"/>
+  <entry type="NameFunction" style="#EBC342"/>
+  <entry type="NameFunctionMagic" style="italic #EBC342"/>
+  <entry type="NameLabel" style="italic #E783BD"/>
+  <entry type="NameNamespace" style="#A2B7AE"/>
+  <entry type="NameProperty" style="#BBCDC5"/>
+  <entry type="NameTag" style="#D78E3C"/>
+  <entry type="NameVariable" style="#D3E2DB"/>
+  <entry type="NameVariableMagic" style="italic #EF796F"/>
+  <entry type="LiteralDate" style="#EF796F"/>
+  <entry type="LiteralString" style="#73C686"/>
+  <entry type="LiteralStringAffix" style="#D78E3C"/>
+  <entry type="LiteralStringEscape" style="#E783BD"/>
+  <entry type="LiteralStringInterpol" style="#E783BD"/>
+  <entry type="LiteralStringRegex" style="#E783BD"/>
+  <entry type="LiteralStringSymbol" style="#EF796F"/>
+  <entry type="LiteralNumber" style="#EF796F"/>
+  <entry type="GenericHeading" style="bold #EBC342"/>
+  <entry type="GenericSubheading" style="bold #EBC342"/>
+  <entry type="GenericEmph" style="italic #D3E2DB"/>
+  <entry type="GenericStrong" style="bold #E6F0EB"/>
+  <entry type="GenericDeleted" style="bg:#402E26 #EF796F"/>
+  <entry type="GenericInserted" style="bg:#21422E #73C686"/>
+  <entry type="GenericError" style="#DA6058"/>
+  <entry type="GenericOutput" style="#A2B7AE"/>
+  <entry type="GenericPrompt" style="#D78E3C"/>
+  <entry type="GenericTraceback" style="#DA6058"/>
+  <entry type="GenericUnderline" style="underline"/>
+</style>

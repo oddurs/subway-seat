@@ -1,0 +1,31 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# Paris Catacombes for matplotlib. Colors are hex without the leading #, as rc files expect.
+figure.facecolor: 062017
+figure.edgecolor: 062017
+savefig.facecolor: 062017
+savefig.edgecolor: 062017
+axes.facecolor: 062017
+axes.edgecolor: 456A5B
+axes.labelcolor: B8CAC2
+axes.titlecolor: E4EEE9
+axes.prop_cycle: cycler('color', ['D78E3C', '6FB393', 'EBC342', '639BD5', 'EF796F', '73C686', 'E783BD'])
+text.color: CFDED7
+xtick.color: 648576
+ytick.color: 648576
+xtick.labelcolor: 9EB3AA
+ytick.labelcolor: 9EB3AA
+grid.color: 1E372E
+legend.facecolor: 0A2B20
+legend.edgecolor: 224136
+patch.facecolor: D78E3C
+patch.edgecolor: 062017
+hatch.color: 9EB3AA
+boxplot.boxprops.color: B8CAC2
+boxplot.whiskerprops.color: B8CAC2
+boxplot.capprops.color: B8CAC2
+boxplot.flierprops.color: B8CAC2
+boxplot.flierprops.markeredgecolor: B8CAC2
+boxplot.medianprops.color: D78E3C
+boxplot.meanprops.color: EBC342
+boxplot.meanprops.markerfacecolor: EBC342
+boxplot.meanprops.markeredgecolor: EBC342

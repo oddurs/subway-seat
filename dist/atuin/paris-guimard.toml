@@ -1,0 +1,21 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# Paris Guimard for Atuin.
+[theme]
+name = "paris-guimard"
+
+[colors]
+AlertInfo = "#639BD5"
+AlertWarn = "#EBC342"
+AlertError = "#EF796F"
+Annotation = "#67897A"
+Base = "#D3E2DB"
+Guidance = "#A2B7AE"
+Important = "#D78E3C"
+Title = "#EBC342"
+Muted = "#47705F"
+SyntaxCommand = "#EBC342"
+SyntaxFlag = "#6FB393"
+SyntaxString = "#73C686"
+SyntaxVariable = "#E783BD"
+SyntaxOperator = "#D78E3C"
+SyntaxComment = "#67897A"

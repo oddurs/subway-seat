@@ -14,6 +14,9 @@ A `[styles]` block: cores and sensors in stripe colors, avocado download, orange
 | London Moquette | [`london-moquette.toml`](london-moquette.toml) | add to the end of `~/.config/bottom/bottom.toml` |
 | London Deep Level | [`london-deep-level.toml`](london-deep-level.toml) | add to the end of `~/.config/bottom/bottom.toml` |
 | London Portland | [`london-portland.toml`](london-portland.toml) | add to the end of `~/.config/bottom/bottom.toml` |
+| Paris Guimard | [`paris-guimard.toml`](paris-guimard.toml) | add to the end of `~/.config/bottom/bottom.toml` |
+| Paris Catacombes | [`paris-catacombes.toml`](paris-catacombes.toml) | add to the end of `~/.config/bottom/bottom.toml` |
+| Paris Carrelage | [`paris-carrelage.toml`](paris-carrelage.toml) | add to the end of `~/.config/bottom/bottom.toml` |
 
 ## Turn it on
 
@@ -51,6 +54,24 @@ cat london-deep-level.toml >> ~/.config/bottom/bottom.toml
 
 ```sh
 cat london-portland.toml >> ~/.config/bottom/bottom.toml
+```
+
+**Paris Guimard**, in the end of bottom.toml: ~/.config/bottom/ (bottom uses it on macOS too once it exists; otherwise ~/Library/Application Support/bottom/). Skip it if you already have [styles] tables:
+
+```sh
+cat paris-guimard.toml >> ~/.config/bottom/bottom.toml
+```
+
+**Paris Catacombes**, in the end of bottom.toml: ~/.config/bottom/ (bottom uses it on macOS too once it exists; otherwise ~/Library/Application Support/bottom/). Skip it if you already have [styles] tables:
+
+```sh
+cat paris-catacombes.toml >> ~/.config/bottom/bottom.toml
+```
+
+**Paris Carrelage**, in the end of bottom.toml: ~/.config/bottom/ (bottom uses it on macOS too once it exists; otherwise ~/Library/Application Support/bottom/). Skip it if you already have [styles] tables:
+
+```sh
+cat paris-carrelage.toml >> ~/.config/bottom/bottom.toml
 ```
 
 ## Uninstall

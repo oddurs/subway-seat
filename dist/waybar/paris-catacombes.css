@@ -1,0 +1,35 @@
+/* Subway Seat — generated from palette.py by build.py. Edit the palette, not this file. */
+/* Paris Catacombes for waybar: @import it at the top of style.css. */
+
+@define-color crust #05120C;
+@define-color mantle #061811;
+@define-color base #062017;
+@define-color surface0 #0A2B20;
+@define-color surface1 #13382A;
+@define-color surface2 #1E4738;
+@define-color overlay0 #456A5B;
+@define-color overlay1 #648576;
+@define-color overlay2 #829D91;
+@define-color subtext0 #9EB3AA;
+@define-color subtext1 #B8CAC2;
+@define-color text #CFDED7;
+@define-color text_hi #E4EEE9;
+@define-color yellow #EBC342;
+@define-color yellow_hi #FBD664;
+@define-color orange #D78E3C;
+@define-color orange_hi #EEA85C;
+@define-color red #DA6058;
+@define-color red_hi #EF796F;
+@define-color green #73C686;
+@define-color green_hi #82D896;
+@define-color sage #6FB393;
+@define-color sage_hi #8ECFAF;
+@define-color denim #639BD5;
+@define-color denim_hi #82B7EE;
+@define-color clay #E783BD;
+
+/* Layers: a raised ground for popovers, and washes of text for borders, hover and selection */
+@define-color paper #0A2B20;
+@define-color edge alpha(@text, 0.12);
+@define-color hover alpha(@text, 0.08);
+@define-color selection alpha(@text, 0.16);

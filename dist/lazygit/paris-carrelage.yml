@@ -1,0 +1,32 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# Paris Carrelage for lazygit.
+gui:
+  theme:
+    activeBorderColor:
+      - '#9B5D00'
+      - 'bold'
+    inactiveBorderColor:
+      - '#759A8A'
+    searchingActiveBorderColor:
+      - '#856A00'
+      - 'bold'
+    optionsTextColor:
+      - '#856A00'
+    selectedLineBgColor:
+      - '#B6D2C5'
+    inactiveViewSelectedLineBgColor:
+      - '#D5E3DD'
+    cherryPickedCommitFgColor:
+      - '#E2EDE8'
+    cherryPickedCommitBgColor:
+      - '#007752'
+    markedBaseCommitFgColor:
+      - '#E2EDE8'
+    markedBaseCommitBgColor:
+      - '#856A00'
+    unstagedChangesColor:
+      - '#C82C2C'
+    defaultFgColor:
+      - '#21352D'
+  authorColors:
+    '*': '#007752'

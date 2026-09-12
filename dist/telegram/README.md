@@ -20,6 +20,12 @@ Sets all 586 keys of the Telegram Desktop palette, with a plain walnut chat back
 | London Deep Level | [`london-deep-level/colors.tdesktop-theme`](london-deep-level/colors.tdesktop-theme) | the palette inside london-deep-level.tdesktop-theme, for reading or editing |
 | London Portland | [`london-portland.tdesktop-theme`](london-portland.tdesktop-theme) | open it with Telegram Desktop, or Settings › Chat Settings › Choose from file |
 | London Portland | [`london-portland/colors.tdesktop-theme`](london-portland/colors.tdesktop-theme) | the palette inside london-portland.tdesktop-theme, for reading or editing |
+| Paris Guimard | [`paris-guimard.tdesktop-theme`](paris-guimard.tdesktop-theme) | open it with Telegram Desktop, or Settings › Chat Settings › Choose from file |
+| Paris Guimard | [`paris-guimard/colors.tdesktop-theme`](paris-guimard/colors.tdesktop-theme) | the palette inside paris-guimard.tdesktop-theme, for reading or editing |
+| Paris Catacombes | [`paris-catacombes.tdesktop-theme`](paris-catacombes.tdesktop-theme) | open it with Telegram Desktop, or Settings › Chat Settings › Choose from file |
+| Paris Catacombes | [`paris-catacombes/colors.tdesktop-theme`](paris-catacombes/colors.tdesktop-theme) | the palette inside paris-catacombes.tdesktop-theme, for reading or editing |
+| Paris Carrelage | [`paris-carrelage.tdesktop-theme`](paris-carrelage.tdesktop-theme) | open it with Telegram Desktop, or Settings › Chat Settings › Choose from file |
+| Paris Carrelage | [`paris-carrelage/colors.tdesktop-theme`](paris-carrelage/colors.tdesktop-theme) | the palette inside paris-carrelage.tdesktop-theme, for reading or editing |
 
 ## Turn it on
 
@@ -62,6 +68,27 @@ Choose from file › london-deep-level.tdesktop-theme, then Keep changes
 
 ```text
 Choose from file › london-portland.tdesktop-theme, then Keep changes
+(opening the file with Telegram Desktop does the same)
+```
+
+**Paris Guimard**, in Telegram Desktop › Settings › Chat Settings:
+
+```text
+Choose from file › paris-guimard.tdesktop-theme, then Keep changes
+(opening the file with Telegram Desktop does the same)
+```
+
+**Paris Catacombes**, in Telegram Desktop › Settings › Chat Settings:
+
+```text
+Choose from file › paris-catacombes.tdesktop-theme, then Keep changes
+(opening the file with Telegram Desktop does the same)
+```
+
+**Paris Carrelage**, in Telegram Desktop › Settings › Chat Settings:
+
+```text
+Choose from file › paris-carrelage.tdesktop-theme, then Keep changes
 (opening the file with Telegram Desktop does the same)
 ```
 

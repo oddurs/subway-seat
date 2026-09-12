@@ -14,6 +14,9 @@ Each flavor is a color scheme plus a theme for the tab row, tabs and window fram
 | London Moquette | [`london-moquette.json`](london-moquette.json) | Merge into the top-level `schemes` and `themes` arrays of settings.json (Settings › Open JSON file) |
 | London Deep Level | [`london-deep-level.json`](london-deep-level.json) | Merge into the top-level `schemes` and `themes` arrays of settings.json (Settings › Open JSON file) |
 | London Portland | [`london-portland.json`](london-portland.json) | Merge into the top-level `schemes` and `themes` arrays of settings.json (Settings › Open JSON file) |
+| Paris Guimard | [`paris-guimard.json`](paris-guimard.json) | Merge into the top-level `schemes` and `themes` arrays of settings.json (Settings › Open JSON file) |
+| Paris Catacombes | [`paris-catacombes.json`](paris-catacombes.json) | Merge into the top-level `schemes` and `themes` arrays of settings.json (Settings › Open JSON file) |
+| Paris Carrelage | [`paris-carrelage.json`](paris-carrelage.json) | Merge into the top-level `schemes` and `themes` arrays of settings.json (Settings › Open JSON file) |
 | All three | [`subway-seat-all.json`](subway-seat-all.json) | Merge into the top-level `schemes` and `themes` arrays of settings.json (Settings › Open JSON file) |
 | All three | [`fragment/subway-seat.json`](fragment/subway-seat.json) | `%LOCALAPPDATA%\Microsoft\Windows Terminal\Fragments\SubwaySeat\subway-seat.json` |
 
@@ -71,6 +74,33 @@ Each flavor is a color scheme plus a theme for the tab row, tabs and window fram
 "theme": "London Portland",
 // inside your existing "profiles": { "defaults": { … } }
 "colorScheme": "London Portland"
+```
+
+**Paris Guimard**, in settings.json (Settings › Open JSON file), after merging the `schemes` and `themes` entries:
+
+```json
+// at the top level
+"theme": "Paris Guimard",
+// inside your existing "profiles": { "defaults": { … } }
+"colorScheme": "Paris Guimard"
+```
+
+**Paris Catacombes**, in settings.json (Settings › Open JSON file), after merging the `schemes` and `themes` entries:
+
+```json
+// at the top level
+"theme": "Paris Catacombes",
+// inside your existing "profiles": { "defaults": { … } }
+"colorScheme": "Paris Catacombes"
+```
+
+**Paris Carrelage**, in settings.json (Settings › Open JSON file), after merging the `schemes` and `themes` entries:
+
+```json
+// at the top level
+"theme": "Paris Carrelage",
+// inside your existing "profiles": { "defaults": { … } }
+"colorScheme": "Paris Carrelage"
 ```
 
 ## Follow light and dark

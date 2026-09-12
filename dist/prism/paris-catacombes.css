@@ -1,0 +1,87 @@
+/* Subway Seat — generated from palette.py by build.py. Edit the palette, not this file. */
+/* Paris Catacombes for Prism */
+
+code[class*="language-"],
+pre[class*="language-"] {
+  background: none;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+  font-size: 1em;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+  tab-size: 4;
+  hyphens: none;
+}
+
+pre[class*="language-"] {
+  padding: 1em;
+  margin: 0.5em 0;
+  overflow: auto;
+  border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"] {
+  padding: 0.1em 0.3em;
+  border-radius: 0.3em;
+  white-space: normal;
+}
+
+.token.important, .token.bold { font-weight: bold; }
+.token.italic { font-style: italic; }
+.token.entity { cursor: help; }
+
+/* Diff lines fill the width, so their tint reads as a band. */
+[class*="language-diff"] .token.inserted:not(.prefix),
+[class*="language-diff"] .token.deleted:not(.prefix),
+[class*="language-diff"] .token.diff:not(.prefix) { display: block; color: inherit; font-weight: inherit; }
+
+code[class*="language-"],
+pre[class*="language-"] { color: #CFDED7; }
+pre[class*="language-"] { background: #062017; }
+:not(pre) > code[class*="language-"] { background: #0A2B20; }
+
+code[class*="language-"]::selection, code[class*="language-"] ::selection,
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection {
+  color: #E4EEE9;
+  background: #1E4738;
+}
+
+.token.comment, .token.prolog, .token.doctype, .token.cdata { color: #648576; font-style: italic; }
+.token.punctuation { color: #829D91; }
+.token.operator { color: #829D91; }
+.token.namespace { color: #9EB3AA; }
+.token.keyword, .token.atrule, .token.rule, .token.list, .token.important { color: #D78E3C; }
+.token.function { color: #EBC342; }
+.token.builtin { color: #EBC342; font-style: italic; }
+.token.string, .token.char, .token.attr-value, .token.code { color: #73C686; }
+.token.escape, .token.entity, .token.interpolation-punctuation { color: #E783BD; }
+.token.regex { color: #E783BD; }
+.token.number { color: #EF796F; }
+.token.boolean { color: #EF796F; }
+.token.constant, .token.symbol { color: #EF796F; }
+.token.class-name { color: #6FB393; }
+.token.variable { color: #CFDED7; }
+.token.parameter { color: #B8CAC2; font-style: italic; }
+.token.property { color: #B8CAC2; }
+.language-json .token.property { color: #EBC342; }
+.token.tag { color: #D78E3C; }
+.token.attr-name, .token.selector { color: #EBC342; font-style: italic; }
+.token.decorator, .token.annotation { color: #E783BD; font-style: italic; }
+.token.title { color: #EBC342; font-weight: bold; }
+.token.blockquote { color: #9EB3AA; font-style: italic; }
+.token.coord { color: #639BD5; }
+.token.url { color: #639BD5; text-decoration: underline; }
+
+/* Diffs: the line keeps its code colors on a green or red tint, and the + / - sign carries the color.
+   (Other languages mark a whole line as inserted or deleted, so it takes the color itself.) */
+.token.inserted { color: #73C686; }
+.token.deleted { color: #EF796F; }
+[class*="language-diff"] .token.inserted:not(.prefix) { background: #1D3A27; }
+[class*="language-diff"] .token.deleted:not(.prefix) { background: #3C2620; }
+[class*="language-diff"] .token.diff:not(.prefix) { background: #2A2E15; }
+[class*="language-diff"] .token.prefix.inserted { color: #73C686; }
+[class*="language-diff"] .token.prefix.deleted { color: #EF796F; }
+[class*="language-diff"] .token.prefix.diff { color: #EBC342; }

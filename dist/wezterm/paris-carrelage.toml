@@ -1,0 +1,92 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+
+[colors]
+foreground = "#21352D"
+background = "#E2EDE8"
+cursor_bg = "#9B5D00"
+cursor_border = "#9B5D00"
+cursor_fg = "#E2EDE8"
+compose_cursor = "#B43586"
+selection_bg = "#9DC1B1"
+selection_fg = "#16241E"
+scrollbar_thumb = "#88AF9E"
+split = "#C8DAD1"
+visual_bell = "#B6D2C5"
+ansi = [
+  "#334A41",
+  "#A30013",
+  "#00823B",
+  "#856A00",
+  "#0961A9",
+  "#9B5D00",
+  "#007752",
+  "#88AF9E",
+]
+brights = [
+  "#5C8171",
+  "#C82C2C",
+  "#00863D",
+  "#937500",
+  "#2E75B9",
+  "#AE6800",
+  "#2A8862",
+  "#9DC1B1",
+]
+copy_mode_active_highlight_bg = { Color = "#BEA574" }
+copy_mode_active_highlight_fg = { Color = "#16241E" }
+copy_mode_inactive_highlight_bg = { Color = "#C6C6A2" }
+copy_mode_inactive_highlight_fg = { Color = "#21352D" }
+quick_select_label_bg = { Color = "#9B5D00" }
+quick_select_label_fg = { Color = "#E2EDE8" }
+quick_select_match_bg = { Color = "#C6C6A2" }
+quick_select_match_fg = { Color = "#21352D" }
+
+[colors.tab_bar]
+background = "#C8DAD1"
+inactive_tab_edge = "#B6D2C5"
+
+[colors.tab_bar.active_tab]
+bg_color = "#E2EDE8"
+fg_color = "#9B5D00"
+intensity = "Bold"
+italic = false
+strikethrough = false
+underline = "None"
+
+[colors.tab_bar.inactive_tab]
+bg_color = "#D5E3DD"
+fg_color = "#5C8171"
+intensity = "Normal"
+italic = false
+strikethrough = false
+underline = "None"
+
+[colors.tab_bar.inactive_tab_hover]
+bg_color = "#B6D2C5"
+fg_color = "#21352D"
+intensity = "Normal"
+italic = false
+strikethrough = false
+underline = "None"
+
+[colors.tab_bar.new_tab]
+bg_color = "#C8DAD1"
+fg_color = "#5C8171"
+intensity = "Normal"
+italic = false
+strikethrough = false
+underline = "None"
+
+[colors.tab_bar.new_tab_hover]
+bg_color = "#B6D2C5"
+fg_color = "#9B5D00"
+intensity = "Normal"
+italic = false
+strikethrough = false
+underline = "None"
+
+[metadata]
+name = "Paris Carrelage"
+author = "oddurs"
+origin_url = "https://github.com/oddurs/subway-seat"
+aliases = []

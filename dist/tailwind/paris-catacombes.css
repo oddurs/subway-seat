@@ -1,0 +1,39 @@
+/* Subway Seat — generated from palette.py by build.py. Edit the palette, not this file. */
+/* Paris Catacombes for Tailwind v4: bg-ss-base, text-ss-text, … */
+
+@theme {
+  --color-ss-crust: #05120C;
+  --color-ss-mantle: #061811;
+  --color-ss-base: #062017;
+  --color-ss-surface0: #0A2B20;
+  --color-ss-surface1: #13382A;
+  --color-ss-surface2: #1E4738;
+  --color-ss-overlay0: #456A5B;
+  --color-ss-overlay1: #648576;
+  --color-ss-overlay2: #829D91;
+  --color-ss-subtext0: #9EB3AA;
+  --color-ss-subtext1: #B8CAC2;
+  --color-ss-text: #CFDED7;
+  --color-ss-text-hi: #E4EEE9;
+  --color-ss-yellow: #EBC342;
+  --color-ss-yellow-hi: #FBD664;
+  --color-ss-orange: #D78E3C;
+  --color-ss-orange-hi: #EEA85C;
+  --color-ss-red: #DA6058;
+  --color-ss-red-hi: #EF796F;
+  --color-ss-green: #73C686;
+  --color-ss-green-hi: #82D896;
+  --color-ss-sage: #6FB393;
+  --color-ss-sage-hi: #8ECFAF;
+  --color-ss-denim: #639BD5;
+  --color-ss-denim-hi: #82B7EE;
+  --color-ss-clay: #E783BD;
+  --color-ss-diff-add: #1D3A27;
+  --color-ss-diff-add-emph: #2A4F35;
+  --color-ss-diff-add-dim: #142B1D;
+  --color-ss-diff-del: #3C2620;
+  --color-ss-diff-del-emph: #5A312A;
+  --color-ss-diff-del-dim: #291F19;
+  --color-ss-diff-chg: #2A2E15;
+  --color-ss-diff-chg-emph: #41401A;
+}

@@ -183,8 +183,10 @@ export function Configurator({
             </div>
             {active === "auto" && (
               <p {...stylex.props(s.aside)}>
-                Apps that can follow your system&apos;s light and dark mode switch on their own;{" "}
-                {ports.filter((p) => p.auto).length} ports know how.
+                {ports.filter((pt) => pt.auto).length} of {ports.length} apps can follow your
+                system&apos;s light and dark on their own, and switch as you do. The rest have no
+                way to say it in their own config, so they get the dark flavor and change when you
+                run <b>switch</b>. They&apos;re dimmed below.
               </p>
             )}
           </fieldset>
@@ -328,18 +330,25 @@ export function Configurator({
                         </div>
                         {group.map((p) => {
                           const off = mode === "detect" && knowsDetect && !p.detect;
+                          // Auto is worth having — 47 ports really do follow the
+                          // system — but only the ones that can. The rest are
+                          // dimmed here rather than quietly installed fixed.
+                          const noAuto = active === "auto" && !p.auto;
                           return (
                             <label
                               key={p.id}
                               title={
-                                off
-                                  ? "The installer can't spot this one; pick it with Just these"
-                                  : SETUP[p.setup].hint
+                                noAuto
+                                  ? "This one has no way to follow light and dark; it gets the dark flavor"
+                                  : off
+                                    ? "The installer can't spot this one; pick it with Just these"
+                                    : SETUP[p.setup].hint
                               }
                               {...stylex.props(
                                 s.app,
                                 checked(p) && !off && s.appOn,
                                 off && s.appOff,
+                                noAuto && !off && s.appDim,
                               )}
                             >
                               <input
@@ -752,6 +761,8 @@ const s = stylex.create({
   },
   appOn: { color: color.textHi },
   appOff: { cursor: "not-allowed", opacity: 0.55 },
+  // Installs fine, just can't follow the system setting on its own.
+  appDim: { opacity: 0.62 },
   check: { flexShrink: 0, width: 16, height: 16, accentColor: ink.fill, cursor: "inherit" },
   appName: { flexGrow: 1, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" },
   ticket: {

@@ -1,0 +1,64 @@
+{
+  "alfredtheme": {
+    "result": {
+      "textSpacing": 6,
+      "subtext": {
+        "size": 12,
+        "colorSelected": "#334A41FF",
+        "font": "System",
+        "color": "#4A695CFF"
+      },
+      "shortcut": {
+        "size": 16,
+        "colorSelected": "#9B5D00FF",
+        "font": "System",
+        "color": "#5C8171FF"
+      },
+      "backgroundSelected": "#D7D6C3FF",
+      "text": {
+        "size": 18,
+        "colorSelected": "#16241EFF",
+        "font": "System",
+        "color": "#21352DFF"
+      },
+      "iconPaddingHorizontal": 6,
+      "roundness": 8,
+      "paddingVertical": 4,
+      "iconSize": 38
+    },
+    "search": {
+      "backgroundSelected": "#9DC1B1FF",
+      "paddingHorizontal": 10,
+      "spacing": 10,
+      "text": {
+        "size": 30,
+        "colorSelected": "#16241EFF",
+        "font": "System Light",
+        "color": "#21352DFF"
+      },
+      "background": "#C8DAD1FF",
+      "roundness": 8,
+      "paddingVertical": 6
+    },
+    "window": {
+      "color": "#E2EDE8F7",
+      "paddingHorizontal": 10,
+      "width": 620,
+      "borderPadding": 0,
+      "borderColor": "#9DC1B1FF",
+      "blur": 12,
+      "roundness": 14,
+      "paddingVertical": 10
+    },
+    "separator": {
+      "color": "#C8DAD1FF",
+      "thickness": 1
+    },
+    "scrollbar": {
+      "color": "#9DC1B1FF",
+      "thickness": 3
+    },
+    "name": "Paris Carrelage",
+    "credit": "Oddur Sigurdsson"
+  }
+}

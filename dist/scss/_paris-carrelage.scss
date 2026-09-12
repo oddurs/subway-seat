@@ -1,0 +1,75 @@
+// Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+// Paris Carrelage: Bevelled white tile under a vaulted platform. The light one.
+// Diff grounds: -add/-del/-chg for lines, -emph for changed words, -dim for faded diffs.
+
+$ss-crust:         #C8DAD1; // Carrelage crust
+$ss-mantle:        #D5E3DD; // Carrelage mantle
+$ss-base:          #E2EDE8; // Carrelage base
+$ss-surface0:      #B6D2C5; // Carrelage surface0
+$ss-surface1:      #9DC1B1; // Carrelage surface1
+$ss-surface2:      #88AF9E; // Carrelage surface2
+$ss-overlay0:      #759A8A; // Carrelage overlay0
+$ss-overlay1:      #5C8171; // Carrelage overlay1
+$ss-overlay2:      #4A695C; // Carrelage overlay2
+$ss-subtext0:      #405B4F; // Carrelage subtext0
+$ss-subtext1:      #334A41; // Carrelage subtext1
+$ss-text:          #21352D; // Carrelage text
+$ss-text-hi:       #16241E; // Carrelage text hi
+$ss-yellow:        #856A00; // Harvest gold
+$ss-yellow-hi:     #937500; // Broadway yellow
+$ss-orange:        #9B5D00; // Burnt orange
+$ss-orange-hi:     #AE6800; // Sixth Avenue
+$ss-red:           #A30013; // Redbird
+$ss-red-hi:        #C82C2C; // Redbird bright
+$ss-green:         #00823B; // Avocado
+$ss-green-hi:      #00863D; // Avocado bright
+$ss-sage:          #007752; // Seafoam tile
+$ss-sage-hi:       #2A8862; // Seafoam bright
+$ss-denim:         #0961A9; // Faded denim
+$ss-denim-hi:      #2E75B9; // Denim bright
+$ss-clay:          #B43586; // Terracotta
+$ss-diff-add:      #BDDECC;
+$ss-diff-add-emph: #99CDB1;
+$ss-diff-add-dim:  #D6EBE0;
+$ss-diff-del:      #EDCCD0;
+$ss-diff-del-emph: #E2ADB3;
+$ss-diff-del-dim:  #F4E0E3;
+$ss-diff-chg:      #DFD8BD;
+$ss-diff-chg-emph: #D8CFAD;
+
+$subway-seat: (
+  "crust": $ss-crust,
+  "mantle": $ss-mantle,
+  "base": $ss-base,
+  "surface0": $ss-surface0,
+  "surface1": $ss-surface1,
+  "surface2": $ss-surface2,
+  "overlay0": $ss-overlay0,
+  "overlay1": $ss-overlay1,
+  "overlay2": $ss-overlay2,
+  "subtext0": $ss-subtext0,
+  "subtext1": $ss-subtext1,
+  "text": $ss-text,
+  "text-hi": $ss-text-hi,
+  "yellow": $ss-yellow,
+  "yellow-hi": $ss-yellow-hi,
+  "orange": $ss-orange,
+  "orange-hi": $ss-orange-hi,
+  "red": $ss-red,
+  "red-hi": $ss-red-hi,
+  "green": $ss-green,
+  "green-hi": $ss-green-hi,
+  "sage": $ss-sage,
+  "sage-hi": $ss-sage-hi,
+  "denim": $ss-denim,
+  "denim-hi": $ss-denim-hi,
+  "clay": $ss-clay,
+  "diff-add": $ss-diff-add,
+  "diff-add-emph": $ss-diff-add-emph,
+  "diff-add-dim": $ss-diff-add-dim,
+  "diff-del": $ss-diff-del,
+  "diff-del-emph": $ss-diff-del-emph,
+  "diff-del-dim": $ss-diff-del-dim,
+  "diff-chg": $ss-diff-chg,
+  "diff-chg-emph": $ss-diff-chg-emph,
+);

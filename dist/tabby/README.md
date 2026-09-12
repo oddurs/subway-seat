@@ -14,6 +14,9 @@ Colors, cursor and selection. config.yaml lives in `~/Library/Application Suppor
 | London Moquette | [`london-moquette.yaml`](london-moquette.yaml) | Paste under `terminal.customColorSchemes` in Tabby's config.yaml |
 | London Deep Level | [`london-deep-level.yaml`](london-deep-level.yaml) | Paste under `terminal.customColorSchemes` in Tabby's config.yaml |
 | London Portland | [`london-portland.yaml`](london-portland.yaml) | Paste under `terminal.customColorSchemes` in Tabby's config.yaml |
+| Paris Guimard | [`paris-guimard.yaml`](paris-guimard.yaml) | Paste under `terminal.customColorSchemes` in Tabby's config.yaml |
+| Paris Catacombes | [`paris-catacombes.yaml`](paris-catacombes.yaml) | Paste under `terminal.customColorSchemes` in Tabby's config.yaml |
+| Paris Carrelage | [`paris-carrelage.yaml`](paris-carrelage.yaml) | Paste under `terminal.customColorSchemes` in Tabby's config.yaml |
 
 ## Turn it on
 
@@ -69,6 +72,33 @@ terminal:
   customColorSchemes:
     - name: London Portland   # paste the whole entry from london-portland.yaml here
 # then pick London Portland under Settings › Color scheme › Dark mode (the tab Tabby uses by default)
+```
+
+**Paris Guimard**, in Tabby's config.yaml (Settings › Config file):
+
+```yaml
+terminal:
+  customColorSchemes:
+    - name: Paris Guimard   # paste the whole entry from paris-guimard.yaml here
+# then pick Paris Guimard under Settings › Color scheme › Dark mode (the tab Tabby uses by default)
+```
+
+**Paris Catacombes**, in Tabby's config.yaml (Settings › Config file):
+
+```yaml
+terminal:
+  customColorSchemes:
+    - name: Paris Catacombes   # paste the whole entry from paris-catacombes.yaml here
+# then pick Paris Catacombes under Settings › Color scheme › Dark mode (the tab Tabby uses by default)
+```
+
+**Paris Carrelage**, in Tabby's config.yaml (Settings › Config file):
+
+```yaml
+terminal:
+  customColorSchemes:
+    - name: Paris Carrelage   # paste the whole entry from paris-carrelage.yaml here
+# then pick Paris Carrelage under Settings › Color scheme › Dark mode (the tab Tabby uses by default)
 ```
 
 ## Follow light and dark

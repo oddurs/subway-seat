@@ -1,0 +1,131 @@
+// Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+// Paris Catacombes: Zellij 0.42+ component theme.
+
+themes {
+    paris-catacombes {
+        text_unselected {
+            base "#CFDED7"
+            background "#061811"
+            emphasis_0 "#D78E3C"
+            emphasis_1 "#6FB393"
+            emphasis_2 "#73C686"
+            emphasis_3 "#EBC342"
+        }
+        text_selected {
+            base "#E4EEE9"
+            background "#13382A"
+            emphasis_0 "#D78E3C"
+            emphasis_1 "#6FB393"
+            emphasis_2 "#73C686"
+            emphasis_3 "#EBC342"
+        }
+        ribbon_unselected {
+            base "#CFDED7"
+            background "#13382A"
+            emphasis_0 "#EBC342"
+            emphasis_1 "#E4EEE9"
+            emphasis_2 "#6FB393"
+            emphasis_3 "#D78E3C"
+        }
+        ribbon_selected {
+            base "#05120C"
+            background "#D78E3C"
+            emphasis_0 "#05120C"
+            emphasis_1 "#05120C"
+            emphasis_2 "#05120C"
+            emphasis_3 "#05120C"
+        }
+        table_title {
+            base "#D78E3C"
+            background 0
+            emphasis_0 "#EBC342"
+            emphasis_1 "#6FB393"
+            emphasis_2 "#73C686"
+            emphasis_3 "#E783BD"
+        }
+        table_cell_selected {
+            base "#E4EEE9"
+            background "#13382A"
+            emphasis_0 "#D78E3C"
+            emphasis_1 "#6FB393"
+            emphasis_2 "#73C686"
+            emphasis_3 "#EBC342"
+        }
+        table_cell_unselected {
+            base "#CFDED7"
+            background "#061811"
+            emphasis_0 "#D78E3C"
+            emphasis_1 "#6FB393"
+            emphasis_2 "#73C686"
+            emphasis_3 "#EBC342"
+        }
+        list_selected {
+            base "#E4EEE9"
+            background "#13382A"
+            emphasis_0 "#D78E3C"
+            emphasis_1 "#6FB393"
+            emphasis_2 "#73C686"
+            emphasis_3 "#EBC342"
+        }
+        list_unselected {
+            base "#CFDED7"
+            background "#061811"
+            emphasis_0 "#D78E3C"
+            emphasis_1 "#6FB393"
+            emphasis_2 "#73C686"
+            emphasis_3 "#EBC342"
+        }
+        frame_unselected {
+            base "#1E4738"
+            background 0
+            emphasis_0 "#D78E3C"
+            emphasis_1 "#6FB393"
+            emphasis_2 "#73C686"
+            emphasis_3 "#EBC342"
+        }
+        frame_selected {
+            base "#D78E3C"
+            background 0
+            emphasis_0 "#EBC342"
+            emphasis_1 "#6FB393"
+            emphasis_2 "#73C686"
+            emphasis_3 0
+        }
+        frame_highlight {
+            base "#EBC342"
+            background 0
+            emphasis_0 "#D78E3C"
+            emphasis_1 "#EBC342"
+            emphasis_2 "#EBC342"
+            emphasis_3 "#EBC342"
+        }
+        exit_code_success {
+            base "#73C686"
+            background 0
+            emphasis_0 "#6FB393"
+            emphasis_1 "#05120C"
+            emphasis_2 "#EBC342"
+            emphasis_3 "#639BD5"
+        }
+        exit_code_error {
+            base "#EF796F"
+            background 0
+            emphasis_0 "#EBC342"
+            emphasis_1 0
+            emphasis_2 0
+            emphasis_3 0
+        }
+        multiplayer_user_colors {
+            player_1 "#D78E3C"
+            player_2 "#EBC342"
+            player_3 "#73C686"
+            player_4 "#6FB393"
+            player_5 "#639BD5"
+            player_6 "#E783BD"
+            player_7 "#EF796F"
+            player_8 "#82D896"
+            player_9 "#FBD664"
+            player_10 "#8ECFAF"
+        }
+    }
+}

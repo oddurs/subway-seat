@@ -1,0 +1,61 @@
+{
+  "ui": {
+    "customThemes": {
+      "Paris Catacombes": {
+        "name": "Paris Catacombes",
+        "type": "custom",
+        "Background": "#062017",
+        "Foreground": "#CFDED7",
+        "LightBlue": "#B8CAC2",
+        "AccentBlue": "#D78E3C",
+        "AccentPurple": "#E783BD",
+        "AccentCyan": "#6FB393",
+        "AccentGreen": "#73C686",
+        "AccentYellow": "#EBC342",
+        "AccentRed": "#EF796F",
+        "DiffAdded": "#1D3A27",
+        "DiffRemoved": "#3C2620",
+        "Comment": "#648576",
+        "Gray": "#829D91",
+        "DarkGray": "#1E4738",
+        "GradientColors": [
+          "#DA6058",
+          "#D78E3C",
+          "#EBC342",
+          "#73C686"
+        ],
+        "text": {
+          "primary": "#CFDED7",
+          "secondary": "#829D91",
+          "accent": "#E783BD",
+          "response": "#CFDED7"
+        },
+        "background": {
+          "primary": "#062017",
+          "diff": {
+            "added": "#1D3A27",
+            "removed": "#3C2620"
+          }
+        },
+        "ui": {
+          "comment": "#648576",
+          "symbol": "#EBC342",
+          "active": "#D78E3C",
+          "focus": "#EBC342",
+          "gradient": [
+            "#DA6058",
+            "#D78E3C",
+            "#EBC342",
+            "#73C686"
+          ]
+        },
+        "status": {
+          "success": "#73C686",
+          "warning": "#EBC342",
+          "error": "#EF796F"
+        }
+      }
+    },
+    "theme": "Paris Catacombes"
+  }
+}

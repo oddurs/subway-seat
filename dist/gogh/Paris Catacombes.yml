@@ -1,0 +1,30 @@
+---
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+name: 'Paris Catacombes'
+author: 'oddurs (https://github.com/oddurs/subway-seat)'
+author_name: 'oddurs'
+author_url: 'https://github.com/oddurs/subway-seat'
+variant: 'dark'
+
+color_01: '#13382A'    # Black (Host)
+color_02: '#DA6058'    # Red (Syntax string)
+color_03: '#73C686'    # Green (Command)
+color_04: '#EBC342'    # Yellow (Command second)
+color_05: '#639BD5'    # Blue (Path)
+color_06: '#D78E3C'    # Magenta (Syntax var)
+color_07: '#6FB393'    # Cyan (Prompt)
+color_08: '#B8CAC2'    # White
+
+color_09: '#648576'    # Bright Black
+color_10: '#EF796F'    # Bright Red (Command error)
+color_11: '#82D896'    # Bright Green (Exec)
+color_12: '#FBD664'    # Bright Yellow
+color_13: '#82B7EE'    # Bright Blue (Folder)
+color_14: '#EEA85C'    # Bright Magenta
+color_15: '#8ECFAF'    # Bright Cyan
+color_16: '#E4EEE9'    # Bright White
+
+background: '#062017'  # Background
+foreground: '#CFDED7'  # Foreground (Text)
+
+cursor: '#EBC342'      # Cursor

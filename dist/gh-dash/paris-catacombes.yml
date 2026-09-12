@@ -1,0 +1,26 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# Paris Catacombes for gh-dash.
+theme:
+  colors:
+    text:
+      primary: "#CFDED7"
+      secondary: "#D78E3C"
+      inverted: "#05120C"
+      faint: "#648576"
+      warning: "#EBC342"
+      success: "#73C686"
+      error: "#EF796F"
+      actor: "#B8CAC2"
+    background:
+      selected: "#13382A"
+    border:
+      primary: "#D78E3C"
+      secondary: "#1E4738"
+      faint: "#0A2B20"
+    icon:
+      newcontributor: "#73C686"
+      contributor: "#6FB393"
+      collaborator: "#EBC342"
+      member: "#EBC342"
+      owner: "#D78E3C"
+      unknownrole: "#648576"

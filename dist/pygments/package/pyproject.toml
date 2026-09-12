@@ -18,6 +18,9 @@ subway-seat-enamel = "subway_seat_pygments.subway_seat_enamel:SubwaySeatEnamelSt
 london-moquette = "subway_seat_pygments.london_moquette:LondonMoquetteStyle"
 london-deep-level = "subway_seat_pygments.london_deep_level:LondonDeepLevelStyle"
 london-portland = "subway_seat_pygments.london_portland:LondonPortlandStyle"
+paris-guimard = "subway_seat_pygments.paris_guimard:ParisGuimardStyle"
+paris-catacombes = "subway_seat_pygments.paris_catacombes:ParisCatacombesStyle"
+paris-carrelage = "subway_seat_pygments.paris_carrelage:ParisCarrelageStyle"
 
 [build-system]
 requires = ["hatchling"]

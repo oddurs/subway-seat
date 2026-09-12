@@ -1,0 +1,74 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# Paris Catacombes
+
+[colors.primary]
+background = "#062017"
+foreground = "#CFDED7"
+dim_foreground = "#829D91"
+bright_foreground = "#E4EEE9"
+
+[colors.cursor]
+text = "#062017"
+cursor = "#EBC342"
+
+[colors.vi_mode_cursor]
+text = "#062017"
+cursor = "#6FB393"
+
+[colors.search.matches]
+foreground = "#CFDED7"
+background = "#4B5124"
+
+[colors.search.focused_match]
+foreground = "#E4EEE9"
+background = "#6E572A"
+
+[colors.footer_bar]
+foreground = "#CFDED7"
+background = "#13382A"
+
+[colors.hints.start]
+foreground = "#062017"
+background = "#EBC342"
+
+[colors.hints.end]
+foreground = "#062017"
+background = "#829D91"
+
+[colors.line_indicator]
+foreground = "#9EB3AA"
+background = "#0A2B20"
+
+[colors.selection]
+text = "#E4EEE9"
+background = "#1E4738"
+
+[colors.normal]
+black = "#13382A"
+red = "#DA6058"
+green = "#73C686"
+yellow = "#EBC342"
+blue = "#639BD5"
+magenta = "#D78E3C"
+cyan = "#6FB393"
+white = "#B8CAC2"
+
+[colors.bright]
+black = "#648576"
+red = "#EF796F"
+green = "#82D896"
+yellow = "#FBD664"
+blue = "#82B7EE"
+magenta = "#EEA85C"
+cyan = "#8ECFAF"
+white = "#E4EEE9"
+
+[colors.dim]
+black = "#0F3024"
+red = "#924A42"
+green = "#4E8E60"
+yellow = "#9D8C33"
+blue = "#437194"
+magenta = "#90692F"
+cyan = "#4B8169"
+white = "#7B9088"

@@ -20,6 +20,12 @@ Toolbars and panels on the flavor's base, the window frame one step deeper, and 
 | London Deep Level | [`london-deep-level.zip`](london-deep-level.zip) | Vivaldi › Settings › Themes › Library › Import Theme |
 | London Portland | [`london-portland/settings.json`](london-portland/settings.json) | inside london-portland.zip |
 | London Portland | [`london-portland.zip`](london-portland.zip) | Vivaldi › Settings › Themes › Library › Import Theme |
+| Paris Guimard | [`paris-guimard/settings.json`](paris-guimard/settings.json) | inside paris-guimard.zip |
+| Paris Guimard | [`paris-guimard.zip`](paris-guimard.zip) | Vivaldi › Settings › Themes › Library › Import Theme |
+| Paris Catacombes | [`paris-catacombes/settings.json`](paris-catacombes/settings.json) | inside paris-catacombes.zip |
+| Paris Catacombes | [`paris-catacombes.zip`](paris-catacombes.zip) | Vivaldi › Settings › Themes › Library › Import Theme |
+| Paris Carrelage | [`paris-carrelage/settings.json`](paris-carrelage/settings.json) | inside paris-carrelage.zip |
+| Paris Carrelage | [`paris-carrelage.zip`](paris-carrelage.zip) | Vivaldi › Settings › Themes › Library › Import Theme |
 
 ## Turn it on
 
@@ -57,6 +63,24 @@ Import Theme › london-deep-level.zip
 
 ```text
 Import Theme › london-portland.zip
+```
+
+**Paris Guimard**, in Vivaldi › Settings › Themes › Library:
+
+```text
+Import Theme › paris-guimard.zip
+```
+
+**Paris Catacombes**, in Vivaldi › Settings › Themes › Library:
+
+```text
+Import Theme › paris-catacombes.zip
+```
+
+**Paris Carrelage**, in Vivaldi › Settings › Themes › Library:
+
+```text
+Import Theme › paris-carrelage.zip
 ```
 
 ## Follow light and dark

@@ -1,0 +1,61 @@
+{
+  "manifest_version": 2,
+  "name": "Paris Carrelage",
+  "version": "0.3.0",
+  "description": "A walnut-brown 1970s NYC subway theme: harvest gold, burnt orange and avocado on warm wood. Bevelled white tile under a vaulted platform. The light one.",
+  "author": "Oddur Sigurdsson",
+  "homepage_url": "https://github.com/oddurs/subway-seat",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "paris-carrelage@oddurs.github.io",
+      "strict_min_version": "106.0"
+    }
+  },
+  "theme": {
+    "colors": {
+      "frame": "#C8DAD1",
+      "frame_inactive": "#D5E3DD",
+      "tab_background_text": "#4A695C",
+      "tab_background_separator": "#9DC1B1",
+      "tab_selected": "#E2EDE8",
+      "tab_text": "#21352D",
+      "tab_line": "#9B5D00",
+      "tab_loading": "#9B5D00",
+      "toolbar": "#E2EDE8",
+      "toolbar_text": "#21352D",
+      "toolbar_top_separator": "#C8DAD1",
+      "toolbar_bottom_separator": "#9DC1B1",
+      "toolbar_vertical_separator": "#9DC1B1",
+      "icons": "#334A41",
+      "icons_attention": "#9B5D00",
+      "button_background_hover": "#B6D2C5",
+      "button_background_active": "#9DC1B1",
+      "toolbar_field": "#D5E3DD",
+      "toolbar_field_text": "#21352D",
+      "toolbar_field_border": "#9DC1B1",
+      "toolbar_field_focus": "#E2EDE8",
+      "toolbar_field_text_focus": "#16241E",
+      "toolbar_field_border_focus": "#9B5D00",
+      "toolbar_field_highlight": "#9DC1B1",
+      "toolbar_field_highlight_text": "#16241E",
+      "toolbar_field_separator": "#9DC1B1",
+      "popup": "#F0F6F4",
+      "popup_text": "#21352D",
+      "popup_border": "#D3DBD8",
+      "popup_highlight": "#9DC1B1",
+      "popup_highlight_text": "#16241E",
+      "sidebar": "#D5E3DD",
+      "sidebar_text": "#21352D",
+      "sidebar_border": "#9DC1B1",
+      "sidebar_highlight": "#9DC1B1",
+      "sidebar_highlight_text": "#16241E",
+      "ntp_background": "#E2EDE8",
+      "ntp_card_background": "#D5E3DD",
+      "ntp_text": "#21352D"
+    },
+    "properties": {
+      "color_scheme": "light",
+      "content_color_scheme": "light"
+    }
+  }
+}

@@ -1,0 +1,92 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+
+[colors]
+foreground = "#D3E2DB"
+background = "#0E3125"
+cursor_bg = "#EBC342"
+cursor_border = "#EBC342"
+cursor_fg = "#0E3125"
+compose_cursor = "#E783BD"
+selection_bg = "#285A47"
+selection_fg = "#E6F0EB"
+scrollbar_thumb = "#285A47"
+split = "#113E2E"
+visual_bell = "#113E2E"
+ansi = [
+  "#194A39",
+  "#DA6058",
+  "#73C686",
+  "#EBC342",
+  "#639BD5",
+  "#D78E3C",
+  "#6FB393",
+  "#BBCDC5",
+]
+brights = [
+  "#67897A",
+  "#EF796F",
+  "#82D896",
+  "#FBD664",
+  "#82B7EE",
+  "#EEA85C",
+  "#8ECFAF",
+  "#E6F0EB",
+]
+copy_mode_active_highlight_bg = { Color = "#726030" }
+copy_mode_active_highlight_fg = { Color = "#E6F0EB" }
+copy_mode_inactive_highlight_bg = { Color = "#505D2E" }
+copy_mode_inactive_highlight_fg = { Color = "#D3E2DB" }
+quick_select_label_bg = { Color = "#D78E3C" }
+quick_select_label_fg = { Color = "#0E3125" }
+quick_select_match_bg = { Color = "#505D2E" }
+quick_select_match_fg = { Color = "#D3E2DB" }
+
+[colors.tab_bar]
+background = "#0A1D15"
+inactive_tab_edge = "#113E2E"
+
+[colors.tab_bar.active_tab]
+bg_color = "#0E3125"
+fg_color = "#EBC342"
+intensity = "Bold"
+italic = false
+strikethrough = false
+underline = "None"
+
+[colors.tab_bar.inactive_tab]
+bg_color = "#0C261C"
+fg_color = "#67897A"
+intensity = "Normal"
+italic = false
+strikethrough = false
+underline = "None"
+
+[colors.tab_bar.inactive_tab_hover]
+bg_color = "#113E2E"
+fg_color = "#D3E2DB"
+intensity = "Normal"
+italic = false
+strikethrough = false
+underline = "None"
+
+[colors.tab_bar.new_tab]
+bg_color = "#0A1D15"
+fg_color = "#67897A"
+intensity = "Normal"
+italic = false
+strikethrough = false
+underline = "None"
+
+[colors.tab_bar.new_tab_hover]
+bg_color = "#113E2E"
+fg_color = "#EBC342"
+intensity = "Normal"
+italic = false
+strikethrough = false
+underline = "None"
+
+[metadata]
+name = "Paris Guimard"
+author = "oddurs"
+origin_url = "https://github.com/oddurs/subway-seat"
+aliases = []

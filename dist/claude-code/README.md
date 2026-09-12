@@ -26,6 +26,15 @@ One plugin: all three themes, a relaxed output style and subagent rows. `/subway
 | London Portland | [`themes/london-portland.json`](themes/london-portland.json) | `~/.claude/themes/london-portland.json` |
 | London Portland | [`plugin/themes/london-portland.json`](plugin/themes/london-portland.json) |  |
 | London Portland | [`plugin/settings/london-portland.json`](plugin/settings/london-portland.json) | merged into ~/.claude/settings.json by /subway-seat:setup |
+| Paris Guimard | [`themes/paris-guimard.json`](themes/paris-guimard.json) | `~/.claude/themes/paris-guimard.json` |
+| Paris Guimard | [`plugin/themes/paris-guimard.json`](plugin/themes/paris-guimard.json) |  |
+| Paris Guimard | [`plugin/settings/paris-guimard.json`](plugin/settings/paris-guimard.json) | merged into ~/.claude/settings.json by /subway-seat:setup |
+| Paris Catacombes | [`themes/paris-catacombes.json`](themes/paris-catacombes.json) | `~/.claude/themes/paris-catacombes.json` |
+| Paris Catacombes | [`plugin/themes/paris-catacombes.json`](plugin/themes/paris-catacombes.json) |  |
+| Paris Catacombes | [`plugin/settings/paris-catacombes.json`](plugin/settings/paris-catacombes.json) | merged into ~/.claude/settings.json by /subway-seat:setup |
+| Paris Carrelage | [`themes/paris-carrelage.json`](themes/paris-carrelage.json) | `~/.claude/themes/paris-carrelage.json` |
+| Paris Carrelage | [`plugin/themes/paris-carrelage.json`](plugin/themes/paris-carrelage.json) |  |
+| Paris Carrelage | [`plugin/settings/paris-carrelage.json`](plugin/settings/paris-carrelage.json) | merged into ~/.claude/settings.json by /subway-seat:setup |
 | All three | [`plugin/.claude-plugin/plugin.json`](plugin/.claude-plugin/plugin.json) |  |
 | All three | [`plugin/settings.json`](plugin/settings.json) |  |
 | All three | [`plugin/hooks/hooks.json`](plugin/hooks/hooks.json) |  |
@@ -87,6 +96,30 @@ One plugin: all three themes, a relaxed output style and subagent rows. `/subway
 /subway-seat:setup   # and pick London Portland
 ```
 
+**Paris Guimard**, in Claude Code, from the Subway Seat marketplace:
+
+```text
+/plugin marketplace add oddurs/subway-seat
+/plugin install subway-seat@subway-seat
+/subway-seat:setup   # and pick Paris Guimard
+```
+
+**Paris Catacombes**, in Claude Code, from the Subway Seat marketplace:
+
+```text
+/plugin marketplace add oddurs/subway-seat
+/plugin install subway-seat@subway-seat
+/subway-seat:setup   # and pick Paris Catacombes
+```
+
+**Paris Carrelage**, in Claude Code, from the Subway Seat marketplace:
+
+```text
+/plugin marketplace add oddurs/subway-seat
+/plugin install subway-seat@subway-seat
+/subway-seat:setup   # and pick Paris Carrelage
+```
+
 ## Uninstall
 
 - Delete `~/.claude/themes/subway-seat.json`.
@@ -95,6 +128,9 @@ One plugin: all three themes, a relaxed output style and subagent rows. `/subway
 - Delete `~/.claude/themes/london-moquette.json`.
 - Delete `~/.claude/themes/london-deep-level.json`.
 - Delete `~/.claude/themes/london-portland.json`.
+- Delete `~/.claude/themes/paris-guimard.json`.
+- Delete `~/.claude/themes/paris-catacombes.json`.
+- Delete `~/.claude/themes/paris-carrelage.json`.
 - Delete `~/.claude/subway-seat/subway-seat-statusline`.
 - Delete `~/.claude/subway-seat/subway-seat-subagents`.
 - Delete `~/.claude/subway-seat/tips.json`.

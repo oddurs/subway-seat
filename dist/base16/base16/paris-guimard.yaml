@@ -1,0 +1,22 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+system: "base16"
+name: "Paris Guimard"
+author: "oddurs (https://github.com/oddurs/subway-seat)"
+variant: "dark"
+palette:
+  base00: "#0E3125" # base (Paneling)
+  base01: "#113E2E" # surface0 (Coppertone)
+  base02: "#285A47" # surface2 (Corduroy)
+  base03: "#67897A" # overlay1 (Cardboard)
+  base04: "#A2B7AE" # subtext0 (Khaki)
+  base05: "#D3E2DB" # text (Parchment)
+  base06: "#E6F0EB" # text_hi (Ivory)
+  base07: "#E6F0EB" # text_hi (Ivory)
+  base08: "#DA6058" # red (Redbird)
+  base09: "#EF796F" # red_hi (Redbird bright)
+  base0A: "#EBC342" # yellow (Harvest gold)
+  base0B: "#73C686" # green (Avocado)
+  base0C: "#6FB393" # sage (Seafoam tile)
+  base0D: "#639BD5" # denim (Faded denim)
+  base0E: "#D78E3C" # orange (Burnt orange)
+  base0F: "#E783BD" # clay (Terracotta)

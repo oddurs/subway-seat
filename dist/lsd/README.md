@@ -14,6 +14,9 @@ The long-view columns in the eza port's colors: gold, orange and avocado permiss
 | London Moquette | [`london-moquette/colors.yaml`](london-moquette/colors.yaml) | `~/.config/lsd/colors.yaml` |
 | London Deep Level | [`london-deep-level/colors.yaml`](london-deep-level/colors.yaml) | `~/.config/lsd/colors.yaml` |
 | London Portland | [`london-portland/colors.yaml`](london-portland/colors.yaml) | `~/.config/lsd/colors.yaml` |
+| Paris Guimard | [`paris-guimard/colors.yaml`](paris-guimard/colors.yaml) | `~/.config/lsd/colors.yaml` |
+| Paris Catacombes | [`paris-catacombes/colors.yaml`](paris-catacombes/colors.yaml) | `~/.config/lsd/colors.yaml` |
+| Paris Carrelage | [`paris-carrelage/colors.yaml`](paris-carrelage/colors.yaml) | `~/.config/lsd/colors.yaml` |
 
 ## Turn it on
 

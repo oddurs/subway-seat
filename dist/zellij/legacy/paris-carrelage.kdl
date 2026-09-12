@@ -1,0 +1,18 @@
+// Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+// Paris Carrelage: legacy color-list theme for Zellij before 0.42.
+
+themes {
+    paris-carrelage {
+        fg "#21352D"
+        bg "#9DC1B1"
+        black "#D5E3DD"
+        red "#C82C2C"
+        green "#9B5D00" // active frame, selected tab
+        yellow "#856A00"
+        blue "#0961A9"
+        magenta "#B43586"
+        orange "#856A00" // frame in other modes
+        cyan "#007752"
+        white "#16241E"
+    }
+}

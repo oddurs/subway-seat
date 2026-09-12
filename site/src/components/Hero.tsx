@@ -5,6 +5,7 @@ import { color } from "@/theme/tokens.stylex";
 import { font } from "@/theme/type.stylex";
 import { Button } from "./Button";
 import { Diagram } from "./Diagram";
+import { Guimard } from "./Guimard";
 import { Supergraphic } from "./Supergraphic";
 
 export function Hero({ count }: { count: number }) {
@@ -19,6 +20,9 @@ export function Hero({ count }: { count: number }) {
           <span data-only="london" {...stylex.props(styles.diagram)}>
             <Diagram />
           </span>
+          <span data-only="paris">
+            <Guimard />
+          </span>
         </div>
         <div {...stylex.props(styles.copy)}>
           <p data-only="new-york" {...stylex.props(styles.eyebrow)}>
@@ -27,16 +31,27 @@ export function Hero({ count }: { count: number }) {
           <p data-only="london" {...stylex.props(styles.eyebrow)}>
             Mind the gap
           </p>
+          <p data-only="paris" {...stylex.props(styles.eyebrow)}>
+            Correspondance
+          </p>
           <h1 data-only="new-york" {...stylex.props(styles.title)}>
             Sink into a warmer screen.
           </h1>
           <h1 data-only="london" {...stylex.props(styles.title, styles.titleLondon)}>
             Stand clear of the closing tabs.
           </h1>
+          <h1 data-only="paris" {...stylex.props(styles.title, styles.titleLondon)}>
+            Take the scenic line.
+          </h1>
           <p data-only="new-york" {...stylex.props(styles.lede)}>
             Subway Seat is a walnut-brown theme from a 1970s subway car: orange bucket seats,
             wood-grain paneling, cream enamel and a little avocado. Three flavors, {count} ports,
             one palette.
+          </p>
+          <p data-only="paris" {...stylex.props(styles.lede)}>
+            Paris fills the same slots from cast iron and tile: Guimard&apos;s green underfoot,
+            white carrelage in the light, and the line colours of the map on top. Three flavors,{" "}
+            {count} ports, the same 26 roles.
           </p>
           <p data-only="london" {...stylex.props(styles.lede)}>
             London is the same system riding a different network: Corporate Blue turned right down,

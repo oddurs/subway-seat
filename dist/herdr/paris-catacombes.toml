@@ -1,0 +1,24 @@
+# >>> subway-seat >>>
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# Paris Catacombes; base theme: catppuccin
+[theme.custom]
+panel_bg = "#062017"
+sidebar_bg = "#061811"
+active_row_bg = "#0A2B20"
+selection_bg = "#13382A"
+surface_dim = "#061811"
+surface0 = "#0A2B20"
+surface1 = "#13382A"
+overlay0 = "#456A5B"
+overlay1 = "#648576"
+text = "#CFDED7"
+subtext0 = "#9EB3AA"
+accent = "#D78E3C"
+mauve = "#E783BD"
+peach = "#EEA85C"
+yellow = "#EBC342"
+green = "#73C686"
+red = "#EF796F"
+blue = "#639BD5"
+teal = "#6FB393"
+# <<< subway-seat <<<

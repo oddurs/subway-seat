@@ -1,0 +1,12 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# Paris Guimard for cava: gradient from the bottom of the screen to the top.
+[color]
+gradient = 1
+gradient_color_1 = '#73C686'
+gradient_color_2 = '#A6C569'
+gradient_color_3 = '#DAC34C'
+gradient_color_4 = '#E5B440'
+gradient_color_5 = '#DD9D3E'
+gradient_color_6 = '#D78740'
+gradient_color_7 = '#D9744C'
+gradient_color_8 = '#DA6058'

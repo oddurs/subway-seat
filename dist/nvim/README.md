@@ -15,6 +15,9 @@ A plugin: `setup({ background, transparent, italics, overrides })`, flavors that
 | London Moquette | [`colors/london-moquette.lua`](colors/london-moquette.lua) | `~/.config/nvim/colors/london-moquette.lua` |
 | London Deep Level | [`colors/london-deep.lua`](colors/london-deep.lua) | `~/.config/nvim/colors/london-deep.lua` |
 | London Portland | [`colors/london-portland.lua`](colors/london-portland.lua) | `~/.config/nvim/colors/london-portland.lua` |
+| Paris Guimard | [`colors/paris-guimard.lua`](colors/paris-guimard.lua) | `~/.config/nvim/colors/paris-guimard.lua` |
+| Paris Catacombes | [`colors/paris-catacombes.lua`](colors/paris-catacombes.lua) | `~/.config/nvim/colors/paris-catacombes.lua` |
+| Paris Carrelage | [`colors/paris-carrelage.lua`](colors/paris-carrelage.lua) | `~/.config/nvim/colors/paris-carrelage.lua` |
 | All three | [`lua/subway-seat/init.lua`](lua/subway-seat/init.lua) | `~/.config/nvim/lua/subway-seat/init.lua` |
 | All three | [`lua/subway-seat/palette.lua`](lua/subway-seat/palette.lua) | `~/.config/nvim/lua/subway-seat/palette.lua` |
 | All three | [`lua/lualine/themes/subway-seat.lua`](lua/lualine/themes/subway-seat.lua) | `~/.config/nvim/lua/lualine/themes/subway-seat.lua` |
@@ -30,6 +33,12 @@ A plugin: `setup({ background, transparent, italics, overrides })`, flavors that
 | London Deep Level | [`lua/lualine/themes/london_deep_level.lua`](lua/lualine/themes/london_deep_level.lua) | `~/.config/nvim/lua/lualine/themes/london_deep_level.lua` |
 | London Portland | [`lua/lualine/themes/london-portland.lua`](lua/lualine/themes/london-portland.lua) | `~/.config/nvim/lua/lualine/themes/london-portland.lua` |
 | London Portland | [`lua/lualine/themes/london_portland.lua`](lua/lualine/themes/london_portland.lua) | `~/.config/nvim/lua/lualine/themes/london_portland.lua` |
+| Paris Guimard | [`lua/lualine/themes/paris-guimard.lua`](lua/lualine/themes/paris-guimard.lua) | `~/.config/nvim/lua/lualine/themes/paris-guimard.lua` |
+| Paris Guimard | [`lua/lualine/themes/paris_guimard.lua`](lua/lualine/themes/paris_guimard.lua) | `~/.config/nvim/lua/lualine/themes/paris_guimard.lua` |
+| Paris Catacombes | [`lua/lualine/themes/paris-catacombes.lua`](lua/lualine/themes/paris-catacombes.lua) | `~/.config/nvim/lua/lualine/themes/paris-catacombes.lua` |
+| Paris Catacombes | [`lua/lualine/themes/paris_catacombes.lua`](lua/lualine/themes/paris_catacombes.lua) | `~/.config/nvim/lua/lualine/themes/paris_catacombes.lua` |
+| Paris Carrelage | [`lua/lualine/themes/paris-carrelage.lua`](lua/lualine/themes/paris-carrelage.lua) | `~/.config/nvim/lua/lualine/themes/paris-carrelage.lua` |
+| Paris Carrelage | [`lua/lualine/themes/paris_carrelage.lua`](lua/lualine/themes/paris_carrelage.lua) | `~/.config/nvim/lua/lualine/themes/paris_carrelage.lua` |
 | All three | [`doc/subway-seat.txt`](doc/subway-seat.txt) | `~/.config/nvim/doc/subway-seat.txt` |
 
 ## Turn it on
@@ -70,6 +79,24 @@ vim.cmd.colorscheme("london-deep")
 vim.cmd.colorscheme("london-portland")
 ```
 
+**Paris Guimard**, in init.lua (~/.config/nvim/init.lua; Windows ~/AppData/Local/nvim/init.lua):
+
+```lua
+vim.cmd.colorscheme("paris-guimard")
+```
+
+**Paris Catacombes**, in init.lua (~/.config/nvim/init.lua; Windows ~/AppData/Local/nvim/init.lua):
+
+```lua
+vim.cmd.colorscheme("paris-catacombes")
+```
+
+**Paris Carrelage**, in init.lua (~/.config/nvim/init.lua; Windows ~/AppData/Local/nvim/init.lua):
+
+```lua
+vim.cmd.colorscheme("paris-carrelage")
+```
+
 ## Follow light and dark
 
 In init.lua:
@@ -93,6 +120,9 @@ vim.cmd.colorscheme("subway-seat")
 - Delete `~/.config/nvim/colors/london-moquette.lua`.
 - Delete `~/.config/nvim/colors/london-deep.lua`.
 - Delete `~/.config/nvim/colors/london-portland.lua`.
+- Delete `~/.config/nvim/colors/paris-guimard.lua`.
+- Delete `~/.config/nvim/colors/paris-catacombes.lua`.
+- Delete `~/.config/nvim/colors/paris-carrelage.lua`.
 - Delete `~/.config/nvim/lua/subway-seat/init.lua`.
 - Delete `~/.config/nvim/lua/subway-seat/palette.lua`.
 - Delete `~/.config/nvim/lua/lualine/themes/subway-seat.lua`.
@@ -108,6 +138,12 @@ vim.cmd.colorscheme("subway-seat")
 - Delete `~/.config/nvim/lua/lualine/themes/london_deep_level.lua`.
 - Delete `~/.config/nvim/lua/lualine/themes/london-portland.lua`.
 - Delete `~/.config/nvim/lua/lualine/themes/london_portland.lua`.
+- Delete `~/.config/nvim/lua/lualine/themes/paris-guimard.lua`.
+- Delete `~/.config/nvim/lua/lualine/themes/paris_guimard.lua`.
+- Delete `~/.config/nvim/lua/lualine/themes/paris-catacombes.lua`.
+- Delete `~/.config/nvim/lua/lualine/themes/paris_catacombes.lua`.
+- Delete `~/.config/nvim/lua/lualine/themes/paris-carrelage.lua`.
+- Delete `~/.config/nvim/lua/lualine/themes/paris_carrelage.lua`.
 - Delete `~/.config/nvim/doc/subway-seat.txt`.
 - Remove the line you added to turn it on.
 
