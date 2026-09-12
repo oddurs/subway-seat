@@ -1,0 +1,119 @@
+#!/bin/sh
+# Everything CI checks, in CI's order, on your machine.
+#
+# CI runs eight checks that no documented local command runs — codespell,
+# actionlint, zizmor, fish -n, the static export and its link check among them —
+# which is a good way to find out about a one-word spelling slip from a red
+# build on main. This runs the lot.
+#
+#   ./check           the checks that need nothing but the repo's own toolchain
+#   ./check --fast    skip the static export, which is the slow one
+#   ./check --all     add the checks that pull a container or a package index
+#
+# Left out either way: the jobs that install real editors and real terminal
+# tools to load the generated themes (ci.yml's `editors` and `tools`). Those
+# want a clean Linux box; let CI have them.
+set -u
+
+fast=0 all=0
+for arg in "$@"; do
+  case $arg in
+    --fast) fast=1 ;;
+    --all) all=1 ;;
+    -h | --help) sed -n '2,20p' "$0" | sed 's/^# \{0,1\}//'; exit 0 ;;
+    *) echo "check: unknown option $arg" >&2; exit 2 ;;
+  esac
+done
+
+root=$(CDPATH='' cd -- "$(dirname -- "$0")" && pwd)
+cd "$root" || exit 1
+failed='' ran=0
+
+# Run a named check, keep going when it fails, remember that it did.
+step() {
+  name=$1
+  shift
+  printf '\n\033[1m── %s\033[0m\n' "$name"
+  if "$@"; then
+    ran=$((ran + 1))
+  else
+    failed="$failed$name\n"
+  fi
+}
+
+have() { command -v "$1" >/dev/null 2>&1; }
+
+# ── The palette and the ports ─────────────────────────────────────────────
+step "build.py --check" uv run ./build.py --check
+step "pytest" uv run --locked --extra dev pytest -q
+step "ruff" uv run --locked --extra dev ruff check .
+
+# ── Shell ─────────────────────────────────────────────────────────────────
+shell_check() {
+  have shellcheck || { echo "shellcheck not installed; skipped"; return 0; }
+  scripts='' snippets=''
+  for f in $(find dist -type f) install.sh; do
+    [ -f "$f" ] || continue
+    case $(head -c 128 "$f" | LC_ALL=C tr -d '\0' | head -n1) in
+      '#!'*fish* | '#!'*zsh* | '#!'*nu*) ;;
+      '#!'*sh*) scripts="$scripts $f" ;;
+      *) case $f in *.sh) snippets="$snippets $f" ;; esac ;;
+    esac
+  done
+  # shellcheck disable=SC2086 # the lists are space-separated paths, deliberately split
+  shellcheck -S warning $scripts || return 1
+  # shellcheck disable=SC2086
+  [ -z "$snippets" ] || shellcheck -S warning --shell=sh $snippets
+}
+step "shellcheck" shell_check
+
+fish_check() {
+  have fish || { echo "fish not installed; skipped"; return 0; }
+  for f in install.fish $(find dist -name '*.fish'); do
+    [ -f "$f" ] || continue
+    fish --no-execute "$f" || return 1
+  done
+}
+step "fish -n" fish_check
+
+# ── Prose ─────────────────────────────────────────────────────────────────
+# The same file list and flags ci.yml uses; ports/ and tests/ are covered by
+# tests/test_ports.py, which knows the names apps define themselves.
+spell() {
+  files="README.md CONTRIBUTING.md CHANGELOG.md SECURITY.md CODE_OF_CONDUCT.md AGENTS.md docs site/README.md build.py .github install.fish"
+  [ -f install.sh ] && files="$files install.sh"
+  # shellcheck disable=SC2086
+  uvx codespell@2.4.3 --builtin clear,rare,en-GB_to_en-US -L iterm --ignore-regex '`[^`]*`' $files
+}
+step "codespell" spell
+
+# ── The site ──────────────────────────────────────────────────────────────
+# A fresh clone or worktree has no node_modules, and the first thing you would
+# otherwise see is `eslint: command not found`.
+[ -d site/node_modules ] || step "site: bun install" sh -c 'cd site && bun install --frozen-lockfile'
+step "site: lint, types, format" sh -c 'cd site && bun run check'
+if [ "$fast" -eq 0 ]; then
+  step "site: static export (what Pages deploys)" \
+    sh -c 'cd site && STATIC_EXPORT=1 NEXT_PUBLIC_BASE_PATH=/subway-seat bun run build'
+  step "site: links in the export" sh -c 'cd site && bun run check:links'
+fi
+
+# ── Workflows ─────────────────────────────────────────────────────────────
+if [ "$all" -eq 1 ]; then
+  step "zizmor" uvx zizmor@1.30.1 --min-severity medium .github/workflows
+  if have docker; then
+    step "actionlint" docker run --rm -v "$PWD:/repo" --workdir /repo \
+      rhysd/actionlint:1.7.12 -color
+  else
+    echo "\n── actionlint\ndocker not running; skipped"
+  fi
+fi
+
+# ── ─────────────────────────────────────────────────────────────────────────
+if [ -z "$failed" ]; then
+  printf '\n\033[32m✓ %d checks passed\033[0m\n' "$ran"
+  exit 0
+fi
+printf '\n\033[31m✗ failed:\033[0m\n'
+printf "$failed" | sed 's/^/  /'
+exit 1

@@ -56,7 +56,22 @@ uv run ./build.py --check                  # fail if anything on disk differs fr
 uv run --with pytest --with pyyaml pytest -q
 uvx ruff check .   # no ruff format: the ports keep their hand-aligned color tables
 cd site && bun install && bun run check    # the website: lint, types, format
+
+./check          # everything CI checks, in CI's order — run this before you push
+./check --fast   # the same, without the static export
+./check --all    # add zizmor and actionlint (a package index and a container)
 ```
+
+`./check` exists because CI runs several checks that none of the commands above
+do — codespell, actionlint, zizmor, `fish -n`, the static export and its link
+check — so a green local run used to be able to turn main red over one word. It
+leaves out only ci.yml's `editors` and `tools` jobs, which install real editors
+and real terminal tools to load the generated themes; those want a clean Linux
+box.
+
+After any merge that touched the palette, run `uv run ./build.py` before you
+commit: `dist/` is generated, and .gitattributes resolves it by keeping your
+side so the rebuild can settle it.
 
 `--only` doesn't regenerate the README tables or the site's theme files; run a full build before committing.
 
