@@ -221,6 +221,41 @@ export function Studio() {
     }));
   const reset = () => setAll((p) => ({ ...p, [id]: baseKnobs(id) }));
 
+  /** Siblings of the flavor on screen, itself included. */
+  const siblings = flavors.filter((f) => f.family === flavor.family).map((f) => f.id);
+  const famName = families.find((f) => f.id === flavor.family)?.name ?? flavor.family;
+
+  /**
+   * Push one value sideways across the family.
+   *
+   * A family's three flavors share a hue and a chroma shape and differ only in
+   * where they sit on the ladder, so a judgement about one of them is almost
+   * always a judgement about all three — and re-dialling it twice by hand is
+   * how they drift apart.
+   */
+  const syncKnob = (key: keyof Knobs) =>
+    setAll((prev) => {
+      const next = { ...prev };
+      for (const sib of siblings) {
+        const base = next[sib] ?? baseKnobs(sib);
+        next[sib] = { ...base, [key]: k[key] };
+      }
+      return next;
+    });
+  const syncTrim = (role: string, field: keyof Trim) =>
+    setAll((prev) => {
+      const next = { ...prev };
+      const v = (k.trims[role] ?? ZERO)[field];
+      for (const sib of siblings) {
+        const base = next[sib] ?? baseKnobs(sib);
+        next[sib] = {
+          ...base,
+          trims: { ...base.trims, [role]: { ...(base.trims[role] ?? ZERO), [field]: v } },
+        };
+      }
+      return next;
+    });
+
   const block = `${flavor.id.toUpperCase()} = Flavor(
     id="${flavor.id}",
     family="${flavor.family}",
@@ -415,6 +450,8 @@ ${roles.map((r) => `        "${snake(r)}": "${c[r]}",`).join("\n")}
               unit="°"
               c={c}
               onChange={(v) => set("groundHue", v)}
+              onSync={() => syncKnob("groundHue")}
+              family={famName}
             />
             <Slide
               id="gc"
@@ -426,6 +463,8 @@ ${roles.map((r) => `        "${snake(r)}": "${c[r]}",`).join("\n")}
               unit="×"
               c={c}
               onChange={(v) => set("groundChroma", v)}
+              onSync={() => syncKnob("groundChroma")}
+              family={famName}
             />
             <Slide
               id="gl"
@@ -436,6 +475,8 @@ ${roles.map((r) => `        "${snake(r)}": "${c[r]}",`).join("\n")}
               step={0.002}
               c={c}
               onChange={(v) => set("groundLift", v)}
+              onSync={() => syncKnob("groundLift")}
+              family={famName}
             />
           </Section>
 
@@ -450,6 +491,8 @@ ${roles.map((r) => `        "${snake(r)}": "${c[r]}",`).join("\n")}
               unit="×"
               c={c}
               onChange={(v) => set("stripeChroma", v)}
+              onSync={() => syncKnob("stripeChroma")}
+              family={famName}
             />
             <Slide
               id="uc"
@@ -461,10 +504,21 @@ ${roles.map((r) => `        "${snake(r)}": "${c[r]}",`).join("\n")}
               unit="×"
               c={c}
               onChange={(v) => set("supportChroma", v)}
+              onSync={() => syncKnob("supportChroma")}
+              family={famName}
             />
           </Section>
 
-          <Roles c={c} sel={sel} setSel={setSel} trims={k.trims} trim={trim} rows={rows} />
+          <Roles
+            c={c}
+            sel={sel}
+            setSel={setSel}
+            trims={k.trims}
+            trim={trim}
+            rows={rows}
+            syncTrim={syncTrim}
+            family={famName}
+          />
 
           <button
             type="button"
@@ -509,6 +563,8 @@ function Roles({
   trims,
   trim,
   rows,
+  syncTrim,
+  family,
 }: {
   c: Record<ColorName, string>;
   sel: ColorName;
@@ -516,6 +572,8 @@ function Roles({
   trims: Record<string, Trim>;
   trim: (role: string, field: keyof Trim, v: number) => void;
   rows: { label: string; got: number; min: number; roles: string[] }[];
+  syncTrim: (role: string, field: keyof Trim) => void;
+  family: string;
 }) {
   const groups: [string, ColorName[]][] = [
     ["Ground", ground as ColorName[]],
@@ -575,6 +633,8 @@ function Roles({
                       step={0.002}
                       c={c}
                       onChange={(v) => trim(role, "dL", v)}
+                      onSync={() => syncTrim(role, "dL")}
+                      family={family}
                     />
                     <Slide
                       id={`${role}-c`}
@@ -585,6 +645,8 @@ function Roles({
                       step={0.002}
                       c={c}
                       onChange={(v) => trim(role, "dC", v)}
+                      onSync={() => syncTrim(role, "dC")}
+                      family={family}
                     />
                     <Slide
                       id={`${role}-h`}
@@ -596,6 +658,8 @@ function Roles({
                       unit="°"
                       c={c}
                       onChange={(v) => trim(role, "dh", v)}
+                      onSync={() => syncTrim(role, "dh")}
+                      family={family}
                     />
                     {rows
                       .filter((r) => r.roles.includes(role))
@@ -648,6 +712,8 @@ function Slide({
   unit,
   c,
   onChange,
+  onSync,
+  family,
 }: {
   id: string;
   label: string;
@@ -658,12 +724,16 @@ function Slide({
   unit?: string;
   c: Record<ColorName, string>;
   onChange: (v: number) => void;
+  /** Push this one value to every flavor in the family. */
+  onSync?: () => void;
+  family?: string;
 }) {
+  const [synced, setSynced] = useState(false);
   return (
-    <label htmlFor={id} {...stylex.props(s.row)}>
-      <span {...stylex.props(s.label)} style={{ color: c.subtext0 }}>
+    <div {...stylex.props(s.row)}>
+      <label htmlFor={id} {...stylex.props(s.label)} style={{ color: c.subtext0 }}>
         {label}
-      </span>
+      </label>
       <input
         id={id}
         type="range"
@@ -679,7 +749,25 @@ function Slide({
         {v.toFixed(step < 0.01 ? 3 : 2)}
         {unit ?? ""}
       </output>
-    </label>
+      {onSync ? (
+        <button
+          type="button"
+          title={`Apply this ${label.toLowerCase()} to every flavor in ${family}`}
+          aria-label={`Apply ${label} to every flavor in ${family}`}
+          onClick={() => {
+            onSync();
+            setSynced(true);
+            setTimeout(() => setSynced(false), 900);
+          }}
+          {...stylex.props(s.sync)}
+          style={{ color: synced ? c.green : c.overlay1 }}
+        >
+          {synced ? "✓" : "⇉"}
+        </button>
+      ) : (
+        <span {...stylex.props(s.sync)} />
+      )}
+    </div>
   );
 }
 
@@ -817,9 +905,20 @@ const s = stylex.create({
   sectionTitle: { margin: 0, fontFamily: font.mono, fontSize: 11, fontWeight: 700 },
   row: {
     display: "grid",
-    gridTemplateColumns: "64px minmax(0,1fr) 58px",
-    gap: 8,
+    gridTemplateColumns: "58px minmax(0,1fr) 52px 18px",
+    gap: 7,
     alignItems: "center",
+  },
+  // Push one value sideways to the rest of the family.
+  sync: {
+    width: 18,
+    height: 18,
+    padding: 0,
+    fontSize: 11,
+    lineHeight: 1,
+    cursor: "pointer",
+    borderWidth: 0,
+    backgroundColor: "transparent",
   },
   label: { fontSize: font.sizeMicro },
   range: { width: "100%" },
