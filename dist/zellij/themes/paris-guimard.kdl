@@ -4,82 +4,82 @@
 themes {
     paris-guimard {
         text_unselected {
-            base "#DAE0DC"
-            background "#1A231E"
+            base "#D9E1DB"
+            background "#18241D"
             emphasis_0 "#D0914F"
-            emphasis_1 "#7BB096"
+            emphasis_1 "#6CA087"
             emphasis_2 "#80C28E"
             emphasis_3 "#EBC168"
         }
         text_selected {
-            base "#EAEEEC"
-            background "#34453C"
+            base "#E9EEEC"
+            background "#30463B"
             emphasis_0 "#D0914F"
-            emphasis_1 "#7BB096"
+            emphasis_1 "#6CA087"
             emphasis_2 "#80C28E"
             emphasis_3 "#EBC168"
         }
         ribbon_unselected {
-            base "#DAE0DC"
-            background "#34453C"
+            base "#D9E1DB"
+            background "#30463B"
             emphasis_0 "#EBC168"
-            emphasis_1 "#EAEEEC"
-            emphasis_2 "#7BB096"
+            emphasis_1 "#E9EEEC"
+            emphasis_2 "#6CA087"
             emphasis_3 "#D0914F"
         }
         ribbon_selected {
-            base "#141A17"
+            base "#131A17"
             background "#D0914F"
-            emphasis_0 "#141A17"
-            emphasis_1 "#141A17"
-            emphasis_2 "#141A17"
-            emphasis_3 "#141A17"
+            emphasis_0 "#131A17"
+            emphasis_1 "#131A17"
+            emphasis_2 "#131A17"
+            emphasis_3 "#131A17"
         }
         table_title {
             base "#D0914F"
             background 0
             emphasis_0 "#EBC168"
-            emphasis_1 "#7BB096"
+            emphasis_1 "#6CA087"
             emphasis_2 "#80C28E"
             emphasis_3 "#CE96B4"
         }
         table_cell_selected {
-            base "#EAEEEC"
-            background "#34453C"
+            base "#E9EEEC"
+            background "#30463B"
             emphasis_0 "#D0914F"
-            emphasis_1 "#7BB096"
+            emphasis_1 "#6CA087"
             emphasis_2 "#80C28E"
             emphasis_3 "#EBC168"
         }
         table_cell_unselected {
-            base "#DAE0DC"
-            background "#1A231E"
+            base "#D9E1DB"
+            background "#18241D"
             emphasis_0 "#D0914F"
-            emphasis_1 "#7BB096"
+            emphasis_1 "#6CA087"
             emphasis_2 "#80C28E"
             emphasis_3 "#EBC168"
         }
         list_selected {
-            base "#EAEEEC"
-            background "#34453C"
+            base "#E9EEEC"
+            background "#30463B"
             emphasis_0 "#D0914F"
-            emphasis_1 "#7BB096"
+            emphasis_1 "#6CA087"
             emphasis_2 "#80C28E"
             emphasis_3 "#EBC168"
         }
         list_unselected {
-            base "#DAE0DC"
-            background "#1A231E"
+            base "#D9E1DB"
+            background "#18241D"
             emphasis_0 "#D0914F"
-            emphasis_1 "#7BB096"
+            emphasis_1 "#6CA087"
             emphasis_2 "#80C28E"
             emphasis_3 "#EBC168"
         }
         frame_unselected {
-            base "#42544B"
+            base "#3E554A"
             background 0
             emphasis_0 "#D0914F"
-            emphasis_1 "#7BB096"
+            emphasis_1 "#6CA087"
             emphasis_2 "#80C28E"
             emphasis_3 "#EBC168"
         }
@@ -87,7 +87,7 @@ themes {
             base "#D0914F"
             background 0
             emphasis_0 "#EBC168"
-            emphasis_1 "#7BB096"
+            emphasis_1 "#6CA087"
             emphasis_2 "#80C28E"
             emphasis_3 0
         }
@@ -102,8 +102,8 @@ themes {
         exit_code_success {
             base "#80C28E"
             background 0
-            emphasis_0 "#7BB096"
-            emphasis_1 "#141A17"
+            emphasis_0 "#6CA087"
+            emphasis_1 "#131A17"
             emphasis_2 "#EBC168"
             emphasis_3 "#709BC8"
         }
@@ -119,7 +119,7 @@ themes {
             player_1 "#D0914F"
             player_2 "#EBC168"
             player_3 "#80C28E"
-            player_4 "#7BB096"
+            player_4 "#6CA087"
             player_5 "#709BC8"
             player_6 "#CE96B4"
             player_7 "#E1837A"

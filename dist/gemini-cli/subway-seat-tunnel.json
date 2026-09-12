@@ -5,7 +5,7 @@
   "Foreground": "#E9D8B6",
   "LightBlue": "#D6C3A0",
   "AccentBlue": "#EC7F31",
-  "AccentPurple": "#E0956C",
+  "AccentPurple": "#F4A87E",
   "AccentCyan": "#86AD95",
   "AccentGreen": "#ADB956",
   "AccentYellow": "#F3BF45",
@@ -24,7 +24,7 @@
   "text": {
     "primary": "#E9D8B6",
     "secondary": "#AA9171",
-    "accent": "#E0956C",
+    "accent": "#F4A87E",
     "response": "#E9D8B6"
   },
   "background": {

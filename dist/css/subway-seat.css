@@ -34,7 +34,7 @@
   --ss-sage-hi: #A5C9B0; /* Seafoam bright */
   --ss-denim: #7F9BAE; /* Faded denim */
   --ss-denim-hi: #9DB6C6; /* Denim bright */
-  --ss-clay: #E0956C; /* Terracotta */
+  --ss-clay: #F4A87E; /* Terracotta */
 
   /* Diff grounds: -add/-del/-chg for lines, -emph for changed words, -dim for faded diffs */
   --ss-diff-add: #3F3A1E;
@@ -72,5 +72,5 @@
   --ss-sage-hi-rgb: 165 201 176;
   --ss-denim-rgb: 127 155 174;
   --ss-denim-hi-rgb: 157 182 198;
-  --ss-clay-rgb: 224 149 108;
+  --ss-clay-rgb: 244 168 126;
 }

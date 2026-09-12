@@ -4,20 +4,20 @@
       "Paris Guimard": {
         "name": "Paris Guimard",
         "type": "custom",
-        "Background": "#212D27",
-        "Foreground": "#DAE0DC",
-        "LightBlue": "#C3CAC6",
+        "Background": "#1E2E26",
+        "Foreground": "#D9E1DB",
+        "LightBlue": "#C2CBC5",
         "AccentBlue": "#D0914F",
         "AccentPurple": "#CE96B4",
-        "AccentCyan": "#7BB096",
+        "AccentCyan": "#6CA087",
         "AccentGreen": "#80C28E",
         "AccentYellow": "#EBC168",
         "AccentRed": "#E1837A",
-        "DiffAdded": "#2C3F31",
-        "DiffRemoved": "#442F2B",
-        "Comment": "#77847D",
-        "Gray": "#929D97",
-        "DarkGray": "#42544B",
+        "DiffAdded": "#2B3F31",
+        "DiffRemoved": "#432F2B",
+        "Comment": "#74857C",
+        "Gray": "#909E96",
+        "DarkGray": "#3E554A",
         "GradientColors": [
           "#CD6B63",
           "#D0914F",
@@ -25,20 +25,20 @@
           "#80C28E"
         ],
         "text": {
-          "primary": "#DAE0DC",
-          "secondary": "#929D97",
+          "primary": "#D9E1DB",
+          "secondary": "#909E96",
           "accent": "#CE96B4",
-          "response": "#DAE0DC"
+          "response": "#D9E1DB"
         },
         "background": {
-          "primary": "#212D27",
+          "primary": "#1E2E26",
           "diff": {
-            "added": "#2C3F31",
-            "removed": "#442F2B"
+            "added": "#2B3F31",
+            "removed": "#432F2B"
           }
         },
         "ui": {
-          "comment": "#77847D",
+          "comment": "#74857C",
           "symbol": "#EBC168",
           "active": "#D0914F",
           "focus": "#EBC168",

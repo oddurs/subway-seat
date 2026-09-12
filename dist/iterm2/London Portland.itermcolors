@@ -19,11 +19,11 @@
 	<key>Ansi 1 Color</key>
 	<dict>
 		<key>Red Component</key>
-		<real>0.643137</real>
+		<real>0.607843</real>
 		<key>Green Component</key>
-		<real>0.0</real>
+		<real>0.129412</real>
 		<key>Blue Component</key>
-		<real>0.019608</real>
+		<real>0.101961</real>
 		<key>Alpha Component</key>
 		<real>1.0</real>
 		<key>Color Space</key>
@@ -32,11 +32,11 @@
 	<key>Ansi 2 Color</key>
 	<dict>
 		<key>Red Component</key>
-		<real>0.0</real>
+		<real>0.05098</real>
 		<key>Green Component</key>
-		<real>0.509804</real>
+		<real>0.505882</real>
 		<key>Blue Component</key>
-		<real>0.180392</real>
+		<real>0.192157</real>
 		<key>Alpha Component</key>
 		<real>1.0</real>
 		<key>Color Space</key>
@@ -71,11 +71,11 @@
 	<key>Ansi 5 Color</key>
 	<dict>
 		<key>Red Component</key>
-		<real>0.643137</real>
+		<real>0.694118</real>
 		<key>Green Component</key>
-		<real>0.337255</real>
+		<real>0.290196</real>
 		<key>Blue Component</key>
-		<real>0.0</real>
+		<real>0.027451</real>
 		<key>Alpha Component</key>
 		<real>1.0</real>
 		<key>Color Space</key>
@@ -253,11 +253,11 @@
 	<key>Cursor Color</key>
 	<dict>
 		<key>Red Component</key>
-		<real>0.643137</real>
+		<real>0.694118</real>
 		<key>Green Component</key>
-		<real>0.337255</real>
+		<real>0.290196</real>
 		<key>Blue Component</key>
-		<real>0.0</real>
+		<real>0.027451</real>
 		<key>Alpha Component</key>
 		<real>1.0</real>
 		<key>Color Space</key>
@@ -344,11 +344,11 @@
 	<key>Underline Color</key>
 	<dict>
 		<key>Red Component</key>
-		<real>0.643137</real>
+		<real>0.694118</real>
 		<key>Green Component</key>
-		<real>0.337255</real>
+		<real>0.290196</real>
 		<key>Blue Component</key>
-		<real>0.0</real>
+		<real>0.027451</real>
 		<key>Alpha Component</key>
 		<real>1.0</real>
 		<key>Color Space</key>
@@ -357,11 +357,11 @@
 	<key>Badge Color</key>
 	<dict>
 		<key>Red Component</key>
-		<real>0.643137</real>
+		<real>0.694118</real>
 		<key>Green Component</key>
-		<real>0.337255</real>
+		<real>0.290196</real>
 		<key>Blue Component</key>
-		<real>0.0</real>
+		<real>0.027451</real>
 		<key>Alpha Component</key>
 		<real>0.5</real>
 		<key>Color Space</key>

@@ -51,26 +51,26 @@ M.yellowAlpha = '8A6700'
 M.yellow_hi = 'rgb(997300)'
 M.yellow_hiAlpha = '997300'
 
-M.orange = 'rgb(9B5D00)'
-M.orangeAlpha = '9B5D00'
+M.orange = 'rgb(754500)'
+M.orangeAlpha = '754500'
 
 M.orange_hi = 'rgb(AE6800)'
 M.orange_hiAlpha = 'AE6800'
 
-M.red = 'rgb(9E171B)'
-M.redAlpha = '9E171B'
+M.red = 'rgb(932D29)'
+M.redAlpha = '932D29'
 
 M.red_hi = 'rgb(BB403B)'
 M.red_hiAlpha = 'BB403B'
 
-M.green = 'rgb(18803F)'
-M.greenAlpha = '18803F'
+M.green = 'rgb(207F41)'
+M.greenAlpha = '207F41'
 
 M.green_hi = 'rgb(168540)'
 M.green_hiAlpha = '168540'
 
-M.sage = 'rgb(277555)'
-M.sageAlpha = '277555'
+M.sage = 'rgb(086142)'
+M.sageAlpha = '086142'
 
 M.sage_hi = 'rgb(3D8666)'
 M.sage_hiAlpha = '3D8666'
@@ -98,8 +98,8 @@ function M.apply()
       col = {
         border_active = 'rgb(8A6700)',
         border_inactive = 'rgb(999C6A)',
-        border_locked_active = 'rgb(9B5D00)',
-        border_locked_inactive = 'rgb(A0986A)',
+        border_locked_active = 'rgb(754500)',
+        border_locked_inactive = 'rgb(918E6A)',
       },
       groupbar = {
         text_color = 'rgb(18231D)',
@@ -107,8 +107,8 @@ function M.apply()
         col = {
           active = 'rgb(8A6700)',
           inactive = 'rgb(A3BFB0)',
-          locked_active = 'rgb(9B5D00)',
-          locked_inactive = 'rgb(A0986A)',
+          locked_active = 'rgb(754500)',
+          locked_inactive = 'rgb(918E6A)',
         },
       },
     },

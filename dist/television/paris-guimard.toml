@@ -1,26 +1,26 @@
 # Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
 # Paris Guimard for television.
 # general
-background = '#212D27'
-border_fg = '#42544B'
-text_fg = '#DAE0DC'
-dimmed_text_fg = '#77847D'
+background = '#1E2E26'
+border_fg = '#3E554A'
+text_fg = '#D9E1DB'
+dimmed_text_fg = '#74857C'
 # input
-input_text_fg = '#DAE0DC'
-result_count_fg = '#77847D'
+input_text_fg = '#D9E1DB'
+result_count_fg = '#74857C'
 # results
-result_name_fg = '#C3CAC6'
-result_line_number_fg = '#77847D'
-result_value_fg = '#DAE0DC'
-selection_bg = '#2A3831'
-selection_fg = '#EAEEEC'
+result_name_fg = '#C2CBC5'
+result_line_number_fg = '#74857C'
+result_value_fg = '#D9E1DB'
+selection_bg = '#263930'
+selection_fg = '#E9EEEC'
 match_fg = '#EBC168'
 # preview
-preview_title_fg = '#C3CAC6'
+preview_title_fg = '#C2CBC5'
 # modes
-channel_mode_fg = '#141A17'
+channel_mode_fg = '#131A17'
 channel_mode_bg = '#D0914F'
-remote_control_mode_fg = '#141A17'
+remote_control_mode_fg = '#131A17'
 remote_control_mode_bg = '#EBC168'
-action_picker_mode_fg = '#141A17'
-action_picker_mode_bg = '#7BB096'
+action_picker_mode_fg = '#131A17'
+action_picker_mode_bg = '#6CA087'

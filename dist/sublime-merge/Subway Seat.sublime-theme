@@ -9,7 +9,7 @@
 		"green": "#ADB956",
 		"teal": "#86AD95",
 		"blue": "#7F9BAE",
-		"purple": "#E0956C",
+		"purple": "#F4A87E",
 		"magenta": "#FF9D55",
 		"light_blue": "#40362E",
 		"light_red": "#52281C",
@@ -81,7 +81,7 @@
 		"commit_edge_2": "#ADB956",
 		"commit_edge_3": "#86AD95",
 		"commit_edge_4": "#7F9BAE",
-		"commit_edge_5": "#E0956C",
+		"commit_edge_5": "#F4A87E",
 		"table_of_contents_bg": "#2A1D13",
 		"table_of_contents_fg": "#D9C6A3",
 		"table_of_contents_heading_fg": "#EDDCBC",
@@ -246,7 +246,7 @@
 			"color2": "#ADB956",
 			"color3": "#86AD95",
 			"color4": "#7F9BAE",
-			"color5": "#E0956C"
+			"color5": "#F4A87E"
 		}
 	]
 }

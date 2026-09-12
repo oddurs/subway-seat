@@ -6,13 +6,13 @@ skin: {
     parent:                rgb(69, 89, 79) none / rgb(98, 127, 112) none
     file:                  rgb(37, 53, 44) none / rgb(69, 89, 79) none
     directory:             rgb(138, 103, 0) none Bold / rgb(138, 103, 0) none
-    exe:                   rgb(24, 128, 63) none Bold
-    link:                  rgb(39, 117, 85) none
+    exe:                   rgb(32, 127, 65) none Bold
+    link:                  rgb(8, 97, 66) none
     pruning:               rgb(98, 127, 112) none Italic
     perm__:                rgb(123, 153, 137) none
     perm_r:                rgb(138, 103, 0) none
-    perm_w:                rgb(155, 93, 0) none
-    perm_x:                rgb(24, 128, 63) none
+    perm_w:                rgb(117, 69, 0) none
+    perm_x:                rgb(32, 127, 65) none
     owner:                 rgb(138, 103, 0) none
     group:                 rgb(55, 73, 64) none
     count:                 rgb(79, 103, 91) none
@@ -23,39 +23,39 @@ skin: {
     device_id_major:       rgb(69, 89, 79) none
     device_id_sep:         rgb(123, 153, 137) none
     device_id_minor:       rgb(69, 89, 79) none
-    git_branch:            rgb(155, 93, 0) none
-    git_insertions:        rgb(24, 128, 63) none
+    git_branch:            rgb(117, 69, 0) none
+    git_insertions:        rgb(32, 127, 65) none
     git_deletions:         rgb(187, 64, 59) none
     git_status_current:    rgb(98, 127, 112) none
     git_status_modified:   rgb(138, 103, 0) none
-    git_status_staged:     rgb(24, 128, 63) none
-    git_status_new:        rgb(24, 128, 63) none Bold
+    git_status_staged:     rgb(32, 127, 65) none
+    git_status_new:        rgb(32, 127, 65) none Bold
     git_status_ignored:    rgb(123, 153, 137) none
-    git_status_conflicted: rgb(158, 23, 27) none Bold
+    git_status_conflicted: rgb(147, 45, 41) none Bold
     git_status_other:      rgb(154, 85, 125) none
     selected_line:         none rgb(186, 208, 196) / none rgb(216, 227, 220)
     char_match:            rgb(138, 103, 0) none Bold
     file_error:            rgb(187, 64, 59) none
     flag_label:            rgb(69, 89, 79) none
-    flag_value:            rgb(155, 93, 0) none Bold
+    flag_value:            rgb(117, 69, 0) none Bold
     input:                 rgb(37, 53, 44) none / rgb(69, 89, 79) none
-    status_error:          rgb(228, 237, 232) rgb(158, 23, 27)
+    status_error:          rgb(228, 237, 232) rgb(147, 45, 41)
     status_job:            rgb(138, 103, 0) rgb(216, 227, 220)
     status_normal:         rgb(55, 73, 64) rgb(216, 227, 220)
     status_italic:         rgb(138, 103, 0) rgb(216, 227, 220) Italic
-    status_bold:           rgb(155, 93, 0) rgb(216, 227, 220) Bold
-    status_code:           rgb(39, 117, 85) rgb(216, 227, 220)
+    status_bold:           rgb(117, 69, 0) rgb(216, 227, 220) Bold
+    status_code:           rgb(8, 97, 66) rgb(216, 227, 220)
     status_ellipsis:       rgb(98, 127, 112) rgb(216, 227, 220)
     purpose_normal:        rgb(55, 73, 64) rgb(216, 227, 220)
     purpose_italic:        rgb(138, 103, 0) rgb(216, 227, 220) Italic
-    purpose_bold:          rgb(155, 93, 0) rgb(216, 227, 220) Bold
+    purpose_bold:          rgb(117, 69, 0) rgb(216, 227, 220) Bold
     purpose_ellipsis:      rgb(98, 127, 112) rgb(216, 227, 220)
     scrollbar_track:       rgb(163, 191, 176) none / rgb(186, 208, 196) none
     scrollbar_thumb:       rgb(98, 127, 112) none / rgb(123, 153, 137) none
     help_paragraph:        rgb(37, 53, 44) none
-    help_bold:             rgb(155, 93, 0) none Bold
+    help_bold:             rgb(117, 69, 0) none Bold
     help_italic:           rgb(138, 103, 0) none Italic
-    help_code:             rgb(24, 128, 63) rgb(186, 208, 196)
+    help_code:             rgb(32, 127, 65) rgb(186, 208, 196)
     help_headers:          rgb(138, 103, 0) none Bold
     help_table_border:     rgb(123, 153, 137) none
     preview:               rgb(37, 53, 44) none / rgb(69, 89, 79) none
@@ -64,25 +64,25 @@ skin: {
     preview_separator:     rgb(142, 173, 157) none / rgb(163, 191, 176) none
     preview_match:         none rgb(201, 197, 162)
     diff_line_number:      rgb(98, 127, 112) none
-    diff_added:            none rgb(195, 222, 205)
-    diff_removed:          none rgb(236, 209, 209)
+    diff_added:            none rgb(197, 222, 206)
+    diff_removed:          none rgb(233, 213, 212)
     hex_null:              rgb(123, 153, 137) none
     hex_ascii_graphic:     rgb(55, 73, 64) none
-    hex_ascii_whitespace:  rgb(24, 128, 63) none
-    hex_ascii_other:       rgb(155, 93, 0) none
+    hex_ascii_whitespace:  rgb(32, 127, 65) none
+    hex_ascii_other:       rgb(117, 69, 0) none
     hex_non_ascii:         rgb(187, 64, 59) none
     staging_area_title:    rgb(24, 35, 29) none / rgb(69, 89, 79) none
-    mode_command_mark:     rgb(228, 237, 232) rgb(155, 93, 0) Bold
-    good_to_bad_0:         rgb(24, 128, 63)
-    good_to_bad_1:         rgb(62, 120, 42)
-    good_to_bad_2:         rgb(100, 111, 21)
+    mode_command_mark:     rgb(228, 237, 232) rgb(117, 69, 0) Bold
+    good_to_bad_0:         rgb(32, 127, 65)
+    good_to_bad_1:         rgb(67, 119, 43)
+    good_to_bad_2:         rgb(103, 111, 22)
     good_to_bad_3:         rgb(138, 103, 0)
-    good_to_bad_4:         rgb(144, 100, 0)
-    good_to_bad_5:         rgb(149, 96, 0)
-    good_to_bad_6:         rgb(155, 93, 0)
-    good_to_bad_7:         rgb(156, 70, 9)
-    good_to_bad_8:         rgb(157, 46, 18)
-    good_to_bad_9:         rgb(158, 23, 27)
+    good_to_bad_4:         rgb(131, 92, 0)
+    good_to_bad_5:         rgb(124, 80, 0)
+    good_to_bad_6:         rgb(117, 69, 0)
+    good_to_bad_7:         rgb(127, 61, 14)
+    good_to_bad_8:         rgb(137, 53, 27)
+    good_to_bad_9:         rgb(147, 45, 41)
 }
 
 syntax_theme: SolarizedLight

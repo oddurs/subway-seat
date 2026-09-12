@@ -2,19 +2,19 @@
 // Paris Catacombes: Under the quarries: the same green with the lights turned down.
 // Diff grounds: -add/-del/-chg for lines, -emph for changed words, -dim for faded diffs.
 
-$ss-crust:         #0B100D; // Blackout
-$ss-mantle:        #0F1612; // Espresso
-$ss-base:          #141D19; // Paneling
-$ss-surface0:      #1D2822; // Coppertone
-$ss-surface1:      #27332D; // Saddle
-$ss-surface2:      #34423B; // Corduroy
-$ss-overlay0:      #57645D; // Pecan
-$ss-overlay1:      #738079; // Cardboard
-$ss-overlay2:      #8E9993; // Burlap
-$ss-subtext0:      #A7B0AB; // Khaki
-$ss-subtext1:      #C0C7C3; // Almond
-$ss-text:          #D5DCD8; // Parchment
-$ss-text-hi:       #E8ECEA; // Ivory
+$ss-crust:         #0A100D; // Blackout
+$ss-mantle:        #0D1711; // Espresso
+$ss-base:          #121E19; // Paneling
+$ss-surface0:      #1A2921; // Coppertone
+$ss-surface1:      #24342C; // Saddle
+$ss-surface2:      #31433A; // Corduroy
+$ss-overlay0:      #54655C; // Pecan
+$ss-overlay1:      #708178; // Cardboard
+$ss-overlay2:      #8C9A92; // Burlap
+$ss-subtext0:      #A5B1AA; // Khaki
+$ss-subtext1:      #BFC8C2; // Almond
+$ss-text:          #D4DDD7; // Parchment
+$ss-text-hi:       #E7ECEA; // Ivory
 $ss-yellow:        #EBC168; // Harvest gold
 $ss-yellow-hi:     #FBD380; // Broadway yellow
 $ss-orange:        #D0914F; // Burnt orange
@@ -23,19 +23,19 @@ $ss-red:           #CD6B63; // Redbird
 $ss-red-hi:        #E1837A; // Redbird bright
 $ss-green:         #80C28E; // Avocado
 $ss-green-hi:      #8FD59E; // Avocado bright
-$ss-sage:          #7BB096; // Seafoam tile
+$ss-sage:          #6CA087; // Seafoam tile
 $ss-sage-hi:       #98CCB2; // Seafoam bright
 $ss-denim:         #709BC8; // Faded denim
 $ss-denim-hi:      #8DB6E2; // Denim bright
 $ss-clay:          #CE96B4; // Terracotta
-$ss-diff-add:      #253729;
-$ss-diff-add-emph: #334D39;
+$ss-diff-add:      #243729;
+$ss-diff-add-emph: #324D39;
 $ss-diff-add-dim:  #1B291F;
 $ss-diff-del:      #3D2823;
-$ss-diff-del-emph: #59342F;
-$ss-diff-del-dim:  #2C1F1C;
-$ss-diff-chg:      #2F2C1C;
-$ss-diff-chg-emph: #453E25;
+$ss-diff-del-emph: #58342F;
+$ss-diff-del-dim:  #2B1F1C;
+$ss-diff-chg:      #2E2C1C;
+$ss-diff-chg-emph: #443E25;
 
 $subway-seat: (
   "crust": $ss-crust,

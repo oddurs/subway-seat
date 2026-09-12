@@ -41,7 +41,7 @@ settings:
   --color-cyan: #86AD95;
   --color-blue: #7F9BAE;
   --color-purple: #FF9D55;
-  --color-pink: #E0956C;
+  --color-pink: #F4A87E;
   --color-red-rgb: 249, 113, 96;
   --color-orange-rgb: 236, 127, 49;
   --color-yellow-rgb: 243, 191, 69;
@@ -49,7 +49,7 @@ settings:
   --color-cyan-rgb: 134, 173, 149;
   --color-blue-rgb: 127, 155, 174;
   --color-purple-rgb: 255, 157, 85;
-  --color-pink-rgb: 224, 149, 108;
+  --color-pink-rgb: 244, 168, 126;
 
   /* Accent: burnt orange, still overridable under Settings › Appearance */
   --accent-h: 25.0;
@@ -130,7 +130,7 @@ settings:
   --h3-color: #ADB956;
   --h4-color: #86AD95;
   --h5-color: #F97160;
-  --h6-color: #E0956C;
+  --h6-color: #F4A87E;
   --heading-formatting: #7B6047;
   --inline-title-color: #F8ECD4;
 
@@ -157,7 +157,7 @@ settings:
   --code-normal: #EDDCBC;
   --code-comment: #967B5C;
   --code-function: #F3BF45;
-  --code-important: #E0956C;
+  --code-important: #F4A87E;
   --code-keyword: #EC7F31;
   --code-operator: #AE9575;
   --code-property: #D9C6A3;
@@ -183,7 +183,7 @@ settings:
   --callout-tip: #86AD95;
   --callout-important: #EC7F31;
   --callout-success: #ADB956;
-  --callout-question: #E0956C;
+  --callout-question: #F4A87E;
   --callout-warning: #F3BF45;
   --callout-fail: #F97160;
   --callout-error: #F97160;
@@ -192,7 +192,7 @@ settings:
   --callout-quote: #967B5C;
 
   /* Blocks: quotes, checklists, lists, rules, tables, properties */
-  --blockquote-border-color: #E0956C;
+  --blockquote-border-color: #F4A87E;
   --blockquote-color: #D9C6A3;
   --blockquote-background-color: transparent;
   --checkbox-color: var(--color-accent);
@@ -493,7 +493,7 @@ body.theme-dark.subway-seat-tunnel {
   --color-cyan: #3E7157;
   --color-blue: #3F6480;
   --color-purple: #C4561A;
-  --color-pink: #A65633;
+  --color-pink: #863913;
   --color-red-rgb: 153, 36, 24;
   --color-orange-rgb: 173, 78, 0;
   --color-yellow-rgb: 147, 98, 0;
@@ -501,7 +501,7 @@ body.theme-dark.subway-seat-tunnel {
   --color-cyan-rgb: 62, 113, 87;
   --color-blue-rgb: 63, 100, 128;
   --color-purple-rgb: 196, 86, 26;
-  --color-pink-rgb: 166, 86, 51;
+  --color-pink-rgb: 134, 57, 19;
 
   /* Accent: burnt orange, still overridable under Settings › Appearance */
   --accent-h: 27.1;
@@ -582,7 +582,7 @@ body.theme-dark.subway-seat-tunnel {
   --h3-color: #66740F;
   --h4-color: #3E7157;
   --h5-color: #992418;
-  --h6-color: #A65633;
+  --h6-color: #863913;
   --heading-formatting: #A58C6A;
   --inline-title-color: #2A1D13;
 
@@ -609,7 +609,7 @@ body.theme-dark.subway-seat-tunnel {
   --code-normal: #3E2C1E;
   --code-comment: #8C7254;
   --code-function: #936200;
-  --code-important: #A65633;
+  --code-important: #863913;
   --code-keyword: #AD4E00;
   --code-operator: #735C44;
   --code-property: #54402F;
@@ -635,7 +635,7 @@ body.theme-dark.subway-seat-tunnel {
   --callout-tip: #3E7157;
   --callout-important: #AD4E00;
   --callout-success: #66740F;
-  --callout-question: #A65633;
+  --callout-question: #863913;
   --callout-warning: #936200;
   --callout-fail: #992418;
   --callout-error: #992418;
@@ -644,7 +644,7 @@ body.theme-dark.subway-seat-tunnel {
   --callout-quote: #8C7254;
 
   /* Blocks: quotes, checklists, lists, rules, tables, properties */
-  --blockquote-border-color: #A65633;
+  --blockquote-border-color: #863913;
   --blockquote-color: #54402F;
   --blockquote-background-color: transparent;
   --checkbox-color: var(--color-accent);

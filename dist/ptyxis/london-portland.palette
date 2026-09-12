@@ -7,14 +7,14 @@ Name=London Portland
 [Light]
 Foreground=#293040
 Background=#E5EAF4
-Cursor=#A45600
+Cursor=#B14A07
 CursorForeground=#E5EAF4
 Color0=#3C4557
-Color1=#A40005
-Color2=#00822E
+Color1=#9B211A
+Color2=#0D8131
 Color3=#896800
 Color4=#0019A8
-Color5=#A45600
+Color5=#B14A07
 Color6=#007376
 Color7=#95A5C4
 Color8=#697794
@@ -30,7 +30,7 @@ TitlebarBackground=#DAE0EB
 BellForeground=#1B202B
 BellBackground=#C6C2B0
 SuperuserForeground=#1B202B
-SuperuserBackground=#EDCCCD
+SuperuserBackground=#EBD3D1
 RemoteForeground=#1B202B
 RemoteBackground=#C5CDE9
 

@@ -3,10 +3,10 @@
 
 if &background ==# 'light'
   let g:airline#themes#london_moquette#palette = {}
-  let g:airline#themes#london_moquette#palette.normal = airline#themes#generate_color_map(['#E5EAF4', '#A45600', 255, 130, 'bold'], ['#3C4557', '#A9B7D4', 238, 146], ['#4A5469', '#DAE0EB', 240, 254])
+  let g:airline#themes#london_moquette#palette.normal = airline#themes#generate_color_map(['#E5EAF4', '#B14A07', 255, 130, 'bold'], ['#3C4557', '#A9B7D4', 238, 146], ['#4A5469', '#DAE0EB', 240, 254])
   let g:airline#themes#london_moquette#palette.normal.airline_warning = ['#E5EAF4', '#896800', 255, 94]
   let g:airline#themes#london_moquette#palette.normal.airline_error = ['#E5EAF4', '#C92B23', 255, 160]
-  let g:airline#themes#london_moquette#palette.insert = airline#themes#generate_color_map(['#E5EAF4', '#00822E', 255, 28, 'bold'], ['#3C4557', '#A9B7D4', 238, 146], ['#4A5469', '#DAE0EB', 240, 254])
+  let g:airline#themes#london_moquette#palette.insert = airline#themes#generate_color_map(['#E5EAF4', '#0D8131', 255, 28, 'bold'], ['#3C4557', '#A9B7D4', 238, 146], ['#4A5469', '#DAE0EB', 240, 254])
   let g:airline#themes#london_moquette#palette.insert.airline_warning = ['#E5EAF4', '#896800', 255, 94]
   let g:airline#themes#london_moquette#palette.insert.airline_error = ['#E5EAF4', '#C92B23', 255, 160]
   let g:airline#themes#london_moquette#palette.visual = airline#themes#generate_color_map(['#E5EAF4', '#896800', 255, 94, 'bold'], ['#3C4557', '#A9B7D4', 238, 146], ['#4A5469', '#DAE0EB', 240, 254])

@@ -4,7 +4,7 @@
   "globals": {
     "foreground": "#293040",
     "background": "#F2F4FA",
-    "caret": "#A45600",
+    "caret": "#B14A07",
     "line_highlight": "#F2F4FA",
     "selection": "#A9B7D4",
     "selection_border": "#A9B7D4",
@@ -17,7 +17,7 @@
     },
     {
       "scope": "keyword, storage",
-      "foreground": "#A45600"
+      "foreground": "#B14A07"
     },
     {
       "scope": "constant",
@@ -25,7 +25,7 @@
     },
     {
       "scope": "string",
-      "foreground": "#00822E"
+      "foreground": "#0D8131"
     },
     {
       "scope": "constant.character.escape",

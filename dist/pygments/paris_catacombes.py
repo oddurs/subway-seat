@@ -9,42 +9,42 @@ __all__ = ["ParisCatacombesStyle", "style"]
 
 class ParisCatacombesStyle(Style):
     name = "paris-catacombes"
-    background_color = "#141D19"
-    highlight_color = "#1D2822"
-    line_number_color = "#57645D"
-    line_number_background_color = "#141D19"
+    background_color = "#121E19"
+    highlight_color = "#1A2921"
+    line_number_color = "#54655C"
+    line_number_background_color = "#121E19"
     line_number_special_color = "#EBC168"
-    line_number_special_background_color = "#1D2822"
+    line_number_special_background_color = "#1A2921"
 
     styles = {
-        Token: "#D5DCD8",
-        Token.Text: "#D5DCD8",
+        Token: "#D4DDD7",
+        Token.Text: "#D4DDD7",
         Token.Error: "#CD6B63",
-        Token.Comment: "italic #738079",
-        Token.Comment.Hashbang: "italic #738079",
+        Token.Comment: "italic #708178",
+        Token.Comment.Hashbang: "italic #708178",
         Token.Comment.Preproc: "italic #CE96B4",
         Token.Keyword: "#D0914F",
         Token.Keyword.Constant: "#E1837A",
-        Token.Keyword.Type: "italic #7BB096",
-        Token.Operator: "#8E9993",
+        Token.Keyword.Type: "italic #6CA087",
+        Token.Operator: "#8C9A92",
         Token.Operator.Word: "#D0914F",
-        Token.Punctuation: "#8E9993",
-        Token.Name: "#D5DCD8",
+        Token.Punctuation: "#8C9A92",
+        Token.Name: "#D4DDD7",
         Token.Name.Attribute: "italic #EBC168",
         Token.Name.Builtin: "italic #EBC168",
         Token.Name.Builtin.Pseudo: "italic #E1837A",
-        Token.Name.Class: "#7BB096",
+        Token.Name.Class: "#6CA087",
         Token.Name.Constant: "#E1837A",
         Token.Name.Decorator: "italic #CE96B4",
         Token.Name.Entity: "#CE96B4",
-        Token.Name.Exception: "#7BB096",
+        Token.Name.Exception: "#6CA087",
         Token.Name.Function: "#EBC168",
         Token.Name.Function.Magic: "italic #EBC168",
         Token.Name.Label: "italic #CE96B4",
-        Token.Name.Namespace: "#A7B0AB",
-        Token.Name.Property: "#C0C7C3",
+        Token.Name.Namespace: "#A5B1AA",
+        Token.Name.Property: "#BFC8C2",
         Token.Name.Tag: "#D0914F",
-        Token.Name.Variable: "#D5DCD8",
+        Token.Name.Variable: "#D4DDD7",
         Token.Name.Variable.Magic: "italic #E1837A",
         Token.Literal.Date: "#E1837A",
         Token.Literal.String: "#80C28E",
@@ -56,12 +56,12 @@ class ParisCatacombesStyle(Style):
         Token.Literal.Number: "#E1837A",
         Token.Generic.Heading: "bold #EBC168",
         Token.Generic.Subheading: "bold #EBC168",
-        Token.Generic.Emph: "italic #D5DCD8",
-        Token.Generic.Strong: "bold #E8ECEA",
+        Token.Generic.Emph: "italic #D4DDD7",
+        Token.Generic.Strong: "bold #E7ECEA",
         Token.Generic.Deleted: "bg:#3D2823 #E1837A",
-        Token.Generic.Inserted: "bg:#253729 #80C28E",
+        Token.Generic.Inserted: "bg:#243729 #80C28E",
         Token.Generic.Error: "#CD6B63",
-        Token.Generic.Output: "#A7B0AB",
+        Token.Generic.Output: "#A5B1AA",
         Token.Generic.Prompt: "#D0914F",
         Token.Generic.Traceback: "#CD6B63",
     }

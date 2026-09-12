@@ -19,11 +19,11 @@
     text-hi:   #1B202B;
     yellow:    #896800;
     yellow-hi: #977300;
-    orange:    #A45600;
+    orange:    #B14A07;
     orange-hi: #B86100;
-    red:       #A40005;
+    red:       #9B211A;
     red-hi:    #C92B23;
-    green:     #00822E;
+    green:     #0D8131;
     green-hi:  #008730;
     sage:      #007376;
     sage-hi:   #008688;
@@ -62,7 +62,7 @@
     selected-active-background:  @selection;
     selected-active-foreground:  #0019A8;
     selected-urgent-background:  @selection;
-    selected-urgent-foreground:  #A45600;
+    selected-urgent-foreground:  #B14A07;
 }
 
 element-text {

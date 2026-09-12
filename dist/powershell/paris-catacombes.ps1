@@ -7,25 +7,25 @@
     $esc = [char]27
 
     $colors = @{
-        Default                = "${esc}[38;2;213;220;216m"                  # text
+        Default                = "${esc}[38;2;212;221;215m"                  # text
         Command                = "${esc}[38;2;235;193;104m"                  # yellow
-        Parameter              = "${esc}[38;2;123;176;150m"                  # sage
+        Parameter              = "${esc}[38;2;108;160;135m"                  # sage
         String                 = "${esc}[38;2;128;194;142m"                  # green
         Operator               = "${esc}[38;2;208;145;79m"                   # orange
         Variable               = "${esc}[38;2;206;150;180m"                  # clay
-        Member                 = "${esc}[38;2;192;199;195m"                  # subtext1
+        Member                 = "${esc}[38;2;191;200;194m"                  # subtext1
         Number                 = "${esc}[38;2;225;131;122m"                  # red_hi
-        Type                   = "${esc}[38;2;123;176;150m"                  # sage
+        Type                   = "${esc}[38;2;108;160;135m"                  # sage
         Keyword                = "${esc}[38;2;208;145;79m"                   # orange
-        Comment                = "${esc}[3;38;2;115;128;121m"                # overlay1, italic
+        Comment                = "${esc}[3;38;2;112;129;120m"                # overlay1, italic
         Error                  = "${esc}[38;2;225;131;122m"                  # red_hi
         Emphasis               = "${esc}[1;38;2;235;193;104m"                # yellow, bold: search matches
-        Selection              = "${esc}[1;38;2;232;236;234;48;2;52;66;59m"  # text_hi on the selection ground
-        ContinuationPrompt     = "${esc}[38;2;115;128;121m"                  # overlay1
-        InlinePrediction       = "${esc}[38;2;87;100;93m"                    # overlay0, like fish autosuggestions
+        Selection              = "${esc}[1;38;2;231;236;234;48;2;49;67;58m"  # text_hi on the selection ground
+        ContinuationPrompt     = "${esc}[38;2;112;129;120m"                  # overlay1
+        InlinePrediction       = "${esc}[38;2;84;101;92m"                    # overlay0, like fish autosuggestions
         ListPrediction         = "${esc}[38;2;208;145;79m"                   # orange: the > marker and source
-        ListPredictionSelected = "${esc}[48;2;39;51;45m"                     # surface1 ground
-        ListPredictionTooltip  = "${esc}[3;38;2;115;128;121m"                # overlay1, italic
+        ListPredictionSelected = "${esc}[48;2;36;52;44m"                     # surface1 ground
+        ListPredictionTooltip  = "${esc}[3;38;2;112;129;120m"                # overlay1, italic
     }
 
     if (Get-Command Set-PSReadLineOption -ErrorAction Ignore) {
@@ -47,9 +47,9 @@
             Error                  = "${esc}[1;38;2;225;131;122m"
             Warning                = "${esc}[1;38;2;235;193;104m"
             Verbose                = "${esc}[38;2;112;155;200m"
-            Debug                  = "${esc}[38;2;123;176;150m"
+            Debug                  = "${esc}[38;2;108;160;135m"
             FeedbackName           = "${esc}[38;2;208;145;79m"
-            FeedbackText           = "${esc}[38;2;192;199;195m"
+            FeedbackText           = "${esc}[38;2;191;200;194m"
             FeedbackAction         = "${esc}[38;2;235;193;104m"
         }
         foreach ($key in $formatting.Keys) {
@@ -59,10 +59,10 @@
 
         if ($PSStyle.PSObject.Properties['FileInfo']) {
             $PSStyle.FileInfo.Directory = "${esc}[1;38;2;235;193;104m"
-            $PSStyle.FileInfo.SymbolicLink = "${esc}[38;2;123;176;150m"
+            $PSStyle.FileInfo.SymbolicLink = "${esc}[38;2;108;160;135m"
             $PSStyle.FileInfo.Executable = "${esc}[1;38;2;128;194;142m"
             foreach ($ext in '.zip', '.tgz', '.gz', '.tar', '.nupkg', '.cab', '.7z') { $PSStyle.FileInfo.Extension[$ext] = "${esc}[38;2;225;131;122m" }
-            foreach ($ext in '.ps1', '.psd1', '.psm1', '.ps1xml') { $PSStyle.FileInfo.Extension[$ext] = "${esc}[38;2;123;176;150m" }
+            foreach ($ext in '.ps1', '.psd1', '.psm1', '.ps1xml') { $PSStyle.FileInfo.Extension[$ext] = "${esc}[38;2;108;160;135m" }
         }
     }
 }

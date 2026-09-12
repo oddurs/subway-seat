@@ -1,37 +1,37 @@
 # name: 'Paris Guimard'
 # Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
-# preferred_background: 212D27
+# preferred_background: 1E2E26
 
-fish_color_normal DAE0DC
+fish_color_normal D9E1DB
 fish_color_command EBC168
 fish_color_keyword D0914F
-fish_color_param C3CAC6
-fish_color_option 7BB096
+fish_color_param C2CBC5
+fish_color_option 6CA087
 fish_color_quote 80C28E
 fish_color_redirection CE96B4
 fish_color_end D0914F
 fish_color_operator CE96B4
 fish_color_escape CE96B4
-fish_color_comment 77847D --italics
+fish_color_comment 74857C --italics
 fish_color_error E1837A
 fish_color_cancel CD6B63
-fish_color_autosuggestion 77847D
-fish_color_gray 5B6A62
+fish_color_autosuggestion 74857C
+fish_color_gray 586B61
 fish_color_valid_path --underline
-fish_color_selection EAEEEC --bold --background=42544B
-fish_color_search_match --bold --background=34453C
+fish_color_selection E9EEEC --bold --background=3E554A
+fish_color_search_match --bold --background=30463B
 fish_color_history_current --bold
 fish_color_cwd EBC168
 fish_color_cwd_root E1837A
 fish_color_user D0914F
-fish_color_host C3CAC6
+fish_color_host C2CBC5
 fish_color_host_remote 80C28E
 fish_color_status E1837A
-fish_pager_color_progress 141A17 --background=D0914F
+fish_pager_color_progress 131A17 --background=D0914F
 fish_pager_color_prefix EBC168 --bold
-fish_pager_color_completion DAE0DC
-fish_pager_color_description 77847D --italics
-fish_pager_color_selected_background --background=34453C
+fish_pager_color_completion D9E1DB
+fish_pager_color_description 74857C --italics
+fish_pager_color_selected_background --background=30463B
 fish_pager_color_selected_prefix EBC168 --bold
-fish_pager_color_selected_completion EAEEEC
-fish_pager_color_selected_description C3CAC6 --italics
+fish_pager_color_selected_completion E9EEEC
+fish_pager_color_selected_description C2CBC5 --italics

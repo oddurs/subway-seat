@@ -20,19 +20,19 @@ palette:
   gray: "#627F70"
   gray-bright: "#7B9989"
   gray-dim: "#4F675B"
-  red: "#9E171B"
+  red: "#932D29"
   red-bright: "#BB403B"
-  green: "#18803F"
+  green: "#207F41"
   green-bright: "#168540"
   yellow: "#8A6700"
   yellow-bright: "#997300"
   blue: "#27629C"
   blue-bright: "#3E75AD"
-  magenta: "#9B5D00"
+  magenta: "#754500"
   magenta-bright: "#AE6800"
-  cyan: "#277555"
+  cyan: "#086142"
   cyan-bright: "#3D8666"
-  orange: "#9B5D00"
+  orange: "#754500"
   orange-bright: "#AE6800"
   brown: "#9A557D"
 syntax:
@@ -44,42 +44,42 @@ syntax:
   constant.character: "#9A557D" # string.escape
   entity.name: "#25352C" # variable
   entity.name.function: "#8A6700" # function
-  entity.name.class: "#277555" # type
-  entity.name.type: "#277555" # type
+  entity.name.class: "#086142" # type
+  entity.name.type: "#086142" # type
   entity.name.namespace: "#45594F" # namespace
-  entity.name.tag: "#9B5D00" # tag
+  entity.name.tag: "#754500" # tag
   entity.name.label: "#9A557D" # decorator
   entity.name.section: "#8A6700" # heading
   entity.other: "#25352C" # variable
   entity.other.attribute-name: "#8A6700" # attribute
-  entity.other.inherited-class: "#277555" # type
-  invalid: "#9E171B" # invalid
+  entity.other.inherited-class: "#086142" # type
+  invalid: "#932D29" # invalid
   invalid.deprecated: "#9A557D" # clay
-  keyword: "#9B5D00" # keyword
+  keyword: "#754500" # keyword
   keyword.operator: "#4F675B" # operator
   markup: "#25352C" # text
   markup.bold: "#18231D" # strong
   markup.italic: "#25352C" # emphasis
   markup.heading: "#8A6700" # heading
   markup.link: "#27629C" # link
-  markup.list: "#9B5D00" # keyword
+  markup.list: "#754500" # keyword
   markup.quote: "#45594F" # quote
-  markup.raw: "#18803F" # code
-  markup.inserted: "#18803F" # green
+  markup.raw: "#207F41" # code
+  markup.inserted: "#207F41" # green
   markup.deleted: "#BB403B" # red_hi
   markup.changed: "#8A6700" # yellow
   meta: "#25352C" # text
   meta.annotation: "#9A557D" # decorator
   punctuation: "#4F675B" # punctuation
-  punctuation.definition.string: "#18803F" # string
+  punctuation.definition.string: "#207F41" # string
   punctuation.section: "#4F675B" # punctuation
-  storage: "#9B5D00" # storage
-  string: "#18803F" # string
+  storage: "#754500" # storage
+  string: "#207F41" # string
   string.regexp: "#9A557D" # regexp
   string.interpolated: "#9A557D" # string.escape
   support: "#8A6700" # function
-  support.class: "#277555" # type
-  support.type: "#277555" # type.builtin
+  support.class: "#086142" # type
+  support.type: "#086142" # type.builtin
   support.constant: "#BB403B" # constant
   support.function.builtin: "#8A6700" # function.builtin
   support.variable: "#BB403B" # variable.builtin
@@ -89,7 +89,7 @@ syntax:
   variable.other.property: "#374940" # property
 ui:
   accent:
-    normal: "#9B5D00"
+    normal: "#754500"
   border:
     normal: "#A3BFB0"
   chrome:
@@ -103,7 +103,7 @@ ui:
       light: "#25352C"
   cursor:
     normal:
-      background: "#9B5D00"
+      background: "#754500"
       foreground: "#E4EDE8"
     muted:
       background: "#627F70"
@@ -127,7 +127,7 @@ ui:
       foreground: "#18231D"
     line:
       background: "#D8E3DC"
-      foreground: "#9B5D00"
+      foreground: "#754500"
     search:
       background: "#C9C5A2"
       foreground: "#18231D"
@@ -148,9 +148,9 @@ ui:
     foreground: "#18231D"
     inactive-background: "#BAD0C4"
   status:
-    error: "#9E171B"
+    error: "#932D29"
     info: "#27629C"
-    success: "#18803F"
+    success: "#207F41"
     warning: "#8A6700"
   tooltip:
     background: "#F2F6F4"

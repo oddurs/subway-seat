@@ -5,11 +5,11 @@ filekinds:
   normal: {foreground: "#3E2C1E"}
   directory: {foreground: "#936200", is_bold: true}
   symlink: {foreground: "#3E7157"}
-  pipe: {foreground: "#A65633"}
+  pipe: {foreground: "#863913"}
   block_device: {foreground: "#C4561A", is_bold: true}
   char_device: {foreground: "#C4561A"}
-  socket: {foreground: "#A65633", is_bold: true}
-  special: {foreground: "#A65633"}
+  socket: {foreground: "#863913", is_bold: true}
+  special: {foreground: "#863913"}
   executable: {foreground: "#66740F", is_bold: true}
   mount_point: {foreground: "#A56E00", is_bold: true, is_underline: true}
 perms:
@@ -23,7 +23,7 @@ perms:
   other_read: {foreground: "#936200"}
   other_write: {foreground: "#AD4E00"}
   other_execute: {foreground: "#66740F"}
-  special_user_file: {foreground: "#A65633"}
+  special_user_file: {foreground: "#863913"}
   special_other: {foreground: "#8C7254"}
   attribute: {foreground: "#8C7254"}
 size:
@@ -54,7 +54,7 @@ git:
   modified: {foreground: "#936200"}
   deleted: {foreground: "#BC4031"}
   renamed: {foreground: "#3E7157"}
-  typechange: {foreground: "#A65633"}
+  typechange: {foreground: "#863913"}
   ignored: {foreground: "#A58C6A"}
   conflicted: {foreground: "#992418", is_bold: true}
 git_repo:
@@ -69,9 +69,9 @@ security_context:
     user: {foreground: "#654F3B"}
     role: {foreground: "#3E7157"}
     typ: {foreground: "#735C44"}
-    range: {foreground: "#A65633"}
+    range: {foreground: "#863913"}
 file_type:
-  image: {foreground: "#A65633"}
+  image: {foreground: "#863913"}
   video: {foreground: "#AD4E00"}
   music: {foreground: "#C4561A"}
   lossless: {foreground: "#C4561A", is_bold: true}
@@ -87,10 +87,10 @@ date: {foreground: "#654F3B"}
 inode: {foreground: "#8C7254"}
 blocks: {foreground: "#8C7254"}
 header: {foreground: "#54402F", is_underline: true}
-octal: {foreground: "#A65633"}
+octal: {foreground: "#863913"}
 flags: {foreground: "#735C44"}
 symlink_path: {foreground: "#654F3B"}
-control_char: {foreground: "#A65633"}
+control_char: {foreground: "#863913"}
 broken_symlink: {foreground: "#BC4031"}
 broken_path_overlay: {is_underline: true}
 filenames:

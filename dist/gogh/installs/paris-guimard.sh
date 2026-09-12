@@ -3,26 +3,26 @@
 
 export PROFILE_NAME="Paris Guimard"
 
-export COLOR_01="#34453C"           # Black (Host)
+export COLOR_01="#30463B"           # Black (Host)
 export COLOR_02="#CD6B63"           # Red (Syntax string)
 export COLOR_03="#80C28E"           # Green (Command)
 export COLOR_04="#EBC168"           # Yellow (Command second)
 export COLOR_05="#709BC8"           # Blue (Path)
 export COLOR_06="#D0914F"           # Magenta (Syntax var)
-export COLOR_07="#7BB096"           # Cyan (Prompt)
-export COLOR_08="#C3CAC6"           # White
+export COLOR_07="#6CA087"           # Cyan (Prompt)
+export COLOR_08="#C2CBC5"           # White
 
-export COLOR_09="#77847D"           # Bright Black
+export COLOR_09="#74857C"           # Bright Black
 export COLOR_10="#E1837A"           # Bright Red (Command error)
 export COLOR_11="#8FD59E"           # Bright Green (Exec)
 export COLOR_12="#FBD380"           # Bright Yellow
 export COLOR_13="#8DB6E2"           # Bright Blue (Folder)
 export COLOR_14="#E7AB6D"           # Bright Magenta
 export COLOR_15="#98CCB2"           # Bright Cyan
-export COLOR_16="#EAEEEC"           # Bright White
+export COLOR_16="#E9EEEC"           # Bright White
 
-export BACKGROUND_COLOR="#212D27"   # Background
-export FOREGROUND_COLOR="#DAE0DC"   # Foreground (Text)
+export BACKGROUND_COLOR="#1E2E26"   # Background
+export FOREGROUND_COLOR="#D9E1DB"   # Foreground (Text)
 
 export CURSOR_COLOR="#EBC168" # Cursor
 

@@ -1,30 +1,30 @@
 # Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
 # Paris Catacombes for matplotlib. Colors are hex without the leading #, as rc files expect.
-figure.facecolor: 141D19
-figure.edgecolor: 141D19
-savefig.facecolor: 141D19
-savefig.edgecolor: 141D19
-axes.facecolor: 141D19
-axes.edgecolor: 57645D
-axes.labelcolor: C0C7C3
-axes.titlecolor: E8ECEA
-axes.prop_cycle: cycler('color', ['D0914F', '7BB096', 'EBC168', '709BC8', 'E1837A', '80C28E', 'CE96B4'])
-text.color: D5DCD8
-xtick.color: 738079
-ytick.color: 738079
-xtick.labelcolor: A7B0AB
-ytick.labelcolor: A7B0AB
-grid.color: 2B3430
-legend.facecolor: 1D2822
-legend.edgecolor: 333E38
+figure.facecolor: 121E19
+figure.edgecolor: 121E19
+savefig.facecolor: 121E19
+savefig.edgecolor: 121E19
+axes.facecolor: 121E19
+axes.edgecolor: 54655C
+axes.labelcolor: BFC8C2
+axes.titlecolor: E7ECEA
+axes.prop_cycle: cycler('color', ['D0914F', '6CA087', 'EBC168', '709BC8', 'E1837A', '80C28E', 'CE96B4'])
+text.color: D4DDD7
+xtick.color: 708178
+ytick.color: 708178
+xtick.labelcolor: A5B1AA
+ytick.labelcolor: A5B1AA
+grid.color: 2A3530
+legend.facecolor: 1A2921
+legend.edgecolor: 313F37
 patch.facecolor: D0914F
-patch.edgecolor: 141D19
-hatch.color: A7B0AB
-boxplot.boxprops.color: C0C7C3
-boxplot.whiskerprops.color: C0C7C3
-boxplot.capprops.color: C0C7C3
-boxplot.flierprops.color: C0C7C3
-boxplot.flierprops.markeredgecolor: C0C7C3
+patch.edgecolor: 121E19
+hatch.color: A5B1AA
+boxplot.boxprops.color: BFC8C2
+boxplot.whiskerprops.color: BFC8C2
+boxplot.capprops.color: BFC8C2
+boxplot.flierprops.color: BFC8C2
+boxplot.flierprops.markeredgecolor: BFC8C2
 boxplot.medianprops.color: D0914F
 boxplot.meanprops.color: EBC168
 boxplot.meanprops.markerfacecolor: EBC168

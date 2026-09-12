@@ -12,7 +12,7 @@
         Parameter              = "${esc}[38;2;62;113;87m"                    # sage
         String                 = "${esc}[38;2;102;116;15m"                   # green
         Operator               = "${esc}[38;2;173;78;0m"                     # orange
-        Variable               = "${esc}[38;2;166;86;51m"                    # clay
+        Variable               = "${esc}[38;2;134;57;19m"                    # clay
         Member                 = "${esc}[38;2;84;64;47m"                     # subtext1
         Number                 = "${esc}[38;2;188;64;49m"                    # red_hi
         Type                   = "${esc}[38;2;62;113;87m"                    # sage

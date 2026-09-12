@@ -35,7 +35,7 @@ theme[proc_misc]="#3E7157"
 theme[cpu_box]="#AD4E00"
 theme[mem_box]="#936200"
 theme[net_box]="#66740F"
-theme[proc_box]="#A65633"
+theme[proc_box]="#863913"
 
 # Box dividers and small box outlines
 theme[div_line]="#BAA07A"

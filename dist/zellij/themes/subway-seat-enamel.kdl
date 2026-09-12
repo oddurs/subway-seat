@@ -41,7 +41,7 @@ themes {
             emphasis_0 "#936200"
             emphasis_1 "#3E7157"
             emphasis_2 "#66740F"
-            emphasis_3 "#A65633"
+            emphasis_3 "#863913"
         }
         table_cell_selected {
             base "#2A1D13"
@@ -121,7 +121,7 @@ themes {
             player_3 "#66740F"
             player_4 "#3E7157"
             player_5 "#3F6480"
-            player_6 "#A65633"
+            player_6 "#863913"
             player_7 "#BC4031"
             player_8 "#697813"
             player_9 "#A56E00"

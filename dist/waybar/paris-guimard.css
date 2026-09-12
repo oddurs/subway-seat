@@ -1,19 +1,19 @@
 /* Subway Seat — generated from palette.py by build.py. Edit the palette, not this file. */
 /* Paris Guimard for waybar: @import it at the top of style.css. */
 
-@define-color crust #141A17;
-@define-color mantle #1A231E;
-@define-color base #212D27;
-@define-color surface0 #2A3831;
-@define-color surface1 #34453C;
-@define-color surface2 #42544B;
-@define-color overlay0 #5B6A62;
-@define-color overlay1 #77847D;
-@define-color overlay2 #929D97;
-@define-color subtext0 #ABB4AF;
-@define-color subtext1 #C3CAC6;
-@define-color text #DAE0DC;
-@define-color text_hi #EAEEEC;
+@define-color crust #131A17;
+@define-color mantle #18241D;
+@define-color base #1E2E26;
+@define-color surface0 #263930;
+@define-color surface1 #30463B;
+@define-color surface2 #3E554A;
+@define-color overlay0 #586B61;
+@define-color overlay1 #74857C;
+@define-color overlay2 #909E96;
+@define-color subtext0 #A9B5AE;
+@define-color subtext1 #C2CBC5;
+@define-color text #D9E1DB;
+@define-color text_hi #E9EEEC;
 @define-color yellow #EBC168;
 @define-color yellow_hi #FBD380;
 @define-color orange #D0914F;
@@ -22,14 +22,14 @@
 @define-color red_hi #E1837A;
 @define-color green #80C28E;
 @define-color green_hi #8FD59E;
-@define-color sage #7BB096;
+@define-color sage #6CA087;
 @define-color sage_hi #98CCB2;
 @define-color denim #709BC8;
 @define-color denim_hi #8DB6E2;
 @define-color clay #CE96B4;
 
 /* Layers: a raised ground for popovers, and washes of text for borders, hover and selection */
-@define-color paper #2A3831;
+@define-color paper #263930;
 @define-color edge alpha(@text, 0.12);
 @define-color hover alpha(@text, 0.08);
 @define-color selection alpha(@text, 0.16);

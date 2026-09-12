@@ -37,16 +37,16 @@ div.internal-vimium-input-hint {
 }
 
 div.internal-vimium-selected-input-hint {
-  background-color: rgba(164, 86, 0, 0.25);
-  border: 1px solid #A45600 !important;
+  background-color: rgba(177, 74, 7, 0.25);
+  border: 1px solid #B14A07 !important;
 }
 
 div.vimium-flash {
-  box-shadow: 0 0 4px 2px #A45600;
+  box-shadow: 0 0 4px 2px #B14A07;
 }
 
 body.vimium-find-mode ::selection {
-  background: #A45600;
+  background: #B14A07;
   color: #E5EAF4;
 }
 
@@ -73,7 +73,7 @@ body.vimium-find-mode ::selection {
 }
 
 #vomnibar input:focus {
-  border-color: #A45600;
+  border-color: #B14A07;
 }
 
 #vomnibar input::selection {
@@ -104,7 +104,7 @@ body.vimium-find-mode ::selection {
 
 #vomnibar li .match,
 #vomnibar li .title .match {
-  color: #A45600;
+  color: #B14A07;
   font-weight: bold;
 }
 
@@ -113,7 +113,7 @@ body.vimium-find-mode ::selection {
 }
 
 #vomnibar li.selected {
-  background-color: #DCD5D2;
+  background-color: #DED4D3;
 }
 
 /* Find HUD */
@@ -147,7 +147,7 @@ span#hud-match-count {
 
 #dialog a,
 #dialog h1 .vim {
-  color: #A45600;
+  color: #B14A07;
 }
 
 #dialog a#close {

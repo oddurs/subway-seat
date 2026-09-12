@@ -111,7 +111,7 @@
         "italic": true
       },
       "comment_preproc": {
-        "color": "#E0956C",
+        "color": "#F4A87E",
         "italic": true
       },
       "keyword": {
@@ -154,7 +154,7 @@
         "color": "#F97160"
       },
       "name_decorator": {
-        "color": "#E0956C",
+        "color": "#F4A87E",
         "italic": true
       },
       "name_exception": {
@@ -179,7 +179,7 @@
         "color": "#ADB956"
       },
       "literal_string_escape": {
-        "color": "#E0956C"
+        "color": "#F4A87E"
       },
       "generic_deleted": {
         "color": "#F97160"

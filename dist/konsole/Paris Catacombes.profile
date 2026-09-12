@@ -7,7 +7,7 @@ TabActivityColor=208,145,79
 
 [Cursor Options]
 CustomCursorColor=235,193,104
-CustomCursorTextColor=20,29,25
+CustomCursorTextColor=18,30,25
 UseCustomCursorColor=true
 
 [General]

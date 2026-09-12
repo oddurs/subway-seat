@@ -9,7 +9,7 @@
       "Foreground": "#EDDCBC",
       "LightBlue": "#D9C6A3",
       "AccentBlue": "#EC7F31",
-      "AccentPurple": "#E0956C",
+      "AccentPurple": "#F4A87E",
       "AccentCyan": "#86AD95",
       "AccentGreen": "#ADB956",
       "AccentYellow": "#F3BF45",
@@ -28,7 +28,7 @@
       "text": {
         "primary": "#EDDCBC",
         "secondary": "#AE9575",
-        "accent": "#E0956C",
+        "accent": "#F4A87E",
         "response": "#EDDCBC"
       },
       "background": {
@@ -63,7 +63,7 @@
       "Foreground": "#E9D8B6",
       "LightBlue": "#D6C3A0",
       "AccentBlue": "#EC7F31",
-      "AccentPurple": "#E0956C",
+      "AccentPurple": "#F4A87E",
       "AccentCyan": "#86AD95",
       "AccentGreen": "#ADB956",
       "AccentYellow": "#F3BF45",
@@ -82,7 +82,7 @@
       "text": {
         "primary": "#E9D8B6",
         "secondary": "#AA9171",
-        "accent": "#E0956C",
+        "accent": "#F4A87E",
         "response": "#E9D8B6"
       },
       "background": {
@@ -117,7 +117,7 @@
       "Foreground": "#3E2C1E",
       "LightBlue": "#54402F",
       "AccentBlue": "#AD4E00",
-      "AccentPurple": "#A65633",
+      "AccentPurple": "#863913",
       "AccentCyan": "#3E7157",
       "AccentGreen": "#66740F",
       "AccentYellow": "#936200",
@@ -136,7 +136,7 @@
       "text": {
         "primary": "#3E2C1E",
         "secondary": "#735C44",
-        "accent": "#A65633",
+        "accent": "#863913",
         "response": "#3E2C1E"
       },
       "background": {
@@ -278,22 +278,22 @@
       "Background": "#E5EAF4",
       "Foreground": "#293040",
       "LightBlue": "#3C4557",
-      "AccentBlue": "#A45600",
+      "AccentBlue": "#B14A07",
       "AccentPurple": "#7660AB",
       "AccentCyan": "#007376",
-      "AccentGreen": "#00822E",
+      "AccentGreen": "#0D8131",
       "AccentYellow": "#896800",
       "AccentRed": "#C92B23",
-      "DiffAdded": "#BDDEC9",
-      "DiffRemoved": "#EDCCCD",
+      "DiffAdded": "#C0DEC9",
+      "DiffRemoved": "#EBD3D1",
       "Comment": "#697794",
       "Gray": "#556179",
       "DarkGray": "#95A5C4",
       "GradientColors": [
-        "#A40005",
-        "#A45600",
+        "#9B211A",
+        "#B14A07",
         "#896800",
-        "#00822E"
+        "#0D8131"
       ],
       "text": {
         "primary": "#293040",
@@ -304,24 +304,24 @@
       "background": {
         "primary": "#E5EAF4",
         "diff": {
-          "added": "#BDDEC9",
-          "removed": "#EDCCCD"
+          "added": "#C0DEC9",
+          "removed": "#EBD3D1"
         }
       },
       "ui": {
         "comment": "#697794",
         "symbol": "#896800",
-        "active": "#A45600",
+        "active": "#B14A07",
         "focus": "#896800",
         "gradient": [
-          "#A40005",
-          "#A45600",
+          "#9B211A",
+          "#B14A07",
           "#896800",
-          "#00822E"
+          "#0D8131"
         ]
       },
       "status": {
-        "success": "#00822E",
+        "success": "#0D8131",
         "warning": "#896800",
         "error": "#C92B23"
       }
@@ -329,20 +329,20 @@
     {
       "name": "Paris Guimard",
       "type": "custom",
-      "Background": "#212D27",
-      "Foreground": "#DAE0DC",
-      "LightBlue": "#C3CAC6",
+      "Background": "#1E2E26",
+      "Foreground": "#D9E1DB",
+      "LightBlue": "#C2CBC5",
       "AccentBlue": "#D0914F",
       "AccentPurple": "#CE96B4",
-      "AccentCyan": "#7BB096",
+      "AccentCyan": "#6CA087",
       "AccentGreen": "#80C28E",
       "AccentYellow": "#EBC168",
       "AccentRed": "#E1837A",
-      "DiffAdded": "#2C3F31",
-      "DiffRemoved": "#442F2B",
-      "Comment": "#77847D",
-      "Gray": "#929D97",
-      "DarkGray": "#42544B",
+      "DiffAdded": "#2B3F31",
+      "DiffRemoved": "#432F2B",
+      "Comment": "#74857C",
+      "Gray": "#909E96",
+      "DarkGray": "#3E554A",
       "GradientColors": [
         "#CD6B63",
         "#D0914F",
@@ -350,20 +350,20 @@
         "#80C28E"
       ],
       "text": {
-        "primary": "#DAE0DC",
-        "secondary": "#929D97",
+        "primary": "#D9E1DB",
+        "secondary": "#909E96",
         "accent": "#CE96B4",
-        "response": "#DAE0DC"
+        "response": "#D9E1DB"
       },
       "background": {
-        "primary": "#212D27",
+        "primary": "#1E2E26",
         "diff": {
-          "added": "#2C3F31",
-          "removed": "#442F2B"
+          "added": "#2B3F31",
+          "removed": "#432F2B"
         }
       },
       "ui": {
-        "comment": "#77847D",
+        "comment": "#74857C",
         "symbol": "#EBC168",
         "active": "#D0914F",
         "focus": "#EBC168",
@@ -383,20 +383,20 @@
     {
       "name": "Paris Catacombes",
       "type": "custom",
-      "Background": "#141D19",
-      "Foreground": "#D5DCD8",
-      "LightBlue": "#C0C7C3",
+      "Background": "#121E19",
+      "Foreground": "#D4DDD7",
+      "LightBlue": "#BFC8C2",
       "AccentBlue": "#D0914F",
       "AccentPurple": "#CE96B4",
-      "AccentCyan": "#7BB096",
+      "AccentCyan": "#6CA087",
       "AccentGreen": "#80C28E",
       "AccentYellow": "#EBC168",
       "AccentRed": "#E1837A",
-      "DiffAdded": "#253729",
+      "DiffAdded": "#243729",
       "DiffRemoved": "#3D2823",
-      "Comment": "#738079",
-      "Gray": "#8E9993",
-      "DarkGray": "#34423B",
+      "Comment": "#708178",
+      "Gray": "#8C9A92",
+      "DarkGray": "#31433A",
       "GradientColors": [
         "#CD6B63",
         "#D0914F",
@@ -404,20 +404,20 @@
         "#80C28E"
       ],
       "text": {
-        "primary": "#D5DCD8",
-        "secondary": "#8E9993",
+        "primary": "#D4DDD7",
+        "secondary": "#8C9A92",
         "accent": "#CE96B4",
-        "response": "#D5DCD8"
+        "response": "#D4DDD7"
       },
       "background": {
-        "primary": "#141D19",
+        "primary": "#121E19",
         "diff": {
-          "added": "#253729",
+          "added": "#243729",
           "removed": "#3D2823"
         }
       },
       "ui": {
-        "comment": "#738079",
+        "comment": "#708178",
         "symbol": "#EBC168",
         "active": "#D0914F",
         "focus": "#EBC168",
@@ -440,22 +440,22 @@
       "Background": "#E4EDE8",
       "Foreground": "#25352C",
       "LightBlue": "#374940",
-      "AccentBlue": "#9B5D00",
+      "AccentBlue": "#754500",
       "AccentPurple": "#9A557D",
-      "AccentCyan": "#277555",
-      "AccentGreen": "#18803F",
+      "AccentCyan": "#086142",
+      "AccentGreen": "#207F41",
       "AccentYellow": "#8A6700",
       "AccentRed": "#BB403B",
-      "DiffAdded": "#C3DECD",
-      "DiffRemoved": "#ECD1D1",
+      "DiffAdded": "#C5DECE",
+      "DiffRemoved": "#E9D5D4",
       "Comment": "#627F70",
       "Gray": "#4F675B",
       "DarkGray": "#8EAD9D",
       "GradientColors": [
-        "#9E171B",
-        "#9B5D00",
+        "#932D29",
+        "#754500",
         "#8A6700",
-        "#18803F"
+        "#207F41"
       ],
       "text": {
         "primary": "#25352C",
@@ -466,24 +466,24 @@
       "background": {
         "primary": "#E4EDE8",
         "diff": {
-          "added": "#C3DECD",
-          "removed": "#ECD1D1"
+          "added": "#C5DECE",
+          "removed": "#E9D5D4"
         }
       },
       "ui": {
         "comment": "#627F70",
         "symbol": "#8A6700",
-        "active": "#9B5D00",
+        "active": "#754500",
         "focus": "#8A6700",
         "gradient": [
-          "#9E171B",
-          "#9B5D00",
+          "#932D29",
+          "#754500",
           "#8A6700",
-          "#18803F"
+          "#207F41"
         ]
       },
       "status": {
-        "success": "#18803F",
+        "success": "#207F41",
         "warning": "#8A6700",
         "error": "#BB403B"
       }

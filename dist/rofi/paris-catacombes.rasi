@@ -4,19 +4,19 @@
 @import "default"
 
 * {
-    crust:     #0B100D;
-    mantle:    #0F1612;
-    base:      #141D19;
-    surface0:  #1D2822;
-    surface1:  #27332D;
-    surface2:  #34423B;
-    overlay0:  #57645D;
-    overlay1:  #738079;
-    overlay2:  #8E9993;
-    subtext0:  #A7B0AB;
-    subtext1:  #C0C7C3;
-    text:      #D5DCD8;
-    text-hi:   #E8ECEA;
+    crust:     #0A100D;
+    mantle:    #0D1711;
+    base:      #121E19;
+    surface0:  #1A2921;
+    surface1:  #24342C;
+    surface2:  #31433A;
+    overlay0:  #54655C;
+    overlay1:  #708178;
+    overlay2:  #8C9A92;
+    subtext0:  #A5B1AA;
+    subtext1:  #BFC8C2;
+    text:      #D4DDD7;
+    text-hi:   #E7ECEA;
     yellow:    #EBC168;
     yellow-hi: #FBD380;
     orange:    #D0914F;
@@ -25,16 +25,16 @@
     red-hi:    #E1837A;
     green:     #80C28E;
     green-hi:  #8FD59E;
-    sage:      #7BB096;
+    sage:      #6CA087;
     sage-hi:   #98CCB2;
     denim:     #709BC8;
     denim-hi:  #8DB6E2;
     clay:      #CE96B4;
 
-    paper:     #1D2822;
-    edge:      #333E38;
-    hover:     #2B3630;
-    selection: #49534E;
+    paper:     #1A2921;
+    edge:      #313F37;
+    hover:     #29372F;
+    selection: #46544D;
 
     /* the default theme's variables */
     background:                  @paper;
@@ -70,7 +70,7 @@ element-text {
 }
 
 entry {
-    placeholder-color: #738079;
+    placeholder-color: #708178;
 }
 
 prompt {
@@ -78,9 +78,9 @@ prompt {
 }
 
 num-filtered-rows, num-rows, textbox-num-sep {
-    text-color: #738079;
+    text-color: #708178;
 }
 
 scrollbar {
-    handle-color: #738079;
+    handle-color: #708178;
 }

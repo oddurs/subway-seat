@@ -19,7 +19,7 @@
     danger_fg: Some("#F97160"),
     push_gauge_bg: Some("#EC7F31"),
     push_gauge_fg: Some("#20160E"),
-    tag_fg: Some("#E0956C"),
+    tag_fg: Some("#F4A87E"),
     branch_fg: Some("#ADB956"),
     block_title_focused: Some("#EC7F31"),
     syntax: Some("subway-seat"),

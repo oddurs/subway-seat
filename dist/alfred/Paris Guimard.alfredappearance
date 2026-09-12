@@ -4,22 +4,22 @@
       "textSpacing": 6,
       "subtext": {
         "size": 12,
-        "colorSelected": "#C3CAC6FF",
+        "colorSelected": "#C2CBC5FF",
         "font": "System",
-        "color": "#929D97FF"
+        "color": "#909E96FF"
       },
       "shortcut": {
         "size": 16,
         "colorSelected": "#E7AB6DFF",
         "font": "System",
-        "color": "#77847DFF"
+        "color": "#74857CFF"
       },
-      "backgroundSelected": "#484330FF",
+      "backgroundSelected": "#45442FFF",
       "text": {
         "size": 18,
-        "colorSelected": "#EAEEECFF",
+        "colorSelected": "#E9EEECFF",
         "font": "System",
-        "color": "#DAE0DCFF"
+        "color": "#D9E1DBFF"
       },
       "iconPaddingHorizontal": 6,
       "roundness": 8,
@@ -27,35 +27,35 @@
       "iconSize": 38
     },
     "search": {
-      "backgroundSelected": "#42544BFF",
+      "backgroundSelected": "#3E554AFF",
       "paddingHorizontal": 10,
       "spacing": 10,
       "text": {
         "size": 30,
-        "colorSelected": "#EAEEECFF",
+        "colorSelected": "#E9EEECFF",
         "font": "System Light",
-        "color": "#DAE0DCFF"
+        "color": "#D9E1DBFF"
       },
-      "background": "#1A231EFF",
+      "background": "#18241DFF",
       "roundness": 8,
       "paddingVertical": 6
     },
     "window": {
-      "color": "#212D27F7",
+      "color": "#1E2E26F7",
       "paddingHorizontal": 10,
       "width": 620,
       "borderPadding": 0,
-      "borderColor": "#2A3831FF",
+      "borderColor": "#263930FF",
       "blur": 12,
       "roundness": 14,
       "paddingVertical": 10
     },
     "separator": {
-      "color": "#2A3831FF",
+      "color": "#263930FF",
       "thickness": 1
     },
     "scrollbar": {
-      "color": "#42544BFF",
+      "color": "#3E554AFF",
       "thickness": 3
     },
     "name": "Paris Guimard",

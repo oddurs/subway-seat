@@ -2,73 +2,73 @@
 # Paris Guimard
 
 [colors.primary]
-background = "#212D27"
-foreground = "#DAE0DC"
-dim_foreground = "#929D97"
-bright_foreground = "#EAEEEC"
+background = "#1E2E26"
+foreground = "#D9E1DB"
+dim_foreground = "#909E96"
+bright_foreground = "#E9EEEC"
 
 [colors.cursor]
-text = "#212D27"
+text = "#1E2E26"
 cursor = "#EBC168"
 
 [colors.vi_mode_cursor]
-text = "#212D27"
-cursor = "#7BB096"
+text = "#1E2E26"
+cursor = "#6CA087"
 
 [colors.search.matches]
-foreground = "#DAE0DC"
-background = "#5E593A"
+foreground = "#D9E1DB"
+background = "#5C5A3A"
 
 [colors.search.focused_match]
-foreground = "#EAEEEC"
-background = "#785F3B"
+foreground = "#E9EEEC"
+background = "#77603A"
 
 [colors.footer_bar]
-foreground = "#DAE0DC"
-background = "#34453C"
+foreground = "#D9E1DB"
+background = "#30463B"
 
 [colors.hints.start]
-foreground = "#212D27"
+foreground = "#1E2E26"
 background = "#EBC168"
 
 [colors.hints.end]
-foreground = "#212D27"
-background = "#929D97"
+foreground = "#1E2E26"
+background = "#909E96"
 
 [colors.line_indicator]
-foreground = "#ABB4AF"
-background = "#2A3831"
+foreground = "#A9B5AE"
+background = "#263930"
 
 [colors.selection]
-text = "#EAEEEC"
-background = "#42544B"
+text = "#E9EEEC"
+background = "#3E554A"
 
 [colors.normal]
-black = "#34453C"
+black = "#30463B"
 red = "#CD6B63"
 green = "#80C28E"
 yellow = "#EBC168"
 blue = "#709BC8"
 magenta = "#D0914F"
-cyan = "#7BB096"
-white = "#C3CAC6"
+cyan = "#6CA087"
+white = "#C2CBC5"
 
 [colors.bright]
-black = "#77847D"
+black = "#74857C"
 red = "#E1837A"
 green = "#8FD59E"
 yellow = "#FBD380"
 blue = "#8DB6E2"
 magenta = "#E7AB6D"
 cyan = "#98CCB2"
-white = "#EAEEEC"
+white = "#E9EEEC"
 
 [colors.dim]
-black = "#2E3D35"
-red = "#93564F"
-green = "#608F6B"
-yellow = "#A68F52"
-blue = "#557691"
-magenta = "#946F41"
-cyan = "#5C8370"
-white = "#8C9590"
+black = "#2A3E34"
+red = "#92564E"
+green = "#5F906B"
+yellow = "#A58F52"
+blue = "#547691"
+magenta = "#936F41"
+cyan = "#517966"
+white = "#8A968F"

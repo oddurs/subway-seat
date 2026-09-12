@@ -13,21 +13,21 @@ class LondonPortlandStyle(Style):
     highlight_color = "#DAE0EB"
     line_number_color = "#8291AE"
     line_number_background_color = "#E5EAF4"
-    line_number_special_color = "#A45600"
+    line_number_special_color = "#B14A07"
     line_number_special_background_color = "#DAE0EB"
 
     styles = {
         Token: "#293040",
         Token.Text: "#293040",
-        Token.Error: "#A40005",
+        Token.Error: "#9B211A",
         Token.Comment: "italic #697794",
         Token.Comment.Hashbang: "italic #697794",
         Token.Comment.Preproc: "italic #7660AB",
-        Token.Keyword: "#A45600",
+        Token.Keyword: "#B14A07",
         Token.Keyword.Constant: "#C92B23",
         Token.Keyword.Type: "italic #007376",
         Token.Operator: "#556179",
-        Token.Operator.Word: "#A45600",
+        Token.Operator.Word: "#B14A07",
         Token.Punctuation: "#556179",
         Token.Name: "#293040",
         Token.Name.Attribute: "italic #896800",
@@ -43,12 +43,12 @@ class LondonPortlandStyle(Style):
         Token.Name.Label: "italic #7660AB",
         Token.Name.Namespace: "#4A5469",
         Token.Name.Property: "#3C4557",
-        Token.Name.Tag: "#A45600",
+        Token.Name.Tag: "#B14A07",
         Token.Name.Variable: "#293040",
         Token.Name.Variable.Magic: "italic #C92B23",
         Token.Literal.Date: "#C92B23",
-        Token.Literal.String: "#00822E",
-        Token.Literal.String.Affix: "#A45600",
+        Token.Literal.String: "#0D8131",
+        Token.Literal.String.Affix: "#B14A07",
         Token.Literal.String.Escape: "#7660AB",
         Token.Literal.String.Interpol: "#7660AB",
         Token.Literal.String.Regex: "#7660AB",
@@ -58,12 +58,12 @@ class LondonPortlandStyle(Style):
         Token.Generic.Subheading: "bold #896800",
         Token.Generic.Emph: "italic #293040",
         Token.Generic.Strong: "bold #1B202B",
-        Token.Generic.Deleted: "bg:#EDCCCD #C92B23",
-        Token.Generic.Inserted: "bg:#BDDEC9 #00822E",
-        Token.Generic.Error: "#A40005",
+        Token.Generic.Deleted: "bg:#EBD3D1 #C92B23",
+        Token.Generic.Inserted: "bg:#C0DEC9 #0D8131",
+        Token.Generic.Error: "#9B211A",
         Token.Generic.Output: "#4A5469",
-        Token.Generic.Prompt: "#A45600",
-        Token.Generic.Traceback: "#A40005",
+        Token.Generic.Prompt: "#B14A07",
+        Token.Generic.Traceback: "#9B211A",
     }
 
 

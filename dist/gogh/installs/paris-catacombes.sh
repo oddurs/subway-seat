@@ -3,26 +3,26 @@
 
 export PROFILE_NAME="Paris Catacombes"
 
-export COLOR_01="#27332D"           # Black (Host)
+export COLOR_01="#24342C"           # Black (Host)
 export COLOR_02="#CD6B63"           # Red (Syntax string)
 export COLOR_03="#80C28E"           # Green (Command)
 export COLOR_04="#EBC168"           # Yellow (Command second)
 export COLOR_05="#709BC8"           # Blue (Path)
 export COLOR_06="#D0914F"           # Magenta (Syntax var)
-export COLOR_07="#7BB096"           # Cyan (Prompt)
-export COLOR_08="#C0C7C3"           # White
+export COLOR_07="#6CA087"           # Cyan (Prompt)
+export COLOR_08="#BFC8C2"           # White
 
-export COLOR_09="#738079"           # Bright Black
+export COLOR_09="#708178"           # Bright Black
 export COLOR_10="#E1837A"           # Bright Red (Command error)
 export COLOR_11="#8FD59E"           # Bright Green (Exec)
 export COLOR_12="#FBD380"           # Bright Yellow
 export COLOR_13="#8DB6E2"           # Bright Blue (Folder)
 export COLOR_14="#E7AB6D"           # Bright Magenta
 export COLOR_15="#98CCB2"           # Bright Cyan
-export COLOR_16="#E8ECEA"           # Bright White
+export COLOR_16="#E7ECEA"           # Bright White
 
-export BACKGROUND_COLOR="#141D19"   # Background
-export FOREGROUND_COLOR="#D5DCD8"   # Foreground (Text)
+export BACKGROUND_COLOR="#121E19"   # Background
+export FOREGROUND_COLOR="#D4DDD7"   # Foreground (Text)
 
 export CURSOR_COLOR="#EBC168" # Cursor
 

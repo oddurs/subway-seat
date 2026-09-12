@@ -20,19 +20,19 @@ palette:
   gray: "#697794"
   gray-bright: "#8291AE"
   gray-dim: "#556179"
-  red: "#A40005"
+  red: "#9B211A"
   red-bright: "#C92B23"
-  green: "#00822E"
+  green: "#0D8131"
   green-bright: "#008730"
   yellow: "#896800"
   yellow-bright: "#977300"
   blue: "#0019A8"
   blue-bright: "#4A6EBD"
-  magenta: "#A45600"
+  magenta: "#B14A07"
   magenta-bright: "#B86100"
   cyan: "#007376"
   cyan-bright: "#008688"
-  orange: "#A45600"
+  orange: "#B14A07"
   orange-bright: "#B86100"
   brown: "#7660AB"
 syntax:
@@ -47,34 +47,34 @@ syntax:
   entity.name.class: "#007376" # type
   entity.name.type: "#007376" # type
   entity.name.namespace: "#4A5469" # namespace
-  entity.name.tag: "#A45600" # tag
+  entity.name.tag: "#B14A07" # tag
   entity.name.label: "#7660AB" # decorator
   entity.name.section: "#896800" # heading
   entity.other: "#293040" # variable
   entity.other.attribute-name: "#896800" # attribute
   entity.other.inherited-class: "#007376" # type
-  invalid: "#A40005" # invalid
+  invalid: "#9B211A" # invalid
   invalid.deprecated: "#7660AB" # clay
-  keyword: "#A45600" # keyword
+  keyword: "#B14A07" # keyword
   keyword.operator: "#556179" # operator
   markup: "#293040" # text
   markup.bold: "#1B202B" # strong
   markup.italic: "#293040" # emphasis
   markup.heading: "#896800" # heading
   markup.link: "#0019A8" # link
-  markup.list: "#A45600" # keyword
+  markup.list: "#B14A07" # keyword
   markup.quote: "#4A5469" # quote
-  markup.raw: "#00822E" # code
-  markup.inserted: "#00822E" # green
+  markup.raw: "#0D8131" # code
+  markup.inserted: "#0D8131" # green
   markup.deleted: "#C92B23" # red_hi
   markup.changed: "#896800" # yellow
   meta: "#293040" # text
   meta.annotation: "#7660AB" # decorator
   punctuation: "#556179" # punctuation
-  punctuation.definition.string: "#00822E" # string
+  punctuation.definition.string: "#0D8131" # string
   punctuation.section: "#556179" # punctuation
-  storage: "#A45600" # storage
-  string: "#00822E" # string
+  storage: "#B14A07" # storage
+  string: "#0D8131" # string
   string.regexp: "#7660AB" # regexp
   string.interpolated: "#7660AB" # string.escape
   support: "#896800" # function
@@ -89,7 +89,7 @@ syntax:
   variable.other.property: "#3C4557" # property
 ui:
   accent:
-    normal: "#A45600"
+    normal: "#B14A07"
   border:
     normal: "#A9B7D4"
   chrome:
@@ -103,7 +103,7 @@ ui:
       light: "#293040"
   cursor:
     normal:
-      background: "#A45600"
+      background: "#B14A07"
       foreground: "#E5EAF4"
     muted:
       background: "#697794"
@@ -127,7 +127,7 @@ ui:
       foreground: "#1B202B"
     line:
       background: "#DAE0EB"
-      foreground: "#A45600"
+      foreground: "#B14A07"
     search:
       background: "#C9C3AB"
       foreground: "#1B202B"
@@ -148,9 +148,9 @@ ui:
     foreground: "#1B202B"
     inactive-background: "#BFCAE1"
   status:
-    error: "#A40005"
+    error: "#9B211A"
     info: "#0019A8"
-    success: "#00822E"
+    success: "#0D8131"
     warning: "#896800"
   tooltip:
     background: "#F2F4FA"

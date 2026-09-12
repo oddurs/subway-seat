@@ -1,15 +1,15 @@
 # Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
 [Scheme]
 Name=Paris Guimard
-ColorForeground=#DAE0DC
-ColorBackground=#212D27
+ColorForeground=#D9E1DB
+ColorBackground=#1E2E26
 ColorCursor=#EBC168
-ColorCursorForeground=#212D27
+ColorCursorForeground=#1E2E26
 ColorCursorUseDefault=FALSE
-ColorBold=#EAEEEC
+ColorBold=#E9EEEC
 ColorBoldUseDefault=FALSE
-ColorSelection=#EAEEEC
-ColorSelectionBackground=#42544B
+ColorSelection=#E9EEEC
+ColorSelectionBackground=#3E554A
 ColorSelectionUseDefault=FALSE
 TabActivityColor=#D0914F
-ColorPalette=#34453C;#CD6B63;#80C28E;#EBC168;#709BC8;#D0914F;#7BB096;#C3CAC6;#77847D;#E1837A;#8FD59E;#FBD380;#8DB6E2;#E7AB6D;#98CCB2;#EAEEEC
+ColorPalette=#30463B;#CD6B63;#80C28E;#EBC168;#709BC8;#D0914F;#6CA087;#C2CBC5;#74857C;#E1837A;#8FD59E;#FBD380;#8DB6E2;#E7AB6D;#98CCB2;#E9EEEC

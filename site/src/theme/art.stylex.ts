@@ -9,6 +9,6 @@ export const art = stylex.defineVars({
   green: "#ADB956",
   sage: "#86AD95",
   denim: "#7F9BAE",
-  clay: "#E0956C",
+  clay: "#F4A87E",
   page: "#1A120B",
 });

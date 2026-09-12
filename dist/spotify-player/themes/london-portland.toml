@@ -7,11 +7,11 @@ name = "london-portland"
 background = "#E5EAF4"
 foreground = "#293040"
 black = "#3C4557"
-red = "#A40005"
-green = "#00822E"
+red = "#9B211A"
+green = "#0D8131"
 yellow = "#896800"
 blue = "#0019A8"
-magenta = "#A45600"
+magenta = "#B14A07"
 cyan = "#007376"
 white = "#95A5C4"
 bright_black = "#697794"
@@ -24,24 +24,24 @@ bright_cyan = "#008688"
 bright_white = "#A9B7D4"
 
 [themes.component_style]
-block_title = { fg = "#A45600", modifiers = ["Bold"] }
+block_title = { fg = "#B14A07", modifiers = ["Bold"] }
 border = { fg = "#95A5C4" }
 playback_status = { fg = "#896800", modifiers = ["Bold"] }
 playback_track = { fg = "#896800", modifiers = ["Bold"] }
-playback_artists = { fg = "#A45600" }
+playback_artists = { fg = "#B14A07" }
 playback_album = { fg = "#007376" }
 playback_genres = { fg = "#697794", modifiers = ["Italic"] }
 playback_metadata = { fg = "#4A5469" }
-playback_progress_bar = { fg = "#A45600", bg = "#A9B7D4" }
+playback_progress_bar = { fg = "#B14A07", bg = "#A9B7D4" }
 playback_progress_bar_unfilled = { fg = "#95A5C4", bg = "#A9B7D4" }
-current_playing = { fg = "#00822E", modifiers = ["Bold"] }
+current_playing = { fg = "#0D8131", modifiers = ["Bold"] }
 page_desc = { fg = "#896800", modifiers = ["Bold"] }
 playlist_desc = { fg = "#697794" }
-table_header = { fg = "#A45600" }
+table_header = { fg = "#B14A07" }
 selection = { fg = "#1B202B", bg = "#BFCAE1", modifiers = ["Bold"] }
 secondary_row = { bg = "#DAE0EB" }
 like = { fg = "#C92B23" }
 lyrics_played = { fg = "#697794" }
 lyrics_playing = { fg = "#896800", modifiers = ["Bold"] }
-visualization = { low = "#00822E", mid = "#896800", high = "#C92B23" }
+visualization = { low = "#0D8131", mid = "#896800", high = "#C92B23" }
 # <<< subway-seat <<<

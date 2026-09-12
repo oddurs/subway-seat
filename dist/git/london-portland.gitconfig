@@ -7,10 +7,10 @@
 	frag = "#0019a8"
 	func = "#3c4557"
 	old = "#c92b23"
-	new = "#00822e"
+	new = "#0d8131"
 	commit = "#896800"
-	whitespace = "normal #a40005"
-	oldMoved = "#a45600 bold"
+	whitespace = "normal #9b211a"
+	oldMoved = "#b14a07 bold"
 	oldMovedAlternative = "#0019a8 bold"
 	newMoved = "#007376 bold"
 	newMovedAlternative = "#896800 bold"
@@ -20,30 +20,30 @@
 	newMovedAlternativeDimmed = "#697794 italic"
 	contextDimmed = "#697794"
 	oldDimmed = "#c92b23 dim"
-	newDimmed = "#00822e dim"
+	newDimmed = "#0d8131 dim"
 	contextBold = "#1b202b bold"
 	oldBold = "#c92b23 bold"
-	newBold = "#00822e bold"
+	newBold = "#0d8131 bold"
 
 [color "diff-highlight"]
 	oldNormal = "#c92b23"
-	oldHighlight = "#c92b23 #e2adaf"
-	newNormal = "#00822e"
-	newHighlight = "#00822e #99cdab"
+	oldHighlight = "#c92b23 #dfb8b6"
+	newNormal = "#0d8131"
+	newHighlight = "#0d8131 #9ecdad"
 
 [color "status"]
 	header = "#3c4557"
-	added = "#00822e"
+	added = "#0d8131"
 	changed = "#c92b23"
 	untracked = "#7660ab"
-	branch = "#00822e bold"
+	branch = "#0d8131 bold"
 	nobranch = "#c92b23 bold"
-	localBranch = "#00822e"
+	localBranch = "#0d8131"
 	remoteBranch = "#c92b23"
 	unmerged = "#c92b23 bold"
 
 [color "branch"]
-	current = "#00822e bold"
+	current = "#0d8131 bold"
 	local = "#293040"
 	remote = "#c92b23"
 	upstream = "#0019a8"
@@ -52,29 +52,29 @@
 
 [color "decorate"]
 	HEAD = "#007376 bold"
-	branch = "#00822e bold"
+	branch = "#0d8131 bold"
 	remoteBranch = "#c92b23 bold"
 	tag = "#896800 bold"
-	stash = "#a45600 bold"
+	stash = "#b14a07 bold"
 	grafted = "#0019a8 bold"
 
 [color "grep"]
 	context = "#4a5469"
-	filename = "#a45600"
+	filename = "#b14a07"
 	function = "#896800"
-	lineNumber = "#00822e"
-	column = "#00822e"
+	lineNumber = "#0d8131"
+	column = "#0d8131"
 	selected = "#293040"
 	separator = "#697794"
 
 [color "interactive"]
-	prompt = "#a45600 bold"
+	prompt = "#b14a07 bold"
 	header = "#1b202b bold"
 	help = "#896800"
 	error = "#c92b23 bold"
 
 [color "blame"]
-	highlightRecent = "#697794,12 month ago,#3c4557,1 month ago,#a45600"
+	highlightRecent = "#697794,12 month ago,#3c4557,1 month ago,#b14a07"
 	repeatedLines = "#697794"
 
 [color "advice"]
@@ -89,5 +89,5 @@
 [color "remote"]
 	hint = "#896800"
 	warning = "#896800 bold"
-	success = "#00822e bold"
+	success = "#0d8131 bold"
 	error = "#c92b23 bold"

@@ -3,42 +3,42 @@
 	dark = true
 	syntax-theme = Paris Guimard
 	# changed lines: syntax colors on a tint; changed words on a stronger one
-	plus-style = syntax "#2C3F31"
-	plus-non-emph-style = syntax "#2C3F31"
-	plus-emph-style = syntax "#39533F"
-	minus-style = syntax "#442F2B"
-	minus-non-emph-style = syntax "#442F2B"
-	minus-emph-style = syntax "#5E3A35"
+	plus-style = syntax "#2B3F31"
+	plus-non-emph-style = syntax "#2B3F31"
+	plus-emph-style = syntax "#38533F"
+	minus-style = syntax "#432F2B"
+	minus-non-emph-style = syntax "#432F2B"
+	minus-emph-style = syntax "#5D3A35"
 	zero-style = syntax
 	whitespace-error-style = normal "#CD6B63"
 	# git --color-moved: git's defaults and the git port's colors
-	map-styles = bold purple => syntax "#332824", bold "#D0914F" => syntax "#332824", bold blue => syntax "#363524", bold "#709BC8" => syntax "#363524", bold cyan => syntax "#233228", bold "#7BB096" => syntax "#233228", bold yellow => syntax "#363524", bold "#EBC168" => syntax "#363524"
+	map-styles = bold purple => syntax "#332824", bold "#D0914F" => syntax "#332824", bold blue => syntax "#363524", bold "#709BC8" => syntax "#363524", bold cyan => syntax "#223228", bold "#6CA087" => syntax "#223228", bold yellow => syntax "#363524", bold "#EBC168" => syntax "#363524"
 	# line numbers (with line-numbers = true) in the color of their change
 	line-numbers-plus-style = "#80C28E"
 	line-numbers-minus-style = "#E1837A"
-	line-numbers-zero-style = "#77847D"
-	line-numbers-left-style = "#5B6A62"
-	line-numbers-right-style = "#5B6A62"
+	line-numbers-zero-style = "#74857C"
+	line-numbers-left-style = "#586B61"
+	line-numbers-right-style = "#586B61"
 	# file and hunk headers
-	file-style = "#EAEEEC" bold
+	file-style = "#E9EEEC" bold
 	file-decoration-style = "#D0914F" ul
 	hunk-header-style = file line-number syntax
-	hunk-header-file-style = "#C3CAC6"
+	hunk-header-file-style = "#C2CBC5"
 	hunk-header-line-number-style = "#709BC8"
 	hunk-header-decoration-style = "#709BC8" box
 	commit-decoration-style = "#EBC168" box
-	inline-hint-style = "#77847D"
+	inline-hint-style = "#74857C"
 	# git blame
-	blame-palette = "#212D27 #1A231E #2A3831"
-	blame-separator-style = "#5B6A62"
+	blame-palette = "#1E2E26 #18241D #263930"
+	blame-separator-style = "#586B61"
 	# git grep / rg --json
 	grep-file-style = "#D0914F"
 	grep-line-number-style = "#80C28E"
 	grep-match-line-style = syntax
-	grep-match-word-style = "#EAEEEC" "#5E593A" bold
+	grep-match-word-style = "#E9EEEC" "#5C5A3A" bold
 	grep-header-file-style = "#D0914F" bold
 	# merge conflicts (git's diff3 or zdiff3 conflict style)
 	merge-conflict-ours-diff-header-style = "#EBC168" bold
 	merge-conflict-ours-diff-header-decoration-style = "#EBC168" box
-	merge-conflict-theirs-diff-header-style = "#7BB096" bold
-	merge-conflict-theirs-diff-header-decoration-style = "#7BB096" box
+	merge-conflict-theirs-diff-header-style = "#6CA087" bold
+	merge-conflict-theirs-diff-header-decoration-style = "#6CA087" box

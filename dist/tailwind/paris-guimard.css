@@ -2,19 +2,19 @@
 /* Paris Guimard for Tailwind v4: bg-ss-base, text-ss-text, … */
 
 @theme {
-  --color-ss-crust: #141A17;
-  --color-ss-mantle: #1A231E;
-  --color-ss-base: #212D27;
-  --color-ss-surface0: #2A3831;
-  --color-ss-surface1: #34453C;
-  --color-ss-surface2: #42544B;
-  --color-ss-overlay0: #5B6A62;
-  --color-ss-overlay1: #77847D;
-  --color-ss-overlay2: #929D97;
-  --color-ss-subtext0: #ABB4AF;
-  --color-ss-subtext1: #C3CAC6;
-  --color-ss-text: #DAE0DC;
-  --color-ss-text-hi: #EAEEEC;
+  --color-ss-crust: #131A17;
+  --color-ss-mantle: #18241D;
+  --color-ss-base: #1E2E26;
+  --color-ss-surface0: #263930;
+  --color-ss-surface1: #30463B;
+  --color-ss-surface2: #3E554A;
+  --color-ss-overlay0: #586B61;
+  --color-ss-overlay1: #74857C;
+  --color-ss-overlay2: #909E96;
+  --color-ss-subtext0: #A9B5AE;
+  --color-ss-subtext1: #C2CBC5;
+  --color-ss-text: #D9E1DB;
+  --color-ss-text-hi: #E9EEEC;
   --color-ss-yellow: #EBC168;
   --color-ss-yellow-hi: #FBD380;
   --color-ss-orange: #D0914F;
@@ -23,17 +23,17 @@
   --color-ss-red-hi: #E1837A;
   --color-ss-green: #80C28E;
   --color-ss-green-hi: #8FD59E;
-  --color-ss-sage: #7BB096;
+  --color-ss-sage: #6CA087;
   --color-ss-sage-hi: #98CCB2;
   --color-ss-denim: #709BC8;
   --color-ss-denim-hi: #8DB6E2;
   --color-ss-clay: #CE96B4;
-  --color-ss-diff-add: #2C3F31;
-  --color-ss-diff-add-emph: #39533F;
-  --color-ss-diff-add-dim: #233228;
-  --color-ss-diff-del: #442F2B;
-  --color-ss-diff-del-emph: #5E3A35;
+  --color-ss-diff-add: #2B3F31;
+  --color-ss-diff-add-emph: #38533F;
+  --color-ss-diff-add-dim: #223228;
+  --color-ss-diff-del: #432F2B;
+  --color-ss-diff-del-emph: #5D3A35;
   --color-ss-diff-del-dim: #332824;
   --color-ss-diff-chg: #363524;
-  --color-ss-diff-chg-emph: #4C452C;
+  --color-ss-diff-chg-emph: #4B452C;
 }

@@ -19,11 +19,11 @@
 	<key>Ansi 1 Color</key>
 	<dict>
 		<key>Red Component</key>
-		<real>0.619608</real>
+		<real>0.576471</real>
 		<key>Green Component</key>
-		<real>0.090196</real>
+		<real>0.176471</real>
 		<key>Blue Component</key>
-		<real>0.105882</real>
+		<real>0.160784</real>
 		<key>Alpha Component</key>
 		<real>1.0</real>
 		<key>Color Space</key>
@@ -32,11 +32,11 @@
 	<key>Ansi 2 Color</key>
 	<dict>
 		<key>Red Component</key>
-		<real>0.094118</real>
+		<real>0.12549</real>
 		<key>Green Component</key>
-		<real>0.501961</real>
+		<real>0.498039</real>
 		<key>Blue Component</key>
-		<real>0.247059</real>
+		<real>0.254902</real>
 		<key>Alpha Component</key>
 		<real>1.0</real>
 		<key>Color Space</key>
@@ -71,9 +71,9 @@
 	<key>Ansi 5 Color</key>
 	<dict>
 		<key>Red Component</key>
-		<real>0.607843</real>
+		<real>0.458824</real>
 		<key>Green Component</key>
-		<real>0.364706</real>
+		<real>0.270588</real>
 		<key>Blue Component</key>
 		<real>0.0</real>
 		<key>Alpha Component</key>
@@ -84,11 +84,11 @@
 	<key>Ansi 6 Color</key>
 	<dict>
 		<key>Red Component</key>
-		<real>0.152941</real>
+		<real>0.031373</real>
 		<key>Green Component</key>
-		<real>0.458824</real>
+		<real>0.380392</real>
 		<key>Blue Component</key>
-		<real>0.333333</real>
+		<real>0.258824</real>
 		<key>Alpha Component</key>
 		<real>1.0</real>
 		<key>Color Space</key>
@@ -253,9 +253,9 @@
 	<key>Cursor Color</key>
 	<dict>
 		<key>Red Component</key>
-		<real>0.607843</real>
+		<real>0.458824</real>
 		<key>Green Component</key>
-		<real>0.364706</real>
+		<real>0.270588</real>
 		<key>Blue Component</key>
 		<real>0.0</real>
 		<key>Alpha Component</key>
@@ -344,9 +344,9 @@
 	<key>Underline Color</key>
 	<dict>
 		<key>Red Component</key>
-		<real>0.607843</real>
+		<real>0.458824</real>
 		<key>Green Component</key>
-		<real>0.364706</real>
+		<real>0.270588</real>
 		<key>Blue Component</key>
 		<real>0.0</real>
 		<key>Alpha Component</key>
@@ -357,9 +357,9 @@
 	<key>Badge Color</key>
 	<dict>
 		<key>Red Component</key>
-		<real>0.607843</real>
+		<real>0.458824</real>
 		<key>Green Component</key>
-		<real>0.364706</real>
+		<real>0.270588</real>
 		<key>Blue Component</key>
 		<real>0.0</real>
 		<key>Alpha Component</key>

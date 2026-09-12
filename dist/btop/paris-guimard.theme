@@ -2,34 +2,34 @@
 # Paris Guimard for btop.
 
 # Main background, empty for terminal default
-theme[main_bg]="#212D27"
+theme[main_bg]="#1E2E26"
 
 # Main text color
-theme[main_fg]="#DAE0DC"
+theme[main_fg]="#D9E1DB"
 
 # Title color for boxes
-theme[title]="#EAEEEC"
+theme[title]="#E9EEEC"
 
 # Highlight color for keyboard shortcuts
 theme[hi_fg]="#D0914F"
 
 # Background of the selected item in the processes box
-theme[selected_bg]="#34453C"
+theme[selected_bg]="#30463B"
 
 # Foreground of the selected item in the processes box
 theme[selected_fg]="#FBD380"
 
 # Inactive or disabled text
-theme[inactive_fg]="#5B6A62"
+theme[inactive_fg]="#586B61"
 
 # Text drawn over graphs: uptime, network graph scale
-theme[graph_text]="#ABB4AF"
+theme[graph_text]="#A9B5AE"
 
 # Background of the percentage meters
-theme[meter_bg]="#34453C"
+theme[meter_bg]="#30463B"
 
 # Mini cpu graphs, detailed memory graph and status text in the processes box
-theme[proc_misc]="#7BB096"
+theme[proc_misc]="#6CA087"
 
 # Box outlines
 theme[cpu_box]="#D0914F"
@@ -38,7 +38,7 @@ theme[net_box]="#80C28E"
 theme[proc_box]="#CE96B4"
 
 # Box dividers and small box outlines
-theme[div_line]="#42544B"
+theme[div_line]="#3E554A"
 
 # Temperature graph
 theme[temp_start]="#80C28E"
@@ -51,17 +51,17 @@ theme[cpu_mid]="#DEA95C"
 theme[cpu_end]="#CD6B63"
 
 # Mem/disk free meter
-theme[free_start]="#557F60"
+theme[free_start]="#547F5F"
 theme[free_mid]="#80C28E"
 theme[free_end]="#8FD59E"
 
 # Mem/disk cached meter
-theme[cached_start]="#4C6A80"
+theme[cached_start]="#4B6A7F"
 theme[cached_mid]="#709BC8"
 theme[cached_end]="#8DB6E2"
 
 # Mem/disk available meter
-theme[available_start]="#907E4B"
+theme[available_start]="#8F7F4A"
 theme[available_mid]="#EBC168"
 theme[available_end]="#FBD380"
 
@@ -71,12 +71,12 @@ theme[used_mid]="#CD6B63"
 theme[used_end]="#E1837A"
 
 # Download graph
-theme[download_start]="#557F60"
+theme[download_start]="#547F5F"
 theme[download_mid]="#80C28E"
 theme[download_end]="#EBC168"
 
 # Upload graph
-theme[upload_start]="#81643D"
+theme[upload_start]="#80643D"
 theme[upload_mid]="#D0914F"
 theme[upload_end]="#E1837A"
 
@@ -87,10 +87,10 @@ theme[process_end]="#CD6B63"
 
 # Banners over the process list while it is paused or following a process
 theme[proc_pause_bg]="#CD6B63"
-theme[proc_follow_bg]="#7BB096"
+theme[proc_follow_bg]="#6CA087"
 theme[proc_banner_bg]="#D0914F"
-theme[proc_banner_fg]="#141A17"
+theme[proc_banner_fg]="#131A17"
 
 # The process being followed
-theme[followed_bg]="#7BB096"
-theme[followed_fg]="#141A17"
+theme[followed_bg]="#6CA087"
+theme[followed_fg]="#131A17"

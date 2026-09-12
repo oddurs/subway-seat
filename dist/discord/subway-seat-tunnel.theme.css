@@ -222,8 +222,8 @@
   --info-warning-foreground: #F3BF45;
   --message-highlight-background-default: rgba(236, 127, 49, 0.08);
   --message-highlight-background-hover: rgba(236, 127, 49, 0.12);
-  --message-automod-background-default: rgba(224, 149, 108, 0.06);
-  --message-automod-background-hover: rgba(224, 149, 108, 0.1);
+  --message-automod-background-default: rgba(244, 168, 126, 0.06);
+  --message-automod-background-hover: rgba(244, 168, 126, 0.1);
   --background-code: #1B120A;
   --spoiler-hidden-background: #4F3927;
   --spoiler-hidden-background-hover: #745B45;
@@ -289,25 +289,25 @@
   --premium-perk-blue: #7F9BAE;
   --premium-perk-light-blue: #9DB6C6;
   --premium-perk-dark-blue: #7F9BAE;
-  --premium-perk-purple: #E0956C;
-  --premium-perk-pink: #E0956C;
-  --guild-boosting-pink: #E0956C;
-  --guild-boosting-purple: #E0956C;
+  --premium-perk-purple: #F4A87E;
+  --premium-perk-pink: #F4A87E;
+  --guild-boosting-pink: #F4A87E;
+  --guild-boosting-purple: #F4A87E;
   --guild-boosting-blue: #7F9BAE;
   --premium-tier-0-blue: #7F9BAE;
   --premium-tier-0-blue-for-gradients: #7F9BAE;
   --premium-tier-0-blue-for-gradients-2: #9DB6C6;
-  --premium-tier-0-purple: #E0956C;
-  --premium-tier-0-purple-for-gradients: #E0956C;
+  --premium-tier-0-purple: #F4A87E;
+  --premium-tier-0-purple-for-gradients: #F4A87E;
   --premium-tier-1-blue: #7F9BAE;
   --premium-tier-1-blue-for-gradients: #7F9BAE;
   --premium-tier-1-dark-blue-for-gradients: #7F9BAE;
-  --premium-tier-1-purple: #E0956C;
+  --premium-tier-1-purple: #F4A87E;
   --premium-tier-2-pink: #FF9D55;
   --premium-tier-2-pink-for-gradients: #FF9D55;
   --premium-tier-2-pink-for-gradients-2: #EC7F31;
-  --premium-tier-2-purple: #E0956C;
-  --premium-tier-2-purple-for-gradients: #E0956C;
+  --premium-tier-2-purple: #F4A87E;
+  --premium-tier-2-purple-for-gradients: #F4A87E;
   --premium-tier-2-purple-for-gradients-2: #EC7F31;
   --spotify: #ADB956;
   --text-code: #E9D8B6;
@@ -317,8 +317,8 @@
   --text-code-title: #F3BF45;
   --text-code-builtin: #F3BF45;
   --text-code-string: #ADB956;
-  --text-code-escape: #E0956C;
-  --text-code-regexp: #E0956C;
+  --text-code-escape: #F4A87E;
+  --text-code-regexp: #F4A87E;
   --text-code-number: #F97160;
   --text-code-type: #86AD95;
   --text-code-variable: #E9D8B6;
@@ -326,7 +326,7 @@
   --text-code-attribute: #F3BF45;
   --text-code-namespace: #C0AA88;
   --text-code-tag: #EC7F31;
-  --text-code-decorator: #E0956C;
+  --text-code-decorator: #F4A87E;
   --text-code-section: #F3BF45;
   --text-code-bullet: #EC7F31;
   --text-code-link: #7F9BAE;
@@ -379,7 +379,7 @@
 .visual-refresh.theme-dark .hljs-char.escape_,
 .visual-refresh .theme-dark .hljs-regexp,
 .visual-refresh .theme-dark .hljs-char.escape_ {
-  color: #E0956C;
+  color: #F4A87E;
 }
 .visual-refresh.theme-dark .hljs-number,
 .visual-refresh.theme-dark .hljs-literal,
@@ -433,7 +433,7 @@
 .visual-refresh.theme-dark .hljs-doctag,
 .visual-refresh .theme-dark .hljs-meta,
 .visual-refresh .theme-dark .hljs-doctag {
-  color: #E0956C;
+  color: #F4A87E;
   font-style: italic;
 }
 .visual-refresh.theme-dark .hljs-link,
@@ -676,8 +676,8 @@
   --info-warning-foreground: #936200;
   --message-highlight-background-default: rgba(173, 78, 0, 0.08);
   --message-highlight-background-hover: rgba(173, 78, 0, 0.12);
-  --message-automod-background-default: rgba(166, 86, 51, 0.06);
-  --message-automod-background-hover: rgba(166, 86, 51, 0.1);
+  --message-automod-background-default: rgba(134, 57, 19, 0.06);
+  --message-automod-background-hover: rgba(134, 57, 19, 0.1);
   --background-code: #E2D3B6;
   --spoiler-hidden-background: #BAA07A;
   --spoiler-hidden-background-hover: #A58C6A;
@@ -743,25 +743,25 @@
   --premium-perk-blue: #3F6480;
   --premium-perk-light-blue: #517791;
   --premium-perk-dark-blue: #3F6480;
-  --premium-perk-purple: #A65633;
-  --premium-perk-pink: #A65633;
-  --guild-boosting-pink: #A65633;
-  --guild-boosting-purple: #A65633;
+  --premium-perk-purple: #863913;
+  --premium-perk-pink: #863913;
+  --guild-boosting-pink: #863913;
+  --guild-boosting-purple: #863913;
   --guild-boosting-blue: #3F6480;
   --premium-tier-0-blue: #3F6480;
   --premium-tier-0-blue-for-gradients: #3F6480;
   --premium-tier-0-blue-for-gradients-2: #517791;
-  --premium-tier-0-purple: #A65633;
-  --premium-tier-0-purple-for-gradients: #A65633;
+  --premium-tier-0-purple: #863913;
+  --premium-tier-0-purple-for-gradients: #863913;
   --premium-tier-1-blue: #3F6480;
   --premium-tier-1-blue-for-gradients: #3F6480;
   --premium-tier-1-dark-blue-for-gradients: #3F6480;
-  --premium-tier-1-purple: #A65633;
+  --premium-tier-1-purple: #863913;
   --premium-tier-2-pink: #C4561A;
   --premium-tier-2-pink-for-gradients: #C4561A;
   --premium-tier-2-pink-for-gradients-2: #AD4E00;
-  --premium-tier-2-purple: #A65633;
-  --premium-tier-2-purple-for-gradients: #A65633;
+  --premium-tier-2-purple: #863913;
+  --premium-tier-2-purple-for-gradients: #863913;
   --premium-tier-2-purple-for-gradients-2: #AD4E00;
   --spotify: #66740F;
   --text-code: #3E2C1E;
@@ -771,8 +771,8 @@
   --text-code-title: #936200;
   --text-code-builtin: #936200;
   --text-code-string: #66740F;
-  --text-code-escape: #A65633;
-  --text-code-regexp: #A65633;
+  --text-code-escape: #863913;
+  --text-code-regexp: #863913;
   --text-code-number: #BC4031;
   --text-code-type: #3E7157;
   --text-code-variable: #3E2C1E;
@@ -780,7 +780,7 @@
   --text-code-attribute: #936200;
   --text-code-namespace: #654F3B;
   --text-code-tag: #AD4E00;
-  --text-code-decorator: #A65633;
+  --text-code-decorator: #863913;
   --text-code-section: #936200;
   --text-code-bullet: #AD4E00;
   --text-code-link: #3F6480;
@@ -833,7 +833,7 @@
 .visual-refresh.theme-light .hljs-char.escape_,
 .visual-refresh .theme-light .hljs-regexp,
 .visual-refresh .theme-light .hljs-char.escape_ {
-  color: #A65633;
+  color: #863913;
 }
 .visual-refresh.theme-light .hljs-number,
 .visual-refresh.theme-light .hljs-literal,
@@ -887,7 +887,7 @@
 .visual-refresh.theme-light .hljs-doctag,
 .visual-refresh .theme-light .hljs-meta,
 .visual-refresh .theme-light .hljs-doctag {
-  color: #A65633;
+  color: #863913;
   font-style: italic;
 }
 .visual-refresh.theme-light .hljs-link,

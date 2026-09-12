@@ -34,7 +34,7 @@
   --ss-sage-hi: #4C8367; /* Seafoam bright */
   --ss-denim: #3F6480; /* Faded denim */
   --ss-denim-hi: #517791; /* Denim bright */
-  --ss-clay: #A65633; /* Terracotta */
+  --ss-clay: #863913; /* Terracotta */
 
   /* Diff grounds: -add/-del/-chg for lines, -emph for changed words, -dim for faded diffs */
   --ss-diff-add: #D7DBC1;
@@ -72,5 +72,5 @@
   --ss-sage-hi-rgb: 76 131 103;
   --ss-denim-rgb: 63 100 128;
   --ss-denim-hi-rgb: 81 119 145;
-  --ss-clay-rgb: 166 86 51;
+  --ss-clay-rgb: 134 57 19;
 }

@@ -2,9 +2,9 @@
 # Paris Guimard for eza 0.20+.
 colourful: true
 filekinds:
-  normal: {foreground: "#DAE0DC"}
+  normal: {foreground: "#D9E1DB"}
   directory: {foreground: "#EBC168", is_bold: true}
-  symlink: {foreground: "#7BB096"}
+  symlink: {foreground: "#6CA087"}
   pipe: {foreground: "#CE96B4"}
   block_device: {foreground: "#E7AB6D", is_bold: true}
   char_device: {foreground: "#E7AB6D"}
@@ -24,51 +24,51 @@ perms:
   other_write: {foreground: "#D0914F"}
   other_execute: {foreground: "#80C28E"}
   special_user_file: {foreground: "#CE96B4"}
-  special_other: {foreground: "#77847D"}
-  attribute: {foreground: "#77847D"}
+  special_other: {foreground: "#74857C"}
+  attribute: {foreground: "#74857C"}
 size:
-  major: {foreground: "#7BB096"}
+  major: {foreground: "#6CA087"}
   minor: {foreground: "#98CCB2"}
-  number_byte: {foreground: "#ABB4AF"}
+  number_byte: {foreground: "#A9B5AE"}
   number_kilo: {foreground: "#80C28E"}
   number_mega: {foreground: "#EBC168"}
   number_giga: {foreground: "#D0914F"}
   number_huge: {foreground: "#E1837A"}
-  unit_byte: {foreground: "#828C86"}
-  unit_kilo: {foreground: "#64956F"}
+  unit_byte: {foreground: "#7F8C85"}
+  unit_kilo: {foreground: "#63966F"}
   unit_mega: {foreground: "#AE9554"}
-  unit_giga: {foreground: "#9C7343"}
-  unit_huge: {foreground: "#A76961"}
+  unit_giga: {foreground: "#9B7343"}
+  unit_huge: {foreground: "#A66961"}
 users:
   user_you: {foreground: "#EBC168"}
   user_root: {foreground: "#E1837A"}
-  user_other: {foreground: "#ABB4AF"}
-  group_yours: {foreground: "#C3CAC6"}
-  group_other: {foreground: "#929D97"}
+  user_other: {foreground: "#A9B5AE"}
+  group_yours: {foreground: "#C2CBC5"}
+  group_other: {foreground: "#909E96"}
   group_root: {foreground: "#E1837A"}
 links:
-  normal: {foreground: "#7BB096"}
+  normal: {foreground: "#6CA087"}
   multi_link_file: {foreground: "#D0914F"}
 git:
   new: {foreground: "#80C28E"}
   modified: {foreground: "#EBC168"}
   deleted: {foreground: "#E1837A"}
-  renamed: {foreground: "#7BB096"}
+  renamed: {foreground: "#6CA087"}
   typechange: {foreground: "#CE96B4"}
-  ignored: {foreground: "#5B6A62"}
+  ignored: {foreground: "#586B61"}
   conflicted: {foreground: "#CD6B63", is_bold: true}
 git_repo:
-  branch_main: {foreground: "#C3CAC6"}
+  branch_main: {foreground: "#C2CBC5"}
   branch_other: {foreground: "#D0914F"}
   git_clean: {foreground: "#80C28E"}
   git_dirty: {foreground: "#EBC168"}
 security_context:
-  none: {foreground: "#77847D"}
+  none: {foreground: "#74857C"}
   selinux:
-    colon: {foreground: "#5B6A62"}
-    user: {foreground: "#ABB4AF"}
-    role: {foreground: "#7BB096"}
-    typ: {foreground: "#929D97"}
+    colon: {foreground: "#586B61"}
+    user: {foreground: "#A9B5AE"}
+    role: {foreground: "#6CA087"}
+    typ: {foreground: "#909E96"}
     range: {foreground: "#CE96B4"}
 file_type:
   image: {foreground: "#CE96B4"}
@@ -78,25 +78,25 @@ file_type:
   crypto: {foreground: "#CD6B63"}
   document: {foreground: "#709BC8"}
   compressed: {foreground: "#E1837A"}
-  temp: {foreground: "#5B6A62"}
-  compiled: {foreground: "#77847D"}
+  temp: {foreground: "#586B61"}
+  compiled: {foreground: "#74857C"}
   build: {foreground: "#EBC168", is_underline: true}
-  source: {foreground: "#7BB096"}
-punctuation: {foreground: "#5B6A62"}
-date: {foreground: "#ABB4AF"}
-inode: {foreground: "#77847D"}
-blocks: {foreground: "#77847D"}
-header: {foreground: "#C3CAC6", is_underline: true}
+  source: {foreground: "#6CA087"}
+punctuation: {foreground: "#586B61"}
+date: {foreground: "#A9B5AE"}
+inode: {foreground: "#74857C"}
+blocks: {foreground: "#74857C"}
+header: {foreground: "#C2CBC5", is_underline: true}
 octal: {foreground: "#CE96B4"}
-flags: {foreground: "#929D97"}
-symlink_path: {foreground: "#ABB4AF"}
+flags: {foreground: "#909E96"}
+symlink_path: {foreground: "#A9B5AE"}
 control_char: {foreground: "#CE96B4"}
 broken_symlink: {foreground: "#E1837A"}
 broken_path_overlay: {is_underline: true}
 filenames:
   "README.md": {filename: {foreground: "#FBD380", is_bold: true}}
   "README": {filename: {foreground: "#FBD380", is_bold: true}}
-  "LICENSE": {filename: {foreground: "#929D97"}}
+  "LICENSE": {filename: {foreground: "#909E96"}}
 extensions:
-  lock: {filename: {foreground: "#77847D"}}
-  log: {filename: {foreground: "#77847D"}}
+  lock: {filename: {foreground: "#74857C"}}
+  log: {filename: {foreground: "#74857C"}}

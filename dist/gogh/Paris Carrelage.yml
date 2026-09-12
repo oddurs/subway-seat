@@ -7,12 +7,12 @@ author_url: 'https://github.com/oddurs/subway-seat'
 variant: 'light'
 
 color_01: '#374940'    # Black (Host)
-color_02: '#9E171B'    # Red (Syntax string)
-color_03: '#18803F'    # Green (Command)
+color_02: '#932D29'    # Red (Syntax string)
+color_03: '#207F41'    # Green (Command)
 color_04: '#8A6700'    # Yellow (Command second)
 color_05: '#27629C'    # Blue (Path)
-color_06: '#9B5D00'    # Magenta (Syntax var)
-color_07: '#277555'    # Cyan (Prompt)
+color_06: '#754500'    # Magenta (Syntax var)
+color_07: '#086142'    # Cyan (Prompt)
 color_08: '#8EAD9D'    # White
 
 color_09: '#627F70'    # Bright Black
@@ -27,4 +27,4 @@ color_16: '#A3BFB0'    # Bright White
 background: '#E4EDE8'  # Background
 foreground: '#25352C'  # Foreground (Text)
 
-cursor: '#9B5D00'      # Cursor
+cursor: '#754500'      # Cursor

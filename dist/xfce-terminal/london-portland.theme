@@ -3,7 +3,7 @@
 Name=London Portland
 ColorForeground=#293040
 ColorBackground=#E5EAF4
-ColorCursor=#A45600
+ColorCursor=#B14A07
 ColorCursorForeground=#E5EAF4
 ColorCursorUseDefault=FALSE
 ColorBold=#1B202B
@@ -11,5 +11,5 @@ ColorBoldUseDefault=FALSE
 ColorSelection=#1B202B
 ColorSelectionBackground=#A9B7D4
 ColorSelectionUseDefault=FALSE
-TabActivityColor=#A45600
-ColorPalette=#3C4557;#A40005;#00822E;#896800;#0019A8;#A45600;#007376;#95A5C4;#697794;#C92B23;#008730;#977300;#4A6EBD;#B86100;#008688;#A9B7D4
+TabActivityColor=#B14A07
+ColorPalette=#3C4557;#9B211A;#0D8131;#896800;#0019A8;#B14A07;#007376;#95A5C4;#697794;#C92B23;#008730;#977300;#4A6EBD;#B86100;#008688;#A9B7D4

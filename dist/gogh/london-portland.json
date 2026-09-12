@@ -5,11 +5,11 @@
   "author_url": "https://github.com/oddurs/subway-seat",
   "variant": "light",
   "color_01": "#3C4557",
-  "color_02": "#A40005",
-  "color_03": "#00822E",
+  "color_02": "#9B211A",
+  "color_03": "#0D8131",
   "color_04": "#896800",
   "color_05": "#0019A8",
-  "color_06": "#A45600",
+  "color_06": "#B14A07",
   "color_07": "#007376",
   "color_08": "#95A5C4",
   "color_09": "#697794",
@@ -22,5 +22,5 @@
   "color_16": "#A9B7D4",
   "background": "#E5EAF4",
   "foreground": "#293040",
-  "cursor": "#A45600"
+  "cursor": "#B14A07"
 }

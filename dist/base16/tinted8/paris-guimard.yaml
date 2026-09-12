@@ -11,15 +11,15 @@ scheme:
   description: "Cast iron off a Metro entrance, which is nearly black. Brass leads."
 variant: "dark"
 palette:
-  black: "#212D27"
-  black-bright: "#34453C"
-  black-dim: "#1A231E"
-  white: "#DAE0DC"
-  white-bright: "#EAEEEC"
-  white-dim: "#C3CAC6"
-  gray: "#77847D"
-  gray-bright: "#929D97"
-  gray-dim: "#5B6A62"
+  black: "#1E2E26"
+  black-bright: "#30463B"
+  black-dim: "#18241D"
+  white: "#D9E1DB"
+  white-bright: "#E9EEEC"
+  white-dim: "#C2CBC5"
+  gray: "#74857C"
+  gray-bright: "#909E96"
+  gray-dim: "#586B61"
   red: "#CD6B63"
   red-bright: "#E1837A"
   green: "#80C28E"
@@ -30,130 +30,130 @@ palette:
   blue-bright: "#8DB6E2"
   magenta: "#D0914F"
   magenta-bright: "#E7AB6D"
-  cyan: "#7BB096"
+  cyan: "#6CA087"
   cyan-bright: "#98CCB2"
   orange: "#D0914F"
   orange-bright: "#E7AB6D"
   brown: "#CE96B4"
 syntax:
-  comment: "#77847D" # comment
-  punctuation.definition.comment: "#77847D" # comment
+  comment: "#74857C" # comment
+  punctuation.definition.comment: "#74857C" # comment
   constant: "#E1837A" # constant
   constant.numeric: "#E1837A" # number
   constant.language: "#E1837A" # boolean
   constant.character: "#CE96B4" # string.escape
-  entity.name: "#DAE0DC" # variable
+  entity.name: "#D9E1DB" # variable
   entity.name.function: "#EBC168" # function
-  entity.name.class: "#7BB096" # type
-  entity.name.type: "#7BB096" # type
-  entity.name.namespace: "#ABB4AF" # namespace
+  entity.name.class: "#6CA087" # type
+  entity.name.type: "#6CA087" # type
+  entity.name.namespace: "#A9B5AE" # namespace
   entity.name.tag: "#D0914F" # tag
   entity.name.label: "#CE96B4" # decorator
   entity.name.section: "#EBC168" # heading
-  entity.other: "#DAE0DC" # variable
+  entity.other: "#D9E1DB" # variable
   entity.other.attribute-name: "#EBC168" # attribute
-  entity.other.inherited-class: "#7BB096" # type
+  entity.other.inherited-class: "#6CA087" # type
   invalid: "#CD6B63" # invalid
   invalid.deprecated: "#CE96B4" # clay
   keyword: "#D0914F" # keyword
-  keyword.operator: "#929D97" # operator
-  markup: "#DAE0DC" # text
-  markup.bold: "#EAEEEC" # strong
-  markup.italic: "#DAE0DC" # emphasis
+  keyword.operator: "#909E96" # operator
+  markup: "#D9E1DB" # text
+  markup.bold: "#E9EEEC" # strong
+  markup.italic: "#D9E1DB" # emphasis
   markup.heading: "#EBC168" # heading
   markup.link: "#709BC8" # link
   markup.list: "#D0914F" # keyword
-  markup.quote: "#ABB4AF" # quote
+  markup.quote: "#A9B5AE" # quote
   markup.raw: "#80C28E" # code
   markup.inserted: "#80C28E" # green
   markup.deleted: "#E1837A" # red_hi
   markup.changed: "#EBC168" # yellow
-  meta: "#DAE0DC" # text
+  meta: "#D9E1DB" # text
   meta.annotation: "#CE96B4" # decorator
-  punctuation: "#929D97" # punctuation
+  punctuation: "#909E96" # punctuation
   punctuation.definition.string: "#80C28E" # string
-  punctuation.section: "#929D97" # punctuation
+  punctuation.section: "#909E96" # punctuation
   storage: "#D0914F" # storage
   string: "#80C28E" # string
   string.regexp: "#CE96B4" # regexp
   string.interpolated: "#CE96B4" # string.escape
   support: "#EBC168" # function
-  support.class: "#7BB096" # type
-  support.type: "#7BB096" # type.builtin
+  support.class: "#6CA087" # type
+  support.type: "#6CA087" # type.builtin
   support.constant: "#E1837A" # constant
   support.function.builtin: "#EBC168" # function.builtin
   support.variable: "#E1837A" # variable.builtin
-  variable: "#DAE0DC" # variable
+  variable: "#D9E1DB" # variable
   variable.language: "#E1837A" # variable.builtin
-  variable.parameter: "#C3CAC6" # parameter
-  variable.other.property: "#C3CAC6" # property
+  variable.parameter: "#C2CBC5" # parameter
+  variable.other.property: "#C2CBC5" # property
 ui:
   accent:
     normal: "#D0914F"
   border:
-    normal: "#2A3831"
+    normal: "#263930"
   chrome:
     background:
-      normal: "#1A231E"
-      dark: "#141A17"
-      light: "#2A3831"
+      normal: "#18241D"
+      dark: "#131A17"
+      light: "#263930"
     foreground:
-      normal: "#C3CAC6"
-      dark: "#ABB4AF"
-      light: "#DAE0DC"
+      normal: "#C2CBC5"
+      dark: "#A9B5AE"
+      light: "#D9E1DB"
   cursor:
     normal:
       background: "#EBC168"
-      foreground: "#141A17"
+      foreground: "#131A17"
     muted:
-      background: "#77847D"
-      foreground: "#212D27"
+      background: "#74857C"
+      foreground: "#1E2E26"
   deprecated: "#CE96B4"
   global:
     background:
-      normal: "#212D27"
-      dark: "#1A231E"
-      light: "#2A3831"
+      normal: "#1E2E26"
+      dark: "#18241D"
+      light: "#263930"
     foreground:
-      normal: "#DAE0DC"
-      dark: "#C3CAC6"
-      light: "#EAEEEC"
+      normal: "#D9E1DB"
+      dark: "#C2CBC5"
+      light: "#E9EEEC"
   gutter:
-    background: "#212D27"
-    foreground: "#77847D"
+    background: "#1E2E26"
+    foreground: "#74857C"
   highlight:
     button:
-      background: "#34453C"
-      foreground: "#EAEEEC"
+      background: "#30463B"
+      foreground: "#E9EEEC"
     line:
-      background: "#2A3831"
+      background: "#263930"
       foreground: "#EBC168"
     search:
-      background: "#5E593A"
-      foreground: "#EAEEEC"
+      background: "#5C5A3A"
+      foreground: "#E9EEEC"
     text:
-      background: "#34453C"
-      foreground: "#DAE0DC"
-      active-background: "#42544B"
-      active-foreground: "#EAEEEC"
+      background: "#30463B"
+      foreground: "#D9E1DB"
+      active-background: "#3E554A"
+      active-foreground: "#E9EEEC"
   indent-guide:
-    background: "#34453C"
-    active-background: "#5B6A62"
+    background: "#30463B"
+    active-background: "#586B61"
   link:
     normal:
-      background: "#212D27"
+      background: "#1E2E26"
       foreground: "#709BC8"
   selection:
-    background: "#42544B"
-    foreground: "#EAEEEC"
-    inactive-background: "#34453C"
+    background: "#3E554A"
+    foreground: "#E9EEEC"
+    inactive-background: "#30463B"
   status:
     error: "#E1837A"
     info: "#709BC8"
     success: "#80C28E"
     warning: "#EBC168"
   tooltip:
-    background: "#2A3831"
-    foreground: "#DAE0DC"
+    background: "#263930"
+    foreground: "#D9E1DB"
   whitespace:
-    foreground: "#5B6A62"
+    foreground: "#586B61"

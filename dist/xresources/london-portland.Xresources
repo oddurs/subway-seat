@@ -3,7 +3,7 @@
 
 *.foreground: #293040
 *.background: #E5EAF4
-*.cursorColor: #A45600
+*.cursorColor: #B14A07
 *.highlightColor: #A9B7D4
 *.highlightTextColor: #1B202B
 
@@ -12,11 +12,11 @@
 *.color8: #697794
 
 ! red
-*.color1: #A40005
+*.color1: #9B211A
 *.color9: #C92B23
 
 ! green
-*.color2: #00822E
+*.color2: #0D8131
 *.color10: #008730
 
 ! yellow
@@ -28,7 +28,7 @@
 *.color12: #4A6EBD
 
 ! magenta
-*.color5: #A45600
+*.color5: #B14A07
 *.color13: #B86100
 
 ! cyan

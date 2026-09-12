@@ -9,7 +9,7 @@ export const walnut = stylex.createTheme(art, {
   green: "#ADB956",
   sage: "#86AD95",
   denim: "#7F9BAE",
-  clay: "#E0956C",
+  clay: "#F4A87E",
   page: "#1A120B",
 });
 
@@ -20,7 +20,7 @@ export const tunnel = stylex.createTheme(art, {
   green: "#ADB956",
   sage: "#86AD95",
   denim: "#7F9BAE",
-  clay: "#E0956C",
+  clay: "#F4A87E",
   page: "#100B06",
 });
 
@@ -31,7 +31,7 @@ export const enamel = stylex.createTheme(art, {
   green: "#8D9A36",
   sage: "#669279",
   denim: "#628299",
-  clay: "#C67952",
+  clay: "#C2764E",
   page: "#F7F0E1",
 });
 
@@ -58,10 +58,10 @@ export const deep = stylex.createTheme(art, {
 });
 
 export const portland = stylex.createTheme(art, {
-  red: "#C2352F",
-  orange: "#C47226",
+  red: "#BE4439",
+  orange: "#CA6D2A",
   yellow: "#C39823",
-  green: "#41A75C",
+  green: "#47A65D",
   sage: "#2E9799",
   denim: "#405DC4",
   clay: "#9582C6",
@@ -73,7 +73,7 @@ export const guimard = stylex.createTheme(art, {
   orange: "#D0914F",
   yellow: "#EBC168",
   green: "#80C28E",
-  sage: "#7BB096",
+  sage: "#6CA087",
   denim: "#709BC8",
   clay: "#CE96B4",
   page: "#101513",
@@ -84,18 +84,18 @@ export const catacombes = stylex.createTheme(art, {
   orange: "#D0914F",
   yellow: "#EBC168",
   green: "#80C28E",
-  sage: "#7BB096",
+  sage: "#6CA087",
   denim: "#709BC8",
   clay: "#CE96B4",
-  page: "#090D0B",
+  page: "#080D0B",
 });
 
 export const carrelage = stylex.createTheme(art, {
-  red: "#B84543",
-  orange: "#B87A2B",
+  red: "#B34F49",
+  orange: "#A76F2B",
   yellow: "#BF9839",
-  green: "#51A46A",
-  sage: "#559579",
+  green: "#55A46B",
+  sage: "#3F8468",
   denim: "#4F81B4",
   clay: "#B7799B",
   page: "#ECF2EF",

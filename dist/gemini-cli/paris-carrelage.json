@@ -4,22 +4,22 @@
   "Background": "#E4EDE8",
   "Foreground": "#25352C",
   "LightBlue": "#374940",
-  "AccentBlue": "#9B5D00",
+  "AccentBlue": "#754500",
   "AccentPurple": "#9A557D",
-  "AccentCyan": "#277555",
-  "AccentGreen": "#18803F",
+  "AccentCyan": "#086142",
+  "AccentGreen": "#207F41",
   "AccentYellow": "#8A6700",
   "AccentRed": "#BB403B",
-  "DiffAdded": "#C3DECD",
-  "DiffRemoved": "#ECD1D1",
+  "DiffAdded": "#C5DECE",
+  "DiffRemoved": "#E9D5D4",
   "Comment": "#627F70",
   "Gray": "#4F675B",
   "DarkGray": "#8EAD9D",
   "GradientColors": [
-    "#9E171B",
-    "#9B5D00",
+    "#932D29",
+    "#754500",
     "#8A6700",
-    "#18803F"
+    "#207F41"
   ],
   "text": {
     "primary": "#25352C",
@@ -30,24 +30,24 @@
   "background": {
     "primary": "#E4EDE8",
     "diff": {
-      "added": "#C3DECD",
-      "removed": "#ECD1D1"
+      "added": "#C5DECE",
+      "removed": "#E9D5D4"
     }
   },
   "ui": {
     "comment": "#627F70",
     "symbol": "#8A6700",
-    "active": "#9B5D00",
+    "active": "#754500",
     "focus": "#8A6700",
     "gradient": [
-      "#9E171B",
-      "#9B5D00",
+      "#932D29",
+      "#754500",
       "#8A6700",
-      "#18803F"
+      "#207F41"
     ]
   },
   "status": {
-    "success": "#18803F",
+    "success": "#207F41",
     "warning": "#8A6700",
     "error": "#BB403B"
   }

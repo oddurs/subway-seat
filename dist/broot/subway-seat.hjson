@@ -17,7 +17,7 @@ skin: {
     group:                 rgb(217, 198, 163) none
     count:                 rgb(174, 149, 117) none
     dates:                 rgb(196, 174, 140) none
-    sparse:                rgb(224, 149, 108) none
+    sparse:                rgb(244, 168, 126) none
     content_extract:       rgb(217, 198, 163) none
     content_match:         rgb(243, 191, 69) none Bold
     device_id_major:       rgb(196, 174, 140) none
@@ -32,7 +32,7 @@ skin: {
     git_status_new:        rgb(173, 185, 86) none Bold
     git_status_ignored:    rgb(123, 96, 71) none
     git_status_conflicted: rgb(224, 92, 69) none Bold
-    git_status_other:      rgb(224, 149, 108) none
+    git_status_other:      rgb(244, 168, 126) none
     selected_line:         none rgb(67, 48, 31) / none rgb(42, 29, 19)
     char_match:            rgb(243, 191, 69) none Bold
     file_error:            rgb(249, 113, 96) none

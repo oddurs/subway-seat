@@ -12,7 +12,7 @@ set inputbar-fg             "#25352C"
 # notifications
 set notification-bg         "#F2F6F4"
 set notification-fg         "#25352C"
-set notification-error-bg   "#9E171B"
+set notification-error-bg   "#932D29"
 set notification-error-fg   "#E4EDE8"
 set notification-warning-bg "#8A6700"
 set notification-warning-fg "#E4EDE8"
@@ -33,7 +33,7 @@ set index-active-fg         "#18231D"
 
 # search hits and link hints, washed over the page
 set highlight-color         "rgba(138,103,0,0.3)"
-set highlight-active-color  "rgba(155,93,0,0.5)"
+set highlight-active-color  "rgba(117,69,0,0.5)"
 set highlight-fg            "#18231D"
 
 # pages while they render
@@ -41,7 +41,7 @@ set render-loading-bg       "#E4EDE8"
 set render-loading-fg       "#627F70"
 
 # digital signatures
-set signature-success-color "#18803F"
+set signature-success-color "#207F41"
 set signature-warning-color "#8A6700"
 set signature-error-color   "#BB403B"
 

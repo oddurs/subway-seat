@@ -8,10 +8,10 @@ fish_color_keyword AD4E00
 fish_color_param 54402F
 fish_color_option 3E7157
 fish_color_quote 66740F
-fish_color_redirection A65633
+fish_color_redirection 863913
 fish_color_end AD4E00
-fish_color_operator A65633
-fish_color_escape A65633
+fish_color_operator 863913
+fish_color_escape 863913
 fish_color_comment 8C7254 --italics
 fish_color_error BC4031
 fish_color_cancel 992418

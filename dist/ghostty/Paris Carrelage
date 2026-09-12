@@ -1,11 +1,11 @@
 # Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
 palette = 0=#374940
-palette = 1=#9E171B
-palette = 2=#18803F
+palette = 1=#932D29
+palette = 2=#207F41
 palette = 3=#8A6700
 palette = 4=#27629C
-palette = 5=#9B5D00
-palette = 6=#277555
+palette = 5=#754500
+palette = 6=#086142
 palette = 7=#8EAD9D
 palette = 8=#627F70
 palette = 9=#BB403B
@@ -17,13 +17,13 @@ palette = 14=#3D8666
 palette = 15=#A3BFB0
 background = #E4EDE8
 foreground = #25352C
-cursor-color = #9B5D00
+cursor-color = #754500
 cursor-text = #E4EDE8
 selection-background = #A3BFB0
 selection-foreground = #18231D
 search-background = #C9C5A2
 search-foreground = #25352C
-search-selected-background = #C0A574
+search-selected-background = #AC9974
 search-selected-foreground = #18231D
 split-divider-color = #CAD9D1
 unfocused-split-fill = #CAD9D1

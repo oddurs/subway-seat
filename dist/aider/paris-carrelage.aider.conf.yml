@@ -6,12 +6,12 @@ user-input-color: "#8A6700"
 assistant-output-color: "#25352C"
 tool-output-color: "#45594F"
 tool-error-color: "#BB403B"
-tool-warning-color: "#9B5D00"
+tool-warning-color: "#754500"
 completion-menu-color: "#25352C"
 completion-menu-bg-color: "#D8E3DC"
 # aider swaps the next two: current-color is the highlighted item's background,
 # current-bg-color its text. Burnt orange bar, base letters.
-completion-menu-current-color: "#9B5D00"
+completion-menu-current-color: "#754500"
 completion-menu-current-bg-color: "#E4EDE8"
 # Code blocks in your terminal's colors. For the Subway Seat Pygments style,
 # install it into aider's environment and use `code-theme: paris-carrelage` instead:

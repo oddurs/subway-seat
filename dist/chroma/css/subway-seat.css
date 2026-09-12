@@ -22,10 +22,10 @@
 /* NameAttribute */ .chroma .na { color: #F3BF45; font-style: italic }
 /* NameClass */ .chroma .nc { color: #86AD95 }
 /* NameConstant */ .chroma .no { color: #F97160 }
-/* NameDecorator */ .chroma .nd { color: #E0956C; font-style: italic }
-/* NameEntity */ .chroma .ni { color: #E0956C }
+/* NameDecorator */ .chroma .nd { color: #F4A87E; font-style: italic }
+/* NameEntity */ .chroma .ni { color: #F4A87E }
 /* NameException */ .chroma .ne { color: #86AD95 }
-/* NameLabel */ .chroma .nl { color: #E0956C; font-style: italic }
+/* NameLabel */ .chroma .nl { color: #F4A87E; font-style: italic }
 /* NameNamespace */ .chroma .nn { color: #C4AE8C }
 /* NameProperty */ .chroma .py { color: #D9C6A3 }
 /* NameTag */ .chroma .nt { color: #EC7F31 }
@@ -42,11 +42,11 @@
 /* LiteralStringDelimiter */ .chroma .dl { color: #ADB956 }
 /* LiteralStringDoc */ .chroma .sd { color: #ADB956 }
 /* LiteralStringDouble */ .chroma .s2 { color: #ADB956 }
-/* LiteralStringEscape */ .chroma .se { color: #E0956C }
+/* LiteralStringEscape */ .chroma .se { color: #F4A87E }
 /* LiteralStringHeredoc */ .chroma .sh { color: #ADB956 }
-/* LiteralStringInterpol */ .chroma .si { color: #E0956C }
+/* LiteralStringInterpol */ .chroma .si { color: #F4A87E }
 /* LiteralStringOther */ .chroma .sx { color: #ADB956 }
-/* LiteralStringRegex */ .chroma .sr { color: #E0956C }
+/* LiteralStringRegex */ .chroma .sr { color: #F4A87E }
 /* LiteralStringSingle */ .chroma .s1 { color: #ADB956 }
 /* LiteralStringSymbol */ .chroma .ss { color: #F97160 }
 /* LiteralNumber */ .chroma .m { color: #F97160 }
@@ -65,8 +65,8 @@
 /* CommentMultiline */ .chroma .cm { color: #967B5C; font-style: italic }
 /* CommentSingle */ .chroma .c1 { color: #967B5C; font-style: italic }
 /* CommentSpecial */ .chroma .cs { color: #967B5C; font-style: italic }
-/* CommentPreproc */ .chroma .cp { color: #E0956C; font-style: italic }
-/* CommentPreprocFile */ .chroma .cpf { color: #E0956C; font-style: italic }
+/* CommentPreproc */ .chroma .cp { color: #F4A87E; font-style: italic }
+/* CommentPreprocFile */ .chroma .cpf { color: #F4A87E; font-style: italic }
 /* GenericDeleted */ .chroma .gd { color: #F97160; background-color: #52281C }
 /* GenericEmph */ .chroma .ge { font-style: italic }
 /* GenericError */ .chroma .gr { color: #E05C45 }

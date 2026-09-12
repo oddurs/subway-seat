@@ -3,7 +3,7 @@
 gui:
   theme:
     activeBorderColor:
-      - '#A45600'
+      - '#B14A07'
       - 'bold'
     inactiveBorderColor:
       - '#8291AE'

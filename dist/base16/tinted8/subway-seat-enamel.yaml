@@ -34,27 +34,27 @@ palette:
   cyan-bright: "#4C8367"
   orange: "#AD4E00"
   orange-bright: "#C4561A"
-  brown: "#A65633"
+  brown: "#863913"
 syntax:
   comment: "#8C7254" # comment
   punctuation.definition.comment: "#8C7254" # comment
   constant: "#BC4031" # constant
   constant.numeric: "#BC4031" # number
   constant.language: "#BC4031" # boolean
-  constant.character: "#A65633" # string.escape
+  constant.character: "#863913" # string.escape
   entity.name: "#3E2C1E" # variable
   entity.name.function: "#936200" # function
   entity.name.class: "#3E7157" # type
   entity.name.type: "#3E7157" # type
   entity.name.namespace: "#654F3B" # namespace
   entity.name.tag: "#AD4E00" # tag
-  entity.name.label: "#A65633" # decorator
+  entity.name.label: "#863913" # decorator
   entity.name.section: "#936200" # heading
   entity.other: "#3E2C1E" # variable
   entity.other.attribute-name: "#936200" # attribute
   entity.other.inherited-class: "#3E7157" # type
   invalid: "#992418" # invalid
-  invalid.deprecated: "#A65633" # clay
+  invalid.deprecated: "#863913" # clay
   keyword: "#AD4E00" # keyword
   keyword.operator: "#735C44" # operator
   markup: "#3E2C1E" # text
@@ -69,14 +69,14 @@ syntax:
   markup.deleted: "#BC4031" # red_hi
   markup.changed: "#936200" # yellow
   meta: "#3E2C1E" # text
-  meta.annotation: "#A65633" # decorator
+  meta.annotation: "#863913" # decorator
   punctuation: "#735C44" # punctuation
   punctuation.definition.string: "#66740F" # string
   punctuation.section: "#735C44" # punctuation
   storage: "#AD4E00" # storage
   string: "#66740F" # string
-  string.regexp: "#A65633" # regexp
-  string.interpolated: "#A65633" # string.escape
+  string.regexp: "#863913" # regexp
+  string.interpolated: "#863913" # string.escape
   support: "#936200" # function
   support.class: "#3E7157" # type
   support.type: "#3E7157" # type.builtin
@@ -108,7 +108,7 @@ ui:
     muted:
       background: "#8C7254"
       foreground: "#F4E9D4"
-  deprecated: "#A65633"
+  deprecated: "#863913"
   global:
     background:
       normal: "#F4E9D4"

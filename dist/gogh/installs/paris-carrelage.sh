@@ -4,12 +4,12 @@
 export PROFILE_NAME="Paris Carrelage"
 
 export COLOR_01="#374940"           # Black (Host)
-export COLOR_02="#9E171B"           # Red (Syntax string)
-export COLOR_03="#18803F"           # Green (Command)
+export COLOR_02="#932D29"           # Red (Syntax string)
+export COLOR_03="#207F41"           # Green (Command)
 export COLOR_04="#8A6700"           # Yellow (Command second)
 export COLOR_05="#27629C"           # Blue (Path)
-export COLOR_06="#9B5D00"           # Magenta (Syntax var)
-export COLOR_07="#277555"           # Cyan (Prompt)
+export COLOR_06="#754500"           # Magenta (Syntax var)
+export COLOR_07="#086142"           # Cyan (Prompt)
 export COLOR_08="#8EAD9D"           # White
 
 export COLOR_09="#627F70"           # Bright Black
@@ -24,7 +24,7 @@ export COLOR_16="#A3BFB0"           # Bright White
 export BACKGROUND_COLOR="#E4EDE8"   # Background
 export FOREGROUND_COLOR="#25352C"   # Foreground (Text)
 
-export CURSOR_COLOR="#9B5D00" # Cursor
+export CURSOR_COLOR="#754500" # Cursor
 
 apply_theme() {
     if [[ -e "${GOGH_APPLY_SCRIPT}" ]]; then

@@ -35,7 +35,7 @@
 	header = "#d9c6a3"
 	added = "#adb956"
 	changed = "#f97160"
-	untracked = "#e0956c"
+	untracked = "#f4a87e"
 	branch = "#adb956 bold"
 	nobranch = "#f97160 bold"
 	localBranch = "#adb956"

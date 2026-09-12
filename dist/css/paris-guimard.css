@@ -5,21 +5,21 @@
   color-scheme: dark;
 
   /* Ground */
-  --ss-crust: #141A17; /* Blackout */
-  --ss-mantle: #1A231E; /* Espresso */
-  --ss-base: #212D27; /* Paneling */
-  --ss-surface0: #2A3831; /* Coppertone */
-  --ss-surface1: #34453C; /* Saddle */
-  --ss-surface2: #42544B; /* Corduroy */
-  --ss-overlay0: #5B6A62; /* Pecan */
-  --ss-overlay1: #77847D; /* Cardboard */
-  --ss-overlay2: #929D97; /* Burlap */
+  --ss-crust: #131A17; /* Blackout */
+  --ss-mantle: #18241D; /* Espresso */
+  --ss-base: #1E2E26; /* Paneling */
+  --ss-surface0: #263930; /* Coppertone */
+  --ss-surface1: #30463B; /* Saddle */
+  --ss-surface2: #3E554A; /* Corduroy */
+  --ss-overlay0: #586B61; /* Pecan */
+  --ss-overlay1: #74857C; /* Cardboard */
+  --ss-overlay2: #909E96; /* Burlap */
 
   /* Text */
-  --ss-subtext0: #ABB4AF; /* Khaki */
-  --ss-subtext1: #C3CAC6; /* Almond */
-  --ss-text: #DAE0DC; /* Parchment */
-  --ss-text-hi: #EAEEEC; /* Ivory */
+  --ss-subtext0: #A9B5AE; /* Khaki */
+  --ss-subtext1: #C2CBC5; /* Almond */
+  --ss-text: #D9E1DB; /* Parchment */
+  --ss-text-hi: #E9EEEC; /* Ivory */
 
   /* Accents */
   --ss-yellow: #EBC168; /* Harvest gold */
@@ -30,36 +30,36 @@
   --ss-red-hi: #E1837A; /* Redbird bright */
   --ss-green: #80C28E; /* Avocado */
   --ss-green-hi: #8FD59E; /* Avocado bright */
-  --ss-sage: #7BB096; /* Seafoam tile */
+  --ss-sage: #6CA087; /* Seafoam tile */
   --ss-sage-hi: #98CCB2; /* Seafoam bright */
   --ss-denim: #709BC8; /* Faded denim */
   --ss-denim-hi: #8DB6E2; /* Denim bright */
   --ss-clay: #CE96B4; /* Terracotta */
 
   /* Diff grounds: -add/-del/-chg for lines, -emph for changed words, -dim for faded diffs */
-  --ss-diff-add: #2C3F31;
-  --ss-diff-add-emph: #39533F;
-  --ss-diff-add-dim: #233228;
-  --ss-diff-del: #442F2B;
-  --ss-diff-del-emph: #5E3A35;
+  --ss-diff-add: #2B3F31;
+  --ss-diff-add-emph: #38533F;
+  --ss-diff-add-dim: #223228;
+  --ss-diff-del: #432F2B;
+  --ss-diff-del-emph: #5D3A35;
   --ss-diff-del-dim: #332824;
   --ss-diff-chg: #363524;
-  --ss-diff-chg-emph: #4C452C;
+  --ss-diff-chg-emph: #4B452C;
 
   /* RGB triplets, for rgb(var(--ss-base-rgb) / 0.5) */
-  --ss-crust-rgb: 20 26 23;
-  --ss-mantle-rgb: 26 35 30;
-  --ss-base-rgb: 33 45 39;
-  --ss-surface0-rgb: 42 56 49;
-  --ss-surface1-rgb: 52 69 60;
-  --ss-surface2-rgb: 66 84 75;
-  --ss-overlay0-rgb: 91 106 98;
-  --ss-overlay1-rgb: 119 132 125;
-  --ss-overlay2-rgb: 146 157 151;
-  --ss-subtext0-rgb: 171 180 175;
-  --ss-subtext1-rgb: 195 202 198;
-  --ss-text-rgb: 218 224 220;
-  --ss-text-hi-rgb: 234 238 236;
+  --ss-crust-rgb: 19 26 23;
+  --ss-mantle-rgb: 24 36 29;
+  --ss-base-rgb: 30 46 38;
+  --ss-surface0-rgb: 38 57 48;
+  --ss-surface1-rgb: 48 70 59;
+  --ss-surface2-rgb: 62 85 74;
+  --ss-overlay0-rgb: 88 107 97;
+  --ss-overlay1-rgb: 116 133 124;
+  --ss-overlay2-rgb: 144 158 150;
+  --ss-subtext0-rgb: 169 181 174;
+  --ss-subtext1-rgb: 194 203 197;
+  --ss-text-rgb: 217 225 219;
+  --ss-text-hi-rgb: 233 238 236;
   --ss-yellow-rgb: 235 193 104;
   --ss-yellow-hi-rgb: 251 211 128;
   --ss-orange-rgb: 208 145 79;
@@ -68,7 +68,7 @@
   --ss-red-hi-rgb: 225 131 122;
   --ss-green-rgb: 128 194 142;
   --ss-green-hi-rgb: 143 213 158;
-  --ss-sage-rgb: 123 176 150;
+  --ss-sage-rgb: 108 160 135;
   --ss-sage-hi-rgb: 152 204 178;
   --ss-denim-rgb: 112 155 200;
   --ss-denim-hi-rgb: 141 182 226;

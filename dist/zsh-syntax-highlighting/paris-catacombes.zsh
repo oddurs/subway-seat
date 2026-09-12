@@ -4,9 +4,9 @@
 typeset -gA ZSH_HIGHLIGHT_STYLES
 
 # General
-ZSH_HIGHLIGHT_STYLES[default]='fg=#D5DCD8'
+ZSH_HIGHLIGHT_STYLES[default]='fg=#D4DDD7'
 ZSH_HIGHLIGHT_STYLES[unknown-token]='fg=#E1837A'
-ZSH_HIGHLIGHT_STYLES[comment]='fg=#738079,italic'
+ZSH_HIGHLIGHT_STYLES[comment]='fg=#708178,italic'
 
 # Commands
 ZSH_HIGHLIGHT_STYLES[reserved-word]='fg=#D0914F'
@@ -28,13 +28,13 @@ ZSH_HIGHLIGHT_STYLES[named-fd]='fg=#CE96B4'
 ZSH_HIGHLIGHT_STYLES[numeric-fd]='fg=#CE96B4'
 
 # Arguments and options
-ZSH_HIGHLIGHT_STYLES[single-hyphen-option]='fg=#7BB096'
-ZSH_HIGHLIGHT_STYLES[double-hyphen-option]='fg=#7BB096'
-ZSH_HIGHLIGHT_STYLES[assign]='fg=#D5DCD8'
-ZSH_HIGHLIGHT_STYLES[path]='fg=#C0C7C3,underline'
-ZSH_HIGHLIGHT_STYLES[path_pathseparator]='fg=#8E9993,underline'
-ZSH_HIGHLIGHT_STYLES[path_prefix]='fg=#C0C7C3,underline'
-ZSH_HIGHLIGHT_STYLES[path_prefix_pathseparator]='fg=#8E9993,underline'
+ZSH_HIGHLIGHT_STYLES[single-hyphen-option]='fg=#6CA087'
+ZSH_HIGHLIGHT_STYLES[double-hyphen-option]='fg=#6CA087'
+ZSH_HIGHLIGHT_STYLES[assign]='fg=#D4DDD7'
+ZSH_HIGHLIGHT_STYLES[path]='fg=#BFC8C2,underline'
+ZSH_HIGHLIGHT_STYLES[path_pathseparator]='fg=#8C9A92,underline'
+ZSH_HIGHLIGHT_STYLES[path_prefix]='fg=#BFC8C2,underline'
+ZSH_HIGHLIGHT_STYLES[path_prefix_pathseparator]='fg=#8C9A92,underline'
 ZSH_HIGHLIGHT_STYLES[globbing]='fg=#CE96B4'
 ZSH_HIGHLIGHT_STYLES[history-expansion]='fg=#CE96B4'
 ZSH_HIGHLIGHT_STYLES[arithmetic-expansion]='fg=#E1837A'
@@ -69,9 +69,9 @@ ZSH_HIGHLIGHT_STYLES[bracket-error]='fg=#E1837A,bold'
 ZSH_HIGHLIGHT_STYLES[bracket-level-1]='fg=#EBC168'
 ZSH_HIGHLIGHT_STYLES[bracket-level-2]='fg=#D0914F'
 ZSH_HIGHLIGHT_STYLES[bracket-level-3]='fg=#80C28E'
-ZSH_HIGHLIGHT_STYLES[bracket-level-4]='fg=#7BB096'
+ZSH_HIGHLIGHT_STYLES[bracket-level-4]='fg=#6CA087'
 ZSH_HIGHLIGHT_STYLES[cursor-matchingbracket]='fg=#FBD380,bold'
-ZSH_HIGHLIGHT_STYLES[cursor]='fg=#0B100D,bg=#EBC168'
+ZSH_HIGHLIGHT_STYLES[cursor]='fg=#0A100D,bg=#EBC168'
 
 # zsh-autosuggestions (fish's autosuggestion color)
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=#738079'
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=#708178'

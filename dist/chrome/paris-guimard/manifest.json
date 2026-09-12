@@ -6,109 +6,109 @@
   "theme": {
     "colors": {
       "frame": [
-        20,
+        19,
         26,
         23
       ],
       "frame_inactive": [
-        20,
+        19,
         26,
         23
       ],
       "frame_incognito": [
-        50,
+        49,
         46,
         48
       ],
       "frame_incognito_inactive": [
-        50,
+        49,
         46,
         48
       ],
       "background_tab": [
-        20,
+        19,
         26,
         23
       ],
       "background_tab_inactive": [
-        20,
+        19,
         26,
         23
       ],
       "background_tab_incognito": [
-        50,
+        49,
         46,
         48
       ],
       "background_tab_incognito_inactive": [
-        50,
+        49,
         46,
         48
       ],
       "toolbar": [
-        33,
-        45,
-        39
+        30,
+        46,
+        38
       ],
       "tab_text": [
-        218,
-        224,
-        220
+        217,
+        225,
+        219
       ],
       "tab_background_text": [
-        146,
-        157,
-        151
+        144,
+        158,
+        150
       ],
       "tab_background_text_inactive": [
-        119,
-        132,
-        125
+        116,
+        133,
+        124
       ],
       "tab_background_text_incognito": [
-        171,
-        180,
-        175
+        169,
+        181,
+        174
       ],
       "tab_background_text_incognito_inactive": [
-        146,
-        157,
-        151
+        144,
+        158,
+        150
       ],
       "bookmark_text": [
-        195,
-        202,
-        198
+        194,
+        203,
+        197
       ],
       "toolbar_button_icon": [
-        195,
-        202,
-        198
+        194,
+        203,
+        197
       ],
       "toolbar_text": [
-        218,
-        224,
-        220
+        217,
+        225,
+        219
       ],
       "omnibox_background": [
-        26,
-        35,
-        30
+        24,
+        36,
+        29
       ],
       "omnibox_text": [
-        218,
-        224,
-        220
+        217,
+        225,
+        219
       ],
       "ntp_background": [
-        33,
-        45,
-        39
+        30,
+        46,
+        38
       ],
       "ntp_text": [
-        218,
-        224,
-        220
+        217,
+        225,
+        219
       ],
       "ntp_link": [
         112,
@@ -121,7 +121,7 @@
         79
       ],
       "button_background": [
-        20,
+        19,
         26,
         23
       ]

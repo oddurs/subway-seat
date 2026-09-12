@@ -4,20 +4,20 @@
       "Paris Catacombes": {
         "name": "Paris Catacombes",
         "type": "custom",
-        "Background": "#141D19",
-        "Foreground": "#D5DCD8",
-        "LightBlue": "#C0C7C3",
+        "Background": "#121E19",
+        "Foreground": "#D4DDD7",
+        "LightBlue": "#BFC8C2",
         "AccentBlue": "#D0914F",
         "AccentPurple": "#CE96B4",
-        "AccentCyan": "#7BB096",
+        "AccentCyan": "#6CA087",
         "AccentGreen": "#80C28E",
         "AccentYellow": "#EBC168",
         "AccentRed": "#E1837A",
-        "DiffAdded": "#253729",
+        "DiffAdded": "#243729",
         "DiffRemoved": "#3D2823",
-        "Comment": "#738079",
-        "Gray": "#8E9993",
-        "DarkGray": "#34423B",
+        "Comment": "#708178",
+        "Gray": "#8C9A92",
+        "DarkGray": "#31433A",
         "GradientColors": [
           "#CD6B63",
           "#D0914F",
@@ -25,20 +25,20 @@
           "#80C28E"
         ],
         "text": {
-          "primary": "#D5DCD8",
-          "secondary": "#8E9993",
+          "primary": "#D4DDD7",
+          "secondary": "#8C9A92",
           "accent": "#CE96B4",
-          "response": "#D5DCD8"
+          "response": "#D4DDD7"
         },
         "background": {
-          "primary": "#141D19",
+          "primary": "#121E19",
           "diff": {
-            "added": "#253729",
+            "added": "#243729",
             "removed": "#3D2823"
           }
         },
         "ui": {
-          "comment": "#738079",
+          "comment": "#708178",
           "symbol": "#EBC168",
           "active": "#D0914F",
           "focus": "#EBC168",

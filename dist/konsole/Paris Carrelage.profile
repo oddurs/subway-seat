@@ -2,11 +2,11 @@
 
 [Appearance]
 ColorScheme=paris-carrelage
-FocusBorderColor=155,93,0
-TabActivityColor=155,93,0
+FocusBorderColor=117,69,0
+TabActivityColor=117,69,0
 
 [Cursor Options]
-CustomCursorColor=155,93,0
+CustomCursorColor=117,69,0
 CustomCursorTextColor=228,237,232
 UseCustomCursorColor=true
 

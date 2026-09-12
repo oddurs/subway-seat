@@ -19,7 +19,7 @@ match_fg = '#896800'
 preview_title_fg = '#3C4557'
 # modes
 channel_mode_fg = '#E5EAF4'
-channel_mode_bg = '#A45600'
+channel_mode_bg = '#B14A07'
 remote_control_mode_fg = '#E5EAF4'
 remote_control_mode_bg = '#896800'
 action_picker_mode_fg = '#E5EAF4'

@@ -32,7 +32,7 @@ ForegroundNegative=153,36,24
 ForegroundNeutral=147,98,0
 ForegroundNormal=62,44,30
 ForegroundPositive=102,116,15
-ForegroundVisited=166,86,51
+ForegroundVisited=134,57,19
 
 [Colors:Complementary]
 BackgroundAlternate=42,29,19
@@ -46,7 +46,7 @@ ForegroundNegative=249,113,96
 ForegroundNeutral=243,191,69
 ForegroundNormal=237,220,188
 ForegroundPositive=173,185,86
-ForegroundVisited=224,149,108
+ForegroundVisited=244,168,126
 
 [Colors:Header]
 BackgroundAlternate=226,211,182
@@ -60,7 +60,7 @@ ForegroundNegative=153,36,24
 ForegroundNeutral=147,98,0
 ForegroundNormal=62,44,30
 ForegroundPositive=102,116,15
-ForegroundVisited=166,86,51
+ForegroundVisited=134,57,19
 
 [Colors:Header][Inactive]
 BackgroundAlternate=228,215,191
@@ -74,7 +74,7 @@ ForegroundNegative=153,36,24
 ForegroundNeutral=147,98,0
 ForegroundNormal=62,44,30
 ForegroundPositive=102,116,15
-ForegroundVisited=166,86,51
+ForegroundVisited=134,57,19
 
 [Colors:Selection]
 BackgroundAlternate=226,194,159
@@ -88,7 +88,7 @@ ForegroundNegative=153,36,24
 ForegroundNeutral=94,64,10
 ForegroundNormal=42,29,19
 ForegroundPositive=72,72,17
-ForegroundVisited=104,58,35
+ForegroundVisited=134,57,19
 
 [Colors:Tooltip]
 BackgroundAlternate=243,236,226
@@ -102,7 +102,7 @@ ForegroundNegative=153,36,24
 ForegroundNeutral=147,98,0
 ForegroundNormal=62,44,30
 ForegroundPositive=102,116,15
-ForegroundVisited=166,86,51
+ForegroundVisited=134,57,19
 
 [Colors:View]
 BackgroundAlternate=237,226,205
@@ -116,7 +116,7 @@ ForegroundNegative=153,36,24
 ForegroundNeutral=147,98,0
 ForegroundNormal=62,44,30
 ForegroundPositive=102,116,15
-ForegroundVisited=166,86,51
+ForegroundVisited=134,57,19
 
 [Colors:Window]
 BackgroundAlternate=228,215,191
@@ -130,7 +130,7 @@ ForegroundNegative=153,36,24
 ForegroundNeutral=147,98,0
 ForegroundNormal=62,44,30
 ForegroundPositive=102,116,15
-ForegroundVisited=166,86,51
+ForegroundVisited=134,57,19
 
 [General]
 ColorScheme=subway-seat-enamel

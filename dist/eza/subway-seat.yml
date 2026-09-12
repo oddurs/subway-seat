@@ -5,11 +5,11 @@ filekinds:
   normal: {foreground: "#EDDCBC"}
   directory: {foreground: "#F3BF45", is_bold: true}
   symlink: {foreground: "#86AD95"}
-  pipe: {foreground: "#E0956C"}
+  pipe: {foreground: "#F4A87E"}
   block_device: {foreground: "#FF9D55", is_bold: true}
   char_device: {foreground: "#FF9D55"}
-  socket: {foreground: "#E0956C", is_bold: true}
-  special: {foreground: "#E0956C"}
+  socket: {foreground: "#F4A87E", is_bold: true}
+  special: {foreground: "#F4A87E"}
   executable: {foreground: "#ADB956", is_bold: true}
   mount_point: {foreground: "#FFD36B", is_bold: true, is_underline: true}
 perms:
@@ -23,7 +23,7 @@ perms:
   other_read: {foreground: "#F3BF45"}
   other_write: {foreground: "#EC7F31"}
   other_execute: {foreground: "#ADB956"}
-  special_user_file: {foreground: "#E0956C"}
+  special_user_file: {foreground: "#F4A87E"}
   special_other: {foreground: "#967B5C"}
   attribute: {foreground: "#967B5C"}
 size:
@@ -54,7 +54,7 @@ git:
   modified: {foreground: "#F3BF45"}
   deleted: {foreground: "#F97160"}
   renamed: {foreground: "#86AD95"}
-  typechange: {foreground: "#E0956C"}
+  typechange: {foreground: "#F4A87E"}
   ignored: {foreground: "#7B6047"}
   conflicted: {foreground: "#E05C45", is_bold: true}
 git_repo:
@@ -69,9 +69,9 @@ security_context:
     user: {foreground: "#C4AE8C"}
     role: {foreground: "#86AD95"}
     typ: {foreground: "#AE9575"}
-    range: {foreground: "#E0956C"}
+    range: {foreground: "#F4A87E"}
 file_type:
-  image: {foreground: "#E0956C"}
+  image: {foreground: "#F4A87E"}
   video: {foreground: "#EC7F31"}
   music: {foreground: "#FF9D55"}
   lossless: {foreground: "#FF9D55", is_bold: true}
@@ -87,10 +87,10 @@ date: {foreground: "#C4AE8C"}
 inode: {foreground: "#967B5C"}
 blocks: {foreground: "#967B5C"}
 header: {foreground: "#D9C6A3", is_underline: true}
-octal: {foreground: "#E0956C"}
+octal: {foreground: "#F4A87E"}
 flags: {foreground: "#AE9575"}
 symlink_path: {foreground: "#C4AE8C"}
-control_char: {foreground: "#E0956C"}
+control_char: {foreground: "#F4A87E"}
 broken_symlink: {foreground: "#F97160"}
 broken_path_overlay: {is_underline: true}
 filenames:

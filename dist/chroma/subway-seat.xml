@@ -8,7 +8,7 @@
   <entry type="Error" style="#E05C45"/>
   <entry type="Comment" style="italic #967B5C"/>
   <entry type="CommentHashbang" style="italic #967B5C"/>
-  <entry type="CommentPreproc" style="italic #E0956C"/>
+  <entry type="CommentPreproc" style="italic #F4A87E"/>
   <entry type="Keyword" style="#EC7F31"/>
   <entry type="KeywordConstant" style="#F97160"/>
   <entry type="KeywordType" style="italic #86AD95"/>
@@ -21,12 +21,12 @@
   <entry type="NameBuiltinPseudo" style="italic #F97160"/>
   <entry type="NameClass" style="#86AD95"/>
   <entry type="NameConstant" style="#F97160"/>
-  <entry type="NameDecorator" style="italic #E0956C"/>
-  <entry type="NameEntity" style="#E0956C"/>
+  <entry type="NameDecorator" style="italic #F4A87E"/>
+  <entry type="NameEntity" style="#F4A87E"/>
   <entry type="NameException" style="#86AD95"/>
   <entry type="NameFunction" style="#F3BF45"/>
   <entry type="NameFunctionMagic" style="italic #F3BF45"/>
-  <entry type="NameLabel" style="italic #E0956C"/>
+  <entry type="NameLabel" style="italic #F4A87E"/>
   <entry type="NameNamespace" style="#C4AE8C"/>
   <entry type="NameProperty" style="#D9C6A3"/>
   <entry type="NameTag" style="#EC7F31"/>
@@ -35,9 +35,9 @@
   <entry type="LiteralDate" style="#F97160"/>
   <entry type="LiteralString" style="#ADB956"/>
   <entry type="LiteralStringAffix" style="#EC7F31"/>
-  <entry type="LiteralStringEscape" style="#E0956C"/>
-  <entry type="LiteralStringInterpol" style="#E0956C"/>
-  <entry type="LiteralStringRegex" style="#E0956C"/>
+  <entry type="LiteralStringEscape" style="#F4A87E"/>
+  <entry type="LiteralStringInterpol" style="#F4A87E"/>
+  <entry type="LiteralStringRegex" style="#F4A87E"/>
   <entry type="LiteralStringSymbol" style="#F97160"/>
   <entry type="LiteralNumber" style="#F97160"/>
   <entry type="GenericHeading" style="bold #F3BF45"/>

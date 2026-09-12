@@ -54,7 +54,7 @@
     <option name="HTML_TAG_TREE_LEVEL2" value="ADB956"/>
     <option name="HTML_TAG_TREE_LEVEL3" value="86AD95"/>
     <option name="HTML_TAG_TREE_LEVEL4" value="7F9BAE"/>
-    <option name="HTML_TAG_TREE_LEVEL5" value="E0956C"/>
+    <option name="HTML_TAG_TREE_LEVEL5" value="F4A87E"/>
     <option name="IGNORED_ADDED_LINES_BORDER_COLOR" value="ADB956"/>
     <option name="IGNORED_DELETED_LINES_BORDER_COLOR" value="F97160"/>
     <option name="IGNORED_MODIFIED_LINES_BORDER_COLOR" value="F3BF45"/>
@@ -137,7 +137,7 @@
     </option>
     <option name="ANGLE_BRACKETS_RAINBOW_COLOR3">
       <value>
-        <option name="FOREGROUND" value="E0956C"/>
+        <option name="FOREGROUND" value="F4A87E"/>
       </value>
     </option>
     <option name="ANGLE_BRACKETS_RAINBOW_COLOR4">
@@ -201,7 +201,7 @@
     </option>
     <option name="BLADE_DIRECTIVE">
       <value>
-        <option name="FOREGROUND" value="E0956C"/>
+        <option name="FOREGROUND" value="F4A87E"/>
         <option name="FONT_TYPE" value="2"/>
       </value>
     </option>
@@ -560,7 +560,7 @@
     </option>
     <option name="CSS.PSEUDO">
       <value>
-        <option name="FOREGROUND" value="E0956C"/>
+        <option name="FOREGROUND" value="F4A87E"/>
       </value>
     </option>
     <option name="CSS.STRING" baseAttributes="DEFAULT_STRING"/>
@@ -596,7 +596,7 @@
     </option>
     <option name="CSV_PLUGIN_COLUMN_COLORING_ATTRIBUTE_4">
       <value>
-        <option name="FOREGROUND" value="E0956C"/>
+        <option name="FOREGROUND" value="F4A87E"/>
       </value>
     </option>
     <option name="CSV_PLUGIN_COLUMN_COLORING_ATTRIBUTE_5">
@@ -727,12 +727,12 @@
     </option>
     <option name="CodeWithMe.USER_6_MARKER">
       <value>
-        <option name="BACKGROUND" value="E0956C"/>
+        <option name="BACKGROUND" value="F4A87E"/>
       </value>
     </option>
     <option name="CodeWithMe.USER_6_SELECTION">
       <value>
-        <option name="BACKGROUND" value="694732"/>
+        <option name="BACKGROUND" value="6F4D37"/>
       </value>
     </option>
     <option name="ComposableCallTextAttributes" baseAttributes="DEFAULT_FUNCTION_CALL"/>
@@ -857,7 +857,7 @@
     </option>
     <option name="DEFAULT_ENTITY">
       <value>
-        <option name="FOREGROUND" value="E0956C"/>
+        <option name="FOREGROUND" value="F4A87E"/>
       </value>
     </option>
     <option name="DEFAULT_FUNCTION_CALL">
@@ -897,7 +897,7 @@
     </option>
     <option name="DEFAULT_INVALID_STRING_ESCAPE">
       <value>
-        <option name="FOREGROUND" value="E0956C"/>
+        <option name="FOREGROUND" value="F4A87E"/>
         <option name="EFFECT_COLOR" value="F97160"/>
         <option name="EFFECT_TYPE" value="2"/>
       </value>
@@ -909,7 +909,7 @@
     </option>
     <option name="DEFAULT_LABEL">
       <value>
-        <option name="FOREGROUND" value="E0956C"/>
+        <option name="FOREGROUND" value="F4A87E"/>
         <option name="FONT_TYPE" value="2"/>
       </value>
     </option>
@@ -926,7 +926,7 @@
     </option>
     <option name="DEFAULT_METADATA">
       <value>
-        <option name="FOREGROUND" value="E0956C"/>
+        <option name="FOREGROUND" value="F4A87E"/>
         <option name="FONT_TYPE" value="2"/>
       </value>
     </option>
@@ -987,12 +987,12 @@
     </option>
     <option name="DEFAULT_TEMPLATE_LANGUAGE_COLOR">
       <value>
-        <option name="FOREGROUND" value="E0956C"/>
+        <option name="FOREGROUND" value="F4A87E"/>
       </value>
     </option>
     <option name="DEFAULT_VALID_STRING_ESCAPE">
       <value>
-        <option name="FOREGROUND" value="E0956C"/>
+        <option name="FOREGROUND" value="F4A87E"/>
       </value>
     </option>
     <option name="DELETED_TEXT_ATTRIBUTES">
@@ -1045,32 +1045,32 @@
     </option>
     <option name="EJS_OPEN">
       <value>
-        <option name="FOREGROUND" value="E0956C"/>
+        <option name="FOREGROUND" value="F4A87E"/>
       </value>
     </option>
     <option name="EJS_OPEN_EQ">
       <value>
-        <option name="FOREGROUND" value="E0956C"/>
+        <option name="FOREGROUND" value="F4A87E"/>
       </value>
     </option>
     <option name="EJS_OPEN_EQ_EQ">
       <value>
-        <option name="FOREGROUND" value="E0956C"/>
+        <option name="FOREGROUND" value="F4A87E"/>
       </value>
     </option>
     <option name="EJS_OPEN_EQ_GENERATOR">
       <value>
-        <option name="FOREGROUND" value="E0956C"/>
+        <option name="FOREGROUND" value="F4A87E"/>
       </value>
     </option>
     <option name="EJS_OPEN_FILTER">
       <value>
-        <option name="FOREGROUND" value="E0956C"/>
+        <option name="FOREGROUND" value="F4A87E"/>
       </value>
     </option>
     <option name="EL.BOUNDS">
       <value>
-        <option name="FOREGROUND" value="E0956C"/>
+        <option name="FOREGROUND" value="F4A87E"/>
       </value>
     </option>
     <option name="ENUM_CONST">
@@ -1086,7 +1086,7 @@
     </option>
     <option name="ERL_MACRO">
       <value>
-        <option name="FOREGROUND" value="E0956C"/>
+        <option name="FOREGROUND" value="F4A87E"/>
         <option name="FONT_TYPE" value="2"/>
       </value>
     </option>
@@ -1159,7 +1159,7 @@
     <option name="GHERKIN_PYSTRING" baseAttributes="DEFAULT_STRING"/>
     <option name="GHERKIN_REGEXP_PARAMETER">
       <value>
-        <option name="FOREGROUND" value="E0956C"/>
+        <option name="FOREGROUND" value="F4A87E"/>
       </value>
     </option>
     <option name="GHERKIN_TABLE_HEADER_CELL">
@@ -1175,7 +1175,7 @@
     </option>
     <option name="GHERKIN_TAG">
       <value>
-        <option name="FOREGROUND" value="E0956C"/>
+        <option name="FOREGROUND" value="F4A87E"/>
         <option name="FONT_TYPE" value="2"/>
       </value>
     </option>
@@ -1263,7 +1263,7 @@
     <option name="HAML_COMMENT" baseAttributes="DEFAULT_LINE_COMMENT"/>
     <option name="HAML_FILTER">
       <value>
-        <option name="FOREGROUND" value="E0956C"/>
+        <option name="FOREGROUND" value="F4A87E"/>
         <option name="FONT_TYPE" value="2"/>
       </value>
     </option>
@@ -1277,7 +1277,7 @@
     </option>
     <option name="HAML_RUBY_START">
       <value>
-        <option name="FOREGROUND" value="E0956C"/>
+        <option name="FOREGROUND" value="F4A87E"/>
       </value>
     </option>
     <option name="HAML_STRING" baseAttributes="DEFAULT_STRING"/>
@@ -1300,7 +1300,7 @@
     <option name="HAML_WS_REMOVAL" baseAttributes="DEFAULT_OPERATION_SIGN"/>
     <option name="HAML_XHTML">
       <value>
-        <option name="FOREGROUND" value="E0956C"/>
+        <option name="FOREGROUND" value="F4A87E"/>
         <option name="FONT_TYPE" value="2"/>
       </value>
     </option>
@@ -1332,7 +1332,7 @@
     <option name="HTTP_REQUEST_PARAMETER_VALUE" baseAttributes="DEFAULT_STRING"/>
     <option name="HTTP_REQUEST_VARIABLE_BRACES">
       <value>
-        <option name="FOREGROUND" value="E0956C"/>
+        <option name="FOREGROUND" value="F4A87E"/>
       </value>
     </option>
     <option name="HYPERLINK_ATTRIBUTES">
@@ -1376,7 +1376,7 @@
     </option>
     <option name="INDENT_GUIDES_RAINBOW_COLOR3">
       <value>
-        <option name="FOREGROUND" value="724D36"/>
+        <option name="FOREGROUND" value="78543C"/>
       </value>
     </option>
     <option name="INDENT_GUIDES_RAINBOW_COLOR4">
@@ -1451,7 +1451,7 @@
     <option name="JADE_FILE_PATH" baseAttributes="DEFAULT_STRING"/>
     <option name="JADE_FILTER_NAME">
       <value>
-        <option name="FOREGROUND" value="E0956C"/>
+        <option name="FOREGROUND" value="F4A87E"/>
         <option name="FONT_TYPE" value="2"/>
       </value>
     </option>
@@ -1463,7 +1463,7 @@
     <option name="JADE_TAG_ID" baseAttributes="DEFAULT_ATTRIBUTE"/>
     <option name="JS.DECORATOR">
       <value>
-        <option name="FOREGROUND" value="E0956C"/>
+        <option name="FOREGROUND" value="F4A87E"/>
         <option name="FONT_TYPE" value="2"/>
       </value>
     </option>
@@ -1475,7 +1475,7 @@
     <option name="JS.PARAMETER" baseAttributes="DEFAULT_PARAMETER"/>
     <option name="JS.REGEXP">
       <value>
-        <option name="FOREGROUND" value="E0956C"/>
+        <option name="FOREGROUND" value="F4A87E"/>
       </value>
     </option>
     <option name="JS.STATIC_MEMBER_FUNCTION" baseAttributes="DEFAULT_STATIC_METHOD"/>
@@ -1535,7 +1535,7 @@
     </option>
     <option name="KOTLIN_EXCLEXCL">
       <value>
-        <option name="FOREGROUND" value="E0956C"/>
+        <option name="FOREGROUND" value="F4A87E"/>
         <option name="FONT_TYPE" value="1"/>
       </value>
     </option>
@@ -1667,7 +1667,7 @@
     </option>
     <option name="LOGCAT_FILTER_REGEX_KVALUE">
       <value>
-        <option name="FOREGROUND" value="E0956C"/>
+        <option name="FOREGROUND" value="F4A87E"/>
       </value>
     </option>
     <option name="LOGCAT_FILTER_STRING_KVALUE" baseAttributes="DEFAULT_STRING"/>
@@ -1743,7 +1743,7 @@
     </option>
     <option name="MACRONAME">
       <value>
-        <option name="FOREGROUND" value="E0956C"/>
+        <option name="FOREGROUND" value="F4A87E"/>
         <option name="FONT_TYPE" value="2"/>
       </value>
     </option>
@@ -1843,7 +1843,7 @@
     </option>
     <option name="MARKDOWN_HEADER_LEVEL_5">
       <value>
-        <option name="FOREGROUND" value="E0956C"/>
+        <option name="FOREGROUND" value="F4A87E"/>
         <option name="FONT_TYPE" value="1"/>
       </value>
     </option>
@@ -1989,7 +1989,7 @@
     </option>
     <option name="OC.MACRONAME">
       <value>
-        <option name="FOREGROUND" value="E0956C"/>
+        <option name="FOREGROUND" value="F4A87E"/>
         <option name="FONT_TYPE" value="2"/>
       </value>
     </option>
@@ -2019,7 +2019,7 @@
     <option name="OC.TYPEDEF" baseAttributes="DEFAULT_CLASS_NAME"/>
     <option name="OC_FORMAT_TOKEN">
       <value>
-        <option name="FOREGROUND" value="E0956C"/>
+        <option name="FOREGROUND" value="F4A87E"/>
       </value>
     </option>
     <option name="PARAMETER_ATTRIBUTES" baseAttributes="DEFAULT_PARAMETER"/>
@@ -2073,7 +2073,7 @@
     <option name="PUPPET_PARENTH" baseAttributes="DEFAULT_PARENTHS"/>
     <option name="PUPPET_REGEX">
       <value>
-        <option name="FOREGROUND" value="E0956C"/>
+        <option name="FOREGROUND" value="F4A87E"/>
       </value>
     </option>
     <option name="PUPPET_SEMICOLON" baseAttributes="DEFAULT_SEMICOLON"/>
@@ -2086,7 +2086,7 @@
     </option>
     <option name="PUPPET_VARIABLE_INTERPOLATION">
       <value>
-        <option name="FOREGROUND" value="E0956C"/>
+        <option name="FOREGROUND" value="F4A87E"/>
       </value>
     </option>
     <option name="PY.ANNOTATION">
@@ -2103,7 +2103,7 @@
     <option name="PY.CLASS_DEFINITION" baseAttributes="DEFAULT_CLASS_NAME"/>
     <option name="PY.DECORATOR">
       <value>
-        <option name="FOREGROUND" value="E0956C"/>
+        <option name="FOREGROUND" value="F4A87E"/>
         <option name="FONT_TYPE" value="2"/>
       </value>
     </option>
@@ -2158,7 +2158,7 @@
     </option>
     <option name="RAINBOW_COLOR3">
       <value>
-        <option name="FOREGROUND" value="E5B18C"/>
+        <option name="FOREGROUND" value="F1BD97"/>
       </value>
     </option>
     <option name="RAINBOW_COLOR4">
@@ -2168,7 +2168,7 @@
     </option>
     <option name="RDOC_DIRECTIVE">
       <value>
-        <option name="FOREGROUND" value="E0956C"/>
+        <option name="FOREGROUND" value="F4A87E"/>
         <option name="FONT_TYPE" value="2"/>
       </value>
     </option>
@@ -2197,12 +2197,12 @@
     <option name="REASSIGNED_LOCAL_VARIABLE_ATTRIBUTES" baseAttributes="DEFAULT_REASSIGNED_LOCAL_VARIABLE"/>
     <option name="REGEXP.BRACES">
       <value>
-        <option name="FOREGROUND" value="E0956C"/>
+        <option name="FOREGROUND" value="F4A87E"/>
       </value>
     </option>
     <option name="REGEXP.BRACKETS">
       <value>
-        <option name="FOREGROUND" value="E0956C"/>
+        <option name="FOREGROUND" value="F4A87E"/>
       </value>
     </option>
     <option name="REGEXP.CHARACTER">
@@ -2212,33 +2212,33 @@
     </option>
     <option name="REGEXP.CHAR_CLASS">
       <value>
-        <option name="FOREGROUND" value="E0956C"/>
+        <option name="FOREGROUND" value="F4A87E"/>
       </value>
     </option>
     <option name="REGEXP.ESC_CHARACTER">
       <value>
-        <option name="FOREGROUND" value="E0956C"/>
+        <option name="FOREGROUND" value="F4A87E"/>
       </value>
     </option>
     <option name="REGEXP.META">
       <value>
-        <option name="FOREGROUND" value="E0956C"/>
+        <option name="FOREGROUND" value="F4A87E"/>
         <option name="FONT_TYPE" value="1"/>
       </value>
     </option>
     <option name="REGEXP.PARENTHS">
       <value>
-        <option name="FOREGROUND" value="E0956C"/>
+        <option name="FOREGROUND" value="F4A87E"/>
       </value>
     </option>
     <option name="REGEXP.QUANTIFIER">
       <value>
-        <option name="FOREGROUND" value="E0956C"/>
+        <option name="FOREGROUND" value="F4A87E"/>
       </value>
     </option>
     <option name="REGEXP.QUOTE_CHARACTER">
       <value>
-        <option name="FOREGROUND" value="E0956C"/>
+        <option name="FOREGROUND" value="F4A87E"/>
       </value>
     </option>
     <option name="REGEXP.REDUNDANT_ESCAPE" baseAttributes="DEFAULT_VALID_STRING_ESCAPE"/>
@@ -2250,7 +2250,7 @@
     </option>
     <option name="REST.EXPLICIT">
       <value>
-        <option name="FOREGROUND" value="E0956C"/>
+        <option name="FOREGROUND" value="F4A87E"/>
         <option name="FONT_TYPE" value="2"/>
       </value>
     </option>
@@ -2289,17 +2289,17 @@
     <option name="RHTML_COMMENT_ID" baseAttributes="DEFAULT_LINE_COMMENT"/>
     <option name="RHTML_EXPRESSION_END_ID">
       <value>
-        <option name="FOREGROUND" value="E0956C"/>
+        <option name="FOREGROUND" value="F4A87E"/>
       </value>
     </option>
     <option name="RHTML_EXPRESSION_START_ID">
       <value>
-        <option name="FOREGROUND" value="E0956C"/>
+        <option name="FOREGROUND" value="F4A87E"/>
       </value>
     </option>
     <option name="RHTML_OMIT_NEW_LINE_ID">
       <value>
-        <option name="FOREGROUND" value="E0956C"/>
+        <option name="FOREGROUND" value="F4A87E"/>
       </value>
     </option>
     <option name="RHTML_SCRIPTING_BACKGROUND_ID">
@@ -2307,12 +2307,12 @@
     </option>
     <option name="RHTML_SCRIPTLET_END_ID">
       <value>
-        <option name="FOREGROUND" value="E0956C"/>
+        <option name="FOREGROUND" value="F4A87E"/>
       </value>
     </option>
     <option name="RHTML_SCRIPTLET_START_ID">
       <value>
-        <option name="FOREGROUND" value="E0956C"/>
+        <option name="FOREGROUND" value="F4A87E"/>
       </value>
     </option>
     <option name="RMARKDOWN_CHUNK">
@@ -2337,7 +2337,7 @@
     </option>
     <option name="ROUND_BRACKETS_RAINBOW_COLOR3">
       <value>
-        <option name="FOREGROUND" value="E0956C"/>
+        <option name="FOREGROUND" value="F4A87E"/>
       </value>
     </option>
     <option name="ROUND_BRACKETS_RAINBOW_COLOR4">
@@ -2373,7 +2373,7 @@
     <option name="RUBY_PARAMETER_ID" baseAttributes="DEFAULT_PARAMETER"/>
     <option name="RUBY_REGEXP">
       <value>
-        <option name="FOREGROUND" value="E0956C"/>
+        <option name="FOREGROUND" value="F4A87E"/>
       </value>
     </option>
     <option name="RUBY_SPECIFIC_CALL">
@@ -2425,12 +2425,12 @@
     </option>
     <option name="ReSharper.FORMAT_STRING_ITEM">
       <value>
-        <option name="FOREGROUND" value="E0956C"/>
+        <option name="FOREGROUND" value="F4A87E"/>
       </value>
     </option>
     <option name="ReSharper.FORMAT_STRING_ITEM_2">
       <value>
-        <option name="FOREGROUND" value="E0956C"/>
+        <option name="FOREGROUND" value="F4A87E"/>
       </value>
     </option>
     <option name="ReSharper.HINT">
@@ -2448,7 +2448,7 @@
     </option>
     <option name="ReSharper.MATCHED_FORMAT_STRING_ITEM">
       <value>
-        <option name="FOREGROUND" value="E0956C"/>
+        <option name="FOREGROUND" value="F4A87E"/>
         <option name="BACKGROUND" value="513B27"/>
       </value>
     </option>
@@ -2460,7 +2460,7 @@
     </option>
     <option name="ReSharper.STRING_ESCAPE_CHARACTER_2">
       <value>
-        <option name="FOREGROUND" value="E0956C"/>
+        <option name="FOREGROUND" value="F4A87E"/>
       </value>
     </option>
     <option name="ReSharper.XAML_CLASS" baseAttributes="DEFAULT_CLASS_NAME"/>
@@ -2493,14 +2493,14 @@
     <option name="SLIM_DOCTYPE_KWD" baseAttributes="DEFAULT_KEYWORD"/>
     <option name="SLIM_FILTER">
       <value>
-        <option name="FOREGROUND" value="E0956C"/>
+        <option name="FOREGROUND" value="F4A87E"/>
         <option name="FONT_TYPE" value="2"/>
       </value>
     </option>
     <option name="SLIM_ID" baseAttributes="DEFAULT_ATTRIBUTE"/>
     <option name="SLIM_INTERPOLATION">
       <value>
-        <option name="FOREGROUND" value="E0956C"/>
+        <option name="FOREGROUND" value="F4A87E"/>
       </value>
     </option>
     <option name="SLIM_PARENTHS" baseAttributes="DEFAULT_PARENTHS"/>
@@ -2562,7 +2562,7 @@
     </option>
     <option name="SQUARE_BRACKETS_RAINBOW_COLOR3">
       <value>
-        <option name="FOREGROUND" value="E0956C"/>
+        <option name="FOREGROUND" value="F4A87E"/>
       </value>
     </option>
     <option name="SQUARE_BRACKETS_RAINBOW_COLOR4">
@@ -2587,7 +2587,7 @@
     </option>
     <option name="SQUIGGLY_BRACKETS_RAINBOW_COLOR3">
       <value>
-        <option name="FOREGROUND" value="E0956C"/>
+        <option name="FOREGROUND" value="F4A87E"/>
       </value>
     </option>
     <option name="SQUIGGLY_BRACKETS_RAINBOW_COLOR4">
@@ -2653,7 +2653,7 @@
     <option name="TAG_ATTR_KEY" baseAttributes="DEFAULT_ATTRIBUTE"/>
     <option name="TEMPLATE_VARIABLE_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="E0956C"/>
+        <option name="FOREGROUND" value="F4A87E"/>
       </value>
     </option>
     <option name="TERMINAL_BACKGROUND">
@@ -2772,7 +2772,7 @@
     </option>
     <option name="XML_PROLOGUE">
       <value>
-        <option name="FOREGROUND" value="E0956C"/>
+        <option name="FOREGROUND" value="F4A87E"/>
         <option name="FONT_TYPE" value="2"/>
       </value>
     </option>
@@ -2792,7 +2792,7 @@
     <option name="XPATH.XPATH_VARIABLE" baseAttributes="DEFAULT_LOCAL_VARIABLE"/>
     <option name="YAML_ANCHOR">
       <value>
-        <option name="FOREGROUND" value="E0956C"/>
+        <option name="FOREGROUND" value="F4A87E"/>
       </value>
     </option>
     <option name="YAML_SCALAR_DSTRING">
@@ -2840,7 +2840,7 @@
     <option name="com.plan9.LABEL" baseAttributes="DEFAULT_LABEL"/>
     <option name="com.plan9.PSEUDO_INSTRUCTION">
       <value>
-        <option name="FOREGROUND" value="E0956C"/>
+        <option name="FOREGROUND" value="F4A87E"/>
         <option name="FONT_TYPE" value="2"/>
       </value>
     </option>
@@ -2861,7 +2861,7 @@
     <option name="org.rust.ASSOC_TRAIT_FUNCTION_CALL" baseAttributes="org.rust.ASSOC_FUNCTION_CALL"/>
     <option name="org.rust.ATTRIBUTE">
       <value>
-        <option name="FOREGROUND" value="E0956C"/>
+        <option name="FOREGROUND" value="F4A87E"/>
         <option name="FONT_TYPE" value="2"/>
       </value>
     </option>
@@ -2896,13 +2896,13 @@
     <option name="org.rust.FUNCTION_CALL" baseAttributes="DEFAULT_FUNCTION_CALL"/>
     <option name="org.rust.LIFETIME">
       <value>
-        <option name="FOREGROUND" value="E0956C"/>
+        <option name="FOREGROUND" value="F4A87E"/>
         <option name="FONT_TYPE" value="2"/>
       </value>
     </option>
     <option name="org.rust.MACRO">
       <value>
-        <option name="FOREGROUND" value="E0956C"/>
+        <option name="FOREGROUND" value="F4A87E"/>
         <option name="FONT_TYPE" value="2"/>
       </value>
     </option>
@@ -2914,19 +2914,19 @@
     </option>
     <option name="org.rust.MACRO_DOLLAR">
       <value>
-        <option name="FOREGROUND" value="E0956C"/>
+        <option name="FOREGROUND" value="F4A87E"/>
         <option name="FONT_TYPE" value="2"/>
       </value>
     </option>
     <option name="org.rust.MACRO_EXCL">
       <value>
-        <option name="FOREGROUND" value="E0956C"/>
+        <option name="FOREGROUND" value="F4A87E"/>
         <option name="FONT_TYPE" value="2"/>
       </value>
     </option>
     <option name="org.rust.MACRO_IDENTIFIER">
       <value>
-        <option name="FOREGROUND" value="E0956C"/>
+        <option name="FOREGROUND" value="F4A87E"/>
         <option name="FONT_TYPE" value="2"/>
       </value>
     </option>

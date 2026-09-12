@@ -27,5 +27,5 @@ export const color = stylex.defineVars({
   sageHi: "#A5C9B0",
   denim: "#7F9BAE",
   denimHi: "#9DB6C6",
-  clay: "#E0956C",
+  clay: "#F4A87E",
 });

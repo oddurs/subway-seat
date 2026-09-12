@@ -5,9 +5,9 @@
   "name": "Paris Guimard",
   "appearance": "dark",
   "colors": {
-    "background": "#212D27",
-    "backgroundSecondary": "#1A231E",
-    "text": "#DAE0DC",
+    "background": "#1E2E26",
+    "backgroundSecondary": "#18241D",
+    "text": "#D9E1DB",
     "selection": "#D0914F",
     "loader": "#EBC168",
     "red": "#E1837A",

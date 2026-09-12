@@ -3,36 +3,36 @@
 #   [include] path = ~/.config/git/paris-guimard.gitconfig
 
 [color "diff"]
-	meta = "#eaeeec bold"
+	meta = "#e9eeec bold"
 	frag = "#709bc8"
-	func = "#c3cac6"
+	func = "#c2cbc5"
 	old = "#e1837a"
 	new = "#80c28e"
 	commit = "#ebc168"
 	whitespace = "normal #cd6b63"
 	oldMoved = "#d0914f bold"
 	oldMovedAlternative = "#709bc8 bold"
-	newMoved = "#7bb096 bold"
+	newMoved = "#6ca087 bold"
 	newMovedAlternative = "#ebc168 bold"
-	oldMovedDimmed = "#77847d"
-	oldMovedAlternativeDimmed = "#77847d italic"
-	newMovedDimmed = "#77847d"
-	newMovedAlternativeDimmed = "#77847d italic"
-	contextDimmed = "#77847d"
+	oldMovedDimmed = "#74857c"
+	oldMovedAlternativeDimmed = "#74857c italic"
+	newMovedDimmed = "#74857c"
+	newMovedAlternativeDimmed = "#74857c italic"
+	contextDimmed = "#74857c"
 	oldDimmed = "#e1837a dim"
 	newDimmed = "#80c28e dim"
-	contextBold = "#eaeeec bold"
+	contextBold = "#e9eeec bold"
 	oldBold = "#e1837a bold"
 	newBold = "#80c28e bold"
 
 [color "diff-highlight"]
 	oldNormal = "#e1837a"
-	oldHighlight = "#e1837a #5e3a35"
+	oldHighlight = "#e1837a #5d3a35"
 	newNormal = "#80c28e"
-	newHighlight = "#80c28e #39533f"
+	newHighlight = "#80c28e #38533f"
 
 [color "status"]
-	header = "#c3cac6"
+	header = "#c2cbc5"
 	added = "#80c28e"
 	changed = "#e1837a"
 	untracked = "#ce96b4"
@@ -44,14 +44,14 @@
 
 [color "branch"]
 	current = "#80c28e bold"
-	local = "#dae0dc"
+	local = "#d9e1db"
 	remote = "#e1837a"
 	upstream = "#709bc8"
-	plain = "#c3cac6"
-	worktree = "#7bb096"
+	plain = "#c2cbc5"
+	worktree = "#6ca087"
 
 [color "decorate"]
-	HEAD = "#7bb096 bold"
+	HEAD = "#6ca087 bold"
 	branch = "#80c28e bold"
 	remoteBranch = "#e1837a bold"
 	tag = "#ebc168 bold"
@@ -59,23 +59,23 @@
 	grafted = "#709bc8 bold"
 
 [color "grep"]
-	context = "#abb4af"
+	context = "#a9b5ae"
 	filename = "#d0914f"
 	function = "#ebc168"
 	lineNumber = "#80c28e"
 	column = "#80c28e"
-	selected = "#dae0dc"
-	separator = "#77847d"
+	selected = "#d9e1db"
+	separator = "#74857c"
 
 [color "interactive"]
 	prompt = "#d0914f bold"
-	header = "#eaeeec bold"
+	header = "#e9eeec bold"
 	help = "#ebc168"
 	error = "#e1837a bold"
 
 [color "blame"]
-	highlightRecent = "#77847d,12 month ago,#c3cac6,1 month ago,#d0914f"
-	repeatedLines = "#77847d"
+	highlightRecent = "#74857c,12 month ago,#c2cbc5,1 month ago,#d0914f"
+	repeatedLines = "#74857c"
 
 [color "advice"]
 	hint = "#ebc168"

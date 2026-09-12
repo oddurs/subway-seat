@@ -19,7 +19,7 @@
     danger_fg: Some("#BC4031"),
     push_gauge_bg: Some("#AD4E00"),
     push_gauge_fg: Some("#F4E9D4"),
-    tag_fg: Some("#A65633"),
+    tag_fg: Some("#863913"),
     branch_fg: Some("#66740F"),
     block_title_focused: Some("#AD4E00"),
     syntax: Some("subway-seat-enamel"),

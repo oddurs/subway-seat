@@ -6,11 +6,11 @@
   "foreground-color": "#293040",
   "palette": [
     "#3C4557",
-    "#A40005",
-    "#00822E",
+    "#9B211A",
+    "#0D8131",
     "#896800",
     "#0019A8",
-    "#A45600",
+    "#B14A07",
     "#007376",
     "#95A5C4",
     "#697794",
@@ -23,7 +23,7 @@
     "#A9B7D4"
   ],
   "use-cursor-color": true,
-  "cursor-background-color": "#A45600",
+  "cursor-background-color": "#B14A07",
   "cursor-foreground-color": "#E5EAF4",
   "use-highlight-color": true,
   "highlight-background-color": "#A9B7D4",
@@ -31,5 +31,5 @@
   "use-bold-color": true,
   "bold-color": "#1B202B",
   "use-badge-color": true,
-  "badge-color": "#A45600"
+  "badge-color": "#B14A07"
 }

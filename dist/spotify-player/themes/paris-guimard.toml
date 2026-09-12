@@ -4,44 +4,44 @@
 name = "paris-guimard"
 
 [themes.palette]
-background = "#212D27"
-foreground = "#DAE0DC"
-black = "#34453C"
+background = "#1E2E26"
+foreground = "#D9E1DB"
+black = "#30463B"
 red = "#CD6B63"
 green = "#80C28E"
 yellow = "#EBC168"
 blue = "#709BC8"
 magenta = "#D0914F"
-cyan = "#7BB096"
-white = "#C3CAC6"
-bright_black = "#77847D"
+cyan = "#6CA087"
+white = "#C2CBC5"
+bright_black = "#74857C"
 bright_red = "#E1837A"
 bright_green = "#8FD59E"
 bright_yellow = "#FBD380"
 bright_blue = "#8DB6E2"
 bright_magenta = "#E7AB6D"
 bright_cyan = "#98CCB2"
-bright_white = "#EAEEEC"
+bright_white = "#E9EEEC"
 
 [themes.component_style]
 block_title = { fg = "#D0914F", modifiers = ["Bold"] }
-border = { fg = "#42544B" }
+border = { fg = "#3E554A" }
 playback_status = { fg = "#EBC168", modifiers = ["Bold"] }
 playback_track = { fg = "#EBC168", modifiers = ["Bold"] }
 playback_artists = { fg = "#D0914F" }
-playback_album = { fg = "#7BB096" }
-playback_genres = { fg = "#77847D", modifiers = ["Italic"] }
-playback_metadata = { fg = "#ABB4AF" }
-playback_progress_bar = { fg = "#D0914F", bg = "#34453C" }
-playback_progress_bar_unfilled = { fg = "#42544B", bg = "#34453C" }
+playback_album = { fg = "#6CA087" }
+playback_genres = { fg = "#74857C", modifiers = ["Italic"] }
+playback_metadata = { fg = "#A9B5AE" }
+playback_progress_bar = { fg = "#D0914F", bg = "#30463B" }
+playback_progress_bar_unfilled = { fg = "#3E554A", bg = "#30463B" }
 current_playing = { fg = "#80C28E", modifiers = ["Bold"] }
 page_desc = { fg = "#EBC168", modifiers = ["Bold"] }
-playlist_desc = { fg = "#77847D" }
+playlist_desc = { fg = "#74857C" }
 table_header = { fg = "#D0914F" }
-selection = { fg = "#EAEEEC", bg = "#34453C", modifiers = ["Bold"] }
-secondary_row = { bg = "#1A231E" }
+selection = { fg = "#E9EEEC", bg = "#30463B", modifiers = ["Bold"] }
+secondary_row = { bg = "#18241D" }
 like = { fg = "#E1837A" }
-lyrics_played = { fg = "#77847D" }
+lyrics_played = { fg = "#74857C" }
 lyrics_playing = { fg = "#EBC168", modifiers = ["Bold"] }
 visualization = { low = "#80C28E", mid = "#EBC168", high = "#E1837A" }
 # <<< subway-seat <<<

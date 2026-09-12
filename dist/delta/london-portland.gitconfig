@@ -3,25 +3,25 @@
 	light = true
 	syntax-theme = London Portland
 	# changed lines: syntax colors on a tint; changed words on a stronger one
-	plus-style = syntax "#BDDEC9"
-	plus-non-emph-style = syntax "#BDDEC9"
-	plus-emph-style = syntax "#99CDAB"
-	minus-style = syntax "#EDCCCD"
-	minus-non-emph-style = syntax "#EDCCCD"
-	minus-emph-style = syntax "#E2ADAF"
+	plus-style = syntax "#C0DEC9"
+	plus-non-emph-style = syntax "#C0DEC9"
+	plus-emph-style = syntax "#9ECDAD"
+	minus-style = syntax "#EBD3D1"
+	minus-non-emph-style = syntax "#EBD3D1"
+	minus-emph-style = syntax "#DFB8B6"
 	zero-style = syntax
-	whitespace-error-style = normal "#A40005"
+	whitespace-error-style = normal "#9B211A"
 	# git --color-moved: git's defaults and the git port's colors
-	map-styles = bold purple => syntax "#F4E0E1", bold "#A45600" => syntax "#F4E0E1", bold blue => syntax "#E0D8BD", bold "#0019A8" => syntax "#E0D8BD", bold cyan => syntax "#D6EBDE", bold "#007376" => syntax "#D6EBDE", bold yellow => syntax "#E0D8BD", bold "#896800" => syntax "#E0D8BD"
+	map-styles = bold purple => syntax "#F3E4E4", bold "#B14A07" => syntax "#F3E4E4", bold blue => syntax "#E0D8BD", bold "#0019A8" => syntax "#E0D8BD", bold cyan => syntax "#D8EBDE", bold "#007376" => syntax "#D8EBDE", bold yellow => syntax "#E0D8BD", bold "#896800" => syntax "#E0D8BD"
 	# line numbers (with line-numbers = true) in the color of their change
-	line-numbers-plus-style = "#00822E"
+	line-numbers-plus-style = "#0D8131"
 	line-numbers-minus-style = "#C92B23"
 	line-numbers-zero-style = "#697794"
 	line-numbers-left-style = "#8291AE"
 	line-numbers-right-style = "#8291AE"
 	# file and hunk headers
 	file-style = "#1B202B" bold
-	file-decoration-style = "#A45600" ul
+	file-decoration-style = "#B14A07" ul
 	hunk-header-style = file line-number syntax
 	hunk-header-file-style = "#3C4557"
 	hunk-header-line-number-style = "#0019A8"
@@ -32,11 +32,11 @@
 	blame-palette = "#E5EAF4 #DAE0EB #CDD5E4"
 	blame-separator-style = "#8291AE"
 	# git grep / rg --json
-	grep-file-style = "#A45600"
-	grep-line-number-style = "#00822E"
+	grep-file-style = "#B14A07"
+	grep-line-number-style = "#0D8131"
 	grep-match-line-style = syntax
 	grep-match-word-style = "#1B202B" "#C9C3AB" bold
-	grep-header-file-style = "#A45600" bold
+	grep-header-file-style = "#B14A07" bold
 	# merge conflicts (git's diff3 or zdiff3 conflict style)
 	merge-conflict-ours-diff-header-style = "#896800" bold
 	merge-conflict-ours-diff-header-decoration-style = "#896800" box

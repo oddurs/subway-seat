@@ -24,12 +24,12 @@
     "prefix": " ",
     "suffix": " ",
     "color": "#E4EDE8",
-    "background_color": "#9B5D00",
+    "background_color": "#754500",
     "bold": true
   },
   "h2": {
     "prefix": "## ",
-    "color": "#9B5D00"
+    "color": "#754500"
   },
   "h3": {
     "prefix": "### ",
@@ -37,11 +37,11 @@
   },
   "h4": {
     "prefix": "#### ",
-    "color": "#18803F"
+    "color": "#207F41"
   },
   "h5": {
     "prefix": "##### ",
-    "color": "#277555"
+    "color": "#086142"
   },
   "h6": {
     "prefix": "###### ",
@@ -86,13 +86,13 @@
     "underline": true
   },
   "image_text": {
-    "color": "#277555",
+    "color": "#086142",
     "format": "Image: {{.text}} →"
   },
   "code": {
     "prefix": " ",
     "suffix": " ",
-    "color": "#18803F",
+    "color": "#207F41",
     "background_color": "#D8E3DC"
   },
   "code_block": {
@@ -115,16 +115,16 @@
         "italic": true
       },
       "keyword": {
-        "color": "#9B5D00"
+        "color": "#754500"
       },
       "keyword_reserved": {
-        "color": "#9B5D00"
+        "color": "#754500"
       },
       "keyword_namespace": {
-        "color": "#9B5D00"
+        "color": "#754500"
       },
       "keyword_type": {
-        "color": "#277555",
+        "color": "#086142",
         "italic": true
       },
       "operator": {
@@ -141,14 +141,14 @@
         "italic": true
       },
       "name_tag": {
-        "color": "#9B5D00"
+        "color": "#754500"
       },
       "name_attribute": {
         "color": "#8A6700",
         "italic": true
       },
       "name_class": {
-        "color": "#277555"
+        "color": "#086142"
       },
       "name_constant": {
         "color": "#BB403B"
@@ -158,7 +158,7 @@
         "italic": true
       },
       "name_exception": {
-        "color": "#277555"
+        "color": "#086142"
       },
       "name_function": {
         "color": "#8A6700"
@@ -176,7 +176,7 @@
         "color": "#BB403B"
       },
       "literal_string": {
-        "color": "#18803F"
+        "color": "#207F41"
       },
       "literal_string_escape": {
         "color": "#9A557D"
@@ -189,7 +189,7 @@
         "italic": true
       },
       "generic_inserted": {
-        "color": "#18803F"
+        "color": "#207F41"
       },
       "generic_strong": {
         "color": "#18231D",

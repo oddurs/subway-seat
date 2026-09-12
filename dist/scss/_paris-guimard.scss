@@ -2,19 +2,19 @@
 // Paris Guimard: Cast iron off a Metro entrance, which is nearly black. Brass leads.
 // Diff grounds: -add/-del/-chg for lines, -emph for changed words, -dim for faded diffs.
 
-$ss-crust:         #141A17; // Blackout
-$ss-mantle:        #1A231E; // Espresso
-$ss-base:          #212D27; // Paneling
-$ss-surface0:      #2A3831; // Coppertone
-$ss-surface1:      #34453C; // Saddle
-$ss-surface2:      #42544B; // Corduroy
-$ss-overlay0:      #5B6A62; // Pecan
-$ss-overlay1:      #77847D; // Cardboard
-$ss-overlay2:      #929D97; // Burlap
-$ss-subtext0:      #ABB4AF; // Khaki
-$ss-subtext1:      #C3CAC6; // Almond
-$ss-text:          #DAE0DC; // Parchment
-$ss-text-hi:       #EAEEEC; // Ivory
+$ss-crust:         #131A17; // Blackout
+$ss-mantle:        #18241D; // Espresso
+$ss-base:          #1E2E26; // Paneling
+$ss-surface0:      #263930; // Coppertone
+$ss-surface1:      #30463B; // Saddle
+$ss-surface2:      #3E554A; // Corduroy
+$ss-overlay0:      #586B61; // Pecan
+$ss-overlay1:      #74857C; // Cardboard
+$ss-overlay2:      #909E96; // Burlap
+$ss-subtext0:      #A9B5AE; // Khaki
+$ss-subtext1:      #C2CBC5; // Almond
+$ss-text:          #D9E1DB; // Parchment
+$ss-text-hi:       #E9EEEC; // Ivory
 $ss-yellow:        #EBC168; // Harvest gold
 $ss-yellow-hi:     #FBD380; // Broadway yellow
 $ss-orange:        #D0914F; // Burnt orange
@@ -23,19 +23,19 @@ $ss-red:           #CD6B63; // Redbird
 $ss-red-hi:        #E1837A; // Redbird bright
 $ss-green:         #80C28E; // Avocado
 $ss-green-hi:      #8FD59E; // Avocado bright
-$ss-sage:          #7BB096; // Seafoam tile
+$ss-sage:          #6CA087; // Seafoam tile
 $ss-sage-hi:       #98CCB2; // Seafoam bright
 $ss-denim:         #709BC8; // Faded denim
 $ss-denim-hi:      #8DB6E2; // Denim bright
 $ss-clay:          #CE96B4; // Terracotta
-$ss-diff-add:      #2C3F31;
-$ss-diff-add-emph: #39533F;
-$ss-diff-add-dim:  #233228;
-$ss-diff-del:      #442F2B;
-$ss-diff-del-emph: #5E3A35;
+$ss-diff-add:      #2B3F31;
+$ss-diff-add-emph: #38533F;
+$ss-diff-add-dim:  #223228;
+$ss-diff-del:      #432F2B;
+$ss-diff-del-emph: #5D3A35;
 $ss-diff-del-dim:  #332824;
 $ss-diff-chg:      #363524;
-$ss-diff-chg-emph: #4C452C;
+$ss-diff-chg-emph: #4B452C;
 
 $subway-seat: (
   "crust": $ss-crust,

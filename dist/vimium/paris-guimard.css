@@ -2,10 +2,10 @@
 /* Paris Guimard for Vimium: paste into Options › CSS for Vimium UI. */
 
 :root {
-  --vimium-background-color: #212D27;
-  --vimium-background-text-color: #DAE0DC;
-  --vimium-foreground-color: #1A231E;
-  --vimium-foreground-text-color: #DAE0DC;
+  --vimium-background-color: #1E2E26;
+  --vimium-background-text-color: #D9E1DB;
+  --vimium-foreground-color: #18241D;
+  --vimium-foreground-text-color: #D9E1DB;
   --vimium-link-color: #709BC8;
 }
 
@@ -15,16 +15,16 @@ div.internal-vimium-hint-marker {
   background: #EBC168;
   border: 1px solid #8A7644;
   border-radius: 3px;
-  box-shadow: 0 2px 6px rgba(20, 26, 23, 0.35);
+  box-shadow: 0 2px 6px rgba(19, 26, 23, 0.35);
 }
 
 div.internal-vimium-hint-marker span {
-  color: #141A17;
+  color: #131A17;
   text-shadow: none;
 }
 
 div.internal-vimium-hint-marker > .matchingCharacter {
-  color: #806E40;
+  color: #7F6E40;
 }
 
 div > .vimiumActiveHintMarker span {
@@ -47,27 +47,27 @@ div.vimium-flash {
 
 body.vimium-find-mode ::selection {
   background: #D0914F;
-  color: #141A17;
+  color: #131A17;
 }
 
 /* Vomnibar */
 #vomnibar {
-  background: #2A3831;
-  color: #DAE0DC;
-  border: 1px solid #3F4C46;
+  background: #263930;
+  color: #D9E1DB;
+  border: 1px solid #3C4D45;
   border-radius: 8px;
-  box-shadow: 0 12px 32px rgba(20, 26, 23, 0.45);
+  box-shadow: 0 12px 32px rgba(19, 26, 23, 0.45);
 }
 
 #vomnibar #vomnibar-search-area {
-  background: #2A3831;
-  border-bottom: 1px solid #3F4C46;
+  background: #263930;
+  border-bottom: 1px solid #3C4D45;
 }
 
 #vomnibar input {
-  color: #EAEEEC;
-  background: #212D27;
-  border: 1px solid #2A3831;
+  color: #E9EEEC;
+  background: #1E2E26;
+  border: 1px solid #263930;
   border-radius: 5px;
   box-shadow: none;
 }
@@ -77,25 +77,25 @@ body.vimium-find-mode ::selection {
 }
 
 #vomnibar input::selection {
-  background-color: #42544B;
-  color: #EAEEEC;
+  background-color: #3E554A;
+  color: #E9EEEC;
 }
 
 #vomnibar ul {
-  background: #2A3831;
+  background: #263930;
 }
 
 #vomnibar li {
-  border-bottom: 1px solid #3F4C46;
+  border-bottom: 1px solid #3C4D45;
 }
 
 #vomnibar li .source {
-  color: #77847D;
+  color: #74857C;
 }
 
 #vomnibar li .title,
 #vomnibar li em {
-  color: #DAE0DC;
+  color: #D9E1DB;
 }
 
 #vomnibar li .url {
@@ -109,40 +109,40 @@ body.vimium-find-mode ::selection {
 }
 
 #vomnibar li .relevancy {
-  color: #5B6A62;
+  color: #586B61;
 }
 
 #vomnibar li.selected {
-  background-color: #44412F;
+  background-color: #42422E;
 }
 
 /* Find HUD */
 #hud-container {
-  background-color: #2A3831;
-  color: #DAE0DC;
-  border: 1px solid #3F4C46;
+  background-color: #263930;
+  color: #D9E1DB;
+  border: 1px solid #3C4D45;
   box-shadow: none;
 }
 
 #hud-container #search-area,
 #hud-container #hud {
-  background-color: #2A3831;
-  color: #DAE0DC;
+  background-color: #263930;
+  color: #D9E1DB;
 }
 
 span#hud-match-count {
-  color: #77847D;
+  color: #74857C;
 }
 
 /* Help dialog */
 #container {
-  background-color: #212D27;
-  border: 1px solid #2A3831;
+  background-color: #1E2E26;
+  border: 1px solid #263930;
 }
 
 #dialog {
-  background-color: #212D27;
-  color: #DAE0DC;
+  background-color: #1E2E26;
+  color: #D9E1DB;
 }
 
 #dialog a,
@@ -151,35 +151,35 @@ span#hud-match-count {
 }
 
 #dialog a#close {
-  color: #77847D;
+  color: #74857C;
 }
 
 #dialog a#close:hover {
-  color: #EAEEEC;
+  color: #E9EEEC;
 }
 
 #dialog h2,
 #dialog .help-description {
-  color: #DAE0DC;
+  color: #D9E1DB;
 }
 
 #dialog div.divider {
-  background-color: #2A3831;
+  background-color: #263930;
 }
 
 #dialog .key,
 body.vimium-body .key {
-  color: #DAE0DC;
-  background-color: #1A231E;
-  border: 1px solid #2A3831;
-  border-bottom-color: #34453C;
+  color: #D9E1DB;
+  background-color: #18241D;
+  border: 1px solid #263930;
+  border-bottom-color: #30463B;
   box-shadow: none;
 }
 
 /* Options and exclusions pages */
 body.vimium-body {
-  background-color: #212D27;
-  color: #DAE0DC;
+  background-color: #1E2E26;
+  color: #D9E1DB;
 }
 
 body.vimium-body a,
@@ -189,11 +189,11 @@ body.vimium-body a:visited {
 
 body.vimium-body textarea,
 body.vimium-body input {
-  background-color: #1A231E;
-  border-color: #2A3831;
-  color: #DAE0DC;
+  background-color: #18241D;
+  border-color: #263930;
+  color: #D9E1DB;
 }
 
 body.vimium-body div.example {
-  color: #929D97;
+  color: #909E96;
 }

@@ -81,8 +81,8 @@ M.denimAlpha = '3F6480'
 M.denim_hi = 'rgb(517791)'
 M.denim_hiAlpha = '517791'
 
-M.clay = 'rgb(A65633)'
-M.clayAlpha = 'A65633'
+M.clay = 'rgb(863913)'
+M.clayAlpha = '863913'
 
 function M.apply()
   hl.config({
@@ -90,8 +90,8 @@ function M.apply()
       col = {
         active_border = 'rgb(936200)',
         inactive_border = 'rgb(CAB48E)',
-        nogroup_border = 'rgb(BC8E6A)',
-        nogroup_border_active = 'rgb(A65633)',
+        nogroup_border = 'rgb(AF835D)',
+        nogroup_border_active = 'rgb(863913)',
       },
     },
     group = {

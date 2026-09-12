@@ -4,11 +4,11 @@
 export PROFILE_NAME="London Portland"
 
 export COLOR_01="#3C4557"           # Black (Host)
-export COLOR_02="#A40005"           # Red (Syntax string)
-export COLOR_03="#00822E"           # Green (Command)
+export COLOR_02="#9B211A"           # Red (Syntax string)
+export COLOR_03="#0D8131"           # Green (Command)
 export COLOR_04="#896800"           # Yellow (Command second)
 export COLOR_05="#0019A8"           # Blue (Path)
-export COLOR_06="#A45600"           # Magenta (Syntax var)
+export COLOR_06="#B14A07"           # Magenta (Syntax var)
 export COLOR_07="#007376"           # Cyan (Prompt)
 export COLOR_08="#95A5C4"           # White
 
@@ -24,7 +24,7 @@ export COLOR_16="#A9B7D4"           # Bright White
 export BACKGROUND_COLOR="#E5EAF4"   # Background
 export FOREGROUND_COLOR="#293040"   # Foreground (Text)
 
-export CURSOR_COLOR="#A45600" # Cursor
+export CURSOR_COLOR="#B14A07" # Cursor
 
 apply_theme() {
     if [[ -e "${GOGH_APPLY_SCRIPT}" ]]; then

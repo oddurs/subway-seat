@@ -9,10 +9,10 @@ face global function                  rgb:936200
 face global string                    rgb:66740F
 face global keyword                   rgb:AD4E00
 face global operator                  rgb:735C44
-face global attribute                 rgb:A65633+i
+face global attribute                 rgb:863913+i
 face global comment                   rgb:8C7254+i
 face global documentation             comment
-face global meta                      rgb:A65633
+face global meta                      rgb:863913
 face global builtin                   rgb:936200+i
 face global title                     rgb:AD4E00+b
 face global header                    rgb:936200+b

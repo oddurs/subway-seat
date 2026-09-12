@@ -5,9 +5,9 @@
   "name": "Paris Catacombes",
   "appearance": "dark",
   "colors": {
-    "background": "#141D19",
-    "backgroundSecondary": "#0F1612",
-    "text": "#D5DCD8",
+    "background": "#121E19",
+    "backgroundSecondary": "#0D1711",
+    "text": "#D4DDD7",
     "selection": "#D0914F",
     "loader": "#EBC168",
     "red": "#E1837A",

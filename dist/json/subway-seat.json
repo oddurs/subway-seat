@@ -518,16 +518,16 @@
         },
         "clay": {
           "name": "Terracotta",
-          "hex": "#E0956C",
+          "hex": "#F4A87E",
           "rgb": [
-            224,
-            149,
-            108
+            244,
+            168,
+            126
           ],
           "hsl": [
             21,
-            65,
-            65
+            84,
+            73
           ]
         }
       },
@@ -998,16 +998,16 @@
         },
         "clay": {
           "name": "Terracotta",
-          "hex": "#E0956C",
+          "hex": "#F4A87E",
           "rgb": [
-            224,
-            149,
-            108
+            244,
+            168,
+            126
           ],
           "hsl": [
             21,
-            65,
-            65
+            84,
+            73
           ]
         }
       },
@@ -1478,16 +1478,16 @@
         },
         "clay": {
           "name": "Terracotta",
-          "hex": "#A65633",
+          "hex": "#863913",
           "rgb": [
-            166,
-            86,
-            51
+            134,
+            57,
+            19
           ],
           "hsl": [
-            18,
-            53,
-            43
+            20,
+            75,
+            30
           ]
         }
       },
@@ -2778,16 +2778,16 @@
         },
         "orange": {
           "name": "Burnt orange",
-          "hex": "#A45600",
+          "hex": "#B14A07",
           "rgb": [
-            164,
-            86,
-            0
+            177,
+            74,
+            7
           ],
           "hsl": [
-            31,
-            100,
-            32
+            24,
+            92,
+            36
           ]
         },
         "orange_hi": {
@@ -2806,16 +2806,16 @@
         },
         "red": {
           "name": "Redbird",
-          "hex": "#A40005",
+          "hex": "#9B211A",
           "rgb": [
-            164,
-            0,
-            5
+            155,
+            33,
+            26
           ],
           "hsl": [
-            358,
-            100,
-            32
+            3,
+            71,
+            35
           ]
         },
         "red_hi": {
@@ -2834,16 +2834,16 @@
         },
         "green": {
           "name": "Avocado",
-          "hex": "#00822E",
+          "hex": "#0D8131",
           "rgb": [
-            0,
-            130,
-            46
+            13,
+            129,
+            49
           ],
           "hsl": [
-            141,
-            100,
-            25
+            139,
+            82,
+            28
           ]
         },
         "green_hi": {
@@ -2942,13 +2942,13 @@
           "index": 1,
           "name": "red",
           "role": "red",
-          "hex": "#A40005"
+          "hex": "#9B211A"
         },
         {
           "index": 2,
           "name": "green",
           "role": "green",
-          "hex": "#00822E"
+          "hex": "#0D8131"
         },
         {
           "index": 3,
@@ -2966,7 +2966,7 @@
           "index": 5,
           "name": "magenta",
           "role": "orange",
-          "hex": "#A45600"
+          "hex": "#B14A07"
         },
         {
           "index": 6,
@@ -3030,12 +3030,12 @@
         }
       ],
       "diff": {
-        "diff-add": "#BDDEC9",
-        "diff-add-emph": "#99CDAB",
-        "diff-add-dim": "#D6EBDE",
-        "diff-del": "#EDCCCD",
-        "diff-del-emph": "#E2ADAF",
-        "diff-del-dim": "#F4E0E1",
+        "diff-add": "#C0DEC9",
+        "diff-add-emph": "#9ECDAD",
+        "diff-add-dim": "#D8EBDE",
+        "diff-del": "#EBD3D1",
+        "diff-del-emph": "#DFB8B6",
+        "diff-del-dim": "#F3E4E4",
         "diff-chg": "#E0D8BD",
         "diff-chg-emph": "#D9CFAD"
       }
@@ -3048,663 +3048,183 @@
       "colors": {
         "crust": {
           "name": "Blackout",
-          "hex": "#141A17",
+          "hex": "#131A17",
           "rgb": [
-            20,
+            19,
             26,
             23
           ],
           "hsl": [
-            150,
-            13,
+            154,
+            16,
             9
           ]
         },
         "mantle": {
           "name": "Espresso",
-          "hex": "#1A231E",
+          "hex": "#18241D",
           "rgb": [
-            26,
-            35,
-            30
+            24,
+            36,
+            29
           ],
           "hsl": [
-            147,
-            15,
+            145,
+            20,
             12
           ]
         },
         "base": {
           "name": "Paneling",
-          "hex": "#212D27",
+          "hex": "#1E2E26",
           "rgb": [
-            33,
-            45,
-            39
+            30,
+            46,
+            38
           ],
           "hsl": [
             150,
-            15,
+            21,
             15
           ]
         },
         "surface0": {
           "name": "Coppertone",
-          "hex": "#2A3831",
+          "hex": "#263930",
           "rgb": [
-            42,
-            56,
-            49
+            38,
+            57,
+            48
           ],
           "hsl": [
-            150,
-            14,
+            152,
+            20,
             19
           ]
         },
         "surface1": {
           "name": "Saddle",
-          "hex": "#34453C",
+          "hex": "#30463B",
           "rgb": [
-            52,
-            69,
-            60
+            48,
+            70,
+            59
           ],
           "hsl": [
-            148,
-            14,
-            24
+            150,
+            19,
+            23
           ]
         },
         "surface2": {
           "name": "Corduroy",
-          "hex": "#42544B",
+          "hex": "#3E554A",
           "rgb": [
-            66,
-            84,
-            75
+            62,
+            85,
+            74
           ],
           "hsl": [
-            150,
-            12,
+            151,
+            16,
             29
           ]
         },
         "overlay0": {
           "name": "Pecan",
-          "hex": "#5B6A62",
+          "hex": "#586B61",
           "rgb": [
-            91,
-            106,
-            98
+            88,
+            107,
+            97
           ],
           "hsl": [
             148,
-            8,
-            39
+            10,
+            38
           ]
         },
         "overlay1": {
           "name": "Cardboard",
-          "hex": "#77847D",
+          "hex": "#74857C",
           "rgb": [
-            119,
-            132,
-            125
+            116,
+            133,
+            124
           ],
           "hsl": [
             148,
-            5,
+            7,
             49
           ]
         },
         "overlay2": {
           "name": "Burlap",
-          "hex": "#929D97",
+          "hex": "#909E96",
           "rgb": [
-            146,
-            157,
-            151
+            144,
+            158,
+            150
           ],
           "hsl": [
-            147,
-            5,
+            146,
+            7,
             59
           ]
         },
         "subtext0": {
           "name": "Khaki",
-          "hex": "#ABB4AF",
+          "hex": "#A9B5AE",
           "rgb": [
-            171,
-            180,
-            175
+            169,
+            181,
+            174
           ],
           "hsl": [
-            147,
-            6,
+            145,
+            8,
             69
           ]
         },
         "subtext1": {
           "name": "Almond",
-          "hex": "#C3CAC6",
+          "hex": "#C2CBC5",
           "rgb": [
-            195,
-            202,
-            198
+            194,
+            203,
+            197
           ],
           "hsl": [
-            146,
-            6,
+            140,
+            8,
             78
           ]
         },
         "text": {
           "name": "Parchment",
-          "hex": "#DAE0DC",
+          "hex": "#D9E1DB",
           "rgb": [
-            218,
-            224,
-            220
+            217,
+            225,
+            219
           ],
           "hsl": [
-            140,
-            9,
+            135,
+            12,
             87
           ]
         },
         "text_hi": {
           "name": "Ivory",
-          "hex": "#EAEEEC",
+          "hex": "#E9EEEC",
           "rgb": [
-            234,
+            233,
             238,
             236
           ],
           "hsl": [
-            150,
-            11,
-            93
-          ]
-        },
-        "yellow": {
-          "name": "Harvest gold",
-          "hex": "#EBC168",
-          "rgb": [
-            235,
-            193,
-            104
-          ],
-          "hsl": [
-            41,
-            77,
-            66
-          ]
-        },
-        "yellow_hi": {
-          "name": "Broadway yellow",
-          "hex": "#FBD380",
-          "rgb": [
-            251,
-            211,
-            128
-          ],
-          "hsl": [
-            40,
-            94,
-            74
-          ]
-        },
-        "orange": {
-          "name": "Burnt orange",
-          "hex": "#D0914F",
-          "rgb": [
-            208,
-            145,
-            79
-          ],
-          "hsl": [
-            31,
-            58,
-            56
-          ]
-        },
-        "orange_hi": {
-          "name": "Sixth Avenue",
-          "hex": "#E7AB6D",
-          "rgb": [
-            231,
-            171,
-            109
-          ],
-          "hsl": [
-            30,
-            72,
-            67
-          ]
-        },
-        "red": {
-          "name": "Redbird",
-          "hex": "#CD6B63",
-          "rgb": [
-            205,
-            107,
-            99
-          ],
-          "hsl": [
-            5,
-            51,
-            60
-          ]
-        },
-        "red_hi": {
-          "name": "Redbird bright",
-          "hex": "#E1837A",
-          "rgb": [
-            225,
-            131,
-            122
-          ],
-          "hsl": [
-            5,
-            63,
-            68
-          ]
-        },
-        "green": {
-          "name": "Avocado",
-          "hex": "#80C28E",
-          "rgb": [
-            128,
-            194,
-            142
-          ],
-          "hsl": [
-            133,
-            35,
-            63
-          ]
-        },
-        "green_hi": {
-          "name": "Avocado bright",
-          "hex": "#8FD59E",
-          "rgb": [
-            143,
-            213,
-            158
-          ],
-          "hsl": [
-            133,
-            45,
-            70
-          ]
-        },
-        "sage": {
-          "name": "Seafoam tile",
-          "hex": "#7BB096",
-          "rgb": [
-            123,
-            176,
-            150
-          ],
-          "hsl": [
-            151,
-            25,
-            59
-          ]
-        },
-        "sage_hi": {
-          "name": "Seafoam bright",
-          "hex": "#98CCB2",
-          "rgb": [
-            152,
-            204,
-            178
-          ],
-          "hsl": [
-            150,
-            34,
-            70
-          ]
-        },
-        "denim": {
-          "name": "Faded denim",
-          "hex": "#709BC8",
-          "rgb": [
-            112,
-            155,
-            200
-          ],
-          "hsl": [
-            211,
-            44,
-            61
-          ]
-        },
-        "denim_hi": {
-          "name": "Denim bright",
-          "hex": "#8DB6E2",
-          "rgb": [
-            141,
-            182,
-            226
-          ],
-          "hsl": [
-            211,
-            59,
-            72
-          ]
-        },
-        "clay": {
-          "name": "Terracotta",
-          "hex": "#CE96B4",
-          "rgb": [
-            206,
-            150,
-            180
-          ],
-          "hsl": [
-            328,
-            36,
-            70
-          ]
-        }
-      },
-      "ansi": [
-        {
-          "index": 0,
-          "name": "black",
-          "role": "surface1",
-          "hex": "#34453C"
-        },
-        {
-          "index": 1,
-          "name": "red",
-          "role": "red",
-          "hex": "#CD6B63"
-        },
-        {
-          "index": 2,
-          "name": "green",
-          "role": "green",
-          "hex": "#80C28E"
-        },
-        {
-          "index": 3,
-          "name": "yellow",
-          "role": "yellow",
-          "hex": "#EBC168"
-        },
-        {
-          "index": 4,
-          "name": "blue",
-          "role": "denim",
-          "hex": "#709BC8"
-        },
-        {
-          "index": 5,
-          "name": "magenta",
-          "role": "orange",
-          "hex": "#D0914F"
-        },
-        {
-          "index": 6,
-          "name": "cyan",
-          "role": "sage",
-          "hex": "#7BB096"
-        },
-        {
-          "index": 7,
-          "name": "white",
-          "role": "subtext1",
-          "hex": "#C3CAC6"
-        },
-        {
-          "index": 8,
-          "name": "bright_black",
-          "role": "overlay1",
-          "hex": "#77847D"
-        },
-        {
-          "index": 9,
-          "name": "bright_red",
-          "role": "red_hi",
-          "hex": "#E1837A"
-        },
-        {
-          "index": 10,
-          "name": "bright_green",
-          "role": "green_hi",
-          "hex": "#8FD59E"
-        },
-        {
-          "index": 11,
-          "name": "bright_yellow",
-          "role": "yellow_hi",
-          "hex": "#FBD380"
-        },
-        {
-          "index": 12,
-          "name": "bright_blue",
-          "role": "denim_hi",
-          "hex": "#8DB6E2"
-        },
-        {
-          "index": 13,
-          "name": "bright_magenta",
-          "role": "orange_hi",
-          "hex": "#E7AB6D"
-        },
-        {
-          "index": 14,
-          "name": "bright_cyan",
-          "role": "sage_hi",
-          "hex": "#98CCB2"
-        },
-        {
-          "index": 15,
-          "name": "bright_white",
-          "role": "text_hi",
-          "hex": "#EAEEEC"
-        }
-      ],
-      "diff": {
-        "diff-add": "#2C3F31",
-        "diff-add-emph": "#39533F",
-        "diff-add-dim": "#233228",
-        "diff-del": "#442F2B",
-        "diff-del-emph": "#5E3A35",
-        "diff-del-dim": "#332824",
-        "diff-chg": "#363524",
-        "diff-chg-emph": "#4C452C"
-      }
-    },
-    "catacombes": {
-      "name": "Paris Catacombes",
-      "slug": "paris-catacombes",
-      "dark": true,
-      "blurb": "Under the quarries: the same green with the lights turned down.",
-      "colors": {
-        "crust": {
-          "name": "Blackout",
-          "hex": "#0B100D",
-          "rgb": [
-            11,
-            16,
-            13
-          ],
-          "hsl": [
-            144,
-            19,
-            5
-          ]
-        },
-        "mantle": {
-          "name": "Espresso",
-          "hex": "#0F1612",
-          "rgb": [
-            15,
-            22,
-            18
-          ],
-          "hsl": [
-            146,
-            19,
-            7
-          ]
-        },
-        "base": {
-          "name": "Paneling",
-          "hex": "#141D19",
-          "rgb": [
-            20,
-            29,
-            25
-          ],
-          "hsl": [
-            153,
-            18,
-            10
-          ]
-        },
-        "surface0": {
-          "name": "Coppertone",
-          "hex": "#1D2822",
-          "rgb": [
-            29,
-            40,
-            34
-          ],
-          "hsl": [
-            147,
-            16,
-            14
-          ]
-        },
-        "surface1": {
-          "name": "Saddle",
-          "hex": "#27332D",
-          "rgb": [
-            39,
-            51,
-            45
-          ],
-          "hsl": [
-            150,
+            156,
             13,
-            18
-          ]
-        },
-        "surface2": {
-          "name": "Corduroy",
-          "hex": "#34423B",
-          "rgb": [
-            52,
-            66,
-            59
-          ],
-          "hsl": [
-            150,
-            12,
-            23
-          ]
-        },
-        "overlay0": {
-          "name": "Pecan",
-          "hex": "#57645D",
-          "rgb": [
-            87,
-            100,
-            93
-          ],
-          "hsl": [
-            148,
-            7,
-            37
-          ]
-        },
-        "overlay1": {
-          "name": "Cardboard",
-          "hex": "#738079",
-          "rgb": [
-            115,
-            128,
-            121
-          ],
-          "hsl": [
-            148,
-            5,
-            48
-          ]
-        },
-        "overlay2": {
-          "name": "Burlap",
-          "hex": "#8E9993",
-          "rgb": [
-            142,
-            153,
-            147
-          ],
-          "hsl": [
-            147,
-            5,
-            58
-          ]
-        },
-        "subtext0": {
-          "name": "Khaki",
-          "hex": "#A7B0AB",
-          "rgb": [
-            167,
-            176,
-            171
-          ],
-          "hsl": [
-            147,
-            5,
-            67
-          ]
-        },
-        "subtext1": {
-          "name": "Almond",
-          "hex": "#C0C7C3",
-          "rgb": [
-            192,
-            199,
-            195
-          ],
-          "hsl": [
-            146,
-            6,
-            77
-          ]
-        },
-        "text": {
-          "name": "Parchment",
-          "hex": "#D5DCD8",
-          "rgb": [
-            213,
-            220,
-            216
-          ],
-          "hsl": [
-            146,
-            9,
-            85
-          ]
-        },
-        "text_hi": {
-          "name": "Ivory",
-          "hex": "#E8ECEA",
-          "rgb": [
-            232,
-            236,
-            234
-          ],
-          "hsl": [
-            150,
-            10,
             92
           ]
         },
@@ -3822,16 +3342,16 @@
         },
         "sage": {
           "name": "Seafoam tile",
-          "hex": "#7BB096",
+          "hex": "#6CA087",
           "rgb": [
-            123,
-            176,
-            150
+            108,
+            160,
+            135
           ],
           "hsl": [
             151,
-            25,
-            59
+            21,
+            53
           ]
         },
         "sage_hi": {
@@ -3896,7 +3416,7 @@
           "index": 0,
           "name": "black",
           "role": "surface1",
-          "hex": "#27332D"
+          "hex": "#30463B"
         },
         {
           "index": 1,
@@ -3932,19 +3452,19 @@
           "index": 6,
           "name": "cyan",
           "role": "sage",
-          "hex": "#7BB096"
+          "hex": "#6CA087"
         },
         {
           "index": 7,
           "name": "white",
           "role": "subtext1",
-          "hex": "#C0C7C3"
+          "hex": "#C2CBC5"
         },
         {
           "index": 8,
           "name": "bright_black",
           "role": "overlay1",
-          "hex": "#738079"
+          "hex": "#74857C"
         },
         {
           "index": 9,
@@ -3986,18 +3506,498 @@
           "index": 15,
           "name": "bright_white",
           "role": "text_hi",
-          "hex": "#E8ECEA"
+          "hex": "#E9EEEC"
         }
       ],
       "diff": {
-        "diff-add": "#253729",
-        "diff-add-emph": "#334D39",
+        "diff-add": "#2B3F31",
+        "diff-add-emph": "#38533F",
+        "diff-add-dim": "#223228",
+        "diff-del": "#432F2B",
+        "diff-del-emph": "#5D3A35",
+        "diff-del-dim": "#332824",
+        "diff-chg": "#363524",
+        "diff-chg-emph": "#4B452C"
+      }
+    },
+    "catacombes": {
+      "name": "Paris Catacombes",
+      "slug": "paris-catacombes",
+      "dark": true,
+      "blurb": "Under the quarries: the same green with the lights turned down.",
+      "colors": {
+        "crust": {
+          "name": "Blackout",
+          "hex": "#0A100D",
+          "rgb": [
+            10,
+            16,
+            13
+          ],
+          "hsl": [
+            150,
+            23,
+            5
+          ]
+        },
+        "mantle": {
+          "name": "Espresso",
+          "hex": "#0D1711",
+          "rgb": [
+            13,
+            23,
+            17
+          ],
+          "hsl": [
+            144,
+            28,
+            7
+          ]
+        },
+        "base": {
+          "name": "Paneling",
+          "hex": "#121E19",
+          "rgb": [
+            18,
+            30,
+            25
+          ],
+          "hsl": [
+            155,
+            25,
+            9
+          ]
+        },
+        "surface0": {
+          "name": "Coppertone",
+          "hex": "#1A2921",
+          "rgb": [
+            26,
+            41,
+            33
+          ],
+          "hsl": [
+            148,
+            22,
+            13
+          ]
+        },
+        "surface1": {
+          "name": "Saddle",
+          "hex": "#24342C",
+          "rgb": [
+            36,
+            52,
+            44
+          ],
+          "hsl": [
+            150,
+            18,
+            17
+          ]
+        },
+        "surface2": {
+          "name": "Corduroy",
+          "hex": "#31433A",
+          "rgb": [
+            49,
+            67,
+            58
+          ],
+          "hsl": [
+            150,
+            16,
+            23
+          ]
+        },
+        "overlay0": {
+          "name": "Pecan",
+          "hex": "#54655C",
+          "rgb": [
+            84,
+            101,
+            92
+          ],
+          "hsl": [
+            148,
+            9,
+            36
+          ]
+        },
+        "overlay1": {
+          "name": "Cardboard",
+          "hex": "#708178",
+          "rgb": [
+            112,
+            129,
+            120
+          ],
+          "hsl": [
+            148,
+            7,
+            47
+          ]
+        },
+        "overlay2": {
+          "name": "Burlap",
+          "hex": "#8C9A92",
+          "rgb": [
+            140,
+            154,
+            146
+          ],
+          "hsl": [
+            146,
+            6,
+            58
+          ]
+        },
+        "subtext0": {
+          "name": "Khaki",
+          "hex": "#A5B1AA",
+          "rgb": [
+            165,
+            177,
+            170
+          ],
+          "hsl": [
+            145,
+            7,
+            67
+          ]
+        },
+        "subtext1": {
+          "name": "Almond",
+          "hex": "#BFC8C2",
+          "rgb": [
+            191,
+            200,
+            194
+          ],
+          "hsl": [
+            140,
+            8,
+            77
+          ]
+        },
+        "text": {
+          "name": "Parchment",
+          "hex": "#D4DDD7",
+          "rgb": [
+            212,
+            221,
+            215
+          ],
+          "hsl": [
+            140,
+            12,
+            85
+          ]
+        },
+        "text_hi": {
+          "name": "Ivory",
+          "hex": "#E7ECEA",
+          "rgb": [
+            231,
+            236,
+            234
+          ],
+          "hsl": [
+            156,
+            12,
+            92
+          ]
+        },
+        "yellow": {
+          "name": "Harvest gold",
+          "hex": "#EBC168",
+          "rgb": [
+            235,
+            193,
+            104
+          ],
+          "hsl": [
+            41,
+            77,
+            66
+          ]
+        },
+        "yellow_hi": {
+          "name": "Broadway yellow",
+          "hex": "#FBD380",
+          "rgb": [
+            251,
+            211,
+            128
+          ],
+          "hsl": [
+            40,
+            94,
+            74
+          ]
+        },
+        "orange": {
+          "name": "Burnt orange",
+          "hex": "#D0914F",
+          "rgb": [
+            208,
+            145,
+            79
+          ],
+          "hsl": [
+            31,
+            58,
+            56
+          ]
+        },
+        "orange_hi": {
+          "name": "Sixth Avenue",
+          "hex": "#E7AB6D",
+          "rgb": [
+            231,
+            171,
+            109
+          ],
+          "hsl": [
+            30,
+            72,
+            67
+          ]
+        },
+        "red": {
+          "name": "Redbird",
+          "hex": "#CD6B63",
+          "rgb": [
+            205,
+            107,
+            99
+          ],
+          "hsl": [
+            5,
+            51,
+            60
+          ]
+        },
+        "red_hi": {
+          "name": "Redbird bright",
+          "hex": "#E1837A",
+          "rgb": [
+            225,
+            131,
+            122
+          ],
+          "hsl": [
+            5,
+            63,
+            68
+          ]
+        },
+        "green": {
+          "name": "Avocado",
+          "hex": "#80C28E",
+          "rgb": [
+            128,
+            194,
+            142
+          ],
+          "hsl": [
+            133,
+            35,
+            63
+          ]
+        },
+        "green_hi": {
+          "name": "Avocado bright",
+          "hex": "#8FD59E",
+          "rgb": [
+            143,
+            213,
+            158
+          ],
+          "hsl": [
+            133,
+            45,
+            70
+          ]
+        },
+        "sage": {
+          "name": "Seafoam tile",
+          "hex": "#6CA087",
+          "rgb": [
+            108,
+            160,
+            135
+          ],
+          "hsl": [
+            151,
+            21,
+            53
+          ]
+        },
+        "sage_hi": {
+          "name": "Seafoam bright",
+          "hex": "#98CCB2",
+          "rgb": [
+            152,
+            204,
+            178
+          ],
+          "hsl": [
+            150,
+            34,
+            70
+          ]
+        },
+        "denim": {
+          "name": "Faded denim",
+          "hex": "#709BC8",
+          "rgb": [
+            112,
+            155,
+            200
+          ],
+          "hsl": [
+            211,
+            44,
+            61
+          ]
+        },
+        "denim_hi": {
+          "name": "Denim bright",
+          "hex": "#8DB6E2",
+          "rgb": [
+            141,
+            182,
+            226
+          ],
+          "hsl": [
+            211,
+            59,
+            72
+          ]
+        },
+        "clay": {
+          "name": "Terracotta",
+          "hex": "#CE96B4",
+          "rgb": [
+            206,
+            150,
+            180
+          ],
+          "hsl": [
+            328,
+            36,
+            70
+          ]
+        }
+      },
+      "ansi": [
+        {
+          "index": 0,
+          "name": "black",
+          "role": "surface1",
+          "hex": "#24342C"
+        },
+        {
+          "index": 1,
+          "name": "red",
+          "role": "red",
+          "hex": "#CD6B63"
+        },
+        {
+          "index": 2,
+          "name": "green",
+          "role": "green",
+          "hex": "#80C28E"
+        },
+        {
+          "index": 3,
+          "name": "yellow",
+          "role": "yellow",
+          "hex": "#EBC168"
+        },
+        {
+          "index": 4,
+          "name": "blue",
+          "role": "denim",
+          "hex": "#709BC8"
+        },
+        {
+          "index": 5,
+          "name": "magenta",
+          "role": "orange",
+          "hex": "#D0914F"
+        },
+        {
+          "index": 6,
+          "name": "cyan",
+          "role": "sage",
+          "hex": "#6CA087"
+        },
+        {
+          "index": 7,
+          "name": "white",
+          "role": "subtext1",
+          "hex": "#BFC8C2"
+        },
+        {
+          "index": 8,
+          "name": "bright_black",
+          "role": "overlay1",
+          "hex": "#708178"
+        },
+        {
+          "index": 9,
+          "name": "bright_red",
+          "role": "red_hi",
+          "hex": "#E1837A"
+        },
+        {
+          "index": 10,
+          "name": "bright_green",
+          "role": "green_hi",
+          "hex": "#8FD59E"
+        },
+        {
+          "index": 11,
+          "name": "bright_yellow",
+          "role": "yellow_hi",
+          "hex": "#FBD380"
+        },
+        {
+          "index": 12,
+          "name": "bright_blue",
+          "role": "denim_hi",
+          "hex": "#8DB6E2"
+        },
+        {
+          "index": 13,
+          "name": "bright_magenta",
+          "role": "orange_hi",
+          "hex": "#E7AB6D"
+        },
+        {
+          "index": 14,
+          "name": "bright_cyan",
+          "role": "sage_hi",
+          "hex": "#98CCB2"
+        },
+        {
+          "index": 15,
+          "name": "bright_white",
+          "role": "text_hi",
+          "hex": "#E7ECEA"
+        }
+      ],
+      "diff": {
+        "diff-add": "#243729",
+        "diff-add-emph": "#324D39",
         "diff-add-dim": "#1B291F",
         "diff-del": "#3D2823",
-        "diff-del-emph": "#59342F",
-        "diff-del-dim": "#2C1F1C",
-        "diff-chg": "#2F2C1C",
-        "diff-chg-emph": "#453E25"
+        "diff-del-emph": "#58342F",
+        "diff-del-dim": "#2B1F1C",
+        "diff-chg": "#2E2C1C",
+        "diff-chg-emph": "#443E25"
       }
     },
     "carrelage": {
@@ -4218,16 +4218,16 @@
         },
         "orange": {
           "name": "Burnt orange",
-          "hex": "#9B5D00",
+          "hex": "#754500",
           "rgb": [
-            155,
-            93,
+            117,
+            69,
             0
           ],
           "hsl": [
-            36,
+            35,
             100,
-            30
+            23
           ]
         },
         "orange_hi": {
@@ -4246,16 +4246,16 @@
         },
         "red": {
           "name": "Redbird",
-          "hex": "#9E171B",
+          "hex": "#932D29",
           "rgb": [
-            158,
-            23,
-            27
+            147,
+            45,
+            41
           ],
           "hsl": [
-            358,
-            75,
-            35
+            2,
+            56,
+            37
           ]
         },
         "red_hi": {
@@ -4274,16 +4274,16 @@
         },
         "green": {
           "name": "Avocado",
-          "hex": "#18803F",
+          "hex": "#207F41",
           "rgb": [
-            24,
-            128,
-            63
+            32,
+            127,
+            65
           ],
           "hsl": [
-            142,
-            68,
-            30
+            141,
+            60,
+            31
           ]
         },
         "green_hi": {
@@ -4302,16 +4302,16 @@
         },
         "sage": {
           "name": "Seafoam tile",
-          "hex": "#277555",
+          "hex": "#086142",
           "rgb": [
-            39,
-            117,
-            85
+            8,
+            97,
+            66
           ],
           "hsl": [
-            155,
-            50,
-            31
+            159,
+            85,
+            21
           ]
         },
         "sage_hi": {
@@ -4382,13 +4382,13 @@
           "index": 1,
           "name": "red",
           "role": "red",
-          "hex": "#9E171B"
+          "hex": "#932D29"
         },
         {
           "index": 2,
           "name": "green",
           "role": "green",
-          "hex": "#18803F"
+          "hex": "#207F41"
         },
         {
           "index": 3,
@@ -4406,13 +4406,13 @@
           "index": 5,
           "name": "magenta",
           "role": "orange",
-          "hex": "#9B5D00"
+          "hex": "#754500"
         },
         {
           "index": 6,
           "name": "cyan",
           "role": "sage",
-          "hex": "#277555"
+          "hex": "#086142"
         },
         {
           "index": 7,
@@ -4470,12 +4470,12 @@
         }
       ],
       "diff": {
-        "diff-add": "#C3DECD",
-        "diff-add-emph": "#A3CCB2",
-        "diff-add-dim": "#DAEBE0",
-        "diff-del": "#ECD1D1",
-        "diff-del-emph": "#E0B5B6",
-        "diff-del-dim": "#F3E3E4",
+        "diff-add": "#C5DECE",
+        "diff-add-emph": "#A6CCB3",
+        "diff-add-dim": "#DBEBE1",
+        "diff-del": "#E9D5D4",
+        "diff-del-emph": "#DCBCBB",
+        "diff-del-dim": "#F2E6E5",
         "diff-chg": "#E1D7BD",
         "diff-chg-emph": "#DACEAD"
       }

@@ -18,29 +18,29 @@
     "text_hi": "#18231D",
     "yellow": "#8A6700",
     "yellow_hi": "#997300",
-    "orange": "#9B5D00",
+    "orange": "#754500",
     "orange_hi": "#AE6800",
-    "red": "#9E171B",
+    "red": "#932D29",
     "red_hi": "#BB403B",
-    "green": "#18803F",
+    "green": "#207F41",
     "green_hi": "#168540",
-    "sage": "#277555",
+    "sage": "#086142",
     "sage_hi": "#3D8666",
     "denim": "#27629C",
     "denim_hi": "#3E75AD",
     "clay": "#9A557D",
-    "tint_add": "#C3DECD",
-    "tint_add_emph": "#A3CCB2",
-    "tint_add_dim": "#DAEBE0",
-    "tint_del": "#ECD1D1",
-    "tint_del_emph": "#E0B5B6",
-    "tint_del_dim": "#F3E3E4",
+    "tint_add": "#C5DECE",
+    "tint_add_emph": "#A6CCB3",
+    "tint_add_dim": "#DBEBE1",
+    "tint_del": "#E9D5D4",
+    "tint_del_emph": "#DCBCBB",
+    "tint_del_dim": "#F2E6E5",
     "tint_chg": "#E1D7BD",
     "tint_chg_emph": "#DACEAD",
     "tint_info": "#CADADD",
-    "tint_hint": "#CADCD3",
+    "tint_hint": "#C5D9D1",
     "tint_search": "#C9C5A2",
-    "tint_search_cur": "#C0A574",
+    "tint_search_cur": "#AC9974",
     "inactive_selection": "#C0D4C9",
     "paper": "#F2F6F4"
   },
@@ -56,8 +56,8 @@
     "fold_marker": "var(overlay1)",
     "minimap_border": "var(surface2)",
     "accent": "var(orange)",
-    "popup_css": "html { background-color: #F2F6F4; color: #25352C; } a { color: #27629C; } code, .highlight { background-color: #E4EDE8; color: #18803F; } h1, h2, h3 { color: #8A6700; } .error, .errors { color: #BB403B; } .warning, .warnings { color: #8A6700; } .info { color: #27629C; } .hint { color: #277555; }",
-    "phantom_css": "html { background-color: #F2F6F4; color: #25352C; } a { color: #27629C; } code, .highlight { background-color: #E4EDE8; color: #18803F; } h1, h2, h3 { color: #8A6700; } .error, .errors { color: #BB403B; } .warning, .warnings { color: #8A6700; } .info { color: #27629C; } .hint { color: #277555; }",
+    "popup_css": "html { background-color: #F2F6F4; color: #25352C; } a { color: #27629C; } code, .highlight { background-color: #E4EDE8; color: #207F41; } h1, h2, h3 { color: #8A6700; } .error, .errors { color: #BB403B; } .warning, .warnings { color: #8A6700; } .info { color: #27629C; } .hint { color: #086142; }",
+    "phantom_css": "html { background-color: #F2F6F4; color: #25352C; } a { color: #27629C; } code, .highlight { background-color: #E4EDE8; color: #207F41; } h1, h2, h3 { color: #8A6700; } .error, .errors { color: #BB403B; } .warning, .warnings { color: #8A6700; } .info { color: #27629C; } .hint { color: #086142; }",
     "gutter": "var(base)",
     "gutter_foreground": "var(overlay0)",
     "gutter_foreground_highlight": "var(orange)",
@@ -402,19 +402,19 @@
     },
     {
       "scope": "diff.inserted.side-by-side",
-      "background": "#C3DECD"
+      "background": "#C5DECE"
     },
     {
       "scope": "diff.inserted.char.side-by-side",
-      "background": "#A3CCB2"
+      "background": "#A6CCB3"
     },
     {
       "scope": "diff.deleted.side-by-side",
-      "background": "#ECD1D1"
+      "background": "#E9D5D4"
     },
     {
       "scope": "diff.deleted.char.side-by-side",
-      "background": "#E0B5B6"
+      "background": "#DCBCBB"
     },
     {
       "scope": "diff.fill",
@@ -422,15 +422,15 @@
     },
     {
       "scope": "diff.inserted.merge-left",
-      "background": "#C3DECD"
+      "background": "#C5DECE"
     },
     {
       "scope": "diff.inserted.char.merge-left",
-      "background": "#A3CCB2"
+      "background": "#A6CCB3"
     },
     {
       "scope": "diff.border.merge-left",
-      "background": "#18803F"
+      "background": "#207F41"
     },
     {
       "scope": "diff.inserted.merge-right",
@@ -458,11 +458,11 @@
     },
     {
       "scope": "blame.age-icon",
-      "foreground": "#9B5D00"
+      "foreground": "#754500"
     },
     {
       "scope": "source.sublime-merge.preferences.git_binary",
-      "foreground": "#9B5D00"
+      "foreground": "#754500"
     }
   ]
 }

@@ -24,25 +24,25 @@
   /* Accents */
   --ss-yellow: #8A6700; /* Harvest gold */
   --ss-yellow-hi: #997300; /* Broadway yellow */
-  --ss-orange: #9B5D00; /* Burnt orange */
+  --ss-orange: #754500; /* Burnt orange */
   --ss-orange-hi: #AE6800; /* Sixth Avenue */
-  --ss-red: #9E171B; /* Redbird */
+  --ss-red: #932D29; /* Redbird */
   --ss-red-hi: #BB403B; /* Redbird bright */
-  --ss-green: #18803F; /* Avocado */
+  --ss-green: #207F41; /* Avocado */
   --ss-green-hi: #168540; /* Avocado bright */
-  --ss-sage: #277555; /* Seafoam tile */
+  --ss-sage: #086142; /* Seafoam tile */
   --ss-sage-hi: #3D8666; /* Seafoam bright */
   --ss-denim: #27629C; /* Faded denim */
   --ss-denim-hi: #3E75AD; /* Denim bright */
   --ss-clay: #9A557D; /* Terracotta */
 
   /* Diff grounds: -add/-del/-chg for lines, -emph for changed words, -dim for faded diffs */
-  --ss-diff-add: #C3DECD;
-  --ss-diff-add-emph: #A3CCB2;
-  --ss-diff-add-dim: #DAEBE0;
-  --ss-diff-del: #ECD1D1;
-  --ss-diff-del-emph: #E0B5B6;
-  --ss-diff-del-dim: #F3E3E4;
+  --ss-diff-add: #C5DECE;
+  --ss-diff-add-emph: #A6CCB3;
+  --ss-diff-add-dim: #DBEBE1;
+  --ss-diff-del: #E9D5D4;
+  --ss-diff-del-emph: #DCBCBB;
+  --ss-diff-del-dim: #F2E6E5;
   --ss-diff-chg: #E1D7BD;
   --ss-diff-chg-emph: #DACEAD;
 
@@ -62,13 +62,13 @@
   --ss-text-hi-rgb: 24 35 29;
   --ss-yellow-rgb: 138 103 0;
   --ss-yellow-hi-rgb: 153 115 0;
-  --ss-orange-rgb: 155 93 0;
+  --ss-orange-rgb: 117 69 0;
   --ss-orange-hi-rgb: 174 104 0;
-  --ss-red-rgb: 158 23 27;
+  --ss-red-rgb: 147 45 41;
   --ss-red-hi-rgb: 187 64 59;
-  --ss-green-rgb: 24 128 63;
+  --ss-green-rgb: 32 127 65;
   --ss-green-hi-rgb: 22 133 64;
-  --ss-sage-rgb: 39 117 85;
+  --ss-sage-rgb: 8 97 66;
   --ss-sage-hi-rgb: 61 134 102;
   --ss-denim-rgb: 39 98 156;
   --ss-denim-hi-rgb: 62 117 173;

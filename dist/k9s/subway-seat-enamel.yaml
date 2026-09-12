@@ -53,7 +53,7 @@ k9s:
       pendingColor: '#AD4E00'
       errorColor: '#BC4031'
       highlightColor: '#A56E00'
-      killColor: '#A65633'
+      killColor: '#863913'
       completedColor: '#A58C6A'
   views:
     table:

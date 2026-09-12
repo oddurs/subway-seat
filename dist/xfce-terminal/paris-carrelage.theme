@@ -3,7 +3,7 @@
 Name=Paris Carrelage
 ColorForeground=#25352C
 ColorBackground=#E4EDE8
-ColorCursor=#9B5D00
+ColorCursor=#754500
 ColorCursorForeground=#E4EDE8
 ColorCursorUseDefault=FALSE
 ColorBold=#18231D
@@ -11,5 +11,5 @@ ColorBoldUseDefault=FALSE
 ColorSelection=#18231D
 ColorSelectionBackground=#A3BFB0
 ColorSelectionUseDefault=FALSE
-TabActivityColor=#9B5D00
-ColorPalette=#374940;#9E171B;#18803F;#8A6700;#27629C;#9B5D00;#277555;#8EAD9D;#627F70;#BB403B;#168540;#997300;#3E75AD;#AE6800;#3D8666;#A3BFB0
+TabActivityColor=#754500
+ColorPalette=#374940;#932D29;#207F41;#8A6700;#27629C;#754500;#086142;#8EAD9D;#627F70;#BB403B;#168540;#997300;#3E75AD;#AE6800;#3D8666;#A3BFB0

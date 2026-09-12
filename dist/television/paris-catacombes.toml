@@ -1,26 +1,26 @@
 # Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
 # Paris Catacombes for television.
 # general
-background = '#141D19'
-border_fg = '#34423B'
-text_fg = '#D5DCD8'
-dimmed_text_fg = '#738079'
+background = '#121E19'
+border_fg = '#31433A'
+text_fg = '#D4DDD7'
+dimmed_text_fg = '#708178'
 # input
-input_text_fg = '#D5DCD8'
-result_count_fg = '#738079'
+input_text_fg = '#D4DDD7'
+result_count_fg = '#708178'
 # results
-result_name_fg = '#C0C7C3'
-result_line_number_fg = '#738079'
-result_value_fg = '#D5DCD8'
-selection_bg = '#1D2822'
-selection_fg = '#E8ECEA'
+result_name_fg = '#BFC8C2'
+result_line_number_fg = '#708178'
+result_value_fg = '#D4DDD7'
+selection_bg = '#1A2921'
+selection_fg = '#E7ECEA'
 match_fg = '#EBC168'
 # preview
-preview_title_fg = '#C0C7C3'
+preview_title_fg = '#BFC8C2'
 # modes
-channel_mode_fg = '#0B100D'
+channel_mode_fg = '#0A100D'
 channel_mode_bg = '#D0914F'
-remote_control_mode_fg = '#0B100D'
+remote_control_mode_fg = '#0A100D'
 remote_control_mode_bg = '#EBC168'
-action_picker_mode_fg = '#0B100D'
-action_picker_mode_bg = '#7BB096'
+action_picker_mode_fg = '#0A100D'
+action_picker_mode_bg = '#6CA087'

@@ -2,73 +2,73 @@
 # Paris Catacombes
 
 [colors.primary]
-background = "#141D19"
-foreground = "#D5DCD8"
-dim_foreground = "#8E9993"
-bright_foreground = "#E8ECEA"
+background = "#121E19"
+foreground = "#D4DDD7"
+dim_foreground = "#8C9A92"
+bright_foreground = "#E7ECEA"
 
 [colors.cursor]
-text = "#141D19"
+text = "#121E19"
 cursor = "#EBC168"
 
 [colors.vi_mode_cursor]
-text = "#141D19"
-cursor = "#7BB096"
+text = "#121E19"
+cursor = "#6CA087"
 
 [colors.search.matches]
-foreground = "#D5DCD8"
-background = "#544E31"
+foreground = "#D4DDD7"
+background = "#534F31"
 
 [colors.search.focused_match]
-foreground = "#E8ECEA"
-background = "#725734"
+foreground = "#E7ECEA"
+background = "#715834"
 
 [colors.footer_bar]
-foreground = "#D5DCD8"
-background = "#27332D"
+foreground = "#D4DDD7"
+background = "#24342C"
 
 [colors.hints.start]
-foreground = "#141D19"
+foreground = "#121E19"
 background = "#EBC168"
 
 [colors.hints.end]
-foreground = "#141D19"
-background = "#8E9993"
+foreground = "#121E19"
+background = "#8C9A92"
 
 [colors.line_indicator]
-foreground = "#A7B0AB"
-background = "#1D2822"
+foreground = "#A5B1AA"
+background = "#1A2921"
 
 [colors.selection]
-text = "#E8ECEA"
-background = "#34423B"
+text = "#E7ECEA"
+background = "#31433A"
 
 [colors.normal]
-black = "#27332D"
+black = "#24342C"
 red = "#CD6B63"
 green = "#80C28E"
 yellow = "#EBC168"
 blue = "#709BC8"
 magenta = "#D0914F"
-cyan = "#7BB096"
-white = "#C0C7C3"
+cyan = "#6CA087"
+white = "#BFC8C2"
 
 [colors.bright]
-black = "#738079"
+black = "#708178"
 red = "#E1837A"
 green = "#8FD59E"
 yellow = "#FBD380"
 blue = "#8DB6E2"
 magenta = "#E7AB6D"
 cyan = "#98CCB2"
-white = "#E8ECEA"
+white = "#E7ECEA"
 
 [colors.dim]
-black = "#212C26"
-red = "#8E504A"
+black = "#1E2D26"
+red = "#8D514A"
 green = "#5B8A66"
-yellow = "#A2894D"
-blue = "#51708C"
-magenta = "#906A3D"
-cyan = "#587E6C"
-white = "#868D89"
+yellow = "#A18A4D"
+blue = "#50718C"
+magenta = "#8F6A3D"
+cyan = "#4D7462"
+white = "#848E89"

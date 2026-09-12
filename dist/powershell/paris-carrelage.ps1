@@ -9,21 +9,21 @@
     $colors = @{
         Default                = "${esc}[38;2;37;53;44m"                     # text
         Command                = "${esc}[38;2;138;103;0m"                    # yellow
-        Parameter              = "${esc}[38;2;39;117;85m"                    # sage
-        String                 = "${esc}[38;2;24;128;63m"                    # green
-        Operator               = "${esc}[38;2;155;93;0m"                     # orange
+        Parameter              = "${esc}[38;2;8;97;66m"                      # sage
+        String                 = "${esc}[38;2;32;127;65m"                    # green
+        Operator               = "${esc}[38;2;117;69;0m"                     # orange
         Variable               = "${esc}[38;2;154;85;125m"                   # clay
         Member                 = "${esc}[38;2;55;73;64m"                     # subtext1
         Number                 = "${esc}[38;2;187;64;59m"                    # red_hi
-        Type                   = "${esc}[38;2;39;117;85m"                    # sage
-        Keyword                = "${esc}[38;2;155;93;0m"                     # orange
+        Type                   = "${esc}[38;2;8;97;66m"                      # sage
+        Keyword                = "${esc}[38;2;117;69;0m"                     # orange
         Comment                = "${esc}[3;38;2;98;127;112m"                 # overlay1, italic
         Error                  = "${esc}[38;2;187;64;59m"                    # red_hi
         Emphasis               = "${esc}[1;38;2;138;103;0m"                  # yellow, bold: search matches
         Selection              = "${esc}[1;38;2;24;35;29;48;2;163;191;176m"  # text_hi on the selection ground
         ContinuationPrompt     = "${esc}[38;2;98;127;112m"                   # overlay1
         InlinePrediction       = "${esc}[38;2;123;153;137m"                  # overlay0, like fish autosuggestions
-        ListPrediction         = "${esc}[38;2;155;93;0m"                     # orange: the > marker and source
+        ListPrediction         = "${esc}[38;2;117;69;0m"                     # orange: the > marker and source
         ListPredictionSelected = "${esc}[48;2;163;191;176m"                  # surface1 ground
         ListPredictionTooltip  = "${esc}[3;38;2;98;127;112m"                 # overlay1, italic
     }
@@ -43,12 +43,12 @@
             FormatAccent           = "${esc}[1;38;2;138;103;0m"
             TableHeader            = "${esc}[1;38;2;138;103;0m"
             CustomTableHeaderLabel = "${esc}[1;3;38;2;138;103;0m"
-            ErrorAccent            = "${esc}[1;38;2;155;93;0m"
+            ErrorAccent            = "${esc}[1;38;2;117;69;0m"
             Error                  = "${esc}[1;38;2;187;64;59m"
             Warning                = "${esc}[1;38;2;138;103;0m"
             Verbose                = "${esc}[38;2;39;98;156m"
-            Debug                  = "${esc}[38;2;39;117;85m"
-            FeedbackName           = "${esc}[38;2;155;93;0m"
+            Debug                  = "${esc}[38;2;8;97;66m"
+            FeedbackName           = "${esc}[38;2;117;69;0m"
             FeedbackText           = "${esc}[38;2;55;73;64m"
             FeedbackAction         = "${esc}[38;2;138;103;0m"
         }
@@ -59,10 +59,10 @@
 
         if ($PSStyle.PSObject.Properties['FileInfo']) {
             $PSStyle.FileInfo.Directory = "${esc}[1;38;2;138;103;0m"
-            $PSStyle.FileInfo.SymbolicLink = "${esc}[38;2;39;117;85m"
-            $PSStyle.FileInfo.Executable = "${esc}[1;38;2;24;128;63m"
+            $PSStyle.FileInfo.SymbolicLink = "${esc}[38;2;8;97;66m"
+            $PSStyle.FileInfo.Executable = "${esc}[1;38;2;32;127;65m"
             foreach ($ext in '.zip', '.tgz', '.gz', '.tar', '.nupkg', '.cab', '.7z') { $PSStyle.FileInfo.Extension[$ext] = "${esc}[38;2;187;64;59m" }
-            foreach ($ext in '.ps1', '.psd1', '.psm1', '.ps1xml') { $PSStyle.FileInfo.Extension[$ext] = "${esc}[38;2;39;117;85m" }
+            foreach ($ext in '.ps1', '.psd1', '.psm1', '.ps1xml') { $PSStyle.FileInfo.Extension[$ext] = "${esc}[38;2;8;97;66m" }
         }
     }
 }

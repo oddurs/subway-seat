@@ -2,18 +2,18 @@
 {
   "name": "Paris Catacombes Widgets",
   "globals": {
-    "foreground": "#D5DCD8",
-    "background": "#1D2822",
+    "foreground": "#D4DDD7",
+    "background": "#1A2921",
     "caret": "#EBC168",
-    "line_highlight": "#1D2822",
-    "selection": "#34423B",
-    "selection_border": "#34423B",
-    "inactive_selection": "#34423B"
+    "line_highlight": "#1A2921",
+    "selection": "#31433A",
+    "selection_border": "#31433A",
+    "inactive_selection": "#31433A"
   },
   "rules": [
     {
       "scope": "comment",
-      "foreground": "#738079"
+      "foreground": "#708178"
     },
     {
       "scope": "keyword, storage",

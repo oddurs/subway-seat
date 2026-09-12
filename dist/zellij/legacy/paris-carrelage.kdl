@@ -7,12 +7,12 @@ themes {
         bg "#A3BFB0"
         black "#D8E3DC"
         red "#BB403B"
-        green "#9B5D00" // active frame, selected tab
+        green "#754500" // active frame, selected tab
         yellow "#8A6700"
         blue "#27629C"
         magenta "#9A557D"
         orange "#8A6700" // frame in other modes
-        cyan "#277555"
+        cyan "#086142"
         white "#18231D"
     }
 }

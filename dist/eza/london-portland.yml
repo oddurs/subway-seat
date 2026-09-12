@@ -10,19 +10,19 @@ filekinds:
   char_device: {foreground: "#B86100"}
   socket: {foreground: "#7660AB", is_bold: true}
   special: {foreground: "#7660AB"}
-  executable: {foreground: "#00822E", is_bold: true}
+  executable: {foreground: "#0D8131", is_bold: true}
   mount_point: {foreground: "#977300", is_bold: true, is_underline: true}
 perms:
   user_read: {foreground: "#896800", is_bold: true}
-  user_write: {foreground: "#A45600", is_bold: true}
-  user_execute_file: {foreground: "#00822E", is_bold: true}
-  user_execute_other: {foreground: "#00822E", is_bold: true}
+  user_write: {foreground: "#B14A07", is_bold: true}
+  user_execute_file: {foreground: "#0D8131", is_bold: true}
+  user_execute_other: {foreground: "#0D8131", is_bold: true}
   group_read: {foreground: "#896800"}
-  group_write: {foreground: "#A45600"}
-  group_execute: {foreground: "#00822E"}
+  group_write: {foreground: "#B14A07"}
+  group_execute: {foreground: "#0D8131"}
   other_read: {foreground: "#896800"}
-  other_write: {foreground: "#A45600"}
-  other_execute: {foreground: "#00822E"}
+  other_write: {foreground: "#B14A07"}
+  other_execute: {foreground: "#0D8131"}
   special_user_file: {foreground: "#7660AB"}
   special_other: {foreground: "#697794"}
   attribute: {foreground: "#697794"}
@@ -30,14 +30,14 @@ size:
   major: {foreground: "#007376"}
   minor: {foreground: "#008688"}
   number_byte: {foreground: "#4A5469"}
-  number_kilo: {foreground: "#00822E"}
+  number_kilo: {foreground: "#0D8131"}
   number_mega: {foreground: "#896800"}
-  number_giga: {foreground: "#A45600"}
+  number_giga: {foreground: "#B14A07"}
   number_huge: {foreground: "#C92B23"}
   unit_byte: {foreground: "#616A7E"}
-  unit_kilo: {foreground: "#22924C"}
+  unit_kilo: {foreground: "#2D914E"}
   unit_mega: {foreground: "#977C25"}
-  unit_giga: {foreground: "#AE6C25"}
+  unit_giga: {foreground: "#B9622B"}
   unit_huge: {foreground: "#CD4842"}
 users:
   user_you: {foreground: "#896800"}
@@ -48,19 +48,19 @@ users:
   group_root: {foreground: "#C92B23"}
 links:
   normal: {foreground: "#007376"}
-  multi_link_file: {foreground: "#A45600"}
+  multi_link_file: {foreground: "#B14A07"}
 git:
-  new: {foreground: "#00822E"}
+  new: {foreground: "#0D8131"}
   modified: {foreground: "#896800"}
   deleted: {foreground: "#C92B23"}
   renamed: {foreground: "#007376"}
   typechange: {foreground: "#7660AB"}
   ignored: {foreground: "#8291AE"}
-  conflicted: {foreground: "#A40005", is_bold: true}
+  conflicted: {foreground: "#9B211A", is_bold: true}
 git_repo:
   branch_main: {foreground: "#3C4557"}
-  branch_other: {foreground: "#A45600"}
-  git_clean: {foreground: "#00822E"}
+  branch_other: {foreground: "#B14A07"}
+  git_clean: {foreground: "#0D8131"}
   git_dirty: {foreground: "#896800"}
 security_context:
   none: {foreground: "#697794"}
@@ -72,10 +72,10 @@ security_context:
     range: {foreground: "#7660AB"}
 file_type:
   image: {foreground: "#7660AB"}
-  video: {foreground: "#A45600"}
+  video: {foreground: "#B14A07"}
   music: {foreground: "#B86100"}
   lossless: {foreground: "#B86100", is_bold: true}
-  crypto: {foreground: "#A40005"}
+  crypto: {foreground: "#9B211A"}
   document: {foreground: "#0019A8"}
   compressed: {foreground: "#C92B23"}
   temp: {foreground: "#8291AE"}

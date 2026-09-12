@@ -2,18 +2,18 @@
 {
   "name": "Paris Guimard Widgets",
   "globals": {
-    "foreground": "#DAE0DC",
-    "background": "#2A3831",
+    "foreground": "#D9E1DB",
+    "background": "#263930",
     "caret": "#EBC168",
-    "line_highlight": "#2A3831",
-    "selection": "#42544B",
-    "selection_border": "#42544B",
-    "inactive_selection": "#42544B"
+    "line_highlight": "#263930",
+    "selection": "#3E554A",
+    "selection_border": "#3E554A",
+    "inactive_selection": "#3E554A"
   },
   "rules": [
     {
       "scope": "comment",
-      "foreground": "#77847D"
+      "foreground": "#74857C"
     },
     {
       "scope": "keyword, storage",

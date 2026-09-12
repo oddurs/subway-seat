@@ -21,17 +21,17 @@ fi
 
 gsettings set "$PROFILE" visible-name "'Paris Catacombes'"
 gsettings set "$PROFILE" use-theme-colors "false"
-gsettings set "$PROFILE" background-color "'#141D19'"
-gsettings set "$PROFILE" foreground-color "'#D5DCD8'"
+gsettings set "$PROFILE" background-color "'#121E19'"
+gsettings set "$PROFILE" foreground-color "'#D4DDD7'"
 gsettings set "$PROFILE" bold-color-same-as-fg "false"
-gsettings set "$PROFILE" bold-color "'#E8ECEA'"
+gsettings set "$PROFILE" bold-color "'#E7ECEA'"
 gsettings set "$PROFILE" cursor-colors-set "true"
 gsettings set "$PROFILE" cursor-background-color "'#EBC168'"
-gsettings set "$PROFILE" cursor-foreground-color "'#141D19'"
+gsettings set "$PROFILE" cursor-foreground-color "'#121E19'"
 gsettings set "$PROFILE" highlight-colors-set "true"
-gsettings set "$PROFILE" highlight-background-color "'#34423B'"
-gsettings set "$PROFILE" highlight-foreground-color "'#E8ECEA'"
-gsettings set "$PROFILE" palette "['#27332D', '#CD6B63', '#80C28E', '#EBC168', '#709BC8', '#D0914F', '#7BB096', '#C0C7C3', '#738079', '#E1837A', '#8FD59E', '#FBD380', '#8DB6E2', '#E7AB6D', '#98CCB2', '#E8ECEA']"
+gsettings set "$PROFILE" highlight-background-color "'#31433A'"
+gsettings set "$PROFILE" highlight-foreground-color "'#E7ECEA'"
+gsettings set "$PROFILE" palette "['#24342C', '#CD6B63', '#80C28E', '#EBC168', '#709BC8', '#D0914F', '#6CA087', '#BFC8C2', '#708178', '#E1837A', '#8FD59E', '#FBD380', '#8DB6E2', '#E7AB6D', '#98CCB2', '#E7ECEA']"
 
 case "$list" in
   *"$UUID"*) ;;

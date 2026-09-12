@@ -35,7 +35,7 @@
 	header = "#54402f"
 	added = "#66740f"
 	changed = "#bc4031"
-	untracked = "#a65633"
+	untracked = "#863913"
 	branch = "#66740f bold"
 	nobranch = "#bc4031 bold"
 	localBranch = "#66740f"

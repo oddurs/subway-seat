@@ -4,29 +4,29 @@
 
 [styles.cpu]
 all_entry_color = "#293040"
-avg_entry_color = "#A45600"
-cpu_core_colors = ["#00822E", "#896800", "#A45600", "#C92B23", "#007376", "#7660AB", "#008730", "#977300"]
+avg_entry_color = "#B14A07"
+cpu_core_colors = ["#0D8131", "#896800", "#B14A07", "#C92B23", "#007376", "#7660AB", "#008730", "#977300"]
 
 [styles.memory]
-ram_color = "#00822E"
+ram_color = "#0D8131"
 cache_color = "#007376"
-swap_color = "#A45600"
+swap_color = "#B14A07"
 arc_color = "#7660AB"
-gpu_colors = ["#896800", "#A45600", "#C92B23", "#007376", "#7660AB", "#008730"]
+gpu_colors = ["#896800", "#B14A07", "#C92B23", "#007376", "#7660AB", "#008730"]
 
 [styles.network]
-rx_color = "#00822E"
-tx_color = "#A45600"
+rx_color = "#0D8131"
+tx_color = "#B14A07"
 rx_total_color = "#008730"
 tx_total_color = "#B86100"
 
 [styles.battery]
-high_battery_color = "#00822E"
+high_battery_color = "#0D8131"
 medium_battery_color = "#896800"
 low_battery_color = "#C92B23"
 
 [styles.tables]
-headers = { color = "#A45600", bold = true }
+headers = { color = "#B14A07", bold = true }
 
 [styles.graphs]
 graph_color = "#8291AE"
@@ -34,18 +34,18 @@ legend_text = { color = "#4A5469" }
 
 [styles.widgets]
 border_color = "#95A5C4"
-selected_border_color = "#A45600"
+selected_border_color = "#B14A07"
 widget_title = { color = "#896800" }
 text = { color = "#293040" }
-selected_text = { color = "#E5EAF4", bg_color = "#A45600" }
+selected_text = { color = "#E5EAF4", bg_color = "#B14A07" }
 disabled_text = { color = "#8291AE" }
 thread_text = { color = "#007376" }  # 0.11+
 
 # Newer sections (bottom 0.13+); older releases ignore them.
 [styles.temp_graph]
-temp_graph_color_styles = ["#00822E", "#896800", "#A45600", "#C92B23", "#007376", "#7660AB", "#008730", "#977300"]
+temp_graph_color_styles = ["#0D8131", "#896800", "#B14A07", "#C92B23", "#007376", "#7660AB", "#008730", "#977300"]
 
 [styles.disk_io_graph]
-read_colours = ["#00822E", "#007376", "#008730", "#008688"]
-write_colours = ["#A45600", "#7660AB", "#B86100", "#C92B23"]
+read_colours = ["#0D8131", "#007376", "#008730", "#008688"]
+write_colours = ["#B14A07", "#7660AB", "#B86100", "#C92B23"]
 # <<< subway-seat <<<

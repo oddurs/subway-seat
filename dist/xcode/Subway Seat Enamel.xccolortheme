@@ -82,7 +82,7 @@
 	<key>DVTScrollbarMarkerErrorColor</key>
 	<string>0.737255 0.25098 0.192157 1</string>
 	<key>DVTScrollbarMarkerRuntimeIssueColor</key>
-	<string>0.65098 0.337255 0.2 1</string>
+	<string>0.52549 0.223529 0.07451 1</string>
 	<key>DVTScrollbarMarkerWarningColor</key>
 	<string>0.576471 0.384314 0 1</string>
 	<key>DVTSourceTextBackground</key>
@@ -100,7 +100,7 @@
 	<key>DVTSourceTextSyntaxColors</key>
 	<dict>
 		<key>xcode.syntax.attribute</key>
-		<string>0.65098 0.337255 0.2 1</string>
+		<string>0.52549 0.223529 0.07451 1</string>
 		<key>xcode.syntax.character</key>
 		<string>0.4 0.454902 0.058824 1</string>
 		<key>xcode.syntax.comment</key>
@@ -126,9 +126,9 @@
 		<key>xcode.syntax.identifier.function.system</key>
 		<string>0.576471 0.384314 0 1</string>
 		<key>xcode.syntax.identifier.macro</key>
-		<string>0.65098 0.337255 0.2 1</string>
+		<string>0.52549 0.223529 0.07451 1</string>
 		<key>xcode.syntax.identifier.macro.system</key>
-		<string>0.65098 0.337255 0.2 1</string>
+		<string>0.52549 0.223529 0.07451 1</string>
 		<key>xcode.syntax.identifier.type</key>
 		<string>0.243137 0.443137 0.341176 1</string>
 		<key>xcode.syntax.identifier.type.system</key>
@@ -148,9 +148,9 @@
 		<key>xcode.syntax.plain</key>
 		<string>0.243137 0.172549 0.117647 1</string>
 		<key>xcode.syntax.preprocessor</key>
-		<string>0.65098 0.337255 0.2 1</string>
+		<string>0.52549 0.223529 0.07451 1</string>
 		<key>xcode.syntax.regex</key>
-		<string>0.65098 0.337255 0.2 1</string>
+		<string>0.52549 0.223529 0.07451 1</string>
 		<key>xcode.syntax.regex.capturename</key>
 		<string>0.329412 0.25098 0.184314 1</string>
 		<key>xcode.syntax.regex.charname</key>
