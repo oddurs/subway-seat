@@ -125,9 +125,9 @@ const styles = stylex.create({
     backgroundImage: `linear-gradient(180deg,
       color-mix(in srgb, var(--sign-text) 7%, transparent),
       transparent 58%)`,
-    boxShadow: "inset 0 1px 0 color-mix(in srgb, var(--sign-text) 13%, transparent)",
     // A plate's corner is a pressing radius, not a card's. Half the family's.
     borderRadius: "calc(var(--radius-card) / 2)",
+    boxShadow: "inset 0 1px 0 color-mix(in srgb, var(--sign-text) 13%, transparent)",
   },
   keyline: {
     position: "absolute",
@@ -140,14 +140,14 @@ const styles = stylex.create({
   // Caps, because a Metro plate has never carried anything else.
   plateWord: {
     position: "relative",
+    // Tracked caps sit off-centre by half their tracking: the last letter's
+    // trailing space is inside the box, the first letter's is not.
+    marginRight: "-0.13em",
     fontSize: 14,
     fontWeight: 600,
     lineHeight: font.leadFlat,
     color: "var(--sign-text)",
     textTransform: "uppercase",
     letterSpacing: "0.13em",
-    // Tracked caps sit off-centre by half their tracking: the last letter's
-    // trailing space is inside the box, the first letter's is not.
-    marginRight: "-0.13em",
   },
 });
