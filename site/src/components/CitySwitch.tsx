@@ -55,8 +55,10 @@ const styles = stylex.create({
     display: "flex",
     gap: 8,
     alignItems: "center",
+    // Padding for the hand, margin back for the baseline — see NavLinks.
     paddingBlock: 4,
     paddingInline: 2,
+    marginBlock: -4,
     cursor: "pointer",
     outlineWidth: 2,
     outlineStyle: { default: "none", ":focus-visible": "solid" },
@@ -75,8 +77,9 @@ const styles = stylex.create({
     textTransform: "uppercase",
     letterSpacing: font.trackControl,
     opacity: on ? 1 : 0.58,
-    transitionDuration: "180ms",
-    transitionProperty: "opacity",
+    transitionDelay: "40ms",
+    transitionDuration: "360ms",
+    transitionProperty: "opacity, color",
   }),
   dot: (lead: string | null) => ({
     flexShrink: 0,
@@ -87,7 +90,8 @@ const styles = stylex.create({
     borderStyle: "solid",
     borderWidth: lead ? 5.5 : 2,
     borderRadius: "50%",
-    transitionDuration: "180ms",
+    transitionTimingFunction: "cubic-bezier(0.2, 0, 0, 1)",
+    transitionDuration: "260ms",
     transitionProperty: "border-color, border-width",
   }),
   track: {
@@ -95,5 +99,7 @@ const styles = stylex.create({
     width: 20,
     height: 2,
     backgroundColor: "color-mix(in srgb, var(--sign-text) 28%, transparent)",
+    transitionDuration: "360ms",
+    transitionProperty: "background-color",
   },
 });

@@ -10,11 +10,17 @@ import { NavLinks } from "./NavLinks";
  * The station sign. One band, dark in both cities, carrying the wordmark, the
  * links and the one control the nav owns — which city you're riding.
  *
- * The whole row sits on a single baseline: the wordmark is one line box with
- * the mark set inline against it, the links and the switch have flat line
- * heights, and nothing is centred against anything else. The only rule is the
- * platform edge along the bottom, in the city's lead colour, which is also
- * what the closing band opens with.
+ * Balance here is a matter of one measurement: the mark is 24px, and nothing in
+ * the row is allowed to be taller. The links and the switch keep tap padding
+ * for the hand but take it back out of the layout with a negative margin, so
+ * the row is 24px in every city, on every face, and the band is always the same
+ * 66px tall — it doesn't grow a couple of pixels when you switch to London
+ * because Cabin has a deeper descender than Helvetica.
+ *
+ * With one height to centre, everything centres against it, and the band's air
+ * is 20 above and 20 below. The platform edge along the bottom, in the city's
+ * lead colour, is the exception the padding has to pay for: it sits inside the
+ * band, so the bottom takes 22 to leave 20 clear of the rule.
  */
 export function Nav() {
   return (
@@ -35,11 +41,23 @@ export function Nav() {
   );
 }
 
+/** Deceleration curve: leaves quickly, arrives softly, like a train stopping. */
+const EASE = "cubic-bezier(0.2, 0, 0, 1)";
+const CALM = "@media (prefers-reduced-motion: reduce)";
+
 const styles = stylex.create({
   band: {
     position: "relative",
     zIndex: 2,
     backgroundColor: "var(--sign-bg)",
+    transitionDelay: "80ms",
+    transitionTimingFunction: EASE,
+    // Changing city is a move along a line, not a cut. The band, its edge and
+    // its type all cross over, but not together: the platform edge turns first,
+    // the type follows, the ground lands last. Staggered like that the swap
+    // reads as the bar shifting towards the next city rather than blinking.
+    transitionDuration: { [CALM]: "1ms", default: "440ms" },
+    transitionProperty: "background-color",
   },
   skip: {
     position: "absolute",
@@ -71,16 +89,20 @@ const styles = stylex.create({
     columnGap: 30,
     alignItems: "center",
     maxWidth: space.measure,
-    paddingBlock: 20,
-    paddingInline: space.gutter,
+    paddingTop: 20,
+    paddingRight: space.gutter,
+    paddingBottom: 22,
+    paddingLeft: space.gutter,
     marginInline: "auto",
   },
-  // A lockup: the mark centred on the wordmark's cap height, the pair centred
-  // in the band with the links and the switch.
+  // A lockup: the mark and the wordmark centred on each other, the pair centred
+  // in the band with the links and the switch. Its height is the mark's, which
+  // is what sets the band's.
   mark: {
     display: "flex",
     gap: 11,
     alignItems: "center",
+    height: 24,
     fontFamily: font.sans,
     fontSize: font.sizeMark,
     fontWeight: 700,
@@ -97,6 +119,10 @@ const styles = stylex.create({
     outlineColor: "var(--sign-ring)",
     outlineOffset: 5,
     borderRadius: "var(--radius-pill)",
+    transitionDelay: "40ms",
+    transitionTimingFunction: EASE,
+    transitionDuration: { [CALM]: "1ms", default: "360ms" },
+    transitionProperty: "color",
   },
   // The platform edge, in the city's lead colour.
   edge: {
@@ -107,5 +133,8 @@ const styles = stylex.create({
     height: 2,
     backgroundColor: "var(--sign-mark)",
     opacity: 0.9,
+    transitionTimingFunction: EASE,
+    transitionDuration: { [CALM]: "1ms", default: "260ms" },
+    transitionProperty: "background-color",
   },
 });

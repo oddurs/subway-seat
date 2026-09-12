@@ -3,16 +3,21 @@ import { font } from "@/theme/type.stylex";
 
 /**
  * The one place a city spends its brand colour in the nav: a route bullet in
- * New York, a roundel in London. Both are drawn; CSS shows the active family's.
+ * New York, a roundel in London, the Dervaux M in Paris. All three are drawn
+ * and CSS shows the active family's, so the lockup is right in the first
+ * painted frame and never swaps marks after hydration.
  *
  * Concentrating the identity here is what lets the band itself stay a quiet
  * dark sign in both cities, rather than a wall of colour fighting every page
  * under it.
  *
- * A mark in a lockup is centred on the wordmark's cap height, not sat on its
- * baseline — a baseline is for text, and a circle has none. The nudge below is
- * the difference between the em box's centre, which is what flexbox centres on,
- * and the cap centre, which is what the eye reads.
+ * A mark in a lockup is centred against the wordmark, not sat on its baseline —
+ * a baseline is for text, and a circle has none. Nor can one be borrowed: an
+ * inline box synthesises its baseline from whatever text it happens to contain,
+ * so the bullet would take the S's, the metro the M's and the roundel, with no
+ * text at all, its bottom edge. Three marks, three different baselines, each
+ * moving again with the family's face. The lockup centres instead, and the
+ * marks are all one square so the centring is exact.
  */
 export function CityMark() {
   return (
@@ -33,8 +38,6 @@ export function CityMark() {
 }
 
 const SIZE = 24;
-/** Em-box centre sits a touch below cap centre; lift the mark to match. */
-const LIFT = 2;
 
 const styles = stylex.create({
   bullet: {
@@ -42,7 +45,6 @@ const styles = stylex.create({
     placeItems: "center",
     width: SIZE,
     height: SIZE,
-    marginBottom: LIFT,
     fontFamily: font.sans,
     fontSize: 14,
     fontWeight: 700,
@@ -57,7 +59,6 @@ const styles = stylex.create({
     placeItems: "center",
     width: SIZE,
     height: SIZE,
-    marginBottom: LIFT,
   },
   ring: {
     position: "absolute",
@@ -76,7 +77,6 @@ const styles = stylex.create({
     placeItems: "center",
     width: SIZE,
     height: SIZE,
-    marginBottom: LIFT,
   },
   letter: {
     position: "relative",

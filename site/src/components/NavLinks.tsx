@@ -45,6 +45,7 @@ export function NavLinks() {
 }
 
 const NARROW = "@media (max-width: 640px)";
+const CALM = "@media (prefers-reduced-motion: reduce)";
 
 const styles = stylex.create({
   links: {
@@ -63,7 +64,11 @@ const styles = stylex.create({
     marginRight: "auto",
   },
   link: {
+    // A tap target taller than the type, taken back out of the layout: without
+    // the negative margin the padding hangs 6px below every baseline in the
+    // bar and quietly decentres the whole band.
     paddingBlock: 6,
+    marginBlock: -6,
     fontFamily: font.sans,
     fontSize: font.sizeSmall,
     // A fixed line box, so the links share a baseline with the wordmark and the
@@ -84,6 +89,9 @@ const styles = stylex.create({
     outlineColor: "var(--sign-ring)",
     outlineOffset: 2,
     borderRadius: 2,
+    transitionDelay: "40ms",
+    transitionDuration: { [CALM]: "1ms", default: "360ms" },
+    transitionProperty: "color",
   },
   here: {
     color: "var(--sign-text)",
