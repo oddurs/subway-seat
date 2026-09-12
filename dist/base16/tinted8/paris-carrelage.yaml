@@ -11,15 +11,15 @@ scheme:
   description: "Bevelled white tile under a vaulted platform. The light one."
 variant: "light"
 palette:
-  black: "#25352C"
-  black-bright: "#374940"
-  black-dim: "#18231D"
-  white: "#E7F5ED"
-  white-bright: "#F3FAF6"
-  white-dim: "#D8EADF"
-  gray: "#627F70"
-  gray-bright: "#789C88"
-  gray-dim: "#4F675B"
+  black: "#2A342B"
+  black-bright: "#3D473E"
+  black-dim: "#1B221C"
+  white: "#EEF3ED"
+  white-bright: "#F6F9F6"
+  white-dim: "#E1E7E0"
+  gray: "#6E7C6E"
+  gray-bright: "#879887"
+  gray-dim: "#586459"
   red: "#932D29"
   red-bright: "#BB403B"
   green: "#207F41"
@@ -28,132 +28,132 @@ palette:
   yellow-bright: "#997300"
   blue: "#27629C"
   blue-bright: "#3E75AD"
-  magenta: "#754500"
+  magenta: "#8A5308"
   magenta-bright: "#AE6800"
-  cyan: "#086142"
+  cyan: "#0B714D"
   cyan-bright: "#3D8666"
-  orange: "#754500"
+  orange: "#8A5308"
   orange-bright: "#AE6800"
   brown: "#9A557D"
 syntax:
-  comment: "#627F70" # comment
-  punctuation.definition.comment: "#627F70" # comment
+  comment: "#6E7C6E" # comment
+  punctuation.definition.comment: "#6E7C6E" # comment
   constant: "#BB403B" # constant
   constant.numeric: "#BB403B" # number
   constant.language: "#BB403B" # boolean
   constant.character: "#9A557D" # string.escape
-  entity.name: "#25352C" # variable
+  entity.name: "#2A342B" # variable
   entity.name.function: "#8A6700" # function
-  entity.name.class: "#086142" # type
-  entity.name.type: "#086142" # type
-  entity.name.namespace: "#45594F" # namespace
-  entity.name.tag: "#754500" # tag
+  entity.name.class: "#0B714D" # type
+  entity.name.type: "#0B714D" # type
+  entity.name.namespace: "#4C574D" # namespace
+  entity.name.tag: "#8A5308" # tag
   entity.name.label: "#9A557D" # decorator
   entity.name.section: "#8A6700" # heading
-  entity.other: "#25352C" # variable
+  entity.other: "#2A342B" # variable
   entity.other.attribute-name: "#8A6700" # attribute
-  entity.other.inherited-class: "#086142" # type
+  entity.other.inherited-class: "#0B714D" # type
   invalid: "#932D29" # invalid
   invalid.deprecated: "#9A557D" # clay
-  keyword: "#754500" # keyword
-  keyword.operator: "#4F675B" # operator
-  markup: "#25352C" # text
-  markup.bold: "#18231D" # strong
-  markup.italic: "#25352C" # emphasis
+  keyword: "#8A5308" # keyword
+  keyword.operator: "#586459" # operator
+  markup: "#2A342B" # text
+  markup.bold: "#1B221C" # strong
+  markup.italic: "#2A342B" # emphasis
   markup.heading: "#8A6700" # heading
   markup.link: "#27629C" # link
-  markup.list: "#754500" # keyword
-  markup.quote: "#45594F" # quote
+  markup.list: "#8A5308" # keyword
+  markup.quote: "#4C574D" # quote
   markup.raw: "#207F41" # code
   markup.inserted: "#207F41" # green
   markup.deleted: "#BB403B" # red_hi
   markup.changed: "#8A6700" # yellow
-  meta: "#25352C" # text
+  meta: "#2A342B" # text
   meta.annotation: "#9A557D" # decorator
-  punctuation: "#4F675B" # punctuation
+  punctuation: "#586459" # punctuation
   punctuation.definition.string: "#207F41" # string
-  punctuation.section: "#4F675B" # punctuation
-  storage: "#754500" # storage
+  punctuation.section: "#586459" # punctuation
+  storage: "#8A5308" # storage
   string: "#207F41" # string
   string.regexp: "#9A557D" # regexp
   string.interpolated: "#9A557D" # string.escape
   support: "#8A6700" # function
-  support.class: "#086142" # type
-  support.type: "#086142" # type.builtin
+  support.class: "#0B714D" # type
+  support.type: "#0B714D" # type.builtin
   support.constant: "#BB403B" # constant
   support.function.builtin: "#8A6700" # function.builtin
   support.variable: "#BB403B" # variable.builtin
-  variable: "#25352C" # variable
+  variable: "#2A342B" # variable
   variable.language: "#BB403B" # variable.builtin
-  variable.parameter: "#374940" # parameter
-  variable.other.property: "#374940" # property
+  variable.parameter: "#3D473E" # parameter
+  variable.other.property: "#3D473E" # property
 ui:
   accent:
-    normal: "#754500"
+    normal: "#8A5308"
   border:
-    normal: "#9FC6B1"
+    normal: "#B1C0B0"
   chrome:
     background:
-      normal: "#D8EADF"
-      dark: "#C8E0D3"
-      light: "#F3FAF6"
+      normal: "#E1E7E0"
+      dark: "#D4DCD3"
+      light: "#F6F9F6"
     foreground:
-      normal: "#374940"
-      dark: "#45594F"
-      light: "#25352C"
+      normal: "#3D473E"
+      dark: "#4C574D"
+      light: "#2A342B"
   cursor:
     normal:
-      background: "#754500"
-      foreground: "#E7F5ED"
+      background: "#8A5308"
+      foreground: "#EEF3ED"
     muted:
-      background: "#627F70"
-      foreground: "#E7F5ED"
+      background: "#6E7C6E"
+      foreground: "#EEF3ED"
   deprecated: "#9A557D"
   global:
     background:
-      normal: "#E7F5ED"
-      dark: "#D8EADF"
-      light: "#F3FAF6"
+      normal: "#EEF3ED"
+      dark: "#E1E7E0"
+      light: "#F6F9F6"
     foreground:
-      normal: "#25352C"
-      dark: "#374940"
-      light: "#18231D"
+      normal: "#2A342B"
+      dark: "#3D473E"
+      light: "#1B221C"
   gutter:
-    background: "#E7F5ED"
-    foreground: "#627F70"
+    background: "#EEF3ED"
+    foreground: "#6E7C6E"
   highlight:
     button:
-      background: "#B7D8C6"
-      foreground: "#18231D"
+      background: "#C7D3C5"
+      foreground: "#1B221C"
     line:
-      background: "#D8EADF"
-      foreground: "#754500"
+      background: "#E1E7E0"
+      foreground: "#8A5308"
     search:
-      background: "#CBCAA6"
-      foreground: "#18231D"
+      background: "#D0C9A6"
+      foreground: "#1B221C"
     text:
-      background: "#B7D8C6"
-      foreground: "#25352C"
-      active-background: "#9FC6B1"
-      active-foreground: "#18231D"
+      background: "#C7D3C5"
+      foreground: "#2A342B"
+      active-background: "#B1C0B0"
+      active-foreground: "#1B221C"
   indent-guide:
-    background: "#B7D8C6"
-    active-background: "#789C88"
+    background: "#C7D3C5"
+    active-background: "#879887"
   link:
     normal:
-      background: "#E7F5ED"
+      background: "#EEF3ED"
       foreground: "#27629C"
   selection:
-    background: "#9FC6B1"
-    foreground: "#18231D"
-    inactive-background: "#B7D8C6"
+    background: "#B1C0B0"
+    foreground: "#1B221C"
+    inactive-background: "#C7D3C5"
   status:
     error: "#932D29"
     info: "#27629C"
     success: "#207F41"
     warning: "#8A6700"
   tooltip:
-    background: "#F3FAF6"
-    foreground: "#25352C"
+    background: "#F6F9F6"
+    foreground: "#2A342B"
   whitespace:
-    foreground: "#789C88"
+    foreground: "#879887"

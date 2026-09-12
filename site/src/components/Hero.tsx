@@ -50,7 +50,7 @@ export function Hero({ count }: { count: number }) {
           </p>
           <p data-only="paris" {...stylex.props(styles.lede)}>
             Paris fills the same slots from cast iron and tile: Guimard&apos;s green underfoot,
-            white carrelage in the light, and the line colours of the map on top. Three flavors,{" "}
+            white carrelage in the light, and the line colors of the map on top. Three flavors,{" "}
             {count} ports, the same 26 roles.
           </p>
           <p data-only="london" {...stylex.props(styles.lede)}>

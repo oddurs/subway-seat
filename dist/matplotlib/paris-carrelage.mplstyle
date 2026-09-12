@@ -1,31 +1,31 @@
 # Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
 # Paris Carrelage for matplotlib. Colors are hex without the leading #, as rc files expect.
-figure.facecolor: E7F5ED
-figure.edgecolor: E7F5ED
-savefig.facecolor: E7F5ED
-savefig.edgecolor: E7F5ED
-axes.facecolor: E7F5ED
-axes.edgecolor: 789C88
-axes.labelcolor: 374940
-axes.titlecolor: 18231D
-axes.prop_cycle: cycler('color', ['754500', '086142', '8A6700', '27629C', 'BB403B', '207F41', '9A557D'])
-text.color: 25352C
-xtick.color: 627F70
-ytick.color: 627F70
-xtick.labelcolor: 45594F
-ytick.labelcolor: 45594F
-grid.color: D3E1D9
-legend.facecolor: F3FAF6
-legend.edgecolor: D6DED9
-patch.facecolor: 754500
-patch.edgecolor: E7F5ED
-hatch.color: 45594F
-boxplot.boxprops.color: 374940
-boxplot.whiskerprops.color: 374940
-boxplot.capprops.color: 374940
-boxplot.flierprops.color: 374940
-boxplot.flierprops.markeredgecolor: 374940
-boxplot.medianprops.color: 754500
+figure.facecolor: EEF3ED
+figure.edgecolor: EEF3ED
+savefig.facecolor: EEF3ED
+savefig.edgecolor: EEF3ED
+axes.facecolor: EEF3ED
+axes.edgecolor: 879887
+axes.labelcolor: 3D473E
+axes.titlecolor: 1B221C
+axes.prop_cycle: cycler('color', ['8A5308', '0B714D', '8A6700', '27629C', 'BB403B', '207F41', '9A557D'])
+text.color: 2A342B
+xtick.color: 6E7C6E
+ytick.color: 6E7C6E
+xtick.labelcolor: 4C574D
+ytick.labelcolor: 4C574D
+grid.color: DAE0D9
+legend.facecolor: F6F9F6
+legend.edgecolor: D9DDD9
+patch.facecolor: 8A5308
+patch.edgecolor: EEF3ED
+hatch.color: 4C574D
+boxplot.boxprops.color: 3D473E
+boxplot.whiskerprops.color: 3D473E
+boxplot.capprops.color: 3D473E
+boxplot.flierprops.color: 3D473E
+boxplot.flierprops.markeredgecolor: 3D473E
+boxplot.medianprops.color: 8A5308
 boxplot.meanprops.color: 8A6700
 boxplot.meanprops.markerfacecolor: 8A6700
 boxplot.meanprops.markeredgecolor: 8A6700

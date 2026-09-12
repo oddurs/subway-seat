@@ -1330,67 +1330,67 @@
   "carrelage": {
     "crust": {
       "$type": "color",
-      "$value": "#C8E0D3",
+      "$value": "#D4DCD3",
       "$description": "Carrelage crust"
     },
     "mantle": {
       "$type": "color",
-      "$value": "#D8EADF",
+      "$value": "#E1E7E0",
       "$description": "Carrelage mantle"
     },
     "base": {
       "$type": "color",
-      "$value": "#E7F5ED",
+      "$value": "#EEF3ED",
       "$description": "Carrelage base"
     },
     "surface0": {
       "$type": "color",
-      "$value": "#B7D8C6",
+      "$value": "#C7D3C5",
       "$description": "Carrelage surface0"
     },
     "surface1": {
       "$type": "color",
-      "$value": "#9FC6B1",
+      "$value": "#B1C0B0",
       "$description": "Carrelage surface1"
     },
     "surface2": {
       "$type": "color",
-      "$value": "#89B19D",
+      "$value": "#9BAC9A",
       "$description": "Carrelage surface2"
     },
     "overlay0": {
       "$type": "color",
-      "$value": "#789C88",
+      "$value": "#879887",
       "$description": "Carrelage overlay0"
     },
     "overlay1": {
       "$type": "color",
-      "$value": "#627F70",
+      "$value": "#6E7C6E",
       "$description": "Carrelage overlay1"
     },
     "overlay2": {
       "$type": "color",
-      "$value": "#4F675B",
+      "$value": "#586459",
       "$description": "Carrelage overlay2"
     },
     "subtext0": {
       "$type": "color",
-      "$value": "#45594F",
+      "$value": "#4C574D",
       "$description": "Carrelage subtext0"
     },
     "subtext1": {
       "$type": "color",
-      "$value": "#374940",
+      "$value": "#3D473E",
       "$description": "Carrelage subtext1"
     },
     "text": {
       "$type": "color",
-      "$value": "#25352C",
+      "$value": "#2A342B",
       "$description": "Carrelage text"
     },
     "text-hi": {
       "$type": "color",
-      "$value": "#18231D",
+      "$value": "#1B221C",
       "$description": "Carrelage text hi"
     },
     "yellow": {
@@ -1405,7 +1405,7 @@
     },
     "orange": {
       "$type": "color",
-      "$value": "#754500",
+      "$value": "#8A5308",
       "$description": "Burnt orange"
     },
     "orange-hi": {
@@ -1435,7 +1435,7 @@
     },
     "sage": {
       "$type": "color",
-      "$value": "#086142",
+      "$value": "#0B714D",
       "$description": "Seafoam tile"
     },
     "sage-hi": {

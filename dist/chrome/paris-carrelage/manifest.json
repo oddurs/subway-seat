@@ -6,109 +6,109 @@
   "theme": {
     "colors": {
       "frame": [
-        200,
-        224,
+        212,
+        220,
         211
       ],
       "frame_inactive": [
-        216,
-        234,
-        223
+        225,
+        231,
+        224
       ],
       "frame_incognito": [
-        191,
-        196,
+        200,
+        193,
         194
       ],
       "frame_incognito_inactive": [
-        191,
-        196,
+        200,
+        193,
         194
       ],
       "background_tab": [
-        200,
-        224,
+        212,
+        220,
         211
       ],
       "background_tab_inactive": [
-        216,
-        234,
-        223
+        225,
+        231,
+        224
       ],
       "background_tab_incognito": [
-        191,
-        196,
+        200,
+        193,
         194
       ],
       "background_tab_incognito_inactive": [
-        191,
-        196,
+        200,
+        193,
         194
       ],
       "toolbar": [
-        231,
-        245,
+        238,
+        243,
         237
       ],
       "tab_text": [
-        37,
-        53,
-        44
+        42,
+        52,
+        43
       ],
       "tab_background_text": [
-        79,
-        103,
-        91
+        88,
+        100,
+        89
       ],
       "tab_background_text_inactive": [
-        98,
-        127,
-        112
+        110,
+        124,
+        110
       ],
       "tab_background_text_incognito": [
-        69,
-        89,
-        79
+        76,
+        87,
+        77
       ],
       "tab_background_text_incognito_inactive": [
-        79,
-        103,
-        91
+        88,
+        100,
+        89
       ],
       "bookmark_text": [
-        55,
-        73,
-        64
+        61,
+        71,
+        62
       ],
       "toolbar_button_icon": [
-        55,
-        73,
-        64
+        61,
+        71,
+        62
       ],
       "toolbar_text": [
-        37,
-        53,
-        44
+        42,
+        52,
+        43
       ],
       "omnibox_background": [
-        216,
-        234,
-        223
+        225,
+        231,
+        224
       ],
       "omnibox_text": [
-        37,
-        53,
-        44
+        42,
+        52,
+        43
       ],
       "ntp_background": [
-        231,
-        245,
+        238,
+        243,
         237
       ],
       "ntp_text": [
-        37,
-        53,
-        44
+        42,
+        52,
+        43
       ],
       "ntp_link": [
         39,
@@ -116,13 +116,13 @@
         156
       ],
       "ntp_header": [
-        117,
-        69,
-        0
+        138,
+        83,
+        8
       ],
       "button_background": [
-        200,
-        224,
+        212,
+        220,
         211
       ]
     }

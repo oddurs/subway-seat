@@ -3,25 +3,25 @@
 #   [include] path = ~/.config/git/paris-carrelage.gitconfig
 
 [color "diff"]
-	meta = "#18231d bold"
+	meta = "#1b221c bold"
 	frag = "#27629c"
-	func = "#374940"
+	func = "#3d473e"
 	old = "#bb403b"
 	new = "#207f41"
 	commit = "#8a6700"
 	whitespace = "normal #932d29"
-	oldMoved = "#754500 bold"
+	oldMoved = "#8a5308 bold"
 	oldMovedAlternative = "#27629c bold"
-	newMoved = "#086142 bold"
+	newMoved = "#0b714d bold"
 	newMovedAlternative = "#8a6700 bold"
-	oldMovedDimmed = "#627f70"
-	oldMovedAlternativeDimmed = "#627f70 italic"
-	newMovedDimmed = "#627f70"
-	newMovedAlternativeDimmed = "#627f70 italic"
-	contextDimmed = "#627f70"
+	oldMovedDimmed = "#6e7c6e"
+	oldMovedAlternativeDimmed = "#6e7c6e italic"
+	newMovedDimmed = "#6e7c6e"
+	newMovedAlternativeDimmed = "#6e7c6e italic"
+	contextDimmed = "#6e7c6e"
 	oldDimmed = "#bb403b dim"
 	newDimmed = "#207f41 dim"
-	contextBold = "#18231d bold"
+	contextBold = "#1b221c bold"
 	oldBold = "#bb403b bold"
 	newBold = "#207f41 bold"
 
@@ -32,7 +32,7 @@
 	newHighlight = "#207f41 #a6ccb3"
 
 [color "status"]
-	header = "#374940"
+	header = "#3d473e"
 	added = "#207f41"
 	changed = "#bb403b"
 	untracked = "#9a557d"
@@ -44,38 +44,38 @@
 
 [color "branch"]
 	current = "#207f41 bold"
-	local = "#25352c"
+	local = "#2a342b"
 	remote = "#bb403b"
 	upstream = "#27629c"
-	plain = "#374940"
-	worktree = "#086142"
+	plain = "#3d473e"
+	worktree = "#0b714d"
 
 [color "decorate"]
-	HEAD = "#086142 bold"
+	HEAD = "#0b714d bold"
 	branch = "#207f41 bold"
 	remoteBranch = "#bb403b bold"
 	tag = "#8a6700 bold"
-	stash = "#754500 bold"
+	stash = "#8a5308 bold"
 	grafted = "#27629c bold"
 
 [color "grep"]
-	context = "#45594f"
-	filename = "#754500"
+	context = "#4c574d"
+	filename = "#8a5308"
 	function = "#8a6700"
 	lineNumber = "#207f41"
 	column = "#207f41"
-	selected = "#25352c"
-	separator = "#627f70"
+	selected = "#2a342b"
+	separator = "#6e7c6e"
 
 [color "interactive"]
-	prompt = "#754500 bold"
-	header = "#18231d bold"
+	prompt = "#8a5308 bold"
+	header = "#1b221c bold"
 	help = "#8a6700"
 	error = "#bb403b bold"
 
 [color "blame"]
-	highlightRecent = "#627f70,12 month ago,#374940,1 month ago,#754500"
-	repeatedLines = "#627f70"
+	highlightRecent = "#6e7c6e,12 month ago,#3d473e,1 month ago,#8a5308"
+	repeatedLines = "#6e7c6e"
 
 [color "advice"]
 	hint = "#8a6700"

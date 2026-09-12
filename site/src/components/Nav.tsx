@@ -2,7 +2,7 @@ import * as stylex from "@stylexjs/stylex";
 import Link from "next/link";
 import { space } from "@/theme/space.stylex";
 import { font } from "@/theme/type.stylex";
-import { CityMark } from "./CityMark";
+import { Lockup } from "./Lockup";
 import { CitySwitch } from "./CitySwitch";
 import { NavLinks } from "./NavLinks";
 
@@ -30,8 +30,7 @@ export function Nav() {
       </a>
       <div {...stylex.props(styles.inner)}>
         <Link href="/" {...stylex.props(styles.mark)}>
-          <CityMark />
-          <span>Subway Seat</span>
+          <Lockup />
         </Link>
         <NavLinks />
         <CitySwitch />
@@ -83,6 +82,7 @@ const styles = stylex.create({
     },
   },
   inner: {
+    position: "relative",
     display: "flex",
     flexWrap: "wrap",
     rowGap: 14,
@@ -100,15 +100,7 @@ const styles = stylex.create({
   // is what sets the band's.
   mark: {
     display: "flex",
-    gap: 11,
-    alignItems: "center",
-    height: 24,
     fontFamily: font.sans,
-    fontSize: font.sizeMark,
-    fontWeight: 700,
-    lineHeight: font.leadFlat,
-    color: "var(--sign-text)",
-    letterSpacing: font.trackMark,
     whiteSpace: "nowrap",
     textDecoration: "none",
     outlineWidth: 2,

@@ -3,16 +3,16 @@
 
 themes {
     paris-carrelage {
-        fg "#25352C"
-        bg "#9FC6B1"
-        black "#D8EADF"
+        fg "#2A342B"
+        bg "#B1C0B0"
+        black "#E1E7E0"
         red "#BB403B"
-        green "#754500" // active frame, selected tab
+        green "#8A5308" // active frame, selected tab
         yellow "#8A6700"
         blue "#27629C"
         magenta "#9A557D"
         orange "#8A6700" // frame in other modes
-        cyan "#086142"
-        white "#18231D"
+        cyan "#0B714D"
+        white "#1B221C"
     }
 }

@@ -4,22 +4,22 @@
       "textSpacing": 6,
       "subtext": {
         "size": 12,
-        "colorSelected": "#374940FF",
+        "colorSelected": "#3D473EFF",
         "font": "System",
-        "color": "#4F675BFF"
+        "color": "#586459FF"
       },
       "shortcut": {
         "size": 16,
-        "colorSelected": "#754500FF",
+        "colorSelected": "#8A5308FF",
         "font": "System",
-        "color": "#627F70FF"
+        "color": "#6E7C6EFF"
       },
-      "backgroundSelected": "#D5D9C7FF",
+      "backgroundSelected": "#DED9C8FF",
       "text": {
         "size": 18,
-        "colorSelected": "#18231DFF",
+        "colorSelected": "#1B221CFF",
         "font": "System",
-        "color": "#25352CFF"
+        "color": "#2A342BFF"
       },
       "iconPaddingHorizontal": 6,
       "roundness": 8,
@@ -27,35 +27,35 @@
       "iconSize": 38
     },
     "search": {
-      "backgroundSelected": "#9FC6B1FF",
+      "backgroundSelected": "#B1C0B0FF",
       "paddingHorizontal": 10,
       "spacing": 10,
       "text": {
         "size": 30,
-        "colorSelected": "#18231DFF",
+        "colorSelected": "#1B221CFF",
         "font": "System Light",
-        "color": "#25352CFF"
+        "color": "#2A342BFF"
       },
-      "background": "#C8E0D3FF",
+      "background": "#D4DCD3FF",
       "roundness": 8,
       "paddingVertical": 6
     },
     "window": {
-      "color": "#E7F5EDF7",
+      "color": "#EEF3EDF7",
       "paddingHorizontal": 10,
       "width": 620,
       "borderPadding": 0,
-      "borderColor": "#9FC6B1FF",
+      "borderColor": "#B1C0B0FF",
       "blur": 12,
       "roundness": 14,
       "paddingVertical": 10
     },
     "separator": {
-      "color": "#C8E0D3FF",
+      "color": "#D4DCD3FF",
       "thickness": 1
     },
     "scrollbar": {
-      "color": "#9FC6B1FF",
+      "color": "#B1C0B0FF",
       "thickness": 3
     },
     "name": "Paris Carrelage",

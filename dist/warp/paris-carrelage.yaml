@@ -1,26 +1,26 @@
 # Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
 name: Paris Carrelage
-accent: '#754500'
-cursor: '#754500'
-background: '#E7F5ED'
-foreground: '#25352C'
+accent: '#8A5308'
+cursor: '#8A5308'
+background: '#EEF3ED'
+foreground: '#2A342B'
 details: lighter
 terminal_colors:
   normal:
-    black: '#374940'
+    black: '#3D473E'
     red: '#932D29'
     green: '#207F41'
     yellow: '#8A6700'
     blue: '#27629C'
-    magenta: '#754500'
-    cyan: '#086142'
-    white: '#89B19D'
+    magenta: '#8A5308'
+    cyan: '#0B714D'
+    white: '#9BAC9A'
   bright:
-    black: '#627F70'
+    black: '#6E7C6E'
     red: '#BB403B'
     green: '#168540'
     yellow: '#997300'
     blue: '#3E75AD'
     magenta: '#AE6800'
     cyan: '#3D8666'
-    white: '#9FC6B1'
+    white: '#B1C0B0'

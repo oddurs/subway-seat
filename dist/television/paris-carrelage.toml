@@ -1,26 +1,26 @@
 # Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
 # Paris Carrelage for television.
 # general
-background = '#E7F5ED'
-border_fg = '#89B19D'
-text_fg = '#25352C'
-dimmed_text_fg = '#627F70'
+background = '#EEF3ED'
+border_fg = '#9BAC9A'
+text_fg = '#2A342B'
+dimmed_text_fg = '#6E7C6E'
 # input
-input_text_fg = '#25352C'
-result_count_fg = '#627F70'
+input_text_fg = '#2A342B'
+result_count_fg = '#6E7C6E'
 # results
-result_name_fg = '#374940'
-result_line_number_fg = '#627F70'
-result_value_fg = '#25352C'
-selection_bg = '#B7D8C6'
-selection_fg = '#18231D'
+result_name_fg = '#3D473E'
+result_line_number_fg = '#6E7C6E'
+result_value_fg = '#2A342B'
+selection_bg = '#C7D3C5'
+selection_fg = '#1B221C'
 match_fg = '#8A6700'
 # preview
-preview_title_fg = '#374940'
+preview_title_fg = '#3D473E'
 # modes
-channel_mode_fg = '#E7F5ED'
-channel_mode_bg = '#754500'
-remote_control_mode_fg = '#E7F5ED'
+channel_mode_fg = '#EEF3ED'
+channel_mode_bg = '#8A5308'
+remote_control_mode_fg = '#EEF3ED'
 remote_control_mode_bg = '#8A6700'
-action_picker_mode_fg = '#E7F5ED'
-action_picker_mode_bg = '#086142'
+action_picker_mode_fg = '#EEF3ED'
+action_picker_mode_bg = '#0B714D'

@@ -2,43 +2,43 @@
 # Paris Carrelage for zathura. In zathurarc: include paris-carrelage
 
 # window
-set default-bg              "#E7F5ED"
-set default-fg              "#25352C"
-set statusbar-bg            "#D8EADF"
-set statusbar-fg            "#374940"
-set inputbar-bg             "#D8EADF"
-set inputbar-fg             "#25352C"
+set default-bg              "#EEF3ED"
+set default-fg              "#2A342B"
+set statusbar-bg            "#E1E7E0"
+set statusbar-fg            "#3D473E"
+set inputbar-bg             "#E1E7E0"
+set inputbar-fg             "#2A342B"
 
 # notifications
-set notification-bg         "#F3FAF6"
-set notification-fg         "#25352C"
+set notification-bg         "#F6F9F6"
+set notification-fg         "#2A342B"
 set notification-error-bg   "#932D29"
-set notification-error-fg   "#E7F5ED"
+set notification-error-fg   "#EEF3ED"
 set notification-warning-bg "#8A6700"
-set notification-warning-fg "#E7F5ED"
+set notification-warning-fg "#EEF3ED"
 
 # completion
-set completion-bg           "#F3FAF6"
-set completion-fg           "#25352C"
-set completion-group-bg     "#D8EADF"
-set completion-group-fg     "#45594F"
-set completion-highlight-bg "#9FC6B1"
-set completion-highlight-fg "#18231D"
+set completion-bg           "#F6F9F6"
+set completion-fg           "#2A342B"
+set completion-group-bg     "#E1E7E0"
+set completion-group-fg     "#4C574D"
+set completion-highlight-bg "#B1C0B0"
+set completion-highlight-fg "#1B221C"
 
 # index (table of contents)
-set index-bg                "#E7F5ED"
-set index-fg                "#25352C"
-set index-active-bg         "#9FC6B1"
-set index-active-fg         "#18231D"
+set index-bg                "#EEF3ED"
+set index-fg                "#2A342B"
+set index-active-bg         "#B1C0B0"
+set index-active-fg         "#1B221C"
 
 # search hits and link hints, washed over the page
 set highlight-color         "rgba(138,103,0,0.3)"
-set highlight-active-color  "rgba(117,69,0,0.5)"
-set highlight-fg            "#18231D"
+set highlight-active-color  "rgba(138,83,8,0.5)"
+set highlight-fg            "#1B221C"
 
 # pages while they render
-set render-loading-bg       "#E7F5ED"
-set render-loading-fg       "#627F70"
+set render-loading-bg       "#EEF3ED"
+set render-loading-fg       "#6E7C6E"
 
 # digital signatures
 set signature-success-color "#207F41"
@@ -46,8 +46,8 @@ set signature-warning-color "#8A6700"
 set signature-error-color   "#BB403B"
 
 # recoloring: white paper → base, black ink → text; Ctrl+R toggles it
-set recolor-lightcolor      "#E7F5ED"
-set recolor-darkcolor       "#25352C"
+set recolor-lightcolor      "#EEF3ED"
+set recolor-darkcolor       "#2A342B"
 set recolor                 "true"
 set recolor-keephue         "true"
 set recolor-reverse-video   "true"

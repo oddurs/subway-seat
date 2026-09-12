@@ -61,11 +61,11 @@ color	catacombes	denim	#709BC8
 color	catacombes	sage	#6CA087
 flavor	carrelage	Paris Carrelage	paris-carrelage	light	paris
 color	carrelage	yellow	#8A6700
-color	carrelage	orange	#754500
+color	carrelage	orange	#8A5308
 color	carrelage	green	#207F41
 color	carrelage	red_hi	#BB403B
 color	carrelage	denim	#27629C
-color	carrelage	sage	#086142
+color	carrelage	sage	#0B714D
 port	alacritty	Alacritty	Terminals	Alacritty 0.14+
 detect	alacritty	alacritty
 detect	alacritty	/Applications/Alacritty.app

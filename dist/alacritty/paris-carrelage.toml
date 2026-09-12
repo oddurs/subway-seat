@@ -2,73 +2,73 @@
 # Paris Carrelage
 
 [colors.primary]
-background = "#E7F5ED"
-foreground = "#25352C"
-dim_foreground = "#4F675B"
-bright_foreground = "#18231D"
+background = "#EEF3ED"
+foreground = "#2A342B"
+dim_foreground = "#586459"
+bright_foreground = "#1B221C"
 
 [colors.cursor]
-text = "#E7F5ED"
-cursor = "#754500"
+text = "#EEF3ED"
+cursor = "#8A5308"
 
 [colors.vi_mode_cursor]
-text = "#E7F5ED"
-cursor = "#086142"
+text = "#EEF3ED"
+cursor = "#0B714D"
 
 [colors.search.matches]
-foreground = "#25352C"
-background = "#CBCAA6"
+foreground = "#2A342B"
+background = "#D0C9A6"
 
 [colors.search.focused_match]
-foreground = "#18231D"
-background = "#AE9D76"
+foreground = "#1B221C"
+background = "#BCA37A"
 
 [colors.footer_bar]
-foreground = "#25352C"
-background = "#9FC6B1"
+foreground = "#2A342B"
+background = "#B1C0B0"
 
 [colors.hints.start]
-foreground = "#E7F5ED"
-background = "#754500"
+foreground = "#EEF3ED"
+background = "#8A5308"
 
 [colors.hints.end]
-foreground = "#E7F5ED"
-background = "#4F675B"
+foreground = "#EEF3ED"
+background = "#586459"
 
 [colors.line_indicator]
-foreground = "#45594F"
-background = "#B7D8C6"
+foreground = "#4C574D"
+background = "#C7D3C5"
 
 [colors.selection]
-text = "#18231D"
-background = "#9FC6B1"
+text = "#1B221C"
+background = "#B1C0B0"
 
 [colors.normal]
-black = "#374940"
+black = "#3D473E"
 red = "#932D29"
 green = "#207F41"
 yellow = "#8A6700"
 blue = "#27629C"
-magenta = "#754500"
-cyan = "#086142"
-white = "#89B19D"
+magenta = "#8A5308"
+cyan = "#0B714D"
+white = "#9BAC9A"
 
 [colors.bright]
-black = "#627F70"
+black = "#6E7C6E"
 red = "#BB403B"
 green = "#168540"
 yellow = "#997300"
 blue = "#3E75AD"
 magenta = "#AE6800"
 cyan = "#3D8666"
-white = "#9FC6B1"
+white = "#B1C0B0"
 
 [colors.dim]
-black = "#73837B"
-red = "#B0716C"
-green = "#64A77B"
-yellow = "#AA9751"
-blue = "#6894B8"
-magenta = "#9C8151"
-cyan = "#54937C"
-white = "#A9C8B8"
+black = "#79817A"
+red = "#B2706C"
+green = "#66A67B"
+yellow = "#AC9751"
+blue = "#6B93B8"
+magenta = "#AC8956"
+cyan = "#589D83"
+white = "#B7C4B6"

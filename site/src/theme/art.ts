@@ -92,11 +92,11 @@ export const catacombes = stylex.createTheme(art, {
 
 export const carrelage = stylex.createTheme(art, {
   red: "#B34F49",
-  orange: "#A76F2B",
+  orange: "#B0752F",
   yellow: "#C39729",
   green: "#55A46B",
-  sage: "#3F8468",
+  sage: "#408B6D",
   denim: "#4F81B4",
   clay: "#B7799B",
-  page: "#EEF8F2",
+  page: "#F3F7F2",
 });

@@ -4,44 +4,44 @@
 name = "paris-carrelage"
 
 [themes.palette]
-background = "#E7F5ED"
-foreground = "#25352C"
-black = "#374940"
+background = "#EEF3ED"
+foreground = "#2A342B"
+black = "#3D473E"
 red = "#932D29"
 green = "#207F41"
 yellow = "#8A6700"
 blue = "#27629C"
-magenta = "#754500"
-cyan = "#086142"
-white = "#89B19D"
-bright_black = "#627F70"
+magenta = "#8A5308"
+cyan = "#0B714D"
+white = "#9BAC9A"
+bright_black = "#6E7C6E"
 bright_red = "#BB403B"
 bright_green = "#168540"
 bright_yellow = "#997300"
 bright_blue = "#3E75AD"
 bright_magenta = "#AE6800"
 bright_cyan = "#3D8666"
-bright_white = "#9FC6B1"
+bright_white = "#B1C0B0"
 
 [themes.component_style]
-block_title = { fg = "#754500", modifiers = ["Bold"] }
-border = { fg = "#89B19D" }
+block_title = { fg = "#8A5308", modifiers = ["Bold"] }
+border = { fg = "#9BAC9A" }
 playback_status = { fg = "#8A6700", modifiers = ["Bold"] }
 playback_track = { fg = "#8A6700", modifiers = ["Bold"] }
-playback_artists = { fg = "#754500" }
-playback_album = { fg = "#086142" }
-playback_genres = { fg = "#627F70", modifiers = ["Italic"] }
-playback_metadata = { fg = "#45594F" }
-playback_progress_bar = { fg = "#754500", bg = "#9FC6B1" }
-playback_progress_bar_unfilled = { fg = "#89B19D", bg = "#9FC6B1" }
+playback_artists = { fg = "#8A5308" }
+playback_album = { fg = "#0B714D" }
+playback_genres = { fg = "#6E7C6E", modifiers = ["Italic"] }
+playback_metadata = { fg = "#4C574D" }
+playback_progress_bar = { fg = "#8A5308", bg = "#B1C0B0" }
+playback_progress_bar_unfilled = { fg = "#9BAC9A", bg = "#B1C0B0" }
 current_playing = { fg = "#207F41", modifiers = ["Bold"] }
 page_desc = { fg = "#8A6700", modifiers = ["Bold"] }
-playlist_desc = { fg = "#627F70" }
-table_header = { fg = "#754500" }
-selection = { fg = "#18231D", bg = "#B7D8C6", modifiers = ["Bold"] }
-secondary_row = { bg = "#D8EADF" }
+playlist_desc = { fg = "#6E7C6E" }
+table_header = { fg = "#8A5308" }
+selection = { fg = "#1B221C", bg = "#C7D3C5", modifiers = ["Bold"] }
+secondary_row = { bg = "#E1E7E0" }
 like = { fg = "#BB403B" }
-lyrics_played = { fg = "#627F70" }
+lyrics_played = { fg = "#6E7C6E" }
 lyrics_playing = { fg = "#8A6700", modifiers = ["Bold"] }
 visualization = { low = "#207F41", mid = "#8A6700", high = "#BB403B" }
 # <<< subway-seat <<<

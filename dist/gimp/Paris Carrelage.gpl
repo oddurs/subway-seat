@@ -3,28 +3,28 @@ Name: Paris Carrelage
 Columns: 13
 # Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
 # Bevelled white tile under a vaulted platform. The light one.
-200 224 211	Carrelage crust
-216 234 223	Carrelage mantle
-231 245 237	Carrelage base
-183 216 198	Carrelage surface0
-159 198 177	Carrelage surface1
-137 177 157	Carrelage surface2
-120 156 136	Carrelage overlay0
- 98 127 112	Carrelage overlay1
- 79 103  91	Carrelage overlay2
- 69  89  79	Carrelage subtext0
- 55  73  64	Carrelage subtext1
- 37  53  44	Carrelage text
- 24  35  29	Carrelage text hi
+212 220 211	Carrelage crust
+225 231 224	Carrelage mantle
+238 243 237	Carrelage base
+199 211 197	Carrelage surface0
+177 192 176	Carrelage surface1
+155 172 154	Carrelage surface2
+135 152 135	Carrelage overlay0
+110 124 110	Carrelage overlay1
+ 88 100  89	Carrelage overlay2
+ 76  87  77	Carrelage subtext0
+ 61  71  62	Carrelage subtext1
+ 42  52  43	Carrelage text
+ 27  34  28	Carrelage text hi
 138 103   0	Harvest gold (yellow)
 153 115   0	Broadway yellow (yellow_hi)
-117  69   0	Burnt orange (orange)
+138  83   8	Burnt orange (orange)
 174 104   0	Sixth Avenue (orange_hi)
 147  45  41	Redbird (red)
 187  64  59	Redbird bright (red_hi)
  32 127  65	Avocado (green)
  22 133  64	Avocado bright (green_hi)
-  8  97  66	Seafoam tile (sage)
+ 11 113  77	Seafoam tile (sage)
  61 134 102	Seafoam bright (sage_hi)
  39  98 156	Faded denim (denim)
  62 117 173	Denim bright (denim_hi)

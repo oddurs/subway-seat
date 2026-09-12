@@ -1,15 +1,15 @@
 # Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
 [Scheme]
 Name=Paris Carrelage
-ColorForeground=#25352C
-ColorBackground=#E7F5ED
-ColorCursor=#754500
-ColorCursorForeground=#E7F5ED
+ColorForeground=#2A342B
+ColorBackground=#EEF3ED
+ColorCursor=#8A5308
+ColorCursorForeground=#EEF3ED
 ColorCursorUseDefault=FALSE
-ColorBold=#18231D
+ColorBold=#1B221C
 ColorBoldUseDefault=FALSE
-ColorSelection=#18231D
-ColorSelectionBackground=#9FC6B1
+ColorSelection=#1B221C
+ColorSelectionBackground=#B1C0B0
 ColorSelectionUseDefault=FALSE
-TabActivityColor=#754500
-ColorPalette=#374940;#932D29;#207F41;#8A6700;#27629C;#754500;#086142;#89B19D;#627F70;#BB403B;#168540;#997300;#3E75AD;#AE6800;#3D8666;#9FC6B1
+TabActivityColor=#8A5308
+ColorPalette=#3D473E;#932D29;#207F41;#8A6700;#27629C;#8A5308;#0B714D;#9BAC9A;#6E7C6E;#BB403B;#168540;#997300;#3E75AD;#AE6800;#3D8666;#B1C0B0

@@ -4,12 +4,12 @@
 typeset -gA ZSH_HIGHLIGHT_STYLES
 
 # General
-ZSH_HIGHLIGHT_STYLES[default]='fg=#25352C'
+ZSH_HIGHLIGHT_STYLES[default]='fg=#2A342B'
 ZSH_HIGHLIGHT_STYLES[unknown-token]='fg=#BB403B'
-ZSH_HIGHLIGHT_STYLES[comment]='fg=#627F70,italic'
+ZSH_HIGHLIGHT_STYLES[comment]='fg=#6E7C6E,italic'
 
 # Commands
-ZSH_HIGHLIGHT_STYLES[reserved-word]='fg=#754500'
+ZSH_HIGHLIGHT_STYLES[reserved-word]='fg=#8A5308'
 ZSH_HIGHLIGHT_STYLES[alias]='fg=#8A6700'
 ZSH_HIGHLIGHT_STYLES[suffix-alias]='fg=#8A6700'
 ZSH_HIGHLIGHT_STYLES[global-alias]='fg=#8A6700'
@@ -22,19 +22,19 @@ ZSH_HIGHLIGHT_STYLES[autodirectory]='fg=#8A6700,italic'
 ZSH_HIGHLIGHT_STYLES[arg0]='fg=#8A6700'
 
 # Separators and redirection
-ZSH_HIGHLIGHT_STYLES[commandseparator]='fg=#754500'
+ZSH_HIGHLIGHT_STYLES[commandseparator]='fg=#8A5308'
 ZSH_HIGHLIGHT_STYLES[redirection]='fg=#9A557D'
 ZSH_HIGHLIGHT_STYLES[named-fd]='fg=#9A557D'
 ZSH_HIGHLIGHT_STYLES[numeric-fd]='fg=#9A557D'
 
 # Arguments and options
-ZSH_HIGHLIGHT_STYLES[single-hyphen-option]='fg=#086142'
-ZSH_HIGHLIGHT_STYLES[double-hyphen-option]='fg=#086142'
-ZSH_HIGHLIGHT_STYLES[assign]='fg=#25352C'
-ZSH_HIGHLIGHT_STYLES[path]='fg=#374940,underline'
-ZSH_HIGHLIGHT_STYLES[path_pathseparator]='fg=#4F675B,underline'
-ZSH_HIGHLIGHT_STYLES[path_prefix]='fg=#374940,underline'
-ZSH_HIGHLIGHT_STYLES[path_prefix_pathseparator]='fg=#4F675B,underline'
+ZSH_HIGHLIGHT_STYLES[single-hyphen-option]='fg=#0B714D'
+ZSH_HIGHLIGHT_STYLES[double-hyphen-option]='fg=#0B714D'
+ZSH_HIGHLIGHT_STYLES[assign]='fg=#2A342B'
+ZSH_HIGHLIGHT_STYLES[path]='fg=#3D473E,underline'
+ZSH_HIGHLIGHT_STYLES[path_pathseparator]='fg=#586459,underline'
+ZSH_HIGHLIGHT_STYLES[path_prefix]='fg=#3D473E,underline'
+ZSH_HIGHLIGHT_STYLES[path_prefix_pathseparator]='fg=#586459,underline'
 ZSH_HIGHLIGHT_STYLES[globbing]='fg=#9A557D'
 ZSH_HIGHLIGHT_STYLES[history-expansion]='fg=#9A557D'
 ZSH_HIGHLIGHT_STYLES[arithmetic-expansion]='fg=#BB403B'
@@ -67,11 +67,11 @@ ZSH_HIGHLIGHT_STYLES[back-quoted-argument-delimiter]='fg=#9A557D'
 # brackets and cursor highlighters (only used if enabled in ZSH_HIGHLIGHT_HIGHLIGHTERS)
 ZSH_HIGHLIGHT_STYLES[bracket-error]='fg=#BB403B,bold'
 ZSH_HIGHLIGHT_STYLES[bracket-level-1]='fg=#8A6700'
-ZSH_HIGHLIGHT_STYLES[bracket-level-2]='fg=#754500'
+ZSH_HIGHLIGHT_STYLES[bracket-level-2]='fg=#8A5308'
 ZSH_HIGHLIGHT_STYLES[bracket-level-3]='fg=#207F41'
-ZSH_HIGHLIGHT_STYLES[bracket-level-4]='fg=#086142'
+ZSH_HIGHLIGHT_STYLES[bracket-level-4]='fg=#0B714D'
 ZSH_HIGHLIGHT_STYLES[cursor-matchingbracket]='fg=#997300,bold'
-ZSH_HIGHLIGHT_STYLES[cursor]='fg=#E7F5ED,bg=#754500'
+ZSH_HIGHLIGHT_STYLES[cursor]='fg=#EEF3ED,bg=#8A5308'
 
 # zsh-autosuggestions (fish's autosuggestion color)
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=#627F70'
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=#6E7C6E'

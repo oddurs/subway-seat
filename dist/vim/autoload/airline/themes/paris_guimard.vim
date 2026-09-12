@@ -3,25 +3,25 @@
 
 if &background ==# 'light'
   let g:airline#themes#paris_guimard#palette = {}
-  let g:airline#themes#paris_guimard#palette.normal = airline#themes#generate_color_map(['#E7F5ED', '#754500', 255, 94, 'bold'], ['#374940', '#9FC6B1', 238, 151], ['#45594F', '#D8EADF', 240, 254])
-  let g:airline#themes#paris_guimard#palette.normal.airline_warning = ['#E7F5ED', '#8A6700', 255, 94]
-  let g:airline#themes#paris_guimard#palette.normal.airline_error = ['#E7F5ED', '#BB403B', 255, 131]
-  let g:airline#themes#paris_guimard#palette.insert = airline#themes#generate_color_map(['#E7F5ED', '#207F41', 255, 29, 'bold'], ['#374940', '#9FC6B1', 238, 151], ['#45594F', '#D8EADF', 240, 254])
-  let g:airline#themes#paris_guimard#palette.insert.airline_warning = ['#E7F5ED', '#8A6700', 255, 94]
-  let g:airline#themes#paris_guimard#palette.insert.airline_error = ['#E7F5ED', '#BB403B', 255, 131]
-  let g:airline#themes#paris_guimard#palette.visual = airline#themes#generate_color_map(['#E7F5ED', '#8A6700', 255, 94, 'bold'], ['#374940', '#9FC6B1', 238, 151], ['#45594F', '#D8EADF', 240, 254])
-  let g:airline#themes#paris_guimard#palette.visual.airline_warning = ['#E7F5ED', '#8A6700', 255, 94]
-  let g:airline#themes#paris_guimard#palette.visual.airline_error = ['#E7F5ED', '#BB403B', 255, 131]
-  let g:airline#themes#paris_guimard#palette.replace = airline#themes#generate_color_map(['#E7F5ED', '#BB403B', 255, 131, 'bold'], ['#374940', '#9FC6B1', 238, 151], ['#45594F', '#D8EADF', 240, 254])
-  let g:airline#themes#paris_guimard#palette.replace.airline_warning = ['#E7F5ED', '#8A6700', 255, 94]
-  let g:airline#themes#paris_guimard#palette.replace.airline_error = ['#E7F5ED', '#BB403B', 255, 131]
-  let g:airline#themes#paris_guimard#palette.commandline = airline#themes#generate_color_map(['#E7F5ED', '#086142', 255, 23, 'bold'], ['#374940', '#9FC6B1', 238, 151], ['#45594F', '#D8EADF', 240, 254])
-  let g:airline#themes#paris_guimard#palette.commandline.airline_warning = ['#E7F5ED', '#8A6700', 255, 94]
-  let g:airline#themes#paris_guimard#palette.commandline.airline_error = ['#E7F5ED', '#BB403B', 255, 131]
-  let g:airline#themes#paris_guimard#palette.terminal = airline#themes#generate_color_map(['#E7F5ED', '#9A557D', 255, 132, 'bold'], ['#374940', '#9FC6B1', 238, 151], ['#45594F', '#D8EADF', 240, 254])
-  let g:airline#themes#paris_guimard#palette.terminal.airline_warning = ['#E7F5ED', '#8A6700', 255, 94]
-  let g:airline#themes#paris_guimard#palette.terminal.airline_error = ['#E7F5ED', '#BB403B', 255, 131]
-  let g:airline#themes#paris_guimard#palette.inactive = airline#themes#generate_color_map(['#627F70', '#C8E0D3', 66, 253], ['#627F70', '#C8E0D3', 66, 253], ['#789C88', '#C8E0D3', 108, 253])
+  let g:airline#themes#paris_guimard#palette.normal = airline#themes#generate_color_map(['#EEF3ED', '#8A5308', 255, 94, 'bold'], ['#3D473E', '#B1C0B0', 238, 250], ['#4C574D', '#E1E7E0', 240, 254])
+  let g:airline#themes#paris_guimard#palette.normal.airline_warning = ['#EEF3ED', '#8A6700', 255, 94]
+  let g:airline#themes#paris_guimard#palette.normal.airline_error = ['#EEF3ED', '#BB403B', 255, 131]
+  let g:airline#themes#paris_guimard#palette.insert = airline#themes#generate_color_map(['#EEF3ED', '#207F41', 255, 29, 'bold'], ['#3D473E', '#B1C0B0', 238, 250], ['#4C574D', '#E1E7E0', 240, 254])
+  let g:airline#themes#paris_guimard#palette.insert.airline_warning = ['#EEF3ED', '#8A6700', 255, 94]
+  let g:airline#themes#paris_guimard#palette.insert.airline_error = ['#EEF3ED', '#BB403B', 255, 131]
+  let g:airline#themes#paris_guimard#palette.visual = airline#themes#generate_color_map(['#EEF3ED', '#8A6700', 255, 94, 'bold'], ['#3D473E', '#B1C0B0', 238, 250], ['#4C574D', '#E1E7E0', 240, 254])
+  let g:airline#themes#paris_guimard#palette.visual.airline_warning = ['#EEF3ED', '#8A6700', 255, 94]
+  let g:airline#themes#paris_guimard#palette.visual.airline_error = ['#EEF3ED', '#BB403B', 255, 131]
+  let g:airline#themes#paris_guimard#palette.replace = airline#themes#generate_color_map(['#EEF3ED', '#BB403B', 255, 131, 'bold'], ['#3D473E', '#B1C0B0', 238, 250], ['#4C574D', '#E1E7E0', 240, 254])
+  let g:airline#themes#paris_guimard#palette.replace.airline_warning = ['#EEF3ED', '#8A6700', 255, 94]
+  let g:airline#themes#paris_guimard#palette.replace.airline_error = ['#EEF3ED', '#BB403B', 255, 131]
+  let g:airline#themes#paris_guimard#palette.commandline = airline#themes#generate_color_map(['#EEF3ED', '#0B714D', 255, 29, 'bold'], ['#3D473E', '#B1C0B0', 238, 250], ['#4C574D', '#E1E7E0', 240, 254])
+  let g:airline#themes#paris_guimard#palette.commandline.airline_warning = ['#EEF3ED', '#8A6700', 255, 94]
+  let g:airline#themes#paris_guimard#palette.commandline.airline_error = ['#EEF3ED', '#BB403B', 255, 131]
+  let g:airline#themes#paris_guimard#palette.terminal = airline#themes#generate_color_map(['#EEF3ED', '#9A557D', 255, 132, 'bold'], ['#3D473E', '#B1C0B0', 238, 250], ['#4C574D', '#E1E7E0', 240, 254])
+  let g:airline#themes#paris_guimard#palette.terminal.airline_warning = ['#EEF3ED', '#8A6700', 255, 94]
+  let g:airline#themes#paris_guimard#palette.terminal.airline_error = ['#EEF3ED', '#BB403B', 255, 131]
+  let g:airline#themes#paris_guimard#palette.inactive = airline#themes#generate_color_map(['#6E7C6E', '#D4DCD3', 243, 253], ['#6E7C6E', '#D4DCD3', 243, 253], ['#879887', '#D4DCD3', 246, 253])
   let g:airline#themes#paris_guimard#palette.accents = {'red': ['#BB403B', '', 131, '']}
 else
   let g:airline#themes#paris_guimard#palette = {}

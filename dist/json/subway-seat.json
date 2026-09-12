@@ -4008,183 +4008,183 @@
       "colors": {
         "crust": {
           "name": "Carrelage crust",
-          "hex": "#C8E0D3",
+          "hex": "#D4DCD3",
           "rgb": [
-            200,
-            224,
+            212,
+            220,
             211
           ],
           "hsl": [
-            147,
-            28,
-            83
+            113,
+            11,
+            85
           ]
         },
         "mantle": {
           "name": "Carrelage mantle",
-          "hex": "#D8EADF",
+          "hex": "#E1E7E0",
           "rgb": [
-            216,
-            234,
-            223
+            225,
+            231,
+            224
           ],
           "hsl": [
-            143,
-            30,
-            88
+            111,
+            13,
+            89
           ]
         },
         "base": {
           "name": "Carrelage base",
-          "hex": "#E7F5ED",
+          "hex": "#EEF3ED",
           "rgb": [
-            231,
-            245,
+            238,
+            243,
             237
           ],
           "hsl": [
-            146,
-            41,
-            93
+            110,
+            20,
+            94
           ]
         },
         "surface0": {
           "name": "Carrelage surface0",
-          "hex": "#B7D8C6",
+          "hex": "#C7D3C5",
           "rgb": [
-            183,
-            216,
-            198
+            199,
+            211,
+            197
           ],
           "hsl": [
-            147,
-            30,
-            78
+            111,
+            14,
+            80
           ]
         },
         "surface1": {
           "name": "Carrelage surface1",
-          "hex": "#9FC6B1",
+          "hex": "#B1C0B0",
           "rgb": [
-            159,
-            198,
-            177
+            177,
+            192,
+            176
           ],
           "hsl": [
-            148,
-            25,
-            70
+            116,
+            11,
+            72
           ]
         },
         "surface2": {
           "name": "Carrelage surface2",
-          "hex": "#89B19D",
+          "hex": "#9BAC9A",
           "rgb": [
-            137,
-            177,
-            157
+            155,
+            172,
+            154
           ],
           "hsl": [
-            150,
-            20,
-            62
+            117,
+            10,
+            64
           ]
         },
         "overlay0": {
           "name": "Carrelage overlay0",
-          "hex": "#789C88",
+          "hex": "#879887",
           "rgb": [
-            120,
-            156,
-            136
+            135,
+            152,
+            135
           ],
           "hsl": [
-            147,
-            15,
-            54
+            120,
+            8,
+            56
           ]
         },
         "overlay1": {
           "name": "Carrelage overlay1",
-          "hex": "#627F70",
+          "hex": "#6E7C6E",
           "rgb": [
-            98,
-            127,
-            112
+            110,
+            124,
+            110
           ],
           "hsl": [
-            149,
-            13,
-            44
+            120,
+            6,
+            46
           ]
         },
         "overlay2": {
           "name": "Carrelage overlay2",
-          "hex": "#4F675B",
+          "hex": "#586459",
           "rgb": [
-            79,
-            103,
-            91
+            88,
+            100,
+            89
           ],
           "hsl": [
-            150,
-            13,
-            36
+            125,
+            6,
+            37
           ]
         },
         "subtext0": {
           "name": "Carrelage subtext0",
-          "hex": "#45594F",
+          "hex": "#4C574D",
           "rgb": [
-            69,
-            89,
-            79
+            76,
+            87,
+            77
           ],
           "hsl": [
-            150,
-            13,
-            31
+            125,
+            7,
+            32
           ]
         },
         "subtext1": {
           "name": "Carrelage subtext1",
-          "hex": "#374940",
+          "hex": "#3D473E",
           "rgb": [
-            55,
-            73,
-            64
+            61,
+            71,
+            62
           ],
           "hsl": [
-            150,
-            14,
-            25
+            126,
+            8,
+            26
           ]
         },
         "text": {
           "name": "Carrelage text",
-          "hex": "#25352C",
+          "hex": "#2A342B",
           "rgb": [
-            37,
-            53,
-            44
+            42,
+            52,
+            43
           ],
           "hsl": [
-            146,
-            18,
+            126,
+            11,
             18
           ]
         },
         "text_hi": {
           "name": "Carrelage text hi",
-          "hex": "#18231D",
+          "hex": "#1B221C",
           "rgb": [
-            24,
-            35,
-            29
+            27,
+            34,
+            28
           ],
           "hsl": [
-            147,
-            19,
+            129,
+            11,
             12
           ]
         },
@@ -4218,16 +4218,16 @@
         },
         "orange": {
           "name": "Burnt orange",
-          "hex": "#754500",
+          "hex": "#8A5308",
           "rgb": [
-            117,
-            69,
-            0
+            138,
+            83,
+            8
           ],
           "hsl": [
             35,
-            100,
-            23
+            89,
+            29
           ]
         },
         "orange_hi": {
@@ -4302,16 +4302,16 @@
         },
         "sage": {
           "name": "Seafoam tile",
-          "hex": "#086142",
+          "hex": "#0B714D",
           "rgb": [
-            8,
-            97,
-            66
+            11,
+            113,
+            77
           ],
           "hsl": [
             159,
-            85,
-            21
+            82,
+            24
           ]
         },
         "sage_hi": {
@@ -4376,7 +4376,7 @@
           "index": 0,
           "name": "black",
           "role": "subtext1",
-          "hex": "#374940"
+          "hex": "#3D473E"
         },
         {
           "index": 1,
@@ -4406,25 +4406,25 @@
           "index": 5,
           "name": "magenta",
           "role": "orange",
-          "hex": "#754500"
+          "hex": "#8A5308"
         },
         {
           "index": 6,
           "name": "cyan",
           "role": "sage",
-          "hex": "#086142"
+          "hex": "#0B714D"
         },
         {
           "index": 7,
           "name": "white",
           "role": "surface2",
-          "hex": "#89B19D"
+          "hex": "#9BAC9A"
         },
         {
           "index": 8,
           "name": "bright_black",
           "role": "overlay1",
-          "hex": "#627F70"
+          "hex": "#6E7C6E"
         },
         {
           "index": 9,
@@ -4466,7 +4466,7 @@
           "index": 15,
           "name": "bright_white",
           "role": "surface1",
-          "hex": "#9FC6B1"
+          "hex": "#B1C0B0"
         }
       ],
       "diff": {

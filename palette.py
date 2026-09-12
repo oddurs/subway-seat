@@ -442,16 +442,27 @@ CARRELAGE = Flavor(
     dark=False,
     blurb="Bevelled white tile under a vaulted platform. The light one.",
     colors={
-        # As in Enamel and Portland, the ramp runs the other way from base.
-        "crust": "#C8E0D3", "mantle": "#D8EADF", "base": "#E7F5ED",
-        "surface0": "#B7D8C6", "surface1": "#9FC6B1", "surface2": "#89B19D",
-        "overlay0": "#789C88", "overlay1": "#627F70", "overlay2": "#4F675B",
-        "subtext0": "#45594F", "subtext1": "#374940", "text": "#25352C", "text_hi": "#18231D",
+        # The tile is white; the green is in the shadow between the tiles. Mint
+        # paper put the ground 75-135 degrees from every warm accent, which is
+        # the one gap that reads as neither harmony nor contrast — just mud. So
+        # the cast is turned off mint towards a ceramic green and pulled to
+        # under half its chroma at the paper end, where it meets brass, and let
+        # back up through the ramp, where it meets nothing.
+        "crust": "#D4DCD3", "mantle": "#E1E7E0", "base": "#EEF3ED",
+        "surface0": "#C7D3C5", "surface1": "#B1C0B0", "surface2": "#9BAC9A",
+        "overlay0": "#879887", "overlay1": "#6E7C6E", "overlay2": "#586459",
+        "subtext0": "#4C574D", "subtext1": "#3D473E", "text": "#2A342B", "text_hi": "#1B221C",
         "yellow": "#8A6700", "yellow_hi": "#997300",
-        "orange": "#754500", "orange_hi": "#AE6800",
+        # Paris runs orange at 66 degrees, a bare 19 from its own brass, so the
+        # two warm accents can only be told apart by lightness. The stagger was
+        # right; its depth was not. At L 0.44 this hue is already hard against
+        # the sRGB wall — the most saturated color that exists there is olive.
+        # Lifted to 0.495 and taken back out to the gamut edge it is amber, and
+        # still sits 0.04 clear of the brass above it.
+        "orange": "#8A5308", "orange_hi": "#AE6800",
         "red": "#932D29", "red_hi": "#BB403B",
         "green": "#207F41", "green_hi": "#168540",
-        "sage": "#086142", "sage_hi": "#3D8666",
+        "sage": "#0B714D", "sage_hi": "#3D8666",
         "denim": "#27629C", "denim_hi": "#3E75AD",
         "clay": "#9A557D",
     },

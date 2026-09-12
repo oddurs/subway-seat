@@ -3,20 +3,20 @@
 # Paris Carrelage for bottom. Key names use the 0.10 spelling, which later releases accept too.
 
 [styles.cpu]
-all_entry_color = "#25352C"
-avg_entry_color = "#754500"
-cpu_core_colors = ["#207F41", "#8A6700", "#754500", "#BB403B", "#086142", "#9A557D", "#168540", "#997300"]
+all_entry_color = "#2A342B"
+avg_entry_color = "#8A5308"
+cpu_core_colors = ["#207F41", "#8A6700", "#8A5308", "#BB403B", "#0B714D", "#9A557D", "#168540", "#997300"]
 
 [styles.memory]
 ram_color = "#207F41"
-cache_color = "#086142"
-swap_color = "#754500"
+cache_color = "#0B714D"
+swap_color = "#8A5308"
 arc_color = "#9A557D"
-gpu_colors = ["#8A6700", "#754500", "#BB403B", "#086142", "#9A557D", "#168540"]
+gpu_colors = ["#8A6700", "#8A5308", "#BB403B", "#0B714D", "#9A557D", "#168540"]
 
 [styles.network]
 rx_color = "#207F41"
-tx_color = "#754500"
+tx_color = "#8A5308"
 rx_total_color = "#168540"
 tx_total_color = "#AE6800"
 
@@ -26,26 +26,26 @@ medium_battery_color = "#8A6700"
 low_battery_color = "#BB403B"
 
 [styles.tables]
-headers = { color = "#754500", bold = true }
+headers = { color = "#8A5308", bold = true }
 
 [styles.graphs]
-graph_color = "#789C88"
-legend_text = { color = "#45594F" }
+graph_color = "#879887"
+legend_text = { color = "#4C574D" }
 
 [styles.widgets]
-border_color = "#89B19D"
-selected_border_color = "#754500"
+border_color = "#9BAC9A"
+selected_border_color = "#8A5308"
 widget_title = { color = "#8A6700" }
-text = { color = "#25352C" }
-selected_text = { color = "#E7F5ED", bg_color = "#754500" }
-disabled_text = { color = "#789C88" }
-thread_text = { color = "#086142" }  # 0.11+
+text = { color = "#2A342B" }
+selected_text = { color = "#EEF3ED", bg_color = "#8A5308" }
+disabled_text = { color = "#879887" }
+thread_text = { color = "#0B714D" }  # 0.11+
 
 # Newer sections (bottom 0.13+); older releases ignore them.
 [styles.temp_graph]
-temp_graph_color_styles = ["#207F41", "#8A6700", "#754500", "#BB403B", "#086142", "#9A557D", "#168540", "#997300"]
+temp_graph_color_styles = ["#207F41", "#8A6700", "#8A5308", "#BB403B", "#0B714D", "#9A557D", "#168540", "#997300"]
 
 [styles.disk_io_graph]
-read_colours = ["#207F41", "#086142", "#168540", "#3D8666"]
-write_colours = ["#754500", "#9A557D", "#AE6800", "#BB403B"]
+read_colours = ["#207F41", "#0B714D", "#168540", "#3D8666"]
+write_colours = ["#8A5308", "#9A557D", "#AE6800", "#BB403B"]
 # <<< subway-seat <<<

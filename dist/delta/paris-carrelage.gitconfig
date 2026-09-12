@@ -12,33 +12,33 @@
 	zero-style = syntax
 	whitespace-error-style = normal "#932D29"
 	# git --color-moved: git's defaults and the git port's colors
-	map-styles = bold purple => syntax "#F2E6E5", bold "#754500" => syntax "#F2E6E5", bold blue => syntax "#E1D7BD", bold "#27629C" => syntax "#E1D7BD", bold cyan => syntax "#DBEBE1", bold "#086142" => syntax "#DBEBE1", bold yellow => syntax "#E1D7BD", bold "#8A6700" => syntax "#E1D7BD"
+	map-styles = bold purple => syntax "#F2E6E5", bold "#8A5308" => syntax "#F2E6E5", bold blue => syntax "#E1D7BD", bold "#27629C" => syntax "#E1D7BD", bold cyan => syntax "#DBEBE1", bold "#0B714D" => syntax "#DBEBE1", bold yellow => syntax "#E1D7BD", bold "#8A6700" => syntax "#E1D7BD"
 	# line numbers (with line-numbers = true) in the color of their change
 	line-numbers-plus-style = "#207F41"
 	line-numbers-minus-style = "#BB403B"
-	line-numbers-zero-style = "#627F70"
-	line-numbers-left-style = "#789C88"
-	line-numbers-right-style = "#789C88"
+	line-numbers-zero-style = "#6E7C6E"
+	line-numbers-left-style = "#879887"
+	line-numbers-right-style = "#879887"
 	# file and hunk headers
-	file-style = "#18231D" bold
-	file-decoration-style = "#754500" ul
+	file-style = "#1B221C" bold
+	file-decoration-style = "#8A5308" ul
 	hunk-header-style = file line-number syntax
-	hunk-header-file-style = "#374940"
+	hunk-header-file-style = "#3D473E"
 	hunk-header-line-number-style = "#27629C"
 	hunk-header-decoration-style = "#27629C" box
 	commit-decoration-style = "#8A6700" box
-	inline-hint-style = "#627F70"
+	inline-hint-style = "#6E7C6E"
 	# git blame
-	blame-palette = "#E7F5ED #D8EADF #C8E0D3"
-	blame-separator-style = "#789C88"
+	blame-palette = "#EEF3ED #E1E7E0 #D4DCD3"
+	blame-separator-style = "#879887"
 	# git grep / rg --json
-	grep-file-style = "#754500"
+	grep-file-style = "#8A5308"
 	grep-line-number-style = "#207F41"
 	grep-match-line-style = syntax
-	grep-match-word-style = "#18231D" "#CBCAA6" bold
-	grep-header-file-style = "#754500" bold
+	grep-match-word-style = "#1B221C" "#D0C9A6" bold
+	grep-header-file-style = "#8A5308" bold
 	# merge conflicts (git's diff3 or zdiff3 conflict style)
 	merge-conflict-ours-diff-header-style = "#8A6700" bold
 	merge-conflict-ours-diff-header-decoration-style = "#8A6700" box
-	merge-conflict-theirs-diff-header-style = "#086142" bold
-	merge-conflict-theirs-diff-header-decoration-style = "#086142" box
+	merge-conflict-theirs-diff-header-style = "#0B714D" bold
+	merge-conflict-theirs-diff-header-decoration-style = "#0B714D" box

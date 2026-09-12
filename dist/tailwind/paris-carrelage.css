@@ -2,28 +2,28 @@
 /* Paris Carrelage for Tailwind v4: bg-ss-base, text-ss-text, … */
 
 @theme {
-  --color-ss-crust: #C8E0D3;
-  --color-ss-mantle: #D8EADF;
-  --color-ss-base: #E7F5ED;
-  --color-ss-surface0: #B7D8C6;
-  --color-ss-surface1: #9FC6B1;
-  --color-ss-surface2: #89B19D;
-  --color-ss-overlay0: #789C88;
-  --color-ss-overlay1: #627F70;
-  --color-ss-overlay2: #4F675B;
-  --color-ss-subtext0: #45594F;
-  --color-ss-subtext1: #374940;
-  --color-ss-text: #25352C;
-  --color-ss-text-hi: #18231D;
+  --color-ss-crust: #D4DCD3;
+  --color-ss-mantle: #E1E7E0;
+  --color-ss-base: #EEF3ED;
+  --color-ss-surface0: #C7D3C5;
+  --color-ss-surface1: #B1C0B0;
+  --color-ss-surface2: #9BAC9A;
+  --color-ss-overlay0: #879887;
+  --color-ss-overlay1: #6E7C6E;
+  --color-ss-overlay2: #586459;
+  --color-ss-subtext0: #4C574D;
+  --color-ss-subtext1: #3D473E;
+  --color-ss-text: #2A342B;
+  --color-ss-text-hi: #1B221C;
   --color-ss-yellow: #8A6700;
   --color-ss-yellow-hi: #997300;
-  --color-ss-orange: #754500;
+  --color-ss-orange: #8A5308;
   --color-ss-orange-hi: #AE6800;
   --color-ss-red: #932D29;
   --color-ss-red-hi: #BB403B;
   --color-ss-green: #207F41;
   --color-ss-green-hi: #168540;
-  --color-ss-sage: #086142;
+  --color-ss-sage: #0B714D;
   --color-ss-sage-hi: #3D8666;
   --color-ss-denim: #27629C;
   --color-ss-denim-hi: #3E75AD;

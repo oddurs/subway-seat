@@ -66,8 +66,8 @@
     --ss-shadow-soft: rgba(94, 100, 112, 0.12);
   }
   html[data-flavor="carrelage"] {
-    --ss-shadow: rgba(92, 104, 97, 0.2);
-    --ss-shadow-soft: rgba(92, 104, 97, 0.12);
+    --ss-shadow: rgba(95, 103, 96, 0.2);
+    --ss-shadow-soft: rgba(95, 103, 96, 0.12);
   }
 
   html[data-flavor="walnut"] [data-unless="walnut"],

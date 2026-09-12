@@ -5,34 +5,34 @@ Name=Paris Carrelage
 
 # Paris Carrelage
 [Light]
-Foreground=#25352C
-Background=#E7F5ED
-Cursor=#754500
-CursorForeground=#E7F5ED
-Color0=#374940
+Foreground=#2A342B
+Background=#EEF3ED
+Cursor=#8A5308
+CursorForeground=#EEF3ED
+Color0=#3D473E
 Color1=#932D29
 Color2=#207F41
 Color3=#8A6700
 Color4=#27629C
-Color5=#754500
-Color6=#086142
-Color7=#89B19D
-Color8=#627F70
+Color5=#8A5308
+Color6=#0B714D
+Color7=#9BAC9A
+Color8=#6E7C6E
 Color9=#BB403B
 Color10=#168540
 Color11=#997300
 Color12=#3E75AD
 Color13=#AE6800
 Color14=#3D8666
-Color15=#9FC6B1
-TitlebarForeground=#25352C
-TitlebarBackground=#D8EADF
-BellForeground=#18231D
-BellBackground=#C4C9A7
-SuperuserForeground=#18231D
+Color15=#B1C0B0
+TitlebarForeground=#2A342B
+TitlebarBackground=#E1E7E0
+BellForeground=#1B221C
+BellBackground=#CBC7A8
+SuperuserForeground=#1B221C
 SuperuserBackground=#E9D5D4
-RemoteForeground=#18231D
-RemoteBackground=#CCE0E2
+RemoteForeground=#1B221C
+RemoteBackground=#D2DFE2
 
 # Subway Seat
 [Dark]

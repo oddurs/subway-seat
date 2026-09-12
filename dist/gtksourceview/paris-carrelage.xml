@@ -8,28 +8,28 @@
     <property name="dark-variant">subway-seat</property>
   </metadata>
 
-  <color name="crust" value="#C8E0D3"/>
-  <color name="mantle" value="#D8EADF"/>
-  <color name="base" value="#E7F5ED"/>
-  <color name="surface0" value="#B7D8C6"/>
-  <color name="surface1" value="#9FC6B1"/>
-  <color name="surface2" value="#89B19D"/>
-  <color name="overlay0" value="#789C88"/>
-  <color name="overlay1" value="#627F70"/>
-  <color name="overlay2" value="#4F675B"/>
-  <color name="subtext0" value="#45594F"/>
-  <color name="subtext1" value="#374940"/>
-  <color name="text" value="#25352C"/>
-  <color name="text_hi" value="#18231D"/>
+  <color name="crust" value="#D4DCD3"/>
+  <color name="mantle" value="#E1E7E0"/>
+  <color name="base" value="#EEF3ED"/>
+  <color name="surface0" value="#C7D3C5"/>
+  <color name="surface1" value="#B1C0B0"/>
+  <color name="surface2" value="#9BAC9A"/>
+  <color name="overlay0" value="#879887"/>
+  <color name="overlay1" value="#6E7C6E"/>
+  <color name="overlay2" value="#586459"/>
+  <color name="subtext0" value="#4C574D"/>
+  <color name="subtext1" value="#3D473E"/>
+  <color name="text" value="#2A342B"/>
+  <color name="text_hi" value="#1B221C"/>
   <color name="yellow" value="#8A6700"/>
   <color name="yellow_hi" value="#997300"/>
-  <color name="orange" value="#754500"/>
+  <color name="orange" value="#8A5308"/>
   <color name="orange_hi" value="#AE6800"/>
   <color name="red" value="#932D29"/>
   <color name="red_hi" value="#BB403B"/>
   <color name="green" value="#207F41"/>
   <color name="green_hi" value="#168540"/>
-  <color name="sage" value="#086142"/>
+  <color name="sage" value="#0B714D"/>
   <color name="sage_hi" value="#3D8666"/>
   <color name="denim" value="#27629C"/>
   <color name="denim_hi" value="#3E75AD"/>
@@ -42,12 +42,12 @@
   <color name="tint_del_dim" value="#F2E6E5"/>
   <color name="tint_chg" value="#E1D7BD"/>
   <color name="tint_chg_emph" value="#DACEAD"/>
-  <color name="tint_info" value="#CCE0E2"/>
-  <color name="tint_hint" value="#C8E0D5"/>
-  <color name="tint_search" value="#CBCAA6"/>
-  <color name="tint_search_cur" value="#AE9D76"/>
-  <color name="selection_unfocused" value="#BFDBCC"/>
-  <color name="bracket_bg" value="#D9E7DF"/>
+  <color name="tint_info" value="#D2DFE2"/>
+  <color name="tint_hint" value="#CEE1D7"/>
+  <color name="tint_search" value="#D0C9A6"/>
+  <color name="tint_search_cur" value="#BCA37A"/>
+  <color name="selection_unfocused" value="#CCD7CB"/>
+  <color name="bracket_bg" value="#E0E6DF"/>
 
   <style name="text" foreground="text" background="base"/>
   <style name="selection" foreground="text_hi" background="surface1"/>
