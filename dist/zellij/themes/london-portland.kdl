@@ -5,7 +5,7 @@ themes {
     london-portland {
         text_unselected {
             base "#293040"
-            background "#C5D5F3"
+            background "#CCDAF2"
             emphasis_0 "#B14A07"
             emphasis_1 "#007376"
             emphasis_2 "#0D8131"
@@ -13,7 +13,7 @@ themes {
         }
         text_selected {
             base "#1B202B"
-            background "#A1B7E5"
+            background "#A8BBE2"
             emphasis_0 "#B14A07"
             emphasis_1 "#007376"
             emphasis_2 "#0D8131"
@@ -21,19 +21,19 @@ themes {
         }
         ribbon_unselected {
             base "#293040"
-            background "#A1B7E5"
+            background "#A8BBE2"
             emphasis_0 "#896800"
             emphasis_1 "#1B202B"
             emphasis_2 "#007376"
             emphasis_3 "#B14A07"
         }
         ribbon_selected {
-            base "#E0EAFE"
+            base "#E8F0FF"
             background "#B14A07"
-            emphasis_0 "#E0EAFE"
-            emphasis_1 "#E0EAFE"
-            emphasis_2 "#E0EAFE"
-            emphasis_3 "#E0EAFE"
+            emphasis_0 "#E8F0FF"
+            emphasis_1 "#E8F0FF"
+            emphasis_2 "#E8F0FF"
+            emphasis_3 "#E8F0FF"
         }
         table_title {
             base "#B14A07"
@@ -45,7 +45,7 @@ themes {
         }
         table_cell_selected {
             base "#1B202B"
-            background "#A1B7E5"
+            background "#A8BBE2"
             emphasis_0 "#B14A07"
             emphasis_1 "#007376"
             emphasis_2 "#0D8131"
@@ -53,7 +53,7 @@ themes {
         }
         table_cell_unselected {
             base "#293040"
-            background "#C5D5F3"
+            background "#CCDAF2"
             emphasis_0 "#B14A07"
             emphasis_1 "#007376"
             emphasis_2 "#0D8131"
@@ -61,7 +61,7 @@ themes {
         }
         list_selected {
             base "#1B202B"
-            background "#A1B7E5"
+            background "#A8BBE2"
             emphasis_0 "#B14A07"
             emphasis_1 "#007376"
             emphasis_2 "#0D8131"
@@ -69,14 +69,14 @@ themes {
         }
         list_unselected {
             base "#293040"
-            background "#C5D5F3"
+            background "#CCDAF2"
             emphasis_0 "#B14A07"
             emphasis_1 "#007376"
             emphasis_2 "#0D8131"
             emphasis_3 "#896800"
         }
         frame_unselected {
-            base "#8FA5D0"
+            base "#93A7CF"
             background 0
             emphasis_0 "#B14A07"
             emphasis_1 "#007376"
@@ -103,7 +103,7 @@ themes {
             base "#0D8131"
             background 0
             emphasis_0 "#007376"
-            emphasis_1 "#E0EAFE"
+            emphasis_1 "#E8F0FF"
             emphasis_2 "#896800"
             emphasis_3 "#0019A8"
         }

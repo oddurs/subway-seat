@@ -1,7 +1,7 @@
 # Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
 
 [ColorEffects:Disabled]
-Color=244,233,212
+Color=248,239,223
 ColorAmount=0
 ColorEffect=0
 ContrastAmount=0.65
@@ -21,10 +21,10 @@ IntensityAmount=0
 IntensityEffect=0
 
 [Colors:Button]
-BackgroundAlternate=226,194,159
-BackgroundNormal=250,244,234
+BackgroundAlternate=229,199,167
+BackgroundNormal=252,247,239
 DecorationFocus=173,78,0
-DecorationHover=180,167,148
+DecorationHover=183,171,156
 ForegroundActive=173,78,0
 ForegroundInactive=101,79,59
 ForegroundLink=63,100,128
@@ -49,10 +49,10 @@ ForegroundPositive=173,185,86
 ForegroundVisited=244,168,126
 
 [Colors:Header]
-BackgroundAlternate=226,211,182
-BackgroundNormal=235,222,198
+BackgroundAlternate=228,216,192
+BackgroundNormal=238,228,208
 DecorationFocus=173,78,0
-DecorationHover=180,167,148
+DecorationHover=183,171,156
 ForegroundActive=173,78,0
 ForegroundInactive=101,79,59
 ForegroundLink=63,100,128
@@ -63,10 +63,10 @@ ForegroundPositive=102,116,15
 ForegroundVisited=134,57,19
 
 [Colors:Header][Inactive]
-BackgroundAlternate=228,215,191
-BackgroundNormal=235,222,198
+BackgroundAlternate=231,221,201
+BackgroundNormal=238,228,208
 DecorationFocus=173,78,0
-DecorationHover=180,167,148
+DecorationHover=183,171,156
 ForegroundActive=173,78,0
 ForegroundInactive=101,79,59
 ForegroundLink=63,100,128
@@ -77,10 +77,10 @@ ForegroundPositive=102,116,15
 ForegroundVisited=134,57,19
 
 [Colors:Selection]
-BackgroundAlternate=226,194,159
-BackgroundNormal=205,148,96
+BackgroundAlternate=229,199,167
+BackgroundNormal=207,151,101
 DecorationFocus=173,78,0
-DecorationHover=180,167,148
+DecorationHover=183,171,156
 ForegroundActive=42,29,19
 ForegroundInactive=63,46,33
 ForegroundLink=58,82,101
@@ -91,10 +91,10 @@ ForegroundPositive=72,72,17
 ForegroundVisited=134,57,19
 
 [Colors:Tooltip]
-BackgroundAlternate=243,236,226
-BackgroundNormal=250,244,234
+BackgroundAlternate=245,239,231
+BackgroundNormal=252,247,239
 DecorationFocus=173,78,0
-DecorationHover=180,167,148
+DecorationHover=183,171,156
 ForegroundActive=173,78,0
 ForegroundInactive=101,79,59
 ForegroundLink=63,100,128
@@ -105,10 +105,10 @@ ForegroundPositive=102,116,15
 ForegroundVisited=134,57,19
 
 [Colors:View]
-BackgroundAlternate=237,226,205
-BackgroundNormal=244,233,212
+BackgroundAlternate=241,231,215
+BackgroundNormal=248,239,223
 DecorationFocus=173,78,0
-DecorationHover=180,167,148
+DecorationHover=183,171,156
 ForegroundActive=173,78,0
 ForegroundInactive=101,79,59
 ForegroundLink=63,100,128
@@ -119,10 +119,10 @@ ForegroundPositive=102,116,15
 ForegroundVisited=134,57,19
 
 [Colors:Window]
-BackgroundAlternate=228,215,191
-BackgroundNormal=235,222,198
+BackgroundAlternate=231,221,201
+BackgroundNormal=238,228,208
 DecorationFocus=173,78,0
-DecorationHover=180,167,148
+DecorationHover=183,171,156
 ForegroundActive=173,78,0
 ForegroundInactive=101,79,59
 ForegroundLink=63,100,128
@@ -142,9 +142,9 @@ shadeSortColumn=true
 contrast=4
 
 [WM]
-activeBackground=235,222,198
+activeBackground=238,228,208
 activeBlend=62,44,30
 activeForeground=62,44,30
-inactiveBackground=235,222,198
+inactiveBackground=238,228,208
 inactiveBlend=101,79,59
 inactiveForeground=101,79,59

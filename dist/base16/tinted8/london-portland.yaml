@@ -14,11 +14,11 @@ palette:
   black: "#293040"
   black-bright: "#3C4557"
   black-dim: "#1B202B"
-  white: "#E0EAFE"
-  white-bright: "#F0F4FE"
-  white-dim: "#D4E0F6"
+  white: "#E8F0FF"
+  white-bright: "#F4F8FF"
+  white-dim: "#DCE5F7"
   gray: "#697794"
-  gray-bright: "#7F91B4"
+  gray-bright: "#8192B4"
   gray-dim: "#556179"
   red: "#9B211A"
   red-bright: "#C92B23"
@@ -91,12 +91,12 @@ ui:
   accent:
     normal: "#B14A07"
   border:
-    normal: "#A1B7E5"
+    normal: "#A8BBE2"
   chrome:
     background:
-      normal: "#D4E0F6"
-      dark: "#C5D5F3"
-      light: "#F0F4FE"
+      normal: "#DCE5F7"
+      dark: "#CCDAF2"
+      light: "#F4F8FF"
     foreground:
       normal: "#3C4557"
       dark: "#4A5469"
@@ -104,56 +104,56 @@ ui:
   cursor:
     normal:
       background: "#B14A07"
-      foreground: "#E0EAFE"
+      foreground: "#E8F0FF"
     muted:
       background: "#697794"
-      foreground: "#E0EAFE"
+      foreground: "#E8F0FF"
   deprecated: "#7660AB"
   global:
     background:
-      normal: "#E0EAFE"
-      dark: "#D4E0F6"
-      light: "#F0F4FE"
+      normal: "#E8F0FF"
+      dark: "#DCE5F7"
+      light: "#F4F8FF"
     foreground:
       normal: "#293040"
       dark: "#3C4557"
       light: "#1B202B"
   gutter:
-    background: "#E0EAFE"
+    background: "#E8F0FF"
     foreground: "#697794"
   highlight:
     button:
-      background: "#B6CAF3"
+      background: "#BFCFF1"
       foreground: "#1B202B"
     line:
-      background: "#D4E0F6"
+      background: "#DCE5F7"
       foreground: "#B14A07"
     search:
-      background: "#C6C3B2"
+      background: "#CBC7B2"
       foreground: "#1B202B"
     text:
-      background: "#B6CAF3"
+      background: "#BFCFF1"
       foreground: "#293040"
-      active-background: "#A1B7E5"
+      active-background: "#A8BBE2"
       active-foreground: "#1B202B"
   indent-guide:
-    background: "#B6CAF3"
-    active-background: "#7F91B4"
+    background: "#BFCFF1"
+    active-background: "#8192B4"
   link:
     normal:
-      background: "#E0EAFE"
+      background: "#E8F0FF"
       foreground: "#0019A8"
   selection:
-    background: "#A1B7E5"
+    background: "#A8BBE2"
     foreground: "#1B202B"
-    inactive-background: "#B6CAF3"
+    inactive-background: "#BFCFF1"
   status:
     error: "#9B211A"
     info: "#0019A8"
     success: "#0D8131"
     warning: "#896800"
   tooltip:
-    background: "#F0F4FE"
+    background: "#F4F8FF"
     foreground: "#293040"
   whitespace:
-    foreground: "#7F91B4"
+    foreground: "#8192B4"

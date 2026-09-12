@@ -34,11 +34,11 @@ size:
   number_mega: {foreground: "#896800"}
   number_giga: {foreground: "#B14A07"}
   number_huge: {foreground: "#C92B23"}
-  unit_byte: {foreground: "#606A7F"}
-  unit_kilo: {foreground: "#2D9150"}
-  unit_mega: {foreground: "#967C26"}
-  unit_giga: {foreground: "#B8622C"}
-  unit_huge: {foreground: "#CC4844"}
+  unit_byte: {foreground: "#626B80"}
+  unit_kilo: {foreground: "#2E9250"}
+  unit_mega: {foreground: "#977C26"}
+  unit_giga: {foreground: "#B9632C"}
+  unit_huge: {foreground: "#CE4944"}
 users:
   user_you: {foreground: "#896800"}
   user_root: {foreground: "#C92B23"}
@@ -55,7 +55,7 @@ git:
   deleted: {foreground: "#C92B23"}
   renamed: {foreground: "#007376"}
   typechange: {foreground: "#7660AB"}
-  ignored: {foreground: "#7F91B4"}
+  ignored: {foreground: "#8192B4"}
   conflicted: {foreground: "#9B211A", is_bold: true}
 git_repo:
   branch_main: {foreground: "#3C4557"}
@@ -65,7 +65,7 @@ git_repo:
 security_context:
   none: {foreground: "#697794"}
   selinux:
-    colon: {foreground: "#7F91B4"}
+    colon: {foreground: "#8192B4"}
     user: {foreground: "#4A5469"}
     role: {foreground: "#007376"}
     typ: {foreground: "#556179"}
@@ -78,11 +78,11 @@ file_type:
   crypto: {foreground: "#9B211A"}
   document: {foreground: "#0019A8"}
   compressed: {foreground: "#C92B23"}
-  temp: {foreground: "#7F91B4"}
+  temp: {foreground: "#8192B4"}
   compiled: {foreground: "#697794"}
   build: {foreground: "#896800", is_underline: true}
   source: {foreground: "#007376"}
-punctuation: {foreground: "#7F91B4"}
+punctuation: {foreground: "#8192B4"}
 date: {foreground: "#4A5469"}
 inode: {foreground: "#697794"}
 blocks: {foreground: "#697794"}

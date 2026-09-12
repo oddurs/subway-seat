@@ -32,7 +32,7 @@ export const enamel = stylex.createTheme(art, {
   sage: "#669279",
   denim: "#628299",
   clay: "#C2764E",
-  page: "#F7F0E1",
+  page: "#FAF4E9",
 });
 
 export const moquette = stylex.createTheme(art, {
@@ -65,7 +65,7 @@ export const portland = stylex.createTheme(art, {
   sage: "#2E9799",
   denim: "#405DC4",
   clay: "#9582C6",
-  page: "#E9F0FE",
+  page: "#EFF4FF",
 });
 
 export const guimard = stylex.createTheme(art, {
@@ -98,5 +98,5 @@ export const carrelage = stylex.createTheme(art, {
   sage: "#3F8468",
   denim: "#4F81B4",
   clay: "#B7799B",
-  page: "#E8F4EE",
+  page: "#EEF8F2",
 });

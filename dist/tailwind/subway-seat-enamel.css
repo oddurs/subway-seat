@@ -2,13 +2,13 @@
 /* Subway Seat Enamel for Tailwind v4: bg-ss-base, text-ss-text, … */
 
 @theme {
-  --color-ss-crust: #E2D3B6;
-  --color-ss-mantle: #EBDEC6;
-  --color-ss-base: #F4E9D4;
-  --color-ss-surface0: #D9C8A7;
-  --color-ss-surface1: #CAB48E;
-  --color-ss-surface2: #BAA07A;
-  --color-ss-overlay0: #A58C6A;
+  --color-ss-crust: #E4D8C0;
+  --color-ss-mantle: #EEE4D0;
+  --color-ss-base: #F8EFDF;
+  --color-ss-surface0: #DBCDB3;
+  --color-ss-surface1: #CBB898;
+  --color-ss-surface2: #BAA380;
+  --color-ss-overlay0: #A58D6D;
   --color-ss-overlay1: #8C7254;
   --color-ss-overlay2: #735C44;
   --color-ss-subtext0: #654F3B;

@@ -1,7 +1,7 @@
 {
   "name": "Subway Seat Enamel",
   "type": "custom",
-  "Background": "#F4E9D4",
+  "Background": "#F8EFDF",
   "Foreground": "#3E2C1E",
   "LightBlue": "#54402F",
   "AccentBlue": "#AD4E00",
@@ -14,7 +14,7 @@
   "DiffRemoved": "#EBD3D1",
   "Comment": "#8C7254",
   "Gray": "#735C44",
-  "DarkGray": "#BAA07A",
+  "DarkGray": "#BAA380",
   "GradientColors": [
     "#992418",
     "#AD4E00",
@@ -28,7 +28,7 @@
     "response": "#3E2C1E"
   },
   "background": {
-    "primary": "#F4E9D4",
+    "primary": "#F8EFDF",
     "diff": {
       "added": "#D7DBC1",
       "removed": "#EBD3D1"

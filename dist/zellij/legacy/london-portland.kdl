@@ -4,8 +4,8 @@
 themes {
     london-portland {
         fg "#293040"
-        bg "#A1B7E5"
-        black "#D4E0F6"
+        bg "#A8BBE2"
+        black "#DCE5F7"
         red "#C92B23"
         green "#B14A07" // active frame, selected tab
         yellow "#896800"

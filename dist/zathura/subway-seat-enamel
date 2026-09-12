@@ -2,33 +2,33 @@
 # Subway Seat Enamel for zathura. In zathurarc: include subway-seat-enamel
 
 # window
-set default-bg              "#F4E9D4"
+set default-bg              "#F8EFDF"
 set default-fg              "#3E2C1E"
-set statusbar-bg            "#EBDEC6"
+set statusbar-bg            "#EEE4D0"
 set statusbar-fg            "#54402F"
-set inputbar-bg             "#EBDEC6"
+set inputbar-bg             "#EEE4D0"
 set inputbar-fg             "#3E2C1E"
 
 # notifications
-set notification-bg         "#FAF4EA"
+set notification-bg         "#FCF7EF"
 set notification-fg         "#3E2C1E"
 set notification-error-bg   "#992418"
-set notification-error-fg   "#F4E9D4"
+set notification-error-fg   "#F8EFDF"
 set notification-warning-bg "#936200"
-set notification-warning-fg "#F4E9D4"
+set notification-warning-fg "#F8EFDF"
 
 # completion
-set completion-bg           "#FAF4EA"
+set completion-bg           "#FCF7EF"
 set completion-fg           "#3E2C1E"
-set completion-group-bg     "#EBDEC6"
+set completion-group-bg     "#EEE4D0"
 set completion-group-fg     "#654F3B"
-set completion-highlight-bg "#CAB48E"
+set completion-highlight-bg "#CBB898"
 set completion-highlight-fg "#2A1D13"
 
 # index (table of contents)
-set index-bg                "#F4E9D4"
+set index-bg                "#F8EFDF"
 set index-fg                "#3E2C1E"
-set index-active-bg         "#CAB48E"
+set index-active-bg         "#CBB898"
 set index-active-fg         "#2A1D13"
 
 # search hits and link hints, washed over the page
@@ -37,7 +37,7 @@ set highlight-active-color  "rgba(173,78,0,0.5)"
 set highlight-fg            "#2A1D13"
 
 # pages while they render
-set render-loading-bg       "#F4E9D4"
+set render-loading-bg       "#F8EFDF"
 set render-loading-fg       "#8C7254"
 
 # digital signatures
@@ -46,7 +46,7 @@ set signature-warning-color "#936200"
 set signature-error-color   "#BC4031"
 
 # recoloring: white paper → base, black ink → text; Ctrl+R toggles it
-set recolor-lightcolor      "#F4E9D4"
+set recolor-lightcolor      "#F8EFDF"
 set recolor-darkcolor       "#3E2C1E"
 set recolor                 "true"
 set recolor-keephue         "true"

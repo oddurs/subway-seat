@@ -2,9 +2,9 @@
 /* London Portland for Vimium: paste into Options › CSS for Vimium UI. */
 
 :root {
-  --vimium-background-color: #E0EAFE;
+  --vimium-background-color: #E8F0FF;
   --vimium-background-text-color: #293040;
-  --vimium-foreground-color: #D4E0F6;
+  --vimium-foreground-color: #DCE5F7;
   --vimium-foreground-text-color: #293040;
   --vimium-link-color: #0019A8;
 }
@@ -19,7 +19,7 @@ div.internal-vimium-hint-marker {
 }
 
 div.internal-vimium-hint-marker span {
-  color: #E0EAFE;
+  color: #E8F0FF;
   text-shadow: none;
 }
 
@@ -28,7 +28,7 @@ div.internal-vimium-hint-marker > .matchingCharacter {
 }
 
 div > .vimiumActiveHintMarker span {
-  color: #C5D5F3 !important;
+  color: #CCDAF2 !important;
 }
 
 div.internal-vimium-input-hint {
@@ -47,27 +47,27 @@ div.vimium-flash {
 
 body.vimium-find-mode ::selection {
   background: #B14A07;
-  color: #E0EAFE;
+  color: #E8F0FF;
 }
 
 /* Vomnibar */
 #vomnibar {
-  background: #F0F4FE;
+  background: #F4F8FF;
   color: #293040;
-  border: 1px solid #D4D8E3;
+  border: 1px solid #D7DCE4;
   border-radius: 8px;
   box-shadow: 0 12px 32px rgba(27, 32, 43, 0.2);
 }
 
 #vomnibar #vomnibar-search-area {
-  background: #F0F4FE;
-  border-bottom: 1px solid #D4D8E3;
+  background: #F4F8FF;
+  border-bottom: 1px solid #D7DCE4;
 }
 
 #vomnibar input {
   color: #1B202B;
-  background: #E0EAFE;
-  border: 1px solid #A1B7E5;
+  background: #E8F0FF;
+  border: 1px solid #A8BBE2;
   border-radius: 5px;
   box-shadow: none;
 }
@@ -77,16 +77,16 @@ body.vimium-find-mode ::selection {
 }
 
 #vomnibar input::selection {
-  background-color: #A1B7E5;
+  background-color: #A8BBE2;
   color: #1B202B;
 }
 
 #vomnibar ul {
-  background: #F0F4FE;
+  background: #F4F8FF;
 }
 
 #vomnibar li {
-  border-bottom: 1px solid #D4D8E3;
+  border-bottom: 1px solid #D7DCE4;
 }
 
 #vomnibar li .source {
@@ -109,24 +109,24 @@ body.vimium-find-mode ::selection {
 }
 
 #vomnibar li .relevancy {
-  color: #7F91B4;
+  color: #8192B4;
 }
 
 #vomnibar li.selected {
-  background-color: #D9D4DB;
+  background-color: #E0D9DC;
 }
 
 /* Find HUD */
 #hud-container {
-  background-color: #F0F4FE;
+  background-color: #F4F8FF;
   color: #293040;
-  border: 1px solid #D4D8E3;
+  border: 1px solid #D7DCE4;
   box-shadow: none;
 }
 
 #hud-container #search-area,
 #hud-container #hud {
-  background-color: #F0F4FE;
+  background-color: #F4F8FF;
   color: #293040;
 }
 
@@ -136,12 +136,12 @@ span#hud-match-count {
 
 /* Help dialog */
 #container {
-  background-color: #E0EAFE;
-  border: 1px solid #A1B7E5;
+  background-color: #E8F0FF;
+  border: 1px solid #A8BBE2;
 }
 
 #dialog {
-  background-color: #E0EAFE;
+  background-color: #E8F0FF;
   color: #293040;
 }
 
@@ -164,21 +164,21 @@ span#hud-match-count {
 }
 
 #dialog div.divider {
-  background-color: #A1B7E5;
+  background-color: #A8BBE2;
 }
 
 #dialog .key,
 body.vimium-body .key {
   color: #293040;
-  background-color: #D4E0F6;
-  border: 1px solid #A1B7E5;
-  border-bottom-color: #8FA5D0;
+  background-color: #DCE5F7;
+  border: 1px solid #A8BBE2;
+  border-bottom-color: #93A7CF;
   box-shadow: none;
 }
 
 /* Options and exclusions pages */
 body.vimium-body {
-  background-color: #E0EAFE;
+  background-color: #E8F0FF;
   color: #293040;
 }
 
@@ -189,8 +189,8 @@ body.vimium-body a:visited {
 
 body.vimium-body textarea,
 body.vimium-body input {
-  background-color: #D4E0F6;
-  border-color: #A1B7E5;
+  background-color: #DCE5F7;
+  border-color: #A8BBE2;
   color: #293040;
 }
 

@@ -1,13 +1,13 @@
 /* Subway Seat — generated from palette.py by build.py. Edit the palette, not this file. */
 /* London Portland for waybar: @import it at the top of style.css. */
 
-@define-color crust #C5D5F3;
-@define-color mantle #D4E0F6;
-@define-color base #E0EAFE;
-@define-color surface0 #B6CAF3;
-@define-color surface1 #A1B7E5;
-@define-color surface2 #8FA5D0;
-@define-color overlay0 #7F91B4;
+@define-color crust #CCDAF2;
+@define-color mantle #DCE5F7;
+@define-color base #E8F0FF;
+@define-color surface0 #BFCFF1;
+@define-color surface1 #A8BBE2;
+@define-color surface2 #93A7CF;
+@define-color overlay0 #8192B4;
 @define-color overlay1 #697794;
 @define-color overlay2 #556179;
 @define-color subtext0 #4A5469;
@@ -29,7 +29,7 @@
 @define-color clay #7660AB;
 
 /* Layers: a raised ground for popovers, and washes of text for borders, hover and selection */
-@define-color paper #F0F4FE;
+@define-color paper #F4F8FF;
 @define-color edge alpha(@text, 0.14);
 @define-color hover alpha(@text, 0.07);
 @define-color selection alpha(@text, 0.13);

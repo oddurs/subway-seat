@@ -40,13 +40,13 @@ pre[class*="language-"] {
 
 code[class*="language-"],
 pre[class*="language-"] { color: #3E2C1E; }
-pre[class*="language-"] { background: #F4E9D4; }
-:not(pre) > code[class*="language-"] { background: #D9C8A7; }
+pre[class*="language-"] { background: #F8EFDF; }
+:not(pre) > code[class*="language-"] { background: #DBCDB3; }
 
 code[class*="language-"]::selection, code[class*="language-"] ::selection,
 pre[class*="language-"]::selection, pre[class*="language-"] ::selection {
   color: #2A1D13;
-  background: #CAB48E;
+  background: #CBB898;
 }
 
 .token.comment, .token.prolog, .token.doctype, .token.cdata { color: #8C7254; font-style: italic; }

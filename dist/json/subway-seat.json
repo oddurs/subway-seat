@@ -1128,100 +1128,100 @@
       "colors": {
         "crust": {
           "name": "Enamel crust",
-          "hex": "#E2D3B6",
+          "hex": "#E4D8C0",
           "rgb": [
-            226,
-            211,
-            182
+            228,
+            216,
+            192
           ],
           "hsl": [
             40,
-            43,
-            80
+            40,
+            82
           ]
         },
         "mantle": {
           "name": "Enamel mantle",
-          "hex": "#EBDEC6",
+          "hex": "#EEE4D0",
           "rgb": [
-            235,
-            222,
-            198
+            238,
+            228,
+            208
           ],
           "hsl": [
-            39,
-            48,
-            85
+            40,
+            47,
+            87
           ]
         },
         "base": {
           "name": "Enamel base",
-          "hex": "#F4E9D4",
+          "hex": "#F8EFDF",
           "rgb": [
-            244,
-            233,
-            212
+            248,
+            239,
+            223
           ],
           "hsl": [
-            39,
-            59,
-            89
+            38,
+            64,
+            92
           ]
         },
         "surface0": {
           "name": "Enamel surface0",
-          "hex": "#D9C8A7",
+          "hex": "#DBCDB3",
           "rgb": [
-            217,
-            200,
-            167
+            219,
+            205,
+            179
           ],
           "hsl": [
-            40,
-            40,
-            75
+            39,
+            36,
+            78
           ]
         },
         "surface1": {
           "name": "Enamel surface1",
-          "hex": "#CAB48E",
+          "hex": "#CBB898",
           "rgb": [
-            202,
-            180,
-            142
+            203,
+            184,
+            152
           ],
           "hsl": [
             38,
-            36,
-            67
+            33,
+            70
           ]
         },
         "surface2": {
           "name": "Enamel surface2",
-          "hex": "#BAA07A",
+          "hex": "#BAA380",
           "rgb": [
             186,
-            160,
-            122
+            163,
+            128
           ],
           "hsl": [
             36,
-            32,
-            60
+            30,
+            62
           ]
         },
         "overlay0": {
           "name": "Enamel overlay0",
-          "hex": "#A58C6A",
+          "hex": "#A58D6D",
           "rgb": [
             165,
-            140,
-            106
+            141,
+            109
           ],
           "hsl": [
-            35,
-            25,
-            53
+            34,
+            24,
+            54
           ]
         },
         "overlay1": {
@@ -1538,7 +1538,7 @@
           "index": 7,
           "name": "white",
           "role": "surface2",
-          "hex": "#BAA07A"
+          "hex": "#BAA380"
         },
         {
           "index": 8,
@@ -1586,7 +1586,7 @@
           "index": 15,
           "name": "bright_white",
           "role": "surface1",
-          "hex": "#CAB48E"
+          "hex": "#CBB898"
         }
       ],
       "diff": {
@@ -2568,100 +2568,100 @@
       "colors": {
         "crust": {
           "name": "Portland crust",
-          "hex": "#C5D5F3",
+          "hex": "#CCDAF2",
           "rgb": [
-            197,
-            213,
-            243
+            204,
+            218,
+            242
           ],
           "hsl": [
-            219,
-            66,
-            86
+            218,
+            59,
+            87
           ]
         },
         "mantle": {
           "name": "Portland mantle",
-          "hex": "#D4E0F6",
+          "hex": "#DCE5F7",
           "rgb": [
-            212,
-            224,
-            246
+            220,
+            229,
+            247
           ],
           "hsl": [
-            219,
-            65,
-            90
+            220,
+            63,
+            92
           ]
         },
         "base": {
           "name": "Portland base",
-          "hex": "#E0EAFE",
+          "hex": "#E8F0FF",
           "rgb": [
-            224,
-            234,
-            254
+            232,
+            240,
+            255
           ],
           "hsl": [
-            220,
-            94,
-            94
+            219,
+            100,
+            95
           ]
         },
         "surface0": {
           "name": "Portland surface0",
-          "hex": "#B6CAF3",
+          "hex": "#BFCFF1",
           "rgb": [
-            182,
-            202,
-            243
+            191,
+            207,
+            241
           ],
           "hsl": [
-            220,
-            72,
-            83
+            221,
+            64,
+            85
           ]
         },
         "surface1": {
           "name": "Portland surface1",
-          "hex": "#A1B7E5",
+          "hex": "#A8BBE2",
           "rgb": [
-            161,
-            183,
-            229
+            168,
+            187,
+            226
           ],
           "hsl": [
-            221,
-            57,
-            76
+            220,
+            50,
+            77
           ]
         },
         "surface2": {
           "name": "Portland surface2",
-          "hex": "#8FA5D0",
+          "hex": "#93A7CF",
           "rgb": [
-            143,
-            165,
-            208
+            147,
+            167,
+            207
           ],
           "hsl": [
             220,
-            41,
+            38,
             69
           ]
         },
         "overlay0": {
           "name": "Portland overlay0",
-          "hex": "#7F91B4",
+          "hex": "#8192B4",
           "rgb": [
-            127,
-            145,
+            129,
+            146,
             180
           ],
           "hsl": [
             220,
-            26,
-            60
+            25,
+            61
           ]
         },
         "overlay1": {
@@ -2978,7 +2978,7 @@
           "index": 7,
           "name": "white",
           "role": "surface2",
-          "hex": "#8FA5D0"
+          "hex": "#93A7CF"
         },
         {
           "index": 8,
@@ -3026,7 +3026,7 @@
           "index": 15,
           "name": "bright_white",
           "role": "surface1",
-          "hex": "#A1B7E5"
+          "hex": "#A8BBE2"
         }
       ],
       "diff": {
@@ -4008,99 +4008,99 @@
       "colors": {
         "crust": {
           "name": "Carrelage crust",
-          "hex": "#BFDDCD",
+          "hex": "#C8E0D3",
           "rgb": [
-            191,
-            221,
-            205
+            200,
+            224,
+            211
           ],
           "hsl": [
-            148,
-            31,
-            81
+            147,
+            28,
+            83
           ]
         },
         "mantle": {
           "name": "Carrelage mantle",
-          "hex": "#D0E6D8",
+          "hex": "#D8EADF",
           "rgb": [
-            208,
-            230,
-            216
+            216,
+            234,
+            223
           ],
           "hsl": [
-            142,
-            31,
-            86
+            143,
+            30,
+            88
           ]
         },
         "base": {
           "name": "Carrelage base",
-          "hex": "#DEF0E6",
+          "hex": "#E7F5ED",
           "rgb": [
-            222,
-            240,
-            230
+            231,
+            245,
+            237
           ],
           "hsl": [
-            147,
-            37,
-            91
+            146,
+            41,
+            93
           ]
         },
         "surface0": {
           "name": "Carrelage surface0",
-          "hex": "#ACD5BF",
+          "hex": "#B7D8C6",
           "rgb": [
-            172,
-            213,
-            191
+            183,
+            216,
+            198
           ],
           "hsl": [
-            148,
-            33,
-            75
+            147,
+            30,
+            78
           ]
         },
         "surface1": {
           "name": "Carrelage surface1",
-          "hex": "#96C4AC",
+          "hex": "#9FC6B1",
           "rgb": [
-            150,
-            196,
-            172
+            159,
+            198,
+            177
           ],
           "hsl": [
-            149,
-            28,
-            68
+            148,
+            25,
+            70
           ]
         },
         "surface2": {
           "name": "Carrelage surface2",
-          "hex": "#84B09A",
+          "hex": "#89B19D",
           "rgb": [
-            132,
-            176,
-            154
+            137,
+            177,
+            157
           ],
           "hsl": [
             150,
-            22,
-            60
+            20,
+            62
           ]
         },
         "overlay0": {
           "name": "Carrelage overlay0",
-          "hex": "#769B87",
+          "hex": "#789C88",
           "rgb": [
-            118,
-            155,
-            135
+            120,
+            156,
+            136
           ],
           "hsl": [
-            148,
-            16,
+            147,
+            15,
             54
           ]
         },
@@ -4418,7 +4418,7 @@
           "index": 7,
           "name": "white",
           "role": "surface2",
-          "hex": "#84B09A"
+          "hex": "#89B19D"
         },
         {
           "index": 8,
@@ -4466,7 +4466,7 @@
           "index": 15,
           "name": "bright_white",
           "role": "surface1",
-          "hex": "#96C4AC"
+          "hex": "#9FC6B1"
         }
       ],
       "diff": {

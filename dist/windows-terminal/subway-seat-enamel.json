@@ -2,10 +2,10 @@
     "schemes": [
         {
             "name": "Subway Seat Enamel",
-            "background": "#F4E9D4",
+            "background": "#F8EFDF",
             "foreground": "#3E2C1E",
             "cursorColor": "#AD4E00",
-            "selectionBackground": "#CAB48E",
+            "selectionBackground": "#CBB898",
             "black": "#54402F",
             "red": "#992418",
             "green": "#66740F",
@@ -13,7 +13,7 @@
             "blue": "#3F6480",
             "purple": "#AD4E00",
             "cyan": "#3E7157",
-            "white": "#BAA07A",
+            "white": "#BAA380",
             "brightBlack": "#8C7254",
             "brightRed": "#BC4031",
             "brightGreen": "#697813",
@@ -21,7 +21,7 @@
             "brightBlue": "#517791",
             "brightPurple": "#C4561A",
             "brightCyan": "#4C8367",
-            "brightWhite": "#CAB48E"
+            "brightWhite": "#CBB898"
         }
     ],
     "themes": [
@@ -30,16 +30,16 @@
             "window": {
                 "applicationTheme": "light",
                 "useMica": false,
-                "frame": "#E2D3B6FF",
-                "unfocusedFrame": "#E2D3B6FF"
+                "frame": "#E4D8C0FF",
+                "unfocusedFrame": "#E4D8C0FF"
             },
             "tabRow": {
-                "background": "#E2D3B6FF",
-                "unfocusedBackground": "#E2D3B6FF"
+                "background": "#E4D8C0FF",
+                "unfocusedBackground": "#E4D8C0FF"
             },
             "tab": {
-                "background": "#F4E9D4FF",
-                "unfocusedBackground": "#EBDEC6FF"
+                "background": "#F8EFDFFF",
+                "unfocusedBackground": "#EEE4D0FF"
             }
         }
     ]

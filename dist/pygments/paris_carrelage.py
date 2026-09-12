@@ -9,12 +9,12 @@ __all__ = ["ParisCarrelageStyle", "style"]
 
 class ParisCarrelageStyle(Style):
     name = "paris-carrelage"
-    background_color = "#DEF0E6"
-    highlight_color = "#D0E6D8"
-    line_number_color = "#769B87"
-    line_number_background_color = "#DEF0E6"
+    background_color = "#E7F5ED"
+    highlight_color = "#D8EADF"
+    line_number_color = "#789C88"
+    line_number_background_color = "#E7F5ED"
     line_number_special_color = "#754500"
-    line_number_special_background_color = "#D0E6D8"
+    line_number_special_background_color = "#D8EADF"
 
     styles = {
         Token: "#25352C",

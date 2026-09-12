@@ -14,7 +14,7 @@
         "font": "System",
         "color": "#627F70FF"
       },
-      "backgroundSelected": "#CDD5C1FF",
+      "backgroundSelected": "#D5D9C7FF",
       "text": {
         "size": 18,
         "colorSelected": "#18231DFF",
@@ -27,7 +27,7 @@
       "iconSize": 38
     },
     "search": {
-      "backgroundSelected": "#96C4ACFF",
+      "backgroundSelected": "#9FC6B1FF",
       "paddingHorizontal": 10,
       "spacing": 10,
       "text": {
@@ -36,26 +36,26 @@
         "font": "System Light",
         "color": "#25352CFF"
       },
-      "background": "#BFDDCDFF",
+      "background": "#C8E0D3FF",
       "roundness": 8,
       "paddingVertical": 6
     },
     "window": {
-      "color": "#DEF0E6F7",
+      "color": "#E7F5EDF7",
       "paddingHorizontal": 10,
       "width": 620,
       "borderPadding": 0,
-      "borderColor": "#96C4ACFF",
+      "borderColor": "#9FC6B1FF",
       "blur": 12,
       "roundness": 14,
       "paddingVertical": 10
     },
     "separator": {
-      "color": "#BFDDCDFF",
+      "color": "#C8E0D3FF",
       "thickness": 1
     },
     "scrollbar": {
-      "color": "#96C4ACFF",
+      "color": "#9FC6B1FF",
       "thickness": 3
     },
     "name": "Paris Carrelage",

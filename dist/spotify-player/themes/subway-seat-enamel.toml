@@ -4,7 +4,7 @@
 name = "subway-seat-enamel"
 
 [themes.palette]
-background = "#F4E9D4"
+background = "#F8EFDF"
 foreground = "#3E2C1E"
 black = "#54402F"
 red = "#992418"
@@ -13,7 +13,7 @@ yellow = "#936200"
 blue = "#3F6480"
 magenta = "#AD4E00"
 cyan = "#3E7157"
-white = "#BAA07A"
+white = "#BAA380"
 bright_black = "#8C7254"
 bright_red = "#BC4031"
 bright_green = "#697813"
@@ -21,25 +21,25 @@ bright_yellow = "#A56E00"
 bright_blue = "#517791"
 bright_magenta = "#C4561A"
 bright_cyan = "#4C8367"
-bright_white = "#CAB48E"
+bright_white = "#CBB898"
 
 [themes.component_style]
 block_title = { fg = "#AD4E00", modifiers = ["Bold"] }
-border = { fg = "#BAA07A" }
+border = { fg = "#BAA380" }
 playback_status = { fg = "#936200", modifiers = ["Bold"] }
 playback_track = { fg = "#936200", modifiers = ["Bold"] }
 playback_artists = { fg = "#AD4E00" }
 playback_album = { fg = "#3E7157" }
 playback_genres = { fg = "#8C7254", modifiers = ["Italic"] }
 playback_metadata = { fg = "#654F3B" }
-playback_progress_bar = { fg = "#AD4E00", bg = "#CAB48E" }
-playback_progress_bar_unfilled = { fg = "#BAA07A", bg = "#CAB48E" }
+playback_progress_bar = { fg = "#AD4E00", bg = "#CBB898" }
+playback_progress_bar_unfilled = { fg = "#BAA380", bg = "#CBB898" }
 current_playing = { fg = "#66740F", modifiers = ["Bold"] }
 page_desc = { fg = "#936200", modifiers = ["Bold"] }
 playlist_desc = { fg = "#8C7254" }
 table_header = { fg = "#AD4E00" }
-selection = { fg = "#2A1D13", bg = "#D9C8A7", modifiers = ["Bold"] }
-secondary_row = { bg = "#EBDEC6" }
+selection = { fg = "#2A1D13", bg = "#DBCDB3", modifiers = ["Bold"] }
+secondary_row = { bg = "#EEE4D0" }
 like = { fg = "#BC4031" }
 lyrics_played = { fg = "#8C7254" }
 lyrics_playing = { fg = "#936200", modifiers = ["Bold"] }

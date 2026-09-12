@@ -3,13 +3,13 @@ Name: Subway Seat Enamel
 Columns: 13
 # Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
 # Cream enamel panels in the morning sun. The light one.
-226 211 182	Enamel crust
-235 222 198	Enamel mantle
-244 233 212	Enamel base
-217 200 167	Enamel surface0
-202 180 142	Enamel surface1
-186 160 122	Enamel surface2
-165 140 106	Enamel overlay0
+228 216 192	Enamel crust
+238 228 208	Enamel mantle
+248 239 223	Enamel base
+219 205 179	Enamel surface0
+203 184 152	Enamel surface1
+186 163 128	Enamel surface2
+165 141 109	Enamel overlay0
 140 114  84	Enamel overlay1
 115  92  68	Enamel overlay2
 101  79  59	Enamel subtext0

@@ -2,14 +2,14 @@
 [Scheme]
 Name=London Portland
 ColorForeground=#293040
-ColorBackground=#E0EAFE
+ColorBackground=#E8F0FF
 ColorCursor=#B14A07
-ColorCursorForeground=#E0EAFE
+ColorCursorForeground=#E8F0FF
 ColorCursorUseDefault=FALSE
 ColorBold=#1B202B
 ColorBoldUseDefault=FALSE
 ColorSelection=#1B202B
-ColorSelectionBackground=#A1B7E5
+ColorSelectionBackground=#A8BBE2
 ColorSelectionUseDefault=FALSE
 TabActivityColor=#B14A07
-ColorPalette=#3C4557;#9B211A;#0D8131;#896800;#0019A8;#B14A07;#007376;#8FA5D0;#697794;#C92B23;#008730;#977300;#4A6EBD;#B86100;#008688;#A1B7E5
+ColorPalette=#3C4557;#9B211A;#0D8131;#896800;#0019A8;#B14A07;#007376;#93A7CF;#697794;#C92B23;#008730;#977300;#4A6EBD;#B86100;#008688;#A8BBE2

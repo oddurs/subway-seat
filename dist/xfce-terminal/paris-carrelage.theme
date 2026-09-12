@@ -2,14 +2,14 @@
 [Scheme]
 Name=Paris Carrelage
 ColorForeground=#25352C
-ColorBackground=#DEF0E6
+ColorBackground=#E7F5ED
 ColorCursor=#754500
-ColorCursorForeground=#DEF0E6
+ColorCursorForeground=#E7F5ED
 ColorCursorUseDefault=FALSE
 ColorBold=#18231D
 ColorBoldUseDefault=FALSE
 ColorSelection=#18231D
-ColorSelectionBackground=#96C4AC
+ColorSelectionBackground=#9FC6B1
 ColorSelectionUseDefault=FALSE
 TabActivityColor=#754500
-ColorPalette=#374940;#932D29;#207F41;#8A6700;#27629C;#754500;#086142;#84B09A;#627F70;#BB403B;#168540;#997300;#3E75AD;#AE6800;#3D8666;#96C4AC
+ColorPalette=#374940;#932D29;#207F41;#8A6700;#27629C;#754500;#086142;#89B19D;#627F70;#BB403B;#168540;#997300;#3E75AD;#AE6800;#3D8666;#9FC6B1

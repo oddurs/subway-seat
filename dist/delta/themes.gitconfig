@@ -105,8 +105,8 @@
 	line-numbers-plus-style = "#66740F"
 	line-numbers-minus-style = "#BC4031"
 	line-numbers-zero-style = "#8C7254"
-	line-numbers-left-style = "#A58C6A"
-	line-numbers-right-style = "#A58C6A"
+	line-numbers-left-style = "#A58D6D"
+	line-numbers-right-style = "#A58D6D"
 	# file and hunk headers
 	file-style = "#2A1D13" bold
 	file-decoration-style = "#AD4E00" ul
@@ -117,13 +117,13 @@
 	commit-decoration-style = "#936200" box
 	inline-hint-style = "#8C7254"
 	# git blame
-	blame-palette = "#F4E9D4 #EBDEC6 #E2D3B6"
-	blame-separator-style = "#A58C6A"
+	blame-palette = "#F8EFDF #EEE4D0 #E4D8C0"
+	blame-separator-style = "#A58D6D"
 	# git grep / rg --json
 	grep-file-style = "#AD4E00"
 	grep-line-number-style = "#66740F"
 	grep-match-line-style = syntax
-	grep-match-word-style = "#2A1D13" "#D7C094" bold
+	grep-match-word-style = "#2A1D13" "#DAC59C" bold
 	grep-header-file-style = "#AD4E00" bold
 	# merge conflicts (git's diff3 or zdiff3 conflict style)
 	merge-conflict-ours-diff-header-style = "#936200" bold
@@ -237,8 +237,8 @@
 	line-numbers-plus-style = "#0D8131"
 	line-numbers-minus-style = "#C92B23"
 	line-numbers-zero-style = "#697794"
-	line-numbers-left-style = "#7F91B4"
-	line-numbers-right-style = "#7F91B4"
+	line-numbers-left-style = "#8192B4"
+	line-numbers-right-style = "#8192B4"
 	# file and hunk headers
 	file-style = "#1B202B" bold
 	file-decoration-style = "#B14A07" ul
@@ -249,13 +249,13 @@
 	commit-decoration-style = "#896800" box
 	inline-hint-style = "#697794"
 	# git blame
-	blame-palette = "#E0EAFE #D4E0F6 #C5D5F3"
-	blame-separator-style = "#7F91B4"
+	blame-palette = "#E8F0FF #DCE5F7 #CCDAF2"
+	blame-separator-style = "#8192B4"
 	# git grep / rg --json
 	grep-file-style = "#B14A07"
 	grep-line-number-style = "#0D8131"
 	grep-match-line-style = syntax
-	grep-match-word-style = "#1B202B" "#C6C3B2" bold
+	grep-match-word-style = "#1B202B" "#CBC7B2" bold
 	grep-header-file-style = "#B14A07" bold
 	# merge conflicts (git's diff3 or zdiff3 conflict style)
 	merge-conflict-ours-diff-header-style = "#896800" bold
@@ -369,8 +369,8 @@
 	line-numbers-plus-style = "#207F41"
 	line-numbers-minus-style = "#BB403B"
 	line-numbers-zero-style = "#627F70"
-	line-numbers-left-style = "#769B87"
-	line-numbers-right-style = "#769B87"
+	line-numbers-left-style = "#789C88"
+	line-numbers-right-style = "#789C88"
 	# file and hunk headers
 	file-style = "#18231D" bold
 	file-decoration-style = "#754500" ul
@@ -381,13 +381,13 @@
 	commit-decoration-style = "#8A6700" box
 	inline-hint-style = "#627F70"
 	# git blame
-	blame-palette = "#DEF0E6 #D0E6D8 #BFDDCD"
-	blame-separator-style = "#769B87"
+	blame-palette = "#E7F5ED #D8EADF #C8E0D3"
+	blame-separator-style = "#789C88"
 	# git grep / rg --json
 	grep-file-style = "#754500"
 	grep-line-number-style = "#207F41"
 	grep-match-line-style = syntax
-	grep-match-word-style = "#18231D" "#C5C7A1" bold
+	grep-match-word-style = "#18231D" "#CBCAA6" bold
 	grep-header-file-style = "#754500" bold
 	# merge conflicts (git's diff3 or zdiff3 conflict style)
 	merge-conflict-ours-diff-header-style = "#8A6700" bold

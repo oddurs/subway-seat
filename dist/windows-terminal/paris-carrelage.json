@@ -2,10 +2,10 @@
     "schemes": [
         {
             "name": "Paris Carrelage",
-            "background": "#DEF0E6",
+            "background": "#E7F5ED",
             "foreground": "#25352C",
             "cursorColor": "#754500",
-            "selectionBackground": "#96C4AC",
+            "selectionBackground": "#9FC6B1",
             "black": "#374940",
             "red": "#932D29",
             "green": "#207F41",
@@ -13,7 +13,7 @@
             "blue": "#27629C",
             "purple": "#754500",
             "cyan": "#086142",
-            "white": "#84B09A",
+            "white": "#89B19D",
             "brightBlack": "#627F70",
             "brightRed": "#BB403B",
             "brightGreen": "#168540",
@@ -21,7 +21,7 @@
             "brightBlue": "#3E75AD",
             "brightPurple": "#AE6800",
             "brightCyan": "#3D8666",
-            "brightWhite": "#96C4AC"
+            "brightWhite": "#9FC6B1"
         }
     ],
     "themes": [
@@ -30,16 +30,16 @@
             "window": {
                 "applicationTheme": "light",
                 "useMica": false,
-                "frame": "#BFDDCDFF",
-                "unfocusedFrame": "#BFDDCDFF"
+                "frame": "#C8E0D3FF",
+                "unfocusedFrame": "#C8E0D3FF"
             },
             "tabRow": {
-                "background": "#BFDDCDFF",
-                "unfocusedBackground": "#BFDDCDFF"
+                "background": "#C8E0D3FF",
+                "unfocusedBackground": "#C8E0D3FF"
             },
             "tab": {
-                "background": "#DEF0E6FF",
-                "unfocusedBackground": "#D0E6D8FF"
+                "background": "#E7F5EDFF",
+                "unfocusedBackground": "#D8EADFFF"
             }
         }
     ]

@@ -1,11 +1,11 @@
 # Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
 # London Portland for matplotlib. Colors are hex without the leading #, as rc files expect.
-figure.facecolor: E0EAFE
-figure.edgecolor: E0EAFE
-savefig.facecolor: E0EAFE
-savefig.edgecolor: E0EAFE
-axes.facecolor: E0EAFE
-axes.edgecolor: 7F91B4
+figure.facecolor: E8F0FF
+figure.edgecolor: E8F0FF
+savefig.facecolor: E8F0FF
+savefig.edgecolor: E8F0FF
+axes.facecolor: E8F0FF
+axes.edgecolor: 8192B4
 axes.labelcolor: 3C4557
 axes.titlecolor: 1B202B
 axes.prop_cycle: cycler('color', ['B14A07', '007376', '896800', '0019A8', 'C92B23', '0D8131', '7660AB'])
@@ -14,11 +14,11 @@ xtick.color: 697794
 ytick.color: 697794
 xtick.labelcolor: 4A5469
 ytick.labelcolor: 4A5469
-grid.color: CDD7EB
-legend.facecolor: F0F4FE
-legend.edgecolor: D4D8E3
+grid.color: D5DCEC
+legend.facecolor: F4F8FF
+legend.edgecolor: D7DCE4
 patch.facecolor: B14A07
-patch.edgecolor: E0EAFE
+patch.edgecolor: E8F0FF
 hatch.color: 4A5469
 boxplot.boxprops.color: 3C4557
 boxplot.whiskerprops.color: 3C4557

@@ -27,13 +27,13 @@
     "walnutDenim": "#7F9BAE",
     "walnutDenimHi": "#9DB6C6",
     "walnutClay": "#F4A87E",
-    "enamelCrust": "#E2D3B6",
-    "enamelMantle": "#EBDEC6",
-    "enamelBase": "#F4E9D4",
-    "enamelSurface0": "#D9C8A7",
-    "enamelSurface1": "#CAB48E",
-    "enamelSurface2": "#BAA07A",
-    "enamelOverlay0": "#A58C6A",
+    "enamelCrust": "#E4D8C0",
+    "enamelMantle": "#EEE4D0",
+    "enamelBase": "#F8EFDF",
+    "enamelSurface0": "#DBCDB3",
+    "enamelSurface1": "#CBB898",
+    "enamelSurface2": "#BAA380",
+    "enamelOverlay0": "#A58D6D",
     "enamelOverlay1": "#8C7254",
     "enamelOverlay2": "#735C44",
     "enamelSubtext0": "#654F3B",
@@ -109,7 +109,7 @@
     },
     "backgroundMenu": {
       "dark": "#43301F",
-      "light": "#FAF4EA"
+      "light": "#FCF7EF"
     },
     "border": {
       "dark": "walnutSurface2",
@@ -165,11 +165,11 @@
     },
     "diffAddedLineNumberBg": {
       "dark": "#42351F",
-      "light": "#E6DDC0"
+      "light": "#E9E3CA"
     },
     "diffRemovedLineNumberBg": {
       "dark": "#492C1E",
-      "light": "#EAD3BF"
+      "light": "#EED9C9"
     },
     "markdownText": {
       "dark": "walnutText",

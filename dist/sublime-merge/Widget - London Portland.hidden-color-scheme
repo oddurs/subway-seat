@@ -3,12 +3,12 @@
   "name": "London Portland Widgets",
   "globals": {
     "foreground": "#293040",
-    "background": "#F0F4FE",
+    "background": "#F4F8FF",
     "caret": "#B14A07",
-    "line_highlight": "#F0F4FE",
-    "selection": "#A1B7E5",
-    "selection_border": "#A1B7E5",
-    "inactive_selection": "#A1B7E5"
+    "line_highlight": "#F4F8FF",
+    "selection": "#A8BBE2",
+    "selection_border": "#A8BBE2",
+    "inactive_selection": "#A8BBE2"
   },
   "rules": [
     {

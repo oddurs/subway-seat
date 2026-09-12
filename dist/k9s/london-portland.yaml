@@ -3,7 +3,7 @@
 k9s:
   body:
     fgColor: '#293040'
-    bgColor: '#E0EAFE'
+    bgColor: '#E8F0FF'
     logoColor: '#B14A07'
     logoColorMsg: '#293040'
     logoColorInfo: '#0D8131'
@@ -11,7 +11,7 @@ k9s:
     logoColorError: '#C92B23'
   prompt:
     fgColor: '#293040'
-    bgColor: '#C5D5F3'
+    bgColor: '#CCDAF2'
     suggestColor: '#697794'
     border:
       default: '#007376'
@@ -24,26 +24,26 @@ k9s:
     k9sRevColor: '#008730'
   help:
     fgColor: '#293040'
-    bgColor: '#E0EAFE'
+    bgColor: '#E8F0FF'
     sectionColor: '#0D8131'
     keyColor: '#896800'
     numKeyColor: '#C92B23'
   frame:
     title:
       fgColor: '#896800'
-      bgColor: '#E0EAFE'
+      bgColor: '#E8F0FF'
       highlightColor: '#B14A07'
       counterColor: '#C92B23'
       filterColor: '#0D8131'
     border:
-      fgColor: '#8FA5D0'
+      fgColor: '#93A7CF'
       focusColor: '#B14A07'
     menu:
       fgColor: '#3C4557'
       keyColor: '#896800'
       numKeyColor: '#C92B23'
     crumbs:
-      fgColor: '#E0EAFE'
+      fgColor: '#E8F0FF'
       bgColor: '#896800'
       activeColor: '#B14A07'
     status:
@@ -54,29 +54,29 @@ k9s:
       errorColor: '#C92B23'
       highlightColor: '#977300'
       killColor: '#7660AB'
-      completedColor: '#7F91B4'
+      completedColor: '#8192B4'
   views:
     table:
       fgColor: '#293040'
-      bgColor: '#E0EAFE'
+      bgColor: '#E8F0FF'
       cursorFgColor: '#1B202B'
-      cursorBgColor: '#B6CAF3'
+      cursorBgColor: '#BFCFF1'
       markColor: '#B86100'
       header:
         fgColor: '#4A5469'
-        bgColor: '#E0EAFE'
+        bgColor: '#E8F0FF'
         sorterColor: '#B14A07'
         selectedSortColumnColor: '#B14A07'
     xray:
       fgColor: '#293040'
-      bgColor: '#E0EAFE'
-      cursorColor: '#B6CAF3'
+      bgColor: '#E8F0FF'
+      cursorColor: '#BFCFF1'
       cursorTextColor: '#1B202B'
       graphicColor: '#007376'
     charts:
-      bgColor: '#E0EAFE'
-      chartBgColor: '#E0EAFE'
-      dialBgColor: '#E0EAFE'
+      bgColor: '#E8F0FF'
+      chartBgColor: '#E8F0FF'
+      dialBgColor: '#E8F0FF'
       defaultDialColors:
         - '#0D8131'
         - '#C92B23'
@@ -90,7 +90,7 @@ k9s:
         mem:
           - '#896800'
           - '#0D8131'
-      focusFgColor: '#E0EAFE'
+      focusFgColor: '#E8F0FF'
       focusBgColor: '#B14A07'
     yaml:
       keyColor: '#896800'
@@ -98,22 +98,22 @@ k9s:
       colonColor: '#556179'
     logs:
       fgColor: '#293040'
-      bgColor: '#E0EAFE'
+      bgColor: '#E8F0FF'
       indicator:
         fgColor: '#4A5469'
-        bgColor: '#E0EAFE'
+        bgColor: '#E8F0FF'
         toggleOnColor: '#0D8131'
-        toggleOffColor: '#7F91B4'
+        toggleOffColor: '#8192B4'
     picker:
       mainColor: '#293040'
       focusColor: '#B14A07'
       shortcutColor: '#896800'
   dialog:
     fgColor: '#293040'
-    bgColor: '#B6CAF3'
+    bgColor: '#BFCFF1'
     buttonFgColor: '#293040'
-    buttonBgColor: '#8FA5D0'
-    buttonFocusFgColor: '#E0EAFE'
+    buttonBgColor: '#93A7CF'
+    buttonFocusFgColor: '#E8F0FF'
     buttonFocusBgColor: '#B14A07'
     labelFgColor: '#896800'
     fieldFgColor: '#293040'

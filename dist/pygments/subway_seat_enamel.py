@@ -9,12 +9,12 @@ __all__ = ["SubwaySeatEnamelStyle", "style"]
 
 class SubwaySeatEnamelStyle(Style):
     name = "subway-seat-enamel"
-    background_color = "#F4E9D4"
-    highlight_color = "#EBDEC6"
-    line_number_color = "#A58C6A"
-    line_number_background_color = "#F4E9D4"
+    background_color = "#F8EFDF"
+    highlight_color = "#EEE4D0"
+    line_number_color = "#A58D6D"
+    line_number_background_color = "#F8EFDF"
     line_number_special_color = "#AD4E00"
-    line_number_special_background_color = "#EBDEC6"
+    line_number_special_background_color = "#EEE4D0"
 
     styles = {
         Token: "#3E2C1E",

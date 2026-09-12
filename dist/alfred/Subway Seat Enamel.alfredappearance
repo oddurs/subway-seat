@@ -14,7 +14,7 @@
         "font": "System",
         "color": "#8C7254FF"
       },
-      "backgroundSelected": "#E9D0B2FF",
+      "backgroundSelected": "#ECD5BBFF",
       "text": {
         "size": 18,
         "colorSelected": "#2A1D13FF",
@@ -27,7 +27,7 @@
       "iconSize": 38
     },
     "search": {
-      "backgroundSelected": "#CAB48EFF",
+      "backgroundSelected": "#CBB898FF",
       "paddingHorizontal": 10,
       "spacing": 10,
       "text": {
@@ -36,26 +36,26 @@
         "font": "System Light",
         "color": "#3E2C1EFF"
       },
-      "background": "#E2D3B6FF",
+      "background": "#E4D8C0FF",
       "roundness": 8,
       "paddingVertical": 6
     },
     "window": {
-      "color": "#F4E9D4F7",
+      "color": "#F8EFDFF7",
       "paddingHorizontal": 10,
       "width": 620,
       "borderPadding": 0,
-      "borderColor": "#CAB48EFF",
+      "borderColor": "#CBB898FF",
       "blur": 12,
       "roundness": 14,
       "paddingVertical": 10
     },
     "separator": {
-      "color": "#E2D3B6FF",
+      "color": "#E4D8C0FF",
       "thickness": 1
     },
     "scrollbar": {
-      "color": "#CAB48EFF",
+      "color": "#CBB898FF",
       "thickness": 3
     },
     "name": "Subway Seat Enamel",

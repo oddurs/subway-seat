@@ -5,8 +5,8 @@
   "name": "Subway Seat Enamel",
   "appearance": "light",
   "colors": {
-    "background": "#F4E9D4",
-    "backgroundSecondary": "#EBDEC6",
+    "background": "#F8EFDF",
+    "backgroundSecondary": "#EEE4D0",
     "text": "#3E2C1E",
     "selection": "#AD4E00",
     "loader": "#936200",

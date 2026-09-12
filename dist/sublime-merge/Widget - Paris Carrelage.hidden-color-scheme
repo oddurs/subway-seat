@@ -3,12 +3,12 @@
   "name": "Paris Carrelage Widgets",
   "globals": {
     "foreground": "#25352C",
-    "background": "#EEF8F2",
+    "background": "#F3FAF6",
     "caret": "#754500",
-    "line_highlight": "#EEF8F2",
-    "selection": "#96C4AC",
-    "selection_border": "#96C4AC",
-    "inactive_selection": "#96C4AC"
+    "line_highlight": "#F3FAF6",
+    "selection": "#9FC6B1",
+    "selection_border": "#9FC6B1",
+    "inactive_selection": "#9FC6B1"
   },
   "rules": [
     {

@@ -3,12 +3,12 @@
   "name": "Subway Seat Enamel Widgets",
   "globals": {
     "foreground": "#3E2C1E",
-    "background": "#FAF4EA",
+    "background": "#FCF7EF",
     "caret": "#AD4E00",
-    "line_highlight": "#FAF4EA",
-    "selection": "#CAB48E",
-    "selection_border": "#CAB48E",
-    "inactive_selection": "#CAB48E"
+    "line_highlight": "#FCF7EF",
+    "selection": "#CBB898",
+    "selection_border": "#CBB898",
+    "inactive_selection": "#CBB898"
   },
   "rules": [
     {

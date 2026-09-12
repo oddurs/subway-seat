@@ -5,13 +5,13 @@
   color-scheme: light;
 
   /* Ground */
-  --ss-crust: #BFDDCD; /* Carrelage crust */
-  --ss-mantle: #D0E6D8; /* Carrelage mantle */
-  --ss-base: #DEF0E6; /* Carrelage base */
-  --ss-surface0: #ACD5BF; /* Carrelage surface0 */
-  --ss-surface1: #96C4AC; /* Carrelage surface1 */
-  --ss-surface2: #84B09A; /* Carrelage surface2 */
-  --ss-overlay0: #769B87; /* Carrelage overlay0 */
+  --ss-crust: #C8E0D3; /* Carrelage crust */
+  --ss-mantle: #D8EADF; /* Carrelage mantle */
+  --ss-base: #E7F5ED; /* Carrelage base */
+  --ss-surface0: #B7D8C6; /* Carrelage surface0 */
+  --ss-surface1: #9FC6B1; /* Carrelage surface1 */
+  --ss-surface2: #89B19D; /* Carrelage surface2 */
+  --ss-overlay0: #789C88; /* Carrelage overlay0 */
   --ss-overlay1: #627F70; /* Carrelage overlay1 */
   --ss-overlay2: #4F675B; /* Carrelage overlay2 */
 
@@ -47,13 +47,13 @@
   --ss-diff-chg-emph: #DACEAD;
 
   /* RGB triplets, for rgb(var(--ss-base-rgb) / 0.5) */
-  --ss-crust-rgb: 191 221 205;
-  --ss-mantle-rgb: 208 230 216;
-  --ss-base-rgb: 222 240 230;
-  --ss-surface0-rgb: 172 213 191;
-  --ss-surface1-rgb: 150 196 172;
-  --ss-surface2-rgb: 132 176 154;
-  --ss-overlay0-rgb: 118 155 135;
+  --ss-crust-rgb: 200 224 211;
+  --ss-mantle-rgb: 216 234 223;
+  --ss-base-rgb: 231 245 237;
+  --ss-surface0-rgb: 183 216 198;
+  --ss-surface1-rgb: 159 198 177;
+  --ss-surface2-rgb: 137 177 157;
+  --ss-overlay0-rgb: 120 156 136;
   --ss-overlay1-rgb: 98 127 112;
   --ss-overlay2-rgb: 79 103 91;
   --ss-subtext0-rgb: 69 89 79;

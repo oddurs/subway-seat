@@ -23,7 +23,7 @@
   "h1": {
     "prefix": " ",
     "suffix": " ",
-    "color": "#F4E9D4",
+    "color": "#F8EFDF",
     "background_color": "#AD4E00",
     "bold": true
   },
@@ -60,7 +60,7 @@
     "bold": true
   },
   "hr": {
-    "color": "#BAA07A",
+    "color": "#BAA380",
     "format": "\n--------\n"
   },
   "item": {
@@ -93,7 +93,7 @@
     "prefix": " ",
     "suffix": " ",
     "color": "#66740F",
-    "background_color": "#EBDEC6"
+    "background_color": "#EEE4D0"
   },
   "code_block": {
     "color": "#3E2C1E",
@@ -103,7 +103,7 @@
         "color": "#3E2C1E"
       },
       "error": {
-        "color": "#F4E9D4",
+        "color": "#F8EFDF",
         "background_color": "#BC4031"
       },
       "comment": {
@@ -199,7 +199,7 @@
         "color": "#3F6480"
       },
       "background": {
-        "background_color": "#EBDEC6"
+        "background_color": "#EEE4D0"
       }
     }
   },

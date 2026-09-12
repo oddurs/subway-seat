@@ -113,7 +113,7 @@
     {
       "name": "Subway Seat Enamel",
       "type": "custom",
-      "Background": "#F4E9D4",
+      "Background": "#F8EFDF",
       "Foreground": "#3E2C1E",
       "LightBlue": "#54402F",
       "AccentBlue": "#AD4E00",
@@ -126,7 +126,7 @@
       "DiffRemoved": "#EBD3D1",
       "Comment": "#8C7254",
       "Gray": "#735C44",
-      "DarkGray": "#BAA07A",
+      "DarkGray": "#BAA380",
       "GradientColors": [
         "#992418",
         "#AD4E00",
@@ -140,7 +140,7 @@
         "response": "#3E2C1E"
       },
       "background": {
-        "primary": "#F4E9D4",
+        "primary": "#F8EFDF",
         "diff": {
           "added": "#D7DBC1",
           "removed": "#EBD3D1"
@@ -275,7 +275,7 @@
     {
       "name": "London Portland",
       "type": "custom",
-      "Background": "#E0EAFE",
+      "Background": "#E8F0FF",
       "Foreground": "#293040",
       "LightBlue": "#3C4557",
       "AccentBlue": "#B14A07",
@@ -288,7 +288,7 @@
       "DiffRemoved": "#EBD3D1",
       "Comment": "#697794",
       "Gray": "#556179",
-      "DarkGray": "#8FA5D0",
+      "DarkGray": "#93A7CF",
       "GradientColors": [
         "#9B211A",
         "#B14A07",
@@ -302,7 +302,7 @@
         "response": "#293040"
       },
       "background": {
-        "primary": "#E0EAFE",
+        "primary": "#E8F0FF",
         "diff": {
           "added": "#C0DEC9",
           "removed": "#EBD3D1"
@@ -437,7 +437,7 @@
     {
       "name": "Paris Carrelage",
       "type": "custom",
-      "Background": "#DEF0E6",
+      "Background": "#E7F5ED",
       "Foreground": "#25352C",
       "LightBlue": "#374940",
       "AccentBlue": "#754500",
@@ -450,7 +450,7 @@
       "DiffRemoved": "#E9D5D4",
       "Comment": "#627F70",
       "Gray": "#4F675B",
-      "DarkGray": "#84B09A",
+      "DarkGray": "#89B19D",
       "GradientColors": [
         "#932D29",
         "#754500",
@@ -464,7 +464,7 @@
         "response": "#25352C"
       },
       "background": {
-        "primary": "#DEF0E6",
+        "primary": "#E7F5ED",
         "diff": {
           "added": "#C5DECE",
           "removed": "#E9D5D4"

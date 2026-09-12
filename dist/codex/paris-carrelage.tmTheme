@@ -15,33 +15,33 @@
 				<key>accent</key>
 				<string>#754500</string>
 				<key>activeGuide</key>
-				<string>#84B09A</string>
+				<string>#89B19D</string>
 				<key>background</key>
-				<string>#DEF0E6</string>
+				<string>#E7F5ED</string>
 				<key>bracketsForeground</key>
 				<string>#754500</string>
 				<key>caret</key>
 				<string>#754500</string>
 				<key>findHighlight</key>
-				<string>#C5C7A1</string>
+				<string>#CBCAA6</string>
 				<key>findHighlightForeground</key>
 				<string>#18231D</string>
 				<key>foreground</key>
 				<string>#25352C</string>
 				<key>guide</key>
-				<string>#ACD5BF</string>
+				<string>#B7D8C6</string>
 				<key>gutter</key>
-				<string>#DEF0E6</string>
+				<string>#E7F5ED</string>
 				<key>gutterForeground</key>
-				<string>#769B87</string>
+				<string>#789C88</string>
 				<key>invisibles</key>
-				<string>#96C4AC</string>
+				<string>#9FC6B1</string>
 				<key>lineHighlight</key>
-				<string>#D0E6D8</string>
+				<string>#D8EADF</string>
 				<key>misspelling</key>
 				<string>#BB403B</string>
 				<key>selection</key>
-				<string>#96C4AC</string>
+				<string>#9FC6B1</string>
 			</dict>
 		</dict>
 		<dict>

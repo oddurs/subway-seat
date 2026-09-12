@@ -4,8 +4,8 @@
 themes {
     paris-carrelage {
         fg "#25352C"
-        bg "#96C4AC"
-        black "#D0E6D8"
+        bg "#9FC6B1"
+        black "#D8EADF"
         red "#BB403B"
         green "#754500" // active frame, selected tab
         yellow "#8A6700"

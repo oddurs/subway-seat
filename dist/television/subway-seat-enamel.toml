@@ -1,8 +1,8 @@
 # Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
 # Subway Seat Enamel for television.
 # general
-background = '#F4E9D4'
-border_fg = '#BAA07A'
+background = '#F8EFDF'
+border_fg = '#BAA380'
 text_fg = '#3E2C1E'
 dimmed_text_fg = '#8C7254'
 # input
@@ -12,15 +12,15 @@ result_count_fg = '#8C7254'
 result_name_fg = '#54402F'
 result_line_number_fg = '#8C7254'
 result_value_fg = '#3E2C1E'
-selection_bg = '#D9C8A7'
+selection_bg = '#DBCDB3'
 selection_fg = '#2A1D13'
 match_fg = '#936200'
 # preview
 preview_title_fg = '#54402F'
 # modes
-channel_mode_fg = '#F4E9D4'
+channel_mode_fg = '#F8EFDF'
 channel_mode_bg = '#AD4E00'
-remote_control_mode_fg = '#F4E9D4'
+remote_control_mode_fg = '#F8EFDF'
 remote_control_mode_bg = '#936200'
-action_picker_mode_fg = '#F4E9D4'
+action_picker_mode_fg = '#F8EFDF'
 action_picker_mode_bg = '#3E7157'

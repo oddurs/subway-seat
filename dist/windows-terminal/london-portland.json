@@ -2,10 +2,10 @@
     "schemes": [
         {
             "name": "London Portland",
-            "background": "#E0EAFE",
+            "background": "#E8F0FF",
             "foreground": "#293040",
             "cursorColor": "#B14A07",
-            "selectionBackground": "#A1B7E5",
+            "selectionBackground": "#A8BBE2",
             "black": "#3C4557",
             "red": "#9B211A",
             "green": "#0D8131",
@@ -13,7 +13,7 @@
             "blue": "#0019A8",
             "purple": "#B14A07",
             "cyan": "#007376",
-            "white": "#8FA5D0",
+            "white": "#93A7CF",
             "brightBlack": "#697794",
             "brightRed": "#C92B23",
             "brightGreen": "#008730",
@@ -21,7 +21,7 @@
             "brightBlue": "#4A6EBD",
             "brightPurple": "#B86100",
             "brightCyan": "#008688",
-            "brightWhite": "#A1B7E5"
+            "brightWhite": "#A8BBE2"
         }
     ],
     "themes": [
@@ -30,16 +30,16 @@
             "window": {
                 "applicationTheme": "light",
                 "useMica": false,
-                "frame": "#C5D5F3FF",
-                "unfocusedFrame": "#C5D5F3FF"
+                "frame": "#CCDAF2FF",
+                "unfocusedFrame": "#CCDAF2FF"
             },
             "tabRow": {
-                "background": "#C5D5F3FF",
-                "unfocusedBackground": "#C5D5F3FF"
+                "background": "#CCDAF2FF",
+                "unfocusedBackground": "#CCDAF2FF"
             },
             "tab": {
-                "background": "#E0EAFEFF",
-                "unfocusedBackground": "#D4E0F6FF"
+                "background": "#E8F0FFFF",
+                "unfocusedBackground": "#DCE5F7FF"
             }
         }
     ]

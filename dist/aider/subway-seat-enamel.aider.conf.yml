@@ -8,11 +8,11 @@ tool-output-color: "#654F3B"
 tool-error-color: "#BC4031"
 tool-warning-color: "#AD4E00"
 completion-menu-color: "#3E2C1E"
-completion-menu-bg-color: "#EBDEC6"
+completion-menu-bg-color: "#EEE4D0"
 # aider swaps the next two: current-color is the highlighted item's background,
 # current-bg-color its text. Burnt orange bar, base letters.
 completion-menu-current-color: "#AD4E00"
-completion-menu-current-bg-color: "#F4E9D4"
+completion-menu-current-bg-color: "#F8EFDF"
 # Code blocks in your terminal's colors. For the Subway Seat Pygments style,
 # install it into aider's environment and use `code-theme: subway-seat-enamel` instead:
 #   uv tool install aider-chat --with "subway-seat-pygments @ git+https://github.com/oddurs/subway-seat#subdirectory=dist/pygments/package"

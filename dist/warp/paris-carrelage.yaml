@@ -2,7 +2,7 @@
 name: Paris Carrelage
 accent: '#754500'
 cursor: '#754500'
-background: '#DEF0E6'
+background: '#E7F5ED'
 foreground: '#25352C'
 details: lighter
 terminal_colors:
@@ -14,7 +14,7 @@ terminal_colors:
     blue: '#27629C'
     magenta: '#754500'
     cyan: '#086142'
-    white: '#84B09A'
+    white: '#89B19D'
   bright:
     black: '#627F70'
     red: '#BB403B'
@@ -23,4 +23,4 @@ terminal_colors:
     blue: '#3E75AD'
     magenta: '#AE6800'
     cyan: '#3D8666'
-    white: '#96C4AC'
+    white: '#9FC6B1'

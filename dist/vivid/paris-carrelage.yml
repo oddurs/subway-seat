@@ -1,13 +1,13 @@
 # Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
 # Paris Carrelage for vivid.
 colors:
-  crust: 'BFDDCD'
-  mantle: 'D0E6D8'
-  base: 'DEF0E6'
-  surface0: 'ACD5BF'
-  surface1: '96C4AC'
-  surface2: '84B09A'
-  overlay0: '769B87'
+  crust: 'C8E0D3'
+  mantle: 'D8EADF'
+  base: 'E7F5ED'
+  surface0: 'B7D8C6'
+  surface1: '9FC6B1'
+  surface2: '89B19D'
+  overlay0: '789C88'
   overlay1: '627F70'
   overlay2: '4F675B'
   subtext0: '45594F'
@@ -27,7 +27,7 @@ colors:
   denim: '27629C'
   denim_hi: '3E75AD'
   clay: '9A557D'
-  ink: 'DEF0E6'
+  ink: 'E7F5ED'
 
 core:
   normal_text: {}

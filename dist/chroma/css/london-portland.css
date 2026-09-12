@@ -1,16 +1,16 @@
 /* Subway Seat — generated from palette.py by build.py. Edit the palette, not this file. */
 /* London Portland for chroma's HTML classes (Hugo: markup.highlight.noClasses = false). */
-/* Background */ .bg { color: #293040; background-color: #E0EAFE; }
-/* PreWrapper */ .chroma { color: #293040; background-color: #E0EAFE; -webkit-text-size-adjust: none; }
-/* LineNumbers targeted by URL anchor */ .chroma .ln:target { color: #293040; background-color: #D4E0F6 }
-/* LineNumbersTable targeted by URL anchor */ .chroma .lnt:target { color: #293040; background-color: #D4E0F6 }
+/* Background */ .bg { color: #293040; background-color: #E8F0FF; }
+/* PreWrapper */ .chroma { color: #293040; background-color: #E8F0FF; -webkit-text-size-adjust: none; }
+/* LineNumbers targeted by URL anchor */ .chroma .ln:target { color: #293040; background-color: #DCE5F7 }
+/* LineNumbersTable targeted by URL anchor */ .chroma .lnt:target { color: #293040; background-color: #DCE5F7 }
 /* Error */ .chroma .err { color: #9B211A }
 /* LineLink */ .chroma .lnlinks { outline: none; text-decoration: none; color: inherit }
 /* LineTableTD */ .chroma .lntd { vertical-align: top; padding: 0; margin: 0; border: 0; }
 /* LineTable */ .chroma .lntable { border-spacing: 0; padding: 0; margin: 0; border: 0; }
-/* LineHighlight */ .chroma .hl { background-color: #D4E0F6 }
-/* LineNumbersTable */ .chroma .lnt { white-space: pre; -webkit-user-select: none; user-select: none; margin-right: 0.4em; padding: 0 0.4em 0 0.4em;color: #7F91B4 }
-/* LineNumbers */ .chroma .ln { white-space: pre; -webkit-user-select: none; user-select: none; margin-right: 0.4em; padding: 0 0.4em 0 0.4em;color: #7F91B4 }
+/* LineHighlight */ .chroma .hl { background-color: #DCE5F7 }
+/* LineNumbersTable */ .chroma .lnt { white-space: pre; -webkit-user-select: none; user-select: none; margin-right: 0.4em; padding: 0 0.4em 0 0.4em;color: #8192B4 }
+/* LineNumbers */ .chroma .ln { white-space: pre; -webkit-user-select: none; user-select: none; margin-right: 0.4em; padding: 0 0.4em 0 0.4em;color: #8192B4 }
 /* Line */ .chroma .line { display: flex; }
 /* Keyword */ .chroma .k { color: #B14A07 }
 /* KeywordConstant */ .chroma .kc { color: #C92B23 }

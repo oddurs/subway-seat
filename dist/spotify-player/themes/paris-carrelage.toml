@@ -4,7 +4,7 @@
 name = "paris-carrelage"
 
 [themes.palette]
-background = "#DEF0E6"
+background = "#E7F5ED"
 foreground = "#25352C"
 black = "#374940"
 red = "#932D29"
@@ -13,7 +13,7 @@ yellow = "#8A6700"
 blue = "#27629C"
 magenta = "#754500"
 cyan = "#086142"
-white = "#84B09A"
+white = "#89B19D"
 bright_black = "#627F70"
 bright_red = "#BB403B"
 bright_green = "#168540"
@@ -21,25 +21,25 @@ bright_yellow = "#997300"
 bright_blue = "#3E75AD"
 bright_magenta = "#AE6800"
 bright_cyan = "#3D8666"
-bright_white = "#96C4AC"
+bright_white = "#9FC6B1"
 
 [themes.component_style]
 block_title = { fg = "#754500", modifiers = ["Bold"] }
-border = { fg = "#84B09A" }
+border = { fg = "#89B19D" }
 playback_status = { fg = "#8A6700", modifiers = ["Bold"] }
 playback_track = { fg = "#8A6700", modifiers = ["Bold"] }
 playback_artists = { fg = "#754500" }
 playback_album = { fg = "#086142" }
 playback_genres = { fg = "#627F70", modifiers = ["Italic"] }
 playback_metadata = { fg = "#45594F" }
-playback_progress_bar = { fg = "#754500", bg = "#96C4AC" }
-playback_progress_bar_unfilled = { fg = "#84B09A", bg = "#96C4AC" }
+playback_progress_bar = { fg = "#754500", bg = "#9FC6B1" }
+playback_progress_bar_unfilled = { fg = "#89B19D", bg = "#9FC6B1" }
 current_playing = { fg = "#207F41", modifiers = ["Bold"] }
 page_desc = { fg = "#8A6700", modifiers = ["Bold"] }
 playlist_desc = { fg = "#627F70" }
 table_header = { fg = "#754500" }
-selection = { fg = "#18231D", bg = "#ACD5BF", modifiers = ["Bold"] }
-secondary_row = { bg = "#D0E6D8" }
+selection = { fg = "#18231D", bg = "#B7D8C6", modifiers = ["Bold"] }
+secondary_row = { bg = "#D8EADF" }
 like = { fg = "#BB403B" }
 lyrics_played = { fg = "#627F70" }
 lyrics_playing = { fg = "#8A6700", modifiers = ["Bold"] }

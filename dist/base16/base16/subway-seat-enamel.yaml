@@ -4,9 +4,9 @@ name: "Subway Seat Enamel"
 author: "oddurs (https://github.com/oddurs/subway-seat)"
 variant: "light"
 palette:
-  base00: "#F4E9D4" # base (Enamel base)
-  base01: "#D9C8A7" # surface0 (Enamel surface0)
-  base02: "#CAB48E" # surface1 (Enamel surface1)
+  base00: "#F8EFDF" # base (Enamel base)
+  base01: "#DBCDB3" # surface0 (Enamel surface0)
+  base02: "#CBB898" # surface1 (Enamel surface1)
   base03: "#8C7254" # overlay1 (Enamel overlay1)
   base04: "#654F3B" # subtext0 (Enamel subtext0)
   base05: "#3E2C1E" # text (Enamel text)

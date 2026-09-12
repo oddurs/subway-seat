@@ -97,11 +97,11 @@
 	<key>Ansi 7 Color</key>
 	<dict>
 		<key>Red Component</key>
-		<real>0.517647</real>
+		<real>0.537255</real>
 		<key>Green Component</key>
-		<real>0.690196</real>
+		<real>0.694118</real>
 		<key>Blue Component</key>
-		<real>0.603922</real>
+		<real>0.615686</real>
 		<key>Alpha Component</key>
 		<real>1.0</real>
 		<key>Color Space</key>
@@ -201,11 +201,11 @@
 	<key>Ansi 15 Color</key>
 	<dict>
 		<key>Red Component</key>
-		<real>0.588235</real>
+		<real>0.623529</real>
 		<key>Green Component</key>
-		<real>0.768627</real>
+		<real>0.776471</real>
 		<key>Blue Component</key>
-		<real>0.67451</real>
+		<real>0.694118</real>
 		<key>Alpha Component</key>
 		<real>1.0</real>
 		<key>Color Space</key>
@@ -214,11 +214,11 @@
 	<key>Background Color</key>
 	<dict>
 		<key>Red Component</key>
-		<real>0.870588</real>
+		<real>0.905882</real>
 		<key>Green Component</key>
-		<real>0.941176</real>
+		<real>0.960784</real>
 		<key>Blue Component</key>
-		<real>0.901961</real>
+		<real>0.929412</real>
 		<key>Alpha Component</key>
 		<real>1.0</real>
 		<key>Color Space</key>
@@ -266,11 +266,11 @@
 	<key>Cursor Text Color</key>
 	<dict>
 		<key>Red Component</key>
-		<real>0.870588</real>
+		<real>0.905882</real>
 		<key>Green Component</key>
-		<real>0.941176</real>
+		<real>0.960784</real>
 		<key>Blue Component</key>
-		<real>0.901961</real>
+		<real>0.929412</real>
 		<key>Alpha Component</key>
 		<real>1.0</real>
 		<key>Color Space</key>
@@ -305,11 +305,11 @@
 	<key>Selection Color</key>
 	<dict>
 		<key>Red Component</key>
-		<real>0.588235</real>
+		<real>0.623529</real>
 		<key>Green Component</key>
-		<real>0.768627</real>
+		<real>0.776471</real>
 		<key>Blue Component</key>
-		<real>0.67451</real>
+		<real>0.694118</real>
 		<key>Alpha Component</key>
 		<real>1.0</real>
 		<key>Color Space</key>
@@ -331,11 +331,11 @@
 	<key>Match Background Color</key>
 	<dict>
 		<key>Red Component</key>
-		<real>0.772549</real>
+		<real>0.796078</real>
 		<key>Green Component</key>
-		<real>0.780392</real>
+		<real>0.792157</real>
 		<key>Blue Component</key>
-		<real>0.631373</real>
+		<real>0.65098</real>
 		<key>Alpha Component</key>
 		<real>1.0</real>
 		<key>Color Space</key>
@@ -370,11 +370,11 @@
 	<key>Tab Color</key>
 	<dict>
 		<key>Red Component</key>
-		<real>0.74902</real>
+		<real>0.784314</real>
 		<key>Green Component</key>
-		<real>0.866667</real>
+		<real>0.878431</real>
 		<key>Blue Component</key>
-		<real>0.803922</real>
+		<real>0.827451</real>
 		<key>Alpha Component</key>
 		<real>1.0</real>
 		<key>Color Space</key>

@@ -1,9 +1,9 @@
 <!-- Subway Seat — generated from palette.py by build.py. Edit the palette, not this file. -->
 <style name="paris-carrelage">
-  <entry type="Background" style="#25352C bg:#DEF0E6"/>
-  <entry type="LineHighlight" style="bg:#D0E6D8"/>
-  <entry type="LineNumbers" style="#769B87"/>
-  <entry type="LineNumbersTable" style="#769B87"/>
+  <entry type="Background" style="#25352C bg:#E7F5ED"/>
+  <entry type="LineHighlight" style="bg:#D8EADF"/>
+  <entry type="LineNumbers" style="#789C88"/>
+  <entry type="LineNumbersTable" style="#789C88"/>
   <entry type="Text" style="#25352C"/>
   <entry type="Error" style="#932D29"/>
   <entry type="Comment" style="italic #627F70"/>

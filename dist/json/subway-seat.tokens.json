@@ -334,37 +334,37 @@
   "enamel": {
     "crust": {
       "$type": "color",
-      "$value": "#E2D3B6",
+      "$value": "#E4D8C0",
       "$description": "Enamel crust"
     },
     "mantle": {
       "$type": "color",
-      "$value": "#EBDEC6",
+      "$value": "#EEE4D0",
       "$description": "Enamel mantle"
     },
     "base": {
       "$type": "color",
-      "$value": "#F4E9D4",
+      "$value": "#F8EFDF",
       "$description": "Enamel base"
     },
     "surface0": {
       "$type": "color",
-      "$value": "#D9C8A7",
+      "$value": "#DBCDB3",
       "$description": "Enamel surface0"
     },
     "surface1": {
       "$type": "color",
-      "$value": "#CAB48E",
+      "$value": "#CBB898",
       "$description": "Enamel surface1"
     },
     "surface2": {
       "$type": "color",
-      "$value": "#BAA07A",
+      "$value": "#BAA380",
       "$description": "Enamel surface2"
     },
     "overlay0": {
       "$type": "color",
-      "$value": "#A58C6A",
+      "$value": "#A58D6D",
       "$description": "Enamel overlay0"
     },
     "overlay1": {
@@ -832,37 +832,37 @@
   "portland": {
     "crust": {
       "$type": "color",
-      "$value": "#C5D5F3",
+      "$value": "#CCDAF2",
       "$description": "Portland crust"
     },
     "mantle": {
       "$type": "color",
-      "$value": "#D4E0F6",
+      "$value": "#DCE5F7",
       "$description": "Portland mantle"
     },
     "base": {
       "$type": "color",
-      "$value": "#E0EAFE",
+      "$value": "#E8F0FF",
       "$description": "Portland base"
     },
     "surface0": {
       "$type": "color",
-      "$value": "#B6CAF3",
+      "$value": "#BFCFF1",
       "$description": "Portland surface0"
     },
     "surface1": {
       "$type": "color",
-      "$value": "#A1B7E5",
+      "$value": "#A8BBE2",
       "$description": "Portland surface1"
     },
     "surface2": {
       "$type": "color",
-      "$value": "#8FA5D0",
+      "$value": "#93A7CF",
       "$description": "Portland surface2"
     },
     "overlay0": {
       "$type": "color",
-      "$value": "#7F91B4",
+      "$value": "#8192B4",
       "$description": "Portland overlay0"
     },
     "overlay1": {
@@ -1330,37 +1330,37 @@
   "carrelage": {
     "crust": {
       "$type": "color",
-      "$value": "#BFDDCD",
+      "$value": "#C8E0D3",
       "$description": "Carrelage crust"
     },
     "mantle": {
       "$type": "color",
-      "$value": "#D0E6D8",
+      "$value": "#D8EADF",
       "$description": "Carrelage mantle"
     },
     "base": {
       "$type": "color",
-      "$value": "#DEF0E6",
+      "$value": "#E7F5ED",
       "$description": "Carrelage base"
     },
     "surface0": {
       "$type": "color",
-      "$value": "#ACD5BF",
+      "$value": "#B7D8C6",
       "$description": "Carrelage surface0"
     },
     "surface1": {
       "$type": "color",
-      "$value": "#96C4AC",
+      "$value": "#9FC6B1",
       "$description": "Carrelage surface1"
     },
     "surface2": {
       "$type": "color",
-      "$value": "#84B09A",
+      "$value": "#89B19D",
       "$description": "Carrelage surface2"
     },
     "overlay0": {
       "$type": "color",
-      "$value": "#769B87",
+      "$value": "#789C88",
       "$description": "Carrelage overlay0"
     },
     "overlay1": {

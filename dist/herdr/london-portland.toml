@@ -2,14 +2,14 @@
 # Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
 # London Portland; base theme: catppuccin-latte
 [theme.custom]
-panel_bg = "#E0EAFE"
-sidebar_bg = "#D4E0F6"
-active_row_bg = "#B6CAF3"
-selection_bg = "#A1B7E5"
-surface_dim = "#D4E0F6"
-surface0 = "#B6CAF3"
-surface1 = "#A1B7E5"
-overlay0 = "#7F91B4"
+panel_bg = "#E8F0FF"
+sidebar_bg = "#DCE5F7"
+active_row_bg = "#BFCFF1"
+selection_bg = "#A8BBE2"
+surface_dim = "#DCE5F7"
+surface0 = "#BFCFF1"
+surface1 = "#A8BBE2"
+overlay0 = "#8192B4"
 overlay1 = "#697794"
 text = "#293040"
 subtext0 = "#4A5469"

@@ -1,13 +1,13 @@
 # Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
 # Subway Seat Enamel for vivid.
 colors:
-  crust: 'E2D3B6'
-  mantle: 'EBDEC6'
-  base: 'F4E9D4'
-  surface0: 'D9C8A7'
-  surface1: 'CAB48E'
-  surface2: 'BAA07A'
-  overlay0: 'A58C6A'
+  crust: 'E4D8C0'
+  mantle: 'EEE4D0'
+  base: 'F8EFDF'
+  surface0: 'DBCDB3'
+  surface1: 'CBB898'
+  surface2: 'BAA380'
+  overlay0: 'A58D6D'
   overlay1: '8C7254'
   overlay2: '735C44'
   subtext0: '654F3B'
@@ -27,7 +27,7 @@ colors:
   denim: '3F6480'
   denim_hi: '517791'
   clay: '863913'
-  ink: 'F4E9D4'
+  ink: 'F8EFDF'
 
 core:
   normal_text: {}

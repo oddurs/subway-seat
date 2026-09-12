@@ -2,7 +2,7 @@
 # Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
 
 [light]
-# preferred_background: F4E9D4
+# preferred_background: F8EFDF
 fish_color_normal 3E2C1E
 fish_color_command 936200
 fish_color_keyword AD4E00
@@ -17,10 +17,10 @@ fish_color_comment 8C7254 --italics
 fish_color_error BC4031
 fish_color_cancel 992418
 fish_color_autosuggestion 8C7254
-fish_color_gray A58C6A
+fish_color_gray A58D6D
 fish_color_valid_path --underline
-fish_color_selection 2A1D13 --bold --background=CAB48E
-fish_color_search_match --bold --background=CAB48E
+fish_color_selection 2A1D13 --bold --background=CBB898
+fish_color_search_match --bold --background=CBB898
 fish_color_history_current --bold
 fish_color_cwd 936200
 fish_color_cwd_root BC4031
@@ -28,11 +28,11 @@ fish_color_user AD4E00
 fish_color_host 54402F
 fish_color_host_remote 66740F
 fish_color_status BC4031
-fish_pager_color_progress F4E9D4 --background=AD4E00
+fish_pager_color_progress F8EFDF --background=AD4E00
 fish_pager_color_prefix 936200 --bold
 fish_pager_color_completion 3E2C1E
 fish_pager_color_description 8C7254 --italics
-fish_pager_color_selected_background --background=D9C8A7
+fish_pager_color_selected_background --background=DBCDB3
 fish_pager_color_selected_prefix AD4E00 --bold
 fish_pager_color_selected_completion 2A1D13
 fish_pager_color_selected_description 54402F --italics

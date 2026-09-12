@@ -6,9 +6,9 @@ Name=London Portland
 # London Portland
 [Light]
 Foreground=#293040
-Background=#E0EAFE
+Background=#E8F0FF
 Cursor=#B14A07
-CursorForeground=#E0EAFE
+CursorForeground=#E8F0FF
 Color0=#3C4557
 Color1=#9B211A
 Color2=#0D8131
@@ -16,7 +16,7 @@ Color3=#896800
 Color4=#0019A8
 Color5=#B14A07
 Color6=#007376
-Color7=#8FA5D0
+Color7=#93A7CF
 Color8=#697794
 Color9=#C92B23
 Color10=#008730
@@ -24,15 +24,15 @@ Color11=#977300
 Color12=#4A6EBD
 Color13=#B86100
 Color14=#008688
-Color15=#A1B7E5
+Color15=#A8BBE2
 TitlebarForeground=#293040
-TitlebarBackground=#D4E0F6
+TitlebarBackground=#DCE5F7
 BellForeground=#1B202B
-BellBackground=#C1C2B8
+BellBackground=#C7C6B9
 SuperuserForeground=#1B202B
 SuperuserBackground=#EBD3D1
 RemoteForeground=#1B202B
-RemoteBackground=#C1CDF2
+RemoteBackground=#C8D2F3
 
 # Subway Seat
 [Dark]

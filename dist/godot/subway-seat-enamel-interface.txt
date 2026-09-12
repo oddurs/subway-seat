@@ -2,9 +2,9 @@
 # Subway Seat Enamel: Godot's interface theme. Enter these in Editor › Editor Settings › Interface › Theme.
 # (Godot 4.6+ labels the first one "Color Preset"; 4.0 to 4.5 call it "Preset".)
 Color Preset: Custom
-Base Color: #EBDEC6
+Base Color: #EEE4D0
 Accent Color: #AD4E00
-Contrast: 0.03
+Contrast: 0.04
 Icon Saturation: 1
 
 # And in Text Editor › Theme:

@@ -5,18 +5,18 @@ theme:
     text:
       primary: "#3E2C1E"
       secondary: "#AD4E00"
-      inverted: "#F4E9D4"
+      inverted: "#F8EFDF"
       faint: "#8C7254"
       warning: "#936200"
       success: "#66740F"
       error: "#BC4031"
       actor: "#54402F"
     background:
-      selected: "#D9C8A7"
+      selected: "#DBCDB3"
     border:
       primary: "#AD4E00"
-      secondary: "#BAA07A"
-      faint: "#D9C8A7"
+      secondary: "#BAA380"
+      faint: "#DBCDB3"
     icon:
       newcontributor: "#66740F"
       contributor: "#3E7157"

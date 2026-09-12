@@ -205,9 +205,9 @@ ENAMEL = Flavor(
     colors={
         # In the light flavor the ramp runs the other way: crust is the
         # darkest *ground* (title bars), surfaces darken for hover/selection.
-        "crust": "#E2D3B6", "mantle": "#EBDEC6", "base": "#F4E9D4",
-        "surface0": "#D9C8A7", "surface1": "#CAB48E", "surface2": "#BAA07A",
-        "overlay0": "#A58C6A", "overlay1": "#8C7254", "overlay2": "#735C44",
+        "crust": "#E4D8C0", "mantle": "#EEE4D0", "base": "#F8EFDF",
+        "surface0": "#DBCDB3", "surface1": "#CBB898", "surface2": "#BAA380",
+        "overlay0": "#A58D6D", "overlay1": "#8C7254", "overlay2": "#735C44",
         "subtext0": "#654F3B", "subtext1": "#54402F", "text": "#3E2C1E", "text_hi": "#2A1D13",
         "yellow": "#936200", "yellow_hi": "#A56E00",
         "orange": "#AD4E00", "orange_hi": "#C4561A",
@@ -281,9 +281,9 @@ PORTLAND = Flavor(
         # as white; a light flavor must do the opposite, because here the text
         # is the inked end and the paper is the pale one. Holding chroma through
         # subtext and text is what keeps the greys from going dead neutral.
-        "crust": "#C5D5F3", "mantle": "#D4E0F6", "base": "#E0EAFE",
-        "surface0": "#B6CAF3", "surface1": "#A1B7E5", "surface2": "#8FA5D0",
-        "overlay0": "#7F91B4", "overlay1": "#697794", "overlay2": "#556179",
+        "crust": "#CCDAF2", "mantle": "#DCE5F7", "base": "#E8F0FF",
+        "surface0": "#BFCFF1", "surface1": "#A8BBE2", "surface2": "#93A7CF",
+        "overlay0": "#8192B4", "overlay1": "#697794", "overlay2": "#556179",
         "subtext0": "#4A5469", "subtext1": "#3C4557", "text": "#293040", "text_hi": "#1B202B",
         "yellow": "#896800", "yellow_hi": "#977300",
         "orange": "#B14A07", "orange_hi": "#B86100",
@@ -443,9 +443,9 @@ CARRELAGE = Flavor(
     blurb="Bevelled white tile under a vaulted platform. The light one.",
     colors={
         # As in Enamel and Portland, the ramp runs the other way from base.
-        "crust": "#BFDDCD", "mantle": "#D0E6D8", "base": "#DEF0E6",
-        "surface0": "#ACD5BF", "surface1": "#96C4AC", "surface2": "#84B09A",
-        "overlay0": "#769B87", "overlay1": "#627F70", "overlay2": "#4F675B",
+        "crust": "#C8E0D3", "mantle": "#D8EADF", "base": "#E7F5ED",
+        "surface0": "#B7D8C6", "surface1": "#9FC6B1", "surface2": "#89B19D",
+        "overlay0": "#789C88", "overlay1": "#627F70", "overlay2": "#4F675B",
         "subtext0": "#45594F", "subtext1": "#374940", "text": "#25352C", "text_hi": "#18231D",
         "yellow": "#8A6700", "yellow_hi": "#997300",
         "orange": "#754500", "orange_hi": "#AE6800",

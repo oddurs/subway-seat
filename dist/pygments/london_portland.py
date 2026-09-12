@@ -9,12 +9,12 @@ __all__ = ["LondonPortlandStyle", "style"]
 
 class LondonPortlandStyle(Style):
     name = "london-portland"
-    background_color = "#E0EAFE"
-    highlight_color = "#D4E0F6"
-    line_number_color = "#7F91B4"
-    line_number_background_color = "#E0EAFE"
+    background_color = "#E8F0FF"
+    highlight_color = "#DCE5F7"
+    line_number_color = "#8192B4"
+    line_number_background_color = "#E8F0FF"
     line_number_special_color = "#B14A07"
-    line_number_special_background_color = "#D4E0F6"
+    line_number_special_background_color = "#DCE5F7"
 
     styles = {
         Token: "#293040",

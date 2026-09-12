@@ -2,7 +2,7 @@
 # Subway Seat Enamel flavor for Yazi.
 
 [app]
-overall = { bg = "#F4E9D4" }
+overall = { bg = "#F8EFDF" }
 
 [mgr]
 cwd             = { fg = "#936200" }
@@ -13,59 +13,59 @@ marker_copied   = { fg = "#66740F", bg = "#66740F" }
 marker_cut      = { fg = "#BC4031", bg = "#BC4031" }
 marker_marked   = { fg = "#3E7157", bg = "#3E7157" }
 marker_selected = { fg = "#936200", bg = "#936200" }
-count_copied    = { fg = "#F4E9D4", bg = "#66740F" }
-count_cut       = { fg = "#F4E9D4", bg = "#BC4031" }
-count_selected  = { fg = "#F4E9D4", bg = "#936200" }
-border_style    = { fg = "#BAA07A" }
+count_copied    = { fg = "#F8EFDF", bg = "#66740F" }
+count_cut       = { fg = "#F8EFDF", bg = "#BC4031" }
+count_selected  = { fg = "#F8EFDF", bg = "#936200" }
+border_style    = { fg = "#BAA380" }
 
 [tabs]
-active   = { fg = "#F4E9D4", bg = "#AD4E00", bold = true }
-inactive = { fg = "#54402F", bg = "#CAB48E" }
+active   = { fg = "#F8EFDF", bg = "#AD4E00", bold = true }
+inactive = { fg = "#54402F", bg = "#CBB898" }
 
 [mode]
-normal_main = { fg = "#F4E9D4", bg = "#AD4E00", bold = true }
-normal_alt  = { fg = "#AD4E00", bg = "#D9C8A7" }
-select_main = { fg = "#F4E9D4", bg = "#66740F", bold = true }
-select_alt  = { fg = "#66740F", bg = "#D9C8A7" }
-unset_main  = { fg = "#F4E9D4", bg = "#BC4031", bold = true }
-unset_alt   = { fg = "#BC4031", bg = "#D9C8A7" }
+normal_main = { fg = "#F8EFDF", bg = "#AD4E00", bold = true }
+normal_alt  = { fg = "#AD4E00", bg = "#DBCDB3" }
+select_main = { fg = "#F8EFDF", bg = "#66740F", bold = true }
+select_alt  = { fg = "#66740F", bg = "#DBCDB3" }
+unset_main  = { fg = "#F8EFDF", bg = "#BC4031", bold = true }
+unset_alt   = { fg = "#BC4031", bg = "#DBCDB3" }
 
 [indicator]
-parent  = { fg = "#2A1D13", bg = "#CAB48E" }
-current = { fg = "#F4E9D4", bg = "#936200" }
-preview = { fg = "#2A1D13", bg = "#CAB48E" }
+parent  = { fg = "#2A1D13", bg = "#CBB898" }
+current = { fg = "#F8EFDF", bg = "#936200" }
+preview = { fg = "#2A1D13", bg = "#CBB898" }
 
 [status]
-perm_sep        = { fg = "#A58C6A" }
+perm_sep        = { fg = "#A58D6D" }
 perm_type       = { fg = "#3E7157" }
 perm_read       = { fg = "#936200" }
 perm_write      = { fg = "#AD4E00" }
 perm_exec       = { fg = "#66740F" }
 progress_label  = { fg = "#2A1D13", bold = true }
-progress_normal = { fg = "#66740F", bg = "#CAB48E" }
-progress_error  = { fg = "#BC4031", bg = "#CAB48E" }
+progress_normal = { fg = "#66740F", bg = "#CBB898" }
+progress_error  = { fg = "#BC4031", bg = "#CBB898" }
 
 [which]
 border          = { fg = "#AD4E00" }
-mask            = { bg = "#EBDEC6" }
+mask            = { bg = "#EEE4D0" }
 cand            = { fg = "#936200" }
 rest            = { fg = "#8C7254" }
 desc            = { fg = "#54402F" }
-separator_style = { fg = "#BAA07A" }
+separator_style = { fg = "#BAA380" }
 
 [confirm]
 border  = { fg = "#AD4E00" }
 title   = { fg = "#AD4E00", bold = true }
 body    = {}
 list    = {}
-btn_yes = { fg = "#F4E9D4", bg = "#AD4E00", bold = true }
+btn_yes = { fg = "#F8EFDF", bg = "#AD4E00", bold = true }
 btn_no  = { fg = "#54402F" }
 
 [spot]
 border   = { fg = "#AD4E00" }
 title    = { fg = "#AD4E00" }
 tbl_col  = { fg = "#3E7157" }
-tbl_cell = { fg = "#F4E9D4", bg = "#936200" }
+tbl_cell = { fg = "#F8EFDF", bg = "#936200" }
 
 [notify]
 title_info  = { fg = "#3F6480" }
@@ -81,11 +81,11 @@ inactive = {}
 border   = { fg = "#AD4E00" }
 title    = {}
 value    = {}
-selected = { fg = "#2A1D13", bg = "#CAB48E" }
+selected = { fg = "#2A1D13", bg = "#CBB898" }
 
 [cmp]
 border   = { fg = "#AD4E00" }
-active   = { fg = "#2A1D13", bg = "#D9C8A7" }
+active   = { fg = "#2A1D13", bg = "#DBCDB3" }
 inactive = {}
 
 [tasks]
@@ -97,7 +97,7 @@ hovered = { fg = "#AD4E00", bold = true }
 border  = { fg = "#AD4E00" }
 chord   = { fg = "#936200" }
 action  = { fg = "#54402F" }
-hovered = { bg = "#D9C8A7", bold = true }
+hovered = { bg = "#DBCDB3", bold = true }
 
 [filetype]
 rules = [
@@ -109,13 +109,13 @@ rules = [
 	# Documents
 	{ mime = "**/application/{pdf,doc,rtf}", fg = "#3F6480" },
 	# Virtual file system
-	{ mime = "vfs/{absent,stale}", fg = "#A58C6A" },
+	{ mime = "vfs/{absent,stale}", fg = "#A58D6D" },
 	# Special files
-	{ url = "*", is = "orphan", fg = "#F4E9D4", bg = "#992418" },
+	{ url = "*", is = "orphan", fg = "#F8EFDF", bg = "#992418" },
 	{ url = "*", is = "exec", fg = "#66740F" },
 	# Dummy files
-	{ url = "*", is = "dummy", fg = "#F4E9D4", bg = "#992418" },
-	{ url = "*/", is = "dummy", fg = "#F4E9D4", bg = "#992418" },
+	{ url = "*", is = "dummy", fg = "#F8EFDF", bg = "#992418" },
+	{ url = "*/", is = "dummy", fg = "#F8EFDF", bg = "#992418" },
 	# Fallback
 	{ url = "*/", fg = "#936200", bold = true },
 ]

@@ -2,7 +2,7 @@
 name: Subway Seat Enamel
 accent: '#AD4E00'
 cursor: '#AD4E00'
-background: '#F4E9D4'
+background: '#F8EFDF'
 foreground: '#3E2C1E'
 details: lighter
 terminal_colors:
@@ -14,7 +14,7 @@ terminal_colors:
     blue: '#3F6480'
     magenta: '#AD4E00'
     cyan: '#3E7157'
-    white: '#BAA07A'
+    white: '#BAA380'
   bright:
     black: '#8C7254'
     red: '#BC4031'
@@ -23,4 +23,4 @@ terminal_colors:
     blue: '#517791'
     magenta: '#C4561A'
     cyan: '#4C8367'
-    white: '#CAB48E'
+    white: '#CBB898'

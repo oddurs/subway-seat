@@ -4,8 +4,8 @@
 themes {
     subway-seat-enamel {
         fg "#3E2C1E"
-        bg "#CAB48E"
-        black "#EBDEC6"
+        bg "#CBB898"
+        black "#EEE4D0"
         red "#BC4031"
         green "#AD4E00" // active frame, selected tab
         yellow "#936200"

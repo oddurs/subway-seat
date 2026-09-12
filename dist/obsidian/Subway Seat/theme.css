@@ -474,15 +474,15 @@ body.theme-dark.subway-seat-tunnel {
 
 .theme-light {
   /* Palette: the base ramp runs from the editor ground to parchment text */
-  --color-base-00: #F4E9D4;
-  --color-base-05: #F0E4CD;
-  --color-base-10: #EBDEC6;
-  --color-base-20: #E2D3B6;
-  --color-base-25: #D9C8A7;
-  --color-base-30: #D2BE9A;
-  --color-base-35: #CAB48E;
-  --color-base-40: #BAA07A;
-  --color-base-50: #A58C6A;
+  --color-base-00: #F8EFDF;
+  --color-base-05: #F3EAD8;
+  --color-base-10: #EEE4D0;
+  --color-base-20: #E4D8C0;
+  --color-base-25: #DBCDB3;
+  --color-base-30: #D3C2A6;
+  --color-base-35: #CBB898;
+  --color-base-40: #BAA380;
+  --color-base-50: #A58D6D;
   --color-base-60: #8C7254;
   --color-base-70: #654F3B;
   --color-base-100: #3E2C1E;
@@ -513,32 +513,32 @@ body.theme-dark.subway-seat-tunnel {
   --color-accent-2: hsl(calc(var(--accent-h) + 2), calc(var(--accent-s) * 1.15), calc(var(--accent-l) * 1.16));
 
   /* Grounds: editor walnut, sidebars espresso, title bar and ribbon tunnel */
-  --background-primary: #F4E9D4;
-  --background-primary-alt: #F0E4CD;
-  --background-secondary: #EBDEC6;
-  --background-secondary-alt: #F4E9D4;
+  --background-primary: #F8EFDF;
+  --background-primary-alt: #F3EAD8;
+  --background-secondary: #EEE4D0;
+  --background-secondary-alt: #F8EFDF;
   --background-modifier-hover: rgba(140, 114, 84, 0.16);
   --background-modifier-active-hover: color-mix(in srgb, var(--color-accent) 14%, transparent);
-  --background-modifier-border: #D9C8A7;
-  --background-modifier-border-hover: #CAB48E;
+  --background-modifier-border: #DBCDB3;
+  --background-modifier-border-hover: #CBB898;
   --background-modifier-border-focus: #AD4E00;
   --background-modifier-error: #992418;
   --background-modifier-error-hover: #BC4031;
   --background-modifier-warning: #936200;
   --background-modifier-warning-hover: #A56E00;
   --background-modifier-success: #66740F;
-  --background-modifier-form-field: #F4E9D4;
-  --background-modifier-form-field-hover: #F4E9D4;
-  --background-modifier-cover: rgba(226, 211, 182, 0.5);
+  --background-modifier-form-field: #F8EFDF;
+  --background-modifier-form-field-hover: #F8EFDF;
+  --background-modifier-cover: rgba(228, 216, 192, 0.5);
   --background-modifier-box-shadow: rgba(115, 92, 68, 0.14);
   --background-modifier-message: rgba(42, 29, 19, 0.92);
-  --workspace-background-translucent: rgba(244, 233, 212, 0.6);
+  --workspace-background-translucent: rgba(248, 239, 223, 0.6);
 
   /* Text */
   --text-normal: #3E2C1E;
   --text-muted: #654F3B;
   --text-faint: #8C7254;
-  --text-on-accent: #F4E9D4;
+  --text-on-accent: #F8EFDF;
   --text-on-accent-inverted: #2A1D13;
   --text-accent: var(--color-accent);
   --text-accent-hover: var(--color-accent-1);
@@ -553,26 +553,26 @@ body.theme-dark.subway-seat-tunnel {
   --italic-color: inherit;
 
   /* Interactive */
-  --interactive-normal: #F4E9D4;
-  --interactive-hover: #D9C8A7;
+  --interactive-normal: #F8EFDF;
+  --interactive-hover: #DBCDB3;
   --interactive-accent: var(--color-accent);
   --interactive-accent-hsl: var(--color-accent-hsl);
   --interactive-accent-hover: var(--color-accent-1);
   --dropdown-background: var(--interactive-normal);
   --dropdown-background-hover: var(--interactive-hover);
-  --toggle-thumb-color: #F4E9D4;
-  --slider-thumb-background: #F4E9D4;
-  --slider-thumb-background-hover: #F4E9D4;
-  --slider-track-background: #CAB48E;
+  --toggle-thumb-color: #F8EFDF;
+  --slider-thumb-background: #F8EFDF;
+  --slider-thumb-background-hover: #F8EFDF;
+  --slider-track-background: #CBB898;
   --input-placeholder-color: #8C7254;
-  --flair-background: #D9C8A7;
+  --flair-background: #DBCDB3;
   --flair-color: #54402F;
   --pill-color: #654F3B;
   --pill-color-hover: #3E2C1E;
   --pill-color-remove: #8C7254;
   --pill-color-remove-hover: #AD4E00;
-  --pill-border-color: #CAB48E;
-  --pill-border-color-hover: #BAA07A;
+  --pill-border-color: #CBB898;
+  --pill-border-color-hover: #BAA380;
   --search-icon-color: #654F3B;
   --search-clear-button-color: #654F3B;
 
@@ -583,7 +583,7 @@ body.theme-dark.subway-seat-tunnel {
   --h4-color: #3E7157;
   --h5-color: #992418;
   --h6-color: #863913;
-  --heading-formatting: #A58C6A;
+  --heading-formatting: #A58D6D;
   --inline-title-color: #2A1D13;
 
   /* Links and tags: denim is the only cool color, tags wear orange */
@@ -603,8 +603,8 @@ body.theme-dark.subway-seat-tunnel {
   --tag-border-color-hover: rgba(173, 78, 0, 0.3);
 
   /* Code: the same syntax roles as every editor port */
-  --code-background: #EBDEC6;
-  --code-border-color: #D9C8A7;
+  --code-background: #EEE4D0;
+  --code-border-color: #DBCDB3;
   --code-bracket-background: rgba(140, 114, 84, 0.16);
   --code-normal: #3E2C1E;
   --code-comment: #8C7254;
@@ -649,44 +649,44 @@ body.theme-dark.subway-seat-tunnel {
   --blockquote-background-color: transparent;
   --checkbox-color: var(--color-accent);
   --checkbox-color-hover: var(--color-accent-1);
-  --checkbox-border-color: #A58C6A;
+  --checkbox-border-color: #A58D6D;
   --checkbox-border-color-hover: #8C7254;
-  --checkbox-marker-color: #F4E9D4;
+  --checkbox-marker-color: #F8EFDF;
   --checklist-done-color: #8C7254;
   --list-marker-color: #8C7254;
   --list-marker-color-hover: #654F3B;
   --list-marker-color-collapsed: #AD4E00;
   --collapse-icon-color: #8C7254;
   --collapse-icon-color-collapsed: #AD4E00;
-  --hr-color: #CAB48E;
-  --table-border-color: #D9C8A7;
-  --table-header-background: #EBDEC6;
-  --table-header-background-hover: #D9C8A7;
-  --table-header-border-color: #D9C8A7;
+  --hr-color: #CBB898;
+  --table-border-color: #DBCDB3;
+  --table-header-background: #EEE4D0;
+  --table-header-background-hover: #DBCDB3;
+  --table-header-border-color: #DBCDB3;
   --table-header-color: #2A1D13;
-  --table-row-alt-background: #F0E5CE;
+  --table-row-alt-background: #F4EBD9;
   --table-row-alt-background-hover: rgba(140, 114, 84, 0.16);
   --table-row-background-hover: rgba(140, 114, 84, 0.16);
   --table-selection: color-mix(in srgb, var(--color-accent) 12%, transparent);
   --table-selection-border-color: var(--color-accent);
   --table-drag-handle-color: #8C7254;
-  --table-add-button-border-color: #CAB48E;
-  --metadata-border-color: #D9C8A7;
-  --metadata-divider-color: #D9C8A7;
+  --table-add-button-border-color: #CBB898;
+  --metadata-border-color: #DBCDB3;
+  --metadata-divider-color: #DBCDB3;
   --metadata-label-text-color: #654F3B;
   --metadata-input-text-color: #3E2C1E;
-  --embed-border-start: 2px solid #CAB48E;
+  --embed-border-start: 2px solid #CBB898;
 
   /* Graph and canvas */
   --graph-text: #3E2C1E;
-  --graph-line: #CAB48E;
+  --graph-line: #CBB898;
   --graph-node: #654F3B;
-  --graph-node-unresolved: #A58C6A;
+  --graph-node-unresolved: #A58D6D;
   --graph-node-focused: #AD4E00;
   --graph-node-tag: #66740F;
   --graph-node-attachment: #936200;
-  --canvas-background: #F4E9D4;
-  --canvas-dot-pattern: #D9C8A7;
+  --canvas-background: #F8EFDF;
+  --canvas-dot-pattern: #DBCDB3;
   --canvas-card-label-color: #8C7254;
   --canvas-color-1: #992418;
   --canvas-color-2: #AD4E00;
@@ -696,27 +696,27 @@ body.theme-dark.subway-seat-tunnel {
   --canvas-color-6: #3F6480;
 
   /* Window: title bar, ribbon, tabs, status bar, dividers */
-  --titlebar-background: #E2D3B6;
-  --titlebar-background-focused: #E2D3B6;
-  --titlebar-border-color: #E2D3B6;
+  --titlebar-background: #E4D8C0;
+  --titlebar-background-focused: #E4D8C0;
+  --titlebar-border-color: #E4D8C0;
   --titlebar-text-color: #654F3B;
   --titlebar-text-color-focused: #3E2C1E;
-  --ribbon-background: #E2D3B6;
-  --ribbon-background-collapsed: #E2D3B6;
-  --tab-container-background: #E2D3B6;
-  --tab-background-active: #F4E9D4;
+  --ribbon-background: #E4D8C0;
+  --ribbon-background-collapsed: #E4D8C0;
+  --tab-container-background: #E4D8C0;
+  --tab-background-active: #F8EFDF;
   --tab-text-color: #8C7254;
   --tab-text-color-active: #654F3B;
   --tab-text-color-focused: #654F3B;
   --tab-text-color-focused-active: #54402F;
   --tab-text-color-focused-active-current: #3E2C1E;
   --tab-text-color-focused-highlighted: #AD4E00;
-  --tab-divider-color: #CAB48E;
-  --tab-outline-color: #E2D3B6;
-  --status-bar-background: #EBDEC6;
-  --status-bar-border-color: #E2D3B6;
+  --tab-divider-color: #CBB898;
+  --tab-outline-color: #E4D8C0;
+  --status-bar-background: #EEE4D0;
+  --status-bar-border-color: #E4D8C0;
   --status-bar-text-color: #654F3B;
-  --divider-color: #E2D3B6;
+  --divider-color: #E4D8C0;
   --divider-color-hover: var(--color-accent);
   --vault-profile-color: #3E2C1E;
   --vault-profile-color-hover: #2A1D13;
@@ -728,7 +728,7 @@ body.theme-dark.subway-seat-tunnel {
   --nav-item-color-selected: #3E2C1E;
   --nav-item-color-highlighted: #AD4E00;
   --nav-item-background-hover: rgba(140, 114, 84, 0.16);
-  --nav-item-background-active: #D9C8A7;
+  --nav-item-background-active: #DBCDB3;
   --nav-item-background-selected: color-mix(in srgb, var(--color-accent) 16%, transparent);
   --nav-heading-color: #3E2C1E;
   --nav-heading-color-hover: #2A1D13;
@@ -741,31 +741,31 @@ body.theme-dark.subway-seat-tunnel {
   --icon-color-hover: #3E2C1E;
   --icon-color-active: #AD4E00;
   --icon-color-focused: #3E2C1E;
-  --indentation-guide-color: #D9C8A7;
-  --indentation-guide-color-active: #A58C6A;
+  --indentation-guide-color: #DBCDB3;
+  --indentation-guide-color-active: #A58D6D;
   --scrollbar-bg: transparent;
   --scrollbar-thumb-bg: rgba(140, 114, 84, 0.28);
   --scrollbar-active-thumb-bg: rgba(140, 114, 84, 0.5);
 
   /* Menus, modals, prompts, popovers, PDFs */
-  --menu-background: #FAF4EA;
-  --menu-border-color: #CAB48E;
-  --modal-background: #F4E9D4;
-  --modal-border-color: #CAB48E;
-  --prompt-background: #FAF4EA;
-  --prompt-border-color: #CAB48E;
-  --suggestion-background: #FAF4EA;
-  --setting-items-background: #F0E4CD;
-  --setting-items-border-color: #D9C8A7;
+  --menu-background: #FCF7EF;
+  --menu-border-color: #CBB898;
+  --modal-background: #F8EFDF;
+  --modal-border-color: #CBB898;
+  --prompt-background: #FCF7EF;
+  --prompt-border-color: #CBB898;
+  --suggestion-background: #FCF7EF;
+  --setting-items-background: #F3EAD8;
+  --setting-items-border-color: #DBCDB3;
   --drag-ghost-background: rgba(42, 29, 19, 0.9);
-  --drag-ghost-text-color: #F4E9D4;
-  --pdf-background: #EBDEC6;
-  --pdf-sidebar-background: #EBDEC6;
-  --pdf-page-background: #F4E9D4;
+  --drag-ghost-text-color: #F8EFDF;
+  --pdf-background: #EEE4D0;
+  --pdf-sidebar-background: #EEE4D0;
+  --pdf-page-background: #F8EFDF;
 }
 
 body.theme-light {
-  --canvas-color: #BAA07A;
+  --canvas-color: #BAA380;
 }
 
 /* Diffs in code blocks */

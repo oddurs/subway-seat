@@ -5,8 +5,8 @@ pre code.hljs { display: block; overflow-x: auto; padding: 1em; }
 code.hljs { padding: 3px 5px; }
 .hljs-addition, .hljs-deletion { display: inline-block; width: 100%; } /* diff lines as full-width bands */
 
-.hljs { color: #3E2C1E; background: #F4E9D4; }
-.hljs::selection, .hljs ::selection { color: #2A1D13; background: #CAB48E; }
+.hljs { color: #3E2C1E; background: #F8EFDF; }
+.hljs::selection, .hljs ::selection { color: #2A1D13; background: #CBB898; }
 
 .hljs-comment { color: #8C7254; font-style: italic; }
 .hljs-quote { color: #654F3B; font-style: italic; }

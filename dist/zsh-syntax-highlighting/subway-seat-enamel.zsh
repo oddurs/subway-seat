@@ -71,7 +71,7 @@ ZSH_HIGHLIGHT_STYLES[bracket-level-2]='fg=#AD4E00'
 ZSH_HIGHLIGHT_STYLES[bracket-level-3]='fg=#66740F'
 ZSH_HIGHLIGHT_STYLES[bracket-level-4]='fg=#3E7157'
 ZSH_HIGHLIGHT_STYLES[cursor-matchingbracket]='fg=#A56E00,bold'
-ZSH_HIGHLIGHT_STYLES[cursor]='fg=#F4E9D4,bg=#AD4E00'
+ZSH_HIGHLIGHT_STYLES[cursor]='fg=#F8EFDF,bg=#AD4E00'
 
 # zsh-autosuggestions (fish's autosuggestion color)
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=#8C7254'

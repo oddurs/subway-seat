@@ -6,9 +6,9 @@ Name=Subway Seat Enamel
 # Subway Seat Enamel
 [Light]
 Foreground=#3E2C1E
-Background=#F4E9D4
+Background=#F8EFDF
 Cursor=#AD4E00
-CursorForeground=#F4E9D4
+CursorForeground=#F8EFDF
 Color0=#54402F
 Color1=#992418
 Color2=#66740F
@@ -16,7 +16,7 @@ Color3=#936200
 Color4=#3F6480
 Color5=#AD4E00
 Color6=#3E7157
-Color7=#BAA07A
+Color7=#BAA380
 Color8=#8C7254
 Color9=#BC4031
 Color10=#697813
@@ -24,15 +24,15 @@ Color11=#A56E00
 Color12=#517791
 Color13=#C4561A
 Color14=#4C8367
-Color15=#CAB48E
+Color15=#CBB898
 TitlebarForeground=#3E2C1E
-TitlebarBackground=#EBDEC6
+TitlebarBackground=#EEE4D0
 BellForeground=#2A1D13
-BellBackground=#D5BF94
+BellBackground=#D7C49C
 SuperuserForeground=#2A1D13
 SuperuserBackground=#EBD3D1
 RemoteForeground=#2A1D13
-RemoteBackground=#DBD6C8
+RemoteBackground=#DEDCD2
 
 # Subway Seat
 [Dark]

@@ -1,9 +1,9 @@
 <!-- Subway Seat — generated from palette.py by build.py. Edit the palette, not this file. -->
 <style name="london-portland">
-  <entry type="Background" style="#293040 bg:#E0EAFE"/>
-  <entry type="LineHighlight" style="bg:#D4E0F6"/>
-  <entry type="LineNumbers" style="#7F91B4"/>
-  <entry type="LineNumbersTable" style="#7F91B4"/>
+  <entry type="Background" style="#293040 bg:#E8F0FF"/>
+  <entry type="LineHighlight" style="bg:#DCE5F7"/>
+  <entry type="LineNumbers" style="#8192B4"/>
+  <entry type="LineNumbersTable" style="#8192B4"/>
   <entry type="Text" style="#293040"/>
   <entry type="Error" style="#9B211A"/>
   <entry type="Comment" style="italic #697794"/>

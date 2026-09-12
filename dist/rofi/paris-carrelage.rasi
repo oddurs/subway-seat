@@ -4,13 +4,13 @@
 @import "default"
 
 * {
-    crust:     #BFDDCD;
-    mantle:    #D0E6D8;
-    base:      #DEF0E6;
-    surface0:  #ACD5BF;
-    surface1:  #96C4AC;
-    surface2:  #84B09A;
-    overlay0:  #769B87;
+    crust:     #C8E0D3;
+    mantle:    #D8EADF;
+    base:      #E7F5ED;
+    surface0:  #B7D8C6;
+    surface1:  #9FC6B1;
+    surface2:  #89B19D;
+    overlay0:  #789C88;
     overlay1:  #627F70;
     overlay2:  #4F675B;
     subtext0:  #45594F;
@@ -31,10 +31,10 @@
     denim-hi:  #3E75AD;
     clay:      #9A557D;
 
-    paper:     #EEF8F2;
-    edge:      #D2DCD6;
-    hover:     #E0EAE4;
-    selection: #C6D1CA;
+    paper:     #F3FAF6;
+    edge:      #D6DED9;
+    hover:     #E4ECE8;
+    selection: #CAD3CE;
 
     /* the default theme's variables */
     background:                  @paper;
