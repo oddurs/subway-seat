@@ -1,0 +1,12 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# London Moquette for cava: gradient from the bottom of the screen to the top.
+[color]
+gradient = 1
+gradient_color_1 = '#77C581'
+gradient_color_2 = '#ACC365'
+gradient_color_3 = '#E0C148'
+gradient_color_4 = '#ECB041'
+gradient_color_5 = '#E49944'
+gradient_color_6 = '#DE8348'
+gradient_color_7 = '#DC724D'
+gradient_color_8 = '#DB6052'

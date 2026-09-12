@@ -1,0 +1,119 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# London Portland skin for k9s.
+k9s:
+  body:
+    fgColor: '#2F3033'
+    bgColor: '#E5EAF6'
+    logoColor: '#9F591B'
+    logoColorMsg: '#2F3033'
+    logoColorInfo: '#357D41'
+    logoColorWarn: '#896800'
+    logoColorError: '#CA2822'
+  prompt:
+    fgColor: '#2F3033'
+    bgColor: '#CED5E3'
+    suggestColor: '#727781'
+    border:
+      default: '#007376'
+      command: '#9F591B'
+  info:
+    fgColor: '#9F591B'
+    sectionColor: '#2F3033'
+    cpuColor: '#357D41'
+    memColor: '#896800'
+    k9sRevColor: '#398145'
+  help:
+    fgColor: '#2F3033'
+    bgColor: '#E5EAF6'
+    sectionColor: '#357D41'
+    keyColor: '#896800'
+    numKeyColor: '#CA2822'
+  frame:
+    title:
+      fgColor: '#896800'
+      bgColor: '#E5EAF6'
+      highlightColor: '#9F591B'
+      counterColor: '#CA2822'
+      filterColor: '#357D41'
+    border:
+      fgColor: '#9BA5B8'
+      focusColor: '#9F591B'
+    menu:
+      fgColor: '#434548'
+      keyColor: '#896800'
+      numKeyColor: '#CA2822'
+    crumbs:
+      fgColor: '#E5EAF6'
+      bgColor: '#896800'
+      activeColor: '#9F591B'
+    status:
+      newColor: '#007376'
+      modifyColor: '#896800'
+      addColor: '#357D41'
+      pendingColor: '#9F591B'
+      errorColor: '#CA2822'
+      highlightColor: '#977300'
+      killColor: '#7660AB'
+      completedColor: '#8A919F'
+  views:
+    table:
+      fgColor: '#2F3033'
+      bgColor: '#E5EAF6'
+      cursorFgColor: '#1F2022'
+      cursorBgColor: '#C1CADC'
+      markColor: '#AE672B'
+      header:
+        fgColor: '#515459'
+        bgColor: '#E5EAF6'
+        sorterColor: '#9F591B'
+        selectedSortColumnColor: '#9F591B'
+    xray:
+      fgColor: '#2F3033'
+      bgColor: '#E5EAF6'
+      cursorColor: '#C1CADC'
+      cursorTextColor: '#1F2022'
+      graphicColor: '#007376'
+    charts:
+      bgColor: '#E5EAF6'
+      chartBgColor: '#E5EAF6'
+      dialBgColor: '#E5EAF6'
+      defaultDialColors:
+        - '#357D41'
+        - '#CA2822'
+      defaultChartColors:
+        - '#357D41'
+        - '#CA2822'
+      resourceColors:
+        cpu:
+          - '#9F591B'
+          - '#896800'
+        mem:
+          - '#896800'
+          - '#357D41'
+      focusFgColor: '#E5EAF6'
+      focusBgColor: '#9F591B'
+    yaml:
+      keyColor: '#896800'
+      valueColor: '#2F3033'
+      colonColor: '#5D6168'
+    logs:
+      fgColor: '#2F3033'
+      bgColor: '#E5EAF6'
+      indicator:
+        fgColor: '#515459'
+        bgColor: '#E5EAF6'
+        toggleOnColor: '#357D41'
+        toggleOffColor: '#8A919F'
+    picker:
+      mainColor: '#2F3033'
+      focusColor: '#9F591B'
+      shortcutColor: '#896800'
+  dialog:
+    fgColor: '#2F3033'
+    bgColor: '#C1CADC'
+    buttonFgColor: '#2F3033'
+    buttonBgColor: '#9BA5B8'
+    buttonFocusFgColor: '#E5EAF6'
+    buttonFocusBgColor: '#9F591B'
+    labelFgColor: '#896800'
+    fieldFgColor: '#2F3033'

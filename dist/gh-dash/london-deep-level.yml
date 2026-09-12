@@ -1,0 +1,26 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# London Deep Level for gh-dash.
+theme:
+  colors:
+    text:
+      primary: "#D4DAE7"
+      secondary: "#DE8946"
+      inverted: "#0A0E18"
+      faint: "#6F7C97"
+      warning: "#F2C03F"
+      success: "#77C581"
+      error: "#F17869"
+      actor: "#BEC6D5"
+    background:
+      selected: "#232F49"
+    border:
+      primary: "#DE8946"
+      secondary: "#303E5B"
+      faint: "#1A243A"
+    icon:
+      newcontributor: "#77C581"
+      contributor: "#54B4B5"
+      collaborator: "#F2C03F"
+      member: "#F2C03F"
+      owner: "#DE8946"
+      unknownrole: "#6F7C97"

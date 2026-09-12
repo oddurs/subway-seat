@@ -11,6 +11,9 @@ Tailwind v4 theme files add ss-* colors (bg-ss-base, text-ss-orange, bg-ss-diff-
 | Subway Seat | [`subway-seat.css`](subway-seat.css) | `src/subway-seat.css`; in your project, next to your main CSS file |
 | Subway Seat Tunnel | [`subway-seat-tunnel.css`](subway-seat-tunnel.css) | `src/subway-seat-tunnel.css`; in your project, next to your main CSS file |
 | Subway Seat Enamel | [`subway-seat-enamel.css`](subway-seat-enamel.css) | `src/subway-seat-enamel.css`; in your project, next to your main CSS file |
+| London Moquette | [`london-moquette.css`](london-moquette.css) | `src/london-moquette.css`; in your project, next to your main CSS file |
+| London Deep Level | [`london-deep-level.css`](london-deep-level.css) | `src/london-deep-level.css`; in your project, next to your main CSS file |
+| London Portland | [`london-portland.css`](london-portland.css) | `src/london-portland.css`; in your project, next to your main CSS file |
 | All three | [`subway-seat-auto.css`](subway-seat-auto.css) | `src/subway-seat-auto.css`; in your project, next to your main CSS file |
 | All three | [`subway-seat-preset.js`](subway-seat-preset.js) | `./subway-seat-preset.js`; at your project root, next to tailwind.config.js (Tailwind v3) |
 
@@ -43,6 +46,33 @@ Tailwind v4 theme files add ss-* colors (bg-ss-base, text-ss-orange, bg-ss-diff-
 /* bg-ss-base text-ss-text border-ss-surface1 text-ss-orange bg-ss-diff-add */
 ```
 
+**London Moquette**, in your main CSS file (Tailwind v4):
+
+```css
+@import "tailwindcss";
+@import "./london-moquette.css";
+
+/* bg-ss-base text-ss-text border-ss-surface1 text-ss-orange bg-ss-diff-add */
+```
+
+**London Deep Level**, in your main CSS file (Tailwind v4):
+
+```css
+@import "tailwindcss";
+@import "./london-deep-level.css";
+
+/* bg-ss-base text-ss-text border-ss-surface1 text-ss-orange bg-ss-diff-add */
+```
+
+**London Portland**, in your main CSS file (Tailwind v4):
+
+```css
+@import "tailwindcss";
+@import "./london-portland.css";
+
+/* bg-ss-base text-ss-text border-ss-surface1 text-ss-orange bg-ss-diff-add */
+```
+
 ## Follow light and dark
 
 In your main CSS file (Tailwind v4):
@@ -59,6 +89,9 @@ In your main CSS file (Tailwind v4):
 - Delete `src/subway-seat.css`.
 - Delete `src/subway-seat-tunnel.css`.
 - Delete `src/subway-seat-enamel.css`.
+- Delete `src/london-moquette.css`.
+- Delete `src/london-deep-level.css`.
+- Delete `src/london-portland.css`.
 - Delete `src/subway-seat-auto.css`.
 - Delete `./subway-seat-preset.js`.
 - Remove the line you added to turn it on.

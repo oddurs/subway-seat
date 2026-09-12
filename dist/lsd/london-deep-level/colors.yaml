@@ -1,0 +1,45 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# London Deep Level for lsd. File names follow LS_COLORS (see the vivid port).
+user: "#F2C03F"
+group: "#BEC6D5"
+permission:
+  read: "#F2C03F"
+  write: "#DE8946"
+  exec: "#77C581"
+  exec-sticky: "#AE9EDC"
+  no-access: "#53617D"
+  octal: "#AE9EDC"
+  acl: "#6F7C97"
+  context: "#6F7C97"
+attributes:
+  archive: "#A5AEC0"
+  read: "#F2C03F"
+  hidden: "#6F7C97"
+  system: "#AE9EDC"
+date:
+  hour-old: "#77C581"
+  day-old: "#BEC6D5"
+  older: "#A5AEC0"
+size:
+  none: "#6F7C97"
+  small: "#77C581"
+  medium: "#F2C03F"
+  large: "#DE8946"
+inode:
+  valid: "#6F7C97"
+  invalid: "#53617D"
+links:
+  valid: "#54B4B5"
+  invalid: "#53617D"
+tree-edge: "#53617D"
+git-status:
+  default: "#A5AEC0"
+  unmodified: "#6F7C97"
+  ignored: "#53617D"
+  new-in-index: "#77C581"
+  new-in-workdir: "#77C581"
+  typechange: "#AE9EDC"
+  deleted: "#F17869"
+  renamed: "#54B4B5"
+  modified: "#F2C03F"
+  conflicted: "#DB6052"

@@ -11,6 +11,9 @@ Prompt, reply, tool and completion-menu colors for aider's config file. Code blo
 | Subway Seat | [`subway-seat.aider.conf.yml`](subway-seat.aider.conf.yml) | add to the end of `~/.aider.conf.yml` |
 | Subway Seat Tunnel | [`subway-seat-tunnel.aider.conf.yml`](subway-seat-tunnel.aider.conf.yml) | add to the end of `~/.aider.conf.yml` |
 | Subway Seat Enamel | [`subway-seat-enamel.aider.conf.yml`](subway-seat-enamel.aider.conf.yml) | add to the end of `~/.aider.conf.yml` |
+| London Moquette | [`london-moquette.aider.conf.yml`](london-moquette.aider.conf.yml) | add to the end of `~/.aider.conf.yml` |
+| London Deep Level | [`london-deep-level.aider.conf.yml`](london-deep-level.aider.conf.yml) | add to the end of `~/.aider.conf.yml` |
+| London Portland | [`london-portland.aider.conf.yml`](london-portland.aider.conf.yml) | add to the end of `~/.aider.conf.yml` |
 
 ## Turn it on
 
@@ -30,6 +33,24 @@ cat subway-seat-tunnel.aider.conf.yml >> ~/.aider.conf.yml
 
 ```sh
 cat subway-seat-enamel.aider.conf.yml >> ~/.aider.conf.yml
+```
+
+**London Moquette**, in ~/.aider.conf.yml (or .aider.conf.yml in a repo):
+
+```sh
+cat london-moquette.aider.conf.yml >> ~/.aider.conf.yml
+```
+
+**London Deep Level**, in ~/.aider.conf.yml (or .aider.conf.yml in a repo):
+
+```sh
+cat london-deep-level.aider.conf.yml >> ~/.aider.conf.yml
+```
+
+**London Portland**, in ~/.aider.conf.yml (or .aider.conf.yml in a repo):
+
+```sh
+cat london-portland.aider.conf.yml >> ~/.aider.conf.yml
 ```
 
 ## Uninstall

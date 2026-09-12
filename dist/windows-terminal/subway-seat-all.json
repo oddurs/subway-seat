@@ -68,6 +68,75 @@
             "brightPurple": "#C4561A",
             "brightCyan": "#4C8367",
             "brightWhite": "#CAB48E"
+        },
+        {
+            "name": "London Moquette",
+            "background": "#1E2941",
+            "foreground": "#D8DEEA",
+            "cursorColor": "#F2C03F",
+            "selectionBackground": "#3D4F72",
+            "black": "#303F61",
+            "red": "#DB6052",
+            "green": "#77C581",
+            "yellow": "#F2C03F",
+            "blue": "#7595DA",
+            "purple": "#DE8946",
+            "cyan": "#54B4B5",
+            "white": "#C1C9D8",
+            "brightBlack": "#73819C",
+            "brightRed": "#F17869",
+            "brightGreen": "#9AD2A0",
+            "brightYellow": "#FFD36C",
+            "brightBlue": "#8BB0FF",
+            "brightPurple": "#E5AA7F",
+            "brightCyan": "#72D1D3",
+            "brightWhite": "#E9EDF5"
+        },
+        {
+            "name": "London Deep Level",
+            "background": "#121A2D",
+            "foreground": "#D4DAE7",
+            "cursorColor": "#F2C03F",
+            "selectionBackground": "#303E5B",
+            "black": "#232F49",
+            "red": "#DB6052",
+            "green": "#77C581",
+            "yellow": "#F2C03F",
+            "blue": "#7595DA",
+            "purple": "#DE8946",
+            "cyan": "#54B4B5",
+            "white": "#BEC6D5",
+            "brightBlack": "#6F7C97",
+            "brightRed": "#F17869",
+            "brightGreen": "#9AD2A0",
+            "brightYellow": "#FFD36C",
+            "brightBlue": "#8BB0FF",
+            "brightPurple": "#E5AA7F",
+            "brightCyan": "#72D1D3",
+            "brightWhite": "#E7EBF3"
+        },
+        {
+            "name": "London Portland",
+            "background": "#E5EAF6",
+            "foreground": "#2F3033",
+            "cursorColor": "#9F591B",
+            "selectionBackground": "#ADB7CB",
+            "black": "#434548",
+            "red": "#A40005",
+            "green": "#357D41",
+            "yellow": "#896800",
+            "blue": "#0019A8",
+            "purple": "#9F591B",
+            "cyan": "#007376",
+            "white": "#9BA5B8",
+            "brightBlack": "#727781",
+            "brightRed": "#CA2822",
+            "brightGreen": "#398145",
+            "brightYellow": "#977300",
+            "brightBlue": "#406BD0",
+            "brightPurple": "#AE672B",
+            "brightCyan": "#008689",
+            "brightWhite": "#ADB7CB"
         }
     ],
     "themes": [
@@ -120,6 +189,57 @@
             "tab": {
                 "background": "#F4E9D4FF",
                 "unfocusedBackground": "#EBDEC6FF"
+            }
+        },
+        {
+            "name": "London Moquette",
+            "window": {
+                "applicationTheme": "dark",
+                "useMica": false,
+                "frame": "#121826FF",
+                "unfocusedFrame": "#121826FF"
+            },
+            "tabRow": {
+                "background": "#121826FF",
+                "unfocusedBackground": "#121826FF"
+            },
+            "tab": {
+                "background": "#1E2941FF",
+                "unfocusedBackground": "#172032FF"
+            }
+        },
+        {
+            "name": "London Deep Level",
+            "window": {
+                "applicationTheme": "dark",
+                "useMica": false,
+                "frame": "#0A0E18FF",
+                "unfocusedFrame": "#0A0E18FF"
+            },
+            "tabRow": {
+                "background": "#0A0E18FF",
+                "unfocusedBackground": "#0A0E18FF"
+            },
+            "tab": {
+                "background": "#121A2DFF",
+                "unfocusedBackground": "#0D1421FF"
+            }
+        },
+        {
+            "name": "London Portland",
+            "window": {
+                "applicationTheme": "light",
+                "useMica": false,
+                "frame": "#CED5E3FF",
+                "unfocusedFrame": "#CED5E3FF"
+            },
+            "tabRow": {
+                "background": "#CED5E3FF",
+                "unfocusedBackground": "#CED5E3FF"
+            },
+            "tab": {
+                "background": "#E5EAF6FF",
+                "unfocusedBackground": "#D9E0ECFF"
             }
         }
     ]

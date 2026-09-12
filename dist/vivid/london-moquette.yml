@@ -1,0 +1,153 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# London Moquette for vivid.
+colors:
+  crust: '121826'
+  mantle: '172032'
+  base: '1E2941'
+  surface0: '263451'
+  surface1: '303F61'
+  surface2: '3D4F72'
+  overlay0: '576685'
+  overlay1: '73819C'
+  overlay2: '8F9AB0'
+  subtext0: 'A9B2C4'
+  subtext1: 'C1C9D8'
+  text: 'D8DEEA'
+  text_hi: 'E9EDF5'
+  yellow: 'F2C03F'
+  yellow_hi: 'FFD36C'
+  orange: 'DE8946'
+  orange_hi: 'E5AA7F'
+  red: 'DB6052'
+  red_hi: 'F17869'
+  green: '77C581'
+  green_hi: '9AD2A0'
+  sage: '54B4B5'
+  sage_hi: '72D1D3'
+  denim: '7595DA'
+  denim_hi: '8BB0FF'
+  clay: 'AE9EDC'
+  ink: '121826'
+
+core:
+  normal_text: {}
+  regular_file: {}
+  reset_to_normal: {}
+
+  directory:
+    foreground: yellow
+    font-style: bold
+
+  symlink:
+    foreground: sage
+
+  multi_hard_link: {}
+
+  fifo:
+    foreground: clay
+
+  socket:
+    foreground: clay
+    font-style: bold
+
+  door:
+    foreground: clay
+
+  block_device:
+    foreground: orange_hi
+    background: surface0
+
+  character_device:
+    foreground: orange
+    background: surface0
+
+  broken_symlink:
+    foreground: ink
+    background: red
+
+  missing_symlink_target:
+    foreground: ink
+    background: red
+
+  setuid:
+    foreground: ink
+    background: red
+
+  setgid:
+    foreground: ink
+    background: yellow
+
+  file_with_capability:
+    foreground: clay
+    font-style: underline
+
+  sticky_other_writable:
+    foreground: yellow
+    background: surface1
+
+  other_writable:
+    foreground: yellow
+    background: surface1
+
+  sticky:
+    foreground: yellow
+    background: surface0
+
+  executable_file:
+    foreground: green
+    font-style: bold
+
+text:
+  special:
+    foreground: yellow_hi
+    font-style: bold
+
+  todo:
+    font-style: bold
+
+  licenses:
+    foreground: overlay1
+
+  configuration:
+    foreground: subtext0
+
+  other:
+    foreground: subtext1
+
+markup:
+  foreground: orange
+
+programming:
+  source:
+    foreground: sage
+
+  tooling:
+    foreground: yellow
+
+    continuous-integration:
+      foreground: yellow
+
+media:
+  foreground: clay
+
+  audio:
+    foreground: orange_hi
+
+  video:
+    foreground: orange
+
+  fonts:
+    foreground: subtext0
+
+office:
+  foreground: denim
+
+archives:
+  foreground: red_hi
+
+executable:
+  foreground: green
+  font-style: bold
+
+unimportant:
+  foreground: overlay0

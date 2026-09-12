@@ -20,8 +20,8 @@ ACCENTS = [
 ]
 ROLES = GROUND + TEXT + ACCENTS
 
-# What each role is called on the site and in docs (the dark-flavor reading).
-ROLE_NAMES = {
+# What each role is called on the site and in docs, per family (the dark reading).
+NEW_YORK_NAMES = {
     "crust": "Blackout", "mantle": "Espresso", "base": "Paneling", "surface0": "Coppertone",
     "surface1": "Saddle", "surface2": "Corduroy", "overlay0": "Pecan", "overlay1": "Cardboard",
     "overlay2": "Burlap", "subtext0": "Khaki", "subtext1": "Almond", "text": "Parchment",
@@ -29,6 +29,17 @@ ROLE_NAMES = {
     "orange": "Burnt orange", "orange_hi": "Sixth Avenue", "red": "Redbird", "red_hi": "Redbird bright",
     "green": "Avocado", "green_hi": "Avocado bright", "sage": "Seafoam tile", "sage_hi": "Seafoam bright",
     "denim": "Faded denim", "denim_hi": "Denim bright", "clay": "Terracotta",
+}
+
+LONDON_NAMES = {
+    "crust": "Running tunnel", "mantle": "Concourse", "base": "Moquette", "surface0": "Armrest",
+    "surface1": "Grab rail", "surface2": "Ironwork", "overlay0": "Hoarding", "overlay1": "Etched glass",
+    "overlay2": "Frosted", "subtext0": "Chalk", "subtext1": "Vitreous", "text": "Johnston white",
+    "text_hi": "Tile white", "yellow": "Hazard line", "yellow_hi": "Hazard bright",
+    "orange": "London brick", "orange_hi": "Brick bright", "red": "Corporate red",
+    "red_hi": "Corporate bright", "green": "District green", "green_hi": "District bright",
+    "sage": "Dockland teal", "sage_hi": "Dockland bright", "denim": "Corporate blue",
+    "denim_hi": "Cornflower", "clay": "Elizabeth violet",
 }
 
 # What each accent does (the syntax role it leads), for docs and the site.
@@ -69,10 +80,11 @@ ROLE_USES = {
 
 @dataclass(frozen=True)
 class Flavor:
-    id: str        # "walnut" | "tunnel" | "enamel"
-    name: str      # "Subway Seat", "Subway Seat Tunnel", …
-    slug: str      # "subway-seat", "subway-seat-tunnel", …
+    id: str        # "walnut" | "tunnel" | "moquette" | …
+    name: str      # "Subway Seat", "Subway Seat Tunnel", "London Moquette", …
+    slug: str      # "subway-seat", "subway-seat-tunnel", "london-moquette", …
     dark: bool
+    family: str    # a Family id: "new-york" | "london"
     blurb: str
     colors: dict = field(repr=False)
     # ANSI 0–15 as role names
@@ -91,6 +103,11 @@ class Flavor:
     @property
     def snake(self):
         return self.slug.replace("-", "_")
+
+    @property
+    def role_names(self):
+        """What this family calls each role."""
+        return FAMILY[self.family].role_names
 
     def syntax(self, role):
         """(hex, styles) for a syntax role."""
@@ -123,6 +140,7 @@ DARK_ACCENTS = {
 
 WALNUT = Flavor(
     id="walnut",
+    family="new-york",
     name="Subway Seat",
     slug="subway-seat",
     dark=True,
@@ -139,6 +157,7 @@ WALNUT = Flavor(
 
 TUNNEL = Flavor(
     id="tunnel",
+    family="new-york",
     name="Subway Seat Tunnel",
     slug="subway-seat-tunnel",
     dark=True,
@@ -155,6 +174,7 @@ TUNNEL = Flavor(
 
 ENAMEL = Flavor(
     id="enamel",
+    family="new-york",
     name="Subway Seat Enamel",
     slug="subway-seat-enamel",
     dark=False,
@@ -177,8 +197,132 @@ ENAMEL = Flavor(
     ansi_roles=LIGHT_ANSI,
 )
 
-FLAVORS = [WALNUT, TUNNEL, ENAMEL]
+
+# London's accents in two bands, mirroring Walnut's own structure: the four used
+# as large fills (prompt segments, diff grounds, git status) hold a tight even
+# chroma band so a powerline stripe reads as one ribbon; the rest stay quiet.
+LONDON_ACCENTS = {
+    "yellow": "#F2C03F", "yellow_hi": "#FFD36C",   # platform-edge hazard line
+    "orange": "#DE8946", "orange_hi": "#E5AA7F",   # London brick
+    "red": "#DB6052", "red_hi": "#F17869",         # Corporate Red
+    "green": "#77C581", "green_hi": "#9AD2A0",     # District green
+    "sage": "#54B4B5", "sage_hi": "#72D1D3",       # DLR teal
+    "denim": "#7595DA", "denim_hi": "#8BB0FF",     # Corporate Blue
+    "clay": "#AE9EDC",                             # Elizabeth violet
+}
+
+MOQUETTE = Flavor(
+    id="moquette",
+    family="london",
+    name="London Moquette",
+    slug="london-moquette",
+    dark=True,
+    blurb="The seat you're sitting on. Corporate Blue, turned right down.",
+    colors={
+        "crust": "#121826", "mantle": "#172032", "base": "#1E2941",
+        "surface0": "#263451", "surface1": "#303F61", "surface2": "#3D4F72",
+        "overlay0": "#576685", "overlay1": "#73819C", "overlay2": "#8F9AB0",
+        "subtext0": "#A9B2C4", "subtext1": "#C1C9D8", "text": "#D8DEEA", "text_hi": "#E9EDF5",
+        **LONDON_ACCENTS,
+    },
+    ansi_roles=DARK_ANSI,
+)
+
+DEEP_LEVEL = Flavor(
+    id="deep",
+    family="london",
+    name="London Deep Level",
+    slug="london-deep-level",
+    dark=True,
+    blurb="Below the cut-and-cover lines. The ground drops; the signals don't.",
+    colors={
+        "crust": "#0A0E18", "mantle": "#0D1421", "base": "#121A2D",
+        "surface0": "#1A243A", "surface1": "#232F49", "surface2": "#303E5B",
+        "overlay0": "#53617D", "overlay1": "#6F7C97", "overlay2": "#8B96AC",
+        "subtext0": "#A5AEC0", "subtext1": "#BEC6D5", "text": "#D4DAE7", "text_hi": "#E7EBF3",
+        **LONDON_ACCENTS,
+    },
+    ansi_roles=DARK_ANSI,
+)
+
+PORTLAND = Flavor(
+    id="portland",
+    family="london",
+    name="London Portland",
+    slug="london-portland",
+    dark=False,
+    blurb="Holden's Portland stone. Links are the exact Corporate Blue.",
+    colors={
+        # As in Enamel, the ramp runs the other way from base.
+        "crust": "#CED5E3", "mantle": "#D9E0EC", "base": "#E5EAF6",
+        "surface0": "#C1CADC", "surface1": "#ADB7CB", "surface2": "#9BA5B8",
+        "overlay0": "#8A919F", "overlay1": "#727781", "overlay2": "#5D6168",
+        "subtext0": "#515459", "subtext1": "#434548", "text": "#2F3033", "text_hi": "#1F2022",
+        "yellow": "#896800", "yellow_hi": "#977300",
+        "orange": "#9F591B", "orange_hi": "#AE672B",
+        "red": "#A40005", "red_hi": "#CA2822",
+        "green": "#357D41", "green_hi": "#398145",
+        "sage": "#007376", "sage_hi": "#008689",
+        "denim": "#0019A8", "denim_hi": "#406BD0",   # Corporate Blue, exact
+        "clay": "#7660AB",
+    },
+    ansi_roles=LIGHT_ANSI,
+)
+
+
+@dataclass(frozen=True)
+class Family:
+    """One city. Same 26 roles, same lightness ladder, different values."""
+
+    id: str          # "new-york" | "london"
+    name: str        # "New York"
+    blurb: str
+    # The signage band the site's nav is built from: New York's black enamel
+    # station sign, London's Corporate Blue roundel bar. Same in every flavor.
+    sign: dict = field(repr=False)
+    # Corner radii the site's furniture is built on. New York rounds everything
+    # the way 70s signage did; the Underground sets its signs in rectangles.
+    shape: dict = field(repr=False)
+    role_names: dict = field(repr=False)
+    flavors: tuple = field(repr=False, default=())
+
+    @property
+    def default(self):
+        return self.flavors[0]
+
+    @property
+    def light(self):
+        return next(f for f in self.flavors if not f.dark)
+
+
+NEW_YORK = Family(
+    id="new-york",
+    name="New York",
+    blurb="A 1970s subway car: walnut paneling, orange bucket seats, cream enamel.",
+    sign={"bg": "#0C0805", "text": "#F8ECD4", "ring": "#EC7F31"},
+    shape={"pill": "999px", "card": "6px", "chip": "50%"},
+    role_names=NEW_YORK_NAMES,
+    flavors=(WALNUT, TUNNEL, ENAMEL),
+)
+
+LONDON = Family(
+    id="london",
+    name="London",
+    blurb="The Tube: Corporate Blue turned down, brick and hazard yellow, the standard red.",
+    sign={"bg": "#0019A8", "text": "#FFFFFF", "ring": "#F2C03F"},
+    shape={"pill": "2px", "card": "0px", "chip": "2px"},
+    role_names=LONDON_NAMES,
+    flavors=(MOQUETTE, DEEP_LEVEL, PORTLAND),
+)
+
+FAMILIES = [NEW_YORK, LONDON]
+FAMILY = {fam.id: fam for fam in FAMILIES}
+FLAVORS = [f for fam in FAMILIES for f in fam.flavors]
 DEFAULT = WALNUT
+
+# The New York names stay importable; ports that name roles should prefer
+# `flavor.role_names`, which follows the flavor's family.
+ROLE_NAMES = NEW_YORK_NAMES
 
 # ── Syntax roles, shared by every editor port ──────────────────────────────
 # role → (color role, styles ⊂ {"bold", "italic"})

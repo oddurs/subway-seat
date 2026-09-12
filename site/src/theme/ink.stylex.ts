@@ -14,7 +14,11 @@ export const ink = stylex.defineVars({
   /** Flags and URLs in an install line. */
   flag: color.sage,
   string: color.green,
-  /** Text on an orange fill (buttons, bullets): _lib's ink(f). */
+  /** The lead accent as a fill: primary buttons, the active bullet. New York
+   * leads with burnt orange, which also leads keywords; London leads with the
+   * red, which leads nothing else, so it stays rare. */
+  fill: color.orange,
+  /** Text on that fill: _lib's ink(f). */
   onAccent: color.crust,
   /** The primary button's hover fill. */
   fillHover: color.orangeHi,

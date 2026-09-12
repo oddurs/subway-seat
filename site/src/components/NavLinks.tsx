@@ -3,7 +3,6 @@
 import * as stylex from "@stylexjs/stylex";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { sign } from "@/theme/sign.stylex";
 import { font } from "@/theme/type.stylex";
 
 const LINKS = [
@@ -69,7 +68,7 @@ const styles = stylex.create({
     fontSize: 14,
     color: {
       default: "rgba(248,236,212,0.72)",
-      ":hover": sign.text,
+      ":hover": "var(--sign-text)",
     },
     textDecorationLine: "none",
     textDecorationThickness: 2,
@@ -79,13 +78,13 @@ const styles = stylex.create({
       default: "none",
       ":focus-visible": "solid",
     },
-    outlineColor: sign.ring,
+    outlineColor: "var(--sign-ring)",
     outlineOffset: 2,
     borderRadius: 2,
   },
   here: {
-    color: sign.text,
+    color: "var(--sign-text)",
     textDecorationLine: "underline",
-    textDecorationColor: sign.ring,
+    textDecorationColor: "var(--sign-ring)",
   },
 });

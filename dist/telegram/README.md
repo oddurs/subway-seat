@@ -14,6 +14,12 @@ Sets all 586 keys of the Telegram Desktop palette, with a plain walnut chat back
 | Subway Seat Tunnel | [`subway-seat-tunnel/colors.tdesktop-theme`](subway-seat-tunnel/colors.tdesktop-theme) | the palette inside subway-seat-tunnel.tdesktop-theme, for reading or editing |
 | Subway Seat Enamel | [`subway-seat-enamel.tdesktop-theme`](subway-seat-enamel.tdesktop-theme) | open it with Telegram Desktop, or Settings › Chat Settings › Choose from file |
 | Subway Seat Enamel | [`subway-seat-enamel/colors.tdesktop-theme`](subway-seat-enamel/colors.tdesktop-theme) | the palette inside subway-seat-enamel.tdesktop-theme, for reading or editing |
+| London Moquette | [`london-moquette.tdesktop-theme`](london-moquette.tdesktop-theme) | open it with Telegram Desktop, or Settings › Chat Settings › Choose from file |
+| London Moquette | [`london-moquette/colors.tdesktop-theme`](london-moquette/colors.tdesktop-theme) | the palette inside london-moquette.tdesktop-theme, for reading or editing |
+| London Deep Level | [`london-deep-level.tdesktop-theme`](london-deep-level.tdesktop-theme) | open it with Telegram Desktop, or Settings › Chat Settings › Choose from file |
+| London Deep Level | [`london-deep-level/colors.tdesktop-theme`](london-deep-level/colors.tdesktop-theme) | the palette inside london-deep-level.tdesktop-theme, for reading or editing |
+| London Portland | [`london-portland.tdesktop-theme`](london-portland.tdesktop-theme) | open it with Telegram Desktop, or Settings › Chat Settings › Choose from file |
+| London Portland | [`london-portland/colors.tdesktop-theme`](london-portland/colors.tdesktop-theme) | the palette inside london-portland.tdesktop-theme, for reading or editing |
 
 ## Turn it on
 
@@ -35,6 +41,27 @@ Choose from file › subway-seat-tunnel.tdesktop-theme, then Keep changes
 
 ```text
 Choose from file › subway-seat-enamel.tdesktop-theme, then Keep changes
+(opening the file with Telegram Desktop does the same)
+```
+
+**London Moquette**, in Telegram Desktop › Settings › Chat Settings:
+
+```text
+Choose from file › london-moquette.tdesktop-theme, then Keep changes
+(opening the file with Telegram Desktop does the same)
+```
+
+**London Deep Level**, in Telegram Desktop › Settings › Chat Settings:
+
+```text
+Choose from file › london-deep-level.tdesktop-theme, then Keep changes
+(opening the file with Telegram Desktop does the same)
+```
+
+**London Portland**, in Telegram Desktop › Settings › Chat Settings:
+
+```text
+Choose from file › london-portland.tdesktop-theme, then Keep changes
 (opening the file with Telegram Desktop does the same)
 ```
 

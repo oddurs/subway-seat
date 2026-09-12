@@ -1,0 +1,45 @@
+/* Subway Seat — generated from palette.py by build.py. Edit the palette, not this file. */
+/* London Moquette for GTK 3 with the adw-gtk3 theme */
+
+@define-color accent_bg_color #DE8946;
+@define-color accent_fg_color #121826;
+@define-color accent_color #DE8946;
+@define-color destructive_bg_color #DB6052;
+@define-color destructive_fg_color #121826;
+@define-color destructive_color #F17869;
+@define-color success_bg_color #77C581;
+@define-color success_fg_color #121826;
+@define-color success_color #77C581;
+@define-color warning_bg_color #F2C03F;
+@define-color warning_fg_color #121826;
+@define-color warning_color #F2C03F;
+@define-color error_bg_color #DB6052;
+@define-color error_fg_color #121826;
+@define-color error_color #F17869;
+@define-color window_bg_color #1E2941;
+@define-color window_fg_color #D8DEEA;
+@define-color view_bg_color #1E2941;
+@define-color view_fg_color #D8DEEA;
+@define-color headerbar_bg_color #172032;
+@define-color headerbar_fg_color #D8DEEA;
+@define-color headerbar_border_color #D8DEEA;
+@define-color headerbar_backdrop_color #1E2941;
+@define-color headerbar_shade_color rgba(9, 12, 19, 0.36);
+@define-color headerbar_darker_shade_color rgba(9, 12, 19, 0.9);
+@define-color sidebar_bg_color #172032;
+@define-color sidebar_fg_color #C1C9D8;
+@define-color sidebar_backdrop_color #1A243A;
+@define-color sidebar_shade_color rgba(9, 12, 19, 0.25);
+@define-color sidebar_border_color #121826;
+@define-color card_bg_color rgba(216, 222, 234, 0.08);
+@define-color card_fg_color #D8DEEA;
+@define-color card_shade_color rgba(9, 12, 19, 0.36);
+@define-color dialog_bg_color #263451;
+@define-color dialog_fg_color #D8DEEA;
+@define-color popover_bg_color #263451;
+@define-color popover_fg_color #D8DEEA;
+@define-color popover_shade_color rgba(9, 12, 19, 0.25);
+@define-color thumbnail_bg_color #263451;
+@define-color thumbnail_fg_color #D8DEEA;
+@define-color shade_color rgba(9, 12, 19, 0.25);
+@define-color scrollbar_outline_color rgba(9, 12, 19, 0.95);

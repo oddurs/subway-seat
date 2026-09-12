@@ -11,6 +11,9 @@ ANSI colors plus cursor, cursor guide, selection, link, search match, underline,
 | Subway Seat | [`Subway Seat.itermcolors`](Subway%20Seat.itermcolors) | Open the file to import it as a color preset |
 | Subway Seat Tunnel | [`Subway Seat Tunnel.itermcolors`](Subway%20Seat%20Tunnel.itermcolors) | Open the file to import it as a color preset |
 | Subway Seat Enamel | [`Subway Seat Enamel.itermcolors`](Subway%20Seat%20Enamel.itermcolors) | Open the file to import it as a color preset |
+| London Moquette | [`London Moquette.itermcolors`](London%20Moquette.itermcolors) | Open the file to import it as a color preset |
+| London Deep Level | [`London Deep Level.itermcolors`](London%20Deep%20Level.itermcolors) | Open the file to import it as a color preset |
+| London Portland | [`London Portland.itermcolors`](London%20Portland.itermcolors) | Open the file to import it as a color preset |
 | All three | [`Subway Seat Light and Dark.itermcolors`](Subway%20Seat%20Light%20and%20Dark.itermcolors) | Open the file to import it as a color preset; it switches with the macOS appearance (iTerm2 3.5+) |
 
 ## Turn it on
@@ -34,6 +37,27 @@ open "Subway Seat Tunnel.itermcolors"   # imports the preset
 ```sh
 open "Subway Seat Enamel.itermcolors"   # imports the preset
 # then Color Presets… › Subway Seat Enamel
+```
+
+**London Moquette**, in iTerm2 › Settings › Profiles › Colors › Color Presets… › Import…:
+
+```sh
+open "London Moquette.itermcolors"   # imports the preset
+# then Color Presets… › London Moquette
+```
+
+**London Deep Level**, in iTerm2 › Settings › Profiles › Colors › Color Presets… › Import…:
+
+```sh
+open "London Deep Level.itermcolors"   # imports the preset
+# then Color Presets… › London Deep Level
+```
+
+**London Portland**, in iTerm2 › Settings › Profiles › Colors › Color Presets… › Import…:
+
+```sh
+open "London Portland.itermcolors"   # imports the preset
+# then Color Presets… › London Portland
 ```
 
 ## Follow light and dark

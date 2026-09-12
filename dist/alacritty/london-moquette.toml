@@ -1,0 +1,74 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# London Moquette
+
+[colors.primary]
+background = "#1E2941"
+foreground = "#D8DEEA"
+dim_foreground = "#8F9AB0"
+bright_foreground = "#E9EDF5"
+
+[colors.cursor]
+text = "#1E2941"
+cursor = "#F2C03F"
+
+[colors.vi_mode_cursor]
+text = "#1E2941"
+cursor = "#54B4B5"
+
+[colors.search.matches]
+foreground = "#D8DEEA"
+background = "#5E5640"
+
+[colors.search.focused_match]
+foreground = "#E9EDF5"
+background = "#7E5944"
+
+[colors.footer_bar]
+foreground = "#D8DEEA"
+background = "#303F61"
+
+[colors.hints.start]
+foreground = "#1E2941"
+background = "#F2C03F"
+
+[colors.hints.end]
+foreground = "#1E2941"
+background = "#8F9AB0"
+
+[colors.line_indicator]
+foreground = "#A9B2C4"
+background = "#263451"
+
+[colors.selection]
+text = "#E9EDF5"
+background = "#3D4F72"
+
+[colors.normal]
+black = "#303F61"
+red = "#DB6052"
+green = "#77C581"
+yellow = "#F2C03F"
+blue = "#7595DA"
+magenta = "#DE8946"
+cyan = "#54B4B5"
+white = "#C1C9D8"
+
+[colors.bright]
+black = "#73819C"
+red = "#F17869"
+green = "#9AD2A0"
+yellow = "#FFD36C"
+blue = "#8BB0FF"
+magenta = "#E5AA7F"
+cyan = "#72D1D3"
+white = "#E9EDF5"
+
+[colors.dim]
+black = "#2A3856"
+red = "#9B4D4C"
+green = "#59906B"
+yellow = "#AA8D40"
+blue = "#5770A6"
+magenta = "#9D6844"
+cyan = "#42858E"
+white = "#8A93A5"

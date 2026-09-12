@@ -1,0 +1,21 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# London Moquette for Atuin.
+[theme]
+name = "london-moquette"
+
+[colors]
+AlertInfo = "#7595DA"
+AlertWarn = "#F2C03F"
+AlertError = "#F17869"
+Annotation = "#73819C"
+Base = "#D8DEEA"
+Guidance = "#A9B2C4"
+Important = "#DE8946"
+Title = "#F2C03F"
+Muted = "#576685"
+SyntaxCommand = "#F2C03F"
+SyntaxFlag = "#54B4B5"
+SyntaxString = "#77C581"
+SyntaxVariable = "#AE9EDC"
+SyntaxOperator = "#DE8946"
+SyntaxComment = "#73819C"

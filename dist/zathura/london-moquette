@@ -1,0 +1,53 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# London Moquette for zathura. In zathurarc: include london-moquette
+
+# window
+set default-bg              "#1E2941"
+set default-fg              "#D8DEEA"
+set statusbar-bg            "#172032"
+set statusbar-fg            "#C1C9D8"
+set inputbar-bg             "#172032"
+set inputbar-fg             "#D8DEEA"
+
+# notifications
+set notification-bg         "#263451"
+set notification-fg         "#D8DEEA"
+set notification-error-bg   "#DB6052"
+set notification-error-fg   "#121826"
+set notification-warning-bg "#F2C03F"
+set notification-warning-fg "#121826"
+
+# completion
+set completion-bg           "#263451"
+set completion-fg           "#D8DEEA"
+set completion-group-bg     "#172032"
+set completion-group-fg     "#A9B2C4"
+set completion-highlight-bg "#3D4F72"
+set completion-highlight-fg "#E9EDF5"
+
+# index (table of contents)
+set index-bg                "#1E2941"
+set index-fg                "#D8DEEA"
+set index-active-bg         "#3D4F72"
+set index-active-fg         "#E9EDF5"
+
+# search hits and link hints, washed over the page
+set highlight-color         "rgba(242,192,63,0.3)"
+set highlight-active-color  "rgba(222,137,70,0.5)"
+set highlight-fg            "#E9EDF5"
+
+# pages while they render
+set render-loading-bg       "#1E2941"
+set render-loading-fg       "#73819C"
+
+# digital signatures
+set signature-success-color "#77C581"
+set signature-warning-color "#F2C03F"
+set signature-error-color   "#F17869"
+
+# recoloring: white paper → base, black ink → text; Ctrl+R toggles it
+set recolor-lightcolor      "#1E2941"
+set recolor-darkcolor       "#D8DEEA"
+set recolor                 "true"
+set recolor-keephue         "true"
+set recolor-reverse-video   "true"

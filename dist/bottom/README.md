@@ -11,6 +11,9 @@ A `[styles]` block: cores and sensors in stripe colors, avocado download, orange
 | Subway Seat | [`subway-seat.toml`](subway-seat.toml) | add to the end of `~/.config/bottom/bottom.toml` |
 | Subway Seat Tunnel | [`subway-seat-tunnel.toml`](subway-seat-tunnel.toml) | add to the end of `~/.config/bottom/bottom.toml` |
 | Subway Seat Enamel | [`subway-seat-enamel.toml`](subway-seat-enamel.toml) | add to the end of `~/.config/bottom/bottom.toml` |
+| London Moquette | [`london-moquette.toml`](london-moquette.toml) | add to the end of `~/.config/bottom/bottom.toml` |
+| London Deep Level | [`london-deep-level.toml`](london-deep-level.toml) | add to the end of `~/.config/bottom/bottom.toml` |
+| London Portland | [`london-portland.toml`](london-portland.toml) | add to the end of `~/.config/bottom/bottom.toml` |
 
 ## Turn it on
 
@@ -30,6 +33,24 @@ cat subway-seat-tunnel.toml >> ~/.config/bottom/bottom.toml
 
 ```sh
 cat subway-seat-enamel.toml >> ~/.config/bottom/bottom.toml
+```
+
+**London Moquette**, in the end of bottom.toml: ~/.config/bottom/ (bottom uses it on macOS too once it exists; otherwise ~/Library/Application Support/bottom/). Skip it if you already have [styles] tables:
+
+```sh
+cat london-moquette.toml >> ~/.config/bottom/bottom.toml
+```
+
+**London Deep Level**, in the end of bottom.toml: ~/.config/bottom/ (bottom uses it on macOS too once it exists; otherwise ~/Library/Application Support/bottom/). Skip it if you already have [styles] tables:
+
+```sh
+cat london-deep-level.toml >> ~/.config/bottom/bottom.toml
+```
+
+**London Portland**, in the end of bottom.toml: ~/.config/bottom/ (bottom uses it on macOS too once it exists; otherwise ~/Library/Application Support/bottom/). Skip it if you already have [styles] tables:
+
+```sh
+cat london-portland.toml >> ~/.config/bottom/bottom.toml
 ```
 
 ## Uninstall

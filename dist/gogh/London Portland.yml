@@ -1,0 +1,30 @@
+---
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+name: 'London Portland'
+author: 'oddurs (https://github.com/oddurs/subway-seat)'
+author_name: 'oddurs'
+author_url: 'https://github.com/oddurs/subway-seat'
+variant: 'light'
+
+color_01: '#434548'    # Black (Host)
+color_02: '#A40005'    # Red (Syntax string)
+color_03: '#357D41'    # Green (Command)
+color_04: '#896800'    # Yellow (Command second)
+color_05: '#0019A8'    # Blue (Path)
+color_06: '#9F591B'    # Magenta (Syntax var)
+color_07: '#007376'    # Cyan (Prompt)
+color_08: '#9BA5B8'    # White
+
+color_09: '#727781'    # Bright Black
+color_10: '#CA2822'    # Bright Red (Command error)
+color_11: '#398145'    # Bright Green (Exec)
+color_12: '#977300'    # Bright Yellow
+color_13: '#406BD0'    # Bright Blue (Folder)
+color_14: '#AE672B'    # Bright Magenta
+color_15: '#008689'    # Bright Cyan
+color_16: '#ADB7CB'    # Bright White
+
+background: '#E5EAF6'  # Background
+foreground: '#2F3033'  # Foreground (Text)
+
+cursor: '#9F591B'      # Cursor

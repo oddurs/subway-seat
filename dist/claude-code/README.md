@@ -17,6 +17,15 @@ One plugin: all three themes, a relaxed output style and subagent rows. `/subway
 | Subway Seat Enamel | [`themes/subway-seat-enamel.json`](themes/subway-seat-enamel.json) | `~/.claude/themes/subway-seat-enamel.json` |
 | Subway Seat Enamel | [`plugin/themes/subway-seat-enamel.json`](plugin/themes/subway-seat-enamel.json) |  |
 | Subway Seat Enamel | [`plugin/settings/subway-seat-enamel.json`](plugin/settings/subway-seat-enamel.json) | merged into ~/.claude/settings.json by /subway-seat:setup |
+| London Moquette | [`themes/london-moquette.json`](themes/london-moquette.json) | `~/.claude/themes/london-moquette.json` |
+| London Moquette | [`plugin/themes/london-moquette.json`](plugin/themes/london-moquette.json) |  |
+| London Moquette | [`plugin/settings/london-moquette.json`](plugin/settings/london-moquette.json) | merged into ~/.claude/settings.json by /subway-seat:setup |
+| London Deep Level | [`themes/london-deep-level.json`](themes/london-deep-level.json) | `~/.claude/themes/london-deep-level.json` |
+| London Deep Level | [`plugin/themes/london-deep-level.json`](plugin/themes/london-deep-level.json) |  |
+| London Deep Level | [`plugin/settings/london-deep-level.json`](plugin/settings/london-deep-level.json) | merged into ~/.claude/settings.json by /subway-seat:setup |
+| London Portland | [`themes/london-portland.json`](themes/london-portland.json) | `~/.claude/themes/london-portland.json` |
+| London Portland | [`plugin/themes/london-portland.json`](plugin/themes/london-portland.json) |  |
+| London Portland | [`plugin/settings/london-portland.json`](plugin/settings/london-portland.json) | merged into ~/.claude/settings.json by /subway-seat:setup |
 | All three | [`plugin/.claude-plugin/plugin.json`](plugin/.claude-plugin/plugin.json) |  |
 | All three | [`plugin/settings.json`](plugin/settings.json) |  |
 | All three | [`plugin/hooks/hooks.json`](plugin/hooks/hooks.json) |  |
@@ -54,11 +63,38 @@ One plugin: all three themes, a relaxed output style and subagent rows. `/subway
 /subway-seat:setup   # and pick Subway Seat Enamel
 ```
 
+**London Moquette**, in Claude Code, from the Subway Seat marketplace:
+
+```text
+/plugin marketplace add oddurs/subway-seat
+/plugin install subway-seat@subway-seat
+/subway-seat:setup   # and pick London Moquette
+```
+
+**London Deep Level**, in Claude Code, from the Subway Seat marketplace:
+
+```text
+/plugin marketplace add oddurs/subway-seat
+/plugin install subway-seat@subway-seat
+/subway-seat:setup   # and pick London Deep Level
+```
+
+**London Portland**, in Claude Code, from the Subway Seat marketplace:
+
+```text
+/plugin marketplace add oddurs/subway-seat
+/plugin install subway-seat@subway-seat
+/subway-seat:setup   # and pick London Portland
+```
+
 ## Uninstall
 
 - Delete `~/.claude/themes/subway-seat.json`.
 - Delete `~/.claude/themes/subway-seat-tunnel.json`.
 - Delete `~/.claude/themes/subway-seat-enamel.json`.
+- Delete `~/.claude/themes/london-moquette.json`.
+- Delete `~/.claude/themes/london-deep-level.json`.
+- Delete `~/.claude/themes/london-portland.json`.
 - Delete `~/.claude/subway-seat/subway-seat-statusline`.
 - Delete `~/.claude/subway-seat/subway-seat-subagents`.
 - Delete `~/.claude/subway-seat/tips.json`.

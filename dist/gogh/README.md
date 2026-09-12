@@ -17,6 +17,15 @@ Gogh themes: the 16 ANSI colors, background, foreground and cursor. installs/ ha
 | Subway Seat Enamel | [`installs/subway-seat-enamel.sh`](installs/subway-seat-enamel.sh) | run it with Gogh's apply-colors.sh in the folder above it (or beside it); TERMINAL=… picks the terminal |
 | Subway Seat Enamel | [`Subway Seat Enamel.yml`](Subway%20Seat%20Enamel.yml) | Gogh's theme source: themes/ in a Gogh checkout (the file name must match the name) |
 | Subway Seat Enamel | [`subway-seat-enamel.json`](subway-seat-enamel.json) | the same theme in the form of Gogh's data/json files |
+| London Moquette | [`installs/london-moquette.sh`](installs/london-moquette.sh) | run it with Gogh's apply-colors.sh in the folder above it (or beside it); TERMINAL=… picks the terminal |
+| London Moquette | [`London Moquette.yml`](London%20Moquette.yml) | Gogh's theme source: themes/ in a Gogh checkout (the file name must match the name) |
+| London Moquette | [`london-moquette.json`](london-moquette.json) | the same theme in the form of Gogh's data/json files |
+| London Deep Level | [`installs/london-deep-level.sh`](installs/london-deep-level.sh) | run it with Gogh's apply-colors.sh in the folder above it (or beside it); TERMINAL=… picks the terminal |
+| London Deep Level | [`London Deep Level.yml`](London%20Deep%20Level.yml) | Gogh's theme source: themes/ in a Gogh checkout (the file name must match the name) |
+| London Deep Level | [`london-deep-level.json`](london-deep-level.json) | the same theme in the form of Gogh's data/json files |
+| London Portland | [`installs/london-portland.sh`](installs/london-portland.sh) | run it with Gogh's apply-colors.sh in the folder above it (or beside it); TERMINAL=… picks the terminal |
+| London Portland | [`London Portland.yml`](London%20Portland.yml) | Gogh's theme source: themes/ in a Gogh checkout (the file name must match the name) |
+| London Portland | [`london-portland.json`](london-portland.json) | the same theme in the form of Gogh's data/json files |
 
 ## Turn it on
 
@@ -41,6 +50,30 @@ bash installs/subway-seat-tunnel.sh
 ```sh
 curl -fsSLO https://github.com/Gogh-Co/Gogh/raw/master/apply-colors.sh
 bash installs/subway-seat-enamel.sh
+# Gogh works out which terminal you're in; TERMINAL=gnome-terminal (or another) picks one
+```
+
+**London Moquette**, in a terminal, in the folder that holds installs/:
+
+```sh
+curl -fsSLO https://github.com/Gogh-Co/Gogh/raw/master/apply-colors.sh
+bash installs/london-moquette.sh
+# Gogh works out which terminal you're in; TERMINAL=gnome-terminal (or another) picks one
+```
+
+**London Deep Level**, in a terminal, in the folder that holds installs/:
+
+```sh
+curl -fsSLO https://github.com/Gogh-Co/Gogh/raw/master/apply-colors.sh
+bash installs/london-deep-level.sh
+# Gogh works out which terminal you're in; TERMINAL=gnome-terminal (or another) picks one
+```
+
+**London Portland**, in a terminal, in the folder that holds installs/:
+
+```sh
+curl -fsSLO https://github.com/Gogh-Co/Gogh/raw/master/apply-colors.sh
+bash installs/london-portland.sh
 # Gogh works out which terminal you're in; TERMINAL=gnome-terminal (or another) picks one
 ```
 

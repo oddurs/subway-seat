@@ -1,0 +1,61 @@
+{
+  "ui": {
+    "customThemes": {
+      "London Moquette": {
+        "name": "London Moquette",
+        "type": "custom",
+        "Background": "#1E2941",
+        "Foreground": "#D8DEEA",
+        "LightBlue": "#C1C9D8",
+        "AccentBlue": "#DE8946",
+        "AccentPurple": "#AE9EDC",
+        "AccentCyan": "#54B4B5",
+        "AccentGreen": "#77C581",
+        "AccentYellow": "#F2C03F",
+        "AccentRed": "#F17869",
+        "DiffAdded": "#283E3A",
+        "DiffRemoved": "#462B31",
+        "Comment": "#73819C",
+        "Gray": "#8F9AB0",
+        "DarkGray": "#3D4F72",
+        "GradientColors": [
+          "#DB6052",
+          "#DE8946",
+          "#F2C03F",
+          "#77C581"
+        ],
+        "text": {
+          "primary": "#D8DEEA",
+          "secondary": "#8F9AB0",
+          "accent": "#AE9EDC",
+          "response": "#D8DEEA"
+        },
+        "background": {
+          "primary": "#1E2941",
+          "diff": {
+            "added": "#283E3A",
+            "removed": "#462B31"
+          }
+        },
+        "ui": {
+          "comment": "#73819C",
+          "symbol": "#F2C03F",
+          "active": "#DE8946",
+          "focus": "#F2C03F",
+          "gradient": [
+            "#DB6052",
+            "#DE8946",
+            "#F2C03F",
+            "#77C581"
+          ]
+        },
+        "status": {
+          "success": "#77C581",
+          "warning": "#F2C03F",
+          "error": "#F17869"
+        }
+      }
+    },
+    "theme": "London Moquette"
+  }
+}

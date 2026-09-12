@@ -11,6 +11,9 @@ Palettes use the slot names of Starship's Gruvbox Rainbow preset, so its segment
 | Subway Seat | [`palettes/subway-seat.toml`](palettes/subway-seat.toml) | add to the end of `~/.config/starship.toml` |
 | Subway Seat Tunnel | [`palettes/subway-seat-tunnel.toml`](palettes/subway-seat-tunnel.toml) | add to the end of `~/.config/starship.toml` |
 | Subway Seat Enamel | [`palettes/subway-seat-enamel.toml`](palettes/subway-seat-enamel.toml) | add to the end of `~/.config/starship.toml` |
+| London Moquette | [`palettes/london-moquette.toml`](palettes/london-moquette.toml) | add to the end of `~/.config/starship.toml` |
+| London Deep Level | [`palettes/london-deep-level.toml`](palettes/london-deep-level.toml) | add to the end of `~/.config/starship.toml` |
+| London Portland | [`palettes/london-portland.toml`](palettes/london-portland.toml) | add to the end of `~/.config/starship.toml` |
 | All three | [`subway-seat.toml`](subway-seat.toml) | `~/.config/starship/subway-seat.toml`; use it with STARSHIP_CONFIG=~/.config/starship/subway-seat.toml, or copy it over ~/.config/starship.toml; change `palette` to pick the flavor |
 
 ## Turn it on
@@ -31,6 +34,24 @@ palette = 'subway_seat_tunnel'
 
 ```toml
 palette = 'subway_seat_enamel'
+```
+
+**London Moquette**, in the top of ~/.config/starship.toml, above every [section] (below a table it would be read as part of that table and ignored), after adding the palette block to the end:
+
+```toml
+palette = 'london_moquette'
+```
+
+**London Deep Level**, in the top of ~/.config/starship.toml, above every [section] (below a table it would be read as part of that table and ignored), after adding the palette block to the end:
+
+```toml
+palette = 'london_deep_level'
+```
+
+**London Portland**, in the top of ~/.config/starship.toml, above every [section] (below a table it would be read as part of that table and ignored), after adding the palette block to the end:
+
+```toml
+palette = 'london_portland'
 ```
 
 ## Uninstall

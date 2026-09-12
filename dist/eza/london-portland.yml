@@ -1,0 +1,102 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# London Portland for eza 0.20+.
+colourful: true
+filekinds:
+  normal: {foreground: "#2F3033"}
+  directory: {foreground: "#896800", is_bold: true}
+  symlink: {foreground: "#007376"}
+  pipe: {foreground: "#7660AB"}
+  block_device: {foreground: "#AE672B", is_bold: true}
+  char_device: {foreground: "#AE672B"}
+  socket: {foreground: "#7660AB", is_bold: true}
+  special: {foreground: "#7660AB"}
+  executable: {foreground: "#357D41", is_bold: true}
+  mount_point: {foreground: "#977300", is_bold: true, is_underline: true}
+perms:
+  user_read: {foreground: "#896800", is_bold: true}
+  user_write: {foreground: "#9F591B", is_bold: true}
+  user_execute_file: {foreground: "#357D41", is_bold: true}
+  user_execute_other: {foreground: "#357D41", is_bold: true}
+  group_read: {foreground: "#896800"}
+  group_write: {foreground: "#9F591B"}
+  group_execute: {foreground: "#357D41"}
+  other_read: {foreground: "#896800"}
+  other_write: {foreground: "#9F591B"}
+  other_execute: {foreground: "#357D41"}
+  special_user_file: {foreground: "#7660AB"}
+  special_other: {foreground: "#727781"}
+  attribute: {foreground: "#727781"}
+size:
+  major: {foreground: "#007376"}
+  minor: {foreground: "#008689"}
+  number_byte: {foreground: "#515459"}
+  number_kilo: {foreground: "#357D41"}
+  number_mega: {foreground: "#896800"}
+  number_giga: {foreground: "#9F591B"}
+  number_huge: {foreground: "#CA2822"}
+  unit_byte: {foreground: "#676A71"}
+  unit_kilo: {foreground: "#4F8D5C"}
+  unit_mega: {foreground: "#977C25"}
+  unit_giga: {foreground: "#AA6F3C"}
+  unit_huge: {foreground: "#CE4542"}
+users:
+  user_you: {foreground: "#896800"}
+  user_root: {foreground: "#CA2822"}
+  user_other: {foreground: "#515459"}
+  group_yours: {foreground: "#434548"}
+  group_other: {foreground: "#5D6168"}
+  group_root: {foreground: "#CA2822"}
+links:
+  normal: {foreground: "#007376"}
+  multi_link_file: {foreground: "#9F591B"}
+git:
+  new: {foreground: "#357D41"}
+  modified: {foreground: "#896800"}
+  deleted: {foreground: "#CA2822"}
+  renamed: {foreground: "#007376"}
+  typechange: {foreground: "#7660AB"}
+  ignored: {foreground: "#8A919F"}
+  conflicted: {foreground: "#A40005", is_bold: true}
+git_repo:
+  branch_main: {foreground: "#434548"}
+  branch_other: {foreground: "#9F591B"}
+  git_clean: {foreground: "#357D41"}
+  git_dirty: {foreground: "#896800"}
+security_context:
+  none: {foreground: "#727781"}
+  selinux:
+    colon: {foreground: "#8A919F"}
+    user: {foreground: "#515459"}
+    role: {foreground: "#007376"}
+    typ: {foreground: "#5D6168"}
+    range: {foreground: "#7660AB"}
+file_type:
+  image: {foreground: "#7660AB"}
+  video: {foreground: "#9F591B"}
+  music: {foreground: "#AE672B"}
+  lossless: {foreground: "#AE672B", is_bold: true}
+  crypto: {foreground: "#A40005"}
+  document: {foreground: "#0019A8"}
+  compressed: {foreground: "#CA2822"}
+  temp: {foreground: "#8A919F"}
+  compiled: {foreground: "#727781"}
+  build: {foreground: "#896800", is_underline: true}
+  source: {foreground: "#007376"}
+punctuation: {foreground: "#8A919F"}
+date: {foreground: "#515459"}
+inode: {foreground: "#727781"}
+blocks: {foreground: "#727781"}
+header: {foreground: "#434548", is_underline: true}
+octal: {foreground: "#7660AB"}
+flags: {foreground: "#5D6168"}
+symlink_path: {foreground: "#515459"}
+control_char: {foreground: "#7660AB"}
+broken_symlink: {foreground: "#CA2822"}
+broken_path_overlay: {is_underline: true}
+filenames:
+  "README.md": {filename: {foreground: "#977300", is_bold: true}}
+  "README": {filename: {foreground: "#977300", is_bold: true}}
+  "LICENSE": {filename: {foreground: "#5D6168"}}
+extensions:
+  lock: {filename: {foreground: "#727781"}}
+  log: {filename: {foreground: "#727781"}}

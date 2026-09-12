@@ -1,0 +1,133 @@
+{
+  "manifest_version": 3,
+  "name": "London Deep Level",
+  "version": "0.3.0",
+  "description": "Harvest gold, burnt orange and avocado on walnut. Below the cut-and-cover lines. The ground drops; the signals don't.",
+  "theme": {
+    "colors": {
+      "frame": [
+        10,
+        14,
+        24
+      ],
+      "frame_inactive": [
+        10,
+        14,
+        24
+      ],
+      "frame_incognito": [
+        36,
+        37,
+        55
+      ],
+      "frame_incognito_inactive": [
+        36,
+        37,
+        55
+      ],
+      "background_tab": [
+        10,
+        14,
+        24
+      ],
+      "background_tab_inactive": [
+        10,
+        14,
+        24
+      ],
+      "background_tab_incognito": [
+        36,
+        37,
+        55
+      ],
+      "background_tab_incognito_inactive": [
+        36,
+        37,
+        55
+      ],
+      "toolbar": [
+        18,
+        26,
+        45
+      ],
+      "tab_text": [
+        212,
+        218,
+        231
+      ],
+      "tab_background_text": [
+        139,
+        150,
+        172
+      ],
+      "tab_background_text_inactive": [
+        111,
+        124,
+        151
+      ],
+      "tab_background_text_incognito": [
+        165,
+        174,
+        192
+      ],
+      "tab_background_text_incognito_inactive": [
+        139,
+        150,
+        172
+      ],
+      "bookmark_text": [
+        190,
+        198,
+        213
+      ],
+      "toolbar_button_icon": [
+        190,
+        198,
+        213
+      ],
+      "toolbar_text": [
+        212,
+        218,
+        231
+      ],
+      "omnibox_background": [
+        13,
+        20,
+        33
+      ],
+      "omnibox_text": [
+        212,
+        218,
+        231
+      ],
+      "ntp_background": [
+        18,
+        26,
+        45
+      ],
+      "ntp_text": [
+        212,
+        218,
+        231
+      ],
+      "ntp_link": [
+        117,
+        149,
+        218
+      ],
+      "ntp_header": [
+        222,
+        137,
+        70
+      ],
+      "button_background": [
+        10,
+        14,
+        24
+      ]
+    },
+    "properties": {
+      "ntp_logo_alternate": 1
+    }
+  }
+}

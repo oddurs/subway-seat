@@ -1,0 +1,2 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+set -gx FZF_DEFAULT_OPTS "$FZF_DEFAULT_OPTS --color=light,fg:#434548,bg:-1,hl:#896800,fg+:#1F2022,bg+:#C1CADC,hl+:#9F591B,info:#727781,prompt:#9F591B,pointer:#9F591B,marker:#357D41,spinner:#896800,header:#007376,border:#9BA5B8,gutter:-1,query:#2F3033,ghost:#727781,disabled:#727781,nomatch:#8A919F,selected-bg:#ADB7CB,separator:#ADB7CB,scrollbar:#9BA5B8,label:#515459,preview-border:#9BA5B8,preview-label:#515459"

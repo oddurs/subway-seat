@@ -11,6 +11,9 @@ AIChat reads `dark.tmTheme` or `light.tmTheme` from its config folder, so each f
 | Subway Seat | [`subway-seat/dark.tmTheme`](subway-seat/dark.tmTheme) | `~/Library/Application Support/aichat/dark.tmTheme`; on Linux the folder is ~/.config/aichat |
 | Subway Seat Tunnel | [`subway-seat-tunnel/dark.tmTheme`](subway-seat-tunnel/dark.tmTheme) | `~/Library/Application Support/aichat/dark.tmTheme`; on Linux the folder is ~/.config/aichat |
 | Subway Seat Enamel | [`subway-seat-enamel/light.tmTheme`](subway-seat-enamel/light.tmTheme) | `~/Library/Application Support/aichat/light.tmTheme`; on Linux the folder is ~/.config/aichat |
+| London Moquette | [`london-moquette/dark.tmTheme`](london-moquette/dark.tmTheme) | `~/Library/Application Support/aichat/dark.tmTheme`; on Linux the folder is ~/.config/aichat |
+| London Deep Level | [`london-deep-level/dark.tmTheme`](london-deep-level/dark.tmTheme) | `~/Library/Application Support/aichat/dark.tmTheme`; on Linux the folder is ~/.config/aichat |
+| London Portland | [`london-portland/light.tmTheme`](london-portland/light.tmTheme) | `~/Library/Application Support/aichat/light.tmTheme`; on Linux the folder is ~/.config/aichat |
 
 ## Turn it on
 

@@ -23,11 +23,21 @@
 ## Three flavors
 
 <!-- flavors:start -->
+**New York** — A 1970s subway car: walnut paneling, orange bucket seats, cream enamel.
+
 | | | |
 |---|---|---|
 | **Subway Seat** | `walnut` · dark | Walnut paneling and orange bucket seats. The original. |
 | **Subway Seat Tunnel** | `tunnel` · dark | The late local after midnight: espresso-deep, same warm lights. |
 | **Subway Seat Enamel** | `enamel` · light | Cream enamel panels in the morning sun. The light one. |
+
+**London** — The Tube: Corporate Blue turned down, brick and hazard yellow, the standard red.
+
+| | | |
+|---|---|---|
+| **London Moquette** | `moquette` · dark | The seat you're sitting on. Corporate Blue, turned right down. |
+| **London Deep Level** | `deep` · dark | Below the cut-and-cover lines. The ground drops; the signals don't. |
+| **London Portland** | `portland` · light | Holden's Portland stone. Links are the exact Corporate Blue. |
 <!-- flavors:end -->
 
 <p align="center">

@@ -100,7 +100,7 @@ const styles = stylex.create({
     outlineOffset: 3,
     borderStyle: "solid",
     borderWidth: 1,
-    borderRadius: 18,
+    borderRadius: "var(--radius-card)",
     boxShadow: "0 14px 34px var(--ss-shadow-soft)",
     transform: {
       default: null,
@@ -137,7 +137,7 @@ const styles = stylex.create({
     fontWeight: 700,
     textTransform: "uppercase",
     letterSpacing: "0.08em",
-    borderRadius: 999,
+    borderRadius: "var(--radius-card)",
     opacity: 0,
     transitionDuration: "200ms",
     transitionProperty: "opacity",
@@ -147,5 +147,5 @@ const styles = stylex.create({
   blurb: { fontSize: 14.5, lineHeight: 1.5, textWrap: "pretty" },
   code: { fontFamily: font.mono, fontSize: 13 },
   chips: { display: "flex", gap: 5 },
-  chip: { width: 22, height: 22, borderRadius: 6 },
+  chip: { width: 22, height: 22, borderRadius: "var(--radius-chip)" },
 });

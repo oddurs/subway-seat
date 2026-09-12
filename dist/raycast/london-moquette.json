@@ -1,0 +1,21 @@
+{
+  "author": "Oddur Sigurdsson",
+  "authorUsername": "oddurs",
+  "version": "1",
+  "name": "London Moquette",
+  "appearance": "dark",
+  "colors": {
+    "background": "#1E2941",
+    "backgroundSecondary": "#172032",
+    "text": "#D8DEEA",
+    "selection": "#DE8946",
+    "loader": "#F2C03F",
+    "red": "#F17869",
+    "orange": "#DE8946",
+    "yellow": "#F2C03F",
+    "green": "#77C581",
+    "blue": "#7595DA",
+    "purple": "#AE9EDC",
+    "magenta": "#E5AA7F"
+  }
+}

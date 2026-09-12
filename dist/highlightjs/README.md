@@ -11,6 +11,9 @@ A highlight.js stylesheet per flavor, using the same syntax colors as the editor
 | Subway Seat | [`subway-seat.css`](subway-seat.css) | `styles/highlightjs/subway-seat.css`; in your site's stylesheets |
 | Subway Seat Tunnel | [`subway-seat-tunnel.css`](subway-seat-tunnel.css) | `styles/highlightjs/subway-seat-tunnel.css`; in your site's stylesheets |
 | Subway Seat Enamel | [`subway-seat-enamel.css`](subway-seat-enamel.css) | `styles/highlightjs/subway-seat-enamel.css`; in your site's stylesheets |
+| London Moquette | [`london-moquette.css`](london-moquette.css) | `styles/highlightjs/london-moquette.css`; in your site's stylesheets |
+| London Deep Level | [`london-deep-level.css`](london-deep-level.css) | `styles/highlightjs/london-deep-level.css`; in your site's stylesheets |
+| London Portland | [`london-portland.css`](london-portland.css) | `styles/highlightjs/london-portland.css`; in your site's stylesheets |
 | All three | [`subway-seat-auto.css`](subway-seat-auto.css) | `styles/highlightjs/subway-seat-auto.css`; in your site's stylesheets |
 
 ## Turn it on
@@ -33,6 +36,24 @@ A highlight.js stylesheet per flavor, using the same syntax colors as the editor
 <link rel="stylesheet" href="subway-seat-enamel.css">
 ```
 
+**London Moquette**, in your page's <head>, in place of a stock highlight.js theme:
+
+```xml
+<link rel="stylesheet" href="london-moquette.css">
+```
+
+**London Deep Level**, in your page's <head>, in place of a stock highlight.js theme:
+
+```xml
+<link rel="stylesheet" href="london-deep-level.css">
+```
+
+**London Portland**, in your page's <head>, in place of a stock highlight.js theme:
+
+```xml
+<link rel="stylesheet" href="london-portland.css">
+```
+
 ## Follow light and dark
 
 In your page's <head>, in place of a stock highlight.js theme:
@@ -47,6 +68,9 @@ In your page's <head>, in place of a stock highlight.js theme:
 - Delete `styles/highlightjs/subway-seat.css`.
 - Delete `styles/highlightjs/subway-seat-tunnel.css`.
 - Delete `styles/highlightjs/subway-seat-enamel.css`.
+- Delete `styles/highlightjs/london-moquette.css`.
+- Delete `styles/highlightjs/london-deep-level.css`.
+- Delete `styles/highlightjs/london-portland.css`.
 - Delete `styles/highlightjs/subway-seat-auto.css`.
 - Remove the line you added to turn it on.
 

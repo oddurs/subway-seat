@@ -1,0 +1,199 @@
+/* Subway Seat — generated from palette.py by build.py. Edit the palette, not this file. */
+/* London Portland for Vimium: paste into Options › CSS for Vimium UI. */
+
+:root {
+  --vimium-background-color: #E5EAF6;
+  --vimium-background-text-color: #2F3033;
+  --vimium-foreground-color: #D9E0EC;
+  --vimium-foreground-text-color: #2F3033;
+  --vimium-link-color: #0019A8;
+}
+
+/* Link hints */
+div.internal-vimium-hint-marker {
+  padding: 1px 4px;
+  background: #896800;
+  border: 1px solid #69520A;
+  border-radius: 3px;
+  box-shadow: 0 2px 6px rgba(31, 32, 34, 0.35);
+}
+
+div.internal-vimium-hint-marker span {
+  color: #E5EAF6;
+  text-shadow: none;
+}
+
+div.internal-vimium-hint-marker > .matchingCharacter {
+  color: #544411;
+}
+
+div > .vimiumActiveHintMarker span {
+  color: #CED5E3 !important;
+}
+
+div.internal-vimium-input-hint {
+  background-color: rgba(137, 104, 0, 0.2);
+  border: 1px solid #896800;
+}
+
+div.internal-vimium-selected-input-hint {
+  background-color: rgba(159, 89, 27, 0.25);
+  border: 1px solid #9F591B !important;
+}
+
+div.vimium-flash {
+  box-shadow: 0 0 4px 2px #9F591B;
+}
+
+body.vimium-find-mode ::selection {
+  background: #9F591B;
+  color: #E5EAF6;
+}
+
+/* Vomnibar */
+#vomnibar {
+  background: #F2F4FA;
+  color: #2F3033;
+  border: 1px solid #D6D8DE;
+  border-radius: 8px;
+  box-shadow: 0 12px 32px rgba(31, 32, 34, 0.2);
+}
+
+#vomnibar #vomnibar-search-area {
+  background: #F2F4FA;
+  border-bottom: 1px solid #D6D8DE;
+}
+
+#vomnibar input {
+  color: #1F2022;
+  background: #E5EAF6;
+  border: 1px solid #ADB7CB;
+  border-radius: 5px;
+  box-shadow: none;
+}
+
+#vomnibar input:focus {
+  border-color: #9F591B;
+}
+
+#vomnibar input::selection {
+  background-color: #ADB7CB;
+  color: #1F2022;
+}
+
+#vomnibar ul {
+  background: #F2F4FA;
+}
+
+#vomnibar li {
+  border-bottom: 1px solid #D6D8DE;
+}
+
+#vomnibar li .source {
+  color: #727781;
+}
+
+#vomnibar li .title,
+#vomnibar li em {
+  color: #2F3033;
+}
+
+#vomnibar li .url {
+  color: #0019A8;
+}
+
+#vomnibar li .match,
+#vomnibar li .title .match {
+  color: #9F591B;
+  font-weight: bold;
+}
+
+#vomnibar li .relevancy {
+  color: #8A919F;
+}
+
+#vomnibar li.selected {
+  background-color: #DBD6D7;
+}
+
+/* Find HUD */
+#hud-container {
+  background-color: #F2F4FA;
+  color: #2F3033;
+  border: 1px solid #D6D8DE;
+  box-shadow: none;
+}
+
+#hud-container #search-area,
+#hud-container #hud {
+  background-color: #F2F4FA;
+  color: #2F3033;
+}
+
+span#hud-match-count {
+  color: #727781;
+}
+
+/* Help dialog */
+#container {
+  background-color: #E5EAF6;
+  border: 1px solid #ADB7CB;
+}
+
+#dialog {
+  background-color: #E5EAF6;
+  color: #2F3033;
+}
+
+#dialog a,
+#dialog h1 .vim {
+  color: #9F591B;
+}
+
+#dialog a#close {
+  color: #727781;
+}
+
+#dialog a#close:hover {
+  color: #1F2022;
+}
+
+#dialog h2,
+#dialog .help-description {
+  color: #2F3033;
+}
+
+#dialog div.divider {
+  background-color: #ADB7CB;
+}
+
+#dialog .key,
+body.vimium-body .key {
+  color: #2F3033;
+  background-color: #D9E0EC;
+  border: 1px solid #ADB7CB;
+  border-bottom-color: #9BA5B8;
+  box-shadow: none;
+}
+
+/* Options and exclusions pages */
+body.vimium-body {
+  background-color: #E5EAF6;
+  color: #2F3033;
+}
+
+body.vimium-body a,
+body.vimium-body a:visited {
+  color: #0019A8;
+}
+
+body.vimium-body textarea,
+body.vimium-body input {
+  background-color: #D9E0EC;
+  border-color: #ADB7CB;
+  color: #2F3033;
+}
+
+body.vimium-body div.example {
+  color: #5D6168;
+}

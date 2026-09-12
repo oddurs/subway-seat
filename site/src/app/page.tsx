@@ -12,6 +12,7 @@ import { PortGrid } from "@/components/PortGrid";
 import { Routes } from "@/components/Routes";
 import { Section } from "@/components/Section";
 import { Shag, type ShagPalette } from "@/components/Shag";
+import { Weave, type WeavePalette } from "@/components/Weave";
 import { TerminalDemo } from "@/components/TerminalDemo";
 import { Workbench } from "@/components/Workbench";
 import { installCommand } from "@/lib/install";
@@ -31,6 +32,19 @@ const shag = Object.fromEntries(
   }),
 ) as Record<FlavorId, ShagPalette>;
 
+const weave = Object.fromEntries(
+  flavors.map((f) => {
+    const c = f.colors;
+    const palette: WeavePalette = {
+      ground: c.mantle,
+      // The quiet field the motif is woven into, and the few threads that aren't.
+      warp: [c.surface0, c.base, c.surface1, c.crust, c.surface0, c.surface2],
+      motif: [c.red, c.denim, c.yellow, c.green, c.orange, c.sage],
+    };
+    return [f.id, palette];
+  }),
+) as Record<FlavorId, WeavePalette>;
+
 export default function Home() {
   const count = ports().length;
   return (
@@ -38,15 +52,25 @@ export default function Home() {
       <Nav />
       <main id="main">
         <Hero count={count} />
-        <Shag palettes={shag} height={130} />
+        <div data-only="new-york">
+          <Shag palettes={shag} height={130} />
+        </div>
+        <div data-only="london">
+          <Weave palettes={weave} height={130} />
+        </div>
         <div {...stylex.props(styles.sections)}>
           <Section
             id="flavors"
-            label="Three flavors"
+            label="Two cities, six flavors"
             title="Pick a seat."
-            intro="Walnut is the original. Tunnel is the late local after midnight. Enamel is the same car in morning sun. Pick one and the whole site changes with you."
+            intro="Every flavor defines the same 26 roles, so a port written against roles works in all of them. New York rides warm; London rides cool and spends its color far more carefully. Pick one and the whole site changes with you — type, texture and signage included."
           >
-            <FlavorCards flavors={flavors} />
+            <div data-only="new-york">
+              <FlavorCards flavors={flavors.filter((f) => f.family === "new-york")} />
+            </div>
+            <div data-only="london">
+              <FlavorCards flavors={flavors.filter((f) => f.family === "london")} />
+            </div>
           </Section>
 
           <Section
@@ -70,8 +94,8 @@ export default function Home() {
           <Section
             id="palette"
             label="The palette"
-            title="Brown, cream, and the good stuff."
-            intro="A brown ground, a cream text ramp, and seven accents. Blue is faded denim and only marks links; magenta got reassigned to burnt orange. Pick a chip to copy it."
+            title="Nine grounds, four texts, thirteen accents."
+            intro="The same 26 slots in both cities. New York fills them warm — blue faded to denim, magenta reassigned to burnt orange. London fills them from the network: brick, the platform-edge yellow, District green, Corporate Blue and the standard red. Pick a chip to copy it."
           >
             <Palette />
             <Routes />
@@ -106,7 +130,7 @@ export default function Home() {
             id="ports"
             label="Ports"
             title={`${count} ports and counting.`}
-            intro="Every port is generated from the same palette, in all three flavors, with install steps and the full file to copy."
+            intro="Every port is generated from the same palette, in all six flavors, with install steps and the full file to copy. Not one of them knows which city it's in."
           >
             <PortGrid />
           </Section>

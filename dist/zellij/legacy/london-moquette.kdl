@@ -1,0 +1,18 @@
+// Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+// London Moquette: legacy color-list theme for Zellij before 0.42.
+
+themes {
+    london-moquette {
+        fg "#D8DEEA"
+        bg "#303F61"
+        black "#172032"
+        red "#F17869"
+        green "#DE8946" // active frame, selected tab
+        yellow "#F2C03F"
+        blue "#7595DA"
+        magenta "#AE9EDC"
+        orange "#F2C03F" // frame in other modes
+        cyan "#54B4B5"
+        white "#E9EDF5"
+    }
+}

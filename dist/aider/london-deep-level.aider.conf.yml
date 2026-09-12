@@ -1,0 +1,20 @@
+# >>> subway-seat >>>
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# London Deep Level for aider. Leave dark-mode and light-mode unset: aider applies them
+# after this file and they replace these colors and the code theme with its own.
+user-input-color: "#F2C03F"
+assistant-output-color: "#D4DAE7"
+tool-output-color: "#A5AEC0"
+tool-error-color: "#F17869"
+tool-warning-color: "#DE8946"
+completion-menu-color: "#D4DAE7"
+completion-menu-bg-color: "#1A243A"
+# aider swaps the next two: current-color is the highlighted item's background,
+# current-bg-color its text. Burnt orange bar, crust letters.
+completion-menu-current-color: "#DE8946"
+completion-menu-current-bg-color: "#0A0E18"
+# Code blocks in your terminal's colors. For the Subway Seat Pygments style,
+# install it into aider's environment and use `code-theme: london-deep-level` instead:
+#   uv tool install aider-chat --with "subway-seat-pygments @ git+https://github.com/oddurs/subway-seat#subdirectory=dist/pygments/package"
+code-theme: ansi_dark
+# <<< subway-seat <<<

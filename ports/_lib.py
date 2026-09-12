@@ -39,7 +39,7 @@ the file is copied to, or None; anything that isn't a path (an import dialog,
 is added to the file at `dest`; wrap it in MARK_START/MARK_END so it can be
 removed again. `lang` is one of LANGS below (the site's highlighter).
 
-Shared helpers live here: `ink(f)`, `selection(f)`, `tints(f)`, the layering
+Shared helpers live here: `pair(f)`, `family_of(f)`, `ink(f)`, `selection(f)`, `tints(f)`, the layering
 system (`resolve`, `solid`, `ui_colors`), `ANSI_NAMES`, `zip_bytes` and VERSION
 (read from pyproject.toml, the one place the version lives).
 """
@@ -125,6 +125,19 @@ MARK_END = "# <<< subway-seat <<<"
 
 
 ANSI_NAMES = ("black", "red", "green", "yellow", "blue", "magenta", "cyan", "white")
+
+
+def pair(f):
+    """The (dark, light) flavors of f's own family.
+
+    For themes that follow the OS setting: a port must never name a flavor id,
+    or it breaks the moment a second family exists."""
+    fam = p.FAMILY[f.family]
+    return (f if f.dark else fam.default), fam.light
+
+
+def family_of(f):
+    return p.FAMILY[f.family]
 
 
 def ink(f):

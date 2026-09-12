@@ -163,6 +163,168 @@
         "warning": "#936200",
         "error": "#BC4031"
       }
+    },
+    {
+      "name": "London Moquette",
+      "type": "custom",
+      "Background": "#1E2941",
+      "Foreground": "#D8DEEA",
+      "LightBlue": "#C1C9D8",
+      "AccentBlue": "#DE8946",
+      "AccentPurple": "#AE9EDC",
+      "AccentCyan": "#54B4B5",
+      "AccentGreen": "#77C581",
+      "AccentYellow": "#F2C03F",
+      "AccentRed": "#F17869",
+      "DiffAdded": "#283E3A",
+      "DiffRemoved": "#462B31",
+      "Comment": "#73819C",
+      "Gray": "#8F9AB0",
+      "DarkGray": "#3D4F72",
+      "GradientColors": [
+        "#DB6052",
+        "#DE8946",
+        "#F2C03F",
+        "#77C581"
+      ],
+      "text": {
+        "primary": "#D8DEEA",
+        "secondary": "#8F9AB0",
+        "accent": "#AE9EDC",
+        "response": "#D8DEEA"
+      },
+      "background": {
+        "primary": "#1E2941",
+        "diff": {
+          "added": "#283E3A",
+          "removed": "#462B31"
+        }
+      },
+      "ui": {
+        "comment": "#73819C",
+        "symbol": "#F2C03F",
+        "active": "#DE8946",
+        "focus": "#F2C03F",
+        "gradient": [
+          "#DB6052",
+          "#DE8946",
+          "#F2C03F",
+          "#77C581"
+        ]
+      },
+      "status": {
+        "success": "#77C581",
+        "warning": "#F2C03F",
+        "error": "#F17869"
+      }
+    },
+    {
+      "name": "London Deep Level",
+      "type": "custom",
+      "Background": "#121A2D",
+      "Foreground": "#D4DAE7",
+      "LightBlue": "#BEC6D5",
+      "AccentBlue": "#DE8946",
+      "AccentPurple": "#AE9EDC",
+      "AccentCyan": "#54B4B5",
+      "AccentGreen": "#77C581",
+      "AccentYellow": "#F2C03F",
+      "AccentRed": "#F17869",
+      "DiffAdded": "#22362F",
+      "DiffRemoved": "#402327",
+      "Comment": "#6F7C97",
+      "Gray": "#8B96AC",
+      "DarkGray": "#303E5B",
+      "GradientColors": [
+        "#DB6052",
+        "#DE8946",
+        "#F2C03F",
+        "#77C581"
+      ],
+      "text": {
+        "primary": "#D4DAE7",
+        "secondary": "#8B96AC",
+        "accent": "#AE9EDC",
+        "response": "#D4DAE7"
+      },
+      "background": {
+        "primary": "#121A2D",
+        "diff": {
+          "added": "#22362F",
+          "removed": "#402327"
+        }
+      },
+      "ui": {
+        "comment": "#6F7C97",
+        "symbol": "#F2C03F",
+        "active": "#DE8946",
+        "focus": "#F2C03F",
+        "gradient": [
+          "#DB6052",
+          "#DE8946",
+          "#F2C03F",
+          "#77C581"
+        ]
+      },
+      "status": {
+        "success": "#77C581",
+        "warning": "#F2C03F",
+        "error": "#F17869"
+      }
+    },
+    {
+      "name": "London Portland",
+      "type": "custom",
+      "Background": "#E5EAF6",
+      "Foreground": "#2F3033",
+      "LightBlue": "#434548",
+      "AccentBlue": "#9F591B",
+      "AccentPurple": "#7660AB",
+      "AccentCyan": "#007376",
+      "AccentGreen": "#357D41",
+      "AccentYellow": "#896800",
+      "AccentRed": "#CA2822",
+      "DiffAdded": "#CADDCE",
+      "DiffRemoved": "#EDCCCD",
+      "Comment": "#727781",
+      "Gray": "#5D6168",
+      "DarkGray": "#9BA5B8",
+      "GradientColors": [
+        "#A40005",
+        "#9F591B",
+        "#896800",
+        "#357D41"
+      ],
+      "text": {
+        "primary": "#2F3033",
+        "secondary": "#5D6168",
+        "accent": "#7660AB",
+        "response": "#2F3033"
+      },
+      "background": {
+        "primary": "#E5EAF6",
+        "diff": {
+          "added": "#CADDCE",
+          "removed": "#EDCCCD"
+        }
+      },
+      "ui": {
+        "comment": "#727781",
+        "symbol": "#896800",
+        "active": "#9F591B",
+        "focus": "#896800",
+        "gradient": [
+          "#A40005",
+          "#9F591B",
+          "#896800",
+          "#357D41"
+        ]
+      },
+      "status": {
+        "success": "#357D41",
+        "warning": "#896800",
+        "error": "#CA2822"
+      }
     }
   ]
 }

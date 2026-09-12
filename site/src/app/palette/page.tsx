@@ -207,7 +207,7 @@ const styles = stylex.create({
     overflow: "hidden",
     borderStyle: "solid",
     borderWidth: 1,
-    borderRadius: 14,
+    borderRadius: "var(--radius-card)",
     boxShadow: "0 14px 34px var(--ss-shadow-soft)",
   },
   paint: (bg: string, edge: string) => ({ backgroundColor: bg, borderColor: edge }),

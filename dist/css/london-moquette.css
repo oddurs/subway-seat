@@ -1,0 +1,76 @@
+/* Subway Seat — generated from palette.py by build.py. Edit the palette, not this file. */
+/* London Moquette: The seat you're sitting on. Corporate Blue, turned right down. */
+
+:root {
+  color-scheme: dark;
+
+  /* Ground */
+  --ss-crust: #121826; /* Blackout */
+  --ss-mantle: #172032; /* Espresso */
+  --ss-base: #1E2941; /* Paneling */
+  --ss-surface0: #263451; /* Coppertone */
+  --ss-surface1: #303F61; /* Saddle */
+  --ss-surface2: #3D4F72; /* Corduroy */
+  --ss-overlay0: #576685; /* Pecan */
+  --ss-overlay1: #73819C; /* Cardboard */
+  --ss-overlay2: #8F9AB0; /* Burlap */
+
+  /* Text */
+  --ss-subtext0: #A9B2C4; /* Khaki */
+  --ss-subtext1: #C1C9D8; /* Almond */
+  --ss-text: #D8DEEA; /* Parchment */
+  --ss-text-hi: #E9EDF5; /* Ivory */
+
+  /* Accents */
+  --ss-yellow: #F2C03F; /* Harvest gold */
+  --ss-yellow-hi: #FFD36C; /* Broadway yellow */
+  --ss-orange: #DE8946; /* Burnt orange */
+  --ss-orange-hi: #E5AA7F; /* Sixth Avenue */
+  --ss-red: #DB6052; /* Redbird */
+  --ss-red-hi: #F17869; /* Redbird bright */
+  --ss-green: #77C581; /* Avocado */
+  --ss-green-hi: #9AD2A0; /* Avocado bright */
+  --ss-sage: #54B4B5; /* Seafoam tile */
+  --ss-sage-hi: #72D1D3; /* Seafoam bright */
+  --ss-denim: #7595DA; /* Faded denim */
+  --ss-denim-hi: #8BB0FF; /* Denim bright */
+  --ss-clay: #AE9EDC; /* Terracotta */
+
+  /* Diff grounds: -add/-del/-chg for lines, -emph for changed words, -dim for faded diffs */
+  --ss-diff-add: #283E3A;
+  --ss-diff-add-emph: #345345;
+  --ss-diff-add-dim: #203033;
+  --ss-diff-del: #462B31;
+  --ss-diff-del-emph: #623538;
+  --ss-diff-del-dim: #34242D;
+  --ss-diff-chg: #36332A;
+  --ss-diff-chg-emph: #4C442C;
+
+  /* RGB triplets, for rgb(var(--ss-base-rgb) / 0.5) */
+  --ss-crust-rgb: 18 24 38;
+  --ss-mantle-rgb: 23 32 50;
+  --ss-base-rgb: 30 41 65;
+  --ss-surface0-rgb: 38 52 81;
+  --ss-surface1-rgb: 48 63 97;
+  --ss-surface2-rgb: 61 79 114;
+  --ss-overlay0-rgb: 87 102 133;
+  --ss-overlay1-rgb: 115 129 156;
+  --ss-overlay2-rgb: 143 154 176;
+  --ss-subtext0-rgb: 169 178 196;
+  --ss-subtext1-rgb: 193 201 216;
+  --ss-text-rgb: 216 222 234;
+  --ss-text-hi-rgb: 233 237 245;
+  --ss-yellow-rgb: 242 192 63;
+  --ss-yellow-hi-rgb: 255 211 108;
+  --ss-orange-rgb: 222 137 70;
+  --ss-orange-hi-rgb: 229 170 127;
+  --ss-red-rgb: 219 96 82;
+  --ss-red-hi-rgb: 241 120 105;
+  --ss-green-rgb: 119 197 129;
+  --ss-green-hi-rgb: 154 210 160;
+  --ss-sage-rgb: 84 180 181;
+  --ss-sage-hi-rgb: 114 209 211;
+  --ss-denim-rgb: 117 149 218;
+  --ss-denim-hi-rgb: 139 176 255;
+  --ss-clay-rgb: 174 158 220;
+}

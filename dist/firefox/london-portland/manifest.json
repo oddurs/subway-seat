@@ -1,0 +1,61 @@
+{
+  "manifest_version": 2,
+  "name": "London Portland",
+  "version": "0.3.0",
+  "description": "A walnut-brown 1970s NYC subway theme: harvest gold, burnt orange and avocado on warm wood. Holden's Portland stone. Links are the exact Corporate Blue.",
+  "author": "Oddur Sigurdsson",
+  "homepage_url": "https://github.com/oddurs/subway-seat",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "london-portland@oddurs.github.io",
+      "strict_min_version": "106.0"
+    }
+  },
+  "theme": {
+    "colors": {
+      "frame": "#CED5E3",
+      "frame_inactive": "#D9E0EC",
+      "tab_background_text": "#5D6168",
+      "tab_background_separator": "#ADB7CB",
+      "tab_selected": "#E5EAF6",
+      "tab_text": "#2F3033",
+      "tab_line": "#9F591B",
+      "tab_loading": "#9F591B",
+      "toolbar": "#E5EAF6",
+      "toolbar_text": "#2F3033",
+      "toolbar_top_separator": "#CED5E3",
+      "toolbar_bottom_separator": "#ADB7CB",
+      "toolbar_vertical_separator": "#ADB7CB",
+      "icons": "#434548",
+      "icons_attention": "#9F591B",
+      "button_background_hover": "#C1CADC",
+      "button_background_active": "#ADB7CB",
+      "toolbar_field": "#D9E0EC",
+      "toolbar_field_text": "#2F3033",
+      "toolbar_field_border": "#ADB7CB",
+      "toolbar_field_focus": "#E5EAF6",
+      "toolbar_field_text_focus": "#1F2022",
+      "toolbar_field_border_focus": "#9F591B",
+      "toolbar_field_highlight": "#ADB7CB",
+      "toolbar_field_highlight_text": "#1F2022",
+      "toolbar_field_separator": "#ADB7CB",
+      "popup": "#F2F4FA",
+      "popup_text": "#2F3033",
+      "popup_border": "#D6D8DE",
+      "popup_highlight": "#ADB7CB",
+      "popup_highlight_text": "#1F2022",
+      "sidebar": "#D9E0EC",
+      "sidebar_text": "#2F3033",
+      "sidebar_border": "#ADB7CB",
+      "sidebar_highlight": "#ADB7CB",
+      "sidebar_highlight_text": "#1F2022",
+      "ntp_background": "#E5EAF6",
+      "ntp_card_background": "#D9E0EC",
+      "ntp_text": "#2F3033"
+    },
+    "properties": {
+      "color_scheme": "light",
+      "content_color_scheme": "light"
+    }
+  }
+}

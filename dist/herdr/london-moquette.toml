@@ -1,0 +1,24 @@
+# >>> subway-seat >>>
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# London Moquette; base theme: catppuccin
+[theme.custom]
+panel_bg = "#1E2941"
+sidebar_bg = "#172032"
+active_row_bg = "#263451"
+selection_bg = "#303F61"
+surface_dim = "#172032"
+surface0 = "#263451"
+surface1 = "#303F61"
+overlay0 = "#576685"
+overlay1 = "#73819C"
+text = "#D8DEEA"
+subtext0 = "#A9B2C4"
+accent = "#DE8946"
+mauve = "#AE9EDC"
+peach = "#E5AA7F"
+yellow = "#F2C03F"
+green = "#77C581"
+red = "#F17869"
+blue = "#7595DA"
+teal = "#54B4B5"
+# <<< subway-seat <<<

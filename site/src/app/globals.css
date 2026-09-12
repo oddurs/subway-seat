@@ -21,20 +21,46 @@
   }
 }
 
-/* Flavor-specific content rendered for every flavor; only the active one shows. */
+/* Flavor-specific content rendered for every flavor; only the active one shows.
+   Everything between the markers is written by build.py from palette.py. */
 @layer flavors {
+  /* flavors:start */
   :root {
     --ss-shadow: rgba(8, 5, 2, 0.55);
     --ss-shadow-soft: rgba(8, 5, 2, 0.28);
+    --sign-bg: #0C0805;
+    --sign-text: #F8ECD4;
+    --sign-ring: #EC7F31;
+    --radius-pill: 999px;
+    --radius-card: 6px;
+    --radius-chip: 50%;
+  }
+  html[data-family="london"] {
+    --sign-bg: #0019A8;
+    --sign-text: #FFFFFF;
+    --sign-ring: #F2C03F;
+    --radius-pill: 2px;
+    --radius-card: 0px;
+    --radius-chip: 2px;
   }
   html[data-flavor="enamel"] {
-    --ss-shadow: rgba(62, 44, 30, 0.2);
-    --ss-shadow-soft: rgba(62, 44, 30, 0.12);
+    --ss-shadow: rgba(110, 97, 86, 0.2);
+    --ss-shadow-soft: rgba(110, 97, 86, 0.12);
+  }
+  html[data-flavor="portland"] {
+    --ss-shadow: rgba(99, 100, 102, 0.2);
+    --ss-shadow-soft: rgba(99, 100, 102, 0.12);
   }
 
+  /* Content written for one flavor or one family; the rest is hidden. */
   html:not([data-flavor="walnut"]) [data-only="walnut"],
   html:not([data-flavor="tunnel"]) [data-only="tunnel"],
-  html:not([data-flavor="enamel"]) [data-only="enamel"] {
+  html:not([data-flavor="enamel"]) [data-only="enamel"],
+  html:not([data-flavor="moquette"]) [data-only="moquette"],
+  html:not([data-flavor="deep"]) [data-only="deep"],
+  html:not([data-flavor="portland"]) [data-only="portland"],
+  html:not([data-family="new-york"]) [data-only="new-york"],
+  html:not([data-family="london"]) [data-only="london"] {
     display: none !important;
   }
 
@@ -42,15 +68,17 @@
   @media (max-width: 720px) {
     html:not([data-flavor="walnut"]) [data-narrow-only="walnut"],
     html:not([data-flavor="tunnel"]) [data-narrow-only="tunnel"],
-    html:not([data-flavor="enamel"]) [data-narrow-only="enamel"] {
+    html:not([data-flavor="enamel"]) [data-narrow-only="enamel"],
+    html:not([data-flavor="moquette"]) [data-narrow-only="moquette"],
+    html:not([data-flavor="deep"]) [data-narrow-only="deep"],
+    html:not([data-flavor="portland"]) [data-narrow-only="portland"],
+    html:not([data-family="new-york"]) [data-narrow-only="new-york"],
+    html:not([data-family="london"]) [data-narrow-only="london"] {
       display: none !important;
     }
   }
 
-  /* Shiki renders Walnut by default and carries the other flavors as variables
-     (files for one flavor are highlighted in that flavor alone, without the class).
-     Only the <pre> takes the ground; spans keep their own backgrounds (the
-     editor mock's selections, find matches and line highlights). */
+  /* Shiki renders Subway Seat by default and carries the others as variables. */
   html[data-flavor="tunnel"] .shiki-themes,
   html[data-flavor="tunnel"] .shiki-themes span {
     color: var(--shiki-tunnel) !important;
@@ -65,6 +93,28 @@
   html[data-flavor="enamel"] .shiki-themes {
     background-color: var(--shiki-enamel-bg) !important;
   }
+  html[data-flavor="moquette"] .shiki-themes,
+  html[data-flavor="moquette"] .shiki-themes span {
+    color: var(--shiki-moquette) !important;
+  }
+  html[data-flavor="moquette"] .shiki-themes {
+    background-color: var(--shiki-moquette-bg) !important;
+  }
+  html[data-flavor="deep"] .shiki-themes,
+  html[data-flavor="deep"] .shiki-themes span {
+    color: var(--shiki-deep) !important;
+  }
+  html[data-flavor="deep"] .shiki-themes {
+    background-color: var(--shiki-deep-bg) !important;
+  }
+  html[data-flavor="portland"] .shiki-themes,
+  html[data-flavor="portland"] .shiki-themes span {
+    color: var(--shiki-portland) !important;
+  }
+  html[data-flavor="portland"] .shiki-themes {
+    background-color: var(--shiki-portland-bg) !important;
+  }
+/* flavors:end */
 
   /* Visually hidden, still read aloud. */
   .sr-only {

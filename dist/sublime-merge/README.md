@@ -32,6 +32,30 @@ A walnut theme for the whole window and the diff colors to go with it: syntax co
 | Subway Seat Enamel | [`Commit Message - Subway Seat Enamel.sublime-settings`](Commit%20Message%20-%20Subway%20Seat%20Enamel.sublime-settings) | `Packages/User/Commit Message - Subway Seat Enamel.sublime-settings`; In Sublime Merge's Packages/User folder (Preferences › Browse Packages…) |
 | Subway Seat Enamel | [`File Mode - Subway Seat Enamel.sublime-settings`](File%20Mode%20-%20Subway%20Seat%20Enamel.sublime-settings) | `Packages/User/File Mode - Subway Seat Enamel.sublime-settings`; In Sublime Merge's Packages/User folder (Preferences › Browse Packages…) |
 | Subway Seat Enamel | [`Git Output - Subway Seat Enamel.sublime-settings`](Git%20Output%20-%20Subway%20Seat%20Enamel.sublime-settings) | `Packages/User/Git Output - Subway Seat Enamel.sublime-settings`; In Sublime Merge's Packages/User folder (Preferences › Browse Packages…) |
+| London Moquette | [`London Moquette.sublime-theme`](London%20Moquette.sublime-theme) | `Packages/User/London Moquette.sublime-theme`; In Sublime Merge's Packages/User folder (Preferences › Browse Packages…) |
+| London Moquette | [`London Moquette.sublime-color-scheme`](London%20Moquette.sublime-color-scheme) | `Packages/User/London Moquette.sublime-color-scheme`; In Sublime Merge's Packages/User folder (Preferences › Browse Packages…) |
+| London Moquette | [`Widget - London Moquette.hidden-color-scheme`](Widget%20-%20London%20Moquette.hidden-color-scheme) | `Packages/User/Widget - London Moquette.hidden-color-scheme`; In Sublime Merge's Packages/User folder (Preferences › Browse Packages…) |
+| London Moquette | [`Widget - London Moquette.sublime-settings`](Widget%20-%20London%20Moquette.sublime-settings) | `Packages/User/Widget - London Moquette.sublime-settings`; In Sublime Merge's Packages/User folder (Preferences › Browse Packages…) |
+| London Moquette | [`Diff - London Moquette.sublime-settings`](Diff%20-%20London%20Moquette.sublime-settings) | `Packages/User/Diff - London Moquette.sublime-settings`; In Sublime Merge's Packages/User folder (Preferences › Browse Packages…) |
+| London Moquette | [`Commit Message - London Moquette.sublime-settings`](Commit%20Message%20-%20London%20Moquette.sublime-settings) | `Packages/User/Commit Message - London Moquette.sublime-settings`; In Sublime Merge's Packages/User folder (Preferences › Browse Packages…) |
+| London Moquette | [`File Mode - London Moquette.sublime-settings`](File%20Mode%20-%20London%20Moquette.sublime-settings) | `Packages/User/File Mode - London Moquette.sublime-settings`; In Sublime Merge's Packages/User folder (Preferences › Browse Packages…) |
+| London Moquette | [`Git Output - London Moquette.sublime-settings`](Git%20Output%20-%20London%20Moquette.sublime-settings) | `Packages/User/Git Output - London Moquette.sublime-settings`; In Sublime Merge's Packages/User folder (Preferences › Browse Packages…) |
+| London Deep Level | [`London Deep Level.sublime-theme`](London%20Deep%20Level.sublime-theme) | `Packages/User/London Deep Level.sublime-theme`; In Sublime Merge's Packages/User folder (Preferences › Browse Packages…) |
+| London Deep Level | [`London Deep Level.sublime-color-scheme`](London%20Deep%20Level.sublime-color-scheme) | `Packages/User/London Deep Level.sublime-color-scheme`; In Sublime Merge's Packages/User folder (Preferences › Browse Packages…) |
+| London Deep Level | [`Widget - London Deep Level.hidden-color-scheme`](Widget%20-%20London%20Deep%20Level.hidden-color-scheme) | `Packages/User/Widget - London Deep Level.hidden-color-scheme`; In Sublime Merge's Packages/User folder (Preferences › Browse Packages…) |
+| London Deep Level | [`Widget - London Deep Level.sublime-settings`](Widget%20-%20London%20Deep%20Level.sublime-settings) | `Packages/User/Widget - London Deep Level.sublime-settings`; In Sublime Merge's Packages/User folder (Preferences › Browse Packages…) |
+| London Deep Level | [`Diff - London Deep Level.sublime-settings`](Diff%20-%20London%20Deep%20Level.sublime-settings) | `Packages/User/Diff - London Deep Level.sublime-settings`; In Sublime Merge's Packages/User folder (Preferences › Browse Packages…) |
+| London Deep Level | [`Commit Message - London Deep Level.sublime-settings`](Commit%20Message%20-%20London%20Deep%20Level.sublime-settings) | `Packages/User/Commit Message - London Deep Level.sublime-settings`; In Sublime Merge's Packages/User folder (Preferences › Browse Packages…) |
+| London Deep Level | [`File Mode - London Deep Level.sublime-settings`](File%20Mode%20-%20London%20Deep%20Level.sublime-settings) | `Packages/User/File Mode - London Deep Level.sublime-settings`; In Sublime Merge's Packages/User folder (Preferences › Browse Packages…) |
+| London Deep Level | [`Git Output - London Deep Level.sublime-settings`](Git%20Output%20-%20London%20Deep%20Level.sublime-settings) | `Packages/User/Git Output - London Deep Level.sublime-settings`; In Sublime Merge's Packages/User folder (Preferences › Browse Packages…) |
+| London Portland | [`London Portland.sublime-theme`](London%20Portland.sublime-theme) | `Packages/User/London Portland.sublime-theme`; In Sublime Merge's Packages/User folder (Preferences › Browse Packages…) |
+| London Portland | [`London Portland.sublime-color-scheme`](London%20Portland.sublime-color-scheme) | `Packages/User/London Portland.sublime-color-scheme`; In Sublime Merge's Packages/User folder (Preferences › Browse Packages…) |
+| London Portland | [`Widget - London Portland.hidden-color-scheme`](Widget%20-%20London%20Portland.hidden-color-scheme) | `Packages/User/Widget - London Portland.hidden-color-scheme`; In Sublime Merge's Packages/User folder (Preferences › Browse Packages…) |
+| London Portland | [`Widget - London Portland.sublime-settings`](Widget%20-%20London%20Portland.sublime-settings) | `Packages/User/Widget - London Portland.sublime-settings`; In Sublime Merge's Packages/User folder (Preferences › Browse Packages…) |
+| London Portland | [`Diff - London Portland.sublime-settings`](Diff%20-%20London%20Portland.sublime-settings) | `Packages/User/Diff - London Portland.sublime-settings`; In Sublime Merge's Packages/User folder (Preferences › Browse Packages…) |
+| London Portland | [`Commit Message - London Portland.sublime-settings`](Commit%20Message%20-%20London%20Portland.sublime-settings) | `Packages/User/Commit Message - London Portland.sublime-settings`; In Sublime Merge's Packages/User folder (Preferences › Browse Packages…) |
+| London Portland | [`File Mode - London Portland.sublime-settings`](File%20Mode%20-%20London%20Portland.sublime-settings) | `Packages/User/File Mode - London Portland.sublime-settings`; In Sublime Merge's Packages/User folder (Preferences › Browse Packages…) |
+| London Portland | [`Git Output - London Portland.sublime-settings`](Git%20Output%20-%20London%20Portland.sublime-settings) | `Packages/User/Git Output - London Portland.sublime-settings`; In Sublime Merge's Packages/User folder (Preferences › Browse Packages…) |
 
 ## Turn it on
 
@@ -51,6 +75,24 @@ A walnut theme for the whole window and the diff colors to go with it: syntax co
 
 ```json
 "theme": "Subway Seat Enamel.sublime-theme"
+```
+
+**London Moquette**, in Preferences › Edit Settings… (Preferences.sublime-settings):
+
+```json
+"theme": "London Moquette.sublime-theme"
+```
+
+**London Deep Level**, in Preferences › Edit Settings… (Preferences.sublime-settings):
+
+```json
+"theme": "London Deep Level.sublime-theme"
+```
+
+**London Portland**, in Preferences › Edit Settings… (Preferences.sublime-settings):
+
+```json
+"theme": "London Portland.sublime-theme"
 ```
 
 ## Follow light and dark
@@ -89,6 +131,30 @@ In Preferences › Edit Settings… (Preferences.sublime-settings):
 - Delete `Packages/User/Commit Message - Subway Seat Enamel.sublime-settings`.
 - Delete `Packages/User/File Mode - Subway Seat Enamel.sublime-settings`.
 - Delete `Packages/User/Git Output - Subway Seat Enamel.sublime-settings`.
+- Delete `Packages/User/London Moquette.sublime-theme`.
+- Delete `Packages/User/London Moquette.sublime-color-scheme`.
+- Delete `Packages/User/Widget - London Moquette.hidden-color-scheme`.
+- Delete `Packages/User/Widget - London Moquette.sublime-settings`.
+- Delete `Packages/User/Diff - London Moquette.sublime-settings`.
+- Delete `Packages/User/Commit Message - London Moquette.sublime-settings`.
+- Delete `Packages/User/File Mode - London Moquette.sublime-settings`.
+- Delete `Packages/User/Git Output - London Moquette.sublime-settings`.
+- Delete `Packages/User/London Deep Level.sublime-theme`.
+- Delete `Packages/User/London Deep Level.sublime-color-scheme`.
+- Delete `Packages/User/Widget - London Deep Level.hidden-color-scheme`.
+- Delete `Packages/User/Widget - London Deep Level.sublime-settings`.
+- Delete `Packages/User/Diff - London Deep Level.sublime-settings`.
+- Delete `Packages/User/Commit Message - London Deep Level.sublime-settings`.
+- Delete `Packages/User/File Mode - London Deep Level.sublime-settings`.
+- Delete `Packages/User/Git Output - London Deep Level.sublime-settings`.
+- Delete `Packages/User/London Portland.sublime-theme`.
+- Delete `Packages/User/London Portland.sublime-color-scheme`.
+- Delete `Packages/User/Widget - London Portland.hidden-color-scheme`.
+- Delete `Packages/User/Widget - London Portland.sublime-settings`.
+- Delete `Packages/User/Diff - London Portland.sublime-settings`.
+- Delete `Packages/User/Commit Message - London Portland.sublime-settings`.
+- Delete `Packages/User/File Mode - London Portland.sublime-settings`.
+- Delete `Packages/User/Git Output - London Portland.sublime-settings`.
 - Remove the line you added to turn it on.
 
 Generated by `build.py` from `palette.py` (v0.3.0). Edit the port in `ports/`, not these files.

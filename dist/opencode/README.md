@@ -41,6 +41,33 @@ Walnut and Tunnel each pair with Enamel, and opencode switches halves with your 
 }
 ```
 
+**London Moquette**, in ~/.config/opencode/tui.json after copying the theme to ~/.config/opencode/themes/, or pick it with /theme:
+
+```json
+{
+  "$schema": "https://opencode.ai/tui.json",
+  "theme": "london-moquette"
+}
+```
+
+**London Deep Level**, in ~/.config/opencode/tui.json after copying the theme to ~/.config/opencode/themes/, or pick it with /theme:
+
+```json
+{
+  "$schema": "https://opencode.ai/tui.json",
+  "theme": "london-deep-level"
+}
+```
+
+**London Portland**, in ~/.config/opencode/tui.json after copying the theme to ~/.config/opencode/themes/, or pick it with /theme:
+
+```json
+{
+  "$schema": "https://opencode.ai/tui.json",
+  "theme": "london-portland"
+}
+```
+
 ## Follow light and dark
 
 In ~/.config/opencode/tui.json: Walnut and Tunnel carry Enamel as their light half:

@@ -1,0 +1,26 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+name: London Deep Level
+accent: '#DE8946'
+cursor: '#F2C03F'
+background: '#121A2D'
+foreground: '#D4DAE7'
+details: darker
+terminal_colors:
+  normal:
+    black: '#232F49'
+    red: '#DB6052'
+    green: '#77C581'
+    yellow: '#F2C03F'
+    blue: '#7595DA'
+    magenta: '#DE8946'
+    cyan: '#54B4B5'
+    white: '#BEC6D5'
+  bright:
+    black: '#6F7C97'
+    red: '#F17869'
+    green: '#9AD2A0'
+    yellow: '#FFD36C'
+    blue: '#8BB0FF'
+    magenta: '#E5AA7F'
+    cyan: '#72D1D3'
+    white: '#E7EBF3'

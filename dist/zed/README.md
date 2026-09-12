@@ -32,6 +32,24 @@ All three flavors in one theme family: copy the theme file, or install the dist/
 "theme": "Subway Seat Enamel"
 ```
 
+**London Moquette**, in settings.json:
+
+```json
+"theme": "London Moquette"
+```
+
+**London Deep Level**, in settings.json:
+
+```json
+"theme": "London Deep Level"
+```
+
+**London Portland**, in settings.json:
+
+```json
+"theme": "London Portland"
+```
+
 ## Follow light and dark
 
 In settings.json:

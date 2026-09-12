@@ -51,6 +51,21 @@
         "label": "Subway Seat Enamel",
         "uiTheme": "vs",
         "path": "./themes/subway-seat-enamel-color-theme.json"
+      },
+      {
+        "label": "London Moquette",
+        "uiTheme": "vs-dark",
+        "path": "./themes/london-moquette-color-theme.json"
+      },
+      {
+        "label": "London Deep Level",
+        "uiTheme": "vs-dark",
+        "path": "./themes/london-deep-level-color-theme.json"
+      },
+      {
+        "label": "London Portland",
+        "uiTheme": "vs",
+        "path": "./themes/london-portland-color-theme.json"
       }
     ]
   }

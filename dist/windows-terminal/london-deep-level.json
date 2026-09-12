@@ -1,0 +1,46 @@
+{
+    "schemes": [
+        {
+            "name": "London Deep Level",
+            "background": "#121A2D",
+            "foreground": "#D4DAE7",
+            "cursorColor": "#F2C03F",
+            "selectionBackground": "#303E5B",
+            "black": "#232F49",
+            "red": "#DB6052",
+            "green": "#77C581",
+            "yellow": "#F2C03F",
+            "blue": "#7595DA",
+            "purple": "#DE8946",
+            "cyan": "#54B4B5",
+            "white": "#BEC6D5",
+            "brightBlack": "#6F7C97",
+            "brightRed": "#F17869",
+            "brightGreen": "#9AD2A0",
+            "brightYellow": "#FFD36C",
+            "brightBlue": "#8BB0FF",
+            "brightPurple": "#E5AA7F",
+            "brightCyan": "#72D1D3",
+            "brightWhite": "#E7EBF3"
+        }
+    ],
+    "themes": [
+        {
+            "name": "London Deep Level",
+            "window": {
+                "applicationTheme": "dark",
+                "useMica": false,
+                "frame": "#0A0E18FF",
+                "unfocusedFrame": "#0A0E18FF"
+            },
+            "tabRow": {
+                "background": "#0A0E18FF",
+                "unfocusedBackground": "#0A0E18FF"
+            },
+            "tab": {
+                "background": "#121A2DFF",
+                "unfocusedBackground": "#0D1421FF"
+            }
+        }
+    ]
+}

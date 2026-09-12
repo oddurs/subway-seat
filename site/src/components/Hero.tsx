@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ink } from "@/theme/ink.stylex";
 import { color } from "@/theme/tokens.stylex";
 import { font } from "@/theme/type.stylex";
+import { Diagram } from "./Diagram";
 import { Supergraphic } from "./Supergraphic";
 
 export function Hero({ count }: { count: number }) {
@@ -11,15 +12,35 @@ export function Hero({ count }: { count: number }) {
     <div {...stylex.props(styles.clip)}>
       <section {...stylex.props(styles.hero)}>
         <div {...stylex.props(styles.art)} aria-hidden>
-          <Supergraphic />
+          <span data-only="new-york">
+            <Supergraphic />
+          </span>
+          <span data-only="london" {...stylex.props(styles.diagram)}>
+            <Diagram />
+          </span>
         </div>
         <div {...stylex.props(styles.copy)}>
-          <p {...stylex.props(styles.eyebrow)}>A color scheme for the long ride</p>
-          <h1 {...stylex.props(styles.title)}>Sink into a warmer screen.</h1>
-          <p {...stylex.props(styles.lede)}>
+          <p data-only="new-york" {...stylex.props(styles.eyebrow)}>
+            A color scheme for the long ride
+          </p>
+          <p data-only="london" {...stylex.props(styles.eyebrow)}>
+            Mind the gap
+          </p>
+          <h1 data-only="new-york" {...stylex.props(styles.title)}>
+            Sink into a warmer screen.
+          </h1>
+          <h1 data-only="london" {...stylex.props(styles.title, styles.titleLondon)}>
+            Stand clear of the closing tabs.
+          </h1>
+          <p data-only="new-york" {...stylex.props(styles.lede)}>
             Subway Seat is a walnut-brown theme from a 1970s subway car: orange bucket seats,
             wood-grain paneling, cream enamel and a little avocado. Three flavors, {count} ports,
             one palette.
+          </p>
+          <p data-only="london" {...stylex.props(styles.lede)}>
+            London is the same system riding a different network: Corporate Blue turned right down,
+            London brick, the yellow off the platform edge, and the standard red kept rare so it
+            still means something. Three flavors, {count} ports, the same 26 roles.
           </p>
           <div {...stylex.props(styles.ctas)}>
             <Link href="/install" {...stylex.props(styles.cta, styles.primary)}>
@@ -92,6 +113,15 @@ const styles = stylex.create({
     textTransform: "uppercase",
     letterSpacing: "0.16em",
   },
+  diagram: { display: "block", marginTop: 40 },
+  // Johnston is set tight and upright; the 70s display face wants the opposite.
+  titleLondon: {
+    maxWidth: "14ch",
+    fontVariationSettings: "normal",
+    fontWeight: 700,
+    lineHeight: 1.02,
+    letterSpacing: "-0.012em",
+  },
   title: {
     maxWidth: "12ch",
     fontFamily: font.display,
@@ -129,7 +159,7 @@ const styles = stylex.create({
     },
     outlineColor: ink.accent,
     outlineOffset: 3,
-    borderRadius: 999,
+    borderRadius: "var(--radius-pill)",
     transform: {
       default: null,
       ":hover": "translateY(-1px)",
@@ -140,7 +170,7 @@ const styles = stylex.create({
   primary: {
     color: ink.onAccent,
     backgroundColor: {
-      default: color.orange,
+      default: ink.fill,
       ":hover": ink.fillHover,
     },
   },

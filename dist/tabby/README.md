@@ -11,6 +11,9 @@ Colors, cursor and selection. config.yaml lives in `~/Library/Application Suppor
 | Subway Seat | [`subway-seat.yaml`](subway-seat.yaml) | Paste under `terminal.customColorSchemes` in Tabby's config.yaml |
 | Subway Seat Tunnel | [`subway-seat-tunnel.yaml`](subway-seat-tunnel.yaml) | Paste under `terminal.customColorSchemes` in Tabby's config.yaml |
 | Subway Seat Enamel | [`subway-seat-enamel.yaml`](subway-seat-enamel.yaml) | Paste under `terminal.customColorSchemes` in Tabby's config.yaml |
+| London Moquette | [`london-moquette.yaml`](london-moquette.yaml) | Paste under `terminal.customColorSchemes` in Tabby's config.yaml |
+| London Deep Level | [`london-deep-level.yaml`](london-deep-level.yaml) | Paste under `terminal.customColorSchemes` in Tabby's config.yaml |
+| London Portland | [`london-portland.yaml`](london-portland.yaml) | Paste under `terminal.customColorSchemes` in Tabby's config.yaml |
 
 ## Turn it on
 
@@ -39,6 +42,33 @@ terminal:
   customColorSchemes:
     - name: Subway Seat Enamel   # paste the whole entry from subway-seat-enamel.yaml here
 # then pick Subway Seat Enamel under Settings › Color scheme › Dark mode (the tab Tabby uses by default)
+```
+
+**London Moquette**, in Tabby's config.yaml (Settings › Config file):
+
+```yaml
+terminal:
+  customColorSchemes:
+    - name: London Moquette   # paste the whole entry from london-moquette.yaml here
+# then pick London Moquette under Settings › Color scheme › Dark mode (the tab Tabby uses by default)
+```
+
+**London Deep Level**, in Tabby's config.yaml (Settings › Config file):
+
+```yaml
+terminal:
+  customColorSchemes:
+    - name: London Deep Level   # paste the whole entry from london-deep-level.yaml here
+# then pick London Deep Level under Settings › Color scheme › Dark mode (the tab Tabby uses by default)
+```
+
+**London Portland**, in Tabby's config.yaml (Settings › Config file):
+
+```yaml
+terminal:
+  customColorSchemes:
+    - name: London Portland   # paste the whole entry from london-portland.yaml here
+# then pick London Portland under Settings › Color scheme › Dark mode (the tab Tabby uses by default)
 ```
 
 ## Follow light and dark

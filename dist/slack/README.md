@@ -11,6 +11,9 @@ Slack only lets themes color the sidebar and a few highlights; the message pane 
 | Subway Seat | [`subway-seat.txt`](subway-seat.txt) | paste a string into Slack › Preferences › Themes › Import theme |
 | Subway Seat Tunnel | [`subway-seat-tunnel.txt`](subway-seat-tunnel.txt) | paste a string into Slack › Preferences › Themes › Import theme |
 | Subway Seat Enamel | [`subway-seat-enamel.txt`](subway-seat-enamel.txt) | paste a string into Slack › Preferences › Themes › Import theme |
+| London Moquette | [`london-moquette.txt`](london-moquette.txt) | paste a string into Slack › Preferences › Themes › Import theme |
+| London Deep Level | [`london-deep-level.txt`](london-deep-level.txt) | paste a string into Slack › Preferences › Themes › Import theme |
+| London Portland | [`london-portland.txt`](london-portland.txt) | paste a string into Slack › Preferences › Themes › Import theme |
 
 ## Turn it on
 
@@ -32,6 +35,27 @@ and click “Switch sidebar theme”. The four colors also go one by one under C
 
 ```text
 Paste a string from subway-seat-enamel.txt into Import theme, or into any message
+and click “Switch sidebar theme”. The four colors also go one by one under Custom theme.
+```
+
+**London Moquette**, in Slack › Preferences › Themes:
+
+```text
+Paste a string from london-moquette.txt into Import theme, or into any message
+and click “Switch sidebar theme”. The four colors also go one by one under Custom theme.
+```
+
+**London Deep Level**, in Slack › Preferences › Themes:
+
+```text
+Paste a string from london-deep-level.txt into Import theme, or into any message
+and click “Switch sidebar theme”. The four colors also go one by one under Custom theme.
+```
+
+**London Portland**, in Slack › Preferences › Themes:
+
+```text
+Paste a string from london-portland.txt into Import theme, or into any message
 and click “Switch sidebar theme”. The four colors also go one by one under Custom theme.
 ```
 

@@ -1,0 +1,35 @@
+/* Subway Seat — generated from palette.py by build.py. Edit the palette, not this file. */
+/* London Moquette for waybar: @import it at the top of style.css. */
+
+@define-color crust #121826;
+@define-color mantle #172032;
+@define-color base #1E2941;
+@define-color surface0 #263451;
+@define-color surface1 #303F61;
+@define-color surface2 #3D4F72;
+@define-color overlay0 #576685;
+@define-color overlay1 #73819C;
+@define-color overlay2 #8F9AB0;
+@define-color subtext0 #A9B2C4;
+@define-color subtext1 #C1C9D8;
+@define-color text #D8DEEA;
+@define-color text_hi #E9EDF5;
+@define-color yellow #F2C03F;
+@define-color yellow_hi #FFD36C;
+@define-color orange #DE8946;
+@define-color orange_hi #E5AA7F;
+@define-color red #DB6052;
+@define-color red_hi #F17869;
+@define-color green #77C581;
+@define-color green_hi #9AD2A0;
+@define-color sage #54B4B5;
+@define-color sage_hi #72D1D3;
+@define-color denim #7595DA;
+@define-color denim_hi #8BB0FF;
+@define-color clay #AE9EDC;
+
+/* Layers: a raised ground for popovers, and washes of text for borders, hover and selection */
+@define-color paper #263451;
+@define-color edge alpha(@text, 0.12);
+@define-color hover alpha(@text, 0.08);
+@define-color selection alpha(@text, 0.16);

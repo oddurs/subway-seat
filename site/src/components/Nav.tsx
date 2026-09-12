@@ -1,6 +1,5 @@
 import * as stylex from "@stylexjs/stylex";
 import Link from "next/link";
-import { sign } from "@/theme/sign.stylex";
 import { font } from "@/theme/type.stylex";
 import { FlavorSwitch } from "./FlavorSwitch";
 import { NavLinks } from "./NavLinks";
@@ -24,7 +23,7 @@ export function Nav() {
 }
 
 const styles = stylex.create({
-  band: { position: "relative", zIndex: 2, backgroundColor: sign.bg },
+  band: { position: "relative", zIndex: 2, backgroundColor: "var(--sign-bg)" },
   skip: {
     position: "absolute",
     top: 10,
@@ -35,13 +34,13 @@ const styles = stylex.create({
     fontFamily: font.sans,
     fontSize: 14,
     fontWeight: 700,
-    color: sign.bg,
+    color: "var(--sign-bg)",
     textDecoration: "none",
     outlineWidth: 2,
     outlineStyle: "solid",
-    outlineColor: sign.ring,
+    outlineColor: "var(--sign-ring)",
     outlineOffset: 2,
-    backgroundColor: sign.text,
+    backgroundColor: "var(--sign-text)",
     borderRadius: 999,
     transform: {
       default: "translateY(-200%)",
@@ -66,14 +65,14 @@ const styles = stylex.create({
     right: 0,
     left: 0,
     height: 2,
-    backgroundColor: sign.text,
+    backgroundColor: "var(--sign-text)",
     opacity: 0.8,
   },
   mark: {
     fontFamily: font.sans,
     fontSize: 21,
     fontWeight: 700,
-    color: sign.text,
+    color: "var(--sign-text)",
     letterSpacing: "-0.01em",
     textDecoration: "none",
     outlineWidth: 2,
@@ -81,7 +80,7 @@ const styles = stylex.create({
       default: "none",
       ":focus-visible": "solid",
     },
-    outlineColor: sign.ring,
+    outlineColor: "var(--sign-ring)",
     outlineOffset: 3,
     borderRadius: 2,
   },

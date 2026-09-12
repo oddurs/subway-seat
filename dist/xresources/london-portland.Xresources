@@ -1,0 +1,40 @@
+! Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+! London Portland
+
+*.foreground: #2F3033
+*.background: #E5EAF6
+*.cursorColor: #9F591B
+*.highlightColor: #ADB7CB
+*.highlightTextColor: #1F2022
+
+! black
+*.color0: #434548
+*.color8: #727781
+
+! red
+*.color1: #A40005
+*.color9: #CA2822
+
+! green
+*.color2: #357D41
+*.color10: #398145
+
+! yellow
+*.color3: #896800
+*.color11: #977300
+
+! blue
+*.color4: #0019A8
+*.color12: #406BD0
+
+! magenta
+*.color5: #9F591B
+*.color13: #AE672B
+
+! cyan
+*.color6: #007376
+*.color14: #008689
+
+! white
+*.color7: #9BA5B8
+*.color15: #ADB7CB

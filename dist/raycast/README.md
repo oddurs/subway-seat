@@ -14,6 +14,12 @@ Raycast themes are twelve colors: a walnut gradient, parchment text, a soft oran
 | Subway Seat Tunnel | [`subway-seat-tunnel.link.txt`](subway-seat-tunnel.link.txt) | open a link in your browser, or run `open` on it |
 | Subway Seat Enamel | [`subway-seat-enamel.json`](subway-seat-enamel.json) | the theme as ray.so stores it; the links in the .link.txt file import it |
 | Subway Seat Enamel | [`subway-seat-enamel.link.txt`](subway-seat-enamel.link.txt) | open a link in your browser, or run `open` on it |
+| London Moquette | [`london-moquette.json`](london-moquette.json) | the theme as ray.so stores it; the links in the .link.txt file import it |
+| London Moquette | [`london-moquette.link.txt`](london-moquette.link.txt) | open a link in your browser, or run `open` on it |
+| London Deep Level | [`london-deep-level.json`](london-deep-level.json) | the theme as ray.so stores it; the links in the .link.txt file import it |
+| London Deep Level | [`london-deep-level.link.txt`](london-deep-level.link.txt) | open a link in your browser, or run `open` on it |
+| London Portland | [`london-portland.json`](london-portland.json) | the theme as ray.so stores it; the links in the .link.txt file import it |
+| London Portland | [`london-portland.link.txt`](london-portland.link.txt) | open a link in your browser, or run `open` on it |
 
 ## Turn it on
 
@@ -35,6 +41,27 @@ Or open the ray.so link beside it to preview the theme first.
 
 ```text
 Open the raycast://theme link in subway-seat-enamel.link.txt, and Raycast asks to add Subway Seat Enamel.
+Or open the ray.so link beside it to preview the theme first.
+```
+
+**London Moquette**, in Raycast › Settings › General › Appearance:
+
+```text
+Open the raycast://theme link in london-moquette.link.txt, and Raycast asks to add London Moquette.
+Or open the ray.so link beside it to preview the theme first.
+```
+
+**London Deep Level**, in Raycast › Settings › General › Appearance:
+
+```text
+Open the raycast://theme link in london-deep-level.link.txt, and Raycast asks to add London Deep Level.
+Or open the ray.so link beside it to preview the theme first.
+```
+
+**London Portland**, in Raycast › Settings › General › Appearance:
+
+```text
+Open the raycast://theme link in london-portland.link.txt, and Raycast asks to add London Portland.
 Or open the ray.so link beside it to preview the theme first.
 ```
 

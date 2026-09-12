@@ -11,6 +11,9 @@ Harvest-gold link hints, a walnut Vomnibar with denim URLs and orange matches, a
 | Subway Seat | [`subway-seat.css`](subway-seat.css) | paste into Vimium Options › CSS for Vimium UI |
 | Subway Seat Tunnel | [`subway-seat-tunnel.css`](subway-seat-tunnel.css) | paste into Vimium Options › CSS for Vimium UI |
 | Subway Seat Enamel | [`subway-seat-enamel.css`](subway-seat-enamel.css) | paste into Vimium Options › CSS for Vimium UI |
+| London Moquette | [`london-moquette.css`](london-moquette.css) | paste into Vimium Options › CSS for Vimium UI |
+| London Deep Level | [`london-deep-level.css`](london-deep-level.css) | paste into Vimium Options › CSS for Vimium UI |
+| London Portland | [`london-portland.css`](london-portland.css) | paste into Vimium Options › CSS for Vimium UI |
 | All three | [`subway-seat-auto.css`](subway-seat-auto.css) | paste into Vimium Options › CSS for Vimium UI |
 
 ## Turn it on
@@ -31,6 +34,24 @@ Paste the contents of subway-seat-tunnel.css and click Save
 
 ```text
 Paste the contents of subway-seat-enamel.css and click Save
+```
+
+**London Moquette**, in Vimium Options › Show advanced options › CSS for Vimium UI:
+
+```text
+Paste the contents of london-moquette.css and click Save
+```
+
+**London Deep Level**, in Vimium Options › Show advanced options › CSS for Vimium UI:
+
+```text
+Paste the contents of london-deep-level.css and click Save
+```
+
+**London Portland**, in Vimium Options › Show advanced options › CSS for Vimium UI:
+
+```text
+Paste the contents of london-portland.css and click Save
 ```
 
 ## Follow light and dark

@@ -1,0 +1,47 @@
+# >>> subway-seat >>>
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+[[themes]]
+name = "london-moquette"
+
+[themes.palette]
+background = "#1E2941"
+foreground = "#D8DEEA"
+black = "#303F61"
+red = "#DB6052"
+green = "#77C581"
+yellow = "#F2C03F"
+blue = "#7595DA"
+magenta = "#DE8946"
+cyan = "#54B4B5"
+white = "#C1C9D8"
+bright_black = "#73819C"
+bright_red = "#F17869"
+bright_green = "#9AD2A0"
+bright_yellow = "#FFD36C"
+bright_blue = "#8BB0FF"
+bright_magenta = "#E5AA7F"
+bright_cyan = "#72D1D3"
+bright_white = "#E9EDF5"
+
+[themes.component_style]
+block_title = { fg = "#DE8946", modifiers = ["Bold"] }
+border = { fg = "#3D4F72" }
+playback_status = { fg = "#F2C03F", modifiers = ["Bold"] }
+playback_track = { fg = "#F2C03F", modifiers = ["Bold"] }
+playback_artists = { fg = "#DE8946" }
+playback_album = { fg = "#54B4B5" }
+playback_genres = { fg = "#73819C", modifiers = ["Italic"] }
+playback_metadata = { fg = "#A9B2C4" }
+playback_progress_bar = { fg = "#DE8946", bg = "#303F61" }
+playback_progress_bar_unfilled = { fg = "#3D4F72", bg = "#303F61" }
+current_playing = { fg = "#77C581", modifiers = ["Bold"] }
+page_desc = { fg = "#F2C03F", modifiers = ["Bold"] }
+playlist_desc = { fg = "#73819C" }
+table_header = { fg = "#DE8946" }
+selection = { fg = "#E9EDF5", bg = "#303F61", modifiers = ["Bold"] }
+secondary_row = { bg = "#172032" }
+like = { fg = "#F17869" }
+lyrics_played = { fg = "#73819C" }
+lyrics_playing = { fg = "#F2C03F", modifiers = ["Bold"] }
+visualization = { low = "#77C581", mid = "#F2C03F", high = "#F17869" }
+# <<< subway-seat <<<

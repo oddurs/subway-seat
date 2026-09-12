@@ -11,6 +11,9 @@ A walnut window with a recessed search field; the selected result sits on a soft
 | Subway Seat | [`Subway Seat.alfredappearance`](Subway%20Seat.alfredappearance) | double-click it to import into Alfred |
 | Subway Seat Tunnel | [`Subway Seat Tunnel.alfredappearance`](Subway%20Seat%20Tunnel.alfredappearance) | double-click it to import into Alfred |
 | Subway Seat Enamel | [`Subway Seat Enamel.alfredappearance`](Subway%20Seat%20Enamel.alfredappearance) | double-click it to import into Alfred |
+| London Moquette | [`London Moquette.alfredappearance`](London%20Moquette.alfredappearance) | double-click it to import into Alfred |
+| London Deep Level | [`London Deep Level.alfredappearance`](London%20Deep%20Level.alfredappearance) | double-click it to import into Alfred |
+| London Portland | [`London Portland.alfredappearance`](London%20Portland.alfredappearance) | double-click it to import into Alfred |
 
 ## Turn it on
 
@@ -30,6 +33,24 @@ Double-click Subway Seat Tunnel.alfredappearance, then pick Subway Seat Tunnel u
 
 ```text
 Double-click Subway Seat Enamel.alfredappearance, then pick Subway Seat Enamel under Appearance
+```
+
+**London Moquette**, in Alfred Preferences › Appearance:
+
+```text
+Double-click London Moquette.alfredappearance, then pick London Moquette under Appearance
+```
+
+**London Deep Level**, in Alfred Preferences › Appearance:
+
+```text
+Double-click London Deep Level.alfredappearance, then pick London Deep Level under Appearance
+```
+
+**London Portland**, in Alfred Preferences › Appearance:
+
+```text
+Double-click London Portland.alfredappearance, then pick London Portland under Appearance
 ```
 
 ## Follow light and dark

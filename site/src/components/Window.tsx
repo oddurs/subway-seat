@@ -43,7 +43,7 @@ const styles = stylex.create({
     margin: 0,
     overflow: "hidden",
     backgroundColor: color.base,
-    borderRadius: 10,
+    borderRadius: "var(--radius-card)",
     boxShadow: "0 24px 60px var(--ss-shadow), 0 0 0 1px var(--ss-shadow-soft)",
   },
   bar: {

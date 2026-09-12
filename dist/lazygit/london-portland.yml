@@ -1,0 +1,32 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# London Portland for lazygit.
+gui:
+  theme:
+    activeBorderColor:
+      - '#9F591B'
+      - 'bold'
+    inactiveBorderColor:
+      - '#8A919F'
+    searchingActiveBorderColor:
+      - '#896800'
+      - 'bold'
+    optionsTextColor:
+      - '#896800'
+    selectedLineBgColor:
+      - '#C1CADC'
+    inactiveViewSelectedLineBgColor:
+      - '#D9E0EC'
+    cherryPickedCommitFgColor:
+      - '#E5EAF6'
+    cherryPickedCommitBgColor:
+      - '#007376'
+    markedBaseCommitFgColor:
+      - '#E5EAF6'
+    markedBaseCommitBgColor:
+      - '#896800'
+    unstagedChangesColor:
+      - '#CA2822'
+    defaultFgColor:
+      - '#2F3033'
+  authorColors:
+    '*': '#007376'

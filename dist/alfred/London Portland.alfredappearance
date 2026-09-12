@@ -1,0 +1,64 @@
+{
+  "alfredtheme": {
+    "result": {
+      "textSpacing": 6,
+      "subtext": {
+        "size": 12,
+        "colorSelected": "#434548FF",
+        "font": "System",
+        "color": "#5D6168FF"
+      },
+      "shortcut": {
+        "size": 16,
+        "colorSelected": "#9F591BFF",
+        "font": "System",
+        "color": "#727781FF"
+      },
+      "backgroundSelected": "#DAD3D3FF",
+      "text": {
+        "size": 18,
+        "colorSelected": "#1F2022FF",
+        "font": "System",
+        "color": "#2F3033FF"
+      },
+      "iconPaddingHorizontal": 6,
+      "roundness": 8,
+      "paddingVertical": 4,
+      "iconSize": 38
+    },
+    "search": {
+      "backgroundSelected": "#ADB7CBFF",
+      "paddingHorizontal": 10,
+      "spacing": 10,
+      "text": {
+        "size": 30,
+        "colorSelected": "#1F2022FF",
+        "font": "System Light",
+        "color": "#2F3033FF"
+      },
+      "background": "#CED5E3FF",
+      "roundness": 8,
+      "paddingVertical": 6
+    },
+    "window": {
+      "color": "#E5EAF6F7",
+      "paddingHorizontal": 10,
+      "width": 620,
+      "borderPadding": 0,
+      "borderColor": "#ADB7CBFF",
+      "blur": 12,
+      "roundness": 14,
+      "paddingVertical": 10
+    },
+    "separator": {
+      "color": "#CED5E3FF",
+      "thickness": 1
+    },
+    "scrollbar": {
+      "color": "#ADB7CBFF",
+      "thickness": 3
+    },
+    "name": "London Portland",
+    "credit": "Oddur Sigurdsson"
+  }
+}

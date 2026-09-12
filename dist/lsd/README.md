@@ -11,6 +11,9 @@ The long-view columns in the eza port's colors: gold, orange and avocado permiss
 | Subway Seat | [`subway-seat/colors.yaml`](subway-seat/colors.yaml) | `~/.config/lsd/colors.yaml` |
 | Subway Seat Tunnel | [`subway-seat-tunnel/colors.yaml`](subway-seat-tunnel/colors.yaml) | `~/.config/lsd/colors.yaml` |
 | Subway Seat Enamel | [`subway-seat-enamel/colors.yaml`](subway-seat-enamel/colors.yaml) | `~/.config/lsd/colors.yaml` |
+| London Moquette | [`london-moquette/colors.yaml`](london-moquette/colors.yaml) | `~/.config/lsd/colors.yaml` |
+| London Deep Level | [`london-deep-level/colors.yaml`](london-deep-level/colors.yaml) | `~/.config/lsd/colors.yaml` |
+| London Portland | [`london-portland/colors.yaml`](london-portland/colors.yaml) | `~/.config/lsd/colors.yaml` |
 
 ## Turn it on
 

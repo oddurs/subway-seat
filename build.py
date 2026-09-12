@@ -44,6 +44,7 @@ ROOT = Path(__file__).parent
 DIST = ROOT / "dist"
 SITE_THEME = ROOT / "site" / "src" / "theme"
 README = ROOT / "README.md"
+GLOBALS = ROOT / "site" / "src" / "app" / "globals.css"
 REQUIRED_META = ("id", "name", "category", "homepage", "notes")
 KNOWN_META = {*REQUIRED_META, "enable", "auto", "requires", "detect"}
 # `dest` is a path; directions and prose belong in `how`.
@@ -294,11 +295,24 @@ def site_tokens() -> dict[str, str]:
         "text": [camel(r) for r in p.TEXT],
         "accents": [camel(r) for r in p.ACCENTS],
         "roleNames": {camel(k): v for k, v in p.ROLE_NAMES.items()},
+        "families": [
+            {
+                "id": fam.id,
+                "name": fam.name,
+                "blurb": fam.blurb,
+                "roleNames": {camel(k): v for k, v in fam.role_names.items()},
+                "flavors": [f.id for f in fam.flavors],
+                "default": fam.default.id,
+                "light": fam.light.id,
+            }
+            for fam in p.FAMILIES
+        ],
         "accentRoles": {camel(k): v for k, v in p.ACCENT_ROLES.items()},
         "roleUses": {camel(k): p.ROLE_USES[k] for k in p.ROLES},
         "flavors": [
             {
                 "id": f.id,
+                "family": f.family,
                 "name": f.name,
                 "slug": f.slug,
                 "dark": f.dark,
@@ -318,11 +332,66 @@ def site_tokens() -> dict[str, str]:
     }
 
 
+def globals_css() -> str:
+    """The per-flavor rules in site/src/app/globals.css, one block per flavor.
+
+    Hand-written CSS can't match a flavor id generically, so every rule that
+    names one is generated here and a new family costs nothing."""
+    ind = "  "
+    first = p.FAMILIES[0].sign
+    out = [f"{ind}:root {{", f"{ind}{ind}--ss-shadow: rgba(8, 5, 2, 0.55);",
+           f"{ind}{ind}--ss-shadow-soft: rgba(8, 5, 2, 0.28);",
+           *(f"{ind}{ind}--sign-{k}: {v};" for k, v in first.items()),
+           *(f"{ind}{ind}--radius-{k}: {v};" for k, v in p.FAMILIES[0].shape.items()), f"{ind}}}"]
+    for fam in p.FAMILIES[1:]:
+        out += [f'{ind}html[data-family="{fam.id}"] {{',
+                *(f"{ind}{ind}--sign-{k}: {v};" for k, v in fam.sign.items()),
+                *(f"{ind}{ind}--radius-{k}: {v};" for k, v in fam.shape.items()), f"{ind}}}"]
+    for f in p.FLAVORS:
+        if not f.dark:
+            shadow = p.blend(f.text, "#FFFFFF", 0.75)
+            r, g, b = p.hex_to_rgb(shadow)
+            out += [f'{ind}html[data-flavor="{f.id}"] {{',
+                    f"{ind}{ind}--ss-shadow: rgba({r}, {g}, {b}, 0.2);",
+                    f"{ind}{ind}--ss-shadow-soft: rgba({r}, {g}, {b}, 0.12);", f"{ind}}}"]
+    out.append("")
+    for attr, media in (("data-only", None), ("data-narrow-only", "@media (max-width: 720px)")):
+        pad = ind + (ind if media else "")
+        rules = ",\n".join(
+            f'{pad}html:not([data-flavor="{f.id}"]) [{attr}="{f.id}"]' for f in p.FLAVORS
+        )
+        family_rules = ",\n".join(
+            f'{pad}html:not([data-family="{fam.id}"]) [{attr}="{fam.id}"]' for fam in p.FAMILIES
+        )
+        block = f"{rules},\n{family_rules} {{\n{pad}{ind}display: none !important;\n{pad}}}"
+        if media:
+            out += [f"{ind}/* Wide tables show every flavor; phones show the one you're riding. */",
+                    f"{ind}{media} {{", block, f"{ind}}}"]
+        else:
+            out += [f"{ind}/* Content written for one flavor or one family; the rest is hidden. */", block]
+        out.append("")
+    out.append(f"{ind}/* Shiki renders {p.DEFAULT.name} by default and carries the others as variables. */")
+    for f in p.FLAVORS:
+        if f.id == p.DEFAULT.id:
+            continue
+        out += [f'{ind}html[data-flavor="{f.id}"] .shiki-themes,',
+                f'{ind}html[data-flavor="{f.id}"] .shiki-themes span {{',
+                f"{ind}{ind}color: var(--shiki-{f.id}) !important;", f"{ind}}}",
+                f'{ind}html[data-flavor="{f.id}"] .shiki-themes {{',
+                f"{ind}{ind}background-color: var(--shiki-{f.id}-bg) !important;", f"{ind}}}"]
+    return "\n".join(out)
+
+
 def readme_tables(entries: dict) -> dict[str, str]:
     """The README's generated tables, by marker name (<!-- name:start --> … <!-- name:end -->)."""
-    flavors = ["| | | |", "|---|---|---|"] + [
-        f"| **{f.name}** | `{f.id}` · {'dark' if f.dark else 'light'} | {f.blurb} |" for f in p.FLAVORS
-    ]
+    flavors = []
+    for fam in p.FAMILIES:
+        flavors += [f"**{fam.name}** — {fam.blurb}", "", "| | | |", "|---|---|---|"]
+        flavors += [
+            f"| **{f.name}** | `{f.id}` · {'dark' if f.dark else 'light'} | {f.blurb} |" for f in fam.flavors
+        ]
+        flavors.append("")
+    flavors = flavors[:-1]
     accents = ["| Accent | Leads |", "|---|---|"] + [
         f"| {p.ROLE_NAMES[role]} | {leads} |" for role, leads in p.ACCENT_ROLES.items()
     ]
@@ -335,10 +404,13 @@ def readme_tables(entries: dict) -> dict[str, str]:
     return {"flavors": "\n".join(flavors), "accents": "\n".join(accents), "ports": "\n".join(ports_rows)}
 
 
-def fill_markers(text: str, tables: dict[str, str]) -> str:
-    """Replace what sits between each pair of markers; markers that aren't there are skipped."""
+def fill_markers(text: str, tables: dict[str, str], mark: str = "<!-- {} -->") -> str:
+    """Replace what sits between each pair of markers; markers that aren't there are skipped.
+
+    `mark` wraps the marker name, so the same mechanism works in Markdown
+    (`<!-- x:start -->`) and in CSS (`/* x:start */`)."""
     for name, body in tables.items():
-        start, end = f"<!-- {name}:start -->", f"<!-- {name}:end -->"
+        start, end = mark.format(f"{name}:start"), mark.format(f"{name}:end")
         if start in text:
             head, rest = text.split(start, 1)
             _, tail = rest.split(end, 1)
@@ -359,7 +431,8 @@ def install_table(entries: dict) -> str:
     """dist/install.tsv, what install.sh reads (no jq or Python needed). One record per line:
 
     version <x.y.z>
-    flavor  <id>  <name>  <slug>  <dark|light>
+    family  <id>  <name>
+    flavor  <id>  <name>  <slug>  <dark|light>  <family>
     color   <flavor>  <role>  <#hex>           # accents install.sh paints its own output with
     port    <id>  <name>  <category>  <requires>   # first record of each port, in site order
     detect  <id>  <command or path>
@@ -376,8 +449,10 @@ def install_table(entries: dict) -> str:
         "# Generated by build.py for install.sh. Tab-separated; fields escaped for printf %b.",
         f"version\t{VERSION}",
     ]
+    for fam in p.FAMILIES:
+        rows.append(f"family\t{fam.id}\t{esc(fam.name)}")
     for f in p.FLAVORS:
-        rows.append(f"flavor\t{f.id}\t{f.name}\t{f.slug}\t{'dark' if f.dark else 'light'}")
+        rows.append(f"flavor\t{f.id}\t{f.name}\t{f.slug}\t{'dark' if f.dark else 'light'}\t{f.family}")
         rows += [
             f"color\t{f.id}\t{role}\t{f.colors[role]}"
             for role in ("yellow", "orange", "green", "red_hi", "denim", "sage")
@@ -407,7 +482,15 @@ def manifest(entries: dict) -> str:
         json.dumps(
             {
                 "version": VERSION,
-                "flavors": [{"id": f.id, "name": f.name, "slug": f.slug, "dark": f.dark} for f in p.FLAVORS],
+                "flavors": [
+                    {"id": f.id, "family": f.family, "name": f.name, "slug": f.slug, "dark": f.dark}
+                    for f in p.FLAVORS
+                ],
+                "families": [
+                    {"id": fam.id, "name": fam.name, "blurb": fam.blurb,
+                     "flavors": [f.id for f in fam.flavors]}
+                    for fam in p.FAMILIES
+                ],
                 "categories": CATEGORIES,
                 "ports": sorted(entries.values(), key=sort_key),
             },
@@ -485,6 +568,9 @@ def main() -> None:
     if not args.only:
         outputs.update({SITE_THEME / name: body for name, body in site_tokens().items()})
         outputs[README] = readme_with_tables(entries)
+        outputs[GLOBALS] = fill_markers(
+            GLOBALS.read_text(encoding="utf-8"), {"flavors": globals_css()}, mark="/* {} */"
+        )
 
     port_dirs = {DIST / pid for pid in mods}
     for msg in WARNINGS:

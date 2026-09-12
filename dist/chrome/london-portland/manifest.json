@@ -1,0 +1,130 @@
+{
+  "manifest_version": 3,
+  "name": "London Portland",
+  "version": "0.3.0",
+  "description": "Harvest gold, burnt orange and avocado on walnut. Holden's Portland stone. Links are the exact Corporate Blue.",
+  "theme": {
+    "colors": {
+      "frame": [
+        206,
+        213,
+        227
+      ],
+      "frame_inactive": [
+        217,
+        224,
+        236
+      ],
+      "frame_incognito": [
+        188,
+        190,
+        216
+      ],
+      "frame_incognito_inactive": [
+        188,
+        190,
+        216
+      ],
+      "background_tab": [
+        206,
+        213,
+        227
+      ],
+      "background_tab_inactive": [
+        217,
+        224,
+        236
+      ],
+      "background_tab_incognito": [
+        188,
+        190,
+        216
+      ],
+      "background_tab_incognito_inactive": [
+        188,
+        190,
+        216
+      ],
+      "toolbar": [
+        229,
+        234,
+        246
+      ],
+      "tab_text": [
+        47,
+        48,
+        51
+      ],
+      "tab_background_text": [
+        93,
+        97,
+        104
+      ],
+      "tab_background_text_inactive": [
+        114,
+        119,
+        129
+      ],
+      "tab_background_text_incognito": [
+        81,
+        84,
+        89
+      ],
+      "tab_background_text_incognito_inactive": [
+        93,
+        97,
+        104
+      ],
+      "bookmark_text": [
+        67,
+        69,
+        72
+      ],
+      "toolbar_button_icon": [
+        67,
+        69,
+        72
+      ],
+      "toolbar_text": [
+        47,
+        48,
+        51
+      ],
+      "omnibox_background": [
+        217,
+        224,
+        236
+      ],
+      "omnibox_text": [
+        47,
+        48,
+        51
+      ],
+      "ntp_background": [
+        229,
+        234,
+        246
+      ],
+      "ntp_text": [
+        47,
+        48,
+        51
+      ],
+      "ntp_link": [
+        0,
+        25,
+        168
+      ],
+      "ntp_header": [
+        159,
+        89,
+        27
+      ],
+      "button_background": [
+        206,
+        213,
+        227
+      ]
+    }
+  }
+}

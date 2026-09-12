@@ -23,6 +23,7 @@ from ports._lib import CATEGORIES, HEADER, LANGS, VERSION
 
 ROOT = build.ROOT
 FLAVOR_IDS = {f.id for f in p.FLAVORS}
+FAMILY_IDS = {fam.id for fam in p.FAMILIES}
 KEBAB = re.compile(r"[a-z0-9]+(-[a-z0-9]+)*")
 
 
@@ -232,8 +233,10 @@ def test_install_tsv_parses(entries, files):
         assert len(fields) == len(records[kind]), f"line {n}: {kind} has {len(fields)} fields, not {records[kind]}"
         for token, value in zip(records[kind], fields, strict=True):
             if token == "<id>":
-                ids = FLAVOR_IDS if kind == "flavor" else set(entries)
+                ids = {"flavor": FLAVOR_IDS, "family": FAMILY_IDS}.get(kind, set(entries))
                 assert value in ids, f"line {n}: unknown id {value!r}"
+            elif token == "<family>":
+                assert value in FAMILY_IDS, f"line {n}: unknown family {value!r}"
             elif token == "<flavor>":
                 assert value in FLAVOR_IDS, f"line {n}: unknown flavor {value!r}"
             elif token == "<flavor|*>":

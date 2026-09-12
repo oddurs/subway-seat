@@ -1,0 +1,93 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# London Portland for Git. Include it from your gitconfig:
+#   [include] path = ~/.config/git/london-portland.gitconfig
+
+[color "diff"]
+	meta = "#1f2022 bold"
+	frag = "#0019a8"
+	func = "#434548"
+	old = "#ca2822"
+	new = "#357d41"
+	commit = "#896800"
+	whitespace = "normal #a40005"
+	oldMoved = "#9f591b bold"
+	oldMovedAlternative = "#0019a8 bold"
+	newMoved = "#007376 bold"
+	newMovedAlternative = "#896800 bold"
+	oldMovedDimmed = "#727781"
+	oldMovedAlternativeDimmed = "#727781 italic"
+	newMovedDimmed = "#727781"
+	newMovedAlternativeDimmed = "#727781 italic"
+	contextDimmed = "#727781"
+	oldDimmed = "#ca2822 dim"
+	newDimmed = "#357d41 dim"
+	contextBold = "#1f2022 bold"
+	oldBold = "#ca2822 bold"
+	newBold = "#357d41 bold"
+
+[color "diff-highlight"]
+	oldNormal = "#ca2822"
+	oldHighlight = "#ca2822 #e2adaf"
+	newNormal = "#357d41"
+	newHighlight = "#357d41 #aecbb3"
+
+[color "status"]
+	header = "#434548"
+	added = "#357d41"
+	changed = "#ca2822"
+	untracked = "#7660ab"
+	branch = "#357d41 bold"
+	nobranch = "#ca2822 bold"
+	localBranch = "#357d41"
+	remoteBranch = "#ca2822"
+	unmerged = "#ca2822 bold"
+
+[color "branch"]
+	current = "#357d41 bold"
+	local = "#2f3033"
+	remote = "#ca2822"
+	upstream = "#0019a8"
+	plain = "#434548"
+	worktree = "#007376"
+
+[color "decorate"]
+	HEAD = "#007376 bold"
+	branch = "#357d41 bold"
+	remoteBranch = "#ca2822 bold"
+	tag = "#896800 bold"
+	stash = "#9f591b bold"
+	grafted = "#0019a8 bold"
+
+[color "grep"]
+	context = "#515459"
+	filename = "#9f591b"
+	function = "#896800"
+	lineNumber = "#357d41"
+	column = "#357d41"
+	selected = "#2f3033"
+	separator = "#727781"
+
+[color "interactive"]
+	prompt = "#9f591b bold"
+	header = "#1f2022 bold"
+	help = "#896800"
+	error = "#ca2822 bold"
+
+[color "blame"]
+	highlightRecent = "#727781,12 month ago,#434548,1 month ago,#9f591b"
+	repeatedLines = "#727781"
+
+[color "advice"]
+	hint = "#896800"
+
+[color "push"]
+	error = "#ca2822"
+
+[color "transport"]
+	rejected = "#ca2822"
+
+[color "remote"]
+	hint = "#896800"
+	warning = "#896800 bold"
+	success = "#357d41 bold"
+	error = "#ca2822 bold"

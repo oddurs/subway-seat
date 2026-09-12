@@ -453,11 +453,11 @@ const styles = stylex.create({
     borderColor: color.surface0,
     borderStyle: "solid",
     borderWidth: 1,
-    borderRadius: 10,
+    borderRadius: "var(--radius-card)",
   },
   insideChip: {
     height: 26,
-    borderRadius: 6,
+    borderRadius: "var(--radius-card)",
     boxShadow: `inset 0 0 0 1px color-mix(in srgb, ${color.text} 12%, transparent)`,
   },
   fill: (bg: string) => ({ backgroundColor: bg }),
@@ -469,6 +469,6 @@ const styles = stylex.create({
     borderColor: color.surface0,
     borderStyle: "solid",
     borderWidth: 1,
-    borderRadius: 10,
+    borderRadius: "var(--radius-card)",
   },
 });

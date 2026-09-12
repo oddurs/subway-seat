@@ -11,6 +11,9 @@ Dark Reader takes a background and a text color for each of its dark and light s
 | Subway Seat | [`subway-seat.json`](subway-seat.json) | copy the values into Dark Reader › See all options › Colors |
 | Subway Seat Tunnel | [`subway-seat-tunnel.json`](subway-seat-tunnel.json) | copy the values into Dark Reader › See all options › Colors |
 | Subway Seat Enamel | [`subway-seat-enamel.json`](subway-seat-enamel.json) | copy the values into Dark Reader › See all options › Colors |
+| London Moquette | [`london-moquette.json`](london-moquette.json) | copy the values into Dark Reader › See all options › Colors |
+| London Deep Level | [`london-deep-level.json`](london-deep-level.json) | copy the values into Dark Reader › See all options › Colors |
+| London Portland | [`london-portland.json`](london-portland.json) | copy the values into Dark Reader › See all options › Colors |
 
 ## Turn it on
 
@@ -32,6 +35,27 @@ once with Dark mode on and once with Light mode on.
 
 ```text
 Paste the values from subway-seat-enamel.json: Background, Text, Scrollbar and Selection,
+once with Dark mode on and once with Light mode on.
+```
+
+**London Moquette**, in Dark Reader › See all options › Colors:
+
+```text
+Paste the values from london-moquette.json: Background, Text, Scrollbar and Selection,
+once with Dark mode on and once with Light mode on.
+```
+
+**London Deep Level**, in Dark Reader › See all options › Colors:
+
+```text
+Paste the values from london-deep-level.json: Background, Text, Scrollbar and Selection,
+once with Dark mode on and once with Light mode on.
+```
+
+**London Portland**, in Dark Reader › See all options › Colors:
+
+```text
+Paste the values from london-portland.json: Background, Text, Scrollbar and Selection,
 once with Dark mode on and once with Light mode on.
 ```
 

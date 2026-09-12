@@ -1,0 +1,15 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+[Scheme]
+Name=London Deep Level
+ColorForeground=#D4DAE7
+ColorBackground=#121A2D
+ColorCursor=#F2C03F
+ColorCursorForeground=#121A2D
+ColorCursorUseDefault=FALSE
+ColorBold=#E7EBF3
+ColorBoldUseDefault=FALSE
+ColorSelection=#E7EBF3
+ColorSelectionBackground=#303E5B
+ColorSelectionUseDefault=FALSE
+TabActivityColor=#DE8946
+ColorPalette=#232F49;#DB6052;#77C581;#F2C03F;#7595DA;#DE8946;#54B4B5;#BEC6D5;#6F7C97;#F17869;#9AD2A0;#FFD36C;#8BB0FF;#E5AA7F;#72D1D3;#E7EBF3

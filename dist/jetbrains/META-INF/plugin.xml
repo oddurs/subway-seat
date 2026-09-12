@@ -8,7 +8,7 @@
   <description><![CDATA[
 <p>A 1970s New York subway car for your IDE: walnut-brown ground, parchment text, harvest gold,
 burnt orange and avocado. Three flavors, each a UI theme with a matching editor color scheme:
-<strong>Subway Seat</strong>, <strong>Subway Seat Tunnel</strong>, <strong>Subway Seat Enamel</strong>. Each also comes as an Islands theme for the Islands look (2025.2.3 and later).</p>
+<strong>Subway Seat</strong>, <strong>Subway Seat Tunnel</strong>, <strong>Subway Seat Enamel</strong>, <strong>London Moquette</strong>, <strong>London Deep Level</strong>, <strong>London Portland</strong>. Each also comes as an Islands theme for the Islands look (2025.2.3 and later).</p>
 <p>Pick one in <strong>Settings › Appearance &amp; Behavior › Appearance</strong>; the editor scheme
 follows, or choose it on its own under <strong>Editor › Color Scheme</strong>. To follow the system,
 turn on <strong>Sync with OS</strong> there and pick Subway Seat for dark and Subway Seat Enamel for light.</p>
@@ -22,11 +22,20 @@ turn on <strong>Sync with OS</strong> there and pick Subway Seat for dark and Su
     <themeProvider id="com.oddurs.subway-seat.walnut" path="/themes/subway-seat.theme.json"/>
     <themeProvider id="com.oddurs.subway-seat.tunnel" path="/themes/subway-seat-tunnel.theme.json"/>
     <themeProvider id="com.oddurs.subway-seat.enamel" path="/themes/subway-seat-enamel.theme.json"/>
+    <themeProvider id="com.oddurs.subway-seat.moquette" path="/themes/london-moquette.theme.json"/>
+    <themeProvider id="com.oddurs.subway-seat.deep" path="/themes/london-deep-level.theme.json"/>
+    <themeProvider id="com.oddurs.subway-seat.portland" path="/themes/london-portland.theme.json"/>
     <themeProvider id="com.oddurs.subway-seat.walnut.islands" path="/themes/subway-seat-islands.theme.json" targetUi="islands"/>
     <themeProvider id="com.oddurs.subway-seat.tunnel.islands" path="/themes/subway-seat-tunnel-islands.theme.json" targetUi="islands"/>
     <themeProvider id="com.oddurs.subway-seat.enamel.islands" path="/themes/subway-seat-enamel-islands.theme.json" targetUi="islands"/>
+    <themeProvider id="com.oddurs.subway-seat.moquette.islands" path="/themes/london-moquette-islands.theme.json" targetUi="islands"/>
+    <themeProvider id="com.oddurs.subway-seat.deep.islands" path="/themes/london-deep-level-islands.theme.json" targetUi="islands"/>
+    <themeProvider id="com.oddurs.subway-seat.portland.islands" path="/themes/london-portland-islands.theme.json" targetUi="islands"/>
     <bundledColorScheme id="com.oddurs.subway-seat.walnut.scheme" path="/schemes/subway-seat"/>
     <bundledColorScheme id="com.oddurs.subway-seat.tunnel.scheme" path="/schemes/subway-seat-tunnel"/>
     <bundledColorScheme id="com.oddurs.subway-seat.enamel.scheme" path="/schemes/subway-seat-enamel"/>
+    <bundledColorScheme id="com.oddurs.subway-seat.moquette.scheme" path="/schemes/london-moquette"/>
+    <bundledColorScheme id="com.oddurs.subway-seat.deep.scheme" path="/schemes/london-deep-level"/>
+    <bundledColorScheme id="com.oddurs.subway-seat.portland.scheme" path="/schemes/london-portland"/>
   </extensions>
 </idea-plugin>

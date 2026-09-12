@@ -1,0 +1,37 @@
+# name: 'London Portland'
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# preferred_background: E5EAF6
+
+fish_color_normal 2F3033
+fish_color_command 896800
+fish_color_keyword 9F591B
+fish_color_param 434548
+fish_color_option 007376
+fish_color_quote 357D41
+fish_color_redirection 7660AB
+fish_color_end 9F591B
+fish_color_operator 7660AB
+fish_color_escape 7660AB
+fish_color_comment 727781 --italics
+fish_color_error CA2822
+fish_color_cancel A40005
+fish_color_autosuggestion 727781
+fish_color_gray 8A919F
+fish_color_valid_path --underline
+fish_color_selection 1F2022 --bold --background=ADB7CB
+fish_color_search_match --bold --background=ADB7CB
+fish_color_history_current --bold
+fish_color_cwd 896800
+fish_color_cwd_root CA2822
+fish_color_user 9F591B
+fish_color_host 434548
+fish_color_host_remote 357D41
+fish_color_status CA2822
+fish_pager_color_progress E5EAF6 --background=9F591B
+fish_pager_color_prefix 896800 --bold
+fish_pager_color_completion 2F3033
+fish_pager_color_description 727781 --italics
+fish_pager_color_selected_background --background=C1CADC
+fish_pager_color_selected_prefix 9F591B --bold
+fish_pager_color_selected_completion 1F2022
+fish_pager_color_selected_description 434548 --italics

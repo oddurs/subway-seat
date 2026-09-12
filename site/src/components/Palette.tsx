@@ -8,7 +8,6 @@ import {
   roleNames,
   textRoles,
 } from "@/lib/palette";
-import { sign } from "@/theme/sign.stylex";
 import { color } from "@/theme/tokens.stylex";
 import { Swatch, type SwatchLabel } from "./Swatch";
 
@@ -22,7 +21,7 @@ export function labelsFor(role: ColorName): SwatchLabel[] {
     const [dark, light] = f.dark
       ? [f.colors.crust, f.colors.textHi]
       : [f.colors.textHi, f.colors.base];
-    const deep = contrast(hex, dark) >= 4.5 ? dark : sign.bg;
+    const deep = contrast(hex, dark) >= 4.5 ? dark : "var(--sign-bg)";
     return { flavor: f.id, hex, ink: bestInk(hex, deep, light) };
   });
 }

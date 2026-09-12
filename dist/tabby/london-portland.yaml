@@ -1,0 +1,26 @@
+# Subway Seat — generated from palette.py by build.py. Edit the palette, not this file.
+# One entry for terminal.customColorSchemes in Tabby's config.yaml, indented to paste under that key.
+    - name: London Portland
+      foreground: '#2F3033'
+      background: '#E5EAF6'
+      cursor: '#9F591B'
+      cursorAccent: '#E5EAF6'
+      selection: '#ADB7CB'
+      selectionForeground: '#1F2022'
+      colors:
+        - '#434548'
+        - '#A40005'
+        - '#357D41'
+        - '#896800'
+        - '#0019A8'
+        - '#9F591B'
+        - '#007376'
+        - '#9BA5B8'
+        - '#727781'
+        - '#CA2822'
+        - '#398145'
+        - '#977300'
+        - '#406BD0'
+        - '#AE672B'
+        - '#008689'
+        - '#ADB7CB'

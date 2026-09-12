@@ -4,11 +4,13 @@
 //   --yes  --dry-run  --copy  --no-enable
 //   config file ~/.config/subway-seat/config: flavor=… / only=… / skip=…
 
+import type { FlavorId } from "./palette";
+
 export const INSTALL_URL = "https://oddurs.github.io/subway-seat/install.sh";
 export const CLONE = "git clone https://github.com/oddurs/subway-seat && cd subway-seat";
 export const CONFIG_PATH = "~/.config/subway-seat/config";
 
-export type InstallFlavor = "walnut" | "tunnel" | "enamel" | "auto";
+export type InstallFlavor = FlavorId | "auto";
 export type Extra = "copy" | "no-enable" | "dry-run" | "yes";
 
 export type Plan = {
