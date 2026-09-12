@@ -19,6 +19,8 @@ export type Family = {
   id: FamilyId;
   name: string;
   blurb: string;
+  /** The one accent this family spends on identity. */
+  lead: ColorName;
   roleNames: Partial<Record<ColorName, string>>;
   flavors: FlavorId[];
   default: FlavorId;

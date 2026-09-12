@@ -7,7 +7,7 @@ import { Nav } from "@/components/Nav";
 import { Section } from "@/components/Section";
 import { INSTALL_URL } from "@/lib/install";
 import { byCategory, categoryLabel, ports, setupFor } from "@/lib/manifest";
-import { flavorById, flavors, shortName } from "@/lib/palette";
+import { families, type FlavorId, flavorById, flavors, shortName } from "@/lib/palette";
 import { pageMeta } from "@/lib/seo";
 import { ink } from "@/theme/ink.stylex";
 import { color } from "@/theme/tokens.stylex";
@@ -72,9 +72,12 @@ export default function InstallPage() {
     detect: Boolean(p.detect?.length),
     auto: Boolean(p.auto),
   }));
+  // One set of cards per city; the Configurator shows the one you're riding.
   const paints: FlavorPaint[] = [
     ...flavors.map((f) => ({
       id: f.id,
+      key: f.id,
+      family: f.family,
       name: shortName(f.id),
       note: f.blurb,
       bg: f.colors.base,
@@ -82,20 +85,23 @@ export default function InstallPage() {
       sub: f.colors.subtext0,
       stripe: [f.colors.red, f.colors.orange, f.colors.yellow, f.colors.green, f.colors.text],
     })),
-    (() => {
-      const [w, e] = [flavorById.walnut.colors, flavorById.enamel.colors];
+    ...families.map((fam) => {
+      const dark = flavorById[fam.default as FlavorId].colors;
+      const light = flavorById[fam.light as FlavorId].colors;
       return {
         id: "auto" as const,
+        key: `auto-${fam.id}`,
+        family: fam.id,
         name: "Auto",
-        note: "Walnut or Enamel, following your system's light and dark.",
-        // Enamel by day, with Walnut's night coming up in the corner.
-        bg: e.base,
-        image: `radial-gradient(circle at 100% 100%, ${w.base} 0 46px, ${w.surface1} 47px 49px, transparent 50px)`,
-        fg: e.textHi,
-        sub: e.subtext0,
-        stripe: [w.red, w.orange, w.yellow, e.green, e.text],
+        note: `${shortName(fam.default as FlavorId)} or ${shortName(fam.light as FlavorId)}, following your system's light and dark.`,
+        // The light flavor by day, with the dark one coming up in the corner.
+        bg: light.base,
+        image: `radial-gradient(circle at 100% 100%, ${dark.base} 0 46px, ${dark.surface1} 47px 49px, transparent 50px)`,
+        fg: light.textHi,
+        sub: light.subtext0,
+        stripe: [light.red, light.orange, light.yellow, light.green, light.text],
       };
-    })(),
+    }),
   ];
 
   return (

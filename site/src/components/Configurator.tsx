@@ -2,7 +2,8 @@
 
 import * as stylex from "@stylexjs/stylex";
 import { useDeferredValue, useId, useState, useSyncExternalStore } from "react";
-import { currentFlavor, subscribeFlavor } from "@/lib/flavor";
+import { currentFamily, currentFlavor, subscribeFlavor } from "@/lib/flavor";
+import type { FamilyId } from "@/lib/palette";
 import {
   CONFIG_PATH,
   cloneCommand,
@@ -29,6 +30,9 @@ export type InstallPort = {
 };
 
 export type FlavorPaint = {
+  /** Unique per card; two cities each have an Auto card sharing id "auto". */
+  key: string;
+  family: FamilyId;
   id: InstallFlavor;
   name: string;
   note: string;
@@ -90,8 +94,16 @@ export function Configurator({
 
   const knowsDetect = ports.some((p) => p.detect);
   const inOrder = (set: Set<string>) => ports.filter((p) => set.has(p.id)).map((p) => p.id);
+  const city = useSyncExternalStore(subscribeFlavor, currentFamily, () => null);
+  const shown = paints.filter((p) => p.family === (city ?? "new-york"));
+  // The flavor the ticket is actually for. Switching city doesn't clear your
+  // pick, it just falls back to that city's first flavor while you're there,
+  // so the command you copy always matches the page you're on.
+  const active: InstallFlavor =
+    flavor === "auto" || shown.some((p) => p.id === flavor) ? flavor : (shown[0]?.id ?? flavor);
+
   const plan = {
-    flavor,
+    flavor: active,
     all: mode === "all",
     only: mode === "only" ? inOrder(picked) : undefined,
     skip: mode === "detect" ? inOrder(skipped) : undefined,
@@ -142,9 +154,9 @@ export function Configurator({
           <fieldset {...stylex.props(s.fieldset)}>
             <legend {...stylex.props(s.stopTitle)}>Pick your flavor</legend>
             <div {...stylex.props(s.flavors)}>
-              {paints.map((p) => (
+              {shown.map((p) => (
                 <label
-                  key={p.id}
+                  key={p.key}
                   {...stylex.props(
                     s.flavor,
                     s.paint(p.bg, p.image ?? "none", p.fg),
@@ -155,7 +167,7 @@ export function Configurator({
                     type="radio"
                     name={`${id}-flavor`}
                     value={p.id}
-                    checked={flavor === p.id}
+                    checked={active === p.id}
                     onChange={() => setFlavor(p.id)}
                     className="sr-only"
                   />
@@ -169,7 +181,7 @@ export function Configurator({
                 </label>
               ))}
             </div>
-            {flavor === "auto" && (
+            {active === "auto" && (
               <p {...stylex.props(s.aside)}>
                 Apps that can follow your system&apos;s light and dark mode switch on their own;{" "}
                 {ports.filter((p) => p.auto).length} ports know how.

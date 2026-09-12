@@ -1,7 +1,8 @@
 import * as stylex from "@stylexjs/stylex";
 import Link from "next/link";
 import { font } from "@/theme/type.stylex";
-import { FlavorSwitch } from "./FlavorSwitch";
+import { CityMark } from "./CityMark";
+import { CitySwitch } from "./CitySwitch";
 import { NavLinks } from "./NavLinks";
 
 export function Nav() {
@@ -13,10 +14,11 @@ export function Nav() {
       <div {...stylex.props(styles.inner)}>
         <span aria-hidden {...stylex.props(styles.rule)} />
         <Link href="/" {...stylex.props(styles.mark)}>
-          Subway Seat
+          <CityMark />
+          <span>Subway Seat</span>
         </Link>
         <NavLinks />
-        <FlavorSwitch />
+        <CitySwitch />
       </div>
     </header>
   );
@@ -55,25 +57,29 @@ const styles = stylex.create({
     alignItems: "center",
     maxWidth: 1200,
     paddingInline: 24,
-    paddingTop: 12,
-    paddingBottom: 12,
+    paddingTop: 17,
+    paddingBottom: 14,
     marginInline: "auto",
   },
+  // The sign's top edge, flush and full width, in the city's lead colour.
   rule: {
     position: "absolute",
-    top: 6,
+    top: 0,
     right: 0,
     left: 0,
-    height: 2,
-    backgroundColor: "var(--sign-text)",
-    opacity: 0.8,
+    height: 3,
+    backgroundColor: "var(--sign-mark)",
   },
   mark: {
+    display: "flex",
+    gap: 10,
+    alignItems: "center",
     fontFamily: font.sans,
-    fontSize: 21,
+    fontSize: 20,
     fontWeight: 700,
+    lineHeight: 1,
     color: "var(--sign-text)",
-    letterSpacing: "-0.01em",
+    letterSpacing: font.markTracking,
     textDecoration: "none",
     outlineWidth: 2,
     outlineStyle: {

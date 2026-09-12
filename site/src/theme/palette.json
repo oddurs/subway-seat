@@ -92,6 +92,7 @@
       "id": "new-york",
       "name": "New York",
       "blurb": "A 1970s subway car: walnut paneling, orange bucket seats, cream enamel.",
+      "lead": "orange",
       "roleNames": {
         "crust": "Blackout",
         "mantle": "Espresso",
@@ -132,6 +133,7 @@
       "id": "london",
       "name": "London",
       "blurb": "The Tube: Corporate Blue turned down, brick and hazard yellow, the standard red.",
+      "lead": "red",
       "roleNames": {
         "crust": "Running tunnel",
         "mantle": "Concourse",

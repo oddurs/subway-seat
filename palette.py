@@ -282,12 +282,18 @@ class Family:
     id: str          # "new-york" | "london"
     name: str        # "New York"
     blurb: str
-    # The signage band the site's nav is built from: New York's black enamel
-    # station sign, London's Corporate Blue roundel bar. Same in every flavor.
+    # The signage band the site's nav is built from. Both cities hang dark
+    # signs; each one is only tinted toward its own. The brand color is spent
+    # on `mark` — a route bullet, a roundel — rather than on the whole band,
+    # which is what keeps one nav working for both families.
     sign: dict = field(repr=False)
     # Corner radii the site's furniture is built on. New York rounds everything
     # the way 70s signage did; the Underground sets its signs in rectangles.
     shape: dict = field(repr=False)
+    # The one accent the family spends on identity — chrome, primary buttons,
+    # the cursor, the site's links. New York's also leads keywords, so it is
+    # everywhere; London's leads nothing else, which is what keeps it rare.
+    lead: str
     # The stem every one of this family's filenames is built on. Ports that
     # ship one file per flavor plus an auto file name them `<prefix>-<id>` and
     # `<prefix>`, so a port never has to know which city it is writing for.
@@ -308,8 +314,12 @@ NEW_YORK = Family(
     id="new-york",
     name="New York",
     blurb="A 1970s subway car: walnut paneling, orange bucket seats, cream enamel.",
-    sign={"bg": "#0C0805", "text": "#F8ECD4", "ring": "#EC7F31"},
+    # The mark is the family's own lead accent, taken from its default flavor,
+    # so the bullet in the nav is the same orange the theme paints keywords in.
+    sign={"bg": "#0C0805", "text": "#F8ECD4", "ring": WALNUT.orange,
+          "mark": WALNUT.orange, "mark-alt": WALNUT.crust},
     shape={"pill": "999px", "card": "6px", "chip": "50%"},
+    lead="orange",
     prefix="subway-seat",
     role_names=NEW_YORK_NAMES,
     flavors=(WALNUT, TUNNEL, ENAMEL),
@@ -319,8 +329,13 @@ LONDON = Family(
     id="london",
     name="London",
     blurb="The Tube: Corporate Blue turned down, brick and hazard yellow, the standard red.",
-    sign={"bg": "#0019A8", "text": "#FFFFFF", "ring": "#F2C03F"},
+    # The roundel is drawn in the flavor's solved red and blue, not the raw
+    # #DC241F and #0019A8: those are three times the chroma of anything else on
+    # screen and read as a sticker rather than part of the scheme.
+    sign={"bg": "#06090F", "text": "#FFFFFF", "ring": MOQUETTE.yellow,
+          "mark": MOQUETTE.red, "mark-alt": MOQUETTE.denim},
     shape={"pill": "2px", "card": "0px", "chip": "2px"},
+    lead="red",
     prefix="london",
     role_names=LONDON_NAMES,
     flavors=(MOQUETTE, DEEP_LEVEL, PORTLAND),

@@ -1,6 +1,7 @@
 import * as stylex from "@stylexjs/stylex";
 import Link from "next/link";
 import { ports, version } from "@/lib/manifest";
+import { FlavorPicker } from "./FlavorPicker";
 import { REPO } from "@/lib/seo";
 import { ink } from "@/theme/ink.stylex";
 import { color } from "@/theme/tokens.stylex";
@@ -28,6 +29,7 @@ export function Footer() {
           <code {...stylex.props(styles.code)}>./build.py</code>, and all {ports().length} ports
           follow.
         </p>
+        <FlavorPicker />
         <nav aria-label="Footer" {...stylex.props(styles.links)}>
           {LINKS.map((l) => (
             <Link key={l.href} href={l.href} prefetch={false} {...stylex.props(styles.link)}>

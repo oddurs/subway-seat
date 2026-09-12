@@ -31,14 +31,18 @@
     --sign-bg: #0c0805;
     --sign-text: #f8ecd4;
     --sign-ring: #ec7f31;
+    --sign-mark: #ec7f31;
+    --sign-mark-alt: #20160e;
     --radius-pill: 999px;
     --radius-card: 6px;
     --radius-chip: 50%;
   }
   html[data-family="london"] {
-    --sign-bg: #0019a8;
+    --sign-bg: #06090f;
     --sign-text: #ffffff;
     --sign-ring: #f2c03f;
+    --sign-mark: #db6052;
+    --sign-mark-alt: #7595da;
     --radius-pill: 2px;
     --radius-card: 0px;
     --radius-chip: 2px;

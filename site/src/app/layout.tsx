@@ -1,6 +1,6 @@
 import * as stylex from "@stylexjs/stylex";
 import type { Metadata, Viewport } from "next";
-import { Cabin, Fraunces, JetBrains_Mono } from "next/font/google";
+import { Cabin, Fraunces, Inter, JetBrains_Mono } from "next/font/google";
 import type { ReactNode } from "react";
 import { FlavorSync } from "@/components/FlavorSync";
 import { ports, version } from "@/lib/manifest";
@@ -29,6 +29,10 @@ const display = Fraunces({
   variable: "--font-fraunces",
 });
 
+// Inter carries the UI in New York: Helvetica's skeleton, drawn for screens,
+// and the same everywhere instead of falling back to Arial off macOS.
+const ui = Inter({ subsets: ["latin"], variable: "--font-inter" });
+
 // Cabin stands in for Johnston, the Underground's own face since 1916.
 const johnston = Cabin({
   subsets: ["latin"],
@@ -53,13 +57,16 @@ export const metadata: Metadata = {
 // first paint; the London band takes over from --sign-bg once the page renders.
 export const viewport: Viewport = { themeColor: sign.bg };
 
+// A light flavor's accents are tuned for code on paper and run light for small
+// UI text, so each family's light one gets its own ink theme.
+const LIGHT_INK = { "new-york": enamelInk, london: portlandInk } as const;
+
 /** Each flavor's classes: its colors, plus its family's typography and ink. */
 const themeClasses = Object.fromEntries(
   flavors.map((f) => {
-    const colors = theme[f.id as keyof typeof theme];
-    const ink = f.id === "enamel" ? enamelInk : f.id === "portland" ? portlandInk : null;
     const london = f.family === "london";
-    const parts = [colors, london ? londonType : null, london && !ink ? londonInk : null, ink];
+    const ink = f.dark ? (london ? londonInk : null) : LIGHT_INK[f.family];
+    const parts = [theme[f.id as keyof typeof theme], london ? londonType : null, ink];
     return [f.id, stylex.props(...parts.filter(Boolean)).className ?? ""];
   }),
 );
@@ -106,7 +113,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html
       lang="en"
-      className={`${mono.variable} ${display.variable} ${johnston.variable} ${html.className ?? ""}`}
+      className={`${ui.variable} ${mono.variable} ${display.variable} ${johnston.variable} ${html.className ?? ""}`}
       style={html.style}
       data-flavor="walnut"
       data-family="new-york"

@@ -1,7 +1,7 @@
 import * as stylex from "@stylexjs/stylex";
 import type { DecorationItem, ShikiTransformer } from "shiki";
 import { highlight, workbenchColors } from "@/lib/highlight";
-import type { FlavorId } from "@/lib/palette";
+import { type FlavorId, flavors } from "@/lib/palette";
 import { font } from "@/theme/type.stylex";
 
 // A VS Code window painted with the generated VS Code theme itself: every color
@@ -103,10 +103,12 @@ function variables() {
     const c = workbenchColors(id);
     return KEYS.map((k) => `${cssVar(k)}:${c[k] ?? "transparent"};`).join("");
   };
+  // One block per flavor, from the palette — the first is the bare rule and the
+  // rest override under html[data-flavor], so a new family needs nothing here.
+  const [first, ...rest] = flavors;
   return (
-    `.vsc{${block("walnut")}}` +
-    `html[data-flavor="tunnel"] .vsc{${block("tunnel")}}` +
-    `html[data-flavor="enamel"] .vsc{${block("enamel")}}`
+    `.vsc{${block(first.id)}}` +
+    rest.map((f) => `html[data-flavor="${f.id}"] .vsc{${block(f.id)}}`).join("")
   );
 }
 
