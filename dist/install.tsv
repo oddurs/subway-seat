@@ -548,6 +548,27 @@ enable	emacs	guimard		(add-to-list 'load-path "~/.config/emacs/themes/")\n(add-t
 enable	emacs	catacombes		(add-to-list 'load-path "~/.config/emacs/themes/")\n(add-to-list 'custom-theme-load-path "~/.config/emacs/themes/")\n(load-theme 'paris-catacombes t)	init.el, with the three files in ~/.config/emacs/themes/	elisp	
 enable	emacs	carrelage		(add-to-list 'load-path "~/.config/emacs/themes/")\n(add-to-list 'custom-theme-load-path "~/.config/emacs/themes/")\n(load-theme 'paris-carrelage t)	init.el, with the three files in ~/.config/emacs/themes/	elisp	
 auto	emacs		(use-package auto-dark\n  :ensure t\n  :custom (auto-dark-themes '((subway-seat) (subway-seat-enamel)))\n  :init (auto-dark-mode))	init.el, with the auto-dark package from MELPA (it swaps the theme when the OS appearance changes)	elisp
+port	fresh	Fresh	Editors	
+detect	fresh	fresh
+detect	fresh	~/.config/fresh
+file	fresh	walnut	fresh/subway-seat.json	~/.config/fresh/themes/subway-seat.json	link
+file	fresh	tunnel	fresh/subway-seat-tunnel.json	~/.config/fresh/themes/subway-seat-tunnel.json	link
+file	fresh	enamel	fresh/subway-seat-enamel.json	~/.config/fresh/themes/subway-seat-enamel.json	link
+file	fresh	moquette	fresh/london-moquette.json	~/.config/fresh/themes/london-moquette.json	link
+file	fresh	deep	fresh/london-deep-level.json	~/.config/fresh/themes/london-deep-level.json	link
+file	fresh	portland	fresh/london-portland.json	~/.config/fresh/themes/london-portland.json	link
+file	fresh	guimard	fresh/paris-guimard.json	~/.config/fresh/themes/paris-guimard.json	link
+file	fresh	catacombes	fresh/paris-catacombes.json	~/.config/fresh/themes/paris-catacombes.json	link
+file	fresh	carrelage	fresh/paris-carrelage.json	~/.config/fresh/themes/paris-carrelage.json	link
+enable	fresh	walnut		{\n  "theme": "subway-seat.json"\n}	~/.config/fresh/config.json	json	
+enable	fresh	tunnel		{\n  "theme": "subway-seat-tunnel.json"\n}	~/.config/fresh/config.json	json	
+enable	fresh	enamel		{\n  "theme": "subway-seat-enamel.json"\n}	~/.config/fresh/config.json	json	
+enable	fresh	moquette		{\n  "theme": "london-moquette.json"\n}	~/.config/fresh/config.json	json	
+enable	fresh	deep		{\n  "theme": "london-deep-level.json"\n}	~/.config/fresh/config.json	json	
+enable	fresh	portland		{\n  "theme": "london-portland.json"\n}	~/.config/fresh/config.json	json	
+enable	fresh	guimard		{\n  "theme": "paris-guimard.json"\n}	~/.config/fresh/config.json	json	
+enable	fresh	catacombes		{\n  "theme": "paris-catacombes.json"\n}	~/.config/fresh/config.json	json	
+enable	fresh	carrelage		{\n  "theme": "paris-carrelage.json"\n}	~/.config/fresh/config.json	json	
 port	godot	Godot	Editors	Godot 4.0+
 detect	godot	godot
 detect	godot	/Applications/Godot.app

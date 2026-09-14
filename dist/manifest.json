@@ -3382,6 +3382,148 @@
       "installs": true
     },
     {
+      "id": "fresh",
+      "name": "Fresh",
+      "category": "Editors",
+      "homepage": "https://getfresh.dev",
+      "detect": [
+        "fresh",
+        "~/.config/fresh"
+      ],
+      "notes": "Fresh reads themes from ~/.config/fresh/themes/. A theme names a file, not an id, so the .json extension is part of the value.",
+      "enable": {
+        "walnut": {
+          "where": "~/.config/fresh/config.json",
+          "code": "{\n  \"theme\": \"subway-seat.json\"\n}",
+          "lang": "json"
+        },
+        "tunnel": {
+          "where": "~/.config/fresh/config.json",
+          "code": "{\n  \"theme\": \"subway-seat-tunnel.json\"\n}",
+          "lang": "json"
+        },
+        "enamel": {
+          "where": "~/.config/fresh/config.json",
+          "code": "{\n  \"theme\": \"subway-seat-enamel.json\"\n}",
+          "lang": "json"
+        },
+        "moquette": {
+          "where": "~/.config/fresh/config.json",
+          "code": "{\n  \"theme\": \"london-moquette.json\"\n}",
+          "lang": "json"
+        },
+        "deep": {
+          "where": "~/.config/fresh/config.json",
+          "code": "{\n  \"theme\": \"london-deep-level.json\"\n}",
+          "lang": "json"
+        },
+        "portland": {
+          "where": "~/.config/fresh/config.json",
+          "code": "{\n  \"theme\": \"london-portland.json\"\n}",
+          "lang": "json"
+        },
+        "guimard": {
+          "where": "~/.config/fresh/config.json",
+          "code": "{\n  \"theme\": \"paris-guimard.json\"\n}",
+          "lang": "json"
+        },
+        "catacombes": {
+          "where": "~/.config/fresh/config.json",
+          "code": "{\n  \"theme\": \"paris-catacombes.json\"\n}",
+          "lang": "json"
+        },
+        "carrelage": {
+          "where": "~/.config/fresh/config.json",
+          "code": "{\n  \"theme\": \"paris-carrelage.json\"\n}",
+          "lang": "json"
+        }
+      },
+      "files": [
+        {
+          "path": "fresh/subway-seat.json",
+          "flavor": "walnut",
+          "dest": "~/.config/fresh/themes/subway-seat.json",
+          "how": null,
+          "lang": "json",
+          "append": false,
+          "binary": false
+        },
+        {
+          "path": "fresh/subway-seat-tunnel.json",
+          "flavor": "tunnel",
+          "dest": "~/.config/fresh/themes/subway-seat-tunnel.json",
+          "how": null,
+          "lang": "json",
+          "append": false,
+          "binary": false
+        },
+        {
+          "path": "fresh/subway-seat-enamel.json",
+          "flavor": "enamel",
+          "dest": "~/.config/fresh/themes/subway-seat-enamel.json",
+          "how": null,
+          "lang": "json",
+          "append": false,
+          "binary": false
+        },
+        {
+          "path": "fresh/london-moquette.json",
+          "flavor": "moquette",
+          "dest": "~/.config/fresh/themes/london-moquette.json",
+          "how": null,
+          "lang": "json",
+          "append": false,
+          "binary": false
+        },
+        {
+          "path": "fresh/london-deep-level.json",
+          "flavor": "deep",
+          "dest": "~/.config/fresh/themes/london-deep-level.json",
+          "how": null,
+          "lang": "json",
+          "append": false,
+          "binary": false
+        },
+        {
+          "path": "fresh/london-portland.json",
+          "flavor": "portland",
+          "dest": "~/.config/fresh/themes/london-portland.json",
+          "how": null,
+          "lang": "json",
+          "append": false,
+          "binary": false
+        },
+        {
+          "path": "fresh/paris-guimard.json",
+          "flavor": "guimard",
+          "dest": "~/.config/fresh/themes/paris-guimard.json",
+          "how": null,
+          "lang": "json",
+          "append": false,
+          "binary": false
+        },
+        {
+          "path": "fresh/paris-catacombes.json",
+          "flavor": "catacombes",
+          "dest": "~/.config/fresh/themes/paris-catacombes.json",
+          "how": null,
+          "lang": "json",
+          "append": false,
+          "binary": false
+        },
+        {
+          "path": "fresh/paris-carrelage.json",
+          "flavor": "carrelage",
+          "dest": "~/.config/fresh/themes/paris-carrelage.json",
+          "how": null,
+          "lang": "json",
+          "append": false,
+          "binary": false
+        }
+      ],
+      "installs": true
+    },
+    {
       "id": "godot",
       "name": "Godot",
       "category": "Editors",
