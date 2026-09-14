@@ -1,0 +1,267 @@
+{
+  "$schema": "https://opencode.ai/theme.json",
+  "defs": {
+    "catacombesCrust": "#0A100D",
+    "catacombesMantle": "#0D1711",
+    "catacombesBase": "#121E19",
+    "catacombesSurface0": "#1A2921",
+    "catacombesSurface1": "#24342C",
+    "catacombesSurface2": "#31433A",
+    "catacombesOverlay0": "#54655C",
+    "catacombesOverlay1": "#708178",
+    "catacombesOverlay2": "#8C9A92",
+    "catacombesSubtext0": "#A5B1AA",
+    "catacombesSubtext1": "#BFC8C2",
+    "catacombesText": "#D4DDD7",
+    "catacombesTextHi": "#E7ECEA",
+    "catacombesYellow": "#F1BF4B",
+    "catacombesYellowHi": "#FFD57A",
+    "catacombesOrange": "#CA9245",
+    "catacombesOrangeHi": "#DFAA61",
+    "catacombesRed": "#C7665B",
+    "catacombesRedHi": "#E7877B",
+    "catacombesGreen": "#70CAA9",
+    "catacombesGreenHi": "#89DEBE",
+    "catacombesSage": "#549B9F",
+    "catacombesSageHi": "#70B5B9",
+    "catacombesDenim": "#709BC8",
+    "catacombesDenimHi": "#8DB6E2",
+    "catacombesClay": "#FAB49C",
+    "carrelageCrust": "#D5DBDA",
+    "carrelageMantle": "#E1E6E5",
+    "carrelageBase": "#EEF2F1",
+    "carrelageSurface0": "#C6D2CF",
+    "carrelageSurface1": "#B0BFBB",
+    "carrelageSurface2": "#99ABA6",
+    "carrelageOverlay0": "#859792",
+    "carrelageOverlay1": "#6C7C76",
+    "carrelageOverlay2": "#56645F",
+    "carrelageSubtext0": "#4A5752",
+    "carrelageSubtext1": "#3B4742",
+    "carrelageText": "#27342F",
+    "carrelageTextHi": "#19221E",
+    "carrelageYellow": "#916D07",
+    "carrelageYellowHi": "#A07A12",
+    "carrelageOrange": "#764C00",
+    "carrelageOrangeHi": "#885A00",
+    "carrelageRed": "#88251E",
+    "carrelageRedHi": "#AC3B32",
+    "carrelageGreen": "#218366",
+    "carrelageGreenHi": "#278D6E",
+    "carrelageSage": "#006267",
+    "carrelageSageHi": "#027479",
+    "carrelageDenim": "#25629B",
+    "carrelageDenimHi": "#3D75AD",
+    "carrelageClay": "#B36B51"
+  },
+  "theme": {
+    "primary": {
+      "dark": "catacombesOrange",
+      "light": "carrelageOrange"
+    },
+    "secondary": {
+      "dark": "catacombesYellow",
+      "light": "carrelageYellow"
+    },
+    "accent": {
+      "dark": "catacombesSage",
+      "light": "carrelageSage"
+    },
+    "error": {
+      "dark": "catacombesRedHi",
+      "light": "carrelageRedHi"
+    },
+    "warning": {
+      "dark": "catacombesYellow",
+      "light": "carrelageYellow"
+    },
+    "success": {
+      "dark": "catacombesGreen",
+      "light": "carrelageGreen"
+    },
+    "info": {
+      "dark": "catacombesDenim",
+      "light": "carrelageDenim"
+    },
+    "text": {
+      "dark": "catacombesText",
+      "light": "carrelageText"
+    },
+    "textMuted": {
+      "dark": "catacombesOverlay2",
+      "light": "carrelageOverlay2"
+    },
+    "selectedListItemText": {
+      "dark": "catacombesCrust",
+      "light": "carrelageBase"
+    },
+    "background": {
+      "dark": "catacombesBase",
+      "light": "carrelageBase"
+    },
+    "backgroundPanel": {
+      "dark": "catacombesSurface0",
+      "light": "carrelageMantle"
+    },
+    "backgroundElement": {
+      "dark": "catacombesSurface1",
+      "light": "carrelageCrust"
+    },
+    "backgroundMenu": {
+      "dark": "#1A2921",
+      "light": "#F6F8F8"
+    },
+    "border": {
+      "dark": "catacombesSurface2",
+      "light": "carrelageSurface2"
+    },
+    "borderActive": {
+      "dark": "catacombesOverlay0",
+      "light": "carrelageOverlay0"
+    },
+    "borderSubtle": {
+      "dark": "catacombesSurface1",
+      "light": "carrelageSurface1"
+    },
+    "diffAdded": {
+      "dark": "catacombesGreen",
+      "light": "carrelageGreen"
+    },
+    "diffRemoved": {
+      "dark": "catacombesRedHi",
+      "light": "carrelageRedHi"
+    },
+    "diffContext": {
+      "dark": "catacombesOverlay1",
+      "light": "carrelageOverlay1"
+    },
+    "diffHunkHeader": {
+      "dark": "catacombesDenim",
+      "light": "carrelageDenim"
+    },
+    "diffHighlightAdded": {
+      "dark": "catacombesGreenHi",
+      "light": "carrelageGreen"
+    },
+    "diffHighlightRemoved": {
+      "dark": "catacombesRedHi",
+      "light": "carrelageRed"
+    },
+    "diffAddedBg": {
+      "dark": "#20392F",
+      "light": "#C5DFD7"
+    },
+    "diffRemovedBg": {
+      "dark": "#3B2621",
+      "light": "#E7D3D2"
+    },
+    "diffContextBg": {
+      "dark": "catacombesBase",
+      "light": "carrelageBase"
+    },
+    "diffLineNumber": {
+      "dark": "catacombesOverlay0",
+      "light": "carrelageOverlay0"
+    },
+    "diffAddedLineNumberBg": {
+      "dark": "#1B2F27",
+      "light": "#DAE7E3"
+    },
+    "diffRemovedLineNumberBg": {
+      "dark": "#262620",
+      "light": "#E3DBDA"
+    },
+    "markdownText": {
+      "dark": "catacombesText",
+      "light": "carrelageText"
+    },
+    "markdownHeading": {
+      "dark": "catacombesYellow",
+      "light": "carrelageYellow"
+    },
+    "markdownLink": {
+      "dark": "catacombesDenim",
+      "light": "carrelageDenim"
+    },
+    "markdownLinkText": {
+      "dark": "catacombesDenimHi",
+      "light": "carrelageDenimHi"
+    },
+    "markdownCode": {
+      "dark": "catacombesGreen",
+      "light": "carrelageGreen"
+    },
+    "markdownBlockQuote": {
+      "dark": "catacombesSubtext0",
+      "light": "carrelageSubtext0"
+    },
+    "markdownEmph": {
+      "dark": "catacombesText",
+      "light": "carrelageText"
+    },
+    "markdownStrong": {
+      "dark": "catacombesTextHi",
+      "light": "carrelageTextHi"
+    },
+    "markdownHorizontalRule": {
+      "dark": "catacombesOverlay0",
+      "light": "carrelageOverlay0"
+    },
+    "markdownListItem": {
+      "dark": "catacombesOrange",
+      "light": "carrelageOrange"
+    },
+    "markdownListEnumeration": {
+      "dark": "catacombesOrange",
+      "light": "carrelageOrange"
+    },
+    "markdownImage": {
+      "dark": "catacombesDenim",
+      "light": "carrelageDenim"
+    },
+    "markdownImageText": {
+      "dark": "catacombesDenimHi",
+      "light": "carrelageDenimHi"
+    },
+    "markdownCodeBlock": {
+      "dark": "catacombesText",
+      "light": "carrelageText"
+    },
+    "syntaxComment": {
+      "dark": "catacombesOverlay1",
+      "light": "carrelageOverlay1"
+    },
+    "syntaxKeyword": {
+      "dark": "catacombesOrange",
+      "light": "carrelageOrange"
+    },
+    "syntaxFunction": {
+      "dark": "catacombesYellow",
+      "light": "carrelageYellow"
+    },
+    "syntaxVariable": {
+      "dark": "catacombesText",
+      "light": "carrelageText"
+    },
+    "syntaxString": {
+      "dark": "catacombesGreen",
+      "light": "carrelageGreen"
+    },
+    "syntaxNumber": {
+      "dark": "catacombesRedHi",
+      "light": "carrelageRedHi"
+    },
+    "syntaxType": {
+      "dark": "catacombesSage",
+      "light": "carrelageSage"
+    },
+    "syntaxOperator": {
+      "dark": "catacombesOverlay2",
+      "light": "carrelageOverlay2"
+    },
+    "syntaxPunctuation": {
+      "dark": "catacombesOverlay2",
+      "light": "carrelageOverlay2"
+    }
+  }
+}

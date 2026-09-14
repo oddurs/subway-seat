@@ -8371,6 +8371,60 @@
           "lang": "json",
           "append": false,
           "binary": false
+        },
+        {
+          "path": "opencode/london-moquette.json",
+          "flavor": "moquette",
+          "dest": "~/.config/opencode/themes/london-moquette.json",
+          "how": null,
+          "lang": "json",
+          "append": false,
+          "binary": false
+        },
+        {
+          "path": "opencode/london-deep-level.json",
+          "flavor": "deep",
+          "dest": "~/.config/opencode/themes/london-deep-level.json",
+          "how": null,
+          "lang": "json",
+          "append": false,
+          "binary": false
+        },
+        {
+          "path": "opencode/london-portland.json",
+          "flavor": "portland",
+          "dest": "~/.config/opencode/themes/london-portland.json",
+          "how": null,
+          "lang": "json",
+          "append": false,
+          "binary": false
+        },
+        {
+          "path": "opencode/paris-guimard.json",
+          "flavor": "guimard",
+          "dest": "~/.config/opencode/themes/paris-guimard.json",
+          "how": null,
+          "lang": "json",
+          "append": false,
+          "binary": false
+        },
+        {
+          "path": "opencode/paris-catacombes.json",
+          "flavor": "catacombes",
+          "dest": "~/.config/opencode/themes/paris-catacombes.json",
+          "how": null,
+          "lang": "json",
+          "append": false,
+          "binary": false
+        },
+        {
+          "path": "opencode/paris-carrelage.json",
+          "flavor": "carrelage",
+          "dest": "~/.config/opencode/themes/paris-carrelage.json",
+          "how": null,
+          "lang": "json",
+          "append": false,
+          "binary": false
         }
       ],
       "installs": true

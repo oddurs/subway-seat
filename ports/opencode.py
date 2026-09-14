@@ -9,7 +9,7 @@ plan in seafoam, as in Claude Code; shell mode lights the prompt burnt orange.
 import json
 
 import palette as p
-from ports._lib import Out, tints, ui_colors
+from ports._lib import Out, family_of, tints, ui_colors
 
 META = {
     "id": "opencode",
@@ -119,15 +119,18 @@ def theme(dark, light):
 
 
 def build(flavors):
-    by = {f.id: f for f in flavors}
-    walnut, tunnel, enamel = by["walnut"], by["tunnel"], by["enamel"]
-
     def out(name, doc, flavor=None):
-        return Out(f"{name}.json", json.dumps(doc, indent=2) + "\n", flavor=flavor,
-                   dest=f"~/.config/opencode/themes/{name}.json", lang="json")
+        return Out(
+            f"{name}.json",
+            json.dumps(doc, indent=2) + "\n",
+            flavor=flavor,
+            dest=f"~/.config/opencode/themes/{name}.json",
+            lang="json",
+        )
 
-    return [
-        out(walnut.slug, theme(walnut, enamel), flavor=walnut.id),
-        out(tunnel.slug, theme(tunnel, enamel), flavor=tunnel.id),
-        out(enamel.slug, theme(enamel, enamel), flavor=enamel.id),
-    ]
+    # Every flavor, paired within its own family. A dark one carries its
+    # family's light half so opencode can follow the terminal background; a
+    # light one is pinned to itself, because there is nothing lighter to
+    # switch to. Naming flavor ids here is what kept this port stuck on New
+    # York when London and Paris arrived.
+    return [out(f.slug, theme(f, family_of(f).light if f.dark else f), flavor=f.id) for f in flavors]
