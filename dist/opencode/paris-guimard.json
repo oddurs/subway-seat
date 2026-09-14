@@ -1,0 +1,267 @@
+{
+  "$schema": "https://opencode.ai/theme.json",
+  "defs": {
+    "guimardCrust": "#131A17",
+    "guimardMantle": "#18241D",
+    "guimardBase": "#1E2E26",
+    "guimardSurface0": "#263930",
+    "guimardSurface1": "#30463B",
+    "guimardSurface2": "#3E554A",
+    "guimardOverlay0": "#586B61",
+    "guimardOverlay1": "#74857C",
+    "guimardOverlay2": "#909E96",
+    "guimardSubtext0": "#A9B5AE",
+    "guimardSubtext1": "#C2CBC5",
+    "guimardText": "#D9E1DB",
+    "guimardTextHi": "#E9EEEC",
+    "guimardYellow": "#F1BF4B",
+    "guimardYellowHi": "#FFD57A",
+    "guimardOrange": "#CA9245",
+    "guimardOrangeHi": "#DFAA61",
+    "guimardRed": "#C7665B",
+    "guimardRedHi": "#E7877B",
+    "guimardGreen": "#70CAA9",
+    "guimardGreenHi": "#89DEBE",
+    "guimardSage": "#549B9F",
+    "guimardSageHi": "#70B5B9",
+    "guimardDenim": "#709BC8",
+    "guimardDenimHi": "#8DB6E2",
+    "guimardClay": "#FAB49C",
+    "carrelageCrust": "#D5DBDA",
+    "carrelageMantle": "#E1E6E5",
+    "carrelageBase": "#EEF2F1",
+    "carrelageSurface0": "#C6D2CF",
+    "carrelageSurface1": "#B0BFBB",
+    "carrelageSurface2": "#99ABA6",
+    "carrelageOverlay0": "#859792",
+    "carrelageOverlay1": "#6C7C76",
+    "carrelageOverlay2": "#56645F",
+    "carrelageSubtext0": "#4A5752",
+    "carrelageSubtext1": "#3B4742",
+    "carrelageText": "#27342F",
+    "carrelageTextHi": "#19221E",
+    "carrelageYellow": "#916D07",
+    "carrelageYellowHi": "#A07A12",
+    "carrelageOrange": "#764C00",
+    "carrelageOrangeHi": "#885A00",
+    "carrelageRed": "#88251E",
+    "carrelageRedHi": "#AC3B32",
+    "carrelageGreen": "#218366",
+    "carrelageGreenHi": "#278D6E",
+    "carrelageSage": "#006267",
+    "carrelageSageHi": "#027479",
+    "carrelageDenim": "#25629B",
+    "carrelageDenimHi": "#3D75AD",
+    "carrelageClay": "#B36B51"
+  },
+  "theme": {
+    "primary": {
+      "dark": "guimardOrange",
+      "light": "carrelageOrange"
+    },
+    "secondary": {
+      "dark": "guimardYellow",
+      "light": "carrelageYellow"
+    },
+    "accent": {
+      "dark": "guimardSage",
+      "light": "carrelageSage"
+    },
+    "error": {
+      "dark": "guimardRedHi",
+      "light": "carrelageRedHi"
+    },
+    "warning": {
+      "dark": "guimardYellow",
+      "light": "carrelageYellow"
+    },
+    "success": {
+      "dark": "guimardGreen",
+      "light": "carrelageGreen"
+    },
+    "info": {
+      "dark": "guimardDenim",
+      "light": "carrelageDenim"
+    },
+    "text": {
+      "dark": "guimardText",
+      "light": "carrelageText"
+    },
+    "textMuted": {
+      "dark": "guimardOverlay2",
+      "light": "carrelageOverlay2"
+    },
+    "selectedListItemText": {
+      "dark": "guimardCrust",
+      "light": "carrelageBase"
+    },
+    "background": {
+      "dark": "guimardBase",
+      "light": "carrelageBase"
+    },
+    "backgroundPanel": {
+      "dark": "guimardSurface0",
+      "light": "carrelageMantle"
+    },
+    "backgroundElement": {
+      "dark": "guimardSurface1",
+      "light": "carrelageCrust"
+    },
+    "backgroundMenu": {
+      "dark": "#263930",
+      "light": "#F6F8F8"
+    },
+    "border": {
+      "dark": "guimardSurface2",
+      "light": "carrelageSurface2"
+    },
+    "borderActive": {
+      "dark": "guimardOverlay0",
+      "light": "carrelageOverlay0"
+    },
+    "borderSubtle": {
+      "dark": "guimardSurface1",
+      "light": "carrelageSurface1"
+    },
+    "diffAdded": {
+      "dark": "guimardGreen",
+      "light": "carrelageGreen"
+    },
+    "diffRemoved": {
+      "dark": "guimardRedHi",
+      "light": "carrelageRedHi"
+    },
+    "diffContext": {
+      "dark": "guimardOverlay1",
+      "light": "carrelageOverlay1"
+    },
+    "diffHunkHeader": {
+      "dark": "guimardDenim",
+      "light": "carrelageDenim"
+    },
+    "diffHighlightAdded": {
+      "dark": "guimardGreenHi",
+      "light": "carrelageGreen"
+    },
+    "diffHighlightRemoved": {
+      "dark": "guimardRedHi",
+      "light": "carrelageRed"
+    },
+    "diffAddedBg": {
+      "dark": "#274137",
+      "light": "#C5DFD7"
+    },
+    "diffRemovedBg": {
+      "dark": "#422E29",
+      "light": "#E7D3D2"
+    },
+    "diffContextBg": {
+      "dark": "guimardBase",
+      "light": "carrelageBase"
+    },
+    "diffLineNumber": {
+      "dark": "guimardOverlay0",
+      "light": "carrelageOverlay0"
+    },
+    "diffAddedLineNumberBg": {
+      "dark": "#263E33",
+      "light": "#DAE7E3"
+    },
+    "diffRemovedLineNumberBg": {
+      "dark": "#31342C",
+      "light": "#E3DBDA"
+    },
+    "markdownText": {
+      "dark": "guimardText",
+      "light": "carrelageText"
+    },
+    "markdownHeading": {
+      "dark": "guimardYellow",
+      "light": "carrelageYellow"
+    },
+    "markdownLink": {
+      "dark": "guimardDenim",
+      "light": "carrelageDenim"
+    },
+    "markdownLinkText": {
+      "dark": "guimardDenimHi",
+      "light": "carrelageDenimHi"
+    },
+    "markdownCode": {
+      "dark": "guimardGreen",
+      "light": "carrelageGreen"
+    },
+    "markdownBlockQuote": {
+      "dark": "guimardSubtext0",
+      "light": "carrelageSubtext0"
+    },
+    "markdownEmph": {
+      "dark": "guimardText",
+      "light": "carrelageText"
+    },
+    "markdownStrong": {
+      "dark": "guimardTextHi",
+      "light": "carrelageTextHi"
+    },
+    "markdownHorizontalRule": {
+      "dark": "guimardOverlay0",
+      "light": "carrelageOverlay0"
+    },
+    "markdownListItem": {
+      "dark": "guimardOrange",
+      "light": "carrelageOrange"
+    },
+    "markdownListEnumeration": {
+      "dark": "guimardOrange",
+      "light": "carrelageOrange"
+    },
+    "markdownImage": {
+      "dark": "guimardDenim",
+      "light": "carrelageDenim"
+    },
+    "markdownImageText": {
+      "dark": "guimardDenimHi",
+      "light": "carrelageDenimHi"
+    },
+    "markdownCodeBlock": {
+      "dark": "guimardText",
+      "light": "carrelageText"
+    },
+    "syntaxComment": {
+      "dark": "guimardOverlay1",
+      "light": "carrelageOverlay1"
+    },
+    "syntaxKeyword": {
+      "dark": "guimardOrange",
+      "light": "carrelageOrange"
+    },
+    "syntaxFunction": {
+      "dark": "guimardYellow",
+      "light": "carrelageYellow"
+    },
+    "syntaxVariable": {
+      "dark": "guimardText",
+      "light": "carrelageText"
+    },
+    "syntaxString": {
+      "dark": "guimardGreen",
+      "light": "carrelageGreen"
+    },
+    "syntaxNumber": {
+      "dark": "guimardRedHi",
+      "light": "carrelageRedHi"
+    },
+    "syntaxType": {
+      "dark": "guimardSage",
+      "light": "carrelageSage"
+    },
+    "syntaxOperator": {
+      "dark": "guimardOverlay2",
+      "light": "carrelageOverlay2"
+    },
+    "syntaxPunctuation": {
+      "dark": "guimardOverlay2",
+      "light": "carrelageOverlay2"
+    }
+  }
+}

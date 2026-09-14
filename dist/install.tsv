@@ -1281,6 +1281,12 @@ detect	opencode	~/.config/opencode
 file	opencode	walnut	opencode/subway-seat.json	~/.config/opencode/themes/subway-seat.json	link
 file	opencode	tunnel	opencode/subway-seat-tunnel.json	~/.config/opencode/themes/subway-seat-tunnel.json	link
 file	opencode	enamel	opencode/subway-seat-enamel.json	~/.config/opencode/themes/subway-seat-enamel.json	link
+file	opencode	moquette	opencode/london-moquette.json	~/.config/opencode/themes/london-moquette.json	link
+file	opencode	deep	opencode/london-deep-level.json	~/.config/opencode/themes/london-deep-level.json	link
+file	opencode	portland	opencode/london-portland.json	~/.config/opencode/themes/london-portland.json	link
+file	opencode	guimard	opencode/paris-guimard.json	~/.config/opencode/themes/paris-guimard.json	link
+file	opencode	catacombes	opencode/paris-catacombes.json	~/.config/opencode/themes/paris-catacombes.json	link
+file	opencode	carrelage	opencode/paris-carrelage.json	~/.config/opencode/themes/paris-carrelage.json	link
 enable	opencode	walnut		{\n  "$schema": "https://opencode.ai/tui.json",\n  "theme": "subway-seat"\n}	~/.config/opencode/tui.json after copying the theme to ~/.config/opencode/themes/, or pick it with /theme	json	
 enable	opencode	tunnel		{\n  "$schema": "https://opencode.ai/tui.json",\n  "theme": "subway-seat-tunnel"\n}	~/.config/opencode/tui.json after copying the theme to ~/.config/opencode/themes/, or pick it with /theme	json	
 enable	opencode	enamel		{\n  "$schema": "https://opencode.ai/tui.json",\n  "theme": "subway-seat-enamel"\n}	~/.config/opencode/tui.json after copying the theme to ~/.config/opencode/themes/, or pick it with /theme	json	

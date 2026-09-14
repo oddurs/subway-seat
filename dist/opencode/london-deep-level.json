@@ -1,0 +1,267 @@
+{
+  "$schema": "https://opencode.ai/theme.json",
+  "defs": {
+    "deepCrust": "#0A0E18",
+    "deepMantle": "#0D1421",
+    "deepBase": "#121A2D",
+    "deepSurface0": "#1A243A",
+    "deepSurface1": "#232F49",
+    "deepSurface2": "#303E5B",
+    "deepOverlay0": "#53617D",
+    "deepOverlay1": "#6F7C97",
+    "deepOverlay2": "#8B96AC",
+    "deepSubtext0": "#A5AEC0",
+    "deepSubtext1": "#BEC6D5",
+    "deepText": "#D4DAE7",
+    "deepTextHi": "#E7EBF3",
+    "deepYellow": "#F2C03F",
+    "deepYellowHi": "#FFD36C",
+    "deepOrange": "#DE8946",
+    "deepOrangeHi": "#E5AA7F",
+    "deepRed": "#DB6052",
+    "deepRedHi": "#FE8474",
+    "deepGreen": "#77C581",
+    "deepGreenHi": "#9AD2A0",
+    "deepSage": "#54B4B5",
+    "deepSageHi": "#72D1D3",
+    "deepDenim": "#7595DA",
+    "deepDenimHi": "#8BB0FF",
+    "deepClay": "#AE9EDC",
+    "portlandCrust": "#CCDAF2",
+    "portlandMantle": "#DCE5F7",
+    "portlandBase": "#E8F0FF",
+    "portlandSurface0": "#BFCFF1",
+    "portlandSurface1": "#A8BBE2",
+    "portlandSurface2": "#93A7CF",
+    "portlandOverlay0": "#8192B4",
+    "portlandOverlay1": "#697794",
+    "portlandOverlay2": "#556179",
+    "portlandSubtext0": "#4A5469",
+    "portlandSubtext1": "#3C4557",
+    "portlandText": "#293040",
+    "portlandTextHi": "#1B202B",
+    "portlandYellow": "#8D6C08",
+    "portlandYellowHi": "#9B770A",
+    "portlandOrange": "#A54300",
+    "portlandOrangeHi": "#AC5A00",
+    "portlandRed": "#9B211A",
+    "portlandRedHi": "#CC2E25",
+    "portlandGreen": "#0D8131",
+    "portlandGreenHi": "#008730",
+    "portlandSage": "#007376",
+    "portlandSageHi": "#008688",
+    "portlandDenim": "#0019A8",
+    "portlandDenimHi": "#4A6EBD",
+    "portlandClay": "#755FA9"
+  },
+  "theme": {
+    "primary": {
+      "dark": "deepOrange",
+      "light": "portlandOrange"
+    },
+    "secondary": {
+      "dark": "deepYellow",
+      "light": "portlandYellow"
+    },
+    "accent": {
+      "dark": "deepSage",
+      "light": "portlandSage"
+    },
+    "error": {
+      "dark": "deepRedHi",
+      "light": "portlandRedHi"
+    },
+    "warning": {
+      "dark": "deepYellow",
+      "light": "portlandYellow"
+    },
+    "success": {
+      "dark": "deepGreen",
+      "light": "portlandGreen"
+    },
+    "info": {
+      "dark": "deepDenim",
+      "light": "portlandDenim"
+    },
+    "text": {
+      "dark": "deepText",
+      "light": "portlandText"
+    },
+    "textMuted": {
+      "dark": "deepOverlay2",
+      "light": "portlandOverlay2"
+    },
+    "selectedListItemText": {
+      "dark": "deepCrust",
+      "light": "portlandBase"
+    },
+    "background": {
+      "dark": "deepBase",
+      "light": "portlandBase"
+    },
+    "backgroundPanel": {
+      "dark": "deepSurface0",
+      "light": "portlandMantle"
+    },
+    "backgroundElement": {
+      "dark": "deepSurface1",
+      "light": "portlandCrust"
+    },
+    "backgroundMenu": {
+      "dark": "#1A243A",
+      "light": "#F4F8FF"
+    },
+    "border": {
+      "dark": "deepSurface2",
+      "light": "portlandSurface2"
+    },
+    "borderActive": {
+      "dark": "deepOverlay0",
+      "light": "portlandOverlay0"
+    },
+    "borderSubtle": {
+      "dark": "deepSurface1",
+      "light": "portlandSurface1"
+    },
+    "diffAdded": {
+      "dark": "deepGreen",
+      "light": "portlandGreen"
+    },
+    "diffRemoved": {
+      "dark": "deepRedHi",
+      "light": "portlandRedHi"
+    },
+    "diffContext": {
+      "dark": "deepOverlay1",
+      "light": "portlandOverlay1"
+    },
+    "diffHunkHeader": {
+      "dark": "deepDenim",
+      "light": "portlandDenim"
+    },
+    "diffHighlightAdded": {
+      "dark": "deepGreenHi",
+      "light": "portlandGreen"
+    },
+    "diffHighlightRemoved": {
+      "dark": "deepRedHi",
+      "light": "portlandRed"
+    },
+    "diffAddedBg": {
+      "dark": "#22362F",
+      "light": "#C0DEC9"
+    },
+    "diffRemovedBg": {
+      "dark": "#402327",
+      "light": "#EBD3D1"
+    },
+    "diffContextBg": {
+      "dark": "deepBase",
+      "light": "portlandBase"
+    },
+    "diffLineNumber": {
+      "dark": "deepOverlay0",
+      "light": "portlandOverlay0"
+    },
+    "diffAddedLineNumberBg": {
+      "dark": "#1C2B35",
+      "light": "#D2E5EA"
+    },
+    "diffRemovedLineNumberBg": {
+      "dark": "#282231",
+      "light": "#E0D9E6"
+    },
+    "markdownText": {
+      "dark": "deepText",
+      "light": "portlandText"
+    },
+    "markdownHeading": {
+      "dark": "deepYellow",
+      "light": "portlandYellow"
+    },
+    "markdownLink": {
+      "dark": "deepDenim",
+      "light": "portlandDenim"
+    },
+    "markdownLinkText": {
+      "dark": "deepDenimHi",
+      "light": "portlandDenimHi"
+    },
+    "markdownCode": {
+      "dark": "deepGreen",
+      "light": "portlandGreen"
+    },
+    "markdownBlockQuote": {
+      "dark": "deepSubtext0",
+      "light": "portlandSubtext0"
+    },
+    "markdownEmph": {
+      "dark": "deepText",
+      "light": "portlandText"
+    },
+    "markdownStrong": {
+      "dark": "deepTextHi",
+      "light": "portlandTextHi"
+    },
+    "markdownHorizontalRule": {
+      "dark": "deepOverlay0",
+      "light": "portlandOverlay0"
+    },
+    "markdownListItem": {
+      "dark": "deepOrange",
+      "light": "portlandOrange"
+    },
+    "markdownListEnumeration": {
+      "dark": "deepOrange",
+      "light": "portlandOrange"
+    },
+    "markdownImage": {
+      "dark": "deepDenim",
+      "light": "portlandDenim"
+    },
+    "markdownImageText": {
+      "dark": "deepDenimHi",
+      "light": "portlandDenimHi"
+    },
+    "markdownCodeBlock": {
+      "dark": "deepText",
+      "light": "portlandText"
+    },
+    "syntaxComment": {
+      "dark": "deepOverlay1",
+      "light": "portlandOverlay1"
+    },
+    "syntaxKeyword": {
+      "dark": "deepOrange",
+      "light": "portlandOrange"
+    },
+    "syntaxFunction": {
+      "dark": "deepYellow",
+      "light": "portlandYellow"
+    },
+    "syntaxVariable": {
+      "dark": "deepText",
+      "light": "portlandText"
+    },
+    "syntaxString": {
+      "dark": "deepGreen",
+      "light": "portlandGreen"
+    },
+    "syntaxNumber": {
+      "dark": "deepRedHi",
+      "light": "portlandRedHi"
+    },
+    "syntaxType": {
+      "dark": "deepSage",
+      "light": "portlandSage"
+    },
+    "syntaxOperator": {
+      "dark": "deepOverlay2",
+      "light": "portlandOverlay2"
+    },
+    "syntaxPunctuation": {
+      "dark": "deepOverlay2",
+      "light": "portlandOverlay2"
+    }
+  }
+}
